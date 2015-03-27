@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1FormFactorFactory_3_01OneHalfPlusToOneHalfPlus_01_4" kind="class" prot="public">
+    <compoundname>eos::FormFactorFactory&lt; OneHalfPlusToOneHalfPlus &gt;</compoundname>
+    <includes refid="baryonic_8hh" local="no">baryonic.hh</includes>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classeos_1_1FormFactorFactory_3_01OneHalfPlusToOneHalfPlus_01_4_1a8bad675ee9c637814ff50f69bec3447a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; FormFactors&lt; <ref refid="structeos_1_1OneHalfPlusToOneHalfPlus" kindref="compound">OneHalfPlusToOneHalfPlus</ref> &gt; &gt;</type>
+        <definition>static std::shared_ptr&lt;FormFactors&lt;OneHalfPlusToOneHalfPlus&gt; &gt; eos::FormFactorFactory&lt; OneHalfPlusToOneHalfPlus &gt;::create</definition>
+        <argsstring>(const std::string &amp;label, const Parameters &amp;parameters)</argsstring>
+        <name>create</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/baryonic.hh" line="58"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/form-factors/baryonic.hh" line="56" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/baryonic.hh" bodystart="55" bodyend="59"/>
+    <listofallmembers>
+      <member refid="classeos_1_1FormFactorFactory_3_01OneHalfPlusToOneHalfPlus_01_4_1a8bad675ee9c637814ff50f69bec3447a" prot="public" virt="non-virtual"><scope>eos::FormFactorFactory&lt; OneHalfPlusToOneHalfPlus &gt;</scope><name>create</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

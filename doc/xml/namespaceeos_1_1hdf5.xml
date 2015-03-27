@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="namespaceeos_1_1hdf5" kind="namespace">
+    <compoundname>eos::hdf5</compoundname>
+    <innerclass refid="structeos_1_1hdf5_1_1DataType" prot="public">eos::hdf5::DataType</innerclass>
+    <innerclass refid="structeos_1_1hdf5_1_1DataType_3_01double_01_4" prot="public">eos::hdf5::DataType&lt; double &gt;</innerclass>
+    <innerclass refid="structeos_1_1hdf5_1_1DataType_3_01unsigned_01_4" prot="public">eos::hdf5::DataType&lt; unsigned &gt;</innerclass>
+    <innerclass refid="structeos_1_1hdf5_1_1DataType_3_01int_01_4" prot="public">eos::hdf5::DataType&lt; int &gt;</innerclass>
+    <innerclass refid="structeos_1_1hdf5_1_1DataType_3_01short_01_4" prot="public">eos::hdf5::DataType&lt; short &gt;</innerclass>
+    <innerclass refid="structeos_1_1hdf5_1_1DataType_3_01const_01char_01_5_01_4" prot="public">eos::hdf5::DataType&lt; const char * &gt;</innerclass>
+    <innerclass refid="structeos_1_1hdf5_1_1Type" prot="public">eos::hdf5::Type</innerclass>
+    <innerclass refid="classeos_1_1hdf5_1_1Scalar" prot="public">eos::hdf5::Scalar</innerclass>
+    <innerclass refid="classeos_1_1hdf5_1_1Array" prot="public">eos::hdf5::Array</innerclass>
+    <innerclass refid="structeos_1_1hdf5_1_1CompositeCopier" prot="public">eos::hdf5::CompositeCopier</innerclass>
+    <innerclass refid="structeos_1_1hdf5_1_1CompositeCopier_3_010_00_01TypeTuple___00_01Tuple___01_4" prot="public">eos::hdf5::CompositeCopier&lt; 0, TypeTuple_, Tuple_ &gt;</innerclass>
+    <innerclass refid="classeos_1_1hdf5_1_1Composite" prot="public">eos::hdf5::Composite</innerclass>
+    <innerclass refid="classeos_1_1hdf5_1_1FileHandle" prot="public">eos::hdf5::FileHandle</innerclass>
+    <innerclass refid="classeos_1_1hdf5_1_1DataSetHandle" prot="public">eos::hdf5::DataSetHandle</innerclass>
+    <innerclass refid="classeos_1_1hdf5_1_1AttributeHandle" prot="public">eos::hdf5::AttributeHandle</innerclass>
+    <innerclass refid="classeos_1_1hdf5_1_1File" prot="public">eos::hdf5::File</innerclass>
+    <innerclass refid="classeos_1_1hdf5_1_1DataSet" prot="public">eos::hdf5::DataSet</innerclass>
+    <innerclass refid="classeos_1_1hdf5_1_1Attribute" prot="public">eos::hdf5::Attribute</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespaceeos_1_1hdf5_1a5bd5e209f1bf36cdc5551465dacf2e74" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int eos::hdf5::hid_t</definition>
+        <argsstring></argsstring>
+        <name>hid_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="53" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceeos_1_1hdf5_1ac960ca8a290b8a26ab5f71585ac5d793" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="structeos_1_1hdf5_1_1Type" kindref="compound">Type</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt;Type&gt; eos::hdf5::TypePtr</definition>
+        <argsstring></argsstring>
+        <name>TypePtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="109" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceeos_1_1hdf5_1a8da5ea7dae12acf02081ea4fc320dc3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T_</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classeos_1_1hdf5_1_1DataSet" kindref="compound">DataSet</ref>&lt; T_ &gt; &amp;</type>
+        <definition>DataSet&lt; T_ &gt; &amp; eos::hdf5::operator&lt;&lt;</definition>
+        <argsstring>(DataSet&lt; T_ &gt; &amp;, const typename T_::Type &amp;)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type><ref refid="classeos_1_1hdf5_1_1DataSet" kindref="compound">DataSet</ref>&lt; T_ &gt; &amp;</type>
+          <defname>lhs</defname>
+        </param>
+        <param>
+          <type>const typename T_::Type &amp;</type>
+          <defname>rhs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Append a record to the end of an HDF5 DataSet&lt;&gt; .</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The DataSet&lt;&gt; to which shall be written. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The record which shall be appended. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5-fwd.hh" line="35" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" bodystart="680" bodyend="685"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1_1hdf5_1a59f5217285970b223b8a4932b811106e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T_</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classeos_1_1hdf5_1_1DataSet" kindref="compound">DataSet</ref>&lt; T_ &gt; &amp;</type>
+        <definition>DataSet&lt; T_ &gt; &amp; eos::hdf5::operator&gt;&gt;</definition>
+        <argsstring>(DataSet&lt; T_ &gt; &amp;, typename T_::Type &amp;)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type><ref refid="classeos_1_1hdf5_1_1DataSet" kindref="compound">DataSet</ref>&lt; T_ &gt; &amp;</type>
+          <defname>lhs</defname>
+        </param>
+        <param>
+          <type>typename T_::Type &amp;</type>
+          <defname>rhs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Extract a record from an HDF5 <ref refid="classeos_1_1hdf5_1_1DataSet" kindref="compound">DataSet</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The DataSet&lt;&gt; from which shall be read. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The record to which the data shall be copied. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5-fwd.hh" line="36" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" bodystart="693" bodyend="698"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5-fwd.hh" line="28"/>
+  </compounddef>
+</doxygen>

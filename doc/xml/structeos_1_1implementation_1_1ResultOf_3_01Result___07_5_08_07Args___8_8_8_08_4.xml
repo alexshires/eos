@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1implementation_1_1ResultOf_3_01Result___07_5_08_07Args___8_8_8_08_4" kind="struct" prot="public">
+    <compoundname>eos::implementation::ResultOf&lt; Result_(*)(Args_...)&gt;</compoundname>
+    <includes refid="memoise_8hh" local="no">memoise.hh</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Result_</type>
+      </param>
+      <param>
+        <type>typename...</type>
+        <declname>Args_</declname>
+        <defname>Args_</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structeos_1_1implementation_1_1ResultOf_3_01Result___07_5_08_07Args___8_8_8_08_4_1aee86cd65eda09566ce90b009ddfb27b9" prot="public" static="no">
+        <type>Result_</type>
+        <definition>typedef Result_ eos::implementation::ResultOf&lt; Result_(*)(Args_...)&gt;::Type</definition>
+        <argsstring></argsstring>
+        <name>Type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/memoise.hh" line="95" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/memoise.hh" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/memoise.hh" line="94" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/memoise.hh" bodystart="93" bodyend="96"/>
+    <listofallmembers>
+      <member refid="structeos_1_1implementation_1_1ResultOf_3_01Result___07_5_08_07Args___8_8_8_08_4_1aee86cd65eda09566ce90b009ddfb27b9" prot="public" virt="non-virtual"><scope>eos::implementation::ResultOf&lt; Result_(*)(Args_...)&gt;</scope><name>Type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

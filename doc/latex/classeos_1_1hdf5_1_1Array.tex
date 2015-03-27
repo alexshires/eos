@@ -1,0 +1,89 @@
+\hypertarget{classeos_1_1hdf5_1_1Array}{
+\section{eos::hdf5::Array$<$ rank\_\-, T\_\- $>$ Class Template Reference}
+\label{classeos_1_1hdf5_1_1Array}\index{eos::hdf5::Array@{eos::hdf5::Array}}
+}
+
+
+{\ttfamily \#include $<$hdf5.hh$>$}
+
+Inherits \hyperlink{structeos_1_1hdf5_1_1Type}{eos::hdf5::Type}.\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std::vector$<$ T\_\- $>$ \hyperlink{classeos_1_1hdf5_1_1Array_a11f93349d9391d143099a25c59827610}{Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1hdf5_1_1Array_a7b2da023a1a1b9f289cbc6484e8aad2c}{Array} (const std::string \&name, const std::initializer\_\-list$<$ hsize\_\-t $>$ \&dimensions)
+\item 
+virtual const std::string \& \hyperlink{classeos_1_1hdf5_1_1Array_aa533ea361fe7d7f589ea60ffee2120a5}{name} () const 
+\item 
+virtual \hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid\_\-t} \hyperlink{classeos_1_1hdf5_1_1Array_ac560c57df5f551234fd5ac77d1890d30}{type\_\-id} () const 
+\item 
+virtual hsize\_\-t \hyperlink{classeos_1_1hdf5_1_1Array_abbe03946de83c9b63d6fc35fc5a60c69}{size} () const 
+\item 
+virtual void \hyperlink{classeos_1_1hdf5_1_1Array_a4f0adbcb6e7136436afa14aee7ebc5c9}{copy\_\-to\_\-hdf5} (const void $\ast$src, void $\ast$dest) const 
+\item 
+virtual void \hyperlink{classeos_1_1hdf5_1_1Array_aedd48f5a8020d66426bd0adfc74fa6a9}{copy\_\-from\_\-hdf5} (const void $\ast$src, void $\ast$dest) const 
+\end{DoxyCompactItemize}
+\subsubsection*{template$<$unsigned rank\_\-, typename T\_\-$>$ class eos::hdf5::Array$<$ rank\_\-, T\_\- $>$}
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classeos_1_1hdf5_1_1Array_a11f93349d9391d143099a25c59827610}{
+\index{eos::hdf5::Array@{eos::hdf5::Array}!Type@{Type}}
+\index{Type@{Type}!eos::hdf5::Array@{eos::hdf5::Array}}
+\subsubsection[{Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned rank\_\-, typename T\_\- $>$ typedef std::vector$<$T\_\-$>$ {\bf eos::hdf5::Array}$<$ rank\_\-, T\_\- $>$::{\bf Type}}}
+\label{classeos_1_1hdf5_1_1Array_a11f93349d9391d143099a25c59827610}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classeos_1_1hdf5_1_1Array_a7b2da023a1a1b9f289cbc6484e8aad2c}{
+\index{eos::hdf5::Array@{eos::hdf5::Array}!Array@{Array}}
+\index{Array@{Array}!eos::hdf5::Array@{eos::hdf5::Array}}
+\subsubsection[{Array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned rank\_\-, typename T\_\- $>$ {\bf eos::hdf5::Array}$<$ rank\_\-, T\_\- $>$::{\bf Array} (const std::string \& {\em name}, \/  const std::initializer\_\-list$<$ hsize\_\-t $>$ \& {\em dimensions})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classeos_1_1hdf5_1_1Array_a7b2da023a1a1b9f289cbc6484e8aad2c}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classeos_1_1hdf5_1_1Array_aedd48f5a8020d66426bd0adfc74fa6a9}{
+\index{eos::hdf5::Array@{eos::hdf5::Array}!copy\_\-from\_\-hdf5@{copy\_\-from\_\-hdf5}}
+\index{copy\_\-from\_\-hdf5@{copy\_\-from\_\-hdf5}!eos::hdf5::Array@{eos::hdf5::Array}}
+\subsubsection[{copy\_\-from\_\-hdf5}]{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned rank\_\-, typename T\_\- $>$ virtual void {\bf eos::hdf5::Array}$<$ rank\_\-, T\_\- $>$::copy\_\-from\_\-hdf5 (const void $\ast$ {\em src}, \/  void $\ast$ {\em dest}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classeos_1_1hdf5_1_1Array_aedd48f5a8020d66426bd0adfc74fa6a9}
+
+
+Implements \hyperlink{structeos_1_1hdf5_1_1Type_a4d1073336bce1500533e69a1187acd66}{eos::hdf5::Type}.\hypertarget{classeos_1_1hdf5_1_1Array_a4f0adbcb6e7136436afa14aee7ebc5c9}{
+\index{eos::hdf5::Array@{eos::hdf5::Array}!copy\_\-to\_\-hdf5@{copy\_\-to\_\-hdf5}}
+\index{copy\_\-to\_\-hdf5@{copy\_\-to\_\-hdf5}!eos::hdf5::Array@{eos::hdf5::Array}}
+\subsubsection[{copy\_\-to\_\-hdf5}]{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned rank\_\-, typename T\_\- $>$ virtual void {\bf eos::hdf5::Array}$<$ rank\_\-, T\_\- $>$::copy\_\-to\_\-hdf5 (const void $\ast$ {\em src}, \/  void $\ast$ {\em dest}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classeos_1_1hdf5_1_1Array_a4f0adbcb6e7136436afa14aee7ebc5c9}
+
+
+Implements \hyperlink{structeos_1_1hdf5_1_1Type_a30b665dc2adbe459feb640c61776b50a}{eos::hdf5::Type}.\hypertarget{classeos_1_1hdf5_1_1Array_aa533ea361fe7d7f589ea60ffee2120a5}{
+\index{eos::hdf5::Array@{eos::hdf5::Array}!name@{name}}
+\index{name@{name}!eos::hdf5::Array@{eos::hdf5::Array}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned rank\_\-, typename T\_\- $>$ virtual const std::string\& {\bf eos::hdf5::Array}$<$ rank\_\-, T\_\- $>$::name () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classeos_1_1hdf5_1_1Array_aa533ea361fe7d7f589ea60ffee2120a5}
+
+
+Implements \hyperlink{structeos_1_1hdf5_1_1Type_a79de1c9f0444de59864107c388c23d2d}{eos::hdf5::Type}.\hypertarget{classeos_1_1hdf5_1_1Array_abbe03946de83c9b63d6fc35fc5a60c69}{
+\index{eos::hdf5::Array@{eos::hdf5::Array}!size@{size}}
+\index{size@{size}!eos::hdf5::Array@{eos::hdf5::Array}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned rank\_\-, typename T\_\- $>$ virtual hsize\_\-t {\bf eos::hdf5::Array}$<$ rank\_\-, T\_\- $>$::size () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classeos_1_1hdf5_1_1Array_abbe03946de83c9b63d6fc35fc5a60c69}
+
+
+Implements \hyperlink{structeos_1_1hdf5_1_1Type_a0cf79b090412bb228a1df8349acf3c2b}{eos::hdf5::Type}.\hypertarget{classeos_1_1hdf5_1_1Array_ac560c57df5f551234fd5ac77d1890d30}{
+\index{eos::hdf5::Array@{eos::hdf5::Array}!type\_\-id@{type\_\-id}}
+\index{type\_\-id@{type\_\-id}!eos::hdf5::Array@{eos::hdf5::Array}}
+\subsubsection[{type\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned rank\_\-, typename T\_\- $>$ virtual {\bf hid\_\-t} {\bf eos::hdf5::Array}$<$ rank\_\-, T\_\- $>$::type\_\-id () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classeos_1_1hdf5_1_1Array_ac560c57df5f551234fd5ac77d1890d30}
+
+
+Implements \hyperlink{structeos_1_1hdf5_1_1Type_a0305c470a7a26a391f9a751e40bb9ff6}{eos::hdf5::Type}.
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{hdf5_8hh}{hdf5.hh}\end{DoxyCompactItemize}

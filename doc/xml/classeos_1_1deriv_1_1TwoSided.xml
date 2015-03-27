@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1deriv_1_1TwoSided" kind="class" prot="public">
+    <compoundname>eos::deriv::TwoSided</compoundname>
+    <includes refid="derivative_8hh" local="no">derivative.hh</includes>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/derivative.hh" line="37" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/derivative.hh" bodystart="37" bodyend="37"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

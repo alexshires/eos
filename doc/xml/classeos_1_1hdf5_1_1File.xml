@@ -1,0 +1,480 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1hdf5_1_1File" kind="class" prot="public">
+    <compoundname>eos::hdf5::File</compoundname>
+    <includes refid="hdf5_8hh" local="no">hdf5.hh</includes>
+      <sectiondef kind="user-defined">
+      <header>Basic Functions</header>
+      <description><para><anchor id="_1amgrp2386c9a1f1785edee33f374dd2db9b3d"/> Destructor. </para></description>
+      <memberdef kind="function" id="classeos_1_1hdf5_1_1File_1a10a1ab16a4ffa7399f305ae19c26915d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::hdf5::File::~File</definition>
+        <argsstring>()</argsstring>
+        <name>~File</name>
+        <briefdescription>
+<para>Access to file name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="432"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1hdf5_1_1File_1a3ae62d6317e16fab68dc7f345007ca59" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; eos::hdf5::File::name</definition>
+        <argsstring>() const </argsstring>
+        <name>name</name>
+        <briefdescription>
+<para>Access to file name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="453" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" bodystart="452" bodyend="455"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1hdf5_1_1File_1ad1d6eb1ed34bc9bf83ce564618e1d346" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1hdf5_1_1File" kindref="compound">File</ref></type>
+        <definition>static File eos::hdf5::File::Create</definition>
+        <argsstring>(const std::string &amp;filename)</argsstring>
+        <name>Create</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Named constructor to create a new file.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classeos_1_1hdf5_1_1File" kindref="compound">File</ref> which shall be created. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the creating program. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="440"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1hdf5_1_1File_1a2db8559898bd4f68d16a56760952c195" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1hdf5_1_1File" kindref="compound">File</ref></type>
+        <definition>static File eos::hdf5::File::Open</definition>
+        <argsstring>(const std::string &amp;file_name, unsigned mode=H5F_ACC_RDONLY)</argsstring>
+        <name>Open</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>file_name</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>mode</declname>
+          <defval>H5F_ACC_RDONLY</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Named constructor to open an existing file.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classeos_1_1hdf5_1_1File" kindref="compound">File</ref> which shall be opened. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="447"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1hdf5_1_1File_1a907662df69926c556596304405846d7c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool eos::hdf5::File::Exists</definition>
+        <argsstring>(const std::string &amp;filename)</argsstring>
+        <name>Exists</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Access to file name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="449"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Data Access</header>
+      <description><para><anchor id="_1amgrpf8aacfa5c683858912c498f517c9b457"/> </para></description>
+      <memberdef kind="function" id="classeos_1_1hdf5_1_1File_1a6ae5be7fa9d26030daee1e3631a0432f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T_</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classeos_1_1hdf5_1_1DataSet" kindref="compound">DataSet</ref>&lt; T_ &gt;</type>
+        <definition>DataSet&lt;T_&gt; eos::hdf5::File::create_data_set</definition>
+        <argsstring>(const std::string &amp;name, const T_ &amp;t)</argsstring>
+        <name>create_data_set</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const T_ &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new data set by name.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Absolute name of the new data set. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instance of any of <ref refid="classeos_1_1hdf5_1_1Scalar" kindref="compound">Scalar</ref>, <ref refid="classeos_1_1hdf5_1_1Array" kindref="compound">Array</ref> or <ref refid="classeos_1_1hdf5_1_1Composite" kindref="compound">Composite</ref> that represents this data set&apos;s underlying data type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="467" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" bodystart="466" bodyend="472"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1hdf5_1_1File_1ae5e5e823024ff7629788895eec1f33f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T_</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classeos_1_1hdf5_1_1DataSet" kindref="compound">DataSet</ref>&lt; T_ &gt;</type>
+        <definition>DataSet&lt;T_&gt; eos::hdf5::File::open_data_set</definition>
+        <argsstring>(const std::string &amp;name, const T_ &amp;t)</argsstring>
+        <name>open_data_set</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const T_ &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Open an existing data set by name.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Absolute name of the data set. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instance of any of <ref refid="classeos_1_1hdf5_1_1Scalar" kindref="compound">Scalar</ref>, <ref refid="classeos_1_1hdf5_1_1Array" kindref="compound">Array</ref> or <ref refid="classeos_1_1hdf5_1_1Composite" kindref="compound">Composite</ref> that represents this data set&apos;s underlying data type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="481" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" bodystart="480" bodyend="486"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1hdf5_1_1File_1a01aeea71760b5ca862900658602b71bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T_</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classeos_1_1hdf5_1_1DataSet" kindref="compound">DataSet</ref>&lt; T_ &gt;</type>
+        <definition>DataSet&lt;T_&gt; eos::hdf5::File::create_or_open_data_set</definition>
+        <argsstring>(const std::string &amp;name, const T_ &amp;t)</argsstring>
+        <name>create_or_open_data_set</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const T_ &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Open a data set by name. Create the data set if it doesn&apos;t exist.</para><para><simplesect kind="note"><para>The error handling of the HDF5 library is suppressed for the duration of the execution. Do not use this method when parallel access to a file is expected.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Absolute name of the data set. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instance of any of <ref refid="classeos_1_1hdf5_1_1Scalar" kindref="compound">Scalar</ref>, <ref refid="classeos_1_1hdf5_1_1Array" kindref="compound">Array</ref> or <ref refid="classeos_1_1hdf5_1_1Composite" kindref="compound">Composite</ref> that represents this data set&apos;s underlying data type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="498" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" bodystart="497" bodyend="515"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Group Operations</header>
+      <description><para><anchor id="_1amgrpafb39b9128298307e8ed1d0bc43d7399"/> </para></description>
+      <memberdef kind="function" id="classeos_1_1hdf5_1_1File_1a1b00da32195932e27c8d88081f9f493c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::hdf5::File::copy</definition>
+        <argsstring>(const std::string &amp;source_directory, File &amp;destination_file, const std::string &amp;destination_directory=&quot;&quot;) const </argsstring>
+        <name>copy</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>source_directory</declname>
+        </param>
+        <param>
+          <type><ref refid="classeos_1_1hdf5_1_1File" kindref="compound">File</ref> &amp;</type>
+          <declname>destination_file</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>destination_directory</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy all objects under source directory in this file to the destination file. If the destination directory is omitted, the source directory is recreated in the destination file. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="526"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1hdf5_1_1File_1a56decaf8e9350e212044f8d1b5486699" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::hdf5::File::create_group</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>create_group</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a group within this HDF5 file.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the group that shall be created. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="533"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1hdf5_1_1File_1addf73185e4946dea33eb40f04c985439" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool eos::hdf5::File::group_exists</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>group_exists</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy all objects under source directory in this file to the destination file. If the destination directory is omitted, the source directory is recreated in the destination file. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="535"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1hdf5_1_1File_1ab95523c1691b5c1bde956a13a04739fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned eos::hdf5::File::number_of_objects</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>number_of_objects</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>List how many objects, i.e. groups or data sets, are in a subdirectory. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="538"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classeos_1_1hdf5_1_1File_1af1b9c7c6636c562dc92d7035421aa9f7" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1hdf5_1_1FileHandle" kindref="compound">FileHandle</ref></type>
+        <definition>FileHandle eos::hdf5::File::_handle</definition>
+        <argsstring></argsstring>
+        <name>_handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="417" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" bodystart="417" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1hdf5_1_1File_1aa414a80bb7117da587f97257915e1e74" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string eos::hdf5::File::_name</definition>
+        <argsstring></argsstring>
+        <name>_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="419" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" bodystart="419" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classeos_1_1hdf5_1_1File_1a795669edf00cd69b8e0b255d5dcc8d1f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::hdf5::File::File</definition>
+        <argsstring>(const FileHandle &amp;handle, const std::string &amp;name)</argsstring>
+        <name>File</name>
+        <param>
+          <type>const <ref refid="classeos_1_1hdf5_1_1FileHandle" kindref="compound">FileHandle</ref> &amp;</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="422"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1hdf5_1_1File_1a7418d08f20fdb7a9ea9e58af86c113cb" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1hdf5_1_1DataSetHandle" kindref="compound">DataSetHandle</ref></type>
+        <definition>DataSetHandle eos::hdf5::File::_open_data_set</definition>
+        <argsstring>(const std::string &amp;name, const TypePtr &amp;type) const </argsstring>
+        <name>_open_data_set</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceeos_1_1hdf5_1ac960ca8a290b8a26ab5f71585ac5d793" kindref="member">TypePtr</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="424"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1hdf5_1_1File_1a98f65ceb83d6baaa5af5b7d57b3a4094" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1hdf5_1_1DataSetHandle" kindref="compound">DataSetHandle</ref></type>
+        <definition>DataSetHandle eos::hdf5::File::_create_data_set</definition>
+        <argsstring>(const std::string &amp;name, const TypePtr &amp;type)</argsstring>
+        <name>_create_data_set</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceeos_1_1hdf5_1ac960ca8a290b8a26ab5f71585ac5d793" kindref="member">TypePtr</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="426"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="401">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="403">
+        <label>eos::PrivateImplementationPattern&lt; hdf5::FileHandle &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="402">
+        <label>eos::hdf5::FileHandle</label>
+        <link refid="classeos_1_1hdf5_1_1FileHandle"/>
+        <childnode refid="403" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="399">
+        <label>eos::hdf5::File</label>
+        <link refid="classeos_1_1hdf5_1_1File"/>
+        <childnode refid="400" relation="usage">
+          <edgelabel>_name</edgelabel>
+        </childnode>
+        <childnode refid="402" relation="usage">
+          <edgelabel>_handle</edgelabel>
+        </childnode>
+      </node>
+      <node id="400">
+        <label>std::string</label>
+        <childnode refid="401" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="415" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" bodystart="414" bodyend="540"/>
+    <listofallmembers>
+      <member refid="classeos_1_1hdf5_1_1File_1a98f65ceb83d6baaa5af5b7d57b3a4094" prot="private" virt="non-virtual"><scope>eos::hdf5::File</scope><name>_create_data_set</name></member>
+      <member refid="classeos_1_1hdf5_1_1File_1af1b9c7c6636c562dc92d7035421aa9f7" prot="private" virt="non-virtual"><scope>eos::hdf5::File</scope><name>_handle</name></member>
+      <member refid="classeos_1_1hdf5_1_1File_1aa414a80bb7117da587f97257915e1e74" prot="private" virt="non-virtual"><scope>eos::hdf5::File</scope><name>_name</name></member>
+      <member refid="classeos_1_1hdf5_1_1File_1a7418d08f20fdb7a9ea9e58af86c113cb" prot="private" virt="non-virtual"><scope>eos::hdf5::File</scope><name>_open_data_set</name></member>
+      <member refid="classeos_1_1hdf5_1_1File_1a1b00da32195932e27c8d88081f9f493c" prot="public" virt="non-virtual"><scope>eos::hdf5::File</scope><name>copy</name></member>
+      <member refid="classeos_1_1hdf5_1_1File_1ad1d6eb1ed34bc9bf83ce564618e1d346" prot="public" virt="non-virtual"><scope>eos::hdf5::File</scope><name>Create</name></member>
+      <member refid="classeos_1_1hdf5_1_1File_1a6ae5be7fa9d26030daee1e3631a0432f" prot="public" virt="non-virtual"><scope>eos::hdf5::File</scope><name>create_data_set</name></member>
+      <member refid="classeos_1_1hdf5_1_1File_1a56decaf8e9350e212044f8d1b5486699" prot="public" virt="non-virtual"><scope>eos::hdf5::File</scope><name>create_group</name></member>
+      <member refid="classeos_1_1hdf5_1_1File_1a01aeea71760b5ca862900658602b71bd" prot="public" virt="non-virtual"><scope>eos::hdf5::File</scope><name>create_or_open_data_set</name></member>
+      <member refid="classeos_1_1hdf5_1_1File_1a907662df69926c556596304405846d7c" prot="public" virt="non-virtual"><scope>eos::hdf5::File</scope><name>Exists</name></member>
+      <member refid="classeos_1_1hdf5_1_1File_1a795669edf00cd69b8e0b255d5dcc8d1f" prot="private" virt="non-virtual"><scope>eos::hdf5::File</scope><name>File</name></member>
+      <member refid="classeos_1_1hdf5_1_1File_1addf73185e4946dea33eb40f04c985439" prot="public" virt="non-virtual"><scope>eos::hdf5::File</scope><name>group_exists</name></member>
+      <member refid="classeos_1_1hdf5_1_1File_1a3ae62d6317e16fab68dc7f345007ca59" prot="public" virt="non-virtual"><scope>eos::hdf5::File</scope><name>name</name></member>
+      <member refid="classeos_1_1hdf5_1_1File_1ab95523c1691b5c1bde956a13a04739fc" prot="public" virt="non-virtual"><scope>eos::hdf5::File</scope><name>number_of_objects</name></member>
+      <member refid="classeos_1_1hdf5_1_1File_1a2db8559898bd4f68d16a56760952c195" prot="public" virt="non-virtual"><scope>eos::hdf5::File</scope><name>Open</name></member>
+      <member refid="classeos_1_1hdf5_1_1File_1ae5e5e823024ff7629788895eec1f33f2" prot="public" virt="non-virtual"><scope>eos::hdf5::File</scope><name>open_data_set</name></member>
+      <member refid="classeos_1_1hdf5_1_1File_1a10a1ab16a4ffa7399f305ae19c26915d" prot="public" virt="non-virtual"><scope>eos::hdf5::File</scope><name>~File</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

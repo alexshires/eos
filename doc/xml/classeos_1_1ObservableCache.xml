@@ -1,0 +1,290 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1ObservableCache" kind="class" prot="public">
+    <compoundname>eos::ObservableCache</compoundname>
+    <basecompoundref refid="classeos_1_1PrivateImplementationPattern" prot="public" virt="non-virtual">eos::PrivateImplementationPattern&lt; ObservableCache &gt;</basecompoundref>
+    <includes refid="observable__cache_8hh" local="no">observable_cache.hh</includes>
+      <sectiondef kind="user-defined">
+      <header>Access</header>
+      <description><para><anchor id="_1amgrpbf733d8a933c1601697f364223fc7ecb"/> </para></description>
+      <memberdef kind="typedef" id="classeos_1_1ObservableCache_1a393f1d7c8c2a58bc95845e12b615c6ee" prot="public" static="no">
+        <type>unsigned</type>
+        <definition>typedef unsigned eos::ObservableCache::Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a given observable to the cache and return its unique Id.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>observable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The observable which shall be added to the cache. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/observable_cache.hh" line="49" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/observable_cache.hh" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ObservableCache_1a5994a8d42de0afabc01d401ef8bf27af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1ObservableCache_1a393f1d7c8c2a58bc95845e12b615c6ee" kindref="member">Id</ref></type>
+        <definition>Id eos::ObservableCache::add</definition>
+        <argsstring>(const ObservablePtr &amp;observable)</argsstring>
+        <name>add</name>
+        <param>
+          <type>const <ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref> &amp;</type>
+          <declname>observable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a given observable to the cache and return its unique Id.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>observable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The observable which shall be added to the cache. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/observable_cache.hh" line="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ObservableCache_1ae69a231f0546cabd80266f4c0fb8b49f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::ObservableCache::update</definition>
+        <argsstring>()</argsstring>
+        <name>update</name>
+        <briefdescription>
+<para>Update the predictions for all observables. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/observable_cache.hh" line="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ObservableCache_1a934c9c731189f013eb69a79112b64a04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::ObservableCache::update</definition>
+        <argsstring>(const Parameter::Id &amp;id)</argsstring>
+        <name>update</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameter_1a065f55e66b2128cc5f14339e676d833a" kindref="member">Parameter::Id</ref> &amp;</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update the predicition for all observables that depend on a given <ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classeos_1_1Parameter_1a065f55e66b2128cc5f14339e676d833a" kindref="member">Parameter::Id</ref> for which all depending observables shall be updated. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/observable_cache.hh" line="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ObservableCache_1ac4dafff6d4eb3b29157d5f326b880c85" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref></type>
+        <definition>Parameters eos::ObservableCache::parameters</definition>
+        <argsstring>() const </argsstring>
+        <name>parameters</name>
+        <briefdescription>
+<para>Retrieve the cache&apos;s common <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/observable_cache.hh" line="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ObservableCache_1a4e1287495ae908ae08a1550a3c5fbdcc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::ObservableCache::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+<para>Reset the cache to the previous predictions. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/observable_cache.hh" line="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ObservableCache_1a171e7c1c0e4e2741dc155e4b249bca6d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref></type>
+        <definition>ObservablePtr eos::ObservableCache::observable</definition>
+        <argsstring>(const ObservableCache::Id &amp;id) const </argsstring>
+        <name>observable</name>
+        <param>
+          <type>const <ref refid="classeos_1_1ObservableCache_1a393f1d7c8c2a58bc95845e12b615c6ee" kindref="member">ObservableCache::Id</ref> &amp;</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve a unique observable by its <ref refid="classeos_1_1ObservableCache_1a393f1d7c8c2a58bc95845e12b615c6ee" kindref="member">ObservableCache::Id</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classeos_1_1ObservableCache_1a393f1d7c8c2a58bc95845e12b615c6ee" kindref="member">ObservableCache::Id</ref> whose associated ObservablePtr shall be retrieved. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/observable_cache.hh" line="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ObservableCache_1a9ad7f1672817b0d69bda7dfc9471bc43" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::ObservableCache::operator[]</definition>
+        <argsstring>(const ObservableCache::Id &amp;id) const </argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>const <ref refid="classeos_1_1ObservableCache_1a393f1d7c8c2a58bc95845e12b615c6ee" kindref="member">ObservableCache::Id</ref> &amp;</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve the prediction for a given observable from the cache.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique <ref refid="classeos_1_1ObservableCache_1a393f1d7c8c2a58bc95845e12b615c6ee" kindref="member">ObservableCache::Id</ref> whose associated observable&apos;s prediction shall be retrieved. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/observable_cache.hh" line="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ObservableCache_1a8cf868c54289d6ec010c72cdab954ded" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned eos::ObservableCache::size</definition>
+        <argsstring>() const </argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>Retrieve the number of independent predictions from the cache. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/observable_cache.hh" line="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ObservableCache_1af1f92ddabdeb26ae35ba66f8e6b73c18" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1ObservableCache" kindref="compound">ObservableCache</ref></type>
+        <definition>ObservableCache eos::ObservableCache::clone</definition>
+        <argsstring>(const Parameters &amp;parameters) const </argsstring>
+        <name>clone</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+<para>Clone this cache whilst keeping the observables in the given order, i.e. all ids remain valid. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/observable_cache.hh" line="93"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Basic Functions</header>
+      <description><para><anchor id="_1amgrp2386c9a1f1785edee33f374dd2db9b3d"/> </para></description>
+      <memberdef kind="function" id="classeos_1_1ObservableCache_1afc29264c67c8404ab659ab3ebce0677a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::ObservableCache::ObservableCache</definition>
+        <argsstring>(const Parameters &amp;parameters)</argsstring>
+        <name>ObservableCache</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> object common to all cached Observables. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/observable_cache.hh" line="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ObservableCache_1aee7b3cb68fe74a44faff0fed5547830d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::ObservableCache::~ObservableCache</definition>
+        <argsstring>()</argsstring>
+        <name>~ObservableCache</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/observable_cache.hh" line="44"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="722">
+        <label>eos::PrivateImplementationPattern&lt; ObservableCache &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="721">
+        <label>eos::ObservableCache</label>
+        <link refid="classeos_1_1ObservableCache"/>
+        <childnode refid="722" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="724">
+        <label>eos::PrivateImplementationPattern&lt; ObservableCache &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="723">
+        <label>eos::ObservableCache</label>
+        <link refid="classeos_1_1ObservableCache"/>
+        <childnode refid="724" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/observable_cache.hh" line="32" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/observable_cache.hh" bodystart="30" bodyend="94"/>
+    <listofallmembers>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a232940e78b26c6ed4f97196f831c69c9" prot="protected" virt="non-virtual"><scope>eos::ObservableCache</scope><name>_imp</name></member>
+      <member refid="classeos_1_1ObservableCache_1a5994a8d42de0afabc01d401ef8bf27af" prot="public" virt="non-virtual"><scope>eos::ObservableCache</scope><name>add</name></member>
+      <member refid="classeos_1_1ObservableCache_1af1f92ddabdeb26ae35ba66f8e6b73c18" prot="public" virt="non-virtual"><scope>eos::ObservableCache</scope><name>clone</name></member>
+      <member refid="classeos_1_1ObservableCache_1a393f1d7c8c2a58bc95845e12b615c6ee" prot="public" virt="non-virtual"><scope>eos::ObservableCache</scope><name>Id</name></member>
+      <member refid="classeos_1_1ObservableCache_1a171e7c1c0e4e2741dc155e4b249bca6d" prot="public" virt="non-virtual"><scope>eos::ObservableCache</scope><name>observable</name></member>
+      <member refid="classeos_1_1ObservableCache_1afc29264c67c8404ab659ab3ebce0677a" prot="public" virt="non-virtual"><scope>eos::ObservableCache</scope><name>ObservableCache</name></member>
+      <member refid="classeos_1_1ObservableCache_1a9ad7f1672817b0d69bda7dfc9471bc43" prot="public" virt="non-virtual"><scope>eos::ObservableCache</scope><name>operator[]</name></member>
+      <member refid="classeos_1_1ObservableCache_1ac4dafff6d4eb3b29157d5f326b880c85" prot="public" virt="non-virtual"><scope>eos::ObservableCache</scope><name>parameters</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a3e3d5f4a565256a1dda6c234b051b2f2" prot="public" virt="non-virtual"><scope>eos::ObservableCache</scope><name>PrivateImplementationPattern</name></member>
+      <member refid="classeos_1_1ObservableCache_1a4e1287495ae908ae08a1550a3c5fbdcc" prot="public" virt="non-virtual"><scope>eos::ObservableCache</scope><name>reset</name></member>
+      <member refid="classeos_1_1ObservableCache_1a8cf868c54289d6ec010c72cdab954ded" prot="public" virt="non-virtual"><scope>eos::ObservableCache</scope><name>size</name></member>
+      <member refid="classeos_1_1ObservableCache_1ae69a231f0546cabd80266f4c0fb8b49f" prot="public" virt="non-virtual"><scope>eos::ObservableCache</scope><name>update</name></member>
+      <member refid="classeos_1_1ObservableCache_1a934c9c731189f013eb69a79112b64a04" prot="public" virt="non-virtual"><scope>eos::ObservableCache</scope><name>update</name></member>
+      <member refid="classeos_1_1ObservableCache_1aee7b3cb68fe74a44faff0fed5547830d" prot="public" virt="non-virtual"><scope>eos::ObservableCache</scope><name>~ObservableCache</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1acf46ec2739c3b0ec9702b9428475876d" prot="public" virt="non-virtual"><scope>eos::ObservableCache</scope><name>~PrivateImplementationPattern</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

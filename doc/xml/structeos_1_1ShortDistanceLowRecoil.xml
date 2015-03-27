@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1ShortDistanceLowRecoil" kind="struct" prot="public">
+    <compoundname>eos::ShortDistanceLowRecoil</compoundname>
+    <includes refid="charm-loops_8hh" local="no">charm-loops.hh</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structeos_1_1ShortDistanceLowRecoil_1abb30cc99b514a6610359a0869d4d4582" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>static complex&lt;double&gt; eos::ShortDistanceLowRecoil::c7eff</definition>
+        <argsstring>(const double &amp;s, const double &amp;mu, const double &amp;alpha_s, const double &amp;m_b_PS, bool use_nlo, const WilsonCoefficients&lt; BToS &gt; &amp;wc)</argsstring>
+        <name>c7eff</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>alpha_s</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_b_PS</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>use_nlo</declname>
+        </param>
+        <param>
+          <type>const WilsonCoefficients&lt; <ref refid="structeos_1_1BToS" kindref="compound">BToS</ref> &gt; &amp;</type>
+          <declname>wc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Effective Wilson coefficient c7 in the region of low hadronic recoil.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dilepton invariant mass </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>renormalization scale </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha_s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>strong coupling evaluated at the scale mu </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m_b_PS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PS mass of the bottom quark </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>use_nlo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true, if <ref refid="structeos_1_1NLO" kindref="compound">NLO</ref> contributions shall be used </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the Wilson coefficients</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+For the calculation, cf. [GP2004], Eq. (56) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/charm-loops.hh" line="80"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1ShortDistanceLowRecoil_1aaaee347f2e54c1edad33b9806c437cdd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>static complex&lt;double&gt; eos::ShortDistanceLowRecoil::c9eff</definition>
+        <argsstring>(const double &amp;s, const double &amp;mu, const double &amp;alpha_s, const double &amp;m_b_PS, const double &amp;m_c_MSbar, bool use_nlo, bool ccbar_resonance, const complex&lt; double &gt; &amp;lambda_hat_u, const WilsonCoefficients&lt; BToS &gt; &amp;wc)</argsstring>
+        <name>c9eff</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>alpha_s</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_b_PS</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_c_MSbar</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>use_nlo</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>ccbar_resonance</declname>
+        </param>
+        <param>
+          <type>const complex&lt; double &gt; &amp;</type>
+          <declname>lambda_hat_u</declname>
+        </param>
+        <param>
+          <type>const WilsonCoefficients&lt; <ref refid="structeos_1_1BToS" kindref="compound">BToS</ref> &gt; &amp;</type>
+          <declname>wc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Effective Wilson coefficient c9 in the region of low hadronic recoil.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dilepton invariant mass </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>renormalization scale </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha_s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>strong coupling evaluated at the scale mu </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m_b_PS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PS mass of the bottom quark </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m_c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MSbar mass of the charm quark </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>use_nlo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true, if <ref refid="structeos_1_1NLO" kindref="compound">NLO</ref> contributions shall be used </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ccbar_resonance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true, if phenomenological data from e^+e^- -&gt; ccbar resonance -&gt; hadrons shall be used </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lambda_hat_u</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>certain combination of CKM matrix elements: V_ub V_us^* / (V_tb V_ts^*) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the Wilson coefficients</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+For the calculation, cf. [GP2004], Eq. (55), p. 10 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/charm-loops.hh" line="99"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/charm-loops.hh" line="66" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/charm-loops.hh" bodystart="65" bodyend="100"/>
+    <listofallmembers>
+      <member refid="structeos_1_1ShortDistanceLowRecoil_1abb30cc99b514a6610359a0869d4d4582" prot="public" virt="non-virtual"><scope>eos::ShortDistanceLowRecoil</scope><name>c7eff</name></member>
+      <member refid="structeos_1_1ShortDistanceLowRecoil_1aaaee347f2e54c1edad33b9806c437cdd" prot="public" virt="non-virtual"><scope>eos::ShortDistanceLowRecoil</scope><name>c9eff</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

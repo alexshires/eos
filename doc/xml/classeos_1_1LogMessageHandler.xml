@@ -1,0 +1,252 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1LogMessageHandler" kind="class" prot="public">
+    <compoundname>eos::LogMessageHandler</compoundname>
+    <includes refid="log_8hh" local="no">log.hh</includes>
+      <sectiondef kind="user-defined">
+      <header>Basic Functions</header>
+      <description><para><anchor id="_1amgrp2386c9a1f1785edee33f374dd2db9b3d"/> Copy constructor. </para></description>
+      <memberdef kind="function" id="classeos_1_1LogMessageHandler_1aaafe12805eac7d1066478d1221fb34be" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::LogMessageHandler::LogMessageHandler</definition>
+        <argsstring>(const LogMessageHandler &amp;)</argsstring>
+        <name>LogMessageHandler</name>
+        <param>
+          <type>const <ref refid="classeos_1_1LogMessageHandler" kindref="compound">LogMessageHandler</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log.hh" line="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LogMessageHandler_1a16bc478ed143031b63355b51b3c410d9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::LogMessageHandler::LogMessageHandler</definition>
+        <argsstring>(Log *const log, const LogLevel &amp;log_level, const std::string &amp;id)</argsstring>
+        <name>LogMessageHandler</name>
+        <param>
+          <type><ref refid="classeos_1_1Log" kindref="compound">Log</ref> *const </type>
+          <declname>log</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceeos_1ad6b42a08a08a1b63498f3f262bd15602" kindref="member">LogLevel</ref> &amp;</type>
+          <declname>log_level</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log.hh" line="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LogMessageHandler_1a6d2dd30a5db771bef971962125398c0f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::LogMessageHandler::operator=</definition>
+        <argsstring>(const LogMessageHandler &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classeos_1_1LogMessageHandler" kindref="compound">LogMessageHandler</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Assignment operator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log.hh" line="134"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Basic Function</header>
+      <description><para><anchor id="_1amgrp9ac0a05bc9f1ecee9a728c52951f9f43"/> Destructor. </para></description>
+      <memberdef kind="function" id="classeos_1_1LogMessageHandler_1aad1be08a8a665dea99f4dd08a18c8e1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::LogMessageHandler::~LogMessageHandler</definition>
+        <argsstring>()</argsstring>
+        <name>~LogMessageHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log.hh" line="145"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classeos_1_1LogMessageHandler_1af9045a82daf8f18fee029c074214794a" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Log" kindref="compound">Log</ref> *</type>
+        <definition>Log* eos::LogMessageHandler::_log</definition>
+        <argsstring></argsstring>
+        <name>_log</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log.hh" line="120" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/log.hh" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1LogMessageHandler_1a1abb25223567cb9955d8591bb5cc07d6" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceeos_1ad6b42a08a08a1b63498f3f262bd15602" kindref="member">LogLevel</ref></type>
+        <definition>LogLevel eos::LogMessageHandler::_log_level</definition>
+        <argsstring></argsstring>
+        <name>_log_level</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log.hh" line="121" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/log.hh" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1LogMessageHandler_1aeadb5e91f2b501cfca1c6fb2fb5a4d3d" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string eos::LogMessageHandler::_id</definition>
+        <argsstring></argsstring>
+        <name>_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log.hh" line="122" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/log.hh" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1LogMessageHandler_1acd987d88dc4e81c96c5c46493d4e774f" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string eos::LogMessageHandler::_message</definition>
+        <argsstring></argsstring>
+        <name>_message</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log.hh" line="123" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/log.hh" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classeos_1_1LogMessageHandler_1a6e71110af093640ecc431a338a6a361c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::LogMessageHandler::_append</definition>
+        <argsstring>(const std::string &amp;s)</argsstring>
+        <name>_append</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log.hh" line="137"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classeos_1_1LogMessageHandler_1a9c07080df7f9a92cc12bc4572a1353ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="classeos_1_1LogMessageHandler" kindref="compound">LogMessageHandler</ref></type>
+        <definition>LogMessageHandler Log::message</definition>
+        <argsstring>(const std::string &amp;, const LogLevel &amp;)</argsstring>
+        <name>Log::message</name>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceeos_1ad6b42a08a08a1b63498f3f262bd15602" kindref="member">LogLevel</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log.hh" line="140"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1LogMessageHandler_1a9e80fc226b5a9e496b4458f4dcac8edf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T_</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classeos_1_1LogMessageHandler" kindref="compound">LogMessageHandler</ref> &amp;</type>
+        <definition>LogMessageHandler&amp; eos::LogMessageHandler::operator&lt;&lt;</definition>
+        <argsstring>(const T_ &amp;t)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>const T_ &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Append to our message. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log.hh" line="152" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/log.hh" bodystart="151" bodyend="156"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Proxy returned by <ref refid="classeos_1_1Log_1a554d8b48664cf871f1fcddf52e6f8530" kindref="member">Log::message</ref>. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="595">
+        <label>eos::LogMessageHandler</label>
+        <link refid="classeos_1_1LogMessageHandler"/>
+        <childnode refid="596" relation="usage">
+          <edgelabel>_log</edgelabel>
+        </childnode>
+        <childnode refid="598" relation="usage">
+          <edgelabel>_message</edgelabel>
+          <edgelabel>_id</edgelabel>
+        </childnode>
+      </node>
+      <node id="596">
+        <label>eos::Log</label>
+        <link refid="classeos_1_1Log"/>
+        <childnode refid="597" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="599">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="597">
+        <label>eos::PrivateImplementationPattern&lt; Log &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="598">
+        <label>std::string</label>
+        <childnode refid="599" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/log.hh" line="118" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/log.hh" bodystart="117" bodyend="157"/>
+    <listofallmembers>
+      <member refid="classeos_1_1LogMessageHandler_1a6e71110af093640ecc431a338a6a361c" prot="private" virt="non-virtual"><scope>eos::LogMessageHandler</scope><name>_append</name></member>
+      <member refid="classeos_1_1LogMessageHandler_1aeadb5e91f2b501cfca1c6fb2fb5a4d3d" prot="private" virt="non-virtual"><scope>eos::LogMessageHandler</scope><name>_id</name></member>
+      <member refid="classeos_1_1LogMessageHandler_1af9045a82daf8f18fee029c074214794a" prot="private" virt="non-virtual"><scope>eos::LogMessageHandler</scope><name>_log</name></member>
+      <member refid="classeos_1_1LogMessageHandler_1a1abb25223567cb9955d8591bb5cc07d6" prot="private" virt="non-virtual"><scope>eos::LogMessageHandler</scope><name>_log_level</name></member>
+      <member refid="classeos_1_1LogMessageHandler_1acd987d88dc4e81c96c5c46493d4e774f" prot="private" virt="non-virtual"><scope>eos::LogMessageHandler</scope><name>_message</name></member>
+      <member refid="classeos_1_1LogMessageHandler_1a9c07080df7f9a92cc12bc4572a1353ca" prot="public" virt="non-virtual"><scope>eos::LogMessageHandler</scope><name>Log::message</name></member>
+      <member refid="classeos_1_1LogMessageHandler_1aaafe12805eac7d1066478d1221fb34be" prot="private" virt="non-virtual"><scope>eos::LogMessageHandler</scope><name>LogMessageHandler</name></member>
+      <member refid="classeos_1_1LogMessageHandler_1a16bc478ed143031b63355b51b3c410d9" prot="private" virt="non-virtual"><scope>eos::LogMessageHandler</scope><name>LogMessageHandler</name></member>
+      <member refid="classeos_1_1LogMessageHandler_1a9e80fc226b5a9e496b4458f4dcac8edf" prot="public" virt="non-virtual"><scope>eos::LogMessageHandler</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classeos_1_1LogMessageHandler_1a6d2dd30a5db771bef971962125398c0f" prot="private" virt="non-virtual"><scope>eos::LogMessageHandler</scope><name>operator=</name></member>
+      <member refid="classeos_1_1LogMessageHandler_1aad1be08a8a665dea99f4dd08a18c8e1f" prot="public" virt="non-virtual"><scope>eos::LogMessageHandler</scope><name>~LogMessageHandler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

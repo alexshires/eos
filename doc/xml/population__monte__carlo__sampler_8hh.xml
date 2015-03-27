@@ -1,0 +1,538 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="population__monte__carlo__sampler_8hh" kind="file">
+    <compoundname>population_monte_carlo_sampler.hh</compoundname>
+    <includes refid="analysis_8hh" local="no">eos/utils/analysis.hh</includes>
+    <includes refid="hdf5-fwd_8hh" local="no">eos/utils/hdf5-fwd.hh</includes>
+    <includes refid="private__implementation__pattern_8hh" local="no">eos/utils/private_implementation_pattern.hh</includes>
+    <incdepgraph>
+      <node id="1471">
+        <label>functional</label>
+      </node>
+      <node id="1456">
+        <label>eos/observable.hh</label>
+        <link refid="observable_8hh"/>
+        <childnode refid="1457" relation="include">
+        </childnode>
+        <childnode refid="1460" relation="include">
+        </childnode>
+        <childnode refid="1462" relation="include">
+        </childnode>
+        <childnode refid="1463" relation="include">
+        </childnode>
+        <childnode refid="1459" relation="include">
+        </childnode>
+        <childnode refid="1452" relation="include">
+        </childnode>
+      </node>
+      <node id="1462">
+        <label>eos/utils/options.hh</label>
+        <link refid="options_8hh"/>
+        <childnode refid="1457" relation="include">
+        </childnode>
+        <childnode refid="1461" relation="include">
+        </childnode>
+        <childnode refid="1459" relation="include">
+        </childnode>
+      </node>
+      <node id="1466">
+        <label>eos/utils/parameters-fwd.hh</label>
+        <link refid="parameters-fwd_8hh"/>
+      </node>
+      <node id="1472">
+        <label>iterator</label>
+      </node>
+      <node id="1468">
+        <label>cstdint</label>
+      </node>
+      <node id="1482">
+        <label>eos/utils/log_prior-fwd.hh</label>
+        <link refid="log__prior-fwd_8hh"/>
+        <childnode refid="1452" relation="include">
+        </childnode>
+      </node>
+      <node id="1481">
+        <label>eos/utils/log_prior.hh</label>
+        <link refid="log__prior_8hh"/>
+        <childnode refid="1482" relation="include">
+        </childnode>
+        <childnode refid="1463" relation="include">
+        </childnode>
+        <childnode refid="1469" relation="include">
+        </childnode>
+        <childnode refid="1477" relation="include">
+        </childnode>
+        <childnode refid="1452" relation="include">
+        </childnode>
+        <childnode refid="1480" relation="include">
+        </childnode>
+      </node>
+      <node id="1459">
+        <label>string</label>
+      </node>
+      <node id="1454">
+        <label>eos/utils/log_likelihood.hh</label>
+        <link refid="log__likelihood_8hh"/>
+        <childnode refid="1455" relation="include">
+        </childnode>
+        <childnode refid="1456" relation="include">
+        </childnode>
+        <childnode refid="1475" relation="include">
+        </childnode>
+        <childnode refid="1478" relation="include">
+        </childnode>
+        <childnode refid="1476" relation="include">
+        </childnode>
+        <childnode refid="1463" relation="include">
+        </childnode>
+        <childnode refid="1461" relation="include">
+        </childnode>
+        <childnode refid="1480" relation="include">
+        </childnode>
+      </node>
+      <node id="1461">
+        <label>eos/utils/private_implementation_pattern.hh</label>
+        <link refid="private__implementation__pattern_8hh"/>
+        <childnode refid="1452" relation="include">
+        </childnode>
+      </node>
+      <node id="1470">
+        <label>eos/utils/wrapped_forward_iterator-fwd.hh</label>
+        <link refid="wrapped__forward__iterator-fwd_8hh"/>
+      </node>
+      <node id="1458">
+        <label>exception</label>
+      </node>
+      <node id="1451">
+        <label>eos/utils/analysis-fwd.hh</label>
+        <link refid="analysis-fwd_8hh"/>
+        <childnode refid="1452" relation="include">
+        </childnode>
+      </node>
+      <node id="1453">
+        <label>eos/utils/hdf5-fwd.hh</label>
+        <link refid="hdf5-fwd_8hh"/>
+      </node>
+      <node id="1464">
+        <label>eos/utils/mutable.hh</label>
+        <link refid="mutable_8hh"/>
+        <childnode refid="1465" relation="include">
+        </childnode>
+        <childnode refid="1461" relation="include">
+        </childnode>
+        <childnode refid="1452" relation="include">
+        </childnode>
+      </node>
+      <node id="1476">
+        <label>eos/utils/observable_cache.hh</label>
+        <link refid="observable__cache_8hh"/>
+        <childnode refid="1456" relation="include">
+        </childnode>
+        <childnode refid="1463" relation="include">
+        </childnode>
+        <childnode refid="1461" relation="include">
+        </childnode>
+      </node>
+      <node id="1450">
+        <label>eos/utils/analysis.hh</label>
+        <link refid="analysis_8hh"/>
+        <childnode refid="1451" relation="include">
+        </childnode>
+        <childnode refid="1453" relation="include">
+        </childnode>
+        <childnode refid="1454" relation="include">
+        </childnode>
+        <childnode refid="1481" relation="include">
+        </childnode>
+        <childnode refid="1461" relation="include">
+        </childnode>
+        <childnode refid="1483" relation="include">
+        </childnode>
+        <childnode refid="1477" relation="include">
+        </childnode>
+        <childnode refid="1474" relation="include">
+        </childnode>
+        <childnode refid="1486" relation="include">
+        </childnode>
+      </node>
+      <node id="1455">
+        <label>eos/constraint.hh</label>
+        <link refid="constraint_8hh"/>
+        <childnode refid="1456" relation="include">
+        </childnode>
+        <childnode refid="1475" relation="include">
+        </childnode>
+        <childnode refid="1476" relation="include">
+        </childnode>
+        <childnode refid="1461" relation="include">
+        </childnode>
+        <childnode refid="1469" relation="include">
+        </childnode>
+        <childnode refid="1477" relation="include">
+        </childnode>
+      </node>
+      <node id="1478">
+        <label>eos/utils/matrix.hh</label>
+        <link refid="matrix_8hh"/>
+        <childnode refid="1479" relation="include">
+        </childnode>
+      </node>
+      <node id="1460">
+        <label>eos/utils/kinematic.hh</label>
+        <link refid="kinematic_8hh"/>
+        <childnode refid="1457" relation="include">
+        </childnode>
+        <childnode refid="1461" relation="include">
+        </childnode>
+      </node>
+      <node id="1477">
+        <label>vector</label>
+      </node>
+      <node id="1486">
+        <label>gsl/gsl_multimin.h</label>
+      </node>
+      <node id="1449">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh</label>
+        <link refid="population_monte_carlo_sampler.hh"/>
+        <childnode refid="1450" relation="include">
+        </childnode>
+        <childnode refid="1453" relation="include">
+        </childnode>
+        <childnode refid="1461" relation="include">
+        </childnode>
+      </node>
+      <node id="1479">
+        <label>array</label>
+      </node>
+      <node id="1485">
+        <label>sstream</label>
+      </node>
+      <node id="1467">
+        <label>eos/utils/random_number_generator.hh</label>
+        <link refid="random__number__generator_8hh"/>
+        <childnode refid="1461" relation="include">
+        </childnode>
+        <childnode refid="1468" relation="include">
+        </childnode>
+      </node>
+      <node id="1483">
+        <label>eos/utils/verify.hh</label>
+        <link refid="verify_8hh"/>
+        <childnode refid="1457" relation="include">
+        </childnode>
+        <childnode refid="1484" relation="include">
+        </childnode>
+      </node>
+      <node id="1457">
+        <label>eos/utils/exception.hh</label>
+        <link refid="exception_8hh"/>
+        <childnode refid="1458" relation="include">
+        </childnode>
+        <childnode refid="1459" relation="include">
+        </childnode>
+      </node>
+      <node id="1469">
+        <label>eos/utils/wrapped_forward_iterator.hh</label>
+        <link refid="wrapped__forward__iterator_8hh"/>
+        <childnode refid="1470" relation="include">
+        </childnode>
+        <childnode refid="1471" relation="include">
+        </childnode>
+        <childnode refid="1472" relation="include">
+        </childnode>
+        <childnode refid="1473" relation="include">
+        </childnode>
+      </node>
+      <node id="1484">
+        <label>eos/utils/stringify.hh</label>
+        <link refid="stringify_8hh"/>
+        <childnode refid="1459" relation="include">
+        </childnode>
+        <childnode refid="1485" relation="include">
+        </childnode>
+      </node>
+      <node id="1480">
+        <label>gsl/gsl_rng.h</label>
+      </node>
+      <node id="1473">
+        <label>type_traits</label>
+      </node>
+      <node id="1474">
+        <label>set</label>
+      </node>
+      <node id="1465">
+        <label>eos/utils/mutable-fwd.hh</label>
+        <link refid="mutable-fwd_8hh"/>
+      </node>
+      <node id="1475">
+        <label>eos/utils/log_likelihood-fwd.hh</label>
+        <link refid="log__likelihood-fwd_8hh"/>
+        <childnode refid="1452" relation="include">
+        </childnode>
+      </node>
+      <node id="1463">
+        <label>eos/utils/parameters.hh</label>
+        <link refid="parameters_8hh"/>
+        <childnode refid="1457" relation="include">
+        </childnode>
+        <childnode refid="1464" relation="include">
+        </childnode>
+        <childnode refid="1466" relation="include">
+        </childnode>
+        <childnode refid="1461" relation="include">
+        </childnode>
+        <childnode refid="1467" relation="include">
+        </childnode>
+        <childnode refid="1469" relation="include">
+        </childnode>
+        <childnode refid="1474" relation="include">
+        </childnode>
+      </node>
+      <node id="1452">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classeos_1_1PopulationMonteCarloSampler" prot="public">eos::PopulationMonteCarloSampler</innerclass>
+    <innerclass refid="structeos_1_1PopulationMonteCarloSampler_1_1Config" prot="public">eos::PopulationMonteCarloSampler::Config</innerclass>
+    <innerclass refid="structeos_1_1PopulationMonteCarloSampler_1_1Output" prot="public">eos::PopulationMonteCarloSampler::Output</innerclass>
+    <innerclass refid="structeos_1_1PopulationMonteCarloSampler_1_1Status" prot="public">eos::PopulationMonteCarloSampler::Status</innerclass>
+    <innernamespace refid="namespaceeos">eos</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="population__monte__carlo__sampler_8hh_1ae7e0494552bb66a66453c50c27203a49" prot="public" static="no">
+        <name>EOS_GUARD_SRC_UTILS_PMC_SAMPLER_HH</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="21" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>vim:<sp/>set<sp/>sw=4<sp/>sts=4<sp/>et<sp/>foldmethod=syntax<sp/>:<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2011<sp/>Frederik<sp/>Beaujean</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>EOS<sp/>project.<sp/>EOS<sp/>is<sp/>free<sp/>software;</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Public<sp/>License<sp/>version<sp/>2,<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>EOS<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/>but<sp/>WITHOUT<sp/>ANY</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>along<sp/>with</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/>59<sp/>Temple</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>Place,<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307<sp/><sp/>USA</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>EOS_GUARD_SRC_UTILS_PMC_SAMPLER_HH</highlight></codeline>
+<codeline lineno="21" refid="population__monte__carlo__sampler_8hh_1ae7e0494552bb66a66453c50c27203a49" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EOS_GUARD_SRC_UTILS_PMC_SAMPLER_HH<sp/>1</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="analysis_8hh" kindref="compound">eos/utils/analysis.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="hdf5-fwd_8hh" kindref="compound">eos/utils/hdf5-fwd.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="private__implementation__pattern_8hh" kindref="compound">eos/utils/private_implementation_pattern.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">eos</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29" refid="classeos_1_1PopulationMonteCarloSampler" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classeos_1_1PopulationMonteCarloSampler" kindref="compound">PopulationMonteCarloSampler</ref><sp/>:</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1PrivateImplementationPattern" kindref="compound">PrivateImplementationPattern</ref>&lt;PopulationMonteCarloSampler&gt;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config" kindref="compound">Config</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Status" kindref="compound">Status</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Output" kindref="compound">Output</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1PopulationMonteCarloSampler_1af17458cf45dd30ed7328b88af1ad7ffd" kindref="member">PopulationMonteCarloSampler</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Analysis" kindref="compound">Analysis</ref><sp/>&amp;<sp/>analysis,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config" kindref="compound">PopulationMonteCarloSampler::Config</ref><sp/>&amp;<sp/><ref refid="classeos_1_1PopulationMonteCarloSampler_1ad5cdbdb944ffd933a76b58915c366ecc" kindref="member" tooltip="Retrieve the configuration from which this sampler was constructed.">config</ref>);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1PopulationMonteCarloSampler_1af17458cf45dd30ed7328b88af1ad7ffd" kindref="member">PopulationMonteCarloSampler</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Analysis" kindref="compound">Analysis</ref><sp/>&amp;<sp/>analysis,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1hdf5_1_1File" kindref="compound">hdf5::File</ref><sp/>&amp;<sp/>file,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config" kindref="compound">PopulationMonteCarloSampler::Config</ref><sp/>&amp;<sp/>config,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>&amp;<sp/>update<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1PopulationMonteCarloSampler_1a10bebcfd46a9a9c8925de30e78f192ef" kindref="member" tooltip="Destructor.">~PopulationMonteCarloSampler</ref>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"></codeline>
+<codeline lineno="68"></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1PopulationMonteCarloSampler_1acce93bba46d62aba651ccbf9dd7dd97e" kindref="member">calculate_weights</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/>sample_file,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>&amp;<sp/>min_index,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>&amp;<sp/>max_index)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config" kindref="compound">PopulationMonteCarloSampler::Config</ref><sp/>&amp;<sp/><ref refid="classeos_1_1PopulationMonteCarloSampler_1ad5cdbdb944ffd933a76b58915c366ecc" kindref="member" tooltip="Retrieve the configuration from which this sampler was constructed.">config</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1PopulationMonteCarloSampler_1a89aafb7a0eea4a3d3f7c14c4678cb4fa" kindref="member">draw_samples</ref>();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1PopulationMonteCarloSampler_1a69d7eee659c32197c19424aaf74a1eb8" kindref="member">read_samples</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/>sample_file,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/>base,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>&amp;<sp/>min,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>&amp;<sp/>max,</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::vector&lt;double&gt;&gt;<sp/>&amp;<sp/>samples);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1PopulationMonteCarloSampler_1a7df73b99d042f2b41a37e9acca29eebd" kindref="member" tooltip="Start the Markov chain sampling.">run</ref>();</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Status" kindref="compound">PopulationMonteCarloSampler::Status</ref><sp/>&amp;<sp/><ref refid="classeos_1_1PopulationMonteCarloSampler_1a0557e83dff8bc5befde6a43ede580f84" kindref="member" tooltip="Retrieve the current status.">status</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1PopulationMonteCarloSampler_1a0557e83dff8bc5befde6a43ede580f84" kindref="member" tooltip="Retrieve the current status.">status</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Status" kindref="compound">PopulationMonteCarloSampler::Status</ref><sp/>&amp;<sp/>new_status,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>check_convergence<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config" kindref="compound">PopulationMonteCarloSampler::Config</ref></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config" kindref="compound">Config</ref>();</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="129"></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config" kindref="compound">Config</ref><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a8f659cd4c289ebfea73765497eee01dd" kindref="member">Default</ref>();</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config" kindref="compound">Config</ref><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1aa88ccb299ca1bc2881951b82e6e66059" kindref="member">Quick</ref>();</highlight></codeline>
+<codeline lineno="148"></codeline>
+<codeline lineno="151"></codeline>
+<codeline lineno="155" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1abf7b1c768e283f8a41bc8b348bb84304" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1abf7b1c768e283f8a41bc8b348bb84304" kindref="member">seed</ref>;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1abe02d7abd41f52ae2eaf3eba25522f50" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1abe02d7abd41f52ae2eaf3eba25522f50" kindref="member">parallelize</ref>;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1ae6362a7374c9ca1650b501c07672442a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1ae6362a7374c9ca1650b501c07672442a" kindref="member">number_of_workers</ref>;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"></codeline>
+<codeline lineno="176"></codeline>
+<codeline lineno="183" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1afbe44ab88cfffcf63495463004cdd9b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1afbe44ab88cfffcf63495463004cdd9b5" kindref="member">block_decomposition</ref>;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a95aeae5fe77255d4fa0c2c5ddfafe883" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a95aeae5fe77255d4fa0c2c5ddfafe883" kindref="member">component_weights</ref>;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a5668b999c1f4c6517b9366035571143d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::vector&lt;double&gt;&gt;<sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a5668b999c1f4c6517b9366035571143d" kindref="member" tooltip="n entries.">component_means</ref>;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//TODO<sp/>better<sp/>explanation</highlight></codeline>
+<codeline lineno="197" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a91b615db28333d345eae6d8a2ef55fd5" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a91b615db28333d345eae6d8a2ef55fd5" kindref="member" tooltip="Shift component by this number of sigmas.">component_offset</ref>;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1af7452d7aaa3b241039b730998cdbabff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::vector&lt;double&gt;&gt;<sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1af7452d7aaa3b241039b730998cdbabff" kindref="member" tooltip="n^2 entries.">component_variances</ref>;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//todo<sp/>can<sp/>we<sp/>remove<sp/>this<sp/>with<sp/>super_clusters?</highlight></codeline>
+<codeline lineno="207" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a46afc1c26737e35c8ea582ffbab80edb" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange&lt;unsigned&gt;</ref><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a46afc1c26737e35c8ea582ffbab80edb" kindref="member">components_per_cluster</ref>;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1ad4069f57b2c8b33032680a27b62fd5cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange&lt;int&gt;</ref><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1ad4069f57b2c8b33032680a27b62fd5cf" kindref="member">degrees_of_freedom</ref>;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a32b76214e4175ec4543162d36707ab84" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange&lt;double&gt;</ref><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a32b76214e4175ec4543162d36707ab84" kindref="member" tooltip="Used during filtering of components, if too many samples fall outside of box, remove...">minimum_overlap</ref>;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1abb5d4e207d1f2da439dddf9c49854a1e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange&lt;double&gt;</ref><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1abb5d4e207d1f2da439dddf9c49854a1e" kindref="member">mode_distance</ref>;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1aee29a36e8e23c971ba1e36616e9affb4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1aee29a36e8e23c971ba1e36616e9affb4" kindref="member">override_global_local_proposal</ref>;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1aca0e5339b634644471e1aa5cdd698231" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1aca0e5339b634644471e1aa5cdd698231" kindref="member">random_start</ref>;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a2a6f2098dc8be089015818326d8eb15f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a2a6f2098dc8be089015818326d8eb15f" kindref="member">single_cluster</ref>;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1ac920d732b229713ca67428d284390fa2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange&lt;double&gt;</ref><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1ac920d732b229713ca67428d284390fa2" kindref="member" tooltip="Skip this percentage from beginning of a chain&amp;#39;s history.">skip_initial</ref>;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a235c1a2d0c336f9f8ed9c58917acf68b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a235c1a2d0c336f9f8ed9c58917acf68b" kindref="member">starting_points</ref>;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a9de01b257ce34b8a747de5dcf992e053" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange&lt;double&gt;</ref><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a9de01b257ce34b8a747de5dcf992e053" kindref="member">std_dev_reduction</ref>;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"></codeline>
+<codeline lineno="263"></codeline>
+<codeline lineno="272" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1adf9f35d7f54defd04b9486de7d705ffa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange&lt;double&gt;</ref><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1adf9f35d7f54defd04b9486de7d705ffa" kindref="member">group_by_r_value</ref>;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a27ea93f2181c10068424f2b7e24fbc14" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;unsigned&gt;<sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a27ea93f2181c10068424f2b7e24fbc14" kindref="member">ignore_groups</ref>;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a0bffb06da5f9f3ef917eec1ce2139ce1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a0bffb06da5f9f3ef917eec1ce2139ce1" kindref="member">patch_around_local_mode</ref>;</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a5e3c5e1375b04890db40b3d7581b5413" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a5e3c5e1375b04890db40b3d7581b5413" kindref="member">r_value_no_nuisance</ref>;</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a9d8798a5789fd4fbe250dba673b92df6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a9d8798a5789fd4fbe250dba673b92df6" kindref="member">sliding_window</ref>;</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a1ddf56fd57dd8dd3c4462dd1cb2800ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a1ddf56fd57dd8dd3c4462dd1cb2800ab" kindref="member" tooltip="Store the components created from chain patches.">store_input_components</ref>;</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1ad24a2d883fe9d2faedbcf4f861bc9d82" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1ad24a2d883fe9d2faedbcf4f861bc9d82" kindref="member" tooltip="Store initial guess for clustering from long patches.">store_hc_initial</ref>;</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="315" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a906c7eeded237f7bbe810a8d03d8402b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a906c7eeded237f7bbe810a8d03d8402b" kindref="member">super_clusters</ref>;</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"></codeline>
+<codeline lineno="321"></codeline>
+<codeline lineno="323" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1af4b575d8f24b51783b11bd5dca5ea576" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1af4b575d8f24b51783b11bd5dca5ea576" kindref="member" tooltip="Change number of samples according to number of live components.">adjust_sample_size</ref>;</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a14c4bdc8c63ca8115e326e4c7bb3116e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a14c4bdc8c63ca8115e326e4c7bb3116e" kindref="member" tooltip="The number of updates to proposal functions (mixture components).">chunks</ref>;</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="329" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1ac6d3a2f26905ec51f3e9eadf73d51792" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1ac6d3a2f26905ec51f3e9eadf73d51792" kindref="member" tooltip="Number of iterations per chunk and component.">chunk_size</ref>;</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="337" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a394bc4c560e738d420fa34014745a7b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a394bc4c560e738d420fa34014745a7b7" kindref="member">crop_highest_weights</ref>;</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight></codeline>
+<codeline lineno="340" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1ac729d374ca2a58aeba6cf60d296d7720" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1ac729d374ca2a58aeba6cf60d296d7720" kindref="member" tooltip="If false, no adaptions to proposal densities are made.">need_prerun</ref>;</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight></codeline>
+<codeline lineno="343" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a85cf9361f3660df01fa551d9ebd62040" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a85cf9361f3660df01fa551d9ebd62040" kindref="member" tooltip="store samples of prerun steps (statistics are always stored)">store_prerun</ref>;</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight></codeline>
+<codeline lineno="346"></codeline>
+<codeline lineno="349"></codeline>
+<codeline lineno="351" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a69a93bb57d6610e06ea2f200e3d2ce42" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange&lt;double&gt;</ref><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a69a93bb57d6610e06ea2f200e3d2ce42" kindref="member" tooltip="Declare convergence if both perplexity and effective sample size large enough.">convergence_eff_sample_size</ref>;</highlight></codeline>
+<codeline lineno="353" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a42a627c391f5278eff3a1c1de7f06985" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange&lt;double&gt;</ref><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a42a627c391f5278eff3a1c1de7f06985" kindref="member" tooltip="Declare convergence if both perplexity and effective sample size large enough.">convergence_perplexity</ref>;</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight></codeline>
+<codeline lineno="357" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1aec486491bd33a3edf40a6062b07e4066" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1aec486491bd33a3edf40a6062b07e4066" kindref="member">ignore_eff_sample_size</ref>;</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight></codeline>
+<codeline lineno="360" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a765c46a4b99f711c59f02e1ea0d8fbe9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange&lt;double&gt;</ref><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a765c46a4b99f711c59f02e1ea0d8fbe9" kindref="member" tooltip="Declare converge if both perplexity and effective sample size large enough and do...">minimum_eff_sample_size</ref>;</highlight></codeline>
+<codeline lineno="362" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a4cfd93c384604e24e58ace95bdc31a2d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange&lt;double&gt;</ref><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a4cfd93c384604e24e58ace95bdc31a2d" kindref="member" tooltip="Declare converge if both perplexity and effective sample size large enough and do...">minimum_perplexity</ref>;</highlight></codeline>
+<codeline lineno="364" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1ac7a03e69442b543fc2cacaa647988741" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange&lt;unsigned&gt;</ref><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1ac7a03e69442b543fc2cacaa647988741" kindref="member" tooltip="Consider the last steps to decide if convergence statistics do not rise (significantly)...">minimum_steps</ref>;</highlight></codeline>
+<codeline lineno="366" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1ac0e8dec5f8ba7e5f0c997dd8a65fc231" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange&lt;double&gt;</ref><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1ac0e8dec5f8ba7e5f0c997dd8a65fc231" kindref="member" tooltip="Relative variance of last steps should be small to ascertain convergence.">maximum_relative_std_deviation</ref>;</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight></codeline>
+<codeline lineno="369"></codeline>
+<codeline lineno="372"></codeline>
+<codeline lineno="374" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1ac5a61846614b1bb67bdde95df03b5663" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1ac5a61846614b1bb67bdde95df03b5663" kindref="member" tooltip="Number of iterations used in final step after adaption is finished.">final_chunk_size</ref>;</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight></codeline>
+<codeline lineno="377" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a3dffd8c05d907bae4e3aaaf1733d93c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a3dffd8c05d907bae4e3aaaf1733d93c1" kindref="member" tooltip="Whether to store collected samples.">store</ref>;</highlight></codeline>
+<codeline lineno="379"></codeline>
+<codeline lineno="382"></codeline>
+<codeline lineno="386" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1abe31836405a05391987afe00f1f231d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1abe31836405a05391987afe00f1f231d3" kindref="member">output_file</ref>;</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"></highlight></codeline>
+<codeline lineno="397" refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a55d2a98f36625d31eb9117c76212771f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange&lt;unsigned&gt;</ref><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a55d2a98f36625d31eb9117c76212771f" kindref="member">print_steps</ref>;</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"></highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ostream<sp/>&amp;<sp/><ref refid="namespaceeos_1a2d7ef50009f9368c73d5056eab3ec21d" kindref="member">operator&lt;&lt;</ref>(std::ostream<sp/>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config" kindref="compound">PopulationMonteCarloSampler::Config</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"></highlight></codeline>
+<codeline lineno="406" refid="structeos_1_1PopulationMonteCarloSampler_1_1Output" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Output" kindref="compound">PopulationMonteCarloSampler::Output</ref></highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="408" refid="structeos_1_1PopulationMonteCarloSampler_1_1Output_1a5fd76b324d88b7fbd14306e8a15e4db9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1hdf5_1_1Composite" kindref="compound">hdf5::Composite&lt;hdf5::Scalar&lt;double&gt;</ref>,<sp/><ref refid="classeos_1_1hdf5_1_1Array" kindref="compound">hdf5::Array&lt;1, double&gt;</ref>,<sp/><ref refid="classeos_1_1hdf5_1_1Array" kindref="compound">hdf5::Array&lt;1, double&gt;</ref>&gt;<sp/><ref refid="classeos_1_1hdf5_1_1Composite" kindref="compound">ComponentType</ref>;</highlight></codeline>
+<codeline lineno="409" refid="structeos_1_1PopulationMonteCarloSampler_1_1Output_1aa7e9c8fa59ff4cc77d830c9c2661435e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1hdf5_1_1Scalar" kindref="compound">hdf5::Scalar&lt;short&gt;</ref><sp/><ref refid="classeos_1_1hdf5_1_1Scalar" kindref="compound">IgnoreType</ref>;</highlight></codeline>
+<codeline lineno="410" refid="structeos_1_1PopulationMonteCarloSampler_1_1Output_1ab096268a8fccb7e8d34ed08b93df880c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1hdf5_1_1Array" kindref="compound">hdf5::Array&lt;1, double&gt;</ref><sp/><ref refid="classeos_1_1hdf5_1_1Array" kindref="compound">SampleType</ref>;</highlight></codeline>
+<codeline lineno="411" refid="structeos_1_1PopulationMonteCarloSampler_1_1Output_1abe071d58f8cee75754bcc593ec33e9b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1hdf5_1_1Composite" kindref="compound">hdf5::Composite&lt;hdf5::Scalar&lt;double&gt;</ref>,<sp/><ref refid="classeos_1_1hdf5_1_1Scalar" kindref="compound">hdf5::Scalar&lt;double&gt;</ref>,<sp/><ref refid="classeos_1_1hdf5_1_1Scalar" kindref="compound">hdf5::Scalar&lt;double&gt;</ref>&gt;<sp/><ref refid="classeos_1_1hdf5_1_1Composite" kindref="compound">StatisticsType</ref>;</highlight></codeline>
+<codeline lineno="412" refid="structeos_1_1PopulationMonteCarloSampler_1_1Output_1a4413a52234bdb64d96f842ad524a7ee8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1hdf5_1_1Composite" kindref="compound">hdf5::Composite&lt;hdf5::Scalar&lt;double&gt;</ref>,<sp/><ref refid="classeos_1_1hdf5_1_1Scalar" kindref="compound">hdf5::Scalar&lt;double&gt;</ref>&gt;<sp/><ref refid="classeos_1_1hdf5_1_1Composite" kindref="compound">WeightType</ref>;</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"></highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1hdf5_1_1Composite" kindref="compound">ComponentType</ref><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Output_1a89756e43d911fc21ca5e12e4f676c495" kindref="member">component_type</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>&amp;<sp/>dimension);</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1hdf5_1_1Scalar" kindref="compound">IgnoreType</ref><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Output_1a7dea0b1d53d47e5099fa97136a4f27a5" kindref="member">ignore_type</ref>();</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1hdf5_1_1Array" kindref="compound">SampleType</ref><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Output_1ac9825b152fa3750d77cb7face4fbaf41" kindref="member">sample_type</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>&amp;<sp/>dimension);</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1hdf5_1_1Composite" kindref="compound">StatisticsType</ref><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Output_1ab943ce812be9756d846719e165f352a7" kindref="member">statistics_type</ref>();</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1hdf5_1_1Composite" kindref="compound">WeightType</ref><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Output_1ad7a4912cebc0c3d00052a398aaef15dd" kindref="member">weight_type</ref>();</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"></highlight></codeline>
+<codeline lineno="420"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::tuple&lt;double,<sp/>std::vector&lt;double&gt;,<sp/>std::vector&lt;double&gt;&gt;<sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Output_1a55eed75bc734fdf74551769f1ef4f53a" kindref="member">component_record</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>&amp;<sp/>dimension);</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Output_1a0bc83ed4bd2ec948236eced9b6be6684" kindref="member">ignore_record</ref>();</highlight></codeline>
+<codeline lineno="422"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;<sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Output_1a8091ae5b3a05edde2e076faafe0a02ab" kindref="member">sample_record</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>&amp;<sp/>dimension);</highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::tuple&lt;double,<sp/>double,<sp/>double&gt;<sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Output_1af58401b36b817e48635dfebfa54163e4" kindref="member">statistics_record</ref>();</highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::tuple&lt;double,<sp/>double&gt;<sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Output_1a6bcb392149e9b1f026f96d123f88d9d8" kindref="member">weight_record</ref>();</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="426"><highlight class="normal"></highlight></codeline>
+<codeline lineno="430" refid="structeos_1_1PopulationMonteCarloSampler_1_1Status" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Status" kindref="compound">PopulationMonteCarloSampler::Status</ref></highlight></codeline>
+<codeline lineno="431"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="432"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Status_1a8f69a829df5ad6a829a737c4eb9c368c" kindref="member">Status</ref>();</highlight></codeline>
+<codeline lineno="433"><highlight class="normal"></highlight></codeline>
+<codeline lineno="434"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//todo<sp/>fill<sp/>and<sp/>use<sp/>in<sp/>[pre]run()</highlight></codeline>
+<codeline lineno="437" refid="structeos_1_1PopulationMonteCarloSampler_1_1Status_1aec7820c1ca91f2af381c1bb81182fa26" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Status_1aec7820c1ca91f2af381c1bb81182fa26" kindref="member">chunk_size</ref>;</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"></highlight></codeline>
+<codeline lineno="440" refid="structeos_1_1PopulationMonteCarloSampler_1_1Status_1a853d94d0b2fc16ee51f6e32ca4b0515c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Status_1a853d94d0b2fc16ee51f6e32ca4b0515c" kindref="member" tooltip="Whether sampling has converged.">converged</ref>;</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"></highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//todo<sp/>fill</highlight></codeline>
+<codeline lineno="444" refid="structeos_1_1PopulationMonteCarloSampler_1_1Status_1a6b30cf9e83650e861475f2f0036c09b0" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Status_1a6b30cf9e83650e861475f2f0036c09b0" kindref="member" tooltip="The number of iterations after which convergence was declared.">iterations_at_convergence</ref>;</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"></highlight></codeline>
+<codeline lineno="447" refid="structeos_1_1PopulationMonteCarloSampler_1_1Status_1ab762703da0930ae2182b696b85358b53" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Status_1ab762703da0930ae2182b696b85358b53" kindref="member" tooltip="Evidence.">evidence</ref>;</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"></highlight></codeline>
+<codeline lineno="450" refid="structeos_1_1PopulationMonteCarloSampler_1_1Status_1a35814022e64d939f7164ece7a796c07e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Status_1a35814022e64d939f7164ece7a796c07e" kindref="member" tooltip="Effective sample size.">eff_sample_size</ref>;</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"></highlight></codeline>
+<codeline lineno="453" refid="structeos_1_1PopulationMonteCarloSampler_1_1Status_1a468aeeb618c761543be6d6833347e296" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Status_1a468aeeb618c761543be6d6833347e296" kindref="member" tooltip="Perplexity.">perplexity</ref>;</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="455"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"></highlight></codeline>
+<codeline lineno="457"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh"/>
+  </compounddef>
+</doxygen>

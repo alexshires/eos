@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1Diagnostics" kind="class" prot="public">
+    <compoundname>eos::Diagnostics</compoundname>
+    <basecompoundref refid="classeos_1_1PrivateImplementationPattern" prot="public" virt="non-virtual">eos::PrivateImplementationPattern&lt; Diagnostics &gt;</basecompoundref>
+    <includes refid="diagnostics_8hh" local="no">diagnostics.hh</includes>
+    <innerclass refid="structeos_1_1Diagnostics_1_1Entry" prot="public">eos::Diagnostics::Entry</innerclass>
+      <sectiondef kind="user-defined">
+      <header>Access to Diagnostic Entries</header>
+      <description><para><anchor id="_1amgrpb8b82e307fb357b7ea74808f49658af3"/> Add an entry to the container. </para></description>
+      <memberdef kind="typedef" id="classeos_1_1Diagnostics_1a53e47703a0b60c37caf9cc2f29606692" prot="public" static="no">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator</ref>&lt; IteratorTag, const <ref refid="structeos_1_1Diagnostics_1_1Entry" kindref="compound">Entry</ref> &gt;</type>
+        <definition>typedef WrappedForwardIterator&lt;IteratorTag, const Entry&gt; eos::Diagnostics::Iterator</definition>
+        <argsstring></argsstring>
+        <name>Iterator</name>
+        <briefdescription>
+<para>Iterator over entries. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/diagnostics.hh" line="56" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/diagnostics.hh" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Diagnostics_1a1c1e295724886603c8842e278ab62bbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::Diagnostics::add</definition>
+        <argsstring>(const Entry &amp;)</argsstring>
+        <name>add</name>
+        <param>
+          <type>const <ref refid="structeos_1_1Diagnostics_1_1Entry" kindref="compound">Entry</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Iterator over entries. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/diagnostics.hh" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Diagnostics_1a98edcfc773cbdf2384b6180cd1a8aebc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator eos::Diagnostics::begin</definition>
+        <argsstring>() const </argsstring>
+        <name>begin</name>
+        <briefdescription>
+<para>Returns Iterator pointing to the first entry. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/diagnostics.hh" line="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Diagnostics_1a0e10cf2a79180f04b2d5c5100447ddb4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator eos::Diagnostics::end</definition>
+        <argsstring>() const </argsstring>
+        <name>end</name>
+        <briefdescription>
+<para>Returns Iterator pointing beyond the last entry. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/diagnostics.hh" line="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Diagnostics_1a791a35a96b5661232ca9797e7a48c5e8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned eos::Diagnostics::size</definition>
+        <argsstring>() const </argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>Return the total number of entries. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/diagnostics.hh" line="65"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Basic Operations.</header>
+      <description><para><anchor id="_1amgrp640cb1fd388fd2cb0293189fe884d421"/> Constructor. </para></description>
+      <memberdef kind="function" id="classeos_1_1Diagnostics_1aeff0c4ba0db58891ead8bc4e5a17d075" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::Diagnostics::Diagnostics</definition>
+        <argsstring>()</argsstring>
+        <name>Diagnostics</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/diagnostics.hh" line="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Diagnostics_1a95753f31bc63bad2b51b8699be04f01d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::Diagnostics::~Diagnostics</definition>
+        <argsstring>()</argsstring>
+        <name>~Diagnostics</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/diagnostics.hh" line="46"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Container for diagnostic values and corresponding metadata. Used as part of the unit tests. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="362">
+        <label>eos::PrivateImplementationPattern&lt; Diagnostics &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="361">
+        <label>eos::Diagnostics</label>
+        <link refid="classeos_1_1Diagnostics"/>
+        <childnode refid="362" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="364">
+        <label>eos::PrivateImplementationPattern&lt; Diagnostics &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="363">
+        <label>eos::Diagnostics</label>
+        <link refid="classeos_1_1Diagnostics"/>
+        <childnode refid="364" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/diagnostics.hh" line="36" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/diagnostics.hh" bodystart="34" bodyend="67"/>
+    <listofallmembers>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a232940e78b26c6ed4f97196f831c69c9" prot="protected" virt="non-virtual"><scope>eos::Diagnostics</scope><name>_imp</name></member>
+      <member refid="classeos_1_1Diagnostics_1a1c1e295724886603c8842e278ab62bbc" prot="public" virt="non-virtual"><scope>eos::Diagnostics</scope><name>add</name></member>
+      <member refid="classeos_1_1Diagnostics_1a98edcfc773cbdf2384b6180cd1a8aebc" prot="public" virt="non-virtual"><scope>eos::Diagnostics</scope><name>begin</name></member>
+      <member refid="classeos_1_1Diagnostics_1aeff0c4ba0db58891ead8bc4e5a17d075" prot="public" virt="non-virtual"><scope>eos::Diagnostics</scope><name>Diagnostics</name></member>
+      <member refid="classeos_1_1Diagnostics_1a0e10cf2a79180f04b2d5c5100447ddb4" prot="public" virt="non-virtual"><scope>eos::Diagnostics</scope><name>end</name></member>
+      <member refid="classeos_1_1Diagnostics_1a53e47703a0b60c37caf9cc2f29606692" prot="public" virt="non-virtual"><scope>eos::Diagnostics</scope><name>Iterator</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a3e3d5f4a565256a1dda6c234b051b2f2" prot="public" virt="non-virtual"><scope>eos::Diagnostics</scope><name>PrivateImplementationPattern</name></member>
+      <member refid="classeos_1_1Diagnostics_1a791a35a96b5661232ca9797e7a48c5e8" prot="public" virt="non-virtual"><scope>eos::Diagnostics</scope><name>size</name></member>
+      <member refid="classeos_1_1Diagnostics_1a95753f31bc63bad2b51b8699be04f01d" prot="public" virt="non-virtual"><scope>eos::Diagnostics</scope><name>~Diagnostics</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1acf46ec2739c3b0ec9702b9428475876d" prot="public" virt="non-virtual"><scope>eos::Diagnostics</scope><name>~PrivateImplementationPattern</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

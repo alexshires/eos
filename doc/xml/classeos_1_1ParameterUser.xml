@@ -1,0 +1,373 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1ParameterUser" kind="class" prot="public">
+    <compoundname>eos::ParameterUser</compoundname>
+    <derivedcompoundref refid="classeos_1_1BMesonProperties" prot="public" virt="non-virtual">eos::BMesonProperties</derivedcompoundref>
+    <derivedcompoundref refid="classeos_1_1BToDilepton" prot="public" virt="non-virtual">eos::BToDilepton</derivedcompoundref>
+    <derivedcompoundref refid="classeos_1_1BToKDilepton_3_01LargeRecoil_01_4" prot="public" virt="non-virtual">eos::BToKDilepton&lt; LargeRecoil &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classeos_1_1BToKDilepton_3_01LowRecoil_01_4" prot="public" virt="non-virtual">eos::BToKDilepton&lt; LowRecoil &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4" prot="public" virt="non-virtual">eos::BToKstarDilepton&lt; LargeRecoil &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4" prot="public" virt="non-virtual">eos::BToKstarDilepton&lt; LowRecoil &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classeos_1_1BToKstarGamma" prot="public" virt="non-virtual">eos::BToKstarGamma</derivedcompoundref>
+    <derivedcompoundref refid="classeos_1_1BToPiLeptonNeutrino" prot="public" virt="non-virtual">eos::BToPiLeptonNeutrino</derivedcompoundref>
+    <derivedcompoundref refid="classeos_1_1BToXsDilepton_3_01HLMW2005_01_4" prot="public" virt="non-virtual">eos::BToXsDilepton&lt; HLMW2005 &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classeos_1_1BToXsGamma_3_01Minimal_01_4" prot="public" virt="non-virtual">eos::BToXsGamma&lt; Minimal &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classeos_1_1BToXsGamma_3_01NLO_01_4" prot="public" virt="non-virtual">eos::BToXsGamma&lt; NLO &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classeos_1_1FormFactors_3_01OneHalfPlusToOneHalfPlus_01_4" prot="public" virt="non-virtual">eos::FormFactors&lt; OneHalfPlusToOneHalfPlus &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classeos_1_1FormFactors_3_01PToP_01_4" prot="public" virt="non-virtual">eos::FormFactors&lt; PToP &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classeos_1_1FormFactors_3_01PToV_01_4" prot="public" virt="non-virtual">eos::FormFactors&lt; PToV &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classeos_1_1LambdaBToLambdaDilepton_3_01LargeRecoil_01_4" prot="public" virt="non-virtual">eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classeos_1_1LambdaBToLambdaDilepton_3_01LowRecoil_01_4" prot="public" virt="non-virtual">eos::LambdaBToLambdaDilepton&lt; LowRecoil &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classeos_1_1Model" prot="public" virt="non-virtual">eos::Model</derivedcompoundref>
+    <derivedcompoundref refid="classeos_1_1Observable" prot="public" virt="non-virtual">eos::Observable</derivedcompoundref>
+    <derivedcompoundref refid="classeos_1_1PionLCDAs" prot="public" virt="non-virtual">eos::PionLCDAs</derivedcompoundref>
+    <includes refid="parameters_8hh" local="no">parameters.hh</includes>
+      <sectiondef kind="user-defined">
+      <header>Iteration over ids</header>
+      <description><para><anchor id="_1amgrp719dadb6383be95df6deeaf25dd0c545"/> </para></description>
+      <memberdef kind="typedef" id="classeos_1_1ParameterUser_1a7105631bbcb4b2492e6377b2b69f5b0f" prot="public" static="no">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator</ref>&lt; ConstIteratorTag, const <ref refid="classeos_1_1Parameter_1a065f55e66b2128cc5f14339e676d833a" kindref="member">Parameter::Id</ref> &gt;</type>
+        <definition>typedef WrappedForwardIterator&lt;ConstIteratorTag, const Parameter::Id&gt; eos::ParameterUser::ConstIterator</definition>
+        <argsstring></argsstring>
+        <name>ConstIterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" line="231" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ParameterUser_1a9cd569207063cd2a8f807c4e1203a5d4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">ConstIterator</ref></type>
+        <definition>ConstIterator eos::ParameterUser::begin</definition>
+        <argsstring>() const </argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" line="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ParameterUser_1a5813c886f3fd3f074cc02a53fc9e0790" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">ConstIterator</ref></type>
+        <definition>ConstIterator eos::ParameterUser::end</definition>
+        <argsstring>() const </argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" line="234"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Access</header>
+      <description><para><anchor id="_1amgrpbf733d8a933c1601697f364223fc7ecb"/> </para></description>
+      <memberdef kind="function" id="classeos_1_1ParameterUser_1ad91a901e589653272482bded7e453c70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::ParameterUser::uses</definition>
+        <argsstring>(const Parameter::Id &amp;id)</argsstring>
+        <name>uses</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameter_1a065f55e66b2128cc5f14339e676d833a" kindref="member">Parameter::Id</ref> &amp;</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a given parameter id to our list of used ids.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The parameter id that we use. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" line="244"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ParameterUser_1a7a37e779cf45ef1075fe7bf670688b72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::ParameterUser::uses</definition>
+        <argsstring>(const ParameterUser &amp;user)</argsstring>
+        <name>uses</name>
+        <param>
+          <type>const <ref refid="classeos_1_1ParameterUser" kindref="compound">ParameterUser</ref> &amp;</type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy parameter ids of another <ref refid="classeos_1_1ParameterUser" kindref="compound">ParameterUser</ref> to our list of used ids.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>user</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The other <ref refid="classeos_1_1ParameterUser" kindref="compound">ParameterUser</ref> whose ids we are going to copy. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" line="251"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classeos_1_1ParameterUser_1aa3a0285297e16cf2a5830df1f9bb2f4b" prot="protected" static="no" mutable="no">
+        <type>std::set&lt; <ref refid="classeos_1_1Parameter_1a065f55e66b2128cc5f14339e676d833a" kindref="member">Parameter::Id</ref> &gt;</type>
+        <definition>std::set&lt;Parameter::Id&gt; eos::ParameterUser::_ids</definition>
+        <argsstring></argsstring>
+        <name>_ids</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" line="225" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Base class for all users of <ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref> objects. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="801">
+        <label>eos::BToKDilepton&lt; LowRecoil &gt;</label>
+        <link refid="classeos_1_1BToKDilepton_3_01LowRecoil_01_4"/>
+        <childnode refid="797" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="814">
+        <label>eos::BZ2004FormFactorsSplit&lt; Process_ &gt;</label>
+        <link refid="classeos_1_1BZ2004FormFactorsSplit"/>
+        <childnode refid="810" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="820">
+        <label>eos::LambdaBToLambdaDilepton&lt; LowRecoil &gt;</label>
+        <link refid="classeos_1_1LambdaBToLambdaDilepton_3_01LowRecoil_01_4"/>
+        <childnode refid="797" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="803">
+        <label>eos::BToKstarDilepton&lt; LowRecoil &gt;</label>
+        <link refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4"/>
+        <childnode refid="797" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="828">
+        <label>eos::FormFactorRatioAdapter&lt; Transition_ &gt;</label>
+        <link refid="classeos_1_1FormFactorRatioAdapter"/>
+        <childnode refid="825" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="805">
+        <label>eos::BToPiLeptonNeutrino</label>
+        <link refid="classeos_1_1BToPiLeptonNeutrino"/>
+        <childnode refid="797" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="821">
+        <label>eos::Model</label>
+        <link refid="classeos_1_1Model"/>
+        <childnode refid="797" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="813">
+        <label>eos::BZ2004FormFactors&lt; Process_, PToP &gt;</label>
+        <link refid="classeos_1_1BZ2004FormFactors_3_01Process___00_01PToP_01_4"/>
+        <childnode refid="810" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="826">
+        <label>eos::ConcreteObservable&lt; Decay_, Args_ &gt;</label>
+        <link refid="classeos_1_1ConcreteObservable"/>
+        <childnode refid="825" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="806">
+        <label>eos::BToXsDilepton&lt; HLMW2005 &gt;</label>
+        <link refid="classeos_1_1BToXsDilepton_3_01HLMW2005_01_4"/>
+        <childnode refid="797" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="815">
+        <label>eos::KMPW2010FormFactors&lt; PToP &gt;</label>
+        <link refid="classeos_1_1KMPW2010FormFactors_3_01PToP_01_4"/>
+        <childnode refid="810" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="809">
+        <label>eos::FormFactors&lt; OneHalfPlusToOneHalfPlus &gt;</label>
+        <link refid="classeos_1_1FormFactors_3_01OneHalfPlusToOneHalfPlus_01_4"/>
+        <childnode refid="797" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="808">
+        <label>eos::BToXsGamma&lt; NLO &gt;</label>
+        <link refid="classeos_1_1BToXsGamma_3_01NLO_01_4"/>
+        <childnode refid="797" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="812">
+        <label>eos::BFW2010FormFactors&lt; PToP &gt;</label>
+        <link refid="classeos_1_1BFW2010FormFactors_3_01PToP_01_4"/>
+        <childnode refid="810" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="804">
+        <label>eos::BToKstarGamma</label>
+        <link refid="classeos_1_1BToKstarGamma"/>
+        <childnode refid="797" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="825">
+        <label>eos::Observable</label>
+        <link refid="classeos_1_1Observable"/>
+        <childnode refid="797" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="823">
+        <label>eos::StandardModel</label>
+        <link refid="classeos_1_1StandardModel"/>
+        <childnode refid="821" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="816">
+        <label>eos::FormFactors&lt; PToV &gt;</label>
+        <link refid="classeos_1_1FormFactors_3_01PToV_01_4"/>
+        <childnode refid="797" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="831">
+        <label>eos::PionLCDAs</label>
+        <link refid="classeos_1_1PionLCDAs"/>
+        <childnode refid="797" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="819">
+        <label>eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;</label>
+        <link refid="classeos_1_1LambdaBToLambdaDilepton_3_01LargeRecoil_01_4"/>
+        <childnode refid="797" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="802">
+        <label>eos::BToKstarDilepton&lt; LargeRecoil &gt;</label>
+        <link refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4"/>
+        <childnode refid="797" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="829">
+        <label>eos::TestObservable</label>
+        <link refid="structeos_1_1TestObservable"/>
+        <childnode refid="825" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="800">
+        <label>eos::BToKDilepton&lt; LargeRecoil &gt;</label>
+        <link refid="classeos_1_1BToKDilepton_3_01LargeRecoil_01_4"/>
+        <childnode refid="797" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="807">
+        <label>eos::BToXsGamma&lt; Minimal &gt;</label>
+        <link refid="classeos_1_1BToXsGamma_3_01Minimal_01_4"/>
+        <childnode refid="797" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="822">
+        <label>eos::CKMScanModel</label>
+        <link refid="classeos_1_1CKMScanModel"/>
+        <childnode refid="821" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="817">
+        <label>eos::BZ2004FormFactors&lt; Process_, PToV &gt;</label>
+        <link refid="classeos_1_1BZ2004FormFactors_3_01Process___00_01PToV_01_4"/>
+        <childnode refid="816" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="798">
+        <label>eos::BMesonProperties</label>
+        <link refid="classeos_1_1BMesonProperties"/>
+        <childnode refid="797" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="811">
+        <label>eos::AnalyticFormFactorBToPiDKMMO2008</label>
+        <link refid="classeos_1_1AnalyticFormFactorBToPiDKMMO2008"/>
+        <childnode refid="810" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="818">
+        <label>eos::KMPW2010FormFactors&lt; PToV &gt;</label>
+        <link refid="classeos_1_1KMPW2010FormFactors_3_01PToV_01_4"/>
+        <childnode refid="816" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="797">
+        <label>eos::ParameterUser</label>
+        <link refid="classeos_1_1ParameterUser"/>
+      </node>
+      <node id="810">
+        <label>eos::FormFactors&lt; PToP &gt;</label>
+        <link refid="classeos_1_1FormFactors_3_01PToP_01_4"/>
+        <childnode refid="797" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="830">
+        <label>eos::AbsoluteTestObservable</label>
+        <link refid="structeos_1_1AbsoluteTestObservable"/>
+        <childnode refid="829" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="824">
+        <label>eos::WilsonScanModel</label>
+        <link refid="classeos_1_1WilsonScanModel"/>
+        <childnode refid="821" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="799">
+        <label>eos::BToDilepton</label>
+        <link refid="classeos_1_1BToDilepton"/>
+        <childnode refid="797" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="827">
+        <label>eos::FormFactorAdapter&lt; Transition_ &gt;</label>
+        <link refid="classeos_1_1FormFactorAdapter"/>
+        <childnode refid="825" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="833">
+        <label>std::set&lt; Parameter::Id &gt;</label>
+      </node>
+      <node id="832">
+        <label>eos::ParameterUser</label>
+        <link refid="classeos_1_1ParameterUser"/>
+        <childnode refid="833" relation="usage">
+          <edgelabel>_ids</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" line="223" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" bodystart="222" bodyend="253"/>
+    <listofallmembers>
+      <member refid="classeos_1_1ParameterUser_1aa3a0285297e16cf2a5830df1f9bb2f4b" prot="protected" virt="non-virtual"><scope>eos::ParameterUser</scope><name>_ids</name></member>
+      <member refid="classeos_1_1ParameterUser_1a9cd569207063cd2a8f807c4e1203a5d4" prot="public" virt="non-virtual"><scope>eos::ParameterUser</scope><name>begin</name></member>
+      <member refid="classeos_1_1ParameterUser_1a7105631bbcb4b2492e6377b2b69f5b0f" prot="public" virt="non-virtual"><scope>eos::ParameterUser</scope><name>ConstIterator</name></member>
+      <member refid="classeos_1_1ParameterUser_1a5813c886f3fd3f074cc02a53fc9e0790" prot="public" virt="non-virtual"><scope>eos::ParameterUser</scope><name>end</name></member>
+      <member refid="classeos_1_1ParameterUser_1ad91a901e589653272482bded7e453c70" prot="public" virt="non-virtual"><scope>eos::ParameterUser</scope><name>uses</name></member>
+      <member refid="classeos_1_1ParameterUser_1a7a37e779cf45ef1075fe7bf670688b72" prot="public" virt="non-virtual"><scope>eos::ParameterUser</scope><name>uses</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

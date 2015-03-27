@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1Histogram_3_011_01_4_1_1Bin" kind="struct" prot="public">
+    <compoundname>eos::Histogram&lt; 1 &gt;::Bin</compoundname>
+    <includes refid="histogram_8hh" local="no">histogram.hh</includes>
+      <sectiondef kind="user-defined">
+      <header>Basic Functions</header>
+      <description><para><anchor id="_1amgrp2386c9a1f1785edee33f374dd2db9b3d"/> </para></description>
+      <memberdef kind="function" id="structeos_1_1Histogram_3_011_01_4_1_1Bin_1a017fce44f09224396431178d57aaa114" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eos::Histogram&lt; 1 &gt;::Bin::Bin</definition>
+        <argsstring>(const double &amp;lower, const double &amp;upper, const double &amp;value=0.0)</argsstring>
+        <name>Bin</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>lower</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>upper</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>value</declname>
+          <defval>0.0</defval>
+        </param>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/histogram.hh" line="108" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/histogram.hh" bodystart="104" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1Histogram_3_011_01_4_1_1Bin_1a5da88553377af08fad99aa914a634c38" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eos::Histogram&lt; 1 &gt;::Bin::~Bin</definition>
+        <argsstring>()</argsstring>
+        <name>~Bin</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/histogram.hh" line="112" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/histogram.hh" bodystart="112" bodyend="112"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structeos_1_1Histogram_3_011_01_4_1_1Bin_1a1b79f2bf22a180397c8ce9d344e4eabf" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::Histogram&lt; 1 &gt;::Bin::lower</definition>
+        <argsstring></argsstring>
+        <name>lower</name>
+        <briefdescription>
+<para>Lower limit of the Bin&apos;s interval. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/histogram.hh" line="87" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/histogram.hh" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1Histogram_3_011_01_4_1_1Bin_1ab83ca1387607899b43e21d21acb0e38d" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::Histogram&lt; 1 &gt;::Bin::upper</definition>
+        <argsstring></argsstring>
+        <name>upper</name>
+        <briefdescription>
+<para>Width of the Bin&apos;s interval. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/histogram.hh" line="90" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/histogram.hh" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1Histogram_3_011_01_4_1_1Bin_1aed7930bf76124d4d4e3d347419890339" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::Histogram&lt; 1 &gt;::Bin::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+<para>Content of the <ref refid="structeos_1_1Histogram_3_011_01_4_1_1Bin" kindref="compound">Bin</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/histogram.hh" line="93" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/histogram.hh" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structeos_1_1Histogram_3_011_01_4_1_1Bin_1ada41b1d9c9cbec8e57ee4e96558e558b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool eos::Histogram&lt; 1 &gt;::Bin::operator&lt;</definition>
+        <argsstring>(const Bin &amp;other) const </argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const Bin &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare if this bin is left of another bin.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The other <ref refid="structeos_1_1Histogram_3_011_01_4_1_1Bin" kindref="compound">Bin</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/histogram.hh" line="121" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/histogram.hh" bodystart="120" bodyend="123"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Holds information on any one of <ref refid="classeos_1_1Histogram_3_011_01_4" kindref="compound">Histogram&lt;1&gt;</ref>&apos;s bins. </para>    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/histogram.hh" line="85" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/histogram.hh" bodystart="84" bodyend="124"/>
+    <listofallmembers>
+      <member refid="structeos_1_1Histogram_3_011_01_4_1_1Bin_1a017fce44f09224396431178d57aaa114" prot="public" virt="non-virtual"><scope>eos::Histogram&lt; 1 &gt;::Bin</scope><name>Bin</name></member>
+      <member refid="structeos_1_1Histogram_3_011_01_4_1_1Bin_1a1b79f2bf22a180397c8ce9d344e4eabf" prot="public" virt="non-virtual"><scope>eos::Histogram&lt; 1 &gt;::Bin</scope><name>lower</name></member>
+      <member refid="structeos_1_1Histogram_3_011_01_4_1_1Bin_1ada41b1d9c9cbec8e57ee4e96558e558b" prot="public" virt="non-virtual"><scope>eos::Histogram&lt; 1 &gt;::Bin</scope><name>operator&lt;</name></member>
+      <member refid="structeos_1_1Histogram_3_011_01_4_1_1Bin_1ab83ca1387607899b43e21d21acb0e38d" prot="public" virt="non-virtual"><scope>eos::Histogram&lt; 1 &gt;::Bin</scope><name>upper</name></member>
+      <member refid="structeos_1_1Histogram_3_011_01_4_1_1Bin_1aed7930bf76124d4d4e3d347419890339" prot="public" virt="non-virtual"><scope>eos::Histogram&lt; 1 &gt;::Bin</scope><name>value</name></member>
+      <member refid="structeos_1_1Histogram_3_011_01_4_1_1Bin_1a5da88553377af08fad99aa914a634c38" prot="public" virt="non-virtual"><scope>eos::Histogram&lt; 1 &gt;::Bin</scope><name>~Bin</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

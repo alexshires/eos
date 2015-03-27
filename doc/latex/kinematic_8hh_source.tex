@@ -1,0 +1,106 @@
+\hypertarget{kinematic_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/kinematic.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2010, 2011 Danny van Dyk}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_KINEMATIC\_HH}
+\hypertarget{kinematic_8hh_source_l00021}{}\hyperlink{kinematic_8hh_ae937345f1a0bad883feee65af992f923}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_KINEMATIC\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{preprocessor}{#include <\hyperlink{exception_8hh}{eos/utils/exception.hh}>}
+00024 \textcolor{preprocessor}{#include <\hyperlink{private__implementation__pattern_8hh}{eos/utils/private_implementation_pattern.hh}>}
+00025 
+00026 \textcolor{keyword}{namespace }eos
+00027 \{
+\hypertarget{kinematic_8hh_source_l00032}{}\hyperlink{structeos_1_1UnknownKinematicVariableError}{00032}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1UnknownKinematicVariableError}{UnknownKinematicVariableError} :
+00033         \textcolor{keyword}{public} \hyperlink{classeos_1_1Exception}{Exception}
+00034     \{
+00035         \hyperlink{structeos_1_1UnknownKinematicVariableError_a6f06ee64bdae813e463662c63f09d578}{UnknownKinematicVariableError}(\textcolor{keyword}{const} std::string & variable) \textcolor{keywordflow}{throw} ();
+00036     \};
+00037 
+00038     \textcolor{comment}{// Forward declaration.}
+00039     \textcolor{keyword}{class }\hyperlink{classeos_1_1KinematicVariable}{KinematicVariable};
+00040 
+\hypertarget{kinematic_8hh_source_l00048}{}\hyperlink{classeos_1_1Kinematics}{00048}     \textcolor{keyword}{class }\hyperlink{classeos_1_1Kinematics}{Kinematics} :
+00049         \textcolor{keyword}{public} \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern}<Kinematics>
+00050     \{
+00051         \textcolor{keyword}{private}:
+00054             \textcolor{keyword}{struct }Data;
+00056 
+00057         \textcolor{keyword}{public}:
+00061             \hyperlink{classeos_1_1Kinematics_a5385a72bcc6db8568a82808d6f02aa9b}{Kinematics}();
+00062 
+00071             \hyperlink{classeos_1_1Kinematics_a5385a72bcc6db8568a82808d6f02aa9b}{Kinematics}(\textcolor{keyword}{const} std::initializer\_list<std::pair<std::string, double>
+      > & variables);
+00072 
+00074             \hyperlink{classeos_1_1Kinematics_a9ec2eee0f195a921a50de942bfb7d38f}{~Kinematics}();
+00075 
+00079             \hyperlink{classeos_1_1Kinematics}{Kinematics} \hyperlink{classeos_1_1Kinematics_aedd9681136ab3735fb754e2840e10715}{clone}() \textcolor{keyword}{const};
+00080 
+00082             \textcolor{keywordtype}{bool} \hyperlink{classeos_1_1Kinematics_a7c2edc2b99e1cfd20b71ebd3dcc64d6f}{operator== }(\textcolor{keyword}{const} \hyperlink{classeos_1_1Kinematics}{Kinematics} & rhs) \textcolor{keyword}{const};
+00083 
+00085             \textcolor{keywordtype}{bool} \hyperlink{classeos_1_1Kinematics_a20f3e18e4c4157196d7c384ae2f2f2d7}{operator!= }(\textcolor{keyword}{const} \hyperlink{classeos_1_1Kinematics}{Kinematics} & rhs) \textcolor{keyword}{const};
+00087 
+00090 
+00096             \hyperlink{classeos_1_1KinematicVariable}{KinematicVariable} \hyperlink{classeos_1_1Kinematics_a0db9fd05c920dae2e0b0556dba0ebb08}{declare}(\textcolor{keyword}{const} std::string & name, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & va
+      lue = 0.0);
+00097 
+00104             \textcolor{keywordtype}{void} \textcolor{keyword}{set}(\textcolor{keyword}{const} std::string & variable, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & value);
+00105 
+00111             \hyperlink{classeos_1_1KinematicVariable}{KinematicVariable} \hyperlink{classeos_1_1Kinematics_acb41cb59e57011e701785db06164343c}{operator[] }(\textcolor{keyword}{const} std::string & variable) \textcolor{keyword}{const};
+00113 
+00116 
+00120             std::string \hyperlink{classeos_1_1Kinematics_a297facfe690f7f805d4af5e32b739af9}{as_string}() \textcolor{keyword}{const};
+00122     \};
+00123 
+00124 
+\hypertarget{kinematic_8hh_source_l00128}{}\hyperlink{classeos_1_1KinematicVariable}{00128}     \textcolor{keyword}{class }\hyperlink{classeos_1_1KinematicVariable}{KinematicVariable}
+00129     \{
+00130         \textcolor{keyword}{private}:
+00133             std::shared\_ptr<Implementation<Kinematics>> \_imp;
+00134 
+00135             \textcolor{keywordtype}{unsigned} \_index;
+00137 
+00140             \hyperlink{classeos_1_1KinematicVariable}{KinematicVariable}(\textcolor{keyword}{const} std::shared\_ptr<\hyperlink{classeos_1_1KinematicVariable_a06e93a5d7c76d2cfb672a43a7dbd421b}{Implementation<Kinematics>}> &
+       imp, \textcolor{keywordtype}{unsigned} index);
+00142 
+00143         \textcolor{keyword}{public}:
+\hypertarget{kinematic_8hh_source_l00144}{}\hyperlink{classeos_1_1KinematicVariable_a8fb81632f9425f6152aade7346401b4c}{00144}             \textcolor{keyword}{friend} \textcolor{keyword}{class }\hyperlink{classeos_1_1Kinematics}{Kinematics};
+\hypertarget{kinematic_8hh_source_l00145}{}\hyperlink{classeos_1_1KinematicVariable_a06e93a5d7c76d2cfb672a43a7dbd421b}{00145}             \textcolor{keyword}{friend} \textcolor{keyword}{struct }Implementation<\hyperlink{classeos_1_1Kinematics}{Kinematics}>;
+00146 
+00149             \hyperlink{classeos_1_1KinematicVariable_a68475baffe3d46d4feeb89b94bd355e6}{~KinematicVariable}();
+00151 
+00155             \hyperlink{classeos_1_1KinematicVariable_ae7397422b2e7c59c1bd8757705463839}{operator double }() \textcolor{keyword}{const};
+00156 
+00158             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1KinematicVariable_a0281059d13f1e6bd8e9e36b89f96f60f}{operator() }() \textcolor{keyword}{const};
+00159 
+00161             \textcolor{keyword}{const} \hyperlink{classeos_1_1KinematicVariable}{KinematicVariable} & \hyperlink{classeos_1_1KinematicVariable_ac6f65d2b8959b6f3b66d31be915caba9}{operator= }(\textcolor{keyword}{const} \textcolor{keywordtype}{double} &);
+00163     \};
+00164 
+\hypertarget{kinematic_8hh_source_l00165}{}\hyperlink{namespaceeos_a2e8644357d2012ca279f49ab0037b9ea}{00165}     \textcolor{keyword}{inline} \textcolor{keywordtype}{double} \hyperlink{namespaceeos_a2e8644357d2012ca279f49ab0037b9ea}{lambda}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & a, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & b, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & c)
+00166     \{
+00167         \textcolor{keywordflow}{return} a * a + b * b + c * c - 2.0 * (a * b + a * c + b * c);
+00168     \}
+00169 \}
+00170 
+00171 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

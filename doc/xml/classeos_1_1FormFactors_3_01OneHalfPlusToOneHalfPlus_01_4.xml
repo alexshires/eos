@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1FormFactors_3_01OneHalfPlusToOneHalfPlus_01_4" kind="class" prot="public">
+    <compoundname>eos::FormFactors&lt; OneHalfPlusToOneHalfPlus &gt;</compoundname>
+    <basecompoundref refid="classeos_1_1ParameterUser" prot="public" virt="non-virtual">eos::ParameterUser</basecompoundref>
+    <includes refid="baryonic_8hh" local="no">baryonic.hh</includes>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1FormFactors_3_01OneHalfPlusToOneHalfPlus_01_4_1ad1d749d5f305db904000c4e4635d62ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual eos::FormFactors&lt; OneHalfPlusToOneHalfPlus &gt;::~FormFactors</definition>
+        <argsstring>()</argsstring>
+        <name>~FormFactors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/baryonic.hh" line="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1FormFactors_3_01OneHalfPlusToOneHalfPlus_01_4_1a290adf860a3a7a206f9b74af824735ec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double eos::FormFactors&lt; OneHalfPlusToOneHalfPlus &gt;::f_long_v</definition>
+        <argsstring>(const double &amp;s) const =0</argsstring>
+        <name>f_long_v</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/baryonic.hh" line="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1FormFactors_3_01OneHalfPlusToOneHalfPlus_01_4_1a7529b97bf3272ecfaf71f68681f14f89" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double eos::FormFactors&lt; OneHalfPlusToOneHalfPlus &gt;::f_perp_v</definition>
+        <argsstring>(const double &amp;s) const =0</argsstring>
+        <name>f_perp_v</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/baryonic.hh" line="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1FormFactors_3_01OneHalfPlusToOneHalfPlus_01_4_1a1864b61e70ad83bed15695a5726a764a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double eos::FormFactors&lt; OneHalfPlusToOneHalfPlus &gt;::f_long_a</definition>
+        <argsstring>(const double &amp;s) const =0</argsstring>
+        <name>f_long_a</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/baryonic.hh" line="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1FormFactors_3_01OneHalfPlusToOneHalfPlus_01_4_1adf134b63172b8dc387be13e7cf576e4c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double eos::FormFactors&lt; OneHalfPlusToOneHalfPlus &gt;::f_perp_a</definition>
+        <argsstring>(const double &amp;s) const =0</argsstring>
+        <name>f_perp_a</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/baryonic.hh" line="51"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="458">
+        <label>eos::FormFactors&lt; OneHalfPlusToOneHalfPlus &gt;</label>
+        <link refid="classeos_1_1FormFactors_3_01OneHalfPlusToOneHalfPlus_01_4"/>
+        <childnode refid="459" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="459">
+        <label>eos::ParameterUser</label>
+        <link refid="classeos_1_1ParameterUser"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="460">
+        <label>eos::FormFactors&lt; OneHalfPlusToOneHalfPlus &gt;</label>
+        <link refid="classeos_1_1FormFactors_3_01OneHalfPlusToOneHalfPlus_01_4"/>
+        <childnode refid="461" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="462">
+        <label>std::set&lt; Parameter::Id &gt;</label>
+      </node>
+      <node id="461">
+        <label>eos::ParameterUser</label>
+        <link refid="classeos_1_1ParameterUser"/>
+        <childnode refid="462" relation="usage">
+          <edgelabel>_ids</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/form-factors/baryonic.hh" line="41" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/baryonic.hh" bodystart="39" bodyend="52"/>
+    <listofallmembers>
+      <member refid="classeos_1_1ParameterUser_1aa3a0285297e16cf2a5830df1f9bb2f4b" prot="protected" virt="non-virtual"><scope>eos::FormFactors&lt; OneHalfPlusToOneHalfPlus &gt;</scope><name>_ids</name></member>
+      <member refid="classeos_1_1ParameterUser_1a9cd569207063cd2a8f807c4e1203a5d4" prot="public" virt="non-virtual"><scope>eos::FormFactors&lt; OneHalfPlusToOneHalfPlus &gt;</scope><name>begin</name></member>
+      <member refid="classeos_1_1ParameterUser_1a7105631bbcb4b2492e6377b2b69f5b0f" prot="public" virt="non-virtual"><scope>eos::FormFactors&lt; OneHalfPlusToOneHalfPlus &gt;</scope><name>ConstIterator</name></member>
+      <member refid="classeos_1_1ParameterUser_1a5813c886f3fd3f074cc02a53fc9e0790" prot="public" virt="non-virtual"><scope>eos::FormFactors&lt; OneHalfPlusToOneHalfPlus &gt;</scope><name>end</name></member>
+      <member refid="classeos_1_1FormFactors_3_01OneHalfPlusToOneHalfPlus_01_4_1a1864b61e70ad83bed15695a5726a764a" prot="public" virt="pure-virtual"><scope>eos::FormFactors&lt; OneHalfPlusToOneHalfPlus &gt;</scope><name>f_long_a</name></member>
+      <member refid="classeos_1_1FormFactors_3_01OneHalfPlusToOneHalfPlus_01_4_1a290adf860a3a7a206f9b74af824735ec" prot="public" virt="pure-virtual"><scope>eos::FormFactors&lt; OneHalfPlusToOneHalfPlus &gt;</scope><name>f_long_v</name></member>
+      <member refid="classeos_1_1FormFactors_3_01OneHalfPlusToOneHalfPlus_01_4_1adf134b63172b8dc387be13e7cf576e4c" prot="public" virt="pure-virtual"><scope>eos::FormFactors&lt; OneHalfPlusToOneHalfPlus &gt;</scope><name>f_perp_a</name></member>
+      <member refid="classeos_1_1FormFactors_3_01OneHalfPlusToOneHalfPlus_01_4_1a7529b97bf3272ecfaf71f68681f14f89" prot="public" virt="pure-virtual"><scope>eos::FormFactors&lt; OneHalfPlusToOneHalfPlus &gt;</scope><name>f_perp_v</name></member>
+      <member refid="classeos_1_1ParameterUser_1ad91a901e589653272482bded7e453c70" prot="public" virt="non-virtual"><scope>eos::FormFactors&lt; OneHalfPlusToOneHalfPlus &gt;</scope><name>uses</name></member>
+      <member refid="classeos_1_1ParameterUser_1a7a37e779cf45ef1075fe7bf670688b72" prot="public" virt="non-virtual"><scope>eos::FormFactors&lt; OneHalfPlusToOneHalfPlus &gt;</scope><name>uses</name></member>
+      <member refid="classeos_1_1FormFactors_3_01OneHalfPlusToOneHalfPlus_01_4_1ad1d749d5f305db904000c4e4635d62ed" prot="public" virt="virtual"><scope>eos::FormFactors&lt; OneHalfPlusToOneHalfPlus &gt;</scope><name>~FormFactors</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

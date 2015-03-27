@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1hdf5_1_1Array" kind="class" prot="public">
+    <compoundname>eos::hdf5::Array</compoundname>
+    <basecompoundref refid="structeos_1_1hdf5_1_1Type" prot="public" virt="non-virtual">eos::hdf5::Type</basecompoundref>
+    <includes refid="hdf5_8hh" local="no">hdf5.hh</includes>
+    <templateparamlist>
+      <param>
+        <type>unsigned</type>
+        <declname>rank_</declname>
+        <defname>rank_</defname>
+      </param>
+      <param>
+        <type>typename T_</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classeos_1_1hdf5_1_1Array_1a11f93349d9391d143099a25c59827610" prot="public" static="no">
+        <type>std::vector&lt; T_ &gt;</type>
+        <definition>typedef std::vector&lt;T_&gt; eos::hdf5::Array&lt; rank_, T_ &gt;::Type</definition>
+        <argsstring></argsstring>
+        <name>Type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="172" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classeos_1_1hdf5_1_1Array_1a60f6ecfd63056bd6abf8e4fb05b63918" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceeos_1_1hdf5_1a5bd5e209f1bf36cdc5551465dacf2e74" kindref="member">hid_t</ref></type>
+        <definition>hid_t eos::hdf5::Array&lt; rank_, T_ &gt;::_type_id</definition>
+        <argsstring></argsstring>
+        <name>_type_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="165" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1hdf5_1_1Array_1a0ca86547b34b7429dde974cbb8ab1310" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string eos::hdf5::Array&lt; rank_, T_ &gt;::_name</definition>
+        <argsstring></argsstring>
+        <name>_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="167" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1hdf5_1_1Array_1a345e4a2462cfa98346e4eb5eff4fe506" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned eos::hdf5::Array&lt; rank_, T_ &gt;::_elements</definition>
+        <argsstring></argsstring>
+        <name>_elements</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="169" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1hdf5_1_1Array_1a7b2da023a1a1b9f289cbc6484e8aad2c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eos::hdf5::Array&lt; rank_, T_ &gt;::Array</definition>
+        <argsstring>(const std::string &amp;name, const std::initializer_list&lt; hsize_t &gt; &amp;dimensions)</argsstring>
+        <name>Array</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const std::initializer_list&lt; hsize_t &gt; &amp;</type>
+          <declname>dimensions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="176" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" bodystart="174" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1hdf5_1_1Array_1aa533ea361fe7d7f589ea60ffee2120a5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const std::string &amp;</type>
+        <definition>virtual const std::string&amp; eos::hdf5::Array&lt; rank_, T_ &gt;::name</definition>
+        <argsstring>() const </argsstring>
+        <name>name</name>
+        <reimplements refid="structeos_1_1hdf5_1_1Type_1a79de1c9f0444de59864107c388c23d2d">name</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="194" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" bodystart="193" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1hdf5_1_1Array_1ac560c57df5f551234fd5ac77d1890d30" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespaceeos_1_1hdf5_1a5bd5e209f1bf36cdc5551465dacf2e74" kindref="member">hid_t</ref></type>
+        <definition>virtual hid_t eos::hdf5::Array&lt; rank_, T_ &gt;::type_id</definition>
+        <argsstring>() const </argsstring>
+        <name>type_id</name>
+        <reimplements refid="structeos_1_1hdf5_1_1Type_1a0305c470a7a26a391f9a751e40bb9ff6">type_id</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="199" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" bodystart="198" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1hdf5_1_1Array_1abbe03946de83c9b63d6fc35fc5a60c69" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>hsize_t</type>
+        <definition>virtual hsize_t eos::hdf5::Array&lt; rank_, T_ &gt;::size</definition>
+        <argsstring>() const </argsstring>
+        <name>size</name>
+        <reimplements refid="structeos_1_1hdf5_1_1Type_1a0cf79b090412bb228a1df8349acf3c2b">size</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="204" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" bodystart="203" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1hdf5_1_1Array_1a4f0adbcb6e7136436afa14aee7ebc5c9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void eos::hdf5::Array&lt; rank_, T_ &gt;::copy_to_hdf5</definition>
+        <argsstring>(const void *src, void *dest) const </argsstring>
+        <name>copy_to_hdf5</name>
+        <reimplements refid="structeos_1_1hdf5_1_1Type_1a30b665dc2adbe459feb640c61776b50a">copy_to_hdf5</reimplements>
+        <param>
+          <type>const void *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>dest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="209" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" bodystart="208" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1hdf5_1_1Array_1aedd48f5a8020d66426bd0adfc74fa6a9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void eos::hdf5::Array&lt; rank_, T_ &gt;::copy_from_hdf5</definition>
+        <argsstring>(const void *src, void *dest) const </argsstring>
+        <name>copy_from_hdf5</name>
+        <reimplements refid="structeos_1_1hdf5_1_1Type_1a4d1073336bce1500533e69a1187acd66">copy_from_hdf5</reimplements>
+        <param>
+          <type>const void *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>dest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="215" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" bodystart="214" bodyend="220"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="51">
+        <label>eos::hdf5::Array&lt; rank_, T_ &gt;</label>
+        <link refid="classeos_1_1hdf5_1_1Array"/>
+        <childnode refid="52" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>eos::hdf5::Type</label>
+        <link refid="structeos_1_1hdf5_1_1Type"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="53">
+        <label>eos::hdf5::Array&lt; rank_, T_ &gt;</label>
+        <link refid="classeos_1_1hdf5_1_1Array"/>
+        <childnode refid="54" relation="public-inheritance">
+        </childnode>
+        <childnode refid="55" relation="usage">
+          <edgelabel>_name</edgelabel>
+        </childnode>
+      </node>
+      <node id="56">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="54">
+        <label>eos::hdf5::Type</label>
+        <link refid="structeos_1_1hdf5_1_1Type"/>
+      </node>
+      <node id="55">
+        <label>std::string</label>
+        <childnode refid="56" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="163" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" bodystart="161" bodyend="221"/>
+    <listofallmembers>
+      <member refid="classeos_1_1hdf5_1_1Array_1a345e4a2462cfa98346e4eb5eff4fe506" prot="private" virt="non-virtual"><scope>eos::hdf5::Array</scope><name>_elements</name></member>
+      <member refid="classeos_1_1hdf5_1_1Array_1a0ca86547b34b7429dde974cbb8ab1310" prot="private" virt="non-virtual"><scope>eos::hdf5::Array</scope><name>_name</name></member>
+      <member refid="classeos_1_1hdf5_1_1Array_1a60f6ecfd63056bd6abf8e4fb05b63918" prot="private" virt="non-virtual"><scope>eos::hdf5::Array</scope><name>_type_id</name></member>
+      <member refid="classeos_1_1hdf5_1_1Array_1a7b2da023a1a1b9f289cbc6484e8aad2c" prot="public" virt="non-virtual"><scope>eos::hdf5::Array</scope><name>Array</name></member>
+      <member refid="classeos_1_1hdf5_1_1Array_1aedd48f5a8020d66426bd0adfc74fa6a9" prot="public" virt="virtual"><scope>eos::hdf5::Array</scope><name>copy_from_hdf5</name></member>
+      <member refid="classeos_1_1hdf5_1_1Array_1a4f0adbcb6e7136436afa14aee7ebc5c9" prot="public" virt="virtual"><scope>eos::hdf5::Array</scope><name>copy_to_hdf5</name></member>
+      <member refid="classeos_1_1hdf5_1_1Array_1aa533ea361fe7d7f589ea60ffee2120a5" prot="public" virt="virtual"><scope>eos::hdf5::Array</scope><name>name</name></member>
+      <member refid="classeos_1_1hdf5_1_1Array_1abbe03946de83c9b63d6fc35fc5a60c69" prot="public" virt="virtual"><scope>eos::hdf5::Array</scope><name>size</name></member>
+      <member refid="classeos_1_1hdf5_1_1Array_1a11f93349d9391d143099a25c59827610" prot="public" virt="non-virtual"><scope>eos::hdf5::Array</scope><name>Type</name></member>
+      <member refid="classeos_1_1hdf5_1_1Array_1ac560c57df5f551234fd5ac77d1890d30" prot="public" virt="virtual"><scope>eos::hdf5::Array</scope><name>type_id</name></member>
+      <member refid="structeos_1_1hdf5_1_1Type_1a0c9013a37b76efb7538829c3e14d0162" prot="public" virt="pure-virtual"><scope>eos::hdf5::Array</scope><name>~Type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

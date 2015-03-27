@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1ObservableNameError" kind="struct" prot="public">
+    <compoundname>eos::ObservableNameError</compoundname>
+    <basecompoundref refid="classeos_1_1Exception" prot="public" virt="non-virtual">eos::Exception</basecompoundref>
+    <includes refid="observable_8hh" local="no">observable.hh</includes>
+      <sectiondef kind="user-defined">
+      <header>Basic Functions</header>
+      <description><para><anchor id="_1amgrp2386c9a1f1785edee33f374dd2db9b3d"/> </para></description>
+      <memberdef kind="function" id="structeos_1_1ObservableNameError_1a72151a228a9a366564fdde0bef5e7b30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::ObservableNameError::ObservableNameError</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>ObservableNameError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offending malformed observable name. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/observable.hh" line="85"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="structeos_1_1ObservableNameError" kindref="compound">ObservableNameError</ref> is thrown when <ref refid="classeos_1_1Observable_1a949bf84938bcc9ab75075801c636763c" kindref="member">Observable::make</ref> encounters a malformed observable name. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="731">
+        <label>eos::Exception</label>
+        <link refid="classeos_1_1Exception"/>
+        <childnode refid="732" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="730">
+        <label>eos::ObservableNameError</label>
+        <link refid="structeos_1_1ObservableNameError"/>
+        <childnode refid="731" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="732">
+        <label>std::exception</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="734">
+        <label>eos::Exception</label>
+        <link refid="classeos_1_1Exception"/>
+        <childnode refid="735" relation="public-inheritance">
+        </childnode>
+        <childnode refid="736" relation="usage">
+          <edgelabel>_message</edgelabel>
+        </childnode>
+      </node>
+      <node id="737">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="733">
+        <label>eos::ObservableNameError</label>
+        <link refid="structeos_1_1ObservableNameError"/>
+        <childnode refid="734" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="735">
+        <label>std::exception</label>
+      </node>
+      <node id="736">
+        <label>std::string</label>
+        <childnode refid="737" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/observable.hh" line="77" bodyfile="/home/alexshires/EOS/eos-next/eos/observable.hh" bodystart="75" bodyend="87"/>
+    <listofallmembers>
+      <member refid="classeos_1_1Exception_1acbc0fa64ca3d54cc1f828b07dc80e585" prot="protected" virt="non-virtual"><scope>eos::ObservableNameError</scope><name>Exception</name></member>
+      <member refid="structeos_1_1ObservableNameError_1a72151a228a9a366564fdde0bef5e7b30" prot="public" virt="non-virtual"><scope>eos::ObservableNameError</scope><name>ObservableNameError</name></member>
+      <member refid="classeos_1_1Exception_1adce7a2af080165b09a599bb13438a8e1" prot="public" virt="virtual"><scope>eos::ObservableNameError</scope><name>what</name></member>
+      <member refid="classeos_1_1Exception_1a8cb6faea0484cc58c472da9e58c7c30a" prot="public" virt="non-virtual"><scope>eos::ObservableNameError</scope><name>~Exception</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

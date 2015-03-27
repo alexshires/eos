@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1NoSuchChiSquaredError" kind="struct" prot="public">
+    <compoundname>eos::NoSuchChiSquaredError</compoundname>
+    <basecompoundref refid="classeos_1_1Exception" prot="public" virt="non-virtual">eos::Exception</basecompoundref>
+    <includes refid="chi-squared_8hh" local="no">chi-squared.hh</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structeos_1_1NoSuchChiSquaredError_1afe6bd8a569bff7d6485a42416402b0f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::NoSuchChiSquaredError::NoSuchChiSquaredError</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>NoSuchChiSquaredError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/chi-squared.hh" line="76"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="696">
+        <label>eos::Exception</label>
+        <link refid="classeos_1_1Exception"/>
+        <childnode refid="697" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="695">
+        <label>eos::NoSuchChiSquaredError</label>
+        <link refid="structeos_1_1NoSuchChiSquaredError"/>
+        <childnode refid="696" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="697">
+        <label>std::exception</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="699">
+        <label>eos::Exception</label>
+        <link refid="classeos_1_1Exception"/>
+        <childnode refid="700" relation="public-inheritance">
+        </childnode>
+        <childnode refid="701" relation="usage">
+          <edgelabel>_message</edgelabel>
+        </childnode>
+      </node>
+      <node id="698">
+        <label>eos::NoSuchChiSquaredError</label>
+        <link refid="structeos_1_1NoSuchChiSquaredError"/>
+        <childnode refid="699" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="702">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="700">
+        <label>std::exception</label>
+      </node>
+      <node id="701">
+        <label>std::string</label>
+        <childnode refid="702" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/chi-squared.hh" line="75" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/chi-squared.hh" bodystart="73" bodyend="77"/>
+    <listofallmembers>
+      <member refid="classeos_1_1Exception_1acbc0fa64ca3d54cc1f828b07dc80e585" prot="protected" virt="non-virtual"><scope>eos::NoSuchChiSquaredError</scope><name>Exception</name></member>
+      <member refid="structeos_1_1NoSuchChiSquaredError_1afe6bd8a569bff7d6485a42416402b0f5" prot="public" virt="non-virtual"><scope>eos::NoSuchChiSquaredError</scope><name>NoSuchChiSquaredError</name></member>
+      <member refid="classeos_1_1Exception_1adce7a2af080165b09a599bb13438a8e1" prot="public" virt="virtual"><scope>eos::NoSuchChiSquaredError</scope><name>what</name></member>
+      <member refid="classeos_1_1Exception_1a8cb6faea0484cc58c472da9e58c7c30a" prot="public" virt="non-virtual"><scope>eos::NoSuchChiSquaredError</scope><name>~Exception</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="print__steps-example" kind="example">
+    <compoundname>print_steps</compoundname>
+    <detaileddescription>
+<para>Determines how often PMC prints outs &quot;Done x%&quot; during sampling of one chunk. = 20, then pmc prints Done 20% Done 40% Done 60% Done 80% <programlisting></programlisting> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

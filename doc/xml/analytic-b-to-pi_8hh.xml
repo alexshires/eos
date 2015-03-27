@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="analytic-b-to-pi_8hh" kind="file">
+    <compoundname>analytic-b-to-pi.hh</compoundname>
+    <includes refid="mesonic_8hh" local="no">eos/form-factors/mesonic.hh</includes>
+    <includes refid="diagnostics_8hh" local="no">eos/utils/diagnostics.hh</includes>
+    <includes refid="parameters_8hh" local="no">eos/utils/parameters.hh</includes>
+    <includes refid="options_8hh" local="no">eos/utils/options.hh</includes>
+    <includedby refid="mesonic-impl_8hh" local="no">/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh</includedby>
+    <incdepgraph>
+      <node id="86">
+        <label>functional</label>
+      </node>
+      <node id="91">
+        <label>eos/utils/options.hh</label>
+        <link refid="options_8hh"/>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>eos/utils/parameters-fwd.hh</label>
+        <link refid="parameters-fwd_8hh"/>
+      </node>
+      <node id="87">
+        <label>iterator</label>
+      </node>
+      <node id="83">
+        <label>cstdint</label>
+      </node>
+      <node id="76">
+        <label>string</label>
+      </node>
+      <node id="79">
+        <label>eos/utils/private_implementation_pattern.hh</label>
+        <link refid="private__implementation__pattern_8hh"/>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>eos/utils/wrapped_forward_iterator-fwd.hh</label>
+        <link refid="wrapped__forward__iterator-fwd_8hh"/>
+      </node>
+      <node id="75">
+        <label>exception</label>
+      </node>
+      <node id="77">
+        <label>eos/utils/mutable.hh</label>
+        <link refid="mutable_8hh"/>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>/home/alexshires/EOS/eos-next/eos/form-factors/analytic-b-to-pi.hh</label>
+        <link refid="analytic-b-to-pi.hh"/>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>eos/form-factors/form-factors-fwd.hh</label>
+        <link refid="form-factors-fwd_8hh"/>
+      </node>
+      <node id="82">
+        <label>eos/utils/random_number_generator.hh</label>
+        <link refid="random__number__generator_8hh"/>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>eos/utils/exception.hh</label>
+        <link refid="exception_8hh"/>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>eos/form-factors/mesonic.hh</label>
+        <link refid="mesonic_8hh"/>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>eos/utils/wrapped_forward_iterator.hh</label>
+        <link refid="wrapped__forward__iterator_8hh"/>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>type_traits</label>
+      </node>
+      <node id="89">
+        <label>set</label>
+      </node>
+      <node id="78">
+        <label>eos/utils/mutable-fwd.hh</label>
+        <link refid="mutable-fwd_8hh"/>
+      </node>
+      <node id="73">
+        <label>eos/utils/parameters.hh</label>
+        <link refid="parameters_8hh"/>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>memory</label>
+      </node>
+      <node id="90">
+        <label>eos/utils/diagnostics.hh</label>
+        <link refid="diagnostics_8hh"/>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="92">
+        <label>/home/alexshires/EOS/eos-next/eos/form-factors/analytic-b-to-pi.hh</label>
+        <link refid="analytic-b-to-pi.hh"/>
+        <childnode refid="93" relation="include">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh</label>
+        <link refid="mesonic-impl_8hh"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classeos_1_1AnalyticFormFactorBToPiDKMMO2008" prot="public">eos::AnalyticFormFactorBToPiDKMMO2008</innerclass>
+    <innernamespace refid="namespaceeos">eos</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="analytic-b-to-pi_8hh_1a2cbc4c680b544546e7a23f8c3738fe53" prot="public" static="no">
+        <name>EOS_GUARD_EOS_FORM_FACTORS_ANALYTIC_B_TO_PI_HH</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/analytic-b-to-pi.hh" line="21" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/analytic-b-to-pi.hh" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>vim:<sp/>set<sp/>sw=4<sp/>sts=4<sp/>et<sp/>foldmethod=syntax<sp/>:<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2014<sp/>Danny<sp/>van<sp/>Dyk</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>EOS<sp/>project.<sp/>EOS<sp/>is<sp/>free<sp/>software;</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Public<sp/>License<sp/>version<sp/>2,<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>EOS<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/>but<sp/>WITHOUT<sp/>ANY</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>along<sp/>with</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/>59<sp/>Temple</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>Place,<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307<sp/><sp/>USA</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>EOS_GUARD_EOS_FORM_FACTORS_ANALYTIC_B_TO_PI_HH</highlight></codeline>
+<codeline lineno="21" refid="analytic-b-to-pi_8hh_1a2cbc4c680b544546e7a23f8c3738fe53" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EOS_GUARD_EOS_FORM_FACTORS_ANALYTIC_B_TO_PI_HH<sp/>1</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="mesonic_8hh" kindref="compound">eos/form-factors/mesonic.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="diagnostics_8hh" kindref="compound">eos/utils/diagnostics.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="parameters_8hh" kindref="compound">eos/utils/parameters.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="options_8hh" kindref="compound">eos/utils/options.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">eos</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30" refid="classeos_1_1AnalyticFormFactorBToPiDKMMO2008" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classeos_1_1AnalyticFormFactorBToPiDKMMO2008" kindref="compound">AnalyticFormFactorBToPiDKMMO2008</ref><sp/>:</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>FormFactors&lt;PToP&gt;,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1PrivateImplementationPattern" kindref="compound">PrivateImplementationPattern</ref>&lt;AnalyticFormFactorBToPiDKMMO2008&gt;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1aee4ce0fc9eb6b6dbb95ccb80b59c0aa3" kindref="member">AnalyticFormFactorBToPiDKMMO2008</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref><sp/>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Options" kindref="compound">Options</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1afdb28ecd4ce74296cb8b4e99af7819dd" kindref="member">~AnalyticFormFactorBToPiDKMMO2008</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1FormFactors_3_01PToP_01_4" kindref="compound">FormFactors&lt;PToP&gt;</ref><sp/>*<sp/><ref refid="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1aff2cc738d3c04dee5e593ef6e40d84e3" kindref="member">make</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref><sp/>&amp;,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Leading-order<sp/>terms<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1a8eff8336c192970590daafaad2e1ae0d" kindref="member">F_lo_tw2</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>q2)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1ae19b96e05460dcb94c6382a49bc009a4" kindref="member">F_lo_tw3</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>q2)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1a1a9ca014971d5c140df4fc3c9bf03879" kindref="member">F_lo_tw4</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>q2)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Next-to-leading-order<sp/>terms<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1abb2691fe8415e5c5c4db53af3ef4ba41" kindref="member">F_nlo_tw2</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>q2)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1a8d4a9d28a81a8b60d557162f0e3a0c5a" kindref="member">F_nlo_tw3</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>q2)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Form<sp/>factors<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1acc3cbe21d5bab4ee23a457b757749bbf" kindref="member">f_p</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>q2)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1a646f3764614e79700d31571b9df620ba" kindref="member">f_0</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>q2)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1aa3903289904f6e732bc9094f3826d3be" kindref="member">f_t</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>q2)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>B<sp/>mass<sp/>from<sp/>the<sp/>LCSR<sp/>and<sp/>the<sp/>SVZ<sp/>sum<sp/>rule,<sp/>respectively<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1abc228c8f704b43ac2c777ab48d22c08c" kindref="member">MB_lcsr</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>q2)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1a813b78c9a4e5ea82d7f77154e7dffa63" kindref="member">MB_svz</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Diagnostics<sp/>for<sp/>unit<sp/>tests<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1Diagnostics" kindref="compound">Diagnostics</ref><sp/><ref refid="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1a4996873565e4da45f132cbfdd90f7617" kindref="member">diagnostics</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/alexshires/EOS/eos-next/eos/form-factors/analytic-b-to-pi.hh"/>
+  </compounddef>
+</doxygen>

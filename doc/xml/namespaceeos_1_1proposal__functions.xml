@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="namespaceeos_1_1proposal__functions" kind="namespace">
+    <compoundname>eos::proposal_functions</compoundname>
+    <innerclass refid="structeos_1_1proposal__functions_1_1UnknownProposalError" prot="public">eos::proposal_functions::UnknownProposalError</innerclass>
+    <innerclass refid="structeos_1_1proposal__functions_1_1Factory" prot="public">eos::proposal_functions::Factory</innerclass>
+    <innerclass refid="classeos_1_1proposal__functions_1_1AdjacencyMatrix" prot="public">eos::proposal_functions::AdjacencyMatrix</innerclass>
+    <innerclass refid="classeos_1_1proposal__functions_1_1GlobalLocal" prot="public">eos::proposal_functions::GlobalLocal</innerclass>
+    <innerclass refid="classeos_1_1proposal__functions_1_1Multivariate" prot="public">eos::proposal_functions::Multivariate</innerclass>
+    <innerclass refid="classeos_1_1proposal__functions_1_1MultivariateGaussian" prot="public">eos::proposal_functions::MultivariateGaussian</innerclass>
+    <innerclass refid="classeos_1_1proposal__functions_1_1MultivariateStudentT" prot="public">eos::proposal_functions::MultivariateStudentT</innerclass>
+    <innerclass refid="structeos_1_1proposal__functions_1_1MultivariateAccess" prot="public">eos::proposal_functions::MultivariateAccess</innerclass>
+    <innerclass refid="classeos_1_1proposal__functions_1_1BlockDecomposition" prot="public">eos::proposal_functions::BlockDecomposition</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespaceeos_1_1proposal__functions_1ad45af5ebbbdc545b033b153cafe7e360" prot="public" static="no">
+        <type><ref refid="classeos_1_1hdf5_1_1Composite" kindref="compound">hdf5::Composite</ref>&lt; <ref refid="classeos_1_1hdf5_1_1Scalar" kindref="compound">hdf5::Scalar</ref>&lt; const char * &gt;, <ref refid="classeos_1_1hdf5_1_1Scalar" kindref="compound">hdf5::Scalar</ref>&lt; unsigned &gt; &gt;</type>
+        <definition>typedef hdf5::Composite&lt;hdf5::Scalar&lt;const char *&gt;, hdf5::Scalar&lt;unsigned&gt; &gt; eos::proposal_functions::MetaType</definition>
+        <argsstring></argsstring>
+        <name>MetaType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This data type descriptor is needed to identify the proposal function type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="51" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceeos_1_1proposal__functions_1a7b9711fcd1f76e034c72073e2d5d7f15" prot="public" static="no">
+        <type>std::tuple&lt; const char *, unsigned &gt;</type>
+        <definition>typedef std::tuple&lt;const char *, unsigned&gt; eos::proposal_functions::MetaRecord</definition>
+        <argsstring></argsstring>
+        <name>MetaRecord</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="54" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceeos_1_1proposal__functions_1a6cffa18d523cd6955629beabbe07c17c" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classeos_1_1proposal__functions_1_1Multivariate" kindref="compound">Multivariate</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt;Multivariate&gt; eos::proposal_functions::MultivariateProposalPtr</definition>
+        <argsstring></argsstring>
+        <name>MultivariateProposalPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="499" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="499" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceeos_1_1proposal__functions_1a55ba4d78e5beeb12699c697874f7c1df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned eos::proposal_functions::random_index</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;cumulative, gsl_rng *rng)</argsstring>
+        <name>random_index</name>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>cumulative</declname>
+        </param>
+        <param>
+          <type>gsl_rng *</type>
+          <declname>rng</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>For a discrete probability distribution defined by its cumulative, draw a random state given by its index in the cumulative. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="40"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1_1proposal__functions_1a3714de403c64ba76dcdb901f138f48de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::proposal_functions::sliding_window</definition>
+        <argsstring>(const unsigned &amp;K, const unsigned &amp;size, const unsigned &amp;j, unsigned &amp;j_min, unsigned &amp;j_max)</argsstring>
+        <name>sliding_window</name>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>K</declname>
+        </param>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>unsigned &amp;</type>
+          <declname>j_min</declname>
+        </param>
+        <param>
+          <type>unsigned &amp;</type>
+          <declname>j_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find the indices [j_min, j_max[ such that they cover range of size within [0, K] around j </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="46"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1_1proposal__functions_1ac169711c02c184c64ba3a406bd18598b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1hdf5_1_1Composite" kindref="compound">MetaType</ref></type>
+        <definition>MetaType eos::proposal_functions::meta_type</definition>
+        <argsstring>()</argsstring>
+        <name>meta_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1_1proposal__functions_1aa2f7d6804a251f162c263056d0e660e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceeos_1_1proposal__functions_1a7b9711fcd1f76e034c72073e2d5d7f15" kindref="member">MetaRecord</ref></type>
+        <definition>MetaRecord eos::proposal_functions::meta_record</definition>
+        <argsstring>()</argsstring>
+        <name>meta_record</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="55"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="35"/>
+  </compounddef>
+</doxygen>

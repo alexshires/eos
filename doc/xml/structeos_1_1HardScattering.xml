@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1HardScattering" kind="struct" prot="public">
+    <compoundname>eos::HardScattering</compoundname>
+    <includes refid="hard-scattering_8hh" local="no">hard-scattering.hh</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structeos_1_1HardScattering_1aec0f5bdc61bef7628ed68910f9d32ca2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>static complex&lt;double&gt; eos::HardScattering::I1</definition>
+        <argsstring>(const double &amp;s, const double &amp;u, const double &amp;m_q, const double &amp;m_B)</argsstring>
+        <name>I1</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_q</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/hard-scattering.hh" line="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/hard-scattering.hh" line="30" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/hard-scattering.hh" bodystart="29" bodyend="38"/>
+    <listofallmembers>
+      <member refid="structeos_1_1HardScattering_1aec0f5bdc61bef7628ed68910f9d32ca2" prot="public" virt="non-virtual"><scope>eos::HardScattering</scope><name>I1</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

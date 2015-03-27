@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1HDF5Error" kind="class" prot="public">
+    <compoundname>eos::HDF5Error</compoundname>
+    <basecompoundref refid="classeos_1_1Exception" prot="public" virt="non-virtual">eos::Exception</basecompoundref>
+    <includes refid="hdf5_8hh" local="no">hdf5.hh</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1HDF5Error_1af32e08e06b9bedbe31e760574b1d6f7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::HDF5Error::HDF5Error</definition>
+        <argsstring>(const std::string &amp;message)</argsstring>
+        <name>HDF5Error</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The error message. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="47"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classeos_1_1HDF5Error" kindref="compound">HDF5Error</ref> is parent to all exceptions thrown by entities in namespace <ref refid="namespaceeos_1_1hdf5" kindref="compound">eos::hdf5</ref>, e.g when creating, opening or accessing <ref refid="namespaceeos_1_1hdf5" kindref="compound">hdf5</ref> file data. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="496">
+        <label>eos::HDF5Error</label>
+        <link refid="classeos_1_1HDF5Error"/>
+        <childnode refid="497" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="497">
+        <label>eos::Exception</label>
+        <link refid="classeos_1_1Exception"/>
+        <childnode refid="498" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="498">
+        <label>std::exception</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="499">
+        <label>eos::HDF5Error</label>
+        <link refid="classeos_1_1HDF5Error"/>
+        <childnode refid="500" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="500">
+        <label>eos::Exception</label>
+        <link refid="classeos_1_1Exception"/>
+        <childnode refid="501" relation="public-inheritance">
+        </childnode>
+        <childnode refid="502" relation="usage">
+          <edgelabel>_message</edgelabel>
+        </childnode>
+      </node>
+      <node id="503">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="501">
+        <label>std::exception</label>
+      </node>
+      <node id="502">
+        <label>std::string</label>
+        <childnode refid="503" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="40" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" bodystart="38" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classeos_1_1Exception_1acbc0fa64ca3d54cc1f828b07dc80e585" prot="protected" virt="non-virtual"><scope>eos::HDF5Error</scope><name>Exception</name></member>
+      <member refid="classeos_1_1HDF5Error_1af32e08e06b9bedbe31e760574b1d6f7a" prot="public" virt="non-virtual"><scope>eos::HDF5Error</scope><name>HDF5Error</name></member>
+      <member refid="classeos_1_1Exception_1adce7a2af080165b09a599bb13438a8e1" prot="public" virt="virtual"><scope>eos::HDF5Error</scope><name>what</name></member>
+      <member refid="classeos_1_1Exception_1a8cb6faea0484cc58c472da9e58c7c30a" prot="public" virt="non-virtual"><scope>eos::HDF5Error</scope><name>~Exception</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

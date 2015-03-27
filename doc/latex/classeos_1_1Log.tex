@@ -1,0 +1,96 @@
+\hypertarget{classeos_1_1Log}{
+\section{eos::Log Class Reference}
+\label{classeos_1_1Log}\index{eos::Log@{eos::Log}}
+}
+
+
+{\ttfamily \#include $<$log.hh$>$}
+
+Inherits \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern$<$ Log $>$}.\subsection*{Public Member Functions}
+\begin{Indent}{\bf Access}\par
+{\em \label{_amgrpbf733d8a933c1601697f364223fc7ecb}
+ }\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{namespaceeos_ad6b42a08a08a1b63498f3f262bd15602}{LogLevel} \& \hyperlink{classeos_1_1Log_aada216ea65e76bb02481c587c2467e93}{get\_\-log\_\-level} () const 
+\begin{DoxyCompactList}\small\item\em Get the current log level. \item\end{DoxyCompactList}\item 
+void \hyperlink{classeos_1_1Log_a7aebea877e1c2a3d185f0967719b89c7}{set\_\-log\_\-level} (const \hyperlink{namespaceeos_ad6b42a08a08a1b63498f3f262bd15602}{LogLevel} \&)
+\item 
+void \hyperlink{classeos_1_1Log_ad5f0046aaba91f5e60f16eeb43f76c0f}{set\_\-log\_\-stream} (std::ostream $\ast$)
+\item 
+void \hyperlink{classeos_1_1Log_aa0ba105aa2ad0914ce8c93d66f6e26de}{set\_\-program\_\-name} (const std::string \&)
+\item 
+\hyperlink{classeos_1_1LogMessageHandler}{LogMessageHandler} \hyperlink{classeos_1_1Log_a554d8b48664cf871f1fcddf52e6f8530}{message} (const std::string \&id, const \hyperlink{namespaceeos_ad6b42a08a08a1b63498f3f262bd15602}{LogLevel} \&log\_\-level) \_\-\_\-attribute\_\-\_\-((warn\_\-unused\_\-result))
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classeos_1_1Log_ab9569a6854b96140aaafae85f5ce4097}{LogMessageHandler}
+\item 
+class \hyperlink{classeos_1_1Log_ac44bccc4d7bdab643d8143c8781ff698}{InstantiationPolicy$<$ Log, Singleton $>$}
+\end{DoxyCompactItemize}
+\subsection*{Basic Functions}
+\label{_amgrp2386c9a1f1785edee33f374dd2db9b3d}
+ Destructor. \begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1Log_a27918ffa360d5af4ed67cbb2e2be6e22}{$\sim$Log} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Facility to emit messages to the user, with a filter according to interest and urgency of the messages at hand. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classeos_1_1Log_a27918ffa360d5af4ed67cbb2e2be6e22}{
+\index{eos::Log@{eos::Log}!$\sim$Log@{$\sim$Log}}
+\index{$\sim$Log@{$\sim$Log}!eos::Log@{eos::Log}}
+\subsubsection[{$\sim$Log}]{\setlength{\rightskip}{0pt plus 5cm}eos::Log::$\sim$Log ()}}
+\label{classeos_1_1Log_a27918ffa360d5af4ed67cbb2e2be6e22}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classeos_1_1Log_aada216ea65e76bb02481c587c2467e93}{
+\index{eos::Log@{eos::Log}!get\_\-log\_\-level@{get\_\-log\_\-level}}
+\index{get\_\-log\_\-level@{get\_\-log\_\-level}!eos::Log@{eos::Log}}
+\subsubsection[{get\_\-log\_\-level}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf LogLevel}\& eos::Log::get\_\-log\_\-level () const}}
+\label{classeos_1_1Log_aada216ea65e76bb02481c587c2467e93}
+
+
+Get the current log level. \hypertarget{classeos_1_1Log_a554d8b48664cf871f1fcddf52e6f8530}{
+\index{eos::Log@{eos::Log}!message@{message}}
+\index{message@{message}!eos::Log@{eos::Log}}
+\subsubsection[{message}]{\setlength{\rightskip}{0pt plus 5cm}{\bf LogMessageHandler} eos::Log::message (const std::string \& {\em id}, \/  const {\bf LogLevel} \& {\em log\_\-level})}}
+\label{classeos_1_1Log_a554d8b48664cf871f1fcddf52e6f8530}
+Return a stream-\/like object to which message parts can be appended via its overloaded operator$<$$<$. The message will be completed upon destruction of the return value. \hypertarget{classeos_1_1Log_a7aebea877e1c2a3d185f0967719b89c7}{
+\index{eos::Log@{eos::Log}!set\_\-log\_\-level@{set\_\-log\_\-level}}
+\index{set\_\-log\_\-level@{set\_\-log\_\-level}!eos::Log@{eos::Log}}
+\subsubsection[{set\_\-log\_\-level}]{\setlength{\rightskip}{0pt plus 5cm}void eos::Log::set\_\-log\_\-level (const {\bf LogLevel} \&)}}
+\label{classeos_1_1Log_a7aebea877e1c2a3d185f0967719b89c7}
+Set the log level. \hypertarget{classeos_1_1Log_ad5f0046aaba91f5e60f16eeb43f76c0f}{
+\index{eos::Log@{eos::Log}!set\_\-log\_\-stream@{set\_\-log\_\-stream}}
+\index{set\_\-log\_\-stream@{set\_\-log\_\-stream}!eos::Log@{eos::Log}}
+\subsubsection[{set\_\-log\_\-stream}]{\setlength{\rightskip}{0pt plus 5cm}void eos::Log::set\_\-log\_\-stream (std::ostream $\ast$)}}
+\label{classeos_1_1Log_ad5f0046aaba91f5e60f16eeb43f76c0f}
+Set the output stream. \hypertarget{classeos_1_1Log_aa0ba105aa2ad0914ce8c93d66f6e26de}{
+\index{eos::Log@{eos::Log}!set\_\-program\_\-name@{set\_\-program\_\-name}}
+\index{set\_\-program\_\-name@{set\_\-program\_\-name}!eos::Log@{eos::Log}}
+\subsubsection[{set\_\-program\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}void eos::Log::set\_\-program\_\-name (const std::string \&)}}
+\label{classeos_1_1Log_aa0ba105aa2ad0914ce8c93d66f6e26de}
+Set the program's name. 
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classeos_1_1Log_ac44bccc4d7bdab643d8143c8781ff698}{
+\index{eos::Log@{eos::Log}!InstantiationPolicy$<$ Log, Singleton $>$@{InstantiationPolicy$<$ Log, Singleton $>$}}
+\index{InstantiationPolicy$<$ Log, Singleton $>$@{InstantiationPolicy$<$ Log, Singleton $>$}!eos::Log@{eos::Log}}
+\subsubsection[{InstantiationPolicy$<$ Log, Singleton $>$}]{\setlength{\rightskip}{0pt plus 5cm}friend class InstantiationPolicy$<$ {\bf Log}, Singleton $>$\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classeos_1_1Log_ac44bccc4d7bdab643d8143c8781ff698}
+\hypertarget{classeos_1_1Log_ab9569a6854b96140aaafae85f5ce4097}{
+\index{eos::Log@{eos::Log}!LogMessageHandler@{LogMessageHandler}}
+\index{LogMessageHandler@{LogMessageHandler}!eos::Log@{eos::Log}}
+\subsubsection[{LogMessageHandler}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf LogMessageHandler}\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classeos_1_1Log_ab9569a6854b96140aaafae85f5ce4097}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{log_8hh}{log.hh}\end{DoxyCompactItemize}

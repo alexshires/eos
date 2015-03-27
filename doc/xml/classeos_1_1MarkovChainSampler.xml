@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1MarkovChainSampler" kind="class" prot="public">
+    <compoundname>eos::MarkovChainSampler</compoundname>
+    <basecompoundref refid="classeos_1_1PrivateImplementationPattern" prot="public" virt="non-virtual">eos::PrivateImplementationPattern&lt; MarkovChainSampler &gt;</basecompoundref>
+    <includes refid="markov__chain__sampler_8hh" local="no">markov_chain_sampler.hh</includes>
+    <innerclass refid="classeos_1_1MarkovChainSampler_1_1Config" prot="public">eos::MarkovChainSampler::Config</innerclass>
+    <innerclass refid="structeos_1_1MarkovChainSampler_1_1PreRunInfo" prot="public">eos::MarkovChainSampler::PreRunInfo</innerclass>
+      <sectiondef kind="user-defined">
+      <header>Basic Functions</header>
+      <description><para><anchor id="_1amgrp2386c9a1f1785edee33f374dd2db9b3d"/> </para></description>
+      <memberdef kind="function" id="classeos_1_1MarkovChainSampler_1a39df736664ab94605898df48c1ff97af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::MarkovChainSampler::MarkovChainSampler</definition>
+        <argsstring>(const Analysis &amp;analysis, const MarkovChainSampler::Config &amp;config)</argsstring>
+        <name>MarkovChainSampler</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Analysis" kindref="compound">Analysis</ref> &amp;</type>
+          <declname>analysis</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1MarkovChainSampler_1_1Config" kindref="compound">MarkovChainSampler::Config</ref> &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>analysis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The analysis for which we draw samples. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The configuration of the samples. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain_sampler.hh" line="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1MarkovChainSampler_1a9c8a8f22a6279a0e0457b6e58b3e7aee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::MarkovChainSampler::~MarkovChainSampler</definition>
+        <argsstring>()</argsstring>
+        <name>~MarkovChainSampler</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain_sampler.hh" line="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1MarkovChainSampler_1a15f768e042ec2189ae7fb837d0c4f341" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::MarkovChainSampler::resume</definition>
+        <argsstring>(const hdf5::File &amp;)</argsstring>
+        <name>resume</name>
+        <param>
+          <type>const <ref refid="classeos_1_1hdf5_1_1File" kindref="compound">hdf5::File</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy the settings such as proposal density from the output of a (successful) prerun to prepare for calling <ref refid="classeos_1_1MarkovChainSampler_1a67fdd21c364b34796c9c5ba2b3b0b785" kindref="member">run()</ref>, where the main run is started immediately. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain_sampler.hh" line="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1MarkovChainSampler_1ae493008479f15b080c40365f96a3e409" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="namespaceeos_1ac9f30fde04446cfabdd69d4b5b5d3c5a" kindref="member">HistoryPtr</ref> &gt;</type>
+        <definition>static std::vector&lt;HistoryPtr&gt; eos::MarkovChainSampler::build_global_local</definition>
+        <argsstring>(const std::string &amp;output_file_name, const std::vector&lt; std::shared_ptr&lt; hdf5::File &gt;&gt; input_files, const proposal_functions::GlobalLocal::Config &amp;config, AnalysisPtr analysis=AnalysisPtr())</argsstring>
+        <name>build_global_local</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>output_file_name</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::shared_ptr&lt; <ref refid="classeos_1_1hdf5_1_1File" kindref="compound">hdf5::File</ref> &gt;&gt;</type>
+          <declname>input_files</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config" kindref="compound">proposal_functions::GlobalLocal::Config</ref> &amp;</type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceeos_1afc57020492535ccdd85cfc3b7421340d" kindref="member">AnalysisPtr</ref></type>
+          <declname>analysis</declname>
+          <defval><ref refid="namespaceeos_1afc57020492535ccdd85cfc3b7421340d" kindref="member">AnalysisPtr</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Take the output from several independent preruns as input and store a global local proposal function to the output file in directory &apos;/global local&apos; In addition, the meta information about constraints, parameters and their priors is stored in &apos;/descriptions&apos;.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>output_file_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the HDF5 file containing the global local proposal function. if empty, do not create the proposal nor any output. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>input_files</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HDF5 files containing the history, descriptions, stats, and local propopal densities as created by EOS. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The configuration options influencing how GlobalLocal is created. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>analysis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Compare the order of parameters in files vs the one given in analysis. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The full histories of all chains found in the input files </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain_sampler.hh" line="70"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Sampling</header>
+      <description><para><anchor id="_1amgrp1d07814d12178c958e4233501cb0bdc7"/> </para></description>
+      <memberdef kind="function" id="classeos_1_1MarkovChainSampler_1a1e5ca348ae639a33c3b3db6120ff66f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::MarkovChainSampler::massive_mode_finding</definition>
+        <argsstring>(const Analysis::OptimizationOptions &amp;options)</argsstring>
+        <name>massive_mode_finding</name>
+        <param>
+          <type>const <ref refid="structeos_1_1Analysis_1_1OptimizationOptions" kindref="compound">Analysis::OptimizationOptions</ref> &amp;</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Use minuit to find local minima.</para><para>Take as many starting points as there are chains</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>options</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pass options on to Minuit. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain_sampler.hh" line="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1MarkovChainSampler_1ae3032467d9678870bb30f82ae060c043" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structeos_1_1MarkovChainSampler_1_1PreRunInfo" kindref="compound">PreRunInfo</ref></type>
+        <definition>PreRunInfo eos::MarkovChainSampler::pre_run_info</definition>
+        <argsstring>()</argsstring>
+        <name>pre_run_info</name>
+        <briefdescription>
+<para>Retrieve information about the prerun performance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain_sampler.hh" line="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1MarkovChainSampler_1a67fdd21c364b34796c9c5ba2b3b0b785" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::MarkovChainSampler::run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <briefdescription>
+<para>Start the Markov chain sampling. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain_sampler.hh" line="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1MarkovChainSampler_1a277acc86b109ca342be462c0e9d7c175" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classeos_1_1MarkovChainSampler_1_1Config" kindref="compound">MarkovChainSampler::Config</ref> &amp;</type>
+        <definition>const MarkovChainSampler::Config&amp; eos::MarkovChainSampler::config</definition>
+        <argsstring>()</argsstring>
+        <name>config</name>
+        <briefdescription>
+<para>Retrieve the configuration from which this sampler was constructed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain_sampler.hh" line="101"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="613">
+        <label>eos::MarkovChainSampler</label>
+        <link refid="classeos_1_1MarkovChainSampler"/>
+        <childnode refid="614" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="614">
+        <label>eos::PrivateImplementationPattern&lt; MarkovChainSampler &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="615">
+        <label>eos::MarkovChainSampler</label>
+        <link refid="classeos_1_1MarkovChainSampler"/>
+        <childnode refid="616" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="616">
+        <label>eos::PrivateImplementationPattern&lt; MarkovChainSampler &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain_sampler.hh" line="35" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/markov_chain_sampler.hh" bodystart="33" bodyend="103"/>
+    <listofallmembers>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a232940e78b26c6ed4f97196f831c69c9" prot="protected" virt="non-virtual"><scope>eos::MarkovChainSampler</scope><name>_imp</name></member>
+      <member refid="classeos_1_1MarkovChainSampler_1ae493008479f15b080c40365f96a3e409" prot="public" virt="non-virtual"><scope>eos::MarkovChainSampler</scope><name>build_global_local</name></member>
+      <member refid="classeos_1_1MarkovChainSampler_1a277acc86b109ca342be462c0e9d7c175" prot="public" virt="non-virtual"><scope>eos::MarkovChainSampler</scope><name>config</name></member>
+      <member refid="classeos_1_1MarkovChainSampler_1a39df736664ab94605898df48c1ff97af" prot="public" virt="non-virtual"><scope>eos::MarkovChainSampler</scope><name>MarkovChainSampler</name></member>
+      <member refid="classeos_1_1MarkovChainSampler_1a1e5ca348ae639a33c3b3db6120ff66f9" prot="public" virt="non-virtual"><scope>eos::MarkovChainSampler</scope><name>massive_mode_finding</name></member>
+      <member refid="classeos_1_1MarkovChainSampler_1ae3032467d9678870bb30f82ae060c043" prot="public" virt="non-virtual"><scope>eos::MarkovChainSampler</scope><name>pre_run_info</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a3e3d5f4a565256a1dda6c234b051b2f2" prot="public" virt="non-virtual"><scope>eos::MarkovChainSampler</scope><name>PrivateImplementationPattern</name></member>
+      <member refid="classeos_1_1MarkovChainSampler_1a15f768e042ec2189ae7fb837d0c4f341" prot="public" virt="non-virtual"><scope>eos::MarkovChainSampler</scope><name>resume</name></member>
+      <member refid="classeos_1_1MarkovChainSampler_1a67fdd21c364b34796c9c5ba2b3b0b785" prot="public" virt="non-virtual"><scope>eos::MarkovChainSampler</scope><name>run</name></member>
+      <member refid="classeos_1_1MarkovChainSampler_1a9c8a8f22a6279a0e0457b6e58b3e7aee" prot="public" virt="non-virtual"><scope>eos::MarkovChainSampler</scope><name>~MarkovChainSampler</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1acf46ec2739c3b0ec9702b9428475876d" prot="public" virt="non-virtual"><scope>eos::MarkovChainSampler</scope><name>~PrivateImplementationPattern</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

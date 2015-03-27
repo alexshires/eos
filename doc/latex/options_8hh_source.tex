@@ -1,0 +1,76 @@
+\hypertarget{options_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/options.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2010, 2011 Danny van Dyk}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_OPTIONS\_HH}
+\hypertarget{options_8hh_source_l00021}{}\hyperlink{options_8hh_a272d2c4d81b3724465284b8966de0f2c}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_OPTIONS\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{preprocessor}{#include <\hyperlink{exception_8hh}{eos/utils/exception.hh}>}
+00024 \textcolor{preprocessor}{#include <\hyperlink{private__implementation__pattern_8hh}{eos/utils/private_implementation_pattern.hh}>}
+00025 
+00026 \textcolor{preprocessor}{#include <string>}
+00027 
+00028 \textcolor{keyword}{namespace }eos
+00029 \{
+\hypertarget{options_8hh_source_l00034}{}\hyperlink{structeos_1_1UnknownOptionError}{00034}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1UnknownOptionError}{UnknownOptionError} :
+00035         \textcolor{keyword}{public} \hyperlink{classeos_1_1Exception}{Exception}
+00036     \{
+00037         \hyperlink{structeos_1_1UnknownOptionError_a9dcdcf2d587d5a07692c4d2688a495ab}{UnknownOptionError}(\textcolor{keyword}{const} std::string & key) \textcolor{keywordflow}{throw} ();
+00038     \};
+00039 
+\hypertarget{options_8hh_source_l00043}{}\hyperlink{classeos_1_1Options}{00043}     \textcolor{keyword}{class }\hyperlink{classeos_1_1Options}{Options} :
+00044         \textcolor{keyword}{public} \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern}<Options>
+00045     \{
+00046         \textcolor{keyword}{public}:
+00047             \textcolor{keyword}{friend} \hyperlink{classeos_1_1Options}{Options} \hyperlink{classeos_1_1Options_a8a95ca0ac073107e9ec18e05a9ee6cce}{operator+ }(\textcolor{keyword}{const} \hyperlink{classeos_1_1Options}{Options} &, \textcolor{keyword}{const} \hyperlink{classeos_1_1Options}{Options} &);
+00048 
+00051 
+00053             \hyperlink{classeos_1_1Options_a41872695828e800ea0d439ded2e79ccc}{Options}();
+00054 
+00063             \hyperlink{classeos_1_1Options_a41872695828e800ea0d439ded2e79ccc}{Options}(\textcolor{keyword}{const} std::initializer\_list<std::pair<std::string, std::strin
+      g>> & options);
+00064 
+00066             \hyperlink{classeos_1_1Options_a8509f24945b363809455ae0b56046324}{~Options}();
+00067 
+00069             \textcolor{keywordtype}{bool} \hyperlink{classeos_1_1Options_aa5defab8e8ba2e07871b20374c3f2db2}{operator== }(\textcolor{keyword}{const} \hyperlink{classeos_1_1Options}{Options} & rhs) \textcolor{keyword}{const};
+00070 
+00072             \textcolor{keywordtype}{bool} \hyperlink{classeos_1_1Options_aaf02fdcc1fb86da35155d85e8f3982c5}{operator!= }(\textcolor{keyword}{const} \hyperlink{classeos_1_1Options}{Options} & rhs) \textcolor{keyword}{const};
+00074 
+00077             \textcolor{keyword}{const} std::string & \hyperlink{classeos_1_1Options_a9095b57b9ffeccac5aad07412943bac9}{operator[] }(\textcolor{keyword}{const} std::string & key) \textcolor{keyword}{const};
+00078 
+00079             \textcolor{keywordtype}{bool} \hyperlink{classeos_1_1Options_a84ce27abf490cf39fa5a4d1cbb835c8e}{has}(\textcolor{keyword}{const} std::string & key) \textcolor{keyword}{const};
+00080 
+00081             \textcolor{keywordtype}{void} \textcolor{keyword}{set}(\textcolor{keyword}{const} std::string & key, \textcolor{keyword}{const} std::string & value = \textcolor{stringliteral}{""});
+00082 
+00083             std::string \textcolor{keyword}{get}(\textcolor{keyword}{const} std::string & key, \textcolor{keyword}{const} std::string & default\_
+      value = \textcolor{stringliteral}{""}) \textcolor{keyword}{const};
+00084 
+00085             std::string \hyperlink{classeos_1_1Options_a1660f95dc9e5c8859783db04d5093442}{as_string}() \textcolor{keyword}{const};
+00087     \};
+00088 
+00090     \hyperlink{classeos_1_1Options}{Options} \hyperlink{namespaceeos_a0e3f5e761fbf126d8fcda142fed73318}{operator+ }(\textcolor{keyword}{const} \hyperlink{classeos_1_1Options}{Options} & lhs, \textcolor{keyword}{const} \hyperlink{classeos_1_1Options}{Options} & rhs);
+00091 \}
+00092 
+00093 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

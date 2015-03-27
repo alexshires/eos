@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="properties_8hh" kind="file">
+    <compoundname>properties.hh</compoundname>
+    <includes refid="options_8hh" local="no">eos/utils/options.hh</includes>
+    <includes refid="parameters_8hh" local="no">eos/utils/parameters.hh</includes>
+    <includes refid="private__implementation__pattern_8hh" local="no">eos/utils/private_implementation_pattern.hh</includes>
+    <incdepgraph>
+      <node id="35">
+        <label>functional</label>
+      </node>
+      <node id="21">
+        <label>eos/utils/options.hh</label>
+        <link refid="options_8hh"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>eos/utils/parameters-fwd.hh</label>
+        <link refid="parameters-fwd_8hh"/>
+      </node>
+      <node id="36">
+        <label>iterator</label>
+      </node>
+      <node id="32">
+        <label>cstdint</label>
+      </node>
+      <node id="24">
+        <label>string</label>
+      </node>
+      <node id="25">
+        <label>eos/utils/private_implementation_pattern.hh</label>
+        <link refid="private__implementation__pattern_8hh"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>eos/utils/wrapped_forward_iterator-fwd.hh</label>
+        <link refid="wrapped__forward__iterator-fwd_8hh"/>
+      </node>
+      <node id="23">
+        <label>exception</label>
+      </node>
+      <node id="28">
+        <label>eos/utils/mutable.hh</label>
+        <link refid="mutable_8hh"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>eos/utils/random_number_generator.hh</label>
+        <link refid="random__number__generator_8hh"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>eos/utils/exception.hh</label>
+        <link refid="exception_8hh"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>/home/alexshires/EOS/eos-next/eos/b-decays/properties.hh</label>
+        <link refid="properties.hh"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>eos/utils/wrapped_forward_iterator.hh</label>
+        <link refid="wrapped__forward__iterator_8hh"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>type_traits</label>
+      </node>
+      <node id="38">
+        <label>set</label>
+      </node>
+      <node id="29">
+        <label>eos/utils/mutable-fwd.hh</label>
+        <link refid="mutable-fwd_8hh"/>
+      </node>
+      <node id="27">
+        <label>eos/utils/parameters.hh</label>
+        <link refid="parameters_8hh"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classeos_1_1BMesonProperties" prot="public">eos::BMesonProperties</innerclass>
+    <innernamespace refid="namespaceeos">eos</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="properties_8hh_1ae13950a36229777e5e175c9daa98c106" prot="public" static="no">
+        <name>EOS_GUARD_EOS_B_DECAYS_PROPERTIES_HH</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/b-decays/properties.hh" line="21" bodyfile="/home/alexshires/EOS/eos-next/eos/b-decays/properties.hh" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>vim:<sp/>set<sp/>sw=4<sp/>sts=4<sp/>et<sp/>foldmethod=syntax<sp/>:<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2012<sp/>Danny<sp/>van<sp/>Dyk</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>EOS<sp/>project.<sp/>EOS<sp/>is<sp/>free<sp/>software;</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Public<sp/>License<sp/>version<sp/>2,<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>EOS<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/>but<sp/>WITHOUT<sp/>ANY</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>along<sp/>with</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/>59<sp/>Temple</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>Place,<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307<sp/><sp/>USA</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>EOS_GUARD_EOS_B_DECAYS_PROPERTIES_HH</highlight></codeline>
+<codeline lineno="21" refid="properties_8hh_1ae13950a36229777e5e175c9daa98c106" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EOS_GUARD_EOS_B_DECAYS_PROPERTIES_HH<sp/>1</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="options_8hh" kindref="compound">eos/utils/options.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="parameters_8hh" kindref="compound">eos/utils/parameters.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="private__implementation__pattern_8hh" kindref="compound">eos/utils/private_implementation_pattern.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">eos</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Properties<sp/>of<sp/>B_q<sp/>mesons</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="classeos_1_1BMesonProperties" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classeos_1_1BMesonProperties" kindref="compound">BMesonProperties</ref><sp/>:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1ParameterUser" kindref="compound">ParameterUser</ref>,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1PrivateImplementationPattern" kindref="compound">PrivateImplementationPattern</ref>&lt;BMesonProperties&gt;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1BMesonProperties_1af127f7490e06b7a175fa3f82a0be7152" kindref="member">BMesonProperties</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref><sp/>&amp;<sp/>parameters,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Options" kindref="compound">Options</ref><sp/>&amp;<sp/>options);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1BMesonProperties_1aea9b828528431dfdfe7b13ca1fce9c14" kindref="member">~BMesonProperties</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Properties</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1BMesonProperties_1aa79a7d1ef74dacb2c3b393ca9ad18225" kindref="member">mass_splitting_j1_j0</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/alexshires/EOS/eos-next/eos/b-decays/properties.hh"/>
+  </compounddef>
+</doxygen>

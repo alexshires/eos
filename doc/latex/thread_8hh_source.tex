@@ -1,0 +1,57 @@
+\hypertarget{thread_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/thread.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2007, 2008, 2010 Danny van Dyk <danny.dyk@uni-dortmund.de>}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * Based upon 'thread.hh' from Paludis, which is:}
+00007 \textcolor{comment}{ *     Copyright (c) 2007 Ciaran McCreesh}
+00008 \textcolor{comment}{ *}
+00009 \textcolor{comment}{ * This file is part of the EOS program. EOS is free software;}
+00010 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00011 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00012 \textcolor{comment}{ *}
+00013 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00014 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00015 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00016 \textcolor{comment}{ * details.}
+00017 \textcolor{comment}{ *}
+00018 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00019 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00020 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00021 \textcolor{comment}{ */}
+00022 
+00023 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_THREAD\_HH}
+\hypertarget{thread_8hh_source_l00024}{}\hyperlink{thread_8hh_a2d7df5267d0afb72b9435a3e2ba9d252}{00024} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_THREAD\_HH 1}
+00025 \textcolor{preprocessor}{}
+00026 \textcolor{preprocessor}{#include <\hyperlink{instantiation__policy_8hh}{eos/utils/instantiation_policy.hh}>}
+00027 \textcolor{preprocessor}{#include <\hyperlink{private__implementation__pattern_8hh}{eos/utils/private_implementation_pattern.hh}>}
+00028 
+00029 \textcolor{preprocessor}{#include <tr1/functional>}
+00030 
+00031 \textcolor{keyword}{namespace }eos
+00032 \{
+\hypertarget{thread_8hh_source_l00040}{}\hyperlink{classeos_1_1Thread}{00040}     \textcolor{keyword}{class }\hyperlink{classeos_1_1Thread}{Thread} :
+00041         \textcolor{keyword}{public} InstantiationPolicy<Thread, NonCopyable>,
+00042         \textcolor{keyword}{public} \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern}<Thread>
+00043     \{
+00044         \textcolor{keyword}{public}:
+\hypertarget{thread_8hh_source_l00046}{}\hyperlink{classeos_1_1Thread_a5056834a1e9dce530abf5adb90bb13ba}{00046}             \textcolor{keyword}{typedef} std::function<void ()> \hyperlink{classeos_1_1Thread_a5056834a1e9dce530abf5adb90bb13ba}{Function};
+00047 
+00050 
+00056             \hyperlink{classeos_1_1Thread_ad8d7a9a4d2275f21a42b80fbad67b172}{Thread}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Thread_a5056834a1e9dce530abf5adb90bb13ba}{Function} & function);
+00057 
+00059             \hyperlink{classeos_1_1Thread_af56391a1c255e3cc9cf754917776af39}{~Thread}();
+00060 
+00062 
+00064             \textcolor{keywordtype}{bool} \hyperlink{classeos_1_1Thread_a4badce4c44db821aaffa5ce06ad1f697}{completed}() \textcolor{keyword}{const};
+00065     \};
+00066 \}
+00067 
+00068 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

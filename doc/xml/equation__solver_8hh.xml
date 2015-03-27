@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="equation__solver_8hh" kind="file">
+    <compoundname>equation_solver.hh</compoundname>
+    <includes refid="private__implementation__pattern_8hh" local="no">eos/utils/private_implementation_pattern.hh</includes>
+    <includes refid="verify_8hh" local="no">eos/utils/verify.hh</includes>
+    <includes local="no">functional</includes>
+    <includes local="no">vector</includes>
+    <incdepgraph>
+      <node id="772">
+        <label>functional</label>
+      </node>
+      <node id="769">
+        <label>string</label>
+      </node>
+      <node id="764">
+        <label>eos/utils/private_implementation_pattern.hh</label>
+        <link refid="private__implementation__pattern_8hh"/>
+        <childnode refid="765" relation="include">
+        </childnode>
+      </node>
+      <node id="768">
+        <label>exception</label>
+      </node>
+      <node id="773">
+        <label>vector</label>
+      </node>
+      <node id="763">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/equation_solver.hh</label>
+        <link refid="equation_solver.hh"/>
+        <childnode refid="764" relation="include">
+        </childnode>
+        <childnode refid="766" relation="include">
+        </childnode>
+        <childnode refid="772" relation="include">
+        </childnode>
+        <childnode refid="773" relation="include">
+        </childnode>
+      </node>
+      <node id="771">
+        <label>sstream</label>
+      </node>
+      <node id="766">
+        <label>eos/utils/verify.hh</label>
+        <link refid="verify_8hh"/>
+        <childnode refid="767" relation="include">
+        </childnode>
+        <childnode refid="770" relation="include">
+        </childnode>
+      </node>
+      <node id="767">
+        <label>eos/utils/exception.hh</label>
+        <link refid="exception_8hh"/>
+        <childnode refid="768" relation="include">
+        </childnode>
+        <childnode refid="769" relation="include">
+        </childnode>
+      </node>
+      <node id="770">
+        <label>eos/utils/stringify.hh</label>
+        <link refid="stringify_8hh"/>
+        <childnode refid="769" relation="include">
+        </childnode>
+        <childnode refid="771" relation="include">
+        </childnode>
+      </node>
+      <node id="765">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classeos_1_1EquationSolver" prot="public">eos::EquationSolver</innerclass>
+    <innerclass refid="structeos_1_1EquationSolver_1_1Config" prot="public">eos::EquationSolver::Config</innerclass>
+    <innerclass refid="structeos_1_1EquationSolver_1_1Solution" prot="public">eos::EquationSolver::Solution</innerclass>
+    <innernamespace refid="namespaceeos">eos</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="equation__solver_8hh_1ac6e4af9e53b8a73b6f7b03ad0c6fdb93" prot="public" static="no">
+        <name>EOS_GUARD_EOS_UTILS_EQUATION_SOLVER_HH</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/equation_solver.hh" line="21" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/equation_solver.hh" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>vim:<sp/>set<sp/>sw=4<sp/>sts=4<sp/>et<sp/>foldmethod=syntax<sp/>:<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2011<sp/>Frederik<sp/>Beaujean</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>EOS<sp/>project.<sp/>EOS<sp/>is<sp/>free<sp/>software;</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Public<sp/>License<sp/>version<sp/>2,<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>EOS<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/>but<sp/>WITHOUT<sp/>ANY</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>along<sp/>with</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/>59<sp/>Temple</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>Place,<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307<sp/><sp/>USA</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>EOS_GUARD_EOS_UTILS_EQUATION_SOLVER_HH</highlight></codeline>
+<codeline lineno="21" refid="equation__solver_8hh_1ac6e4af9e53b8a73b6f7b03ad0c6fdb93" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EOS_GUARD_EOS_UTILS_EQUATION_SOLVER_HH<sp/>1</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="private__implementation__pattern_8hh" kindref="compound">eos/utils/private_implementation_pattern.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="verify_8hh" kindref="compound">eos/utils/verify.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">eos</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31" refid="classeos_1_1EquationSolver" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classeos_1_1EquationSolver" kindref="compound">EquationSolver</ref><sp/>:</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1PrivateImplementationPattern" kindref="compound">PrivateImplementationPattern</ref>&lt;EquationSolver&gt;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="35" refid="classeos_1_1EquationSolver_1a7394803ea85312852151a700b59da572" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::function&lt;double<sp/>(const<sp/>std::vector&lt;double&gt;<sp/>&amp;)&gt;<sp/><ref refid="classeos_1_1EquationSolver_1a7394803ea85312852151a700b59da572" kindref="member">Equation</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structeos_1_1EquationSolver_1_1Config" kindref="compound">Config</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structeos_1_1EquationSolver_1_1Solution" kindref="compound">Solution</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1EquationSolver_1a39179766f370890b207dd9c00f0009b8" kindref="member">EquationSolver</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1EquationSolver_1_1Config" kindref="compound">EquationSolver::Config</ref><sp/>&amp;<sp/>config);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1EquationSolver_1ac96461e85b095b1bff966a0d07542310" kindref="member">~EquationSolver</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1EquationSolver_1ad9cc623f54250dca0cc3fd288dcede77" kindref="member">add</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1EquationSolver_1a7394803ea85312852151a700b59da572" kindref="member">Equation</ref><sp/>&amp;<sp/>equation);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1EquationSolver_1ad9cc623f54250dca0cc3fd288dcede77" kindref="member">add</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/>name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>initial_value,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>error);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1EquationSolver_1ad9cc623f54250dca0cc3fd288dcede77" kindref="member">add</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/>name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>initial_value,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>error,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>min,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>max);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structeos_1_1EquationSolver_1_1Solution" kindref="compound">Solution</ref><sp/><ref refid="classeos_1_1EquationSolver_1ad9add1a035d5edff206361db0d050a44" kindref="member">solve</ref>();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="structeos_1_1EquationSolver_1_1Config" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structeos_1_1EquationSolver_1_1Config" kindref="compound">EquationSolver::Config</ref></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structeos_1_1EquationSolver_1_1Config" kindref="compound">Config</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="60" refid="structeos_1_1EquationSolver_1_1Config_1ae7c9a2c51f8669b27669cde1a64af2b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1EquationSolver_1_1Config_1ae7c9a2c51f8669b27669cde1a64af2b0" kindref="member" tooltip="Maximum number of evaluations.">maximum_steps</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="structeos_1_1EquationSolver_1_1Config_1af745d1f394c65f1176470aa42b1fdbc0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange&lt;unsigned&gt;</ref><sp/><ref refid="structeos_1_1EquationSolver_1_1Config_1af745d1f394c65f1176470aa42b1fdbc0" kindref="member" tooltip="[0 = low, 1 = medium, 2 = high] precision">strategy</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="structeos_1_1EquationSolver_1_1Config_1a8044943acf44d730c0e78226e1c30492" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange&lt;double&gt;</ref><sp/><ref refid="structeos_1_1EquationSolver_1_1Config_1a8044943acf44d730c0e78226e1c30492" kindref="member" tooltip="Required precision.">tolerance</ref>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1EquationSolver_1_1Config" kindref="compound">Config</ref><sp/><ref refid="structeos_1_1EquationSolver_1_1Config_1a09146644b138f64029be17f8749fc237" kindref="member">Default</ref>();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="structeos_1_1EquationSolver_1_1Solution" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structeos_1_1EquationSolver_1_1Solution" kindref="compound">EquationSolver::Solution</ref></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="74" refid="structeos_1_1EquationSolver_1_1Solution_1ac0f9639b6d1b2cd2ca250a1dd4cb0549" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/><ref refid="structeos_1_1EquationSolver_1_1Solution_1ac0f9639b6d1b2cd2ca250a1dd4cb0549" kindref="member" tooltip="The parameter values giving the best solution to the problem.">parameters</ref>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="structeos_1_1EquationSolver_1_1Solution_1acb4de717f8f570cc92d3f1f2f7c6b085" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1EquationSolver_1_1Solution_1acb4de717f8f570cc92d3f1f2f7c6b085" kindref="member" tooltip="Value of the function to be minimized at the minimum found.">value</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="structeos_1_1EquationSolver_1_1Solution_1a13f38764efb070fcb3af4fca3db02d1e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1EquationSolver_1_1Solution_1a13f38764efb070fcb3af4fca3db02d1e" kindref="member" tooltip="True if the solution finding succeeded.">valid</ref>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/equation_solver.hh"/>
+  </compounddef>
+</doxygen>

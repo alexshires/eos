@@ -1,0 +1,208 @@
+\hypertarget{memoise_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/memoise.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2010, 2011, 2013 Danny van Dyk}
+00005 \textcolor{comment}{ * Copyright (c) 2010 Christian Wacker}
+00006 \textcolor{comment}{ *}
+00007 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00008 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00009 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00010 \textcolor{comment}{ *}
+00011 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00012 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00013 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00014 \textcolor{comment}{ * details.}
+00015 \textcolor{comment}{ *}
+00016 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00017 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00018 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00019 \textcolor{comment}{ */}
+00020 
+00021 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_MEMOISE\_HH}
+\hypertarget{memoise_8hh_source_l00022}{}\hyperlink{memoise_8hh_a634782acc6719bb8865b60fcff17148e}{00022} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_MEMOISE\_HH 1}
+00023 \textcolor{preprocessor}{}
+00024 \textcolor{preprocessor}{#include <\hyperlink{instantiation__policy_8hh}{eos/utils/instantiation_policy.hh}>}
+00025 \textcolor{preprocessor}{#include <\hyperlink{instantiation__policy-impl_8hh}{eos/utils/instantiation_policy-impl.hh}>}
+00026 \textcolor{preprocessor}{#include <\hyperlink{lock_8hh}{eos/utils/lock.hh}>}
+00027 \textcolor{preprocessor}{#include <\hyperlink{mutex_8hh}{eos/utils/mutex.hh}>}
+00028 
+00029 \textcolor{preprocessor}{#include <cstdint>}
+00030 \textcolor{preprocessor}{#include <functional>}
+00031 \textcolor{preprocessor}{#include <tuple>}
+00032 \textcolor{preprocessor}{#include <unordered\_map>}
+00033 \textcolor{preprocessor}{#include <vector>}
+00034 
+00035 \textcolor{comment}{/* We are using a custom std::hash for tuple<FunctionPtr, double, ..., double> */
+      }
+\hypertarget{memoise_8hh_source_l00036}{}\hyperlink{namespacestd}{00036} \textcolor{keyword}{namespace }std
+00037 \{
+00038     \textcolor{keyword}{template} <\textcolor{keyword}{typename} U\_> \textcolor{keyword}{static} uint64\_t \_\_hash\_one(\textcolor{keyword}{const} U\_ & u)
+00039     \{
+00040         static\_assert(\textcolor{keyword}{sizeof}(U\_) == \textcolor{keyword}{sizeof}(uint32\_t) || \textcolor{keyword}{sizeof}(U\_) == \textcolor{keyword}{sizeof}(uint
+      64\_t), \textcolor{stringliteral}{"Need to specialize \_\_hash\_one for non 32- and 64-bit data types"});
+00041 
+00042         \textcolor{keywordflow}{if} (\textcolor{keyword}{sizeof}(U\_) == \textcolor{keyword}{sizeof}(int64\_t))
+00043         \{
+00044             \textcolor{keywordflow}{return} *\textcolor{keyword}{reinterpret\_cast<}\textcolor{keyword}{const }uint64\_t *\textcolor{keyword}{>}(&u);
+00045         \}
+00046         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\textcolor{keyword}{sizeof}(U\_) == \textcolor{keyword}{sizeof}(uint32\_t))
+00047         \{
+00048             \textcolor{keywordflow}{return} \textcolor{keyword}{static\_cast<}\textcolor{keyword}{const }uint64\_t\textcolor{keyword}{>}(*\textcolor{keyword}{reinterpret\_cast<}\textcolor{keyword}{const }uint32\_t *
+      \textcolor{keyword}{>}(&u));
+00049         \}
+00050     \}
+00051 
+00052     \textcolor{keyword}{template} <\textcolor{keywordtype}{unsigned} n\_, \textcolor{keyword}{typename} ... T\_>
+00053     \textcolor{keyword}{struct }\_\_TupleHasher
+00054     \{
+00055         \textcolor{keyword}{static} uint64\_t hash(\textcolor{keyword}{const} std::tuple<T\_ ...> & t)
+00056         \{
+00057             \textcolor{keywordflow}{return} \_\_TupleHasher<n\_ - 1, T\_ ...>::hash(t) ^ \_\_hash\_one<decltype(s
+      td::get<n\_>(t))>(std::get<n\_>(t));
+00058         \}
+00059     \};
+00060 
+00061     \textcolor{keyword}{template} <\textcolor{keyword}{typename} ... T\_>
+00062     \textcolor{keyword}{struct }\_\_TupleHasher<0, T\_ ...>
+00063     \{
+00064         \textcolor{keyword}{static} uint64\_t hash(\textcolor{keyword}{const} std::tuple<T\_ ...> & t)
+00065         \{
+00066             \textcolor{keywordflow}{return} \_\_hash\_one<decltype(std::get<0>(t))>(std::get<0>(t));
+00067         \}
+00068     \};
+00069 
+00070     \textcolor{keyword}{template} <\textcolor{keyword}{typename} ... T\_>
+00071     \textcolor{keyword}{struct }hash<std::tuple<T\_ ...>>
+00072     \{
+00073         \textcolor{keywordtype}{size\_t} operator() (\textcolor{keyword}{const} std::tuple<T\_ ...> & t)\textcolor{keyword}{ const}
+00074 \textcolor{keyword}{        }\{
+00075             \textcolor{keywordflow}{return} \_\_TupleHasher<\textcolor{keyword}{sizeof}...(T\_) - 1, T\_ ...>::hash(t);
+00076         \}
+00077     \};
+00078 \}
+00079 
+00080 \textcolor{keyword}{namespace }eos
+00081 \{
+\hypertarget{memoise_8hh_source_l00082}{}\hyperlink{namespaceeos_1_1implementation}{00082}     \textcolor{keyword}{namespace }implementation
+00083     \{
+00084         \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_> \textcolor{keyword}{struct }ResultOf;
+00085 
+00086         \textcolor{keyword}{template} <\textcolor{keyword}{typename} Result\_, \textcolor{keyword}{typename} Class\_, \textcolor{keyword}{typename} ... Args\_>
+\hypertarget{memoise_8hh_source_l00087}{}\hyperlink{structeos_1_1implementation_1_1ResultOf_3_01Result___07Class___1_1_5_08_07Args___8_8_8_08_4}{00087}         \textcolor{keyword}{struct }ResultOf<Result\_ (Class\_::*) (Args\_ ...)>
+00088         \{
+\hypertarget{memoise_8hh_source_l00089}{}\hyperlink{structeos_1_1implementation_1_1ResultOf_3_01Result___07Class___1_1_5_08_07Args___8_8_8_08_4_ab09033492b872695f968f4eb92917df3}{00089}             \textcolor{keyword}{typedef} Result\_ Type;
+00090         \};
+00091 
+00092         \textcolor{keyword}{template} <\textcolor{keyword}{typename} Result\_, \textcolor{keyword}{typename} ... Args\_>
+\hypertarget{memoise_8hh_source_l00093}{}\hyperlink{structeos_1_1implementation_1_1ResultOf_3_01Result___07_5_08_07Args___8_8_8_08_4}{00093}         \textcolor{keyword}{struct }ResultOf<Result\_ (*) (Args\_ ...)>
+00094         \{
+\hypertarget{memoise_8hh_source_l00095}{}\hyperlink{structeos_1_1implementation_1_1ResultOf_3_01Result___07_5_08_07Args___8_8_8_08_4_aee86cd65eda09566ce90b009ddfb27b9}{00095}             \textcolor{keyword}{typedef} Result\_ Type;
+00096         \};
+00097     \}
+00098 
+\hypertarget{memoise_8hh_source_l00099}{}\hyperlink{classeos_1_1MemoisationControl}{00099}     \textcolor{keyword}{class }\hyperlink{classeos_1_1MemoisationControl}{MemoisationControl} :
+00100         \textcolor{keyword}{public} InstantiationPolicy<MemoisationControl, Singleton>
+00101     \{
+00102         \textcolor{keyword}{private}:
+00103             \hyperlink{classeos_1_1Mutex}{Mutex} * \textcolor{keyword}{const} \_mutex;
+00104 
+00105             std::vector<std::function<void ()>> \_clear\_functions;
+00106 
+00107         \textcolor{keyword}{public}:
+00108             \hyperlink{classeos_1_1MemoisationControl_a78dbad6e5ef8bb969dabcdc9b30a5032}{MemoisationControl}();
+00109 
+00110             \hyperlink{classeos_1_1MemoisationControl_a71e3b46d0f835cc3b73344b9e4dea84c}{~MemoisationControl}();
+00111 
+00112             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1MemoisationControl_a32eabb533067c5313d5154930f6fbb2f}{register_clear_function}(\textcolor{keyword}{const} std::function<\textcolor{keywordtype}{void} ()> & clear\_fun
+      ction);
+00113 
+00114             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1MemoisationControl_a36c8f1afbaed242d480619a847f51b7d}{clear}();
+00115     \};
+00116 
+00117     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Result\_, \textcolor{keyword}{typename} ... Params\_>
+\hypertarget{memoise_8hh_source_l00118}{}\hyperlink{classeos_1_1Memoiser}{00118}     \textcolor{keyword}{class }\hyperlink{classeos_1_1Memoiser}{Memoiser} :
+00119         \textcolor{keyword}{public} InstantiationPolicy<Memoiser<Result\_, Params\_ ...>, Singleton>
+00120     \{
+00121         \textcolor{keyword}{public}:
+\hypertarget{memoise_8hh_source_l00122}{}\hyperlink{classeos_1_1Memoiser_a402c1728aaaf3737722674ebf9cb0644}{00122}             \textcolor{keyword}{typedef} Result\_ (*\hyperlink{classeos_1_1Memoiser_a402c1728aaaf3737722674ebf9cb0644}{FunctionType})(\textcolor{keyword}{const} Params\_ & ...);
+\hypertarget{memoise_8hh_source_l00123}{}\hyperlink{classeos_1_1Memoiser_aa17152256a324a1d43739567968c1736}{00123}             \textcolor{keyword}{typedef} std::tuple<\hyperlink{classeos_1_1Memoiser_a402c1728aaaf3737722674ebf9cb0644}{FunctionType}, Params\_...> \hyperlink{classeos_1_1Memoiser_aa17152256a324a1d43739567968c1736}{KeyType};
+00124 
+00125         \textcolor{keyword}{private}:
+00126             \hyperlink{classeos_1_1Mutex}{Mutex} * \textcolor{keyword}{const} \_mutex;
+00127 
+00128             std::unordered\_map<KeyType, Result\_> \_memoisations;
+00129 
+00130         \textcolor{keyword}{public}:
+\hypertarget{memoise_8hh_source_l00131}{}\hyperlink{classeos_1_1Memoiser_a85695c7a110fb1f7cda6dc8f0e0f311c}{00131}             \hyperlink{classeos_1_1Memoiser_a85695c7a110fb1f7cda6dc8f0e0f311c}{Memoiser}() :
+00132                 \_mutex(new \hyperlink{classeos_1_1Mutex}{Mutex})
+00133             \{
+00134                 MemoisationControl::instance()->register\_clear\_function(std::bind
+      (&\hyperlink{classeos_1_1Memoiser}{Memoiser<Result_, Params_ ...>::clear}, \textcolor{keyword}{this}));
+00135             \}
+00136 
+\hypertarget{memoise_8hh_source_l00137}{}\hyperlink{classeos_1_1Memoiser_a5b4d3e39bc0d78776ca84f1ecfedb12f}{00137}             \hyperlink{classeos_1_1Memoiser_a5b4d3e39bc0d78776ca84f1ecfedb12f}{~Memoiser}()
+00138             \{
+00139                 \textcolor{keyword}{delete} \_mutex;
+00140             \}
+00141 
+\hypertarget{memoise_8hh_source_l00142}{}\hyperlink{classeos_1_1Memoiser_a3850676222d9601549fc69e3fa76e959}{00142}             Result\_ \hyperlink{classeos_1_1Memoiser_a3850676222d9601549fc69e3fa76e959}{operator() }(\textcolor{keyword}{const} \hyperlink{classeos_1_1Memoiser_a402c1728aaaf3737722674ebf9cb0644}{FunctionType} & f, \textcolor{keyword}{const} Params\_ & ... p)
+00143             \{
+00144                 \hyperlink{classeos_1_1Lock}{Lock} l(*\_mutex);
+00145 
+00146                 \hyperlink{classeos_1_1Memoiser_aa17152256a324a1d43739567968c1736}{KeyType} key(f, p ...);
+00147                 \textcolor{keyword}{auto} i = \_memoisations.find(key);
+00148 
+00149                 \textcolor{keywordflow}{if} (\_memoisations.end() != i)
+00150                     \textcolor{keywordflow}{return} i->second;
+00151 
+00152                 Result\_ result = f(p ...);
+00153 
+00154                 \textcolor{keywordflow}{if} (\_memoisations.size() > 100000u)
+00155                 \{
+00156                     \_memoisations.clear();
+00157                 \}
+00158 
+00159                 \_memoisations.insert(std::pair<KeyType, Result\_>(key, result));
+00160 
+00161                 \textcolor{keywordflow}{return} result;
+00162             \}
+00163 
+\hypertarget{memoise_8hh_source_l00164}{}\hyperlink{classeos_1_1Memoiser_a353f1f69dd0ff3308fb585301f73b168}{00164}             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1Memoiser_a353f1f69dd0ff3308fb585301f73b168}{clear}()
+00165             \{
+00166                 \hyperlink{classeos_1_1Lock}{Lock} l(*\_mutex);
+00167 
+00168                 \_memoisations.clear();
+00169             \}
+00170 
+\hypertarget{memoise_8hh_source_l00171}{}\hyperlink{classeos_1_1Memoiser_ab3f142b5355fa1f2d8ee483aa4ad8982}{00171}             \textcolor{keywordtype}{unsigned} \hyperlink{classeos_1_1Memoiser_ab3f142b5355fa1f2d8ee483aa4ad8982}{number_of_memoisations}()\textcolor{keyword}{ const}
+00172 \textcolor{keyword}{            }\{
+00173                 \hyperlink{classeos_1_1Lock}{Lock} l(*\_mutex);
+00174 
+00175                 \textcolor{keywordflow}{return} \_memoisations.size();
+00176             \}
+00177     \};
+00178 
+00179     \textcolor{keyword}{template} <\textcolor{keyword}{typename} FunctionType\_, \textcolor{keyword}{typename} ... Params>
+\hypertarget{memoise_8hh_source_l00180}{}\hyperlink{namespaceeos_a145cd9427e62a28f1144614e2b9a3d7d}{00180}     \textcolor{keyword}{typename} implementation::ResultOf<FunctionType\_>::Type \hyperlink{namespaceeos_a145cd9427e62a28f1144614e2b9a3d7d}{memoise}(FunctionType\_ 
+      f, \textcolor{keyword}{const} Params & ... p)
+00181     \{
+00182         \textcolor{keywordflow}{return} (*\hyperlink{classeos_1_1Memoiser}{Memoiser}<\textcolor{keyword}{typename} implementation::ResultOf<FunctionType\_>::Type,
+       Params ...>::instance())(f, p ...);
+00183     \}
+00184 
+00185     \textcolor{keyword}{template} <\textcolor{keyword}{typename} FunctionType\_, \textcolor{keyword}{typename} ... Params>
+\hypertarget{memoise_8hh_source_l00186}{}\hyperlink{namespaceeos_a82ca3bc4794ddeca0b97d4a66fa5a679}{00186}     \textcolor{keywordtype}{unsigned} \hyperlink{namespaceeos_a82ca3bc4794ddeca0b97d4a66fa5a679}{number_of_memoisations}(FunctionType\_, \textcolor{keyword}{const} Params & ...)
+00187     \{
+00188         \textcolor{keywordflow}{return} \hyperlink{classeos_1_1Memoiser}{Memoiser<typename implementation::ResultOf<FunctionType_>::Type}, P
+      arams ...>::instance()->\hyperlink{namespaceeos_a82ca3bc4794ddeca0b97d4a66fa5a679}{number_of_memoisations}();
+00189     \}
+00190 \}
+00191 
+00192 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

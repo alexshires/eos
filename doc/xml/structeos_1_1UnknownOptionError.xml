@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1UnknownOptionError" kind="struct" prot="public">
+    <compoundname>eos::UnknownOptionError</compoundname>
+    <basecompoundref refid="classeos_1_1Exception" prot="public" virt="non-virtual">eos::Exception</basecompoundref>
+    <includes refid="options_8hh" local="no">options.hh</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structeos_1_1UnknownOptionError_1a9dcdcf2d587d5a07692c4d2688a495ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::UnknownOptionError::UnknownOptionError</definition>
+        <argsstring>(const std::string &amp;key)</argsstring>
+        <name>UnknownOptionError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>key</declname>
+        </param>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/options.hh" line="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="structeos_1_1UnknownOptionError" kindref="compound">UnknownOptionError</ref> is thrown when no option of a given name could be found. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1021">
+        <label>eos::UnknownOptionError</label>
+        <link refid="structeos_1_1UnknownOptionError"/>
+        <childnode refid="1022" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1022">
+        <label>eos::Exception</label>
+        <link refid="classeos_1_1Exception"/>
+        <childnode refid="1023" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1023">
+        <label>std::exception</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1024">
+        <label>eos::UnknownOptionError</label>
+        <link refid="structeos_1_1UnknownOptionError"/>
+        <childnode refid="1025" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1025">
+        <label>eos::Exception</label>
+        <link refid="classeos_1_1Exception"/>
+        <childnode refid="1026" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1027" relation="usage">
+          <edgelabel>_message</edgelabel>
+        </childnode>
+      </node>
+      <node id="1028">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="1026">
+        <label>std::exception</label>
+      </node>
+      <node id="1027">
+        <label>std::string</label>
+        <childnode refid="1028" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/options.hh" line="36" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/options.hh" bodystart="34" bodyend="38"/>
+    <listofallmembers>
+      <member refid="classeos_1_1Exception_1acbc0fa64ca3d54cc1f828b07dc80e585" prot="protected" virt="non-virtual"><scope>eos::UnknownOptionError</scope><name>Exception</name></member>
+      <member refid="structeos_1_1UnknownOptionError_1a9dcdcf2d587d5a07692c4d2688a495ab" prot="public" virt="non-virtual"><scope>eos::UnknownOptionError</scope><name>UnknownOptionError</name></member>
+      <member refid="classeos_1_1Exception_1adce7a2af080165b09a599bb13438a8e1" prot="public" virt="virtual"><scope>eos::UnknownOptionError</scope><name>what</name></member>
+      <member refid="classeos_1_1Exception_1a8cb6faea0484cc58c472da9e58c7c30a" prot="public" virt="non-virtual"><scope>eos::UnknownOptionError</scope><name>~Exception</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

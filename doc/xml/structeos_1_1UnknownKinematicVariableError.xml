@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1UnknownKinematicVariableError" kind="struct" prot="public">
+    <compoundname>eos::UnknownKinematicVariableError</compoundname>
+    <basecompoundref refid="classeos_1_1Exception" prot="public" virt="non-virtual">eos::Exception</basecompoundref>
+    <includes refid="kinematic_8hh" local="no">kinematic.hh</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structeos_1_1UnknownKinematicVariableError_1a6f06ee64bdae813e463662c63f09d578" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::UnknownKinematicVariableError::UnknownKinematicVariableError</definition>
+        <argsstring>(const std::string &amp;variable)</argsstring>
+        <name>UnknownKinematicVariableError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>variable</declname>
+        </param>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/kinematic.hh" line="35"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="structeos_1_1UnknownKinematicVariableError" kindref="compound">UnknownKinematicVariableError</ref> is thrown when no parameter of a given name could be found. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1014">
+        <label>eos::Exception</label>
+        <link refid="classeos_1_1Exception"/>
+        <childnode refid="1015" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1013">
+        <label>eos::UnknownKinematicVariableError</label>
+        <link refid="structeos_1_1UnknownKinematicVariableError"/>
+        <childnode refid="1014" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1015">
+        <label>std::exception</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1017">
+        <label>eos::Exception</label>
+        <link refid="classeos_1_1Exception"/>
+        <childnode refid="1018" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1019" relation="usage">
+          <edgelabel>_message</edgelabel>
+        </childnode>
+      </node>
+      <node id="1016">
+        <label>eos::UnknownKinematicVariableError</label>
+        <link refid="structeos_1_1UnknownKinematicVariableError"/>
+        <childnode refid="1017" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1020">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="1018">
+        <label>std::exception</label>
+      </node>
+      <node id="1019">
+        <label>std::string</label>
+        <childnode refid="1020" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/kinematic.hh" line="34" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/kinematic.hh" bodystart="32" bodyend="36"/>
+    <listofallmembers>
+      <member refid="classeos_1_1Exception_1acbc0fa64ca3d54cc1f828b07dc80e585" prot="protected" virt="non-virtual"><scope>eos::UnknownKinematicVariableError</scope><name>Exception</name></member>
+      <member refid="structeos_1_1UnknownKinematicVariableError_1a6f06ee64bdae813e463662c63f09d578" prot="public" virt="non-virtual"><scope>eos::UnknownKinematicVariableError</scope><name>UnknownKinematicVariableError</name></member>
+      <member refid="classeos_1_1Exception_1adce7a2af080165b09a599bb13438a8e1" prot="public" virt="virtual"><scope>eos::UnknownKinematicVariableError</scope><name>what</name></member>
+      <member refid="classeos_1_1Exception_1a8cb6faea0484cc58c472da9e58c7c30a" prot="public" virt="non-virtual"><scope>eos::UnknownKinematicVariableError</scope><name>~Exception</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

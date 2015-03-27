@@ -1,0 +1,121 @@
+\hypertarget{classeos_1_1Histogram_3_011_01_4}{
+\section{eos::Histogram$<$ 1 $>$ Class Template Reference}
+\label{classeos_1_1Histogram_3_011_01_4}\index{eos::Histogram$<$ 1 $>$@{eos::Histogram$<$ 1 $>$}}
+}
+
+
+{\ttfamily \#include $<$histogram.hh$>$}
+
+Inherits \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern$<$ Histogram$<$ 1 $>$ $>$}.\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structeos_1_1Histogram_3_011_01_4_1_1Bin}{Bin}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{Indent}{\bf Insertion and Retrieval}\par
+{\em \label{_amgrp1fa92f5fa236ed95d2fd750c3379ff61}
+ Inserts a bin into the histogram. }\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classeos_1_1Histogram_3_011_01_4_ab36f9b8a8fa6af4cf9df82140c79a1ff}{insert} (const Bin \&bin)
+\begin{DoxyCompactList}\small\item\em Inserts a value into the histogram's matching bin. \item\end{DoxyCompactList}\item 
+void \hyperlink{classeos_1_1Histogram_3_011_01_4_a640dfd992be8cc9d16b8635a739ffaad}{insert} (const double \&value)
+\begin{DoxyCompactList}\small\item\em Inserts a value into the histogram's matching bin. \item\end{DoxyCompactList}\item 
+unsigned \hyperlink{classeos_1_1Histogram_3_011_01_4_aa3aebb76fd88285eb49739901a5f9174}{entries} () const 
+\begin{DoxyCompactList}\small\item\em Returns the number of entries in the histogram. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Iteration}
+\label{_amgrp86c1e32c05338b57578313d8a6fa892d}
+ \begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator}$<$ ConstIteratorTag, const Bin $>$ \hyperlink{classeos_1_1Histogram_3_011_01_4_a58a52ac9f83f5712f4cab9d385660e50}{ConstIterator}
+\item 
+\hyperlink{classeos_1_1WrappedForwardIterator}{ConstIterator} \hyperlink{classeos_1_1Histogram_3_011_01_4_a76e195e3ddf0422c9fa0d898f422b49b}{begin} () const 
+\item 
+\hyperlink{classeos_1_1WrappedForwardIterator}{ConstIterator} \hyperlink{classeos_1_1Histogram_3_011_01_4_a973197d530ad51adc4f09bce519a5add}{end} () const 
+\end{DoxyCompactItemize}
+\subsection*{Basic Functions}
+\label{_amgrp2386c9a1f1785edee33f374dd2db9b3d}
+ \begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1Histogram_3_011_01_4_a474cfef8ca45667e839aea82cbccc75b}{Histogram} ()
+\item 
+\hyperlink{classeos_1_1Histogram_3_011_01_4_ae1c6c89b704ae90ca03fff94124d3124}{$\sim$Histogram} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\item 
+static Histogram \hyperlink{classeos_1_1Histogram_3_011_01_4_a06afb7c9698cce0065d220d4a6b8f0e3}{WithEqualBinning} (const double \&start, const double \&end, const unsigned \&count)
+\end{DoxyCompactItemize}
+\subsubsection*{template$<$$>$ class eos::Histogram$<$ 1 $>$}
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classeos_1_1Histogram_3_011_01_4_a58a52ac9f83f5712f4cab9d385660e50}{
+\index{eos::Histogram$<$ 1 $>$@{eos::Histogram$<$ 1 $>$}!ConstIterator@{ConstIterator}}
+\index{ConstIterator@{ConstIterator}!eos::Histogram< 1 >@{eos::Histogram$<$ 1 $>$}}
+\subsubsection[{ConstIterator}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf WrappedForwardIterator}$<$ConstIteratorTag, const Bin$>$ eos::Histogram$<$ 1 $>$::{\bf ConstIterator}}}
+\label{classeos_1_1Histogram_3_011_01_4_a58a52ac9f83f5712f4cab9d385660e50}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classeos_1_1Histogram_3_011_01_4_a474cfef8ca45667e839aea82cbccc75b}{
+\index{eos::Histogram$<$ 1 $>$@{eos::Histogram$<$ 1 $>$}!Histogram@{Histogram}}
+\index{Histogram@{Histogram}!eos::Histogram< 1 >@{eos::Histogram$<$ 1 $>$}}
+\subsubsection[{Histogram}]{\setlength{\rightskip}{0pt plus 5cm}eos::Histogram$<$ 1 $>$::Histogram ()}}
+\label{classeos_1_1Histogram_3_011_01_4_a474cfef8ca45667e839aea82cbccc75b}
+Constructor.
+
+Creates an empty Histogram, i.e. a Histogram without any bins. \hypertarget{classeos_1_1Histogram_3_011_01_4_ae1c6c89b704ae90ca03fff94124d3124}{
+\index{eos::Histogram$<$ 1 $>$@{eos::Histogram$<$ 1 $>$}!$\sim$Histogram@{$\sim$Histogram}}
+\index{$\sim$Histogram@{$\sim$Histogram}!eos::Histogram< 1 >@{eos::Histogram$<$ 1 $>$}}
+\subsubsection[{$\sim$Histogram}]{\setlength{\rightskip}{0pt plus 5cm}eos::Histogram$<$ 1 $>$::$\sim$Histogram ()}}
+\label{classeos_1_1Histogram_3_011_01_4_ae1c6c89b704ae90ca03fff94124d3124}
+
+
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classeos_1_1Histogram_3_011_01_4_a76e195e3ddf0422c9fa0d898f422b49b}{
+\index{eos::Histogram$<$ 1 $>$@{eos::Histogram$<$ 1 $>$}!begin@{begin}}
+\index{begin@{begin}!eos::Histogram< 1 >@{eos::Histogram$<$ 1 $>$}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ConstIterator} eos::Histogram$<$ 1 $>$::begin () const}}
+\label{classeos_1_1Histogram_3_011_01_4_a76e195e3ddf0422c9fa0d898f422b49b}
+\hypertarget{classeos_1_1Histogram_3_011_01_4_a973197d530ad51adc4f09bce519a5add}{
+\index{eos::Histogram$<$ 1 $>$@{eos::Histogram$<$ 1 $>$}!end@{end}}
+\index{end@{end}!eos::Histogram< 1 >@{eos::Histogram$<$ 1 $>$}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ConstIterator} eos::Histogram$<$ 1 $>$::end () const}}
+\label{classeos_1_1Histogram_3_011_01_4_a973197d530ad51adc4f09bce519a5add}
+\hypertarget{classeos_1_1Histogram_3_011_01_4_aa3aebb76fd88285eb49739901a5f9174}{
+\index{eos::Histogram$<$ 1 $>$@{eos::Histogram$<$ 1 $>$}!entries@{entries}}
+\index{entries@{entries}!eos::Histogram< 1 >@{eos::Histogram$<$ 1 $>$}}
+\subsubsection[{entries}]{\setlength{\rightskip}{0pt plus 5cm}unsigned eos::Histogram$<$ 1 $>$::entries () const}}
+\label{classeos_1_1Histogram_3_011_01_4_aa3aebb76fd88285eb49739901a5f9174}
+
+
+Returns the number of entries in the histogram. \hypertarget{classeos_1_1Histogram_3_011_01_4_a640dfd992be8cc9d16b8635a739ffaad}{
+\index{eos::Histogram$<$ 1 $>$@{eos::Histogram$<$ 1 $>$}!insert@{insert}}
+\index{insert@{insert}!eos::Histogram< 1 >@{eos::Histogram$<$ 1 $>$}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}void eos::Histogram$<$ 1 $>$::insert (const double \& {\em value})}}
+\label{classeos_1_1Histogram_3_011_01_4_a640dfd992be8cc9d16b8635a739ffaad}
+
+
+Inserts a value into the histogram's matching bin. \hypertarget{classeos_1_1Histogram_3_011_01_4_ab36f9b8a8fa6af4cf9df82140c79a1ff}{
+\index{eos::Histogram$<$ 1 $>$@{eos::Histogram$<$ 1 $>$}!insert@{insert}}
+\index{insert@{insert}!eos::Histogram< 1 >@{eos::Histogram$<$ 1 $>$}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}void eos::Histogram$<$ 1 $>$::insert (const Bin \& {\em bin})}}
+\label{classeos_1_1Histogram_3_011_01_4_ab36f9b8a8fa6af4cf9df82140c79a1ff}
+
+
+Inserts a value into the histogram's matching bin. \hypertarget{classeos_1_1Histogram_3_011_01_4_a06afb7c9698cce0065d220d4a6b8f0e3}{
+\index{eos::Histogram$<$ 1 $>$@{eos::Histogram$<$ 1 $>$}!WithEqualBinning@{WithEqualBinning}}
+\index{WithEqualBinning@{WithEqualBinning}!eos::Histogram< 1 >@{eos::Histogram$<$ 1 $>$}}
+\subsubsection[{WithEqualBinning}]{\setlength{\rightskip}{0pt plus 5cm}static Histogram eos::Histogram$<$ 1 $>$::WithEqualBinning (const double \& {\em start}, \/  const double \& {\em end}, \/  const unsigned \& {\em count})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1Histogram_3_011_01_4_a06afb7c9698cce0065d220d4a6b8f0e3}
+Named constructor.
+
+Creates a Histogram with pre-\/existing bins of identical width. 
+\begin{DoxyParams}{Parameters}
+\item[{\em start}]Left-\/most value that shall be covered by the Histogram. \item[{\em end}]Right-\/most value that shall be covered by the Histogram. \item[{\em count}]Number of Bins in the Histogram. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{histogram_8hh}{histogram.hh}\end{DoxyCompactItemize}

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1SelectOneOfType_3_01Want___01_4" kind="struct" prot="public">
+    <compoundname>eos::SelectOneOfType&lt; Want_ &gt;</compoundname>
+    <includes refid="one-of_8hh" local="no">one-of.hh</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Want_</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structeos_1_1SelectOneOfType_3_01Want___01_4_1aa89f45e51d938a8ec8bf5bbfc41bafbc" prot="public" static="no">
+        <type>UnknownTypeForOneOf</type>
+        <definition>typedef UnknownTypeForOneOf eos::SelectOneOfType&lt; Want_ &gt;::Type</definition>
+        <argsstring></argsstring>
+        <name>Type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" line="42" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" line="41" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" bodystart="40" bodyend="43"/>
+    <listofallmembers>
+      <member refid="structeos_1_1SelectOneOfType_3_01Want___01_4_1aa89f45e51d938a8ec8bf5bbfc41bafbc" prot="public" virt="non-virtual"><scope>eos::SelectOneOfType&lt; Want_ &gt;</scope><name>Type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1NoSuchModelError" kind="struct" prot="public">
+    <compoundname>eos::NoSuchModelError</compoundname>
+    <basecompoundref refid="classeos_1_1Exception" prot="public" virt="non-virtual">eos::Exception</basecompoundref>
+    <includes refid="model_8hh" local="no">model.hh</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structeos_1_1NoSuchModelError_1a2659306f126d1ab6198c127101529241" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::NoSuchModelError::NoSuchModelError</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>NoSuchModelError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/model.hh" line="118"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="704">
+        <label>eos::Exception</label>
+        <link refid="classeos_1_1Exception"/>
+        <childnode refid="705" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="703">
+        <label>eos::NoSuchModelError</label>
+        <link refid="structeos_1_1NoSuchModelError"/>
+        <childnode refid="704" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="705">
+        <label>std::exception</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="707">
+        <label>eos::Exception</label>
+        <link refid="classeos_1_1Exception"/>
+        <childnode refid="708" relation="public-inheritance">
+        </childnode>
+        <childnode refid="709" relation="usage">
+          <edgelabel>_message</edgelabel>
+        </childnode>
+      </node>
+      <node id="706">
+        <label>eos::NoSuchModelError</label>
+        <link refid="structeos_1_1NoSuchModelError"/>
+        <childnode refid="707" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="710">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="708">
+        <label>std::exception</label>
+      </node>
+      <node id="709">
+        <label>std::string</label>
+        <childnode refid="710" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/model.hh" line="117" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/model.hh" bodystart="115" bodyend="119"/>
+    <listofallmembers>
+      <member refid="classeos_1_1Exception_1acbc0fa64ca3d54cc1f828b07dc80e585" prot="protected" virt="non-virtual"><scope>eos::NoSuchModelError</scope><name>Exception</name></member>
+      <member refid="structeos_1_1NoSuchModelError_1a2659306f126d1ab6198c127101529241" prot="public" virt="non-virtual"><scope>eos::NoSuchModelError</scope><name>NoSuchModelError</name></member>
+      <member refid="classeos_1_1Exception_1adce7a2af080165b09a599bb13438a8e1" prot="public" virt="virtual"><scope>eos::NoSuchModelError</scope><name>what</name></member>
+      <member refid="classeos_1_1Exception_1a8cb6faea0484cc58c472da9e58c7c30a" prot="public" virt="non-virtual"><scope>eos::NoSuchModelError</scope><name>~Exception</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

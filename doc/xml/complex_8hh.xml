@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="complex_8hh" kind="file">
+    <compoundname>complex.hh</compoundname>
+    <includes local="no">complex</includes>
+    <includedby refid="bremsstrahlung_8hh" local="no">/home/alexshires/EOS/eos-next/eos/rare-b-decays/bremsstrahlung.hh</includedby>
+    <includedby refid="charm-loops_8hh" local="no">/home/alexshires/EOS/eos-next/eos/rare-b-decays/charm-loops.hh</includedby>
+    <includedby refid="em-contributions_8hh" local="no">/home/alexshires/EOS/eos-next/eos/rare-b-decays/em-contributions.hh</includedby>
+    <includedby refid="exclusive-b-to-dilepton_8hh" local="no">/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-dilepton.hh</includedby>
+    <includedby refid="exclusive-b-to-s-dilepton-large-recoil_8hh" local="no">/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh</includedby>
+    <includedby refid="exclusive-b-to-s-dilepton-low-recoil_8hh" local="no">/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh</includedby>
+    <includedby refid="exclusive-b-to-s-gamma_8hh" local="no">/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-gamma.hh</includedby>
+    <includedby refid="inclusive-b-to-s-dilepton_8hh" local="no">/home/alexshires/EOS/eos-next/eos/rare-b-decays/inclusive-b-to-s-dilepton.hh</includedby>
+    <includedby refid="qcdf__integrals_8hh" local="no">/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh</includedby>
+    <includedby refid="integrate_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/integrate.hh</includedby>
+    <includedby refid="polylog_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/polylog.hh</includedby>
+    <includedby refid="wilson__coefficients_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh</includedby>
+    <incdepgraph>
+      <node id="692">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/complex.hh</label>
+        <link refid="complex.hh"/>
+        <childnode refid="693" relation="include">
+        </childnode>
+      </node>
+      <node id="693">
+        <label>complex</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="710">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/standard-model.hh</label>
+        <link refid="standard-model_8hh"/>
+        <childnode refid="709" relation="include">
+        </childnode>
+        <childnode refid="711" relation="include">
+        </childnode>
+      </node>
+      <node id="711">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh</label>
+        <link refid="wilson__scan__model_8hh"/>
+      </node>
+      <node id="699">
+        <label>/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh</label>
+        <link refid="exclusive-b-to-s-dilepton-large-recoil_8hh"/>
+      </node>
+      <node id="706">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/polylog.hh</label>
+        <link refid="polylog_8hh"/>
+      </node>
+      <node id="694">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/complex.hh</label>
+        <link refid="complex.hh"/>
+        <childnode refid="695" relation="include">
+        </childnode>
+        <childnode refid="696" relation="include">
+        </childnode>
+        <childnode refid="697" relation="include">
+        </childnode>
+        <childnode refid="698" relation="include">
+        </childnode>
+        <childnode refid="699" relation="include">
+        </childnode>
+        <childnode refid="700" relation="include">
+        </childnode>
+        <childnode refid="701" relation="include">
+        </childnode>
+        <childnode refid="702" relation="include">
+        </childnode>
+        <childnode refid="703" relation="include">
+        </childnode>
+        <childnode refid="704" relation="include">
+        </childnode>
+        <childnode refid="706" relation="include">
+        </childnode>
+        <childnode refid="707" relation="include">
+        </childnode>
+      </node>
+      <node id="696">
+        <label>/home/alexshires/EOS/eos-next/eos/rare-b-decays/charm-loops.hh</label>
+        <link refid="charm-loops_8hh"/>
+      </node>
+      <node id="705">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/integrate-impl.hh</label>
+        <link refid="integrate-impl_8hh"/>
+      </node>
+      <node id="703">
+        <label>/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh</label>
+        <link refid="qcdf__integrals_8hh"/>
+      </node>
+      <node id="708">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/model.hh</label>
+        <link refid="model_8hh"/>
+        <childnode refid="696" relation="include">
+        </childnode>
+        <childnode refid="709" relation="include">
+        </childnode>
+        <childnode refid="710" relation="include">
+        </childnode>
+        <childnode refid="711" relation="include">
+        </childnode>
+      </node>
+      <node id="697">
+        <label>/home/alexshires/EOS/eos-next/eos/rare-b-decays/em-contributions.hh</label>
+        <link refid="em-contributions_8hh"/>
+      </node>
+      <node id="698">
+        <label>/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-dilepton.hh</label>
+        <link refid="exclusive-b-to-dilepton_8hh"/>
+      </node>
+      <node id="701">
+        <label>/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-gamma.hh</label>
+        <link refid="exclusive-b-to-s-gamma_8hh"/>
+      </node>
+      <node id="709">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/ckm_scan_model.hh</label>
+        <link refid="ckm__scan__model_8hh"/>
+      </node>
+      <node id="695">
+        <label>/home/alexshires/EOS/eos-next/eos/rare-b-decays/bremsstrahlung.hh</label>
+        <link refid="bremsstrahlung_8hh"/>
+      </node>
+      <node id="707">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh</label>
+        <link refid="wilson__coefficients_8hh"/>
+        <childnode refid="708" relation="include">
+        </childnode>
+      </node>
+      <node id="700">
+        <label>/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh</label>
+        <link refid="exclusive-b-to-s-dilepton-low-recoil_8hh"/>
+      </node>
+      <node id="702">
+        <label>/home/alexshires/EOS/eos-next/eos/rare-b-decays/inclusive-b-to-s-dilepton.hh</label>
+        <link refid="inclusive-b-to-s-dilepton_8hh"/>
+      </node>
+      <node id="704">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/integrate.hh</label>
+        <link refid="integrate_8hh"/>
+        <childnode refid="705" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceeos">eos</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="complex_8hh_1a2fe09ac643d095558e312629b20b0830" prot="public" static="no">
+        <name>WILSON_FITTER_GUARD_SRC_UTILS_COMPLEX_HH</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/complex.hh" line="21" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/complex.hh" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>vim:<sp/>set<sp/>sw=4<sp/>sts=4<sp/>et<sp/>foldmethod=syntax<sp/>:<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>Danny<sp/>van<sp/>Dyk</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>EOS<sp/>project.<sp/>EOS<sp/>is<sp/>free<sp/>software;</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Public<sp/>License<sp/>version<sp/>2,<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>EOS<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/>but<sp/>WITHOUT<sp/>ANY</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>along<sp/>with</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/>59<sp/>Temple</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>Place,<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307<sp/><sp/>USA</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>WILSON_FITTER_GUARD_SRC_UTILS_COMPLEX_HH</highlight></codeline>
+<codeline lineno="21" refid="complex_8hh_1a2fe09ac643d095558e312629b20b0830" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>WILSON_FITTER_GUARD_SRC_UTILS_COMPLEX_HH<sp/>1</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;complex&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">eos</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::complex;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/complex.hh"/>
+  </compounddef>
+</doxygen>

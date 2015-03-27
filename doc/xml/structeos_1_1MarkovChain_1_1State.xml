@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1MarkovChain_1_1State" kind="struct" prot="public">
+    <compoundname>eos::MarkovChain::State</compoundname>
+    <includes refid="markov__chain_8hh" local="no">markov_chain.hh</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structeos_1_1MarkovChain_1_1State_1ad7590843e4feca7e696c53863e6e10c1" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">State</ref> &gt;::const_iterator</type>
+        <definition>typedef std::vector&lt;State&gt;::const_iterator eos::MarkovChain::State::Iterator</definition>
+        <argsstring></argsstring>
+        <name>Iterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" line="204" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structeos_1_1MarkovChain_1_1State_1a13518a1ded09d2c61dbfc2cc40297b94" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; eos::MarkovChain::State::point</definition>
+        <argsstring></argsstring>
+        <name>point</name>
+        <briefdescription>
+<para>position in parameter space </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" line="207" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1MarkovChain_1_1State_1a0876fac286eb6eb52165389cfcc9e602" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::MarkovChain::State::log_likelihood</definition>
+        <argsstring></argsstring>
+        <name>log_likelihood</name>
+        <briefdescription>
+<para>log likelihood at the point </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" line="210" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1MarkovChain_1_1State_1a4fa9205eb7785b52cc97f13714a3f62b" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::MarkovChain::State::log_prior</definition>
+        <argsstring></argsstring>
+        <name>log_prior</name>
+        <briefdescription>
+<para>log prior at the point </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" line="213" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1MarkovChain_1_1State_1a893de1735354ecbfa51b34655fb28833" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::MarkovChain::State::log_posterior</definition>
+        <argsstring></argsstring>
+        <name>log_posterior</name>
+        <briefdescription>
+<para>log posterior at the points </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" line="216" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1MarkovChain_1_1State_1a23f1f4c2b99c7b8956409f5f645d0337" prot="public" static="no" mutable="no">
+        <type><ref refid="structeos_1_1MarkovChain_1_1HyperParameter" kindref="compound">MarkovChain::HyperParameter</ref></type>
+        <definition>MarkovChain::HyperParameter eos::MarkovChain::State::hyper_parameter</definition>
+        <argsstring></argsstring>
+        <name>hyper_parameter</name>
+        <briefdescription>
+<para>Contains possibly multidimensional hyperparameter information. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" line="219" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structeos_1_1MarkovChain_1_1State_1a93beca0dcab0389f5b822394f341afc6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eos::MarkovChain::State::State</definition>
+        <argsstring>()</argsstring>
+        <name>State</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" line="222" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" bodystart="221" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1MarkovChain_1_1State_1adaf4e7d6c9fc2b02f8adb1e924ceaf3e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eos::MarkovChain::State::State</definition>
+        <argsstring>(const State &amp;other)</argsstring>
+        <name>State</name>
+        <param>
+          <type>const <ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">State</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" line="226" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" bodystart="225" bodyend="233"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Summarize info at current position in parameter space </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="952">
+        <label>std::vector&lt; double &gt;</label>
+      </node>
+      <node id="950">
+        <label>eos::MarkovChain::State</label>
+        <link refid="structeos_1_1MarkovChain_1_1State"/>
+        <childnode refid="951" relation="usage">
+          <edgelabel>hyper_parameter</edgelabel>
+        </childnode>
+        <childnode refid="952" relation="usage">
+          <edgelabel>point</edgelabel>
+        </childnode>
+      </node>
+      <node id="951">
+        <label>eos::MarkovChain::HyperParameter</label>
+        <link refid="structeos_1_1MarkovChain_1_1HyperParameter"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" line="203" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" bodystart="202" bodyend="234"/>
+    <listofallmembers>
+      <member refid="structeos_1_1MarkovChain_1_1State_1a23f1f4c2b99c7b8956409f5f645d0337" prot="public" virt="non-virtual"><scope>eos::MarkovChain::State</scope><name>hyper_parameter</name></member>
+      <member refid="structeos_1_1MarkovChain_1_1State_1ad7590843e4feca7e696c53863e6e10c1" prot="public" virt="non-virtual"><scope>eos::MarkovChain::State</scope><name>Iterator</name></member>
+      <member refid="structeos_1_1MarkovChain_1_1State_1a0876fac286eb6eb52165389cfcc9e602" prot="public" virt="non-virtual"><scope>eos::MarkovChain::State</scope><name>log_likelihood</name></member>
+      <member refid="structeos_1_1MarkovChain_1_1State_1a893de1735354ecbfa51b34655fb28833" prot="public" virt="non-virtual"><scope>eos::MarkovChain::State</scope><name>log_posterior</name></member>
+      <member refid="structeos_1_1MarkovChain_1_1State_1a4fa9205eb7785b52cc97f13714a3f62b" prot="public" virt="non-virtual"><scope>eos::MarkovChain::State</scope><name>log_prior</name></member>
+      <member refid="structeos_1_1MarkovChain_1_1State_1a13518a1ded09d2c61dbfc2cc40297b94" prot="public" virt="non-virtual"><scope>eos::MarkovChain::State</scope><name>point</name></member>
+      <member refid="structeos_1_1MarkovChain_1_1State_1a93beca0dcab0389f5b822394f341afc6" prot="public" virt="non-virtual"><scope>eos::MarkovChain::State</scope><name>State</name></member>
+      <member refid="structeos_1_1MarkovChain_1_1State_1adaf4e7d6c9fc2b02f8adb1e924ceaf3e" prot="public" virt="non-virtual"><scope>eos::MarkovChain::State</scope><name>State</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

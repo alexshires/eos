@@ -1,0 +1,110 @@
+\hypertarget{apply_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/apply.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2010 Danny van Dyk}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_APPLY\_HH}
+\hypertarget{apply_8hh_source_l00021}{}\hyperlink{apply_8hh_a4328bcf6a6b86a72d4e546c8e99a0b5f}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_APPLY\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{preprocessor}{#include <functional>}
+00024 \textcolor{preprocessor}{#include <tuple>}
+00025 
+00026 \textcolor{keyword}{namespace }eos
+00027 \{
+\hypertarget{apply_8hh_source_l00028}{}\hyperlink{namespaceeos_1_1impl}{00028}     \textcolor{keyword}{namespace }impl
+00029     \{
+00030         \textcolor{keyword}{template} <\textcolor{keyword}{typename} Result\_, \textcolor{keywordtype}{unsigned} n\_> \textcolor{keyword}{struct }Applicator
+00031         \{
+00032             \textcolor{keyword}{template} <\textcolor{keyword}{typename} Function\_, \textcolor{keyword}{typename} Tuple\_, \textcolor{keyword}{typename} ... CallArgs\_
+      >
+00033             \textcolor{keyword}{static} Result\_ \hyperlink{namespaceeos_a6d6ca72f35614029a62c270ec042d80c}{apply}(\textcolor{keyword}{const} Function\_ & f, \textcolor{keyword}{const} Tuple\_ & t, CallArgs\_
+       ... a)
+00034             \{
+00035                 \textcolor{keywordflow}{return} \hyperlink{namespaceeos_a6d6ca72f35614029a62c270ec042d80c}{Applicator<Result_, n_ - 1>::apply}(f, t, std::get<n\_ - 1>(
+      t), a ...);
+00036             \}
+00037         \};
+00038 
+00039         \textcolor{keyword}{template} <\textcolor{keyword}{typename} Result\_> \textcolor{keyword}{struct }Applicator<Result\_, 0>
+00040         \{
+00041             \textcolor{keyword}{template} <\textcolor{keyword}{typename} Function\_, \textcolor{keyword}{typename} Tuple\_, \textcolor{keyword}{typename} ... CallArgs\_
+      >
+00042             \textcolor{keyword}{static} Result\_ \hyperlink{namespaceeos_a6d6ca72f35614029a62c270ec042d80c}{apply}(\textcolor{keyword}{const} Function\_ & f, \textcolor{keyword}{const} Tuple\_ &, CallArgs\_ .
+      .. a)
+00043             \{
+00044                 \textcolor{keywordflow}{return} f(a ...);
+00045             \}
+00046         \};
+00047 
+00048         \textcolor{keyword}{template} <> \textcolor{keyword}{struct }Applicator<void, 0>
+00049         \{
+00050             \textcolor{keyword}{template} <\textcolor{keyword}{typename} Function\_, \textcolor{keyword}{typename} Tuple\_, \textcolor{keyword}{typename} ... CallArgs\_
+      >
+00051             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \hyperlink{namespaceeos_a6d6ca72f35614029a62c270ec042d80c}{apply}(\textcolor{keyword}{const} Function\_ & f, \textcolor{keyword}{const} Tuple\_ &, CallArgs\_ ... 
+      a)
+00052             \{
+00053                 f(a ...);
+00054             \}
+00055         \};
+00056     \}
+00057 
+00058     \textcolor{comment}{/* freestanding function */}
+00059     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Result\_, \textcolor{keyword}{typename} ... FunctionArgs\_, \textcolor{keyword}{typename} ... TupleEle
+      ments\_>
+\hypertarget{apply_8hh_source_l00060}{}\hyperlink{namespaceeos_a6d6ca72f35614029a62c270ec042d80c}{00060}     Result\_ \hyperlink{namespaceeos_a6d6ca72f35614029a62c270ec042d80c}{apply}(Result\_ (* f)(FunctionArgs\_ ...), \textcolor{keyword}{const} std::tuple<TupleElement
+      s\_ ...> & t)
+00061     \{
+00062         static\_assert(\textcolor{keyword}{sizeof}...(FunctionArgs\_) == \textcolor{keyword}{sizeof}...(TupleElements\_), \textcolor{stringliteral}{"Can
+      not apply function of N parameters to tuple of M elements, N != M"});
+00063 
+00064         \textcolor{keywordflow}{return} impl::Applicator<Result\_, \textcolor{keyword}{sizeof}...(FunctionArgs\_)>::\hyperlink{namespaceeos_a6d6ca72f35614029a62c270ec042d80c}{apply}(f, t);
+00065     \}
+00066 
+00067     \textcolor{comment}{/* function wrapped in std::function<> */}
+00068     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Result\_, \textcolor{keyword}{typename} ... FunctionArgs\_, \textcolor{keyword}{typename} ... TupleEle
+      ments\_>
+\hypertarget{apply_8hh_source_l00069}{}\hyperlink{namespaceeos_a56ba31c6e8b9cd9a310e2df15220d202}{00069}     Result\_ \hyperlink{namespaceeos_a6d6ca72f35614029a62c270ec042d80c}{apply}(\textcolor{keyword}{const} std::function<Result\_ (FunctionArgs\_ ...)> & f, \textcolor{keyword}{const} std
+      ::tuple<TupleElements\_ ...> & t)
+00070     \{
+00071         static\_assert(\textcolor{keyword}{sizeof}...(FunctionArgs\_) == \textcolor{keyword}{sizeof}...(TupleElements\_), \textcolor{stringliteral}{"Can
+      not apply function of N parameters to tuple of M elements, N != M"});
+00072 
+00073         \textcolor{keywordflow}{return} impl::Applicator<Result\_, \textcolor{keyword}{sizeof}...(FunctionArgs\_)>::\hyperlink{namespaceeos_a6d6ca72f35614029a62c270ec042d80c}{apply}(f, t);
+00074     \}
+00075 
+00076     \textcolor{comment}{/* pointer to member function */}
+00077     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Result\_, \textcolor{keyword}{typename} Class\_, \textcolor{keyword}{typename} ... FunctionArgs\_, \textcolor{keyword}{type
+      name} ... TupleElements\_>
+\hypertarget{apply_8hh_source_l00078}{}\hyperlink{namespaceeos_a05333558aad48dbab3da261c54e3282d}{00078}     Result\_ \hyperlink{namespaceeos_a6d6ca72f35614029a62c270ec042d80c}{apply}(Result\_ (Class\_::* f)(FunctionArgs\_ ...), \textcolor{keyword}{const} std::tuple<Clas
+      s\_ *, TupleElements\_ ...> & t)
+00079     \{
+00080         static\_assert(\textcolor{keyword}{sizeof}...(FunctionArgs\_) == \textcolor{keyword}{sizeof}...(TupleElements\_), \textcolor{stringliteral}{"Can
+      not apply function of N parameters to tuple of M elements, N != M"});
+00081 
+00082         \textcolor{keywordflow}{return} impl::Applicator<Result\_, 1 + \textcolor{keyword}{sizeof}...(FunctionArgs\_)>::\hyperlink{namespaceeos_a6d6ca72f35614029a62c270ec042d80c}{apply}(std
+      ::function<Result\_ (Class\_ *, FunctionArgs\_ & ...)>(std::mem\_fn(f)), t);
+00083     \}
+00084 \}
+00085 
+00086 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

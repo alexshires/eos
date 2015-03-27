@@ -1,0 +1,145 @@
+\hypertarget{classeos_1_1Kinematics}{
+\section{eos::Kinematics Class Reference}
+\label{classeos_1_1Kinematics}\index{eos::Kinematics@{eos::Kinematics}}
+}
+
+
+{\ttfamily \#include $<$kinematic.hh$>$}
+
+Inherits \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern$<$ Kinematics $>$}.\subsection*{Public Member Functions}
+\begin{Indent}{\bf Basic Functions}\par
+{\em \label{_amgrp2386c9a1f1785edee33f374dd2db9b3d}
+ Constructor. }\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1Kinematics_a5385a72bcc6db8568a82808d6f02aa9b}{Kinematics} ()
+\item 
+\hyperlink{classeos_1_1Kinematics_add9a8894b7712980d4ff89440ba87f5c}{Kinematics} (const std::initializer\_\-list$<$ std::pair$<$ std::string, double $>$$>$ \&variables)
+\item 
+\hyperlink{classeos_1_1Kinematics_a9ec2eee0f195a921a50de942bfb7d38f}{$\sim$Kinematics} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\item 
+\hyperlink{classeos_1_1Kinematics}{Kinematics} \hyperlink{classeos_1_1Kinematics_aedd9681136ab3735fb754e2840e10715}{clone} () const 
+\item 
+bool \hyperlink{classeos_1_1Kinematics_a7c2edc2b99e1cfd20b71ebd3dcc64d6f}{operator==} (const \hyperlink{classeos_1_1Kinematics}{Kinematics} \&rhs) const 
+\begin{DoxyCompactList}\small\item\em Equality comparison operator. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classeos_1_1Kinematics_a20f3e18e4c4157196d7c384ae2f2f2d7}{operator!=} (const \hyperlink{classeos_1_1Kinematics}{Kinematics} \&rhs) const 
+\begin{DoxyCompactList}\small\item\em Inequality comparison operator. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Variable access}\par
+{\em \label{_amgrp5c463b2e556064c0e8e1d0475c962a4c}
+ }\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1KinematicVariable}{KinematicVariable} \hyperlink{classeos_1_1Kinematics_a0db9fd05c920dae2e0b0556dba0ebb08}{declare} (const std::string \&name, const double \&value=0.0)
+\item 
+void \hyperlink{classeos_1_1Kinematics_aeca2fb170ac958269fdc735ddf8bd241}{set} (const std::string \&variable, const double \&value)
+\item 
+\hyperlink{classeos_1_1KinematicVariable}{KinematicVariable} \hyperlink{classeos_1_1Kinematics_acb41cb59e57011e701785db06164343c}{operator\mbox{[}$\,$\mbox{]}} (const std::string \&variable) const 
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Output}\par
+{\em \label{_amgrp29c2c02a361c9d7028472e5d92cd4a54}
+ }\begin{DoxyCompactItemize}
+\item 
+std::string \hyperlink{classeos_1_1Kinematics_a297facfe690f7f805d4af5e32b739af9}{as\_\-string} () const 
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+\hyperlink{classeos_1_1Kinematics}{Kinematics} keeps the set of all kinematic variables for any \hyperlink{classeos_1_1Observable}{Observable}.
+
+Access to any \hyperlink{classeos_1_1KinematicVariable}{KinematicVariable} or their values is coherent, i.e., changes to a \hyperlink{classeos_1_1KinematicVariable}{KinematicVariable} object will propagate to every other object with the same parent \hyperlink{classeos_1_1Kinematics}{Kinematics} and which handle the same variable by name. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classeos_1_1Kinematics_a5385a72bcc6db8568a82808d6f02aa9b}{
+\index{eos::Kinematics@{eos::Kinematics}!Kinematics@{Kinematics}}
+\index{Kinematics@{Kinematics}!eos::Kinematics@{eos::Kinematics}}
+\subsubsection[{Kinematics}]{\setlength{\rightskip}{0pt plus 5cm}eos::Kinematics::Kinematics ()}}
+\label{classeos_1_1Kinematics_a5385a72bcc6db8568a82808d6f02aa9b}
+Constructor.
+
+Create an instance of \hyperlink{classeos_1_1Kinematics}{Kinematics} with a given set of initial kinematic variables.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em variables}]The set of initial kinematics variables from which this object shall be constructed. \end{DoxyParams}
+\hypertarget{classeos_1_1Kinematics_add9a8894b7712980d4ff89440ba87f5c}{
+\index{eos::Kinematics@{eos::Kinematics}!Kinematics@{Kinematics}}
+\index{Kinematics@{Kinematics}!eos::Kinematics@{eos::Kinematics}}
+\subsubsection[{Kinematics}]{\setlength{\rightskip}{0pt plus 5cm}eos::Kinematics::Kinematics (const std::initializer\_\-list$<$ std::pair$<$ std::string, double $>$$>$ \& {\em variables})}}
+\label{classeos_1_1Kinematics_add9a8894b7712980d4ff89440ba87f5c}
+Constructor.
+
+Create an instance of \hyperlink{classeos_1_1Kinematics}{Kinematics} with a given set of initial kinematic variables.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em variables}]The set of initial kinematics variables from which this object shall be constructed. \end{DoxyParams}
+\hypertarget{classeos_1_1Kinematics_a9ec2eee0f195a921a50de942bfb7d38f}{
+\index{eos::Kinematics@{eos::Kinematics}!$\sim$Kinematics@{$\sim$Kinematics}}
+\index{$\sim$Kinematics@{$\sim$Kinematics}!eos::Kinematics@{eos::Kinematics}}
+\subsubsection[{$\sim$Kinematics}]{\setlength{\rightskip}{0pt plus 5cm}eos::Kinematics::$\sim$Kinematics ()}}
+\label{classeos_1_1Kinematics_a9ec2eee0f195a921a50de942bfb7d38f}
+
+
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classeos_1_1Kinematics_a297facfe690f7f805d4af5e32b739af9}{
+\index{eos::Kinematics@{eos::Kinematics}!as\_\-string@{as\_\-string}}
+\index{as\_\-string@{as\_\-string}!eos::Kinematics@{eos::Kinematics}}
+\subsubsection[{as\_\-string}]{\setlength{\rightskip}{0pt plus 5cm}std::string eos::Kinematics::as\_\-string () const}}
+\label{classeos_1_1Kinematics_a297facfe690f7f805d4af5e32b739af9}
+Retrieve a string representation of the set of kinematic variables. \hypertarget{classeos_1_1Kinematics_aedd9681136ab3735fb754e2840e10715}{
+\index{eos::Kinematics@{eos::Kinematics}!clone@{clone}}
+\index{clone@{clone}!eos::Kinematics@{eos::Kinematics}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Kinematics} eos::Kinematics::clone () const}}
+\label{classeos_1_1Kinematics_aedd9681136ab3735fb754e2840e10715}
+Create an independent copy of this \hyperlink{classeos_1_1Kinematics}{Kinematics} object. \hypertarget{classeos_1_1Kinematics_a0db9fd05c920dae2e0b0556dba0ebb08}{
+\index{eos::Kinematics@{eos::Kinematics}!declare@{declare}}
+\index{declare@{declare}!eos::Kinematics@{eos::Kinematics}}
+\subsubsection[{declare}]{\setlength{\rightskip}{0pt plus 5cm}{\bf KinematicVariable} eos::Kinematics::declare (const std::string \& {\em name}, \/  const double \& {\em value} = {\ttfamily 0.0})}}
+\label{classeos_1_1Kinematics_a0db9fd05c920dae2e0b0556dba0ebb08}
+Declare a new kinematic variable.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]Name of the new variable to be declared. \item[{\em value}](Optional) value for the new variable. \end{DoxyParams}
+\hypertarget{classeos_1_1Kinematics_a20f3e18e4c4157196d7c384ae2f2f2d7}{
+\index{eos::Kinematics@{eos::Kinematics}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!eos::Kinematics@{eos::Kinematics}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool eos::Kinematics::operator!= (const {\bf Kinematics} \& {\em rhs}) const}}
+\label{classeos_1_1Kinematics_a20f3e18e4c4157196d7c384ae2f2f2d7}
+
+
+Inequality comparison operator. \hypertarget{classeos_1_1Kinematics_a7c2edc2b99e1cfd20b71ebd3dcc64d6f}{
+\index{eos::Kinematics@{eos::Kinematics}!operator==@{operator==}}
+\index{operator==@{operator==}!eos::Kinematics@{eos::Kinematics}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool eos::Kinematics::operator== (const {\bf Kinematics} \& {\em rhs}) const}}
+\label{classeos_1_1Kinematics_a7c2edc2b99e1cfd20b71ebd3dcc64d6f}
+
+
+Equality comparison operator. \hypertarget{classeos_1_1Kinematics_acb41cb59e57011e701785db06164343c}{
+\index{eos::Kinematics@{eos::Kinematics}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!eos::Kinematics@{eos::Kinematics}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}{\bf KinematicVariable} eos::Kinematics::operator\mbox{[}$\,$\mbox{]} (const std::string \& {\em variable}) const}}
+\label{classeos_1_1Kinematics_acb41cb59e57011e701785db06164343c}
+Retrieve a variable's \hyperlink{classeos_1_1KinematicVariable}{KinematicVariable} object by name.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]The name of the \hyperlink{classeos_1_1KinematicVariable}{KinematicVariable} that shall be retrieved. \end{DoxyParams}
+\hypertarget{classeos_1_1Kinematics_aeca2fb170ac958269fdc735ddf8bd241}{
+\index{eos::Kinematics@{eos::Kinematics}!set@{set}}
+\index{set@{set}!eos::Kinematics@{eos::Kinematics}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}void eos::Kinematics::set (const std::string \& {\em variable}, \/  const double \& {\em value})}}
+\label{classeos_1_1Kinematics_aeca2fb170ac958269fdc735ddf8bd241}
+Set a kinematic variable's numeric value.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]The name of the variable whose numeric value shall be changed. \item[{\em value}]The variable's new numeric value. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{kinematic_8hh}{kinematic.hh}\end{DoxyCompactItemize}

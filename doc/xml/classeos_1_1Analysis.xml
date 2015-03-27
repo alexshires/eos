@@ -1,0 +1,516 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1Analysis" kind="class" prot="public">
+    <compoundname>eos::Analysis</compoundname>
+    <basecompoundref refid="classeos_1_1PrivateImplementationPattern" prot="public" virt="non-virtual">eos::PrivateImplementationPattern&lt; Analysis &gt;</basecompoundref>
+    <includes refid="analysis_8hh" local="no">analysis.hh</includes>
+    <innerclass refid="structeos_1_1Analysis_1_1OptimizationOptions" prot="public">eos::Analysis::OptimizationOptions</innerclass>
+    <innerclass refid="structeos_1_1Analysis_1_1Output" prot="public">eos::Analysis::Output</innerclass>
+      <sectiondef kind="user-defined">
+      <header>Basic Functions</header>
+      <description><para><anchor id="_1amgrp2386c9a1f1785edee33f374dd2db9b3d"/> </para></description>
+      <memberdef kind="function" id="classeos_1_1Analysis_1a252a0ae93caf7c7f6db627fe563c72bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::Analysis::Analysis</definition>
+        <argsstring>(const LogLikelihood &amp;log_likelihood)</argsstring>
+        <name>Analysis</name>
+        <param>
+          <type>const <ref refid="classeos_1_1LogLikelihood" kindref="compound">LogLikelihood</ref> &amp;</type>
+          <declname>log_likelihood</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor.</para><para>Extracts parameters, observables from <ref refid="classeos_1_1LogLikelihood" kindref="compound">LogLikelihood</ref>. The default prior (flat) is assumed for all parameters.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>log_likelihood</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classeos_1_1LogLikelihood" kindref="compound">LogLikelihood</ref> functor which shall be analysed.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para><ref refid="classeos_1_1Analysis" kindref="compound">Analysis</ref> assumes ownership of log_likelihood </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" line="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Analysis_1a41c872da6c87e398f1807012262a2eff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::Analysis::~Analysis</definition>
+        <argsstring>()</argsstring>
+        <name>~Analysis</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" line="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Analysis_1a05e85c6fa4f83ef4b768c52d4c4f75bc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceeos_1afc57020492535ccdd85cfc3b7421340d" kindref="member">AnalysisPtr</ref></type>
+        <definition>AnalysisPtr eos::Analysis::clone</definition>
+        <argsstring>() const </argsstring>
+        <name>clone</name>
+        <briefdescription>
+<para>Clone this <ref refid="classeos_1_1Analysis" kindref="compound">Analysis</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" line="72"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Accessors</header>
+      <description><para><anchor id="_1amgrp04cb611d2bf0c8edd5b113799b30e174"/> </para></description>
+      <memberdef kind="function" id="classeos_1_1Analysis_1a8cc99f2ff2c99e2977c9dab68ff13c8b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::vector&lt; <ref refid="structeos_1_1ParameterDescription" kindref="compound">ParameterDescription</ref> &gt; &amp;</type>
+        <definition>const std::vector&lt;ParameterDescription&gt;&amp; eos::Analysis::parameter_descriptions</definition>
+        <argsstring>() const </argsstring>
+        <name>parameter_descriptions</name>
+        <briefdescription>
+<para>Retrieve a set of all parameters, including ranges. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" line="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Analysis_1a963c134ff67911b8a4bc90fc1342e3a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::Analysis::operator[]</definition>
+        <argsstring>(const unsigned &amp;index)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve a parameter by index.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the parameter. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" line="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Analysis_1a750da19ea2292416b8b42dc2c259935e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref></type>
+        <definition>Parameters eos::Analysis::parameters</definition>
+        <argsstring>() const </argsstring>
+        <name>parameters</name>
+        <briefdescription>
+<para>Retrieve our associates <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" line="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Analysis_1a3062ad70d7888517d3fa09e7dcb183cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool eos::Analysis::add</definition>
+        <argsstring>(const LogPriorPtr &amp;prior, bool nuisance=false)</argsstring>
+        <name>add</name>
+        <param>
+          <type>const <ref refid="namespaceeos_1ac5481e3b46ee55ff24606ee7f6e78651" kindref="member">LogPriorPtr</ref> &amp;</type>
+          <declname>prior</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>nuisance</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add one or more parameters and associated prior density</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prior</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The logarithmic prior density. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nuisance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>False for a parameter of interest </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" line="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Analysis_1a444e11133ea75c88fb2579f1ac73c8c3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::Analysis::dump_descriptions</definition>
+        <argsstring>(hdf5::File &amp;file, std::string data_set_base=&quot;/descriptions&quot;) const </argsstring>
+        <name>dump_descriptions</name>
+        <param>
+          <type><ref refid="classeos_1_1hdf5_1_1File" kindref="compound">hdf5::File</ref> &amp;</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>data_set_base</declname>
+          <defval>&quot;/descriptions&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write parameter descriptions, constraints, observables into the <ref refid="namespaceeos_1_1hdf5" kindref="compound">hdf5</ref> file under the given group name. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" line="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Analysis_1a7146dc3458d035af4546890b0795146b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; double, double &gt;</type>
+        <definition>std::pair&lt;double, double&gt; eos::Analysis::goodness_of_fit</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;parameter_values, const unsigned &amp;simulated_datasets, std::string output_file=&quot;&quot;)</argsstring>
+        <name>goodness_of_fit</name>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>parameter_values</declname>
+        </param>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>simulated_datasets</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>output_file</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate the p-value based on the <formula id="0">$\chi^2 $</formula> test statistic for fixed parameter_values <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parameter_values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>simulate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true, simulate data sets to estimate distribution of test statistic, else use the cumulative of the <formula id="0">$\chi^2 $</formula>-distribution with (N-k) degrees-of-freedom, where N is the number of observations and k is the number of fitted parameters </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt; <formula id="0">$\chi^2 $</formula>, p&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" line="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Analysis_1a29da23044cd892ac972ed62262276445" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1LogLikelihood" kindref="compound">LogLikelihood</ref></type>
+        <definition>LogLikelihood eos::Analysis::log_likelihood</definition>
+        <argsstring>()</argsstring>
+        <name>log_likelihood</name>
+        <briefdescription>
+<para>Retrieve the overall Log(likelihood) for this analysis. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" line="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Analysis_1a521333679365bc779d1136701d31e35d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::Analysis::log_prior</definition>
+        <argsstring>()</argsstring>
+        <name>log_prior</name>
+        <briefdescription>
+<para>Retrieve the overall Log(prior) for this analysis. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" line="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Analysis_1ad6647f4d8a1937db18cbce2d33170c55" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceeos_1ac5481e3b46ee55ff24606ee7f6e78651" kindref="member">LogPriorPtr</ref></type>
+        <definition>LogPriorPtr eos::Analysis::log_prior</definition>
+        <argsstring>(const std::string &amp;name) const </argsstring>
+        <name>log_prior</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find the prior for a given parameter </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" line="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Analysis_1a8919114802de94afc42068d87346a525" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::Analysis::log_posterior</definition>
+        <argsstring>()</argsstring>
+        <name>log_posterior</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve the overall Log(posterior) for this analysis. Incorporate normalization constant, the evidence here in getter if available. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" line="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Analysis_1a52ed491bbea6d966ea4f8a746b9e980d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool eos::Analysis::nuisance</definition>
+        <argsstring>(const std::string &amp;name) const </argsstring>
+        <name>nuisance</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if a given parameter is a nuisance parameter for this <ref refid="classeos_1_1Analysis" kindref="compound">Analysis</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the parameter we are interested in. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" line="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Analysis_1a7f5c6fb49fafda45b0451172b44bf01c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structeos_1_1ParameterDescription" kindref="compound">ParameterDescription</ref> &gt;</type>
+        <definition>static std::vector&lt;ParameterDescription&gt; eos::Analysis::read_descriptions</definition>
+        <argsstring>(const hdf5::File &amp;file, std::string data_set_base=&quot;/descriptions&quot;)</argsstring>
+        <name>read_descriptions</name>
+        <param>
+          <type>const <ref refid="classeos_1_1hdf5_1_1File" kindref="compound">hdf5::File</ref> &amp;</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>data_set_base</declname>
+          <defval>&quot;/descriptions&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read in parameter descriptions from a previous dump.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sample_file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The HDF5 file with the information. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>base</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The base directory where to look for the data set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The descriptions, one per parameter </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" line="112"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classeos_1_1Analysis_1a63c3ad7e46dc3c7d599fe2faf2a2f55f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend struct</type>
+        <definition>friend struct Implementation&lt; Analysis &gt;</definition>
+        <argsstring></argsstring>
+        <name>Implementation&lt; Analysis &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" line="49" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1Analysis_1ab558b84092479509d34d5f9ee0f03ad3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; std::vector&lt; double &gt;, double &gt;</type>
+        <definition>std::pair&lt;std::vector&lt;double&gt;, double&gt; eos::Analysis::optimize</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;initial_guess, const OptimizationOptions &amp;options)</argsstring>
+        <name>optimize</name>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>initial_guess</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structeos_1_1Analysis_1_1OptimizationOptions" kindref="compound">OptimizationOptions</ref> &amp;</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Optimize the posterior using the Nelder-Mead simplex algorithm. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>initial_guess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Starting point for simplex construction </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>options</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If no tuning desired, use <ref refid="structeos_1_1Analysis_1_1OptimizationOptions_1a809f9cf0f5d544c7303a631c278c3fa1" kindref="member">Analysis::OptimizationOptions::Defaults()</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;parameter values at mode, posterior value at mode&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" line="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Analysis_1a3f8c48eed78ea048627928613492eac5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const ROOT::Minuit2::FunctionMinimum &amp;</type>
+        <definition>const ROOT::Minuit2::FunctionMinimum&amp; eos::Analysis::optimize_minuit</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;initial_guess, const OptimizationOptions &amp;options)</argsstring>
+        <name>optimize_minuit</name>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>initial_guess</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structeos_1_1Analysis_1_1OptimizationOptions" kindref="compound">OptimizationOptions</ref> &amp;</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" line="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Analysis_1a0fa8a2b9d2f9dad49b0e76c83efde3ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::Analysis::restrict</definition>
+        <argsstring>(const std::string &amp;name, const double &amp;min, const double &amp;max)</argsstring>
+        <name>restrict</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Restrict to a subrange of a given parameter. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" line="167"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="36">
+        <label>eos::Analysis</label>
+        <link refid="classeos_1_1Analysis"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>eos::PrivateImplementationPattern&lt; Analysis &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="38">
+        <label>eos::Analysis</label>
+        <link refid="classeos_1_1Analysis"/>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>eos::PrivateImplementationPattern&lt; Analysis &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" line="47" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" bodystart="45" bodyend="168"/>
+    <listofallmembers>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a232940e78b26c6ed4f97196f831c69c9" prot="protected" virt="non-virtual"><scope>eos::Analysis</scope><name>_imp</name></member>
+      <member refid="classeos_1_1Analysis_1a3062ad70d7888517d3fa09e7dcb183cf" prot="public" virt="non-virtual"><scope>eos::Analysis</scope><name>add</name></member>
+      <member refid="classeos_1_1Analysis_1a252a0ae93caf7c7f6db627fe563c72bc" prot="public" virt="non-virtual"><scope>eos::Analysis</scope><name>Analysis</name></member>
+      <member refid="classeos_1_1Analysis_1a05e85c6fa4f83ef4b768c52d4c4f75bc" prot="public" virt="non-virtual"><scope>eos::Analysis</scope><name>clone</name></member>
+      <member refid="classeos_1_1Analysis_1a444e11133ea75c88fb2579f1ac73c8c3" prot="public" virt="non-virtual"><scope>eos::Analysis</scope><name>dump_descriptions</name></member>
+      <member refid="classeos_1_1Analysis_1a7146dc3458d035af4546890b0795146b" prot="public" virt="non-virtual"><scope>eos::Analysis</scope><name>goodness_of_fit</name></member>
+      <member refid="classeos_1_1Analysis_1a63c3ad7e46dc3c7d599fe2faf2a2f55f" prot="public" virt="non-virtual"><scope>eos::Analysis</scope><name>Implementation&lt; Analysis &gt;</name></member>
+      <member refid="classeos_1_1Analysis_1a29da23044cd892ac972ed62262276445" prot="public" virt="non-virtual"><scope>eos::Analysis</scope><name>log_likelihood</name></member>
+      <member refid="classeos_1_1Analysis_1a8919114802de94afc42068d87346a525" prot="public" virt="non-virtual"><scope>eos::Analysis</scope><name>log_posterior</name></member>
+      <member refid="classeos_1_1Analysis_1a521333679365bc779d1136701d31e35d" prot="public" virt="non-virtual"><scope>eos::Analysis</scope><name>log_prior</name></member>
+      <member refid="classeos_1_1Analysis_1ad6647f4d8a1937db18cbce2d33170c55" prot="public" virt="non-virtual"><scope>eos::Analysis</scope><name>log_prior</name></member>
+      <member refid="classeos_1_1Analysis_1a52ed491bbea6d966ea4f8a746b9e980d" prot="public" virt="non-virtual"><scope>eos::Analysis</scope><name>nuisance</name></member>
+      <member refid="classeos_1_1Analysis_1a963c134ff67911b8a4bc90fc1342e3a3" prot="public" virt="non-virtual"><scope>eos::Analysis</scope><name>operator[]</name></member>
+      <member refid="classeos_1_1Analysis_1ab558b84092479509d34d5f9ee0f03ad3" prot="public" virt="non-virtual"><scope>eos::Analysis</scope><name>optimize</name></member>
+      <member refid="classeos_1_1Analysis_1a3f8c48eed78ea048627928613492eac5" prot="public" virt="non-virtual"><scope>eos::Analysis</scope><name>optimize_minuit</name></member>
+      <member refid="classeos_1_1Analysis_1a8cc99f2ff2c99e2977c9dab68ff13c8b" prot="public" virt="non-virtual"><scope>eos::Analysis</scope><name>parameter_descriptions</name></member>
+      <member refid="classeos_1_1Analysis_1a750da19ea2292416b8b42dc2c259935e" prot="public" virt="non-virtual"><scope>eos::Analysis</scope><name>parameters</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a3e3d5f4a565256a1dda6c234b051b2f2" prot="public" virt="non-virtual"><scope>eos::Analysis</scope><name>PrivateImplementationPattern</name></member>
+      <member refid="classeos_1_1Analysis_1a7f5c6fb49fafda45b0451172b44bf01c" prot="public" virt="non-virtual"><scope>eos::Analysis</scope><name>read_descriptions</name></member>
+      <member refid="classeos_1_1Analysis_1a0fa8a2b9d2f9dad49b0e76c83efde3ba" prot="public" virt="non-virtual"><scope>eos::Analysis</scope><name>restrict</name></member>
+      <member refid="classeos_1_1Analysis_1a41c872da6c87e398f1807012262a2eff" prot="public" virt="non-virtual"><scope>eos::Analysis</scope><name>~Analysis</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1acf46ec2739c3b0ec9702b9428475876d" prot="public" virt="non-virtual"><scope>eos::Analysis</scope><name>~PrivateImplementationPattern</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

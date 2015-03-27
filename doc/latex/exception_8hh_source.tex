@@ -1,0 +1,57 @@
+\hypertarget{exception_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/exception.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2010 Danny van Dyk}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_EXCEPTION\_HH}
+\hypertarget{exception_8hh_source_l00021}{}\hyperlink{exception_8hh_a7c97e00f75990f4c9e9691efe6eaf396}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_EXCEPTION\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{preprocessor}{#include <exception>}
+00024 \textcolor{preprocessor}{#include <string>}
+00025 
+00026 \textcolor{keyword}{namespace }eos
+00027 \{
+\hypertarget{exception_8hh_source_l00028}{}\hyperlink{classeos_1_1Exception}{00028}     \textcolor{keyword}{class }\hyperlink{classeos_1_1Exception}{Exception} :
+00029         \textcolor{keyword}{public} std::exception
+00030     \{
+00031         \textcolor{keyword}{private}:
+00032             std::string \_message;
+00033 
+00034         \textcolor{keyword}{protected}:
+00035             \hyperlink{classeos_1_1Exception_acbc0fa64ca3d54cc1f828b07dc80e585}{Exception}(\textcolor{keyword}{const} std::string & message) \textcolor{keywordflow}{throw} ();
+00036 
+00037         \textcolor{keyword}{public}:
+00038             \hyperlink{classeos_1_1Exception_a8cb6faea0484cc58c472da9e58c7c30a}{~Exception}() \textcolor{keywordflow}{throw} ();
+00039 
+00040             \textcolor{keyword}{virtual} \textcolor{keyword}{const} \textcolor{keywordtype}{char} * \hyperlink{classeos_1_1Exception_adce7a2af080165b09a599bb13438a8e1}{what}() \textcolor{keyword}{const} \textcolor{keywordflow}{throw} ();
+00041     \};
+00042 
+\hypertarget{exception_8hh_source_l00043}{}\hyperlink{structeos_1_1InternalError}{00043}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1InternalError}{InternalError} :
+00044         \textcolor{keyword}{public} \hyperlink{classeos_1_1Exception}{Exception}
+00045     \{
+00046         \hyperlink{structeos_1_1InternalError_ae4b3f79d99d58833babeb1e743853390}{InternalError}(\textcolor{keyword}{const} std::string & message) \textcolor{keywordflow}{throw} ();
+00047     \};
+00048 \}
+00049 
+00050 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

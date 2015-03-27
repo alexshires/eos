@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1proposal__functions_1_1AdjacencyMatrix" kind="class" prot="public">
+    <compoundname>eos::proposal_functions::AdjacencyMatrix</compoundname>
+    <includes refid="proposal__functions_8hh" local="no">proposal_functions.hh</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classeos_1_1proposal__functions_1_1AdjacencyMatrix_1aa3df528a121e1c4e80ba42bf3474f4cb" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; double &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;double&gt; &gt; eos::proposal_functions::AdjacencyMatrix::_jump_vectors</definition>
+        <argsstring></argsstring>
+        <name>_jump_vectors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="87" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1proposal__functions_1_1AdjacencyMatrix_1a1de3ca61e536caa4cf5735df410d9816" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">MarkovChain::State</ref> &gt;</type>
+        <definition>std::vector&lt;MarkovChain::State&gt; eos::proposal_functions::AdjacencyMatrix::_states</definition>
+        <argsstring></argsstring>
+        <name>_states</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="88" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1proposal__functions_1_1AdjacencyMatrix_1a73539b4f35afe973ef940f01447cc196" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned eos::proposal_functions::AdjacencyMatrix::_number_of_clusters</definition>
+        <argsstring></argsstring>
+        <name>_number_of_clusters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="90" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1AdjacencyMatrix_1ae3612147dbcecd11aeb145fc1974604d" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned eos::proposal_functions::AdjacencyMatrix::_index</definition>
+        <argsstring>(const unsigned &amp;i, const unsigned &amp;j) const </argsstring>
+        <name>_index</name>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Index of the jump vector related to a jump between i and j, where i &lt; j is assumed.</para><para>The memory is laid out as in an upper triagonal matrix. The first element is (0,1) at position 0, the last is (n-2, n-1) at position n-1. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="101" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="100" bodyend="103"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1AdjacencyMatrix_1a84ff663285192a136a291ff589b3c87e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::proposal_functions::AdjacencyMatrix::AdjacencyMatrix</definition>
+        <argsstring>()</argsstring>
+        <name>AdjacencyMatrix</name>
+        <briefdescription>
+<para>Empty and useless. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1AdjacencyMatrix_1aae7d3467e9159c0db5e17c31e02a2ba9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::proposal_functions::AdjacencyMatrix::reserve</definition>
+        <argsstring>(const unsigned &amp;number_of_clusters)</argsstring>
+        <name>reserve</name>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>number_of_clusters</declname>
+        </param>
+        <briefdescription>
+<para>Reserve storage for fixed number of clusters. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1AdjacencyMatrix_1a8c5e2e2cf4791c651f2fb93b4cc70b80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::proposal_functions::AdjacencyMatrix::add</definition>
+        <argsstring>(const MarkovChain::State &amp;)</argsstring>
+        <name>add</name>
+        <param>
+          <type>const <ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">MarkovChain::State</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a state to the list, and compute the vector difference between the new and all existing ones.</para><para><simplesect kind="note"><para>Fails with an exception if there are enough states already. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1AdjacencyMatrix_1a0578ba400c8091d18f265683de1e801e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::proposal_functions::AdjacencyMatrix::indices</definition>
+        <argsstring>(const std::vector&lt; unsigned &gt; index_list)</argsstring>
+        <name>indices</name>
+        <param>
+          <type>const std::vector&lt; unsigned &gt;</type>
+          <declname>index_list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1AdjacencyMatrix_1ac32923bdb581f366d9516d0a80e1fa22" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::vector&lt; double &gt; &amp;</type>
+        <definition>const std::vector&lt;double&gt;&amp; eos::proposal_functions::AdjacencyMatrix::jump</definition>
+        <argsstring>(const unsigned &amp;h_x, const unsigned &amp;h_y) const </argsstring>
+        <name>jump</name>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>h_x</declname>
+        </param>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>h_y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Undirected jump excluding the sign.</para><para><simplesect kind="note"><para>The caller needs to decide if the sign of the <ref refid="namespaceeos_1_1components" kindref="compound">components</ref> is to be flipped or not.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>h_x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the component into which a jump is desired. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>h_y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the component out out which a jump is desired. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The vector of the difference in coordinates. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1AdjacencyMatrix_1aab2d5eddd479bc4065724a720db51079" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const unsigned &amp;</type>
+        <definition>const unsigned&amp; eos::proposal_functions::AdjacencyMatrix::number_of_clusters</definition>
+        <argsstring>() const </argsstring>
+        <name>number_of_clusters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="140" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="139" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1AdjacencyMatrix_1a1effea928a244e6250cb227087b4aafa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">MarkovChain::State</ref> &amp;</type>
+        <definition>const MarkovChain::State&amp; eos::proposal_functions::AdjacencyMatrix::state</definition>
+        <argsstring>(const unsigned &amp;i) const </argsstring>
+        <name>state</name>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve the fixed state used for cluster i. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="147"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Store long jump vectors and retrieve them efficiently. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="31">
+        <label>std::vector&lt; std::vector&lt; double &gt; &gt;</label>
+      </node>
+      <node id="32">
+        <label>std::vector&lt; MarkovChain::State &gt;</label>
+      </node>
+      <node id="30">
+        <label>eos::proposal_functions::AdjacencyMatrix</label>
+        <link refid="classeos_1_1proposal__functions_1_1AdjacencyMatrix"/>
+        <childnode refid="31" relation="usage">
+          <edgelabel>_jump_vectors</edgelabel>
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>_states</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="85" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="84" bodyend="148"/>
+    <listofallmembers>
+      <member refid="classeos_1_1proposal__functions_1_1AdjacencyMatrix_1ae3612147dbcecd11aeb145fc1974604d" prot="private" virt="non-virtual"><scope>eos::proposal_functions::AdjacencyMatrix</scope><name>_index</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1AdjacencyMatrix_1aa3df528a121e1c4e80ba42bf3474f4cb" prot="private" virt="non-virtual"><scope>eos::proposal_functions::AdjacencyMatrix</scope><name>_jump_vectors</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1AdjacencyMatrix_1a73539b4f35afe973ef940f01447cc196" prot="private" virt="non-virtual"><scope>eos::proposal_functions::AdjacencyMatrix</scope><name>_number_of_clusters</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1AdjacencyMatrix_1a1de3ca61e536caa4cf5735df410d9816" prot="private" virt="non-virtual"><scope>eos::proposal_functions::AdjacencyMatrix</scope><name>_states</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1AdjacencyMatrix_1a8c5e2e2cf4791c651f2fb93b4cc70b80" prot="public" virt="non-virtual"><scope>eos::proposal_functions::AdjacencyMatrix</scope><name>add</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1AdjacencyMatrix_1a84ff663285192a136a291ff589b3c87e" prot="public" virt="non-virtual"><scope>eos::proposal_functions::AdjacencyMatrix</scope><name>AdjacencyMatrix</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1AdjacencyMatrix_1a0578ba400c8091d18f265683de1e801e" prot="public" virt="non-virtual"><scope>eos::proposal_functions::AdjacencyMatrix</scope><name>indices</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1AdjacencyMatrix_1ac32923bdb581f366d9516d0a80e1fa22" prot="public" virt="non-virtual"><scope>eos::proposal_functions::AdjacencyMatrix</scope><name>jump</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1AdjacencyMatrix_1aab2d5eddd479bc4065724a720db51079" prot="public" virt="non-virtual"><scope>eos::proposal_functions::AdjacencyMatrix</scope><name>number_of_clusters</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1AdjacencyMatrix_1aae7d3467e9159c0db5e17c31e02a2ba9" prot="public" virt="non-virtual"><scope>eos::proposal_functions::AdjacencyMatrix</scope><name>reserve</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1AdjacencyMatrix_1a1effea928a244e6250cb227087b4aafa" prot="public" virt="non-virtual"><scope>eos::proposal_functions::AdjacencyMatrix</scope><name>state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,199 @@
+\hypertarget{classeos_1_1QCD}{
+\section{eos::QCD Class Reference}
+\label{classeos_1_1QCD}\index{eos::QCD@{eos::QCD}}
+}
+
+
+{\ttfamily \#include $<$qcd.hh$>$}\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std::array$<$ double, 4 $>$ \hyperlink{classeos_1_1QCD_a3ca5eea2df0bd5c0043071e14c58d089}{AnomalousMassDimension}
+\begin{DoxyCompactList}\small\item\em The four leading coefficients of the $\alpha_s$ expansion of the quark mass' anomalous dimension $\gamma_m$. \item\end{DoxyCompactList}\item 
+typedef std::array$<$ double, 4 $>$ \hyperlink{classeos_1_1QCD_a1261bb4643fea3012beb0a9ea78b7dea}{BetaFunction}
+\begin{DoxyCompactList}\small\item\em The four leading coefficient of the $\alpha_s$ expansion of the beta function of \hyperlink{classeos_1_1QCD}{QCD}. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \hyperlink{classeos_1_1QCD_a65cf274c0bcedec2189f6836eebb4a7a}{alpha\_\-s} (const double \&mu, const double \&alpha\_\-s\_\-0, const double \&mu\_\-0, const \hyperlink{classeos_1_1QCD_a1261bb4643fea3012beb0a9ea78b7dea}{BetaFunction} \&beta)
+\item 
+static double \hyperlink{classeos_1_1QCD_ad982972648053f9f5a7e41ec73e07346}{m\_\-q\_\-msbar} (const double \&m\_\-q, const double \&alpha\_\-s\_\-0, const double \&alpha\_\-s\_\-mu, const \hyperlink{classeos_1_1QCD_a1261bb4643fea3012beb0a9ea78b7dea}{BetaFunction} \&beta, const \hyperlink{classeos_1_1QCD_a3ca5eea2df0bd5c0043071e14c58d089}{AnomalousMassDimension} \&gamma\_\-m)
+\item 
+static double \hyperlink{classeos_1_1QCD_a8b164d1c0acdf564198a3535539f281f}{m\_\-q\_\-msbar} (const double \&m\_\-q\_\-pole, const double \&alpha\_\-s, const double \&nf)
+\item 
+static double \hyperlink{classeos_1_1QCD_a1cd4a3d09f464732fd0639319f53c8ab}{m\_\-q\_\-pole} (const double \&m\_\-q, const double \&alpha\_\-s, const double \&nf)
+\item 
+static double \hyperlink{classeos_1_1QCD_a09637e36c232414e489bf75faa359e5d}{m\_\-q\_\-ps} (const double \&m\_\-q, const double \&alpha\_\-s, const double \&mu\_\-f, const double \&nf, const \hyperlink{classeos_1_1QCD_a1261bb4643fea3012beb0a9ea78b7dea}{BetaFunction} \&beta)
+\item 
+static double \hyperlink{classeos_1_1QCD_ad4ddd12454ebee7271a0245b9fbabdfa}{m\_\-q\_\-kin} (const double \&m\_\-q, const double \&alpha\_\-s, const double \&mu, const \hyperlink{classeos_1_1QCD_a1261bb4643fea3012beb0a9ea78b7dea}{BetaFunction} \&beta)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const double \hyperlink{classeos_1_1QCD_a05f7ff1fada6145efece3310cde56e5a}{casimir\_\-f}
+\item 
+static const double \hyperlink{classeos_1_1QCD_ab74e057f2d2b9a05e3c8cbdbce9a2413}{casimir\_\-a}
+\end{DoxyCompactItemize}
+\begin{Indent}{\bf }\par
+{\em \label{_amgrpd41d8cd98f00b204e9800998ecf8427e}
+ }\begin{DoxyCompactItemize}
+\item 
+static const \hyperlink{classeos_1_1QCD_a1261bb4643fea3012beb0a9ea78b7dea}{BetaFunction} \hyperlink{classeos_1_1QCD_abc5015326a2e2c0544aa5d2a392b7ea1}{beta\_\-function\_\-nf\_\-6}
+\item 
+static const \hyperlink{classeos_1_1QCD_a1261bb4643fea3012beb0a9ea78b7dea}{BetaFunction} \hyperlink{classeos_1_1QCD_a5022dbb4487a457142d0d04d18494d88}{beta\_\-function\_\-nf\_\-5}
+\item 
+static const \hyperlink{classeos_1_1QCD_a3ca5eea2df0bd5c0043071e14c58d089}{AnomalousMassDimension} \hyperlink{classeos_1_1QCD_a121e70974f149e6303ec5cc0be5cec35}{gamma\_\-m\_\-nf\_\-5}
+\item 
+static const \hyperlink{classeos_1_1QCD_a1261bb4643fea3012beb0a9ea78b7dea}{BetaFunction} \hyperlink{classeos_1_1QCD_a142158984dbb9ebc03f970d1dc3189c2}{beta\_\-function\_\-nf\_\-4}
+\item 
+static const \hyperlink{classeos_1_1QCD_a3ca5eea2df0bd5c0043071e14c58d089}{AnomalousMassDimension} \hyperlink{classeos_1_1QCD_a2c39e24c316de9bceb7df4b6cce05665}{gamma\_\-m\_\-nf\_\-4}
+\item 
+static const \hyperlink{classeos_1_1QCD_a1261bb4643fea3012beb0a9ea78b7dea}{BetaFunction} \hyperlink{classeos_1_1QCD_ae21fca3bee658d5b53bc12af43fa8fc2}{beta\_\-function\_\-nf\_\-3}
+\item 
+static const \hyperlink{classeos_1_1QCD_a3ca5eea2df0bd5c0043071e14c58d089}{AnomalousMassDimension} \hyperlink{classeos_1_1QCD_a1732d2faffdb5712fbb5e53f521bdb4f}{gamma\_\-m\_\-nf\_\-3}
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classeos_1_1QCD_a3ca5eea2df0bd5c0043071e14c58d089}{
+\index{eos::QCD@{eos::QCD}!AnomalousMassDimension@{AnomalousMassDimension}}
+\index{AnomalousMassDimension@{AnomalousMassDimension}!eos::QCD@{eos::QCD}}
+\subsubsection[{AnomalousMassDimension}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::array$<$double, 4$>$ {\bf eos::QCD::AnomalousMassDimension}}}
+\label{classeos_1_1QCD_a3ca5eea2df0bd5c0043071e14c58d089}
+
+
+The four leading coefficients of the $\alpha_s$ expansion of the quark mass' anomalous dimension $\gamma_m$. \hypertarget{classeos_1_1QCD_a1261bb4643fea3012beb0a9ea78b7dea}{
+\index{eos::QCD@{eos::QCD}!BetaFunction@{BetaFunction}}
+\index{BetaFunction@{BetaFunction}!eos::QCD@{eos::QCD}}
+\subsubsection[{BetaFunction}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::array$<$double, 4$>$ {\bf eos::QCD::BetaFunction}}}
+\label{classeos_1_1QCD_a1261bb4643fea3012beb0a9ea78b7dea}
+
+
+The four leading coefficient of the $\alpha_s$ expansion of the beta function of \hyperlink{classeos_1_1QCD}{QCD}. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classeos_1_1QCD_a65cf274c0bcedec2189f6836eebb4a7a}{
+\index{eos::QCD@{eos::QCD}!alpha\_\-s@{alpha\_\-s}}
+\index{alpha\_\-s@{alpha\_\-s}!eos::QCD@{eos::QCD}}
+\subsubsection[{alpha\_\-s}]{\setlength{\rightskip}{0pt plus 5cm}static double eos::QCD::alpha\_\-s (const double \& {\em mu}, \/  const double \& {\em alpha\_\-s\_\-0}, \/  const double \& {\em mu\_\-0}, \/  const {\bf BetaFunction} \& {\em beta})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1QCD_a65cf274c0bcedec2189f6836eebb4a7a}
+Calculate RGE running of strong coupling alpha\_\-s from scale mu\_\-0 down to scale mu in the MSbar scheme.
+
+Calculation according to \mbox{[}CKS2000\mbox{]}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em mu}]scale at which alpha\_\-s shall be evaluated \item[{\em alpha\_\-s\_\-0}]alpha\_\-s at the initial scale mu\_\-0 \item[{\em mu\_\-0}]initial scale mu\_\-0 \item[{\em beta}]parameters of \hyperlink{classeos_1_1QCD}{QCD} beta function that control the running \end{DoxyParams}
+\hypertarget{classeos_1_1QCD_ad4ddd12454ebee7271a0245b9fbabdfa}{
+\index{eos::QCD@{eos::QCD}!m\_\-q\_\-kin@{m\_\-q\_\-kin}}
+\index{m\_\-q\_\-kin@{m\_\-q\_\-kin}!eos::QCD@{eos::QCD}}
+\subsubsection[{m\_\-q\_\-kin}]{\setlength{\rightskip}{0pt plus 5cm}static double eos::QCD::m\_\-q\_\-kin (const double \& {\em m\_\-q}, \/  const double \& {\em alpha\_\-s}, \/  const double \& {\em mu}, \/  const {\bf BetaFunction} \& {\em beta})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1QCD_ad4ddd12454ebee7271a0245b9fbabdfa}
+Calculate the shift from MSbar scheme to kinetic scheme (kin mass)
+
+Calculation according to \mbox{[}BBMU2003\mbox{]}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em m\_\-q}]quark mass in the MSbar scheme at the scale m\_\-q \item[{\em alpha\_\-s}]alpha\_\-s at the scale m\_\-q \item[{\em mu}]scale at which the mass shall be evaluated \item[{\em beta}]parameters of \hyperlink{classeos_1_1QCD}{QCD} beta function that control the calculation \end{DoxyParams}
+\hypertarget{classeos_1_1QCD_a8b164d1c0acdf564198a3535539f281f}{
+\index{eos::QCD@{eos::QCD}!m\_\-q\_\-msbar@{m\_\-q\_\-msbar}}
+\index{m\_\-q\_\-msbar@{m\_\-q\_\-msbar}!eos::QCD@{eos::QCD}}
+\subsubsection[{m\_\-q\_\-msbar}]{\setlength{\rightskip}{0pt plus 5cm}static double eos::QCD::m\_\-q\_\-msbar (const double \& {\em m\_\-q\_\-pole}, \/  const double \& {\em alpha\_\-s}, \/  const double \& {\em nf})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1QCD_a8b164d1c0acdf564198a3535539f281f}
+Calculate the shift from pole mass scheme to MSbar.
+
+Calculation according to \mbox{[}MvR1999\mbox{]}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em m\_\-q\_\-pole}]quark mass in the pole mass scheme \item[{\em alpha\_\-s}]alpha\_\-s at scale mu = m\_\-q\_\-pole \item[{\em nf}]number of active \hyperlink{classeos_1_1QCD}{QCD} flavors that control the calculation \end{DoxyParams}
+\hypertarget{classeos_1_1QCD_ad982972648053f9f5a7e41ec73e07346}{
+\index{eos::QCD@{eos::QCD}!m\_\-q\_\-msbar@{m\_\-q\_\-msbar}}
+\index{m\_\-q\_\-msbar@{m\_\-q\_\-msbar}!eos::QCD@{eos::QCD}}
+\subsubsection[{m\_\-q\_\-msbar}]{\setlength{\rightskip}{0pt plus 5cm}static double eos::QCD::m\_\-q\_\-msbar (const double \& {\em m\_\-q}, \/  const double \& {\em alpha\_\-s\_\-0}, \/  const double \& {\em alpha\_\-s\_\-mu}, \/  const {\bf BetaFunction} \& {\em beta}, \/  const {\bf AnomalousMassDimension} \& {\em gamma\_\-m})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1QCD_ad982972648053f9f5a7e41ec73e07346}
+Calculate RGE running of quark mass m\_\-q in the MSbar scheme.
+
+Calculation according to \mbox{[}CKS2000\mbox{]}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em m\_\-q}]quark mass in the MSbar scheme at the scale m\_\-q \item[{\em alpha\_\-s\_\-0}]alpha\_\-s at the scale mu\_\-0 = m\_\-q \item[{\em alpha\_\-s\_\-mu}]alpha\_\-s at the scale mu \item[{\em beta}]parameters of \hyperlink{classeos_1_1QCD}{QCD} beta function that control the running \item[{\em gamma\_\-m}]parameters of \hyperlink{classeos_1_1QCD}{QCD} anomalous mass dimension that control the running \end{DoxyParams}
+\hypertarget{classeos_1_1QCD_a1cd4a3d09f464732fd0639319f53c8ab}{
+\index{eos::QCD@{eos::QCD}!m\_\-q\_\-pole@{m\_\-q\_\-pole}}
+\index{m\_\-q\_\-pole@{m\_\-q\_\-pole}!eos::QCD@{eos::QCD}}
+\subsubsection[{m\_\-q\_\-pole}]{\setlength{\rightskip}{0pt plus 5cm}static double eos::QCD::m\_\-q\_\-pole (const double \& {\em m\_\-q}, \/  const double \& {\em alpha\_\-s}, \/  const double \& {\em nf})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1QCD_a1cd4a3d09f464732fd0639319f53c8ab}
+Calculate the shift from MSbar scheme to pole mass.
+
+Calculation according to \mbox{[}CERN2003-\/002\mbox{]}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em m\_\-q}]quark mass in the MSbar scheme at the scale m\_\-q \item[{\em alpha\_\-s}]alpha\_\-s at the scale m\_\-q \item[{\em nf}]number of active \hyperlink{classeos_1_1QCD}{QCD} flavors that control the calculation \end{DoxyParams}
+\hypertarget{classeos_1_1QCD_a09637e36c232414e489bf75faa359e5d}{
+\index{eos::QCD@{eos::QCD}!m\_\-q\_\-ps@{m\_\-q\_\-ps}}
+\index{m\_\-q\_\-ps@{m\_\-q\_\-ps}!eos::QCD@{eos::QCD}}
+\subsubsection[{m\_\-q\_\-ps}]{\setlength{\rightskip}{0pt plus 5cm}static double eos::QCD::m\_\-q\_\-ps (const double \& {\em m\_\-q}, \/  const double \& {\em alpha\_\-s}, \/  const double \& {\em mu\_\-f}, \/  const double \& {\em nf}, \/  const {\bf BetaFunction} \& {\em beta})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1QCD_a09637e36c232414e489bf75faa359e5d}
+Calculate the shift from MSbar scheme to potential-\/Subtracted mass (PS mass).
+
+Calculation according to \mbox{[}B1998\mbox{]}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em m\_\-q}]quark mass in the MSbar scheme at the scale m\_\-q \item[{\em alpha\_\-s}]alpha\_\-s at the scale m\_\-q \item[{\em mu\_\-f}]Factorization scale \item[{\em nf}]number of active \hyperlink{classeos_1_1QCD}{QCD} flavors that control the calculation \item[{\em beta}]parameters of \hyperlink{classeos_1_1QCD}{QCD} beta function that control the calculation \end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classeos_1_1QCD_ae21fca3bee658d5b53bc12af43fa8fc2}{
+\index{eos::QCD@{eos::QCD}!beta\_\-function\_\-nf\_\-3@{beta\_\-function\_\-nf\_\-3}}
+\index{beta\_\-function\_\-nf\_\-3@{beta\_\-function\_\-nf\_\-3}!eos::QCD@{eos::QCD}}
+\subsubsection[{beta\_\-function\_\-nf\_\-3}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf BetaFunction} {\bf eos::QCD::beta\_\-function\_\-nf\_\-3}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1QCD_ae21fca3bee658d5b53bc12af43fa8fc2}
+The 3-\/flavor \hyperlink{classeos_1_1QCD}{QCD} constants. \hypertarget{classeos_1_1QCD_a142158984dbb9ebc03f970d1dc3189c2}{
+\index{eos::QCD@{eos::QCD}!beta\_\-function\_\-nf\_\-4@{beta\_\-function\_\-nf\_\-4}}
+\index{beta\_\-function\_\-nf\_\-4@{beta\_\-function\_\-nf\_\-4}!eos::QCD@{eos::QCD}}
+\subsubsection[{beta\_\-function\_\-nf\_\-4}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf BetaFunction} {\bf eos::QCD::beta\_\-function\_\-nf\_\-4}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1QCD_a142158984dbb9ebc03f970d1dc3189c2}
+The 4-\/flavor-\/QCD constants. \hypertarget{classeos_1_1QCD_a5022dbb4487a457142d0d04d18494d88}{
+\index{eos::QCD@{eos::QCD}!beta\_\-function\_\-nf\_\-5@{beta\_\-function\_\-nf\_\-5}}
+\index{beta\_\-function\_\-nf\_\-5@{beta\_\-function\_\-nf\_\-5}!eos::QCD@{eos::QCD}}
+\subsubsection[{beta\_\-function\_\-nf\_\-5}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf BetaFunction} {\bf eos::QCD::beta\_\-function\_\-nf\_\-5}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1QCD_a5022dbb4487a457142d0d04d18494d88}
+The 5-\/flavor-\/QCD constants. \hypertarget{classeos_1_1QCD_abc5015326a2e2c0544aa5d2a392b7ea1}{
+\index{eos::QCD@{eos::QCD}!beta\_\-function\_\-nf\_\-6@{beta\_\-function\_\-nf\_\-6}}
+\index{beta\_\-function\_\-nf\_\-6@{beta\_\-function\_\-nf\_\-6}!eos::QCD@{eos::QCD}}
+\subsubsection[{beta\_\-function\_\-nf\_\-6}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf BetaFunction} {\bf eos::QCD::beta\_\-function\_\-nf\_\-6}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1QCD_abc5015326a2e2c0544aa5d2a392b7ea1}
+The 6-\/flavor-\/QCD constants. \hypertarget{classeos_1_1QCD_ab74e057f2d2b9a05e3c8cbdbce9a2413}{
+\index{eos::QCD@{eos::QCD}!casimir\_\-a@{casimir\_\-a}}
+\index{casimir\_\-a@{casimir\_\-a}!eos::QCD@{eos::QCD}}
+\subsubsection[{casimir\_\-a}]{\setlength{\rightskip}{0pt plus 5cm}const double {\bf eos::QCD::casimir\_\-a}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1QCD_ab74e057f2d2b9a05e3c8cbdbce9a2413}
+The quadratic casimir operator for the adjoint representation SU(3). \hypertarget{classeos_1_1QCD_a05f7ff1fada6145efece3310cde56e5a}{
+\index{eos::QCD@{eos::QCD}!casimir\_\-f@{casimir\_\-f}}
+\index{casimir\_\-f@{casimir\_\-f}!eos::QCD@{eos::QCD}}
+\subsubsection[{casimir\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}const double {\bf eos::QCD::casimir\_\-f}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1QCD_a05f7ff1fada6145efece3310cde56e5a}
+The quadratic casimir operator for the fundamental representation of SU(3). \hypertarget{classeos_1_1QCD_a1732d2faffdb5712fbb5e53f521bdb4f}{
+\index{eos::QCD@{eos::QCD}!gamma\_\-m\_\-nf\_\-3@{gamma\_\-m\_\-nf\_\-3}}
+\index{gamma\_\-m\_\-nf\_\-3@{gamma\_\-m\_\-nf\_\-3}!eos::QCD@{eos::QCD}}
+\subsubsection[{gamma\_\-m\_\-nf\_\-3}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf AnomalousMassDimension} {\bf eos::QCD::gamma\_\-m\_\-nf\_\-3}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1QCD_a1732d2faffdb5712fbb5e53f521bdb4f}
+The 6-\/flavor-\/QCD constants. \hypertarget{classeos_1_1QCD_a2c39e24c316de9bceb7df4b6cce05665}{
+\index{eos::QCD@{eos::QCD}!gamma\_\-m\_\-nf\_\-4@{gamma\_\-m\_\-nf\_\-4}}
+\index{gamma\_\-m\_\-nf\_\-4@{gamma\_\-m\_\-nf\_\-4}!eos::QCD@{eos::QCD}}
+\subsubsection[{gamma\_\-m\_\-nf\_\-4}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf AnomalousMassDimension} {\bf eos::QCD::gamma\_\-m\_\-nf\_\-4}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1QCD_a2c39e24c316de9bceb7df4b6cce05665}
+The 6-\/flavor-\/QCD constants. \hypertarget{classeos_1_1QCD_a121e70974f149e6303ec5cc0be5cec35}{
+\index{eos::QCD@{eos::QCD}!gamma\_\-m\_\-nf\_\-5@{gamma\_\-m\_\-nf\_\-5}}
+\index{gamma\_\-m\_\-nf\_\-5@{gamma\_\-m\_\-nf\_\-5}!eos::QCD@{eos::QCD}}
+\subsubsection[{gamma\_\-m\_\-nf\_\-5}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf AnomalousMassDimension} {\bf eos::QCD::gamma\_\-m\_\-nf\_\-5}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1QCD_a121e70974f149e6303ec5cc0be5cec35}
+The 6-\/flavor-\/QCD constants. 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{qcd_8hh}{qcd.hh}\end{DoxyCompactItemize}

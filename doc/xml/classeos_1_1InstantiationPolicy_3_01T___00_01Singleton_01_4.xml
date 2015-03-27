@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1InstantiationPolicy_3_01T___00_01Singleton_01_4" kind="class" prot="public">
+    <compoundname>eos::InstantiationPolicy&lt; T_, Singleton &gt;</compoundname>
+    <includes refid="instantiation__policy_8hh" local="no">instantiation_policy.hh</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T_</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classeos_1_1InstantiationPolicy_3_01T___00_01Singleton_01_4_1a015c2abc647885b46b47d0ba104140b1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class DeleteOnDestruction</definition>
+        <argsstring></argsstring>
+        <name>DeleteOnDestruction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/instantiation_policy.hh" line="95" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/instantiation_policy.hh" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classeos_1_1InstantiationPolicy_3_01T___00_01Singleton_01_4_1a71672c7356b678f458f1e24c34b28fd0" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T_ **</type>
+        <definition>T_ ** eos::InstantiationPolicy&lt; T_, Singleton &gt;::_instance_ptr</definition>
+        <argsstring>()</argsstring>
+        <name>_instance_ptr</name>
+        <briefdescription>
+<para>Returns a pointer to our instance pointer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/instantiation_policy.hh" line="98" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/instantiation_policy-impl.hh" bodystart="61" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1InstantiationPolicy_3_01T___00_01Singleton_01_4_1a11ff0d2766a8375520f38212bb12da37" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::InstantiationPolicy&lt; T_, Singleton &gt;::_delete</definition>
+        <argsstring>(T_ *const ptr)</argsstring>
+        <name>_delete</name>
+        <param>
+          <type>T_ *const </type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>Deletes the object of T_ that is pointed at by ptr. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/instantiation_policy.hh" line="101" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/instantiation_policy-impl.hh" bodystart="34" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classeos_1_1InstantiationPolicy_3_01T___00_01Singleton_01_4_1a2f5eca4c2f042cd940204c80716498e4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::InstantiationPolicy&lt; T_, Singleton &gt;::InstantiationPolicy</definition>
+        <argsstring>(const InstantiationPolicy &amp;)</argsstring>
+        <name>InstantiationPolicy</name>
+        <param>
+          <type>const InstantiationPolicy &amp;</type>
+        </param>
+        <briefdescription>
+<para>Unwanted copy constructor: Do not implement! </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/instantiation_policy.hh" line="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1InstantiationPolicy_3_01T___00_01Singleton_01_4_1a02b938bb2df46b51b3df62f588efdc69" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>InstantiationPolicy &amp;</type>
+        <definition>InstantiationPolicy&amp; eos::InstantiationPolicy&lt; T_, Singleton &gt;::operator=</definition>
+        <argsstring>(const InstantiationPolicy &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const InstantiationPolicy &amp;</type>
+        </param>
+        <briefdescription>
+<para>Unwanted copy assignment operator: Do not implement! </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/instantiation_policy.hh" line="107"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classeos_1_1InstantiationPolicy_3_01T___00_01Singleton_01_4_1a18668ba37f53fb8e90de2ad25a8f9873" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eos::InstantiationPolicy&lt; T_, Singleton &gt;::InstantiationPolicy</definition>
+        <argsstring>()</argsstring>
+        <name>InstantiationPolicy</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/instantiation_policy.hh" line="112" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/instantiation_policy.hh" bodystart="111" bodyend="113"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classeos_1_1InstantiationPolicy_3_01T___00_01Singleton_01_4_1ab911bf9d8849e3af50a8fa886d0d5b70" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T_ *</type>
+        <definition>T_ * eos::InstantiationPolicy&lt; T_, Singleton &gt;::instance</definition>
+        <argsstring>()</argsstring>
+        <name>instance</name>
+        <briefdescription>
+<para>Returns the instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/instantiation_policy.hh" line="117" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/instantiation_policy-impl.hh" bodystart="71" bodyend="89"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/instantiation_policy.hh" line="91" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/instantiation_policy.hh" bodystart="90" bodyend="119"/>
+    <listofallmembers>
+      <member refid="classeos_1_1InstantiationPolicy_3_01T___00_01Singleton_01_4_1a11ff0d2766a8375520f38212bb12da37" prot="private" virt="non-virtual"><scope>eos::InstantiationPolicy&lt; T_, Singleton &gt;</scope><name>_delete</name></member>
+      <member refid="classeos_1_1InstantiationPolicy_3_01T___00_01Singleton_01_4_1a71672c7356b678f458f1e24c34b28fd0" prot="private" virt="non-virtual"><scope>eos::InstantiationPolicy&lt; T_, Singleton &gt;</scope><name>_instance_ptr</name></member>
+      <member refid="classeos_1_1InstantiationPolicy_3_01T___00_01Singleton_01_4_1a015c2abc647885b46b47d0ba104140b1" prot="private" virt="non-virtual"><scope>eos::InstantiationPolicy&lt; T_, Singleton &gt;</scope><name>DeleteOnDestruction</name></member>
+      <member refid="classeos_1_1InstantiationPolicy_3_01T___00_01Singleton_01_4_1ab911bf9d8849e3af50a8fa886d0d5b70" prot="public" virt="non-virtual"><scope>eos::InstantiationPolicy&lt; T_, Singleton &gt;</scope><name>instance</name></member>
+      <member refid="classeos_1_1InstantiationPolicy_3_01T___00_01Singleton_01_4_1a2f5eca4c2f042cd940204c80716498e4" prot="private" virt="non-virtual"><scope>eos::InstantiationPolicy&lt; T_, Singleton &gt;</scope><name>InstantiationPolicy</name></member>
+      <member refid="classeos_1_1InstantiationPolicy_3_01T___00_01Singleton_01_4_1a18668ba37f53fb8e90de2ad25a8f9873" prot="protected" virt="non-virtual"><scope>eos::InstantiationPolicy&lt; T_, Singleton &gt;</scope><name>InstantiationPolicy</name></member>
+      <member refid="classeos_1_1InstantiationPolicy_3_01T___00_01Singleton_01_4_1a02b938bb2df46b51b3df62f588efdc69" prot="private" virt="non-virtual"><scope>eos::InstantiationPolicy&lt; T_, Singleton &gt;</scope><name>operator=</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

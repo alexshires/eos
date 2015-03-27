@@ -1,0 +1,115 @@
+\hypertarget{wilson__coefficients_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/wilson\_\-coefficients.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2010, 2011, 2013 Danny van Dyk}
+00005 \textcolor{comment}{ * Copyright (c) 2014 Frederik Beaujean}
+00006 \textcolor{comment}{ * Copyright (c) 2014 Christoph Bobeth}
+00007 \textcolor{comment}{ *}
+00008 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00009 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00010 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00011 \textcolor{comment}{ *}
+00012 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00013 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00014 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00015 \textcolor{comment}{ * details.}
+00016 \textcolor{comment}{ *}
+00017 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00018 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00019 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00020 \textcolor{comment}{ */}
+00021 
+00022 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_WILSON\_COEFFICIENTS\_HH}
+\hypertarget{wilson__coefficients_8hh_source_l00023}{}\hyperlink{wilson__coefficients_8hh_a89af6a6c983929d07b250c7b823741b8}{00023} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_WILSON\_COEFFICIENTS\_HH 1}
+00024 \textcolor{preprocessor}{}
+00025 \textcolor{preprocessor}{#include <\hyperlink{complex_8hh}{eos/utils/complex.hh}>}
+00026 \textcolor{preprocessor}{#include <\hyperlink{parameters_8hh}{eos/utils/parameters.hh}>}
+00027 \textcolor{preprocessor}{#include <\hyperlink{qcd_8hh}{eos/utils/qcd.hh}>}
+00028 
+00029 \textcolor{preprocessor}{#include <array>}
+00030 \textcolor{preprocessor}{#include <cmath>}
+00031 
+00032 \textcolor{keyword}{namespace }eos
+00033 \{
+00034     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Tag\_> \textcolor{keyword}{struct }WilsonCoefficients;
+00035 
+\hypertarget{wilson__coefficients_8hh_source_l00036}{}\hyperlink{structeos_1_1BToS}{00036}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1BToS}{BToS} \{\};
+00037 
+\hypertarget{wilson__coefficients_8hh_source_l00038}{}\hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4}{00038}     \textcolor{keyword}{template} <> \textcolor{keyword}{struct }WilsonCoefficients<\hyperlink{structeos_1_1BToS}{BToS}>
+00039     \{
+00040         \textcolor{comment}{/* Order: c1..c6, cq3..cq6, c2b, c7..c10 */}
+\hypertarget{wilson__coefficients_8hh_source_l00041}{}\hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_ad55e5edfe673a97fe71981a429cb7152}{00041}         std::array<complex<double>, 15> \_sm\_like\_coefficients;
+00042 
+00043         \textcolor{comment}{/* Same order as above, with helicity flip */}
+\hypertarget{wilson__coefficients_8hh_source_l00044}{}\hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_a4c2aa2cde65c6c77df70e6fa87736ac7}{00044}         std::array<complex<double>, 15> \_primed\_coefficients;
+00045 
+00046         \textcolor{comment}{/* Scalar, pseudoscalar, and tensor coefficients */}
+\hypertarget{wilson__coefficients_8hh_source_l00047}{}\hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_ac890d2d52439b631a8eaee283825dcc3}{00047}         std::array<complex<double>, 6> \_scalar\_tensor\_coefficients;
+00048 
+\hypertarget{wilson__coefficients_8hh_source_l00049}{}\hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_ad988c930213682048f50ec4fa3390cc8}{00049}         \textcolor{keywordtype}{double} \_alpha\_s;
+00050 
+00052         WilsonCoefficients();
+00053 
+00054         \textcolor{comment}{// Misiak basis, cf. [BMU1999], Eq. (2), p. 3}
+\hypertarget{wilson__coefficients_8hh_source_l00055}{}\hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_a17759f6b63cf172d7d7f07dbbb78e3f9}{00055}         \textcolor{keyword}{inline} complex<double> \hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_a17759f6b63cf172d7d7f07dbbb78e3f9}{c1}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} \_sm\_like\_coefficients[0]; \}
+\hypertarget{wilson__coefficients_8hh_source_l00056}{}\hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_afcb665ee21ae1be28cec84c0a3781132}{00056}         \textcolor{keyword}{inline} complex<double> \hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_afcb665ee21ae1be28cec84c0a3781132}{c2}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} \_sm\_like\_coefficients[1]; \}
+\hypertarget{wilson__coefficients_8hh_source_l00057}{}\hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_a5f36442158531e3f364f0f3cf2cadfe2}{00057}         \textcolor{keyword}{inline} complex<double> \hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_a5f36442158531e3f364f0f3cf2cadfe2}{c3}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} \_sm\_like\_coefficients[2]; \}
+\hypertarget{wilson__coefficients_8hh_source_l00058}{}\hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_a427b2d73d89283266b163cfe4c42b086}{00058}         \textcolor{keyword}{inline} complex<double> \hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_a427b2d73d89283266b163cfe4c42b086}{c4}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} \_sm\_like\_coefficients[3]; \}
+\hypertarget{wilson__coefficients_8hh_source_l00059}{}\hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_ad68ee72fdb415820d0ff3f042a8d9e14}{00059}         \textcolor{keyword}{inline} complex<double> \hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_ad68ee72fdb415820d0ff3f042a8d9e14}{c5}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} \_sm\_like\_coefficients[4]; \}
+\hypertarget{wilson__coefficients_8hh_source_l00060}{}\hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_a552e58e087a6b5c4a0cec7d30486154e}{00060}         \textcolor{keyword}{inline} complex<double> \hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_a552e58e087a6b5c4a0cec7d30486154e}{c6}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} \_sm\_like\_coefficients[5]; \}
+00061 
+\hypertarget{wilson__coefficients_8hh_source_l00062}{}\hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_aac9632c45e186951fe0459cb315dee0e}{00062}         \textcolor{keyword}{inline} complex<double> \hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_aac9632c45e186951fe0459cb315dee0e}{cq3}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} \_sm\_like\_coefficients[6]; \}
+\hypertarget{wilson__coefficients_8hh_source_l00063}{}\hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_a4e0045b6ae96dd094b9e21450fcebce2}{00063}         \textcolor{keyword}{inline} complex<double> \hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_a4e0045b6ae96dd094b9e21450fcebce2}{cq4}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} \_sm\_like\_coefficients[7]; \}
+\hypertarget{wilson__coefficients_8hh_source_l00064}{}\hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_a73655ba58242bc15ecc8f097ec9abadd}{00064}         \textcolor{keyword}{inline} complex<double> \hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_a73655ba58242bc15ecc8f097ec9abadd}{cq5}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} \_sm\_like\_coefficients[8]; \}
+\hypertarget{wilson__coefficients_8hh_source_l00065}{}\hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_a454eb97a2a032d55a656e0103d4cffa7}{00065}         \textcolor{keyword}{inline} complex<double> \hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_a454eb97a2a032d55a656e0103d4cffa7}{cq6}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} \_sm\_like\_coefficients[9]; \}
+00066 
+\hypertarget{wilson__coefficients_8hh_source_l00067}{}\hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_a8bfd88e1ee202d67cf6ad3e22fd0e311}{00067}         \textcolor{keyword}{inline} complex<double> \hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_a8bfd88e1ee202d67cf6ad3e22fd0e311}{c2b}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} \_sm\_like\_coefficients[10]; \}
+00068 
+\hypertarget{wilson__coefficients_8hh_source_l00069}{}\hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_aabbbd9922af280cfef8cf7a243e1c02e}{00069}         \textcolor{keyword}{inline} complex<double> \hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_aabbbd9922af280cfef8cf7a243e1c02e}{c7}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} 4.0 * M\_PI / \_alpha\_s * \_sm\_li
+      ke\_coefficients[11]; \}
+\hypertarget{wilson__coefficients_8hh_source_l00070}{}\hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_ad1700818a303de24c0d9aba06b9428db}{00070}         \textcolor{keyword}{inline} complex<double> \hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_ad1700818a303de24c0d9aba06b9428db}{c8}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} 4.0 * M\_PI / \_alpha\_s * \_sm\_li
+      ke\_coefficients[12]; \}
+\hypertarget{wilson__coefficients_8hh_source_l00071}{}\hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_abd2db158ab9926a0f7be9f29ef16663f}{00071}         \textcolor{keyword}{inline} complex<double> \hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_abd2db158ab9926a0f7be9f29ef16663f}{c9}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} 4.0 * M\_PI / \_alpha\_s * \_sm\_li
+      ke\_coefficients[13]; \}
+\hypertarget{wilson__coefficients_8hh_source_l00072}{}\hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_a5a8db4cc5c486d0a77b968f1456446e3}{00072}         \textcolor{keyword}{inline} complex<double> \hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_a5a8db4cc5c486d0a77b968f1456446e3}{c10}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} 4.0 * M\_PI / \_alpha\_s * \_sm\_l
+      ike\_coefficients[14]; \}
+00073 
+\hypertarget{wilson__coefficients_8hh_source_l00074}{}\hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_a40dafdcff20076a5cf44d529ac664f09}{00074}         \textcolor{keyword}{inline} complex<double> \hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_a40dafdcff20076a5cf44d529ac664f09}{c7prime}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} 4.0 * M\_PI / \_alpha\_s * \_
+      primed\_coefficients[11]; \}
+\hypertarget{wilson__coefficients_8hh_source_l00075}{}\hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_abfc2ac642a0fd10464d843eb7ed8ebab}{00075}         \textcolor{keyword}{inline} complex<double> \hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_abfc2ac642a0fd10464d843eb7ed8ebab}{c8prime}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} 4.0 * M\_PI / \_alpha\_s * \_
+      primed\_coefficients[12]; \}
+\hypertarget{wilson__coefficients_8hh_source_l00076}{}\hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_a633c2ff746cf0998286b396d5d6ad864}{00076}         \textcolor{keyword}{inline} complex<double> \hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_a633c2ff746cf0998286b396d5d6ad864}{c9prime}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} 4.0 * M\_PI / \_alpha\_s * \_
+      primed\_coefficients[13]; \}
+\hypertarget{wilson__coefficients_8hh_source_l00077}{}\hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_a5afdd05acb7cd08196aa402ed6ccd374}{00077}         \textcolor{keyword}{inline} complex<double> \hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_a5afdd05acb7cd08196aa402ed6ccd374}{c10prime}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} 4.0 * M\_PI / \_alpha\_s * 
+      \_primed\_coefficients[14]; \}
+00078 
+\hypertarget{wilson__coefficients_8hh_source_l00079}{}\hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_afb6218a0c941a2c158753e8977ceca2a}{00079}         \textcolor{keyword}{inline} complex<double> \hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_afb6218a0c941a2c158753e8977ceca2a}{cS}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return}  \_scalar\_tensor\_coefficients[0
+      ]; \}
+\hypertarget{wilson__coefficients_8hh_source_l00080}{}\hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_afee3b55a164362636ff1bdfcea0d869f}{00080}         \textcolor{keyword}{inline} complex<double> \hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_afee3b55a164362636ff1bdfcea0d869f}{cSprime}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return}  \_scalar\_tensor\_coefficie
+      nts[1]; \}
+\hypertarget{wilson__coefficients_8hh_source_l00081}{}\hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_af5e99da02e53255077cdf53b315c0960}{00081}         \textcolor{keyword}{inline} complex<double> \hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_af5e99da02e53255077cdf53b315c0960}{cP}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return}  \_scalar\_tensor\_coefficients[2
+      ]; \}
+\hypertarget{wilson__coefficients_8hh_source_l00082}{}\hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_ab49d57e926919ae28d0780f8d9df644b}{00082}         \textcolor{keyword}{inline} complex<double> \hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_ab49d57e926919ae28d0780f8d9df644b}{cPprime}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return}  \_scalar\_tensor\_coefficie
+      nts[3]; \}
+\hypertarget{wilson__coefficients_8hh_source_l00083}{}\hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_a36a8fb3dc528761824bcced340aecbae}{00083}         \textcolor{keyword}{inline} complex<double> \hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_a36a8fb3dc528761824bcced340aecbae}{cT}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return}  \_scalar\_tensor\_coefficients[4
+      ]; \}
+\hypertarget{wilson__coefficients_8hh_source_l00084}{}\hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_af74fd634de725f21735e0ba308c4985d}{00084}         \textcolor{keyword}{inline} complex<double> \hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4_af74fd634de725f21735e0ba308c4985d}{cT5}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return}  \_scalar\_tensor\_coefficients[
+      5]; \}
+00085     \};
+00086 
+00101     WilsonCoefficients<BToS> \hyperlink{namespaceeos_a07bd8aab4adc1e31cfbd795b36f592ee}{evolve}(\textcolor{keyword}{const} std::array<complex<double>, 15> & wc\_qc
+      d\_0,
+00102             \textcolor{keyword}{const} std::array<complex<double>, 15> & wc\_qcd\_1,
+00103             \textcolor{keyword}{const} std::array<complex<double>, 15> & wc\_qcd\_2,
+00104             \textcolor{keyword}{const} \textcolor{keywordtype}{double} & alpha\_s\_0, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & alpha\_s,
+00105             \textcolor{keyword}{const} \textcolor{keywordtype}{double} & nf, \textcolor{keyword}{const} \hyperlink{classeos_1_1QCD_a1261bb4643fea3012beb0a9ea78b7dea}{QCD::BetaFunction} & beta);
+00106 \}
+00107 
+00108 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

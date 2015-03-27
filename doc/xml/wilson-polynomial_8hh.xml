@@ -1,0 +1,300 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="wilson-polynomial_8hh" kind="file">
+    <compoundname>wilson-polynomial.hh</compoundname>
+    <includes refid="observable_8hh" local="no">eos/observable.hh</includes>
+    <includes refid="one-of_8hh" local="no">eos/utils/one-of.hh</includes>
+    <includes local="no">list</includes>
+    <includes local="no">string</includes>
+    <incdepgraph>
+      <node id="1782">
+        <label>list</label>
+      </node>
+      <node id="1775">
+        <label>functional</label>
+      </node>
+      <node id="1759">
+        <label>eos/observable.hh</label>
+        <link refid="observable_8hh"/>
+        <childnode refid="1760" relation="include">
+        </childnode>
+        <childnode refid="1763" relation="include">
+        </childnode>
+        <childnode refid="1766" relation="include">
+        </childnode>
+        <childnode refid="1767" relation="include">
+        </childnode>
+        <childnode refid="1762" relation="include">
+        </childnode>
+        <childnode refid="1765" relation="include">
+        </childnode>
+      </node>
+      <node id="1766">
+        <label>eos/utils/options.hh</label>
+        <link refid="options_8hh"/>
+        <childnode refid="1760" relation="include">
+        </childnode>
+        <childnode refid="1764" relation="include">
+        </childnode>
+        <childnode refid="1762" relation="include">
+        </childnode>
+      </node>
+      <node id="1770">
+        <label>eos/utils/parameters-fwd.hh</label>
+        <link refid="parameters-fwd_8hh"/>
+      </node>
+      <node id="1776">
+        <label>iterator</label>
+      </node>
+      <node id="1772">
+        <label>cstdint</label>
+      </node>
+      <node id="1762">
+        <label>string</label>
+      </node>
+      <node id="1764">
+        <label>eos/utils/private_implementation_pattern.hh</label>
+        <link refid="private__implementation__pattern_8hh"/>
+        <childnode refid="1765" relation="include">
+        </childnode>
+      </node>
+      <node id="1774">
+        <label>eos/utils/wrapped_forward_iterator-fwd.hh</label>
+        <link refid="wrapped__forward__iterator-fwd_8hh"/>
+      </node>
+      <node id="1761">
+        <label>exception</label>
+      </node>
+      <node id="1768">
+        <label>eos/utils/mutable.hh</label>
+        <link refid="mutable_8hh"/>
+        <childnode refid="1769" relation="include">
+        </childnode>
+        <childnode refid="1764" relation="include">
+        </childnode>
+        <childnode refid="1765" relation="include">
+        </childnode>
+      </node>
+      <node id="1763">
+        <label>eos/utils/kinematic.hh</label>
+        <link refid="kinematic_8hh"/>
+        <childnode refid="1760" relation="include">
+        </childnode>
+        <childnode refid="1764" relation="include">
+        </childnode>
+      </node>
+      <node id="1781">
+        <label>utility</label>
+      </node>
+      <node id="1779">
+        <label>eos/utils/one-of.hh</label>
+        <link refid="one-of_8hh"/>
+        <childnode refid="1780" relation="include">
+        </childnode>
+        <childnode refid="1765" relation="include">
+        </childnode>
+        <childnode refid="1762" relation="include">
+        </childnode>
+        <childnode refid="1781" relation="include">
+        </childnode>
+      </node>
+      <node id="1771">
+        <label>eos/utils/random_number_generator.hh</label>
+        <link refid="random__number__generator_8hh"/>
+        <childnode refid="1764" relation="include">
+        </childnode>
+        <childnode refid="1772" relation="include">
+        </childnode>
+      </node>
+      <node id="1758">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/wilson-polynomial.hh</label>
+        <link refid="wilson-polynomial.hh"/>
+        <childnode refid="1759" relation="include">
+        </childnode>
+        <childnode refid="1779" relation="include">
+        </childnode>
+        <childnode refid="1782" relation="include">
+        </childnode>
+        <childnode refid="1762" relation="include">
+        </childnode>
+      </node>
+      <node id="1780">
+        <label>cstdlib</label>
+      </node>
+      <node id="1760">
+        <label>eos/utils/exception.hh</label>
+        <link refid="exception_8hh"/>
+        <childnode refid="1761" relation="include">
+        </childnode>
+        <childnode refid="1762" relation="include">
+        </childnode>
+      </node>
+      <node id="1773">
+        <label>eos/utils/wrapped_forward_iterator.hh</label>
+        <link refid="wrapped__forward__iterator_8hh"/>
+        <childnode refid="1774" relation="include">
+        </childnode>
+        <childnode refid="1775" relation="include">
+        </childnode>
+        <childnode refid="1776" relation="include">
+        </childnode>
+        <childnode refid="1777" relation="include">
+        </childnode>
+      </node>
+      <node id="1777">
+        <label>type_traits</label>
+      </node>
+      <node id="1778">
+        <label>set</label>
+      </node>
+      <node id="1769">
+        <label>eos/utils/mutable-fwd.hh</label>
+        <link refid="mutable-fwd_8hh"/>
+      </node>
+      <node id="1767">
+        <label>eos/utils/parameters.hh</label>
+        <link refid="parameters_8hh"/>
+        <childnode refid="1760" relation="include">
+        </childnode>
+        <childnode refid="1768" relation="include">
+        </childnode>
+        <childnode refid="1770" relation="include">
+        </childnode>
+        <childnode refid="1764" relation="include">
+        </childnode>
+        <childnode refid="1771" relation="include">
+        </childnode>
+        <childnode refid="1773" relation="include">
+        </childnode>
+        <childnode refid="1778" relation="include">
+        </childnode>
+      </node>
+      <node id="1765">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classeos_1_1WilsonPolynomialCloner" prot="public">eos::WilsonPolynomialCloner</innerclass>
+    <innerclass refid="classeos_1_1WilsonPolynomialPrinter" prot="public">eos::WilsonPolynomialPrinter</innerclass>
+    <innerclass refid="classeos_1_1WilsonPolynomialEvaluator" prot="public">eos::WilsonPolynomialEvaluator</innerclass>
+    <innernamespace refid="namespaceeos">eos</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wilson-polynomial_8hh_1ae33bd5eb549806a3ba3d61f54994bfba" prot="public" static="no">
+        <name>EOS_GUARD_SRC_UTILS_WILSON_POLYNOMIAL_HH</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson-polynomial.hh" line="21" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson-polynomial.hh" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>vim:<sp/>set<sp/>sw=4<sp/>sts=4<sp/>et<sp/>foldmethod=syntax<sp/>:<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010,<sp/>2011<sp/>Danny<sp/>van<sp/>Dyk</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>EOS<sp/>project.<sp/>EOS<sp/>is<sp/>free<sp/>software;</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Public<sp/>License<sp/>version<sp/>2,<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>EOS<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/>but<sp/>WITHOUT<sp/>ANY</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>along<sp/>with</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/>59<sp/>Temple</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>Place,<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307<sp/><sp/>USA</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>EOS_GUARD_SRC_UTILS_WILSON_POLYNOMIAL_HH</highlight></codeline>
+<codeline lineno="21" refid="wilson-polynomial_8hh_1ae33bd5eb549806a3ba3d61f54994bfba" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EOS_GUARD_SRC_UTILS_WILSON_POLYNOMIAL_HH<sp/>1</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="observable_8hh" kindref="compound">eos/observable.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="one-of_8hh" kindref="compound">eos/utils/one-of.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;list&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">eos</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Constant;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Sum;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Product;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Sine;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="namespaceeos_1ad0c57fa62d09f6465421603cb5285284" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Cosine;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1OneOf" kindref="compound">OneOf&lt;Constant, Sum, Product, Sine, Cosine, Parameter&gt;</ref><sp/><ref refid="classeos_1_1OneOf" kindref="compound">WilsonPolynomial</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classeos_1_1OneOf" kindref="compound">WilsonPolynomial</ref><sp/><ref refid="namespaceeos_1ae661f13ba6f529e7a5c19865f6528da6" kindref="member">make_polynomial</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref><sp/>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::list&lt;std::string&gt;<sp/>&amp;);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref><sp/><ref refid="namespaceeos_1a702bfbd9d3f9e42e94628616b8760853" kindref="member">make_polynomial_observable</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1OneOf" kindref="compound">WilsonPolynomial</ref><sp/>&amp;<sp/>polynomial,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref><sp/>&amp;<sp/>parameters);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref><sp/><ref refid="namespaceeos_1aeb8e7723a15217742675f8f16ebbc4f9" kindref="member">make_polynomial_ratio</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1OneOf" kindref="compound">WilsonPolynomial</ref><sp/>&amp;<sp/>numerator,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1OneOf" kindref="compound">WilsonPolynomial</ref><sp/>&amp;<sp/>denominator,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref><sp/>&amp;<sp/>parameters);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref><sp/><ref refid="namespaceeos_1a25bb05f44e3b5f6b6c5197277e22776b" kindref="member">make_polynomial_ht_like_ratio</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1OneOf" kindref="compound">WilsonPolynomial</ref><sp/>&amp;<sp/>numerator,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1OneOf" kindref="compound">WilsonPolynomial</ref><sp/>&amp;<sp/>denominator,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1OneOf" kindref="compound">WilsonPolynomial</ref><sp/>&amp;<sp/>denominator2,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref><sp/>&amp;<sp/>parameters);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="classeos_1_1WilsonPolynomialCloner" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classeos_1_1WilsonPolynomialCloner" kindref="compound">WilsonPolynomialCloner</ref></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref><sp/>_parameters;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1WilsonPolynomialCloner_1a8e6b8a5026408945a15c9604d56fb19b" kindref="member">WilsonPolynomialCloner</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref><sp/>&amp;<sp/>parameters);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1OneOf" kindref="compound">WilsonPolynomial</ref><sp/><ref refid="classeos_1_1WilsonPolynomialCloner_1a636e34f10bcf08e04d7e7afea3c0366c" kindref="member">visit</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Constant<sp/>&amp;<sp/>c);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1OneOf" kindref="compound">WilsonPolynomial</ref><sp/><ref refid="classeos_1_1WilsonPolynomialCloner_1a636e34f10bcf08e04d7e7afea3c0366c" kindref="member">visit</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Sum<sp/>&amp;<sp/>s);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1OneOf" kindref="compound">WilsonPolynomial</ref><sp/><ref refid="classeos_1_1WilsonPolynomialCloner_1a636e34f10bcf08e04d7e7afea3c0366c" kindref="member">visit</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Product<sp/>&amp;<sp/>p);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1OneOf" kindref="compound">WilsonPolynomial</ref><sp/><ref refid="classeos_1_1WilsonPolynomialCloner_1a636e34f10bcf08e04d7e7afea3c0366c" kindref="member">visit</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Sine<sp/>&amp;<sp/>s);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1OneOf" kindref="compound">WilsonPolynomial</ref><sp/><ref refid="classeos_1_1WilsonPolynomialCloner_1a636e34f10bcf08e04d7e7afea3c0366c" kindref="member">visit</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Cosine<sp/>&amp;<sp/>s);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1OneOf" kindref="compound">WilsonPolynomial</ref><sp/><ref refid="classeos_1_1WilsonPolynomialCloner_1a636e34f10bcf08e04d7e7afea3c0366c" kindref="member">visit</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref><sp/>&amp;<sp/>p);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="classeos_1_1WilsonPolynomialPrinter" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classeos_1_1WilsonPolynomialPrinter" kindref="compound">WilsonPolynomialPrinter</ref></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_pretty;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1WilsonPolynomialPrinter_1a790ebda04554560c04b6004384a4cda6" kindref="member">WilsonPolynomialPrinter</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>&amp;<sp/>pretty<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classeos_1_1WilsonPolynomialPrinter_1a16734adc9f8e5ed38f98dec2fe7f1082" kindref="member">visit</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Constant<sp/>&amp;<sp/>c);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classeos_1_1WilsonPolynomialPrinter_1a16734adc9f8e5ed38f98dec2fe7f1082" kindref="member">visit</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Sum<sp/>&amp;<sp/>s);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classeos_1_1WilsonPolynomialPrinter_1a16734adc9f8e5ed38f98dec2fe7f1082" kindref="member">visit</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Product<sp/>&amp;<sp/>p);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classeos_1_1WilsonPolynomialPrinter_1a16734adc9f8e5ed38f98dec2fe7f1082" kindref="member">visit</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Sine<sp/>&amp;<sp/>s);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classeos_1_1WilsonPolynomialPrinter_1a16734adc9f8e5ed38f98dec2fe7f1082" kindref="member">visit</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Cosine<sp/>&amp;<sp/>s);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classeos_1_1WilsonPolynomialPrinter_1a16734adc9f8e5ed38f98dec2fe7f1082" kindref="member">visit</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref><sp/>&amp;<sp/>p);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="classeos_1_1WilsonPolynomialEvaluator" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classeos_1_1WilsonPolynomialEvaluator" kindref="compound">WilsonPolynomialEvaluator</ref></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1WilsonPolynomialEvaluator_1ac85d91d12ce34c628012f7e4ee451359" kindref="member">visit</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Constant<sp/>&amp;<sp/>c);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1WilsonPolynomialEvaluator_1ac85d91d12ce34c628012f7e4ee451359" kindref="member">visit</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref><sp/>&amp;<sp/>p);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1WilsonPolynomialEvaluator_1ac85d91d12ce34c628012f7e4ee451359" kindref="member">visit</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Sum<sp/>&amp;<sp/>s);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1WilsonPolynomialEvaluator_1ac85d91d12ce34c628012f7e4ee451359" kindref="member">visit</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Product<sp/>&amp;<sp/>p);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1WilsonPolynomialEvaluator_1ac85d91d12ce34c628012f7e4ee451359" kindref="member">visit</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Sine<sp/>&amp;<sp/>s);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1WilsonPolynomialEvaluator_1ac85d91d12ce34c628012f7e4ee451359" kindref="member">visit</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Cosine<sp/>&amp;<sp/>c);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson-polynomial.hh"/>
+  </compounddef>
+</doxygen>

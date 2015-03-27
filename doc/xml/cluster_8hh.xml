@@ -1,0 +1,261 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="cluster_8hh" kind="file">
+    <compoundname>cluster.hh</compoundname>
+    <includes refid="markov__chain_8hh" local="no">eos/utils/markov_chain.hh</includes>
+    <includes refid="private__implementation__pattern-impl_8hh" local="no">eos/utils/private_implementation_pattern-impl.hh</includes>
+    <includes refid="wrapped__forward__iterator-impl_8hh" local="no">eos/utils/wrapped_forward_iterator-impl.hh</includes>
+    <includedby refid="proposal__functions_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh</includedby>
+    <incdepgraph>
+      <node id="679">
+        <label>functional</label>
+      </node>
+      <node id="674">
+        <label>eos/utils/parameters-fwd.hh</label>
+        <link refid="parameters-fwd_8hh"/>
+      </node>
+      <node id="680">
+        <label>iterator</label>
+      </node>
+      <node id="676">
+        <label>cstdint</label>
+      </node>
+      <node id="688">
+        <label>eos/utils/wrapped_forward_iterator-impl.hh</label>
+        <link refid="wrapped__forward__iterator-impl_8hh"/>
+        <childnode refid="677" relation="include">
+        </childnode>
+      </node>
+      <node id="670">
+        <label>string</label>
+      </node>
+      <node id="662">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/cluster.hh</label>
+        <link refid="cluster.hh"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+        <childnode refid="687" relation="include">
+        </childnode>
+        <childnode refid="688" relation="include">
+        </childnode>
+      </node>
+      <node id="673">
+        <label>eos/utils/private_implementation_pattern.hh</label>
+        <link refid="private__implementation__pattern_8hh"/>
+        <childnode refid="665" relation="include">
+        </childnode>
+      </node>
+      <node id="678">
+        <label>eos/utils/wrapped_forward_iterator-fwd.hh</label>
+        <link refid="wrapped__forward__iterator-fwd_8hh"/>
+      </node>
+      <node id="669">
+        <label>exception</label>
+      </node>
+      <node id="664">
+        <label>eos/utils/analysis-fwd.hh</label>
+        <link refid="analysis-fwd_8hh"/>
+        <childnode refid="665" relation="include">
+        </childnode>
+      </node>
+      <node id="666">
+        <label>eos/utils/hdf5-fwd.hh</label>
+        <link refid="hdf5-fwd_8hh"/>
+      </node>
+      <node id="671">
+        <label>eos/utils/mutable.hh</label>
+        <link refid="mutable_8hh"/>
+        <childnode refid="672" relation="include">
+        </childnode>
+        <childnode refid="673" relation="include">
+        </childnode>
+        <childnode refid="665" relation="include">
+        </childnode>
+      </node>
+      <node id="685">
+        <label>vector</label>
+      </node>
+      <node id="684">
+        <label>sstream</label>
+      </node>
+      <node id="675">
+        <label>eos/utils/random_number_generator.hh</label>
+        <link refid="random__number__generator_8hh"/>
+        <childnode refid="673" relation="include">
+        </childnode>
+        <childnode refid="676" relation="include">
+        </childnode>
+      </node>
+      <node id="668">
+        <label>eos/utils/exception.hh</label>
+        <link refid="exception_8hh"/>
+        <childnode refid="669" relation="include">
+        </childnode>
+        <childnode refid="670" relation="include">
+        </childnode>
+      </node>
+      <node id="663">
+        <label>eos/utils/markov_chain.hh</label>
+        <link refid="markov__chain_8hh"/>
+        <childnode refid="664" relation="include">
+        </childnode>
+        <childnode refid="666" relation="include">
+        </childnode>
+        <childnode refid="667" relation="include">
+        </childnode>
+        <childnode refid="683" relation="include">
+        </childnode>
+        <childnode refid="685" relation="include">
+        </childnode>
+        <childnode refid="686" relation="include">
+        </childnode>
+      </node>
+      <node id="677">
+        <label>eos/utils/wrapped_forward_iterator.hh</label>
+        <link refid="wrapped__forward__iterator_8hh"/>
+        <childnode refid="678" relation="include">
+        </childnode>
+        <childnode refid="679" relation="include">
+        </childnode>
+        <childnode refid="680" relation="include">
+        </childnode>
+        <childnode refid="681" relation="include">
+        </childnode>
+      </node>
+      <node id="687">
+        <label>eos/utils/private_implementation_pattern-impl.hh</label>
+        <link refid="private__implementation__pattern-impl_8hh"/>
+        <childnode refid="673" relation="include">
+        </childnode>
+      </node>
+      <node id="683">
+        <label>eos/utils/stringify.hh</label>
+        <link refid="stringify_8hh"/>
+        <childnode refid="670" relation="include">
+        </childnode>
+        <childnode refid="684" relation="include">
+        </childnode>
+      </node>
+      <node id="686">
+        <label>gsl/gsl_rng.h</label>
+      </node>
+      <node id="681">
+        <label>type_traits</label>
+      </node>
+      <node id="682">
+        <label>set</label>
+      </node>
+      <node id="672">
+        <label>eos/utils/mutable-fwd.hh</label>
+        <link refid="mutable-fwd_8hh"/>
+      </node>
+      <node id="667">
+        <label>eos/utils/parameters.hh</label>
+        <link refid="parameters_8hh"/>
+        <childnode refid="668" relation="include">
+        </childnode>
+        <childnode refid="671" relation="include">
+        </childnode>
+        <childnode refid="674" relation="include">
+        </childnode>
+        <childnode refid="673" relation="include">
+        </childnode>
+        <childnode refid="675" relation="include">
+        </childnode>
+        <childnode refid="677" relation="include">
+        </childnode>
+        <childnode refid="682" relation="include">
+        </childnode>
+      </node>
+      <node id="665">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="690">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh</label>
+        <link refid="proposal__functions_8hh"/>
+        <childnode refid="691" relation="include">
+        </childnode>
+      </node>
+      <node id="689">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/cluster.hh</label>
+        <link refid="cluster.hh"/>
+        <childnode refid="690" relation="include">
+        </childnode>
+      </node>
+      <node id="691">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/markov_chain_sampler.hh</label>
+        <link refid="markov__chain__sampler_8hh"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classeos_1_1Cluster" prot="public">eos::Cluster</innerclass>
+    <innernamespace refid="namespaceeos">eos</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="cluster_8hh_1a029bee19b88e954c18e4dcd3623de3b3" prot="public" static="no">
+        <name>EOS_GUARD_EOS_UTILS_CLUSTER_HH</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/cluster.hh" line="4" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/cluster.hh" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>vim:<sp/>set<sp/>sw=4<sp/>sts=4<sp/>et<sp/>foldmethod=syntax<sp/>:<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>EOS_GUARD_EOS_UTILS_CLUSTER_HH</highlight></codeline>
+<codeline lineno="4" refid="cluster_8hh_1a029bee19b88e954c18e4dcd3623de3b3" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EOS_GUARD_EOS_UTILS_CLUSTER_HH<sp/>1</highlight></codeline>
+<codeline lineno="5"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="markov__chain_8hh" kindref="compound">eos/utils/markov_chain.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="private__implementation__pattern-impl_8hh" kindref="compound">eos/utils/private_implementation_pattern-impl.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="wrapped__forward__iterator-impl_8hh" kindref="compound">eos/utils/wrapped_forward_iterator-impl.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">eos</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12" refid="classeos_1_1Cluster" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classeos_1_1Cluster" kindref="compound">Cluster</ref><sp/>:</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1PrivateImplementationPattern" kindref="compound">PrivateImplementationPattern</ref>&lt;Cluster&gt;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="16" refid="classeos_1_1Cluster_1a0c315d367de4288803597a0f23ee4168" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::function&lt;double<sp/>(const<sp/>std::vector&lt;double&gt;<sp/>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;<sp/>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>&amp;)&gt;<sp/><ref refid="classeos_1_1Cluster_1a0c315d367de4288803597a0f23ee4168" kindref="member">RValueFunction</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1Cluster_1a0f1f2be34f11be1bba6426ba20ebf999" kindref="member">Cluster</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Cluster_1a0c315d367de4288803597a0f23ee4168" kindref="member">RValueFunction</ref><sp/>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>max_rvalue,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceeos_1ac9f30fde04446cfabdd69d4b5b5d3c5a" kindref="member">HistoryPtr</ref><sp/>&amp;<sp/>initial_chain,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>&amp;<sp/>index,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>skip_initial);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1Cluster_1a7bbc57a377c4d638830c3f4768c0b1b7" kindref="member">~Cluster</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Cluster_1afed737aab746ba8e3c8fefcf32ea185d" kindref="member">add</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceeos_1ac9f30fde04446cfabdd69d4b5b5d3c5a" kindref="member">HistoryPtr</ref><sp/>&amp;<sp/>chain,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>&amp;<sp/>index);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/><ref refid="classeos_1_1Cluster_1a9b2fc51a3435f161f359f6a11f02dacb" kindref="member">mean</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::vector&lt;double&gt;&gt;<sp/>&amp;<sp/><ref refid="classeos_1_1Cluster_1a12f80fe40193349914094f49fbdc18a2" kindref="member">means</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::vector&lt;double&gt;&gt;<sp/>&amp;<sp/><ref refid="classeos_1_1Cluster_1a16f6b0f61e014b2d89ca532d0bc04cf1" kindref="member">variances</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Cluster_1a944a35443f5bfa64317c843c9733d84e" kindref="member">overlaps</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceeos_1ac9f30fde04446cfabdd69d4b5b5d3c5a" kindref="member">HistoryPtr</ref><sp/>&amp;<sp/>chain)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Cluster_1a2906631fc892844e19b661d1484a6a71" kindref="member">parameter_indices</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;unsigned&gt;<sp/>&amp;<sp/>indices);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="classeos_1_1Cluster_1ab60d3bac87825b6181c4c6bb1f04d55a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">IteratorTag;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator&lt;IteratorTag, HistoryPtr&gt;</ref><sp/><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">Iterator</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">Iterator</ref><sp/><ref refid="classeos_1_1Cluster_1a07f3b9298b4ea870313f62cce1b9807c" kindref="member">begin</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">Iterator</ref><sp/><ref refid="classeos_1_1Cluster_1a7269794a3f029fb51e08ae51faf5e67f" kindref="member">end</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="classeos_1_1Cluster_1a39df87b5549e245b185b26f94c9d336b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">IteratorTag;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator&lt;IteratorTag, unsigned&gt;</ref><sp/><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">IndexIterator</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">IndexIterator</ref><sp/><ref refid="classeos_1_1Cluster_1a81ba073f1dc0d91e0fd0b3060f6cd12d" kindref="member">begin_indices</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">IndexIterator</ref><sp/><ref refid="classeos_1_1Cluster_1a346a8e945ea0be679c9eb372e589619b" kindref="member">end_indices</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/cluster.hh"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,278 @@
+\hypertarget{classeos_1_1LogLikelihoodBlock}{
+\section{eos::LogLikelihoodBlock Class Reference}
+\label{classeos_1_1LogLikelihoodBlock}\index{eos::LogLikelihoodBlock@{eos::LogLikelihoodBlock}}
+}
+
+
+{\ttfamily \#include $<$log\_\-likelihood.hh$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classeos_1_1LogLikelihoodBlock_a0217895e8d4cf8b69c3086b28ae152a1}{$\sim$LogLikelihoodBlock} ()=0
+\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\item 
+virtual std::string \hyperlink{classeos_1_1LogLikelihoodBlock_ad99b9336fdbb4c28eedc50b18d3c60c3}{as\_\-string} () const =0
+\item 
+virtual \hyperlink{namespaceeos_ab823a6782e060c440e05a614158ad1bf}{LogLikelihoodBlockPtr} \hyperlink{classeos_1_1LogLikelihoodBlock_a950a255f78736f75b2458e48c30e119f}{clone} (\hyperlink{classeos_1_1ObservableCache}{ObservableCache} cache) const =0
+\begin{DoxyCompactList}\small\item\em Clone this block. \item\end{DoxyCompactList}\item 
+virtual double \hyperlink{classeos_1_1LogLikelihoodBlock_a85ba7e331d03681a5f356bb2df7d1ac7}{evaluate} () const =0
+\begin{DoxyCompactList}\small\item\em Compute the logarithm of the likelihood for this block. \item\end{DoxyCompactList}\item 
+virtual unsigned \hyperlink{classeos_1_1LogLikelihoodBlock_a48f03be5dc8284368cae6a9830627f2e}{number\_\-of\_\-observations} () const =0
+\begin{DoxyCompactList}\small\item\em The number of experimental observations (not observables!) used in this block. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classeos_1_1LogLikelihoodBlock_abb412e8a3fde0945f940ddcd6f79e68c}{prepare\_\-sampling} ()
+\item 
+virtual double \hyperlink{classeos_1_1LogLikelihoodBlock_ad0669d109d0d004cc5674c739fb41d7a}{sample} (gsl\_\-rng $\ast$rng) const =0
+\item 
+virtual double \hyperlink{classeos_1_1LogLikelihoodBlock_a52c12058a07b20a5b910dea8972f5282}{significance} () const =0
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{namespaceeos_ab823a6782e060c440e05a614158ad1bf}{LogLikelihoodBlockPtr} \hyperlink{classeos_1_1LogLikelihoodBlock_a848066ee04c104fdcf0b74c868c87d68}{Gaussian} (\hyperlink{classeos_1_1ObservableCache}{ObservableCache} cache, const \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} \&observable, const double \&min, const double \&central, const double \&max, const unsigned \&number\_\-of\_\-observations=1u)
+\item 
+static \hyperlink{namespaceeos_ab823a6782e060c440e05a614158ad1bf}{LogLikelihoodBlockPtr} \hyperlink{classeos_1_1LogLikelihoodBlock_a3e2ab2f3d4d994c382ecc06cd6453478}{LogGamma} (\hyperlink{classeos_1_1ObservableCache}{ObservableCache} cache, const \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} \&observable, const double \&min, const double \&central, const double \&max, const unsigned \&number\_\-of\_\-observations=1u)
+\item 
+static \hyperlink{namespaceeos_ab823a6782e060c440e05a614158ad1bf}{LogLikelihoodBlockPtr} \hyperlink{classeos_1_1LogLikelihoodBlock_ac4c4437c0d679ae36db0fe6906532f2d}{LogGamma} (\hyperlink{classeos_1_1ObservableCache}{ObservableCache} cache, const \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} \&observable, const double \&min, const double \&central, const double \&max, const double \&lambda, const double \&alpha, const unsigned \&number\_\-of\_\-observations=1u)
+\item 
+static \hyperlink{namespaceeos_ab823a6782e060c440e05a614158ad1bf}{LogLikelihoodBlockPtr} \hyperlink{classeos_1_1LogLikelihoodBlock_a275a00c674dbc595abb1bc74faed20be}{AmorosoLimit} (\hyperlink{classeos_1_1ObservableCache}{ObservableCache} cache, const \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} \&observable, const double \&physical\_\-limit, const double \&upper\_\-limit\_\-90, const double \&upper\_\-limit\_\-95, const double \&theta, const double \&alpha, const unsigned \&number\_\-of\_\-observations=1u)
+\item 
+static \hyperlink{namespaceeos_ab823a6782e060c440e05a614158ad1bf}{LogLikelihoodBlockPtr} \hyperlink{classeos_1_1LogLikelihoodBlock_a810a57eac9ccdc9cb7e49f0197adcee5}{AmorosoMode} (\hyperlink{classeos_1_1ObservableCache}{ObservableCache} cache, const \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} \&observable, const double \&physical\_\-limit, const double \&mode, const double \&upper\_\-limit\_\-90, const double \&upper\_\-limit\_\-95, const double \&theta, const double \&alpha, const double \&beta, const unsigned \&number\_\-of\_\-observations=1u)
+\item 
+static \hyperlink{namespaceeos_ab823a6782e060c440e05a614158ad1bf}{LogLikelihoodBlockPtr} \hyperlink{classeos_1_1LogLikelihoodBlock_acdc69e205b9a51fb238833bda103c2f7}{Amoroso} (\hyperlink{classeos_1_1ObservableCache}{ObservableCache} cache, const \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} \&observable, const double \&physical\_\-limit, const double \&upper\_\-limit\_\-10, const double \&upper\_\-limit\_\-50, const double \&upper\_\-limit\_\-90, const double \&theta, const double \&alpha, const double \&beta, const unsigned \&number\_\-of\_\-observations=1u)
+\item 
+static \hyperlink{namespaceeos_ab823a6782e060c440e05a614158ad1bf}{LogLikelihoodBlockPtr} \hyperlink{classeos_1_1LogLikelihoodBlock_ae35b8b72185c9ca409a6dfde49de07a1}{Amoroso} (\hyperlink{classeos_1_1ObservableCache}{ObservableCache} cache, const \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} \&observable, const double \&physical\_\-limit, const double \&theta, const double \&alpha, const double \&beta, const unsigned \&number\_\-of\_\-observations=1u)
+\item 
+static \hyperlink{namespaceeos_ab823a6782e060c440e05a614158ad1bf}{LogLikelihoodBlockPtr} \hyperlink{classeos_1_1LogLikelihoodBlock_a7a47859d5eff2ef0a6b38ef3e70ee1d0}{Mixture} (const std::vector$<$ \hyperlink{namespaceeos_ab823a6782e060c440e05a614158ad1bf}{LogLikelihoodBlockPtr} $>$ \&components, const std::vector$<$ double $>$ \&weights)
+\item 
+{\footnotesize template$<$std::size\_\-t n\_\-$>$ }\\static \hyperlink{namespaceeos_ab823a6782e060c440e05a614158ad1bf}{LogLikelihoodBlockPtr} \hyperlink{classeos_1_1LogLikelihoodBlock_a1532bcb8dc34234cb7c4f39a3e82031e}{MultivariateGaussian} (\hyperlink{classeos_1_1ObservableCache}{ObservableCache} cache, const std::array$<$ \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr}, n\_\- $>$ \&observables, const std::array$<$ double, n\_\- $>$ \&mean, const std::array$<$ std::array$<$ double, n\_\- $>$, n\_\- $>$ \&covariance, const unsigned \&number\_\-of\_\-observations=n\_\-)
+\item 
+{\footnotesize template$<$std::size\_\-t n\_\-$>$ }\\static \hyperlink{namespaceeos_ab823a6782e060c440e05a614158ad1bf}{LogLikelihoodBlockPtr} \hyperlink{classeos_1_1LogLikelihoodBlock_a6b124551639991dd21a9e11e9a2d54c6}{MultivariateGaussian} (\hyperlink{classeos_1_1ObservableCache}{ObservableCache} cache, const std::array$<$ \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr}, n\_\- $>$ \&observables, const std::array$<$ double, n\_\- $>$ \&mean, const std::array$<$ double, n\_\- $>$ \&variances, const std::array$<$ std::array$<$ double, n\_\- $>$, n\_\- $>$ \&correlation, const unsigned \&number\_\-of\_\-observations=n\_\-)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classeos_1_1LogLikelihoodBlock}{LogLikelihoodBlock} models the logarithm of the likelihood for a given number of correlated observables which are independent of all other observables such that total likelihood is just the product of the independent blocks.
+
+Access to any \hyperlink{classeos_1_1LogLikelihoodBlock}{LogLikelihoodBlock} is coherent, i.e., changes to one object will propagate to every other object copy. To create an independent instance, use \hyperlink{classeos_1_1LogLikelihoodBlock_a950a255f78736f75b2458e48c30e119f}{clone()}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classeos_1_1LogLikelihoodBlock_a0217895e8d4cf8b69c3086b28ae152a1}{
+\index{eos::LogLikelihoodBlock@{eos::LogLikelihoodBlock}!$\sim$LogLikelihoodBlock@{$\sim$LogLikelihoodBlock}}
+\index{$\sim$LogLikelihoodBlock@{$\sim$LogLikelihoodBlock}!eos::LogLikelihoodBlock@{eos::LogLikelihoodBlock}}
+\subsubsection[{$\sim$LogLikelihoodBlock}]{\setlength{\rightskip}{0pt plus 5cm}virtual eos::LogLikelihoodBlock::$\sim$LogLikelihoodBlock ()\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classeos_1_1LogLikelihoodBlock_a0217895e8d4cf8b69c3086b28ae152a1}
+
+
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classeos_1_1LogLikelihoodBlock_ae35b8b72185c9ca409a6dfde49de07a1}{
+\index{eos::LogLikelihoodBlock@{eos::LogLikelihoodBlock}!Amoroso@{Amoroso}}
+\index{Amoroso@{Amoroso}!eos::LogLikelihoodBlock@{eos::LogLikelihoodBlock}}
+\subsubsection[{Amoroso}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf LogLikelihoodBlockPtr} eos::LogLikelihoodBlock::Amoroso ({\bf ObservableCache} {\em cache}, \/  const {\bf ObservablePtr} \& {\em observable}, \/  const double \& {\em physical\_\-limit}, \/  const double \& {\em theta}, \/  const double \& {\em alpha}, \/  const double \& {\em beta}, \/  const unsigned \& {\em number\_\-of\_\-observations} = {\ttfamily 1u})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1LogLikelihoodBlock_ae35b8b72185c9ca409a6dfde49de07a1}
+A likelihood contribution representing an upper limit on a quantity x.
+
+Internally, it is represented by an Amoroso distribution \mbox{[}C2004\mbox{]} with location parameter a set to the physical limit, scale parameter  and shape parameters ,  supplied by the user.
+
+\begin{DoxyNote}{Note}
+The mode of the distribution is typically not at the physical limit.
+\end{DoxyNote}
+For example, consider a yet unobserved branching ratio, which has to be non-\/negative, x$>$= 0.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em cache}]The \hyperlink{classeos_1_1Observable}{Observable} cache from which we draw the predictions. \item[{\em observable}]The \hyperlink{classeos_1_1Observable}{Observable} whose distribution we model. \item[{\em mode}]The lower, physical limit. A branching ratio has to be $>$= 0. \item[{\em theta}]scale parameter \item[{\em alpha}]1st shape parameter \item[{\em beta}]2nd shape parameter \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classeos_1_1LogLikelihoodBlock_acdc69e205b9a51fb238833bda103c2f7}{
+\index{eos::LogLikelihoodBlock@{eos::LogLikelihoodBlock}!Amoroso@{Amoroso}}
+\index{Amoroso@{Amoroso}!eos::LogLikelihoodBlock@{eos::LogLikelihoodBlock}}
+\subsubsection[{Amoroso}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf LogLikelihoodBlockPtr} eos::LogLikelihoodBlock::Amoroso ({\bf ObservableCache} {\em cache}, \/  const {\bf ObservablePtr} \& {\em observable}, \/  const double \& {\em physical\_\-limit}, \/  const double \& {\em upper\_\-limit\_\-10}, \/  const double \& {\em upper\_\-limit\_\-50}, \/  const double \& {\em upper\_\-limit\_\-90}, \/  const double \& {\em theta}, \/  const double \& {\em alpha}, \/  const double \& {\em beta}, \/  const unsigned \& {\em number\_\-of\_\-observations} = {\ttfamily 1u})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1LogLikelihoodBlock_acdc69e205b9a51fb238833bda103c2f7}
+A likelihood contribution representing an upper limit on a quantity x.
+
+Internally, it is represented by an Amoroso distribution \mbox{[}C2004\mbox{]} with location parameter a set to the physical limit, scale parameter  and shape parameters ,  supplied by the user.
+
+\begin{DoxyNote}{Note}
+The mode of the distribution is typically not at the physical limit.
+\end{DoxyNote}
+The limit values are required in order to check consistency with the parameter values.
+
+For example, consider a yet unobserved branching ratio, which has to be non-\/negative, x$>$= 0.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em cache}]The \hyperlink{classeos_1_1Observable}{Observable} cache from which we draw the predictions. \item[{\em observable}]The \hyperlink{classeos_1_1Observable}{Observable} whose distribution we model. \item[{\em mode}]The lower, physical limit. A branching ratio has to be $>$= 0. \item[{\em upper\_\-limit\_\-10}]With 10\% probability, x $<$ upper\_\-limit\_\-10. \item[{\em upper\_\-limit\_\-50}]With 50\% probability, x $<$ upper\_\-limit\_\-50. \item[{\em upper\_\-limit\_\-90}]With 90\% probability, x $<$ upper\_\-limit\_\-90. \item[{\em theta}]scale parameter \item[{\em alpha}]1st shape parameter \item[{\em beta}]2nd shape parameter \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classeos_1_1LogLikelihoodBlock_a275a00c674dbc595abb1bc74faed20be}{
+\index{eos::LogLikelihoodBlock@{eos::LogLikelihoodBlock}!AmorosoLimit@{AmorosoLimit}}
+\index{AmorosoLimit@{AmorosoLimit}!eos::LogLikelihoodBlock@{eos::LogLikelihoodBlock}}
+\subsubsection[{AmorosoLimit}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf LogLikelihoodBlockPtr} eos::LogLikelihoodBlock::AmorosoLimit ({\bf ObservableCache} {\em cache}, \/  const {\bf ObservablePtr} \& {\em observable}, \/  const double \& {\em physical\_\-limit}, \/  const double \& {\em upper\_\-limit\_\-90}, \/  const double \& {\em upper\_\-limit\_\-95}, \/  const double \& {\em theta}, \/  const double \& {\em alpha}, \/  const unsigned \& {\em number\_\-of\_\-observations} = {\ttfamily 1u})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1LogLikelihoodBlock_a275a00c674dbc595abb1bc74faed20be}
+A likelihood contribution representing an upper limit on a quantity x.
+
+Internally, it is represented by an Amoroso distribution \mbox{[}C2004\mbox{]} with location parameter a set to the physical limit, scale parameter  and first shape parameter  supplied by the user, and 2nd shape parameter  set to the inverse of , in order to ensure that the maximum of the density is at the physical limit.
+
+The limit values are required in order to check consistency with the parameter values.
+
+For example, consider a yet unobserved branching ratio, which has to be non-\/negative, x$>$= 0.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em cache}]The \hyperlink{classeos_1_1Observable}{Observable} cache from which we draw the predictions. \item[{\em observable}]The \hyperlink{classeos_1_1Observable}{Observable} whose distribution we model. \item[{\em mode}]The lower, physical limit. A branching ratio has to be $>$= 0. It is the maximum of the pdf. \item[{\em upper\_\-limit\_\-90}]With 90\% probability, x $<$ upper\_\-limit\_\-90. \item[{\em upper\_\-limit\_\-95}]With 95\% probability, x $<$ upper\_\-limit\_\-95. \item[{\em theta}]scale parameter \item[{\em alpha}]shape parameter \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classeos_1_1LogLikelihoodBlock_a810a57eac9ccdc9cb7e49f0197adcee5}{
+\index{eos::LogLikelihoodBlock@{eos::LogLikelihoodBlock}!AmorosoMode@{AmorosoMode}}
+\index{AmorosoMode@{AmorosoMode}!eos::LogLikelihoodBlock@{eos::LogLikelihoodBlock}}
+\subsubsection[{AmorosoMode}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf LogLikelihoodBlockPtr} eos::LogLikelihoodBlock::AmorosoMode ({\bf ObservableCache} {\em cache}, \/  const {\bf ObservablePtr} \& {\em observable}, \/  const double \& {\em physical\_\-limit}, \/  const double \& {\em mode}, \/  const double \& {\em upper\_\-limit\_\-90}, \/  const double \& {\em upper\_\-limit\_\-95}, \/  const double \& {\em theta}, \/  const double \& {\em alpha}, \/  const double \& {\em beta}, \/  const unsigned \& {\em number\_\-of\_\-observations} = {\ttfamily 1u})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1LogLikelihoodBlock_a810a57eac9ccdc9cb7e49f0197adcee5}
+A likelihood contribution representing an upper limit on a quantity x.
+
+Internally, it is represented by an Amoroso distribution \mbox{[}C2004\mbox{]} with location parameter a set to the physical limit, scale parameter  and shape parameters ,  supplied by the user.
+
+The limit values / mode are required in order to check consistency with the parameter values.
+
+For example, consider a yet unobserved branching ratio, which has to be non-\/negative, x$>$= 0.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em cache}]The \hyperlink{classeos_1_1Observable}{Observable} cache from which we draw the predictions. \item[{\em observable}]The \hyperlink{classeos_1_1Observable}{Observable} whose distribution we model. \item[{\em physical\_\-limit}]The lower, physical limit. A branching ratio has to be $>$= 0. \item[{\em mode}]The maximum of the distribution. \item[{\em upper\_\-limit\_\-90}]With 90\% probability, x $<$ upper\_\-limit\_\-90. \item[{\em upper\_\-limit\_\-95}]With 95\% probability, x $<$ upper\_\-limit\_\-95. \item[{\em theta}]scale parameter \item[{\em alpha}]1st shape parameter \item[{\em beta}]2nd shape parameter \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classeos_1_1LogLikelihoodBlock_ad99b9336fdbb4c28eedc50b18d3c60c3}{
+\index{eos::LogLikelihoodBlock@{eos::LogLikelihoodBlock}!as\_\-string@{as\_\-string}}
+\index{as\_\-string@{as\_\-string}!eos::LogLikelihoodBlock@{eos::LogLikelihoodBlock}}
+\subsubsection[{as\_\-string}]{\setlength{\rightskip}{0pt plus 5cm}virtual std::string eos::LogLikelihoodBlock::as\_\-string () const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classeos_1_1LogLikelihoodBlock_ad99b9336fdbb4c28eedc50b18d3c60c3}
+\hypertarget{classeos_1_1LogLikelihoodBlock_a950a255f78736f75b2458e48c30e119f}{
+\index{eos::LogLikelihoodBlock@{eos::LogLikelihoodBlock}!clone@{clone}}
+\index{clone@{clone}!eos::LogLikelihoodBlock@{eos::LogLikelihoodBlock}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf LogLikelihoodBlockPtr} eos::LogLikelihoodBlock::clone ({\bf ObservableCache} {\em cache}) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classeos_1_1LogLikelihoodBlock_a950a255f78736f75b2458e48c30e119f}
+
+
+Clone this block. \hypertarget{classeos_1_1LogLikelihoodBlock_a85ba7e331d03681a5f356bb2df7d1ac7}{
+\index{eos::LogLikelihoodBlock@{eos::LogLikelihoodBlock}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!eos::LogLikelihoodBlock@{eos::LogLikelihoodBlock}}
+\subsubsection[{evaluate}]{\setlength{\rightskip}{0pt plus 5cm}virtual double eos::LogLikelihoodBlock::evaluate () const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classeos_1_1LogLikelihoodBlock_a85ba7e331d03681a5f356bb2df7d1ac7}
+
+
+Compute the logarithm of the likelihood for this block. \hypertarget{classeos_1_1LogLikelihoodBlock_a848066ee04c104fdcf0b74c868c87d68}{
+\index{eos::LogLikelihoodBlock@{eos::LogLikelihoodBlock}!Gaussian@{Gaussian}}
+\index{Gaussian@{Gaussian}!eos::LogLikelihoodBlock@{eos::LogLikelihoodBlock}}
+\subsubsection[{Gaussian}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf LogLikelihoodBlockPtr} eos::LogLikelihoodBlock::Gaussian ({\bf ObservableCache} {\em cache}, \/  const {\bf ObservablePtr} \& {\em observable}, \/  const double \& {\em min}, \/  const double \& {\em central}, \/  const double \& {\em max}, \/  const unsigned \& {\em number\_\-of\_\-observations} = {\ttfamily 1u})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1LogLikelihoodBlock_a848066ee04c104fdcf0b74c868c87d68}
+Create a new \hyperlink{classeos_1_1LogLikelihoodBlock}{LogLikelihoodBlock} for one normally distributed observable.
+
+\begin{DoxyNote}{Note}
+For every dimension, this template and the corresponding \hyperlink{namespaceeos_1_1implementation}{implementation} have to be instantiated explicitly.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em cache}]The \hyperlink{classeos_1_1Observable}{Observable} cache from which we draw the predictions. \item[{\em observable}]The \hyperlink{classeos_1_1Observable}{Observable} whose distribution we model. \item[{\em min}]The value one sigma below the mean of the experimental distribution. \item[{\em central}]The mean value of the experimental distribution. \item[{\em max}]The value one sigma above the mean of the experimental distribution. \end{DoxyParams}
+\hypertarget{classeos_1_1LogLikelihoodBlock_ac4c4437c0d679ae36db0fe6906532f2d}{
+\index{eos::LogLikelihoodBlock@{eos::LogLikelihoodBlock}!LogGamma@{LogGamma}}
+\index{LogGamma@{LogGamma}!eos::LogLikelihoodBlock@{eos::LogLikelihoodBlock}}
+\subsubsection[{LogGamma}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf LogLikelihoodBlockPtr} eos::LogLikelihoodBlock::LogGamma ({\bf ObservableCache} {\em cache}, \/  const {\bf ObservablePtr} \& {\em observable}, \/  const double \& {\em min}, \/  const double \& {\em central}, \/  const double \& {\em max}, \/  const double \& {\em lambda}, \/  const double \& {\em alpha}, \/  const unsigned \& {\em number\_\-of\_\-observations} = {\ttfamily 1u})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1LogLikelihoodBlock_ac4c4437c0d679ae36db0fe6906532f2d}
+Create a new \hyperlink{classeos_1_1LogLikelihoodBlock}{LogLikelihoodBlock} for one a single observable with asymmetric uncertainties.
+
+\begin{DoxyNote}{Note}
+The only difference to the constructor without the  and  arguments is that now the LogGamma distribution is defined explicitly, and no numerical equation solving is needed. However, consistency is checked.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em lambda}]The scale parameter of a LogGamma distribution. \item[{\em alpha}]The shape parameter of a LogGamma distribution. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classeos_1_1LogLikelihoodBlock_a3e2ab2f3d4d994c382ecc06cd6453478}{
+\index{eos::LogLikelihoodBlock@{eos::LogLikelihoodBlock}!LogGamma@{LogGamma}}
+\index{LogGamma@{LogGamma}!eos::LogLikelihoodBlock@{eos::LogLikelihoodBlock}}
+\subsubsection[{LogGamma}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf LogLikelihoodBlockPtr} eos::LogLikelihoodBlock::LogGamma ({\bf ObservableCache} {\em cache}, \/  const {\bf ObservablePtr} \& {\em observable}, \/  const double \& {\em min}, \/  const double \& {\em central}, \/  const double \& {\em max}, \/  const unsigned \& {\em number\_\-of\_\-observations} = {\ttfamily 1u})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1LogLikelihoodBlock_a3e2ab2f3d4d994c382ecc06cd6453478}
+Create a new \hyperlink{classeos_1_1LogLikelihoodBlock}{LogLikelihoodBlock} for one a single observable with asymmetric uncertainties.
+
+By construction, it is constructed to behave similarly to a Gaussian:
+\begin{DoxyItemize}
+\item the mode is at the central value
+\item the interval \mbox{[}min, max\mbox{]} contains 68\% probability
+\item the density at min is the same as at max For details see \mbox{[}C2004\mbox{]}.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{Note}
+Finding the correct parameter values is accomplished by solving a set of two equations numerically. This is unstable if max and min uncertainty differ by less than 5\%. In that case, just a Gaussian instead.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em cache}]The \hyperlink{classeos_1_1Observable}{Observable} cache from which we draw the predictions. \item[{\em observable}]The \hyperlink{classeos_1_1Observable}{Observable} whose distribution we model. \item[{\em min}]The value one sigma below the mean of the experimental distribution. \item[{\em central}]The mean value of the experimental distribution. \item[{\em max}]The value one sigma above the mean of the experimental distribution. \end{DoxyParams}
+\hypertarget{classeos_1_1LogLikelihoodBlock_a7a47859d5eff2ef0a6b38ef3e70ee1d0}{
+\index{eos::LogLikelihoodBlock@{eos::LogLikelihoodBlock}!Mixture@{Mixture}}
+\index{Mixture@{Mixture}!eos::LogLikelihoodBlock@{eos::LogLikelihoodBlock}}
+\subsubsection[{Mixture}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf LogLikelihoodBlockPtr} eos::LogLikelihoodBlock::Mixture (const std::vector$<$ {\bf LogLikelihoodBlockPtr} $>$ \& {\em components}, \/  const std::vector$<$ double $>$ \& {\em weights})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1LogLikelihoodBlock_a7a47859d5eff2ef0a6b38ef3e70ee1d0}
+\hypertarget{classeos_1_1LogLikelihoodBlock_a6b124551639991dd21a9e11e9a2d54c6}{
+\index{eos::LogLikelihoodBlock@{eos::LogLikelihoodBlock}!MultivariateGaussian@{MultivariateGaussian}}
+\index{MultivariateGaussian@{MultivariateGaussian}!eos::LogLikelihoodBlock@{eos::LogLikelihoodBlock}}
+\subsubsection[{MultivariateGaussian}]{\setlength{\rightskip}{0pt plus 5cm}template$<$std::size\_\-t n\_\-$>$ static {\bf LogLikelihoodBlockPtr} eos::LogLikelihoodBlock::MultivariateGaussian ({\bf ObservableCache} {\em cache}, \/  const std::array$<$ {\bf ObservablePtr}, n\_\- $>$ \& {\em observables}, \/  const std::array$<$ double, n\_\- $>$ \& {\em mean}, \/  const std::array$<$ double, n\_\- $>$ \& {\em variances}, \/  const std::array$<$ std::array$<$ double, n\_\- $>$, n\_\- $>$ \& {\em correlation}, \/  const unsigned \& {\em number\_\-of\_\-observations} = {\ttfamily n\_\-})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classeos_1_1LogLikelihoodBlock_a6b124551639991dd21a9e11e9a2d54c6}
+Create a new \hyperlink{classeos_1_1LogLikelihoodBlock}{LogLikelihoodBlock} for n observables distributed according to a multivariate normal distribution.
+
+\begin{DoxyNote}{Note}
+For every dimension, this template and the corresponding \hyperlink{namespaceeos_1_1implementation}{implementation} have to be instantiated explicitly.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em cache}]The \hyperlink{classeos_1_1Observable}{Observable} cache from which we draw the predictions. \item[{\em observables}]The Observables whose distribution we model. \item[{\em mean}]The vector of means. \item[{\em variances}]The vector of variances. \item[{\em correlation}]The correlation matrix. Diagonal is assumed to be one. \end{DoxyParams}
+\hypertarget{classeos_1_1LogLikelihoodBlock_a1532bcb8dc34234cb7c4f39a3e82031e}{
+\index{eos::LogLikelihoodBlock@{eos::LogLikelihoodBlock}!MultivariateGaussian@{MultivariateGaussian}}
+\index{MultivariateGaussian@{MultivariateGaussian}!eos::LogLikelihoodBlock@{eos::LogLikelihoodBlock}}
+\subsubsection[{MultivariateGaussian}]{\setlength{\rightskip}{0pt plus 5cm}template$<$std::size\_\-t n\_\-$>$ static {\bf LogLikelihoodBlockPtr} eos::LogLikelihoodBlock::MultivariateGaussian ({\bf ObservableCache} {\em cache}, \/  const std::array$<$ {\bf ObservablePtr}, n\_\- $>$ \& {\em observables}, \/  const std::array$<$ double, n\_\- $>$ \& {\em mean}, \/  const std::array$<$ std::array$<$ double, n\_\- $>$, n\_\- $>$ \& {\em covariance}, \/  const unsigned \& {\em number\_\-of\_\-observations} = {\ttfamily n\_\-})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classeos_1_1LogLikelihoodBlock_a1532bcb8dc34234cb7c4f39a3e82031e}
+Create a new \hyperlink{classeos_1_1LogLikelihoodBlock}{LogLikelihoodBlock} for n observables distributed according to a multivariate normal distribution.
+
+\begin{DoxyNote}{Note}
+For every dimension, this template and the corresponding \hyperlink{namespaceeos_1_1implementation}{implementation} have to be instantiated explicitly.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em cache}]The \hyperlink{classeos_1_1Observable}{Observable} cache from which we draw the predictions. \item[{\em observables}]The Observables whose distribution we model. \item[{\em mean}]The vector of means. \item[{\em covariance}]The covariance matrix \end{DoxyParams}
+\hypertarget{classeos_1_1LogLikelihoodBlock_a48f03be5dc8284368cae6a9830627f2e}{
+\index{eos::LogLikelihoodBlock@{eos::LogLikelihoodBlock}!number\_\-of\_\-observations@{number\_\-of\_\-observations}}
+\index{number\_\-of\_\-observations@{number\_\-of\_\-observations}!eos::LogLikelihoodBlock@{eos::LogLikelihoodBlock}}
+\subsubsection[{number\_\-of\_\-observations}]{\setlength{\rightskip}{0pt plus 5cm}virtual unsigned eos::LogLikelihoodBlock::number\_\-of\_\-observations () const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classeos_1_1LogLikelihoodBlock_a48f03be5dc8284368cae6a9830627f2e}
+
+
+The number of experimental observations (not observables!) used in this block. \hypertarget{classeos_1_1LogLikelihoodBlock_abb412e8a3fde0945f940ddcd6f79e68c}{
+\index{eos::LogLikelihoodBlock@{eos::LogLikelihoodBlock}!prepare\_\-sampling@{prepare\_\-sampling}}
+\index{prepare\_\-sampling@{prepare\_\-sampling}!eos::LogLikelihoodBlock@{eos::LogLikelihoodBlock}}
+\subsubsection[{prepare\_\-sampling}]{\setlength{\rightskip}{0pt plus 5cm}virtual void eos::LogLikelihoodBlock::prepare\_\-sampling ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classeos_1_1LogLikelihoodBlock_abb412e8a3fde0945f940ddcd6f79e68c}
+Fix the predictions for fixed parameters within given model. Calculate any normalization constants to fix the sampling distribution in order to speed up repeated calls of \hyperlink{classeos_1_1LogLikelihoodBlock_ad0669d109d0d004cc5674c739fb41d7a}{sample()}. \hypertarget{classeos_1_1LogLikelihoodBlock_ad0669d109d0d004cc5674c739fb41d7a}{
+\index{eos::LogLikelihoodBlock@{eos::LogLikelihoodBlock}!sample@{sample}}
+\index{sample@{sample}!eos::LogLikelihoodBlock@{eos::LogLikelihoodBlock}}
+\subsubsection[{sample}]{\setlength{\rightskip}{0pt plus 5cm}virtual double eos::LogLikelihoodBlock::sample (gsl\_\-rng $\ast$ {\em rng}) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classeos_1_1LogLikelihoodBlock_ad0669d109d0d004cc5674c739fb41d7a}
+Sample from the logarithm of the likelihood for this block. \begin{DoxyWarning}{Warning}
+Call \hyperlink{classeos_1_1LogLikelihoodBlock_abb412e8a3fde0945f940ddcd6f79e68c}{prepare\_\-sampling()} before a call to \hyperlink{classeos_1_1LogLikelihoodBlock_ad0669d109d0d004cc5674c739fb41d7a}{sample()} to ensure that one really gets a log likelihood value from the correct distribution, i.e. llh $\sim$ llh(model, fixed parameters)
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em rng}]The random number generator. \end{DoxyParams}
+\hypertarget{classeos_1_1LogLikelihoodBlock_a52c12058a07b20a5b910dea8972f5282}{
+\index{eos::LogLikelihoodBlock@{eos::LogLikelihoodBlock}!significance@{significance}}
+\index{significance@{significance}!eos::LogLikelihoodBlock@{eos::LogLikelihoodBlock}}
+\subsubsection[{significance}]{\setlength{\rightskip}{0pt plus 5cm}virtual double eos::LogLikelihoodBlock::significance () const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classeos_1_1LogLikelihoodBlock_a52c12058a07b20a5b910dea8972f5282}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{log__likelihood_8hh}{log\_\-likelihood.hh}\end{DoxyCompactItemize}

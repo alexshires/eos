@@ -1,0 +1,68 @@
+\hypertarget{bremsstrahlung_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/rare-\/b-\/decays/bremsstrahlung.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2010, 2013 Danny van Dyk}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_RARE\_B\_DECAYS\_BREMSSTRAHLUNG\_HH}
+\hypertarget{bremsstrahlung_8hh_source_l00021}{}\hyperlink{bremsstrahlung_8hh_a9d74e8157f9ef6e8b95db461d9b08829}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_RARE\_B\_DECAYS\_BREMSSTRAHLUNG\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{preprocessor}{#include <\hyperlink{complex_8hh}{eos/utils/complex.hh}>}
+00024 
+00025 \textcolor{keyword}{namespace }eos
+00026 \{
+\hypertarget{bremsstrahlung_8hh_source_l00027}{}\hyperlink{structeos_1_1Bremsstrahlung}{00027}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1Bremsstrahlung}{Bremsstrahlung}
+00028     \{
+00029         \textcolor{comment}{// cf. [AAGW2002], Eqs. (30), (31), p. 12}
+00030         \textcolor{keyword}{static} complex<double> \hyperlink{structeos_1_1Bremsstrahlung_af39debb09760b0c3b6983ac6d7e28d05}{G_m1}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & t);
+00031         \textcolor{keyword}{static} complex<double> \hyperlink{structeos_1_1Bremsstrahlung_a6a5cd1999022a000279e9f7f49d094ea}{G_0}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & t);
+00032 
+00033         \textcolor{comment}{// cf. [AAGW2002], Eqs. (28), (29), p. 11}
+00034         \textcolor{keyword}{static} complex<double> \hyperlink{structeos_1_1Bremsstrahlung_a321b14e0b15b3792e25febebf9265c78}{Deltai_23}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_hat, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & w, 
+      \textcolor{keyword}{const} \textcolor{keywordtype}{double} & z);
+00035         \textcolor{keyword}{static} complex<double> \hyperlink{structeos_1_1Bremsstrahlung_aa39b222255a5519ba2488e4e21562008}{Deltai_27}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_hat, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & w, 
+      \textcolor{keyword}{const} \textcolor{keywordtype}{double} & z);
+00036 
+00037         \textcolor{comment}{// cf. [AAGW2002], Eqs. (23)-(26), p. 10}
+00038         \textcolor{keyword}{static} complex<double> \hyperlink{structeos_1_1Bremsstrahlung_a544c157bc4ac9251fd2aa8987bb0459d}{tau_22}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_hat, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & w, \textcolor{keyword}{con
+      st} \textcolor{keywordtype}{double} & z);
+00039         \textcolor{keyword}{static} complex<double> \hyperlink{structeos_1_1Bremsstrahlung_a1e48477fa9e8b56fe4e508590ad21bd3}{tau_27}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_hat, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & w, \textcolor{keyword}{con
+      st} \textcolor{keywordtype}{double} & z);
+00040         \textcolor{keyword}{static} complex<double> \hyperlink{structeos_1_1Bremsstrahlung_ae1e1543d756fa96dd3f82645412babb8}{tau_28}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_hat, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & w, \textcolor{keyword}{con
+      st} \textcolor{keywordtype}{double} & z);
+00041         \textcolor{keyword}{static} complex<double> \hyperlink{structeos_1_1Bremsstrahlung_a51142a21972c592612539cf4bd35cafb}{tau_29}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_hat, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & w, \textcolor{keyword}{con
+      st} \textcolor{keywordtype}{double} & z);
+00042         \textcolor{comment}{// cf. [AAGW2002], Eqs. (15)-(17), p. 8}
+00043         \textcolor{keyword}{static} \textcolor{keywordtype}{double} \hyperlink{structeos_1_1Bremsstrahlung_a708d1b79eb63945e3598f1c8f8bc07dc}{tau_78}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_hat);
+00044         \textcolor{keyword}{static} \textcolor{keywordtype}{double} \hyperlink{structeos_1_1Bremsstrahlung_af68817dd4b204589d133d149210a2365}{tau_88}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_hat);
+00045         \textcolor{keyword}{static} \textcolor{keywordtype}{double} \hyperlink{structeos_1_1Bremsstrahlung_aaec7f205ee9e02b804617fc8470d86d3}{tau_89}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_hat);
+00046 
+00047         \textcolor{comment}{// Integrals of tau\_2x from w = s\_hat to w = 1, cf [AAGW2002], Eq. (22)}
+00048         \textcolor{keyword}{static} complex<double> \hyperlink{structeos_1_1Bremsstrahlung_a34453235bd8805b9cb261261fc9a3b93}{itau_22}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_hat, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & z);
+00049         \textcolor{keyword}{static} complex<double> \hyperlink{structeos_1_1Bremsstrahlung_a07f9c13a763df1b9a0ce102bdc1159d2}{itau_27}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_hat, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & z);
+00050         \textcolor{keyword}{static} complex<double> \hyperlink{structeos_1_1Bremsstrahlung_a9a6a2545413301f3b2bcca85e4c6f909}{itau_28}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_hat, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & z);
+00051         \textcolor{keyword}{static} complex<double> \hyperlink{structeos_1_1Bremsstrahlung_add6d9efe0e4ae23f5751eb78d09c1225}{itau_29}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_hat, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & z);
+00052     \};
+00053 \}
+00054 
+00055 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

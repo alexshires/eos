@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1OneOfVisitorWrapper" kind="struct" prot="public">
+    <compoundname>eos::OneOfVisitorWrapper</compoundname>
+    <includes refid="one-of_8hh" local="no">one-of.hh</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Underlying_</type>
+      </param>
+      <param>
+        <type>typename Result_</type>
+      </param>
+      <param>
+        <type>typename...</type>
+        <declname>Types_</declname>
+        <defname>Types_</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structeos_1_1OneOfVisitorWrapper_1a06360b538cff00799456139edb5f5e21" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eos::OneOfVisitorWrapper&lt; Underlying_, Result_, Types_ &gt;::OneOfVisitorWrapper</definition>
+        <argsstring>(Underlying_ &amp;u)</argsstring>
+        <name>OneOfVisitorWrapper</name>
+        <param>
+          <type>Underlying_ &amp;</type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" line="134" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" bodystart="132" bodyend="135"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" line="131" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" bodystart="129" bodyend="136"/>
+    <listofallmembers>
+      <member refid="structeos_1_1OneOfVisitorWrapper_1a06360b538cff00799456139edb5f5e21" prot="public" virt="non-virtual"><scope>eos::OneOfVisitorWrapper</scope><name>OneOfVisitorWrapper</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

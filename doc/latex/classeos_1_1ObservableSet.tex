@@ -1,0 +1,125 @@
+\hypertarget{classeos_1_1ObservableSet}{
+\section{eos::ObservableSet Class Reference}
+\label{classeos_1_1ObservableSet}\index{eos::ObservableSet@{eos::ObservableSet}}
+}
+
+
+{\ttfamily \#include $<$observable\_\-set.hh$>$}
+
+Inherits \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern$<$ ObservableSet $>$}.\subsection*{Public Member Functions}
+\begin{Indent}{\bf Basic Functions}\par
+{\em \label{_amgrp2386c9a1f1785edee33f374dd2db9b3d}
+ Constructor. }\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1ObservableSet_a964ddde72c32ae5a5e7147fb8b171318}{ObservableSet} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\item 
+\hyperlink{classeos_1_1ObservableSet_a0321b23307b4b46974634dcd4d73b785}{$\sim$ObservableSet} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Iteration and Access}
+\label{_amgrp518e849dad280496b3dba5bda3151948}
+ \begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator}$<$ IteratorTag, \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} $>$ \hyperlink{classeos_1_1ObservableSet_ab19c0de83857e28065c2fe64b685a005}{Iterator}
+\begin{DoxyCompactList}\small\item\em Iterator to the first observable. \item\end{DoxyCompactList}\item 
+\hyperlink{classeos_1_1WrappedForwardIterator}{Iterator} \hyperlink{classeos_1_1ObservableSet_a51791b1a8c6a1b8d3a90f8400d9e4140}{begin} () const 
+\begin{DoxyCompactList}\small\item\em Iterator to the first observable. \item\end{DoxyCompactList}\item 
+\hyperlink{classeos_1_1WrappedForwardIterator}{Iterator} \hyperlink{classeos_1_1ObservableSet_ab0fb90d7278f1d8c87f7755768ffd17c}{end} () const 
+\begin{DoxyCompactList}\small\item\em Iterator pointing past the last observable. \item\end{DoxyCompactList}\item 
+\hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} \& \hyperlink{classeos_1_1ObservableSet_adb47f7f0d77ea9f922aa5c5259695136}{operator\mbox{[}$\,$\mbox{]}} (const unsigned \&index) const 
+\item 
+std::pair$<$ unsigned, bool $>$ \hyperlink{classeos_1_1ObservableSet_aca5c09236edf4270851d09bf5c582ad6}{add} (const \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} \&observable)
+\item 
+\hyperlink{classeos_1_1Parameters}{Parameters} \hyperlink{classeos_1_1ObservableSet_a910264f5f626496138f8bae63dcbfa82}{parameters} ()
+\begin{DoxyCompactList}\small\item\em Access to the underlying \hyperlink{classeos_1_1Parameters}{Parameters} object. \item\end{DoxyCompactList}\item 
+unsigned \hyperlink{classeos_1_1ObservableSet_ad14948c8f2421fc718f6ede0d9089cb0}{size} () const 
+\begin{DoxyCompactList}\small\item\em The total number of elements. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A container class to hold only unique observables, i.e. they differ by at least one of the following: name, kinematics, or options. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classeos_1_1ObservableSet_ab19c0de83857e28065c2fe64b685a005}{
+\index{eos::ObservableSet@{eos::ObservableSet}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!eos::ObservableSet@{eos::ObservableSet}}
+\subsubsection[{Iterator}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf WrappedForwardIterator}$<$IteratorTag, {\bf ObservablePtr}$>$ {\bf eos::ObservableSet::Iterator}}}
+\label{classeos_1_1ObservableSet_ab19c0de83857e28065c2fe64b685a005}
+
+
+Iterator to the first observable. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classeos_1_1ObservableSet_a964ddde72c32ae5a5e7147fb8b171318}{
+\index{eos::ObservableSet@{eos::ObservableSet}!ObservableSet@{ObservableSet}}
+\index{ObservableSet@{ObservableSet}!eos::ObservableSet@{eos::ObservableSet}}
+\subsubsection[{ObservableSet}]{\setlength{\rightskip}{0pt plus 5cm}eos::ObservableSet::ObservableSet ()}}
+\label{classeos_1_1ObservableSet_a964ddde72c32ae5a5e7147fb8b171318}
+
+
+Destructor. \hypertarget{classeos_1_1ObservableSet_a0321b23307b4b46974634dcd4d73b785}{
+\index{eos::ObservableSet@{eos::ObservableSet}!$\sim$ObservableSet@{$\sim$ObservableSet}}
+\index{$\sim$ObservableSet@{$\sim$ObservableSet}!eos::ObservableSet@{eos::ObservableSet}}
+\subsubsection[{$\sim$ObservableSet}]{\setlength{\rightskip}{0pt plus 5cm}eos::ObservableSet::$\sim$ObservableSet ()}}
+\label{classeos_1_1ObservableSet_a0321b23307b4b46974634dcd4d73b785}
+
+
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classeos_1_1ObservableSet_aca5c09236edf4270851d09bf5c582ad6}{
+\index{eos::ObservableSet@{eos::ObservableSet}!add@{add}}
+\index{add@{add}!eos::ObservableSet@{eos::ObservableSet}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}std::pair$<$unsigned, bool$>$ eos::ObservableSet::add (const {\bf ObservablePtr} \& {\em observable})}}
+\label{classeos_1_1ObservableSet_aca5c09236edf4270851d09bf5c582ad6}
+Add an observable to the vector.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em observable}]The observable to be added.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If observable is found to be an existing observable, the second value will be false. If the observable is added successfully, the second value is true, and the index of the new element in the vector is returned for use with operator\mbox{[}\mbox{]}. 
+\end{DoxyReturn}
+\hypertarget{classeos_1_1ObservableSet_a51791b1a8c6a1b8d3a90f8400d9e4140}{
+\index{eos::ObservableSet@{eos::ObservableSet}!begin@{begin}}
+\index{begin@{begin}!eos::ObservableSet@{eos::ObservableSet}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Iterator} eos::ObservableSet::begin () const}}
+\label{classeos_1_1ObservableSet_a51791b1a8c6a1b8d3a90f8400d9e4140}
+
+
+Iterator to the first observable. \hypertarget{classeos_1_1ObservableSet_ab0fb90d7278f1d8c87f7755768ffd17c}{
+\index{eos::ObservableSet@{eos::ObservableSet}!end@{end}}
+\index{end@{end}!eos::ObservableSet@{eos::ObservableSet}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Iterator} eos::ObservableSet::end () const}}
+\label{classeos_1_1ObservableSet_ab0fb90d7278f1d8c87f7755768ffd17c}
+
+
+Iterator pointing past the last observable. \hypertarget{classeos_1_1ObservableSet_adb47f7f0d77ea9f922aa5c5259695136}{
+\index{eos::ObservableSet@{eos::ObservableSet}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!eos::ObservableSet@{eos::ObservableSet}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ObservablePtr}\& eos::ObservableSet::operator\mbox{[}$\,$\mbox{]} (const unsigned \& {\em index}) const}}
+\label{classeos_1_1ObservableSet_adb47f7f0d77ea9f922aa5c5259695136}
+Random access to an observable.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The position in the vector. \end{DoxyParams}
+\hypertarget{classeos_1_1ObservableSet_a910264f5f626496138f8bae63dcbfa82}{
+\index{eos::ObservableSet@{eos::ObservableSet}!parameters@{parameters}}
+\index{parameters@{parameters}!eos::ObservableSet@{eos::ObservableSet}}
+\subsubsection[{parameters}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parameters} eos::ObservableSet::parameters ()}}
+\label{classeos_1_1ObservableSet_a910264f5f626496138f8bae63dcbfa82}
+
+
+Access to the underlying \hyperlink{classeos_1_1Parameters}{Parameters} object. \hypertarget{classeos_1_1ObservableSet_ad14948c8f2421fc718f6ede0d9089cb0}{
+\index{eos::ObservableSet@{eos::ObservableSet}!size@{size}}
+\index{size@{size}!eos::ObservableSet@{eos::ObservableSet}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned eos::ObservableSet::size () const}}
+\label{classeos_1_1ObservableSet_ad14948c8f2421fc718f6ede0d9089cb0}
+
+
+The total number of elements. 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{observable__set_8hh}{observable\_\-set.hh}\end{DoxyCompactItemize}

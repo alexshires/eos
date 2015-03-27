@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1HierarchicalClustering_1_1Component" kind="class" prot="public">
+    <compoundname>eos::HierarchicalClustering::Component</compoundname>
+    <basecompoundref refid="classeos_1_1PrivateImplementationPattern" prot="public" virt="non-virtual">eos::PrivateImplementationPattern&lt; HierarchicalClustering::Component &gt;</basecompoundref>
+    <includes refid="hierarchical-clustering_8hh" local="no">hierarchical-clustering.hh</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1HierarchicalClustering_1_1Component_1a1720f61d18110629f9e729a1bf9d81e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::HierarchicalClustering::Component::Component</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;mean, const std::vector&lt; double &gt; &amp;covariance, const double &amp;weight)</argsstring>
+        <name>Component</name>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>mean</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>covariance</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>weight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hierarchical-clustering.hh" line="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1HierarchicalClustering_1_1Component_1a51da212f42ff52a2c85e7b870996f27c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::HierarchicalClustering::Component::Component</definition>
+        <argsstring>(const gsl_vector *mean, const gsl_matrix *covariance, const double &amp;weight)</argsstring>
+        <name>Component</name>
+        <param>
+          <type>const gsl_vector *</type>
+          <declname>mean</declname>
+        </param>
+        <param>
+          <type>const gsl_matrix *</type>
+          <declname>covariance</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>weight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hierarchical-clustering.hh" line="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1HierarchicalClustering_1_1Component_1ab54a490e72686f90c0bf78ea9f756722" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::HierarchicalClustering::Component::~Component</definition>
+        <argsstring>()</argsstring>
+        <name>~Component</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hierarchical-clustering.hh" line="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1HierarchicalClustering_1_1Component_1a7476d18489400cb38d9d5a9d84a8175b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>gsl_matrix *</type>
+        <definition>gsl_matrix* eos::HierarchicalClustering::Component::covariance</definition>
+        <argsstring>() const </argsstring>
+        <name>covariance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hierarchical-clustering.hh" line="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1HierarchicalClustering_1_1Component_1acf9bec75b31723425216860cd83f640b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const gsl_matrix *</type>
+        <definition>const gsl_matrix* eos::HierarchicalClustering::Component::inverse_covariance</definition>
+        <argsstring>() const </argsstring>
+        <name>inverse_covariance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hierarchical-clustering.hh" line="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1HierarchicalClustering_1_1Component_1aa21ab8490577e43c23d8778da83e2e46" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const double &amp;</type>
+        <definition>const double&amp; eos::HierarchicalClustering::Component::determinant</definition>
+        <argsstring>() const </argsstring>
+        <name>determinant</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hierarchical-clustering.hh" line="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1HierarchicalClustering_1_1Component_1af164b5ba0a2ba3b3792a21fb284bb119" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>gsl_vector *</type>
+        <definition>gsl_vector* eos::HierarchicalClustering::Component::mean</definition>
+        <argsstring>() const </argsstring>
+        <name>mean</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hierarchical-clustering.hh" line="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1HierarchicalClustering_1_1Component_1a18b8d0c7a2fd0b9b6b15647803424564" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double &amp;</type>
+        <definition>double&amp; eos::HierarchicalClustering::Component::weight</definition>
+        <argsstring>() const </argsstring>
+        <name>weight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hierarchical-clustering.hh" line="108"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Describe a component of a Gaussian mixture density, characterized by mean, covariance and weight. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="267">
+        <label>eos::HierarchicalClustering::Component</label>
+        <link refid="classeos_1_1HierarchicalClustering_1_1Component"/>
+        <childnode refid="268" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="268">
+        <label>eos::PrivateImplementationPattern&lt; HierarchicalClustering::Component &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="269">
+        <label>eos::HierarchicalClustering::Component</label>
+        <link refid="classeos_1_1HierarchicalClustering_1_1Component"/>
+        <childnode refid="270" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="270">
+        <label>eos::PrivateImplementationPattern&lt; HierarchicalClustering::Component &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/hierarchical-clustering.hh" line="98" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/hierarchical-clustering.hh" bodystart="96" bodyend="109"/>
+    <listofallmembers>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a232940e78b26c6ed4f97196f831c69c9" prot="protected" virt="non-virtual"><scope>eos::HierarchicalClustering::Component</scope><name>_imp</name></member>
+      <member refid="classeos_1_1HierarchicalClustering_1_1Component_1a1720f61d18110629f9e729a1bf9d81e8" prot="public" virt="non-virtual"><scope>eos::HierarchicalClustering::Component</scope><name>Component</name></member>
+      <member refid="classeos_1_1HierarchicalClustering_1_1Component_1a51da212f42ff52a2c85e7b870996f27c" prot="public" virt="non-virtual"><scope>eos::HierarchicalClustering::Component</scope><name>Component</name></member>
+      <member refid="classeos_1_1HierarchicalClustering_1_1Component_1a7476d18489400cb38d9d5a9d84a8175b" prot="public" virt="non-virtual"><scope>eos::HierarchicalClustering::Component</scope><name>covariance</name></member>
+      <member refid="classeos_1_1HierarchicalClustering_1_1Component_1aa21ab8490577e43c23d8778da83e2e46" prot="public" virt="non-virtual"><scope>eos::HierarchicalClustering::Component</scope><name>determinant</name></member>
+      <member refid="classeos_1_1HierarchicalClustering_1_1Component_1acf9bec75b31723425216860cd83f640b" prot="public" virt="non-virtual"><scope>eos::HierarchicalClustering::Component</scope><name>inverse_covariance</name></member>
+      <member refid="classeos_1_1HierarchicalClustering_1_1Component_1af164b5ba0a2ba3b3792a21fb284bb119" prot="public" virt="non-virtual"><scope>eos::HierarchicalClustering::Component</scope><name>mean</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a3e3d5f4a565256a1dda6c234b051b2f2" prot="public" virt="non-virtual"><scope>eos::HierarchicalClustering::Component</scope><name>PrivateImplementationPattern</name></member>
+      <member refid="classeos_1_1HierarchicalClustering_1_1Component_1a18b8d0c7a2fd0b9b6b15647803424564" prot="public" virt="non-virtual"><scope>eos::HierarchicalClustering::Component</scope><name>weight</name></member>
+      <member refid="classeos_1_1HierarchicalClustering_1_1Component_1ab54a490e72686f90c0bf78ea9f756722" prot="public" virt="non-virtual"><scope>eos::HierarchicalClustering::Component</scope><name>~Component</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1acf46ec2739c3b0ec9702b9428475876d" prot="public" virt="non-virtual"><scope>eos::HierarchicalClustering::Component</scope><name>~PrivateImplementationPattern</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

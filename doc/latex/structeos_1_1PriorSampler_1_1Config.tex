@@ -1,0 +1,85 @@
+\hypertarget{structeos_1_1PriorSampler_1_1Config}{
+\section{eos::PriorSampler::Config Struct Reference}
+\label{structeos_1_1PriorSampler_1_1Config}\index{eos::PriorSampler::Config@{eos::PriorSampler::Config}}
+}
+
+
+{\ttfamily \#include $<$prior\_\-sampler.hh$>$}\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{structeos_1_1PriorSampler_1_1Config}{Config} \hyperlink{structeos_1_1PriorSampler_1_1Config_ab56ba1088eae165d73629213c7e72450}{Default} ()
+\begin{DoxyCompactList}\small\item\em Constructor with the default settings. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \hyperlink{structeos_1_1PriorSampler_1_1Config_a2db80db4647764792f4370590e0cfb38}{n\_\-samples}
+\begin{DoxyCompactList}\small\item\em Total number of samples. \item\end{DoxyCompactList}\item 
+unsigned \hyperlink{structeos_1_1PriorSampler_1_1Config_a4bb4bb97708f5dc7cd8414489a2808c9}{n\_\-workers}
+\begin{DoxyCompactList}\small\item\em Number of worker threads. \item\end{DoxyCompactList}\item 
+std::shared\_\-ptr$<$ \hyperlink{classeos_1_1hdf5_1_1File}{hdf5::File} $>$ \hyperlink{structeos_1_1PriorSampler_1_1Config_ab11de7880341b9e9ea13e9332f574483}{output\_\-file}
+\begin{DoxyCompactList}\small\item\em The file where the observables are stored. \item\end{DoxyCompactList}\item 
+bool \hyperlink{structeos_1_1PriorSampler_1_1Config_ac59ca5849359f3bc11188e7de73c93c2}{parallelize}
+\item 
+unsigned \hyperlink{structeos_1_1PriorSampler_1_1Config_a9f056d7db9c1a40a51520534ab13ee95}{seed}
+\begin{DoxyCompactList}\small\item\em Seed for the random number generator. \item\end{DoxyCompactList}\item 
+bool \hyperlink{structeos_1_1PriorSampler_1_1Config_aa572418843b732c559f5b9612d4bf2fa}{store\_\-parameters}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Store configuration options 
+
+\subsection{Member Function Documentation}
+\hypertarget{structeos_1_1PriorSampler_1_1Config_ab56ba1088eae165d73629213c7e72450}{
+\index{eos::PriorSampler::Config@{eos::PriorSampler::Config}!Default@{Default}}
+\index{Default@{Default}!eos::PriorSampler::Config@{eos::PriorSampler::Config}}
+\subsubsection[{Default}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Config} eos::PriorSampler::Config::Default ()\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{structeos_1_1PriorSampler_1_1Config_ab56ba1088eae165d73629213c7e72450}
+
+
+Constructor with the default settings. 
+
+\subsection{Member Data Documentation}
+\hypertarget{structeos_1_1PriorSampler_1_1Config_a2db80db4647764792f4370590e0cfb38}{
+\index{eos::PriorSampler::Config@{eos::PriorSampler::Config}!n\_\-samples@{n\_\-samples}}
+\index{n\_\-samples@{n\_\-samples}!eos::PriorSampler::Config@{eos::PriorSampler::Config}}
+\subsubsection[{n\_\-samples}]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf eos::PriorSampler::Config::n\_\-samples}}}
+\label{structeos_1_1PriorSampler_1_1Config_a2db80db4647764792f4370590e0cfb38}
+
+
+Total number of samples. \hypertarget{structeos_1_1PriorSampler_1_1Config_a4bb4bb97708f5dc7cd8414489a2808c9}{
+\index{eos::PriorSampler::Config@{eos::PriorSampler::Config}!n\_\-workers@{n\_\-workers}}
+\index{n\_\-workers@{n\_\-workers}!eos::PriorSampler::Config@{eos::PriorSampler::Config}}
+\subsubsection[{n\_\-workers}]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf eos::PriorSampler::Config::n\_\-workers}}}
+\label{structeos_1_1PriorSampler_1_1Config_a4bb4bb97708f5dc7cd8414489a2808c9}
+
+
+Number of worker threads. \hypertarget{structeos_1_1PriorSampler_1_1Config_ab11de7880341b9e9ea13e9332f574483}{
+\index{eos::PriorSampler::Config@{eos::PriorSampler::Config}!output\_\-file@{output\_\-file}}
+\index{output\_\-file@{output\_\-file}!eos::PriorSampler::Config@{eos::PriorSampler::Config}}
+\subsubsection[{output\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}std::shared\_\-ptr$<${\bf hdf5::File}$>$ {\bf eos::PriorSampler::Config::output\_\-file}}}
+\label{structeos_1_1PriorSampler_1_1Config_ab11de7880341b9e9ea13e9332f574483}
+
+
+The file where the observables are stored. \hypertarget{structeos_1_1PriorSampler_1_1Config_ac59ca5849359f3bc11188e7de73c93c2}{
+\index{eos::PriorSampler::Config@{eos::PriorSampler::Config}!parallelize@{parallelize}}
+\index{parallelize@{parallelize}!eos::PriorSampler::Config@{eos::PriorSampler::Config}}
+\subsubsection[{parallelize}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf eos::PriorSampler::Config::parallelize}}}
+\label{structeos_1_1PriorSampler_1_1Config_ac59ca5849359f3bc11188e7de73c93c2}
+If true, use as many threads as there are cores available. If false, use only one thread. \hypertarget{structeos_1_1PriorSampler_1_1Config_a9f056d7db9c1a40a51520534ab13ee95}{
+\index{eos::PriorSampler::Config@{eos::PriorSampler::Config}!seed@{seed}}
+\index{seed@{seed}!eos::PriorSampler::Config@{eos::PriorSampler::Config}}
+\subsubsection[{seed}]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf eos::PriorSampler::Config::seed}}}
+\label{structeos_1_1PriorSampler_1_1Config_a9f056d7db9c1a40a51520534ab13ee95}
+
+
+Seed for the random number generator. \hypertarget{structeos_1_1PriorSampler_1_1Config_aa572418843b732c559f5b9612d4bf2fa}{
+\index{eos::PriorSampler::Config@{eos::PriorSampler::Config}!store\_\-parameters@{store\_\-parameters}}
+\index{store\_\-parameters@{store\_\-parameters}!eos::PriorSampler::Config@{eos::PriorSampler::Config}}
+\subsubsection[{store\_\-parameters}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf eos::PriorSampler::Config::store\_\-parameters}}}
+\label{structeos_1_1PriorSampler_1_1Config_aa572418843b732c559f5b9612d4bf2fa}
+If true, the parameter values are stored together with the observable values. If false, only the observable values are stored. 
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{prior__sampler_8hh}{prior\_\-sampler.hh}\end{DoxyCompactItemize}

@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1OneOfValueBase" kind="struct" prot="public">
+    <compoundname>eos::OneOfValueBase</compoundname>
+    <includes refid="one-of_8hh" local="no">one-of.hh</includes>
+    <templateparamlist>
+      <param>
+        <type>typename...</type>
+        <declname>Types_</declname>
+        <defname>Types_</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structeos_1_1OneOfValueBase_1a1587f8d32e61d2257084ffb6890e110b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="pure-virtual">
+        <type></type>
+        <definition>eos::OneOfValueBase&lt; Types_ &gt;::~OneOfValueBase</definition>
+        <argsstring>()=0</argsstring>
+        <name>~OneOfValueBase</name>
+        <initializer> default</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" line="142"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1OneOfValueBase_1ad591bb797392ce70f45001d92d6c95bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void eos::OneOfValueBase&lt; Types_ &gt;::accept</definition>
+        <argsstring>(OneOfVisitor&lt; Types_...&gt; &amp;)=0</argsstring>
+        <name>accept</name>
+        <reimplementedby refid="structeos_1_1OneOfValue_1a280c84a5d3ea4f659297217e7b95a3c2">accept</reimplementedby>
+        <param>
+          <type><ref refid="structeos_1_1OneOfVisitor" kindref="compound">OneOfVisitor</ref>&lt; Types_...&gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" line="144"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" line="141" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" bodystart="140" bodyend="145"/>
+    <listofallmembers>
+      <member refid="structeos_1_1OneOfValueBase_1ad591bb797392ce70f45001d92d6c95bc" prot="public" virt="pure-virtual"><scope>eos::OneOfValueBase</scope><name>accept</name></member>
+      <member refid="structeos_1_1OneOfValueBase_1a1587f8d32e61d2257084ffb6890e110b" prot="public" virt="pure-virtual"><scope>eos::OneOfValueBase</scope><name>~OneOfValueBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

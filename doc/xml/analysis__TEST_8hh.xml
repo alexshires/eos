@@ -1,0 +1,472 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="analysis__TEST_8hh" kind="file">
+    <compoundname>analysis_TEST.hh</compoundname>
+    <includes refid="analysis_8hh" local="no">eos/utils/analysis.hh</includes>
+    <includes local="no">test/test.hh</includes>
+    <incdepgraph>
+      <node id="602">
+        <label>functional</label>
+      </node>
+      <node id="587">
+        <label>eos/observable.hh</label>
+        <link refid="observable_8hh"/>
+        <childnode refid="588" relation="include">
+        </childnode>
+        <childnode refid="591" relation="include">
+        </childnode>
+        <childnode refid="593" relation="include">
+        </childnode>
+        <childnode refid="594" relation="include">
+        </childnode>
+        <childnode refid="590" relation="include">
+        </childnode>
+        <childnode refid="583" relation="include">
+        </childnode>
+      </node>
+      <node id="593">
+        <label>eos/utils/options.hh</label>
+        <link refid="options_8hh"/>
+        <childnode refid="588" relation="include">
+        </childnode>
+        <childnode refid="592" relation="include">
+        </childnode>
+        <childnode refid="590" relation="include">
+        </childnode>
+      </node>
+      <node id="597">
+        <label>eos/utils/parameters-fwd.hh</label>
+        <link refid="parameters-fwd_8hh"/>
+      </node>
+      <node id="603">
+        <label>iterator</label>
+      </node>
+      <node id="618">
+        <label>test/test.hh</label>
+      </node>
+      <node id="599">
+        <label>cstdint</label>
+      </node>
+      <node id="613">
+        <label>eos/utils/log_prior-fwd.hh</label>
+        <link refid="log__prior-fwd_8hh"/>
+        <childnode refid="583" relation="include">
+        </childnode>
+      </node>
+      <node id="612">
+        <label>eos/utils/log_prior.hh</label>
+        <link refid="log__prior_8hh"/>
+        <childnode refid="613" relation="include">
+        </childnode>
+        <childnode refid="594" relation="include">
+        </childnode>
+        <childnode refid="600" relation="include">
+        </childnode>
+        <childnode refid="608" relation="include">
+        </childnode>
+        <childnode refid="583" relation="include">
+        </childnode>
+        <childnode refid="611" relation="include">
+        </childnode>
+      </node>
+      <node id="590">
+        <label>string</label>
+      </node>
+      <node id="585">
+        <label>eos/utils/log_likelihood.hh</label>
+        <link refid="log__likelihood_8hh"/>
+        <childnode refid="586" relation="include">
+        </childnode>
+        <childnode refid="587" relation="include">
+        </childnode>
+        <childnode refid="606" relation="include">
+        </childnode>
+        <childnode refid="609" relation="include">
+        </childnode>
+        <childnode refid="607" relation="include">
+        </childnode>
+        <childnode refid="594" relation="include">
+        </childnode>
+        <childnode refid="592" relation="include">
+        </childnode>
+        <childnode refid="611" relation="include">
+        </childnode>
+      </node>
+      <node id="592">
+        <label>eos/utils/private_implementation_pattern.hh</label>
+        <link refid="private__implementation__pattern_8hh"/>
+        <childnode refid="583" relation="include">
+        </childnode>
+      </node>
+      <node id="601">
+        <label>eos/utils/wrapped_forward_iterator-fwd.hh</label>
+        <link refid="wrapped__forward__iterator-fwd_8hh"/>
+      </node>
+      <node id="589">
+        <label>exception</label>
+      </node>
+      <node id="582">
+        <label>eos/utils/analysis-fwd.hh</label>
+        <link refid="analysis-fwd_8hh"/>
+        <childnode refid="583" relation="include">
+        </childnode>
+      </node>
+      <node id="584">
+        <label>eos/utils/hdf5-fwd.hh</label>
+        <link refid="hdf5-fwd_8hh"/>
+      </node>
+      <node id="595">
+        <label>eos/utils/mutable.hh</label>
+        <link refid="mutable_8hh"/>
+        <childnode refid="596" relation="include">
+        </childnode>
+        <childnode refid="592" relation="include">
+        </childnode>
+        <childnode refid="583" relation="include">
+        </childnode>
+      </node>
+      <node id="607">
+        <label>eos/utils/observable_cache.hh</label>
+        <link refid="observable__cache_8hh"/>
+        <childnode refid="587" relation="include">
+        </childnode>
+        <childnode refid="594" relation="include">
+        </childnode>
+        <childnode refid="592" relation="include">
+        </childnode>
+      </node>
+      <node id="581">
+        <label>eos/utils/analysis.hh</label>
+        <link refid="analysis_8hh"/>
+        <childnode refid="582" relation="include">
+        </childnode>
+        <childnode refid="584" relation="include">
+        </childnode>
+        <childnode refid="585" relation="include">
+        </childnode>
+        <childnode refid="612" relation="include">
+        </childnode>
+        <childnode refid="592" relation="include">
+        </childnode>
+        <childnode refid="614" relation="include">
+        </childnode>
+        <childnode refid="608" relation="include">
+        </childnode>
+        <childnode refid="605" relation="include">
+        </childnode>
+        <childnode refid="617" relation="include">
+        </childnode>
+      </node>
+      <node id="586">
+        <label>eos/constraint.hh</label>
+        <link refid="constraint_8hh"/>
+        <childnode refid="587" relation="include">
+        </childnode>
+        <childnode refid="606" relation="include">
+        </childnode>
+        <childnode refid="607" relation="include">
+        </childnode>
+        <childnode refid="592" relation="include">
+        </childnode>
+        <childnode refid="600" relation="include">
+        </childnode>
+        <childnode refid="608" relation="include">
+        </childnode>
+      </node>
+      <node id="609">
+        <label>eos/utils/matrix.hh</label>
+        <link refid="matrix_8hh"/>
+        <childnode refid="610" relation="include">
+        </childnode>
+      </node>
+      <node id="591">
+        <label>eos/utils/kinematic.hh</label>
+        <link refid="kinematic_8hh"/>
+        <childnode refid="588" relation="include">
+        </childnode>
+        <childnode refid="592" relation="include">
+        </childnode>
+      </node>
+      <node id="608">
+        <label>vector</label>
+      </node>
+      <node id="617">
+        <label>gsl/gsl_multimin.h</label>
+      </node>
+      <node id="610">
+        <label>array</label>
+      </node>
+      <node id="616">
+        <label>sstream</label>
+      </node>
+      <node id="598">
+        <label>eos/utils/random_number_generator.hh</label>
+        <link refid="random__number__generator_8hh"/>
+        <childnode refid="592" relation="include">
+        </childnode>
+        <childnode refid="599" relation="include">
+        </childnode>
+      </node>
+      <node id="614">
+        <label>eos/utils/verify.hh</label>
+        <link refid="verify_8hh"/>
+        <childnode refid="588" relation="include">
+        </childnode>
+        <childnode refid="615" relation="include">
+        </childnode>
+      </node>
+      <node id="588">
+        <label>eos/utils/exception.hh</label>
+        <link refid="exception_8hh"/>
+        <childnode refid="589" relation="include">
+        </childnode>
+        <childnode refid="590" relation="include">
+        </childnode>
+      </node>
+      <node id="600">
+        <label>eos/utils/wrapped_forward_iterator.hh</label>
+        <link refid="wrapped__forward__iterator_8hh"/>
+        <childnode refid="601" relation="include">
+        </childnode>
+        <childnode refid="602" relation="include">
+        </childnode>
+        <childnode refid="603" relation="include">
+        </childnode>
+        <childnode refid="604" relation="include">
+        </childnode>
+      </node>
+      <node id="580">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/analysis_TEST.hh</label>
+        <link refid="analysis_TEST.hh"/>
+        <childnode refid="581" relation="include">
+        </childnode>
+        <childnode refid="618" relation="include">
+        </childnode>
+      </node>
+      <node id="615">
+        <label>eos/utils/stringify.hh</label>
+        <link refid="stringify_8hh"/>
+        <childnode refid="590" relation="include">
+        </childnode>
+        <childnode refid="616" relation="include">
+        </childnode>
+      </node>
+      <node id="611">
+        <label>gsl/gsl_rng.h</label>
+      </node>
+      <node id="604">
+        <label>type_traits</label>
+      </node>
+      <node id="605">
+        <label>set</label>
+      </node>
+      <node id="596">
+        <label>eos/utils/mutable-fwd.hh</label>
+        <link refid="mutable-fwd_8hh"/>
+      </node>
+      <node id="606">
+        <label>eos/utils/log_likelihood-fwd.hh</label>
+        <link refid="log__likelihood-fwd_8hh"/>
+        <childnode refid="583" relation="include">
+        </childnode>
+      </node>
+      <node id="594">
+        <label>eos/utils/parameters.hh</label>
+        <link refid="parameters_8hh"/>
+        <childnode refid="588" relation="include">
+        </childnode>
+        <childnode refid="595" relation="include">
+        </childnode>
+        <childnode refid="597" relation="include">
+        </childnode>
+        <childnode refid="592" relation="include">
+        </childnode>
+        <childnode refid="598" relation="include">
+        </childnode>
+        <childnode refid="600" relation="include">
+        </childnode>
+        <childnode refid="605" relation="include">
+        </childnode>
+      </node>
+      <node id="583">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structeos_1_1TestObservable" prot="public">eos::TestObservable</innerclass>
+    <innerclass refid="structeos_1_1AbsoluteTestObservable" prot="public">eos::AbsoluteTestObservable</innerclass>
+    <innernamespace refid="namespaceeos">eos</innernamespace>
+    <innernamespace refid="namespacetest">test</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="analysis__TEST_8hh_1a4f33fcbf1e692400c9a9c29eb017cc79" prot="public" static="no">
+        <name>EOS_GUARD_SRC_UTILS_ANALYSIS_TEST_HH</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis_TEST.hh" line="21" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/analysis_TEST.hh" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>vim:<sp/>set<sp/>sw=4<sp/>sts=4<sp/>et<sp/>foldmethod=syntax<sp/>:<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2011<sp/>Frederik<sp/>Beaujean</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>EOS<sp/>project.<sp/>EOS<sp/>is<sp/>free<sp/>software;</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Public<sp/>License<sp/>version<sp/>2,<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>EOS<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/>but<sp/>WITHOUT<sp/>ANY</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>along<sp/>with</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/>59<sp/>Temple</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>Place,<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307<sp/><sp/>USA</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>EOS_GUARD_SRC_UTILS_ANALYSIS_TEST_HH</highlight></codeline>
+<codeline lineno="21" refid="analysis__TEST_8hh_1a4f33fcbf1e692400c9a9c29eb017cc79" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EOS_GUARD_SRC_UTILS_ANALYSIS_TEST_HH<sp/>1</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="analysis_8hh" kindref="compound">eos/utils/analysis.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;test/test.hh&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">test;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">eos</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30" refid="structeos_1_1TestObservable" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structeos_1_1TestObservable" kindref="compound">TestObservable</ref><sp/>:</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Observable" kindref="compound">Observable</ref></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="33" refid="structeos_1_1TestObservable_1ab06f6f24a04051ec2a8ebaa5d78ee953" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref><sp/><ref refid="structeos_1_1TestObservable_1ab06f6f24a04051ec2a8ebaa5d78ee953" kindref="member">p</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="structeos_1_1TestObservable_1a58ef1eee27197c2bce21b2e576411a74" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1Kinematics" kindref="compound">Kinematics</ref><sp/><ref refid="structeos_1_1TestObservable_1a58ef1eee27197c2bce21b2e576411a74" kindref="member">k</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="structeos_1_1TestObservable_1af9d523ad792f2ce3afa336f09d9226a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1Options" kindref="compound">Options</ref><sp/><ref refid="structeos_1_1TestObservable_1af9d523ad792f2ce3afa336f09d9226a6" kindref="member">o</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="structeos_1_1TestObservable_1aad5736b5692f43ccae60087154fd2132" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structeos_1_1TestObservable_1aad5736b5692f43ccae60087154fd2132" kindref="member">n</ref>,<sp/><ref refid="structeos_1_1TestObservable_1afa242c890fb7299876f30e8d01e218fc" kindref="member">mass_name</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="structeos_1_1TestObservable_1a131b40b285edbecfd177becbbf66b601" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1UsedParameter" kindref="compound">UsedParameter</ref><sp/><ref refid="structeos_1_1TestObservable_1a131b40b285edbecfd177becbbf66b601" kindref="member">mass</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="structeos_1_1TestObservable_1af44302acc1d97376ea453c133cf08c02" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structeos_1_1TestObservable_1af44302acc1d97376ea453c133cf08c02" kindref="member">TestObservable</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref><sp/>&amp;<sp/><ref refid="structeos_1_1TestObservable_1ab06f6f24a04051ec2a8ebaa5d78ee953" kindref="member">p</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Kinematics" kindref="compound">Kinematics</ref><sp/>&amp;<sp/><ref refid="structeos_1_1TestObservable_1a58ef1eee27197c2bce21b2e576411a74" kindref="member">k</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/><ref refid="structeos_1_1TestObservable_1afa242c890fb7299876f30e8d01e218fc" kindref="member">mass_name</ref>)<sp/>:</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p(p),</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>k(k),</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structeos_1_1TestObservable_1af9d523ad792f2ce3afa336f09d9226a6" kindref="member">o</ref>(),</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structeos_1_1TestObservable_1aad5736b5692f43ccae60087154fd2132" kindref="member">n</ref>(</highlight><highlight class="stringliteral">&quot;test-observable[&quot;</highlight><highlight class="normal"><sp/>+<sp/>mass_name<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;]&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mass_name(mass_name),</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structeos_1_1TestObservable_1a131b40b285edbecfd177becbbf66b601" kindref="member">mass</ref>(p[mass_name],<sp/>*this)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="structeos_1_1TestObservable_1a1462125ba005e855c9127da2ce8c7f15" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1TestObservable_1a1462125ba005e855c9127da2ce8c7f15" kindref="member">~TestObservable</ref>()</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="structeos_1_1TestObservable_1a05f143463bc9a2cddec1ee2bdb8d5ba2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1TestObservable_1a05f143463bc9a2cddec1ee2bdb8d5ba2" kindref="member">evaluate</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="58"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1TestObservable_1a131b40b285edbecfd177becbbf66b601" kindref="member">mass</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="structeos_1_1TestObservable_1a2ec70cb32b39215b3c3eafd05a94e1f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref><sp/><ref refid="structeos_1_1TestObservable_1a2ec70cb32b39215b3c3eafd05a94e1f6" kindref="member">clone</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="63"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1TestObservable_1af44302acc1d97376ea453c133cf08c02" kindref="member">TestObservable</ref>(<ref refid="structeos_1_1TestObservable_1ab06f6f24a04051ec2a8ebaa5d78ee953" kindref="member">p</ref>.<ref refid="classeos_1_1Parameters_1a273f5bad065bc47b62981734a2e3576e" kindref="member">clone</ref>(),<sp/><ref refid="structeos_1_1TestObservable_1a58ef1eee27197c2bce21b2e576411a74" kindref="member">k</ref>.<ref refid="classeos_1_1Kinematics_1aedd9681136ab3735fb754e2840e10715" kindref="member">clone</ref>(),<sp/><ref refid="structeos_1_1TestObservable_1afa242c890fb7299876f30e8d01e218fc" kindref="member">mass_name</ref>));</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="structeos_1_1TestObservable_1a40b0831f486d5a73e583becb0c6c9da4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref><sp/><ref refid="structeos_1_1TestObservable_1a2ec70cb32b39215b3c3eafd05a94e1f6" kindref="member">clone</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref><sp/>&amp;<sp/><ref refid="structeos_1_1TestObservable_1ab6aef566fbe0f34117da1d484e20da40" kindref="member">parameters</ref>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="68"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1TestObservable_1af44302acc1d97376ea453c133cf08c02" kindref="member">TestObservable</ref>(parameters,<sp/><ref refid="structeos_1_1TestObservable_1a58ef1eee27197c2bce21b2e576411a74" kindref="member">k</ref>.<ref refid="classeos_1_1Kinematics_1aedd9681136ab3735fb754e2840e10715" kindref="member">clone</ref>(),<sp/><ref refid="structeos_1_1TestObservable_1afa242c890fb7299876f30e8d01e218fc" kindref="member">mass_name</ref>));</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="structeos_1_1TestObservable_1ab6aef566fbe0f34117da1d484e20da40" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref><sp/><ref refid="structeos_1_1TestObservable_1ab6aef566fbe0f34117da1d484e20da40" kindref="member">parameters</ref>()</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1TestObservable_1ab06f6f24a04051ec2a8ebaa5d78ee953" kindref="member">p</ref>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="structeos_1_1TestObservable_1a87b7da05ef887b71fee092252a70a685" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Kinematics" kindref="compound">Kinematics</ref><sp/><ref refid="structeos_1_1TestObservable_1a87b7da05ef887b71fee092252a70a685" kindref="member">kinematics</ref>()</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1TestObservable_1a58ef1eee27197c2bce21b2e576411a74" kindref="member">k</ref>;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="structeos_1_1TestObservable_1a6d762181ac0ce1d2d8ad9d377a3a565d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Options" kindref="compound">Options</ref><sp/><ref refid="structeos_1_1TestObservable_1a6d762181ac0ce1d2d8ad9d377a3a565d" kindref="member">options</ref>()</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1TestObservable_1af9d523ad792f2ce3afa336f09d9226a6" kindref="member">o</ref>;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="structeos_1_1TestObservable_1a1cc59da836d9dab76351b7afcbdb73f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/><ref refid="structeos_1_1TestObservable_1a1cc59da836d9dab76351b7afcbdb73f1" kindref="member">name</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="88"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1TestObservable_1aad5736b5692f43ccae60087154fd2132" kindref="member">n</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="structeos_1_1TestObservable_1ae4be408b4c96b6d86a080c966170b96b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1TestObservable_1ae4be408b4c96b6d86a080c966170b96b" kindref="member">set_option</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/>key,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/>value<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structeos_1_1TestObservable_1af9d523ad792f2ce3afa336f09d9226a6" kindref="member">o</ref>.<ref refid="classeos_1_1Options_1a677e5bc4a49af527471e7c6db4a4b953" kindref="member">set</ref>(key,<sp/>value);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="structeos_1_1AbsoluteTestObservable" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structeos_1_1AbsoluteTestObservable" kindref="compound">AbsoluteTestObservable</ref><sp/>:</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1TestObservable" kindref="compound">TestObservable</ref></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="101" refid="structeos_1_1AbsoluteTestObservable_1a0e044df3b5ec549d51547e8b9f8af55b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structeos_1_1AbsoluteTestObservable_1a0e044df3b5ec549d51547e8b9f8af55b" kindref="member">AbsoluteTestObservable</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref><sp/>&amp;<sp/><ref refid="structeos_1_1TestObservable_1ab06f6f24a04051ec2a8ebaa5d78ee953" kindref="member">p</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Kinematics" kindref="compound">Kinematics</ref><sp/>&amp;<sp/><ref refid="structeos_1_1TestObservable_1a58ef1eee27197c2bce21b2e576411a74" kindref="member">k</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/><ref refid="structeos_1_1TestObservable_1afa242c890fb7299876f30e8d01e218fc" kindref="member">mass_name</ref>)<sp/>:</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structeos_1_1TestObservable" kindref="compound">TestObservable</ref>(p,<sp/>k,<sp/>mass_name)</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="structeos_1_1AbsoluteTestObservable_1ad2fa287cd756cd2d2e639ef39106debe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1AbsoluteTestObservable_1ad2fa287cd756cd2d2e639ef39106debe" kindref="member">~AbsoluteTestObservable</ref>()</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="structeos_1_1AbsoluteTestObservable_1a47742fbfae1d0d8b57c09ee2a7501376" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1AbsoluteTestObservable_1a47742fbfae1d0d8b57c09ee2a7501376" kindref="member">evaluate</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="111"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::fabs(<ref refid="structeos_1_1TestObservable_1a131b40b285edbecfd177becbbf66b601" kindref="member">mass</ref>());</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="structeos_1_1AbsoluteTestObservable_1ac509cca6dca7383653b2d0e5c387db07" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref><sp/><ref refid="structeos_1_1AbsoluteTestObservable_1ac509cca6dca7383653b2d0e5c387db07" kindref="member">clone</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="116"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1AbsoluteTestObservable_1a0e044df3b5ec549d51547e8b9f8af55b" kindref="member">AbsoluteTestObservable</ref>(<ref refid="structeos_1_1TestObservable_1ab06f6f24a04051ec2a8ebaa5d78ee953" kindref="member">p</ref>.<ref refid="classeos_1_1Parameters_1a273f5bad065bc47b62981734a2e3576e" kindref="member">clone</ref>(),<sp/><ref refid="structeos_1_1TestObservable_1a58ef1eee27197c2bce21b2e576411a74" kindref="member">k</ref>.<ref refid="classeos_1_1Kinematics_1aedd9681136ab3735fb754e2840e10715" kindref="member">clone</ref>(),<sp/><ref refid="structeos_1_1TestObservable_1afa242c890fb7299876f30e8d01e218fc" kindref="member">mass_name</ref>));</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="structeos_1_1AbsoluteTestObservable_1af0a14d774c083598130b3062f956c4c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref><sp/><ref refid="structeos_1_1AbsoluteTestObservable_1ac509cca6dca7383653b2d0e5c387db07" kindref="member">clone</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref><sp/>&amp;<sp/><ref refid="structeos_1_1TestObservable_1ab6aef566fbe0f34117da1d484e20da40" kindref="member">parameters</ref>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="121"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1AbsoluteTestObservable_1a0e044df3b5ec549d51547e8b9f8af55b" kindref="member">AbsoluteTestObservable</ref>(parameters,<sp/><ref refid="structeos_1_1TestObservable_1a58ef1eee27197c2bce21b2e576411a74" kindref="member">k</ref>.<ref refid="classeos_1_1Kinematics_1aedd9681136ab3735fb754e2840e10715" kindref="member">clone</ref>(),<sp/><ref refid="structeos_1_1TestObservable_1afa242c890fb7299876f30e8d01e218fc" kindref="member">mass_name</ref>));</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="127"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Create<sp/>analysis<sp/>with<sp/>gaussian<sp/>likelihood<sp/>and<sp/>gaussian<sp/>prior</highlight></codeline>
+<codeline lineno="128"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>The<sp/>posterior<sp/>is<sp/>also<sp/>a<sp/>Gaussian<sp/>with<sp/>central<sp/>value<sp/>4.3</highlight></codeline>
+<codeline lineno="129"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>and<sp/>standard<sp/>deviation<sp/>sqrt(0.005)=0.070710678118654752</highlight></codeline>
+<codeline lineno="130"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="131"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>flat<sp/>=<sp/>true<sp/>turns<sp/>Gaussian<sp/>prior<sp/>into<sp/>flat<sp/>prior</highlight></codeline>
+<codeline lineno="132"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="namespaceeos_1ae42e0cf8b4c1c3548fc27a5add336258" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classeos_1_1Analysis" kindref="compound">Analysis</ref><sp/><ref refid="namespaceeos_1ae42e0cf8b4c1c3548fc27a5add336258" kindref="member">make_analysis</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>flat)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref><sp/>parameters<sp/>=<sp/><ref refid="classeos_1_1Parameters_1a1fa30b2210827623e6bf9f3ac4d2fd94" kindref="member">Parameters::Defaults</ref>();</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1LogLikelihood" kindref="compound">LogLikelihood</ref><sp/>llh(parameters);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>llh.<ref refid="classeos_1_1LogLikelihood_1a236d8123a08805e1d825ca262bada0c8" kindref="member">add</ref>(<ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1TestObservable" kindref="compound">TestObservable</ref>(parameters,<sp/><ref refid="classeos_1_1Kinematics" kindref="compound">Kinematics</ref>(),</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;mass::b(MSbar)&quot;</highlight><highlight class="normal">)),<sp/>4.1,<sp/>4.2,<sp/>4.3);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceeos_1ac5481e3b46ee55ff24606ee7f6e78651" kindref="member">LogPriorPtr</ref><sp/>prior<sp/>=<sp/>flat<sp/>?</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1LogPrior_1ad4c2afcb1df01ef6ff1f2f8402cc7636" kindref="member">LogPrior::Flat</ref>(parameters,<sp/></highlight><highlight class="stringliteral">&quot;mass::b(MSbar)&quot;</highlight><highlight class="normal">,<sp/><ref refid="structeos_1_1ParameterRange" kindref="compound">ParameterRange</ref>{3.7,<sp/>4.9}<sp/>)<sp/>:</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1LogPrior_1afe99a1c56a9ef60b4c38fe56f3c2b7ae" kindref="member">LogPrior::Gauss</ref>(parameters,<sp/></highlight><highlight class="stringliteral">&quot;mass::b(MSbar)&quot;</highlight><highlight class="normal">,<sp/><ref refid="structeos_1_1ParameterRange" kindref="compound">ParameterRange</ref>{3.7,<sp/>4.9},<sp/>4.3,<sp/>4.4,<sp/>4.5);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1Analysis" kindref="compound">Analysis</ref><sp/>result(llh);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="classeos_1_1Analysis_1a3062ad70d7888517d3fa09e7dcb183cf" kindref="member">add</ref>(prior);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis_TEST.hh"/>
+  </compounddef>
+</doxygen>

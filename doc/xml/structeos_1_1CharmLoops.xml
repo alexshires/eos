@@ -1,0 +1,454 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1CharmLoops" kind="struct" prot="public">
+    <compoundname>eos::CharmLoops</compoundname>
+    <includes refid="charm-loops_8hh" local="no">charm-loops.hh</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structeos_1_1CharmLoops_1a2b0657d433f9e17904202a5309d3a4a2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>static complex&lt;double&gt; eos::CharmLoops::h</definition>
+        <argsstring>(const double &amp;mu, const double &amp;s)</argsstring>
+        <name>h</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/charm-loops.hh" line="32"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1CharmLoops_1a8255879e6ac2840a7bfc652aceac5221" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>static complex&lt;double&gt; eos::CharmLoops::h</definition>
+        <argsstring>(const double &amp;mu, const double &amp;s, const double &amp;m_q)</argsstring>
+        <name>h</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/charm-loops.hh" line="34"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1CharmLoops_1ab2fd582d0ba9c5b1181ff2e63c4f5f88" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>static complex&lt;double&gt; eos::CharmLoops::A</definition>
+        <argsstring>(const double &amp;mu, const double &amp;s, const double &amp;m_b)</argsstring>
+        <name>A</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/charm-loops.hh" line="38"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1CharmLoops_1ad1599db67462adc30f33918fe774bfe3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>static complex&lt;double&gt; eos::CharmLoops::B</definition>
+        <argsstring>(const double &amp;mu, const double &amp;s, const double &amp;m_b)</argsstring>
+        <name>B</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/charm-loops.hh" line="40"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1CharmLoops_1a41ed4114fe8c4a25702232a9421b8e05" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>static complex&lt;double&gt; eos::CharmLoops::C</definition>
+        <argsstring>(const double &amp;mu, const double &amp;s)</argsstring>
+        <name>C</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/charm-loops.hh" line="42"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1CharmLoops_1a0e49ca63c218a3bc80575df602508454" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>static complex&lt;double&gt; eos::CharmLoops::F17_massless</definition>
+        <argsstring>(const double &amp;mu, const double &amp;s, const double &amp;m_b)</argsstring>
+        <name>F17_massless</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/charm-loops.hh" line="46"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1CharmLoops_1afbab032d85a4b70b3ea223acf50e8e38" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>static complex&lt;double&gt; eos::CharmLoops::F19_massless</definition>
+        <argsstring>(const double &amp;mu, const double &amp;s, const double &amp;m_b)</argsstring>
+        <name>F19_massless</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/charm-loops.hh" line="47"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1CharmLoops_1a9fd74444d72504308c806d91943b2933" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>static complex&lt;double&gt; eos::CharmLoops::F27_massless</definition>
+        <argsstring>(const double &amp;mu, const double &amp;s, const double &amp;m_b)</argsstring>
+        <name>F27_massless</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/charm-loops.hh" line="48"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1CharmLoops_1a127312f7cefb95c9e4d19fe90aaadb9a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>static complex&lt;double&gt; eos::CharmLoops::F29_massless</definition>
+        <argsstring>(const double &amp;mu, const double &amp;s, const double &amp;m_b)</argsstring>
+        <name>F29_massless</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/charm-loops.hh" line="49"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1CharmLoops_1a81ea6bfba7981c218c0c94ed79688266" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>static complex&lt;double&gt; eos::CharmLoops::F87_massless</definition>
+        <argsstring>(const double &amp;mu, const double &amp;s, const double &amp;m_b)</argsstring>
+        <name>F87_massless</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/charm-loops.hh" line="51"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1CharmLoops_1a02dd5d2de6eb110c9dc4abe8db9329b0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>static complex&lt;double&gt; eos::CharmLoops::F89_massless</definition>
+        <argsstring>(const double &amp;s, const double &amp;m_b)</argsstring>
+        <name>F89_massless</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/charm-loops.hh" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1CharmLoops_1ab9c16844121670118512a2d47f74284e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>static complex&lt;double&gt; eos::CharmLoops::F17_massive</definition>
+        <argsstring>(const double &amp;mu, const double &amp;s, const double &amp;m_b, const double &amp;m_c)</argsstring>
+        <name>F17_massive</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_b</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/charm-loops.hh" line="55"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1CharmLoops_1a4ed440c1f33914e6c2e5b825b24e384e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>static complex&lt;double&gt; eos::CharmLoops::F19_massive</definition>
+        <argsstring>(const double &amp;mu, const double &amp;s, const double &amp;m_b, const double &amp;m_c)</argsstring>
+        <name>F19_massive</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_b</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/charm-loops.hh" line="56"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1CharmLoops_1a84b926651e9df767d4d3fe0d37c4bdf2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>static complex&lt;double&gt; eos::CharmLoops::F27_massive</definition>
+        <argsstring>(const double &amp;mu, const double &amp;s, const double &amp;m_b, const double &amp;m_c)</argsstring>
+        <name>F27_massive</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_b</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/charm-loops.hh" line="57"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1CharmLoops_1ac670d235f7b371739d54e2c731dac27b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>static complex&lt;double&gt; eos::CharmLoops::F29_massive</definition>
+        <argsstring>(const double &amp;mu, const double &amp;s, const double &amp;m_b, const double &amp;m_c)</argsstring>
+        <name>F29_massive</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_b</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/charm-loops.hh" line="58"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1CharmLoops_1a12035607b29d252a6eab317c850255b7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>static complex&lt;double&gt; eos::CharmLoops::B0</definition>
+        <argsstring>(const double &amp;s, const double &amp;m_q)</argsstring>
+        <name>B0</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/charm-loops.hh" line="61"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1CharmLoops_1a0d4ed4a2d4d8e9c3c353bf1922e78c77" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>static complex&lt;double&gt; eos::CharmLoops::C0</definition>
+        <argsstring>(const double &amp;s, const double &amp;m_q)</argsstring>
+        <name>C0</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/charm-loops.hh" line="62"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/charm-loops.hh" line="29" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/charm-loops.hh" bodystart="28" bodyend="63"/>
+    <listofallmembers>
+      <member refid="structeos_1_1CharmLoops_1ab2fd582d0ba9c5b1181ff2e63c4f5f88" prot="public" virt="non-virtual"><scope>eos::CharmLoops</scope><name>A</name></member>
+      <member refid="structeos_1_1CharmLoops_1ad1599db67462adc30f33918fe774bfe3" prot="public" virt="non-virtual"><scope>eos::CharmLoops</scope><name>B</name></member>
+      <member refid="structeos_1_1CharmLoops_1a12035607b29d252a6eab317c850255b7" prot="public" virt="non-virtual"><scope>eos::CharmLoops</scope><name>B0</name></member>
+      <member refid="structeos_1_1CharmLoops_1a41ed4114fe8c4a25702232a9421b8e05" prot="public" virt="non-virtual"><scope>eos::CharmLoops</scope><name>C</name></member>
+      <member refid="structeos_1_1CharmLoops_1a0d4ed4a2d4d8e9c3c353bf1922e78c77" prot="public" virt="non-virtual"><scope>eos::CharmLoops</scope><name>C0</name></member>
+      <member refid="structeos_1_1CharmLoops_1ab9c16844121670118512a2d47f74284e" prot="public" virt="non-virtual"><scope>eos::CharmLoops</scope><name>F17_massive</name></member>
+      <member refid="structeos_1_1CharmLoops_1a0e49ca63c218a3bc80575df602508454" prot="public" virt="non-virtual"><scope>eos::CharmLoops</scope><name>F17_massless</name></member>
+      <member refid="structeos_1_1CharmLoops_1a4ed440c1f33914e6c2e5b825b24e384e" prot="public" virt="non-virtual"><scope>eos::CharmLoops</scope><name>F19_massive</name></member>
+      <member refid="structeos_1_1CharmLoops_1afbab032d85a4b70b3ea223acf50e8e38" prot="public" virt="non-virtual"><scope>eos::CharmLoops</scope><name>F19_massless</name></member>
+      <member refid="structeos_1_1CharmLoops_1a84b926651e9df767d4d3fe0d37c4bdf2" prot="public" virt="non-virtual"><scope>eos::CharmLoops</scope><name>F27_massive</name></member>
+      <member refid="structeos_1_1CharmLoops_1a9fd74444d72504308c806d91943b2933" prot="public" virt="non-virtual"><scope>eos::CharmLoops</scope><name>F27_massless</name></member>
+      <member refid="structeos_1_1CharmLoops_1ac670d235f7b371739d54e2c731dac27b" prot="public" virt="non-virtual"><scope>eos::CharmLoops</scope><name>F29_massive</name></member>
+      <member refid="structeos_1_1CharmLoops_1a127312f7cefb95c9e4d19fe90aaadb9a" prot="public" virt="non-virtual"><scope>eos::CharmLoops</scope><name>F29_massless</name></member>
+      <member refid="structeos_1_1CharmLoops_1a81ea6bfba7981c218c0c94ed79688266" prot="public" virt="non-virtual"><scope>eos::CharmLoops</scope><name>F87_massless</name></member>
+      <member refid="structeos_1_1CharmLoops_1a02dd5d2de6eb110c9dc4abe8db9329b0" prot="public" virt="non-virtual"><scope>eos::CharmLoops</scope><name>F89_massless</name></member>
+      <member refid="structeos_1_1CharmLoops_1a2b0657d433f9e17904202a5309d3a4a2" prot="public" virt="non-virtual"><scope>eos::CharmLoops</scope><name>h</name></member>
+      <member refid="structeos_1_1CharmLoops_1a8255879e6ac2840a7bfc652aceac5221" prot="public" virt="non-virtual"><scope>eos::CharmLoops</scope><name>h</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

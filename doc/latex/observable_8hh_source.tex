@@ -1,0 +1,90 @@
+\hypertarget{observable_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/observable.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2010, 2011 Danny van Dyk}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_OBSERVABLE\_HH}
+\hypertarget{observable_8hh_source_l00021}{}\hyperlink{observable_8hh_ac8ede094dc6ddf4b3b10feb4fef33910}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_OBSERVABLE\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{preprocessor}{#include <\hyperlink{exception_8hh}{eos/utils/exception.hh}>}
+00024 \textcolor{preprocessor}{#include <\hyperlink{kinematic_8hh}{eos/utils/kinematic.hh}>}
+00025 \textcolor{preprocessor}{#include <\hyperlink{options_8hh}{eos/utils/options.hh}>}
+00026 \textcolor{preprocessor}{#include <\hyperlink{parameters_8hh}{eos/utils/parameters.hh}>}
+00027 
+00028 \textcolor{preprocessor}{#include <string>}
+00029 \textcolor{preprocessor}{#include <memory>}
+00030 
+00031 \textcolor{keyword}{namespace }eos
+00032 \{
+00033     \textcolor{keyword}{class }Observable;
+00034 
+\hypertarget{observable_8hh_source_l00035}{}\hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{00035}     \textcolor{keyword}{class }\hyperlink{classeos_1_1Options}{Options};
+00036 
+00037     \textcolor{keyword}{typedef} std::shared\_ptr<Observable> \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr};
+00038 
+\hypertarget{observable_8hh_source_l00039}{}\hyperlink{classeos_1_1Observable}{00039}     \textcolor{keyword}{class }\hyperlink{classeos_1_1Observable}{Observable} :
+00040         \textcolor{keyword}{public} \hyperlink{classeos_1_1ParameterUser}{ParameterUser}
+00041     \{
+00042         \textcolor{keyword}{public}:
+00043             \textcolor{keyword}{virtual} \textcolor{keyword}{const} std::string & \hyperlink{classeos_1_1Observable_adfdc8fe469e00adeb464d3b3e4e14236}{name}() \textcolor{keyword}{const} = 0;
+00044 
+00045             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \hyperlink{classeos_1_1Observable_a913385d3a077d578bbcc2d502e5fdc2d}{evaluate}() \textcolor{keyword}{const} = 0;
+00046 
+00047             \textcolor{keyword}{virtual} \hyperlink{classeos_1_1Kinematics}{Kinematics} \hyperlink{classeos_1_1Observable_a8bfd8cc2873e467ac9ae100d029d8c49}{kinematics}() = 0;
+00048 
+00049             \textcolor{keyword}{virtual} \hyperlink{classeos_1_1Parameters}{Parameters} \hyperlink{classeos_1_1Observable_a233852d22f287944b8bbf4da803289b1}{parameters}() = 0;
+00050 
+00051             \textcolor{keyword}{virtual} \hyperlink{classeos_1_1Options}{Options} \hyperlink{classeos_1_1Observable_a237cf968a4f46a93e0cc8ba0fdbaceee}{options}() = 0;
+00052 
+00053             \textcolor{keyword}{virtual} \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} \hyperlink{classeos_1_1Observable_a1c88c66a224a14fbddad70e95cb61136}{clone}() \textcolor{keyword}{const} = 0;
+00054 
+00055             \textcolor{keyword}{virtual} \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} \hyperlink{classeos_1_1Observable_a1c88c66a224a14fbddad70e95cb61136}{clone}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & \hyperlink{classeos_1_1Observable_a233852d22f287944b8bbf4da803289b1}{parameters}) \textcolor{keyword}{const} = 0;
+      
+00056 
+00057             \textcolor{keyword}{static} \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} \hyperlink{classeos_1_1Observable_a949bf84938bcc9ab75075801c636763c}{make}(\textcolor{keyword}{const} std::string & \hyperlink{classeos_1_1Observable_adfdc8fe469e00adeb464d3b3e4e14236}{name}, \textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} 
+      & parameters, \textcolor{keyword}{const} \hyperlink{classeos_1_1Kinematics}{Kinematics} & \hyperlink{classeos_1_1Observable_a8bfd8cc2873e467ac9ae100d029d8c49}{kinematics}, \textcolor{keyword}{const} \hyperlink{classeos_1_1Options}{Options} & \hyperlink{classeos_1_1Observable_a237cf968a4f46a93e0cc8ba0fdbaceee}{options});
+00058     \};
+00059 
+00060     \textcolor{keyword}{typedef} std::shared\_ptr<Observable> \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr};
+00061 
+\hypertarget{observable_8hh_source_l00062}{}\hyperlink{classeos_1_1ObservableFactory}{00062}     \textcolor{keyword}{class }\hyperlink{classeos_1_1ObservableFactory}{ObservableFactory}
+00063     \{
+00064         \textcolor{keyword}{public}:
+00065             \hyperlink{classeos_1_1ObservableFactory_a74df47eaecec916d669606974695d6d9}{ObservableFactory}();
+00066 
+00067             \textcolor{keyword}{virtual} \hyperlink{classeos_1_1ObservableFactory_ae4f3c0da09a9d556b42ffe2d57d24c82}{~ObservableFactory}();
+00068 
+00069             \textcolor{keyword}{virtual} \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} \hyperlink{classeos_1_1ObservableFactory_ac338d98049d8db85548aab9d3c74bcda}{make}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} &, \textcolor{keyword}{const} \hyperlink{classeos_1_1Kinematics}{Kinematics} &, \textcolor{keyword}{co
+      nst} \hyperlink{classeos_1_1Options}{Options} &) \textcolor{keyword}{const} = 0;
+00070     \};
+00071 
+\hypertarget{observable_8hh_source_l00075}{}\hyperlink{structeos_1_1ObservableNameError}{00075}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1ObservableNameError}{ObservableNameError} :
+00076         \textcolor{keyword}{public} \hyperlink{classeos_1_1Exception}{Exception}
+00077     \{
+00080 
+00085         \hyperlink{structeos_1_1ObservableNameError_a72151a228a9a366564fdde0bef5e7b30}{ObservableNameError}(\textcolor{keyword}{const} std::string & name);
+00087     \};
+00088 \}
+00089 
+00090 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

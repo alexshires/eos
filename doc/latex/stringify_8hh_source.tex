@@ -1,0 +1,122 @@
+\hypertarget{stringify_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/stringify.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2010, 2011 Danny van Dyk}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_STRINGIFY\_HH}
+\hypertarget{stringify_8hh_source_l00021}{}\hyperlink{stringify_8hh_ac8afa13bdbf752fd2e2634f1009f187d}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_STRINGIFY\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{preprocessor}{#include <string>}
+00024 \textcolor{preprocessor}{#include <sstream>}
+00025 
+00026 \textcolor{keyword}{namespace }eos
+00027 \{
+00028     \textcolor{keyword}{namespace }implementation
+00029     \{
+00030         \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_>
+\hypertarget{stringify_8hh_source_l00031}{}\hyperlink{structeos_1_1implementation_1_1DoStringify}{00031}         \textcolor{keyword}{struct }\hyperlink{structeos_1_1implementation_1_1DoStringify}{DoStringify}
+00032         \{
+\hypertarget{stringify_8hh_source_l00033}{}\hyperlink{structeos_1_1implementation_1_1DoStringify_ad66f86c95141a3322aca8f1be1030608}{00033}             \textcolor{keyword}{static} std::string \hyperlink{structeos_1_1implementation_1_1DoStringify_ad66f86c95141a3322aca8f1be1030608}{stringify}(\textcolor{keyword}{const} T\_ & x, \textcolor{keywordtype}{unsigned} precision)
+00034             \{
+00035                 std::stringstream ss;
+00036                 ss.precision(precision);
+00037                 ss << x;
+00038 
+00039                 \textcolor{keywordflow}{return} ss.str();
+00040             \}
+00041         \};
+00042 
+00043         \textcolor{keyword}{template} <>
+00044         \textcolor{keyword}{struct }DoStringify<std::string>
+00045         \{
+00046             \textcolor{keyword}{static} std::string \hyperlink{structeos_1_1implementation_1_1DoStringify_ad66f86c95141a3322aca8f1be1030608}{stringify}(\textcolor{keyword}{const} std::string & x, \textcolor{keywordtype}{unsigned})
+00047             \{
+00048                 \textcolor{keywordflow}{return} x;
+00049             \}
+00050         \};
+00051     \}
+00052 
+00059     \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_>
+\hypertarget{stringify_8hh_source_l00060}{}\hyperlink{namespaceeos_a4d4fd832aebc28739c76d8cbd3dda6df}{00060}     std::string \hyperlink{namespaceeos_a4d4fd832aebc28739c76d8cbd3dda6df}{stringify}(\textcolor{keyword}{const} T\_ & x, \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & precision = 10)
+00061     \{
+00062         \textcolor{keywordflow}{return} \hyperlink{structeos_1_1implementation_1_1DoStringify_ad66f86c95141a3322aca8f1be1030608}{implementation::DoStringify<T_>::stringify}(x, precision);
+00063     \}
+00064 
+00072     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Iterator\_>
+\hypertarget{stringify_8hh_source_l00073}{}\hyperlink{namespaceeos_ab40b1d4ac1085fb65c4ca86d05079c5c}{00073}     std::string \hyperlink{namespaceeos_a4d4fd832aebc28739c76d8cbd3dda6df}{stringify}(\textcolor{keyword}{const} Iterator\_ & begin, \textcolor{keyword}{const} Iterator\_ & end, \textcolor{keyword}{const} \textcolor{keywordtype}{u
+      nsigned} & precision  = 10)
+00074     \{
+00075         std::stringstream ss;
+00076         ss.precision(precision);
+00077         ss << \textcolor{charliteral}{'('};
+00078 
+00079         \textcolor{keywordflow}{for} (Iterator\_ i = begin ; i != end ; ++i)
+00080         \{
+00081             ss << \textcolor{charliteral}{' '} << *i;
+00082         \}
+00083 
+00084         ss << \textcolor{stringliteral}{" )"};
+00085 
+00086         \textcolor{keywordflow}{return} ss.str();
+00087     \}
+00088 
+00096     \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_>
+\hypertarget{stringify_8hh_source_l00097}{}\hyperlink{namespaceeos_a03d43be369d3c0247d25fedbb6eeb8e9}{00097}     std::string \hyperlink{namespaceeos_a4d4fd832aebc28739c76d8cbd3dda6df}{stringify}(\textcolor{keyword}{const} T\_ * m, \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & dim, \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & pr
+      ecision = 10)
+00098     \{
+00099         std::stringstream ss;
+00100         ss.precision(precision);
+00101         ss << \textcolor{stringliteral}{"\(\backslash\)n("};
+00102 
+00103         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} i = 0 ; i < dim ; ++i)
+00104         \{
+00105             ss << \textcolor{charliteral}{'('};
+00106 
+00107             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} j = 0 ; j < dim ; ++j)
+00108             \{
+00109                 ss << m[i * dim + j];
+00110 
+00111                 \textcolor{keywordflow}{if} (j != dim - 1)
+00112                 \{
+00113                     ss << \textcolor{stringliteral}{", "};
+00114                 \}
+00115             \}
+00116 
+00117             ss << \textcolor{stringliteral}{")\(\backslash\)n"};
+00118         \}
+00119 
+00120         ss << \textcolor{stringliteral}{" )"};
+00121 
+00122         \textcolor{keywordflow}{return} ss.str();
+00123     \}
+00124 
+00125     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Container\_>
+\hypertarget{stringify_8hh_source_l00126}{}\hyperlink{namespaceeos_ae90d5cf81cb527f4088dd11daf1e456d}{00126}     std::string \hyperlink{namespaceeos_ae90d5cf81cb527f4088dd11daf1e456d}{stringify_container}(\textcolor{keyword}{const} Container\_ & container, \textcolor{keywordtype}{unsigned} precis
+      ion = 10)
+00127     \{
+00128         \textcolor{keywordflow}{return} \hyperlink{namespaceeos_a4d4fd832aebc28739c76d8cbd3dda6df}{stringify}(container.begin(), container.end(), precision);
+00129     \}
+00130 \}
+00131 
+00132 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

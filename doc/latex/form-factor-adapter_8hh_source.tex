@@ -1,0 +1,292 @@
+\hypertarget{form-factor-adapter_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/form-\/factors/form-\/factor-\/adapter.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2013 Danny van Dyk}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_EOS\_FORM\_FACTORS\_FORM\_FACTOR\_ADAPTER\_HH}
+\hypertarget{form-factor-adapter_8hh_source_l00021}{}\hyperlink{form-factor-adapter_8hh_ac7572f7449135c1fc3fb2f1c32396cd3}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_EOS\_FORM\_FACTORS\_FORM\_FACTOR\_ADAPTER\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{preprocessor}{#include <\hyperlink{observable_8hh}{eos/observable.hh}>}
+00024 \textcolor{preprocessor}{#include <\hyperlink{form-factors_8hh}{eos/form-factors/form-factors.hh}>}
+00025 
+00026 \textcolor{keyword}{namespace }eos
+00027 \{
+00028     \textcolor{comment}{/* Form factor adapter class for interfacing Observable */}
+00029     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Transition\_>
+\hypertarget{form-factor-adapter_8hh_source_l00030}{}\hyperlink{classeos_1_1FormFactorAdapter}{00030}     \textcolor{keyword}{class }\hyperlink{classeos_1_1FormFactorAdapter}{FormFactorAdapter} :
+00031         \textcolor{keyword}{public} \hyperlink{classeos_1_1Observable}{Observable}
+00032     \{
+00033         \textcolor{keyword}{private}:
+00034             std::string \_name;
+00035 
+00036             std::string \_process;
+00037 
+00038             \hyperlink{classeos_1_1Parameters}{Parameters} \_parameters;
+00039 
+00040             \hyperlink{classeos_1_1Kinematics}{Kinematics} \_kinematics;
+00041 
+00042             \hyperlink{classeos_1_1KinematicVariable}{KinematicVariable} \_s;
+00043 
+00044             \hyperlink{classeos_1_1Options}{Options} \_options;
+00045 
+00046             std::shared\_ptr<FormFactors<Transition\_>> \_form\_factors;
+00047 
+00048             std::function<double (const FormFactors<Transition\_> *, \textcolor{keyword}{const} \textcolor{keywordtype}{double} 
+      &)> \_form\_factor\_function;
+00049 
+00050         \textcolor{keyword}{public}:
+\hypertarget{form-factor-adapter_8hh_source_l00051}{}\hyperlink{classeos_1_1FormFactorAdapter_a8f300120959a3cbeff31894f2b2fb96c}{00051}             \hyperlink{classeos_1_1FormFactorAdapter_a8f300120959a3cbeff31894f2b2fb96c}{FormFactorAdapter}(\textcolor{keyword}{const} std::string & \hyperlink{classeos_1_1FormFactorAdapter_ad4b0b6158fcbbdafeae6d62a2326ac92}{name},
+00052                     \textcolor{keyword}{const} std::string & process,
+00053                     \textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & \hyperlink{classeos_1_1FormFactorAdapter_aa1505da65e397bdda2e59ecfd49e375d}{parameters},
+00054                     \textcolor{keyword}{const} \hyperlink{classeos_1_1Kinematics}{Kinematics} & \hyperlink{classeos_1_1FormFactorAdapter_ae4fc137cd1c8b5703ffd6986e9ce739b}{kinematics},
+00055                     \textcolor{keyword}{const} \hyperlink{classeos_1_1Options}{Options} & \hyperlink{classeos_1_1FormFactorAdapter_a758693e9a8fff947fe1500796f1bda4e}{options},
+00056                     \textcolor{keyword}{const} std::function<\textcolor{keywordtype}{double} (\textcolor{keyword}{const} FormFactors<Transition\_> *,
+       \textcolor{keyword}{const} \textcolor{keywordtype}{double} &)> & form\_factor\_function) :
+00057                 \_name(name),
+00058                 \_process(process),
+00059                 \_parameters(parameters),
+00060                 \_kinematics(kinematics),
+00061                 \_s(kinematics[\textcolor{stringliteral}{"s"}]),
+00062                 \_options(options),
+00063                 \_form\_factor\_function(form\_factor\_function)
+00064             \{
+00065                 \textcolor{keywordflow}{if} (! \_options.\hyperlink{classeos_1_1Options_a84ce27abf490cf39fa5a4d1cbb835c8e}{has}(\textcolor{stringliteral}{"form-factors"}))
+00066                     \textcolor{keywordflow}{throw} \hyperlink{structeos_1_1UnknownOptionError}{UnknownOptionError}(\textcolor{stringliteral}{"form-factors"});
+00067 
+00068                 \_form\_factors = FormFactorFactory<Transition\_>::create(process + 
+      \textcolor{charliteral}{'@'} + options[\textcolor{stringliteral}{"form-factors"}], \_parameters);
+00069             \}
+00070 
+\hypertarget{form-factor-adapter_8hh_source_l00071}{}\hyperlink{classeos_1_1FormFactorAdapter_ad4b0b6158fcbbdafeae6d62a2326ac92}{00071}             \textcolor{keyword}{virtual} \textcolor{keyword}{const} std::string & \hyperlink{classeos_1_1FormFactorAdapter_ad4b0b6158fcbbdafeae6d62a2326ac92}{name}()\textcolor{keyword}{ const}
+00072 \textcolor{keyword}{            }\{
+00073                 \textcolor{keywordflow}{return} \_name;
+00074             \}
+00075 
+\hypertarget{form-factor-adapter_8hh_source_l00076}{}\hyperlink{classeos_1_1FormFactorAdapter_ad14dd267ae5fcbe9b739d438904ce959}{00076}             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \hyperlink{classeos_1_1FormFactorAdapter_ad14dd267ae5fcbe9b739d438904ce959}{evaluate}()\textcolor{keyword}{ const}
+00077 \textcolor{keyword}{            }\{
+00078                 \textcolor{keywordflow}{return} \_form\_factor\_function(\_form\_factors.get(), \_s());
+00079             \};
+00080 
+\hypertarget{form-factor-adapter_8hh_source_l00081}{}\hyperlink{classeos_1_1FormFactorAdapter_aa1505da65e397bdda2e59ecfd49e375d}{00081}             \textcolor{keyword}{virtual} \hyperlink{classeos_1_1Parameters}{Parameters} \hyperlink{classeos_1_1FormFactorAdapter_aa1505da65e397bdda2e59ecfd49e375d}{parameters}()
+00082             \{
+00083                 \textcolor{keywordflow}{return} \_parameters;
+00084             \};
+00085 
+\hypertarget{form-factor-adapter_8hh_source_l00086}{}\hyperlink{classeos_1_1FormFactorAdapter_ae4fc137cd1c8b5703ffd6986e9ce739b}{00086}             \textcolor{keyword}{virtual} \hyperlink{classeos_1_1Kinematics}{Kinematics} \hyperlink{classeos_1_1FormFactorAdapter_ae4fc137cd1c8b5703ffd6986e9ce739b}{kinematics}()
+00087             \{
+00088                 \textcolor{keywordflow}{return} \_kinematics;
+00089             \};
+00090 
+\hypertarget{form-factor-adapter_8hh_source_l00091}{}\hyperlink{classeos_1_1FormFactorAdapter_a758693e9a8fff947fe1500796f1bda4e}{00091}             \textcolor{keyword}{virtual} \hyperlink{classeos_1_1Options}{Options} \hyperlink{classeos_1_1FormFactorAdapter_a758693e9a8fff947fe1500796f1bda4e}{options}()
+00092             \{
+00093                 \textcolor{keywordflow}{return} \_options;
+00094             \}
+00095 
+\hypertarget{form-factor-adapter_8hh_source_l00096}{}\hyperlink{classeos_1_1FormFactorAdapter_a85c062dbc8dd32bb25299fbab92110f5}{00096}             \textcolor{keyword}{virtual} \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} \hyperlink{classeos_1_1FormFactorAdapter_a85c062dbc8dd32bb25299fbab92110f5}{clone}()\textcolor{keyword}{ const}
+00097 \textcolor{keyword}{            }\{
+00098                 \textcolor{keywordflow}{return} \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr}(\textcolor{keyword}{new} \hyperlink{classeos_1_1FormFactorAdapter_a8f300120959a3cbeff31894f2b2fb96c}{FormFactorAdapter}(\_name, \_process, \_para
+      meters.\hyperlink{classeos_1_1Parameters_a273f5bad065bc47b62981734a2e3576e}{clone}(), \_kinematics.\hyperlink{classeos_1_1Kinematics_aedd9681136ab3735fb754e2840e10715}{clone}(), \_options, \_form\_factor\_function));
+00099             \}
+00100 
+\hypertarget{form-factor-adapter_8hh_source_l00101}{}\hyperlink{classeos_1_1FormFactorAdapter_a94fdbd805aef594f074e6999616505b5}{00101}             \textcolor{keyword}{virtual} \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} \hyperlink{classeos_1_1FormFactorAdapter_a85c062dbc8dd32bb25299fbab92110f5}{clone}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & parameters)\textcolor{keyword}{ const}
+00102 \textcolor{keyword}{            }\{
+00103                 \textcolor{keywordflow}{return} \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr}(\textcolor{keyword}{new} \hyperlink{classeos_1_1FormFactorAdapter_a8f300120959a3cbeff31894f2b2fb96c}{FormFactorAdapter}(\_name, \_process, param
+      eters, \_kinematics.\hyperlink{classeos_1_1Kinematics_aedd9681136ab3735fb754e2840e10715}{clone}(), \_options, \_form\_factor\_function));
+00104             \}
+00105     \};
+00106 
+00107     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Transition\_>
+\hypertarget{form-factor-adapter_8hh_source_l00108}{}\hyperlink{classeos_1_1FormFactorAdapterFactory}{00108}     \textcolor{keyword}{class }\hyperlink{classeos_1_1FormFactorAdapterFactory}{FormFactorAdapterFactory} :
+00109         \textcolor{keyword}{public} \hyperlink{classeos_1_1ObservableFactory}{ObservableFactory}
+00110     \{
+00111         \textcolor{keyword}{private}:
+00112             std::string \_name;
+00113 
+00114             std::string \_process;
+00115 
+00116             std::function<double (const FormFactors<Transition\_> *, \textcolor{keyword}{const} \textcolor{keywordtype}{double} 
+      &)> \_form\_factor\_function;
+00117 
+00118         \textcolor{keyword}{public}:
+\hypertarget{form-factor-adapter_8hh_source_l00119}{}\hyperlink{classeos_1_1FormFactorAdapterFactory_ab337ad383b3c13c698224e400be9f84d}{00119}             \hyperlink{classeos_1_1FormFactorAdapterFactory_ab337ad383b3c13c698224e400be9f84d}{FormFactorAdapterFactory}(\textcolor{keyword}{const} std::string & name,
+00120                     \textcolor{keyword}{const} std::string & process,
+00121                     \textcolor{keyword}{const} std::function<\textcolor{keywordtype}{double} (\textcolor{keyword}{const} FormFactors<Transition\_> *,
+       \textcolor{keyword}{const} \textcolor{keywordtype}{double} &)> & form\_factor\_function) :
+00122                 \_name(name),
+00123                 \_process(process),
+00124                 \_form\_factor\_function(form\_factor\_function)
+00125             \{
+00126             \}
+00127 
+\hypertarget{form-factor-adapter_8hh_source_l00128}{}\hyperlink{classeos_1_1FormFactorAdapterFactory_a6d1b1046b3e7651e0d899dcac8fb8e3c}{00128}             \hyperlink{classeos_1_1FormFactorAdapterFactory_a6d1b1046b3e7651e0d899dcac8fb8e3c}{~FormFactorAdapterFactory}()
+00129             \{
+00130             \}
+00131 
+\hypertarget{form-factor-adapter_8hh_source_l00132}{}\hyperlink{classeos_1_1FormFactorAdapterFactory_a87734f36d23509771fab23e13ed60ff3}{00132}             \textcolor{keyword}{virtual} \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} \hyperlink{classeos_1_1FormFactorAdapterFactory_a87734f36d23509771fab23e13ed60ff3}{make}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & parameters, \textcolor{keyword}{const} 
+      \hyperlink{classeos_1_1Kinematics}{Kinematics} & kinematics, \textcolor{keyword}{const} \hyperlink{classeos_1_1Options}{Options} & options)\textcolor{keyword}{ const}
+00133 \textcolor{keyword}{            }\{
+00134                 \textcolor{keywordflow}{return} \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr}(\textcolor{keyword}{new} \hyperlink{classeos_1_1FormFactorAdapter}{FormFactorAdapter<Transition_>}(\_name, \_p
+      rocess, parameters, kinematics, options, \_form\_factor\_function));
+00135             \}
+00136     \};
+00137 
+00138     \textcolor{comment}{/* Form factor ratio adapter class for interfacing Observable */}
+00139     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Transition\_>
+\hypertarget{form-factor-adapter_8hh_source_l00140}{}\hyperlink{classeos_1_1FormFactorRatioAdapter}{00140}     \textcolor{keyword}{class }\hyperlink{classeos_1_1FormFactorRatioAdapter}{FormFactorRatioAdapter} :
+00141         \textcolor{keyword}{public} \hyperlink{classeos_1_1Observable}{Observable}
+00142     \{
+00143         \textcolor{keyword}{private}:
+00144             std::string \_name;
+00145 
+00146             std::string \_process;
+00147 
+00148             \hyperlink{classeos_1_1Parameters}{Parameters} \_parameters;
+00149 
+00150             \hyperlink{classeos_1_1Kinematics}{Kinematics} \_kinematics;
+00151 
+00152             \hyperlink{classeos_1_1KinematicVariable}{KinematicVariable} \_s;
+00153 
+00154             \hyperlink{classeos_1_1Options}{Options} \_options;
+00155 
+00156             std::shared\_ptr<FormFactors<Transition\_>> \_form\_factors;
+00157 
+00158             std::function<double (const FormFactors<Transition\_> *, \textcolor{keyword}{const} \textcolor{keywordtype}{double} 
+      &)> \_form\_factor\_numerator;
+00159 
+00160             std::function<double (const FormFactors<Transition\_> *, \textcolor{keyword}{const} \textcolor{keywordtype}{double} 
+      &)> \_form\_factor\_denominator;
+00161 
+00162         \textcolor{keyword}{public}:
+\hypertarget{form-factor-adapter_8hh_source_l00163}{}\hyperlink{classeos_1_1FormFactorRatioAdapter_aabe5ff6acb4c2411a9dcc17b0c8058db}{00163}             \hyperlink{classeos_1_1FormFactorRatioAdapter_aabe5ff6acb4c2411a9dcc17b0c8058db}{FormFactorRatioAdapter}(\textcolor{keyword}{const} std::string & \hyperlink{classeos_1_1FormFactorRatioAdapter_a4794ed40d561e939e566f328d16652fe}{name},
+00164                     \textcolor{keyword}{const} std::string & process,
+00165                     \textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & \hyperlink{classeos_1_1FormFactorRatioAdapter_a7146382f5bfc1c2b59119e844a6201a6}{parameters},
+00166                     \textcolor{keyword}{const} \hyperlink{classeos_1_1Kinematics}{Kinematics} & \hyperlink{classeos_1_1FormFactorRatioAdapter_a821bf6d21630dd75c8a25cd18f1cdd59}{kinematics},
+00167                     \textcolor{keyword}{const} \hyperlink{classeos_1_1Options}{Options} & \hyperlink{classeos_1_1FormFactorRatioAdapter_a4fe52226955dacc174be74224d8b627b}{options},
+00168                     \textcolor{keyword}{const} std::function<\textcolor{keywordtype}{double} (\textcolor{keyword}{const} FormFactors<Transition\_> *,
+       \textcolor{keyword}{const} \textcolor{keywordtype}{double} &)> & form\_factor\_numerator,
+00169                     \textcolor{keyword}{const} std::function<\textcolor{keywordtype}{double} (\textcolor{keyword}{const} FormFactors<Transition\_> *,
+       \textcolor{keyword}{const} \textcolor{keywordtype}{double} &)> & form\_factor\_denominator) :
+00170                 \_name(name),
+00171                 \_process(process),
+00172                 \_parameters(parameters),
+00173                 \_kinematics(kinematics),
+00174                 \_s(kinematics[\textcolor{stringliteral}{"s"}]),
+00175                 \_options(options),
+00176                 \_form\_factor\_numerator(form\_factor\_numerator),
+00177                 \_form\_factor\_denominator(form\_factor\_denominator)
+00178             \{
+00179                 \textcolor{keywordflow}{if} (! \_options.\hyperlink{classeos_1_1Options_a84ce27abf490cf39fa5a4d1cbb835c8e}{has}(\textcolor{stringliteral}{"form-factors"}))
+00180                     \textcolor{keywordflow}{throw} \hyperlink{structeos_1_1UnknownOptionError}{UnknownOptionError}(\textcolor{stringliteral}{"form-factors"});
+00181 
+00182                 \_form\_factors = FormFactorFactory<Transition\_>::create(process + 
+      \textcolor{charliteral}{'@'} + options[\textcolor{stringliteral}{"form-factors"}], \_parameters);
+00183             \}
+00184 
+\hypertarget{form-factor-adapter_8hh_source_l00185}{}\hyperlink{classeos_1_1FormFactorRatioAdapter_a4794ed40d561e939e566f328d16652fe}{00185}             \textcolor{keyword}{virtual} \textcolor{keyword}{const} std::string & \hyperlink{classeos_1_1FormFactorRatioAdapter_a4794ed40d561e939e566f328d16652fe}{name}()\textcolor{keyword}{ const}
+00186 \textcolor{keyword}{            }\{
+00187                 \textcolor{keywordflow}{return} \_name;
+00188             \}
+00189 
+\hypertarget{form-factor-adapter_8hh_source_l00190}{}\hyperlink{classeos_1_1FormFactorRatioAdapter_af0bed5942d9ba4b3c65788e1e05eaf8c}{00190}             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \hyperlink{classeos_1_1FormFactorRatioAdapter_af0bed5942d9ba4b3c65788e1e05eaf8c}{evaluate}()\textcolor{keyword}{ const}
+00191 \textcolor{keyword}{            }\{
+00192                 \textcolor{keywordtype}{double} s = \_s();
+00193 
+00194                 \textcolor{keywordflow}{return} \_form\_factor\_numerator(\_form\_factors.get(), s) / \_form\_fac
+      tor\_denominator(\_form\_factors.get(), s);
+00195             \};
+00196 
+\hypertarget{form-factor-adapter_8hh_source_l00197}{}\hyperlink{classeos_1_1FormFactorRatioAdapter_a7146382f5bfc1c2b59119e844a6201a6}{00197}             \textcolor{keyword}{virtual} \hyperlink{classeos_1_1Parameters}{Parameters} \hyperlink{classeos_1_1FormFactorRatioAdapter_a7146382f5bfc1c2b59119e844a6201a6}{parameters}()
+00198             \{
+00199                 \textcolor{keywordflow}{return} \_parameters;
+00200             \};
+00201 
+\hypertarget{form-factor-adapter_8hh_source_l00202}{}\hyperlink{classeos_1_1FormFactorRatioAdapter_a821bf6d21630dd75c8a25cd18f1cdd59}{00202}             \textcolor{keyword}{virtual} \hyperlink{classeos_1_1Kinematics}{Kinematics} \hyperlink{classeos_1_1FormFactorRatioAdapter_a821bf6d21630dd75c8a25cd18f1cdd59}{kinematics}()
+00203             \{
+00204                 \textcolor{keywordflow}{return} \_kinematics;
+00205             \};
+00206 
+\hypertarget{form-factor-adapter_8hh_source_l00207}{}\hyperlink{classeos_1_1FormFactorRatioAdapter_a4fe52226955dacc174be74224d8b627b}{00207}             \textcolor{keyword}{virtual} \hyperlink{classeos_1_1Options}{Options} \hyperlink{classeos_1_1FormFactorRatioAdapter_a4fe52226955dacc174be74224d8b627b}{options}()
+00208             \{
+00209                 \textcolor{keywordflow}{return} \_options;
+00210             \}
+00211 
+\hypertarget{form-factor-adapter_8hh_source_l00212}{}\hyperlink{classeos_1_1FormFactorRatioAdapter_ab5c4a8094db5ac8fc3860afc4a4087b0}{00212}             \textcolor{keyword}{virtual} \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} \hyperlink{classeos_1_1FormFactorRatioAdapter_ab5c4a8094db5ac8fc3860afc4a4087b0}{clone}()\textcolor{keyword}{ const}
+00213 \textcolor{keyword}{            }\{
+00214                 \textcolor{keywordflow}{return} \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr}(\textcolor{keyword}{new} \hyperlink{classeos_1_1FormFactorRatioAdapter_aabe5ff6acb4c2411a9dcc17b0c8058db}{FormFactorRatioAdapter}(\_name, \_process, 
+      \_parameters.\hyperlink{classeos_1_1Parameters_a273f5bad065bc47b62981734a2e3576e}{clone}(), \_kinematics.\hyperlink{classeos_1_1Kinematics_aedd9681136ab3735fb754e2840e10715}{clone}(), \_options, \_form\_factor\_numerator, \_form
+      \_factor\_denominator));
+00215             \}
+00216 
+\hypertarget{form-factor-adapter_8hh_source_l00217}{}\hyperlink{classeos_1_1FormFactorRatioAdapter_ad8de46a9cedc903bfe0beecbbf66dc58}{00217}             \textcolor{keyword}{virtual} \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} \hyperlink{classeos_1_1FormFactorRatioAdapter_ab5c4a8094db5ac8fc3860afc4a4087b0}{clone}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & parameters)\textcolor{keyword}{ const}
+00218 \textcolor{keyword}{            }\{
+00219                 \textcolor{keywordflow}{return} \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr}(\textcolor{keyword}{new} \hyperlink{classeos_1_1FormFactorRatioAdapter_aabe5ff6acb4c2411a9dcc17b0c8058db}{FormFactorRatioAdapter}(\_name, \_process, 
+      parameters, \_kinematics.\hyperlink{classeos_1_1Kinematics_aedd9681136ab3735fb754e2840e10715}{clone}(), \_options, \_form\_factor\_numerator, \_form\_factor\_d
+      enominator));
+00220             \}
+00221     \};
+00222 
+00223     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Transition\_>
+\hypertarget{form-factor-adapter_8hh_source_l00224}{}\hyperlink{classeos_1_1FormFactorRatioAdapterFactory}{00224}     \textcolor{keyword}{class }\hyperlink{classeos_1_1FormFactorRatioAdapterFactory}{FormFactorRatioAdapterFactory} :
+00225         \textcolor{keyword}{public} \hyperlink{classeos_1_1ObservableFactory}{ObservableFactory}
+00226     \{
+00227         \textcolor{keyword}{private}:
+00228             std::string \_name;
+00229 
+00230             std::string \_process;
+00231 
+00232             std::function<double (const FormFactors<Transition\_> *, \textcolor{keyword}{const} \textcolor{keywordtype}{double} 
+      &)> \_form\_factor\_numerator;
+00233 
+00234             std::function<double (const FormFactors<Transition\_> *, \textcolor{keyword}{const} \textcolor{keywordtype}{double} 
+      &)> \_form\_factor\_denominator;
+00235 
+00236         \textcolor{keyword}{public}:
+\hypertarget{form-factor-adapter_8hh_source_l00237}{}\hyperlink{classeos_1_1FormFactorRatioAdapterFactory_ab689206dfaa84be97e8dd716212dd188}{00237}             \hyperlink{classeos_1_1FormFactorRatioAdapterFactory_ab689206dfaa84be97e8dd716212dd188}{FormFactorRatioAdapterFactory}(\textcolor{keyword}{const} std::string & name,
+00238                     \textcolor{keyword}{const} std::string & process,
+00239                     \textcolor{keyword}{const} std::function<\textcolor{keywordtype}{double} (\textcolor{keyword}{const} FormFactors<Transition\_> *,
+       \textcolor{keyword}{const} \textcolor{keywordtype}{double} &)> & form\_factor\_numerator,
+00240                     \textcolor{keyword}{const} std::function<\textcolor{keywordtype}{double} (\textcolor{keyword}{const} FormFactors<Transition\_> *,
+       \textcolor{keyword}{const} \textcolor{keywordtype}{double} &)> & form\_factor\_denominator) :
+00241                 \_name(name),
+00242                 \_process(process),
+00243                 \_form\_factor\_numerator(form\_factor\_numerator),
+00244                 \_form\_factor\_denominator(form\_factor\_denominator)
+00245             \{
+00246             \}
+00247 
+\hypertarget{form-factor-adapter_8hh_source_l00248}{}\hyperlink{classeos_1_1FormFactorRatioAdapterFactory_a5a0c7286de7904c591dbf57d141e7216}{00248}             \hyperlink{classeos_1_1FormFactorRatioAdapterFactory_a5a0c7286de7904c591dbf57d141e7216}{~FormFactorRatioAdapterFactory}()
+00249             \{
+00250             \}
+00251 
+\hypertarget{form-factor-adapter_8hh_source_l00252}{}\hyperlink{classeos_1_1FormFactorRatioAdapterFactory_a2382bfbe9ce737d606a9d5abc271f92d}{00252}             \textcolor{keyword}{virtual} \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} \hyperlink{classeos_1_1FormFactorRatioAdapterFactory_a2382bfbe9ce737d606a9d5abc271f92d}{make}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & parameters, \textcolor{keyword}{const} 
+      \hyperlink{classeos_1_1Kinematics}{Kinematics} & kinematics, \textcolor{keyword}{const} \hyperlink{classeos_1_1Options}{Options} & options)\textcolor{keyword}{ const}
+00253 \textcolor{keyword}{            }\{
+00254                 \textcolor{keywordflow}{return} \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr}(\textcolor{keyword}{new} \hyperlink{classeos_1_1FormFactorRatioAdapter}{FormFactorRatioAdapter<Transition_>}(\_nam
+      e, \_process, parameters, kinematics, options, \_form\_factor\_numerator, \_form\_facto
+      r\_denominator));
+00255             \}
+00256     \};
+00257 \}
+00258 
+00259 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

@@ -1,0 +1,72 @@
+\hypertarget{structeos_1_1MarkovChain_1_1History}{
+\section{eos::MarkovChain::History Struct Reference}
+\label{structeos_1_1MarkovChain_1_1History}\index{eos::MarkovChain::History@{eos::MarkovChain::History}}
+}
+
+
+{\ttfamily \#include $<$markov\_\-chain.hh$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} \& \hyperlink{structeos_1_1MarkovChain_1_1History_a590c268edb22f3d607dd7757f0bad114}{local\_\-mode} (const \hyperlink{structeos_1_1MarkovChain_1_1State_ad7590843e4feca7e696c53863e6e10c1}{MarkovChain::State::Iterator} \&begin, const \hyperlink{structeos_1_1MarkovChain_1_1State_ad7590843e4feca7e696c53863e6e10c1}{MarkovChain::State::Iterator} \&end) const 
+\item 
+void \hyperlink{structeos_1_1MarkovChain_1_1History_a4aa855975e42d10d25e43d327e4ef72a}{mean\_\-and\_\-variance} (const \hyperlink{structeos_1_1MarkovChain_1_1State_ad7590843e4feca7e696c53863e6e10c1}{MarkovChain::State::Iterator} \&begin, const \hyperlink{structeos_1_1MarkovChain_1_1State_ad7590843e4feca7e696c53863e6e10c1}{MarkovChain::State::Iterator} \&end, std::vector$<$ double $>$ \&mean, std::vector$<$ double $>$ \&variance) const 
+\item 
+void \hyperlink{structeos_1_1MarkovChain_1_1History_a759445b30a1b1034937969a8db6e7668}{mean\_\-and\_\-covariance} (const \hyperlink{structeos_1_1MarkovChain_1_1State_ad7590843e4feca7e696c53863e6e10c1}{MarkovChain::State::Iterator} \&begin, const \hyperlink{structeos_1_1MarkovChain_1_1State_ad7590843e4feca7e696c53863e6e10c1}{MarkovChain::State::Iterator} \&end, std::vector$<$ double $>$ \&mean, std::vector$<$ double $>$ \&variance) const 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{structeos_1_1MarkovChain_1_1History_ac6b8c02c837f78b6724fcaa1cb4eaa74}{keep}
+\begin{DoxyCompactList}\small\item\em flag: if false =$>$ don't store numbers \item\end{DoxyCompactList}\item 
+std::vector$<$ \hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} $>$ \hyperlink{structeos_1_1MarkovChain_1_1History_acecd7f35ce23b811f5365bb96446fba8}{states}
+\begin{DoxyCompactList}\small\item\em All states. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Holds the entire history of a run of a \hyperlink{classeos_1_1MarkovChain}{MarkovChain} 
+
+\subsection{Member Function Documentation}
+\hypertarget{structeos_1_1MarkovChain_1_1History_a590c268edb22f3d607dd7757f0bad114}{
+\index{eos::MarkovChain::History@{eos::MarkovChain::History}!local\_\-mode@{local\_\-mode}}
+\index{local\_\-mode@{local\_\-mode}!eos::MarkovChain::History@{eos::MarkovChain::History}}
+\subsubsection[{local\_\-mode}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf MarkovChain::State}\& eos::MarkovChain::History::local\_\-mode (const {\bf MarkovChain::State::Iterator} \& {\em begin}, \/  const {\bf MarkovChain::State::Iterator} \& {\em end}) const}}
+\label{structeos_1_1MarkovChain_1_1History_a590c268edb22f3d607dd7757f0bad114}
+Return state with highest posterior probability in selected range \hypertarget{structeos_1_1MarkovChain_1_1History_a759445b30a1b1034937969a8db6e7668}{
+\index{eos::MarkovChain::History@{eos::MarkovChain::History}!mean\_\-and\_\-covariance@{mean\_\-and\_\-covariance}}
+\index{mean\_\-and\_\-covariance@{mean\_\-and\_\-covariance}!eos::MarkovChain::History@{eos::MarkovChain::History}}
+\subsubsection[{mean\_\-and\_\-covariance}]{\setlength{\rightskip}{0pt plus 5cm}void eos::MarkovChain::History::mean\_\-and\_\-covariance (const {\bf MarkovChain::State::Iterator} \& {\em begin}, \/  const {\bf MarkovChain::State::Iterator} \& {\em end}, \/  std::vector$<$ double $>$ \& {\em mean}, \/  std::vector$<$ double $>$ \& {\em variance}) const}}
+\label{structeos_1_1MarkovChain_1_1History_a759445b30a1b1034937969a8db6e7668}
+Compute the mean vector and the sample covariance in the given range of the chain.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em begin}]\item[{\em end}]\item[{\em mean}]\item[{\em variance}]\end{DoxyParams}
+\hypertarget{structeos_1_1MarkovChain_1_1History_a4aa855975e42d10d25e43d327e4ef72a}{
+\index{eos::MarkovChain::History@{eos::MarkovChain::History}!mean\_\-and\_\-variance@{mean\_\-and\_\-variance}}
+\index{mean\_\-and\_\-variance@{mean\_\-and\_\-variance}!eos::MarkovChain::History@{eos::MarkovChain::History}}
+\subsubsection[{mean\_\-and\_\-variance}]{\setlength{\rightskip}{0pt plus 5cm}void eos::MarkovChain::History::mean\_\-and\_\-variance (const {\bf MarkovChain::State::Iterator} \& {\em begin}, \/  const {\bf MarkovChain::State::Iterator} \& {\em end}, \/  std::vector$<$ double $>$ \& {\em mean}, \/  std::vector$<$ double $>$ \& {\em variance}) const}}
+\label{structeos_1_1MarkovChain_1_1History_a4aa855975e42d10d25e43d327e4ef72a}
+Compute mean and variance of the states' parameters between begin and end using Welford's method for all parameters. Results are stored in the vectors.
+
+For details, check out \href{http://www.johndcook.com/standard_deviation.html}{\tt http://www.johndcook.com/standard\_\-deviation.html} . 
+
+\subsection{Member Data Documentation}
+\hypertarget{structeos_1_1MarkovChain_1_1History_ac6b8c02c837f78b6724fcaa1cb4eaa74}{
+\index{eos::MarkovChain::History@{eos::MarkovChain::History}!keep@{keep}}
+\index{keep@{keep}!eos::MarkovChain::History@{eos::MarkovChain::History}}
+\subsubsection[{keep}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf eos::MarkovChain::History::keep}}}
+\label{structeos_1_1MarkovChain_1_1History_ac6b8c02c837f78b6724fcaa1cb4eaa74}
+
+
+flag: if false =$>$ don't store numbers \hypertarget{structeos_1_1MarkovChain_1_1History_acecd7f35ce23b811f5365bb96446fba8}{
+\index{eos::MarkovChain::History@{eos::MarkovChain::History}!states@{states}}
+\index{states@{states}!eos::MarkovChain::History@{eos::MarkovChain::History}}
+\subsubsection[{states}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<${\bf MarkovChain::State}$>$ {\bf eos::MarkovChain::History::states}}}
+\label{structeos_1_1MarkovChain_1_1History_acecd7f35ce23b811f5365bb96446fba8}
+
+
+All states. 
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{markov__chain_8hh}{markov\_\-chain.hh}\end{DoxyCompactItemize}

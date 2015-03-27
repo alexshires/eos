@@ -1,0 +1,74 @@
+\hypertarget{structeos_1_1hdf5_1_1Type}{
+\section{eos::hdf5::Type Struct Reference}
+\label{structeos_1_1hdf5_1_1Type}\index{eos::hdf5::Type@{eos::hdf5::Type}}
+}
+
+
+{\ttfamily \#include $<$hdf5.hh$>$}
+
+Inherited by \hyperlink{classeos_1_1hdf5_1_1Array}{eos::hdf5::Array$<$ rank\_\-, T\_\- $>$}, \hyperlink{classeos_1_1hdf5_1_1Composite}{eos::hdf5::Composite$<$ T\_\- $>$}, and \hyperlink{classeos_1_1hdf5_1_1Scalar}{eos::hdf5::Scalar$<$ T\_\- $>$}.\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{structeos_1_1hdf5_1_1Type_a0c9013a37b76efb7538829c3e14d0162}{$\sim$Type} ()=0
+\item 
+virtual \hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid\_\-t} \hyperlink{structeos_1_1hdf5_1_1Type_a0305c470a7a26a391f9a751e40bb9ff6}{type\_\-id} () const =0
+\item 
+virtual const std::string \& \hyperlink{structeos_1_1hdf5_1_1Type_a79de1c9f0444de59864107c388c23d2d}{name} () const =0
+\item 
+virtual hsize\_\-t \hyperlink{structeos_1_1hdf5_1_1Type_a0cf79b090412bb228a1df8349acf3c2b}{size} () const =0
+\item 
+virtual void \hyperlink{structeos_1_1hdf5_1_1Type_a30b665dc2adbe459feb640c61776b50a}{copy\_\-to\_\-hdf5} (const void $\ast$src, void $\ast$dest) const =0
+\item 
+virtual void \hyperlink{structeos_1_1hdf5_1_1Type_a4d1073336bce1500533e69a1187acd66}{copy\_\-from\_\-hdf5} (const void $\ast$src, void $\ast$dest) const =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structeos_1_1hdf5_1_1Type_a0c9013a37b76efb7538829c3e14d0162}{
+\index{eos::hdf5::Type@{eos::hdf5::Type}!$\sim$Type@{$\sim$Type}}
+\index{$\sim$Type@{$\sim$Type}!eos::hdf5::Type@{eos::hdf5::Type}}
+\subsubsection[{$\sim$Type}]{\setlength{\rightskip}{0pt plus 5cm}virtual eos::hdf5::Type::$\sim$Type ()\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{structeos_1_1hdf5_1_1Type_a0c9013a37b76efb7538829c3e14d0162}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structeos_1_1hdf5_1_1Type_a4d1073336bce1500533e69a1187acd66}{
+\index{eos::hdf5::Type@{eos::hdf5::Type}!copy\_\-from\_\-hdf5@{copy\_\-from\_\-hdf5}}
+\index{copy\_\-from\_\-hdf5@{copy\_\-from\_\-hdf5}!eos::hdf5::Type@{eos::hdf5::Type}}
+\subsubsection[{copy\_\-from\_\-hdf5}]{\setlength{\rightskip}{0pt plus 5cm}virtual void eos::hdf5::Type::copy\_\-from\_\-hdf5 (const void $\ast$ {\em src}, \/  void $\ast$ {\em dest}) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{structeos_1_1hdf5_1_1Type_a4d1073336bce1500533e69a1187acd66}
+
+
+Implemented in \hyperlink{classeos_1_1hdf5_1_1Scalar_a840b94c45ff51454eb2baae727165a71}{eos::hdf5::Scalar$<$ T\_\- $>$}, \hyperlink{classeos_1_1hdf5_1_1Array_aedd48f5a8020d66426bd0adfc74fa6a9}{eos::hdf5::Array$<$ rank\_\-, T\_\- $>$}, and \hyperlink{classeos_1_1hdf5_1_1Composite_a4504f18af7ad323f89b4635eae9f1695}{eos::hdf5::Composite$<$ T\_\- $>$}.\hypertarget{structeos_1_1hdf5_1_1Type_a30b665dc2adbe459feb640c61776b50a}{
+\index{eos::hdf5::Type@{eos::hdf5::Type}!copy\_\-to\_\-hdf5@{copy\_\-to\_\-hdf5}}
+\index{copy\_\-to\_\-hdf5@{copy\_\-to\_\-hdf5}!eos::hdf5::Type@{eos::hdf5::Type}}
+\subsubsection[{copy\_\-to\_\-hdf5}]{\setlength{\rightskip}{0pt plus 5cm}virtual void eos::hdf5::Type::copy\_\-to\_\-hdf5 (const void $\ast$ {\em src}, \/  void $\ast$ {\em dest}) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{structeos_1_1hdf5_1_1Type_a30b665dc2adbe459feb640c61776b50a}
+
+
+Implemented in \hyperlink{classeos_1_1hdf5_1_1Scalar_a4aeec2eb655199bd6ad02464eeb44648}{eos::hdf5::Scalar$<$ T\_\- $>$}, \hyperlink{classeos_1_1hdf5_1_1Array_a4f0adbcb6e7136436afa14aee7ebc5c9}{eos::hdf5::Array$<$ rank\_\-, T\_\- $>$}, and \hyperlink{classeos_1_1hdf5_1_1Composite_ac86859046bcb7b5741afdb5ec13e78f0}{eos::hdf5::Composite$<$ T\_\- $>$}.\hypertarget{structeos_1_1hdf5_1_1Type_a79de1c9f0444de59864107c388c23d2d}{
+\index{eos::hdf5::Type@{eos::hdf5::Type}!name@{name}}
+\index{name@{name}!eos::hdf5::Type@{eos::hdf5::Type}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}virtual const std::string\& eos::hdf5::Type::name () const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{structeos_1_1hdf5_1_1Type_a79de1c9f0444de59864107c388c23d2d}
+
+
+Implemented in \hyperlink{classeos_1_1hdf5_1_1Scalar_af914b3bd28aa664d17cc6223659c7b45}{eos::hdf5::Scalar$<$ T\_\- $>$}, \hyperlink{classeos_1_1hdf5_1_1Array_aa533ea361fe7d7f589ea60ffee2120a5}{eos::hdf5::Array$<$ rank\_\-, T\_\- $>$}, and \hyperlink{classeos_1_1hdf5_1_1Composite_aa72cd90613270fa5006319bee231be5b}{eos::hdf5::Composite$<$ T\_\- $>$}.\hypertarget{structeos_1_1hdf5_1_1Type_a0cf79b090412bb228a1df8349acf3c2b}{
+\index{eos::hdf5::Type@{eos::hdf5::Type}!size@{size}}
+\index{size@{size}!eos::hdf5::Type@{eos::hdf5::Type}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}virtual hsize\_\-t eos::hdf5::Type::size () const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{structeos_1_1hdf5_1_1Type_a0cf79b090412bb228a1df8349acf3c2b}
+
+
+Implemented in \hyperlink{classeos_1_1hdf5_1_1Scalar_a88e62fcc7557957b737a45a9f6ac7952}{eos::hdf5::Scalar$<$ T\_\- $>$}, \hyperlink{classeos_1_1hdf5_1_1Array_abbe03946de83c9b63d6fc35fc5a60c69}{eos::hdf5::Array$<$ rank\_\-, T\_\- $>$}, and \hyperlink{classeos_1_1hdf5_1_1Composite_a67ce4870971aced7cf83a7a88c16c61d}{eos::hdf5::Composite$<$ T\_\- $>$}.\hypertarget{structeos_1_1hdf5_1_1Type_a0305c470a7a26a391f9a751e40bb9ff6}{
+\index{eos::hdf5::Type@{eos::hdf5::Type}!type\_\-id@{type\_\-id}}
+\index{type\_\-id@{type\_\-id}!eos::hdf5::Type@{eos::hdf5::Type}}
+\subsubsection[{type\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf hid\_\-t} eos::hdf5::Type::type\_\-id () const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{structeos_1_1hdf5_1_1Type_a0305c470a7a26a391f9a751e40bb9ff6}
+
+
+Implemented in \hyperlink{classeos_1_1hdf5_1_1Scalar_a5d54b43030237b9bc1c7076184ff968d}{eos::hdf5::Scalar$<$ T\_\- $>$}, \hyperlink{classeos_1_1hdf5_1_1Array_ac560c57df5f551234fd5ac77d1890d30}{eos::hdf5::Array$<$ rank\_\-, T\_\- $>$}, and \hyperlink{classeos_1_1hdf5_1_1Composite_a97743d3126f849b6359587508b488a38}{eos::hdf5::Composite$<$ T\_\- $>$}.
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{hdf5_8hh}{hdf5.hh}\end{DoxyCompactItemize}

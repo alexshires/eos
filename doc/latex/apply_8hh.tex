@@ -1,0 +1,35 @@
+\hypertarget{apply_8hh}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/apply.hh File Reference}
+\label{apply_8hh}\index{/home/alexshires/EOS/eos-\/next/eos/utils/apply.hh@{/home/alexshires/EOS/eos-\/next/eos/utils/apply.hh}}
+}
+{\ttfamily \#include $<$functional$>$}\par
+{\ttfamily \#include $<$tuple$>$}\par
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \hyperlink{namespaceeos}{eos}
+\item 
+namespace \hyperlink{namespaceeos_1_1impl}{eos::impl}
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{apply_8hh_a4328bcf6a6b86a72d4e546c8e99a0b5f}{EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-APPLY\_\-HH}~1
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Result\_\- , typename... FunctionArgs\_\-, typename... TupleElements\_\-$>$ }\\Result\_\- \hyperlink{namespaceeos_a6d6ca72f35614029a62c270ec042d80c}{eos::apply} (Result\_\-($\ast$f)(FunctionArgs\_\-...), const std::tuple$<$ TupleElements\_\-...$>$ \&t)
+\item 
+{\footnotesize template$<$typename Result\_\- , typename... FunctionArgs\_\-, typename... TupleElements\_\-$>$ }\\Result\_\- \hyperlink{namespaceeos_a56ba31c6e8b9cd9a310e2df15220d202}{eos::apply} (const std::function$<$ Result\_\-(FunctionArgs\_\-...)$>$ \&f, const std::tuple$<$ TupleElements\_\-...$>$ \&t)
+\item 
+{\footnotesize template$<$typename Result\_\- , typename Class\_\- , typename... FunctionArgs\_\-, typename... TupleElements\_\-$>$ }\\Result\_\- \hyperlink{namespaceeos_a05333558aad48dbab3da261c54e3282d}{eos::apply} (Result\_\-(Class\_\-::$\ast$f)(FunctionArgs\_\-...), const std::tuple$<$ Class\_\- $\ast$, TupleElements\_\-...$>$ \&t)
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{apply_8hh_a4328bcf6a6b86a72d4e546c8e99a0b5f}{
+\index{apply.hh@{apply.hh}!EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-APPLY\_\-HH@{EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-APPLY\_\-HH}}
+\index{EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-APPLY\_\-HH@{EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-APPLY\_\-HH}!apply.hh@{apply.hh}}
+\subsubsection[{EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-APPLY\_\-HH}]{\setlength{\rightskip}{0pt plus 5cm}\#define EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-APPLY\_\-HH~1}}
+\label{apply_8hh_a4328bcf6a6b86a72d4e546c8e99a0b5f}

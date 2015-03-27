@@ -1,0 +1,74 @@
+\hypertarget{proposal__functions_8hh}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/proposal\_\-functions.hh File Reference}
+\label{proposal__functions_8hh}\index{/home/alexshires/EOS/eos-\/next/eos/utils/proposal\_\-functions.hh@{/home/alexshires/EOS/eos-\/next/eos/utils/proposal\_\-functions.hh}}
+}
+{\ttfamily \#include $<$eos/utils/cluster.hh$>$}\par
+{\ttfamily \#include $<$eos/utils/hdf5-\/fwd.hh$>$}\par
+{\ttfamily \#include $<$eos/utils/log\_\-prior-\/fwd.hh$>$}\par
+{\ttfamily \#include $<$eos/utils/markov\_\-chain.hh$>$}\par
+{\ttfamily \#include $<$eos/utils/verify.hh$>$}\par
+{\ttfamily \#include $<$gsl/gsl\_\-matrix.h$>$}\par
+{\ttfamily \#include $<$gsl/gsl\_\-vector.h$>$}\par
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structeos_1_1proposal__functions_1_1UnknownProposalError}{eos::proposal\_\-functions::UnknownProposalError}
+\item 
+struct \hyperlink{structeos_1_1proposal__functions_1_1Factory}{eos::proposal\_\-functions::Factory}
+\begin{DoxyCompactList}\small\item\em Abstract factory to read in a proposal density from file. \item\end{DoxyCompactList}\item 
+class \hyperlink{classeos_1_1proposal__functions_1_1AdjacencyMatrix}{eos::proposal\_\-functions::AdjacencyMatrix}
+\item 
+class \hyperlink{classeos_1_1proposal__functions_1_1GlobalLocal}{eos::proposal\_\-functions::GlobalLocal}
+\item 
+struct \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config}{eos::proposal\_\-functions::GlobalLocal::Config}
+\item 
+class \hyperlink{classeos_1_1proposal__functions_1_1Multivariate}{eos::proposal\_\-functions::Multivariate}
+\item 
+class \hyperlink{classeos_1_1proposal__functions_1_1MultivariateGaussian}{eos::proposal\_\-functions::MultivariateGaussian}
+\item 
+class \hyperlink{classeos_1_1proposal__functions_1_1MultivariateStudentT}{eos::proposal\_\-functions::MultivariateStudentT}
+\item 
+struct \hyperlink{structeos_1_1proposal__functions_1_1MultivariateAccess}{eos::proposal\_\-functions::MultivariateAccess}
+\item 
+class \hyperlink{classeos_1_1proposal__functions_1_1BlockDecomposition}{eos::proposal\_\-functions::BlockDecomposition}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \hyperlink{namespaceeos}{eos}
+\item 
+namespace \hyperlink{namespaceeos_1_1proposal__functions}{eos::proposal\_\-functions}
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{proposal__functions_8hh_adcf0d7fb0622fd69103980900bf5dfc9}{EOS\_\-GUARD\_\-EOS\_\-UTILS\_\-PROPROSAL\_\-FUNCTIONS\_\-HH}~1
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef hdf5::Composite$<$ hdf5::Scalar$<$ const char $\ast$ $>$, hdf5::Scalar$<$ unsigned $>$ $>$ \hyperlink{namespaceeos_1_1proposal__functions_ad45af5ebbbdc545b033b153cafe7e360}{eos::proposal\_\-functions::MetaType}
+\item 
+typedef std::tuple$<$ const char $\ast$, unsigned $>$ \hyperlink{namespaceeos_1_1proposal__functions_a7b9711fcd1f76e034c72073e2d5d7f15}{eos::proposal\_\-functions::MetaRecord}
+\item 
+typedef std::shared\_\-ptr$<$ Multivariate $>$ \hyperlink{namespaceeos_1_1proposal__functions_a6cffa18d523cd6955629beabbe07c17c}{eos::proposal\_\-functions::MultivariateProposalPtr}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \hyperlink{namespaceeos_1_1proposal__functions_a55ba4d78e5beeb12699c697874f7c1df}{eos::proposal\_\-functions::random\_\-index} (const std::vector$<$ double $>$ \&cumulative, gsl\_\-rng $\ast$rng)
+\item 
+void \hyperlink{namespaceeos_1_1proposal__functions_a3714de403c64ba76dcdb901f138f48de}{eos::proposal\_\-functions::sliding\_\-window} (const unsigned \&K, const unsigned \&size, const unsigned \&j, unsigned \&j\_\-min, unsigned \&j\_\-max)
+\item 
+MetaType \hyperlink{namespaceeos_1_1proposal__functions_ac169711c02c184c64ba3a406bd18598b}{eos::proposal\_\-functions::meta\_\-type} ()
+\item 
+MetaRecord \hyperlink{namespaceeos_1_1proposal__functions_aa2f7d6804a251f162c263056d0e660e0}{eos::proposal\_\-functions::meta\_\-record} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{proposal__functions_8hh_adcf0d7fb0622fd69103980900bf5dfc9}{
+\index{proposal\_\-functions.hh@{proposal\_\-functions.hh}!EOS\_\-GUARD\_\-EOS\_\-UTILS\_\-PROPROSAL\_\-FUNCTIONS\_\-HH@{EOS\_\-GUARD\_\-EOS\_\-UTILS\_\-PROPROSAL\_\-FUNCTIONS\_\-HH}}
+\index{EOS\_\-GUARD\_\-EOS\_\-UTILS\_\-PROPROSAL\_\-FUNCTIONS\_\-HH@{EOS\_\-GUARD\_\-EOS\_\-UTILS\_\-PROPROSAL\_\-FUNCTIONS\_\-HH}!proposal_functions.hh@{proposal\_\-functions.hh}}
+\subsubsection[{EOS\_\-GUARD\_\-EOS\_\-UTILS\_\-PROPROSAL\_\-FUNCTIONS\_\-HH}]{\setlength{\rightskip}{0pt plus 5cm}\#define EOS\_\-GUARD\_\-EOS\_\-UTILS\_\-PROPROSAL\_\-FUNCTIONS\_\-HH~1}}
+\label{proposal__functions_8hh_adcf0d7fb0622fd69103980900bf5dfc9}

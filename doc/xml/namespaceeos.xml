@@ -1,0 +1,1960 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="namespaceeos" kind="namespace">
+    <compoundname>eos</compoundname>
+    <innerclass refid="classeos_1_1BToPiLeptonNeutrino" prot="public">eos::BToPiLeptonNeutrino</innerclass>
+    <innerclass refid="classeos_1_1BMesonProperties" prot="public">eos::BMesonProperties</innerclass>
+    <innerclass refid="classeos_1_1Constraint" prot="public">eos::Constraint</innerclass>
+    <innerclass refid="structeos_1_1UnknownConstraintError" prot="public">eos::UnknownConstraintError</innerclass>
+    <innerclass refid="classeos_1_1AnalyticFormFactorBToPiDKMMO2008" prot="public">eos::AnalyticFormFactorBToPiDKMMO2008</innerclass>
+    <innerclass refid="structeos_1_1OneHalfPlusToOneHalfPlus" prot="public">eos::OneHalfPlusToOneHalfPlus</innerclass>
+    <innerclass refid="classeos_1_1FormFactors_3_01OneHalfPlusToOneHalfPlus_01_4" prot="public">eos::FormFactors&lt; OneHalfPlusToOneHalfPlus &gt;</innerclass>
+    <innerclass refid="classeos_1_1FormFactorFactory_3_01OneHalfPlusToOneHalfPlus_01_4" prot="public">eos::FormFactorFactory&lt; OneHalfPlusToOneHalfPlus &gt;</innerclass>
+    <innerclass refid="classeos_1_1FormFactorAdapter" prot="public">eos::FormFactorAdapter</innerclass>
+    <innerclass refid="classeos_1_1FormFactorAdapterFactory" prot="public">eos::FormFactorAdapterFactory</innerclass>
+    <innerclass refid="classeos_1_1FormFactorRatioAdapter" prot="public">eos::FormFactorRatioAdapter</innerclass>
+    <innerclass refid="classeos_1_1FormFactorRatioAdapterFactory" prot="public">eos::FormFactorRatioAdapterFactory</innerclass>
+    <innerclass refid="structeos_1_1BToKstar" prot="public">eos::BToKstar</innerclass>
+    <innerclass refid="structeos_1_1BsToPhi" prot="public">eos::BsToPhi</innerclass>
+    <innerclass refid="classeos_1_1BZ2004FormFactors_3_01Process___00_01PToV_01_4" prot="public">eos::BZ2004FormFactors&lt; Process_, PToV &gt;</innerclass>
+    <innerclass refid="classeos_1_1KMPW2010FormFactors_3_01PToV_01_4" prot="public">eos::KMPW2010FormFactors&lt; PToV &gt;</innerclass>
+    <innerclass refid="structeos_1_1BToK" prot="public">eos::BToK</innerclass>
+    <innerclass refid="structeos_1_1BToPi" prot="public">eos::BToPi</innerclass>
+    <innerclass refid="classeos_1_1BCL2008FormFactors" prot="public">eos::BCL2008FormFactors</innerclass>
+    <innerclass refid="classeos_1_1BZ2004FormFactors_3_01Process___00_01PToP_01_4" prot="public">eos::BZ2004FormFactors&lt; Process_, PToP &gt;</innerclass>
+    <innerclass refid="classeos_1_1BZ2004FormFactorsSplit" prot="public">eos::BZ2004FormFactorsSplit</innerclass>
+    <innerclass refid="classeos_1_1KMPW2010FormFactors_3_01PToP_01_4" prot="public">eos::KMPW2010FormFactors&lt; PToP &gt;</innerclass>
+    <innerclass refid="classeos_1_1BFW2010FormFactors_3_01PToP_01_4" prot="public">eos::BFW2010FormFactors&lt; PToP &gt;</innerclass>
+    <innerclass refid="structeos_1_1PToV" prot="public">eos::PToV</innerclass>
+    <innerclass refid="structeos_1_1PToP" prot="public">eos::PToP</innerclass>
+    <innerclass refid="classeos_1_1FormFactors_3_01PToV_01_4" prot="public">eos::FormFactors&lt; PToV &gt;</innerclass>
+    <innerclass refid="classeos_1_1FormFactorFactory_3_01PToV_01_4" prot="public">eos::FormFactorFactory&lt; PToV &gt;</innerclass>
+    <innerclass refid="classeos_1_1FormFactors_3_01PToP_01_4" prot="public">eos::FormFactors&lt; PToP &gt;</innerclass>
+    <innerclass refid="classeos_1_1FormFactorFactory_3_01PToP_01_4" prot="public">eos::FormFactorFactory&lt; PToP &gt;</innerclass>
+    <innerclass refid="classeos_1_1PionLCDAs" prot="public">eos::PionLCDAs</innerclass>
+    <innerclass refid="classeos_1_1Observable" prot="public">eos::Observable</innerclass>
+    <innerclass refid="classeos_1_1ObservableFactory" prot="public">eos::ObservableFactory</innerclass>
+    <innerclass refid="structeos_1_1ObservableNameError" prot="public">eos::ObservableNameError</innerclass>
+    <innerclass refid="structeos_1_1Bremsstrahlung" prot="public">eos::Bremsstrahlung</innerclass>
+    <innerclass refid="structeos_1_1CharmLoops" prot="public">eos::CharmLoops</innerclass>
+    <innerclass refid="structeos_1_1ShortDistanceLowRecoil" prot="public">eos::ShortDistanceLowRecoil</innerclass>
+    <innerclass refid="structeos_1_1LargeRecoil" prot="public">eos::LargeRecoil</innerclass>
+    <innerclass refid="structeos_1_1LowRecoil" prot="public">eos::LowRecoil</innerclass>
+    <innerclass refid="structeos_1_1EMContributions" prot="public">eos::EMContributions</innerclass>
+    <innerclass refid="classeos_1_1BToDilepton" prot="public">eos::BToDilepton</innerclass>
+    <innerclass refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4" prot="public">eos::BToKstarDilepton&lt; LargeRecoil &gt;</innerclass>
+    <innerclass refid="classeos_1_1BToKDilepton_3_01LargeRecoil_01_4" prot="public">eos::BToKDilepton&lt; LargeRecoil &gt;</innerclass>
+    <innerclass refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4" prot="public">eos::BToKstarDilepton&lt; LowRecoil &gt;</innerclass>
+    <innerclass refid="classeos_1_1BToKDilepton_3_01LowRecoil_01_4" prot="public">eos::BToKDilepton&lt; LowRecoil &gt;</innerclass>
+    <innerclass refid="classeos_1_1BToKstarGamma" prot="public">eos::BToKstarGamma</innerclass>
+    <innerclass refid="structeos_1_1HardScattering" prot="public">eos::HardScattering</innerclass>
+    <innerclass refid="structeos_1_1HLMW2005" prot="public">eos::HLMW2005</innerclass>
+    <innerclass refid="classeos_1_1BToXsDilepton_3_01HLMW2005_01_4" prot="public">eos::BToXsDilepton&lt; HLMW2005 &gt;</innerclass>
+    <innerclass refid="structeos_1_1Minimal" prot="public">eos::Minimal</innerclass>
+    <innerclass refid="classeos_1_1BToXsGamma_3_01Minimal_01_4" prot="public">eos::BToXsGamma&lt; Minimal &gt;</innerclass>
+    <innerclass refid="structeos_1_1NLO" prot="public">eos::NLO</innerclass>
+    <innerclass refid="classeos_1_1BToXsGamma_3_01NLO_01_4" prot="public">eos::BToXsGamma&lt; NLO &gt;</innerclass>
+    <innerclass refid="classeos_1_1LambdaBToLambdaDilepton_3_01LargeRecoil_01_4" prot="public">eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;</innerclass>
+    <innerclass refid="classeos_1_1LambdaBToLambdaDilepton_3_01LowRecoil_01_4" prot="public">eos::LambdaBToLambdaDilepton&lt; LowRecoil &gt;</innerclass>
+    <innerclass refid="structeos_1_1LongDistance" prot="public">eos::LongDistance</innerclass>
+    <innerclass refid="classeos_1_1QCDFIntegrals" prot="public">eos::QCDFIntegrals</innerclass>
+    <innerclass refid="classeos_1_1Accumulator" prot="public">eos::Accumulator</innerclass>
+    <innerclass refid="classeos_1_1Analysis" prot="public">eos::Analysis</innerclass>
+    <innerclass refid="structeos_1_1TestObservable" prot="public">eos::TestObservable</innerclass>
+    <innerclass refid="structeos_1_1AbsoluteTestObservable" prot="public">eos::AbsoluteTestObservable</innerclass>
+    <innerclass refid="classeos_1_1CartesianProduct" prot="public">eos::CartesianProduct</innerclass>
+    <innerclass refid="structeos_1_1ChiSquared" prot="public">eos::ChiSquared</innerclass>
+    <innerclass refid="structeos_1_1NoSuchChiSquaredError" prot="public">eos::NoSuchChiSquaredError</innerclass>
+    <innerclass refid="classeos_1_1CKMScanComponent" prot="public">eos::CKMScanComponent</innerclass>
+    <innerclass refid="classeos_1_1CKMScanModel" prot="public">eos::CKMScanModel</innerclass>
+    <innerclass refid="classeos_1_1Cluster" prot="public">eos::Cluster</innerclass>
+    <innerclass refid="classeos_1_1ConcreteObservable" prot="public">eos::ConcreteObservable</innerclass>
+    <innerclass refid="classeos_1_1ConcreteObservableFactory" prot="public">eos::ConcreteObservableFactory</innerclass>
+    <innerclass refid="classeos_1_1ConditionVariable" prot="public">eos::ConditionVariable</innerclass>
+    <innerclass refid="classeos_1_1Diagnostics" prot="public">eos::Diagnostics</innerclass>
+    <innerclass refid="classeos_1_1EquationSolver" prot="public">eos::EquationSolver</innerclass>
+    <innerclass refid="classeos_1_1Exception" prot="public">eos::Exception</innerclass>
+    <innerclass refid="structeos_1_1InternalError" prot="public">eos::InternalError</innerclass>
+    <innerclass refid="classeos_1_1HDF5Error" prot="public">eos::HDF5Error</innerclass>
+    <innerclass refid="classeos_1_1HierarchicalClustering" prot="public">eos::HierarchicalClustering</innerclass>
+    <innerclass refid="classeos_1_1Histogram_3_011_01_4" prot="public">eos::Histogram&lt; 1 &gt;</innerclass>
+    <innerclass refid="classeos_1_1Histogram_3_012_01_4" prot="public">eos::Histogram&lt; 2 &gt;</innerclass>
+    <innerclass refid="classeos_1_1InstantiationPolicy_3_01T___00_01NonCopyable_01_4" prot="public">eos::InstantiationPolicy&lt; T_, NonCopyable &gt;</innerclass>
+    <innerclass refid="classeos_1_1InstantiationPolicy_3_01T___00_01NonInstantiable_01_4" prot="public">eos::InstantiationPolicy&lt; T_, NonInstantiable &gt;</innerclass>
+    <innerclass refid="classeos_1_1InstantiationPolicy_3_01T___00_01Singleton_01_4" prot="public">eos::InstantiationPolicy&lt; T_, Singleton &gt;</innerclass>
+    <innerclass refid="structeos_1_1UnknownKinematicVariableError" prot="public">eos::UnknownKinematicVariableError</innerclass>
+    <innerclass refid="classeos_1_1Kinematics" prot="public">eos::Kinematics</innerclass>
+    <innerclass refid="classeos_1_1KinematicVariable" prot="public">eos::KinematicVariable</innerclass>
+    <innerclass refid="structeos_1_1LCDA" prot="public">eos::LCDA</innerclass>
+    <innerclass refid="classeos_1_1Lock" prot="public">eos::Lock</innerclass>
+    <innerclass refid="classeos_1_1TryLock" prot="public">eos::TryLock</innerclass>
+    <innerclass refid="classeos_1_1Log" prot="public">eos::Log</innerclass>
+    <innerclass refid="classeos_1_1LogMessageHandler" prot="public">eos::LogMessageHandler</innerclass>
+    <innerclass refid="classeos_1_1LogLikelihoodBlock" prot="public">eos::LogLikelihoodBlock</innerclass>
+    <innerclass refid="classeos_1_1LogLikelihood" prot="public">eos::LogLikelihood</innerclass>
+    <innerclass refid="classeos_1_1LogPrior" prot="public">eos::LogPrior</innerclass>
+    <innerclass refid="classeos_1_1MarkovChain" prot="public">eos::MarkovChain</innerclass>
+    <innerclass refid="classeos_1_1MarkovChainSampler" prot="public">eos::MarkovChainSampler</innerclass>
+    <innerclass refid="classeos_1_1MemoisationControl" prot="public">eos::MemoisationControl</innerclass>
+    <innerclass refid="classeos_1_1Memoiser" prot="public">eos::Memoiser</innerclass>
+    <innerclass refid="classeos_1_1ModelComponent_3_01components_1_1CKM_01_4" prot="public">eos::ModelComponent&lt; components::CKM &gt;</innerclass>
+    <innerclass refid="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4" prot="public">eos::ModelComponent&lt; components::QCD &gt;</innerclass>
+    <innerclass refid="classeos_1_1ModelComponent_3_01components_1_1DeltaB1_01_4" prot="public">eos::ModelComponent&lt; components::DeltaB1 &gt;</innerclass>
+    <innerclass refid="classeos_1_1Model" prot="public">eos::Model</innerclass>
+    <innerclass refid="structeos_1_1NoSuchModelError" prot="public">eos::NoSuchModelError</innerclass>
+    <innerclass refid="classeos_1_1Mutable" prot="public">eos::Mutable</innerclass>
+    <innerclass refid="classeos_1_1Mutex" prot="public">eos::Mutex</innerclass>
+    <innerclass refid="classeos_1_1ObservableCache" prot="public">eos::ObservableCache</innerclass>
+    <innerclass refid="classeos_1_1ObservableSet" prot="public">eos::ObservableSet</innerclass>
+    <innerclass refid="structeos_1_1SelectOneOfType_3_01Want___01_4" prot="public">eos::SelectOneOfType&lt; Want_ &gt;</innerclass>
+    <innerclass refid="structeos_1_1SelectOneOfType_3_01Want___00_01Try___00_01Rest___8_8_8_4" prot="public">eos::SelectOneOfType&lt; Want_, Try_, Rest_...&gt;</innerclass>
+    <innerclass refid="structeos_1_1OneOfVisitorVisit" prot="public">eos::OneOfVisitorVisit</innerclass>
+    <innerclass refid="structeos_1_1OneOfVisitor" prot="public">eos::OneOfVisitor</innerclass>
+    <innerclass refid="structeos_1_1OneOfVisitorWrapperVisit_3_01Visitor___00_01Underlying___00_01Result___01_4" prot="public">eos::OneOfVisitorWrapperVisit&lt; Visitor_, Underlying_, Result_ &gt;</innerclass>
+    <innerclass refid="structeos_1_1OneOfVisitorWrapperVisit_3_01Visitor___00_01Underlying___00_01void_01_4" prot="public">eos::OneOfVisitorWrapperVisit&lt; Visitor_, Underlying_, void &gt;</innerclass>
+    <innerclass refid="structeos_1_1OneOfVisitorWrapperVisit_3_01Visitor___00_01Underlying___00_01void_00_01Type___00_01Rest___8_8_8_4" prot="public">eos::OneOfVisitorWrapperVisit&lt; Visitor_, Underlying_, void, Type_, Rest_...&gt;</innerclass>
+    <innerclass refid="structeos_1_1OneOfVisitorWrapperVisit_3_01Visitor___00_01Underlying___00_01Result___00_01Type___00_01Rest___8_8_8_4" prot="public">eos::OneOfVisitorWrapperVisit&lt; Visitor_, Underlying_, Result_, Type_, Rest_...&gt;</innerclass>
+    <innerclass refid="structeos_1_1OneOfVisitorWrapper" prot="public">eos::OneOfVisitorWrapper</innerclass>
+    <innerclass refid="structeos_1_1OneOfValueBase" prot="public">eos::OneOfValueBase</innerclass>
+    <innerclass refid="structeos_1_1OneOfValue" prot="public">eos::OneOfValue</innerclass>
+    <innerclass refid="classeos_1_1OneOf" prot="public">eos::OneOf</innerclass>
+    <innerclass refid="structeos_1_1UnknownOptionError" prot="public">eos::UnknownOptionError</innerclass>
+    <innerclass refid="classeos_1_1Options" prot="public">eos::Options</innerclass>
+    <innerclass refid="structeos_1_1UnknownParameterError" prot="public">eos::UnknownParameterError</innerclass>
+    <innerclass refid="classeos_1_1Parameters" prot="public">eos::Parameters</innerclass>
+    <innerclass refid="classeos_1_1Parameter" prot="public">eos::Parameter</innerclass>
+    <innerclass refid="classeos_1_1ParameterUser" prot="public">eos::ParameterUser</innerclass>
+    <innerclass refid="classeos_1_1UsedParameter" prot="public">eos::UsedParameter</innerclass>
+    <innerclass refid="structeos_1_1ParameterDescription" prot="public">eos::ParameterDescription</innerclass>
+    <innerclass refid="structeos_1_1ParameterRange" prot="public">eos::ParameterRange</innerclass>
+    <innerclass refid="classeos_1_1PopulationMonteCarloSampler" prot="public">eos::PopulationMonteCarloSampler</innerclass>
+    <innerclass refid="classeos_1_1PriorSampler" prot="public">eos::PriorSampler</innerclass>
+    <innerclass refid="classeos_1_1PrivateImplementationPattern" prot="public">eos::PrivateImplementationPattern</innerclass>
+    <innerclass refid="classeos_1_1QCD" prot="public">eos::QCD</innerclass>
+    <innerclass refid="classeos_1_1RandomNumberGenerator" prot="public">eos::RandomNumberGenerator</innerclass>
+    <innerclass refid="structeos_1_1RValue" prot="public">eos::RValue</innerclass>
+    <innerclass refid="classeos_1_1Save" prot="public">eos::Save</innerclass>
+    <innerclass refid="classeos_1_1SMComponent_3_01components_1_1CKM_01_4" prot="public">eos::SMComponent&lt; components::CKM &gt;</innerclass>
+    <innerclass refid="classeos_1_1SMComponent_3_01components_1_1QCD_01_4" prot="public">eos::SMComponent&lt; components::QCD &gt;</innerclass>
+    <innerclass refid="classeos_1_1SMComponent_3_01components_1_1DeltaB1_01_4" prot="public">eos::SMComponent&lt; components::DeltaB1 &gt;</innerclass>
+    <innerclass refid="classeos_1_1StandardModel" prot="public">eos::StandardModel</innerclass>
+    <innerclass refid="classeos_1_1Thread" prot="public">eos::Thread</innerclass>
+    <innerclass refid="classeos_1_1ThreadPool" prot="public">eos::ThreadPool</innerclass>
+    <innerclass refid="classeos_1_1Ticket" prot="public">eos::Ticket</innerclass>
+    <innerclass refid="classeos_1_1TicketList" prot="public">eos::TicketList</innerclass>
+    <innerclass refid="structeos_1_1TopLoops" prot="public">eos::TopLoops</innerclass>
+    <innerclass refid="classeos_1_1VerifiedRangeError" prot="public">eos::VerifiedRangeError</innerclass>
+    <innerclass refid="structeos_1_1VerifiedRangeOverflow" prot="public">eos::VerifiedRangeOverflow</innerclass>
+    <innerclass refid="structeos_1_1VerifiedRangeUnderflow" prot="public">eos::VerifiedRangeUnderflow</innerclass>
+    <innerclass refid="classeos_1_1VerifiedRange" prot="public">eos::VerifiedRange</innerclass>
+    <innerclass refid="structeos_1_1Welford" prot="public">eos::Welford</innerclass>
+    <innerclass refid="classeos_1_1WilsonPolynomialCloner" prot="public">eos::WilsonPolynomialCloner</innerclass>
+    <innerclass refid="classeos_1_1WilsonPolynomialPrinter" prot="public">eos::WilsonPolynomialPrinter</innerclass>
+    <innerclass refid="classeos_1_1WilsonPolynomialEvaluator" prot="public">eos::WilsonPolynomialEvaluator</innerclass>
+    <innerclass refid="structeos_1_1BToS" prot="public">eos::BToS</innerclass>
+    <innerclass refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4" prot="public">eos::WilsonCoefficients&lt; BToS &gt;</innerclass>
+    <innerclass refid="classeos_1_1WilsonScanComponent" prot="public">eos::WilsonScanComponent</innerclass>
+    <innerclass refid="classeos_1_1WilsonScanModel" prot="public">eos::WilsonScanModel</innerclass>
+    <innerclass refid="classeos_1_1WrappedForwardIterator" prot="public">eos::WrappedForwardIterator</innerclass>
+    <innernamespace refid="namespaceeos_1_1btovll">eos::btovll</innernamespace>
+    <innernamespace refid="namespaceeos_1_1components">eos::components</innernamespace>
+    <innernamespace refid="namespaceeos_1_1deriv">eos::deriv</innernamespace>
+    <innernamespace refid="namespaceeos_1_1hdf5">eos::hdf5</innernamespace>
+    <innernamespace refid="namespaceeos_1_1impl">eos::impl</innernamespace>
+    <innernamespace refid="namespaceeos_1_1implementation">eos::implementation</innernamespace>
+    <innernamespace refid="namespaceeos_1_1InstantiationPolicy">eos::InstantiationPolicy</innernamespace>
+    <innernamespace refid="namespaceeos_1_1proposal__functions">eos::proposal_functions</innernamespace>
+      <sectiondef kind="user-defined">
+      <description><para><anchor id="_1amgrpd41d8cd98f00b204e9800998ecf8427e"/> </para></description>
+      <memberdef kind="function" id="namespaceeos_1aa97e022b32760a5d657bc35b9151efb8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::size_t</type>
+            <declname>k</declname>
+            <defname>k</defname>
+          </param>
+        </templateparamlist>
+        <type>std::array&lt; double, k &gt;</type>
+        <definition>std::array&lt; double, k &gt; eos::integrate</definition>
+        <argsstring>(const std::function&lt; std::array&lt; double, k &gt;(const double &amp;)&gt; &amp;f, unsigned n, const double &amp;a, const double &amp;b)</argsstring>
+        <name>integrate</name>
+        <param>
+          <type>const std::function&lt; std::array&lt; double, k &gt;(const double &amp;)&gt; &amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Numerically integrate functions of one real-valued parameter.</para><para>Uses the Delta^2-Rule by Aitkin to refine the result.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integrand. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of evaluations, must be a power of 2. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lower limit of the domain of integration. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Upper limit of the domain of integration. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/integrate-impl.hh" line="32"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1ae905f169a81a2dd54d1116bc201ad41a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::integrate</definition>
+        <argsstring>(const std::function&lt; double(const double &amp;)&gt; &amp;f, unsigned n, const double &amp;a, const double &amp;b)</argsstring>
+        <name>integrate</name>
+        <param>
+          <type>const std::function&lt; double(const double &amp;)&gt; &amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Numerically integrate functions of one real-valued parameter.</para><para>Uses the Delta^2-Rule by Aitkin to refine the result.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integrand. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of evaluations, must be a power of 2. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lower limit of the domain of integration. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Upper limit of the domain of integration. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/integrate.hh" line="41"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1ac60718e2ad5504caf40d52f07a86607d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::integrate</definition>
+        <argsstring>(const std::function&lt; complex&lt; double &gt;(const double &amp;)&gt; &amp;f, unsigned n, const double &amp;a, const double &amp;b)</argsstring>
+        <name>integrate</name>
+        <param>
+          <type>const std::function&lt; complex&lt; double &gt;(const double &amp;)&gt; &amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Numerically integrate functions of one real-valued parameter.</para><para>Uses the Delta^2-Rule by Aitkin to refine the result.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integrand. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of evaluations, must be a power of 2. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lower limit of the domain of integration. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Upper limit of the domain of integration. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/integrate.hh" line="42"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1a397c7661ab7dbc53ad04d52cd371c8aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; eos::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;lhs, const LogLevel &amp;rhs)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceeos_1ad6b42a08a08a1b63498f3f262bd15602" kindref="member">LogLevel</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(De)stringification of LogLevel </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log.hh" line="50"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1a28eec37f82312fce69a8c2b08b272ef9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::istream &amp;</type>
+        <definition>std::istream&amp; eos::operator&gt;&gt;</definition>
+        <argsstring>(std::istream &amp;lhs, LogLevel &amp;rhs)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceeos_1ad6b42a08a08a1b63498f3f262bd15602" kindref="member">LogLevel</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(De)stringification of LogLevel </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log.hh" line="51"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespaceeos_1a4b2f8b0a4184d635cfc47c4ee234aea5" prot="public" static="no">
+        <name>Helicity</name>
+        <enumvalue id="namespaceeos_1a4b2f8b0a4184d635cfc47c4ee234aea5a01df88b4e8525e89646a0bd5d0fdbd01" prot="public">
+          <name>left_handed</name>
+          <initializer> -1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceeos_1a4b2f8b0a4184d635cfc47c4ee234aea5ae7094996100231c5a5583bb323488b18" prot="public">
+          <name>right_handed</name>
+          <initializer> +1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/decays.hh" line="42" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/decays.hh" bodystart="41" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespaceeos_1ad6b42a08a08a1b63498f3f262bd15602" prot="public" static="no">
+        <name>LogLevel</name>
+        <enumvalue id="namespaceeos_1ad6b42a08a08a1b63498f3f262bd15602a9ba67f079c0a9154e568f0d207c5931b" prot="public">
+          <name>ll_silent</name>
+          <briefdescription>
+<para>do not print any error message </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceeos_1ad6b42a08a08a1b63498f3f262bd15602ab160ece1c3e71b2fdf17ffd3b74b1d8f" prot="public">
+          <name>ll_error</name>
+          <briefdescription>
+<para>only print error messages </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceeos_1ad6b42a08a08a1b63498f3f262bd15602a5239af800d9d8cb9b83e52ee6b768941" prot="public">
+          <name>ll_warning</name>
+          <briefdescription>
+<para>also print warning messages </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceeos_1ad6b42a08a08a1b63498f3f262bd15602a550a3ef110e24df3eb71bc7fcefe53f3" prot="public">
+          <name>ll_informational</name>
+          <briefdescription>
+<para>also print informational messages </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceeos_1ad6b42a08a08a1b63498f3f262bd15602ab4e8e8cf581d697726f51bc8afcb0499" prot="public">
+          <name>ll_debug</name>
+          <briefdescription>
+<para>also print debug messages </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceeos_1ad6b42a08a08a1b63498f3f262bd15602a8fb5a1db33a7ac4dbe90a00ff09529de" prot="public">
+          <name>ll_last</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Categories for the severity of log messages </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log.hh" line="37" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/log.hh" bodystart="36" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classeos_1_1Observable" kindref="compound">Observable</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt; Observable &gt; eos::ObservablePtr</definition>
+        <argsstring></argsstring>
+        <name>ObservablePtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/observable.hh" line="37" bodyfile="/home/alexshires/EOS/eos-next/eos/observable.hh" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceeos_1afc57020492535ccdd85cfc3b7421340d" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classeos_1_1Analysis" kindref="compound">Analysis</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt;Analysis&gt; eos::AnalysisPtr</definition>
+        <argsstring></argsstring>
+        <name>AnalysisPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis-fwd.hh" line="30" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/analysis-fwd.hh" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceeos_1ab823a6782e060c440e05a614158ad1bf" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classeos_1_1LogLikelihoodBlock" kindref="compound">LogLikelihoodBlock</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt;LogLikelihoodBlock&gt; eos::LogLikelihoodBlockPtr</definition>
+        <argsstring></argsstring>
+        <name>LogLikelihoodBlockPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log_likelihood-fwd.hh" line="32" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/log_likelihood-fwd.hh" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceeos_1ac5481e3b46ee55ff24606ee7f6e78651" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classeos_1_1LogPrior" kindref="compound">LogPrior</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt;LogPrior&gt; eos::LogPriorPtr</definition>
+        <argsstring></argsstring>
+        <name>LogPriorPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log_prior-fwd.hh" line="30" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/log_prior-fwd.hh" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceeos_1ac9f30fde04446cfabdd69d4b5b5d3c5a" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="structeos_1_1MarkovChain_1_1History" kindref="compound">MarkovChain::History</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt;MarkovChain::History&gt; eos::HistoryPtr</definition>
+        <argsstring></argsstring>
+        <name>HistoryPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" line="282" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceeos_1ae97f9891c67c90959a03fc96efaa4dc9" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="structeos_1_1MarkovChain_1_1ProposalFunction" kindref="compound">MarkovChain::ProposalFunction</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt;MarkovChain::ProposalFunction&gt; eos::ProposalFunctionPtr</definition>
+        <argsstring></argsstring>
+        <name>ProposalFunctionPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" line="329" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceeos_1a0ab446e6a801d96a1ee83bb7c070686f" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classeos_1_1Mutable" kindref="compound">Mutable</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt;Mutable&gt; eos::MutablePtr</definition>
+        <argsstring></argsstring>
+        <name>MutablePtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/mutable.hh" line="30" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/mutable.hh" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceeos_1ad0c57fa62d09f6465421603cb5285284" prot="public" static="no">
+        <type><ref refid="classeos_1_1OneOf" kindref="compound">OneOf</ref>&lt; Constant, Sum, Product, Sine, Cosine, <ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref> &gt;</type>
+        <definition>typedef OneOf&lt;Constant, Sum, Product, Sine, Cosine, Parameter&gt; eos::WilsonPolynomial</definition>
+        <argsstring></argsstring>
+        <name>WilsonPolynomial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson-polynomial.hh" line="41" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson-polynomial.hh" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceeos_1ae42e0cf8b4c1c3548fc27a5add336258" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1Analysis" kindref="compound">Analysis</ref></type>
+        <definition>Analysis eos::make_analysis</definition>
+        <argsstring>(bool flat)</argsstring>
+        <name>make_analysis</name>
+        <param>
+          <type>bool</type>
+          <declname>flat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis_TEST.hh" line="134" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/analysis_TEST.hh" bodystart="133" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1a6d6ca72f35614029a62c270ec042d80c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Result_</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>FunctionArgs_</declname>
+            <defname>FunctionArgs_</defname>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>TupleElements_</declname>
+            <defname>TupleElements_</defname>
+          </param>
+        </templateparamlist>
+        <type>Result_</type>
+        <definition>Result_ eos::apply</definition>
+        <argsstring>(Result_(*f)(FunctionArgs_...), const std::tuple&lt; TupleElements_...&gt; &amp;t)</argsstring>
+        <name>apply</name>
+        <param>
+          <type>Result_(*)(FunctionArgs_...)</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>const std::tuple&lt; TupleElements_...&gt; &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/apply.hh" line="61" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/apply.hh" bodystart="60" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1a56ba31c6e8b9cd9a310e2df15220d202" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Result_</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>FunctionArgs_</declname>
+            <defname>FunctionArgs_</defname>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>TupleElements_</declname>
+            <defname>TupleElements_</defname>
+          </param>
+        </templateparamlist>
+        <type>Result_</type>
+        <definition>Result_ eos::apply</definition>
+        <argsstring>(const std::function&lt; Result_(FunctionArgs_...)&gt; &amp;f, const std::tuple&lt; TupleElements_...&gt; &amp;t)</argsstring>
+        <name>apply</name>
+        <param>
+          <type>const std::function&lt; Result_(FunctionArgs_...)&gt; &amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>const std::tuple&lt; TupleElements_...&gt; &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/apply.hh" line="70" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/apply.hh" bodystart="69" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1a05333558aad48dbab3da261c54e3282d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Result_</type>
+          </param>
+          <param>
+            <type>typename Class_</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>FunctionArgs_</declname>
+            <defname>FunctionArgs_</defname>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>TupleElements_</declname>
+            <defname>TupleElements_</defname>
+          </param>
+        </templateparamlist>
+        <type>Result_</type>
+        <definition>Result_ eos::apply</definition>
+        <argsstring>(Result_(Class_::*f)(FunctionArgs_...), const std::tuple&lt; Class_ *, TupleElements_...&gt; &amp;t)</argsstring>
+        <name>apply</name>
+        <param>
+          <type>Result_(Class_::*)(FunctionArgs_...)</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>const std::tuple&lt; Class_ *, TupleElements_...&gt; &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/apply.hh" line="79" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/apply.hh" bodystart="78" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1a70620ec1b39b5dbcd70937b6065665a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Decay_</type>
+          </param>
+          <param>
+            <type>typename Tuple_</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args_</declname>
+            <defname>Args_</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classeos_1_1ObservableFactory" kindref="compound">ObservableFactory</ref> *</type>
+        <definition>ObservableFactory* eos::make_concrete_observable_factory</definition>
+        <argsstring>(const std::string &amp;name, double(Decay_::*function)(const Args_ &amp;...) const, const Tuple_ &amp;kinematics_names=std::make_tuple())</argsstring>
+        <name>make_concrete_observable_factory</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>double(Decay_::*)(const Args_ &amp;...) const </type>
+          <declname>function</declname>
+        </param>
+        <param>
+          <type>const Tuple_ &amp;</type>
+          <declname>kinematics_names</declname>
+          <defval>std::make_tuple()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh" line="177" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh" bodystart="175" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1af951dd2b07bb6381c7529bc0558a629a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>unsigned</type>
+            <declname>order_</declname>
+            <defname>order_</defname>
+          </param>
+          <param>
+            <type>typename Method_</type>
+          </param>
+        </templateparamlist>
+        <type>double</type>
+        <definition>double eos::derivative</definition>
+        <argsstring>(const std::function&lt; double(const double &amp;)&gt; &amp;f, const double &amp;x0)</argsstring>
+        <name>derivative</name>
+        <param>
+          <type>const std::function&lt; double(const double &amp;)&gt; &amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>x0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/derivative.hh" line="33"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1ab2af1ce0d7308e92a859714806a6d4f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>double</type>
+        <definition>double eos::derivative&lt; 1u, deriv::TwoSided &gt;</definition>
+        <argsstring>(const std::function&lt; double(const double &amp;)&gt; &amp;f, const double &amp;x0)</argsstring>
+        <name>derivative&lt; 1u, deriv::TwoSided &gt;</name>
+        <param>
+          <type>const std::function&lt; double(const double &amp;)&gt; &amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>x0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/derivative.hh" line="41"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1ab2d67e5e2a1c2f809d76dcfc4ec7f99a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>double</type>
+        <definition>double eos::derivative&lt; 2u, deriv::TwoSided &gt;</definition>
+        <argsstring>(const std::function&lt; double(const double &amp;)&gt; &amp;f, const double &amp;x0)</argsstring>
+        <name>derivative&lt; 2u, deriv::TwoSided &gt;</name>
+        <param>
+          <type>const std::function&lt; double(const double &amp;)&gt; &amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>x0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/derivative.hh" line="43"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1ad3134beb65a048a00ed3607d0af90202" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T_</type>
+          </param>
+        </templateparamlist>
+        <type>T_</type>
+        <definition>T_ eos::destringify</definition>
+        <argsstring>(const std::string &amp;input)</argsstring>
+        <name>destringify</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/destringify.hh" line="68" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/destringify.hh" bodystart="67" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1a2d7ef50009f9368c73d5056eab3ec21d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; eos::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;lhs, const HierarchicalClustering::Component &amp;rhs)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1HierarchicalClustering_1_1Component" kindref="compound">HierarchicalClustering::Component</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hierarchical-clustering.hh" line="111"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1a163f4d3cb33f72cf2ffc42f8cee7db0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Histogram&lt; 1 &gt;</type>
+        <definition>Histogram&lt;1&gt; eos::estimate_cumulative_distribution</definition>
+        <argsstring>(const Histogram&lt; 1 &gt; &amp;distribution)</argsstring>
+        <name>estimate_cumulative_distribution</name>
+        <param>
+          <type>const Histogram&lt; 1 &gt; &amp;</type>
+          <declname>distribution</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute the estimated cumulative distribution function for a given 1D distribution.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>distribution</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The histogram of a distribution function. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/histogram.hh" line="131"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1a2e8644357d2012ca279f49ab0037b9ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::lambda</definition>
+        <argsstring>(const double &amp;a, const double &amp;b, const double &amp;c)</argsstring>
+        <name>lambda</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/kinematic.hh" line="166" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/kinematic.hh" bodystart="165" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1a71b35e367b59b8fe16e6111d0851445f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; eos::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;lhs, const MarkovChain::State &amp;rhs)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">MarkovChain::State</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" line="362"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1a7642c201b3971d5a2d8e71b6d25cd339" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; eos::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;, const MarkovChainSampler::Config &amp;config)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1MarkovChainSampler_1_1Config" kindref="compound">MarkovChainSampler::Config</ref> &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain_sampler.hh" line="267"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1a0e3f5e761fbf126d8fcda142fed73318" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T_</type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>m_</declname>
+            <defname>m_</defname>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>n_</declname>
+            <defname>n_</defname>
+          </param>
+        </templateparamlist>
+        <type>std::array&lt; std::array&lt; T_, n_ &gt;, m_ &gt;</type>
+        <definition>std::array&lt;std::array&lt;T_, n_&gt;, m_&gt; eos::operator+</definition>
+        <argsstring>(const std::array&lt; std::array&lt; T_, n_ &gt;, m_ &gt; &amp;x, const std::array&lt; std::array&lt; T_, n_ &gt;, m_ &gt; &amp;y)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const std::array&lt; std::array&lt; T_, n_ &gt;, m_ &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const std::array&lt; std::array&lt; T_, n_ &gt;, m_ &gt; &amp;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/matrix.hh" line="34" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/matrix.hh" bodystart="32" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1acbf11d2b07d36a4c4a3abb8d58bceea3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T_</type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>m_</declname>
+            <defname>m_</defname>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>n_</declname>
+            <defname>n_</defname>
+          </param>
+        </templateparamlist>
+        <type>std::array&lt; std::array&lt; T_, n_ &gt;, m_ &gt;</type>
+        <definition>std::array&lt;std::array&lt;T_, n_&gt;, m_&gt; eos::operator-</definition>
+        <argsstring>(const std::array&lt; std::array&lt; T_, n_ &gt;, m_ &gt; &amp;x, const std::array&lt; std::array&lt; T_, n_ &gt;, m_ &gt; &amp;y)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const std::array&lt; std::array&lt; T_, n_ &gt;, m_ &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const std::array&lt; std::array&lt; T_, n_ &gt;, m_ &gt; &amp;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/matrix.hh" line="51" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/matrix.hh" bodystart="49" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1a77b0b1d58e1ff492fd660967a4dd6afa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T_</type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>m_</declname>
+            <defname>m_</defname>
+          </param>
+        </templateparamlist>
+        <type>std::array&lt; T_, m_ &gt;</type>
+        <definition>std::array&lt;T_, m_&gt; eos::operator+</definition>
+        <argsstring>(const std::array&lt; T_, m_ &gt; &amp;x, const std::array&lt; T_, m_ &gt; &amp;y)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const std::array&lt; T_, m_ &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const std::array&lt; T_, m_ &gt; &amp;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/matrix.hh" line="68" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/matrix.hh" bodystart="66" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1aa8fefb77f2ab33ac602411123a62b956" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T_</type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>m_</declname>
+            <defname>m_</defname>
+          </param>
+        </templateparamlist>
+        <type>std::array&lt; T_, m_ &gt;</type>
+        <definition>std::array&lt;T_, m_&gt; eos::operator-</definition>
+        <argsstring>(const std::array&lt; T_, m_ &gt; &amp;x, const std::array&lt; T_, m_ &gt; &amp;y)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const std::array&lt; T_, m_ &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const std::array&lt; T_, m_ &gt; &amp;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/matrix.hh" line="82" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/matrix.hh" bodystart="80" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1a6025a42d446265afd81f6c749999a391" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T_</type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>m_</declname>
+            <defname>m_</defname>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>n_</declname>
+            <defname>n_</defname>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>o_</declname>
+            <defname>o_</defname>
+          </param>
+        </templateparamlist>
+        <type>std::array&lt; std::array&lt; T_, n_ &gt;, m_ &gt;</type>
+        <definition>std::array&lt;std::array&lt;T_, n_&gt;, m_&gt; eos::operator*</definition>
+        <argsstring>(const std::array&lt; std::array&lt; T_, o_ &gt;, m_ &gt; &amp;x, const std::array&lt; std::array&lt; T_, n_ &gt;, o_ &gt; &amp;y)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const std::array&lt; std::array&lt; T_, o_ &gt;, m_ &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const std::array&lt; std::array&lt; T_, n_ &gt;, o_ &gt; &amp;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/matrix.hh" line="98" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/matrix.hh" bodystart="96" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1adf0061c40e232b18c6cb38c998b4cde1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T_</type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>m_</declname>
+            <defname>m_</defname>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>n_</declname>
+            <defname>n_</defname>
+          </param>
+        </templateparamlist>
+        <type>std::array&lt; T_, m_ &gt;</type>
+        <definition>std::array&lt;T_, m_&gt; eos::operator*</definition>
+        <argsstring>(const std::array&lt; std::array&lt; T_, n_ &gt;, m_ &gt; &amp;x, const std::array&lt; T_, n_ &gt; &amp;y)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const std::array&lt; std::array&lt; T_, n_ &gt;, m_ &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const std::array&lt; T_, n_ &gt; &amp;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/matrix.hh" line="119" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/matrix.hh" bodystart="118" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1a6d8071776e060cb58300bc883d5510b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T_</type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>m_</declname>
+            <defname>m_</defname>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>n_</declname>
+            <defname>n_</defname>
+          </param>
+        </templateparamlist>
+        <type>std::array&lt; T_, n_ &gt;</type>
+        <definition>std::array&lt;T_, n_&gt; eos::operator^</definition>
+        <argsstring>(const std::array&lt; T_, m_ &gt; &amp;x, const std::array&lt; std::array&lt; T_, n_ &gt;, m_ &gt; &amp;y)</argsstring>
+        <name>operator^</name>
+        <param>
+          <type>const std::array&lt; T_, m_ &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const std::array&lt; std::array&lt; T_, n_ &gt;, m_ &gt; &amp;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/matrix.hh" line="137" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/matrix.hh" bodystart="136" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1ab6da54e708e1d703fd399d7e7a0912f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T_</type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>m_</declname>
+            <defname>m_</defname>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>n_</declname>
+            <defname>n_</defname>
+          </param>
+        </templateparamlist>
+        <type>std::array&lt; std::array&lt; T_, n_ &gt;, m_ &gt;</type>
+        <definition>std::array&lt;std::array&lt;T_, n_&gt;, m_&gt; eos::operator*</definition>
+        <argsstring>(const T_ &amp;x, const std::array&lt; std::array&lt; T_, n_ &gt;, m_ &gt; &amp;y)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const T_ &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const std::array&lt; std::array&lt; T_, n_ &gt;, m_ &gt; &amp;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/matrix.hh" line="154" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/matrix.hh" bodystart="153" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1a6192a8a135c1f4ea6163e1d7f59275a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T_</type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>n_</declname>
+            <defname>n_</defname>
+          </param>
+        </templateparamlist>
+        <type>std::array&lt; T_, n_ &gt;</type>
+        <definition>std::array&lt;T_, n_&gt; eos::operator*</definition>
+        <argsstring>(const T_ &amp;x, const std::array&lt; T_, n_ &gt; &amp;y)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const T_ &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const std::array&lt; T_, n_ &gt; &amp;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/matrix.hh" line="170" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/matrix.hh" bodystart="169" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1ac3181f83f30b4811151158ffc68a5396" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T_</type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>n_</declname>
+            <defname>n_</defname>
+          </param>
+        </templateparamlist>
+        <type>T_</type>
+        <definition>T_ eos::dot</definition>
+        <argsstring>(const std::array&lt; T_, n_ &gt; &amp;x, const std::array&lt; T_, n_ &gt; &amp;y)</argsstring>
+        <name>dot</name>
+        <param>
+          <type>const std::array&lt; T_, n_ &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const std::array&lt; T_, n_ &gt; &amp;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/matrix.hh" line="183" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/matrix.hh" bodystart="182" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1ae34de7634e8e232a4a7761b998e1535f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T_</type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>n_</declname>
+            <defname>n_</defname>
+          </param>
+        </templateparamlist>
+        <type>std::array&lt; T_, n_ &gt;</type>
+        <definition>std::array&lt;T_, n_&gt; eos::mult</definition>
+        <argsstring>(const std::array&lt; T_, n_ &gt; &amp;x, const std::array&lt; T_, n_ &gt; &amp;y)</argsstring>
+        <name>mult</name>
+        <param>
+          <type>const std::array&lt; T_, n_ &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const std::array&lt; T_, n_ &gt; &amp;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/matrix.hh" line="196" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/matrix.hh" bodystart="195" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1a8031207b4e14e35ca72988b76bfaacf1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T_</type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>n_</declname>
+            <defname>n_</defname>
+          </param>
+        </templateparamlist>
+        <type>std::array&lt; T_, n_ &gt;</type>
+        <definition>std::array&lt;T_, n_&gt; eos::divide</definition>
+        <argsstring>(const std::array&lt; T_, n_ &gt; &amp;x, const std::array&lt; T_, n_ &gt; &amp;y)</argsstring>
+        <name>divide</name>
+        <param>
+          <type>const std::array&lt; T_, n_ &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const std::array&lt; T_, n_ &gt; &amp;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/matrix.hh" line="209" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/matrix.hh" bodystart="208" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1a145cd9427e62a28f1144614e2b9a3d7d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename FunctionType_</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Params</declname>
+            <defname>Params</defname>
+          </param>
+        </templateparamlist>
+        <type>implementation::ResultOf&lt; FunctionType_ &gt;::Type</type>
+        <definition>implementation::ResultOf&lt;FunctionType_&gt;::Type eos::memoise</definition>
+        <argsstring>(FunctionType_ f, const Params &amp;...p)</argsstring>
+        <name>memoise</name>
+        <param>
+          <type>FunctionType_</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>const Params &amp;...</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/memoise.hh" line="181" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/memoise.hh" bodystart="180" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1a82ca3bc4794ddeca0b97d4a66fa5a679" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename FunctionType_</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Params</declname>
+            <defname>Params</defname>
+          </param>
+        </templateparamlist>
+        <type>unsigned</type>
+        <definition>unsigned eos::number_of_memoisations</definition>
+        <argsstring>(FunctionType_, const Params &amp;...)</argsstring>
+        <name>number_of_memoisations</name>
+        <param>
+          <type>FunctionType_</type>
+        </param>
+        <param>
+          <type>const Params &amp;</type>
+          <declname>...</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/memoise.hh" line="187" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/memoise.hh" bodystart="186" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1a41f7ab5320df3415314366aef9a258bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1Options" kindref="compound">Options</ref></type>
+        <definition>Options eos::operator+</definition>
+        <argsstring>(const Options &amp;lhs, const Options &amp;rhs)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Options" kindref="compound">Options</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1Options" kindref="compound">Options</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Merge operator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/options.hh" line="90"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1a7fb80dc36d6e29adfbde318a197ea591" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::dilog</definition>
+        <argsstring>(const complex&lt; double &gt; &amp;z) __attribute__((pure))</argsstring>
+        <name>dilog</name>
+        <param>
+          <type>const complex&lt; double &gt; &amp;</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/polylog.hh" line="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1a38a0279ef72ff9c1bdb17dd7956a199a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::trilog</definition>
+        <argsstring>(const complex&lt; double &gt; &amp;z) __attribute__((pure))</argsstring>
+        <name>trilog</name>
+        <param>
+          <type>const complex&lt; double &gt; &amp;</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/polylog.hh" line="12"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1ae82806395b35652601c81a77cdf89fae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; eos::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;, const PopulationMonteCarloSampler::Config &amp;)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config" kindref="compound">PopulationMonteCarloSampler::Config</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="401"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1a89d53e5e358a7428b14c811668193e3f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>unsigned</type>
+            <declname>n_</declname>
+            <defname>n_</defname>
+          </param>
+          <param>
+            <type>typename T_</type>
+          </param>
+        </templateparamlist>
+        <type>T_</type>
+        <definition>T_ eos::power_of</definition>
+        <argsstring>(const T_ &amp;x)</argsstring>
+        <name>power_of</name>
+        <param>
+          <type>const T_ &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/power_of.hh" line="51" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/power_of.hh" bodystart="50" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1a4d4fd832aebc28739c76d8cbd3dda6df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T_</type>
+          </param>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string eos::stringify</definition>
+        <argsstring>(const T_ &amp;x, const unsigned &amp;precision=10)</argsstring>
+        <name>stringify</name>
+        <param>
+          <type>const T_ &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>precision</declname>
+          <defval>10</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stringify an arbritrary (scalar) data type.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object that shall be stringified. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>precision</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(Optional) floating point precision for the stringification. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/stringify.hh" line="61" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/stringify.hh" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1ab40b1d4ac1085fb65c4ca86d05079c5c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Iterator_</type>
+          </param>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string eos::stringify</definition>
+        <argsstring>(const Iterator_ &amp;begin, const Iterator_ &amp;end, const unsigned &amp;precision=10)</argsstring>
+        <name>stringify</name>
+        <param>
+          <type>const Iterator_ &amp;</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>const Iterator_ &amp;</type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>precision</declname>
+          <defval>10</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stringify a range of iterators.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>begin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Iterator pointing to the first element of the range. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Iterator pointing beyond the last element of the range. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>precision</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(Optional) floating point precision for the stringification. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/stringify.hh" line="74" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/stringify.hh" bodystart="73" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1a03d43be369d3c0247d25fedbb6eeb8e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T_</type>
+          </param>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string eos::stringify</definition>
+        <argsstring>(const T_ *m, const unsigned &amp;dim, const unsigned &amp;precision=10)</argsstring>
+        <name>stringify</name>
+        <param>
+          <type>const T_ *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>dim</declname>
+        </param>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>precision</declname>
+          <defval>10</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stringify a C-style square matrix</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the first matrix element. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dimension of the matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>precision</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(Optional) floating point precision for the stringification. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/stringify.hh" line="98" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/stringify.hh" bodystart="97" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1ae90d5cf81cb527f4088dd11daf1e456d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Container_</type>
+          </param>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string eos::stringify_container</definition>
+        <argsstring>(const Container_ &amp;container, unsigned precision=10)</argsstring>
+        <name>stringify_container</name>
+        <param>
+          <type>const Container_ &amp;</type>
+          <declname>container</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>precision</declname>
+          <defval>10</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/stringify.hh" line="127" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/stringify.hh" bodystart="126" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1ae661f13ba6f529e7a5c19865f6528da6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1OneOf" kindref="compound">WilsonPolynomial</ref></type>
+        <definition>WilsonPolynomial eos::make_polynomial</definition>
+        <argsstring>(const ObservablePtr &amp;, const std::list&lt; std::string &gt; &amp;)</argsstring>
+        <name>make_polynomial</name>
+        <param>
+          <type>const <ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref> &amp;</type>
+        </param>
+        <param>
+          <type>const std::list&lt; std::string &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson-polynomial.hh" line="43"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1a702bfbd9d3f9e42e94628616b8760853" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref></type>
+        <definition>ObservablePtr eos::make_polynomial_observable</definition>
+        <argsstring>(const WilsonPolynomial &amp;polynomial, const Parameters &amp;parameters)</argsstring>
+        <name>make_polynomial_observable</name>
+        <param>
+          <type>const <ref refid="classeos_1_1OneOf" kindref="compound">WilsonPolynomial</ref> &amp;</type>
+          <declname>polynomial</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return an <ref refid="classeos_1_1Observable" kindref="compound">Observable</ref> that wraps a WilsonPolynomial object.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>polynomial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The polynomial that shall be wrapped. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> object of the polynomial. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson-polynomial.hh" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1aeb8e7723a15217742675f8f16ebbc4f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref></type>
+        <definition>ObservablePtr eos::make_polynomial_ratio</definition>
+        <argsstring>(const WilsonPolynomial &amp;numerator, const WilsonPolynomial &amp;denominator, const Parameters &amp;parameters)</argsstring>
+        <name>make_polynomial_ratio</name>
+        <param>
+          <type>const <ref refid="classeos_1_1OneOf" kindref="compound">WilsonPolynomial</ref> &amp;</type>
+          <declname>numerator</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1OneOf" kindref="compound">WilsonPolynomial</ref> &amp;</type>
+          <declname>denominator</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return an <ref refid="classeos_1_1Observable" kindref="compound">Observable</ref> that is a ratio of two WilsonPolynomial objects.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numerator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The numerator of the ratio. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>denominator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The denominator of the ratio. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The common <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> object of both numerator and denominator. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson-polynomial.hh" line="62"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1a25bb05f44e3b5f6b6c5197277e22776b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref></type>
+        <definition>ObservablePtr eos::make_polynomial_ht_like_ratio</definition>
+        <argsstring>(const WilsonPolynomial &amp;numerator, const WilsonPolynomial &amp;denominator, const WilsonPolynomial &amp;denominator2, const Parameters &amp;parameters)</argsstring>
+        <name>make_polynomial_ht_like_ratio</name>
+        <param>
+          <type>const <ref refid="classeos_1_1OneOf" kindref="compound">WilsonPolynomial</ref> &amp;</type>
+          <declname>numerator</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1OneOf" kindref="compound">WilsonPolynomial</ref> &amp;</type>
+          <declname>denominator</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1OneOf" kindref="compound">WilsonPolynomial</ref> &amp;</type>
+          <declname>denominator2</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return an <ref refid="classeos_1_1Observable" kindref="compound">Observable</ref> that is a ratio similar to H_T^(i) of three WilsonPolynomial objects N,D1,D2: <formula id="8">\[N / \sqrt{D1 \cdot D2}\]</formula></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numerator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The numerator of the ratio. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>denominator1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first denominator component of the ratio. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>denominator2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first denominator component of the ratio. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The common <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> object of both numerator and denominator. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson-polynomial.hh" line="74"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1a07bd8aab4adc1e31cfbd795b36f592ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>WilsonCoefficients&lt; <ref refid="structeos_1_1BToS" kindref="compound">BToS</ref> &gt;</type>
+        <definition>WilsonCoefficients&lt;BToS&gt; eos::evolve</definition>
+        <argsstring>(const std::array&lt; complex&lt; double &gt;, 15 &gt; &amp;wc_qcd_0, const std::array&lt; complex&lt; double &gt;, 15 &gt; &amp;wc_qcd_1, const std::array&lt; complex&lt; double &gt;, 15 &gt; &amp;wc_qcd_2, const double &amp;alpha_s_0, const double &amp;alpha_s, const double &amp;nf, const QCD::BetaFunction &amp;beta)</argsstring>
+        <name>evolve</name>
+        <param>
+          <type>const std::array&lt; complex&lt; double &gt;, 15 &gt; &amp;</type>
+          <declname>wc_qcd_0</declname>
+        </param>
+        <param>
+          <type>const std::array&lt; complex&lt; double &gt;, 15 &gt; &amp;</type>
+          <declname>wc_qcd_1</declname>
+        </param>
+        <param>
+          <type>const std::array&lt; complex&lt; double &gt;, 15 &gt; &amp;</type>
+          <declname>wc_qcd_2</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>alpha_s_0</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>alpha_s</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>nf</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1QCD_1a1261bb4643fea3012beb0a9ea78b7dea" kindref="member">QCD::BetaFunction</ref> &amp;</type>
+          <declname>beta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Evolution of b -&gt; s Wilson coefficients</para><para>Calculation according to [BMU1999], Eq. (25). The helicity-flipped, scalar, pseudoscalar, and tensor <ref refid="namespaceeos_1_1components" kindref="compound">components</ref> are implicitly kept at zero.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>wc_qcd_0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The initial scale Wilson coefficients at O(alpha_s^0) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wc_qcd_1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The initial scale Wilson coefficients at O(alpha_s^1) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wc_qcd_2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The initial scale Wilson coefficients at O(alpha_s^2) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha_s_0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The strong coupling constant at the initial scale </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha_s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The strong coupling constant at the low scale </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of active flavors </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>beta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coefficients of the beta function of <ref refid="classeos_1_1QCD" kindref="compound">QCD</ref> for nf active flavors. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" line="105"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/b-decays/b-to-pi-l-nu.hh" line="28"/>
+  </compounddef>
+</doxygen>

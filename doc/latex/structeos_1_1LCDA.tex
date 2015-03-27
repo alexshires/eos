@@ -1,0 +1,34 @@
+\hypertarget{structeos_1_1LCDA}{
+\section{eos::LCDA Struct Reference}
+\label{structeos_1_1LCDA}\index{eos::LCDA@{eos::LCDA}}
+}
+
+
+{\ttfamily \#include $<$lcda.hh$>$}\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \hyperlink{structeos_1_1LCDA_a7ec9587e6a35f22b8b937494c0416307}{evolve\_\-gegenbauer\_\-moment} (const double \&a\_\-n\_\-0, const unsigned \&n, const double \&eta, const \hyperlink{classeos_1_1QCD_a1261bb4643fea3012beb0a9ea78b7dea}{QCD::BetaFunction} \&beta)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Groups all functions related to LightCone Distribution Amplitudes (LCDAs). 
+
+\subsection{Member Function Documentation}
+\hypertarget{structeos_1_1LCDA_a7ec9587e6a35f22b8b937494c0416307}{
+\index{eos::LCDA@{eos::LCDA}!evolve\_\-gegenbauer\_\-moment@{evolve\_\-gegenbauer\_\-moment}}
+\index{evolve\_\-gegenbauer\_\-moment@{evolve\_\-gegenbauer\_\-moment}!eos::LCDA@{eos::LCDA}}
+\subsubsection[{evolve\_\-gegenbauer\_\-moment}]{\setlength{\rightskip}{0pt plus 5cm}static double eos::LCDA::evolve\_\-gegenbauer\_\-moment (const double \& {\em a\_\-n\_\-0}, \/  const unsigned \& {\em n}, \/  const double \& {\em eta}, \/  const {\bf QCD::BetaFunction} \& {\em beta})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{structeos_1_1LCDA_a7ec9587e6a35f22b8b937494c0416307}
+Evolve the nth Gegenbauer moment a\_\-n\_\-0 from a scale mu\_\-0 to a scale mu according to the LL RGE.
+
+Calculation according to \mbox{[}BBL2006\mbox{]}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em a\_\-n\_\-0}]The Gegenbauer moment at the scale mu\_\-0. \item[{\em n}]The index of the Gegenbauer moment. \item[{\em eta}]The ratio alpha\_\-s(mu)/alpha\_\-s(mu\_\-0). \item[{\em beta}]The coefficients of the \hyperlink{classeos_1_1QCD}{QCD} beta function. \end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{lcda_8hh}{lcda.hh}\end{DoxyCompactItemize}

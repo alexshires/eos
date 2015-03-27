@@ -1,0 +1,288 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="wrapped__forward__iterator-impl_8hh" kind="file">
+    <compoundname>wrapped_forward_iterator-impl.hh</compoundname>
+    <includes refid="wrapped__forward__iterator_8hh" local="no">eos/utils/wrapped_forward_iterator.hh</includes>
+    <includedby refid="cluster_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/cluster.hh</includedby>
+    <includedby refid="hierarchical-clustering_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/hierarchical-clustering.hh</includedby>
+    <incdepgraph>
+      <node id="1892">
+        <label>functional</label>
+      </node>
+      <node id="1893">
+        <label>iterator</label>
+      </node>
+      <node id="1889">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator-impl.hh</label>
+        <link refid="wrapped_forward_iterator-impl.hh"/>
+        <childnode refid="1890" relation="include">
+        </childnode>
+      </node>
+      <node id="1891">
+        <label>eos/utils/wrapped_forward_iterator-fwd.hh</label>
+        <link refid="wrapped__forward__iterator-fwd_8hh"/>
+      </node>
+      <node id="1890">
+        <label>eos/utils/wrapped_forward_iterator.hh</label>
+        <link refid="wrapped__forward__iterator_8hh"/>
+        <childnode refid="1891" relation="include">
+        </childnode>
+        <childnode refid="1892" relation="include">
+        </childnode>
+        <childnode refid="1893" relation="include">
+        </childnode>
+        <childnode refid="1894" relation="include">
+        </childnode>
+      </node>
+      <node id="1894">
+        <label>type_traits</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1897">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh</label>
+        <link refid="proposal__functions_8hh"/>
+        <childnode refid="1898" relation="include">
+        </childnode>
+      </node>
+      <node id="1895">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator-impl.hh</label>
+        <link refid="wrapped_forward_iterator-impl.hh"/>
+        <childnode refid="1896" relation="include">
+        </childnode>
+        <childnode refid="1899" relation="include">
+        </childnode>
+      </node>
+      <node id="1896">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/cluster.hh</label>
+        <link refid="cluster_8hh"/>
+        <childnode refid="1897" relation="include">
+        </childnode>
+      </node>
+      <node id="1899">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/hierarchical-clustering.hh</label>
+        <link refid="hierarchical-clustering_8hh"/>
+      </node>
+      <node id="1898">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/markov_chain_sampler.hh</label>
+        <link refid="markov__chain__sampler_8hh"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structeos_1_1WrappedForwardIterator_1_1Base" prot="public">eos::WrappedForwardIterator::Base</innerclass>
+    <innerclass refid="structeos_1_1WrappedForwardIterator_1_1BaseImpl" prot="public">eos::WrappedForwardIterator::BaseImpl</innerclass>
+    <innernamespace refid="namespaceeos">eos</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wrapped__forward__iterator-impl_8hh_1af72bfca179e2f80dcfff5264bfeaa9fc" prot="public" static="no">
+        <name>EOS_GUARD_UTIL_WRAPPED_FORWARD_ITERATOR_IMPL_HH</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator-impl.hh" line="21" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator-impl.hh" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>vim:<sp/>set<sp/>sw=4<sp/>sts=4<sp/>et<sp/>foldmethod=syntax<sp/>:<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2007<sp/>Ciaran<sp/>McCreesh</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>EOS<sp/>project.<sp/>EOS<sp/>is<sp/>free<sp/>software;</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Public<sp/>License<sp/>version<sp/>2,<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>EOS<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/>but<sp/>WITHOUT<sp/>ANY</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>along<sp/>with</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/>59<sp/>Temple</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>Place,<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307<sp/><sp/>USA</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>EOS_GUARD_UTIL_WRAPPED_FORWARD_ITERATOR_IMPL_HH</highlight></codeline>
+<codeline lineno="21" refid="wrapped__forward__iterator-impl_8hh_1af72bfca179e2f80dcfff5264bfeaa9fc" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EOS_GUARD_UTIL_WRAPPED_FORWARD_ITERATOR_IMPL_HH<sp/>1</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="wrapped__forward__iterator_8hh" kindref="compound">eos/utils/wrapped_forward_iterator.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">eos</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Tag_,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Value_&gt;</highlight></codeline>
+<codeline lineno="28" refid="structeos_1_1WrappedForwardIterator_1_1Base" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator</ref>&lt;Tag_,<sp/>Value_&gt;::<ref refid="structeos_1_1WrappedForwardIterator_1_1Base" kindref="compound">Base</ref></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1WrappedForwardIterator_1_1Base" kindref="compound">Base</ref><sp/>*<sp/>clone()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>increment()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator&lt;Tag_, Value_&gt;::pointer</ref><sp/><ref refid="classeos_1_1WrappedForwardIterator_1addb7c63e8b8d4be0a65ded32a4cb7cb9" kindref="member">pointer</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator&lt;Tag_, Value_&gt;::reference</ref><sp/><ref refid="classeos_1_1WrappedForwardIterator_1ac7ba4ace12142ac73d97df5d555a4c18" kindref="member">reference</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>equal(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1WrappedForwardIterator_1_1Base" kindref="compound">Base</ref><sp/>*)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>underlying_iterator_ptr()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>underlying_iterator_ptr()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="structeos_1_1WrappedForwardIterator_1_1Base_1a4d6dc901016516de2f269abb38446c22" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="structeos_1_1WrappedForwardIterator_1_1Base" kindref="compound">Base</ref>()</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Tag_,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Value_&gt;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Iter_&gt;</highlight></codeline>
+<codeline lineno="45" refid="structeos_1_1WrappedForwardIterator_1_1BaseImpl" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator</ref>&lt;Tag_,<sp/>Value_&gt;::<ref refid="structeos_1_1WrappedForwardIterator_1_1BaseImpl" kindref="compound">BaseImpl</ref><sp/>:</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator</ref>&lt;Tag_,<sp/>Value_&gt;::<ref refid="structeos_1_1WrappedForwardIterator_1_1Base" kindref="compound">Base</ref></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="48" refid="structeos_1_1WrappedForwardIterator_1_1BaseImpl_1a1cb305ebb3b36e941fc5f74b78e4b8a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Iter_<sp/>i;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="structeos_1_1WrappedForwardIterator_1_1BaseImpl_1ace18b4460fe774ada155046312de5ad6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structeos_1_1WrappedForwardIterator_1_1BaseImpl" kindref="compound">BaseImpl</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Iter_<sp/>&amp;<sp/>ii)<sp/>:</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i(ii)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="structeos_1_1WrappedForwardIterator_1_1BaseImpl_1afe3d32be8e6bd2788db24f89e90ceef9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structeos_1_1WrappedForwardIterator_1_1Base" kindref="compound">Base</ref><sp/>*<sp/>clone()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="56"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1WrappedForwardIterator_1_1BaseImpl" kindref="compound">BaseImpl</ref>(i);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="structeos_1_1WrappedForwardIterator_1_1BaseImpl_1ac6565ae3236b5b128d671a1011f9c9ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>increment()</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++i;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="structeos_1_1WrappedForwardIterator_1_1BaseImpl_1a61c99fb9827d32e094355f8c152e65f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator&lt;Tag_, Value_&gt;::reference</ref><sp/><ref refid="classeos_1_1WrappedForwardIterator_1ac7ba4ace12142ac73d97df5d555a4c18" kindref="member">reference</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="66"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*i;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="structeos_1_1WrappedForwardIterator_1_1BaseImpl_1ad11775ce759f6aa3eff84e67b5e859fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator&lt;Tag_, Value_&gt;::pointer</ref><sp/><ref refid="classeos_1_1WrappedForwardIterator_1addb7c63e8b8d4be0a65ded32a4cb7cb9" kindref="member">pointer</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="71"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>i.operator-&gt;<sp/>();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="structeos_1_1WrappedForwardIterator_1_1BaseImpl_1a07f6ef7a9f4c21de044aca1d09aed9f7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>equal(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1WrappedForwardIterator_1_1Base" kindref="compound">Base</ref><sp/>*<sp/>other)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="76"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>i<sp/>==<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal"><ref refid="structeos_1_1WrappedForwardIterator_1_1BaseImpl" kindref="compound">BaseImpl</ref><sp/>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(other)-&gt;i;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="structeos_1_1WrappedForwardIterator_1_1BaseImpl_1aab9c324066b8488f0f84395de5b02dfc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>underlying_iterator_ptr()</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;i;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="structeos_1_1WrappedForwardIterator_1_1BaseImpl_1aae9d385a45b3ddddab20aec8e9f49fe8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>underlying_iterator_ptr()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="86"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;i;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Tag_,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Value_&gt;</highlight></codeline>
+<codeline lineno="92" refid="classeos_1_1WrappedForwardIterator_1a321ac3c98ae28956b7428b193e6f65ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classeos_1_1WrappedForwardIterator_1a321ac3c98ae28956b7428b193e6f65ba" kindref="member">WrappedForwardIterator&lt;Tag_, Value_&gt;::WrappedForwardIterator</ref>()<sp/>:</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_base(0)</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Tag_,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Value_&gt;</highlight></codeline>
+<codeline lineno="98" refid="classeos_1_1WrappedForwardIterator_1a4694e3a609d50263eff28cf49c6359c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classeos_1_1WrappedForwardIterator_1a4694e3a609d50263eff28cf49c6359c0" kindref="member">WrappedForwardIterator&lt;Tag_, Value_&gt;::~WrappedForwardIterator</ref>()</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>_base;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Tag_,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Value_&gt;</highlight></codeline>
+<codeline lineno="104" refid="classeos_1_1WrappedForwardIterator_1af824e052467ced345fdc2391bf251e34" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classeos_1_1WrappedForwardIterator_1a321ac3c98ae28956b7428b193e6f65ba" kindref="member">WrappedForwardIterator&lt;Tag_, Value_&gt;::WrappedForwardIterator</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator</ref><sp/>&amp;<sp/>other)<sp/>:</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_base(other._base<sp/>?<sp/>other._base-&gt;clone()<sp/>:<sp/>other._base)</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Tag_,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Value_&gt;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T_&gt;</highlight></codeline>
+<codeline lineno="111" refid="classeos_1_1WrappedForwardIterator_1a35ef424f724996a9cc6ac3d8513fefa5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classeos_1_1WrappedForwardIterator_1a321ac3c98ae28956b7428b193e6f65ba" kindref="member">WrappedForwardIterator&lt;Tag_, Value_&gt;::WrappedForwardIterator</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T_<sp/>&amp;<sp/>base)<sp/>:</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_base(new<sp/><ref refid="structeos_1_1WrappedForwardIterator_1_1BaseImpl" kindref="compound">BaseImpl</ref>&lt;T_&gt;(base))</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Tag_,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Value_&gt;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator&lt;Tag_, Value_&gt;</ref><sp/>&amp;</highlight></codeline>
+<codeline lineno="118" refid="classeos_1_1WrappedForwardIterator_1a73f420f7f9bcc8bf8ad1286f7d5f9601" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classeos_1_1WrappedForwardIterator_1a73f420f7f9bcc8bf8ad1286f7d5f9601" kindref="member">WrappedForwardIterator&lt;Tag_, Value_&gt;::operator= </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator&lt;Tag_, Value_&gt;</ref><sp/>&amp;<sp/>other)</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>!=<sp/>&amp;other)</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_base<sp/>=<sp/>other._base<sp/>?<sp/>other._base-&gt;<ref refid="structeos_1_1WrappedForwardIterator_1_1Base_1a146a4e18680684f22bb7ca73f662718d" kindref="member">clone</ref>()<sp/>:<sp/>other._base;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Tag_,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Value_&gt;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator&lt;Tag_, Value_&gt;</ref><sp/>&amp;</highlight></codeline>
+<codeline lineno="127" refid="classeos_1_1WrappedForwardIterator_1a553cd24e60c32710a09912f446213833" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classeos_1_1WrappedForwardIterator_1a553cd24e60c32710a09912f446213833" kindref="member">WrappedForwardIterator&lt;Tag_, Value_&gt;::operator++ </ref>()</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_base-&gt;<ref refid="structeos_1_1WrappedForwardIterator_1_1Base_1a7ab151df86128ddc4e98c64211829544" kindref="member">increment</ref>();</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Tag_,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Value_&gt;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator&lt;Tag_, Value_&gt;</ref></highlight></codeline>
+<codeline lineno="135" refid="classeos_1_1WrappedForwardIterator_1a34a30fd266a0f1c8610dd0b354c4dd21" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classeos_1_1WrappedForwardIterator_1a553cd24e60c32710a09912f446213833" kindref="member">WrappedForwardIterator&lt;Tag_, Value_&gt;::operator++ </ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator</ref><sp/>result(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_base-&gt;<ref refid="structeos_1_1WrappedForwardIterator_1_1Base_1a7ab151df86128ddc4e98c64211829544" kindref="member">increment</ref>();</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Tag_,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Value_&gt;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator&lt;Tag_, Value_&gt;::pointer</ref></highlight></codeline>
+<codeline lineno="144" refid="classeos_1_1WrappedForwardIterator_1af12c608415c6ee323ca93834486fc2b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classeos_1_1WrappedForwardIterator_1af12c608415c6ee323ca93834486fc2b7" kindref="member">WrappedForwardIterator&lt;Tag_, Value_&gt;::operator-&gt; </ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="145"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_base-&gt;<ref refid="structeos_1_1WrappedForwardIterator_1_1Base_1a3e63d544a83f5324f323f0d04c2203a3" kindref="member">pointer</ref>();</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Tag_,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Value_&gt;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator&lt;Tag_, Value_&gt;::reference</ref></highlight></codeline>
+<codeline lineno="151" refid="classeos_1_1WrappedForwardIterator_1ae02a50270f0a0fc3ccae98a41c2d144c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classeos_1_1WrappedForwardIterator_1ae02a50270f0a0fc3ccae98a41c2d144c" kindref="member">WrappedForwardIterator&lt;Tag_, Value_&gt;::operator* </ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="152"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_base-&gt;<ref refid="structeos_1_1WrappedForwardIterator_1_1Base_1a1cffbfbcead34d38a7390173496d70df" kindref="member">reference</ref>();</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Tag_,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Value_&gt;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="classeos_1_1WrappedForwardIterator_1a79398c29c6f5012a3c882db8cf61d091" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classeos_1_1WrappedForwardIterator_1a79398c29c6f5012a3c882db8cf61d091" kindref="member">WrappedForwardIterator&lt;Tag_, Value_&gt;::operator== </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator</ref><sp/>&amp;<sp/>other)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="159"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<sp/>_base)</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!<sp/>other._base;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_base-&gt;<ref refid="structeos_1_1WrappedForwardIterator_1_1Base_1a4ec070b72367be2f7f52babe05c1f9bc" kindref="member">equal</ref>(other._base);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Tag_,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Value_&gt;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168" refid="classeos_1_1WrappedForwardIterator_1a5fb87c43d4ca1c5a0ceffd97b4a4fc78" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classeos_1_1WrappedForwardIterator_1a5fb87c43d4ca1c5a0ceffd97b4a4fc78" kindref="member">WrappedForwardIterator&lt;Tag_, Value_&gt;::operator!= </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator</ref><sp/>&amp;<sp/>other)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="169"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<sp/>_base)</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0<sp/>!=<sp/>other._base;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!<sp/>_base-&gt;<ref refid="structeos_1_1WrappedForwardIterator_1_1Base_1a4ec070b72367be2f7f52babe05c1f9bc" kindref="member">equal</ref>(other._base);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Tag_,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Value_&gt;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Iter_&gt;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>Iter_<sp/>&amp;</highlight></codeline>
+<codeline lineno="179" refid="classeos_1_1WrappedForwardIterator_1a5dd5d4d179b339a647660a0e4289a67c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classeos_1_1WrappedForwardIterator_1a5dd5d4d179b339a647660a0e4289a67c" kindref="member">WrappedForwardIterator&lt;Tag_, Value_&gt;::underlying_iterator</ref>()</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">Iter_<sp/>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(_base-&gt;<ref refid="structeos_1_1WrappedForwardIterator_1_1Base_1a6f51dc38ebf16d338c4d14421a3a98e1" kindref="member">underlying_iterator_ptr</ref>());</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Tag_,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Value_&gt;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Iter_&gt;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Iter_<sp/>&amp;</highlight></codeline>
+<codeline lineno="187" refid="classeos_1_1WrappedForwardIterator_1a41c259a3f5e5d206c87ecb9dfeb41dec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classeos_1_1WrappedForwardIterator_1a5dd5d4d179b339a647660a0e4289a67c" kindref="member">WrappedForwardIterator&lt;Tag_, Value_&gt;::underlying_iterator</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="188"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">Iter_<sp/>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(_base-&gt;<ref refid="structeos_1_1WrappedForwardIterator_1_1Base_1a6f51dc38ebf16d338c4d14421a3a98e1" kindref="member">underlying_iterator_ptr</ref>());</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator-impl.hh"/>
+  </compounddef>
+</doxygen>

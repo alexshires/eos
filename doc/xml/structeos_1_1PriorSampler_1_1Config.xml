@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1PriorSampler_1_1Config" kind="struct" prot="public">
+    <compoundname>eos::PriorSampler::Config</compoundname>
+    <includes refid="prior__sampler_8hh" local="no">prior_sampler.hh</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structeos_1_1PriorSampler_1_1Config_1a2db80db4647764792f4370590e0cfb38" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned eos::PriorSampler::Config::n_samples</definition>
+        <argsstring></argsstring>
+        <name>n_samples</name>
+        <briefdescription>
+<para>Total number of samples. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/prior_sampler.hh" line="103" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/prior_sampler.hh" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PriorSampler_1_1Config_1a4bb4bb97708f5dc7cd8414489a2808c9" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned eos::PriorSampler::Config::n_workers</definition>
+        <argsstring></argsstring>
+        <name>n_workers</name>
+        <briefdescription>
+<para>Number of worker threads. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/prior_sampler.hh" line="106" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/prior_sampler.hh" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PriorSampler_1_1Config_1ab11de7880341b9e9ea13e9332f574483" prot="public" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classeos_1_1hdf5_1_1File" kindref="compound">hdf5::File</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;hdf5::File&gt; eos::PriorSampler::Config::output_file</definition>
+        <argsstring></argsstring>
+        <name>output_file</name>
+        <briefdescription>
+<para>The file where the observables are stored. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/prior_sampler.hh" line="109" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/prior_sampler.hh" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PriorSampler_1_1Config_1ac59ca5849359f3bc11188e7de73c93c2" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool eos::PriorSampler::Config::parallelize</definition>
+        <argsstring></argsstring>
+        <name>parallelize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If true, use as many threads as there are cores available. If false, use only one thread. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/prior_sampler.hh" line="115" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/prior_sampler.hh" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PriorSampler_1_1Config_1a9f056d7db9c1a40a51520534ab13ee95" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned eos::PriorSampler::Config::seed</definition>
+        <argsstring></argsstring>
+        <name>seed</name>
+        <briefdescription>
+<para>Seed for the random number generator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/prior_sampler.hh" line="118" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/prior_sampler.hh" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PriorSampler_1_1Config_1aa572418843b732c559f5b9612d4bf2fa" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool eos::PriorSampler::Config::store_parameters</definition>
+        <argsstring></argsstring>
+        <name>store_parameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If true, the parameter values are stored together with the observable values. If false, only the observable values are stored. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/prior_sampler.hh" line="124" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/prior_sampler.hh" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="structeos_1_1PriorSampler_1_1Config_1a6bf11d97ee69a0dd845b3aba626f3cc8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::PriorSampler::Config::Config</definition>
+        <argsstring>()</argsstring>
+        <name>Config</name>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/prior_sampler.hh" line="95"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structeos_1_1PriorSampler_1_1Config_1ab56ba1088eae165d73629213c7e72450" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structeos_1_1PriorSampler_1_1Config" kindref="compound">Config</ref></type>
+        <definition>static Config eos::PriorSampler::Config::Default</definition>
+        <argsstring>()</argsstring>
+        <name>Default</name>
+        <briefdescription>
+<para>Constructor with the default settings. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/prior_sampler.hh" line="100"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Store configuration options </para>    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/prior_sampler.hh" line="92" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/prior_sampler.hh" bodystart="91" bodyend="125"/>
+    <listofallmembers>
+      <member refid="structeos_1_1PriorSampler_1_1Config_1a6bf11d97ee69a0dd845b3aba626f3cc8" prot="private" virt="non-virtual"><scope>eos::PriorSampler::Config</scope><name>Config</name></member>
+      <member refid="structeos_1_1PriorSampler_1_1Config_1ab56ba1088eae165d73629213c7e72450" prot="public" virt="non-virtual"><scope>eos::PriorSampler::Config</scope><name>Default</name></member>
+      <member refid="structeos_1_1PriorSampler_1_1Config_1a2db80db4647764792f4370590e0cfb38" prot="public" virt="non-virtual"><scope>eos::PriorSampler::Config</scope><name>n_samples</name></member>
+      <member refid="structeos_1_1PriorSampler_1_1Config_1a4bb4bb97708f5dc7cd8414489a2808c9" prot="public" virt="non-virtual"><scope>eos::PriorSampler::Config</scope><name>n_workers</name></member>
+      <member refid="structeos_1_1PriorSampler_1_1Config_1ab11de7880341b9e9ea13e9332f574483" prot="public" virt="non-virtual"><scope>eos::PriorSampler::Config</scope><name>output_file</name></member>
+      <member refid="structeos_1_1PriorSampler_1_1Config_1ac59ca5849359f3bc11188e7de73c93c2" prot="public" virt="non-virtual"><scope>eos::PriorSampler::Config</scope><name>parallelize</name></member>
+      <member refid="structeos_1_1PriorSampler_1_1Config_1a9f056d7db9c1a40a51520534ab13ee95" prot="public" virt="non-virtual"><scope>eos::PriorSampler::Config</scope><name>seed</name></member>
+      <member refid="structeos_1_1PriorSampler_1_1Config_1aa572418843b732c559f5b9612d4bf2fa" prot="public" virt="non-virtual"><scope>eos::PriorSampler::Config</scope><name>store_parameters</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

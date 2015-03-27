@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1MarkovChain_1_1HyperParameter" kind="struct" prot="public">
+    <compoundname>eos::MarkovChain::HyperParameter</compoundname>
+    <includes refid="markov__chain_8hh" local="no">markov_chain.hh</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structeos_1_1MarkovChain_1_1HyperParameter_1a775ee43b8fb689d149cd2190c994c8a9" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned eos::MarkovChain::HyperParameter::component</definition>
+        <argsstring></argsstring>
+        <name>component</name>
+        <briefdescription>
+<para>Indicating the current component. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" line="195" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" line="193" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" bodystart="192" bodyend="196"/>
+    <listofallmembers>
+      <member refid="structeos_1_1MarkovChain_1_1HyperParameter_1a775ee43b8fb689d149cd2190c994c8a9" prot="public" virt="non-virtual"><scope>eos::MarkovChain::HyperParameter</scope><name>component</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

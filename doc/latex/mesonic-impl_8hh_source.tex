@@ -1,0 +1,646 @@
+\hypertarget{mesonic-impl_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/form-\/factors/mesonic-\/impl.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2010, 2011, 2013, 2014 Danny van Dyk}
+00005 \textcolor{comment}{ * Copyright (c) 2010, 2011 Christian Wacker}
+00006 \textcolor{comment}{ *}
+00007 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00008 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00009 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00010 \textcolor{comment}{ *}
+00011 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00012 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00013 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00014 \textcolor{comment}{ * details.}
+00015 \textcolor{comment}{ *}
+00016 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00017 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00018 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00019 \textcolor{comment}{ */}
+00020 
+00021 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_RARE\_B\_DECAYS\_FORM\_FACTORS\_IMPL\_HH}
+\hypertarget{mesonic-impl_8hh_source_l00022}{}\hyperlink{mesonic-impl_8hh_ac305f5f6cdbb00fc4d4d3e7b1be06724}{00022} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_RARE\_B\_DECAYS\_FORM\_FACTORS\_IMPL\_HH 1}
+00023 \textcolor{preprocessor}{}
+00024 \textcolor{preprocessor}{#include <\hyperlink{mesonic_8hh}{eos/form-factors/mesonic.hh}>}
+00025 \textcolor{preprocessor}{#include <\hyperlink{analytic-b-to-pi_8hh}{eos/form-factors/analytic-b-to-pi.hh}>}
+00026 \textcolor{preprocessor}{#include <\hyperlink{derivative_8hh}{eos/utils/derivative.hh}>}
+00027 \textcolor{preprocessor}{#include <\hyperlink{kinematic_8hh}{eos/utils/kinematic.hh}>}
+00028 \textcolor{preprocessor}{#include <\hyperlink{options_8hh}{eos/utils/options.hh}>}
+00029 \textcolor{preprocessor}{#include <\hyperlink{power__of_8hh}{eos/utils/power_of.hh}>}
+00030 
+00031 \textcolor{keyword}{namespace }eos
+00032 \{
+00033     \textcolor{comment}{/* Form Factors according to [BZ2004] */}
+00034     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Process\_, \textcolor{keyword}{typename} Transition\_> \textcolor{keyword}{class }BZ2004FormFactors;
+00035 
+00036     \textcolor{comment}{/* Form Factors according to [KMPW2010] */}
+00037     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Transition\_> \textcolor{keyword}{class }KMPW2010FormFactors;
+00038 
+00039     \textcolor{comment}{/* Form Factors according to [BFW2010] */}
+00040     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Transition\_> \textcolor{keyword}{class }BFW2010FormFactors;
+00041 
+00042     \textcolor{comment}{/* Form Factors according to [BCL2008] */}
+00043     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Process\_> \textcolor{keyword}{class }BCL2008FormFactors;
+00044 
+00045     \textcolor{comment}{/* P -> V Processes */}
+00046 
+\hypertarget{mesonic-impl_8hh_source_l00047}{}\hyperlink{structeos_1_1BToKstar}{00047}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1BToKstar}{BToKstar} \{
+\hypertarget{mesonic-impl_8hh_source_l00048}{}\hyperlink{structeos_1_1BToKstar_aaf3ba74345ac88ef83df9e07fb187d7c}{00048}         \textcolor{keyword}{static} constexpr \textcolor{keywordtype}{double} \hyperlink{structeos_1_1BToKstar_aaf3ba74345ac88ef83df9e07fb187d7c}{mB} = 5.279;
+\hypertarget{mesonic-impl_8hh_source_l00049}{}\hyperlink{structeos_1_1BToKstar_aaa86a61d90e34af72cb8563491911af3}{00049}         \textcolor{keyword}{static} constexpr \textcolor{keywordtype}{double} \hyperlink{structeos_1_1BToKstar_aaa86a61d90e34af72cb8563491911af3}{mV} = 0.896;
+00050     \};
+00051 
+\hypertarget{mesonic-impl_8hh_source_l00052}{}\hyperlink{structeos_1_1BsToPhi}{00052}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1BsToPhi}{BsToPhi} \{
+\hypertarget{mesonic-impl_8hh_source_l00053}{}\hyperlink{structeos_1_1BsToPhi_a7b5cc22510f449a636fe09bf25280c15}{00053}         \textcolor{keyword}{static} constexpr \textcolor{keywordtype}{double} \hyperlink{structeos_1_1BsToPhi_a7b5cc22510f449a636fe09bf25280c15}{mB} = 5.366;
+\hypertarget{mesonic-impl_8hh_source_l00054}{}\hyperlink{structeos_1_1BsToPhi_a7195e15e3af1c5f2e4c1f34a5ed02a28}{00054}         \textcolor{keyword}{static} constexpr \textcolor{keywordtype}{double} \hyperlink{structeos_1_1BsToPhi_a7195e15e3af1c5f2e4c1f34a5ed02a28}{mV} = 1.020;
+00055     \};
+00056 
+\hypertarget{mesonic-impl_8hh_source_l00057}{}\hyperlink{classeos_1_1BZ2004FormFactors_3_01Process___00_01PToV_01_4}{00057}     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Process\_> \textcolor{keyword}{class }BZ2004FormFactors<Process\_, \hyperlink{structeos_1_1PToV}{PToV}> :
+00058         \textcolor{keyword}{public} FormFactors<PToV>
+00059     \{
+00060         \textcolor{keyword}{private}:
+00061             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_v\_factor, \_a0\_factor, \_a1\_factor, \_a2\_factor;
+00062 
+00063             \textcolor{comment}{// fit parametrisation for P -> V according to [BZ2004]}
+00064             \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} \_v\_r1, \_v\_r2, \_v\_m2r, \_v\_m2fit;
+00065             \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} \_a0\_r1, \_a0\_r2, \_a0\_m2r, \_a0\_m2fit;
+00066             \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} \_a1\_r2, \_a1\_m2fit;
+00067             \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} \_a2\_r1, \_a2\_r2, \_a2\_m2fit;
+00068 
+00069             \textcolor{comment}{// cf. [BZ2004], Eq. 59, p. 27}
+00070             \textcolor{keyword}{static} \textcolor{keyword}{inline} \textcolor{keywordtype}{double} \_calc\_eq59(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & r\_1,
+       \textcolor{keyword}{const} \textcolor{keywordtype}{double} & r\_2, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & m2r, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & m2fit)
+00071             \{
+00072                 \textcolor{keywordflow}{return} r\_1 / (1.0 - s / m2r) + r\_2 / (1.0 - s / m2fit);
+00073             \}
+00074 
+00075             \textcolor{comment}{// cf. [BZ2004], Eq. 60, p. 29}
+00076             \textcolor{keyword}{static} \textcolor{keyword}{inline} \textcolor{keywordtype}{double} \_calc\_eq60(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & r\_1,
+       \textcolor{keyword}{const} \textcolor{keywordtype}{double} & r\_2, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & m2fit)
+00077             \{
+00078                 \textcolor{keywordtype}{double} denom = 1.0 - s / m2fit;
+00079 
+00080                 \textcolor{keywordflow}{return} r\_1 / denom + r\_2 / denom / denom;
+00081             \}
+00082 
+00083             \textcolor{comment}{// cf. [BZ2004], Eq. 61, p. 29}
+00084             \textcolor{keyword}{static} \textcolor{keyword}{inline} \textcolor{keywordtype}{double} \_calc\_eq61(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & r\_2,
+       \textcolor{keyword}{const} \textcolor{keywordtype}{double} & m2fit)
+00085             \{
+00086                 \textcolor{keywordflow}{return} r\_2 / (1.0 - s / m2fit);
+00087             \}
+00088 
+00089         \textcolor{keyword}{public}:
+\hypertarget{mesonic-impl_8hh_source_l00090}{}\hyperlink{classeos_1_1BZ2004FormFactors_3_01Process___00_01PToV_01_4_a225d97783a8fd060a4c031f5217992cf}{00090}             BZ2004FormFactors(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & p, \textcolor{keyword}{const} \hyperlink{classeos_1_1Options}{Options} &) :
+00091                 \_v\_factor(p[\textcolor{stringliteral}{"B->K^*::v\_uncertainty@BZ2004"}], *this),
+00092                 \_a0\_factor(p[\textcolor{stringliteral}{"B->K^*::a0\_uncertainty@BZ2004"}], *this),
+00093                 \_a1\_factor(p[\textcolor{stringliteral}{"B->K^*::a1\_uncertainty@BZ2004"}], *this),
+00094                 \_a2\_factor(p[\textcolor{stringliteral}{"B->K^*::a2\_uncertainty@BZ2004"}], *this)
+00095             \{
+00096             \}
+00097 
+\hypertarget{mesonic-impl_8hh_source_l00098}{}\hyperlink{classeos_1_1BZ2004FormFactors_3_01Process___00_01PToV_01_4_a9311fe960a5c12827dc75231db7de93f}{00098}             \textcolor{keyword}{static} \hyperlink{classeos_1_1FormFactors_3_01PToV_01_4}{FormFactors<PToV>} * make(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & parameters, \textcolor{keywordtype}{unsign
+      ed})
+00099             \{
+00100                 \textcolor{keywordflow}{return} \textcolor{keyword}{new} BZ2004FormFactors(parameters, \hyperlink{classeos_1_1Options}{Options}());
+00101             \}
+00102 
+\hypertarget{mesonic-impl_8hh_source_l00103}{}\hyperlink{classeos_1_1BZ2004FormFactors_3_01Process___00_01PToV_01_4_abcc23f51780966652892e0afa138ac3d}{00103}             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} v(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s)\textcolor{keyword}{ const}
+00104 \textcolor{keyword}{            }\{
+00105                 \textcolor{keywordflow}{return} \_v\_factor * \_calc\_eq59(s, \_v\_r1, \_v\_r2, \_v\_m2r, \_v\_m2fit);
+      
+00106             \}
+00107 
+\hypertarget{mesonic-impl_8hh_source_l00108}{}\hyperlink{classeos_1_1BZ2004FormFactors_3_01Process___00_01PToV_01_4_a67cc70f2263f1dfec23057c36060ef22}{00108}             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} a\_0(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s)\textcolor{keyword}{ const}
+00109 \textcolor{keyword}{            }\{
+00110                 \textcolor{keywordflow}{return} \_a0\_factor * \_calc\_eq59(s, \_a0\_r1, \_a0\_r2, \_a0\_m2r, \_a0\_m2
+      fit);
+00111             \}
+00112 
+\hypertarget{mesonic-impl_8hh_source_l00113}{}\hyperlink{classeos_1_1BZ2004FormFactors_3_01Process___00_01PToV_01_4_a790c3bda390cd45e32f9d99daf3d87e0}{00113}             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} a\_1(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s)\textcolor{keyword}{ const}
+00114 \textcolor{keyword}{            }\{
+00115                 \textcolor{keywordflow}{return} \_a1\_factor * \_calc\_eq61(s, \_a1\_r2, \_a1\_m2fit);
+00116             \}
+00117 
+\hypertarget{mesonic-impl_8hh_source_l00118}{}\hyperlink{classeos_1_1BZ2004FormFactors_3_01Process___00_01PToV_01_4_a772daa575ec65cac187fc0ec34364ddd}{00118}             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} a\_2(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s)\textcolor{keyword}{ const}
+00119 \textcolor{keyword}{            }\{
+00120                 \textcolor{keywordflow}{return} \_a2\_factor * \_calc\_eq60(s, \_a2\_r1, \_a2\_r2, \_a2\_m2fit);
+00121             \}
+00122 
+\hypertarget{mesonic-impl_8hh_source_l00123}{}\hyperlink{classeos_1_1BZ2004FormFactors_3_01Process___00_01PToV_01_4_a2a5dd7b8b48e71efd26489622a10ed7f}{00123}             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} a\_12(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s)\textcolor{keyword}{ const}
+00124 \textcolor{keyword}{            }\{
+00125                 \textcolor{keyword}{const} \textcolor{keywordtype}{double} mB = Process\_::mB, mB2 = mB * mB;
+00126                 \textcolor{keyword}{const} \textcolor{keywordtype}{double} mV = Process\_::mV, mV2 = mV * mV;
+00127                 \textcolor{keyword}{const} \textcolor{keywordtype}{double} \hyperlink{namespaceeos_a2e8644357d2012ca279f49ab0037b9ea}{lambda} = \hyperlink{namespaceeos_a2e8644357d2012ca279f49ab0037b9ea}{eos::lambda}(mB2, mV2, s);
+00128 
+00129                 \textcolor{keywordflow}{return} ((mB + mV) * (mB + mV) * (mB2 - mV2 - s) * this->a\_1(s)
+00130                     - lambda * this->a\_2(s)) / (16.0 * mB * mV2 * (mB + mV));
+00131             \}
+00132     \};
+00133 
+\hypertarget{mesonic-impl_8hh_source_l00134}{}\hyperlink{classeos_1_1KMPW2010FormFactors_3_01PToV_01_4}{00134}     \textcolor{keyword}{template} <> \textcolor{keyword}{class }KMPW2010FormFactors<\hyperlink{structeos_1_1PToV}{PToV}> :
+00135         \textcolor{keyword}{public} FormFactors<PToV>
+00136     \{
+00137         \textcolor{keyword}{private}:
+00138             \textcolor{comment}{// fit parametrisation for P -> V according to [KMPW2010]}
+00139             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_f0\_V, \_b1\_V;
+00140             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_f0\_A0, \_b1\_A0;
+00141             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_f0\_A1, \_b1\_A1;
+00142             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_f0\_A2, \_b1\_A2;
+00143             \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} \_tau\_p, \_tau\_m, \_tau\_0;
+00144             \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} \_m\_B, \_m\_Kstar, \_m\_Bs2\_0m, \_m\_Bs2\_1m, \_m\_Bs2\_1p;
+00145 
+00146             \textcolor{keyword}{static} \textcolor{keywordtype}{double} \_calc\_z(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s)
+00147             \{
+00148                 \textcolor{keywordflow}{return} (std::sqrt(\_tau\_p - s) - std::sqrt(\_tau\_p - \_tau\_0)) / (st
+      d::sqrt(\_tau\_p - s) + std::sqrt(\_tau\_p - \_tau\_0));
+00149             \}
+00150 
+00151         \textcolor{keyword}{public}:
+\hypertarget{mesonic-impl_8hh_source_l00152}{}\hyperlink{classeos_1_1KMPW2010FormFactors_3_01PToV_01_4_a8aa8b61807bd884b832528421a107b75}{00152}             KMPW2010FormFactors(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & p, \textcolor{keyword}{const} \hyperlink{classeos_1_1Options}{Options} &) :
+00153                 \_f0\_V(p[\textcolor{stringliteral}{"B->K^*::F^V(0)@KMPW2010"}],   *this),
+00154                 \_b1\_V(p[\textcolor{stringliteral}{"B->K^*::b^V\_1@KMPW2010"}],    *this),
+00155                 \_f0\_A0(p[\textcolor{stringliteral}{"B->K^*::F^A0(0)@KMPW2010"}], *this),
+00156                 \_b1\_A0(p[\textcolor{stringliteral}{"B->K^*::b^A0\_1@KMPW2010"}],  *this),
+00157                 \_f0\_A1(p[\textcolor{stringliteral}{"B->K^*::F^A1(0)@KMPW2010"}], *this),
+00158                 \_b1\_A1(p[\textcolor{stringliteral}{"B->K^*::b^A1\_1@KMPW2010"}],  *this),
+00159                 \_f0\_A2(p[\textcolor{stringliteral}{"B->K^*::F^A2(0)@KMPW2010"}], *this),
+00160                 \_b1\_A2(p[\textcolor{stringliteral}{"B->K^*::b^A2\_1@KMPW2010"}],  *this)
+00161             \{
+00162             \}
+00163 
+\hypertarget{mesonic-impl_8hh_source_l00164}{}\hyperlink{classeos_1_1KMPW2010FormFactors_3_01PToV_01_4_a7b2c91918ff4cc0ed6a48ba58b24d398}{00164}             \textcolor{keyword}{static} \hyperlink{classeos_1_1FormFactors_3_01PToV_01_4}{FormFactors<PToV>} * make(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & parameters, \textcolor{keywordtype}{unsign
+      ed})
+00165             \{
+00166                 \textcolor{keywordflow}{return} \textcolor{keyword}{new} KMPW2010FormFactors(parameters, \hyperlink{classeos_1_1Options}{Options}());
+00167             \}
+00168 
+\hypertarget{mesonic-impl_8hh_source_l00169}{}\hyperlink{classeos_1_1KMPW2010FormFactors_3_01PToV_01_4_a18116140dccb14f0be2892051487e39b}{00169}             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} v(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s)\textcolor{keyword}{ const}
+00170 \textcolor{keyword}{            }\{
+00171                 \textcolor{keyword}{const} \textcolor{keywordtype}{double} zs = \_calc\_z(s), z0 = \_calc\_z(0.0);
+00172 
+00173                 \textcolor{comment}{// cf. [KMPW2010], Eq. (8.8), p. 30}
+00174                 \textcolor{keywordflow}{return} \_f0\_V() / (1.0 - s / \_m\_Bs2\_1m) * (1.0 + \_b1\_V() * (zs - z
+      0 + 0.5 * (zs * zs - z0 * z0)));
+00175             \}
+00176 
+\hypertarget{mesonic-impl_8hh_source_l00177}{}\hyperlink{classeos_1_1KMPW2010FormFactors_3_01PToV_01_4_a05b86cc4ef009a2f08fb91595ec9dd0c}{00177}             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} a\_0(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s)\textcolor{keyword}{ const}
+00178 \textcolor{keyword}{            }\{
+00179                 \textcolor{keyword}{const} \textcolor{keywordtype}{double} zs = \_calc\_z(s), z0 = \_calc\_z(0.0);
+00180 
+00181                 \textcolor{comment}{// cf. [KMPW2010], Eq. (8.8), p. 30}
+00182                 \textcolor{keywordflow}{return} \_f0\_A0() / (1.0 - s / \_m\_Bs2\_0m) * (1.0 + \_b1\_A0() * (zs -
+       z0 + 0.5 * (zs * zs - z0 * z0)));
+00183             \}
+00184 
+\hypertarget{mesonic-impl_8hh_source_l00185}{}\hyperlink{classeos_1_1KMPW2010FormFactors_3_01PToV_01_4_a9ed6f27dc8847077c7a66d56e72ccec1}{00185}             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} a\_1(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s)\textcolor{keyword}{ const}
+00186 \textcolor{keyword}{            }\{
+00187                 \textcolor{keyword}{const} \textcolor{keywordtype}{double} zs = \_calc\_z(s), z0 = \_calc\_z(0.0);
+00188 
+00189                 \textcolor{comment}{// cf. [KMPW2010], Eq. (8.8), p. 30}
+00190                 \textcolor{keywordflow}{return} \_f0\_A1() / (1.0 - s / \_m\_Bs2\_1p) * (1.0 + \_b1\_A1() * (zs -
+       z0 + 0.5 * (zs * zs - z0 * z0)));
+00191             \}
+00192 
+\hypertarget{mesonic-impl_8hh_source_l00193}{}\hyperlink{classeos_1_1KMPW2010FormFactors_3_01PToV_01_4_a38d93dfcb8948cf55480fb40cddbb470}{00193}             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} a\_2(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s)\textcolor{keyword}{ const}
+00194 \textcolor{keyword}{            }\{
+00195                 \textcolor{keyword}{const} \textcolor{keywordtype}{double} zs = \_calc\_z(s), z0 = \_calc\_z(0.0);
+00196 
+00197                 \textcolor{comment}{// cf. [KMPW2010], Eq. (8.8), p. 30}
+00198                 \textcolor{keywordflow}{return} \_f0\_A2() / (1.0 - s / \_m\_Bs2\_1p) * (1.0 + \_b1\_A2() * (zs -
+       z0 + 0.5 * (zs * zs - z0 * z0)));
+00199             \}
+\hypertarget{mesonic-impl_8hh_source_l00200}{}\hyperlink{classeos_1_1KMPW2010FormFactors_3_01PToV_01_4_ab66c9cab243661f5fbabf76b42a060d4}{00200}             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} a\_12(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s)\textcolor{keyword}{ const}
+00201 \textcolor{keyword}{            }\{
+00202                 \textcolor{keyword}{const} \textcolor{keywordtype}{double} mB = \hyperlink{structeos_1_1BToKstar_aaf3ba74345ac88ef83df9e07fb187d7c}{BToKstar::mB}, mB2 = mB * mB;
+00203                 \textcolor{keyword}{const} \textcolor{keywordtype}{double} mV = \hyperlink{structeos_1_1BToKstar_aaa86a61d90e34af72cb8563491911af3}{BToKstar::mV}, mV2 = mV * mV;
+00204                 \textcolor{keyword}{const} \textcolor{keywordtype}{double} \hyperlink{namespaceeos_a2e8644357d2012ca279f49ab0037b9ea}{lambda} = \hyperlink{namespaceeos_a2e8644357d2012ca279f49ab0037b9ea}{eos::lambda}(mB2, mV2, s);
+00205 
+00206                 \textcolor{keywordflow}{return} ((mB + mV) * (mB + mV) * (mB2 - mV2 - s) * this->a\_1(s)
+00207                     - lambda * this->a\_2(s)) / (16.0 * mB * mV2 * (mB + mV));
+00208             \}
+00209     \};
+00210 
+00211     \textcolor{comment}{/* P -> P Processes */}
+00212 
+\hypertarget{mesonic-impl_8hh_source_l00213}{}\hyperlink{classeos_1_1FormFactors_3_01PToP_01_4_a16406f05b7715291b392f856fff988e2}{00213}     \textcolor{keywordtype}{double} \hyperlink{classeos_1_1FormFactors_3_01PToP_01_4_a16406f05b7715291b392f856fff988e2}{FormFactors<PToP>::f_p_d1}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s)\textcolor{keyword}{ const}
+00214 \textcolor{keyword}{    }\{
+00215         \textcolor{keyword}{using namespace }std::placeholders;
+00216 
+00217         \textcolor{keyword}{auto} f = std::function<double (const double &)>(std::bind(&
+      \hyperlink{classeos_1_1FormFactors_3_01PToP_01_4_a987757eb4559de496005ed2730e78a10}{FormFactors<PToP>::f_p}, \textcolor{keyword}{this}, \_1));
+00218 
+00219         \textcolor{keywordflow}{return} derivative<1u, deriv::TwoSided>(f, s);
+00220     \}
+00221 
+\hypertarget{mesonic-impl_8hh_source_l00222}{}\hyperlink{classeos_1_1FormFactors_3_01PToP_01_4_a875a81786cd947c56c0cdc1737455707}{00222}     \textcolor{keywordtype}{double} \hyperlink{classeos_1_1FormFactors_3_01PToP_01_4_a875a81786cd947c56c0cdc1737455707}{FormFactors<PToP>::f_p_d2}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s)\textcolor{keyword}{ const}
+00223 \textcolor{keyword}{    }\{
+00224         \textcolor{keyword}{using namespace }std::placeholders;
+00225 
+00226         \textcolor{keyword}{auto} f = std::function<double (const double &)>(std::bind(&
+      \hyperlink{classeos_1_1FormFactors_3_01PToP_01_4_a987757eb4559de496005ed2730e78a10}{FormFactors<PToP>::f_p}, \textcolor{keyword}{this}, \_1));
+00227 
+00228         \textcolor{keywordflow}{return} derivative<2u, deriv::TwoSided>(f, s);
+00229     \}
+00230 
+\hypertarget{mesonic-impl_8hh_source_l00231}{}\hyperlink{structeos_1_1BToK}{00231}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1BToK}{BToK} \{
+\hypertarget{mesonic-impl_8hh_source_l00232}{}\hyperlink{structeos_1_1BToK_aa1054f94316f9922fcefffb60a198b38}{00232}         \textcolor{keyword}{typedef} \hyperlink{structeos_1_1PToP}{PToP} \hyperlink{structeos_1_1PToP}{Transition};
+\hypertarget{mesonic-impl_8hh_source_l00233}{}\hyperlink{structeos_1_1BToK_ab29ff334c290b4b8dde7b143bb07e89a}{00233}         \textcolor{keyword}{static} constexpr \textcolor{keyword}{const} \textcolor{keywordtype}{char} * \hyperlink{structeos_1_1BToK_ab29ff334c290b4b8dde7b143bb07e89a}{label} = \textcolor{stringliteral}{"B->K"};
+\hypertarget{mesonic-impl_8hh_source_l00234}{}\hyperlink{structeos_1_1BToK_afd952438871e130473abfe28556b6287}{00234}         \textcolor{keyword}{static} constexpr \textcolor{keyword}{const} \textcolor{keywordtype}{double} \hyperlink{structeos_1_1BToK_afd952438871e130473abfe28556b6287}{m_B} = 5.279;
+\hypertarget{mesonic-impl_8hh_source_l00235}{}\hyperlink{structeos_1_1BToK_aed69f6a47bf87622584136fd30a2c4ec}{00235}         \textcolor{keyword}{static} constexpr \textcolor{keyword}{const} \textcolor{keywordtype}{double} \hyperlink{structeos_1_1BToK_aed69f6a47bf87622584136fd30a2c4ec}{m_P} = 0.492;
+\hypertarget{mesonic-impl_8hh_source_l00236}{}\hyperlink{structeos_1_1BToK_a0cf40cde07f2b324f047a90ca3754899}{00236}         \textcolor{keyword}{static} constexpr \textcolor{keyword}{const} \textcolor{keywordtype}{double} \hyperlink{structeos_1_1BToK_a0cf40cde07f2b324f047a90ca3754899}{m2_Br0m} = 5.366 * 5.366; \textcolor{comment}{// B\_s}
+\hypertarget{mesonic-impl_8hh_source_l00237}{}\hyperlink{structeos_1_1BToK_ac78a6940a67216f7ef20e348776e850c}{00237}         \textcolor{keyword}{static} constexpr \textcolor{keyword}{const} \textcolor{keywordtype}{double} \hyperlink{structeos_1_1BToK_ac78a6940a67216f7ef20e348776e850c}{m2_Br1m} = 5.415 * 5.415; \textcolor{comment}{// B\_s^*}
+\hypertarget{mesonic-impl_8hh_source_l00238}{}\hyperlink{structeos_1_1BToK_a3f1976d7598992bd31888637a55a6cf4}{00238}         \textcolor{keyword}{static} constexpr \textcolor{keyword}{const} \textcolor{keywordtype}{double} \hyperlink{structeos_1_1BToK_a3f1976d7598992bd31888637a55a6cf4}{tau_p} = (\hyperlink{structeos_1_1BToK_afd952438871e130473abfe28556b6287}{m_B} + \hyperlink{structeos_1_1BToK_aed69f6a47bf87622584136fd30a2c4ec}{m_P}) * (\hyperlink{structeos_1_1BToK_afd952438871e130473abfe28556b6287}{m_B} + \hyperlink{structeos_1_1BToK_aed69f6a47bf87622584136fd30a2c4ec}{m_P});
+\hypertarget{mesonic-impl_8hh_source_l00239}{}\hyperlink{structeos_1_1BToK_a1e903e338534718baea7cf0f62cb4355}{00239}         \textcolor{keyword}{static} constexpr \textcolor{keyword}{const} \textcolor{keywordtype}{double} \hyperlink{structeos_1_1BToK_a1e903e338534718baea7cf0f62cb4355}{tau_m} = (\hyperlink{structeos_1_1BToK_afd952438871e130473abfe28556b6287}{m_B} - \hyperlink{structeos_1_1BToK_aed69f6a47bf87622584136fd30a2c4ec}{m_P}) * (\hyperlink{structeos_1_1BToK_afd952438871e130473abfe28556b6287}{m_B} - \hyperlink{structeos_1_1BToK_aed69f6a47bf87622584136fd30a2c4ec}{m_P});
+00240     \};
+00241 
+\hypertarget{mesonic-impl_8hh_source_l00242}{}\hyperlink{structeos_1_1BToPi}{00242}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1BToPi}{BToPi} \{
+\hypertarget{mesonic-impl_8hh_source_l00243}{}\hyperlink{structeos_1_1BToPi_a0bc02dc01a331ef172cac61430529a37}{00243}         \textcolor{keyword}{typedef} \hyperlink{structeos_1_1PToP}{PToP} \hyperlink{structeos_1_1PToP}{Transition};
+\hypertarget{mesonic-impl_8hh_source_l00244}{}\hyperlink{structeos_1_1BToPi_a02bedb913444a200791347fcebc02660}{00244}         \textcolor{keyword}{static} constexpr \textcolor{keyword}{const} \textcolor{keywordtype}{char} * \hyperlink{structeos_1_1BToPi_a02bedb913444a200791347fcebc02660}{label} = \textcolor{stringliteral}{"B->pi"};
+\hypertarget{mesonic-impl_8hh_source_l00245}{}\hyperlink{structeos_1_1BToPi_a368ef58c6e0296a92246459961bb1898}{00245}         \textcolor{keyword}{static} constexpr \textcolor{keyword}{const} \textcolor{keywordtype}{double} \hyperlink{structeos_1_1BToPi_a368ef58c6e0296a92246459961bb1898}{m_B} = 5.279;
+\hypertarget{mesonic-impl_8hh_source_l00246}{}\hyperlink{structeos_1_1BToPi_a3ae475ef38ac384d05ace3e6e4f8c4e1}{00246}         \textcolor{keyword}{static} constexpr \textcolor{keyword}{const} \textcolor{keywordtype}{double} \hyperlink{structeos_1_1BToPi_a3ae475ef38ac384d05ace3e6e4f8c4e1}{m_P} = 0.135;
+\hypertarget{mesonic-impl_8hh_source_l00247}{}\hyperlink{structeos_1_1BToPi_a4bef4550fbc2f545cb28289cde71cf50}{00247}         \textcolor{keyword}{static} constexpr \textcolor{keyword}{const} \textcolor{keywordtype}{double} \hyperlink{structeos_1_1BToPi_a4bef4550fbc2f545cb28289cde71cf50}{m2_Br0m} = 5.279 * 5.279; \textcolor{comment}{// B\_\{u,d\}}
+\hypertarget{mesonic-impl_8hh_source_l00248}{}\hyperlink{structeos_1_1BToPi_a4e334a932389c4f346a1d7d685e3f6cc}{00248}         \textcolor{keyword}{static} constexpr \textcolor{keyword}{const} \textcolor{keywordtype}{double} \hyperlink{structeos_1_1BToPi_a4e334a932389c4f346a1d7d685e3f6cc}{m2_Br1m} = 5.325 * 5.325; \textcolor{comment}{// B\_\{u,d\}^*}
+\hypertarget{mesonic-impl_8hh_source_l00249}{}\hyperlink{structeos_1_1BToPi_a1fd711c0a854118ef42495b16d2b0419}{00249}         \textcolor{keyword}{static} constexpr \textcolor{keyword}{const} \textcolor{keywordtype}{double} \hyperlink{structeos_1_1BToPi_a1fd711c0a854118ef42495b16d2b0419}{tau_p} = (\hyperlink{structeos_1_1BToPi_a368ef58c6e0296a92246459961bb1898}{m_B} + \hyperlink{structeos_1_1BToPi_a3ae475ef38ac384d05ace3e6e4f8c4e1}{m_P}) * (\hyperlink{structeos_1_1BToPi_a368ef58c6e0296a92246459961bb1898}{m_B} + \hyperlink{structeos_1_1BToPi_a3ae475ef38ac384d05ace3e6e4f8c4e1}{m_P});
+\hypertarget{mesonic-impl_8hh_source_l00250}{}\hyperlink{structeos_1_1BToPi_ac77ffd0ef98e06372594d0eba51118e6}{00250}         \textcolor{keyword}{static} constexpr \textcolor{keyword}{const} \textcolor{keywordtype}{double} \hyperlink{structeos_1_1BToPi_ac77ffd0ef98e06372594d0eba51118e6}{tau_m} = (\hyperlink{structeos_1_1BToPi_a368ef58c6e0296a92246459961bb1898}{m_B} - \hyperlink{structeos_1_1BToPi_a3ae475ef38ac384d05ace3e6e4f8c4e1}{m_P}) * (\hyperlink{structeos_1_1BToPi_a368ef58c6e0296a92246459961bb1898}{m_B} - \hyperlink{structeos_1_1BToPi_a3ae475ef38ac384d05ace3e6e4f8c4e1}{m_P});
+00251     \};
+00252 
+00253 
+00254     \textcolor{comment}{/*}
+00255 \textcolor{comment}{     * P -> P Form Factors in the simplified series expansion according to}
+00256 \textcolor{comment}{     * [BCL2008].}
+00257 \textcolor{comment}{     */}
+\hypertarget{mesonic-impl_8hh_source_l00258}{}\hyperlink{classeos_1_1BCL2008FormFactors}{00258}     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Process\_> \textcolor{keyword}{class }\hyperlink{classeos_1_1BCL2008FormFactors}{BCL2008FormFactors} :
+00259         \textcolor{keyword}{public} FormFactors<typename Process\_::Transition>
+00260     \{
+00261         \textcolor{keyword}{private}:
+00262             \textcolor{comment}{/*}
+00263 \textcolor{comment}{             * Fit parametrisation for P -> P according to [BCL2008], eq. (11)}
+00264 \textcolor{comment}{             * with K = 3. Note that we factor out the form factor at q^2 = 0}
+00265 \textcolor{comment}{             * by setting t\_0 = 0.0, thus b\_k -> b\_k / b\_0. Note that the last}
+00266 \textcolor{comment}{             * coefficient b\_K is fixed by eq. (14).}
+00267 \textcolor{comment}{             */}
+00268             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_f\_plus\_0, \_b\_plus\_1, \_b\_plus\_2;
+00269             \hyperlink{classeos_1_1UsedParameter}{UsedParameter}            \_b\_zero\_1, \_b\_zero\_2;
+00270             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_f\_t\_0,    \_b\_t\_1,    \_b\_t\_2;
+00271 
+00272             \textcolor{keyword}{static} \textcolor{keywordtype}{double} \_z(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s)
+00273             \{
+00274                 \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} m\_B = Process\_::m\_B;
+00275                 \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} m\_P = Process\_::m\_P;
+00276                 \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} tau\_p = Process\_::tau\_p;
+00277                 \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} tau\_0 = (m\_B + m\_P) * (std::sqrt(m\_B) - std::
+      sqrt(m\_P)) * (std::sqrt(m\_B) - std::sqrt(m\_P));
+00278 
+00279                 \textcolor{keywordflow}{return} (std::sqrt(tau\_p - s) - std::sqrt(tau\_p - tau\_0))
+00280                     / (std::sqrt(tau\_p - s) + std::sqrt(tau\_p - tau\_0));
+00281             \}
+00282 
+00283         \textcolor{keyword}{public}:
+\hypertarget{mesonic-impl_8hh_source_l00284}{}\hyperlink{classeos_1_1BCL2008FormFactors_af715bd6b136c48edf8f31d7902158ec6}{00284}             \hyperlink{classeos_1_1BCL2008FormFactors_af715bd6b136c48edf8f31d7902158ec6}{BCL2008FormFactors}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & p, \textcolor{keyword}{const} \hyperlink{classeos_1_1Options}{Options} &) :
+00285                 \_f\_plus\_0(p[std::string(Process\_::label) + \textcolor{stringliteral}{"::f\_+(0)@BCL2008"}], *
+      this),
+00286                 \_b\_plus\_1(p[std::string(Process\_::label) + \textcolor{stringliteral}{"::b\_+^1@BCL2008"}],  *
+      this),
+00287                 \_b\_plus\_2(p[std::string(Process\_::label) + \textcolor{stringliteral}{"::b\_+^2@BCL2008"}],  *
+      this),
+00288                 \_b\_zero\_1(p[std::string(Process\_::label) + \textcolor{stringliteral}{"::b\_0^1@BCL2008"}],  *
+      this),
+00289                 \_b\_zero\_2(p[std::string(Process\_::label) + \textcolor{stringliteral}{"::b\_0^2@BCL2008"}],  *
+      this),
+00290                 \_f\_t\_0(p[std::string(Process\_::label)    + \textcolor{stringliteral}{"::f\_T(0)@BCL2008"}], *
+      this),
+00291                 \_b\_t\_1(p[std::string(Process\_::label)    + \textcolor{stringliteral}{"::b\_T^1@BCL2008"}],  *
+      this),
+00292                 \_b\_t\_2(p[std::string(Process\_::label)    + \textcolor{stringliteral}{"::b\_T^2@BCL2008"}],  *
+      this)
+00293             \{
+00294             \}
+00295 
+\hypertarget{mesonic-impl_8hh_source_l00296}{}\hyperlink{classeos_1_1BCL2008FormFactors_afc38a15ec961d9677b443f9d2ca05c4a}{00296}             \textcolor{keyword}{static} \hyperlink{classeos_1_1FormFactors_3_01PToP_01_4}{FormFactors<PToP>} * \hyperlink{classeos_1_1BCL2008FormFactors_afc38a15ec961d9677b443f9d2ca05c4a}{make}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & parameters, \textcolor{keywordtype}{unsign
+      ed})
+00297             \{
+00298                 \textcolor{keywordflow}{return} \textcolor{keyword}{new} \hyperlink{classeos_1_1BCL2008FormFactors_af715bd6b136c48edf8f31d7902158ec6}{BCL2008FormFactors}(parameters, \hyperlink{classeos_1_1Options}{Options}());
+00299             \}
+00300 
+\hypertarget{mesonic-impl_8hh_source_l00301}{}\hyperlink{classeos_1_1BCL2008FormFactors_abddd45b1faae773718c4eb7ee2eacb9a}{00301}             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \hyperlink{classeos_1_1BCL2008FormFactors_abddd45b1faae773718c4eb7ee2eacb9a}{f_p}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s)\textcolor{keyword}{ const}
+00302 \textcolor{keyword}{            }\{
+00303                 \textcolor{keyword}{const} \textcolor{keywordtype}{double} z = \_z(s), z2 = z * z, z3 = z * z2;
+00304                 \textcolor{keyword}{const} \textcolor{keywordtype}{double} z0 = \_z(0), z02 = z0 * z0, z03 = z0 * z02;
+00305                 \textcolor{keyword}{const} \textcolor{keywordtype}{double} zbar = z - z0, z2bar = z2 - z02, z3bar = z3 - z03;
+00306 
+00307                 \textcolor{keywordflow}{return} \_f\_plus\_0 / (1.0 - s / Process\_::m2\_Br1m) * (1.0 + \_b\_plus
+      \_1 * (zbar - z3bar / 3.0) + \_b\_plus\_2 * (z2bar + 2.0 * z3bar / 3.0));
+00308             \}
+00309 
+\hypertarget{mesonic-impl_8hh_source_l00310}{}\hyperlink{classeos_1_1BCL2008FormFactors_a94ccfc9217b04b4a78a67d913cb77d64}{00310}             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \hyperlink{classeos_1_1BCL2008FormFactors_a94ccfc9217b04b4a78a67d913cb77d64}{f_0}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s)\textcolor{keyword}{ const}
+00311 \textcolor{keyword}{            }\{
+00312                 \textcolor{keyword}{const} \textcolor{keywordtype}{double} z = \_z(s), z2 = z * z, z3 = z * z2;
+00313                 \textcolor{keyword}{const} \textcolor{keywordtype}{double} z0 = \_z(0), z02 = z0 * z0, z03 = z0 * z02;
+00314                 \textcolor{keyword}{const} \textcolor{keywordtype}{double} zbar = z - z0, z2bar = z2 - z02, z3bar = z3 - z03;
+00315 
+00316                 \textcolor{comment}{// note that f\_0(0) = f\_+(0)!}
+00317                 \textcolor{keywordflow}{return} \_f\_plus\_0 / (1.0 - s / Process\_::m2\_Br1m) * (1.0 + \_b\_zero
+      \_1 * (zbar - z3bar / 3.0) + \_b\_zero\_2 * (z2bar + 2.0 * z3bar / 3.0));
+00318             \}
+00319 
+\hypertarget{mesonic-impl_8hh_source_l00320}{}\hyperlink{classeos_1_1BCL2008FormFactors_a2e9c26cfe8867360ee8a8af4a6a649b5}{00320}             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \hyperlink{classeos_1_1BCL2008FormFactors_a2e9c26cfe8867360ee8a8af4a6a649b5}{f_t}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s)\textcolor{keyword}{ const}
+00321 \textcolor{keyword}{            }\{
+00322                 \textcolor{keyword}{const} \textcolor{keywordtype}{double} z = \_z(s), z2 = z * z, z3 = z * z2;
+00323                 \textcolor{keyword}{const} \textcolor{keywordtype}{double} z0 = \_z(0), z02 = z0 * z0, z03 = z0 * z02;
+00324                 \textcolor{keyword}{const} \textcolor{keywordtype}{double} zbar = z - z0, z2bar = z2 - z02, z3bar = z3 - z03;
+00325 
+00326                 \textcolor{keywordflow}{return} \_f\_t\_0 / (1.0 - s / Process\_::m2\_Br1m) * (1.0 + \_b\_t\_1 * (
+      zbar - z3bar / 3.0) + \_b\_t\_2 * (z2bar + 2.0 * z3bar / 3.0));
+00327             \}
+00328     \};
+00329 
+00330     \textcolor{comment}{/* Form Factors according to [BZ2004v2] */}
+\hypertarget{mesonic-impl_8hh_source_l00331}{}\hyperlink{classeos_1_1BZ2004FormFactors_3_01Process___00_01PToP_01_4}{00331}     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Process\_> \textcolor{keyword}{class }BZ2004FormFactors<Process\_, \hyperlink{structeos_1_1PToP}{PToP}> :
+00332         \textcolor{keyword}{public} FormFactors<PToP>
+00333     \{
+00334         \textcolor{keyword}{private}:
+00335             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_f\_p\_factor, \_f\_0\_factor, \_f\_t\_factor;
+00336 
+00337             \textcolor{comment}{// fit parametrisation for P -> P according to [BZ2004v2]}
+00338             \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} \_r1\_p, \_r2\_p, \_r1\_t, \_r2\_t, \_r2\_0;
+00339             \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} \_mfit2, \_m12;
+00340 
+00341         \textcolor{keyword}{public}:
+\hypertarget{mesonic-impl_8hh_source_l00342}{}\hyperlink{classeos_1_1BZ2004FormFactors_3_01Process___00_01PToP_01_4_abfc24e63dc1d845b0a4996bea251b478}{00342}             BZ2004FormFactors(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & p, \textcolor{keyword}{const} \hyperlink{classeos_1_1Options}{Options} &) :
+00343                 \_f\_p\_factor(p[\textcolor{stringliteral}{"B->K::fp\_uncertainty@BZ2004v2"}], *this),
+00344                 \_f\_0\_factor(p[\textcolor{stringliteral}{"B->K::f0\_uncertainty@BZ2004v2"}], *this),
+00345                 \_f\_t\_factor(p[\textcolor{stringliteral}{"B->K::ft\_uncertainty@BZ2004v2"}], *this)
+00346             \{
+00347             \}
+00348 
+\hypertarget{mesonic-impl_8hh_source_l00349}{}\hyperlink{classeos_1_1BZ2004FormFactors_3_01Process___00_01PToP_01_4_a8840441ed8292da6d6728cea0ac2692e}{00349}             \textcolor{keyword}{static} \hyperlink{classeos_1_1FormFactors_3_01PToP_01_4}{FormFactors<PToP>} * make(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & parameters, \textcolor{keywordtype}{unsign
+      ed})
+00350             \{
+00351                 \textcolor{keywordflow}{return} \textcolor{keyword}{new} BZ2004FormFactors(parameters, \hyperlink{classeos_1_1Options}{Options}());
+00352             \}
+00353 
+\hypertarget{mesonic-impl_8hh_source_l00354}{}\hyperlink{classeos_1_1BZ2004FormFactors_3_01Process___00_01PToP_01_4_aa8cda87a04cbfced508534de89f95e7d}{00354}             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} f\_p(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s)\textcolor{keyword}{ const}
+00355 \textcolor{keyword}{            }\{
+00356                 \textcolor{comment}{// [BZ2004v2] eq. (11)}
+00357                 \textcolor{keywordflow}{return} \_f\_p\_factor * (\_r1\_p / (1 - s / \_m12) + \_r2\_p / power\_of<2
+      >(1 - s / \_m12));
+00358             \}
+00359 
+\hypertarget{mesonic-impl_8hh_source_l00360}{}\hyperlink{classeos_1_1BZ2004FormFactors_3_01Process___00_01PToP_01_4_a9a3225d30afba82d87ca09b4ce5565f5}{00360}             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} f\_0(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s)\textcolor{keyword}{ const}
+00361 \textcolor{keyword}{            }\{
+00362                 \textcolor{comment}{// [BZ2004v2] eq. (12)}
+00363                 \textcolor{keywordflow}{return} \_f\_0\_factor * (\_r2\_0 / (1 - s / \_mfit2));
+00364             \}
+00365 
+\hypertarget{mesonic-impl_8hh_source_l00366}{}\hyperlink{classeos_1_1BZ2004FormFactors_3_01Process___00_01PToP_01_4_a1721a47e9e515d8301e0611cb82398aa}{00366}             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} f\_t(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s)\textcolor{keyword}{ const}
+00367 \textcolor{keyword}{            }\{
+00368                 \textcolor{comment}{// [BZ2004v2] eq. (11)}
+00369                 \textcolor{keywordflow}{return} \_f\_t\_factor * (\_r1\_t / (1 - s / \_m12) + \_r2\_t / power\_of<2
+      >(1 - s / \_m12));
+00370             \}
+00371     \};
+00372 
+00373 
+00374     \textcolor{comment}{// Form Factors according to [BZ2004v3]}
+\hypertarget{mesonic-impl_8hh_source_l00375}{}\hyperlink{classeos_1_1BZ2004FormFactorsSplit}{00375}     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Process\_> \textcolor{keyword}{class }\hyperlink{classeos_1_1BZ2004FormFactorsSplit}{BZ2004FormFactorsSplit} :
+00376         \textcolor{keyword}{public} FormFactors<PToP>
+00377     \{
+00378         \textcolor{keyword}{private}:
+00379             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_f\_p\_factor, \_f\_0\_factor, \_f\_t\_factor;
+00380 
+00381             \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} \_r1\_p\_asymptotic, \_r2\_p\_asymptotic;
+00382             \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} \_r2\_0\_asymptotic;
+00383             \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} \_r1\_t\_asymptotic, \_r2\_t\_asymptotic;
+00384             \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} \_mfit2\_0\_asymptotic;
+00385 
+00386             \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} \_m12\_asymptotic;
+00387 
+00388             \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} \_f\_p\_a\_1, \_f\_p\_b\_1, \_f\_p\_c\_1, \_f\_p\_d\_1;
+00389             \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} \_f\_p\_a\_2, \_f\_p\_b\_2, \_f\_p\_c\_2, \_f\_p\_d\_2;
+00390             \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} \_f\_p\_a\_4, \_f\_p\_b\_4, \_f\_p\_c\_4, \_f\_p\_d\_4;
+00391 
+00392             \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} \_f\_0\_a\_1, \_f\_0\_b\_1, \_f\_0\_c\_1, \_f\_0\_d\_1;
+00393             \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} \_f\_0\_a\_2, \_f\_0\_b\_2, \_f\_0\_c\_2, \_f\_0\_d\_2;
+00394             \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} \_f\_0\_a\_4, \_f\_0\_b\_4, \_f\_0\_c\_4, \_f\_0\_d\_4;
+00395 
+00396             \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} \_f\_t\_a\_1, \_f\_t\_b\_1, \_f\_t\_c\_1, \_f\_t\_d\_1;
+00397             \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} \_f\_t\_a\_2, \_f\_t\_b\_2, \_f\_t\_c\_2, \_f\_t\_d\_2;
+00398             \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} \_f\_t\_a\_4, \_f\_t\_b\_4, \_f\_t\_c\_4, \_f\_t\_d\_4;
+00399 
+00400             \textcolor{comment}{// Gegenbauer moments}
+00401             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_a\_1, \_a\_2, \_a\_4;
+00402 
+00403             \textcolor{comment}{// Polynomial of degree 3, cf. [BZ2004v3], eq. (A.6), p. 28}
+00404             \textcolor{keywordtype}{double} poly3(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & a, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & b, \textcolor{keyword}{co
+      nst} \textcolor{keywordtype}{double} & c, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & d)\textcolor{keyword}{ const}
+00405 \textcolor{keyword}{            }\{
+00406                 \textcolor{keywordflow}{return} a + b * s + c * s * s + d * s * s * s;
+00407             \}
+00408 
+00409             \textcolor{keywordtype}{double} f\_p\_asymptotic(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s)\textcolor{keyword}{ const}
+00410 \textcolor{keyword}{            }\{
+00411                 \textcolor{comment}{// cf. [BZ2004v3], eq. (A.2), p. 26}
+00412                 \textcolor{keywordflow}{return} \_r1\_p\_asymptotic / (1.0 - s / \_m12\_asymptotic) + \_r2\_p\_asy
+      mptotic / power\_of<2>(1.0 - s / \_m12\_asymptotic);
+00413             \}
+00414 
+00415             \textcolor{keywordtype}{double} f\_0\_asymptotic(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s)\textcolor{keyword}{ const}
+00416 \textcolor{keyword}{            }\{
+00417                 \textcolor{comment}{// cf. [BZ2004v3], eq. (A.3), p. 26}
+00418                 \textcolor{keywordflow}{return} \_r2\_0\_asymptotic / (1.0 - s / \_mfit2\_0\_asymptotic);
+00419             \}
+00420 
+00421             \textcolor{keywordtype}{double} f\_t\_asymptotic(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s)\textcolor{keyword}{ const}
+00422 \textcolor{keyword}{            }\{
+00423                 \textcolor{comment}{// cf. [BZ2004v3], eq. (A.2), p. 26}
+00424                 \textcolor{keywordflow}{return} \_r1\_t\_asymptotic / (1.0 - s / \_m12\_asymptotic) + \_r2\_t\_asy
+      mptotic / power\_of<2>(1.0 - s / \_m12\_asymptotic);
+00425             \}
+00426 
+00427         \textcolor{keyword}{public}:
+\hypertarget{mesonic-impl_8hh_source_l00428}{}\hyperlink{classeos_1_1BZ2004FormFactorsSplit_a2931b80b68b116f4f51c966649421286}{00428}             \hyperlink{classeos_1_1BZ2004FormFactorsSplit_a2931b80b68b116f4f51c966649421286}{BZ2004FormFactorsSplit}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & p, \textcolor{keyword}{const} \hyperlink{classeos_1_1Options}{Options} &) :
+00429                 \_f\_p\_factor(p[\textcolor{stringliteral}{"B->K::fp\_uncertainty@BZ2004v2"}], *this),
+00430                 \_f\_0\_factor(p[\textcolor{stringliteral}{"B->K::f0\_uncertainty@BZ2004v2"}], *this),
+00431                 \_f\_t\_factor(p[\textcolor{stringliteral}{"B->K::ft\_uncertainty@BZ2004v2"}], *this),
+00432                 \_a\_1(p[\textcolor{stringliteral}{"B->K::a\_1@2.2GeV"}], *this),
+00433                 \_a\_2(p[\textcolor{stringliteral}{"B->K::a\_2@2.2GeV"}], *this),
+00434                 \_a\_4(p[\textcolor{stringliteral}{"B->K::a\_4@2.2GeV"}], *this)
+00435             \{
+00436             \}
+00437 
+\hypertarget{mesonic-impl_8hh_source_l00438}{}\hyperlink{classeos_1_1BZ2004FormFactorsSplit_a84eed9e4957fc8fedcb5f116abf40838}{00438}             \textcolor{keyword}{static} \hyperlink{classeos_1_1FormFactors_3_01PToP_01_4}{FormFactors<PToP>} * \hyperlink{classeos_1_1BZ2004FormFactorsSplit_a84eed9e4957fc8fedcb5f116abf40838}{make}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & parameters, \textcolor{keywordtype}{unsign
+      ed})
+00439             \{
+00440                 \textcolor{keywordflow}{return} \textcolor{keyword}{new} \hyperlink{classeos_1_1BZ2004FormFactorsSplit_a2931b80b68b116f4f51c966649421286}{BZ2004FormFactorsSplit}(parameters, \hyperlink{classeos_1_1Options}{Options}());
+00441             \}
+00442 
+\hypertarget{mesonic-impl_8hh_source_l00443}{}\hyperlink{classeos_1_1BZ2004FormFactorsSplit_a58d02490b96eaea8923e8252205ec60a}{00443}             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \hyperlink{classeos_1_1BZ2004FormFactorsSplit_a58d02490b96eaea8923e8252205ec60a}{f_p}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s)\textcolor{keyword}{ const}
+00444 \textcolor{keyword}{            }\{
+00445                 \textcolor{comment}{// cf. [BZ2004v3], eq. (A.5), p. 27}
+00446                 \textcolor{keywordflow}{return} \_f\_p\_factor * (f\_p\_asymptotic(s) +
+00447                                       \_a\_1 * poly3(s, \_f\_p\_a\_1, \_f\_p\_b\_1, \_f\_p\_c\_
+      1, \_f\_p\_d\_1) +
+00448                                       \_a\_2 * poly3(s, \_f\_p\_a\_2, \_f\_p\_b\_2, \_f\_p\_c\_
+      2, \_f\_p\_d\_2) +
+00449                                       \_a\_4 * poly3(s, \_f\_p\_a\_4, \_f\_p\_b\_4, \_f\_p\_c\_
+      4, \_f\_p\_d\_4));
+00450             \}
+00451 
+\hypertarget{mesonic-impl_8hh_source_l00452}{}\hyperlink{classeos_1_1BZ2004FormFactorsSplit_a4963dfd717bb53dcb1093535a6697e89}{00452}             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \hyperlink{classeos_1_1BZ2004FormFactorsSplit_a4963dfd717bb53dcb1093535a6697e89}{f_0}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s)\textcolor{keyword}{ const}
+00453 \textcolor{keyword}{            }\{
+00454                 \textcolor{comment}{// cf. [BZ2004v3], eq. (A.5), p. 27}
+00455                 \textcolor{keywordflow}{return} \_f\_0\_factor * (f\_0\_asymptotic(s) +
+00456                                       \_a\_1 * poly3(s, \_f\_0\_a\_1, \_f\_0\_b\_1, \_f\_0\_c\_
+      1, \_f\_0\_d\_1) +
+00457                                       \_a\_2 * poly3(s, \_f\_0\_a\_2, \_f\_0\_b\_2, \_f\_0\_c\_
+      2, \_f\_0\_d\_2) +
+00458                                       \_a\_4 * poly3(s, \_f\_0\_a\_4, \_f\_0\_b\_4, \_f\_0\_c\_
+      4, \_f\_0\_d\_4));
+00459             \}
+00460 
+\hypertarget{mesonic-impl_8hh_source_l00461}{}\hyperlink{classeos_1_1BZ2004FormFactorsSplit_a395cb136ff1d486d5a0b0a2c0d5f7d10}{00461}             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \hyperlink{classeos_1_1BZ2004FormFactorsSplit_a395cb136ff1d486d5a0b0a2c0d5f7d10}{f_t}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s)\textcolor{keyword}{ const}
+00462 \textcolor{keyword}{            }\{
+00463                 \textcolor{comment}{// cf. [BZ2004v3], eq. (A.5), p. 27}
+00464                 \textcolor{keywordflow}{return} \_f\_t\_factor * (f\_t\_asymptotic(s) +
+00465                                       \_a\_1 * poly3(s, \_f\_t\_a\_1, \_f\_t\_b\_1, \_f\_t\_c\_
+      1, \_f\_t\_d\_1) +
+00466                                       \_a\_2 * poly3(s, \_f\_t\_a\_2, \_f\_t\_b\_2, \_f\_t\_c\_
+      2, \_f\_t\_d\_2) +
+00467                                       \_a\_4 * poly3(s, \_f\_t\_a\_4, \_f\_t\_b\_4, \_f\_t\_c\_
+      4, \_f\_t\_d\_4));
+00468             \}
+00469     \};
+00470 
+\hypertarget{mesonic-impl_8hh_source_l00471}{}\hyperlink{classeos_1_1KMPW2010FormFactors_3_01PToP_01_4}{00471}     \textcolor{keyword}{template} <> \textcolor{keyword}{class }KMPW2010FormFactors<\hyperlink{structeos_1_1PToP}{PToP}> :
+00472         \textcolor{keyword}{public} FormFactors<PToP>
+00473     \{
+00474         \textcolor{keyword}{private}:
+00475             \textcolor{comment}{// fit parametrisation for P -> P according to [KMPW2010]}
+00476             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_b1\_p, \_b1\_0, \_b1\_t;
+00477             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_f0\_p, \_f0\_t;
+00478             \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} \_tau\_p, \_tau\_m, \_tau\_0;
+00479             \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} \_m\_B, \_m\_K, \_m\_Bs2;
+00480 
+00481             \textcolor{keyword}{static} \textcolor{keywordtype}{double} \_calc\_z(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s)
+00482             \{
+00483                 \textcolor{keywordflow}{return} (std::sqrt(\_tau\_p - s) - std::sqrt(\_tau\_p - \_tau\_0)) / (st
+      d::sqrt(\_tau\_p - s) + std::sqrt(\_tau\_p - \_tau\_0));
+00484             \}
+00485 
+00486         \textcolor{keyword}{public}:
+\hypertarget{mesonic-impl_8hh_source_l00487}{}\hyperlink{classeos_1_1KMPW2010FormFactors_3_01PToP_01_4_a78a3560c2eb5879191d2d65e40a0bfa7}{00487}             KMPW2010FormFactors(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & p, \textcolor{keyword}{const} \hyperlink{classeos_1_1Options}{Options} &) :
+00488                 \_b1\_p(p[\textcolor{stringliteral}{"B->K::b^p\_1@KMPW2010"}], *this),
+00489                 \_b1\_0(p[\textcolor{stringliteral}{"B->K::b^0\_1@KMPW2010"}], *this),
+00490                 \_b1\_t(p[\textcolor{stringliteral}{"B->K::b^t\_1@KMPW2010"}], *this),
+00491                 \_f0\_p(p[\textcolor{stringliteral}{"B->K::F^p(0)@KMPW2010"}], *this),
+00492                 \_f0\_t(p[\textcolor{stringliteral}{"B->K::F^t(0)@KMPW2010"}], *this)
+00493             \{
+00494             \}
+00495 
+\hypertarget{mesonic-impl_8hh_source_l00496}{}\hyperlink{classeos_1_1KMPW2010FormFactors_3_01PToP_01_4_a0366ccc66d7c15c3eff6c261371d50a8}{00496}             \textcolor{keyword}{static} \hyperlink{classeos_1_1FormFactors_3_01PToP_01_4}{FormFactors<PToP>} * make(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & parameters, \textcolor{keywordtype}{unsign
+      ed})
+00497             \{
+00498                 \textcolor{keywordflow}{return} \textcolor{keyword}{new} KMPW2010FormFactors(parameters, \hyperlink{classeos_1_1Options}{Options}());
+00499             \}
+00500 
+\hypertarget{mesonic-impl_8hh_source_l00501}{}\hyperlink{classeos_1_1KMPW2010FormFactors_3_01PToP_01_4_ab0d16ba2b523915c8f6169bb8783ffd0}{00501}             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} f\_p(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s)\textcolor{keyword}{ const}
+00502 \textcolor{keyword}{            }\{
+00503                 \textcolor{comment}{// cf. [KMPW2010], Eq. (8.8), p. 30}
+00504                 \textcolor{keyword}{const} \textcolor{keywordtype}{double} zs = \_calc\_z(s), z0 = \_calc\_z(0.0);
+00505 
+00506                 \textcolor{keywordflow}{return} \_f0\_p() / (1 - s / \_m\_Bs2) * (1 + \_b1\_p() * (zs - z0 + 0.5
+       * (zs * zs - z0 * z0)));
+00507             \}
+00508 
+\hypertarget{mesonic-impl_8hh_source_l00509}{}\hyperlink{classeos_1_1KMPW2010FormFactors_3_01PToP_01_4_a7dc4ed06627cac344e437df9760f135f}{00509}             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} f\_0(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s)\textcolor{keyword}{ const}
+00510 \textcolor{keyword}{            }\{
+00511                 \textcolor{comment}{// cf. [KMPW2010], Eq. (8.8), p. 30}
+00512                 \textcolor{keyword}{const} \textcolor{keywordtype}{double} zs = \_calc\_z(s), z0 = \_calc\_z(0.0);
+00513 
+00514                 \textcolor{keywordflow}{return} \_f0\_p() * (1 + \_b1\_0() * (zs - z0 + 0.5 * (zs * zs - z0 * 
+      z0)));
+00515             \}
+00516 
+\hypertarget{mesonic-impl_8hh_source_l00517}{}\hyperlink{classeos_1_1KMPW2010FormFactors_3_01PToP_01_4_ac679f7283ec7f07e47f31629fe412344}{00517}             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} f\_t(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s)\textcolor{keyword}{ const}
+00518 \textcolor{keyword}{            }\{
+00519                 \textcolor{comment}{// cf. [KMPW2010], Eq. (8.8), p. 30}
+00520                 \textcolor{keyword}{const} \textcolor{keywordtype}{double} zs = \_calc\_z(s), z0 = \_calc\_z(0.0);
+00521 
+00522                 \textcolor{keywordflow}{return} \_f0\_t() / (1 - s / \_m\_Bs2) * (1 + \_b1\_t() * (zs - z0 + 0.5
+       * (zs * zs - z0 * z0)));
+00523             \}
+00524     \};
+00525 
+\hypertarget{mesonic-impl_8hh_source_l00526}{}\hyperlink{classeos_1_1BFW2010FormFactors_3_01PToP_01_4}{00526}     \textcolor{keyword}{template} <> \textcolor{keyword}{class }BFW2010FormFactors<\hyperlink{structeos_1_1PToP}{PToP}> :
+00527           \textcolor{keyword}{public} FormFactors<PToP>
+00528     \{
+00529           \textcolor{keyword}{private}:
+00530               \textcolor{comment}{// fit parametrisation for P -> P according to [BFW2011]. We use th
+      e simple series expansion and}
+00531               \textcolor{comment}{// the results form LCSR only.}
+00532               \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_alpha\_V0\_0, \_alpha\_V0\_1;
+00533               \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_alpha\_Vt\_0np,\_alpha\_Vt\_1np;
+00534               \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_alpha\_T0\_0, \_alpha\_T0\_1;
+00535               \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} \_tau\_p, \_tau\_m, \_tau\_0;
+00536               \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} \_m\_B, \_m\_K, \_m\_Bs2;
+00537 
+00538               \textcolor{keyword}{static} \textcolor{keywordtype}{double} \_calc\_z(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s)
+00539               \{
+00540                   \textcolor{keywordflow}{return} (std::sqrt(\_tau\_p - s) - std::sqrt(\_tau\_p - \_tau\_0)) / (
+      std::sqrt(\_tau\_p - s) + std::sqrt(\_tau\_p - \_tau\_0));
+00541               \}
+00542 
+00543           \textcolor{keyword}{public}:
+\hypertarget{mesonic-impl_8hh_source_l00544}{}\hyperlink{classeos_1_1BFW2010FormFactors_3_01PToP_01_4_ab61100fd229569f4b530cc47e6ef92e0}{00544}               BFW2010FormFactors(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & p, \textcolor{keyword}{const} \hyperlink{classeos_1_1Options}{Options} &) :
+00545                   \_alpha\_V0\_0(p[\textcolor{stringliteral}{"B->K::alpha^V0\_0@BFW2010"}], *this),
+00546                   \_alpha\_V0\_1(p[\textcolor{stringliteral}{"B->K::alpha^V0\_1@BFW2010"}], *this),
+00547                   \_alpha\_Vt\_0np(p[\textcolor{stringliteral}{"B->K::alpha^Vt\_0np@BFW2010"}], *this),
+00548                   \_alpha\_Vt\_1np(p[\textcolor{stringliteral}{"B->K::alpha^Vt\_1np@BFW2010"}], *this),
+00549                   \_alpha\_T0\_0(p[\textcolor{stringliteral}{"B->K::alpha^T0\_0@BFW2010"}], *this),
+00550                   \_alpha\_T0\_1(p[\textcolor{stringliteral}{"B->K::alpha^T0\_1@BFW2010"}], *this)
+00551               \{
+00552               \}
+00553 
+\hypertarget{mesonic-impl_8hh_source_l00554}{}\hyperlink{classeos_1_1BFW2010FormFactors_3_01PToP_01_4_ac0b060522c5009c4934beaeb113a3f22}{00554}               \textcolor{keyword}{static} \hyperlink{classeos_1_1FormFactors_3_01PToP_01_4}{FormFactors<PToP>} * make(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & parameters, \textcolor{keywordtype}{unsi
+      gned})
+00555               \{
+00556                   \textcolor{keywordflow}{return} \textcolor{keyword}{new} BFW2010FormFactors(parameters, \hyperlink{classeos_1_1Options}{Options}());
+00557               \}
+00558 
+\hypertarget{mesonic-impl_8hh_source_l00559}{}\hyperlink{classeos_1_1BFW2010FormFactors_3_01PToP_01_4_aa059ad4f00d290d3729b9b6bed6be171}{00559}               \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} f\_p(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s)\textcolor{keyword}{ const}
+00560 \textcolor{keyword}{              }\{
+00561                   \textcolor{comment}{// cf. [BFW2010], Eq. (43), p. 13, replacements Eq. (45), p. 16
+       and Eq. (7), p. 4}
+00562                   \textcolor{keywordflow}{return} 1.0 / (1.0 - s / \_m\_Bs2) * (\_alpha\_V0\_0 + \_alpha\_V0\_1 * 
+      \_calc\_z(s));
+00563               \}
+00564 
+\hypertarget{mesonic-impl_8hh_source_l00565}{}\hyperlink{classeos_1_1BFW2010FormFactors_3_01PToP_01_4_ac48fd26a92111d4158f26d2189c309e9}{00565}               \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} f\_0(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s)\textcolor{keyword}{ const}
+00566 \textcolor{keyword}{              }\{
+00567                   \textcolor{comment}{// cf. [BFW2010], Eq. (43), p. 13, replacements Eq. (45), p. 16
+       and Eq. (7), p. 4}
+00568                   \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} prefactor = \_m\_B * \_m\_B / (\_m\_B * \_m\_B -\_m\_
+      K * \_m\_K);
+00569                   \textcolor{keywordflow}{return} prefactor * (\_alpha\_Vt\_0np + \_alpha\_Vt\_1np * \_calc\_z(s))
+      ;
+00570               \}
+00571 
+\hypertarget{mesonic-impl_8hh_source_l00572}{}\hyperlink{classeos_1_1BFW2010FormFactors_3_01PToP_01_4_a37ffe94ba17d4e2b68ec11b2960f97b7}{00572}               \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} f\_t(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s)\textcolor{keyword}{ const}
+00573 \textcolor{keyword}{              }\{
+00574                   \textcolor{comment}{// cf. [BFW2010], Eq. (43), p. 13, replacements Eq. (45), p. 16
+       and Eq. (9), p. 4}
+00575                   \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} prefactor = (\_m\_B + \_m\_K) / \_m\_B;
+00576                   \textcolor{keywordflow}{return} prefactor / (1.0 - s / \_m\_Bs2) * (\_alpha\_T0\_0 + \_alpha\_T
+      0\_1 * \_calc\_z(s));
+00577               \}
+00578     \};
+00579 \}
+00580 
+00581 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

@@ -1,0 +1,114 @@
+\hypertarget{classeos_1_1PriorSampler}{
+\section{eos::PriorSampler Class Reference}
+\label{classeos_1_1PriorSampler}\index{eos::PriorSampler@{eos::PriorSampler}}
+}
+
+
+{\ttfamily \#include $<$prior\_\-sampler.hh$>$}
+
+Inherits \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern$<$ PriorSampler $>$}.\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structeos_1_1PriorSampler_1_1Config}{Config}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classeos_1_1hdf5_1_1Array}{hdf5::Array}$<$ 1, double $>$ \hyperlink{classeos_1_1PriorSampler_a7ae349c306b96abd4507bd2ea2e14b86}{ObservablesType}
+\item 
+typedef std::vector$<$ std::vector$<$ double $>$ $>$ \hyperlink{classeos_1_1PriorSampler_a6da96aefb4891f1acb9366c8ffccd223}{SamplesList}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1PriorSampler_afa682fec47cec9d61b44709b1e8f4ea3}{PriorSampler} (const \hyperlink{classeos_1_1ObservableSet}{ObservableSet} \&observables, const \hyperlink{structeos_1_1PriorSampler_1_1Config}{Config} \&config)
+\item 
+\hyperlink{classeos_1_1PriorSampler_ad58ef7a11610b6c0bbbec96a9189395f}{$\sim$PriorSampler} ()
+\item 
+bool \hyperlink{classeos_1_1PriorSampler_aedf28860d2238779355f6fd583555851}{add} (const \hyperlink{namespaceeos_ac5481e3b46ee55ff24606ee7f6e78651}{LogPriorPtr} \&prior)
+\item 
+bool \hyperlink{classeos_1_1PriorSampler_ad402bbf857e13b0ce3c6af174e8c72dd}{add} (const \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} \&observable)
+\item 
+void \hyperlink{classeos_1_1PriorSampler_a62210b9eb8835714166f9ce2689685e3}{run} ()
+\item 
+void \hyperlink{classeos_1_1PriorSampler_a610cb408ecf74f29d8632c3b5b264c91}{run} (const \hyperlink{classeos_1_1PriorSampler_a6da96aefb4891f1acb9366c8ffccd223}{SamplesList} \&samples, const std::vector$<$ \hyperlink{structeos_1_1ParameterDescription}{ParameterDescription} $>$ \&)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classeos_1_1hdf5_1_1Array}{ObservablesType} \hyperlink{classeos_1_1PriorSampler_a999109fc4dcf705444089aff091dc620}{observables\_\-type} (const unsigned \&dimension)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Perform simple uncertainty propagation by defining parameters to be varied, and the observables whose variation one is interested in. \hyperlink{classeos_1_1Parameter}{Parameter} values are sampled directly from 1D priors. All observable values are stored to disk. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classeos_1_1PriorSampler_a7ae349c306b96abd4507bd2ea2e14b86}{
+\index{eos::PriorSampler@{eos::PriorSampler}!ObservablesType@{ObservablesType}}
+\index{ObservablesType@{ObservablesType}!eos::PriorSampler@{eos::PriorSampler}}
+\subsubsection[{ObservablesType}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf hdf5::Array}$<$1, double$>$ {\bf eos::PriorSampler::ObservablesType}}}
+\label{classeos_1_1PriorSampler_a7ae349c306b96abd4507bd2ea2e14b86}
+\hypertarget{classeos_1_1PriorSampler_a6da96aefb4891f1acb9366c8ffccd223}{
+\index{eos::PriorSampler@{eos::PriorSampler}!SamplesList@{SamplesList}}
+\index{SamplesList@{SamplesList}!eos::PriorSampler@{eos::PriorSampler}}
+\subsubsection[{SamplesList}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::vector$<$std::vector$<$double$>$ $>$ {\bf eos::PriorSampler::SamplesList}}}
+\label{classeos_1_1PriorSampler_a6da96aefb4891f1acb9366c8ffccd223}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classeos_1_1PriorSampler_afa682fec47cec9d61b44709b1e8f4ea3}{
+\index{eos::PriorSampler@{eos::PriorSampler}!PriorSampler@{PriorSampler}}
+\index{PriorSampler@{PriorSampler}!eos::PriorSampler@{eos::PriorSampler}}
+\subsubsection[{PriorSampler}]{\setlength{\rightskip}{0pt plus 5cm}eos::PriorSampler::PriorSampler (const {\bf ObservableSet} \& {\em observables}, \/  const {\bf Config} \& {\em config})}}
+\label{classeos_1_1PriorSampler_afa682fec47cec9d61b44709b1e8f4ea3}
+Constructor. 
+\begin{DoxyParams}{Parameters}
+\item[{\em observables}]list of observables, can be extended through \hyperlink{classeos_1_1PriorSampler_aedf28860d2238779355f6fd583555851}{add()}. \item[{\em config}]configuration options. \end{DoxyParams}
+\hypertarget{classeos_1_1PriorSampler_ad58ef7a11610b6c0bbbec96a9189395f}{
+\index{eos::PriorSampler@{eos::PriorSampler}!$\sim$PriorSampler@{$\sim$PriorSampler}}
+\index{$\sim$PriorSampler@{$\sim$PriorSampler}!eos::PriorSampler@{eos::PriorSampler}}
+\subsubsection[{$\sim$PriorSampler}]{\setlength{\rightskip}{0pt plus 5cm}eos::PriorSampler::$\sim$PriorSampler ()}}
+\label{classeos_1_1PriorSampler_ad58ef7a11610b6c0bbbec96a9189395f}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classeos_1_1PriorSampler_ad402bbf857e13b0ce3c6af174e8c72dd}{
+\index{eos::PriorSampler@{eos::PriorSampler}!add@{add}}
+\index{add@{add}!eos::PriorSampler@{eos::PriorSampler}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}bool eos::PriorSampler::add (const {\bf ObservablePtr} \& {\em observable})}}
+\label{classeos_1_1PriorSampler_ad402bbf857e13b0ce3c6af174e8c72dd}
+Add an observable for which the the uncertainty is to be evaluated. \begin{DoxyReturn}{Returns}
+false if identical to an existing observable. 
+\end{DoxyReturn}
+\hypertarget{classeos_1_1PriorSampler_aedf28860d2238779355f6fd583555851}{
+\index{eos::PriorSampler@{eos::PriorSampler}!add@{add}}
+\index{add@{add}!eos::PriorSampler@{eos::PriorSampler}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}bool eos::PriorSampler::add (const {\bf LogPriorPtr} \& {\em prior})}}
+\label{classeos_1_1PriorSampler_aedf28860d2238779355f6fd583555851}
+Add a parameter with its prior to sample from. \begin{DoxyReturn}{Returns}
+false if prior was not added successfully. 
+\end{DoxyReturn}
+\hypertarget{classeos_1_1PriorSampler_a999109fc4dcf705444089aff091dc620}{
+\index{eos::PriorSampler@{eos::PriorSampler}!observables\_\-type@{observables\_\-type}}
+\index{observables\_\-type@{observables\_\-type}!eos::PriorSampler@{eos::PriorSampler}}
+\subsubsection[{observables\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf ObservablesType} eos::PriorSampler::observables\_\-type (const unsigned \& {\em dimension})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1PriorSampler_a999109fc4dcf705444089aff091dc620}
+\hypertarget{classeos_1_1PriorSampler_a610cb408ecf74f29d8632c3b5b264c91}{
+\index{eos::PriorSampler@{eos::PriorSampler}!run@{run}}
+\index{run@{run}!eos::PriorSampler@{eos::PriorSampler}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void eos::PriorSampler::run (const {\bf SamplesList} \& {\em samples}, \/  const std::vector$<$ {\bf ParameterDescription} $>$ \&)}}
+\label{classeos_1_1PriorSampler_a610cb408ecf74f29d8632c3b5b264c91}
+Calculate observables at the given parameter samples. The order and meaning of parameters in a sample are specified by the parameter descriptions. \begin{DoxyNote}{Note}
+No new samples are drawn from the priors. 
+\end{DoxyNote}
+\hypertarget{classeos_1_1PriorSampler_a62210b9eb8835714166f9ce2689685e3}{
+\index{eos::PriorSampler@{eos::PriorSampler}!run@{run}}
+\index{run@{run}!eos::PriorSampler@{eos::PriorSampler}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void eos::PriorSampler::run ()}}
+\label{classeos_1_1PriorSampler_a62210b9eb8835714166f9ce2689685e3}
+Start the sampling process and store the calculated observable values to disk. 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{prior__sampler_8hh}{prior\_\-sampler.hh}\end{DoxyCompactItemize}

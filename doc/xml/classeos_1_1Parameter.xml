@@ -1,0 +1,325 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1Parameter" kind="class" prot="public">
+    <compoundname>eos::Parameter</compoundname>
+    <basecompoundref refid="classeos_1_1Mutable" prot="public" virt="non-virtual">eos::Mutable</basecompoundref>
+    <derivedcompoundref refid="classeos_1_1UsedParameter" prot="public" virt="non-virtual">eos::UsedParameter</derivedcompoundref>
+    <includes refid="parameters_8hh" local="no">parameters.hh</includes>
+      <sectiondef kind="user-defined">
+      <header>Internal Data</header>
+      <description><para><anchor id="_1amgrpcda9ee9073c7e4a14b650df3679e508a"/> </para></description>
+      <memberdef kind="variable" id="classeos_1_1Parameter_1aef560da51ce767e06e4a199ec1c937f2" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; Parameters::Data &gt;</type>
+        <definition>std::shared_ptr&lt;Parameters::Data&gt; eos::Parameter::_parameters_data</definition>
+        <argsstring></argsstring>
+        <name>_parameters_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" line="157" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1Parameter_1aa79b6b990dd14e42a8edb0d4a06437df" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned eos::Parameter::_index</definition>
+        <argsstring></argsstring>
+        <name>_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" line="159" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Basic Functions</header>
+      <description><para><anchor id="_1amgrp2386c9a1f1785edee33f374dd2db9b3d"/> Copy-constructor. </para></description>
+      <memberdef kind="function" id="classeos_1_1Parameter_1a2c4c9e1fc90950eb2b89e99995ed6e45" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::Parameter::Parameter</definition>
+        <argsstring>(const std::shared_ptr&lt; Parameters::Data &gt; &amp;imp, unsigned index)</argsstring>
+        <name>Parameter</name>
+        <param>
+          <type>const std::shared_ptr&lt; Parameters::Data &gt; &amp;</type>
+          <declname>imp</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" line="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Parameter_1ac64d342eed9e01a93a42e00403ab041f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::Parameter::Parameter</definition>
+        <argsstring>(const Parameter &amp;other)</argsstring>
+        <name>Parameter</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" line="179"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Parameter_1ac5e6dd06494095cffe292e4b4dc200c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::Parameter::~Parameter</definition>
+        <argsstring>()</argsstring>
+        <name>~Parameter</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" line="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Parameter_1a8a643807f254a9601349c779cf6211dc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceeos_1a0ab446e6a801d96a1ee83bb7c070686f" kindref="member">MutablePtr</ref></type>
+        <definition>MutablePtr eos::Parameter::clone</definition>
+        <argsstring>() const </argsstring>
+        <name>clone</name>
+        <reimplements refid="classeos_1_1Mutable_1a31d51dbb25d02ad989592b43de8a787b">clone</reimplements>
+        <briefdescription>
+<para>Make a copy of this <ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref> as a MutablePtr. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" line="185"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Access &amp; Modification of the Numeric Value</header>
+      <description><para><anchor id="_1amgrpe80791dade181f608b19efd4011ae6ee"/> Cast a Parameter&apos;s numeric value to a double. </para></description>
+      <memberdef kind="function" id="classeos_1_1Parameter_1ad2dc69fe74e308328dc8a1d901c916ec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual eos::Parameter::operator double</definition>
+        <argsstring>() const </argsstring>
+        <name>operator double</name>
+        <reimplements refid="classeos_1_1Mutable_1a0763bf2933503db18d28b942aae2d324">operator double</reimplements>
+        <briefdescription>
+<para>Retrieve a Parameter&apos;s numeric value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" line="191"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Parameter_1ada58e0206d67777a79bdd2bc0c806600" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double eos::Parameter::operator()</definition>
+        <argsstring>() const </argsstring>
+        <name>operator()</name>
+        <reimplements refid="classeos_1_1Mutable_1a6efd15ab0164a1735813669506e331d7">operator()</reimplements>
+        <briefdescription>
+<para>Retrieve a Parameter&apos;s numeric value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" line="194"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Parameter_1aff29f9acdc90019e76239f6c81b4014a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>const <ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref> &amp;</type>
+        <definition>virtual const Parameter&amp; eos::Parameter::operator=</definition>
+        <argsstring>(const double &amp;)</argsstring>
+        <name>operator=</name>
+        <reimplements refid="classeos_1_1Mutable_1abf079592435ecb22f242b7b01c279c72">operator=</reimplements>
+        <param>
+          <type>const double &amp;</type>
+        </param>
+        <briefdescription>
+<para>Set a Parameter&apos;s numeric value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" line="197"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Access to Meta Data</header>
+      <description><para><anchor id="_1amgrpa3a190e9d66c82f98a9d3e29998edf0d"/> Retrieve the Parameter&apos;s name. </para></description>
+      <memberdef kind="function" id="classeos_1_1Parameter_1a86f581847722de0445ae65065940fd13" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const std::string &amp;</type>
+        <definition>virtual const std::string&amp; eos::Parameter::name</definition>
+        <argsstring>() const </argsstring>
+        <name>name</name>
+        <reimplements refid="classeos_1_1Mutable_1ad215a3863435593930a3543866881f49">name</reimplements>
+        <briefdescription>
+<para>Retrieve the Parameter&apos;s (default) central value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" line="203"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Parameter_1a1c0a1ce478f2275d1259483fa919ec60" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const double &amp;</type>
+        <definition>const double&amp; eos::Parameter::central</definition>
+        <argsstring>() const </argsstring>
+        <name>central</name>
+        <briefdescription>
+<para>Retrieve the Parameter&apos;s (default) central value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" line="206"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Parameter_1ac91f5116794dea955ad7ac20e552b730" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const double &amp;</type>
+        <definition>const double&amp; eos::Parameter::max</definition>
+        <argsstring>() const </argsstring>
+        <name>max</name>
+        <briefdescription>
+<para>Retrieve the Parameter&apos;s (default) maximal value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" line="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Parameter_1a37672fa03693d97cdafb23e35fe0e83b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const double &amp;</type>
+        <definition>const double&amp; eos::Parameter::min</definition>
+        <argsstring>() const </argsstring>
+        <name>min</name>
+        <briefdescription>
+<para>Retrieve the Parameter&apos;s (default) minimal value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" line="212"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Parameter_1a1cea65462fdafeb7329f6d87fd6e42b4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1Parameter_1a065f55e66b2128cc5f14339e676d833a" kindref="member">Id</ref></type>
+        <definition>Id eos::Parameter::id</definition>
+        <argsstring>() const </argsstring>
+        <name>id</name>
+        <briefdescription>
+<para>Retrieve the Parameter&apos;s id. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" line="215"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classeos_1_1Parameter_1a065f55e66b2128cc5f14339e676d833a" prot="public" static="no">
+        <type>unsigned</type>
+        <definition>typedef unsigned eos::Parameter::Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A unique number that identifies this parameter at run time. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" line="174" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classeos_1_1Parameter_1afaebbd8ef883afa59f01fa3d4475e6a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Parameters</definition>
+        <argsstring></argsstring>
+        <name>Parameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" line="168" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classeos_1_1Parameter_1afdc1ae1c3b0dbac4fdf6769d5f8e1fbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend struct</type>
+        <definition>friend struct Implementation&lt; Parameters &gt;</definition>
+        <argsstring></argsstring>
+        <name>Implementation&lt; Parameters &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" line="169" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref> is the class that holds all information of one of Parameters&apos; parameters. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="783">
+        <label>eos::Mutable</label>
+        <link refid="classeos_1_1Mutable"/>
+      </node>
+      <node id="782">
+        <label>eos::Parameter</label>
+        <link refid="classeos_1_1Parameter"/>
+        <childnode refid="783" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="784">
+        <label>eos::UsedParameter</label>
+        <link refid="classeos_1_1UsedParameter"/>
+        <childnode refid="782" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="786">
+        <label>eos::Mutable</label>
+        <link refid="classeos_1_1Mutable"/>
+      </node>
+      <node id="785">
+        <label>eos::Parameter</label>
+        <link refid="classeos_1_1Parameter"/>
+        <childnode refid="786" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" line="150" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" bodystart="148" bodyend="217"/>
+    <listofallmembers>
+      <member refid="classeos_1_1Parameter_1aa79b6b990dd14e42a8edb0d4a06437df" prot="private" virt="non-virtual"><scope>eos::Parameter</scope><name>_index</name></member>
+      <member refid="classeos_1_1Parameter_1aef560da51ce767e06e4a199ec1c937f2" prot="private" virt="non-virtual"><scope>eos::Parameter</scope><name>_parameters_data</name></member>
+      <member refid="classeos_1_1Parameter_1a1c0a1ce478f2275d1259483fa919ec60" prot="public" virt="non-virtual"><scope>eos::Parameter</scope><name>central</name></member>
+      <member refid="classeos_1_1Parameter_1a8a643807f254a9601349c779cf6211dc" prot="public" virt="virtual"><scope>eos::Parameter</scope><name>clone</name></member>
+      <member refid="classeos_1_1Parameter_1a065f55e66b2128cc5f14339e676d833a" prot="public" virt="non-virtual"><scope>eos::Parameter</scope><name>Id</name></member>
+      <member refid="classeos_1_1Parameter_1a1cea65462fdafeb7329f6d87fd6e42b4" prot="public" virt="non-virtual"><scope>eos::Parameter</scope><name>id</name></member>
+      <member refid="classeos_1_1Parameter_1afdc1ae1c3b0dbac4fdf6769d5f8e1fbf" prot="public" virt="non-virtual"><scope>eos::Parameter</scope><name>Implementation&lt; Parameters &gt;</name></member>
+      <member refid="classeos_1_1Parameter_1ac91f5116794dea955ad7ac20e552b730" prot="public" virt="non-virtual"><scope>eos::Parameter</scope><name>max</name></member>
+      <member refid="classeos_1_1Parameter_1a37672fa03693d97cdafb23e35fe0e83b" prot="public" virt="non-virtual"><scope>eos::Parameter</scope><name>min</name></member>
+      <member refid="classeos_1_1Parameter_1a86f581847722de0445ae65065940fd13" prot="public" virt="virtual"><scope>eos::Parameter</scope><name>name</name></member>
+      <member refid="classeos_1_1Parameter_1ad2dc69fe74e308328dc8a1d901c916ec" prot="public" virt="virtual"><scope>eos::Parameter</scope><name>operator double</name></member>
+      <member refid="classeos_1_1Parameter_1ada58e0206d67777a79bdd2bc0c806600" prot="public" virt="virtual"><scope>eos::Parameter</scope><name>operator()</name></member>
+      <member refid="classeos_1_1Parameter_1aff29f9acdc90019e76239f6c81b4014a" prot="public" virt="virtual"><scope>eos::Parameter</scope><name>operator=</name></member>
+      <member refid="classeos_1_1Parameter_1a2c4c9e1fc90950eb2b89e99995ed6e45" prot="private" virt="non-virtual"><scope>eos::Parameter</scope><name>Parameter</name></member>
+      <member refid="classeos_1_1Parameter_1ac64d342eed9e01a93a42e00403ab041f" prot="public" virt="non-virtual"><scope>eos::Parameter</scope><name>Parameter</name></member>
+      <member refid="classeos_1_1Parameter_1afaebbd8ef883afa59f01fa3d4475e6a2" prot="public" virt="non-virtual"><scope>eos::Parameter</scope><name>Parameters</name></member>
+      <member refid="classeos_1_1Mutable_1a928ec6648a438f02b6369a8863d39560" prot="public" virt="pure-virtual"><scope>eos::Parameter</scope><name>~Mutable</name></member>
+      <member refid="classeos_1_1Parameter_1ac5e6dd06494095cffe292e4b4dc200c8" prot="public" virt="non-virtual"><scope>eos::Parameter</scope><name>~Parameter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

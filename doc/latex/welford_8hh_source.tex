@@ -1,0 +1,56 @@
+\hypertarget{welford_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/welford.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2011 Frederik Beaujean}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_EOS\_UTILS\_WELFORD\_HH}
+\hypertarget{welford_8hh_source_l00021}{}\hyperlink{welford_8hh_ac70488a5220043c891e5f20ba1006fb3}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_EOS\_UTILS\_WELFORD\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{keyword}{namespace }eos
+00024 \{
+\hypertarget{welford_8hh_source_l00030}{}\hyperlink{structeos_1_1Welford}{00030}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1Welford}{Welford}
+00031     \{
+00032         \textcolor{keyword}{private}:
+00033             \textcolor{keywordtype}{double} new\_mean, old\_mean;
+00034 
+00035             \textcolor{keywordtype}{double} new\_sum, old\_sum;
+00036 
+00037             \textcolor{keywordtype}{unsigned} size;
+00038 
+00039         \textcolor{keyword}{public}:
+00040             \hyperlink{structeos_1_1Welford_aa8a5cede9b83f8407c0475278fb3929d}{Welford}();
+00041 
+00042             \textcolor{keywordtype}{void} \hyperlink{structeos_1_1Welford_a42e2ae402d7f7944fea47ab9676d3ba5}{add}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & value);
+00043 
+00044             \textcolor{keywordtype}{double} \hyperlink{structeos_1_1Welford_a4ee0383dc9fc04f9319205ed7c39e6bc}{mean}() \textcolor{keyword}{const};
+00045 
+00046             \textcolor{keywordtype}{unsigned} \hyperlink{structeos_1_1Welford_a3cbe78c6143406e01dfaff70fac96ecd}{number_of_elements}() \textcolor{keyword}{const};
+00047 
+00048             \textcolor{keywordtype}{double} \hyperlink{structeos_1_1Welford_af2d5839b48295d51d5d97e4f6cb889ba}{std_deviation}() \textcolor{keyword}{const};
+00049 
+00050             \textcolor{keywordtype}{double} \hyperlink{structeos_1_1Welford_a08c2dfcf9277822ed83ac7181ec46d6a}{variance}() \textcolor{keyword}{const};
+00051     \};
+00052 \}
+00053 
+00054 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

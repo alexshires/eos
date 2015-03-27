@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="dir_766afd116c6d0af249f6705bb3b81348" kind="dir">
+    <compoundname>/home/alexshires/EOS/eos-next/eos/form-factors/</compoundname>
+    <innerfile refid="analytic-b-to-pi_8hh">analytic-b-to-pi.hh</innerfile>
+    <innerfile refid="baryonic-impl_8hh">baryonic-impl.hh</innerfile>
+    <innerfile refid="baryonic_8hh">baryonic.hh</innerfile>
+    <innerfile refid="form-factor-adapter_8hh">form-factor-adapter.hh</innerfile>
+    <innerfile refid="form-factors-fwd_8hh">form-factors-fwd.hh</innerfile>
+    <innerfile refid="form-factors_8hh">form-factors.hh</innerfile>
+    <innerfile refid="mesonic-impl_8hh">mesonic-impl.hh</innerfile>
+    <innerfile refid="mesonic_8hh">mesonic.hh</innerfile>
+    <innerfile refid="pi-lcdas_8hh">pi-lcdas.hh</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/form-factors/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="polylog_8hh" kind="file">
+    <compoundname>polylog.hh</compoundname>
+    <includes refid="complex_8hh" local="no">eos/utils/complex.hh</includes>
+    <incdepgraph>
+      <node id="1445">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/polylog.hh</label>
+        <link refid="polylog.hh"/>
+        <childnode refid="1446" relation="include">
+        </childnode>
+      </node>
+      <node id="1446">
+        <label>eos/utils/complex.hh</label>
+        <link refid="complex_8hh"/>
+        <childnode refid="1447" relation="include">
+        </childnode>
+      </node>
+      <node id="1447">
+        <label>complex</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceeos">eos</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="polylog_8hh_1a26b565278b6b73270f9c0215b0e40640" prot="public" static="no">
+        <name>EOS_GUARD_EOS_UTILS_POLYLOG_HH</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/polylog.hh" line="4" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/polylog.hh" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>vim:<sp/>set<sp/>sw=4<sp/>sts=4<sp/>et<sp/>foldmethod=syntax<sp/>:<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>EOS_GUARD_EOS_UTILS_POLYLOG_HH</highlight></codeline>
+<codeline lineno="4" refid="polylog_8hh_1a26b565278b6b73270f9c0215b0e40640" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EOS_GUARD_EOS_UTILS_POLYLOG_HH<sp/>1</highlight></codeline>
+<codeline lineno="5"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="complex_8hh" kindref="compound">eos/utils/complex.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">eos</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>complex&lt;double&gt;<sp/><ref refid="namespaceeos_1a7fb80dc36d6e29adfbde318a197ea591" kindref="member">dilog</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>complex&lt;double&gt;<sp/>&amp;<sp/>z)<sp/>__attribute__<sp/>((pure));</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>complex&lt;double&gt;<sp/><ref refid="namespaceeos_1a38a0279ef72ff9c1bdb17dd7956a199a" kindref="member">trilog</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>complex&lt;double&gt;<sp/>&amp;<sp/>z)<sp/>__attribute__<sp/>((pure));</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/polylog.hh"/>
+  </compounddef>
+</doxygen>

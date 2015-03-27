@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1EquationSolver_1_1Config" kind="struct" prot="public">
+    <compoundname>eos::EquationSolver::Config</compoundname>
+    <includes refid="equation__solver_8hh" local="no">equation_solver.hh</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structeos_1_1EquationSolver_1_1Config_1ae7c9a2c51f8669b27669cde1a64af2b0" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned eos::EquationSolver::Config::maximum_steps</definition>
+        <argsstring></argsstring>
+        <name>maximum_steps</name>
+        <briefdescription>
+<para>Maximum number of evaluations. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/equation_solver.hh" line="60" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/equation_solver.hh" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1EquationSolver_1_1Config_1af745d1f394c65f1176470aa42b1fdbc0" prot="public" static="no" mutable="no">
+        <type><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange</ref>&lt; unsigned &gt;</type>
+        <definition>VerifiedRange&lt;unsigned&gt; eos::EquationSolver::Config::strategy</definition>
+        <argsstring></argsstring>
+        <name>strategy</name>
+        <briefdescription>
+<para>[0 = low, 1 = medium, 2 = high] precision </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/equation_solver.hh" line="63" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/equation_solver.hh" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1EquationSolver_1_1Config_1a8044943acf44d730c0e78226e1c30492" prot="public" static="no" mutable="no">
+        <type><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange</ref>&lt; double &gt;</type>
+        <definition>VerifiedRange&lt;double&gt; eos::EquationSolver::Config::tolerance</definition>
+        <argsstring></argsstring>
+        <name>tolerance</name>
+        <briefdescription>
+<para>Required precision. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/equation_solver.hh" line="66" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/equation_solver.hh" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="structeos_1_1EquationSolver_1_1Config_1aa9b73defb40bfcefc27b5535e1f3d21d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::EquationSolver::Config::Config</definition>
+        <argsstring>()</argsstring>
+        <name>Config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/equation_solver.hh" line="56"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structeos_1_1EquationSolver_1_1Config_1a09146644b138f64029be17f8749fc237" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structeos_1_1EquationSolver_1_1Config" kindref="compound">Config</ref></type>
+        <definition>static Config eos::EquationSolver::Config::Default</definition>
+        <argsstring>()</argsstring>
+        <name>Default</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/equation_solver.hh" line="68"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="314">
+        <label>eos::VerifiedRange&lt; unsigned &gt;</label>
+        <link refid="classeos_1_1VerifiedRange"/>
+      </node>
+      <node id="315">
+        <label>eos::VerifiedRange&lt; double &gt;</label>
+        <link refid="classeos_1_1VerifiedRange"/>
+      </node>
+      <node id="313">
+        <label>eos::EquationSolver::Config</label>
+        <link refid="structeos_1_1EquationSolver_1_1Config"/>
+        <childnode refid="314" relation="usage">
+          <edgelabel>strategy</edgelabel>
+        </childnode>
+        <childnode refid="315" relation="usage">
+          <edgelabel>tolerance</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/equation_solver.hh" line="54" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/equation_solver.hh" bodystart="53" bodyend="69"/>
+    <listofallmembers>
+      <member refid="structeos_1_1EquationSolver_1_1Config_1aa9b73defb40bfcefc27b5535e1f3d21d" prot="private" virt="non-virtual"><scope>eos::EquationSolver::Config</scope><name>Config</name></member>
+      <member refid="structeos_1_1EquationSolver_1_1Config_1a09146644b138f64029be17f8749fc237" prot="public" virt="non-virtual"><scope>eos::EquationSolver::Config</scope><name>Default</name></member>
+      <member refid="structeos_1_1EquationSolver_1_1Config_1ae7c9a2c51f8669b27669cde1a64af2b0" prot="public" virt="non-virtual"><scope>eos::EquationSolver::Config</scope><name>maximum_steps</name></member>
+      <member refid="structeos_1_1EquationSolver_1_1Config_1af745d1f394c65f1176470aa42b1fdbc0" prot="public" virt="non-virtual"><scope>eos::EquationSolver::Config</scope><name>strategy</name></member>
+      <member refid="structeos_1_1EquationSolver_1_1Config_1a8044943acf44d730c0e78226e1c30492" prot="public" virt="non-virtual"><scope>eos::EquationSolver::Config</scope><name>tolerance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

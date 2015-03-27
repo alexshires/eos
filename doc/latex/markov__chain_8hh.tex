@@ -1,0 +1,55 @@
+\hypertarget{markov__chain_8hh}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/markov\_\-chain.hh File Reference}
+\label{markov__chain_8hh}\index{/home/alexshires/EOS/eos-\/next/eos/utils/markov\_\-chain.hh@{/home/alexshires/EOS/eos-\/next/eos/utils/markov\_\-chain.hh}}
+}
+{\ttfamily \#include $<$eos/utils/analysis-\/fwd.hh$>$}\par
+{\ttfamily \#include $<$eos/utils/hdf5-\/fwd.hh$>$}\par
+{\ttfamily \#include $<$eos/utils/parameters.hh$>$}\par
+{\ttfamily \#include $<$eos/utils/stringify.hh$>$}\par
+{\ttfamily \#include $<$vector$>$}\par
+{\ttfamily \#include $<$gsl/gsl\_\-rng.h$>$}\par
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classeos_1_1MarkovChain}{eos::MarkovChain}
+\item 
+struct \hyperlink{structeos_1_1MarkovChain_1_1HyperParameter}{eos::MarkovChain::HyperParameter}
+\item 
+struct \hyperlink{structeos_1_1MarkovChain_1_1State}{eos::MarkovChain::State}
+\item 
+struct \hyperlink{structeos_1_1MarkovChain_1_1Stats}{eos::MarkovChain::Stats}
+\item 
+struct \hyperlink{structeos_1_1MarkovChain_1_1History}{eos::MarkovChain::History}
+\item 
+struct \hyperlink{structeos_1_1MarkovChain_1_1ProposalFunction}{eos::MarkovChain::ProposalFunction}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \hyperlink{namespaceeos}{eos}
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{markov__chain_8hh_ae0ec1ee591df5ff97e6f782528436afc}{EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-MARKOV\_\-CHAIN\_\-HH}~1
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std::shared\_\-ptr$<$ MarkovChain::History $>$ \hyperlink{namespaceeos_ac9f30fde04446cfabdd69d4b5b5d3c5a}{eos::HistoryPtr}
+\item 
+typedef std::shared\_\-ptr$<$ MarkovChain::ProposalFunction $>$ \hyperlink{namespaceeos_ae97f9891c67c90959a03fc96efaa4dc9}{eos::ProposalFunctionPtr}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std::ostream \& \hyperlink{namespaceeos_a71b35e367b59b8fe16e6111d0851445f}{eos::operator$<$$<$} (std::ostream \&lhs, const MarkovChain::State \&rhs)
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{markov__chain_8hh_ae0ec1ee591df5ff97e6f782528436afc}{
+\index{markov\_\-chain.hh@{markov\_\-chain.hh}!EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-MARKOV\_\-CHAIN\_\-HH@{EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-MARKOV\_\-CHAIN\_\-HH}}
+\index{EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-MARKOV\_\-CHAIN\_\-HH@{EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-MARKOV\_\-CHAIN\_\-HH}!markov_chain.hh@{markov\_\-chain.hh}}
+\subsubsection[{EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-MARKOV\_\-CHAIN\_\-HH}]{\setlength{\rightskip}{0pt plus 5cm}\#define EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-MARKOV\_\-CHAIN\_\-HH~1}}
+\label{markov__chain_8hh_ae0ec1ee591df5ff97e6f782528436afc}

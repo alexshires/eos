@@ -1,0 +1,47 @@
+\hypertarget{private__implementation__pattern-impl_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/private\_\-implementation\_\-pattern-\/impl.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2010 Danny van Dyk}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef WILSON\_FITTER\_GUARD\_UTILS\_PRIVATE\_IMPLEMENTATION\_PATTERN\_IMPL\_HH}
+\hypertarget{private__implementation__pattern-impl_8hh_source_l00021}{}\hyperlink{private__implementation__pattern-impl_8hh_a0be835b85f475d253071ae9037d99520}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define WILSON\_FITTER\_GUARD\_UTILS\_PRIVATE\_IMPLEMENTATION\_PATTERN\_IMPL\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{preprocessor}{#include <\hyperlink{private__implementation__pattern_8hh}{eos/utils/private_implementation_pattern.hh}>}
+00024 
+00025 \textcolor{keyword}{namespace }eos
+00026 \{
+00027     \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_>
+\hypertarget{private__implementation__pattern-impl_8hh_source_l00028}{}\hyperlink{classeos_1_1PrivateImplementationPattern_a3e3d5f4a565256a1dda6c234b051b2f2}{00028}     \hyperlink{classeos_1_1PrivateImplementationPattern_a3e3d5f4a565256a1dda6c234b051b2f2}{PrivateImplementationPattern<T_>::PrivateImplementationPattern}(Implementation
+      <T\_> * imp) :
+00029         \_imp(imp)
+00030     \{
+00031     \}
+00032 
+00033     \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_>
+\hypertarget{private__implementation__pattern-impl_8hh_source_l00034}{}\hyperlink{classeos_1_1PrivateImplementationPattern_acf46ec2739c3b0ec9702b9428475876d}{00034}     \hyperlink{classeos_1_1PrivateImplementationPattern_acf46ec2739c3b0ec9702b9428475876d}{PrivateImplementationPattern<T_>::~PrivateImplementationPattern}()
+00035     \{
+00036     \}
+00037 \}
+00038 
+00039 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

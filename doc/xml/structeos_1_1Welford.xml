@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1Welford" kind="struct" prot="public">
+    <compoundname>eos::Welford</compoundname>
+    <includes refid="welford_8hh" local="no">welford.hh</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="structeos_1_1Welford_1a8395063497170d53fbf42d3ba6f08dd1" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::Welford::new_mean</definition>
+        <argsstring></argsstring>
+        <name>new_mean</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/welford.hh" line="33" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/welford.hh" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1Welford_1ae70fd6ef715ca0508bb28dcf9ab0dd44" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::Welford::old_mean</definition>
+        <argsstring></argsstring>
+        <name>old_mean</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/welford.hh" line="33" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/welford.hh" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1Welford_1a1c065ab6072386b5f23f117ef0980c11" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::Welford::new_sum</definition>
+        <argsstring></argsstring>
+        <name>new_sum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/welford.hh" line="35" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/welford.hh" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1Welford_1a07521d795335dd54991568b265ade637" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::Welford::old_sum</definition>
+        <argsstring></argsstring>
+        <name>old_sum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/welford.hh" line="35" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/welford.hh" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1Welford_1ab551071e9456fb1fee96ec3b1f0260bb" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned eos::Welford::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/welford.hh" line="37" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/welford.hh" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structeos_1_1Welford_1aa8a5cede9b83f8407c0475278fb3929d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::Welford::Welford</definition>
+        <argsstring>()</argsstring>
+        <name>Welford</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/welford.hh" line="40"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1Welford_1a42e2ae402d7f7944fea47ab9676d3ba5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::Welford::add</definition>
+        <argsstring>(const double &amp;value)</argsstring>
+        <name>add</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/welford.hh" line="42"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1Welford_1a4ee0383dc9fc04f9319205ed7c39e6bc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::Welford::mean</definition>
+        <argsstring>() const </argsstring>
+        <name>mean</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/welford.hh" line="44"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1Welford_1a3cbe78c6143406e01dfaff70fac96ecd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned eos::Welford::number_of_elements</definition>
+        <argsstring>() const </argsstring>
+        <name>number_of_elements</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/welford.hh" line="46"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1Welford_1af2d5839b48295d51d5d97e4f6cb889ba" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::Welford::std_deviation</definition>
+        <argsstring>() const </argsstring>
+        <name>std_deviation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/welford.hh" line="48"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1Welford_1a08c2dfcf9277822ed83ac7181ec46d6a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::Welford::variance</definition>
+        <argsstring>() const </argsstring>
+        <name>variance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/welford.hh" line="50"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Calculate running mean and variance according to Welford&apos;s method, cf. Knuth, D. TAOCP, vol. 2, 3rd edition, p. 232, or <ulink url="http://www.johndcook.com/standard%5Fdeviation.html">http://www.johndcook.com/standard%5Fdeviation.html</ulink> </para>    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/welford.hh" line="31" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/welford.hh" bodystart="30" bodyend="51"/>
+    <listofallmembers>
+      <member refid="structeos_1_1Welford_1a42e2ae402d7f7944fea47ab9676d3ba5" prot="public" virt="non-virtual"><scope>eos::Welford</scope><name>add</name></member>
+      <member refid="structeos_1_1Welford_1a4ee0383dc9fc04f9319205ed7c39e6bc" prot="public" virt="non-virtual"><scope>eos::Welford</scope><name>mean</name></member>
+      <member refid="structeos_1_1Welford_1a8395063497170d53fbf42d3ba6f08dd1" prot="private" virt="non-virtual"><scope>eos::Welford</scope><name>new_mean</name></member>
+      <member refid="structeos_1_1Welford_1a1c065ab6072386b5f23f117ef0980c11" prot="private" virt="non-virtual"><scope>eos::Welford</scope><name>new_sum</name></member>
+      <member refid="structeos_1_1Welford_1a3cbe78c6143406e01dfaff70fac96ecd" prot="public" virt="non-virtual"><scope>eos::Welford</scope><name>number_of_elements</name></member>
+      <member refid="structeos_1_1Welford_1ae70fd6ef715ca0508bb28dcf9ab0dd44" prot="private" virt="non-virtual"><scope>eos::Welford</scope><name>old_mean</name></member>
+      <member refid="structeos_1_1Welford_1a07521d795335dd54991568b265ade637" prot="private" virt="non-virtual"><scope>eos::Welford</scope><name>old_sum</name></member>
+      <member refid="structeos_1_1Welford_1ab551071e9456fb1fee96ec3b1f0260bb" prot="private" virt="non-virtual"><scope>eos::Welford</scope><name>size</name></member>
+      <member refid="structeos_1_1Welford_1af2d5839b48295d51d5d97e4f6cb889ba" prot="public" virt="non-virtual"><scope>eos::Welford</scope><name>std_deviation</name></member>
+      <member refid="structeos_1_1Welford_1a08c2dfcf9277822ed83ac7181ec46d6a" prot="public" virt="non-virtual"><scope>eos::Welford</scope><name>variance</name></member>
+      <member refid="structeos_1_1Welford_1aa8a5cede9b83f8407c0475278fb3929d" prot="public" virt="non-virtual"><scope>eos::Welford</scope><name>Welford</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

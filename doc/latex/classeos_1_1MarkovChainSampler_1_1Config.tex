@@ -1,0 +1,326 @@
+\hypertarget{classeos_1_1MarkovChainSampler_1_1Config}{
+\section{eos::MarkovChainSampler::Config Class Reference}
+\label{classeos_1_1MarkovChainSampler_1_1Config}\index{eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}}
+}
+
+
+{\ttfamily \#include $<$markov\_\-chain\_\-sampler.hh$>$}\subsection*{Static Public Member Functions}
+\begin{Indent}{\bf Basic Function}\par
+{\em \label{_amgrp9ac0a05bc9f1ecee9a728c52951f9f43}
+ }\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classeos_1_1MarkovChainSampler_1_1Config}{Config} \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a873df585d161c55e45b69fe45def8bd0}{Default} ()
+\item 
+static \hyperlink{classeos_1_1MarkovChainSampler_1_1Config}{Config} \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_aae4d353bed05e0921697290e7e93f116}{Quick} ()
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Public Attributes}
+\begin{Indent}{\bf Basic options}\par
+{\em \label{_amgrp0f569f5975208cc475c7bb42ee13b9a5}
+ Number of Markov chains }\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1VerifiedRange}{VerifiedRange}$<$ unsigned $>$ \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a802b6d235de40517746b7fc4147d8c7b}{number\_\-of\_\-chains}
+\item 
+unsigned long \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_ad969cd46104eb385033df4574079dc57}{seed}
+\item 
+bool \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_ad66eb9a48dd6aa736cf476322ed5b13e}{parallelize}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Convergence options}\par
+{\em \label{_amgrp2ecab0cd070c5334d222a1622ad7552f}
+ }\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1VerifiedRange}{VerifiedRange}$<$ double $>$ \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a0d907985d270035dbc3fc2235667ed0e}{min\_\-efficiency}
+\begin{DoxyCompactList}\small\item\em accepted / trials should be between 0.15 and 0.50 \item\end{DoxyCompactList}\item 
+\hyperlink{classeos_1_1VerifiedRange}{VerifiedRange}$<$ double $>$ \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a91c8438fe3b3270c619aefe5dc951e35}{max\_\-efficiency}
+\begin{DoxyCompactList}\small\item\em accepted / trials should be between 0.15 and 0.50 \item\end{DoxyCompactList}\item 
+\hyperlink{classeos_1_1VerifiedRange}{VerifiedRange}$<$ double $>$ \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_ae8f8b1d037b655fe421c642cfe1d09a3}{rvalue\_\-criterion\_\-param}
+\begin{DoxyCompactList}\small\item\em rvalues close to 1 indicates multichain convergence \item\end{DoxyCompactList}\item 
+\hyperlink{classeos_1_1VerifiedRange}{VerifiedRange}$<$ double $>$ \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_ac63f8561002681b27414ef775f6f7c2c}{rvalue\_\-criterion\_\-posterior}
+\begin{DoxyCompactList}\small\item\em accepted / trials should be between 0.15 and 0.50 \item\end{DoxyCompactList}\item 
+bool \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a489bcbea5b78163dbfde22225b980d8c}{use\_\-strict\_\-rvalue\_\-definition}
+\item 
+bool \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a1243022c46d489f741762e90aeb1ca31}{use\_\-posterior\_\-rvalue}
+\item 
+bool \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a2a7cc53b4fff19248ccfcd187a6a394b}{scale\_\-automatic}
+\item 
+bool \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a8bf9b803f9b7995d7b6938347fa98165}{scale\_\-nuisance}
+\item 
+double \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_aeaae399fa3b0a182dfd582f79529f7a5}{scale\_\-reduction}
+\begin{DoxyCompactList}\small\item\em Value by which sqrt(covariance) of scan parameters is reduced for initial guesses of the proposal functions. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Prerun options}\par
+{\em \label{_amgrp69aa39847c44de1c77ee7280aacb4e83}
+ }\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a04afa9d1080b945fe1702b4d8d5fb2bb}{find\_\-modes}
+\item 
+bool \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_acd202b210ff8f364eda6aacdd8958f8a}{need\_\-prerun}
+\item 
+unsigned \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_aac94024909568d9ca6e59108db400c6d}{prerun\_\-iterations\_\-update}
+\item 
+unsigned \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_af76602d7053b0f599295e1175718cb22}{prerun\_\-iterations\_\-min}
+\item 
+unsigned \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_aed5faf2c2cd03d33d5acb79fc16132a4}{prerun\_\-iterations\_\-max}
+\item 
+std::string \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a7184404972d7e56da2a78218555c1f97}{proposal}
+\begin{DoxyCompactList}\small\item\em Which local proposal function is chosen. \item\end{DoxyCompactList}\item 
+std::vector$<$ std::string $>$ \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_af6ef8839a138b5f2ba25ed00c9949ecf}{block\_\-proposal\_\-parameters}
+\item 
+\hyperlink{classeos_1_1VerifiedRange}{VerifiedRange}$<$ double $>$ \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a7a3619bea51ea7edeb15dc2e8c614213}{student\_\-t\_\-degrees\_\-of\_\-freedom}
+\item 
+bool \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a9fecfcf6c6ce24b34d1370dd1d222d06}{store\_\-prerun}
+\begin{DoxyCompactList}\small\item\em Whether to store prerun samples. \item\end{DoxyCompactList}\item 
+unsigned \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a4b8b7f5ca38ffd97f0cbb431237a2872}{prerun\_\-chains\_\-per\_\-partition}
+\item 
+std::vector$<$ std::vector$<$ std::tuple$<$ std::string, double, double $>$ $>$ $>$ \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a86b460f2153f55c4d5763f50f5bdba95}{partitions}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Main run options}\par
+{\em \label{_amgrp03ae0482f9408262df632e84148db84d}
+ }\begin{DoxyCompactItemize}
+\item 
+unsigned \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_ad90feb40e232329acf8a1fb785ed2d87}{adapt\_\-iterations}
+\item 
+unsigned \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a5e5751b084b471b08aa6f33513c28047}{chunks}
+\begin{DoxyCompactList}\small\item\em Number of chunks of sampling. \item\end{DoxyCompactList}\item 
+unsigned \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a3286979755ea75bd563fb66fba9e5330}{chunk\_\-size}
+\begin{DoxyCompactList}\small\item\em Number of iterations per chunk. \item\end{DoxyCompactList}\item 
+std::shared\_\-ptr$<$ \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config}{proposal\_\-functions::GlobalLocal::Config} $>$ \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_ac717ab2f0caa32cc13b5e382f8b19cec}{global\_\-local\_\-config}
+\begin{DoxyCompactList}\small\item\em Summarize all options pertaining to the GlobalLocal proposal function. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a1efc4d04039ba60a1f4c27ae28fe1554}{need\_\-main\_\-run}
+\begin{DoxyCompactList}\small\item\em Turn off main run, so only prerun is performed. \item\end{DoxyCompactList}\item 
+\hyperlink{classeos_1_1VerifiedRange}{VerifiedRange}$<$ double $>$ \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a8db6eb333e22a68f8b7abbd96b02b88c}{skip\_\-initial}
+\item 
+bool \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a61732b63555e375ca22b7c31e3df12b6}{store}
+\begin{DoxyCompactList}\small\item\em Whether to store collected samples. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Output options}\par
+{\em \label{_amgrpa3beb290cb264578f0ef293e44984365}
+ }\begin{DoxyCompactItemize}
+\item 
+std::string \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a09fb2c6eeddd6bdde3ac5de54f63433f}{output\_\-file}
+\item 
+bool \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_aeeea2452cd313ebe9a695c98bdeceeee}{store\_\-observables\_\-and\_\-proposals}
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+Stores all configuration options for a \hyperlink{classeos_1_1MarkovChainSampler}{MarkovChainSampler}. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classeos_1_1MarkovChainSampler_1_1Config_a873df585d161c55e45b69fe45def8bd0}{
+\index{eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}!Default@{Default}}
+\index{Default@{Default}!eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}}
+\subsubsection[{Default}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Config} eos::MarkovChainSampler::Config::Default ()\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1MarkovChainSampler_1_1Config_a873df585d161c55e45b69fe45def8bd0}
+Named constructor
+
+\hyperlink{classeos_1_1MarkovChainSampler}{MarkovChainSampler} settings with reasonably chosen default values. \hypertarget{classeos_1_1MarkovChainSampler_1_1Config_aae4d353bed05e0921697290e7e93f116}{
+\index{eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}!Quick@{Quick}}
+\index{Quick@{Quick}!eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}}
+\subsubsection[{Quick}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Config} eos::MarkovChainSampler::Config::Quick ()\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1MarkovChainSampler_1_1Config_aae4d353bed05e0921697290e7e93f116}
+Named constructor
+
+\hyperlink{classeos_1_1MarkovChainSampler}{MarkovChainSampler} settings with values optimized for quick chain convergence and evaluation.
+
+\begin{DoxyNote}{Note}
+The convergence is not very reliable. Use with care! If in doubt, use \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a873df585d161c55e45b69fe45def8bd0}{MarkovChainSampler::Config::Default} 
+\end{DoxyNote}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classeos_1_1MarkovChainSampler_1_1Config_ad90feb40e232329acf8a1fb785ed2d87}{
+\index{eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}!adapt\_\-iterations@{adapt\_\-iterations}}
+\index{adapt\_\-iterations@{adapt\_\-iterations}!eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}}
+\subsubsection[{adapt\_\-iterations}]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf eos::MarkovChainSampler::Config::adapt\_\-iterations}}}
+\label{classeos_1_1MarkovChainSampler_1_1Config_ad90feb40e232329acf8a1fb785ed2d87}
+Proposal function is adapted during the first iterations. Default: 0, i.e. don't adapt \hypertarget{classeos_1_1MarkovChainSampler_1_1Config_af6ef8839a138b5f2ba25ed00c9949ecf}{
+\index{eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}!block\_\-proposal\_\-parameters@{block\_\-proposal\_\-parameters}}
+\index{block\_\-proposal\_\-parameters@{block\_\-proposal\_\-parameters}!eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}}
+\subsubsection[{block\_\-proposal\_\-parameters}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$std::string$>$ {\bf eos::MarkovChainSampler::Config::block\_\-proposal\_\-parameters}}}
+\label{classeos_1_1MarkovChainSampler_1_1Config_af6ef8839a138b5f2ba25ed00c9949ecf}
+One proposal for the whole space or a decomposition into multivariate part and 1D, uncorrelated part. Map a fixed proposal in 1D to a parameter \hypertarget{classeos_1_1MarkovChainSampler_1_1Config_a3286979755ea75bd563fb66fba9e5330}{
+\index{eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}!chunk\_\-size@{chunk\_\-size}}
+\index{chunk\_\-size@{chunk\_\-size}!eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}}
+\subsubsection[{chunk\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf eos::MarkovChainSampler::Config::chunk\_\-size}}}
+\label{classeos_1_1MarkovChainSampler_1_1Config_a3286979755ea75bd563fb66fba9e5330}
+
+
+Number of iterations per chunk. \hypertarget{classeos_1_1MarkovChainSampler_1_1Config_a5e5751b084b471b08aa6f33513c28047}{
+\index{eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}!chunks@{chunks}}
+\index{chunks@{chunks}!eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}}
+\subsubsection[{chunks}]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf eos::MarkovChainSampler::Config::chunks}}}
+\label{classeos_1_1MarkovChainSampler_1_1Config_a5e5751b084b471b08aa6f33513c28047}
+
+
+Number of chunks of sampling. \hypertarget{classeos_1_1MarkovChainSampler_1_1Config_a04afa9d1080b945fe1702b4d8d5fb2bb}{
+\index{eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}!find\_\-modes@{find\_\-modes}}
+\index{find\_\-modes@{find\_\-modes}!eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}}
+\subsubsection[{find\_\-modes}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf eos::MarkovChainSampler::Config::find\_\-modes}}}
+\label{classeos_1_1MarkovChainSampler_1_1Config_a04afa9d1080b945fe1702b4d8d5fb2bb}
+Find the local maxima after the prerun, using the point with the highest posterior in each chain as a starting point \hypertarget{classeos_1_1MarkovChainSampler_1_1Config_ac717ab2f0caa32cc13b5e382f8b19cec}{
+\index{eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}!global\_\-local\_\-config@{global\_\-local\_\-config}}
+\index{global\_\-local\_\-config@{global\_\-local\_\-config}!eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}}
+\subsubsection[{global\_\-local\_\-config}]{\setlength{\rightskip}{0pt plus 5cm}std::shared\_\-ptr$<${\bf proposal\_\-functions::GlobalLocal::Config}$>$ {\bf eos::MarkovChainSampler::Config::global\_\-local\_\-config}}}
+\label{classeos_1_1MarkovChainSampler_1_1Config_ac717ab2f0caa32cc13b5e382f8b19cec}
+
+
+Summarize all options pertaining to the GlobalLocal proposal function. \hypertarget{classeos_1_1MarkovChainSampler_1_1Config_a91c8438fe3b3270c619aefe5dc951e35}{
+\index{eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}!max\_\-efficiency@{max\_\-efficiency}}
+\index{max\_\-efficiency@{max\_\-efficiency}!eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}}
+\subsubsection[{max\_\-efficiency}]{\setlength{\rightskip}{0pt plus 5cm}{\bf VerifiedRange}$<$double$>$ {\bf eos::MarkovChainSampler::Config::max\_\-efficiency}}}
+\label{classeos_1_1MarkovChainSampler_1_1Config_a91c8438fe3b3270c619aefe5dc951e35}
+
+
+accepted / trials should be between 0.15 and 0.50 \hypertarget{classeos_1_1MarkovChainSampler_1_1Config_a0d907985d270035dbc3fc2235667ed0e}{
+\index{eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}!min\_\-efficiency@{min\_\-efficiency}}
+\index{min\_\-efficiency@{min\_\-efficiency}!eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}}
+\subsubsection[{min\_\-efficiency}]{\setlength{\rightskip}{0pt plus 5cm}{\bf VerifiedRange}$<$double$>$ {\bf eos::MarkovChainSampler::Config::min\_\-efficiency}}}
+\label{classeos_1_1MarkovChainSampler_1_1Config_a0d907985d270035dbc3fc2235667ed0e}
+
+
+accepted / trials should be between 0.15 and 0.50 \hypertarget{classeos_1_1MarkovChainSampler_1_1Config_a1efc4d04039ba60a1f4c27ae28fe1554}{
+\index{eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}!need\_\-main\_\-run@{need\_\-main\_\-run}}
+\index{need\_\-main\_\-run@{need\_\-main\_\-run}!eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}}
+\subsubsection[{need\_\-main\_\-run}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf eos::MarkovChainSampler::Config::need\_\-main\_\-run}}}
+\label{classeos_1_1MarkovChainSampler_1_1Config_a1efc4d04039ba60a1f4c27ae28fe1554}
+
+
+Turn off main run, so only prerun is performed. \hypertarget{classeos_1_1MarkovChainSampler_1_1Config_acd202b210ff8f364eda6aacdd8958f8a}{
+\index{eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}!need\_\-prerun@{need\_\-prerun}}
+\index{need\_\-prerun@{need\_\-prerun}!eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}}
+\subsubsection[{need\_\-prerun}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf eos::MarkovChainSampler::Config::need\_\-prerun}}}
+\label{classeos_1_1MarkovChainSampler_1_1Config_acd202b210ff8f364eda6aacdd8958f8a}
+Find the local maxima after the prerun, using the point with the highest posterior in each chain as a starting point \hypertarget{classeos_1_1MarkovChainSampler_1_1Config_a802b6d235de40517746b7fc4147d8c7b}{
+\index{eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}!number\_\-of\_\-chains@{number\_\-of\_\-chains}}
+\index{number\_\-of\_\-chains@{number\_\-of\_\-chains}!eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}}
+\subsubsection[{number\_\-of\_\-chains}]{\setlength{\rightskip}{0pt plus 5cm}{\bf VerifiedRange}$<$unsigned$>$ {\bf eos::MarkovChainSampler::Config::number\_\-of\_\-chains}}}
+\label{classeos_1_1MarkovChainSampler_1_1Config_a802b6d235de40517746b7fc4147d8c7b}
+The seed that is used to initialize the random number generator. Independant runs with identical seeds will produce \hypertarget{classeos_1_1MarkovChainSampler_1_1Config_a09fb2c6eeddd6bdde3ac5de54f63433f}{
+\index{eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}!output\_\-file@{output\_\-file}}
+\index{output\_\-file@{output\_\-file}!eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}}
+\subsubsection[{output\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf eos::MarkovChainSampler::Config::output\_\-file}}}
+\label{classeos_1_1MarkovChainSampler_1_1Config_a09fb2c6eeddd6bdde3ac5de54f63433f}
+The HDF5 output file to store the markov chains. \hypertarget{classeos_1_1MarkovChainSampler_1_1Config_ad66eb9a48dd6aa736cf476322ed5b13e}{
+\index{eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}!parallelize@{parallelize}}
+\index{parallelize@{parallelize}!eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}}
+\subsubsection[{parallelize}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf eos::MarkovChainSampler::Config::parallelize}}}
+\label{classeos_1_1MarkovChainSampler_1_1Config_ad66eb9a48dd6aa736cf476322ed5b13e}
+If true, use as many threads as there are cores available. If false, use only one thread. \hypertarget{classeos_1_1MarkovChainSampler_1_1Config_a86b460f2153f55c4d5763f50f5bdba95}{
+\index{eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}!partitions@{partitions}}
+\index{partitions@{partitions}!eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}}
+\subsubsection[{partitions}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$std::vector$<$std::tuple$<$std::string, double, double$>$ $>$ $>$ {\bf eos::MarkovChainSampler::Config::partitions}}}
+\label{classeos_1_1MarkovChainSampler_1_1Config_a86b460f2153f55c4d5763f50f5bdba95}
+Find the local maxima after the prerun, using the point with the highest posterior in each chain as a starting point \hypertarget{classeos_1_1MarkovChainSampler_1_1Config_a4b8b7f5ca38ffd97f0cbb431237a2872}{
+\index{eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}!prerun\_\-chains\_\-per\_\-partition@{prerun\_\-chains\_\-per\_\-partition}}
+\index{prerun\_\-chains\_\-per\_\-partition@{prerun\_\-chains\_\-per\_\-partition}!eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}}
+\subsubsection[{prerun\_\-chains\_\-per\_\-partition}]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf eos::MarkovChainSampler::Config::prerun\_\-chains\_\-per\_\-partition}}}
+\label{classeos_1_1MarkovChainSampler_1_1Config_a4b8b7f5ca38ffd97f0cbb431237a2872}
+In case there is only one partition, this is ignored and number\_\-of\_\-chains is used. Else, this many chains are used per partition. \hypertarget{classeos_1_1MarkovChainSampler_1_1Config_aed5faf2c2cd03d33d5acb79fc16132a4}{
+\index{eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}!prerun\_\-iterations\_\-max@{prerun\_\-iterations\_\-max}}
+\index{prerun\_\-iterations\_\-max@{prerun\_\-iterations\_\-max}!eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}}
+\subsubsection[{prerun\_\-iterations\_\-max}]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf eos::MarkovChainSampler::Config::prerun\_\-iterations\_\-max}}}
+\label{classeos_1_1MarkovChainSampler_1_1Config_aed5faf2c2cd03d33d5acb79fc16132a4}
+Find the local maxima after the prerun, using the point with the highest posterior in each chain as a starting point \hypertarget{classeos_1_1MarkovChainSampler_1_1Config_af76602d7053b0f599295e1175718cb22}{
+\index{eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}!prerun\_\-iterations\_\-min@{prerun\_\-iterations\_\-min}}
+\index{prerun\_\-iterations\_\-min@{prerun\_\-iterations\_\-min}!eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}}
+\subsubsection[{prerun\_\-iterations\_\-min}]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf eos::MarkovChainSampler::Config::prerun\_\-iterations\_\-min}}}
+\label{classeos_1_1MarkovChainSampler_1_1Config_af76602d7053b0f599295e1175718cb22}
+Find the local maxima after the prerun, using the point with the highest posterior in each chain as a starting point \hypertarget{classeos_1_1MarkovChainSampler_1_1Config_aac94024909568d9ca6e59108db400c6d}{
+\index{eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}!prerun\_\-iterations\_\-update@{prerun\_\-iterations\_\-update}}
+\index{prerun\_\-iterations\_\-update@{prerun\_\-iterations\_\-update}!eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}}
+\subsubsection[{prerun\_\-iterations\_\-update}]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf eos::MarkovChainSampler::Config::prerun\_\-iterations\_\-update}}}
+\label{classeos_1_1MarkovChainSampler_1_1Config_aac94024909568d9ca6e59108db400c6d}
+Find the local maxima after the prerun, using the point with the highest posterior in each chain as a starting point \hypertarget{classeos_1_1MarkovChainSampler_1_1Config_a7184404972d7e56da2a78218555c1f97}{
+\index{eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}!proposal@{proposal}}
+\index{proposal@{proposal}!eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}}
+\subsubsection[{proposal}]{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf eos::MarkovChainSampler::Config::proposal}}}
+\label{classeos_1_1MarkovChainSampler_1_1Config_a7184404972d7e56da2a78218555c1f97}
+
+
+Which local proposal function is chosen. \hypertarget{classeos_1_1MarkovChainSampler_1_1Config_ae8f8b1d037b655fe421c642cfe1d09a3}{
+\index{eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}!rvalue\_\-criterion\_\-param@{rvalue\_\-criterion\_\-param}}
+\index{rvalue\_\-criterion\_\-param@{rvalue\_\-criterion\_\-param}!eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}}
+\subsubsection[{rvalue\_\-criterion\_\-param}]{\setlength{\rightskip}{0pt plus 5cm}{\bf VerifiedRange}$<$double$>$ {\bf eos::MarkovChainSampler::Config::rvalue\_\-criterion\_\-param}}}
+\label{classeos_1_1MarkovChainSampler_1_1Config_ae8f8b1d037b655fe421c642cfe1d09a3}
+
+
+rvalues close to 1 indicates multichain convergence \hypertarget{classeos_1_1MarkovChainSampler_1_1Config_ac63f8561002681b27414ef775f6f7c2c}{
+\index{eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}!rvalue\_\-criterion\_\-posterior@{rvalue\_\-criterion\_\-posterior}}
+\index{rvalue\_\-criterion\_\-posterior@{rvalue\_\-criterion\_\-posterior}!eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}}
+\subsubsection[{rvalue\_\-criterion\_\-posterior}]{\setlength{\rightskip}{0pt plus 5cm}{\bf VerifiedRange}$<$double$>$ {\bf eos::MarkovChainSampler::Config::rvalue\_\-criterion\_\-posterior}}}
+\label{classeos_1_1MarkovChainSampler_1_1Config_ac63f8561002681b27414ef775f6f7c2c}
+
+
+accepted / trials should be between 0.15 and 0.50 \hypertarget{classeos_1_1MarkovChainSampler_1_1Config_a2a7cc53b4fff19248ccfcd187a6a394b}{
+\index{eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}!scale\_\-automatic@{scale\_\-automatic}}
+\index{scale\_\-automatic@{scale\_\-automatic}!eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}}
+\subsubsection[{scale\_\-automatic}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf eos::MarkovChainSampler::Config::scale\_\-automatic}}}
+\label{classeos_1_1MarkovChainSampler_1_1Config_a2a7cc53b4fff19248ccfcd187a6a394b}
+Rescale multivariate proposal functions' covariance depending on the dimensionality of the parameter space. \hypertarget{classeos_1_1MarkovChainSampler_1_1Config_a8bf9b803f9b7995d7b6938347fa98165}{
+\index{eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}!scale\_\-nuisance@{scale\_\-nuisance}}
+\index{scale\_\-nuisance@{scale\_\-nuisance}!eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}}
+\subsubsection[{scale\_\-nuisance}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf eos::MarkovChainSampler::Config::scale\_\-nuisance}}}
+\label{classeos_1_1MarkovChainSampler_1_1Config_a8bf9b803f9b7995d7b6938347fa98165}
+Decide whether only scan parameters or all parameters' initial variance should be rescaled in order to increase the efficiency. \hypertarget{classeos_1_1MarkovChainSampler_1_1Config_aeaae399fa3b0a182dfd582f79529f7a5}{
+\index{eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}!scale\_\-reduction@{scale\_\-reduction}}
+\index{scale\_\-reduction@{scale\_\-reduction}!eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}}
+\subsubsection[{scale\_\-reduction}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf eos::MarkovChainSampler::Config::scale\_\-reduction}}}
+\label{classeos_1_1MarkovChainSampler_1_1Config_aeaae399fa3b0a182dfd582f79529f7a5}
+
+
+Value by which sqrt(covariance) of scan parameters is reduced for initial guesses of the proposal functions. \hypertarget{classeos_1_1MarkovChainSampler_1_1Config_ad969cd46104eb385033df4574079dc57}{
+\index{eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}!seed@{seed}}
+\index{seed@{seed}!eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}}
+\subsubsection[{seed}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long {\bf eos::MarkovChainSampler::Config::seed}}}
+\label{classeos_1_1MarkovChainSampler_1_1Config_ad969cd46104eb385033df4574079dc57}
+The seed that is used to initialize the random number generator. Independant runs with identical seeds will produce \hypertarget{classeos_1_1MarkovChainSampler_1_1Config_a8db6eb333e22a68f8b7abbd96b02b88c}{
+\index{eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}!skip\_\-initial@{skip\_\-initial}}
+\index{skip\_\-initial@{skip\_\-initial}!eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}}
+\subsubsection[{skip\_\-initial}]{\setlength{\rightskip}{0pt plus 5cm}{\bf VerifiedRange}$<$double$>$ {\bf eos::MarkovChainSampler::Config::skip\_\-initial}}}
+\label{classeos_1_1MarkovChainSampler_1_1Config_a8db6eb333e22a68f8b7abbd96b02b88c}
+When computing R-\/values, one can skip the first (skip\_\-initial)\% of the iterations. This provides more robust results, as it discards an initial burn in where the chain may be very far off from likely regions \hypertarget{classeos_1_1MarkovChainSampler_1_1Config_a61732b63555e375ca22b7c31e3df12b6}{
+\index{eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}!store@{store}}
+\index{store@{store}!eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}}
+\subsubsection[{store}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf eos::MarkovChainSampler::Config::store}}}
+\label{classeos_1_1MarkovChainSampler_1_1Config_a61732b63555e375ca22b7c31e3df12b6}
+
+
+Whether to store collected samples. \hypertarget{classeos_1_1MarkovChainSampler_1_1Config_aeeea2452cd313ebe9a695c98bdeceeee}{
+\index{eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}!store\_\-observables\_\-and\_\-proposals@{store\_\-observables\_\-and\_\-proposals}}
+\index{store\_\-observables\_\-and\_\-proposals@{store\_\-observables\_\-and\_\-proposals}!eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}}
+\subsubsection[{store\_\-observables\_\-and\_\-proposals}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf eos::MarkovChainSampler::Config::store\_\-observables\_\-and\_\-proposals}}}
+\label{classeos_1_1MarkovChainSampler_1_1Config_aeeea2452cd313ebe9a695c98bdeceeee}
+The HDF5 output file to store the markov chains. \hypertarget{classeos_1_1MarkovChainSampler_1_1Config_a9fecfcf6c6ce24b34d1370dd1d222d06}{
+\index{eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}!store\_\-prerun@{store\_\-prerun}}
+\index{store\_\-prerun@{store\_\-prerun}!eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}}
+\subsubsection[{store\_\-prerun}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf eos::MarkovChainSampler::Config::store\_\-prerun}}}
+\label{classeos_1_1MarkovChainSampler_1_1Config_a9fecfcf6c6ce24b34d1370dd1d222d06}
+
+
+Whether to store prerun samples. \hypertarget{classeos_1_1MarkovChainSampler_1_1Config_a7a3619bea51ea7edeb15dc2e8c614213}{
+\index{eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}!student\_\-t\_\-degrees\_\-of\_\-freedom@{student\_\-t\_\-degrees\_\-of\_\-freedom}}
+\index{student\_\-t\_\-degrees\_\-of\_\-freedom@{student\_\-t\_\-degrees\_\-of\_\-freedom}!eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}}
+\subsubsection[{student\_\-t\_\-degrees\_\-of\_\-freedom}]{\setlength{\rightskip}{0pt plus 5cm}{\bf VerifiedRange}$<$double$>$ {\bf eos::MarkovChainSampler::Config::student\_\-t\_\-degrees\_\-of\_\-freedom}}}
+\label{classeos_1_1MarkovChainSampler_1_1Config_a7a3619bea51ea7edeb15dc2e8c614213}
+The number of degrees of freedom for a local proposal function of type MultivariateStudentT \begin{DoxyNote}{Note}
+a value of one corresponds to a (multivariate) Cauchy function 
+\end{DoxyNote}
+\hypertarget{classeos_1_1MarkovChainSampler_1_1Config_a1243022c46d489f741762e90aeb1ca31}{
+\index{eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}!use\_\-posterior\_\-rvalue@{use\_\-posterior\_\-rvalue}}
+\index{use\_\-posterior\_\-rvalue@{use\_\-posterior\_\-rvalue}!eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}}
+\subsubsection[{use\_\-posterior\_\-rvalue}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf eos::MarkovChainSampler::Config::use\_\-posterior\_\-rvalue}}}
+\label{classeos_1_1MarkovChainSampler_1_1Config_a1243022c46d489f741762e90aeb1ca31}
+often the chains have mixed in parameter space, but not in posterior space. Thus, this R-\/value impedes convergence declaration. \hypertarget{classeos_1_1MarkovChainSampler_1_1Config_a489bcbea5b78163dbfde22225b980d8c}{
+\index{eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}!use\_\-strict\_\-rvalue\_\-definition@{use\_\-strict\_\-rvalue\_\-definition}}
+\index{use\_\-strict\_\-rvalue\_\-definition@{use\_\-strict\_\-rvalue\_\-definition}!eos::MarkovChainSampler::Config@{eos::MarkovChainSampler::Config}}
+\subsubsection[{use\_\-strict\_\-rvalue\_\-definition}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf eos::MarkovChainSampler::Config::use\_\-strict\_\-rvalue\_\-definition}}}
+\label{classeos_1_1MarkovChainSampler_1_1Config_a489bcbea5b78163dbfde22225b980d8c}
+Use Gelman/Rubin definition if true, and relaxed BAT definition if false. 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{markov__chain__sampler_8hh}{markov\_\-chain\_\-sampler.hh}\end{DoxyCompactItemize}

@@ -1,0 +1,63 @@
+\hypertarget{power__of_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/power\_\-of.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2010 Danny van Dyk}
+00005 \textcolor{comment}{ * Copyright (c) 2010 Christian Wacker}
+00006 \textcolor{comment}{ *}
+00007 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00008 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00009 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00010 \textcolor{comment}{ *}
+00011 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00012 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00013 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00014 \textcolor{comment}{ * details.}
+00015 \textcolor{comment}{ *}
+00016 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00017 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00018 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00019 \textcolor{comment}{ */}
+00020 
+00021 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_POWER\_OF\_HH}
+\hypertarget{power__of_8hh_source_l00022}{}\hyperlink{power__of_8hh_a62463aecc962f21a779b7750e2eab28d}{00022} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_POWER\_OF\_HH 1}
+00023 \textcolor{preprocessor}{}
+00024 \textcolor{preprocessor}{#include <complex>}
+00025 
+00026 \textcolor{keyword}{namespace }eos
+00027 \{
+00028     \textcolor{keyword}{namespace }impl
+00029     \{
+00030         \textcolor{keyword}{template} <\textcolor{keywordtype}{unsigned} n\_, \textcolor{keyword}{typename} T\_>
+00031         \textcolor{keyword}{struct }PowerOf
+00032         \{
+00033             \textcolor{keyword}{inline} \textcolor{keyword}{static} T\_ calculate(\textcolor{keyword}{const} T\_ & x)
+00034             \{
+00035                 \textcolor{keywordflow}{return} x * PowerOf<n\_ - 1, T\_>::calculate(x);
+00036             \}
+00037         \};
+00038 
+00039         \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_>
+00040         \textcolor{keyword}{struct }PowerOf<0, T\_>
+00041         \{
+00042             \textcolor{keyword}{inline} \textcolor{keyword}{static} T\_ calculate(\textcolor{keyword}{const} T\_ &)
+00043             \{
+00044                 \textcolor{keywordflow}{return} T\_() + 1.0;
+00045             \}
+00046         \};
+00047     \}
+00048 
+00049     \textcolor{keyword}{template} <\textcolor{keywordtype}{unsigned} n\_, \textcolor{keyword}{typename} T\_>
+\hypertarget{power__of_8hh_source_l00050}{}\hyperlink{namespaceeos_a89d53e5e358a7428b14c811668193e3f}{00050}     T\_ \hyperlink{namespaceeos_a89d53e5e358a7428b14c811668193e3f}{power_of}(\textcolor{keyword}{const} T\_ & x)
+00051     \{
+00052         \textcolor{keywordflow}{return} impl::PowerOf<n\_, T\_>::calculate(x);
+00053     \}
+00054 \}
+00055 
+00056 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

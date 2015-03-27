@@ -1,0 +1,129 @@
+\hypertarget{integrate-impl_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/integrate-\/impl.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2010, 2011 Danny van Dyk}
+00005 \textcolor{comment}{ * Copyright (c) 2011 Christian Wacker}
+00006 \textcolor{comment}{ *}
+00007 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00008 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00009 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00010 \textcolor{comment}{ *}
+00011 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00012 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00013 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00014 \textcolor{comment}{ * details.}
+00015 \textcolor{comment}{ *}
+00016 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00017 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00018 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00019 \textcolor{comment}{ */}
+00020 
+00021 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_EOS\_UTILS\_INTEGRATE\_IMPL\_HH}
+\hypertarget{integrate-impl_8hh_source_l00022}{}\hyperlink{integrate-impl_8hh_abe221cef1fdc513194f8407ddfe24335}{00022} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_EOS\_UTILS\_INTEGRATE\_IMPL\_HH 1}
+00023 \textcolor{preprocessor}{}
+00024 \textcolor{preprocessor}{#include <\hyperlink{integrate_8hh}{eos/utils/integrate.hh}>}
+00025 \textcolor{preprocessor}{#include <\hyperlink{matrix_8hh}{eos/utils/matrix.hh}>}
+00026 
+00027 \textcolor{preprocessor}{#include <vector>}
+00028 
+00029 \textcolor{keyword}{namespace }eos
+00030 \{
+00031     \textcolor{keyword}{template} <std::\textcolor{keywordtype}{size\_t} k> std::array<double, k> \hyperlink{namespaceeos_aa97e022b32760a5d657bc35b9151efb8}{integrate}(\textcolor{keyword}{const} std::function<
+      std::array<double, k> (\textcolor{keyword}{const} \textcolor{keywordtype}{double} &)> & f, \textcolor{keywordtype}{unsigned} n, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & a, \textcolor{keyword}{const} 
+      \textcolor{keywordtype}{double} & b)
+00032     \{
+00033         \textcolor{keywordflow}{if} (n & 0x1)
+00034             n += 1;
+00035 
+00036         \textcolor{keywordflow}{if} (n < 16)
+00037             n = 16;
+00038 
+00039         \textcolor{comment}{// step width}
+00040         \textcolor{keywordtype}{double} h = (b - a) / n;
+00041 
+00042         \textcolor{comment}{// evaluate function for every sampling point}
+00043         std::vector<std::array<double, k>> y;
+00044         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} i = 0 ; i < n + 1 ; ++i)
+00045         \{
+00046             y.push\_back(f(a + i * h));
+00047         \}
+00048 
+00049         std::array<double, k> Q0; Q0.fill(0.0);
+00050         std::array<double, k> Q1; Q1.fill(0.0);
+00051         std::array<double, k> Q2; Q2.fill(0.0);
+00052 
+00053         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} i = 0 ; i < n / 8 ; ++i)
+00054         \{
+00055             Q0 = Q0 + y[8 * i] + 4.0 * y[8 * i + 4] + y[8 * i + 4];
+00056         \}
+00057         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} i = 0 ; i < n / 4 ; ++i)
+00058         \{
+00059             Q1 = Q1 + y[4 * i] + 4.0 * y[4 * i + 2] + y[4 * i + 4];
+00060         \}
+00061         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} i = 0 ; i < n / 2 ; ++i)
+00062         \{
+00063             Q2 = Q2 + y[2 * i] + 4.0 * y[2 * i + 1] + y[2 * i + 2];
+00064         \}
+00065 
+00066         Q0 = (h / 3.0 * 4.0) * Q0;
+00067         Q1 = (h / 3.0 * 2.0) * Q1;
+00068         Q2 = (h / 3.0) * Q2;
+00069 
+00070         std::array<double, k> denom = Q0 + Q2 - 2.0 * Q1;
+00071         std::array<double, k> num = Q2 - Q1;
+00072         std::array<double, k> correction = \hyperlink{namespaceeos_a8031207b4e14e35ca72988b76bfaacf1}{divide}(\hyperlink{namespaceeos_ae34de7634e8e232a4a7761b998e1535f}{mult}(num, num), denom);
+00073 
+00074         \textcolor{keywordtype}{bool} correction\_valid = \textcolor{keyword}{true};
+00075         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} i = 0 ; i < k ; ++i)
+00076         \{
+00077             \textcolor{keywordflow}{if} (std::isnan(correction[i]))
+00078             \{
+00079                 correction\_valid = \textcolor{keyword}{false};
+00080                 \textcolor{keywordflow}{break};
+00081             \}
+00082         \}
+00083 
+00084         \textcolor{keywordflow}{if} (!correction\_valid)
+00085         \{
+00086             \textcolor{keywordflow}{return} Q2;
+00087         \}
+00088         \textcolor{keywordflow}{else}
+00089         \{
+00090             \textcolor{keywordtype}{bool} correction\_small = \textcolor{keyword}{true};
+00091 
+00092             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} i = 0 ; i < k ; ++i)
+00093             \{
+00094                 \textcolor{keywordflow}{if} ((abs(correction[i] / Q2[i])) > 1.0)
+00095                 \{
+00096                     correction\_small = \textcolor{keyword}{false};
+00097                     \textcolor{keywordflow}{break};
+00098                 \}
+00099             \}
+00100 
+00101             \textcolor{keywordflow}{if} (correction\_small)
+00102             \{
+00103                 \textcolor{keywordflow}{return} Q2 - correction;
+00104             \}
+00105             \textcolor{keywordflow}{else}
+00106             \{
+00107 \textcolor{preprocessor}{#if 0}
+00108 \textcolor{preprocessor}{}                std::cerr << \textcolor{stringliteral}{"Q0 = "} << Q0 << std::endl;
+00109                 std::cerr << \textcolor{stringliteral}{"Q1 = "} << Q1 << std::endl;
+00110                 std::cerr << \textcolor{stringliteral}{"Q2 = "} << Q2 << std::endl;
+00111                 std::cerr << \textcolor{stringliteral}{"Reintegrating with twice the number of data points"
+      } << std::endl;
+00112 \textcolor{preprocessor}{#endif}
+00113 \textcolor{preprocessor}{}                \textcolor{keywordflow}{return} \hyperlink{namespaceeos_aa97e022b32760a5d657bc35b9151efb8}{integrate}(f, 2 * n, a, b);
+00114             \}
+00115         \}
+00116     \}
+00117 \}
+00118 
+00119 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

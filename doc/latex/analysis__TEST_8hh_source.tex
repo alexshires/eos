@@ -1,0 +1,168 @@
+\hypertarget{analysis__TEST_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/analysis\_\-TEST.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2011 Frederik Beaujean}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_ANALYSIS\_TEST\_HH}
+\hypertarget{analysis__TEST_8hh_source_l00021}{}\hyperlink{analysis__TEST_8hh_a4f33fcbf1e692400c9a9c29eb017cc79}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_ANALYSIS\_TEST\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{preprocessor}{#include <\hyperlink{analysis_8hh}{eos/utils/analysis.hh}>}
+00024 \textcolor{preprocessor}{#include <test/test.hh>}
+00025 
+00026 \textcolor{keyword}{using namespace }test;
+00027 
+00028 \textcolor{keyword}{namespace }eos
+00029 \{
+\hypertarget{analysis__TEST_8hh_source_l00030}{}\hyperlink{structeos_1_1TestObservable}{00030}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1TestObservable}{TestObservable} :
+00031         \textcolor{keyword}{public} \hyperlink{classeos_1_1Observable}{Observable}
+00032     \{
+\hypertarget{analysis__TEST_8hh_source_l00033}{}\hyperlink{structeos_1_1TestObservable_ab06f6f24a04051ec2a8ebaa5d78ee953}{00033}             \hyperlink{classeos_1_1Parameters}{Parameters} \hyperlink{structeos_1_1TestObservable_ab06f6f24a04051ec2a8ebaa5d78ee953}{p};
+00034 
+\hypertarget{analysis__TEST_8hh_source_l00035}{}\hyperlink{structeos_1_1TestObservable_a58ef1eee27197c2bce21b2e576411a74}{00035}             \hyperlink{classeos_1_1Kinematics}{Kinematics} \hyperlink{structeos_1_1TestObservable_a58ef1eee27197c2bce21b2e576411a74}{k};
+00036 
+\hypertarget{analysis__TEST_8hh_source_l00037}{}\hyperlink{structeos_1_1TestObservable_af9d523ad792f2ce3afa336f09d9226a6}{00037}             \hyperlink{classeos_1_1Options}{Options} \hyperlink{structeos_1_1TestObservable_af9d523ad792f2ce3afa336f09d9226a6}{o};
+00038 
+\hypertarget{analysis__TEST_8hh_source_l00039}{}\hyperlink{structeos_1_1TestObservable_aad5736b5692f43ccae60087154fd2132}{00039}             std::string \hyperlink{structeos_1_1TestObservable_aad5736b5692f43ccae60087154fd2132}{n}, \hyperlink{structeos_1_1TestObservable_afa242c890fb7299876f30e8d01e218fc}{mass_name};
+00040 
+\hypertarget{analysis__TEST_8hh_source_l00041}{}\hyperlink{structeos_1_1TestObservable_a131b40b285edbecfd177becbbf66b601}{00041}             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \hyperlink{structeos_1_1TestObservable_a131b40b285edbecfd177becbbf66b601}{mass};
+00042 
+\hypertarget{analysis__TEST_8hh_source_l00043}{}\hyperlink{structeos_1_1TestObservable_af44302acc1d97376ea453c133cf08c02}{00043}             \hyperlink{structeos_1_1TestObservable_af44302acc1d97376ea453c133cf08c02}{TestObservable}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & \hyperlink{structeos_1_1TestObservable_ab06f6f24a04051ec2a8ebaa5d78ee953}{p}, \textcolor{keyword}{const} \hyperlink{classeos_1_1Kinematics}{Kinematics} & \hyperlink{structeos_1_1TestObservable_a58ef1eee27197c2bce21b2e576411a74}{k}, \textcolor{keyword}{const} std:
+      :string & \hyperlink{structeos_1_1TestObservable_afa242c890fb7299876f30e8d01e218fc}{mass_name}) :
+00044                 p(p),
+00045                 k(k),
+00046                 \hyperlink{structeos_1_1TestObservable_af9d523ad792f2ce3afa336f09d9226a6}{o}(),
+00047                 \hyperlink{structeos_1_1TestObservable_aad5736b5692f43ccae60087154fd2132}{n}(\textcolor{stringliteral}{"test-observable["} + mass\_name + \textcolor{stringliteral}{"]"}),
+00048                 mass\_name(mass\_name),
+00049                 \hyperlink{structeos_1_1TestObservable_a131b40b285edbecfd177becbbf66b601}{mass}(p[mass\_name], *this)
+00050             \{
+00051             \}
+00052 
+\hypertarget{analysis__TEST_8hh_source_l00053}{}\hyperlink{structeos_1_1TestObservable_a1462125ba005e855c9127da2ce8c7f15}{00053}             \textcolor{keyword}{virtual} \hyperlink{structeos_1_1TestObservable_a1462125ba005e855c9127da2ce8c7f15}{~TestObservable}()
+00054             \{
+00055             \}
+00056 
+\hypertarget{analysis__TEST_8hh_source_l00057}{}\hyperlink{structeos_1_1TestObservable_a05f143463bc9a2cddec1ee2bdb8d5ba2}{00057}             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \hyperlink{structeos_1_1TestObservable_a05f143463bc9a2cddec1ee2bdb8d5ba2}{evaluate}()\textcolor{keyword}{ const}
+00058 \textcolor{keyword}{            }\{
+00059                 \textcolor{keywordflow}{return} \hyperlink{structeos_1_1TestObservable_a131b40b285edbecfd177becbbf66b601}{mass}();
+00060             \}
+00061 
+\hypertarget{analysis__TEST_8hh_source_l00062}{}\hyperlink{structeos_1_1TestObservable_a2ec70cb32b39215b3c3eafd05a94e1f6}{00062}             \textcolor{keyword}{virtual} \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} \hyperlink{structeos_1_1TestObservable_a2ec70cb32b39215b3c3eafd05a94e1f6}{clone}()\textcolor{keyword}{ const}
+00063 \textcolor{keyword}{            }\{
+00064                 \textcolor{keywordflow}{return} \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr}(\textcolor{keyword}{new} \hyperlink{structeos_1_1TestObservable_af44302acc1d97376ea453c133cf08c02}{TestObservable}(\hyperlink{structeos_1_1TestObservable_ab06f6f24a04051ec2a8ebaa5d78ee953}{p}.\hyperlink{classeos_1_1Parameters_a273f5bad065bc47b62981734a2e3576e}{clone}(), \hyperlink{structeos_1_1TestObservable_a58ef1eee27197c2bce21b2e576411a74}{k}.\hyperlink{classeos_1_1Kinematics_aedd9681136ab3735fb754e2840e10715}{clone}(), 
+      \hyperlink{structeos_1_1TestObservable_afa242c890fb7299876f30e8d01e218fc}{mass_name}));
+00065             \}
+00066 
+\hypertarget{analysis__TEST_8hh_source_l00067}{}\hyperlink{structeos_1_1TestObservable_a40b0831f486d5a73e583becb0c6c9da4}{00067}             \textcolor{keyword}{virtual} \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} \hyperlink{structeos_1_1TestObservable_a2ec70cb32b39215b3c3eafd05a94e1f6}{clone}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & \hyperlink{structeos_1_1TestObservable_ab6aef566fbe0f34117da1d484e20da40}{parameters})\textcolor{keyword}{ const}
+00068 \textcolor{keyword}{            }\{
+00069                 \textcolor{keywordflow}{return} \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr}(\textcolor{keyword}{new} \hyperlink{structeos_1_1TestObservable_af44302acc1d97376ea453c133cf08c02}{TestObservable}(parameters, \hyperlink{structeos_1_1TestObservable_a58ef1eee27197c2bce21b2e576411a74}{k}.\hyperlink{classeos_1_1Kinematics_aedd9681136ab3735fb754e2840e10715}{clone}(), 
+      \hyperlink{structeos_1_1TestObservable_afa242c890fb7299876f30e8d01e218fc}{mass_name}));
+00070             \}
+00071 
+\hypertarget{analysis__TEST_8hh_source_l00072}{}\hyperlink{structeos_1_1TestObservable_ab6aef566fbe0f34117da1d484e20da40}{00072}             \textcolor{keyword}{virtual} \hyperlink{classeos_1_1Parameters}{Parameters} \hyperlink{structeos_1_1TestObservable_ab6aef566fbe0f34117da1d484e20da40}{parameters}()
+00073             \{
+00074                 \textcolor{keywordflow}{return} \hyperlink{structeos_1_1TestObservable_ab06f6f24a04051ec2a8ebaa5d78ee953}{p};
+00075             \}
+00076 
+\hypertarget{analysis__TEST_8hh_source_l00077}{}\hyperlink{structeos_1_1TestObservable_a87b7da05ef887b71fee092252a70a685}{00077}             \textcolor{keyword}{virtual} \hyperlink{classeos_1_1Kinematics}{Kinematics} \hyperlink{structeos_1_1TestObservable_a87b7da05ef887b71fee092252a70a685}{kinematics}()
+00078             \{
+00079                 \textcolor{keywordflow}{return} \hyperlink{structeos_1_1TestObservable_a58ef1eee27197c2bce21b2e576411a74}{k};
+00080             \}
+00081 
+\hypertarget{analysis__TEST_8hh_source_l00082}{}\hyperlink{structeos_1_1TestObservable_a6d762181ac0ce1d2d8ad9d377a3a565d}{00082}             \textcolor{keyword}{virtual} \hyperlink{classeos_1_1Options}{Options} \hyperlink{structeos_1_1TestObservable_a6d762181ac0ce1d2d8ad9d377a3a565d}{options}()
+00083             \{
+00084                 \textcolor{keywordflow}{return} \hyperlink{structeos_1_1TestObservable_af9d523ad792f2ce3afa336f09d9226a6}{o};
+00085             \}
+00086 
+\hypertarget{analysis__TEST_8hh_source_l00087}{}\hyperlink{structeos_1_1TestObservable_a1cc59da836d9dab76351b7afcbdb73f1}{00087}             \textcolor{keyword}{const} std::string & \hyperlink{structeos_1_1TestObservable_a1cc59da836d9dab76351b7afcbdb73f1}{name}()\textcolor{keyword}{ const}
+00088 \textcolor{keyword}{            }\{
+00089                 \textcolor{keywordflow}{return} \hyperlink{structeos_1_1TestObservable_aad5736b5692f43ccae60087154fd2132}{n};
+00090             \}
+00091 
+\hypertarget{analysis__TEST_8hh_source_l00092}{}\hyperlink{structeos_1_1TestObservable_ae4be408b4c96b6d86a080c966170b96b}{00092}             \textcolor{keywordtype}{void} \hyperlink{structeos_1_1TestObservable_ae4be408b4c96b6d86a080c966170b96b}{set_option}(\textcolor{keyword}{const} std::string & key, \textcolor{keyword}{const} std::string & value = 
+      \textcolor{stringliteral}{""})
+00093             \{
+00094                 \hyperlink{structeos_1_1TestObservable_af9d523ad792f2ce3afa336f09d9226a6}{o}.\hyperlink{classeos_1_1Options_a677e5bc4a49af527471e7c6db4a4b953}{set}(key, value);
+00095             \}
+00096     \};
+00097 
+\hypertarget{analysis__TEST_8hh_source_l00098}{}\hyperlink{structeos_1_1AbsoluteTestObservable}{00098}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1AbsoluteTestObservable}{AbsoluteTestObservable} :
+00099         \textcolor{keyword}{public} \hyperlink{structeos_1_1TestObservable}{TestObservable}
+00100     \{
+\hypertarget{analysis__TEST_8hh_source_l00101}{}\hyperlink{structeos_1_1AbsoluteTestObservable_a0e044df3b5ec549d51547e8b9f8af55b}{00101}             \hyperlink{structeos_1_1AbsoluteTestObservable_a0e044df3b5ec549d51547e8b9f8af55b}{AbsoluteTestObservable}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & \hyperlink{structeos_1_1TestObservable_ab06f6f24a04051ec2a8ebaa5d78ee953}{p}, \textcolor{keyword}{const} \hyperlink{classeos_1_1Kinematics}{Kinematics} & \hyperlink{structeos_1_1TestObservable_a58ef1eee27197c2bce21b2e576411a74}{k}, \textcolor{keyword}{co
+      nst} std::string & \hyperlink{structeos_1_1TestObservable_afa242c890fb7299876f30e8d01e218fc}{mass_name}) :
+00102                 \hyperlink{structeos_1_1TestObservable}{TestObservable}(p, k, mass\_name)
+00103             \{
+00104             \}
+00105 
+\hypertarget{analysis__TEST_8hh_source_l00106}{}\hyperlink{structeos_1_1AbsoluteTestObservable_ad2fa287cd756cd2d2e639ef39106debe}{00106}             \textcolor{keyword}{virtual} \hyperlink{structeos_1_1AbsoluteTestObservable_ad2fa287cd756cd2d2e639ef39106debe}{~AbsoluteTestObservable}()
+00107             \{
+00108             \}
+00109 
+\hypertarget{analysis__TEST_8hh_source_l00110}{}\hyperlink{structeos_1_1AbsoluteTestObservable_a47742fbfae1d0d8b57c09ee2a7501376}{00110}             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \hyperlink{structeos_1_1AbsoluteTestObservable_a47742fbfae1d0d8b57c09ee2a7501376}{evaluate}()\textcolor{keyword}{ const}
+00111 \textcolor{keyword}{            }\{
+00112                 \textcolor{keywordflow}{return} std::fabs(\hyperlink{structeos_1_1TestObservable_a131b40b285edbecfd177becbbf66b601}{mass}());
+00113             \}
+00114 
+\hypertarget{analysis__TEST_8hh_source_l00115}{}\hyperlink{structeos_1_1AbsoluteTestObservable_ac509cca6dca7383653b2d0e5c387db07}{00115}             \textcolor{keyword}{virtual} \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} \hyperlink{structeos_1_1AbsoluteTestObservable_ac509cca6dca7383653b2d0e5c387db07}{clone}()\textcolor{keyword}{ const}
+00116 \textcolor{keyword}{            }\{
+00117                 \textcolor{keywordflow}{return} \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr}(\textcolor{keyword}{new} \hyperlink{structeos_1_1AbsoluteTestObservable_a0e044df3b5ec549d51547e8b9f8af55b}{AbsoluteTestObservable}(\hyperlink{structeos_1_1TestObservable_ab06f6f24a04051ec2a8ebaa5d78ee953}{p}.\hyperlink{classeos_1_1Parameters_a273f5bad065bc47b62981734a2e3576e}{clone}(), \hyperlink{structeos_1_1TestObservable_a58ef1eee27197c2bce21b2e576411a74}{k}.
+      \hyperlink{classeos_1_1Kinematics_aedd9681136ab3735fb754e2840e10715}{clone}(), \hyperlink{structeos_1_1TestObservable_afa242c890fb7299876f30e8d01e218fc}{mass_name}));
+00118             \}
+00119 
+\hypertarget{analysis__TEST_8hh_source_l00120}{}\hyperlink{structeos_1_1AbsoluteTestObservable_af0a14d774c083598130b3062f956c4c9}{00120}             \textcolor{keyword}{virtual} \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} \hyperlink{structeos_1_1AbsoluteTestObservable_ac509cca6dca7383653b2d0e5c387db07}{clone}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & \hyperlink{structeos_1_1TestObservable_ab6aef566fbe0f34117da1d484e20da40}{parameters})\textcolor{keyword}{ const}
+00121 \textcolor{keyword}{            }\{
+00122                 \textcolor{keywordflow}{return} \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr}(\textcolor{keyword}{new} \hyperlink{structeos_1_1AbsoluteTestObservable_a0e044df3b5ec549d51547e8b9f8af55b}{AbsoluteTestObservable}(parameters, \hyperlink{structeos_1_1TestObservable_a58ef1eee27197c2bce21b2e576411a74}{k}.
+      \hyperlink{classeos_1_1Kinematics_aedd9681136ab3735fb754e2840e10715}{clone}(), \hyperlink{structeos_1_1TestObservable_afa242c890fb7299876f30e8d01e218fc}{mass_name}));
+00123             \}
+00124     \};
+00125 
+00126     \textcolor{comment}{/*}
+00127 \textcolor{comment}{     * Create analysis with gaussian likelihood and gaussian prior}
+00128 \textcolor{comment}{     * The posterior is also a Gaussian with central value 4.3}
+00129 \textcolor{comment}{     * and standard deviation sqrt(0.005)=0.070710678118654752}
+00130 \textcolor{comment}{     *}
+00131 \textcolor{comment}{     * flat = true turns Gaussian prior into flat prior}
+00132 \textcolor{comment}{     */}
+\hypertarget{analysis__TEST_8hh_source_l00133}{}\hyperlink{namespaceeos_ae42e0cf8b4c1c3548fc27a5add336258}{00133}     \hyperlink{classeos_1_1Analysis}{Analysis} \hyperlink{namespaceeos_ae42e0cf8b4c1c3548fc27a5add336258}{make_analysis}(\textcolor{keywordtype}{bool} flat)
+00134     \{
+00135         \hyperlink{classeos_1_1Parameters}{Parameters} parameters = \hyperlink{classeos_1_1Parameters_a1fa30b2210827623e6bf9f3ac4d2fd94}{Parameters::Defaults}();
+00136 
+00137         \hyperlink{classeos_1_1LogLikelihood}{LogLikelihood} llh(parameters);
+00138         llh.\hyperlink{classeos_1_1LogLikelihood_a236d8123a08805e1d825ca262bada0c8}{add}(\hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr}(\textcolor{keyword}{new} \hyperlink{structeos_1_1TestObservable}{TestObservable}(parameters, \hyperlink{classeos_1_1Kinematics}{Kinematics}(),
+00139                         \textcolor{stringliteral}{"mass::b(MSbar)"})), 4.1, 4.2, 4.3);
+00140 
+00141         \hyperlink{namespaceeos_ac5481e3b46ee55ff24606ee7f6e78651}{LogPriorPtr} prior = flat ?
+00142             \hyperlink{classeos_1_1LogPrior_ad4c2afcb1df01ef6ff1f2f8402cc7636}{LogPrior::Flat}(parameters, \textcolor{stringliteral}{"mass::b(MSbar)"}, \hyperlink{structeos_1_1ParameterRange}{ParameterRange}\{3.7, 4.9\}
+       ) :
+00143             \hyperlink{classeos_1_1LogPrior_afe99a1c56a9ef60b4c38fe56f3c2b7ae}{LogPrior::Gauss}(parameters, \textcolor{stringliteral}{"mass::b(MSbar)"}, \hyperlink{structeos_1_1ParameterRange}{ParameterRange}\{3.7, 4.9
+      \}, 4.3, 4.4, 4.5);
+00144 
+00145         \hyperlink{classeos_1_1Analysis}{Analysis} result(llh);
+00146         result.\hyperlink{classeos_1_1Analysis_a3062ad70d7888517d3fa09e7dcb183cf}{add}(prior);
+00147 
+00148         \textcolor{keywordflow}{return} result;
+00149     \}
+00150 \}
+00151 
+00152 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

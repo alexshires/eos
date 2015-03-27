@@ -1,0 +1,88 @@
+\hypertarget{equation__solver_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/equation\_\-solver.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2011 Frederik Beaujean}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_EOS\_UTILS\_EQUATION\_SOLVER\_HH}
+\hypertarget{equation__solver_8hh_source_l00021}{}\hyperlink{equation__solver_8hh_ac6e4af9e53b8a73b6f7b03ad0c6fdb93}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_EOS\_UTILS\_EQUATION\_SOLVER\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{preprocessor}{#include <\hyperlink{private__implementation__pattern_8hh}{eos/utils/private_implementation_pattern.hh}>}
+00024 \textcolor{preprocessor}{#include <\hyperlink{verify_8hh}{eos/utils/verify.hh}>}
+00025 
+00026 \textcolor{preprocessor}{#include <functional>}
+00027 \textcolor{preprocessor}{#include <vector>}
+00028 
+00029 \textcolor{keyword}{namespace }eos
+00030 \{
+\hypertarget{equation__solver_8hh_source_l00031}{}\hyperlink{classeos_1_1EquationSolver}{00031}     \textcolor{keyword}{class }\hyperlink{classeos_1_1EquationSolver}{EquationSolver} :
+00032         \textcolor{keyword}{public} \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern}<EquationSolver>
+00033     \{
+00034         \textcolor{keyword}{public}:
+\hypertarget{equation__solver_8hh_source_l00035}{}\hyperlink{classeos_1_1EquationSolver_a7394803ea85312852151a700b59da572}{00035}             \textcolor{keyword}{typedef} std::function<double (const std::vector<double> &)> \hyperlink{classeos_1_1EquationSolver_a7394803ea85312852151a700b59da572}{Equation};
+      
+00036 
+00037             \textcolor{keyword}{struct }\hyperlink{structeos_1_1EquationSolver_1_1Config}{Config};
+00038             \textcolor{keyword}{struct }\hyperlink{structeos_1_1EquationSolver_1_1Solution}{Solution};
+00039 
+00040             \hyperlink{classeos_1_1EquationSolver_a39179766f370890b207dd9c00f0009b8}{EquationSolver}(\textcolor{keyword}{const} \hyperlink{structeos_1_1EquationSolver_1_1Config}{EquationSolver::Config} & config);
+00041 
+00042             \hyperlink{classeos_1_1EquationSolver_ac96461e85b095b1bff966a0d07542310}{~EquationSolver}();
+00043 
+00044             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1EquationSolver_ad9cc623f54250dca0cc3fd288dcede77}{add}(\textcolor{keyword}{const} \hyperlink{classeos_1_1EquationSolver_a7394803ea85312852151a700b59da572}{Equation} & equation);
+00045 
+00046             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1EquationSolver_ad9cc623f54250dca0cc3fd288dcede77}{add}(\textcolor{keyword}{const} std::string & name, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & initial\_value, \textcolor{keyword}{cons
+      t} \textcolor{keywordtype}{double} & error);
+00047 
+00048             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1EquationSolver_ad9cc623f54250dca0cc3fd288dcede77}{add}(\textcolor{keyword}{const} std::string & name, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & initial\_value, \textcolor{keyword}{cons
+      t} \textcolor{keywordtype}{double} & error, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & max);
+00049 
+00050             \hyperlink{structeos_1_1EquationSolver_1_1Solution}{Solution} \hyperlink{classeos_1_1EquationSolver_ad9add1a035d5edff206361db0d050a44}{solve}();
+00051     \};
+00052 
+\hypertarget{equation__solver_8hh_source_l00053}{}\hyperlink{structeos_1_1EquationSolver_1_1Config}{00053}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1EquationSolver_1_1Config}{EquationSolver::Config}
+00054     \{
+00055         \textcolor{keyword}{private}:
+00056             \hyperlink{structeos_1_1EquationSolver_1_1Config}{Config}();
+00057 
+00058         \textcolor{keyword}{public}:
+\hypertarget{equation__solver_8hh_source_l00060}{}\hyperlink{structeos_1_1EquationSolver_1_1Config_ae7c9a2c51f8669b27669cde1a64af2b0}{00060}             \textcolor{keywordtype}{unsigned} \hyperlink{structeos_1_1EquationSolver_1_1Config_ae7c9a2c51f8669b27669cde1a64af2b0}{maximum_steps};
+00061 
+\hypertarget{equation__solver_8hh_source_l00063}{}\hyperlink{structeos_1_1EquationSolver_1_1Config_af745d1f394c65f1176470aa42b1fdbc0}{00063}             \hyperlink{classeos_1_1VerifiedRange}{VerifiedRange<unsigned>} \hyperlink{structeos_1_1EquationSolver_1_1Config_af745d1f394c65f1176470aa42b1fdbc0}{strategy};
+00064 
+\hypertarget{equation__solver_8hh_source_l00066}{}\hyperlink{structeos_1_1EquationSolver_1_1Config_a8044943acf44d730c0e78226e1c30492}{00066}             \hyperlink{classeos_1_1VerifiedRange}{VerifiedRange<double>} \hyperlink{structeos_1_1EquationSolver_1_1Config_a8044943acf44d730c0e78226e1c30492}{tolerance};
+00067 
+00068             \textcolor{keyword}{static} \hyperlink{structeos_1_1EquationSolver_1_1Config}{Config} \hyperlink{structeos_1_1EquationSolver_1_1Config_a09146644b138f64029be17f8749fc237}{Default}();
+00069     \};
+00070 
+\hypertarget{equation__solver_8hh_source_l00071}{}\hyperlink{structeos_1_1EquationSolver_1_1Solution}{00071}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1EquationSolver_1_1Solution}{EquationSolver::Solution}
+00072     \{
+\hypertarget{equation__solver_8hh_source_l00074}{}\hyperlink{structeos_1_1EquationSolver_1_1Solution_ac0f9639b6d1b2cd2ca250a1dd4cb0549}{00074}         std::vector<double> \hyperlink{structeos_1_1EquationSolver_1_1Solution_ac0f9639b6d1b2cd2ca250a1dd4cb0549}{parameters};
+00075 
+\hypertarget{equation__solver_8hh_source_l00077}{}\hyperlink{structeos_1_1EquationSolver_1_1Solution_acb4de717f8f570cc92d3f1f2f7c6b085}{00077}         \textcolor{keywordtype}{double} \hyperlink{structeos_1_1EquationSolver_1_1Solution_acb4de717f8f570cc92d3f1f2f7c6b085}{value};
+00078 
+\hypertarget{equation__solver_8hh_source_l00080}{}\hyperlink{structeos_1_1EquationSolver_1_1Solution_a13f38764efb070fcb3af4fca3db02d1e}{00080}         \textcolor{keywordtype}{bool} \hyperlink{structeos_1_1EquationSolver_1_1Solution_a13f38764efb070fcb3af4fca3db02d1e}{valid};
+00081     \};
+00082 \}
+00083 
+00084 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

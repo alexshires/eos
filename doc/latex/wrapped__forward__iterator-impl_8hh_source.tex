@@ -1,0 +1,208 @@
+\hypertarget{wrapped__forward__iterator-impl_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/wrapped\_\-forward\_\-iterator-\/impl.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2007 Ciaran McCreesh}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_UTIL\_WRAPPED\_FORWARD\_ITERATOR\_IMPL\_HH}
+\hypertarget{wrapped__forward__iterator-impl_8hh_source_l00021}{}\hyperlink{wrapped__forward__iterator-impl_8hh_af72bfca179e2f80dcfff5264bfeaa9fc}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_UTIL\_WRAPPED\_FORWARD\_ITERATOR\_IMPL\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{preprocessor}{#include <\hyperlink{wrapped__forward__iterator_8hh}{eos/utils/wrapped_forward_iterator.hh}>}
+00024 
+00025 \textcolor{keyword}{namespace }eos
+00026 \{
+00027     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Tag\_, \textcolor{keyword}{typename} Value\_>
+\hypertarget{wrapped__forward__iterator-impl_8hh_source_l00028}{}\hyperlink{structeos_1_1WrappedForwardIterator_1_1Base}{00028}     \textcolor{keyword}{struct }\hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator}<Tag\_, Value\_>::\hyperlink{structeos_1_1WrappedForwardIterator_1_1Base}{Base}
+00029     \{
+00030         \textcolor{keyword}{virtual} \hyperlink{structeos_1_1WrappedForwardIterator_1_1Base}{Base} * clone() \textcolor{keyword}{const} = 0;
+00031         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} increment() = 0;
+00032         \textcolor{keyword}{virtual} \textcolor{keyword}{typename} \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator<Tag_, Value_>::pointer} \hyperlink{classeos_1_1WrappedForwardIterator_addb7c63e8b8d4be0a65ded32a4cb7cb9}{pointer}() 
+      \textcolor{keyword}{const} = 0;
+00033         \textcolor{keyword}{virtual} \textcolor{keyword}{typename} \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator<Tag_, Value_>::reference} 
+      \hyperlink{classeos_1_1WrappedForwardIterator_ac7ba4ace12142ac73d97df5d555a4c18}{reference}() \textcolor{keyword}{const} = 0;
+00034         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} equal(\textcolor{keyword}{const} \hyperlink{structeos_1_1WrappedForwardIterator_1_1Base}{Base} *) \textcolor{keyword}{const} = 0;
+00035         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} * underlying\_iterator\_ptr() = 0;
+00036         \textcolor{keyword}{virtual} \textcolor{keyword}{const} \textcolor{keywordtype}{void} * underlying\_iterator\_ptr() \textcolor{keyword}{const} = 0;
+00037 
+\hypertarget{wrapped__forward__iterator-impl_8hh_source_l00038}{}\hyperlink{structeos_1_1WrappedForwardIterator_1_1Base_a4d6dc901016516de2f269abb38446c22}{00038}         \textcolor{keyword}{virtual} ~\hyperlink{structeos_1_1WrappedForwardIterator_1_1Base}{Base}()
+00039         \{
+00040         \}
+00041     \};
+00042 
+00043     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Tag\_, \textcolor{keyword}{typename} Value\_>
+00044     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Iter\_>
+\hypertarget{wrapped__forward__iterator-impl_8hh_source_l00045}{}\hyperlink{structeos_1_1WrappedForwardIterator_1_1BaseImpl}{00045}     \textcolor{keyword}{struct }\hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator}<Tag\_, Value\_>::\hyperlink{structeos_1_1WrappedForwardIterator_1_1BaseImpl}{BaseImpl} :
+00046         \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator}<Tag\_, Value\_>::\hyperlink{structeos_1_1WrappedForwardIterator_1_1Base}{Base}
+00047     \{
+\hypertarget{wrapped__forward__iterator-impl_8hh_source_l00048}{}\hyperlink{structeos_1_1WrappedForwardIterator_1_1BaseImpl_a1cb305ebb3b36e941fc5f74b78e4b8a1}{00048}         Iter\_ i;
+00049 
+\hypertarget{wrapped__forward__iterator-impl_8hh_source_l00050}{}\hyperlink{structeos_1_1WrappedForwardIterator_1_1BaseImpl_ace18b4460fe774ada155046312de5ad6}{00050}         \hyperlink{structeos_1_1WrappedForwardIterator_1_1BaseImpl}{BaseImpl}(\textcolor{keyword}{const} Iter\_ & ii) :
+00051             i(ii)
+00052         \{
+00053         \}
+00054 
+\hypertarget{wrapped__forward__iterator-impl_8hh_source_l00055}{}\hyperlink{structeos_1_1WrappedForwardIterator_1_1BaseImpl_afe3d32be8e6bd2788db24f89e90ceef9}{00055}         \hyperlink{structeos_1_1WrappedForwardIterator_1_1Base}{Base} * clone()\textcolor{keyword}{ const}
+00056 \textcolor{keyword}{        }\{
+00057             \textcolor{keywordflow}{return} \textcolor{keyword}{new} \hyperlink{structeos_1_1WrappedForwardIterator_1_1BaseImpl}{BaseImpl}(i);
+00058         \}
+00059 
+\hypertarget{wrapped__forward__iterator-impl_8hh_source_l00060}{}\hyperlink{structeos_1_1WrappedForwardIterator_1_1BaseImpl_ac6565ae3236b5b128d671a1011f9c9ee}{00060}         \textcolor{keywordtype}{void} increment()
+00061         \{
+00062             ++i;
+00063         \}
+00064 
+\hypertarget{wrapped__forward__iterator-impl_8hh_source_l00065}{}\hyperlink{structeos_1_1WrappedForwardIterator_1_1BaseImpl_a61c99fb9827d32e094355f8c152e65f0}{00065}         \textcolor{keyword}{typename} \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator<Tag_, Value_>::reference} \hyperlink{classeos_1_1WrappedForwardIterator_ac7ba4ace12142ac73d97df5d555a4c18}{reference}()\textcolor{keyword}{ cons
+      t}
+00066 \textcolor{keyword}{        }\{
+00067             \textcolor{keywordflow}{return} *i;
+00068         \}
+00069 
+\hypertarget{wrapped__forward__iterator-impl_8hh_source_l00070}{}\hyperlink{structeos_1_1WrappedForwardIterator_1_1BaseImpl_ad11775ce759f6aa3eff84e67b5e859fd}{00070}         \textcolor{keyword}{typename} \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator<Tag_, Value_>::pointer} \hyperlink{classeos_1_1WrappedForwardIterator_addb7c63e8b8d4be0a65ded32a4cb7cb9}{pointer}()\textcolor{keyword}{ const}
+00071 \textcolor{keyword}{        }\{
+00072             \textcolor{keywordflow}{return} i.operator-> ();
+00073         \}
+00074 
+\hypertarget{wrapped__forward__iterator-impl_8hh_source_l00075}{}\hyperlink{structeos_1_1WrappedForwardIterator_1_1BaseImpl_a07f6ef7a9f4c21de044aca1d09aed9f7}{00075}         \textcolor{keywordtype}{bool} equal(\textcolor{keyword}{const} \hyperlink{structeos_1_1WrappedForwardIterator_1_1Base}{Base} * other)\textcolor{keyword}{ const}
+00076 \textcolor{keyword}{        }\{
+00077             \textcolor{keywordflow}{return} i == \textcolor{keyword}{static\_cast<}\textcolor{keyword}{const }\hyperlink{structeos_1_1WrappedForwardIterator_1_1BaseImpl}{BaseImpl} *\textcolor{keyword}{>}(other)->i;
+00078         \}
+00079 
+\hypertarget{wrapped__forward__iterator-impl_8hh_source_l00080}{}\hyperlink{structeos_1_1WrappedForwardIterator_1_1BaseImpl_aab9c324066b8488f0f84395de5b02dfc}{00080}         \textcolor{keywordtype}{void} * underlying\_iterator\_ptr()
+00081         \{
+00082             \textcolor{keywordflow}{return} &i;
+00083         \}
+00084 
+\hypertarget{wrapped__forward__iterator-impl_8hh_source_l00085}{}\hyperlink{structeos_1_1WrappedForwardIterator_1_1BaseImpl_aae9d385a45b3ddddab20aec8e9f49fe8}{00085}         \textcolor{keyword}{const} \textcolor{keywordtype}{void} * underlying\_iterator\_ptr()\textcolor{keyword}{ const}
+00086 \textcolor{keyword}{        }\{
+00087             \textcolor{keywordflow}{return} &i;
+00088         \}
+00089     \};
+00090 
+00091     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Tag\_, \textcolor{keyword}{typename} Value\_>
+\hypertarget{wrapped__forward__iterator-impl_8hh_source_l00092}{}\hyperlink{classeos_1_1WrappedForwardIterator_a321ac3c98ae28956b7428b193e6f65ba}{00092}     \hyperlink{classeos_1_1WrappedForwardIterator_a321ac3c98ae28956b7428b193e6f65ba}{WrappedForwardIterator<Tag_, Value_>::WrappedForwardIterator}() :
+00093         \_base(0)
+00094     \{
+00095     \}
+00096 
+00097     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Tag\_, \textcolor{keyword}{typename} Value\_>
+\hypertarget{wrapped__forward__iterator-impl_8hh_source_l00098}{}\hyperlink{classeos_1_1WrappedForwardIterator_a4694e3a609d50263eff28cf49c6359c0}{00098}     \hyperlink{classeos_1_1WrappedForwardIterator_a4694e3a609d50263eff28cf49c6359c0}{WrappedForwardIterator<Tag_, Value_>::~WrappedForwardIterator}()
+00099     \{
+00100         \textcolor{keyword}{delete} \_base;
+00101     \}
+00102 
+00103     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Tag\_, \textcolor{keyword}{typename} Value\_>
+\hypertarget{wrapped__forward__iterator-impl_8hh_source_l00104}{}\hyperlink{classeos_1_1WrappedForwardIterator_af824e052467ced345fdc2391bf251e34}{00104}     \hyperlink{classeos_1_1WrappedForwardIterator_a321ac3c98ae28956b7428b193e6f65ba}{WrappedForwardIterator<Tag_, Value_>::WrappedForwardIterator}(\textcolor{keyword}{const} 
+      \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator} & other) :
+00105         \_base(other.\_base ? other.\_base->clone() : other.\_base)
+00106     \{
+00107     \}
+00108 
+00109     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Tag\_, \textcolor{keyword}{typename} Value\_>
+00110     \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_>
+\hypertarget{wrapped__forward__iterator-impl_8hh_source_l00111}{}\hyperlink{classeos_1_1WrappedForwardIterator_a35ef424f724996a9cc6ac3d8513fefa5}{00111}     \hyperlink{classeos_1_1WrappedForwardIterator_a321ac3c98ae28956b7428b193e6f65ba}{WrappedForwardIterator<Tag_, Value_>::WrappedForwardIterator}(\textcolor{keyword}{const} T\_ & base)
+       :
+00112         \_base(new \hyperlink{structeos_1_1WrappedForwardIterator_1_1BaseImpl}{BaseImpl}<T\_>(base))
+00113     \{
+00114     \}
+00115 
+00116     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Tag\_, \textcolor{keyword}{typename} Value\_>
+00117     \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator<Tag_, Value_>} &
+\hypertarget{wrapped__forward__iterator-impl_8hh_source_l00118}{}\hyperlink{classeos_1_1WrappedForwardIterator_a73f420f7f9bcc8bf8ad1286f7d5f9601}{00118}     \hyperlink{classeos_1_1WrappedForwardIterator_a73f420f7f9bcc8bf8ad1286f7d5f9601}{WrappedForwardIterator<Tag_, Value_>::operator= }(\textcolor{keyword}{const} 
+      \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator<Tag_, Value_>} & other)
+00119     \{
+00120         \textcolor{keywordflow}{if} (\textcolor{keyword}{this} != &other)
+00121             \_base = other.\_base ? other.\_base->\hyperlink{structeos_1_1WrappedForwardIterator_1_1Base_a146a4e18680684f22bb7ca73f662718d}{clone}() : other.\_base;
+00122         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+00123     \}
+00124 
+00125     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Tag\_, \textcolor{keyword}{typename} Value\_>
+00126     \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator<Tag_, Value_>} &
+\hypertarget{wrapped__forward__iterator-impl_8hh_source_l00127}{}\hyperlink{classeos_1_1WrappedForwardIterator_a553cd24e60c32710a09912f446213833}{00127}     \hyperlink{classeos_1_1WrappedForwardIterator_a553cd24e60c32710a09912f446213833}{WrappedForwardIterator<Tag_, Value_>::operator++ }()
+00128     \{
+00129         \_base->\hyperlink{structeos_1_1WrappedForwardIterator_1_1Base_a7ab151df86128ddc4e98c64211829544}{increment}();
+00130         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+00131     \}
+00132 
+00133     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Tag\_, \textcolor{keyword}{typename} Value\_>
+00134     \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator<Tag_, Value_>}
+\hypertarget{wrapped__forward__iterator-impl_8hh_source_l00135}{}\hyperlink{classeos_1_1WrappedForwardIterator_a34a30fd266a0f1c8610dd0b354c4dd21}{00135}     \hyperlink{classeos_1_1WrappedForwardIterator_a553cd24e60c32710a09912f446213833}{WrappedForwardIterator<Tag_, Value_>::operator++ }(\textcolor{keywordtype}{int})
+00136     \{
+00137         \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator} result(*\textcolor{keyword}{this});
+00138         \_base->\hyperlink{structeos_1_1WrappedForwardIterator_1_1Base_a7ab151df86128ddc4e98c64211829544}{increment}();
+00139         \textcolor{keywordflow}{return} result;
+00140     \}
+00141 
+00142     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Tag\_, \textcolor{keyword}{typename} Value\_>
+00143     \textcolor{keyword}{typename} \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator<Tag_, Value_>::pointer}
+\hypertarget{wrapped__forward__iterator-impl_8hh_source_l00144}{}\hyperlink{classeos_1_1WrappedForwardIterator_af12c608415c6ee323ca93834486fc2b7}{00144}     \hyperlink{classeos_1_1WrappedForwardIterator_af12c608415c6ee323ca93834486fc2b7}{WrappedForwardIterator<Tag_, Value_>::operator-> }()\textcolor{keyword}{ const}
+00145 \textcolor{keyword}{    }\{
+00146         \textcolor{keywordflow}{return} \_base->\hyperlink{structeos_1_1WrappedForwardIterator_1_1Base_a3e63d544a83f5324f323f0d04c2203a3}{pointer}();
+00147     \}
+00148 
+00149     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Tag\_, \textcolor{keyword}{typename} Value\_>
+00150     \textcolor{keyword}{typename} \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator<Tag_, Value_>::reference}
+\hypertarget{wrapped__forward__iterator-impl_8hh_source_l00151}{}\hyperlink{classeos_1_1WrappedForwardIterator_ae02a50270f0a0fc3ccae98a41c2d144c}{00151}     \hyperlink{classeos_1_1WrappedForwardIterator_ae02a50270f0a0fc3ccae98a41c2d144c}{WrappedForwardIterator<Tag_, Value_>::operator* }()\textcolor{keyword}{ const}
+00152 \textcolor{keyword}{    }\{
+00153         \textcolor{keywordflow}{return} \_base->\hyperlink{structeos_1_1WrappedForwardIterator_1_1Base_a1cffbfbcead34d38a7390173496d70df}{reference}();
+00154     \}
+00155 
+00156     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Tag\_, \textcolor{keyword}{typename} Value\_>
+00157     \textcolor{keywordtype}{bool}
+\hypertarget{wrapped__forward__iterator-impl_8hh_source_l00158}{}\hyperlink{classeos_1_1WrappedForwardIterator_a79398c29c6f5012a3c882db8cf61d091}{00158}     \hyperlink{classeos_1_1WrappedForwardIterator_a79398c29c6f5012a3c882db8cf61d091}{WrappedForwardIterator<Tag_, Value_>::operator== }(\textcolor{keyword}{const} 
+      \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator} & other)\textcolor{keyword}{ const}
+00159 \textcolor{keyword}{    }\{
+00160         \textcolor{keywordflow}{if} (! \_base)
+00161             \textcolor{keywordflow}{return} ! other.\_base;
+00162 
+00163         \textcolor{keywordflow}{return} \_base->\hyperlink{structeos_1_1WrappedForwardIterator_1_1Base_a4ec070b72367be2f7f52babe05c1f9bc}{equal}(other.\_base);
+00164     \}
+00165 
+00166     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Tag\_, \textcolor{keyword}{typename} Value\_>
+00167     \textcolor{keywordtype}{bool}
+\hypertarget{wrapped__forward__iterator-impl_8hh_source_l00168}{}\hyperlink{classeos_1_1WrappedForwardIterator_a5fb87c43d4ca1c5a0ceffd97b4a4fc78}{00168}     \hyperlink{classeos_1_1WrappedForwardIterator_a5fb87c43d4ca1c5a0ceffd97b4a4fc78}{WrappedForwardIterator<Tag_, Value_>::operator!= }(\textcolor{keyword}{const} 
+      \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator} & other)\textcolor{keyword}{ const}
+00169 \textcolor{keyword}{    }\{
+00170         \textcolor{keywordflow}{if} (! \_base)
+00171             \textcolor{keywordflow}{return} 0 != other.\_base;
+00172 
+00173         \textcolor{keywordflow}{return} ! \_base->\hyperlink{structeos_1_1WrappedForwardIterator_1_1Base_a4ec070b72367be2f7f52babe05c1f9bc}{equal}(other.\_base);
+00174     \}
+00175 
+00176     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Tag\_, \textcolor{keyword}{typename} Value\_>
+00177     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Iter\_>
+00178     Iter\_ &
+\hypertarget{wrapped__forward__iterator-impl_8hh_source_l00179}{}\hyperlink{classeos_1_1WrappedForwardIterator_a5dd5d4d179b339a647660a0e4289a67c}{00179}     \hyperlink{classeos_1_1WrappedForwardIterator_a5dd5d4d179b339a647660a0e4289a67c}{WrappedForwardIterator<Tag_, Value_>::underlying_iterator}()
+00180     \{
+00181         \textcolor{keywordflow}{return} *\textcolor{keyword}{static\_cast<}Iter\_ *\textcolor{keyword}{>}(\_base->\hyperlink{structeos_1_1WrappedForwardIterator_1_1Base_a6f51dc38ebf16d338c4d14421a3a98e1}{underlying_iterator_ptr}());
+00182     \}
+00183 
+00184     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Tag\_, \textcolor{keyword}{typename} Value\_>
+00185     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Iter\_>
+00186     \textcolor{keyword}{const} Iter\_ &
+\hypertarget{wrapped__forward__iterator-impl_8hh_source_l00187}{}\hyperlink{classeos_1_1WrappedForwardIterator_a41c259a3f5e5d206c87ecb9dfeb41dec}{00187}     \hyperlink{classeos_1_1WrappedForwardIterator_a5dd5d4d179b339a647660a0e4289a67c}{WrappedForwardIterator<Tag_, Value_>::underlying_iterator}()\textcolor{keyword}{ const}
+00188 \textcolor{keyword}{    }\{
+00189         \textcolor{keywordflow}{return} *\textcolor{keyword}{static\_cast<}\textcolor{keyword}{const }Iter\_ *\textcolor{keyword}{>}(\_base->\hyperlink{structeos_1_1WrappedForwardIterator_1_1Base_a6f51dc38ebf16d338c4d14421a3a98e1}{underlying_iterator_ptr}());
+00190     \}
+00191 \}
+00192 
+00193 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1BToS" kind="struct" prot="public">
+    <compoundname>eos::BToS</compoundname>
+    <includes refid="wilson__coefficients_8hh" local="no">wilson_coefficients.hh</includes>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" line="36" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" bodystart="36" bodyend="36"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

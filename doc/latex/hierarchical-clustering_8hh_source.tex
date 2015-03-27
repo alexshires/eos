@@ -1,0 +1,118 @@
+\hypertarget{hierarchical-clustering_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/hierarchical-\/clustering.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2012 Frederik Beaujean}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_HIERARCHICAL\_CLUSTERING\_HH}
+\hypertarget{hierarchical-clustering_8hh_source_l00021}{}\hyperlink{hierarchical-clustering_8hh_a1d869f2ababc1f554edea4a220d22a62}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_HIERARCHICAL\_CLUSTERING\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{preprocessor}{#include <\hyperlink{wrapped__forward__iterator-impl_8hh}{eos/utils/wrapped_forward_iterator-impl.hh}>}
+00024 \textcolor{preprocessor}{#include <\hyperlink{private__implementation__pattern_8hh}{eos/utils/private_implementation_pattern.hh}>}
+00025 
+00026 \textcolor{preprocessor}{#include <vector>}
+00027 
+00028 \textcolor{preprocessor}{#include <gsl/gsl\_matrix.h>}
+00029 \textcolor{preprocessor}{#include <gsl/gsl\_vector.h>}
+00030 
+00031 \textcolor{keyword}{namespace }eos
+00032 \{
+\hypertarget{hierarchical-clustering_8hh_source_l00038}{}\hyperlink{classeos_1_1HierarchicalClustering}{00038}     \textcolor{keyword}{class }\hyperlink{classeos_1_1HierarchicalClustering}{HierarchicalClustering} :
+00039         \textcolor{keyword}{public} \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern}<HierarchicalClustering>
+00040     \{
+00041         \textcolor{keyword}{public}:
+00042             \textcolor{keyword}{class }\hyperlink{classeos_1_1HierarchicalClustering_1_1Config}{Config};
+\hypertarget{hierarchical-clustering_8hh_source_l00043}{}\hyperlink{classeos_1_1HierarchicalClustering_aa51668b14931e2a8b1697c8f26a8f1c8}{00043}             \textcolor{keyword}{class }\hyperlink{classeos_1_1HierarchicalClustering_1_1Component}{Component};
+00044             \textcolor{keyword}{typedef} std::vector<HierarchicalClustering::Component> 
+      \hyperlink{classeos_1_1HierarchicalClustering_aa51668b14931e2a8b1697c8f26a8f1c8}{MixtureDensity};
+00045 
+00048 
+00053             \hyperlink{classeos_1_1HierarchicalClustering_a7b4792a338b8e9ed7eff4c50b69a6e2f}{HierarchicalClustering}(\textcolor{keyword}{const} \hyperlink{classeos_1_1HierarchicalClustering_1_1Config}{HierarchicalClustering::Config} & config)
+      ;
+00054 
+00056             \hyperlink{classeos_1_1HierarchicalClustering_a65264d9ee6f203a8ca040644df99bf65}{~HierarchicalClustering}();
+00058 
+00062             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1HierarchicalClustering_ae42a0dd678f5258605a225a4b53eb487}{add}(\textcolor{keyword}{const} \hyperlink{classeos_1_1HierarchicalClustering_1_1Component}{Component} & component);
+00063 
+00068             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1HierarchicalClustering_af11950c9657fcfaf1962b3945e5feef6}{initial_guess}(\textcolor{keyword}{const} \hyperlink{classeos_1_1HierarchicalClustering_aa51668b14931e2a8b1697c8f26a8f1c8}{MixtureDensity} & density);
+00069 
+00073             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1HierarchicalClustering_aff7df5f12bd5ddb276896cc43c597981}{run}();
+00074 
+\hypertarget{hierarchical-clustering_8hh_source_l00075}{}\hyperlink{classeos_1_1HierarchicalClustering_a4d4c7214856d750b968299925f29b207}{00075}             \textcolor{keyword}{struct }IteratorTag;
+00077             \textcolor{keyword}{typedef} \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator<IteratorTag, Component>} 
+      \hyperlink{classeos_1_1WrappedForwardIterator}{ComponentIterator};
+00078             \hyperlink{classeos_1_1WrappedForwardIterator}{ComponentIterator} \hyperlink{classeos_1_1HierarchicalClustering_a34dc8e608ce186011554a7e108216b78}{begin_components}() \textcolor{keyword}{const};
+00079             \hyperlink{classeos_1_1WrappedForwardIterator}{ComponentIterator} \hyperlink{classeos_1_1HierarchicalClustering_ac834886e174350d4cf0a69fd88916b8c}{end_components}() \textcolor{keyword}{const};
+00080 
+\hypertarget{hierarchical-clustering_8hh_source_l00082}{}\hyperlink{classeos_1_1HierarchicalClustering_aae7753bcc3666ca15b333a39aa454b29}{00082}             \textcolor{keyword}{typedef} \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator<IteratorTag, Component>} 
+      \hyperlink{classeos_1_1WrappedForwardIterator}{ClusterIterator};
+00083             \hyperlink{classeos_1_1WrappedForwardIterator}{ClusterIterator} \hyperlink{classeos_1_1HierarchicalClustering_ac30248ba80ef8483617c6d0b3cc84e98}{begin_clusters}() \textcolor{keyword}{const};
+00084             \hyperlink{classeos_1_1WrappedForwardIterator}{ClusterIterator} \hyperlink{classeos_1_1HierarchicalClustering_a071a4d95afc77934d1af8c57050e49cb}{end_clusters}() \textcolor{keyword}{const};
+00085 
+\hypertarget{hierarchical-clustering_8hh_source_l00087}{}\hyperlink{classeos_1_1HierarchicalClustering_a7cf007a3d8e09d9b37f0c28c82013441}{00087}             \textcolor{keyword}{typedef} \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator<IteratorTag, unsigned>} \hyperlink{classeos_1_1WrappedForwardIterator}{MapIterator};
+00088             \hyperlink{classeos_1_1WrappedForwardIterator}{MapIterator} \hyperlink{classeos_1_1HierarchicalClustering_a2b2ea33a67b4e8f66ab8b6e4dd6a6710}{begin_map}() \textcolor{keyword}{const};
+00089             \hyperlink{classeos_1_1WrappedForwardIterator}{MapIterator} \hyperlink{classeos_1_1HierarchicalClustering_a022c09b9e8072a404b659e5a482937f8}{end_map}() \textcolor{keyword}{const};
+00090     \};
+00091 
+\hypertarget{hierarchical-clustering_8hh_source_l00096}{}\hyperlink{classeos_1_1HierarchicalClustering_1_1Component}{00096}     \textcolor{keyword}{class }\hyperlink{classeos_1_1HierarchicalClustering_1_1Component}{HierarchicalClustering::Component} :
+00097         \textcolor{keyword}{public} \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern}<HierarchicalClustering::Component>
+00098     \{
+00099         \textcolor{keyword}{public}:
+00100             \hyperlink{classeos_1_1HierarchicalClustering_1_1Component_a1720f61d18110629f9e729a1bf9d81e8}{Component}(\textcolor{keyword}{const} std::vector<double> & \hyperlink{classeos_1_1HierarchicalClustering_1_1Component_af164b5ba0a2ba3b3792a21fb284bb119}{mean}, \textcolor{keyword}{const} std::vector<double>
+       & \hyperlink{classeos_1_1HierarchicalClustering_1_1Component_a7476d18489400cb38d9d5a9d84a8175b}{covariance}, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & \hyperlink{classeos_1_1HierarchicalClustering_1_1Component_a18b8d0c7a2fd0b9b6b15647803424564}{weight});
+00101             \hyperlink{classeos_1_1HierarchicalClustering_1_1Component_a1720f61d18110629f9e729a1bf9d81e8}{Component}(\textcolor{keyword}{const} gsl\_vector * mean, \textcolor{keyword}{const} gsl\_matrix * covariance, \textcolor{keyword}{con
+      st} \textcolor{keywordtype}{double} & weight);
+00102             \hyperlink{classeos_1_1HierarchicalClustering_1_1Component_ab54a490e72686f90c0bf78ea9f756722}{~Component}();
+00103 
+00104             gsl\_matrix * \hyperlink{classeos_1_1HierarchicalClustering_1_1Component_a7476d18489400cb38d9d5a9d84a8175b}{covariance}() \textcolor{keyword}{const};
+00105             \textcolor{keyword}{const} gsl\_matrix * \hyperlink{classeos_1_1HierarchicalClustering_1_1Component_acf9bec75b31723425216860cd83f640b}{inverse_covariance}() \textcolor{keyword}{const};
+00106             \textcolor{keyword}{const} \textcolor{keywordtype}{double} & \hyperlink{classeos_1_1HierarchicalClustering_1_1Component_aa21ab8490577e43c23d8778da83e2e46}{determinant}() \textcolor{keyword}{const};
+00107             gsl\_vector * \hyperlink{classeos_1_1HierarchicalClustering_1_1Component_af164b5ba0a2ba3b3792a21fb284bb119}{mean}() \textcolor{keyword}{const};
+00108             \textcolor{keywordtype}{double} & \hyperlink{classeos_1_1HierarchicalClustering_1_1Component_a18b8d0c7a2fd0b9b6b15647803424564}{weight}() \textcolor{keyword}{const};
+00109     \};
+00110 
+00111     std::ostream & \hyperlink{namespaceeos_a2d7ef50009f9368c73d5056eab3ec21d}{operator<< }(std::ostream & lhs, \textcolor{keyword}{const} 
+      \hyperlink{classeos_1_1HierarchicalClustering_1_1Component}{HierarchicalClustering::Component} & rhs);
+00112 
+\hypertarget{hierarchical-clustering_8hh_source_l00116}{}\hyperlink{classeos_1_1HierarchicalClustering_1_1Config}{00116}     \textcolor{keyword}{class }\hyperlink{classeos_1_1HierarchicalClustering_1_1Config}{HierarchicalClustering::Config}
+00117     \{
+00118         \textcolor{keyword}{private}:
+00120             \hyperlink{classeos_1_1HierarchicalClustering_1_1Config}{Config}();
+00121 
+00122         \textcolor{keyword}{public}:
+00125 
+00131             \textcolor{keyword}{static} \hyperlink{classeos_1_1HierarchicalClustering_1_1Config}{Config} \hyperlink{classeos_1_1HierarchicalClustering_1_1Config_ab3a9f56ddac58bb2555732aca6826c55}{Default}();
+00132 
+00142             \textcolor{keyword}{static} \hyperlink{classeos_1_1HierarchicalClustering_1_1Config}{Config} \hyperlink{classeos_1_1HierarchicalClustering_1_1Config_a44043dd972ada7b67359a5e715d8555e}{Quick}();
+00144 
+\hypertarget{hierarchical-clustering_8hh_source_l00146}{}\hyperlink{classeos_1_1HierarchicalClustering_1_1Config_afb6c81886f8c7fc9618cc469b51dfd91}{00146}             \textcolor{keywordtype}{bool} \hyperlink{classeos_1_1HierarchicalClustering_1_1Config_afb6c81886f8c7fc9618cc469b51dfd91}{equal_weights};
+00147 
+\hypertarget{hierarchical-clustering_8hh_source_l00149}{}\hyperlink{classeos_1_1HierarchicalClustering_1_1Config_aef80452710fbd5dfab29150cd26790ee}{00149}             \textcolor{keywordtype}{bool} \hyperlink{classeos_1_1HierarchicalClustering_1_1Config_aef80452710fbd5dfab29150cd26790ee}{kill_clusters};
+00150 
+\hypertarget{hierarchical-clustering_8hh_source_l00152}{}\hyperlink{classeos_1_1HierarchicalClustering_1_1Config_af5c0aa9ab025297407497a246ac613ee}{00152}             \textcolor{keywordtype}{unsigned} \hyperlink{classeos_1_1HierarchicalClustering_1_1Config_af5c0aa9ab025297407497a246ac613ee}{maximum_steps};
+00153 
+\hypertarget{hierarchical-clustering_8hh_source_l00156}{}\hyperlink{classeos_1_1HierarchicalClustering_1_1Config_a4982011f9ceceaf71ade5e018072abf6}{00156}             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1HierarchicalClustering_1_1Config_a4982011f9ceceaf71ade5e018072abf6}{precision};
+00157     \};
+00158  \}
+00159 
+00160 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

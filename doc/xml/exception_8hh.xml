@@ -1,0 +1,464 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="exception_8hh" kind="file">
+    <compoundname>exception.hh</compoundname>
+    <includes local="no">exception</includes>
+    <includes local="no">string</includes>
+    <includedby refid="observable_8hh" local="no">/home/alexshires/EOS/eos-next/eos/observable.hh</includedby>
+    <includedby refid="chi-squared_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/chi-squared.hh</includedby>
+    <includedby refid="hdf5_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh</includedby>
+    <includedby refid="kinematic_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/kinematic.hh</includedby>
+    <includedby refid="options_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/options.hh</includedby>
+    <includedby refid="parameters_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/parameters.hh</includedby>
+    <includedby refid="verify_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/verify.hh</includedby>
+    <incdepgraph>
+      <node id="777">
+        <label>string</label>
+      </node>
+      <node id="776">
+        <label>exception</label>
+      </node>
+      <node id="775">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/exception.hh</label>
+        <link refid="exception.hh"/>
+        <childnode refid="776" relation="include">
+        </childnode>
+        <childnode refid="777" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="812">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/standard-model.hh</label>
+        <link refid="standard-model_8hh"/>
+        <childnode refid="811" relation="include">
+        </childnode>
+        <childnode refid="813" relation="include">
+        </childnode>
+      </node>
+      <node id="813">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh</label>
+        <link refid="wilson__scan__model_8hh"/>
+      </node>
+      <node id="779">
+        <label>/home/alexshires/EOS/eos-next/eos/observable.hh</label>
+        <link refid="observable_8hh"/>
+        <childnode refid="780" relation="include">
+        </childnode>
+        <childnode refid="786" relation="include">
+        </childnode>
+        <childnode refid="787" relation="include">
+        </childnode>
+        <childnode refid="788" relation="include">
+        </childnode>
+        <childnode refid="781" relation="include">
+        </childnode>
+        <childnode refid="789" relation="include">
+        </childnode>
+        <childnode refid="790" relation="include">
+        </childnode>
+        <childnode refid="792" relation="include">
+        </childnode>
+      </node>
+      <node id="798">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/options.hh</label>
+        <link refid="options_8hh"/>
+        <childnode refid="799" relation="include">
+        </childnode>
+        <childnode refid="800" relation="include">
+        </childnode>
+        <childnode refid="801" relation="include">
+        </childnode>
+        <childnode refid="796" relation="include">
+        </childnode>
+        <childnode refid="797" relation="include">
+        </childnode>
+        <childnode refid="802" relation="include">
+        </childnode>
+        <childnode refid="779" relation="include">
+        </childnode>
+        <childnode refid="803" relation="include">
+        </childnode>
+        <childnode refid="804" relation="include">
+        </childnode>
+        <childnode refid="805" relation="include">
+        </childnode>
+        <childnode refid="806" relation="include">
+        </childnode>
+        <childnode refid="807" relation="include">
+        </childnode>
+        <childnode refid="808" relation="include">
+        </childnode>
+        <childnode refid="809" relation="include">
+        </childnode>
+      </node>
+      <node id="803">
+        <label>/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh</label>
+        <link refid="exclusive-b-to-s-dilepton-large-recoil_8hh"/>
+      </node>
+      <node id="821">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh</label>
+        <link refid="proposal__functions_8hh"/>
+        <childnode refid="784" relation="include">
+        </childnode>
+      </node>
+      <node id="818">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/log_prior.hh</label>
+        <link refid="log__prior_8hh"/>
+        <childnode refid="782" relation="include">
+        </childnode>
+      </node>
+      <node id="781">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/log_likelihood.hh</label>
+        <link refid="log__likelihood_8hh"/>
+        <childnode refid="782" relation="include">
+        </childnode>
+      </node>
+      <node id="820">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/cluster.hh</label>
+        <link refid="cluster_8hh"/>
+        <childnode refid="821" relation="include">
+        </childnode>
+      </node>
+      <node id="810">
+        <label>/home/alexshires/EOS/eos-next/eos/rare-b-decays/charm-loops.hh</label>
+        <link refid="charm-loops_8hh"/>
+      </node>
+      <node id="796">
+        <label>/home/alexshires/EOS/eos-next/eos/form-factors/baryonic-impl.hh</label>
+        <link refid="baryonic-impl_8hh"/>
+      </node>
+      <node id="786">
+        <label>/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh</label>
+        <link refid="form-factor-adapter_8hh"/>
+      </node>
+      <node id="809">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/model.hh</label>
+        <link refid="model_8hh"/>
+        <childnode refid="810" relation="include">
+        </childnode>
+        <childnode refid="811" relation="include">
+        </childnode>
+        <childnode refid="812" relation="include">
+        </childnode>
+        <childnode refid="813" relation="include">
+        </childnode>
+      </node>
+      <node id="807">
+        <label>/home/alexshires/EOS/eos-next/eos/rare-b-decays/inclusive-b-to-s-gamma.hh</label>
+        <link refid="inclusive-b-to-s-gamma_8hh"/>
+      </node>
+      <node id="808">
+        <label>/home/alexshires/EOS/eos-next/eos/rare-b-decays/lambda-b-to-lambda-dilepton.hh</label>
+        <link refid="lambda-b-to-lambda-dilepton_8hh"/>
+      </node>
+      <node id="815">
+        <label>/home/alexshires/EOS/eos-next/eos/form-factors/baryonic.hh</label>
+        <link refid="baryonic_8hh"/>
+        <childnode refid="796" relation="include">
+        </childnode>
+        <childnode refid="816" relation="include">
+        </childnode>
+      </node>
+      <node id="794">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh</label>
+        <link refid="hdf5_8hh"/>
+      </node>
+      <node id="789">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/observable_cache.hh</label>
+        <link refid="observable__cache_8hh"/>
+        <childnode refid="780" relation="include">
+        </childnode>
+        <childnode refid="781" relation="include">
+        </childnode>
+      </node>
+      <node id="782">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/analysis.hh</label>
+        <link refid="analysis_8hh"/>
+        <childnode refid="783" relation="include">
+        </childnode>
+        <childnode refid="784" relation="include">
+        </childnode>
+        <childnode refid="785" relation="include">
+        </childnode>
+      </node>
+      <node id="780">
+        <label>/home/alexshires/EOS/eos-next/eos/constraint.hh</label>
+        <link refid="constraint_8hh"/>
+        <childnode refid="781" relation="include">
+        </childnode>
+      </node>
+      <node id="790">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/observable_set.hh</label>
+        <link refid="observable__set_8hh"/>
+        <childnode refid="791" relation="include">
+        </childnode>
+      </node>
+      <node id="793">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/chi-squared.hh</label>
+        <link refid="chi-squared_8hh"/>
+      </node>
+      <node id="795">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/kinematic.hh</label>
+        <link refid="kinematic_8hh"/>
+        <childnode refid="796" relation="include">
+        </childnode>
+        <childnode refid="797" relation="include">
+        </childnode>
+        <childnode refid="779" relation="include">
+        </childnode>
+      </node>
+      <node id="816">
+        <label>/home/alexshires/EOS/eos-next/eos/form-factors/form-factors.hh</label>
+        <link refid="form-factors_8hh"/>
+        <childnode refid="786" relation="include">
+        </childnode>
+      </node>
+      <node id="801">
+        <label>/home/alexshires/EOS/eos-next/eos/form-factors/analytic-b-to-pi.hh</label>
+        <link refid="analytic-b-to-pi_8hh"/>
+        <childnode refid="797" relation="include">
+        </childnode>
+      </node>
+      <node id="785">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh</label>
+        <link refid="population__monte__carlo__sampler_8hh"/>
+      </node>
+      <node id="791">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/prior_sampler.hh</label>
+        <link refid="prior__sampler_8hh"/>
+      </node>
+      <node id="824">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/equation_solver.hh</label>
+        <link refid="equation__solver_8hh"/>
+      </node>
+      <node id="802">
+        <label>/home/alexshires/EOS/eos-next/eos/form-factors/pi-lcdas.hh</label>
+        <link refid="pi-lcdas_8hh"/>
+      </node>
+      <node id="787">
+        <label>/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-dilepton.hh</label>
+        <link refid="exclusive-b-to-dilepton_8hh"/>
+      </node>
+      <node id="805">
+        <label>/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-gamma.hh</label>
+        <link refid="exclusive-b-to-s-gamma_8hh"/>
+      </node>
+      <node id="823">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/verify.hh</label>
+        <link refid="verify_8hh"/>
+        <childnode refid="782" relation="include">
+        </childnode>
+        <childnode refid="824" relation="include">
+        </childnode>
+        <childnode refid="784" relation="include">
+        </childnode>
+        <childnode refid="821" relation="include">
+        </childnode>
+      </node>
+      <node id="797">
+        <label>/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh</label>
+        <link refid="mesonic-impl_8hh"/>
+      </node>
+      <node id="792">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/wilson-polynomial.hh</label>
+        <link refid="wilson-polynomial_8hh"/>
+      </node>
+      <node id="799">
+        <label>/home/alexshires/EOS/eos-next/eos/b-decays/b-to-pi-l-nu.hh</label>
+        <link refid="b-to-pi-l-nu_8hh"/>
+      </node>
+      <node id="811">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/ckm_scan_model.hh</label>
+        <link refid="ckm__scan__model_8hh"/>
+      </node>
+      <node id="778">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/exception.hh</label>
+        <link refid="exception.hh"/>
+        <childnode refid="779" relation="include">
+        </childnode>
+        <childnode refid="793" relation="include">
+        </childnode>
+        <childnode refid="794" relation="include">
+        </childnode>
+        <childnode refid="795" relation="include">
+        </childnode>
+        <childnode refid="798" relation="include">
+        </childnode>
+        <childnode refid="814" relation="include">
+        </childnode>
+        <childnode refid="823" relation="include">
+        </childnode>
+      </node>
+      <node id="817">
+        <label>/home/alexshires/EOS/eos-next/eos/form-factors/mesonic.hh</label>
+        <link refid="mesonic_8hh"/>
+        <childnode refid="801" relation="include">
+        </childnode>
+        <childnode refid="816" relation="include">
+        </childnode>
+        <childnode refid="797" relation="include">
+        </childnode>
+      </node>
+      <node id="784">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/markov_chain_sampler.hh</label>
+        <link refid="markov__chain__sampler_8hh"/>
+      </node>
+      <node id="800">
+        <label>/home/alexshires/EOS/eos-next/eos/b-decays/properties.hh</label>
+        <link refid="properties_8hh"/>
+      </node>
+      <node id="819">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh</label>
+        <link refid="markov__chain_8hh"/>
+        <childnode refid="820" relation="include">
+        </childnode>
+        <childnode refid="784" relation="include">
+        </childnode>
+        <childnode refid="821" relation="include">
+        </childnode>
+      </node>
+      <node id="788">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh</label>
+        <link refid="concrete__observable_8hh"/>
+      </node>
+      <node id="783">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/analysis_TEST.hh</label>
+        <link refid="analysis__TEST_8hh"/>
+      </node>
+      <node id="822">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh</label>
+        <link refid="wilson__coefficients_8hh"/>
+        <childnode refid="809" relation="include">
+        </childnode>
+      </node>
+      <node id="804">
+        <label>/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh</label>
+        <link refid="exclusive-b-to-s-dilepton-low-recoil_8hh"/>
+      </node>
+      <node id="814">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/parameters.hh</label>
+        <link refid="parameters_8hh"/>
+        <childnode refid="799" relation="include">
+        </childnode>
+        <childnode refid="800" relation="include">
+        </childnode>
+        <childnode refid="801" relation="include">
+        </childnode>
+        <childnode refid="815" relation="include">
+        </childnode>
+        <childnode refid="817" relation="include">
+        </childnode>
+        <childnode refid="802" relation="include">
+        </childnode>
+        <childnode refid="779" relation="include">
+        </childnode>
+        <childnode refid="787" relation="include">
+        </childnode>
+        <childnode refid="803" relation="include">
+        </childnode>
+        <childnode refid="804" relation="include">
+        </childnode>
+        <childnode refid="805" relation="include">
+        </childnode>
+        <childnode refid="806" relation="include">
+        </childnode>
+        <childnode refid="807" relation="include">
+        </childnode>
+        <childnode refid="808" relation="include">
+        </childnode>
+        <childnode refid="781" relation="include">
+        </childnode>
+        <childnode refid="818" relation="include">
+        </childnode>
+        <childnode refid="819" relation="include">
+        </childnode>
+        <childnode refid="784" relation="include">
+        </childnode>
+        <childnode refid="809" relation="include">
+        </childnode>
+        <childnode refid="789" relation="include">
+        </childnode>
+        <childnode refid="822" relation="include">
+        </childnode>
+      </node>
+      <node id="806">
+        <label>/home/alexshires/EOS/eos-next/eos/rare-b-decays/inclusive-b-to-s-dilepton.hh</label>
+        <link refid="inclusive-b-to-s-dilepton_8hh"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classeos_1_1Exception" prot="public">eos::Exception</innerclass>
+    <innerclass refid="structeos_1_1InternalError" prot="public">eos::InternalError</innerclass>
+    <innernamespace refid="namespaceeos">eos</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="exception_8hh_1a7c97e00f75990f4c9e9691efe6eaf396" prot="public" static="no">
+        <name>EOS_GUARD_SRC_UTILS_EXCEPTION_HH</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/exception.hh" line="21" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/exception.hh" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>vim:<sp/>set<sp/>sw=4<sp/>sts=4<sp/>et<sp/>foldmethod=syntax<sp/>:<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>Danny<sp/>van<sp/>Dyk</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>EOS<sp/>project.<sp/>EOS<sp/>is<sp/>free<sp/>software;</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Public<sp/>License<sp/>version<sp/>2,<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>EOS<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/>but<sp/>WITHOUT<sp/>ANY</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>along<sp/>with</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/>59<sp/>Temple</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>Place,<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307<sp/><sp/>USA</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>EOS_GUARD_SRC_UTILS_EXCEPTION_HH</highlight></codeline>
+<codeline lineno="21" refid="exception_8hh_1a7c97e00f75990f4c9e9691efe6eaf396" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EOS_GUARD_SRC_UTILS_EXCEPTION_HH<sp/>1</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;exception&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">eos</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28" refid="classeos_1_1Exception" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classeos_1_1Exception" kindref="compound">Exception</ref><sp/>:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>std::exception</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>_message;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1Exception_1acbc0fa64ca3d54cc1f828b07dc80e585" kindref="member">Exception</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/>message)<sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1Exception_1a8cb6faea0484cc58c472da9e58c7c30a" kindref="member">~Exception</ref>()<sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="classeos_1_1Exception_1adce7a2af080165b09a599bb13438a8e1" kindref="member">what</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="structeos_1_1InternalError" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structeos_1_1InternalError" kindref="compound">InternalError</ref><sp/>:</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Exception" kindref="compound">Exception</ref></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structeos_1_1InternalError_1ae4b3f79d99d58833babeb1e743853390" kindref="member">InternalError</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/>message)<sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/exception.hh"/>
+  </compounddef>
+</doxygen>

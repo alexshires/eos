@@ -1,0 +1,107 @@
+\hypertarget{structeos_1_1MarkovChain_1_1Stats}{
+\section{eos::MarkovChain::Stats Struct Reference}
+\label{structeos_1_1MarkovChain_1_1Stats}\index{eos::MarkovChain::Stats@{eos::MarkovChain::Stats}}
+}
+
+
+{\ttfamily \#include $<$markov\_\-chain.hh$>$}\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \hyperlink{structeos_1_1MarkovChain_1_1Stats_a0917e5acbc58e7b9fbe0c478b95e26ac}{iterations\_\-total}
+\item 
+unsigned \hyperlink{structeos_1_1MarkovChain_1_1Stats_a4a20f93d5d7f8a19ce9f59f3bb642563}{iterations\_\-accepted}
+\item 
+unsigned \hyperlink{structeos_1_1MarkovChain_1_1Stats_a42f68b2f84a5b2e3190529b9d8449e0e}{iterations\_\-invalid}
+\item 
+unsigned \hyperlink{structeos_1_1MarkovChain_1_1Stats_a61fc40a3cbb379e8ebc57b11eb388514}{iterations\_\-rejected}
+\item 
+double \hyperlink{structeos_1_1MarkovChain_1_1Stats_aead4abcd766affbdbb602d906b4938f6}{mode\_\-of\_\-posterior}
+\begin{DoxyCompactList}\small\item\em Maximum value of the posterior. \item\end{DoxyCompactList}\item 
+std::vector$<$ double $>$ \hyperlink{structeos_1_1MarkovChain_1_1Stats_a9000c8ee4f560120fcc5bec1c615e7b0}{parameters\_\-at\_\-mode}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classeos_1_1Parameter}{Parameter} values at the maximum of the posterior. \item\end{DoxyCompactList}\item 
+std::vector$<$ double $>$ \hyperlink{structeos_1_1MarkovChain_1_1Stats_a43a0dbf5329e74fc9eef0cd7f5b28641}{mean\_\-of\_\-parameters}
+\begin{DoxyCompactList}\small\item\em Sample mean of parameter values. \item\end{DoxyCompactList}\item 
+double \hyperlink{structeos_1_1MarkovChain_1_1Stats_aa1f42fd0080e7dc2e2edcc8f97f78c46}{mean\_\-of\_\-posterior}
+\begin{DoxyCompactList}\small\item\em Sample mean of posterior. \item\end{DoxyCompactList}\item 
+std::vector$<$ double $>$ \hyperlink{structeos_1_1MarkovChain_1_1Stats_ad97dc1a916cfe3905ae776804ec57106}{variance\_\-of\_\-parameters}
+\begin{DoxyCompactList}\small\item\em Sample variance of parameter values. \item\end{DoxyCompactList}\item 
+double \hyperlink{structeos_1_1MarkovChain_1_1Stats_a42b880c3445149482c9b8516257dcd8a}{variance\_\-of\_\-posterior}
+\begin{DoxyCompactList}\small\item\em Sample variance of \mbox{[}log\mbox{]} posterior values. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Holds statistical information of a run of a \hyperlink{classeos_1_1MarkovChain}{MarkovChain} 
+
+\subsection{Member Data Documentation}
+\hypertarget{structeos_1_1MarkovChain_1_1Stats_a4a20f93d5d7f8a19ce9f59f3bb642563}{
+\index{eos::MarkovChain::Stats@{eos::MarkovChain::Stats}!iterations\_\-accepted@{iterations\_\-accepted}}
+\index{iterations\_\-accepted@{iterations\_\-accepted}!eos::MarkovChain::Stats@{eos::MarkovChain::Stats}}
+\subsubsection[{iterations\_\-accepted}]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf eos::MarkovChain::Stats::iterations\_\-accepted}}}
+\label{structeos_1_1MarkovChain_1_1Stats_a4a20f93d5d7f8a19ce9f59f3bb642563}
+The number of accepted proposals.
+
+\begin{DoxyNote}{Note}
+accepted and rejected only add up to the number of iterations in the current run. The total number of samples used to calculated the variance maybe different from the sum of former two. 
+\end{DoxyNote}
+\hypertarget{structeos_1_1MarkovChain_1_1Stats_a42f68b2f84a5b2e3190529b9d8449e0e}{
+\index{eos::MarkovChain::Stats@{eos::MarkovChain::Stats}!iterations\_\-invalid@{iterations\_\-invalid}}
+\index{iterations\_\-invalid@{iterations\_\-invalid}!eos::MarkovChain::Stats@{eos::MarkovChain::Stats}}
+\subsubsection[{iterations\_\-invalid}]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf eos::MarkovChain::Stats::iterations\_\-invalid}}}
+\label{structeos_1_1MarkovChain_1_1Stats_a42f68b2f84a5b2e3190529b9d8449e0e}
+\hypertarget{structeos_1_1MarkovChain_1_1Stats_a61fc40a3cbb379e8ebc57b11eb388514}{
+\index{eos::MarkovChain::Stats@{eos::MarkovChain::Stats}!iterations\_\-rejected@{iterations\_\-rejected}}
+\index{iterations\_\-rejected@{iterations\_\-rejected}!eos::MarkovChain::Stats@{eos::MarkovChain::Stats}}
+\subsubsection[{iterations\_\-rejected}]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf eos::MarkovChain::Stats::iterations\_\-rejected}}}
+\label{structeos_1_1MarkovChain_1_1Stats_a61fc40a3cbb379e8ebc57b11eb388514}
+The number of iterations in which the proposed move of a parameter has been rejected. Reset each time \hyperlink{classeos_1_1MarkovChain_abc73ca1b9fc5bdafba43c799e75192c8}{run()} is called \hypertarget{structeos_1_1MarkovChain_1_1Stats_a0917e5acbc58e7b9fbe0c478b95e26ac}{
+\index{eos::MarkovChain::Stats@{eos::MarkovChain::Stats}!iterations\_\-total@{iterations\_\-total}}
+\index{iterations\_\-total@{iterations\_\-total}!eos::MarkovChain::Stats@{eos::MarkovChain::Stats}}
+\subsubsection[{iterations\_\-total}]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf eos::MarkovChain::Stats::iterations\_\-total}}}
+\label{structeos_1_1MarkovChain_1_1Stats_a0917e5acbc58e7b9fbe0c478b95e26ac}
+The total number of iterations per parameter that were collected before the current run, i.e. since the last reset of statistics. \hypertarget{structeos_1_1MarkovChain_1_1Stats_a43a0dbf5329e74fc9eef0cd7f5b28641}{
+\index{eos::MarkovChain::Stats@{eos::MarkovChain::Stats}!mean\_\-of\_\-parameters@{mean\_\-of\_\-parameters}}
+\index{mean\_\-of\_\-parameters@{mean\_\-of\_\-parameters}!eos::MarkovChain::Stats@{eos::MarkovChain::Stats}}
+\subsubsection[{mean\_\-of\_\-parameters}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$double$>$ {\bf eos::MarkovChain::Stats::mean\_\-of\_\-parameters}}}
+\label{structeos_1_1MarkovChain_1_1Stats_a43a0dbf5329e74fc9eef0cd7f5b28641}
+
+
+Sample mean of parameter values. \hypertarget{structeos_1_1MarkovChain_1_1Stats_aa1f42fd0080e7dc2e2edcc8f97f78c46}{
+\index{eos::MarkovChain::Stats@{eos::MarkovChain::Stats}!mean\_\-of\_\-posterior@{mean\_\-of\_\-posterior}}
+\index{mean\_\-of\_\-posterior@{mean\_\-of\_\-posterior}!eos::MarkovChain::Stats@{eos::MarkovChain::Stats}}
+\subsubsection[{mean\_\-of\_\-posterior}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf eos::MarkovChain::Stats::mean\_\-of\_\-posterior}}}
+\label{structeos_1_1MarkovChain_1_1Stats_aa1f42fd0080e7dc2e2edcc8f97f78c46}
+
+
+Sample mean of posterior. \hypertarget{structeos_1_1MarkovChain_1_1Stats_aead4abcd766affbdbb602d906b4938f6}{
+\index{eos::MarkovChain::Stats@{eos::MarkovChain::Stats}!mode\_\-of\_\-posterior@{mode\_\-of\_\-posterior}}
+\index{mode\_\-of\_\-posterior@{mode\_\-of\_\-posterior}!eos::MarkovChain::Stats@{eos::MarkovChain::Stats}}
+\subsubsection[{mode\_\-of\_\-posterior}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf eos::MarkovChain::Stats::mode\_\-of\_\-posterior}}}
+\label{structeos_1_1MarkovChain_1_1Stats_aead4abcd766affbdbb602d906b4938f6}
+
+
+Maximum value of the posterior. \hypertarget{structeos_1_1MarkovChain_1_1Stats_a9000c8ee4f560120fcc5bec1c615e7b0}{
+\index{eos::MarkovChain::Stats@{eos::MarkovChain::Stats}!parameters\_\-at\_\-mode@{parameters\_\-at\_\-mode}}
+\index{parameters\_\-at\_\-mode@{parameters\_\-at\_\-mode}!eos::MarkovChain::Stats@{eos::MarkovChain::Stats}}
+\subsubsection[{parameters\_\-at\_\-mode}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$double$>$ {\bf eos::MarkovChain::Stats::parameters\_\-at\_\-mode}}}
+\label{structeos_1_1MarkovChain_1_1Stats_a9000c8ee4f560120fcc5bec1c615e7b0}
+
+
+\hyperlink{classeos_1_1Parameter}{Parameter} values at the maximum of the posterior. \hypertarget{structeos_1_1MarkovChain_1_1Stats_ad97dc1a916cfe3905ae776804ec57106}{
+\index{eos::MarkovChain::Stats@{eos::MarkovChain::Stats}!variance\_\-of\_\-parameters@{variance\_\-of\_\-parameters}}
+\index{variance\_\-of\_\-parameters@{variance\_\-of\_\-parameters}!eos::MarkovChain::Stats@{eos::MarkovChain::Stats}}
+\subsubsection[{variance\_\-of\_\-parameters}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$double$>$ {\bf eos::MarkovChain::Stats::variance\_\-of\_\-parameters}}}
+\label{structeos_1_1MarkovChain_1_1Stats_ad97dc1a916cfe3905ae776804ec57106}
+
+
+Sample variance of parameter values. \hypertarget{structeos_1_1MarkovChain_1_1Stats_a42b880c3445149482c9b8516257dcd8a}{
+\index{eos::MarkovChain::Stats@{eos::MarkovChain::Stats}!variance\_\-of\_\-posterior@{variance\_\-of\_\-posterior}}
+\index{variance\_\-of\_\-posterior@{variance\_\-of\_\-posterior}!eos::MarkovChain::Stats@{eos::MarkovChain::Stats}}
+\subsubsection[{variance\_\-of\_\-posterior}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf eos::MarkovChain::Stats::variance\_\-of\_\-posterior}}}
+\label{structeos_1_1MarkovChain_1_1Stats_a42b880c3445149482c9b8516257dcd8a}
+
+
+Sample variance of \mbox{[}log\mbox{]} posterior values. 
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{markov__chain_8hh}{markov\_\-chain.hh}\end{DoxyCompactItemize}

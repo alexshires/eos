@@ -1,0 +1,173 @@
+\hypertarget{histogram_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/histogram.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2010, 2011 Danny van Dyk}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_HISTROGRAM\_HH}
+\hypertarget{histogram_8hh_source_l00021}{}\hyperlink{histogram_8hh_afe875e5b706ab37171b07b2bcaf37b66}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_HISTROGRAM\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{preprocessor}{#include <\hyperlink{private__implementation__pattern_8hh}{eos/utils/private_implementation_pattern.hh}>}
+00024 \textcolor{preprocessor}{#include <\hyperlink{wrapped__forward__iterator_8hh}{eos/utils/wrapped_forward_iterator.hh}>}
+00025 
+00026 \textcolor{preprocessor}{#include <array>}
+00027 
+00028 \textcolor{keyword}{namespace }eos
+00029 \{
+00030     \textcolor{keyword}{template} <std::\textcolor{keywordtype}{size\_t} dimensions\_> \textcolor{keyword}{class }Histogram;
+00031 
+\hypertarget{histogram_8hh_source_l00032}{}\hyperlink{classeos_1_1Histogram_3_011_01_4}{00032}     \textcolor{keyword}{template} <> \textcolor{keyword}{class }Histogram<1> :
+00033         \textcolor{keyword}{public} \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern}<Histogram<1>>
+00034     \{
+00035         \textcolor{keyword}{public}:
+00036             \textcolor{keyword}{struct }Bin;
+00037 
+00040 
+00045             Histogram();
+00046 
+00048             ~Histogram();
+00049 
+00058             \textcolor{keyword}{static} Histogram WithEqualBinning(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & start, \textcolor{keyword}{const} \textcolor{keywordtype}{double} 
+      & end, \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & count);
+00060 
+00064             \textcolor{keywordtype}{void} insert(\textcolor{keyword}{const} Bin & bin);
+00066             \textcolor{keywordtype}{void} insert(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & value);
+00068             \textcolor{keywordtype}{unsigned} entries() \textcolor{keyword}{const};
+00070 
+\hypertarget{histogram_8hh_source_l00073}{}\hyperlink{classeos_1_1Histogram_3_011_01_4_a58a52ac9f83f5712f4cab9d385660e50}{00073}             \textcolor{keyword}{struct }ConstIteratorTag;
+00074             \textcolor{keyword}{typedef} \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator<ConstIteratorTag, const Bin>} 
+      \hyperlink{classeos_1_1WrappedForwardIterator}{ConstIterator};
+00075 
+00076             \hyperlink{classeos_1_1WrappedForwardIterator}{ConstIterator} begin() \textcolor{keyword}{const};
+00077             \hyperlink{classeos_1_1WrappedForwardIterator}{ConstIterator} end() \textcolor{keyword}{const};
+00079     \};
+00080 
+\hypertarget{histogram_8hh_source_l00084}{}\hyperlink{structeos_1_1Histogram_3_011_01_4_1_1Bin}{00084}     \textcolor{keyword}{struct }Histogram<1>::Bin
+00085     \{
+\hypertarget{histogram_8hh_source_l00087}{}\hyperlink{structeos_1_1Histogram_3_011_01_4_1_1Bin_a1b79f2bf22a180397c8ce9d344e4eabf}{00087}         \textcolor{keywordtype}{double} lower;
+00088 
+\hypertarget{histogram_8hh_source_l00090}{}\hyperlink{structeos_1_1Histogram_3_011_01_4_1_1Bin_ab83ca1387607899b43e21d21acb0e38d}{00090}         \textcolor{keywordtype}{double} upper;
+00091 
+\hypertarget{histogram_8hh_source_l00093}{}\hyperlink{structeos_1_1Histogram_3_011_01_4_1_1Bin_aed7930bf76124d4d4e3d347419890339}{00093}         \textcolor{keywordtype}{double} value;
+00094 
+00097         \textcolor{comment}{/*}
+00098 \textcolor{comment}{         * Constructor.}
+00099 \textcolor{comment}{         *}
+00100 \textcolor{comment}{         * @param lower    Left-most (inclusive) border of the Bin's interval.}
+00101 \textcolor{comment}{         * @param upper    Right-most (exclusive) border of the Bin's interval.}
+00102 \textcolor{comment}{         * @param value    Initial value of the Bin.}
+00103 \textcolor{comment}{         */}
+\hypertarget{histogram_8hh_source_l00104}{}\hyperlink{structeos_1_1Histogram_3_011_01_4_1_1Bin_a017fce44f09224396431178d57aaa114}{00104}         Bin(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & lower, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & upper, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & value = 0.
+      0) :
+00105             lower(lower),
+00106             upper(upper),
+00107             value(value)
+00108         \{
+00109         \}
+00110 
+\hypertarget{histogram_8hh_source_l00112}{}\hyperlink{structeos_1_1Histogram_3_011_01_4_1_1Bin_a5da88553377af08fad99aa914a634c38}{00112}         \hyperlink{structeos_1_1Histogram_3_011_01_4_1_1Bin_a5da88553377af08fad99aa914a634c38}{~Bin}() \{ \}
+00114 
+\hypertarget{histogram_8hh_source_l00120}{}\hyperlink{structeos_1_1Histogram_3_011_01_4_1_1Bin_ada41b1d9c9cbec8e57ee4e96558e558b}{00120}         \textcolor{keywordtype}{bool} operator< (\textcolor{keyword}{const} Bin & other)\textcolor{keyword}{ const}
+00121 \textcolor{keyword}{        }\{
+00122             \textcolor{keywordflow}{return} this->lower < other.lower;
+00123         \}
+00124     \};
+00125 
+00131     \hyperlink{classeos_1_1Histogram_3_011_01_4}{Histogram<1>} \hyperlink{namespaceeos_a163f4d3cb33f72cf2ffc42f8cee7db0e}{estimate_cumulative_distribution}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Histogram_3_011_01_4}{Histogram<1>} & distributi
+      on);
+00132 
+\hypertarget{histogram_8hh_source_l00133}{}\hyperlink{classeos_1_1Histogram_3_012_01_4}{00133}     \textcolor{keyword}{template} <> \textcolor{keyword}{class }Histogram<2> :
+00134         \textcolor{keyword}{public} \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern}<Histogram<2>>
+00135     \{
+00136         \textcolor{keyword}{public}:
+00137             \textcolor{keyword}{struct }Bin;
+00138 
+00141 
+00146             Histogram();
+00147 
+00149             ~Histogram();
+00150 
+00159             \textcolor{keyword}{static} Histogram WithEqualBinning(\textcolor{keyword}{const} std::array<double, 2> & start
+      , \textcolor{keyword}{const} std::array<double, 2> & end, \textcolor{keyword}{const} std::array<unsigned, 2> & count);
+00161 
+00165             \textcolor{keywordtype}{void} insert(\textcolor{keyword}{const} Bin & bin);
+00166 
+00168             \textcolor{keywordtype}{unsigned} entries() \textcolor{keyword}{const};
+00170 
+\hypertarget{histogram_8hh_source_l00173}{}\hyperlink{classeos_1_1Histogram_3_012_01_4_a9ed06cf8cfcef9f4ed3b9786d48f76e4}{00173}             \textcolor{keyword}{struct }IteratorTag;
+00174             \textcolor{keyword}{typedef} \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator<IteratorTag, Bin>} \hyperlink{classeos_1_1WrappedForwardIterator}{Iterator};
+00175 
+00176             \hyperlink{classeos_1_1WrappedForwardIterator}{Iterator} begin();
+00177             \hyperlink{classeos_1_1WrappedForwardIterator}{Iterator} find(\textcolor{keyword}{const} std::array<double, 2> & coordinates);
+00178             \hyperlink{classeos_1_1WrappedForwardIterator}{Iterator} end();
+00180 
+\hypertarget{histogram_8hh_source_l00183}{}\hyperlink{classeos_1_1Histogram_3_012_01_4_ad4594c8c5127b71c535b1389bcc2fdca}{00183}             \textcolor{keyword}{struct }ConstIteratorTag;
+00184             \textcolor{keyword}{typedef} \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator<ConstIteratorTag, const Bin>} 
+      \hyperlink{classeos_1_1WrappedForwardIterator}{ConstIterator};
+00185 
+00186             \hyperlink{classeos_1_1WrappedForwardIterator}{ConstIterator} cbegin() \textcolor{keyword}{const};
+00187             \hyperlink{classeos_1_1WrappedForwardIterator}{ConstIterator} cend() \textcolor{keyword}{const};
+00189     \};
+00190 
+\hypertarget{histogram_8hh_source_l00194}{}\hyperlink{structeos_1_1Histogram_3_012_01_4_1_1Bin}{00194}     \textcolor{keyword}{struct }Histogram<2>::Bin
+00195     \{
+\hypertarget{histogram_8hh_source_l00197}{}\hyperlink{structeos_1_1Histogram_3_012_01_4_1_1Bin_a1e425081536674ebe0303fbdeede8cd2}{00197}         std::array<double, 2> lower;
+00198 
+\hypertarget{histogram_8hh_source_l00200}{}\hyperlink{structeos_1_1Histogram_3_012_01_4_1_1Bin_a3202307a2d3e2768e7c7a5eaebca2a60}{00200}         std::array<double, 2> upper;
+00201 
+\hypertarget{histogram_8hh_source_l00203}{}\hyperlink{structeos_1_1Histogram_3_012_01_4_1_1Bin_a060dd2645bb259a8ea810052c6efaa63}{00203}         \textcolor{keywordtype}{double} value;
+00204 
+00207         \textcolor{comment}{/*}
+00208 \textcolor{comment}{         * Constructor.}
+00209 \textcolor{comment}{         *}
+00210 \textcolor{comment}{         * @param lower    Left-most (inclusive) border of the Bin's interval.}
+00211 \textcolor{comment}{         * @param upper    Right-most (exclusive) border of the Bin's interval.}
+00212 \textcolor{comment}{         * @param value    Initial value of the Bin.}
+00213 \textcolor{comment}{         */}
+\hypertarget{histogram_8hh_source_l00214}{}\hyperlink{structeos_1_1Histogram_3_012_01_4_1_1Bin_ad3b75a64e6a8499a4abddaad4943aeac}{00214}         Bin(\textcolor{keyword}{const} std::array<double, 2> & lower, \textcolor{keyword}{const} std::array<double, 2> & up
+      per, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & value = 0.0) :
+00215             lower(lower),
+00216             upper(upper),
+00217             value(value)
+00218         \{
+00219         \}
+00220 
+\hypertarget{histogram_8hh_source_l00222}{}\hyperlink{structeos_1_1Histogram_3_012_01_4_1_1Bin_a945e453f3b5aa775c74122b2a5c8c983}{00222}         \hyperlink{structeos_1_1Histogram_3_012_01_4_1_1Bin_a945e453f3b5aa775c74122b2a5c8c983}{~Bin}() \{ \}
+00224 
+\hypertarget{histogram_8hh_source_l00230}{}\hyperlink{structeos_1_1Histogram_3_012_01_4_1_1Bin_a5f5d9d357e94ce75149ac710b954bb44}{00230}         \textcolor{keywordtype}{bool} operator< (\textcolor{keyword}{const} Bin & other)\textcolor{keyword}{ const}
+00231 \textcolor{keyword}{        }\{
+00232             \textcolor{keywordflow}{if} (this->lower[0] < other.lower[0])
+00233                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00234 
+00235             \textcolor{keywordflow}{if} (this->lower[0] > other.lower[0])
+00236                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00237 
+00238             \textcolor{keywordflow}{if} (this->lower[1] < other.lower[1])
+00239                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00240 
+00241             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00242         \}
+00243     \};
+00244 \}
+00245 
+00246 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

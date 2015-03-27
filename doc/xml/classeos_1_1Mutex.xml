@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1Mutex" kind="class" prot="public">
+    <compoundname>eos::Mutex</compoundname>
+    <includes refid="mutex_8hh" local="no">mutex.hh</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classeos_1_1Mutex_1a0f3687f87f76e027744ddcb646e6566b" prot="private" static="no" mutable="no">
+        <type>pthread_mutexattr_t *const</type>
+        <definition>pthread_mutexattr_t* const eos::Mutex::_attr</definition>
+        <argsstring></argsstring>
+        <name>_attr</name>
+        <briefdescription>
+<para>Our attributes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/mutex.hh" line="37" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/mutex.hh" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1Mutex_1afe44f084a371966bdfe520e8cfed3e85" prot="private" static="no" mutable="no">
+        <type>pthread_mutex_t *const</type>
+        <definition>pthread_mutex_t* const eos::Mutex::_mutex</definition>
+        <argsstring></argsstring>
+        <name>_mutex</name>
+        <briefdescription>
+<para>Our pthread mutex. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/mutex.hh" line="40" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/mutex.hh" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1Mutex_1a3d07ba9ee73a295bc98250bd33825375" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::Mutex::Mutex</definition>
+        <argsstring>()</argsstring>
+        <name>Mutex</name>
+        <briefdescription>
+<para>(Explicit) constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/mutex.hh" line="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Mutex_1ab721ec095c12b464fd178bb2fc80496a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::Mutex::~Mutex</definition>
+        <argsstring>()</argsstring>
+        <name>~Mutex</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/mutex.hh" line="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Mutex_1a7f5648012d5eb8577a0e4c1b62a0ea38" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>pthread_mutex_t *</type>
+        <definition>pthread_mutex_t* eos::Mutex::mutex</definition>
+        <argsstring>()</argsstring>
+        <name>mutex</name>
+        <briefdescription>
+<para>Returns a pointer to our underlying posix mutex. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/mutex.hh" line="51" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/mutex.hh" bodystart="50" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/mutex.hh" line="34" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/mutex.hh" bodystart="32" bodyend="54"/>
+    <listofallmembers>
+      <member refid="classeos_1_1Mutex_1a0f3687f87f76e027744ddcb646e6566b" prot="private" virt="non-virtual"><scope>eos::Mutex</scope><name>_attr</name></member>
+      <member refid="classeos_1_1Mutex_1afe44f084a371966bdfe520e8cfed3e85" prot="private" virt="non-virtual"><scope>eos::Mutex</scope><name>_mutex</name></member>
+      <member refid="classeos_1_1Mutex_1a7f5648012d5eb8577a0e4c1b62a0ea38" prot="public" virt="non-virtual"><scope>eos::Mutex</scope><name>mutex</name></member>
+      <member refid="classeos_1_1Mutex_1a3d07ba9ee73a295bc98250bd33825375" prot="public" virt="non-virtual"><scope>eos::Mutex</scope><name>Mutex</name></member>
+      <member refid="classeos_1_1Mutex_1ab721ec095c12b464fd178bb2fc80496a" prot="public" virt="non-virtual"><scope>eos::Mutex</scope><name>~Mutex</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

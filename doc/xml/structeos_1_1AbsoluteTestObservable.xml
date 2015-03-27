@@ -1,0 +1,250 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1AbsoluteTestObservable" kind="struct" prot="public">
+    <compoundname>eos::AbsoluteTestObservable</compoundname>
+    <basecompoundref refid="structeos_1_1TestObservable" prot="public" virt="non-virtual">eos::TestObservable</basecompoundref>
+    <includes refid="analysis__TEST_8hh" local="no">analysis_TEST.hh</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structeos_1_1AbsoluteTestObservable_1a0e044df3b5ec549d51547e8b9f8af55b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eos::AbsoluteTestObservable::AbsoluteTestObservable</definition>
+        <argsstring>(const Parameters &amp;p, const Kinematics &amp;k, const std::string &amp;mass_name)</argsstring>
+        <name>AbsoluteTestObservable</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1Kinematics" kindref="compound">Kinematics</ref> &amp;</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>mass_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis_TEST.hh" line="103" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/analysis_TEST.hh" bodystart="101" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1AbsoluteTestObservable_1ad2fa287cd756cd2d2e639ef39106debe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual eos::AbsoluteTestObservable::~AbsoluteTestObservable</definition>
+        <argsstring>()</argsstring>
+        <name>~AbsoluteTestObservable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis_TEST.hh" line="107" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/analysis_TEST.hh" bodystart="106" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1AbsoluteTestObservable_1a47742fbfae1d0d8b57c09ee2a7501376" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>virtual double eos::AbsoluteTestObservable::evaluate</definition>
+        <argsstring>() const </argsstring>
+        <name>evaluate</name>
+        <reimplements refid="structeos_1_1TestObservable_1a05f143463bc9a2cddec1ee2bdb8d5ba2">evaluate</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis_TEST.hh" line="111" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/analysis_TEST.hh" bodystart="110" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1AbsoluteTestObservable_1ac509cca6dca7383653b2d0e5c387db07" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref></type>
+        <definition>virtual ObservablePtr eos::AbsoluteTestObservable::clone</definition>
+        <argsstring>() const </argsstring>
+        <name>clone</name>
+        <reimplements refid="structeos_1_1TestObservable_1a2ec70cb32b39215b3c3eafd05a94e1f6">clone</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis_TEST.hh" line="116" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/analysis_TEST.hh" bodystart="115" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1AbsoluteTestObservable_1af0a14d774c083598130b3062f956c4c9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref></type>
+        <definition>virtual ObservablePtr eos::AbsoluteTestObservable::clone</definition>
+        <argsstring>(const Parameters &amp;parameters) const </argsstring>
+        <name>clone</name>
+        <reimplements refid="structeos_1_1TestObservable_1a40b0831f486d5a73e583becb0c6c9da4">clone</reimplements>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis_TEST.hh" line="121" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/analysis_TEST.hh" bodystart="120" bodyend="123"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="7">
+        <label>eos::Observable</label>
+        <link refid="classeos_1_1Observable"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>eos::TestObservable</label>
+        <link refid="structeos_1_1TestObservable"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>eos::ParameterUser</label>
+        <link refid="classeos_1_1ParameterUser"/>
+      </node>
+      <node id="5">
+        <label>eos::AbsoluteTestObservable</label>
+        <link refid="structeos_1_1AbsoluteTestObservable"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="24">
+        <label>eos::PrivateImplementationPattern&lt; Options &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="20">
+        <label>eos::PrivateImplementationPattern&lt; Parameters &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="18">
+        <label>eos::Mutable</label>
+        <link refid="classeos_1_1Mutable"/>
+      </node>
+      <node id="14">
+        <label>eos::Kinematics</label>
+        <link refid="classeos_1_1Kinematics"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>eos::Observable</label>
+        <link refid="classeos_1_1Observable"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="17">
+        <label>eos::Parameter</label>
+        <link refid="classeos_1_1Parameter"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>eos::TestObservable</label>
+        <link refid="structeos_1_1TestObservable"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>k</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>mass</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>p</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>mass_name</edgelabel>
+          <edgelabel>n</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>o</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>eos::UsedParameter</label>
+        <link refid="classeos_1_1UsedParameter"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>std::set&lt; Parameter::Id &gt;</label>
+      </node>
+      <node id="15">
+        <label>eos::PrivateImplementationPattern&lt; Kinematics &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="19">
+        <label>eos::Parameters</label>
+        <link refid="classeos_1_1Parameters"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>eos::ParameterUser</label>
+        <link refid="classeos_1_1ParameterUser"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>_ids</edgelabel>
+        </childnode>
+      </node>
+      <node id="23">
+        <label>eos::Options</label>
+        <link refid="classeos_1_1Options"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>eos::AbsoluteTestObservable</label>
+        <link refid="structeos_1_1AbsoluteTestObservable"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>std::string</label>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis_TEST.hh" line="100" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/analysis_TEST.hh" bodystart="98" bodyend="124"/>
+    <listofallmembers>
+      <member refid="classeos_1_1ParameterUser_1aa3a0285297e16cf2a5830df1f9bb2f4b" prot="protected" virt="non-virtual"><scope>eos::AbsoluteTestObservable</scope><name>_ids</name></member>
+      <member refid="structeos_1_1AbsoluteTestObservable_1a0e044df3b5ec549d51547e8b9f8af55b" prot="public" virt="non-virtual"><scope>eos::AbsoluteTestObservable</scope><name>AbsoluteTestObservable</name></member>
+      <member refid="classeos_1_1ParameterUser_1a9cd569207063cd2a8f807c4e1203a5d4" prot="public" virt="non-virtual"><scope>eos::AbsoluteTestObservable</scope><name>begin</name></member>
+      <member refid="structeos_1_1AbsoluteTestObservable_1ac509cca6dca7383653b2d0e5c387db07" prot="public" virt="virtual"><scope>eos::AbsoluteTestObservable</scope><name>clone</name></member>
+      <member refid="structeos_1_1AbsoluteTestObservable_1af0a14d774c083598130b3062f956c4c9" prot="public" virt="virtual"><scope>eos::AbsoluteTestObservable</scope><name>clone</name></member>
+      <member refid="classeos_1_1ParameterUser_1a7105631bbcb4b2492e6377b2b69f5b0f" prot="public" virt="non-virtual"><scope>eos::AbsoluteTestObservable</scope><name>ConstIterator</name></member>
+      <member refid="classeos_1_1ParameterUser_1a5813c886f3fd3f074cc02a53fc9e0790" prot="public" virt="non-virtual"><scope>eos::AbsoluteTestObservable</scope><name>end</name></member>
+      <member refid="structeos_1_1AbsoluteTestObservable_1a47742fbfae1d0d8b57c09ee2a7501376" prot="public" virt="virtual"><scope>eos::AbsoluteTestObservable</scope><name>evaluate</name></member>
+      <member refid="structeos_1_1TestObservable_1a58ef1eee27197c2bce21b2e576411a74" prot="public" virt="non-virtual"><scope>eos::AbsoluteTestObservable</scope><name>k</name></member>
+      <member refid="structeos_1_1TestObservable_1a87b7da05ef887b71fee092252a70a685" prot="public" virt="virtual"><scope>eos::AbsoluteTestObservable</scope><name>kinematics</name></member>
+      <member refid="classeos_1_1Observable_1a949bf84938bcc9ab75075801c636763c" prot="public" virt="non-virtual"><scope>eos::AbsoluteTestObservable</scope><name>make</name></member>
+      <member refid="structeos_1_1TestObservable_1a131b40b285edbecfd177becbbf66b601" prot="public" virt="non-virtual"><scope>eos::AbsoluteTestObservable</scope><name>mass</name></member>
+      <member refid="structeos_1_1TestObservable_1afa242c890fb7299876f30e8d01e218fc" prot="public" virt="non-virtual"><scope>eos::AbsoluteTestObservable</scope><name>mass_name</name></member>
+      <member refid="structeos_1_1TestObservable_1aad5736b5692f43ccae60087154fd2132" prot="public" virt="non-virtual"><scope>eos::AbsoluteTestObservable</scope><name>n</name></member>
+      <member refid="structeos_1_1TestObservable_1a1cc59da836d9dab76351b7afcbdb73f1" prot="public" virt="virtual"><scope>eos::AbsoluteTestObservable</scope><name>name</name></member>
+      <member refid="structeos_1_1TestObservable_1af9d523ad792f2ce3afa336f09d9226a6" prot="public" virt="non-virtual"><scope>eos::AbsoluteTestObservable</scope><name>o</name></member>
+      <member refid="structeos_1_1TestObservable_1a6d762181ac0ce1d2d8ad9d377a3a565d" prot="public" virt="virtual"><scope>eos::AbsoluteTestObservable</scope><name>options</name></member>
+      <member refid="structeos_1_1TestObservable_1ab06f6f24a04051ec2a8ebaa5d78ee953" prot="public" virt="non-virtual"><scope>eos::AbsoluteTestObservable</scope><name>p</name></member>
+      <member refid="structeos_1_1TestObservable_1ab6aef566fbe0f34117da1d484e20da40" prot="public" virt="virtual"><scope>eos::AbsoluteTestObservable</scope><name>parameters</name></member>
+      <member refid="structeos_1_1TestObservable_1ae4be408b4c96b6d86a080c966170b96b" prot="public" virt="non-virtual"><scope>eos::AbsoluteTestObservable</scope><name>set_option</name></member>
+      <member refid="structeos_1_1TestObservable_1af44302acc1d97376ea453c133cf08c02" prot="public" virt="non-virtual"><scope>eos::AbsoluteTestObservable</scope><name>TestObservable</name></member>
+      <member refid="classeos_1_1ParameterUser_1ad91a901e589653272482bded7e453c70" prot="public" virt="non-virtual"><scope>eos::AbsoluteTestObservable</scope><name>uses</name></member>
+      <member refid="classeos_1_1ParameterUser_1a7a37e779cf45ef1075fe7bf670688b72" prot="public" virt="non-virtual"><scope>eos::AbsoluteTestObservable</scope><name>uses</name></member>
+      <member refid="structeos_1_1AbsoluteTestObservable_1ad2fa287cd756cd2d2e639ef39106debe" prot="public" virt="virtual"><scope>eos::AbsoluteTestObservable</scope><name>~AbsoluteTestObservable</name></member>
+      <member refid="structeos_1_1TestObservable_1a1462125ba005e855c9127da2ce8c7f15" prot="public" virt="virtual"><scope>eos::AbsoluteTestObservable</scope><name>~TestObservable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

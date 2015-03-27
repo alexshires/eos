@@ -1,0 +1,244 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1PopulationMonteCarloSampler_1_1Output" kind="struct" prot="public">
+    <compoundname>eos::PopulationMonteCarloSampler::Output</compoundname>
+    <includes refid="population__monte__carlo__sampler_8hh" local="no">population_monte_carlo_sampler.hh</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structeos_1_1PopulationMonteCarloSampler_1_1Output_1a5fd76b324d88b7fbd14306e8a15e4db9" prot="public" static="no">
+        <type><ref refid="classeos_1_1hdf5_1_1Composite" kindref="compound">hdf5::Composite</ref>&lt; <ref refid="classeos_1_1hdf5_1_1Scalar" kindref="compound">hdf5::Scalar</ref>&lt; double &gt;, <ref refid="classeos_1_1hdf5_1_1Array" kindref="compound">hdf5::Array</ref>&lt; 1, double &gt;, <ref refid="classeos_1_1hdf5_1_1Array" kindref="compound">hdf5::Array</ref>&lt; 1, double &gt; &gt;</type>
+        <definition>typedef hdf5::Composite&lt;hdf5::Scalar&lt;double&gt;, hdf5::Array&lt;1, double&gt;, hdf5::Array&lt;1, double&gt; &gt; eos::PopulationMonteCarloSampler::Output::ComponentType</definition>
+        <argsstring></argsstring>
+        <name>ComponentType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="408" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="408" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structeos_1_1PopulationMonteCarloSampler_1_1Output_1aa7e9c8fa59ff4cc77d830c9c2661435e" prot="public" static="no">
+        <type><ref refid="classeos_1_1hdf5_1_1Scalar" kindref="compound">hdf5::Scalar</ref>&lt; short &gt;</type>
+        <definition>typedef hdf5::Scalar&lt;short&gt; eos::PopulationMonteCarloSampler::Output::IgnoreType</definition>
+        <argsstring></argsstring>
+        <name>IgnoreType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="409" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="409" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structeos_1_1PopulationMonteCarloSampler_1_1Output_1ab096268a8fccb7e8d34ed08b93df880c" prot="public" static="no">
+        <type><ref refid="classeos_1_1hdf5_1_1Array" kindref="compound">hdf5::Array</ref>&lt; 1, double &gt;</type>
+        <definition>typedef hdf5::Array&lt;1, double&gt; eos::PopulationMonteCarloSampler::Output::SampleType</definition>
+        <argsstring></argsstring>
+        <name>SampleType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="410" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="410" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structeos_1_1PopulationMonteCarloSampler_1_1Output_1abe071d58f8cee75754bcc593ec33e9b8" prot="public" static="no">
+        <type><ref refid="classeos_1_1hdf5_1_1Composite" kindref="compound">hdf5::Composite</ref>&lt; <ref refid="classeos_1_1hdf5_1_1Scalar" kindref="compound">hdf5::Scalar</ref>&lt; double &gt;, <ref refid="classeos_1_1hdf5_1_1Scalar" kindref="compound">hdf5::Scalar</ref>&lt; double &gt;, <ref refid="classeos_1_1hdf5_1_1Scalar" kindref="compound">hdf5::Scalar</ref>&lt; double &gt; &gt;</type>
+        <definition>typedef hdf5::Composite&lt;hdf5::Scalar&lt;double&gt;, hdf5::Scalar&lt;double&gt;, hdf5::Scalar&lt;double&gt; &gt; eos::PopulationMonteCarloSampler::Output::StatisticsType</definition>
+        <argsstring></argsstring>
+        <name>StatisticsType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="411" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="411" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structeos_1_1PopulationMonteCarloSampler_1_1Output_1a4413a52234bdb64d96f842ad524a7ee8" prot="public" static="no">
+        <type><ref refid="classeos_1_1hdf5_1_1Composite" kindref="compound">hdf5::Composite</ref>&lt; <ref refid="classeos_1_1hdf5_1_1Scalar" kindref="compound">hdf5::Scalar</ref>&lt; double &gt;, <ref refid="classeos_1_1hdf5_1_1Scalar" kindref="compound">hdf5::Scalar</ref>&lt; double &gt; &gt;</type>
+        <definition>typedef hdf5::Composite&lt;hdf5::Scalar&lt;double&gt;, hdf5::Scalar&lt;double&gt; &gt; eos::PopulationMonteCarloSampler::Output::WeightType</definition>
+        <argsstring></argsstring>
+        <name>WeightType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="412" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="412" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structeos_1_1PopulationMonteCarloSampler_1_1Output_1a89756e43d911fc21ca5e12e4f676c495" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1hdf5_1_1Composite" kindref="compound">ComponentType</ref></type>
+        <definition>static ComponentType eos::PopulationMonteCarloSampler::Output::component_type</definition>
+        <argsstring>(const unsigned &amp;dimension)</argsstring>
+        <name>component_type</name>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>dimension</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="414"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1PopulationMonteCarloSampler_1_1Output_1a7dea0b1d53d47e5099fa97136a4f27a5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1hdf5_1_1Scalar" kindref="compound">IgnoreType</ref></type>
+        <definition>static IgnoreType eos::PopulationMonteCarloSampler::Output::ignore_type</definition>
+        <argsstring>()</argsstring>
+        <name>ignore_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="415"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1PopulationMonteCarloSampler_1_1Output_1ac9825b152fa3750d77cb7face4fbaf41" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1hdf5_1_1Array" kindref="compound">SampleType</ref></type>
+        <definition>static SampleType eos::PopulationMonteCarloSampler::Output::sample_type</definition>
+        <argsstring>(const unsigned &amp;dimension)</argsstring>
+        <name>sample_type</name>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>dimension</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="416"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1PopulationMonteCarloSampler_1_1Output_1ab943ce812be9756d846719e165f352a7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1hdf5_1_1Composite" kindref="compound">StatisticsType</ref></type>
+        <definition>static StatisticsType eos::PopulationMonteCarloSampler::Output::statistics_type</definition>
+        <argsstring>()</argsstring>
+        <name>statistics_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="417"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1PopulationMonteCarloSampler_1_1Output_1ad7a4912cebc0c3d00052a398aaef15dd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1hdf5_1_1Composite" kindref="compound">WeightType</ref></type>
+        <definition>static WeightType eos::PopulationMonteCarloSampler::Output::weight_type</definition>
+        <argsstring>()</argsstring>
+        <name>weight_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="418"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1PopulationMonteCarloSampler_1_1Output_1a55eed75bc734fdf74551769f1ef4f53a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::tuple&lt; double, std::vector&lt; double &gt;, std::vector&lt; double &gt; &gt;</type>
+        <definition>static std::tuple&lt;double, std::vector&lt;double&gt;, std::vector&lt;double&gt; &gt; eos::PopulationMonteCarloSampler::Output::component_record</definition>
+        <argsstring>(const unsigned &amp;dimension)</argsstring>
+        <name>component_record</name>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>dimension</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="420"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1PopulationMonteCarloSampler_1_1Output_1a0bc83ed4bd2ec948236eced9b6be6684" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>short</type>
+        <definition>static short eos::PopulationMonteCarloSampler::Output::ignore_record</definition>
+        <argsstring>()</argsstring>
+        <name>ignore_record</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="421"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1PopulationMonteCarloSampler_1_1Output_1a8091ae5b3a05edde2e076faafe0a02ab" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>static std::vector&lt;double&gt; eos::PopulationMonteCarloSampler::Output::sample_record</definition>
+        <argsstring>(const unsigned &amp;dimension)</argsstring>
+        <name>sample_record</name>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>dimension</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="422"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1PopulationMonteCarloSampler_1_1Output_1af58401b36b817e48635dfebfa54163e4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::tuple&lt; double, double, double &gt;</type>
+        <definition>static std::tuple&lt;double, double, double&gt; eos::PopulationMonteCarloSampler::Output::statistics_record</definition>
+        <argsstring>()</argsstring>
+        <name>statistics_record</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="423"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1PopulationMonteCarloSampler_1_1Output_1a6bcb392149e9b1f026f96d123f88d9d8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::tuple&lt; double, double &gt;</type>
+        <definition>static std::tuple&lt;double, double&gt; eos::PopulationMonteCarloSampler::Output::weight_record</definition>
+        <argsstring>()</argsstring>
+        <name>weight_record</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="424"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Access to the HDF5 types used in output. </para>    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="407" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="406" bodyend="425"/>
+    <listofallmembers>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Output_1a55eed75bc734fdf74551769f1ef4f53a" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Output</scope><name>component_record</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Output_1a89756e43d911fc21ca5e12e4f676c495" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Output</scope><name>component_type</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Output_1a5fd76b324d88b7fbd14306e8a15e4db9" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Output</scope><name>ComponentType</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Output_1a0bc83ed4bd2ec948236eced9b6be6684" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Output</scope><name>ignore_record</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Output_1a7dea0b1d53d47e5099fa97136a4f27a5" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Output</scope><name>ignore_type</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Output_1aa7e9c8fa59ff4cc77d830c9c2661435e" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Output</scope><name>IgnoreType</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Output_1a8091ae5b3a05edde2e076faafe0a02ab" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Output</scope><name>sample_record</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Output_1ac9825b152fa3750d77cb7face4fbaf41" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Output</scope><name>sample_type</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Output_1ab096268a8fccb7e8d34ed08b93df880c" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Output</scope><name>SampleType</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Output_1af58401b36b817e48635dfebfa54163e4" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Output</scope><name>statistics_record</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Output_1ab943ce812be9756d846719e165f352a7" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Output</scope><name>statistics_type</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Output_1abe071d58f8cee75754bcc593ec33e9b8" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Output</scope><name>StatisticsType</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Output_1a6bcb392149e9b1f026f96d123f88d9d8" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Output</scope><name>weight_record</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Output_1ad7a4912cebc0c3d00052a398aaef15dd" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Output</scope><name>weight_type</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Output_1a4413a52234bdb64d96f842ad524a7ee8" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Output</scope><name>WeightType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

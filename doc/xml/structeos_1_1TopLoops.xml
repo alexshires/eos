@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1TopLoops" kind="struct" prot="public">
+    <compoundname>eos::TopLoops</compoundname>
+    <includes refid="top-loops_8hh" local="no">top-loops.hh</includes>
+      <sectiondef kind="user-defined">
+      <description><para><anchor id="_1amgrpd41d8cd98f00b204e9800998ecf8427e"/> </para></description>
+      <memberdef kind="function" id="structeos_1_1TopLoops_1a1e5d26b35652a99a5e3e125d5814b1cf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double eos::TopLoops::A0</definition>
+        <argsstring>(const double &amp;x_t)</argsstring>
+        <name>A0</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>x_t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>One-loop functions in the MSbar scheme at the renormalization scale <formula id="5">$\mu_t$</formula>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x_t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><formula id="6">$= m_t(\mu_t)^2 / m_W^2$</formula> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/top-loops.hh" line="36"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1TopLoops_1a99b769758ffe71507b5424fd98657f43" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double eos::TopLoops::B0</definition>
+        <argsstring>(const double &amp;x_t)</argsstring>
+        <name>B0</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>x_t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>One-loop functions in the MSbar scheme at the renormalization scale <formula id="5">$\mu_t$</formula>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x_t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><formula id="6">$= m_t(\mu_t)^2 / m_W^2$</formula> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/top-loops.hh" line="38"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1TopLoops_1ae0a4305960619de35b6485ba3ed2ff47" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double eos::TopLoops::C0</definition>
+        <argsstring>(const double &amp;x_t)</argsstring>
+        <name>C0</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>x_t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>One-loop functions in the MSbar scheme at the renormalization scale <formula id="5">$\mu_t$</formula>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x_t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><formula id="6">$= m_t(\mu_t)^2 / m_W^2$</formula> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/top-loops.hh" line="40"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1TopLoops_1ab2d0294c1731e85f1fa2576fdcbda692" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double eos::TopLoops::D0</definition>
+        <argsstring>(const double &amp;x_t)</argsstring>
+        <name>D0</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>x_t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>One-loop functions in the MSbar scheme at the renormalization scale <formula id="5">$\mu_t$</formula>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x_t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><formula id="6">$= m_t(\mu_t)^2 / m_W^2$</formula> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/top-loops.hh" line="42"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1TopLoops_1acc27faf5debf5f4b70d2690c10af4f2c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double eos::TopLoops::E0</definition>
+        <argsstring>(const double &amp;x_t)</argsstring>
+        <name>E0</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>x_t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>One-loop functions in the MSbar scheme at the renormalization scale <formula id="5">$\mu_t$</formula>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x_t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><formula id="6">$= m_t(\mu_t)^2 / m_W^2$</formula> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/top-loops.hh" line="44"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1TopLoops_1a9c2ef545d78afbc1d564ec5528032b4c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double eos::TopLoops::F0</definition>
+        <argsstring>(const double &amp;x_t)</argsstring>
+        <name>F0</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>x_t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>One-loop functions in the MSbar scheme at the renormalization scale <formula id="5">$\mu_t$</formula>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x_t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><formula id="6">$= m_t(\mu_t)^2 / m_W^2$</formula> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/top-loops.hh" line="46"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1TopLoops_1a08fdb46fd02c3605cdd401d8b2f7efac" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double eos::TopLoops::A1</definition>
+        <argsstring>(const double &amp;x_t, const double &amp;log_t)</argsstring>
+        <name>A1</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>x_t</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>log_t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Two-loop functions in the MSbar scheme at the renormalization scale <formula id="5">$\mu_t$</formula>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x_t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><formula id="6">$= m_t(\mu_t)^2 / m_W^2$</formula> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>log_t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><formula id="7">$= \ln(\mu_t / m_t(\mu_t))$</formula> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/top-loops.hh" line="56"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1TopLoops_1a9f07487a5ca27483a4e7a80089137f39" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double eos::TopLoops::B1</definition>
+        <argsstring>(const double &amp;x_t, const double &amp;log_t)</argsstring>
+        <name>B1</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>x_t</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>log_t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>One-loop functions in the MSbar scheme at the renormalization scale <formula id="5">$\mu_t$</formula>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x_t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><formula id="6">$= m_t(\mu_t)^2 / m_W^2$</formula> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/top-loops.hh" line="58"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1TopLoops_1a9ffd030324501af9b5843456a6d5ff05" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double eos::TopLoops::C1</definition>
+        <argsstring>(const double &amp;x_t, const double &amp;log_t)</argsstring>
+        <name>C1</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>x_t</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>log_t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>One-loop functions in the MSbar scheme at the renormalization scale <formula id="5">$\mu_t$</formula>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x_t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><formula id="6">$= m_t(\mu_t)^2 / m_W^2$</formula> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/top-loops.hh" line="60"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1TopLoops_1a116720ebeb9dfa7f83c68adcc053b74f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double eos::TopLoops::D1</definition>
+        <argsstring>(const double &amp;x_t, const double &amp;log_t)</argsstring>
+        <name>D1</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>x_t</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>log_t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>One-loop functions in the MSbar scheme at the renormalization scale <formula id="5">$\mu_t$</formula>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x_t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><formula id="6">$= m_t(\mu_t)^2 / m_W^2$</formula> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/top-loops.hh" line="62"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1TopLoops_1a3ba9681fd4cad44013150a061e2391db" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double eos::TopLoops::E1</definition>
+        <argsstring>(const double &amp;x_t, const double &amp;log_t)</argsstring>
+        <name>E1</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>x_t</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>log_t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>One-loop functions in the MSbar scheme at the renormalization scale <formula id="5">$\mu_t$</formula>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x_t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><formula id="6">$= m_t(\mu_t)^2 / m_W^2$</formula> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/top-loops.hh" line="64"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1TopLoops_1a11d3bd501d8533b6c864cd8f7a117386" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double eos::TopLoops::F1</definition>
+        <argsstring>(const double &amp;x_t, const double &amp;log_t)</argsstring>
+        <name>F1</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>x_t</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>log_t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>One-loop functions in the MSbar scheme at the renormalization scale <formula id="5">$\mu_t$</formula>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x_t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><formula id="6">$= m_t(\mu_t)^2 / m_W^2$</formula> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/top-loops.hh" line="66"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1TopLoops_1a6a9e91edbf04928ccb3fa47b25de78ed" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double eos::TopLoops::G1</definition>
+        <argsstring>(const double &amp;x_t, const double &amp;log_t)</argsstring>
+        <name>G1</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>x_t</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>log_t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>One-loop functions in the MSbar scheme at the renormalization scale <formula id="5">$\mu_t$</formula>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x_t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><formula id="6">$= m_t(\mu_t)^2 / m_W^2$</formula> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/top-loops.hh" line="68"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Helper class to bundle top-loop functions in the SM which are relevant to <formula id="4">$b\to s$</formula> transitions. </para>    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/top-loops.hh" line="29" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/top-loops.hh" bodystart="28" bodyend="70"/>
+    <listofallmembers>
+      <member refid="structeos_1_1TopLoops_1a1e5d26b35652a99a5e3e125d5814b1cf" prot="public" virt="non-virtual"><scope>eos::TopLoops</scope><name>A0</name></member>
+      <member refid="structeos_1_1TopLoops_1a08fdb46fd02c3605cdd401d8b2f7efac" prot="public" virt="non-virtual"><scope>eos::TopLoops</scope><name>A1</name></member>
+      <member refid="structeos_1_1TopLoops_1a99b769758ffe71507b5424fd98657f43" prot="public" virt="non-virtual"><scope>eos::TopLoops</scope><name>B0</name></member>
+      <member refid="structeos_1_1TopLoops_1a9f07487a5ca27483a4e7a80089137f39" prot="public" virt="non-virtual"><scope>eos::TopLoops</scope><name>B1</name></member>
+      <member refid="structeos_1_1TopLoops_1ae0a4305960619de35b6485ba3ed2ff47" prot="public" virt="non-virtual"><scope>eos::TopLoops</scope><name>C0</name></member>
+      <member refid="structeos_1_1TopLoops_1a9ffd030324501af9b5843456a6d5ff05" prot="public" virt="non-virtual"><scope>eos::TopLoops</scope><name>C1</name></member>
+      <member refid="structeos_1_1TopLoops_1ab2d0294c1731e85f1fa2576fdcbda692" prot="public" virt="non-virtual"><scope>eos::TopLoops</scope><name>D0</name></member>
+      <member refid="structeos_1_1TopLoops_1a116720ebeb9dfa7f83c68adcc053b74f" prot="public" virt="non-virtual"><scope>eos::TopLoops</scope><name>D1</name></member>
+      <member refid="structeos_1_1TopLoops_1acc27faf5debf5f4b70d2690c10af4f2c" prot="public" virt="non-virtual"><scope>eos::TopLoops</scope><name>E0</name></member>
+      <member refid="structeos_1_1TopLoops_1a3ba9681fd4cad44013150a061e2391db" prot="public" virt="non-virtual"><scope>eos::TopLoops</scope><name>E1</name></member>
+      <member refid="structeos_1_1TopLoops_1a9c2ef545d78afbc1d564ec5528032b4c" prot="public" virt="non-virtual"><scope>eos::TopLoops</scope><name>F0</name></member>
+      <member refid="structeos_1_1TopLoops_1a11d3bd501d8533b6c864cd8f7a117386" prot="public" virt="non-virtual"><scope>eos::TopLoops</scope><name>F1</name></member>
+      <member refid="structeos_1_1TopLoops_1a6a9e91edbf04928ccb3fa47b25de78ed" prot="public" virt="non-virtual"><scope>eos::TopLoops</scope><name>G1</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

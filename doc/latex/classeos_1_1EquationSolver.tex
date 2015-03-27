@@ -1,0 +1,84 @@
+\hypertarget{classeos_1_1EquationSolver}{
+\section{eos::EquationSolver Class Reference}
+\label{classeos_1_1EquationSolver}\index{eos::EquationSolver@{eos::EquationSolver}}
+}
+
+
+{\ttfamily \#include $<$equation\_\-solver.hh$>$}
+
+Inherits \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern$<$ EquationSolver $>$}.\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structeos_1_1EquationSolver_1_1Config}{Config}
+\item 
+struct \hyperlink{structeos_1_1EquationSolver_1_1Solution}{Solution}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std::function$<$ double(const std::vector$<$ double $>$ \&)$>$ \hyperlink{classeos_1_1EquationSolver_a7394803ea85312852151a700b59da572}{Equation}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1EquationSolver_a39179766f370890b207dd9c00f0009b8}{EquationSolver} (const \hyperlink{structeos_1_1EquationSolver_1_1Config}{EquationSolver::Config} \&config)
+\item 
+\hyperlink{classeos_1_1EquationSolver_ac96461e85b095b1bff966a0d07542310}{$\sim$EquationSolver} ()
+\item 
+void \hyperlink{classeos_1_1EquationSolver_ad9cc623f54250dca0cc3fd288dcede77}{add} (const \hyperlink{classeos_1_1EquationSolver_a7394803ea85312852151a700b59da572}{Equation} \&equation)
+\item 
+void \hyperlink{classeos_1_1EquationSolver_ad6d72a4680c5c5f6bea52fc25faa931f}{add} (const std::string \&name, const double \&initial\_\-value, const double \&error)
+\item 
+void \hyperlink{classeos_1_1EquationSolver_a616986b11e89a331af2b21a1fe8f3ce2}{add} (const std::string \&name, const double \&initial\_\-value, const double \&error, const double \&min, const double \&max)
+\item 
+\hyperlink{structeos_1_1EquationSolver_1_1Solution}{Solution} \hyperlink{classeos_1_1EquationSolver_ad9add1a035d5edff206361db0d050a44}{solve} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classeos_1_1EquationSolver_a7394803ea85312852151a700b59da572}{
+\index{eos::EquationSolver@{eos::EquationSolver}!Equation@{Equation}}
+\index{Equation@{Equation}!eos::EquationSolver@{eos::EquationSolver}}
+\subsubsection[{Equation}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::function$<$double (const std::vector$<$double$>$ \&)$>$ {\bf eos::EquationSolver::Equation}}}
+\label{classeos_1_1EquationSolver_a7394803ea85312852151a700b59da572}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classeos_1_1EquationSolver_a39179766f370890b207dd9c00f0009b8}{
+\index{eos::EquationSolver@{eos::EquationSolver}!EquationSolver@{EquationSolver}}
+\index{EquationSolver@{EquationSolver}!eos::EquationSolver@{eos::EquationSolver}}
+\subsubsection[{EquationSolver}]{\setlength{\rightskip}{0pt plus 5cm}eos::EquationSolver::EquationSolver (const {\bf EquationSolver::Config} \& {\em config})}}
+\label{classeos_1_1EquationSolver_a39179766f370890b207dd9c00f0009b8}
+\hypertarget{classeos_1_1EquationSolver_ac96461e85b095b1bff966a0d07542310}{
+\index{eos::EquationSolver@{eos::EquationSolver}!$\sim$EquationSolver@{$\sim$EquationSolver}}
+\index{$\sim$EquationSolver@{$\sim$EquationSolver}!eos::EquationSolver@{eos::EquationSolver}}
+\subsubsection[{$\sim$EquationSolver}]{\setlength{\rightskip}{0pt plus 5cm}eos::EquationSolver::$\sim$EquationSolver ()}}
+\label{classeos_1_1EquationSolver_ac96461e85b095b1bff966a0d07542310}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classeos_1_1EquationSolver_a616986b11e89a331af2b21a1fe8f3ce2}{
+\index{eos::EquationSolver@{eos::EquationSolver}!add@{add}}
+\index{add@{add}!eos::EquationSolver@{eos::EquationSolver}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void eos::EquationSolver::add (const std::string \& {\em name}, \/  const double \& {\em initial\_\-value}, \/  const double \& {\em error}, \/  const double \& {\em min}, \/  const double \& {\em max})}}
+\label{classeos_1_1EquationSolver_a616986b11e89a331af2b21a1fe8f3ce2}
+\hypertarget{classeos_1_1EquationSolver_ad6d72a4680c5c5f6bea52fc25faa931f}{
+\index{eos::EquationSolver@{eos::EquationSolver}!add@{add}}
+\index{add@{add}!eos::EquationSolver@{eos::EquationSolver}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void eos::EquationSolver::add (const std::string \& {\em name}, \/  const double \& {\em initial\_\-value}, \/  const double \& {\em error})}}
+\label{classeos_1_1EquationSolver_ad6d72a4680c5c5f6bea52fc25faa931f}
+\hypertarget{classeos_1_1EquationSolver_ad9cc623f54250dca0cc3fd288dcede77}{
+\index{eos::EquationSolver@{eos::EquationSolver}!add@{add}}
+\index{add@{add}!eos::EquationSolver@{eos::EquationSolver}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void eos::EquationSolver::add (const {\bf Equation} \& {\em equation})}}
+\label{classeos_1_1EquationSolver_ad9cc623f54250dca0cc3fd288dcede77}
+\hypertarget{classeos_1_1EquationSolver_ad9add1a035d5edff206361db0d050a44}{
+\index{eos::EquationSolver@{eos::EquationSolver}!solve@{solve}}
+\index{solve@{solve}!eos::EquationSolver@{eos::EquationSolver}}
+\subsubsection[{solve}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Solution} eos::EquationSolver::solve ()}}
+\label{classeos_1_1EquationSolver_ad9add1a035d5edff206361db0d050a44}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{equation__solver_8hh}{equation\_\-solver.hh}\end{DoxyCompactItemize}

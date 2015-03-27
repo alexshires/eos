@@ -1,0 +1,99 @@
+\hypertarget{instantiation__policy-impl_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/instantiation\_\-policy-\/impl.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2008 Danny van Dyk <danny.dyk@uni-dortmund.de>}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * Based upon 'instantiation\_policy-impl.hh' from Paludis, which is:}
+00007 \textcolor{comment}{ *     Copyright (c) 2005, 2006, 2007 Ciaran McCreesh}
+00008 \textcolor{comment}{ *}
+00009 \textcolor{comment}{ * This file is part of the EOS program. EOS is free software;}
+00010 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00011 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00012 \textcolor{comment}{ *}
+00013 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00014 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00015 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00016 \textcolor{comment}{ * details.}
+00017 \textcolor{comment}{ *}
+00018 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00019 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00020 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00021 \textcolor{comment}{ */}
+00022 
+00023 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_INSTANTIATION\_POLICY\_IMPL\_HH}
+\hypertarget{instantiation__policy-impl_8hh_source_l00024}{}\hyperlink{instantiation__policy-impl_8hh_ae2d6dcc9b4b13eb782bfb6b6763ef2d1}{00024} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_INSTANTIATION\_POLICY\_IMPL\_HH 1}
+00025 \textcolor{preprocessor}{}
+00026 \textcolor{preprocessor}{#include <\hyperlink{instantiation__policy_8hh}{eos/utils/instantiation_policy.hh}>}
+00027 \textcolor{preprocessor}{#include <\hyperlink{lock_8hh}{eos/utils/lock.hh}>}
+00028 \textcolor{preprocessor}{#include <\hyperlink{mutex_8hh}{eos/utils/mutex.hh}>}
+00029 
+00030 \textcolor{keyword}{namespace }eos
+00031 \{
+00032     \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_>
+00033     \textcolor{keywordtype}{void}
+00034     InstantiationPolicy<T\_, Singleton>::\_delete(T\_ * ptr)
+00035     \{
+00036         \textcolor{keyword}{delete} ptr;
+00037     \}
+00038 
+00039     \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_>
+\hypertarget{instantiation__policy-impl_8hh_source_l00040}{}\hyperlink{classeos_1_1InstantiationPolicy_1_1DeleteOnDestruction}{00040}     \textcolor{keyword}{class }InstantiationPolicy<T\_, Singleton>::\hyperlink{classeos_1_1InstantiationPolicy_1_1DeleteOnDestruction}{DeleteOnDestruction}
+00041     \{
+00042         \textcolor{keyword}{private}:
+\hypertarget{instantiation__policy-impl_8hh_source_l00043}{}\hyperlink{instantiation__policy-impl_8hh_a8d520b2d8f25a7b950b519d090c05683}{00043}             T\_ * * \textcolor{keyword}{const} \hyperlink{instantiation__policy-impl_8hh_a8d520b2d8f25a7b950b519d090c05683}{_ptr};
+00044 
+00045         \textcolor{keyword}{public}:
+00046             DeleteOnDestruction(T\_ * * \textcolor{keyword}{const} ptr) :
+00047                 \hyperlink{instantiation__policy-impl_8hh_a8d520b2d8f25a7b950b519d090c05683}{_ptr}(ptr)
+00048             \{
+00049             \}
+00050 
+00051             ~DeleteOnDestruction()
+00052             \{
+00053                 InstantiationPolicy<T\_, Singleton>::\_delete(*\hyperlink{instantiation__policy-impl_8hh_a8d520b2d8f25a7b950b519d090c05683}{_ptr});
+00054 
+00055                 *\hyperlink{instantiation__policy-impl_8hh_a8d520b2d8f25a7b950b519d090c05683}{_ptr} = 0;
+00056             \}
+00057     \};
+00058 
+00059     \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_>
+00060     T\_ * *
+00061     InstantiationPolicy<T\_, Singleton>::\_instance\_ptr()
+00062     \{
+00063         \textcolor{keyword}{static} T\_ * instance(0);
+00064         \textcolor{keyword}{static} DeleteOnDestruction delete\_instance(&instance);
+00065 
+00066         \textcolor{keywordflow}{return} &instance;
+00067     \}
+00068 
+00069     \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_>
+00070     T\_ *
+\hypertarget{instantiation__policy-impl_8hh_source_l00071}{}\hyperlink{classeos_1_1InstantiationPolicy_3_01T___00_01Singleton_01_4_ab911bf9d8849e3af50a8fa886d0d5b70}{00071}     \hyperlink{classeos_1_1InstantiationPolicy_3_01T___00_01Singleton_01_4_ab911bf9d8849e3af50a8fa886d0d5b70}{InstantiationPolicy<T_, Singleton>::instance}()
+00072     \{
+00073         T\_ * * instance\_ptr(\_instance\_ptr());
+00074 
+00075         \textcolor{keywordflow}{if} (0 == *instance\_ptr)
+00076         \{
+00077             \textcolor{keyword}{static} \hyperlink{classeos_1_1Mutex}{Mutex} m;
+00078             \hyperlink{classeos_1_1Lock}{Lock} l(m);
+00079 
+00080             instance\_ptr = \_instance\_ptr();
+00081 
+00082             \textcolor{keywordflow}{if} (0 == *instance\_ptr)
+00083             \{
+00084                 *instance\_ptr = \textcolor{keyword}{new} T\_;
+00085             \}
+00086         \}
+00087 
+00088         \textcolor{keywordflow}{return} *instance\_ptr;
+00089     \}
+00090 \}
+00091 
+00092 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

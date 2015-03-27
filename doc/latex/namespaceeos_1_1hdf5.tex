@@ -1,0 +1,93 @@
+\hypertarget{namespaceeos_1_1hdf5}{
+\section{eos::hdf5 Namespace Reference}
+\label{namespaceeos_1_1hdf5}\index{eos::hdf5@{eos::hdf5}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structeos_1_1hdf5_1_1DataType}{DataType}
+\item 
+struct \hyperlink{structeos_1_1hdf5_1_1DataType_3_01double_01_4}{DataType$<$ double $>$}
+\item 
+struct \hyperlink{structeos_1_1hdf5_1_1DataType_3_01unsigned_01_4}{DataType$<$ unsigned $>$}
+\item 
+struct \hyperlink{structeos_1_1hdf5_1_1DataType_3_01int_01_4}{DataType$<$ int $>$}
+\item 
+struct \hyperlink{structeos_1_1hdf5_1_1DataType_3_01short_01_4}{DataType$<$ short $>$}
+\item 
+struct \hyperlink{structeos_1_1hdf5_1_1DataType_3_01const_01char_01_5_01_4}{DataType$<$ const char $\ast$ $>$}
+\item 
+struct \hyperlink{structeos_1_1hdf5_1_1Type}{Type}
+\item 
+class \hyperlink{classeos_1_1hdf5_1_1Scalar}{Scalar}
+\item 
+class \hyperlink{classeos_1_1hdf5_1_1Array}{Array}
+\item 
+struct \hyperlink{structeos_1_1hdf5_1_1CompositeCopier}{CompositeCopier}
+\item 
+struct \hyperlink{structeos_1_1hdf5_1_1CompositeCopier_3_010_00_01TypeTuple___00_01Tuple___01_4}{CompositeCopier$<$ 0, TypeTuple\_\-, Tuple\_\- $>$}
+\item 
+class \hyperlink{classeos_1_1hdf5_1_1Composite}{Composite}
+\item 
+class \hyperlink{classeos_1_1hdf5_1_1FileHandle}{FileHandle}
+\item 
+class \hyperlink{classeos_1_1hdf5_1_1DataSetHandle}{DataSetHandle}
+\item 
+class \hyperlink{classeos_1_1hdf5_1_1AttributeHandle}{AttributeHandle}
+\item 
+class \hyperlink{classeos_1_1hdf5_1_1File}{File}
+\item 
+class \hyperlink{classeos_1_1hdf5_1_1DataSet}{DataSet}
+\item 
+class \hyperlink{classeos_1_1hdf5_1_1Attribute}{Attribute}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef int \hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid\_\-t}
+\item 
+typedef std::shared\_\-ptr$<$ \hyperlink{structeos_1_1hdf5_1_1Type}{Type} $>$ \hyperlink{namespaceeos_1_1hdf5_ac960ca8a290b8a26ab5f71585ac5d793}{TypePtr}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T\_\- $>$ }\\\hyperlink{classeos_1_1hdf5_1_1DataSet}{DataSet}$<$ T\_\- $>$ \& \hyperlink{namespaceeos_1_1hdf5_a8da5ea7dae12acf02081ea4fc320dc3a}{operator$<$$<$} (\hyperlink{classeos_1_1hdf5_1_1DataSet}{DataSet}$<$ T\_\- $>$ \&, const typename T\_\-::Type \&)
+\item 
+{\footnotesize template$<$typename T\_\- $>$ }\\\hyperlink{classeos_1_1hdf5_1_1DataSet}{DataSet}$<$ T\_\- $>$ \& \hyperlink{namespaceeos_1_1hdf5_a59f5217285970b223b8a4932b811106e}{operator$>$$>$} (\hyperlink{classeos_1_1hdf5_1_1DataSet}{DataSet}$<$ T\_\- $>$ \&, typename T\_\-::Type \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{
+\index{eos::hdf5@{eos::hdf5}!hid\_\-t@{hid\_\-t}}
+\index{hid\_\-t@{hid\_\-t}!eos::hdf5@{eos::hdf5}}
+\subsubsection[{hid\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf eos::hdf5::hid\_\-t}}}
+\label{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}
+\hypertarget{namespaceeos_1_1hdf5_ac960ca8a290b8a26ab5f71585ac5d793}{
+\index{eos::hdf5@{eos::hdf5}!TypePtr@{TypePtr}}
+\index{TypePtr@{TypePtr}!eos::hdf5@{eos::hdf5}}
+\subsubsection[{TypePtr}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::shared\_\-ptr$<${\bf Type}$>$ {\bf eos::hdf5::TypePtr}}}
+\label{namespaceeos_1_1hdf5_ac960ca8a290b8a26ab5f71585ac5d793}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespaceeos_1_1hdf5_a8da5ea7dae12acf02081ea4fc320dc3a}{
+\index{eos::hdf5@{eos::hdf5}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!eos::hdf5@{eos::hdf5}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\_\- $>$ {\bf DataSet}$<$ T\_\- $>$ \& eos::hdf5::operator$<$$<$ (DataSet$<$ T\_\- $>$ \& {\em lhs}, \/  const typename T\_\-::Type \& {\em rhs})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{namespaceeos_1_1hdf5_a8da5ea7dae12acf02081ea4fc320dc3a}
+Append a record to the end of an HDF5 DataSet$<$$>$ .
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em lhs}]The DataSet$<$$>$ to which shall be written. \item[{\em rhs}]The record which shall be appended. \end{DoxyParams}
+\hypertarget{namespaceeos_1_1hdf5_a59f5217285970b223b8a4932b811106e}{
+\index{eos::hdf5@{eos::hdf5}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!eos::hdf5@{eos::hdf5}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\_\- $>$ {\bf DataSet}$<$ T\_\- $>$ \& eos::hdf5::operator$>$$>$ (DataSet$<$ T\_\- $>$ \& {\em lhs}, \/  typename T\_\-::Type \& {\em rhs})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{namespaceeos_1_1hdf5_a59f5217285970b223b8a4932b811106e}
+Extract a record from an HDF5 \hyperlink{classeos_1_1hdf5_1_1DataSet}{DataSet}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em lhs}]The DataSet$<$$>$ from which shall be read. \item[{\em rhs}]The record to which the data shall be copied. \end{DoxyParams}

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1HLMW2005" kind="struct" prot="public">
+    <compoundname>eos::HLMW2005</compoundname>
+    <includes refid="inclusive-b-to-s-dilepton_8hh" local="no">inclusive-b-to-s-dilepton.hh</includes>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/inclusive-b-to-s-dilepton.hh" line="39" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/inclusive-b-to-s-dilepton.hh" bodystart="38" bodyend="40"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

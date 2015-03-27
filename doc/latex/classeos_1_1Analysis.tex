@@ -1,0 +1,237 @@
+\hypertarget{classeos_1_1Analysis}{
+\section{eos::Analysis Class Reference}
+\label{classeos_1_1Analysis}\index{eos::Analysis@{eos::Analysis}}
+}
+
+
+{\ttfamily \#include $<$analysis.hh$>$}
+
+Inherits \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern$<$ Analysis $>$}.\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structeos_1_1Analysis_1_1OptimizationOptions}{OptimizationOptions}
+\item 
+struct \hyperlink{structeos_1_1Analysis_1_1Output}{Output}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std::pair$<$ std::vector$<$ double $>$, double $>$ \hyperlink{classeos_1_1Analysis_ab558b84092479509d34d5f9ee0f03ad3}{optimize} (const std::vector$<$ double $>$ \&initial\_\-guess, const \hyperlink{structeos_1_1Analysis_1_1OptimizationOptions}{OptimizationOptions} \&options)
+\item 
+const ROOT::Minuit2::FunctionMinimum \& \hyperlink{classeos_1_1Analysis_a3f8c48eed78ea048627928613492eac5}{optimize\_\-minuit} (const std::vector$<$ double $>$ \&initial\_\-guess, const \hyperlink{structeos_1_1Analysis_1_1OptimizationOptions}{OptimizationOptions} \&options)
+\item 
+void \hyperlink{classeos_1_1Analysis_a0fa8a2b9d2f9dad49b0e76c83efde3ba}{restrict} (const std::string \&name, const double \&min, const double \&max)
+\end{DoxyCompactItemize}
+\begin{Indent}{\bf Basic Functions}\par
+{\em \label{_amgrp2386c9a1f1785edee33f374dd2db9b3d}
+ }\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1Analysis_a252a0ae93caf7c7f6db627fe563c72bc}{Analysis} (const \hyperlink{classeos_1_1LogLikelihood}{LogLikelihood} \&log\_\-likelihood)
+\item 
+\hyperlink{classeos_1_1Analysis_a41c872da6c87e398f1807012262a2eff}{$\sim$Analysis} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\item 
+\hyperlink{namespaceeos_afc57020492535ccdd85cfc3b7421340d}{AnalysisPtr} \hyperlink{classeos_1_1Analysis_a05e85c6fa4f83ef4b768c52d4c4f75bc}{clone} () const 
+\begin{DoxyCompactList}\small\item\em Clone this \hyperlink{classeos_1_1Analysis}{Analysis}. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{classeos_1_1Analysis_a63c3ad7e46dc3c7d599fe2faf2a2f55f}{Implementation$<$ Analysis $>$}
+\end{DoxyCompactItemize}
+\subsection*{Accessors}
+\label{_amgrp04cb611d2bf0c8edd5b113799b30e174}
+ \begin{DoxyCompactItemize}
+\item 
+const std::vector$<$ \hyperlink{structeos_1_1ParameterDescription}{ParameterDescription} $>$ \& \hyperlink{classeos_1_1Analysis_a8cc99f2ff2c99e2977c9dab68ff13c8b}{parameter\_\-descriptions} () const 
+\begin{DoxyCompactList}\small\item\em Retrieve a set of all parameters, including ranges. \item\end{DoxyCompactList}\item 
+\hyperlink{classeos_1_1Parameter}{Parameter} \hyperlink{classeos_1_1Analysis_a963c134ff67911b8a4bc90fc1342e3a3}{operator\mbox{[}$\,$\mbox{]}} (const unsigned \&index)
+\item 
+\hyperlink{classeos_1_1Parameters}{Parameters} \hyperlink{classeos_1_1Analysis_a750da19ea2292416b8b42dc2c259935e}{parameters} () const 
+\begin{DoxyCompactList}\small\item\em Retrieve our associates \hyperlink{classeos_1_1Parameters}{Parameters} object. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classeos_1_1Analysis_a3062ad70d7888517d3fa09e7dcb183cf}{add} (const \hyperlink{namespaceeos_ac5481e3b46ee55ff24606ee7f6e78651}{LogPriorPtr} \&prior, bool nuisance=false)
+\item 
+void \hyperlink{classeos_1_1Analysis_a444e11133ea75c88fb2579f1ac73c8c3}{dump\_\-descriptions} (\hyperlink{classeos_1_1hdf5_1_1File}{hdf5::File} \&file, std::string data\_\-set\_\-base=\char`\"{}/descriptions\char`\"{}) const 
+\item 
+std::pair$<$ double, double $>$ \hyperlink{classeos_1_1Analysis_a7146dc3458d035af4546890b0795146b}{goodness\_\-of\_\-fit} (const std::vector$<$ double $>$ \&parameter\_\-values, const unsigned \&simulated\_\-datasets, std::string output\_\-file=\char`\"{}\char`\"{})
+\item 
+\hyperlink{classeos_1_1LogLikelihood}{LogLikelihood} \hyperlink{classeos_1_1Analysis_a29da23044cd892ac972ed62262276445}{log\_\-likelihood} ()
+\begin{DoxyCompactList}\small\item\em Retrieve the overall Log(likelihood) for this analysis. \item\end{DoxyCompactList}\item 
+double \hyperlink{classeos_1_1Analysis_a521333679365bc779d1136701d31e35d}{log\_\-prior} ()
+\begin{DoxyCompactList}\small\item\em Retrieve the overall Log(prior) for this analysis. \item\end{DoxyCompactList}\item 
+\hyperlink{namespaceeos_ac5481e3b46ee55ff24606ee7f6e78651}{LogPriorPtr} \hyperlink{classeos_1_1Analysis_ad6647f4d8a1937db18cbce2d33170c55}{log\_\-prior} (const std::string \&name) const 
+\item 
+double \hyperlink{classeos_1_1Analysis_a8919114802de94afc42068d87346a525}{log\_\-posterior} ()
+\item 
+bool \hyperlink{classeos_1_1Analysis_a52ed491bbea6d966ea4f8a746b9e980d}{nuisance} (const std::string \&name) const 
+\item 
+static std::vector$<$ \hyperlink{structeos_1_1ParameterDescription}{ParameterDescription} $>$ \hyperlink{classeos_1_1Analysis_a7f5c6fb49fafda45b0451172b44bf01c}{read\_\-descriptions} (const \hyperlink{classeos_1_1hdf5_1_1File}{hdf5::File} \&file, std::string data\_\-set\_\-base=\char`\"{}/descriptions\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classeos_1_1Analysis_a252a0ae93caf7c7f6db627fe563c72bc}{
+\index{eos::Analysis@{eos::Analysis}!Analysis@{Analysis}}
+\index{Analysis@{Analysis}!eos::Analysis@{eos::Analysis}}
+\subsubsection[{Analysis}]{\setlength{\rightskip}{0pt plus 5cm}eos::Analysis::Analysis (const {\bf LogLikelihood} \& {\em log\_\-likelihood})}}
+\label{classeos_1_1Analysis_a252a0ae93caf7c7f6db627fe563c72bc}
+Constructor.
+
+Extracts parameters, observables from \hyperlink{classeos_1_1LogLikelihood}{LogLikelihood}. The default prior (flat) is assumed for all parameters.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em log\_\-likelihood}]The \hyperlink{classeos_1_1LogLikelihood}{LogLikelihood} functor which shall be analysed.\end{DoxyParams}
+\begin{DoxyNote}{Note}
+\hyperlink{classeos_1_1Analysis}{Analysis} assumes ownership of log\_\-likelihood 
+\end{DoxyNote}
+\hypertarget{classeos_1_1Analysis_a41c872da6c87e398f1807012262a2eff}{
+\index{eos::Analysis@{eos::Analysis}!$\sim$Analysis@{$\sim$Analysis}}
+\index{$\sim$Analysis@{$\sim$Analysis}!eos::Analysis@{eos::Analysis}}
+\subsubsection[{$\sim$Analysis}]{\setlength{\rightskip}{0pt plus 5cm}eos::Analysis::$\sim$Analysis ()}}
+\label{classeos_1_1Analysis_a41c872da6c87e398f1807012262a2eff}
+
+
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classeos_1_1Analysis_a3062ad70d7888517d3fa09e7dcb183cf}{
+\index{eos::Analysis@{eos::Analysis}!add@{add}}
+\index{add@{add}!eos::Analysis@{eos::Analysis}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}bool eos::Analysis::add (const {\bf LogPriorPtr} \& {\em prior}, \/  bool {\em nuisance} = {\ttfamily false})}}
+\label{classeos_1_1Analysis_a3062ad70d7888517d3fa09e7dcb183cf}
+Add one or more parameters and associated prior density
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em prior}]The logarithmic prior density. \item[{\em nuisance}]False for a parameter of interest \end{DoxyParams}
+\hypertarget{classeos_1_1Analysis_a05e85c6fa4f83ef4b768c52d4c4f75bc}{
+\index{eos::Analysis@{eos::Analysis}!clone@{clone}}
+\index{clone@{clone}!eos::Analysis@{eos::Analysis}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AnalysisPtr} eos::Analysis::clone () const}}
+\label{classeos_1_1Analysis_a05e85c6fa4f83ef4b768c52d4c4f75bc}
+
+
+Clone this \hyperlink{classeos_1_1Analysis}{Analysis}. \hypertarget{classeos_1_1Analysis_a444e11133ea75c88fb2579f1ac73c8c3}{
+\index{eos::Analysis@{eos::Analysis}!dump\_\-descriptions@{dump\_\-descriptions}}
+\index{dump\_\-descriptions@{dump\_\-descriptions}!eos::Analysis@{eos::Analysis}}
+\subsubsection[{dump\_\-descriptions}]{\setlength{\rightskip}{0pt plus 5cm}void eos::Analysis::dump\_\-descriptions ({\bf hdf5::File} \& {\em file}, \/  std::string {\em data\_\-set\_\-base} = {\ttfamily \char`\"{}/descriptions\char`\"{}}) const}}
+\label{classeos_1_1Analysis_a444e11133ea75c88fb2579f1ac73c8c3}
+Write parameter descriptions, constraints, observables into the \hyperlink{namespaceeos_1_1hdf5}{hdf5} file under the given group name. \hypertarget{classeos_1_1Analysis_a7146dc3458d035af4546890b0795146b}{
+\index{eos::Analysis@{eos::Analysis}!goodness\_\-of\_\-fit@{goodness\_\-of\_\-fit}}
+\index{goodness\_\-of\_\-fit@{goodness\_\-of\_\-fit}!eos::Analysis@{eos::Analysis}}
+\subsubsection[{goodness\_\-of\_\-fit}]{\setlength{\rightskip}{0pt plus 5cm}std::pair$<$double, double$>$ eos::Analysis::goodness\_\-of\_\-fit (const std::vector$<$ double $>$ \& {\em parameter\_\-values}, \/  const unsigned \& {\em simulated\_\-datasets}, \/  std::string {\em output\_\-file} = {\ttfamily \char`\"{}\char`\"{}})}}
+\label{classeos_1_1Analysis_a7146dc3458d035af4546890b0795146b}
+Calculate the p-\/value based on the $\chi^2 $ test statistic for fixed parameter\_\-values 
+\begin{DoxyParams}{Parameters}
+\item[{\em parameter\_\-values}]\item[{\em simulate}]if true, simulate data sets to estimate distribution of test statistic, else use the cumulative of the $\chi^2 $-\/distribution with (N-\/k) degrees-\/of-\/freedom, where N is the number of observations and k is the number of fitted parameters \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$ $\chi^2 $, p$>$ 
+\end{DoxyReturn}
+\hypertarget{classeos_1_1Analysis_a29da23044cd892ac972ed62262276445}{
+\index{eos::Analysis@{eos::Analysis}!log\_\-likelihood@{log\_\-likelihood}}
+\index{log\_\-likelihood@{log\_\-likelihood}!eos::Analysis@{eos::Analysis}}
+\subsubsection[{log\_\-likelihood}]{\setlength{\rightskip}{0pt plus 5cm}{\bf LogLikelihood} eos::Analysis::log\_\-likelihood ()}}
+\label{classeos_1_1Analysis_a29da23044cd892ac972ed62262276445}
+
+
+Retrieve the overall Log(likelihood) for this analysis. \hypertarget{classeos_1_1Analysis_a8919114802de94afc42068d87346a525}{
+\index{eos::Analysis@{eos::Analysis}!log\_\-posterior@{log\_\-posterior}}
+\index{log\_\-posterior@{log\_\-posterior}!eos::Analysis@{eos::Analysis}}
+\subsubsection[{log\_\-posterior}]{\setlength{\rightskip}{0pt plus 5cm}double eos::Analysis::log\_\-posterior ()}}
+\label{classeos_1_1Analysis_a8919114802de94afc42068d87346a525}
+Retrieve the overall Log(posterior) for this analysis. Incorporate normalization constant, the evidence here in getter if available. \hypertarget{classeos_1_1Analysis_ad6647f4d8a1937db18cbce2d33170c55}{
+\index{eos::Analysis@{eos::Analysis}!log\_\-prior@{log\_\-prior}}
+\index{log\_\-prior@{log\_\-prior}!eos::Analysis@{eos::Analysis}}
+\subsubsection[{log\_\-prior}]{\setlength{\rightskip}{0pt plus 5cm}{\bf LogPriorPtr} eos::Analysis::log\_\-prior (const std::string \& {\em name}) const}}
+\label{classeos_1_1Analysis_ad6647f4d8a1937db18cbce2d33170c55}
+Find the prior for a given parameter \hypertarget{classeos_1_1Analysis_a521333679365bc779d1136701d31e35d}{
+\index{eos::Analysis@{eos::Analysis}!log\_\-prior@{log\_\-prior}}
+\index{log\_\-prior@{log\_\-prior}!eos::Analysis@{eos::Analysis}}
+\subsubsection[{log\_\-prior}]{\setlength{\rightskip}{0pt plus 5cm}double eos::Analysis::log\_\-prior ()}}
+\label{classeos_1_1Analysis_a521333679365bc779d1136701d31e35d}
+
+
+Retrieve the overall Log(prior) for this analysis. \hypertarget{classeos_1_1Analysis_a52ed491bbea6d966ea4f8a746b9e980d}{
+\index{eos::Analysis@{eos::Analysis}!nuisance@{nuisance}}
+\index{nuisance@{nuisance}!eos::Analysis@{eos::Analysis}}
+\subsubsection[{nuisance}]{\setlength{\rightskip}{0pt plus 5cm}bool eos::Analysis::nuisance (const std::string \& {\em name}) const}}
+\label{classeos_1_1Analysis_a52ed491bbea6d966ea4f8a746b9e980d}
+Check if a given parameter is a nuisance parameter for this \hyperlink{classeos_1_1Analysis}{Analysis}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]The name of the parameter we are interested in. \end{DoxyParams}
+\hypertarget{classeos_1_1Analysis_a963c134ff67911b8a4bc90fc1342e3a3}{
+\index{eos::Analysis@{eos::Analysis}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!eos::Analysis@{eos::Analysis}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parameter} eos::Analysis::operator\mbox{[}$\,$\mbox{]} (const unsigned \& {\em index})}}
+\label{classeos_1_1Analysis_a963c134ff67911b8a4bc90fc1342e3a3}
+Retrieve a parameter by index.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index of the parameter. \end{DoxyParams}
+\hypertarget{classeos_1_1Analysis_ab558b84092479509d34d5f9ee0f03ad3}{
+\index{eos::Analysis@{eos::Analysis}!optimize@{optimize}}
+\index{optimize@{optimize}!eos::Analysis@{eos::Analysis}}
+\subsubsection[{optimize}]{\setlength{\rightskip}{0pt plus 5cm}std::pair$<$std::vector$<$double$>$, double$>$ eos::Analysis::optimize (const std::vector$<$ double $>$ \& {\em initial\_\-guess}, \/  const {\bf OptimizationOptions} \& {\em options})}}
+\label{classeos_1_1Analysis_ab558b84092479509d34d5f9ee0f03ad3}
+Optimize the posterior using the Nelder-\/Mead simplex algorithm. 
+\begin{DoxyParams}{Parameters}
+\item[{\em initial\_\-guess}]Starting point for simplex construction \item[{\em options}]If no tuning desired, use \hyperlink{structeos_1_1Analysis_1_1OptimizationOptions_a809f9cf0f5d544c7303a631c278c3fa1}{Analysis::OptimizationOptions::Defaults()} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$parameter values at mode, posterior value at mode$>$ 
+\end{DoxyReturn}
+\hypertarget{classeos_1_1Analysis_a3f8c48eed78ea048627928613492eac5}{
+\index{eos::Analysis@{eos::Analysis}!optimize\_\-minuit@{optimize\_\-minuit}}
+\index{optimize\_\-minuit@{optimize\_\-minuit}!eos::Analysis@{eos::Analysis}}
+\subsubsection[{optimize\_\-minuit}]{\setlength{\rightskip}{0pt plus 5cm}const ROOT::Minuit2::FunctionMinimum\& eos::Analysis::optimize\_\-minuit (const std::vector$<$ double $>$ \& {\em initial\_\-guess}, \/  const {\bf OptimizationOptions} \& {\em options})}}
+\label{classeos_1_1Analysis_a3f8c48eed78ea048627928613492eac5}
+\hypertarget{classeos_1_1Analysis_a8cc99f2ff2c99e2977c9dab68ff13c8b}{
+\index{eos::Analysis@{eos::Analysis}!parameter\_\-descriptions@{parameter\_\-descriptions}}
+\index{parameter\_\-descriptions@{parameter\_\-descriptions}!eos::Analysis@{eos::Analysis}}
+\subsubsection[{parameter\_\-descriptions}]{\setlength{\rightskip}{0pt plus 5cm}const std::vector$<${\bf ParameterDescription}$>$\& eos::Analysis::parameter\_\-descriptions () const}}
+\label{classeos_1_1Analysis_a8cc99f2ff2c99e2977c9dab68ff13c8b}
+
+
+Retrieve a set of all parameters, including ranges. \hypertarget{classeos_1_1Analysis_a750da19ea2292416b8b42dc2c259935e}{
+\index{eos::Analysis@{eos::Analysis}!parameters@{parameters}}
+\index{parameters@{parameters}!eos::Analysis@{eos::Analysis}}
+\subsubsection[{parameters}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parameters} eos::Analysis::parameters () const}}
+\label{classeos_1_1Analysis_a750da19ea2292416b8b42dc2c259935e}
+
+
+Retrieve our associates \hyperlink{classeos_1_1Parameters}{Parameters} object. \hypertarget{classeos_1_1Analysis_a7f5c6fb49fafda45b0451172b44bf01c}{
+\index{eos::Analysis@{eos::Analysis}!read\_\-descriptions@{read\_\-descriptions}}
+\index{read\_\-descriptions@{read\_\-descriptions}!eos::Analysis@{eos::Analysis}}
+\subsubsection[{read\_\-descriptions}]{\setlength{\rightskip}{0pt plus 5cm}static std::vector$<${\bf ParameterDescription}$>$ eos::Analysis::read\_\-descriptions (const {\bf hdf5::File} \& {\em file}, \/  std::string {\em data\_\-set\_\-base} = {\ttfamily \char`\"{}/descriptions\char`\"{}})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1Analysis_a7f5c6fb49fafda45b0451172b44bf01c}
+Read in parameter descriptions from a previous dump.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em sample\_\-file}]The HDF5 file with the information. \item[{\em base}]The base directory where to look for the data set. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The descriptions, one per parameter 
+\end{DoxyReturn}
+\hypertarget{classeos_1_1Analysis_a0fa8a2b9d2f9dad49b0e76c83efde3ba}{
+\index{eos::Analysis@{eos::Analysis}!restrict@{restrict}}
+\index{restrict@{restrict}!eos::Analysis@{eos::Analysis}}
+\subsubsection[{restrict}]{\setlength{\rightskip}{0pt plus 5cm}void eos::Analysis::restrict (const std::string \& {\em name}, \/  const double \& {\em min}, \/  const double \& {\em max})}}
+\label{classeos_1_1Analysis_a0fa8a2b9d2f9dad49b0e76c83efde3ba}
+Restrict to a subrange of a given parameter. 
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]\item[{\em min}]\item[{\em max}]\end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classeos_1_1Analysis_a63c3ad7e46dc3c7d599fe2faf2a2f55f}{
+\index{eos::Analysis@{eos::Analysis}!Implementation$<$ Analysis $>$@{Implementation$<$ Analysis $>$}}
+\index{Implementation$<$ Analysis $>$@{Implementation$<$ Analysis $>$}!eos::Analysis@{eos::Analysis}}
+\subsubsection[{Implementation$<$ Analysis $>$}]{\setlength{\rightskip}{0pt plus 5cm}friend struct Implementation$<$ {\bf Analysis} $>$\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classeos_1_1Analysis_a63c3ad7e46dc3c7d599fe2faf2a2f55f}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{analysis_8hh}{analysis.hh}\end{DoxyCompactItemize}

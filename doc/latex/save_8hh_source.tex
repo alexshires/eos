@@ -1,0 +1,54 @@
+\hypertarget{save_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/save.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2010, 2011 Danny van Dyk}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_SAVE\_HH}
+\hypertarget{save_8hh_source_l00021}{}\hyperlink{save_8hh_aedf5ad734281b5cd4793a03d7c1c171e}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_SAVE\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{keyword}{namespace }eos
+00024 \{
+\hypertarget{save_8hh_source_l00025}{}\hyperlink{classeos_1_1Save}{00025}     \textcolor{keyword}{template} <\textcolor{keyword}{typename} V\_, \textcolor{keyword}{typename} R\_ = V\_> \textcolor{keyword}{class }\hyperlink{classeos_1_1Save}{Save}
+00026     \{
+00027         \textcolor{keyword}{private}:
+00028             V\_ & \_variable;
+00029 
+00030             R\_ \_original;
+00031 
+00032         \textcolor{keyword}{public}:
+\hypertarget{save_8hh_source_l00033}{}\hyperlink{classeos_1_1Save_a199880a2f33c6a819c3a4cd957303ba1}{00033}             \hyperlink{classeos_1_1Save_a199880a2f33c6a819c3a4cd957303ba1}{Save}(V\_ & variable, \textcolor{keyword}{const} R\_ & replacement) :
+00034                 \_variable(variable),
+00035                 \_original(variable)
+00036             \{
+00037                 \_variable = replacement;
+00038             \}
+00039 
+\hypertarget{save_8hh_source_l00040}{}\hyperlink{classeos_1_1Save_a4970637cf62612b263c206601002a864}{00040}             \hyperlink{classeos_1_1Save_a4970637cf62612b263c206601002a864}{~Save}()
+00041             \{
+00042                 \_variable = \_original;
+00043             \}
+00044     \};
+00045 \}
+00046 
+00047 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

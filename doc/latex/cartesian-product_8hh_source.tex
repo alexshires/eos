@@ -1,0 +1,183 @@
+\hypertarget{cartesian-product_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/cartesian-\/product.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2010 Danny van Dyk}
+00005 \textcolor{comment}{ * Copyright (c) 2011 Christian Wacker}
+00006 \textcolor{comment}{ *}
+00007 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00008 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00009 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00010 \textcolor{comment}{ *}
+00011 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00012 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00013 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00014 \textcolor{comment}{ * details.}
+00015 \textcolor{comment}{ *}
+00016 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00017 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00018 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00019 \textcolor{comment}{ */}
+00020 
+00021 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_CARTESIAN\_PRODUCT\_HH}
+\hypertarget{cartesian-product_8hh_source_l00022}{}\hyperlink{cartesian-product_8hh_a903a10839dae03fab1bdc91c3c42524f}{00022} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_CARTESIAN\_PRODUCT\_HH 1}
+00023 \textcolor{preprocessor}{}
+00024 \textcolor{preprocessor}{#include <vector>}
+00025 
+00026 \textcolor{keyword}{namespace }eos
+00027 \{
+\hypertarget{cartesian-product_8hh_source_l00032}{}\hyperlink{classeos_1_1CartesianProduct}{00032}     \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_> \textcolor{keyword}{class }\hyperlink{classeos_1_1CartesianProduct}{CartesianProduct}
+00033     \{
+00034         \textcolor{keyword}{private}:
+00035             \textcolor{keyword}{typedef} std::vector<typename T\_::const\_iterator> IteratorState;
+00036 
+00037             \textcolor{comment}{// All stored containers.}
+00038             std::vector<T\_> \_data;
+00039 
+00040             \textcolor{comment}{// Iterators for the begin and end of each stored container.}
+00041             IteratorState \_begin, \_end;
+00042 
+00043             \textcolor{comment}{// The overall number of elements stored in CartesianProduct.}
+00044             \textcolor{keywordtype}{size\_t} \_size;
+00045 
+00046             \textcolor{keyword}{typedef} std::vector<size\_t> Sizes;
+00047             Sizes \_sizes;
+00048 
+00049             \textcolor{keyword}{template} <\textcolor{keyword}{typename} U\_> \textcolor{keyword}{class }\_Iterator
+00050             \{
+00051                 \textcolor{keyword}{private}:
+00052                     \textcolor{keyword}{typedef} std::vector<typename U\_::const\_iterator> IteratorStat
+      e;
+00053 
+00054                     IteratorState \_state;
+00055                     Sizes \_sizes;
+00056                     \textcolor{keywordtype}{bool} \_at\_end;
+00057                     std::vector<long> \_values;
+00058 
+00059                     \_Iterator(\textcolor{keyword}{const} IteratorState & state,
+00060                               \textcolor{keyword}{const} Sizes& sizes,
+00061                               \textcolor{keywordtype}{bool}  atEnd) :
+00062                         \_state(state),
+00063                         \_sizes(sizes),
+00064                         \_at\_end(atEnd),
+00065                         \_values(state.size(), 0)
+00066                     \{
+00067                     \}
+00068 
+00069                 \textcolor{keyword}{public}:
+00070                     \textcolor{keyword}{friend} \textcolor{keyword}{class }\hyperlink{classeos_1_1CartesianProduct}{CartesianProduct}<U\_>;
+00071 
+00072                     \textcolor{keywordtype}{bool} operator== (\textcolor{keyword}{const} \_Iterator & other)\textcolor{keyword}{ const}
+00073 \textcolor{keyword}{                    }\{
+00074                         \textcolor{keywordflow}{if} (\_at\_end && other.\_at\_end)
+00075                             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00076 
+00077                         \textcolor{comment}{// compare each element}
+00078                         \textcolor{keyword}{auto} i = \_state.cbegin();
+00079                         \textcolor{keyword}{auto} j = other.\_state.cbegin();
+00080                         \textcolor{keywordflow}{for} ( ; i != \_state.end(); ++i, ++j)
+00081                         \{
+00082                             \textcolor{keywordflow}{if} (*i != *j)
+00083                                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00084                         \}
+00085 
+00086                         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00087                     \}
+00088 
+00089                     \textcolor{keywordtype}{bool} operator!= (\textcolor{keyword}{const} \_Iterator& other)\textcolor{keyword}{ const}
+00090 \textcolor{keyword}{                    }\{
+00091                         \textcolor{keywordflow}{return} !(*\textcolor{keyword}{this} == other);
+00092                     \}
+00093 
+00094                     \_Iterator & operator+= (\textcolor{keywordtype}{long} increment)
+00095                     \{
+00096                         \textcolor{comment}{// Already at the last element?}
+00097                         \textcolor{keywordflow}{if} (\_at\_end)
+00098                             \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+00099 
+00100                         \textcolor{keyword}{auto} size\_it = \_sizes.rbegin();
+00101                         \textcolor{keyword}{auto} state\_it = \_state.rbegin();
+00102                         \textcolor{keyword}{auto} value\_it = \_values.rbegin();
+00103                         \textcolor{keywordflow}{for} ( ; size\_it != \_sizes.rend(); ++size\_it, ++state\_it, 
+      ++value\_it)
+00104                         \{
+00105                             \textcolor{keywordtype}{long} new\_value = (*value\_it + increment) % *size\_it;;
+      
+00106                             \textcolor{keywordtype}{long} difference = new\_value - *value\_it;
+00107                             *value\_it = new\_value;
+00108                             increment -= difference;
+00109                             increment /= *size\_it;
+00110                             *state\_it += difference;
+00111                         \}
+00112 
+00113                         \textcolor{keywordflow}{if} (increment != 0)
+00114                             \_at\_end = \textcolor{keyword}{true};
+00115 
+00116                         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+00117                     \}
+00118 
+00119                     \_Iterator & operator++ ()
+00120                     \{
+00121                         \textcolor{keywordflow}{return} (*\textcolor{keyword}{this} += 1);
+00122                     \}
+00123 
+00124                     std::vector<typename U\_::value\_type> \hyperlink{namespaceeos_a6025a42d446265afd81f6c749999a391}{operator* }()\textcolor{keyword}{ const}
+00125 \textcolor{keyword}{                    }\{
+00126                         std::vector<typename U\_::value\_type> result;
+00127                         \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} i = \_state.begin() ; \_state.end() != i ; ++i)
+00128                         \{
+00129                             result.push\_back(*(*i));
+00130                         \}
+00131 
+00132                         \textcolor{keywordflow}{return} result;
+00133                     \}
+00134             \};
+00135 
+00136         \textcolor{keyword}{public}:
+\hypertarget{cartesian-product_8hh_source_l00140}{}\hyperlink{classeos_1_1CartesianProduct_aa2ff28e4a1845a8ee763a877a8cd4346}{00140}             \textcolor{keyword}{typedef} \_Iterator<T\_> \hyperlink{classeos_1_1CartesianProduct_aa2ff28e4a1845a8ee763a877a8cd4346}{Iterator};
+00141 
+\hypertarget{cartesian-product_8hh_source_l00145}{}\hyperlink{classeos_1_1CartesianProduct_ab31950cf7edf8589a6e86a81b36d9b4d}{00145}             \hyperlink{classeos_1_1CartesianProduct_ab31950cf7edf8589a6e86a81b36d9b4d}{CartesianProduct}() :
+00146                 \_size(0)
+00147             \{
+00148             \}
+00149 
+\hypertarget{cartesian-product_8hh_source_l00155}{}\hyperlink{classeos_1_1CartesianProduct_adef1565dbec35aab631423ade5b1baf0}{00155}             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1CartesianProduct_adef1565dbec35aab631423ade5b1baf0}{over}(\textcolor{keyword}{const} T\_ & new\_container)
+00156             \{
+00157                 \textcolor{comment}{// Store the new container and its iterators}
+00158                 \_data.push\_back(new\_container);
+00159                 \_begin.push\_back(\_data.back().cbegin());
+00160                 \_end.push\_back(\_data.back().cend());
+00161 
+00162                 \textcolor{comment}{// Update the size of CartesianProduct}
+00163                 \textcolor{keywordflow}{if} (0 == \_size)
+00164                     \_size = new\_container.size();
+00165                 \textcolor{keywordflow}{else}
+00166                     \_size *= new\_container.size();
+00167 
+00168                 \_sizes.push\_back(new\_container.size());
+00169             \}
+00170 
+\hypertarget{cartesian-product_8hh_source_l00174}{}\hyperlink{classeos_1_1CartesianProduct_a34cc259ef3e5c9e0773e816449787abd}{00174}             \hyperlink{classeos_1_1CartesianProduct_aa2ff28e4a1845a8ee763a877a8cd4346}{Iterator} \hyperlink{classeos_1_1CartesianProduct_a34cc259ef3e5c9e0773e816449787abd}{begin}()\textcolor{keyword}{ const}
+00175 \textcolor{keyword}{            }\{
+00176                 \textcolor{keywordflow}{return} \hyperlink{classeos_1_1CartesianProduct_aa2ff28e4a1845a8ee763a877a8cd4346}{Iterator}(\_begin, \_sizes, \textcolor{keyword}{false});
+00177             \}
+00178 
+\hypertarget{cartesian-product_8hh_source_l00182}{}\hyperlink{classeos_1_1CartesianProduct_a7c37fe657fc7d312ae482ab581d3392f}{00182}             \hyperlink{classeos_1_1CartesianProduct_aa2ff28e4a1845a8ee763a877a8cd4346}{Iterator} \hyperlink{classeos_1_1CartesianProduct_a7c37fe657fc7d312ae482ab581d3392f}{end}()\textcolor{keyword}{ const}
+00183 \textcolor{keyword}{            }\{
+00184                 \textcolor{keywordflow}{return} \hyperlink{classeos_1_1CartesianProduct_aa2ff28e4a1845a8ee763a877a8cd4346}{Iterator}(\_end, \_sizes, \textcolor{keyword}{true});
+00185             \}
+00186 
+\hypertarget{cartesian-product_8hh_source_l00191}{}\hyperlink{classeos_1_1CartesianProduct_a5825cf1120b0464a9ce21c65239f0c9b}{00191}             \textcolor{keywordtype}{size\_t} \hyperlink{classeos_1_1CartesianProduct_a5825cf1120b0464a9ce21c65239f0c9b}{size}()\textcolor{keyword}{ const}
+00192 \textcolor{keyword}{            }\{
+00193                 \textcolor{keywordflow}{return} \_size;
+00194             \}
+00195     \};
+00196 \}
+00197 
+00198 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

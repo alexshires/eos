@@ -1,0 +1,81 @@
+\hypertarget{classeos_1_1HierarchicalClustering_1_1Component}{
+\section{eos::HierarchicalClustering::Component Class Reference}
+\label{classeos_1_1HierarchicalClustering_1_1Component}\index{eos::HierarchicalClustering::Component@{eos::HierarchicalClustering::Component}}
+}
+
+
+{\ttfamily \#include $<$hierarchical-\/clustering.hh$>$}
+
+Inherits \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern$<$ HierarchicalClustering::Component $>$}.\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1HierarchicalClustering_1_1Component_a1720f61d18110629f9e729a1bf9d81e8}{Component} (const std::vector$<$ double $>$ \&mean, const std::vector$<$ double $>$ \&covariance, const double \&weight)
+\item 
+\hyperlink{classeos_1_1HierarchicalClustering_1_1Component_a51da212f42ff52a2c85e7b870996f27c}{Component} (const gsl\_\-vector $\ast$mean, const gsl\_\-matrix $\ast$covariance, const double \&weight)
+\item 
+\hyperlink{classeos_1_1HierarchicalClustering_1_1Component_ab54a490e72686f90c0bf78ea9f756722}{$\sim$Component} ()
+\item 
+gsl\_\-matrix $\ast$ \hyperlink{classeos_1_1HierarchicalClustering_1_1Component_a7476d18489400cb38d9d5a9d84a8175b}{covariance} () const 
+\item 
+const gsl\_\-matrix $\ast$ \hyperlink{classeos_1_1HierarchicalClustering_1_1Component_acf9bec75b31723425216860cd83f640b}{inverse\_\-covariance} () const 
+\item 
+const double \& \hyperlink{classeos_1_1HierarchicalClustering_1_1Component_aa21ab8490577e43c23d8778da83e2e46}{determinant} () const 
+\item 
+gsl\_\-vector $\ast$ \hyperlink{classeos_1_1HierarchicalClustering_1_1Component_af164b5ba0a2ba3b3792a21fb284bb119}{mean} () const 
+\item 
+double \& \hyperlink{classeos_1_1HierarchicalClustering_1_1Component_a18b8d0c7a2fd0b9b6b15647803424564}{weight} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Describe a component of a Gaussian mixture density, characterized by mean, covariance and weight. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classeos_1_1HierarchicalClustering_1_1Component_a1720f61d18110629f9e729a1bf9d81e8}{
+\index{eos::HierarchicalClustering::Component@{eos::HierarchicalClustering::Component}!Component@{Component}}
+\index{Component@{Component}!eos::HierarchicalClustering::Component@{eos::HierarchicalClustering::Component}}
+\subsubsection[{Component}]{\setlength{\rightskip}{0pt plus 5cm}eos::HierarchicalClustering::Component::Component (const std::vector$<$ double $>$ \& {\em mean}, \/  const std::vector$<$ double $>$ \& {\em covariance}, \/  const double \& {\em weight})}}
+\label{classeos_1_1HierarchicalClustering_1_1Component_a1720f61d18110629f9e729a1bf9d81e8}
+\hypertarget{classeos_1_1HierarchicalClustering_1_1Component_a51da212f42ff52a2c85e7b870996f27c}{
+\index{eos::HierarchicalClustering::Component@{eos::HierarchicalClustering::Component}!Component@{Component}}
+\index{Component@{Component}!eos::HierarchicalClustering::Component@{eos::HierarchicalClustering::Component}}
+\subsubsection[{Component}]{\setlength{\rightskip}{0pt plus 5cm}eos::HierarchicalClustering::Component::Component (const gsl\_\-vector $\ast$ {\em mean}, \/  const gsl\_\-matrix $\ast$ {\em covariance}, \/  const double \& {\em weight})}}
+\label{classeos_1_1HierarchicalClustering_1_1Component_a51da212f42ff52a2c85e7b870996f27c}
+\hypertarget{classeos_1_1HierarchicalClustering_1_1Component_ab54a490e72686f90c0bf78ea9f756722}{
+\index{eos::HierarchicalClustering::Component@{eos::HierarchicalClustering::Component}!$\sim$Component@{$\sim$Component}}
+\index{$\sim$Component@{$\sim$Component}!eos::HierarchicalClustering::Component@{eos::HierarchicalClustering::Component}}
+\subsubsection[{$\sim$Component}]{\setlength{\rightskip}{0pt plus 5cm}eos::HierarchicalClustering::Component::$\sim$Component ()}}
+\label{classeos_1_1HierarchicalClustering_1_1Component_ab54a490e72686f90c0bf78ea9f756722}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classeos_1_1HierarchicalClustering_1_1Component_a7476d18489400cb38d9d5a9d84a8175b}{
+\index{eos::HierarchicalClustering::Component@{eos::HierarchicalClustering::Component}!covariance@{covariance}}
+\index{covariance@{covariance}!eos::HierarchicalClustering::Component@{eos::HierarchicalClustering::Component}}
+\subsubsection[{covariance}]{\setlength{\rightskip}{0pt plus 5cm}gsl\_\-matrix$\ast$ eos::HierarchicalClustering::Component::covariance () const}}
+\label{classeos_1_1HierarchicalClustering_1_1Component_a7476d18489400cb38d9d5a9d84a8175b}
+\hypertarget{classeos_1_1HierarchicalClustering_1_1Component_aa21ab8490577e43c23d8778da83e2e46}{
+\index{eos::HierarchicalClustering::Component@{eos::HierarchicalClustering::Component}!determinant@{determinant}}
+\index{determinant@{determinant}!eos::HierarchicalClustering::Component@{eos::HierarchicalClustering::Component}}
+\subsubsection[{determinant}]{\setlength{\rightskip}{0pt plus 5cm}const double\& eos::HierarchicalClustering::Component::determinant () const}}
+\label{classeos_1_1HierarchicalClustering_1_1Component_aa21ab8490577e43c23d8778da83e2e46}
+\hypertarget{classeos_1_1HierarchicalClustering_1_1Component_acf9bec75b31723425216860cd83f640b}{
+\index{eos::HierarchicalClustering::Component@{eos::HierarchicalClustering::Component}!inverse\_\-covariance@{inverse\_\-covariance}}
+\index{inverse\_\-covariance@{inverse\_\-covariance}!eos::HierarchicalClustering::Component@{eos::HierarchicalClustering::Component}}
+\subsubsection[{inverse\_\-covariance}]{\setlength{\rightskip}{0pt plus 5cm}const gsl\_\-matrix$\ast$ eos::HierarchicalClustering::Component::inverse\_\-covariance () const}}
+\label{classeos_1_1HierarchicalClustering_1_1Component_acf9bec75b31723425216860cd83f640b}
+\hypertarget{classeos_1_1HierarchicalClustering_1_1Component_af164b5ba0a2ba3b3792a21fb284bb119}{
+\index{eos::HierarchicalClustering::Component@{eos::HierarchicalClustering::Component}!mean@{mean}}
+\index{mean@{mean}!eos::HierarchicalClustering::Component@{eos::HierarchicalClustering::Component}}
+\subsubsection[{mean}]{\setlength{\rightskip}{0pt plus 5cm}gsl\_\-vector$\ast$ eos::HierarchicalClustering::Component::mean () const}}
+\label{classeos_1_1HierarchicalClustering_1_1Component_af164b5ba0a2ba3b3792a21fb284bb119}
+\hypertarget{classeos_1_1HierarchicalClustering_1_1Component_a18b8d0c7a2fd0b9b6b15647803424564}{
+\index{eos::HierarchicalClustering::Component@{eos::HierarchicalClustering::Component}!weight@{weight}}
+\index{weight@{weight}!eos::HierarchicalClustering::Component@{eos::HierarchicalClustering::Component}}
+\subsubsection[{weight}]{\setlength{\rightskip}{0pt plus 5cm}double\& eos::HierarchicalClustering::Component::weight () const}}
+\label{classeos_1_1HierarchicalClustering_1_1Component_a18b8d0c7a2fd0b9b6b15647803424564}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{hierarchical-clustering_8hh}{hierarchical-\/clustering.hh}\end{DoxyCompactItemize}

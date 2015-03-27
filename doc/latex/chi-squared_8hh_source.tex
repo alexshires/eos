@@ -1,0 +1,93 @@
+\hypertarget{chi-squared_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/chi-\/squared.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2010 Danny van Dyk}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_CHI\_SQUARED\_HH}
+\hypertarget{chi-squared_8hh_source_l00021}{}\hyperlink{chi-squared_8hh_ae30f53ca6bf69d4e5c12f08df13686f1}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_CHI\_SQUARED\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{preprocessor}{#include <\hyperlink{exception_8hh}{eos/utils/exception.hh}>}
+00024 
+00025 \textcolor{preprocessor}{#include <functional>}
+00026 
+00027 \textcolor{keyword}{namespace }eos
+00028 \{
+\hypertarget{chi-squared_8hh_source_l00029}{}\hyperlink{structeos_1_1ChiSquared}{00029}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1ChiSquared}{ChiSquared}
+00030     \{
+00031         \textcolor{comment}{/*}
+00032 \textcolor{comment}{         * Signature for Chi-Squared functions.}
+00033 \textcolor{comment}{         */}
+00034 
+\hypertarget{chi-squared_8hh_source_l00035}{}\hyperlink{structeos_1_1ChiSquared_a27e9ed6fbc17e90137b66be99d417462}{00035}         \textcolor{keyword}{typedef} std::function<double (double, double, double, double, double, dou
+      ble)> \hyperlink{structeos_1_1ChiSquared_a27e9ed6fbc17e90137b66be99d417462}{Function};
+00036 
+00037         \textcolor{comment}{/*}
+00038 \textcolor{comment}{         * Chi-Squared function with theory offset.}
+00039 \textcolor{comment}{         *}
+00040 \textcolor{comment}{         * Calculation according to [BHvD2010], Eq. (4.20)}
+00041 \textcolor{comment}{         *}
+00042 \textcolor{comment}{         * @theory\_min:         Minimal value of theory prediction.}
+00043 \textcolor{comment}{         * @theory\_central:     Central value of theory prediction.}
+00044 \textcolor{comment}{         * @theory\_max:         Maximal value of theory prediction.}
+00045 \textcolor{comment}{         * @experiment\_min:     Minimal value of experimental measurement.}
+00046 \textcolor{comment}{         * @experiment\_central: Central value of experimental measurement.}
+00047 \textcolor{comment}{         * @experiment\_max:     Maximal value of experimental measurement.}
+00048 \textcolor{comment}{         */}
+00049         \textcolor{keyword}{static} \textcolor{keywordtype}{double} \hyperlink{structeos_1_1ChiSquared_a842a35bc7a2117ec1caa5f255795e3e7}{with_theory_offset}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & theory\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} 
+      & theory\_central, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & theory\_max,
+00050                 \textcolor{keyword}{const} \textcolor{keywordtype}{double} & experiment\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & experiment\_central,
+       \textcolor{keyword}{const} \textcolor{keywordtype}{double} & experiment\_max);
+00051 
+00052         \textcolor{comment}{/*}
+00053 \textcolor{comment}{         * Chi-Squared function with combined uncertainty from theory and experim
+      ent.}
+00054 \textcolor{comment}{         *}
+00055 \textcolor{comment}{         *   chi = (th\_cen - exp\_cen) / sqrt(sigma^2 + delta\_\(\backslash\)pm^2)}
+00056 \textcolor{comment}{         *}
+00057 \textcolor{comment}{         * @theory\_min:         Minimal value of theory prediction.}
+00058 \textcolor{comment}{         * @theory\_central:     Central value of theory prediction.}
+00059 \textcolor{comment}{         * @theory\_max:         Maximal value of theory prediction.}
+00060 \textcolor{comment}{         * @experiment\_min:     Minimal value of experimental measurement.}
+00061 \textcolor{comment}{         * @experiment\_central: Central value of experimental measurement.}
+00062 \textcolor{comment}{         * @experiment\_max:     Maximal value of experimental measurement.}
+00063 \textcolor{comment}{         */}
+00064         \textcolor{keyword}{static} \textcolor{keywordtype}{double} \hyperlink{structeos_1_1ChiSquared_abaedf2005be3dd65831edfae46e97df5}{with_combined_uncertainties}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & theory\_min, \textcolor{keyword}{cons
+      t} \textcolor{keywordtype}{double} & theory\_central, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & theory\_max,
+00065                 \textcolor{keyword}{const} \textcolor{keywordtype}{double} & experiment\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & experiment\_central,
+       \textcolor{keyword}{const} \textcolor{keywordtype}{double} & experiment\_max);
+00066 
+00067         \textcolor{comment}{/*}
+00068 \textcolor{comment}{         * Factory method to create a ChiSquared::Function from a given name}
+00069 \textcolor{comment}{         */}
+00070         \textcolor{keyword}{static} \hyperlink{structeos_1_1ChiSquared_a27e9ed6fbc17e90137b66be99d417462}{Function} \hyperlink{structeos_1_1ChiSquared_af6ffe7a8101cbc26a837d8359d9784ee}{make}(\textcolor{keyword}{const} std::string & name);
+00071     \};
+00072 
+\hypertarget{chi-squared_8hh_source_l00073}{}\hyperlink{structeos_1_1NoSuchChiSquaredError}{00073}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1NoSuchChiSquaredError}{NoSuchChiSquaredError} :
+00074         \textcolor{keyword}{public} \hyperlink{classeos_1_1Exception}{Exception}
+00075     \{
+00076         \hyperlink{structeos_1_1NoSuchChiSquaredError_afe6bd8a569bff7d6485a42416402b0f5}{NoSuchChiSquaredError}(\textcolor{keyword}{const} std::string & name);
+00077     \};
+00078 \}
+00079 
+00080 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

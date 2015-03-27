@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1PriorSampler" kind="class" prot="public">
+    <compoundname>eos::PriorSampler</compoundname>
+    <basecompoundref refid="classeos_1_1PrivateImplementationPattern" prot="public" virt="non-virtual">eos::PrivateImplementationPattern&lt; PriorSampler &gt;</basecompoundref>
+    <includes refid="prior__sampler_8hh" local="no">prior_sampler.hh</includes>
+    <innerclass refid="structeos_1_1PriorSampler_1_1Config" prot="public">eos::PriorSampler::Config</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classeos_1_1PriorSampler_1a7ae349c306b96abd4507bd2ea2e14b86" prot="public" static="no">
+        <type><ref refid="classeos_1_1hdf5_1_1Array" kindref="compound">hdf5::Array</ref>&lt; 1, double &gt;</type>
+        <definition>typedef hdf5::Array&lt;1, double&gt; eos::PriorSampler::ObservablesType</definition>
+        <argsstring></argsstring>
+        <name>ObservablesType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/prior_sampler.hh" line="44" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/prior_sampler.hh" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classeos_1_1PriorSampler_1a6da96aefb4891f1acb9366c8ffccd223" prot="public" static="no">
+        <type>std::vector&lt; std::vector&lt; double &gt; &gt;</type>
+        <definition>typedef std::vector&lt;std::vector&lt;double&gt; &gt; eos::PriorSampler::SamplesList</definition>
+        <argsstring></argsstring>
+        <name>SamplesList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/prior_sampler.hh" line="45" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/prior_sampler.hh" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classeos_1_1PriorSampler_1a999109fc4dcf705444089aff091dc620" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1hdf5_1_1Array" kindref="compound">ObservablesType</ref></type>
+        <definition>static ObservablesType eos::PriorSampler::observables_type</definition>
+        <argsstring>(const unsigned &amp;dimension)</argsstring>
+        <name>observables_type</name>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>dimension</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/prior_sampler.hh" line="47"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1PriorSampler_1afa682fec47cec9d61b44709b1e8f4ea3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::PriorSampler::PriorSampler</definition>
+        <argsstring>(const ObservableSet &amp;observables, const Config &amp;config)</argsstring>
+        <name>PriorSampler</name>
+        <param>
+          <type>const <ref refid="classeos_1_1ObservableSet" kindref="compound">ObservableSet</ref> &amp;</type>
+          <declname>observables</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structeos_1_1PriorSampler_1_1Config" kindref="compound">Config</ref> &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>observables</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>list of observables, can be extended through <ref refid="classeos_1_1PriorSampler_1aedf28860d2238779355f6fd583555851" kindref="member">add()</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>configuration options. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/prior_sampler.hh" line="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1PriorSampler_1ad58ef7a11610b6c0bbbec96a9189395f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::PriorSampler::~PriorSampler</definition>
+        <argsstring>()</argsstring>
+        <name>~PriorSampler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/prior_sampler.hh" line="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1PriorSampler_1aedf28860d2238779355f6fd583555851" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool eos::PriorSampler::add</definition>
+        <argsstring>(const LogPriorPtr &amp;prior)</argsstring>
+        <name>add</name>
+        <param>
+          <type>const <ref refid="namespaceeos_1ac5481e3b46ee55ff24606ee7f6e78651" kindref="member">LogPriorPtr</ref> &amp;</type>
+          <declname>prior</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a parameter with its prior to sample from. <simplesect kind="return"><para>false if prior was not added successfully. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/prior_sampler.hh" line="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1PriorSampler_1ad402bbf857e13b0ce3c6af174e8c72dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool eos::PriorSampler::add</definition>
+        <argsstring>(const ObservablePtr &amp;observable)</argsstring>
+        <name>add</name>
+        <param>
+          <type>const <ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref> &amp;</type>
+          <declname>observable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add an observable for which the the uncertainty is to be evaluated. <simplesect kind="return"><para>false if identical to an existing observable. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/prior_sampler.hh" line="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1PriorSampler_1a62210b9eb8835714166f9ce2689685e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::PriorSampler::run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start the sampling process and store the calculated observable values to disk. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/prior_sampler.hh" line="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1PriorSampler_1a610cb408ecf74f29d8632c3b5b264c91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::PriorSampler::run</definition>
+        <argsstring>(const SamplesList &amp;samples, const std::vector&lt; ParameterDescription &gt; &amp;)</argsstring>
+        <name>run</name>
+        <param>
+          <type>const <ref refid="classeos_1_1PriorSampler_1a6da96aefb4891f1acb9366c8ffccd223" kindref="member">SamplesList</ref> &amp;</type>
+          <declname>samples</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="structeos_1_1ParameterDescription" kindref="compound">ParameterDescription</ref> &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate observables at the given parameter samples. The order and meaning of parameters in a sample are specified by the parameter descriptions. <simplesect kind="note"><para>No new samples are drawn from the priors. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/prior_sampler.hh" line="85"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Perform simple uncertainty propagation by defining parameters to be varied, and the observables whose variation one is interested in. <ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref> values are sampled directly from 1D priors. All observable values are stored to disk. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="848">
+        <label>eos::PriorSampler</label>
+        <link refid="classeos_1_1PriorSampler"/>
+        <childnode refid="849" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="849">
+        <label>eos::PrivateImplementationPattern&lt; PriorSampler &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="850">
+        <label>eos::PriorSampler</label>
+        <link refid="classeos_1_1PriorSampler"/>
+        <childnode refid="851" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="851">
+        <label>eos::PrivateImplementationPattern&lt; PriorSampler &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/prior_sampler.hh" line="40" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/prior_sampler.hh" bodystart="38" bodyend="86"/>
+    <listofallmembers>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a232940e78b26c6ed4f97196f831c69c9" prot="protected" virt="non-virtual"><scope>eos::PriorSampler</scope><name>_imp</name></member>
+      <member refid="classeos_1_1PriorSampler_1aedf28860d2238779355f6fd583555851" prot="public" virt="non-virtual"><scope>eos::PriorSampler</scope><name>add</name></member>
+      <member refid="classeos_1_1PriorSampler_1ad402bbf857e13b0ce3c6af174e8c72dd" prot="public" virt="non-virtual"><scope>eos::PriorSampler</scope><name>add</name></member>
+      <member refid="classeos_1_1PriorSampler_1a999109fc4dcf705444089aff091dc620" prot="public" virt="non-virtual"><scope>eos::PriorSampler</scope><name>observables_type</name></member>
+      <member refid="classeos_1_1PriorSampler_1a7ae349c306b96abd4507bd2ea2e14b86" prot="public" virt="non-virtual"><scope>eos::PriorSampler</scope><name>ObservablesType</name></member>
+      <member refid="classeos_1_1PriorSampler_1afa682fec47cec9d61b44709b1e8f4ea3" prot="public" virt="non-virtual"><scope>eos::PriorSampler</scope><name>PriorSampler</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a3e3d5f4a565256a1dda6c234b051b2f2" prot="public" virt="non-virtual"><scope>eos::PriorSampler</scope><name>PrivateImplementationPattern</name></member>
+      <member refid="classeos_1_1PriorSampler_1a62210b9eb8835714166f9ce2689685e3" prot="public" virt="non-virtual"><scope>eos::PriorSampler</scope><name>run</name></member>
+      <member refid="classeos_1_1PriorSampler_1a610cb408ecf74f29d8632c3b5b264c91" prot="public" virt="non-virtual"><scope>eos::PriorSampler</scope><name>run</name></member>
+      <member refid="classeos_1_1PriorSampler_1a6da96aefb4891f1acb9366c8ffccd223" prot="public" virt="non-virtual"><scope>eos::PriorSampler</scope><name>SamplesList</name></member>
+      <member refid="classeos_1_1PriorSampler_1ad58ef7a11610b6c0bbbec96a9189395f" prot="public" virt="non-virtual"><scope>eos::PriorSampler</scope><name>~PriorSampler</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1acf46ec2739c3b0ec9702b9428475876d" prot="public" virt="non-virtual"><scope>eos::PriorSampler</scope><name>~PrivateImplementationPattern</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

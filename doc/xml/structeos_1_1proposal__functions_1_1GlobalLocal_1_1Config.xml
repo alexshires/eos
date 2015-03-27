@@ -1,0 +1,325 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config" kind="struct" prot="public">
+    <compoundname>eos::proposal_functions::GlobalLocal::Config</compoundname>
+    <includes refid="proposal__functions_8hh" local="no">proposal_functions.hh</includes>
+      <sectiondef kind="user-defined">
+      <header>Construction options</header>
+      <description><para><anchor id="_1amgrpe7d736f6295bfb615e746cba52f7f946"/> </para></description>
+      <memberdef kind="variable" id="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1a6632462782aaefb7279fdb34f46d6d9c" prot="public" static="no" mutable="no">
+        <type><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange</ref>&lt; double &gt;</type>
+        <definition>VerifiedRange&lt;double&gt; eos::proposal_functions::GlobalLocal::Config::clustering_maximum_r_value</definition>
+        <argsstring></argsstring>
+        <name>clustering_maximum_r_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>When chains have a common R-value less than this, they are considered to overlap sufficiently. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="195" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1a9a530636287156e4ee98cb1ee2f04317" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool eos::proposal_functions::GlobalLocal::Config::clustering_strict_r_value</definition>
+        <argsstring></argsstring>
+        <name>clustering_strict_r_value</name>
+        <briefdescription>
+<para>Use strict definition of R or relaxed version. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="198" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1aafced70f6b662a177bdb7697cf107065" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool eos::proposal_functions::GlobalLocal::Config::equal_weight_components</definition>
+        <argsstring></argsstring>
+        <name>equal_weight_components</name>
+        <briefdescription>
+<para>Use same probability to draw from each cluster, at least initially. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="201" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1aecbd678a2838e79d850bb7aa732bb8cd" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool eos::proposal_functions::GlobalLocal::Config::join_chains_symmetrically</definition>
+        <argsstring></argsstring>
+        <name>join_chains_symmetrically</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Join chains symmetrically such that each chain&apos;s history (excluding the part from skip_initial) has equal contribution to the covariance matrix </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="208" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1a1ab33a4656cb4c0f4eed805b9394c221" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned eos::proposal_functions::GlobalLocal::Config::history_points</definition>
+        <argsstring></argsstring>
+        <name>history_points</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of points selected from a single chain&apos;s history, useful for initializing population Monte Carlo </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="212" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1ac6b275330dd84325a42c3715d318551f" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned eos::proposal_functions::GlobalLocal::Config::history_points_local_covariance_size</definition>
+        <argsstring></argsstring>
+        <name>history_points_local_covariance_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If non-zero, compute covariance around each history point locally, with the number of samples given. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="218" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1a74fc0b244166ec0fe894422ad254ca06" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool eos::proposal_functions::GlobalLocal::Config::history_points_ordered</definition>
+        <argsstring></argsstring>
+        <name>history_points_ordered</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Choose the points from the ones with highest posterior or on a fixed grid (e.g. every 500th point) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="222" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1a67a276c92681a1da8953365d058b2951" prot="public" static="no" mutable="no">
+        <type><ref refid="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1aeab1a700da2a313d2cdd5936752e34ce" kindref="member">HistoryPointWeighting</ref></type>
+        <definition>HistoryPointWeighting eos::proposal_functions::GlobalLocal::Config::history_point_weighting</definition>
+        <argsstring></argsstring>
+        <name>history_point_weighting</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Use log(posterior) to assign relative weight to history points within each cluster. Else use posterior. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="228" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1ab46531993b150f25845f03a98046f768" prot="public" static="no" mutable="no">
+        <type><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange</ref>&lt; double &gt;</type>
+        <definition>VerifiedRange&lt;double&gt; eos::proposal_functions::GlobalLocal::Config::minimum_relative_cluster_weight</definition>
+        <argsstring></argsstring>
+        <name>minimum_relative_cluster_weight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If a cluster&apos;s weight relative to the &quot;heaviest&quot; cluster falls below this threshold, the cluster is discarded. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="232" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1a42bdc4d80a759f9daab15d01b0edf4b6" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool eos::proposal_functions::GlobalLocal::Config::perform_clustering</definition>
+        <argsstring></argsstring>
+        <name>perform_clustering</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare chains by their R-values and merge them together. Else just put all chains from one partition together. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="236" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1a70f82cec4c0a992cf70a53c771e89c9d" prot="public" static="no" mutable="no">
+        <type><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange</ref>&lt; double &gt;</type>
+        <definition>VerifiedRange&lt;double&gt; eos::proposal_functions::GlobalLocal::Config::rescale_local_covariance</definition>
+        <argsstring></argsstring>
+        <name>rescale_local_covariance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>In order to increase efficiency, the local proposal covariance scale can be divided. Default value: 1.0, i.e. don&apos;t rescale. <simplesect kind="note"><para>Only meaningful if join_chains_symmetrically is true </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="244" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1aa325beb2f96d399f28841ee802fb5584" prot="public" static="no" mutable="no">
+        <type><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange</ref>&lt; double &gt;</type>
+        <definition>VerifiedRange&lt;double&gt; eos::proposal_functions::GlobalLocal::Config::skip_initial</definition>
+        <argsstring></argsstring>
+        <name>skip_initial</name>
+        <briefdescription>
+<para>Skip this percentage from beginning of a chain&apos;s history. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="247" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Runtime behavior options</header>
+      <description><para><anchor id="_1amgrpa7b8cf86c5424d8cf2c571d4b97d7ef9"/> </para></description>
+      <memberdef kind="variable" id="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1afc5df7dfbda07b6296b48bb3147f91ab" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::proposal_functions::GlobalLocal::Config::cooling_power</definition>
+        <argsstring></argsstring>
+        <name>cooling_power</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Combinining the component probabilities of this and the previous step, limit the effect of samples in the distant past by forming a weighted average of last component probability,  and the frequency encountered in the last chunk, . In the (n+1)-th step,</para><para>{n+1} = (1 - 1/n^{cooling_power})  + 1/n^{cooling_power} * f_n</para><para>cf. arxiv:0903.0837, Eq. (23) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="264" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1ad078b40f919f62b9311f433b1152bbb6" prot="public" static="no" mutable="no">
+        <type><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange</ref>&lt; double &gt;</type>
+        <definition>VerifiedRange&lt;double&gt; eos::proposal_functions::GlobalLocal::Config::local_jump_probability</definition>
+        <argsstring></argsstring>
+        <name>local_jump_probability</name>
+        <briefdescription>
+<para>How often is a local jump proposed instead of a global one. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="267" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1a81dad6982f265eccfc5f1d030f0ff5a7" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; unsigned &gt;</type>
+        <definition>std::vector&lt;unsigned&gt; eos::proposal_functions::GlobalLocal::Config::long_jump_indices</definition>
+        <argsstring></argsstring>
+        <name>long_jump_indices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If non-empty, all dimensions are masked and changes occur only in the dimensions specified by the indices. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="271" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1aeab1a700da2a313d2cdd5936752e34ce" prot="public" static="no">
+        <name>HistoryPointWeighting</name>
+        <enumvalue id="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1aeab1a700da2a313d2cdd5936752e34cea987cb330841992b5745daf1e94545ed8" prot="public">
+          <name>posterior</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1aeab1a700da2a313d2cdd5936752e34cea6b25ac86fe8e91e3455e49b9da62bcab" prot="public">
+          <name>log_posterior</name>
+          <briefdescription>
+<para>use posterior as weight </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1aeab1a700da2a313d2cdd5936752e34cea0ad0c6606345c9fc44bb5fe292b44c60" prot="public">
+          <name>equal</name>
+          <briefdescription>
+<para>use log(posterior) as weight </para>          </briefdescription>
+          <detaileddescription>
+<para>all points have same probability </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Choices on how to choose relative weight of a history point </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="181" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="180" bodyend="185"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1a4eee7277aabb745fd3ebf3f1cabe63c0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::proposal_functions::GlobalLocal::Config::Config</definition>
+        <argsstring>()</argsstring>
+        <name>Config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="172"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1ab6e85ee9aa380cdb63827bbab9e4d1c8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config" kindref="compound">Config</ref></type>
+        <definition>static Config eos::proposal_functions::GlobalLocal::Config::Default</definition>
+        <argsstring>()</argsstring>
+        <name>Default</name>
+        <briefdescription>
+<para>Named constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="188"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="331">
+        <label>eos::VerifiedRange&lt; double &gt;</label>
+        <link refid="classeos_1_1VerifiedRange"/>
+      </node>
+      <node id="329">
+        <label>eos::proposal_functions::GlobalLocal::Config</label>
+        <link refid="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config"/>
+        <childnode refid="330" relation="usage">
+          <edgelabel>long_jump_indices</edgelabel>
+        </childnode>
+        <childnode refid="331" relation="usage">
+          <edgelabel>local_jump_probability</edgelabel>
+          <edgelabel>minimum_relative_cluster_weight</edgelabel>
+          <edgelabel>skip_initial</edgelabel>
+          <edgelabel>clustering_maximum_r_value</edgelabel>
+          <edgelabel>rescale_local_covariance</edgelabel>
+        </childnode>
+      </node>
+      <node id="330">
+        <label>std::vector&lt; unsigned &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="170" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="169" bodyend="273"/>
+    <listofallmembers>
+      <member refid="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1a6632462782aaefb7279fdb34f46d6d9c" prot="public" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal::Config</scope><name>clustering_maximum_r_value</name></member>
+      <member refid="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1a9a530636287156e4ee98cb1ee2f04317" prot="public" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal::Config</scope><name>clustering_strict_r_value</name></member>
+      <member refid="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1a4eee7277aabb745fd3ebf3f1cabe63c0" prot="private" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal::Config</scope><name>Config</name></member>
+      <member refid="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1afc5df7dfbda07b6296b48bb3147f91ab" prot="public" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal::Config</scope><name>cooling_power</name></member>
+      <member refid="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1ab6e85ee9aa380cdb63827bbab9e4d1c8" prot="public" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal::Config</scope><name>Default</name></member>
+      <member refid="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1aeab1a700da2a313d2cdd5936752e34cea0ad0c6606345c9fc44bb5fe292b44c60" prot="public" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal::Config</scope><name>equal</name></member>
+      <member refid="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1aafced70f6b662a177bdb7697cf107065" prot="public" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal::Config</scope><name>equal_weight_components</name></member>
+      <member refid="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1a67a276c92681a1da8953365d058b2951" prot="public" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal::Config</scope><name>history_point_weighting</name></member>
+      <member refid="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1a1ab33a4656cb4c0f4eed805b9394c221" prot="public" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal::Config</scope><name>history_points</name></member>
+      <member refid="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1ac6b275330dd84325a42c3715d318551f" prot="public" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal::Config</scope><name>history_points_local_covariance_size</name></member>
+      <member refid="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1a74fc0b244166ec0fe894422ad254ca06" prot="public" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal::Config</scope><name>history_points_ordered</name></member>
+      <member refid="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1aeab1a700da2a313d2cdd5936752e34ce" prot="public" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal::Config</scope><name>HistoryPointWeighting</name></member>
+      <member refid="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1aecbd678a2838e79d850bb7aa732bb8cd" prot="public" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal::Config</scope><name>join_chains_symmetrically</name></member>
+      <member refid="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1ad078b40f919f62b9311f433b1152bbb6" prot="public" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal::Config</scope><name>local_jump_probability</name></member>
+      <member refid="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1aeab1a700da2a313d2cdd5936752e34cea6b25ac86fe8e91e3455e49b9da62bcab" prot="public" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal::Config</scope><name>log_posterior</name></member>
+      <member refid="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1a81dad6982f265eccfc5f1d030f0ff5a7" prot="public" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal::Config</scope><name>long_jump_indices</name></member>
+      <member refid="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1ab46531993b150f25845f03a98046f768" prot="public" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal::Config</scope><name>minimum_relative_cluster_weight</name></member>
+      <member refid="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1a42bdc4d80a759f9daab15d01b0edf4b6" prot="public" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal::Config</scope><name>perform_clustering</name></member>
+      <member refid="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1aeab1a700da2a313d2cdd5936752e34cea987cb330841992b5745daf1e94545ed8" prot="public" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal::Config</scope><name>posterior</name></member>
+      <member refid="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1a70f82cec4c0a992cf70a53c771e89c9d" prot="public" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal::Config</scope><name>rescale_local_covariance</name></member>
+      <member refid="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_1aa325beb2f96d399f28841ee802fb5584" prot="public" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal::Config</scope><name>skip_initial</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

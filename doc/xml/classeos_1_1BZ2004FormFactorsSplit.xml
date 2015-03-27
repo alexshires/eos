@@ -1,0 +1,978 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1BZ2004FormFactorsSplit" kind="class" prot="public">
+    <compoundname>eos::BZ2004FormFactorsSplit</compoundname>
+    <basecompoundref refid="classeos_1_1FormFactors_3_01PToP_01_4" prot="public" virt="non-virtual">eos::FormFactors&lt; PToP &gt;</basecompoundref>
+    <includes refid="mesonic-impl_8hh" local="no">mesonic-impl.hh</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Process_</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1af0b9b285a38066ff90d1e4d82321d24d" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1UsedParameter" kindref="compound">UsedParameter</ref></type>
+        <definition>UsedParameter eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_p_factor</definition>
+        <argsstring></argsstring>
+        <name>_f_p_factor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="379" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="379" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1a0b11147099d0896ad955b287af59b4a4" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1UsedParameter" kindref="compound">UsedParameter</ref></type>
+        <definition>UsedParameter eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_0_factor</definition>
+        <argsstring></argsstring>
+        <name>_f_0_factor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="379" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="379" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1a9d395d62231a0f682ab2c5e01279d6f7" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1UsedParameter" kindref="compound">UsedParameter</ref></type>
+        <definition>UsedParameter eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_t_factor</definition>
+        <argsstring></argsstring>
+        <name>_f_t_factor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="379" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="379" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1a76761e5e63083729a4761a628fc1a004" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1UsedParameter" kindref="compound">UsedParameter</ref></type>
+        <definition>UsedParameter eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_a_1</definition>
+        <argsstring></argsstring>
+        <name>_a_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="401" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="401" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1a87814f4984c185eb74d34fea575e2a0e" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1UsedParameter" kindref="compound">UsedParameter</ref></type>
+        <definition>UsedParameter eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_a_2</definition>
+        <argsstring></argsstring>
+        <name>_a_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="401" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="401" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1a92682e196d26011240c15960f4978caf" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1UsedParameter" kindref="compound">UsedParameter</ref></type>
+        <definition>UsedParameter eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_a_4</definition>
+        <argsstring></argsstring>
+        <name>_a_4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="401" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="401" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1a8b2541777e0d91d87a9666a9514758e2" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_r1_p_asymptotic</definition>
+        <argsstring></argsstring>
+        <name>_r1_p_asymptotic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="381" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="381" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1ae9559c4d6d516e0fa01fb193835e750c" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_r2_p_asymptotic</definition>
+        <argsstring></argsstring>
+        <name>_r2_p_asymptotic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="381" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="381" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1a5a1a24b9f4c3d4bf2277d2b7605d1fee" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_r2_0_asymptotic</definition>
+        <argsstring></argsstring>
+        <name>_r2_0_asymptotic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="382" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="382" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1a899df6753e9f6fb2565f7ff7f759aaef" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_r1_t_asymptotic</definition>
+        <argsstring></argsstring>
+        <name>_r1_t_asymptotic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="383" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="383" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1a284fa750df359c0cbc6dc76715fad2b0" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_r2_t_asymptotic</definition>
+        <argsstring></argsstring>
+        <name>_r2_t_asymptotic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="383" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="383" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1aa88ed9b71d1d007fa87bf321c1718561" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_mfit2_0_asymptotic</definition>
+        <argsstring></argsstring>
+        <name>_mfit2_0_asymptotic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="384" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="384" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1a0fab35be188d9a40b51514f39f3c196e" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_m12_asymptotic</definition>
+        <argsstring></argsstring>
+        <name>_m12_asymptotic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="386" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="386" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1ad7a7104d8b61b28261638c49a27d239d" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_p_a_1</definition>
+        <argsstring></argsstring>
+        <name>_f_p_a_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="388" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="388" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1a3134c5f99bd3460a775af044857e3fef" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_p_b_1</definition>
+        <argsstring></argsstring>
+        <name>_f_p_b_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="388" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="388" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1ab39fdad9fa55a008c2eb3f329ee99aab" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_p_c_1</definition>
+        <argsstring></argsstring>
+        <name>_f_p_c_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="388" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="388" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1a43eb9254464fcd311c6539726b1140ad" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_p_d_1</definition>
+        <argsstring></argsstring>
+        <name>_f_p_d_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="388" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="388" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1ab7aae8a36f368d8c6e0f26b6c056203e" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_p_a_2</definition>
+        <argsstring></argsstring>
+        <name>_f_p_a_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="389" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="389" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1afa4a3e3580f5aa9cf5809a3cd8a0313a" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_p_b_2</definition>
+        <argsstring></argsstring>
+        <name>_f_p_b_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="389" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="389" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1a2fb04496faa6a215aea37bd5e7fe1a16" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_p_c_2</definition>
+        <argsstring></argsstring>
+        <name>_f_p_c_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="389" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="389" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1ab7b442db1a9add993b60ea55cd9b4535" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_p_d_2</definition>
+        <argsstring></argsstring>
+        <name>_f_p_d_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="389" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="389" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1ad6f1439ba05eb4747541afdb4c2833a5" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_p_a_4</definition>
+        <argsstring></argsstring>
+        <name>_f_p_a_4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="390" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="390" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1a90a9dc4c5077a8f043753e62ba53df7d" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_p_b_4</definition>
+        <argsstring></argsstring>
+        <name>_f_p_b_4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="390" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="390" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1aa76b8b244edc5fdb61fac2558e500dea" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_p_c_4</definition>
+        <argsstring></argsstring>
+        <name>_f_p_c_4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="390" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="390" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1a9c4b20e5e6320be5030964c7c3c8da07" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_p_d_4</definition>
+        <argsstring></argsstring>
+        <name>_f_p_d_4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="390" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="390" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1a81ccb4c3a47313ba075c50ee865a8042" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_0_a_1</definition>
+        <argsstring></argsstring>
+        <name>_f_0_a_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="392" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="392" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1a78770770043c3314a5aa3dd2dd81b376" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_0_b_1</definition>
+        <argsstring></argsstring>
+        <name>_f_0_b_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="392" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="392" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1a94ad770000f75845b8616394ce017c03" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_0_c_1</definition>
+        <argsstring></argsstring>
+        <name>_f_0_c_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="392" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="392" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1a07b6968a73c10fec173880a3ab344f69" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_0_d_1</definition>
+        <argsstring></argsstring>
+        <name>_f_0_d_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="392" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="392" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1a13be8257f943900471cb90b7a920c95d" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_0_a_2</definition>
+        <argsstring></argsstring>
+        <name>_f_0_a_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="393" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="393" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1a2011afc64cf48034f4ac45f5e7c0d4fe" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_0_b_2</definition>
+        <argsstring></argsstring>
+        <name>_f_0_b_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="393" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="393" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1a16fd86859fa72eaef52095ec0c4b7a07" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_0_c_2</definition>
+        <argsstring></argsstring>
+        <name>_f_0_c_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="393" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="393" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1af0fb959d490b5f0d9c1155d79e7621ba" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_0_d_2</definition>
+        <argsstring></argsstring>
+        <name>_f_0_d_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="393" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="393" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1aecd2ab0f733fce0788971f16c8fca8ea" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_0_a_4</definition>
+        <argsstring></argsstring>
+        <name>_f_0_a_4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="394" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="394" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1a87513ca1c43261165991a8e309eed35e" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_0_b_4</definition>
+        <argsstring></argsstring>
+        <name>_f_0_b_4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="394" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="394" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1a1b345fc8bdf1fa70e664e7225b2a4547" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_0_c_4</definition>
+        <argsstring></argsstring>
+        <name>_f_0_c_4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="394" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="394" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1a4df87f4d12c7732be804068705eebd97" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_0_d_4</definition>
+        <argsstring></argsstring>
+        <name>_f_0_d_4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="394" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="394" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1aa0de338aacd0183e952732b4aff1dc44" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_t_a_1</definition>
+        <argsstring></argsstring>
+        <name>_f_t_a_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="396" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="396" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1aaa9d1aa042c443f65ffff75215004d61" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_t_b_1</definition>
+        <argsstring></argsstring>
+        <name>_f_t_b_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="396" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="396" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1a90033190092ab4c2221a5dc759dcca75" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_t_c_1</definition>
+        <argsstring></argsstring>
+        <name>_f_t_c_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="396" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="396" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1a6a634f73f296f06cf357e80b84dbad9c" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_t_d_1</definition>
+        <argsstring></argsstring>
+        <name>_f_t_d_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="396" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="396" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1a353a7dc01fe40e7e5e9159893302a25a" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_t_a_2</definition>
+        <argsstring></argsstring>
+        <name>_f_t_a_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="397" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1afc22dd8273434a465e5d5bf221d82ae7" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_t_b_2</definition>
+        <argsstring></argsstring>
+        <name>_f_t_b_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="397" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1ae01b0d85e30307d707d2ecd7476031f1" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_t_c_2</definition>
+        <argsstring></argsstring>
+        <name>_f_t_c_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="397" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1a6c128a5d552e721b2af9f436d2dbbb82" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_t_d_2</definition>
+        <argsstring></argsstring>
+        <name>_f_t_d_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="397" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1a24b1e0b757de6269f5a3d38d787252ee" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_t_a_4</definition>
+        <argsstring></argsstring>
+        <name>_f_t_a_4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="398" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="398" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1a7efa121271c0472ac88b91abf5e5f5f8" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_t_b_4</definition>
+        <argsstring></argsstring>
+        <name>_f_t_b_4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="398" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="398" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1a0bb1bd4bcc4f2d74e085a7374de7e69b" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_t_c_4</definition>
+        <argsstring></argsstring>
+        <name>_f_t_c_4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="398" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="398" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1BZ2004FormFactorsSplit_1a48eadd8323561b2456da404b4d52c685" prot="private" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::_f_t_d_4</definition>
+        <argsstring></argsstring>
+        <name>_f_t_d_4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="398" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="398" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classeos_1_1BZ2004FormFactorsSplit_1a0170b116c4fb215b15787a7afdf7bfd8" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::poly3</definition>
+        <argsstring>(const double &amp;s, const double &amp;a, const double &amp;b, const double &amp;c, const double &amp;d) const </argsstring>
+        <name>poly3</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="405" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="404" bodyend="407"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BZ2004FormFactorsSplit_1ace48c98963a46bf7b72d75368aa2406f" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::f_p_asymptotic</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>f_p_asymptotic</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="410" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="409" bodyend="413"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BZ2004FormFactorsSplit_1ade58fd3de20ea84683a0cd1159c6b533" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::f_0_asymptotic</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>f_0_asymptotic</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="416" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="415" bodyend="419"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BZ2004FormFactorsSplit_1a93c2388d6c3768645146170aa5e6b04a" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::f_t_asymptotic</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>f_t_asymptotic</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="422" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="421" bodyend="425"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1BZ2004FormFactorsSplit_1a2931b80b68b116f4f51c966649421286" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::BZ2004FormFactorsSplit</definition>
+        <argsstring>(const Parameters &amp;p, const Options &amp;)</argsstring>
+        <name>BZ2004FormFactorsSplit</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1Options" kindref="compound">Options</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="435" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="428" bodyend="436"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BZ2004FormFactorsSplit_1a58d02490b96eaea8923e8252205ec60a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>virtual double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::f_p</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>f_p</name>
+        <reimplements refid="classeos_1_1FormFactors_3_01PToP_01_4_1a987757eb4559de496005ed2730e78a10">f_p</reimplements>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="444" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="443" bodyend="450"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BZ2004FormFactorsSplit_1a4963dfd717bb53dcb1093535a6697e89" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>virtual double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::f_0</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>f_0</name>
+        <reimplements refid="classeos_1_1FormFactors_3_01PToP_01_4_1a097a12cde6acb9004d1a92cbb8e60734">f_0</reimplements>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="453" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="452" bodyend="459"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BZ2004FormFactorsSplit_1a395cb136ff1d486d5a0b0a2c0d5f7d10" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>virtual double eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::f_t</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>f_t</name>
+        <reimplements refid="classeos_1_1FormFactors_3_01PToP_01_4_1ae753d67d42936bd32b043838e7fb769a">f_t</reimplements>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="462" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="461" bodyend="468"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classeos_1_1BZ2004FormFactorsSplit_1a84eed9e4957fc8fedcb5f116abf40838" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>FormFactors&lt; <ref refid="structeos_1_1PToP" kindref="compound">PToP</ref> &gt; *</type>
+        <definition>static FormFactors&lt;PToP&gt;* eos::BZ2004FormFactorsSplit&lt; Process_ &gt;::make</definition>
+        <argsstring>(const Parameters &amp;parameters, unsigned)</argsstring>
+        <name>make</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="439" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="438" bodyend="441"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="214">
+        <label>eos::BZ2004FormFactorsSplit&lt; Process_ &gt;</label>
+        <link refid="classeos_1_1BZ2004FormFactorsSplit"/>
+        <childnode refid="215" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="216">
+        <label>eos::ParameterUser</label>
+        <link refid="classeos_1_1ParameterUser"/>
+      </node>
+      <node id="215">
+        <label>eos::FormFactors&lt; PToP &gt;</label>
+        <link refid="classeos_1_1FormFactors_3_01PToP_01_4"/>
+        <childnode refid="216" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="217">
+        <label>eos::BZ2004FormFactorsSplit&lt; Process_ &gt;</label>
+        <link refid="classeos_1_1BZ2004FormFactorsSplit"/>
+        <childnode refid="218" relation="public-inheritance">
+        </childnode>
+        <childnode refid="221" relation="usage">
+          <edgelabel>_f_0_factor</edgelabel>
+          <edgelabel>_f_p_factor</edgelabel>
+          <edgelabel>_a_1</edgelabel>
+          <edgelabel>_a_2</edgelabel>
+          <edgelabel>_a_4</edgelabel>
+          <edgelabel>_f_t_factor</edgelabel>
+        </childnode>
+      </node>
+      <node id="223">
+        <label>eos::Mutable</label>
+        <link refid="classeos_1_1Mutable"/>
+      </node>
+      <node id="222">
+        <label>eos::Parameter</label>
+        <link refid="classeos_1_1Parameter"/>
+        <childnode refid="223" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="221">
+        <label>eos::UsedParameter</label>
+        <link refid="classeos_1_1UsedParameter"/>
+        <childnode refid="222" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="220">
+        <label>std::set&lt; Parameter::Id &gt;</label>
+      </node>
+      <node id="219">
+        <label>eos::ParameterUser</label>
+        <link refid="classeos_1_1ParameterUser"/>
+        <childnode refid="220" relation="usage">
+          <edgelabel>_ids</edgelabel>
+        </childnode>
+      </node>
+      <node id="218">
+        <label>eos::FormFactors&lt; PToP &gt;</label>
+        <link refid="classeos_1_1FormFactors_3_01PToP_01_4"/>
+        <childnode refid="219" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="377" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="375" bodyend="469"/>
+    <listofallmembers>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a76761e5e63083729a4761a628fc1a004" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_a_1</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a87814f4984c185eb74d34fea575e2a0e" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_a_2</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a92682e196d26011240c15960f4978caf" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_a_4</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a81ccb4c3a47313ba075c50ee865a8042" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_0_a_1</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a13be8257f943900471cb90b7a920c95d" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_0_a_2</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1aecd2ab0f733fce0788971f16c8fca8ea" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_0_a_4</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a78770770043c3314a5aa3dd2dd81b376" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_0_b_1</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a2011afc64cf48034f4ac45f5e7c0d4fe" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_0_b_2</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a87513ca1c43261165991a8e309eed35e" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_0_b_4</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a94ad770000f75845b8616394ce017c03" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_0_c_1</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a16fd86859fa72eaef52095ec0c4b7a07" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_0_c_2</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a1b345fc8bdf1fa70e664e7225b2a4547" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_0_c_4</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a07b6968a73c10fec173880a3ab344f69" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_0_d_1</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1af0fb959d490b5f0d9c1155d79e7621ba" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_0_d_2</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a4df87f4d12c7732be804068705eebd97" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_0_d_4</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a0b11147099d0896ad955b287af59b4a4" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_0_factor</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1ad7a7104d8b61b28261638c49a27d239d" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_p_a_1</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1ab7aae8a36f368d8c6e0f26b6c056203e" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_p_a_2</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1ad6f1439ba05eb4747541afdb4c2833a5" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_p_a_4</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a3134c5f99bd3460a775af044857e3fef" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_p_b_1</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1afa4a3e3580f5aa9cf5809a3cd8a0313a" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_p_b_2</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a90a9dc4c5077a8f043753e62ba53df7d" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_p_b_4</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1ab39fdad9fa55a008c2eb3f329ee99aab" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_p_c_1</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a2fb04496faa6a215aea37bd5e7fe1a16" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_p_c_2</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1aa76b8b244edc5fdb61fac2558e500dea" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_p_c_4</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a43eb9254464fcd311c6539726b1140ad" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_p_d_1</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1ab7b442db1a9add993b60ea55cd9b4535" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_p_d_2</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a9c4b20e5e6320be5030964c7c3c8da07" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_p_d_4</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1af0b9b285a38066ff90d1e4d82321d24d" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_p_factor</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1aa0de338aacd0183e952732b4aff1dc44" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_t_a_1</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a353a7dc01fe40e7e5e9159893302a25a" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_t_a_2</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a24b1e0b757de6269f5a3d38d787252ee" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_t_a_4</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1aaa9d1aa042c443f65ffff75215004d61" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_t_b_1</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1afc22dd8273434a465e5d5bf221d82ae7" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_t_b_2</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a7efa121271c0472ac88b91abf5e5f5f8" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_t_b_4</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a90033190092ab4c2221a5dc759dcca75" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_t_c_1</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1ae01b0d85e30307d707d2ecd7476031f1" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_t_c_2</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a0bb1bd4bcc4f2d74e085a7374de7e69b" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_t_c_4</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a6a634f73f296f06cf357e80b84dbad9c" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_t_d_1</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a6c128a5d552e721b2af9f436d2dbbb82" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_t_d_2</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a48eadd8323561b2456da404b4d52c685" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_t_d_4</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a9d395d62231a0f682ab2c5e01279d6f7" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_f_t_factor</name></member>
+      <member refid="classeos_1_1ParameterUser_1aa3a0285297e16cf2a5830df1f9bb2f4b" prot="protected" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_ids</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a0fab35be188d9a40b51514f39f3c196e" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_m12_asymptotic</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1aa88ed9b71d1d007fa87bf321c1718561" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_mfit2_0_asymptotic</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a8b2541777e0d91d87a9666a9514758e2" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_r1_p_asymptotic</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a899df6753e9f6fb2565f7ff7f759aaef" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_r1_t_asymptotic</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a5a1a24b9f4c3d4bf2277d2b7605d1fee" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_r2_0_asymptotic</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1ae9559c4d6d516e0fa01fb193835e750c" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_r2_p_asymptotic</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a284fa750df359c0cbc6dc76715fad2b0" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>_r2_t_asymptotic</name></member>
+      <member refid="classeos_1_1ParameterUser_1a9cd569207063cd2a8f807c4e1203a5d4" prot="public" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>begin</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a2931b80b68b116f4f51c966649421286" prot="public" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>BZ2004FormFactorsSplit</name></member>
+      <member refid="classeos_1_1ParameterUser_1a7105631bbcb4b2492e6377b2b69f5b0f" prot="public" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>ConstIterator</name></member>
+      <member refid="classeos_1_1ParameterUser_1a5813c886f3fd3f074cc02a53fc9e0790" prot="public" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>end</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a4963dfd717bb53dcb1093535a6697e89" prot="public" virt="virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>f_0</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1ade58fd3de20ea84683a0cd1159c6b533" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>f_0_asymptotic</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a58d02490b96eaea8923e8252205ec60a" prot="public" virt="virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>f_p</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1ace48c98963a46bf7b72d75368aa2406f" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>f_p_asymptotic</name></member>
+      <member refid="classeos_1_1FormFactors_3_01PToP_01_4_1a16406f05b7715291b392f856fff988e2" prot="public" virt="virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>f_p_d1</name></member>
+      <member refid="classeos_1_1FormFactors_3_01PToP_01_4_1a875a81786cd947c56c0cdc1737455707" prot="public" virt="virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>f_p_d2</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a395cb136ff1d486d5a0b0a2c0d5f7d10" prot="public" virt="virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>f_t</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a93c2388d6c3768645146170aa5e6b04a" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>f_t_asymptotic</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a84eed9e4957fc8fedcb5f116abf40838" prot="public" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>make</name></member>
+      <member refid="classeos_1_1BZ2004FormFactorsSplit_1a0170b116c4fb215b15787a7afdf7bfd8" prot="private" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>poly3</name></member>
+      <member refid="classeos_1_1ParameterUser_1ad91a901e589653272482bded7e453c70" prot="public" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>uses</name></member>
+      <member refid="classeos_1_1ParameterUser_1a7a37e779cf45ef1075fe7bf670688b72" prot="public" virt="non-virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>uses</name></member>
+      <member refid="classeos_1_1FormFactors_3_01PToP_01_4_1a2e81880c8a11bbe98466cd077c41b2b2" prot="public" virt="virtual"><scope>eos::BZ2004FormFactorsSplit</scope><name>~FormFactors</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

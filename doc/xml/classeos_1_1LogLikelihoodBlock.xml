@@ -1,0 +1,969 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1LogLikelihoodBlock" kind="class" prot="public">
+    <compoundname>eos::LogLikelihoodBlock</compoundname>
+    <includes refid="log__likelihood_8hh" local="no">log_likelihood.hh</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1LogLikelihoodBlock_1a0217895e8d4cf8b69c3086b28ae152a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type></type>
+        <definition>virtual eos::LogLikelihoodBlock::~LogLikelihoodBlock</definition>
+        <argsstring>()=0</argsstring>
+        <name>~LogLikelihoodBlock</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log_likelihood.hh" line="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LogLikelihoodBlock_1ad99b9336fdbb4c28eedc50b18d3c60c3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::string</type>
+        <definition>virtual std::string eos::LogLikelihoodBlock::as_string</definition>
+        <argsstring>() const =0</argsstring>
+        <name>as_string</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log_likelihood.hh" line="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LogLikelihoodBlock_1a950a255f78736f75b2458e48c30e119f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="namespaceeos_1ab823a6782e060c440e05a614158ad1bf" kindref="member">LogLikelihoodBlockPtr</ref></type>
+        <definition>virtual LogLikelihoodBlockPtr eos::LogLikelihoodBlock::clone</definition>
+        <argsstring>(ObservableCache cache) const =0</argsstring>
+        <name>clone</name>
+        <param>
+          <type><ref refid="classeos_1_1ObservableCache" kindref="compound">ObservableCache</ref></type>
+          <declname>cache</declname>
+        </param>
+        <briefdescription>
+<para>Clone this block. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log_likelihood.hh" line="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LogLikelihoodBlock_1a85ba7e331d03681a5f356bb2df7d1ac7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double eos::LogLikelihoodBlock::evaluate</definition>
+        <argsstring>() const =0</argsstring>
+        <name>evaluate</name>
+        <briefdescription>
+<para>Compute the logarithm of the likelihood for this block. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log_likelihood.hh" line="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LogLikelihoodBlock_1a48f03be5dc8284368cae6a9830627f2e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>unsigned</type>
+        <definition>virtual unsigned eos::LogLikelihoodBlock::number_of_observations</definition>
+        <argsstring>() const =0</argsstring>
+        <name>number_of_observations</name>
+        <briefdescription>
+<para>The number of experimental observations (not observables!) used in this block. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log_likelihood.hh" line="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LogLikelihoodBlock_1abb412e8a3fde0945f940ddcd6f79e68c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void eos::LogLikelihoodBlock::prepare_sampling</definition>
+        <argsstring>()</argsstring>
+        <name>prepare_sampling</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fix the predictions for fixed parameters within given model. Calculate any normalization constants to fix the sampling distribution in order to speed up repeated calls of <ref refid="classeos_1_1LogLikelihoodBlock_1ad0669d109d0d004cc5674c739fb41d7a" kindref="member">sample()</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log_likelihood.hh" line="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LogLikelihoodBlock_1ad0669d109d0d004cc5674c739fb41d7a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double eos::LogLikelihoodBlock::sample</definition>
+        <argsstring>(gsl_rng *rng) const =0</argsstring>
+        <name>sample</name>
+        <param>
+          <type>gsl_rng *</type>
+          <declname>rng</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sample from the logarithm of the likelihood for this block. <simplesect kind="warning"><para>Call <ref refid="classeos_1_1LogLikelihoodBlock_1abb412e8a3fde0945f940ddcd6f79e68c" kindref="member">prepare_sampling()</ref> before a call to <ref refid="classeos_1_1LogLikelihoodBlock_1ad0669d109d0d004cc5674c739fb41d7a" kindref="member">sample()</ref> to ensure that one really gets a log likelihood value from the correct distribution, i.e. llh ~ llh(model, fixed parameters)</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rng</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The random number generator. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log_likelihood.hh" line="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LogLikelihoodBlock_1a52c12058a07b20a5b910dea8972f5282" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double eos::LogLikelihoodBlock::significance</definition>
+        <argsstring>() const =0</argsstring>
+        <name>significance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log_likelihood.hh" line="89"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classeos_1_1LogLikelihoodBlock_1a848066ee04c104fdcf0b74c868c87d68" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceeos_1ab823a6782e060c440e05a614158ad1bf" kindref="member">LogLikelihoodBlockPtr</ref></type>
+        <definition>static LogLikelihoodBlockPtr eos::LogLikelihoodBlock::Gaussian</definition>
+        <argsstring>(ObservableCache cache, const ObservablePtr &amp;observable, const double &amp;min, const double &amp;central, const double &amp;max, const unsigned &amp;number_of_observations=1u)</argsstring>
+        <name>Gaussian</name>
+        <param>
+          <type><ref refid="classeos_1_1ObservableCache" kindref="compound">ObservableCache</ref></type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref> &amp;</type>
+          <declname>observable</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>central</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>number_of_observations</declname>
+          <defval>1u</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new <ref refid="classeos_1_1LogLikelihoodBlock" kindref="compound">LogLikelihoodBlock</ref> for one normally distributed observable.</para><para><simplesect kind="note"><para>For every dimension, this template and the corresponding <ref refid="namespaceeos_1_1implementation" kindref="compound">implementation</ref> have to be instantiated explicitly.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cache</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classeos_1_1Observable" kindref="compound">Observable</ref> cache from which we draw the predictions. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>observable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classeos_1_1Observable" kindref="compound">Observable</ref> whose distribution we model. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value one sigma below the mean of the experimental distribution. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>central</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The mean value of the experimental distribution. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value one sigma above the mean of the experimental distribution. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log_likelihood.hh" line="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LogLikelihoodBlock_1a3e2ab2f3d4d994c382ecc06cd6453478" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceeos_1ab823a6782e060c440e05a614158ad1bf" kindref="member">LogLikelihoodBlockPtr</ref></type>
+        <definition>static LogLikelihoodBlockPtr eos::LogLikelihoodBlock::LogGamma</definition>
+        <argsstring>(ObservableCache cache, const ObservablePtr &amp;observable, const double &amp;min, const double &amp;central, const double &amp;max, const unsigned &amp;number_of_observations=1u)</argsstring>
+        <name>LogGamma</name>
+        <param>
+          <type><ref refid="classeos_1_1ObservableCache" kindref="compound">ObservableCache</ref></type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref> &amp;</type>
+          <declname>observable</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>central</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>number_of_observations</declname>
+          <defval>1u</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new <ref refid="classeos_1_1LogLikelihoodBlock" kindref="compound">LogLikelihoodBlock</ref> for one a single observable with asymmetric uncertainties.</para><para>By construction, it is constructed to behave similarly to a Gaussian:<itemizedlist>
+<listitem><para>the mode is at the central value</para></listitem><listitem><para>the interval [min, max] contains 68% probability</para></listitem><listitem><para>the density at min is the same as at max For details see [C2004].</para></listitem></itemizedlist>
+</para><para><simplesect kind="note"><para>Finding the correct parameter values is accomplished by solving a set of two equations numerically. This is unstable if max and min uncertainty differ by less than 5%. In that case, just a Gaussian instead.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cache</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classeos_1_1Observable" kindref="compound">Observable</ref> cache from which we draw the predictions. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>observable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classeos_1_1Observable" kindref="compound">Observable</ref> whose distribution we model. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value one sigma below the mean of the experimental distribution. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>central</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The mean value of the experimental distribution. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value one sigma above the mean of the experimental distribution. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log_likelihood.hh" line="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LogLikelihoodBlock_1ac4c4437c0d679ae36db0fe6906532f2d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceeos_1ab823a6782e060c440e05a614158ad1bf" kindref="member">LogLikelihoodBlockPtr</ref></type>
+        <definition>static LogLikelihoodBlockPtr eos::LogLikelihoodBlock::LogGamma</definition>
+        <argsstring>(ObservableCache cache, const ObservablePtr &amp;observable, const double &amp;min, const double &amp;central, const double &amp;max, const double &amp;lambda, const double &amp;alpha, const unsigned &amp;number_of_observations=1u)</argsstring>
+        <name>LogGamma</name>
+        <param>
+          <type><ref refid="classeos_1_1ObservableCache" kindref="compound">ObservableCache</ref></type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref> &amp;</type>
+          <declname>observable</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>central</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>lambda</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>number_of_observations</declname>
+          <defval>1u</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new <ref refid="classeos_1_1LogLikelihoodBlock" kindref="compound">LogLikelihoodBlock</ref> for one a single observable with asymmetric uncertainties.</para><para><simplesect kind="note"><para>The only difference to the constructor without the  and  arguments is that now the LogGamma distribution is defined explicitly, and no numerical equation solving is needed. However, consistency is checked.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lambda</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scale parameter of a LogGamma distribution. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The shape parameter of a LogGamma distribution. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log_likelihood.hh" line="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LogLikelihoodBlock_1a275a00c674dbc595abb1bc74faed20be" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceeos_1ab823a6782e060c440e05a614158ad1bf" kindref="member">LogLikelihoodBlockPtr</ref></type>
+        <definition>static LogLikelihoodBlockPtr eos::LogLikelihoodBlock::AmorosoLimit</definition>
+        <argsstring>(ObservableCache cache, const ObservablePtr &amp;observable, const double &amp;physical_limit, const double &amp;upper_limit_90, const double &amp;upper_limit_95, const double &amp;theta, const double &amp;alpha, const unsigned &amp;number_of_observations=1u)</argsstring>
+        <name>AmorosoLimit</name>
+        <param>
+          <type><ref refid="classeos_1_1ObservableCache" kindref="compound">ObservableCache</ref></type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref> &amp;</type>
+          <declname>observable</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>physical_limit</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>upper_limit_90</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>upper_limit_95</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>theta</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>number_of_observations</declname>
+          <defval>1u</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A likelihood contribution representing an upper limit on a quantity x.</para><para>Internally, it is represented by an Amoroso distribution [C2004] with location parameter a set to the physical limit, scale parameter  and first shape parameter  supplied by the user, and 2nd shape parameter  set to the inverse of , in order to ensure that the maximum of the density is at the physical limit.</para><para>The limit values are required in order to check consistency with the parameter values.</para><para>For example, consider a yet unobserved branching ratio, which has to be non-negative, x&gt;= 0.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cache</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classeos_1_1Observable" kindref="compound">Observable</ref> cache from which we draw the predictions. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>observable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classeos_1_1Observable" kindref="compound">Observable</ref> whose distribution we model. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The lower, physical limit. A branching ratio has to be &gt;= 0. It is the maximum of the pdf. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>upper_limit_90</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>With 90% probability, x &lt; upper_limit_90. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>upper_limit_95</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>With 95% probability, x &lt; upper_limit_95. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>theta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>scale parameter </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>shape parameter </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log_likelihood.hh" line="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LogLikelihoodBlock_1a810a57eac9ccdc9cb7e49f0197adcee5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceeos_1ab823a6782e060c440e05a614158ad1bf" kindref="member">LogLikelihoodBlockPtr</ref></type>
+        <definition>static LogLikelihoodBlockPtr eos::LogLikelihoodBlock::AmorosoMode</definition>
+        <argsstring>(ObservableCache cache, const ObservablePtr &amp;observable, const double &amp;physical_limit, const double &amp;mode, const double &amp;upper_limit_90, const double &amp;upper_limit_95, const double &amp;theta, const double &amp;alpha, const double &amp;beta, const unsigned &amp;number_of_observations=1u)</argsstring>
+        <name>AmorosoMode</name>
+        <param>
+          <type><ref refid="classeos_1_1ObservableCache" kindref="compound">ObservableCache</ref></type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref> &amp;</type>
+          <declname>observable</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>physical_limit</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>upper_limit_90</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>upper_limit_95</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>theta</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>beta</declname>
+        </param>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>number_of_observations</declname>
+          <defval>1u</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A likelihood contribution representing an upper limit on a quantity x.</para><para>Internally, it is represented by an Amoroso distribution [C2004] with location parameter a set to the physical limit, scale parameter  and shape parameters ,  supplied by the user.</para><para>The limit values / mode are required in order to check consistency with the parameter values.</para><para>For example, consider a yet unobserved branching ratio, which has to be non-negative, x&gt;= 0.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cache</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classeos_1_1Observable" kindref="compound">Observable</ref> cache from which we draw the predictions. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>observable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classeos_1_1Observable" kindref="compound">Observable</ref> whose distribution we model. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>physical_limit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The lower, physical limit. A branching ratio has to be &gt;= 0. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum of the distribution. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>upper_limit_90</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>With 90% probability, x &lt; upper_limit_90. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>upper_limit_95</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>With 95% probability, x &lt; upper_limit_95. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>theta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>scale parameter </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1st shape parameter </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>beta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>2nd shape parameter </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log_likelihood.hh" line="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LogLikelihoodBlock_1acdc69e205b9a51fb238833bda103c2f7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceeos_1ab823a6782e060c440e05a614158ad1bf" kindref="member">LogLikelihoodBlockPtr</ref></type>
+        <definition>static LogLikelihoodBlockPtr eos::LogLikelihoodBlock::Amoroso</definition>
+        <argsstring>(ObservableCache cache, const ObservablePtr &amp;observable, const double &amp;physical_limit, const double &amp;upper_limit_10, const double &amp;upper_limit_50, const double &amp;upper_limit_90, const double &amp;theta, const double &amp;alpha, const double &amp;beta, const unsigned &amp;number_of_observations=1u)</argsstring>
+        <name>Amoroso</name>
+        <param>
+          <type><ref refid="classeos_1_1ObservableCache" kindref="compound">ObservableCache</ref></type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref> &amp;</type>
+          <declname>observable</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>physical_limit</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>upper_limit_10</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>upper_limit_50</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>upper_limit_90</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>theta</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>beta</declname>
+        </param>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>number_of_observations</declname>
+          <defval>1u</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A likelihood contribution representing an upper limit on a quantity x.</para><para>Internally, it is represented by an Amoroso distribution [C2004] with location parameter a set to the physical limit, scale parameter  and shape parameters ,  supplied by the user.</para><para><simplesect kind="note"><para>The mode of the distribution is typically not at the physical limit.</para></simplesect>
+The limit values are required in order to check consistency with the parameter values.</para><para>For example, consider a yet unobserved branching ratio, which has to be non-negative, x&gt;= 0.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cache</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classeos_1_1Observable" kindref="compound">Observable</ref> cache from which we draw the predictions. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>observable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classeos_1_1Observable" kindref="compound">Observable</ref> whose distribution we model. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The lower, physical limit. A branching ratio has to be &gt;= 0. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>upper_limit_10</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>With 10% probability, x &lt; upper_limit_10. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>upper_limit_50</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>With 50% probability, x &lt; upper_limit_50. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>upper_limit_90</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>With 90% probability, x &lt; upper_limit_90. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>theta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>scale parameter </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1st shape parameter </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>beta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>2nd shape parameter </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log_likelihood.hh" line="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LogLikelihoodBlock_1ae35b8b72185c9ca409a6dfde49de07a1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceeos_1ab823a6782e060c440e05a614158ad1bf" kindref="member">LogLikelihoodBlockPtr</ref></type>
+        <definition>static LogLikelihoodBlockPtr eos::LogLikelihoodBlock::Amoroso</definition>
+        <argsstring>(ObservableCache cache, const ObservablePtr &amp;observable, const double &amp;physical_limit, const double &amp;theta, const double &amp;alpha, const double &amp;beta, const unsigned &amp;number_of_observations=1u)</argsstring>
+        <name>Amoroso</name>
+        <param>
+          <type><ref refid="classeos_1_1ObservableCache" kindref="compound">ObservableCache</ref></type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref> &amp;</type>
+          <declname>observable</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>physical_limit</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>theta</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>beta</declname>
+        </param>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>number_of_observations</declname>
+          <defval>1u</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A likelihood contribution representing an upper limit on a quantity x.</para><para>Internally, it is represented by an Amoroso distribution [C2004] with location parameter a set to the physical limit, scale parameter  and shape parameters ,  supplied by the user.</para><para><simplesect kind="note"><para>The mode of the distribution is typically not at the physical limit.</para></simplesect>
+For example, consider a yet unobserved branching ratio, which has to be non-negative, x&gt;= 0.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cache</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classeos_1_1Observable" kindref="compound">Observable</ref> cache from which we draw the predictions. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>observable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classeos_1_1Observable" kindref="compound">Observable</ref> whose distribution we model. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The lower, physical limit. A branching ratio has to be &gt;= 0. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>theta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>scale parameter </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1st shape parameter </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>beta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>2nd shape parameter </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log_likelihood.hh" line="252"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LogLikelihoodBlock_1a7a47859d5eff2ef0a6b38ef3e70ee1d0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceeos_1ab823a6782e060c440e05a614158ad1bf" kindref="member">LogLikelihoodBlockPtr</ref></type>
+        <definition>static LogLikelihoodBlockPtr eos::LogLikelihoodBlock::Mixture</definition>
+        <argsstring>(const std::vector&lt; LogLikelihoodBlockPtr &gt; &amp;components, const std::vector&lt; double &gt; &amp;weights)</argsstring>
+        <name>Mixture</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespaceeos_1ab823a6782e060c440e05a614158ad1bf" kindref="member">LogLikelihoodBlockPtr</ref> &gt; &amp;</type>
+          <declname>components</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>weights</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log_likelihood.hh" line="256"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LogLikelihoodBlock_1a1532bcb8dc34234cb7c4f39a3e82031e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::size_t</type>
+            <declname>n_</declname>
+            <defname>n_</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="namespaceeos_1ab823a6782e060c440e05a614158ad1bf" kindref="member">LogLikelihoodBlockPtr</ref></type>
+        <definition>static LogLikelihoodBlockPtr eos::LogLikelihoodBlock::MultivariateGaussian</definition>
+        <argsstring>(ObservableCache cache, const std::array&lt; ObservablePtr, n_ &gt; &amp;observables, const std::array&lt; double, n_ &gt; &amp;mean, const std::array&lt; std::array&lt; double, n_ &gt;, n_ &gt; &amp;covariance, const unsigned &amp;number_of_observations=n_)</argsstring>
+        <name>MultivariateGaussian</name>
+        <param>
+          <type><ref refid="classeos_1_1ObservableCache" kindref="compound">ObservableCache</ref></type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>const std::array&lt; <ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref>, n_ &gt; &amp;</type>
+          <declname>observables</declname>
+        </param>
+        <param>
+          <type>const std::array&lt; double, n_ &gt; &amp;</type>
+          <declname>mean</declname>
+        </param>
+        <param>
+          <type>const std::array&lt; std::array&lt; double, n_ &gt;, n_ &gt; &amp;</type>
+          <declname>covariance</declname>
+        </param>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>number_of_observations</declname>
+          <defval>n_</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new <ref refid="classeos_1_1LogLikelihoodBlock" kindref="compound">LogLikelihoodBlock</ref> for n observables distributed according to a multivariate normal distribution.</para><para><simplesect kind="note"><para>For every dimension, this template and the corresponding <ref refid="namespaceeos_1_1implementation" kindref="compound">implementation</ref> have to be instantiated explicitly.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cache</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classeos_1_1Observable" kindref="compound">Observable</ref> cache from which we draw the predictions. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>observables</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Observables whose distribution we model. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mean</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The vector of means. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>covariance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The covariance matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log_likelihood.hh" line="272"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LogLikelihoodBlock_1a6b124551639991dd21a9e11e9a2d54c6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::size_t</type>
+            <declname>n_</declname>
+            <defname>n_</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="namespaceeos_1ab823a6782e060c440e05a614158ad1bf" kindref="member">LogLikelihoodBlockPtr</ref></type>
+        <definition>static LogLikelihoodBlockPtr eos::LogLikelihoodBlock::MultivariateGaussian</definition>
+        <argsstring>(ObservableCache cache, const std::array&lt; ObservablePtr, n_ &gt; &amp;observables, const std::array&lt; double, n_ &gt; &amp;mean, const std::array&lt; double, n_ &gt; &amp;variances, const std::array&lt; std::array&lt; double, n_ &gt;, n_ &gt; &amp;correlation, const unsigned &amp;number_of_observations=n_)</argsstring>
+        <name>MultivariateGaussian</name>
+        <param>
+          <type><ref refid="classeos_1_1ObservableCache" kindref="compound">ObservableCache</ref></type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>const std::array&lt; <ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref>, n_ &gt; &amp;</type>
+          <declname>observables</declname>
+        </param>
+        <param>
+          <type>const std::array&lt; double, n_ &gt; &amp;</type>
+          <declname>mean</declname>
+        </param>
+        <param>
+          <type>const std::array&lt; double, n_ &gt; &amp;</type>
+          <declname>variances</declname>
+        </param>
+        <param>
+          <type>const std::array&lt; std::array&lt; double, n_ &gt;, n_ &gt; &amp;</type>
+          <declname>correlation</declname>
+        </param>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>number_of_observations</declname>
+          <defval>n_</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new <ref refid="classeos_1_1LogLikelihoodBlock" kindref="compound">LogLikelihoodBlock</ref> for n observables distributed according to a multivariate normal distribution.</para><para><simplesect kind="note"><para>For every dimension, this template and the corresponding <ref refid="namespaceeos_1_1implementation" kindref="compound">implementation</ref> have to be instantiated explicitly.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cache</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classeos_1_1Observable" kindref="compound">Observable</ref> cache from which we draw the predictions. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>observables</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Observables whose distribution we model. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mean</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The vector of means. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>variances</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The vector of variances. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>correlation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The correlation matrix. Diagonal is assumed to be one. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log_likelihood.hh" line="291"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classeos_1_1LogLikelihoodBlock" kindref="compound">LogLikelihoodBlock</ref> models the logarithm of the likelihood for a given number of correlated observables which are independent of all other observables such that total likelihood is just the product of the independent blocks.</para><para>Access to any <ref refid="classeos_1_1LogLikelihoodBlock" kindref="compound">LogLikelihoodBlock</ref> is coherent, i.e., changes to one object will propagate to every other object copy. To create an independent instance, use <ref refid="classeos_1_1LogLikelihoodBlock_1a950a255f78736f75b2458e48c30e119f" kindref="member">clone()</ref>. </para>    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/log_likelihood.hh" line="46" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/log_likelihood.hh" bodystart="45" bodyend="293"/>
+    <listofallmembers>
+      <member refid="classeos_1_1LogLikelihoodBlock_1acdc69e205b9a51fb238833bda103c2f7" prot="public" virt="non-virtual"><scope>eos::LogLikelihoodBlock</scope><name>Amoroso</name></member>
+      <member refid="classeos_1_1LogLikelihoodBlock_1ae35b8b72185c9ca409a6dfde49de07a1" prot="public" virt="non-virtual"><scope>eos::LogLikelihoodBlock</scope><name>Amoroso</name></member>
+      <member refid="classeos_1_1LogLikelihoodBlock_1a275a00c674dbc595abb1bc74faed20be" prot="public" virt="non-virtual"><scope>eos::LogLikelihoodBlock</scope><name>AmorosoLimit</name></member>
+      <member refid="classeos_1_1LogLikelihoodBlock_1a810a57eac9ccdc9cb7e49f0197adcee5" prot="public" virt="non-virtual"><scope>eos::LogLikelihoodBlock</scope><name>AmorosoMode</name></member>
+      <member refid="classeos_1_1LogLikelihoodBlock_1ad99b9336fdbb4c28eedc50b18d3c60c3" prot="public" virt="pure-virtual"><scope>eos::LogLikelihoodBlock</scope><name>as_string</name></member>
+      <member refid="classeos_1_1LogLikelihoodBlock_1a950a255f78736f75b2458e48c30e119f" prot="public" virt="pure-virtual"><scope>eos::LogLikelihoodBlock</scope><name>clone</name></member>
+      <member refid="classeos_1_1LogLikelihoodBlock_1a85ba7e331d03681a5f356bb2df7d1ac7" prot="public" virt="pure-virtual"><scope>eos::LogLikelihoodBlock</scope><name>evaluate</name></member>
+      <member refid="classeos_1_1LogLikelihoodBlock_1a848066ee04c104fdcf0b74c868c87d68" prot="public" virt="non-virtual"><scope>eos::LogLikelihoodBlock</scope><name>Gaussian</name></member>
+      <member refid="classeos_1_1LogLikelihoodBlock_1a3e2ab2f3d4d994c382ecc06cd6453478" prot="public" virt="non-virtual"><scope>eos::LogLikelihoodBlock</scope><name>LogGamma</name></member>
+      <member refid="classeos_1_1LogLikelihoodBlock_1ac4c4437c0d679ae36db0fe6906532f2d" prot="public" virt="non-virtual"><scope>eos::LogLikelihoodBlock</scope><name>LogGamma</name></member>
+      <member refid="classeos_1_1LogLikelihoodBlock_1a7a47859d5eff2ef0a6b38ef3e70ee1d0" prot="public" virt="non-virtual"><scope>eos::LogLikelihoodBlock</scope><name>Mixture</name></member>
+      <member refid="classeos_1_1LogLikelihoodBlock_1a1532bcb8dc34234cb7c4f39a3e82031e" prot="public" virt="non-virtual"><scope>eos::LogLikelihoodBlock</scope><name>MultivariateGaussian</name></member>
+      <member refid="classeos_1_1LogLikelihoodBlock_1a6b124551639991dd21a9e11e9a2d54c6" prot="public" virt="non-virtual"><scope>eos::LogLikelihoodBlock</scope><name>MultivariateGaussian</name></member>
+      <member refid="classeos_1_1LogLikelihoodBlock_1a48f03be5dc8284368cae6a9830627f2e" prot="public" virt="pure-virtual"><scope>eos::LogLikelihoodBlock</scope><name>number_of_observations</name></member>
+      <member refid="classeos_1_1LogLikelihoodBlock_1abb412e8a3fde0945f940ddcd6f79e68c" prot="public" virt="virtual"><scope>eos::LogLikelihoodBlock</scope><name>prepare_sampling</name></member>
+      <member refid="classeos_1_1LogLikelihoodBlock_1ad0669d109d0d004cc5674c739fb41d7a" prot="public" virt="pure-virtual"><scope>eos::LogLikelihoodBlock</scope><name>sample</name></member>
+      <member refid="classeos_1_1LogLikelihoodBlock_1a52c12058a07b20a5b910dea8972f5282" prot="public" virt="pure-virtual"><scope>eos::LogLikelihoodBlock</scope><name>significance</name></member>
+      <member refid="classeos_1_1LogLikelihoodBlock_1a0217895e8d4cf8b69c3086b28ae152a1" prot="public" virt="pure-virtual"><scope>eos::LogLikelihoodBlock</scope><name>~LogLikelihoodBlock</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

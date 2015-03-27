@@ -1,0 +1,408 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1FormFactorRatioAdapter" kind="class" prot="public">
+    <compoundname>eos::FormFactorRatioAdapter</compoundname>
+    <basecompoundref refid="classeos_1_1Observable" prot="public" virt="non-virtual">eos::Observable</basecompoundref>
+    <includes refid="form-factor-adapter_8hh" local="no">form-factor-adapter.hh</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Transition_</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classeos_1_1FormFactorRatioAdapter_1a0b71f837b2b3154ecd96377f00a2837c" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string eos::FormFactorRatioAdapter&lt; Transition_ &gt;::_name</definition>
+        <argsstring></argsstring>
+        <name>_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh" line="144" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1FormFactorRatioAdapter_1acd1c4ac435095174a1006e054be87f41" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string eos::FormFactorRatioAdapter&lt; Transition_ &gt;::_process</definition>
+        <argsstring></argsstring>
+        <name>_process</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh" line="146" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1FormFactorRatioAdapter_1a4519ecaaabcb53fed1d1fcb9b70ef6aa" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref></type>
+        <definition>Parameters eos::FormFactorRatioAdapter&lt; Transition_ &gt;::_parameters</definition>
+        <argsstring></argsstring>
+        <name>_parameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh" line="148" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1FormFactorRatioAdapter_1abb41ce43ff72da761d610fd306456069" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Kinematics" kindref="compound">Kinematics</ref></type>
+        <definition>Kinematics eos::FormFactorRatioAdapter&lt; Transition_ &gt;::_kinematics</definition>
+        <argsstring></argsstring>
+        <name>_kinematics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh" line="150" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1FormFactorRatioAdapter_1ad6f388aec4d8e7f11a6fbaa7e607c936" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1KinematicVariable" kindref="compound">KinematicVariable</ref></type>
+        <definition>KinematicVariable eos::FormFactorRatioAdapter&lt; Transition_ &gt;::_s</definition>
+        <argsstring></argsstring>
+        <name>_s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh" line="152" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1FormFactorRatioAdapter_1a800c75377021e9bfc91007ca1863bca6" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Options" kindref="compound">Options</ref></type>
+        <definition>Options eos::FormFactorRatioAdapter&lt; Transition_ &gt;::_options</definition>
+        <argsstring></argsstring>
+        <name>_options</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh" line="154" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1FormFactorRatioAdapter_1a5d5e89f0fb29774be493d542c57a6741" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; FormFactors&lt; Transition_ &gt; &gt;</type>
+        <definition>std::shared_ptr&lt;FormFactors&lt;Transition_&gt; &gt; eos::FormFactorRatioAdapter&lt; Transition_ &gt;::_form_factors</definition>
+        <argsstring></argsstring>
+        <name>_form_factors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh" line="156" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1FormFactorRatioAdapter_1afc58793b9c16e7d9134256aadf280c67" prot="private" static="no" mutable="no">
+        <type>std::function&lt; double(const FormFactors&lt; Transition_ &gt; *, const double &amp;)</type>
+        <definition>std::function&lt;double (const FormFactors&lt;Transition_&gt; *, const double &amp;) eos::FormFactorRatioAdapter&lt; Transition_ &gt;::_form_factor_numerator)</definition>
+        <argsstring>)</argsstring>
+        <name>_form_factor_numerator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh" line="158" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1FormFactorRatioAdapter_1a128701939c689f6e871895cb1e44b814" prot="private" static="no" mutable="no">
+        <type>std::function&lt; double(const FormFactors&lt; Transition_ &gt; *, const double &amp;)</type>
+        <definition>std::function&lt;double (const FormFactors&lt;Transition_&gt; *, const double &amp;) eos::FormFactorRatioAdapter&lt; Transition_ &gt;::_form_factor_denominator)</definition>
+        <argsstring>)</argsstring>
+        <name>_form_factor_denominator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh" line="160" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1FormFactorRatioAdapter_1aabe5ff6acb4c2411a9dcc17b0c8058db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eos::FormFactorRatioAdapter&lt; Transition_ &gt;::FormFactorRatioAdapter</definition>
+        <argsstring>(const std::string &amp;name, const std::string &amp;process, const Parameters &amp;parameters, const Kinematics &amp;kinematics, const Options &amp;options, const std::function&lt; double(const FormFactors&lt; Transition_ &gt; *, const double &amp;)&gt; &amp;form_factor_numerator, const std::function&lt; double(const FormFactors&lt; Transition_ &gt; *, const double &amp;)&gt; &amp;form_factor_denominator)</argsstring>
+        <name>FormFactorRatioAdapter</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>process</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1Kinematics" kindref="compound">Kinematics</ref> &amp;</type>
+          <declname>kinematics</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1Options" kindref="compound">Options</ref> &amp;</type>
+          <declname>options</declname>
+        </param>
+        <param>
+          <type>const std::function&lt; double(const FormFactors&lt; Transition_ &gt; *, const double &amp;)&gt; &amp;</type>
+          <declname>form_factor_numerator</declname>
+        </param>
+        <param>
+          <type>const std::function&lt; double(const FormFactors&lt; Transition_ &gt; *, const double &amp;)&gt; &amp;</type>
+          <declname>form_factor_denominator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh" line="178" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh" bodystart="163" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1FormFactorRatioAdapter_1a4794ed40d561e939e566f328d16652fe" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const std::string &amp;</type>
+        <definition>virtual const std::string&amp; eos::FormFactorRatioAdapter&lt; Transition_ &gt;::name</definition>
+        <argsstring>() const </argsstring>
+        <name>name</name>
+        <reimplements refid="classeos_1_1Observable_1adfdc8fe469e00adeb464d3b3e4e14236">name</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh" line="186" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh" bodystart="185" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1FormFactorRatioAdapter_1af0bed5942d9ba4b3c65788e1e05eaf8c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>virtual double eos::FormFactorRatioAdapter&lt; Transition_ &gt;::evaluate</definition>
+        <argsstring>() const </argsstring>
+        <name>evaluate</name>
+        <reimplements refid="classeos_1_1Observable_1a913385d3a077d578bbcc2d502e5fdc2d">evaluate</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh" line="191" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh" bodystart="190" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1FormFactorRatioAdapter_1a7146382f5bfc1c2b59119e844a6201a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref></type>
+        <definition>virtual Parameters eos::FormFactorRatioAdapter&lt; Transition_ &gt;::parameters</definition>
+        <argsstring>()</argsstring>
+        <name>parameters</name>
+        <reimplements refid="classeos_1_1Observable_1a233852d22f287944b8bbf4da803289b1">parameters</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh" line="198" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh" bodystart="197" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1FormFactorRatioAdapter_1a821bf6d21630dd75c8a25cd18f1cdd59" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classeos_1_1Kinematics" kindref="compound">Kinematics</ref></type>
+        <definition>virtual Kinematics eos::FormFactorRatioAdapter&lt; Transition_ &gt;::kinematics</definition>
+        <argsstring>()</argsstring>
+        <name>kinematics</name>
+        <reimplements refid="classeos_1_1Observable_1a8bfd8cc2873e467ac9ae100d029d8c49">kinematics</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh" line="203" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh" bodystart="202" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1FormFactorRatioAdapter_1a4fe52226955dacc174be74224d8b627b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classeos_1_1Options" kindref="compound">Options</ref></type>
+        <definition>virtual Options eos::FormFactorRatioAdapter&lt; Transition_ &gt;::options</definition>
+        <argsstring>()</argsstring>
+        <name>options</name>
+        <reimplements refid="classeos_1_1Observable_1a237cf968a4f46a93e0cc8ba0fdbaceee">options</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh" line="208" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh" bodystart="207" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1FormFactorRatioAdapter_1ab5c4a8094db5ac8fc3860afc4a4087b0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref></type>
+        <definition>virtual ObservablePtr eos::FormFactorRatioAdapter&lt; Transition_ &gt;::clone</definition>
+        <argsstring>() const </argsstring>
+        <name>clone</name>
+        <reimplements refid="classeos_1_1Observable_1a1c88c66a224a14fbddad70e95cb61136">clone</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh" line="213" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh" bodystart="212" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1FormFactorRatioAdapter_1ad8de46a9cedc903bfe0beecbbf66dc58" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref></type>
+        <definition>virtual ObservablePtr eos::FormFactorRatioAdapter&lt; Transition_ &gt;::clone</definition>
+        <argsstring>(const Parameters &amp;parameters) const </argsstring>
+        <name>clone</name>
+        <reimplements refid="classeos_1_1Observable_1a20e8218d04aa5589ce795ddd425751a0">clone</reimplements>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh" line="218" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh" bodystart="217" bodyend="220"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="436">
+        <label>eos::FormFactorRatioAdapter&lt; Transition_ &gt;</label>
+        <link refid="classeos_1_1FormFactorRatioAdapter"/>
+        <childnode refid="437" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="437">
+        <label>eos::Observable</label>
+        <link refid="classeos_1_1Observable"/>
+        <childnode refid="438" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="438">
+        <label>eos::ParameterUser</label>
+        <link refid="classeos_1_1ParameterUser"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="449">
+        <label>eos::PrivateImplementationPattern&lt; Options &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="447">
+        <label>eos::KinematicVariable</label>
+        <link refid="classeos_1_1KinematicVariable"/>
+      </node>
+      <node id="446">
+        <label>eos::PrivateImplementationPattern&lt; Parameters &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="439">
+        <label>eos::FormFactorRatioAdapter&lt; Transition_ &gt;</label>
+        <link refid="classeos_1_1FormFactorRatioAdapter"/>
+        <childnode refid="440" relation="public-inheritance">
+        </childnode>
+        <childnode refid="443" relation="usage">
+          <edgelabel>_kinematics</edgelabel>
+        </childnode>
+        <childnode refid="445" relation="usage">
+          <edgelabel>_parameters</edgelabel>
+        </childnode>
+        <childnode refid="447" relation="usage">
+          <edgelabel>_s</edgelabel>
+        </childnode>
+        <childnode refid="448" relation="usage">
+          <edgelabel>_options</edgelabel>
+        </childnode>
+        <childnode refid="450" relation="usage">
+          <edgelabel>_name</edgelabel>
+          <edgelabel>_process</edgelabel>
+        </childnode>
+      </node>
+      <node id="443">
+        <label>eos::Kinematics</label>
+        <link refid="classeos_1_1Kinematics"/>
+        <childnode refid="444" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="440">
+        <label>eos::Observable</label>
+        <link refid="classeos_1_1Observable"/>
+        <childnode refid="441" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="451">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="442">
+        <label>std::set&lt; Parameter::Id &gt;</label>
+      </node>
+      <node id="444">
+        <label>eos::PrivateImplementationPattern&lt; Kinematics &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="445">
+        <label>eos::Parameters</label>
+        <link refid="classeos_1_1Parameters"/>
+        <childnode refid="446" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="441">
+        <label>eos::ParameterUser</label>
+        <link refid="classeos_1_1ParameterUser"/>
+        <childnode refid="442" relation="usage">
+          <edgelabel>_ids</edgelabel>
+        </childnode>
+      </node>
+      <node id="448">
+        <label>eos::Options</label>
+        <link refid="classeos_1_1Options"/>
+        <childnode refid="449" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="450">
+        <label>std::string</label>
+        <childnode refid="451" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh" line="142" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh" bodystart="140" bodyend="221"/>
+    <listofallmembers>
+      <member refid="classeos_1_1FormFactorRatioAdapter_1a128701939c689f6e871895cb1e44b814" prot="private" virt="non-virtual"><scope>eos::FormFactorRatioAdapter</scope><name>_form_factor_denominator</name></member>
+      <member refid="classeos_1_1FormFactorRatioAdapter_1afc58793b9c16e7d9134256aadf280c67" prot="private" virt="non-virtual"><scope>eos::FormFactorRatioAdapter</scope><name>_form_factor_numerator</name></member>
+      <member refid="classeos_1_1FormFactorRatioAdapter_1a5d5e89f0fb29774be493d542c57a6741" prot="private" virt="non-virtual"><scope>eos::FormFactorRatioAdapter</scope><name>_form_factors</name></member>
+      <member refid="classeos_1_1ParameterUser_1aa3a0285297e16cf2a5830df1f9bb2f4b" prot="protected" virt="non-virtual"><scope>eos::FormFactorRatioAdapter</scope><name>_ids</name></member>
+      <member refid="classeos_1_1FormFactorRatioAdapter_1abb41ce43ff72da761d610fd306456069" prot="private" virt="non-virtual"><scope>eos::FormFactorRatioAdapter</scope><name>_kinematics</name></member>
+      <member refid="classeos_1_1FormFactorRatioAdapter_1a0b71f837b2b3154ecd96377f00a2837c" prot="private" virt="non-virtual"><scope>eos::FormFactorRatioAdapter</scope><name>_name</name></member>
+      <member refid="classeos_1_1FormFactorRatioAdapter_1a800c75377021e9bfc91007ca1863bca6" prot="private" virt="non-virtual"><scope>eos::FormFactorRatioAdapter</scope><name>_options</name></member>
+      <member refid="classeos_1_1FormFactorRatioAdapter_1a4519ecaaabcb53fed1d1fcb9b70ef6aa" prot="private" virt="non-virtual"><scope>eos::FormFactorRatioAdapter</scope><name>_parameters</name></member>
+      <member refid="classeos_1_1FormFactorRatioAdapter_1acd1c4ac435095174a1006e054be87f41" prot="private" virt="non-virtual"><scope>eos::FormFactorRatioAdapter</scope><name>_process</name></member>
+      <member refid="classeos_1_1FormFactorRatioAdapter_1ad6f388aec4d8e7f11a6fbaa7e607c936" prot="private" virt="non-virtual"><scope>eos::FormFactorRatioAdapter</scope><name>_s</name></member>
+      <member refid="classeos_1_1ParameterUser_1a9cd569207063cd2a8f807c4e1203a5d4" prot="public" virt="non-virtual"><scope>eos::FormFactorRatioAdapter</scope><name>begin</name></member>
+      <member refid="classeos_1_1FormFactorRatioAdapter_1ab5c4a8094db5ac8fc3860afc4a4087b0" prot="public" virt="virtual"><scope>eos::FormFactorRatioAdapter</scope><name>clone</name></member>
+      <member refid="classeos_1_1FormFactorRatioAdapter_1ad8de46a9cedc903bfe0beecbbf66dc58" prot="public" virt="virtual"><scope>eos::FormFactorRatioAdapter</scope><name>clone</name></member>
+      <member refid="classeos_1_1ParameterUser_1a7105631bbcb4b2492e6377b2b69f5b0f" prot="public" virt="non-virtual"><scope>eos::FormFactorRatioAdapter</scope><name>ConstIterator</name></member>
+      <member refid="classeos_1_1ParameterUser_1a5813c886f3fd3f074cc02a53fc9e0790" prot="public" virt="non-virtual"><scope>eos::FormFactorRatioAdapter</scope><name>end</name></member>
+      <member refid="classeos_1_1FormFactorRatioAdapter_1af0bed5942d9ba4b3c65788e1e05eaf8c" prot="public" virt="virtual"><scope>eos::FormFactorRatioAdapter</scope><name>evaluate</name></member>
+      <member refid="classeos_1_1FormFactorRatioAdapter_1aabe5ff6acb4c2411a9dcc17b0c8058db" prot="public" virt="non-virtual"><scope>eos::FormFactorRatioAdapter</scope><name>FormFactorRatioAdapter</name></member>
+      <member refid="classeos_1_1FormFactorRatioAdapter_1a821bf6d21630dd75c8a25cd18f1cdd59" prot="public" virt="virtual"><scope>eos::FormFactorRatioAdapter</scope><name>kinematics</name></member>
+      <member refid="classeos_1_1Observable_1a949bf84938bcc9ab75075801c636763c" prot="public" virt="non-virtual"><scope>eos::FormFactorRatioAdapter</scope><name>make</name></member>
+      <member refid="classeos_1_1FormFactorRatioAdapter_1a4794ed40d561e939e566f328d16652fe" prot="public" virt="virtual"><scope>eos::FormFactorRatioAdapter</scope><name>name</name></member>
+      <member refid="classeos_1_1FormFactorRatioAdapter_1a4fe52226955dacc174be74224d8b627b" prot="public" virt="virtual"><scope>eos::FormFactorRatioAdapter</scope><name>options</name></member>
+      <member refid="classeos_1_1FormFactorRatioAdapter_1a7146382f5bfc1c2b59119e844a6201a6" prot="public" virt="virtual"><scope>eos::FormFactorRatioAdapter</scope><name>parameters</name></member>
+      <member refid="classeos_1_1ParameterUser_1ad91a901e589653272482bded7e453c70" prot="public" virt="non-virtual"><scope>eos::FormFactorRatioAdapter</scope><name>uses</name></member>
+      <member refid="classeos_1_1ParameterUser_1a7a37e779cf45ef1075fe7bf670688b72" prot="public" virt="non-virtual"><scope>eos::FormFactorRatioAdapter</scope><name>uses</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

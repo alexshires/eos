@@ -1,0 +1,459 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1PionLCDAs" kind="class" prot="public">
+    <compoundname>eos::PionLCDAs</compoundname>
+    <basecompoundref refid="classeos_1_1ParameterUser" prot="public" virt="non-virtual">eos::ParameterUser</basecompoundref>
+    <basecompoundref refid="classeos_1_1PrivateImplementationPattern" prot="public" virt="non-virtual">eos::PrivateImplementationPattern&lt; PionLCDAs &gt;</basecompoundref>
+    <includes refid="pi-lcdas_8hh" local="no">pi-lcdas.hh</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1PionLCDAs_1af4511a0652b92c1b152580de069d4ac5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::PionLCDAs::PionLCDAs</definition>
+        <argsstring>(const Parameters &amp;, const Options &amp;)</argsstring>
+        <name>PionLCDAs</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1Options" kindref="compound">Options</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/pi-lcdas.hh" line="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1PionLCDAs_1a6292a3aaf8e686e3fc319a1b7901f817" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::PionLCDAs::~PionLCDAs</definition>
+        <argsstring>()</argsstring>
+        <name>~PionLCDAs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/pi-lcdas.hh" line="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1PionLCDAs_1a4daa8e6632fb5ad61c13f7a7c4a91bbf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::PionLCDAs::a2pi</definition>
+        <argsstring>(const double &amp;mu) const </argsstring>
+        <name>a2pi</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/pi-lcdas.hh" line="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1PionLCDAs_1a0d0c446b70ca3078a36d064ffe5ae46c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::PionLCDAs::a4pi</definition>
+        <argsstring>(const double &amp;mu) const </argsstring>
+        <name>a4pi</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/pi-lcdas.hh" line="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1PionLCDAs_1ad9453233816c40f020512b302e37b7ab" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::PionLCDAs::mupi</definition>
+        <argsstring>(const double &amp;mu) const </argsstring>
+        <name>mupi</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/pi-lcdas.hh" line="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1PionLCDAs_1af557dad976202ea84cd889721b080fb9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::PionLCDAs::f3pi</definition>
+        <argsstring>(const double &amp;mu) const </argsstring>
+        <name>f3pi</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/pi-lcdas.hh" line="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1PionLCDAs_1a571ec82df903c4690aa2464a4ddd23a8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::PionLCDAs::eta3pi</definition>
+        <argsstring>(const double &amp;mu) const </argsstring>
+        <name>eta3pi</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/pi-lcdas.hh" line="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1PionLCDAs_1ab821dbbf52dd22ff63c08ecda4000366" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::PionLCDAs::omega3pi</definition>
+        <argsstring>(const double &amp;mu) const </argsstring>
+        <name>omega3pi</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/pi-lcdas.hh" line="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1PionLCDAs_1a605c4669795addc7a36752f6c07571e4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::PionLCDAs::deltapipi</definition>
+        <argsstring>(const double &amp;mu) const </argsstring>
+        <name>deltapipi</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/pi-lcdas.hh" line="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1PionLCDAs_1a999a73d4b408e5b36a1ff7cd5c86c24a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::PionLCDAs::omega4pi</definition>
+        <argsstring>(const double &amp;mu) const </argsstring>
+        <name>omega4pi</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/pi-lcdas.hh" line="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1PionLCDAs_1a25af0e77528227031bdba7c630246c3a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::PionLCDAs::phi</definition>
+        <argsstring>(const double &amp;u, const double &amp;mu) const </argsstring>
+        <name>phi</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/pi-lcdas.hh" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1PionLCDAs_1ac0f6b8d17ffe7b7e6f4ffcfa46e1d353" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::PionLCDAs::phi3p</definition>
+        <argsstring>(const double &amp;u, const double &amp;mu) const </argsstring>
+        <name>phi3p</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/pi-lcdas.hh" line="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1PionLCDAs_1a41fcd9e04a0f84c01b2168c7fba13164" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::PionLCDAs::phi3s</definition>
+        <argsstring>(const double &amp;u, const double &amp;mu) const </argsstring>
+        <name>phi3s</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/pi-lcdas.hh" line="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1PionLCDAs_1a821f18698397f85d42746ffeb7086ffa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::PionLCDAs::phi3s_d1</definition>
+        <argsstring>(const double &amp;u, const double &amp;mu) const </argsstring>
+        <name>phi3s_d1</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/pi-lcdas.hh" line="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1PionLCDAs_1a0a4f734894305e27fbcab789f9d61510" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::PionLCDAs::phi4</definition>
+        <argsstring>(const double &amp;u, const double &amp;mu) const </argsstring>
+        <name>phi4</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/pi-lcdas.hh" line="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1PionLCDAs_1acb4c831f65e2758d01263b7b4a121e7c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::PionLCDAs::phi4_d1</definition>
+        <argsstring>(const double &amp;u, const double &amp;mu) const </argsstring>
+        <name>phi4_d1</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/pi-lcdas.hh" line="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1PionLCDAs_1ae2915f62dae4fe58776ff3367dff2ace" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::PionLCDAs::phi4_d2</definition>
+        <argsstring>(const double &amp;u, const double &amp;mu) const </argsstring>
+        <name>phi4_d2</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/pi-lcdas.hh" line="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1PionLCDAs_1ada2c4aa48e04c0f9de3511fd04333982" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::PionLCDAs::psi4</definition>
+        <argsstring>(const double &amp;u, const double &amp;mu) const </argsstring>
+        <name>psi4</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/pi-lcdas.hh" line="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1PionLCDAs_1aabea6be529b7aacdcccb10f3a8861a81" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::PionLCDAs::psi4_i</definition>
+        <argsstring>(const double &amp;u, const double &amp;mu) const </argsstring>
+        <name>psi4_i</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/pi-lcdas.hh" line="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1PionLCDAs_1ae8727041baafa8c3007ef45a30f6d6ed" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1Diagnostics" kindref="compound">Diagnostics</ref></type>
+        <definition>Diagnostics eos::PionLCDAs::diagnostics</definition>
+        <argsstring>() const </argsstring>
+        <name>diagnostics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/pi-lcdas.hh" line="67"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="834">
+        <label>eos::PionLCDAs</label>
+        <link refid="classeos_1_1PionLCDAs"/>
+        <childnode refid="835" relation="public-inheritance">
+        </childnode>
+        <childnode refid="836" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="836">
+        <label>eos::PrivateImplementationPattern&lt; PionLCDAs &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="835">
+        <label>eos::ParameterUser</label>
+        <link refid="classeos_1_1ParameterUser"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="837">
+        <label>eos::PionLCDAs</label>
+        <link refid="classeos_1_1PionLCDAs"/>
+        <childnode refid="838" relation="public-inheritance">
+        </childnode>
+        <childnode refid="840" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="840">
+        <label>eos::PrivateImplementationPattern&lt; PionLCDAs &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="839">
+        <label>std::set&lt; Parameter::Id &gt;</label>
+      </node>
+      <node id="838">
+        <label>eos::ParameterUser</label>
+        <link refid="classeos_1_1ParameterUser"/>
+        <childnode refid="839" relation="usage">
+          <edgelabel>_ids</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/form-factors/pi-lcdas.hh" line="32" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/pi-lcdas.hh" bodystart="29" bodyend="68"/>
+    <listofallmembers>
+      <member refid="classeos_1_1ParameterUser_1aa3a0285297e16cf2a5830df1f9bb2f4b" prot="protected" virt="non-virtual"><scope>eos::PionLCDAs</scope><name>_ids</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a232940e78b26c6ed4f97196f831c69c9" prot="protected" virt="non-virtual"><scope>eos::PionLCDAs</scope><name>_imp</name></member>
+      <member refid="classeos_1_1PionLCDAs_1a4daa8e6632fb5ad61c13f7a7c4a91bbf" prot="public" virt="non-virtual"><scope>eos::PionLCDAs</scope><name>a2pi</name></member>
+      <member refid="classeos_1_1PionLCDAs_1a0d0c446b70ca3078a36d064ffe5ae46c" prot="public" virt="non-virtual"><scope>eos::PionLCDAs</scope><name>a4pi</name></member>
+      <member refid="classeos_1_1ParameterUser_1a9cd569207063cd2a8f807c4e1203a5d4" prot="public" virt="non-virtual"><scope>eos::PionLCDAs</scope><name>begin</name></member>
+      <member refid="classeos_1_1ParameterUser_1a7105631bbcb4b2492e6377b2b69f5b0f" prot="public" virt="non-virtual"><scope>eos::PionLCDAs</scope><name>ConstIterator</name></member>
+      <member refid="classeos_1_1PionLCDAs_1a605c4669795addc7a36752f6c07571e4" prot="public" virt="non-virtual"><scope>eos::PionLCDAs</scope><name>deltapipi</name></member>
+      <member refid="classeos_1_1PionLCDAs_1ae8727041baafa8c3007ef45a30f6d6ed" prot="public" virt="non-virtual"><scope>eos::PionLCDAs</scope><name>diagnostics</name></member>
+      <member refid="classeos_1_1ParameterUser_1a5813c886f3fd3f074cc02a53fc9e0790" prot="public" virt="non-virtual"><scope>eos::PionLCDAs</scope><name>end</name></member>
+      <member refid="classeos_1_1PionLCDAs_1a571ec82df903c4690aa2464a4ddd23a8" prot="public" virt="non-virtual"><scope>eos::PionLCDAs</scope><name>eta3pi</name></member>
+      <member refid="classeos_1_1PionLCDAs_1af557dad976202ea84cd889721b080fb9" prot="public" virt="non-virtual"><scope>eos::PionLCDAs</scope><name>f3pi</name></member>
+      <member refid="classeos_1_1PionLCDAs_1ad9453233816c40f020512b302e37b7ab" prot="public" virt="non-virtual"><scope>eos::PionLCDAs</scope><name>mupi</name></member>
+      <member refid="classeos_1_1PionLCDAs_1ab821dbbf52dd22ff63c08ecda4000366" prot="public" virt="non-virtual"><scope>eos::PionLCDAs</scope><name>omega3pi</name></member>
+      <member refid="classeos_1_1PionLCDAs_1a999a73d4b408e5b36a1ff7cd5c86c24a" prot="public" virt="non-virtual"><scope>eos::PionLCDAs</scope><name>omega4pi</name></member>
+      <member refid="classeos_1_1PionLCDAs_1a25af0e77528227031bdba7c630246c3a" prot="public" virt="non-virtual"><scope>eos::PionLCDAs</scope><name>phi</name></member>
+      <member refid="classeos_1_1PionLCDAs_1ac0f6b8d17ffe7b7e6f4ffcfa46e1d353" prot="public" virt="non-virtual"><scope>eos::PionLCDAs</scope><name>phi3p</name></member>
+      <member refid="classeos_1_1PionLCDAs_1a41fcd9e04a0f84c01b2168c7fba13164" prot="public" virt="non-virtual"><scope>eos::PionLCDAs</scope><name>phi3s</name></member>
+      <member refid="classeos_1_1PionLCDAs_1a821f18698397f85d42746ffeb7086ffa" prot="public" virt="non-virtual"><scope>eos::PionLCDAs</scope><name>phi3s_d1</name></member>
+      <member refid="classeos_1_1PionLCDAs_1a0a4f734894305e27fbcab789f9d61510" prot="public" virt="non-virtual"><scope>eos::PionLCDAs</scope><name>phi4</name></member>
+      <member refid="classeos_1_1PionLCDAs_1acb4c831f65e2758d01263b7b4a121e7c" prot="public" virt="non-virtual"><scope>eos::PionLCDAs</scope><name>phi4_d1</name></member>
+      <member refid="classeos_1_1PionLCDAs_1ae2915f62dae4fe58776ff3367dff2ace" prot="public" virt="non-virtual"><scope>eos::PionLCDAs</scope><name>phi4_d2</name></member>
+      <member refid="classeos_1_1PionLCDAs_1af4511a0652b92c1b152580de069d4ac5" prot="public" virt="non-virtual"><scope>eos::PionLCDAs</scope><name>PionLCDAs</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a3e3d5f4a565256a1dda6c234b051b2f2" prot="public" virt="non-virtual"><scope>eos::PionLCDAs</scope><name>PrivateImplementationPattern</name></member>
+      <member refid="classeos_1_1PionLCDAs_1ada2c4aa48e04c0f9de3511fd04333982" prot="public" virt="non-virtual"><scope>eos::PionLCDAs</scope><name>psi4</name></member>
+      <member refid="classeos_1_1PionLCDAs_1aabea6be529b7aacdcccb10f3a8861a81" prot="public" virt="non-virtual"><scope>eos::PionLCDAs</scope><name>psi4_i</name></member>
+      <member refid="classeos_1_1ParameterUser_1ad91a901e589653272482bded7e453c70" prot="public" virt="non-virtual"><scope>eos::PionLCDAs</scope><name>uses</name></member>
+      <member refid="classeos_1_1ParameterUser_1a7a37e779cf45ef1075fe7bf670688b72" prot="public" virt="non-virtual"><scope>eos::PionLCDAs</scope><name>uses</name></member>
+      <member refid="classeos_1_1PionLCDAs_1a6292a3aaf8e686e3fc319a1b7901f817" prot="public" virt="non-virtual"><scope>eos::PionLCDAs</scope><name>~PionLCDAs</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1acf46ec2739c3b0ec9702b9428475876d" prot="public" virt="non-virtual"><scope>eos::PionLCDAs</scope><name>~PrivateImplementationPattern</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

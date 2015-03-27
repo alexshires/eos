@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1EquationSolver_1_1Solution" kind="struct" prot="public">
+    <compoundname>eos::EquationSolver::Solution</compoundname>
+    <includes refid="equation__solver_8hh" local="no">equation_solver.hh</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structeos_1_1EquationSolver_1_1Solution_1ac0f9639b6d1b2cd2ca250a1dd4cb0549" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; eos::EquationSolver::Solution::parameters</definition>
+        <argsstring></argsstring>
+        <name>parameters</name>
+        <briefdescription>
+<para>The parameter values giving the best solution to the problem. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/equation_solver.hh" line="74" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/equation_solver.hh" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1EquationSolver_1_1Solution_1acb4de717f8f570cc92d3f1f2f7c6b085" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::EquationSolver::Solution::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+<para>Value of the function to be minimized at the minimum found. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/equation_solver.hh" line="77" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/equation_solver.hh" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1EquationSolver_1_1Solution_1a13f38764efb070fcb3af4fca3db02d1e" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool eos::EquationSolver::Solution::valid</definition>
+        <argsstring></argsstring>
+        <name>valid</name>
+        <briefdescription>
+<para>True if the solution finding succeeded. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/equation_solver.hh" line="80" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/equation_solver.hh" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="926">
+        <label>std::vector&lt; double &gt;</label>
+      </node>
+      <node id="925">
+        <label>eos::EquationSolver::Solution</label>
+        <link refid="structeos_1_1EquationSolver_1_1Solution"/>
+        <childnode refid="926" relation="usage">
+          <edgelabel>parameters</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/equation_solver.hh" line="72" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/equation_solver.hh" bodystart="71" bodyend="81"/>
+    <listofallmembers>
+      <member refid="structeos_1_1EquationSolver_1_1Solution_1ac0f9639b6d1b2cd2ca250a1dd4cb0549" prot="public" virt="non-virtual"><scope>eos::EquationSolver::Solution</scope><name>parameters</name></member>
+      <member refid="structeos_1_1EquationSolver_1_1Solution_1a13f38764efb070fcb3af4fca3db02d1e" prot="public" virt="non-virtual"><scope>eos::EquationSolver::Solution</scope><name>valid</name></member>
+      <member refid="structeos_1_1EquationSolver_1_1Solution_1acb4de717f8f570cc92d3f1f2f7c6b085" prot="public" virt="non-virtual"><scope>eos::EquationSolver::Solution</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

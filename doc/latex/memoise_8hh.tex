@@ -1,0 +1,55 @@
+\hypertarget{memoise_8hh}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/memoise.hh File Reference}
+\label{memoise_8hh}\index{/home/alexshires/EOS/eos-\/next/eos/utils/memoise.hh@{/home/alexshires/EOS/eos-\/next/eos/utils/memoise.hh}}
+}
+{\ttfamily \#include $<$eos/utils/instantiation\_\-policy.hh$>$}\par
+{\ttfamily \#include $<$eos/utils/instantiation\_\-policy-\/impl.hh$>$}\par
+{\ttfamily \#include $<$eos/utils/lock.hh$>$}\par
+{\ttfamily \#include $<$eos/utils/mutex.hh$>$}\par
+{\ttfamily \#include $<$cstdint$>$}\par
+{\ttfamily \#include $<$functional$>$}\par
+{\ttfamily \#include $<$tuple$>$}\par
+{\ttfamily \#include $<$unordered\_\-map$>$}\par
+{\ttfamily \#include $<$vector$>$}\par
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structeos_1_1implementation_1_1ResultOf_3_01Result___07Class___1_1_5_08_07Args___8_8_8_08_4}{eos::implementation::ResultOf$<$ Result\_\-(Class\_\-::$\ast$)(Args\_\-...)$>$}
+\item 
+struct \hyperlink{structeos_1_1implementation_1_1ResultOf_3_01Result___07_5_08_07Args___8_8_8_08_4}{eos::implementation::ResultOf$<$ Result\_\-($\ast$)(Args\_\-...)$>$}
+\item 
+class \hyperlink{classeos_1_1MemoisationControl}{eos::MemoisationControl}
+\item 
+class \hyperlink{classeos_1_1Memoiser}{eos::Memoiser$<$ Result\_\-, Params\_\- $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \hyperlink{namespacestd}{std}
+
+
+\begin{DoxyCompactList}\small\item\em STL namespace. \item\end{DoxyCompactList}\item 
+namespace \hyperlink{namespaceeos}{eos}
+\item 
+namespace \hyperlink{namespaceeos_1_1implementation}{eos::implementation}
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{memoise_8hh_a634782acc6719bb8865b60fcff17148e}{EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-MEMOISE\_\-HH}~1
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename FunctionType\_\- , typename... Params$>$ }\\implementation::ResultOf$<$ FunctionType\_\- $>$::Type \hyperlink{namespaceeos_a145cd9427e62a28f1144614e2b9a3d7d}{eos::memoise} (FunctionType\_\- f, const Params \&...p)
+\item 
+{\footnotesize template$<$typename FunctionType\_\- , typename... Params$>$ }\\unsigned \hyperlink{namespaceeos_a82ca3bc4794ddeca0b97d4a66fa5a679}{eos::number\_\-of\_\-memoisations} (FunctionType\_\-, const Params \&...)
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{memoise_8hh_a634782acc6719bb8865b60fcff17148e}{
+\index{memoise.hh@{memoise.hh}!EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-MEMOISE\_\-HH@{EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-MEMOISE\_\-HH}}
+\index{EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-MEMOISE\_\-HH@{EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-MEMOISE\_\-HH}!memoise.hh@{memoise.hh}}
+\subsubsection[{EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-MEMOISE\_\-HH}]{\setlength{\rightskip}{0pt plus 5cm}\#define EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-MEMOISE\_\-HH~1}}
+\label{memoise_8hh_a634782acc6719bb8865b60fcff17148e}

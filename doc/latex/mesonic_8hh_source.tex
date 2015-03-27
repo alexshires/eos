@@ -1,0 +1,101 @@
+\hypertarget{mesonic_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/form-\/factors/mesonic.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2010, 2011, 2013, 2014 Danny van Dyk}
+00005 \textcolor{comment}{ * Copyright (c) 2010 Christian Wacker}
+00006 \textcolor{comment}{ *}
+00007 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00008 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00009 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00010 \textcolor{comment}{ *}
+00011 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00012 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00013 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00014 \textcolor{comment}{ * details.}
+00015 \textcolor{comment}{ *}
+00016 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00017 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00018 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00019 \textcolor{comment}{ */}
+00020 
+00021 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_FORM\_FACTORS\_MESONIC\_HH}
+\hypertarget{mesonic_8hh_source_l00022}{}\hyperlink{mesonic_8hh_af14d4cdc53d4012250bcb57e3d8cc2d9}{00022} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_FORM\_FACTORS\_MESONIC\_HH 1}
+00023 \textcolor{preprocessor}{}
+00024 \textcolor{preprocessor}{#include <\hyperlink{form-factors-fwd_8hh}{eos/form-factors/form-factors-fwd.hh}>}
+00025 \textcolor{preprocessor}{#include <\hyperlink{parameters_8hh}{eos/utils/parameters.hh}>}
+00026 
+00027 \textcolor{preprocessor}{#include <memory>}
+00028 \textcolor{preprocessor}{#include <string>}
+00029 
+00030 \textcolor{keyword}{namespace }eos
+00031 \{
+00032     \textcolor{comment}{/* Mesonic Tags */}
+00033 
+00034     \textcolor{comment}{/*}
+00035 \textcolor{comment}{     * P -> V transitions}
+00036 \textcolor{comment}{     *}
+00037 \textcolor{comment}{     * P: (Heavy) pseudoscalar meson.}
+00038 \textcolor{comment}{     * V: Light vector meson.}
+00039 \textcolor{comment}{     */}
+\hypertarget{mesonic_8hh_source_l00040}{}\hyperlink{structeos_1_1PToV}{00040}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1PToV}{PToV} \{ \};
+00041 
+\hypertarget{mesonic_8hh_source_l00042}{}\hyperlink{structeos_1_1PToP}{00042}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1PToP}{PToP} \{ \};
+00043 
+00044     \textcolor{keyword}{template} <>
+\hypertarget{mesonic_8hh_source_l00045}{}\hyperlink{classeos_1_1FormFactors_3_01PToV_01_4}{00045}     \textcolor{keyword}{class }FormFactors<\hyperlink{structeos_1_1PToV}{PToV}> :
+00046         \textcolor{keyword}{public} \hyperlink{classeos_1_1ParameterUser}{ParameterUser}
+00047     \{
+00048         \textcolor{keyword}{public}:
+00049             \textcolor{keyword}{virtual} ~FormFactors();
+00050 
+00051             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} v(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const} = 0;
+00052 
+00053             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} a\_0(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const} = 0;
+00054             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} a\_1(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const} = 0;
+00055             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} a\_2(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const} = 0;
+00056             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} a\_12(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const} = 0;
+00057 
+00058             \textcolor{comment}{// TODO: dipole form factors}
+00059     \};
+00060 
+00061     \textcolor{keyword}{template} <>
+\hypertarget{mesonic_8hh_source_l00062}{}\hyperlink{classeos_1_1FormFactorFactory_3_01PToV_01_4}{00062}     \textcolor{keyword}{class }FormFactorFactory<\hyperlink{structeos_1_1PToV}{PToV}>
+00063     \{
+00064         \textcolor{keyword}{public}:
+00065             \textcolor{keyword}{static} std::shared\_ptr<FormFactors<PToV>> create(\textcolor{keyword}{const} std::string & 
+      label, \textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & parameters);
+00066     \};
+00067 
+00068     \textcolor{keyword}{template} <>
+\hypertarget{mesonic_8hh_source_l00069}{}\hyperlink{classeos_1_1FormFactors_3_01PToP_01_4}{00069}     \textcolor{keyword}{class }FormFactors<\hyperlink{structeos_1_1PToP}{PToP}> :
+00070         \textcolor{keyword}{public} \hyperlink{classeos_1_1ParameterUser}{ParameterUser}
+00071     \{
+00072         \textcolor{keyword}{public}:
+00073             \textcolor{keyword}{virtual} ~FormFactors();
+00074 
+00075             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} f\_p(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const} = 0;
+00076             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} f\_0(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const} = 0;
+00077             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} f\_t(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const} = 0;
+00078 
+00079             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} f\_p\_d1(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00080             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} f\_p\_d2(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00081     \};
+00082 
+00083     \textcolor{keyword}{template} <>
+\hypertarget{mesonic_8hh_source_l00084}{}\hyperlink{classeos_1_1FormFactorFactory_3_01PToP_01_4}{00084}     \textcolor{keyword}{class }FormFactorFactory<\hyperlink{structeos_1_1PToP}{PToP}>
+00085     \{
+00086         \textcolor{keyword}{public}:
+00087             \textcolor{keyword}{static} std::shared\_ptr<FormFactors<PToP>> create(\textcolor{keyword}{const} std::string & 
+      label, \textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & parameters);
+00088     \};
+00089 \}
+00090 
+00091 
+00092 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

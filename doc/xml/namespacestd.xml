@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="namespacestd" kind="namespace">
+    <compoundname>std</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacestd_1a6d6277667793ff3eda9413c93c2a16a2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U_</type>
+          </param>
+        </templateparamlist>
+        <type>uint64_t</type>
+        <definition>static uint64_t std::__hash_one</definition>
+        <argsstring>(const U_ &amp;u)</argsstring>
+        <name>__hash_one</name>
+        <param>
+          <type>const U_ &amp;</type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/memoise.hh" line="39" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/memoise.hh" bodystart="38" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>STL namespace. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/memoise.hh" line="37"/>
+  </compounddef>
+</doxygen>

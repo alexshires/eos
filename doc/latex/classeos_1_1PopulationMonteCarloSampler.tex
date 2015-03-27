@@ -1,0 +1,145 @@
+\hypertarget{classeos_1_1PopulationMonteCarloSampler}{
+\section{eos::PopulationMonteCarloSampler Class Reference}
+\label{classeos_1_1PopulationMonteCarloSampler}\index{eos::PopulationMonteCarloSampler@{eos::PopulationMonteCarloSampler}}
+}
+
+
+{\ttfamily \#include $<$population\_\-monte\_\-carlo\_\-sampler.hh$>$}
+
+Inherits \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern$<$ PopulationMonteCarloSampler $>$}.\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config}{Config}
+\item 
+struct \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Output}{Output}
+\item 
+struct \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Status}{Status}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{Indent}{\bf Basic Functions}\par
+{\em \label{_amgrp2386c9a1f1785edee33f374dd2db9b3d}
+ }\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1PopulationMonteCarloSampler_af17458cf45dd30ed7328b88af1ad7ffd}{PopulationMonteCarloSampler} (const \hyperlink{classeos_1_1Analysis}{Analysis} \&analysis, const \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config}{PopulationMonteCarloSampler::Config} \&config)
+\item 
+\hyperlink{classeos_1_1PopulationMonteCarloSampler_a0a691ab9f41782d8c059685a3bc1998c}{PopulationMonteCarloSampler} (const \hyperlink{classeos_1_1Analysis}{Analysis} \&analysis, const \hyperlink{classeos_1_1hdf5_1_1File}{hdf5::File} \&file, const \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config}{PopulationMonteCarloSampler::Config} \&config, const bool \&update=false)
+\item 
+\hyperlink{classeos_1_1PopulationMonteCarloSampler_a10bebcfd46a9a9c8925de30e78f192ef}{$\sim$PopulationMonteCarloSampler} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Sampling}
+\label{_amgrp1d07814d12178c958e4233501cb0bdc7}
+ \begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classeos_1_1PopulationMonteCarloSampler_acce93bba46d62aba651ccbf9dd7dd97e}{calculate\_\-weights} (const std::string \&sample\_\-file, const unsigned \&min\_\-index, const unsigned \&max\_\-index) const 
+\item 
+const \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config}{PopulationMonteCarloSampler::Config} \& \hyperlink{classeos_1_1PopulationMonteCarloSampler_ad5cdbdb944ffd933a76b58915c366ecc}{config} () const 
+\begin{DoxyCompactList}\small\item\em Retrieve the configuration from which this sampler was constructed. \item\end{DoxyCompactList}\item 
+void \hyperlink{classeos_1_1PopulationMonteCarloSampler_a89aafb7a0eea4a3d3f7c14c4678cb4fa}{draw\_\-samples} ()
+\item 
+void \hyperlink{classeos_1_1PopulationMonteCarloSampler_a7df73b99d042f2b41a37e9acca29eebd}{run} ()
+\begin{DoxyCompactList}\small\item\em Start the Markov chain sampling. \item\end{DoxyCompactList}\item 
+const \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Status}{PopulationMonteCarloSampler::Status} \& \hyperlink{classeos_1_1PopulationMonteCarloSampler_a0557e83dff8bc5befde6a43ede580f84}{status} () const 
+\begin{DoxyCompactList}\small\item\em Retrieve the current status. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classeos_1_1PopulationMonteCarloSampler_a96d11e8d79528f5ea69f0c243dbf659f}{status} (const \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Status}{PopulationMonteCarloSampler::Status} \&new\_\-status, bool check\_\-convergence=false)
+\item 
+static void \hyperlink{classeos_1_1PopulationMonteCarloSampler_a69d7eee659c32197c19424aaf74a1eb8}{read\_\-samples} (const std::string \&sample\_\-file, const std::string \&base, const unsigned \&min, const unsigned \&max, std::vector$<$ std::vector$<$ double $>$$>$ \&samples)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classeos_1_1PopulationMonteCarloSampler_af17458cf45dd30ed7328b88af1ad7ffd}{
+\index{eos::PopulationMonteCarloSampler@{eos::PopulationMonteCarloSampler}!PopulationMonteCarloSampler@{PopulationMonteCarloSampler}}
+\index{PopulationMonteCarloSampler@{PopulationMonteCarloSampler}!eos::PopulationMonteCarloSampler@{eos::PopulationMonteCarloSampler}}
+\subsubsection[{PopulationMonteCarloSampler}]{\setlength{\rightskip}{0pt plus 5cm}eos::PopulationMonteCarloSampler::PopulationMonteCarloSampler (const {\bf Analysis} \& {\em analysis}, \/  const {\bf PopulationMonteCarloSampler::Config} \& {\em config})}}
+\label{classeos_1_1PopulationMonteCarloSampler_af17458cf45dd30ed7328b88af1ad7ffd}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em analysis}]The analysis for which we draw samples. \item[{\em config}]The configuration of the samples. \end{DoxyParams}
+\hypertarget{classeos_1_1PopulationMonteCarloSampler_a0a691ab9f41782d8c059685a3bc1998c}{
+\index{eos::PopulationMonteCarloSampler@{eos::PopulationMonteCarloSampler}!PopulationMonteCarloSampler@{PopulationMonteCarloSampler}}
+\index{PopulationMonteCarloSampler@{PopulationMonteCarloSampler}!eos::PopulationMonteCarloSampler@{eos::PopulationMonteCarloSampler}}
+\subsubsection[{PopulationMonteCarloSampler}]{\setlength{\rightskip}{0pt plus 5cm}eos::PopulationMonteCarloSampler::PopulationMonteCarloSampler (const {\bf Analysis} \& {\em analysis}, \/  const {\bf hdf5::File} \& {\em file}, \/  const {\bf PopulationMonteCarloSampler::Config} \& {\em config}, \/  const bool \& {\em update} = {\ttfamily false})}}
+\label{classeos_1_1PopulationMonteCarloSampler_a0a691ab9f41782d8c059685a3bc1998c}
+Initialize the PMC from a HDF5 file.
+
+Several kinds of input files are (automatically) recognized:
+
+a) GlobalLocal proposal function, stored in file. b) MCMC prerun, used for hierarchical clustering. c) Serialized status of a PMC proposal function from a previous PMC run.
+
+All options regarding construction of the PMC in config are ignored. \hypertarget{classeos_1_1PopulationMonteCarloSampler_a10bebcfd46a9a9c8925de30e78f192ef}{
+\index{eos::PopulationMonteCarloSampler@{eos::PopulationMonteCarloSampler}!$\sim$PopulationMonteCarloSampler@{$\sim$PopulationMonteCarloSampler}}
+\index{$\sim$PopulationMonteCarloSampler@{$\sim$PopulationMonteCarloSampler}!eos::PopulationMonteCarloSampler@{eos::PopulationMonteCarloSampler}}
+\subsubsection[{$\sim$PopulationMonteCarloSampler}]{\setlength{\rightskip}{0pt plus 5cm}eos::PopulationMonteCarloSampler::$\sim$PopulationMonteCarloSampler ()}}
+\label{classeos_1_1PopulationMonteCarloSampler_a10bebcfd46a9a9c8925de30e78f192ef}
+
+
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classeos_1_1PopulationMonteCarloSampler_acce93bba46d62aba651ccbf9dd7dd97e}{
+\index{eos::PopulationMonteCarloSampler@{eos::PopulationMonteCarloSampler}!calculate\_\-weights@{calculate\_\-weights}}
+\index{calculate\_\-weights@{calculate\_\-weights}!eos::PopulationMonteCarloSampler@{eos::PopulationMonteCarloSampler}}
+\subsubsection[{calculate\_\-weights}]{\setlength{\rightskip}{0pt plus 5cm}void eos::PopulationMonteCarloSampler::calculate\_\-weights (const std::string \& {\em sample\_\-file}, \/  const unsigned \& {\em min\_\-index}, \/  const unsigned \& {\em max\_\-index}) const}}
+\label{classeos_1_1PopulationMonteCarloSampler_acce93bba46d62aba651ccbf9dd7dd97e}
+Calculate the posterior and importance weights for the range of parameter samples given by min and max indices from the sample file. \hypertarget{classeos_1_1PopulationMonteCarloSampler_ad5cdbdb944ffd933a76b58915c366ecc}{
+\index{eos::PopulationMonteCarloSampler@{eos::PopulationMonteCarloSampler}!config@{config}}
+\index{config@{config}!eos::PopulationMonteCarloSampler@{eos::PopulationMonteCarloSampler}}
+\subsubsection[{config}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf PopulationMonteCarloSampler::Config}\& eos::PopulationMonteCarloSampler::config () const}}
+\label{classeos_1_1PopulationMonteCarloSampler_ad5cdbdb944ffd933a76b58915c366ecc}
+
+
+Retrieve the configuration from which this sampler was constructed. \hypertarget{classeos_1_1PopulationMonteCarloSampler_a89aafb7a0eea4a3d3f7c14c4678cb4fa}{
+\index{eos::PopulationMonteCarloSampler@{eos::PopulationMonteCarloSampler}!draw\_\-samples@{draw\_\-samples}}
+\index{draw\_\-samples@{draw\_\-samples}!eos::PopulationMonteCarloSampler@{eos::PopulationMonteCarloSampler}}
+\subsubsection[{draw\_\-samples}]{\setlength{\rightskip}{0pt plus 5cm}void eos::PopulationMonteCarloSampler::draw\_\-samples ()}}
+\label{classeos_1_1PopulationMonteCarloSampler_a89aafb7a0eea4a3d3f7c14c4678cb4fa}
+Draw parameter samples from the proposal density and store them, along with the full status of all \hyperlink{namespaceeos_1_1components}{components}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em output\_\-file}]Name of the HDF5 output file \end{DoxyParams}
+\hypertarget{classeos_1_1PopulationMonteCarloSampler_a69d7eee659c32197c19424aaf74a1eb8}{
+\index{eos::PopulationMonteCarloSampler@{eos::PopulationMonteCarloSampler}!read\_\-samples@{read\_\-samples}}
+\index{read\_\-samples@{read\_\-samples}!eos::PopulationMonteCarloSampler@{eos::PopulationMonteCarloSampler}}
+\subsubsection[{read\_\-samples}]{\setlength{\rightskip}{0pt plus 5cm}static void eos::PopulationMonteCarloSampler::read\_\-samples (const std::string \& {\em sample\_\-file}, \/  const std::string \& {\em base}, \/  const unsigned \& {\em min}, \/  const unsigned \& {\em max}, \/  std::vector$<$ std::vector$<$ double $>$$>$ \& {\em samples})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1PopulationMonteCarloSampler_a69d7eee659c32197c19424aaf74a1eb8}
+Read in a slice of samples from a previous PMC dump.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em sample\_\-file}]Name of HDF5 file containing the samples. \item[{\em base}]Directory name within HDF5 file. \item[{\em min}]First element to parse. \item[{\em max}]Index of one-\/past last element to parse. \item[{\em samples}]Upon return, contains all samples stored. When passing in, there must be at least one sample in there to convey the parameter dimension \end{DoxyParams}
+\hypertarget{classeos_1_1PopulationMonteCarloSampler_a7df73b99d042f2b41a37e9acca29eebd}{
+\index{eos::PopulationMonteCarloSampler@{eos::PopulationMonteCarloSampler}!run@{run}}
+\index{run@{run}!eos::PopulationMonteCarloSampler@{eos::PopulationMonteCarloSampler}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void eos::PopulationMonteCarloSampler::run ()}}
+\label{classeos_1_1PopulationMonteCarloSampler_a7df73b99d042f2b41a37e9acca29eebd}
+
+
+Start the Markov chain sampling. \hypertarget{classeos_1_1PopulationMonteCarloSampler_a96d11e8d79528f5ea69f0c243dbf659f}{
+\index{eos::PopulationMonteCarloSampler@{eos::PopulationMonteCarloSampler}!status@{status}}
+\index{status@{status}!eos::PopulationMonteCarloSampler@{eos::PopulationMonteCarloSampler}}
+\subsubsection[{status}]{\setlength{\rightskip}{0pt plus 5cm}bool eos::PopulationMonteCarloSampler::status (const {\bf PopulationMonteCarloSampler::Status} \& {\em new\_\-status}, \/  bool {\em check\_\-convergence} = {\ttfamily false})}}
+\label{classeos_1_1PopulationMonteCarloSampler_a96d11e8d79528f5ea69f0c243dbf659f}
+Set the current status.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em new\_\-status}]The new status. \item[{\em check\_\-convergence}]If true, compute convergence based on the new status and return true if converged. This option is for testing only! \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True 
+\end{DoxyReturn}
+\hypertarget{classeos_1_1PopulationMonteCarloSampler_a0557e83dff8bc5befde6a43ede580f84}{
+\index{eos::PopulationMonteCarloSampler@{eos::PopulationMonteCarloSampler}!status@{status}}
+\index{status@{status}!eos::PopulationMonteCarloSampler@{eos::PopulationMonteCarloSampler}}
+\subsubsection[{status}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf PopulationMonteCarloSampler::Status}\& eos::PopulationMonteCarloSampler::status () const}}
+\label{classeos_1_1PopulationMonteCarloSampler_a0557e83dff8bc5befde6a43ede580f84}
+
+
+Retrieve the current status. 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{population__monte__carlo__sampler_8hh}{population\_\-monte\_\-carlo\_\-sampler.hh}\end{DoxyCompactItemize}

@@ -1,0 +1,195 @@
+\hypertarget{classeos_1_1LogLikelihood}{
+\section{eos::LogLikelihood Class Reference}
+\label{classeos_1_1LogLikelihood}\index{eos::LogLikelihood@{eos::LogLikelihood}}
+}
+
+
+{\ttfamily \#include $<$log\_\-likelihood.hh$>$}
+
+Inherits \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern$<$ LogLikelihood $>$}.\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std::pair$<$ double, double $>$ \hyperlink{classeos_1_1LogLikelihood_a51cd04019887511f540be75b4ef9ec7a}{bootstrap\_\-p\_\-value} (const unsigned \&datasets)
+\item 
+\hyperlink{classeos_1_1LogLikelihood}{LogLikelihood} \hyperlink{classeos_1_1LogLikelihood_a0aed658b79b9915a79ceba3a2fe10509}{clone} () const 
+\item 
+unsigned \hyperlink{classeos_1_1LogLikelihood_af9fe6dbe66c827e44bc500d3f2a94a6a}{number\_\-of\_\-observations} () const 
+\item 
+\hyperlink{classeos_1_1Parameters}{Parameters} \hyperlink{classeos_1_1LogLikelihood_abf5c017096b99502c3bafb47a6297852}{parameters} () const 
+\item 
+\hyperlink{classeos_1_1ObservableCache}{ObservableCache} \hyperlink{classeos_1_1LogLikelihood_a3dc64fa5ee57da08f90eb18acd5bb8dd}{observable\_\-cache} () const 
+\item 
+double \hyperlink{classeos_1_1LogLikelihood_a3852b27cbc7bc0254c9323dfedf31576}{operator()} ()
+\item 
+double \hyperlink{classeos_1_1LogLikelihood_a289c5a378c31d4d05f4dc04af256cc84}{operator()} (const \hyperlink{classeos_1_1Parameter_a065f55e66b2128cc5f14339e676d833a}{Parameter::Id} \&id)
+\item 
+void \hyperlink{classeos_1_1LogLikelihood_a43d24e99c8f7e4209e6bb763186123d8}{reset} ()
+\end{DoxyCompactItemize}
+\begin{Indent}{\bf Basic Functions}\par
+{\em \label{_amgrp2386c9a1f1785edee33f374dd2db9b3d}
+ }\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1LogLikelihood_aaa2ab4108cc72397704139e01aca6316}{LogLikelihood} (const \hyperlink{classeos_1_1Parameters}{Parameters} \&parameters)
+\item 
+\hyperlink{classeos_1_1LogLikelihood_ad6f6ff2a71df17599e033681d64fe454}{$\sim$LogLikelihood} ()
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Access and evaluation}\par
+{\em \label{_amgrp6134b2a17e0234f8ef026e8f586768aa}
+ }\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classeos_1_1LogLikelihood_a236d8123a08805e1d825ca262bada0c8}{add} (const \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} \&observable, const double \&min, const double \&central, const double \&max, const unsigned \&number\_\-of\_\-observations=1u)
+\item 
+void \hyperlink{classeos_1_1LogLikelihood_ac1fd5ffc7ace637eab0d8a3fa5cb7463}{add} (const \hyperlink{classeos_1_1Constraint}{Constraint} \&constraint)
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Iteration and Access}
+\label{_amgrp518e849dad280496b3dba5bda3151948}
+ \begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator}$<$ ConstraintIteratorTag, \hyperlink{classeos_1_1Constraint}{Constraint} $>$ \hyperlink{classeos_1_1LogLikelihood_a48b422865426d34047c9757e2d5f4f92}{ConstraintIterator}
+\begin{DoxyCompactList}\small\item\em Iterator to the first constraint. \item\end{DoxyCompactList}\item 
+\hyperlink{classeos_1_1WrappedForwardIterator}{ConstraintIterator} \hyperlink{classeos_1_1LogLikelihood_aa016da72e3b65c8a4ed58cebf1f50863}{begin} () const 
+\begin{DoxyCompactList}\small\item\em Iterator to the first constraint. \item\end{DoxyCompactList}\item 
+\hyperlink{classeos_1_1WrappedForwardIterator}{ConstraintIterator} \hyperlink{classeos_1_1LogLikelihood_a15bf635f6541e9fb16463c5dbb4b462b}{end} () const 
+\begin{DoxyCompactList}\small\item\em Iterator pointing past the last constraint. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classeos_1_1LogLikelihood}{LogLikelihood} handles a set of ObservablePtr with associated measurement data.
+
+Access to any \hyperlink{classeos_1_1LogLikelihood}{LogLikelihood} is coherent, i.e., changes to one object will propagate to every other object copy. To create an independent instance, use \hyperlink{classeos_1_1LogLikelihood_a0aed658b79b9915a79ceba3a2fe10509}{clone()}. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classeos_1_1LogLikelihood_a48b422865426d34047c9757e2d5f4f92}{
+\index{eos::LogLikelihood@{eos::LogLikelihood}!ConstraintIterator@{ConstraintIterator}}
+\index{ConstraintIterator@{ConstraintIterator}!eos::LogLikelihood@{eos::LogLikelihood}}
+\subsubsection[{ConstraintIterator}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf WrappedForwardIterator}$<$ConstraintIteratorTag, {\bf Constraint}$>$ {\bf eos::LogLikelihood::ConstraintIterator}}}
+\label{classeos_1_1LogLikelihood_a48b422865426d34047c9757e2d5f4f92}
+
+
+Iterator to the first constraint. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classeos_1_1LogLikelihood_aaa2ab4108cc72397704139e01aca6316}{
+\index{eos::LogLikelihood@{eos::LogLikelihood}!LogLikelihood@{LogLikelihood}}
+\index{LogLikelihood@{LogLikelihood}!eos::LogLikelihood@{eos::LogLikelihood}}
+\subsubsection[{LogLikelihood}]{\setlength{\rightskip}{0pt plus 5cm}eos::LogLikelihood::LogLikelihood (const {\bf Parameters} \& {\em parameters})}}
+\label{classeos_1_1LogLikelihood_aaa2ab4108cc72397704139e01aca6316}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em parameters}]The \hyperlink{classeos_1_1Parameters}{Parameters} object to which all further ObservablePtr objects must be bound. \end{DoxyParams}
+\hypertarget{classeos_1_1LogLikelihood_ad6f6ff2a71df17599e033681d64fe454}{
+\index{eos::LogLikelihood@{eos::LogLikelihood}!$\sim$LogLikelihood@{$\sim$LogLikelihood}}
+\index{$\sim$LogLikelihood@{$\sim$LogLikelihood}!eos::LogLikelihood@{eos::LogLikelihood}}
+\subsubsection[{$\sim$LogLikelihood}]{\setlength{\rightskip}{0pt plus 5cm}eos::LogLikelihood::$\sim$LogLikelihood ()}}
+\label{classeos_1_1LogLikelihood_ad6f6ff2a71df17599e033681d64fe454}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classeos_1_1LogLikelihood_ac1fd5ffc7ace637eab0d8a3fa5cb7463}{
+\index{eos::LogLikelihood@{eos::LogLikelihood}!add@{add}}
+\index{add@{add}!eos::LogLikelihood@{eos::LogLikelihood}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void eos::LogLikelihood::add (const {\bf Constraint} \& {\em constraint})}}
+\label{classeos_1_1LogLikelihood_ac1fd5ffc7ace637eab0d8a3fa5cb7463}
+Add one of the libraries experimental constraints.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em constraint}]The experimental constraint, cf. \hyperlink{classeos_1_1Constraint_a5084265f8e196296a885089cf710c096}{Constraint::make} \end{DoxyParams}
+\hypertarget{classeos_1_1LogLikelihood_a236d8123a08805e1d825ca262bada0c8}{
+\index{eos::LogLikelihood@{eos::LogLikelihood}!add@{add}}
+\index{add@{add}!eos::LogLikelihood@{eos::LogLikelihood}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void eos::LogLikelihood::add (const {\bf ObservablePtr} \& {\em observable}, \/  const double \& {\em min}, \/  const double \& {\em central}, \/  const double \& {\em max}, \/  const unsigned \& {\em number\_\-of\_\-observations} = {\ttfamily 1u})}}
+\label{classeos_1_1LogLikelihood_a236d8123a08805e1d825ca262bada0c8}
+Add an observable and its associated measurement.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em observable}]The \hyperlink{classeos_1_1Observable}{Observable} that shall be added to the calculation of the likelihood. \item[{\em min}]The lower bound on the measurement. \item[{\em central}]The central value of the measurement. \item[{\em max}]The upper bound on the measurement. \item[{\em number\_\-of\_\-observations}]The number of observations associated with the measurement. Defaults to 1. \end{DoxyParams}
+\hypertarget{classeos_1_1LogLikelihood_aa016da72e3b65c8a4ed58cebf1f50863}{
+\index{eos::LogLikelihood@{eos::LogLikelihood}!begin@{begin}}
+\index{begin@{begin}!eos::LogLikelihood@{eos::LogLikelihood}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ConstraintIterator} eos::LogLikelihood::begin () const}}
+\label{classeos_1_1LogLikelihood_aa016da72e3b65c8a4ed58cebf1f50863}
+
+
+Iterator to the first constraint. \hypertarget{classeos_1_1LogLikelihood_a51cd04019887511f540be75b4ef9ec7a}{
+\index{eos::LogLikelihood@{eos::LogLikelihood}!bootstrap\_\-p\_\-value@{bootstrap\_\-p\_\-value}}
+\index{bootstrap\_\-p\_\-value@{bootstrap\_\-p\_\-value}!eos::LogLikelihood@{eos::LogLikelihood}}
+\subsubsection[{bootstrap\_\-p\_\-value}]{\setlength{\rightskip}{0pt plus 5cm}std::pair$<$double, double$>$ eos::LogLikelihood::bootstrap\_\-p\_\-value (const unsigned \& {\em datasets})}}
+\label{classeos_1_1LogLikelihood_a51cd04019887511f540be75b4ef9ec7a}
+Calculate a p-\/value based on the $^\wedge$2 test statistic for the current setting of the parameters. \begin{DoxyNote}{Note}
+The p-\/value is \_\-not\_\- corrected for degrees of freedom. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em datasets}]The number of simulated data sets \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$p-\/value, uncertainty$>$, where the uncertainty is estimated from the standard posterior for a Bernoulli experiment. 
+\end{DoxyReturn}
+\hypertarget{classeos_1_1LogLikelihood_a0aed658b79b9915a79ceba3a2fe10509}{
+\index{eos::LogLikelihood@{eos::LogLikelihood}!clone@{clone}}
+\index{clone@{clone}!eos::LogLikelihood@{eos::LogLikelihood}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf LogLikelihood} eos::LogLikelihood::clone () const}}
+\label{classeos_1_1LogLikelihood_a0aed658b79b9915a79ceba3a2fe10509}
+Create an independent instance of this \hyperlink{classeos_1_1LogLikelihood}{LogLikelihood} that uses the same set of observables and measurements. \hypertarget{classeos_1_1LogLikelihood_a15bf635f6541e9fb16463c5dbb4b462b}{
+\index{eos::LogLikelihood@{eos::LogLikelihood}!end@{end}}
+\index{end@{end}!eos::LogLikelihood@{eos::LogLikelihood}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ConstraintIterator} eos::LogLikelihood::end () const}}
+\label{classeos_1_1LogLikelihood_a15bf635f6541e9fb16463c5dbb4b462b}
+
+
+Iterator pointing past the last constraint. \hypertarget{classeos_1_1LogLikelihood_af9fe6dbe66c827e44bc500d3f2a94a6a}{
+\index{eos::LogLikelihood@{eos::LogLikelihood}!number\_\-of\_\-observations@{number\_\-of\_\-observations}}
+\index{number\_\-of\_\-observations@{number\_\-of\_\-observations}!eos::LogLikelihood@{eos::LogLikelihood}}
+\subsubsection[{number\_\-of\_\-observations}]{\setlength{\rightskip}{0pt plus 5cm}unsigned eos::LogLikelihood::number\_\-of\_\-observations () const}}
+\label{classeos_1_1LogLikelihood_af9fe6dbe66c827e44bc500d3f2a94a6a}
+The number of independent observations used in the likelihood. \begin{DoxyNote}{Note}
+This may differ from the number of observables in case two experiments reported their results on the same observable. 
+\end{DoxyNote}
+\hypertarget{classeos_1_1LogLikelihood_a3dc64fa5ee57da08f90eb18acd5bb8dd}{
+\index{eos::LogLikelihood@{eos::LogLikelihood}!observable\_\-cache@{observable\_\-cache}}
+\index{observable\_\-cache@{observable\_\-cache}!eos::LogLikelihood@{eos::LogLikelihood}}
+\subsubsection[{observable\_\-cache}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ObservableCache} eos::LogLikelihood::observable\_\-cache () const}}
+\label{classeos_1_1LogLikelihood_a3dc64fa5ee57da08f90eb18acd5bb8dd}
+Retrieve the cache of observables associated with this \hyperlink{classeos_1_1LogLikelihood}{LogLikelihood}. \hypertarget{classeos_1_1LogLikelihood_a289c5a378c31d4d05f4dc04af256cc84}{
+\index{eos::LogLikelihood@{eos::LogLikelihood}!operator()@{operator()}}
+\index{operator()@{operator()}!eos::LogLikelihood@{eos::LogLikelihood}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}double eos::LogLikelihood::operator() (const {\bf Parameter::Id} \& {\em id})}}
+\label{classeos_1_1LogLikelihood_a289c5a378c31d4d05f4dc04af256cc84}
+Evaluate the likelihood, but recalculate only those observables which depend on the parameter with the given id
+
+\begin{DoxyWarning}{Warning}
+Do not use this call before \_\-\_\-all\_\-\_\- observables have been added to the likelihood! Since the dependence is checked only the first time a parameter id is encountered, adding an observable later will not establish the link between the id and the observable, leading to incorrect values of the likelihood 
+\end{DoxyWarning}
+\hypertarget{classeos_1_1LogLikelihood_a3852b27cbc7bc0254c9323dfedf31576}{
+\index{eos::LogLikelihood@{eos::LogLikelihood}!operator()@{operator()}}
+\index{operator()@{operator()}!eos::LogLikelihood@{eos::LogLikelihood}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}double eos::LogLikelihood::operator() ()}}
+\label{classeos_1_1LogLikelihood_a3852b27cbc7bc0254c9323dfedf31576}
+Evaluate the log likelihood, i.e., return \[ \log \mathcal{L} = \log P(D | \vec{\theta}, M)= - \frac{\chi^2}{2} + C\]. \begin{DoxyNote}{Note}
+: all observables are recalculated 
+\end{DoxyNote}
+\hypertarget{classeos_1_1LogLikelihood_abf5c017096b99502c3bafb47a6297852}{
+\index{eos::LogLikelihood@{eos::LogLikelihood}!parameters@{parameters}}
+\index{parameters@{parameters}!eos::LogLikelihood@{eos::LogLikelihood}}
+\subsubsection[{parameters}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parameters} eos::LogLikelihood::parameters () const}}
+\label{classeos_1_1LogLikelihood_abf5c017096b99502c3bafb47a6297852}
+Retrieve the underlying \hyperlink{classeos_1_1Parameters}{Parameters} object. \hypertarget{classeos_1_1LogLikelihood_a43d24e99c8f7e4209e6bb763186123d8}{
+\index{eos::LogLikelihood@{eos::LogLikelihood}!reset@{reset}}
+\index{reset@{reset}!eos::LogLikelihood@{eos::LogLikelihood}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}void eos::LogLikelihood::reset ()}}
+\label{classeos_1_1LogLikelihood_a43d24e99c8f7e4209e6bb763186123d8}
+Reload previous observable values.
+
+\begin{DoxyNote}{Note}
+this is only useful in conjunction with operator()(const Parameter\& par) and the Markov Chain sampler 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{log__likelihood_8hh}{log\_\-likelihood.hh}\end{DoxyCompactItemize}

@@ -1,0 +1,112 @@
+\hypertarget{wilson-polynomial_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/wilson-\/polynomial.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2010, 2011 Danny van Dyk}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_WILSON\_POLYNOMIAL\_HH}
+\hypertarget{wilson-polynomial_8hh_source_l00021}{}\hyperlink{wilson-polynomial_8hh_ae33bd5eb549806a3ba3d61f54994bfba}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_WILSON\_POLYNOMIAL\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{preprocessor}{#include <\hyperlink{observable_8hh}{eos/observable.hh}>}
+00024 \textcolor{preprocessor}{#include <\hyperlink{one-of_8hh}{eos/utils/one-of.hh}>}
+00025 
+00026 \textcolor{preprocessor}{#include <list>}
+00027 \textcolor{preprocessor}{#include <string>}
+00028 
+00029 \textcolor{keyword}{namespace }eos
+00030 \{
+00031     \textcolor{keyword}{class }Constant;
+00032 
+00033     \textcolor{keyword}{class }Sum;
+00034 
+00035     \textcolor{keyword}{class }Product;
+00036 
+00037     \textcolor{keyword}{class }Sine;
+00038 
+\hypertarget{wilson-polynomial_8hh_source_l00039}{}\hyperlink{namespaceeos_ad0c57fa62d09f6465421603cb5285284}{00039}     \textcolor{keyword}{class }Cosine;
+00040 
+00041     \textcolor{keyword}{typedef} \hyperlink{classeos_1_1OneOf}{OneOf<Constant, Sum, Product, Sine, Cosine, Parameter>} 
+      \hyperlink{classeos_1_1OneOf}{WilsonPolynomial};
+00042 
+00043     \hyperlink{classeos_1_1OneOf}{WilsonPolynomial} \hyperlink{namespaceeos_ae661f13ba6f529e7a5c19865f6528da6}{make_polynomial}(\textcolor{keyword}{const} \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} &, \textcolor{keyword}{const} std::list<std::
+      string> &);
+00044 
+00051     \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} \hyperlink{namespaceeos_a702bfbd9d3f9e42e94628616b8760853}{make_polynomial_observable}(\textcolor{keyword}{const} \hyperlink{classeos_1_1OneOf}{WilsonPolynomial} & polynomial,
+      
+00052             \textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & parameters);
+00053 
+00061     \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} \hyperlink{namespaceeos_aeb8e7723a15217742675f8f16ebbc4f9}{make_polynomial_ratio}(\textcolor{keyword}{const} \hyperlink{classeos_1_1OneOf}{WilsonPolynomial} & numerator, \textcolor{keyword}{const
+      } \hyperlink{classeos_1_1OneOf}{WilsonPolynomial} & denominator,
+00062             \textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & parameters);
+00063 
+00073     \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} \hyperlink{namespaceeos_a25bb05f44e3b5f6b6c5197277e22776b}{make_polynomial_ht_like_ratio}(\textcolor{keyword}{const} \hyperlink{classeos_1_1OneOf}{WilsonPolynomial} & numerato
+      r, \textcolor{keyword}{const} \hyperlink{classeos_1_1OneOf}{WilsonPolynomial} & denominator,
+00074             \textcolor{keyword}{const} \hyperlink{classeos_1_1OneOf}{WilsonPolynomial} & denominator2, \textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & parameters)
+      ;
+00075 
+\hypertarget{wilson-polynomial_8hh_source_l00076}{}\hyperlink{classeos_1_1WilsonPolynomialCloner}{00076}     \textcolor{keyword}{class }\hyperlink{classeos_1_1WilsonPolynomialCloner}{WilsonPolynomialCloner}
+00077     \{
+00078         \textcolor{keyword}{private}:
+00079             \hyperlink{classeos_1_1Parameters}{Parameters} \_parameters;
+00080 
+00081         \textcolor{keyword}{public}:
+00082             \hyperlink{classeos_1_1WilsonPolynomialCloner_a8e6b8a5026408945a15c9604d56fb19b}{WilsonPolynomialCloner}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & parameters);
+00083 
+00084             \hyperlink{classeos_1_1OneOf}{WilsonPolynomial} \hyperlink{classeos_1_1WilsonPolynomialCloner_a636e34f10bcf08e04d7e7afea3c0366c}{visit}(\textcolor{keyword}{const} Constant & c);
+00085             \hyperlink{classeos_1_1OneOf}{WilsonPolynomial} \hyperlink{classeos_1_1WilsonPolynomialCloner_a636e34f10bcf08e04d7e7afea3c0366c}{visit}(\textcolor{keyword}{const} Sum & s);
+00086             \hyperlink{classeos_1_1OneOf}{WilsonPolynomial} \hyperlink{classeos_1_1WilsonPolynomialCloner_a636e34f10bcf08e04d7e7afea3c0366c}{visit}(\textcolor{keyword}{const} Product & p);
+00087             \hyperlink{classeos_1_1OneOf}{WilsonPolynomial} \hyperlink{classeos_1_1WilsonPolynomialCloner_a636e34f10bcf08e04d7e7afea3c0366c}{visit}(\textcolor{keyword}{const} Sine & s);
+00088             \hyperlink{classeos_1_1OneOf}{WilsonPolynomial} \hyperlink{classeos_1_1WilsonPolynomialCloner_a636e34f10bcf08e04d7e7afea3c0366c}{visit}(\textcolor{keyword}{const} Cosine & s);
+00089             \hyperlink{classeos_1_1OneOf}{WilsonPolynomial} \hyperlink{classeos_1_1WilsonPolynomialCloner_a636e34f10bcf08e04d7e7afea3c0366c}{visit}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameter}{Parameter} & p);
+00090     \};
+00091 
+\hypertarget{wilson-polynomial_8hh_source_l00092}{}\hyperlink{classeos_1_1WilsonPolynomialPrinter}{00092}     \textcolor{keyword}{class }\hyperlink{classeos_1_1WilsonPolynomialPrinter}{WilsonPolynomialPrinter}
+00093     \{
+00094         \textcolor{keyword}{private}:
+00095             \textcolor{keywordtype}{bool} \_pretty;
+00096 
+00097         \textcolor{keyword}{public}:
+00098             \hyperlink{classeos_1_1WilsonPolynomialPrinter_a790ebda04554560c04b6004384a4cda6}{WilsonPolynomialPrinter}(\textcolor{keyword}{const} \textcolor{keywordtype}{bool} & pretty = \textcolor{keyword}{true});
+00099 
+00100             std::string \hyperlink{classeos_1_1WilsonPolynomialPrinter_a16734adc9f8e5ed38f98dec2fe7f1082}{visit}(\textcolor{keyword}{const} Constant & c);
+00101             std::string \hyperlink{classeos_1_1WilsonPolynomialPrinter_a16734adc9f8e5ed38f98dec2fe7f1082}{visit}(\textcolor{keyword}{const} Sum & s);
+00102             std::string \hyperlink{classeos_1_1WilsonPolynomialPrinter_a16734adc9f8e5ed38f98dec2fe7f1082}{visit}(\textcolor{keyword}{const} Product & p);
+00103             std::string \hyperlink{classeos_1_1WilsonPolynomialPrinter_a16734adc9f8e5ed38f98dec2fe7f1082}{visit}(\textcolor{keyword}{const} Sine & s);
+00104             std::string \hyperlink{classeos_1_1WilsonPolynomialPrinter_a16734adc9f8e5ed38f98dec2fe7f1082}{visit}(\textcolor{keyword}{const} Cosine & s);
+00105             std::string \hyperlink{classeos_1_1WilsonPolynomialPrinter_a16734adc9f8e5ed38f98dec2fe7f1082}{visit}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameter}{Parameter} & p);
+00106     \};
+00107 
+\hypertarget{wilson-polynomial_8hh_source_l00108}{}\hyperlink{classeos_1_1WilsonPolynomialEvaluator}{00108}     \textcolor{keyword}{class }\hyperlink{classeos_1_1WilsonPolynomialEvaluator}{WilsonPolynomialEvaluator}
+00109     \{
+00110         \textcolor{keyword}{public}:
+00111             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1WilsonPolynomialEvaluator_ac85d91d12ce34c628012f7e4ee451359}{visit}(\textcolor{keyword}{const} Constant & c);
+00112             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1WilsonPolynomialEvaluator_ac85d91d12ce34c628012f7e4ee451359}{visit}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameter}{Parameter} & p);
+00113             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1WilsonPolynomialEvaluator_ac85d91d12ce34c628012f7e4ee451359}{visit}(\textcolor{keyword}{const} Sum & s);
+00114             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1WilsonPolynomialEvaluator_ac85d91d12ce34c628012f7e4ee451359}{visit}(\textcolor{keyword}{const} Product & p);
+00115             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1WilsonPolynomialEvaluator_ac85d91d12ce34c628012f7e4ee451359}{visit}(\textcolor{keyword}{const} Sine & s);
+00116             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1WilsonPolynomialEvaluator_ac85d91d12ce34c628012f7e4ee451359}{visit}(\textcolor{keyword}{const} Cosine & c);
+00117     \};
+00118 \}
+00119 
+00120 
+00121 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

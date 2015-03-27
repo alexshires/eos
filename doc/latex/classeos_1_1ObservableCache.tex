@@ -1,0 +1,158 @@
+\hypertarget{classeos_1_1ObservableCache}{
+\section{eos::ObservableCache Class Reference}
+\label{classeos_1_1ObservableCache}\index{eos::ObservableCache@{eos::ObservableCache}}
+}
+
+
+{\ttfamily \#include $<$observable\_\-cache.hh$>$}
+
+Inherits \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern$<$ ObservableCache $>$}.\subsection*{Public Member Functions}
+\begin{Indent}{\bf Basic Functions}\par
+{\em \label{_amgrp2386c9a1f1785edee33f374dd2db9b3d}
+ }\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1ObservableCache_afc29264c67c8404ab659ab3ebce0677a}{ObservableCache} (const \hyperlink{classeos_1_1Parameters}{Parameters} \&parameters)
+\item 
+\hyperlink{classeos_1_1ObservableCache_aee7b3cb68fe74a44faff0fed5547830d}{$\sim$ObservableCache} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Access}
+\label{_amgrpbf733d8a933c1601697f364223fc7ecb}
+ \begin{DoxyCompactItemize}
+\item 
+typedef unsigned \hyperlink{classeos_1_1ObservableCache_a393f1d7c8c2a58bc95845e12b615c6ee}{Id}
+\item 
+\hyperlink{classeos_1_1ObservableCache_a393f1d7c8c2a58bc95845e12b615c6ee}{Id} \hyperlink{classeos_1_1ObservableCache_a5994a8d42de0afabc01d401ef8bf27af}{add} (const \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} \&observable)
+\item 
+void \hyperlink{classeos_1_1ObservableCache_ae69a231f0546cabd80266f4c0fb8b49f}{update} ()
+\begin{DoxyCompactList}\small\item\em Update the predictions for all observables. \item\end{DoxyCompactList}\item 
+void \hyperlink{classeos_1_1ObservableCache_a934c9c731189f013eb69a79112b64a04}{update} (const \hyperlink{classeos_1_1Parameter_a065f55e66b2128cc5f14339e676d833a}{Parameter::Id} \&id)
+\item 
+\hyperlink{classeos_1_1Parameters}{Parameters} \hyperlink{classeos_1_1ObservableCache_ac4dafff6d4eb3b29157d5f326b880c85}{parameters} () const 
+\begin{DoxyCompactList}\small\item\em Retrieve the cache's common \hyperlink{classeos_1_1Parameters}{Parameters} object. \item\end{DoxyCompactList}\item 
+void \hyperlink{classeos_1_1ObservableCache_a4e1287495ae908ae08a1550a3c5fbdcc}{reset} ()
+\begin{DoxyCompactList}\small\item\em Reset the cache to the previous predictions. \item\end{DoxyCompactList}\item 
+\hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} \hyperlink{classeos_1_1ObservableCache_a171e7c1c0e4e2741dc155e4b249bca6d}{observable} (const \hyperlink{classeos_1_1ObservableCache_a393f1d7c8c2a58bc95845e12b615c6ee}{ObservableCache::Id} \&id) const 
+\item 
+double \hyperlink{classeos_1_1ObservableCache_a9ad7f1672817b0d69bda7dfc9471bc43}{operator\mbox{[}$\,$\mbox{]}} (const \hyperlink{classeos_1_1ObservableCache_a393f1d7c8c2a58bc95845e12b615c6ee}{ObservableCache::Id} \&id) const 
+\item 
+unsigned \hyperlink{classeos_1_1ObservableCache_a8cf868c54289d6ec010c72cdab954ded}{size} () const 
+\begin{DoxyCompactList}\small\item\em Retrieve the number of independent predictions from the cache. \item\end{DoxyCompactList}\item 
+\hyperlink{classeos_1_1ObservableCache}{ObservableCache} \hyperlink{classeos_1_1ObservableCache_af1f92ddabdeb26ae35ba66f8e6b73c18}{clone} (const \hyperlink{classeos_1_1Parameters}{Parameters} \&parameters) const 
+\begin{DoxyCompactList}\small\item\em Clone this cache whilst keeping the observables in the given order, i.e. all ids remain valid. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classeos_1_1ObservableCache_a393f1d7c8c2a58bc95845e12b615c6ee}{
+\index{eos::ObservableCache@{eos::ObservableCache}!Id@{Id}}
+\index{Id@{Id}!eos::ObservableCache@{eos::ObservableCache}}
+\subsubsection[{Id}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned {\bf eos::ObservableCache::Id}}}
+\label{classeos_1_1ObservableCache_a393f1d7c8c2a58bc95845e12b615c6ee}
+Add a given observable to the cache and return its unique Id.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em observable}]The observable which shall be added to the cache. \end{DoxyParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classeos_1_1ObservableCache_afc29264c67c8404ab659ab3ebce0677a}{
+\index{eos::ObservableCache@{eos::ObservableCache}!ObservableCache@{ObservableCache}}
+\index{ObservableCache@{ObservableCache}!eos::ObservableCache@{eos::ObservableCache}}
+\subsubsection[{ObservableCache}]{\setlength{\rightskip}{0pt plus 5cm}eos::ObservableCache::ObservableCache (const {\bf Parameters} \& {\em parameters})}}
+\label{classeos_1_1ObservableCache_afc29264c67c8404ab659ab3ebce0677a}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em parameters}]The \hyperlink{classeos_1_1Parameters}{Parameters} object common to all cached Observables. \end{DoxyParams}
+\hypertarget{classeos_1_1ObservableCache_aee7b3cb68fe74a44faff0fed5547830d}{
+\index{eos::ObservableCache@{eos::ObservableCache}!$\sim$ObservableCache@{$\sim$ObservableCache}}
+\index{$\sim$ObservableCache@{$\sim$ObservableCache}!eos::ObservableCache@{eos::ObservableCache}}
+\subsubsection[{$\sim$ObservableCache}]{\setlength{\rightskip}{0pt plus 5cm}eos::ObservableCache::$\sim$ObservableCache ()}}
+\label{classeos_1_1ObservableCache_aee7b3cb68fe74a44faff0fed5547830d}
+
+
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classeos_1_1ObservableCache_a5994a8d42de0afabc01d401ef8bf27af}{
+\index{eos::ObservableCache@{eos::ObservableCache}!add@{add}}
+\index{add@{add}!eos::ObservableCache@{eos::ObservableCache}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Id} eos::ObservableCache::add (const {\bf ObservablePtr} \& {\em observable})}}
+\label{classeos_1_1ObservableCache_a5994a8d42de0afabc01d401ef8bf27af}
+Add a given observable to the cache and return its unique Id.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em observable}]The observable which shall be added to the cache. \end{DoxyParams}
+\hypertarget{classeos_1_1ObservableCache_af1f92ddabdeb26ae35ba66f8e6b73c18}{
+\index{eos::ObservableCache@{eos::ObservableCache}!clone@{clone}}
+\index{clone@{clone}!eos::ObservableCache@{eos::ObservableCache}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ObservableCache} eos::ObservableCache::clone (const {\bf Parameters} \& {\em parameters}) const}}
+\label{classeos_1_1ObservableCache_af1f92ddabdeb26ae35ba66f8e6b73c18}
+
+
+Clone this cache whilst keeping the observables in the given order, i.e. all ids remain valid. \hypertarget{classeos_1_1ObservableCache_a171e7c1c0e4e2741dc155e4b249bca6d}{
+\index{eos::ObservableCache@{eos::ObservableCache}!observable@{observable}}
+\index{observable@{observable}!eos::ObservableCache@{eos::ObservableCache}}
+\subsubsection[{observable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ObservablePtr} eos::ObservableCache::observable (const {\bf ObservableCache::Id} \& {\em id}) const}}
+\label{classeos_1_1ObservableCache_a171e7c1c0e4e2741dc155e4b249bca6d}
+Retrieve a unique observable by its \hyperlink{classeos_1_1ObservableCache_a393f1d7c8c2a58bc95845e12b615c6ee}{ObservableCache::Id}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em id}]The \hyperlink{classeos_1_1ObservableCache_a393f1d7c8c2a58bc95845e12b615c6ee}{ObservableCache::Id} whose associated ObservablePtr shall be retrieved. \end{DoxyParams}
+\hypertarget{classeos_1_1ObservableCache_a9ad7f1672817b0d69bda7dfc9471bc43}{
+\index{eos::ObservableCache@{eos::ObservableCache}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!eos::ObservableCache@{eos::ObservableCache}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}double eos::ObservableCache::operator\mbox{[}$\,$\mbox{]} (const {\bf ObservableCache::Id} \& {\em id}) const}}
+\label{classeos_1_1ObservableCache_a9ad7f1672817b0d69bda7dfc9471bc43}
+Retrieve the prediction for a given observable from the cache.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em id}]The unique \hyperlink{classeos_1_1ObservableCache_a393f1d7c8c2a58bc95845e12b615c6ee}{ObservableCache::Id} whose associated observable's prediction shall be retrieved. \end{DoxyParams}
+\hypertarget{classeos_1_1ObservableCache_ac4dafff6d4eb3b29157d5f326b880c85}{
+\index{eos::ObservableCache@{eos::ObservableCache}!parameters@{parameters}}
+\index{parameters@{parameters}!eos::ObservableCache@{eos::ObservableCache}}
+\subsubsection[{parameters}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parameters} eos::ObservableCache::parameters () const}}
+\label{classeos_1_1ObservableCache_ac4dafff6d4eb3b29157d5f326b880c85}
+
+
+Retrieve the cache's common \hyperlink{classeos_1_1Parameters}{Parameters} object. \hypertarget{classeos_1_1ObservableCache_a4e1287495ae908ae08a1550a3c5fbdcc}{
+\index{eos::ObservableCache@{eos::ObservableCache}!reset@{reset}}
+\index{reset@{reset}!eos::ObservableCache@{eos::ObservableCache}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}void eos::ObservableCache::reset ()}}
+\label{classeos_1_1ObservableCache_a4e1287495ae908ae08a1550a3c5fbdcc}
+
+
+Reset the cache to the previous predictions. \hypertarget{classeos_1_1ObservableCache_a8cf868c54289d6ec010c72cdab954ded}{
+\index{eos::ObservableCache@{eos::ObservableCache}!size@{size}}
+\index{size@{size}!eos::ObservableCache@{eos::ObservableCache}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned eos::ObservableCache::size () const}}
+\label{classeos_1_1ObservableCache_a8cf868c54289d6ec010c72cdab954ded}
+
+
+Retrieve the number of independent predictions from the cache. \hypertarget{classeos_1_1ObservableCache_a934c9c731189f013eb69a79112b64a04}{
+\index{eos::ObservableCache@{eos::ObservableCache}!update@{update}}
+\index{update@{update}!eos::ObservableCache@{eos::ObservableCache}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void eos::ObservableCache::update (const {\bf Parameter::Id} \& {\em id})}}
+\label{classeos_1_1ObservableCache_a934c9c731189f013eb69a79112b64a04}
+Update the predicition for all observables that depend on a given \hyperlink{classeos_1_1Parameter}{Parameter}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em id}]The \hyperlink{classeos_1_1Parameter_a065f55e66b2128cc5f14339e676d833a}{Parameter::Id} for which all depending observables shall be updated. \end{DoxyParams}
+\hypertarget{classeos_1_1ObservableCache_ae69a231f0546cabd80266f4c0fb8b49f}{
+\index{eos::ObservableCache@{eos::ObservableCache}!update@{update}}
+\index{update@{update}!eos::ObservableCache@{eos::ObservableCache}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void eos::ObservableCache::update ()}}
+\label{classeos_1_1ObservableCache_ae69a231f0546cabd80266f4c0fb8b49f}
+
+
+Update the predictions for all observables. 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{observable__cache_8hh}{observable\_\-cache.hh}\end{DoxyCompactItemize}

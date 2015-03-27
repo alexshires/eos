@@ -1,0 +1,61 @@
+\hypertarget{observable__set_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/observable\_\-set.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2011 Frederik Beaujean}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_OBSERVABLE\_SET\_HH}
+\hypertarget{observable__set_8hh_source_l00021}{}\hyperlink{observable__set_8hh_a382e94167f32774fcacf8952a2d8ec4e}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_OBSERVABLE\_SET\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{preprocessor}{#include <\hyperlink{observable_8hh}{eos/observable.hh}>}
+00024 \textcolor{preprocessor}{#include <\hyperlink{private__implementation__pattern_8hh}{eos/utils/private_implementation_pattern.hh}>}
+00025 \textcolor{preprocessor}{#include <\hyperlink{wrapped__forward__iterator_8hh}{eos/utils/wrapped_forward_iterator.hh}>}
+00026 
+00027 \textcolor{keyword}{namespace }eos
+00028 \{
+\hypertarget{observable__set_8hh_source_l00034}{}\hyperlink{classeos_1_1ObservableSet}{00034}     \textcolor{keyword}{class }\hyperlink{classeos_1_1ObservableSet}{ObservableSet} :
+00035         \textcolor{keyword}{public} \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern}<ObservableSet>
+00036     \{
+00037         \textcolor{keyword}{public}:
+00041             \hyperlink{classeos_1_1ObservableSet_a964ddde72c32ae5a5e7147fb8b171318}{ObservableSet}();
+00042 
+00044             \hyperlink{classeos_1_1ObservableSet_a0321b23307b4b46974634dcd4d73b785}{~ObservableSet}();
+00046 
+\hypertarget{observable__set_8hh_source_l00049}{}\hyperlink{classeos_1_1ObservableSet_ab19c0de83857e28065c2fe64b685a005}{00049}             \textcolor{keyword}{struct }IteratorTag;
+00050             \textcolor{keyword}{typedef} \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator<IteratorTag, ObservablePtr>} \hyperlink{classeos_1_1WrappedForwardIterator}{Iterator};
+00051 
+00053             \hyperlink{classeos_1_1WrappedForwardIterator}{Iterator} \hyperlink{classeos_1_1ObservableSet_a51791b1a8c6a1b8d3a90f8400d9e4140}{begin}() \textcolor{keyword}{const};
+00054 
+00056             \hyperlink{classeos_1_1WrappedForwardIterator}{Iterator} \hyperlink{classeos_1_1ObservableSet_ab0fb90d7278f1d8c87f7755768ffd17c}{end}() \textcolor{keyword}{const};
+00057 
+00063             \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} & \hyperlink{classeos_1_1ObservableSet_adb47f7f0d77ea9f922aa5c5259695136}{operator[] }(\textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & index) \textcolor{keyword}{const};
+00064 
+00075             std::pair<unsigned, bool> \hyperlink{classeos_1_1ObservableSet_aca5c09236edf4270851d09bf5c582ad6}{add}(\textcolor{keyword}{const} \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} & observable);
+00076 
+00078             \hyperlink{classeos_1_1Parameters}{Parameters} \hyperlink{classeos_1_1ObservableSet_a910264f5f626496138f8bae63dcbfa82}{parameters}();
+00079 
+00081             \textcolor{keywordtype}{unsigned} \hyperlink{classeos_1_1ObservableSet_ad14948c8f2421fc718f6ede0d9089cb0}{size}() \textcolor{keyword}{const};
+00083     \};
+00084 \}
+00085 
+00086 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

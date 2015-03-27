@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1hdf5_1_1CompositeCopier" kind="struct" prot="public">
+    <compoundname>eos::hdf5::CompositeCopier</compoundname>
+    <includes refid="hdf5_8hh" local="no">hdf5.hh</includes>
+    <templateparamlist>
+      <param>
+        <type>size_t</type>
+        <declname>index_</declname>
+        <defname>index_</defname>
+      </param>
+      <param>
+        <type>typename TypeTuple_</type>
+      </param>
+      <param>
+        <type>typename Tuple_</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structeos_1_1hdf5_1_1CompositeCopier_1a22ef8fb00bdff57f9fb8c8556d45d497" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ptrdiff_t</type>
+        <definition>static std::ptrdiff_t eos::hdf5::CompositeCopier&lt; index_, TypeTuple_, Tuple_ &gt;::copy_to_hdf5</definition>
+        <argsstring>(const TypeTuple_ &amp;types, const Tuple_ &amp;src, char *dest)</argsstring>
+        <name>copy_to_hdf5</name>
+        <param>
+          <type>const TypeTuple_ &amp;</type>
+          <declname>types</declname>
+        </param>
+        <param>
+          <type>const Tuple_ &amp;</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>dest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="226" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" bodystart="225" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1hdf5_1_1CompositeCopier_1ac9d6c53322b8f138c48ed5bfc951f796" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ptrdiff_t</type>
+        <definition>static std::ptrdiff_t eos::hdf5::CompositeCopier&lt; index_, TypeTuple_, Tuple_ &gt;::copy_from_hdf5</definition>
+        <argsstring>(const TypeTuple_ &amp;types, const char *src, Tuple_ &amp;dest)</argsstring>
+        <name>copy_from_hdf5</name>
+        <param>
+          <type>const TypeTuple_ &amp;</type>
+          <declname>types</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>Tuple_ &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="235" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" bodystart="234" bodyend="241"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="224" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" bodystart="223" bodyend="242"/>
+    <listofallmembers>
+      <member refid="structeos_1_1hdf5_1_1CompositeCopier_1ac9d6c53322b8f138c48ed5bfc951f796" prot="public" virt="non-virtual"><scope>eos::hdf5::CompositeCopier</scope><name>copy_from_hdf5</name></member>
+      <member refid="structeos_1_1hdf5_1_1CompositeCopier_1a22ef8fb00bdff57f9fb8c8556d45d497" prot="public" virt="non-virtual"><scope>eos::hdf5::CompositeCopier</scope><name>copy_to_hdf5</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,183 @@
+\hypertarget{log__likelihood_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/log\_\-likelihood.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2011, 2014 Danny van Dyk}
+00005 \textcolor{comment}{ * Copyright (c) 2011 Frederik Beaujean}
+00006 \textcolor{comment}{ *}
+00007 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00008 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00009 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00010 \textcolor{comment}{ *}
+00011 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00012 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00013 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00014 \textcolor{comment}{ * details.}
+00015 \textcolor{comment}{ *}
+00016 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00017 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00018 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00019 \textcolor{comment}{ */}
+00020 
+00021 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_LIKELIHOOD\_HH}
+\hypertarget{log__likelihood_8hh_source_l00022}{}\hyperlink{log__likelihood_8hh_a5a4c0a95f563cced9ee3e232e56ff9a7}{00022} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_LIKELIHOOD\_HH 1}
+00023 \textcolor{preprocessor}{}
+00024 \textcolor{preprocessor}{#include <\hyperlink{constraint_8hh}{eos/constraint.hh}>}
+00025 \textcolor{preprocessor}{#include <\hyperlink{observable_8hh}{eos/observable.hh}>}
+00026 \textcolor{preprocessor}{#include <\hyperlink{log__likelihood-fwd_8hh}{eos/utils/log_likelihood-fwd.hh}>}
+00027 \textcolor{preprocessor}{#include <\hyperlink{matrix_8hh}{eos/utils/matrix.hh}>}
+00028 \textcolor{preprocessor}{#include <\hyperlink{observable__cache_8hh}{eos/utils/observable_cache.hh}>}
+00029 \textcolor{preprocessor}{#include <\hyperlink{parameters_8hh}{eos/utils/parameters.hh}>}
+00030 \textcolor{preprocessor}{#include <\hyperlink{private__implementation__pattern_8hh}{eos/utils/private_implementation_pattern.hh}>}
+00031 
+00032 \textcolor{preprocessor}{#include <gsl/gsl\_rng.h>}
+00033 
+00034 \textcolor{keyword}{namespace }eos
+00035 \{
+\hypertarget{log__likelihood_8hh_source_l00045}{}\hyperlink{classeos_1_1LogLikelihoodBlock}{00045}     \textcolor{keyword}{class }\hyperlink{classeos_1_1LogLikelihoodBlock}{LogLikelihoodBlock}
+00046     \{
+00047         \textcolor{keyword}{public}:
+00049             \textcolor{keyword}{virtual} \hyperlink{classeos_1_1LogLikelihoodBlock_a0217895e8d4cf8b69c3086b28ae152a1}{~LogLikelihoodBlock}() = 0;
+00050 
+00051             \textcolor{keyword}{virtual} std::string \hyperlink{classeos_1_1LogLikelihoodBlock_ad99b9336fdbb4c28eedc50b18d3c60c3}{as_string}() \textcolor{keyword}{const} = 0;
+00052 
+00054             \textcolor{keyword}{virtual} \hyperlink{namespaceeos_ab823a6782e060c440e05a614158ad1bf}{LogLikelihoodBlockPtr} \hyperlink{classeos_1_1LogLikelihoodBlock_a950a255f78736f75b2458e48c30e119f}{clone}(\hyperlink{classeos_1_1ObservableCache}{ObservableCache} cache) \textcolor{keyword}{const} = 0;
+      
+00055 
+00057             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \hyperlink{classeos_1_1LogLikelihoodBlock_a85ba7e331d03681a5f356bb2df7d1ac7}{evaluate}() \textcolor{keyword}{const} = 0;
+00058 
+00060             \textcolor{keyword}{virtual} \textcolor{keywordtype}{unsigned} \hyperlink{classeos_1_1LogLikelihoodBlock_a48f03be5dc8284368cae6a9830627f2e}{number_of_observations}() \textcolor{keyword}{const} = 0;
+00061 
+00067             \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classeos_1_1LogLikelihoodBlock_abb412e8a3fde0945f940ddcd6f79e68c}{prepare_sampling}();
+00068 
+00077             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \hyperlink{classeos_1_1LogLikelihoodBlock_ad0669d109d0d004cc5674c739fb41d7a}{sample}(gsl\_rng * rng) \textcolor{keyword}{const} = 0;
+00078 
+00089             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \hyperlink{classeos_1_1LogLikelihoodBlock_a52c12058a07b20a5b910dea8972f5282}{significance}() \textcolor{keyword}{const}  = 0;
+00090 
+00103             \textcolor{keyword}{static} \hyperlink{namespaceeos_ab823a6782e060c440e05a614158ad1bf}{LogLikelihoodBlockPtr} \hyperlink{classeos_1_1LogLikelihoodBlock_a848066ee04c104fdcf0b74c868c87d68}{Gaussian}(\hyperlink{classeos_1_1ObservableCache}{ObservableCache} cache, \textcolor{keyword}{const} 
+      \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} & observable,
+00104                     \textcolor{keyword}{const} \textcolor{keywordtype}{double} & min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & central, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & ma
+      x,
+00105                     \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & \hyperlink{classeos_1_1LogLikelihoodBlock_a48f03be5dc8284368cae6a9830627f2e}{number_of_observations} = 1u);
+00106 
+00126             \textcolor{keyword}{static} \hyperlink{namespaceeos_ab823a6782e060c440e05a614158ad1bf}{LogLikelihoodBlockPtr} \hyperlink{classeos_1_1LogLikelihoodBlock_a3e2ab2f3d4d994c382ecc06cd6453478}{LogGamma}(\hyperlink{classeos_1_1ObservableCache}{ObservableCache} cache, \textcolor{keyword}{const} 
+      \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} & observable,
+00127                     \textcolor{keyword}{const} \textcolor{keywordtype}{double} & min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & central, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & ma
+      x,
+00128                     \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & \hyperlink{classeos_1_1LogLikelihoodBlock_a48f03be5dc8284368cae6a9830627f2e}{number_of_observations} = 1u);
+00129 
+00141             \textcolor{keyword}{static} \hyperlink{namespaceeos_ab823a6782e060c440e05a614158ad1bf}{LogLikelihoodBlockPtr} \hyperlink{classeos_1_1LogLikelihoodBlock_a3e2ab2f3d4d994c382ecc06cd6453478}{LogGamma}(\hyperlink{classeos_1_1ObservableCache}{ObservableCache} cache, \textcolor{keyword}{const} 
+      \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} & observable,
+00142                     \textcolor{keyword}{const} \textcolor{keywordtype}{double} & min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & central, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & ma
+      x,
+00143                     \textcolor{keyword}{const} \textcolor{keywordtype}{double} & \hyperlink{namespaceeos_a2e8644357d2012ca279f49ab0037b9ea}{lambda}, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & alpha,
+00144                     \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & \hyperlink{classeos_1_1LogLikelihoodBlock_a48f03be5dc8284368cae6a9830627f2e}{number_of_observations} = 1u);
+00145 
+00168             \textcolor{keyword}{static} \hyperlink{namespaceeos_ab823a6782e060c440e05a614158ad1bf}{LogLikelihoodBlockPtr} \hyperlink{classeos_1_1LogLikelihoodBlock_a275a00c674dbc595abb1bc74faed20be}{AmorosoLimit}(\hyperlink{classeos_1_1ObservableCache}{ObservableCache} cache, \textcolor{keyword}{cons
+      t} \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} & observable,
+00169                     \textcolor{keyword}{const} \textcolor{keywordtype}{double} & physical\_limit, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & upper\_limit\_90,
+       \textcolor{keyword}{const} \textcolor{keywordtype}{double} & upper\_limit\_95,
+00170                     \textcolor{keyword}{const} \textcolor{keywordtype}{double} & theta, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & alpha,
+00171                     \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & \hyperlink{classeos_1_1LogLikelihoodBlock_a48f03be5dc8284368cae6a9830627f2e}{number_of_observations} = 1u);
+00172 
+00195             \textcolor{keyword}{static} \hyperlink{namespaceeos_ab823a6782e060c440e05a614158ad1bf}{LogLikelihoodBlockPtr} \hyperlink{classeos_1_1LogLikelihoodBlock_a810a57eac9ccdc9cb7e49f0197adcee5}{AmorosoMode}(\hyperlink{classeos_1_1ObservableCache}{ObservableCache} cache, \textcolor{keyword}{const
+      } \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} & observable,
+00196                     \textcolor{keyword}{const} \textcolor{keywordtype}{double} & physical\_limit, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & mode,
+00197                     \textcolor{keyword}{const} \textcolor{keywordtype}{double} & upper\_limit\_90, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & upper\_limit\_95,
+      
+00198                     \textcolor{keyword}{const} \textcolor{keywordtype}{double} & theta, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & alpha, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & be
+      ta,
+00199                     \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & \hyperlink{classeos_1_1LogLikelihoodBlock_a48f03be5dc8284368cae6a9830627f2e}{number_of_observations} = 1u);
+00200 
+00225             \textcolor{keyword}{static} \hyperlink{namespaceeos_ab823a6782e060c440e05a614158ad1bf}{LogLikelihoodBlockPtr} \hyperlink{classeos_1_1LogLikelihoodBlock_acdc69e205b9a51fb238833bda103c2f7}{Amoroso}(\hyperlink{classeos_1_1ObservableCache}{ObservableCache} cache, \textcolor{keyword}{const} 
+      \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} & observable,
+00226                     \textcolor{keyword}{const} \textcolor{keywordtype}{double} & physical\_limit, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & upper\_limit\_10,
+      
+00227                     \textcolor{keyword}{const} \textcolor{keywordtype}{double} & upper\_limit\_50, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & upper\_limit\_90,
+      
+00228                     \textcolor{keyword}{const} \textcolor{keywordtype}{double} & theta, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & alpha, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & be
+      ta,
+00229                     \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & \hyperlink{classeos_1_1LogLikelihoodBlock_a48f03be5dc8284368cae6a9830627f2e}{number_of_observations} = 1u);
+00230 
+00250             \textcolor{keyword}{static} \hyperlink{namespaceeos_ab823a6782e060c440e05a614158ad1bf}{LogLikelihoodBlockPtr} \hyperlink{classeos_1_1LogLikelihoodBlock_acdc69e205b9a51fb238833bda103c2f7}{Amoroso}(\hyperlink{classeos_1_1ObservableCache}{ObservableCache} cache, \textcolor{keyword}{const} 
+      \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} & observable,
+00251                     \textcolor{keyword}{const} \textcolor{keywordtype}{double} & physical\_limit, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & theta, \textcolor{keyword}{const} \textcolor{keywordtype}{do
+      uble} & alpha, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & beta,
+00252                     \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & \hyperlink{classeos_1_1LogLikelihoodBlock_a48f03be5dc8284368cae6a9830627f2e}{number_of_observations} = 1u);
+00253 
+00254             \textcolor{comment}{// todo document}
+00255             \textcolor{keyword}{static} \hyperlink{namespaceeos_ab823a6782e060c440e05a614158ad1bf}{LogLikelihoodBlockPtr} \hyperlink{classeos_1_1LogLikelihoodBlock_a7a47859d5eff2ef0a6b38ef3e70ee1d0}{Mixture}(\textcolor{keyword}{const} std::vector<LogLikelihoodB
+      lockPtr> & components, 
+00256                                                  \textcolor{keyword}{const} std::vector<double> & weig
+      hts);
+00269             \textcolor{keyword}{template} <std::\textcolor{keywordtype}{size\_t} n\_>
+00270             \textcolor{keyword}{static} \hyperlink{namespaceeos_ab823a6782e060c440e05a614158ad1bf}{LogLikelihoodBlockPtr} \hyperlink{classeos_1_1LogLikelihoodBlock_a1532bcb8dc34234cb7c4f39a3e82031e}{MultivariateGaussian}(\hyperlink{classeos_1_1ObservableCache}{ObservableCache} cac
+      he, \textcolor{keyword}{const} std::array<ObservablePtr, n\_> & observables,
+00271                                                               \textcolor{keyword}{const} std::array<do
+      uble, n\_> & mean, \textcolor{keyword}{const} std::array<std::array<double, n\_>, n\_> & covariance,
+00272                                                               \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & 
+      \hyperlink{classeos_1_1LogLikelihoodBlock_a48f03be5dc8284368cae6a9830627f2e}{number_of_observations} = n\_);
+00273 
+00287             \textcolor{keyword}{template} <std::\textcolor{keywordtype}{size\_t} n\_>
+00288             \textcolor{keyword}{static} \hyperlink{namespaceeos_ab823a6782e060c440e05a614158ad1bf}{LogLikelihoodBlockPtr} \hyperlink{classeos_1_1LogLikelihoodBlock_a1532bcb8dc34234cb7c4f39a3e82031e}{MultivariateGaussian}(\hyperlink{classeos_1_1ObservableCache}{ObservableCache} cac
+      he, \textcolor{keyword}{const} std::array<ObservablePtr, n\_> & observables,
+00289                                                               \textcolor{keyword}{const} std::array<do
+      uble, n\_> & mean, \textcolor{keyword}{const} std::array<double, n\_> & variances,
+00290                                                               \textcolor{keyword}{const} std::array<st
+      d::array<double, n\_>, n\_> & correlation,
+00291                                                               \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & 
+      \hyperlink{classeos_1_1LogLikelihoodBlock_a48f03be5dc8284368cae6a9830627f2e}{number_of_observations} = n\_);
+00292 
+00293     \};
+00294 
+\hypertarget{log__likelihood_8hh_source_l00301}{}\hyperlink{classeos_1_1LogLikelihood}{00301}     \textcolor{keyword}{class }\hyperlink{classeos_1_1LogLikelihood}{LogLikelihood} :
+00302         \textcolor{keyword}{public} \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern}<LogLikelihood>
+00303     \{
+00304         \textcolor{keyword}{public}:
+00305 
+00308 
+00313             \hyperlink{classeos_1_1LogLikelihood_aaa2ab4108cc72397704139e01aca6316}{LogLikelihood}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & \hyperlink{classeos_1_1LogLikelihood_abf5c017096b99502c3bafb47a6297852}{parameters});
+00314 
+00318             \hyperlink{classeos_1_1LogLikelihood_ad6f6ff2a71df17599e033681d64fe454}{~LogLikelihood}();
+00320 
+00323 
+00332             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1LogLikelihood_a236d8123a08805e1d825ca262bada0c8}{add}(\textcolor{keyword}{const} \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} & observable, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & min,
+00333                     \textcolor{keyword}{const} \textcolor{keywordtype}{double} & central, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & max, \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & 
+      \hyperlink{classeos_1_1LogLikelihood_af9fe6dbe66c827e44bc500d3f2a94a6a}{number_of_observations} = 1u);
+00334 
+00340             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1LogLikelihood_a236d8123a08805e1d825ca262bada0c8}{add}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Constraint}{Constraint} & constraint);
+00341 
+\hypertarget{log__likelihood_8hh_source_l00344}{}\hyperlink{classeos_1_1LogLikelihood_a48b422865426d34047c9757e2d5f4f92}{00344}             \textcolor{keyword}{struct }ConstraintIteratorTag;
+00345             \textcolor{keyword}{typedef} \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator<ConstraintIteratorTag, Constraint>} 
+      \hyperlink{classeos_1_1WrappedForwardIterator}{ConstraintIterator};
+00346 
+00348             \hyperlink{classeos_1_1WrappedForwardIterator}{ConstraintIterator} \hyperlink{classeos_1_1LogLikelihood_aa016da72e3b65c8a4ed58cebf1f50863}{begin}() \textcolor{keyword}{const};
+00349 
+00351             \hyperlink{classeos_1_1WrappedForwardIterator}{ConstraintIterator} \hyperlink{classeos_1_1LogLikelihood_a15bf635f6541e9fb16463c5dbb4b462b}{end}() \textcolor{keyword}{const};
+00353 
+00362             std::pair<double, double>
+00363             \hyperlink{classeos_1_1LogLikelihood_a51cd04019887511f540be75b4ef9ec7a}{bootstrap_p_value}(\textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & datasets);
+00364 
+00368             \hyperlink{classeos_1_1LogLikelihood}{LogLikelihood} \hyperlink{classeos_1_1LogLikelihood_a0aed658b79b9915a79ceba3a2fe10509}{clone}() \textcolor{keyword}{const};
+00369 
+00375             \textcolor{keywordtype}{unsigned} \hyperlink{classeos_1_1LogLikelihood_af9fe6dbe66c827e44bc500d3f2a94a6a}{number_of_observations}() \textcolor{keyword}{const};
+00376 
+00380             \hyperlink{classeos_1_1Parameters}{Parameters} \hyperlink{classeos_1_1LogLikelihood_abf5c017096b99502c3bafb47a6297852}{parameters}() \textcolor{keyword}{const};
+00381 
+00385             \hyperlink{classeos_1_1ObservableCache}{ObservableCache} \hyperlink{classeos_1_1LogLikelihood_a3dc64fa5ee57da08f90eb18acd5bb8dd}{observable_cache}() \textcolor{keyword}{const};
+00386 
+00391             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1LogLikelihood_a3852b27cbc7bc0254c9323dfedf31576}{operator()}();
+00392 
+00402             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1LogLikelihood_a3852b27cbc7bc0254c9323dfedf31576}{operator()}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameter_a065f55e66b2128cc5f14339e676d833a}{Parameter::Id}& \textcolor{keywordtype}{id});
+00403 
+00410             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1LogLikelihood_a43d24e99c8f7e4209e6bb763186123d8}{reset}();
+00412     \};
+00413 \}
+00414 
+00415 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

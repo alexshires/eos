@@ -1,0 +1,576 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="private__implementation__pattern_8hh" kind="file">
+    <compoundname>private_implementation_pattern.hh</compoundname>
+    <includes local="no">memory</includes>
+    <includedby refid="b-to-pi-l-nu_8hh" local="no">/home/alexshires/EOS/eos-next/eos/b-decays/b-to-pi-l-nu.hh</includedby>
+    <includedby refid="properties_8hh" local="no">/home/alexshires/EOS/eos-next/eos/b-decays/properties.hh</includedby>
+    <includedby refid="constraint_8hh" local="no">/home/alexshires/EOS/eos-next/eos/constraint.hh</includedby>
+    <includedby refid="exclusive-b-to-dilepton_8hh" local="no">/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-dilepton.hh</includedby>
+    <includedby refid="exclusive-b-to-s-dilepton-large-recoil_8hh" local="no">/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh</includedby>
+    <includedby refid="exclusive-b-to-s-dilepton-low-recoil_8hh" local="no">/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh</includedby>
+    <includedby refid="exclusive-b-to-s-gamma_8hh" local="no">/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-gamma.hh</includedby>
+    <includedby refid="inclusive-b-to-s-dilepton_8hh" local="no">/home/alexshires/EOS/eos-next/eos/rare-b-decays/inclusive-b-to-s-dilepton.hh</includedby>
+    <includedby refid="inclusive-b-to-s-gamma_8hh" local="no">/home/alexshires/EOS/eos-next/eos/rare-b-decays/inclusive-b-to-s-gamma.hh</includedby>
+    <includedby refid="lambda-b-to-lambda-dilepton_8hh" local="no">/home/alexshires/EOS/eos-next/eos/rare-b-decays/lambda-b-to-lambda-dilepton.hh</includedby>
+    <includedby refid="accumulator_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/accumulator.hh</includedby>
+    <includedby refid="analysis_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/analysis.hh</includedby>
+    <includedby refid="diagnostics_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/diagnostics.hh</includedby>
+    <includedby refid="equation__solver_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/equation_solver.hh</includedby>
+    <includedby refid="hdf5_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh</includedby>
+    <includedby refid="hierarchical-clustering_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/hierarchical-clustering.hh</includedby>
+    <includedby refid="histogram_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/histogram.hh</includedby>
+    <includedby refid="kinematic_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/kinematic.hh</includedby>
+    <includedby refid="log_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/log.hh</includedby>
+    <includedby refid="log__likelihood_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/log_likelihood.hh</includedby>
+    <includedby refid="markov__chain__sampler_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/markov_chain_sampler.hh</includedby>
+    <includedby refid="model_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/model.hh</includedby>
+    <includedby refid="mutable_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/mutable.hh</includedby>
+    <includedby refid="observable__cache_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/observable_cache.hh</includedby>
+    <includedby refid="observable__set_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/observable_set.hh</includedby>
+    <includedby refid="options_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/options.hh</includedby>
+    <includedby refid="parameters_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/parameters.hh</includedby>
+    <includedby refid="population__monte__carlo__sampler_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh</includedby>
+    <includedby refid="prior__sampler_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/prior_sampler.hh</includedby>
+    <includedby refid="private__implementation__pattern-impl_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/private_implementation_pattern-impl.hh</includedby>
+    <includedby refid="random__number__generator_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/random_number_generator.hh</includedby>
+    <includedby refid="standard-model_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/standard-model.hh</includedby>
+    <includedby refid="thread_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/thread.hh</includedby>
+    <includedby refid="thread__pool_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/thread_pool.hh</includedby>
+    <includedby refid="ticket_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/ticket.hh</includedby>
+    <incdepgraph>
+      <node id="1527">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/private_implementation_pattern.hh</label>
+        <link refid="private_implementation_pattern.hh"/>
+        <childnode refid="1528" relation="include">
+        </childnode>
+      </node>
+      <node id="1528">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1567">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/standard-model.hh</label>
+        <link refid="standard-model_8hh"/>
+        <childnode refid="1566" relation="include">
+        </childnode>
+        <childnode refid="1568" relation="include">
+        </childnode>
+      </node>
+      <node id="1568">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh</label>
+        <link refid="wilson__scan__model_8hh"/>
+      </node>
+      <node id="1556">
+        <label>/home/alexshires/EOS/eos-next/eos/observable.hh</label>
+        <link refid="observable_8hh"/>
+        <childnode refid="1532" relation="include">
+        </childnode>
+        <childnode refid="1557" relation="include">
+        </childnode>
+        <childnode refid="1538" relation="include">
+        </childnode>
+        <childnode refid="1558" relation="include">
+        </childnode>
+        <childnode refid="1533" relation="include">
+        </childnode>
+        <childnode refid="1559" relation="include">
+        </childnode>
+        <childnode refid="1560" relation="include">
+        </childnode>
+        <childnode refid="1562" relation="include">
+        </childnode>
+      </node>
+      <node id="1579">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/options.hh</label>
+        <link refid="options_8hh"/>
+        <childnode refid="1530" relation="include">
+        </childnode>
+        <childnode refid="1531" relation="include">
+        </childnode>
+        <childnode refid="1547" relation="include">
+        </childnode>
+        <childnode refid="1555" relation="include">
+        </childnode>
+        <childnode refid="1548" relation="include">
+        </childnode>
+        <childnode refid="1549" relation="include">
+        </childnode>
+        <childnode refid="1556" relation="include">
+        </childnode>
+        <childnode refid="1539" relation="include">
+        </childnode>
+        <childnode refid="1540" relation="include">
+        </childnode>
+        <childnode refid="1541" relation="include">
+        </childnode>
+        <childnode refid="1542" relation="include">
+        </childnode>
+        <childnode refid="1543" relation="include">
+        </childnode>
+        <childnode refid="1544" relation="include">
+        </childnode>
+        <childnode refid="1564" relation="include">
+        </childnode>
+      </node>
+      <node id="1539">
+        <label>/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh</label>
+        <link refid="exclusive-b-to-s-dilepton-large-recoil_8hh"/>
+      </node>
+      <node id="1577">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh</label>
+        <link refid="proposal__functions_8hh"/>
+        <childnode refid="1536" relation="include">
+        </childnode>
+      </node>
+      <node id="1574">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/log_prior.hh</label>
+        <link refid="log__prior_8hh"/>
+        <childnode refid="1534" relation="include">
+        </childnode>
+      </node>
+      <node id="1533">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/log_likelihood.hh</label>
+        <link refid="log__likelihood_8hh"/>
+        <childnode refid="1534" relation="include">
+        </childnode>
+      </node>
+      <node id="1576">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/cluster.hh</label>
+        <link refid="cluster_8hh"/>
+        <childnode refid="1577" relation="include">
+        </childnode>
+      </node>
+      <node id="1552">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/hierarchical-clustering.hh</label>
+        <link refid="hierarchical-clustering_8hh"/>
+      </node>
+      <node id="1565">
+        <label>/home/alexshires/EOS/eos-next/eos/rare-b-decays/charm-loops.hh</label>
+        <link refid="charm-loops_8hh"/>
+      </node>
+      <node id="1582">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/thread.hh</label>
+        <link refid="thread_8hh"/>
+      </node>
+      <node id="1529">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/private_implementation_pattern.hh</label>
+        <link refid="private_implementation_pattern.hh"/>
+        <childnode refid="1530" relation="include">
+        </childnode>
+        <childnode refid="1531" relation="include">
+        </childnode>
+        <childnode refid="1532" relation="include">
+        </childnode>
+        <childnode refid="1538" relation="include">
+        </childnode>
+        <childnode refid="1539" relation="include">
+        </childnode>
+        <childnode refid="1540" relation="include">
+        </childnode>
+        <childnode refid="1541" relation="include">
+        </childnode>
+        <childnode refid="1542" relation="include">
+        </childnode>
+        <childnode refid="1543" relation="include">
+        </childnode>
+        <childnode refid="1544" relation="include">
+        </childnode>
+        <childnode refid="1545" relation="include">
+        </childnode>
+        <childnode refid="1534" relation="include">
+        </childnode>
+        <childnode refid="1546" relation="include">
+        </childnode>
+        <childnode refid="1550" relation="include">
+        </childnode>
+        <childnode refid="1551" relation="include">
+        </childnode>
+        <childnode refid="1552" relation="include">
+        </childnode>
+        <childnode refid="1553" relation="include">
+        </childnode>
+        <childnode refid="1554" relation="include">
+        </childnode>
+        <childnode refid="1563" relation="include">
+        </childnode>
+        <childnode refid="1533" relation="include">
+        </childnode>
+        <childnode refid="1536" relation="include">
+        </childnode>
+        <childnode refid="1564" relation="include">
+        </childnode>
+        <childnode refid="1569" relation="include">
+        </childnode>
+        <childnode refid="1559" relation="include">
+        </childnode>
+        <childnode refid="1560" relation="include">
+        </childnode>
+        <childnode refid="1579" relation="include">
+        </childnode>
+        <childnode refid="1570" relation="include">
+        </childnode>
+        <childnode refid="1537" relation="include">
+        </childnode>
+        <childnode refid="1561" relation="include">
+        </childnode>
+        <childnode refid="1580" relation="include">
+        </childnode>
+        <childnode refid="1581" relation="include">
+        </childnode>
+        <childnode refid="1567" relation="include">
+        </childnode>
+        <childnode refid="1582" relation="include">
+        </childnode>
+        <childnode refid="1583" relation="include">
+        </childnode>
+        <childnode refid="1584" relation="include">
+        </childnode>
+      </node>
+      <node id="1584">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/ticket.hh</label>
+        <link refid="ticket_8hh"/>
+        <childnode refid="1583" relation="include">
+        </childnode>
+      </node>
+      <node id="1583">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/thread_pool.hh</label>
+        <link refid="thread__pool_8hh"/>
+      </node>
+      <node id="1555">
+        <label>/home/alexshires/EOS/eos-next/eos/form-factors/baryonic-impl.hh</label>
+        <link refid="baryonic-impl_8hh"/>
+      </node>
+      <node id="1557">
+        <label>/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh</label>
+        <link refid="form-factor-adapter_8hh"/>
+      </node>
+      <node id="1564">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/model.hh</label>
+        <link refid="model_8hh"/>
+        <childnode refid="1565" relation="include">
+        </childnode>
+        <childnode refid="1566" relation="include">
+        </childnode>
+        <childnode refid="1567" relation="include">
+        </childnode>
+        <childnode refid="1568" relation="include">
+        </childnode>
+      </node>
+      <node id="1543">
+        <label>/home/alexshires/EOS/eos-next/eos/rare-b-decays/inclusive-b-to-s-gamma.hh</label>
+        <link refid="inclusive-b-to-s-gamma_8hh"/>
+      </node>
+      <node id="1544">
+        <label>/home/alexshires/EOS/eos-next/eos/rare-b-decays/lambda-b-to-lambda-dilepton.hh</label>
+        <link refid="lambda-b-to-lambda-dilepton_8hh"/>
+      </node>
+      <node id="1571">
+        <label>/home/alexshires/EOS/eos-next/eos/form-factors/baryonic.hh</label>
+        <link refid="baryonic_8hh"/>
+        <childnode refid="1555" relation="include">
+        </childnode>
+        <childnode refid="1572" relation="include">
+        </childnode>
+      </node>
+      <node id="1551">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh</label>
+        <link refid="hdf5_8hh"/>
+      </node>
+      <node id="1563">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/log.hh</label>
+        <link refid="log_8hh"/>
+      </node>
+      <node id="1569">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/mutable.hh</label>
+        <link refid="mutable_8hh"/>
+        <childnode refid="1570" relation="include">
+        </childnode>
+      </node>
+      <node id="1559">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/observable_cache.hh</label>
+        <link refid="observable__cache_8hh"/>
+        <childnode refid="1532" relation="include">
+        </childnode>
+        <childnode refid="1533" relation="include">
+        </childnode>
+      </node>
+      <node id="1534">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/analysis.hh</label>
+        <link refid="analysis_8hh"/>
+        <childnode refid="1535" relation="include">
+        </childnode>
+        <childnode refid="1536" relation="include">
+        </childnode>
+        <childnode refid="1537" relation="include">
+        </childnode>
+      </node>
+      <node id="1532">
+        <label>/home/alexshires/EOS/eos-next/eos/constraint.hh</label>
+        <link refid="constraint_8hh"/>
+        <childnode refid="1533" relation="include">
+        </childnode>
+      </node>
+      <node id="1560">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/observable_set.hh</label>
+        <link refid="observable__set_8hh"/>
+        <childnode refid="1561" relation="include">
+        </childnode>
+      </node>
+      <node id="1554">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/kinematic.hh</label>
+        <link refid="kinematic_8hh"/>
+        <childnode refid="1555" relation="include">
+        </childnode>
+        <childnode refid="1548" relation="include">
+        </childnode>
+        <childnode refid="1556" relation="include">
+        </childnode>
+      </node>
+      <node id="1572">
+        <label>/home/alexshires/EOS/eos-next/eos/form-factors/form-factors.hh</label>
+        <link refid="form-factors_8hh"/>
+        <childnode refid="1557" relation="include">
+        </childnode>
+      </node>
+      <node id="1547">
+        <label>/home/alexshires/EOS/eos-next/eos/form-factors/analytic-b-to-pi.hh</label>
+        <link refid="analytic-b-to-pi_8hh"/>
+        <childnode refid="1548" relation="include">
+        </childnode>
+      </node>
+      <node id="1537">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh</label>
+        <link refid="population__monte__carlo__sampler_8hh"/>
+      </node>
+      <node id="1561">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/prior_sampler.hh</label>
+        <link refid="prior__sampler_8hh"/>
+      </node>
+      <node id="1550">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/equation_solver.hh</label>
+        <link refid="equation__solver_8hh"/>
+      </node>
+      <node id="1549">
+        <label>/home/alexshires/EOS/eos-next/eos/form-factors/pi-lcdas.hh</label>
+        <link refid="pi-lcdas_8hh"/>
+      </node>
+      <node id="1538">
+        <label>/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-dilepton.hh</label>
+        <link refid="exclusive-b-to-dilepton_8hh"/>
+      </node>
+      <node id="1541">
+        <label>/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-gamma.hh</label>
+        <link refid="exclusive-b-to-s-gamma_8hh"/>
+      </node>
+      <node id="1581">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/random_number_generator.hh</label>
+        <link refid="random__number__generator_8hh"/>
+        <childnode refid="1570" relation="include">
+        </childnode>
+      </node>
+      <node id="1548">
+        <label>/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh</label>
+        <link refid="mesonic-impl_8hh"/>
+      </node>
+      <node id="1562">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/wilson-polynomial.hh</label>
+        <link refid="wilson-polynomial_8hh"/>
+      </node>
+      <node id="1530">
+        <label>/home/alexshires/EOS/eos-next/eos/b-decays/b-to-pi-l-nu.hh</label>
+        <link refid="b-to-pi-l-nu_8hh"/>
+      </node>
+      <node id="1566">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/ckm_scan_model.hh</label>
+        <link refid="ckm__scan__model_8hh"/>
+      </node>
+      <node id="1545">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/accumulator.hh</label>
+        <link refid="accumulator_8hh"/>
+      </node>
+      <node id="1573">
+        <label>/home/alexshires/EOS/eos-next/eos/form-factors/mesonic.hh</label>
+        <link refid="mesonic_8hh"/>
+        <childnode refid="1547" relation="include">
+        </childnode>
+        <childnode refid="1572" relation="include">
+        </childnode>
+        <childnode refid="1548" relation="include">
+        </childnode>
+      </node>
+      <node id="1536">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/markov_chain_sampler.hh</label>
+        <link refid="markov__chain__sampler_8hh"/>
+      </node>
+      <node id="1553">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/histogram.hh</label>
+        <link refid="histogram_8hh"/>
+      </node>
+      <node id="1531">
+        <label>/home/alexshires/EOS/eos-next/eos/b-decays/properties.hh</label>
+        <link refid="properties_8hh"/>
+      </node>
+      <node id="1575">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh</label>
+        <link refid="markov__chain_8hh"/>
+        <childnode refid="1576" relation="include">
+        </childnode>
+        <childnode refid="1536" relation="include">
+        </childnode>
+        <childnode refid="1577" relation="include">
+        </childnode>
+      </node>
+      <node id="1558">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh</label>
+        <link refid="concrete__observable_8hh"/>
+      </node>
+      <node id="1580">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/private_implementation_pattern-impl.hh</label>
+        <link refid="private__implementation__pattern-impl_8hh"/>
+        <childnode refid="1576" relation="include">
+        </childnode>
+      </node>
+      <node id="1535">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/analysis_TEST.hh</label>
+        <link refid="analysis__TEST_8hh"/>
+      </node>
+      <node id="1578">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh</label>
+        <link refid="wilson__coefficients_8hh"/>
+        <childnode refid="1564" relation="include">
+        </childnode>
+      </node>
+      <node id="1540">
+        <label>/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh</label>
+        <link refid="exclusive-b-to-s-dilepton-low-recoil_8hh"/>
+      </node>
+      <node id="1570">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/parameters.hh</label>
+        <link refid="parameters_8hh"/>
+        <childnode refid="1530" relation="include">
+        </childnode>
+        <childnode refid="1531" relation="include">
+        </childnode>
+        <childnode refid="1547" relation="include">
+        </childnode>
+        <childnode refid="1571" relation="include">
+        </childnode>
+        <childnode refid="1573" relation="include">
+        </childnode>
+        <childnode refid="1549" relation="include">
+        </childnode>
+        <childnode refid="1556" relation="include">
+        </childnode>
+        <childnode refid="1538" relation="include">
+        </childnode>
+        <childnode refid="1539" relation="include">
+        </childnode>
+        <childnode refid="1540" relation="include">
+        </childnode>
+        <childnode refid="1541" relation="include">
+        </childnode>
+        <childnode refid="1542" relation="include">
+        </childnode>
+        <childnode refid="1543" relation="include">
+        </childnode>
+        <childnode refid="1544" relation="include">
+        </childnode>
+        <childnode refid="1533" relation="include">
+        </childnode>
+        <childnode refid="1574" relation="include">
+        </childnode>
+        <childnode refid="1575" relation="include">
+        </childnode>
+        <childnode refid="1536" relation="include">
+        </childnode>
+        <childnode refid="1564" relation="include">
+        </childnode>
+        <childnode refid="1559" relation="include">
+        </childnode>
+        <childnode refid="1578" relation="include">
+        </childnode>
+      </node>
+      <node id="1542">
+        <label>/home/alexshires/EOS/eos-next/eos/rare-b-decays/inclusive-b-to-s-dilepton.hh</label>
+        <link refid="inclusive-b-to-s-dilepton_8hh"/>
+      </node>
+      <node id="1546">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/diagnostics.hh</label>
+        <link refid="diagnostics_8hh"/>
+        <childnode refid="1547" relation="include">
+        </childnode>
+        <childnode refid="1549" relation="include">
+        </childnode>
+        <childnode refid="1542" relation="include">
+        </childnode>
+        <childnode refid="1543" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classeos_1_1PrivateImplementationPattern" prot="public">eos::PrivateImplementationPattern</innerclass>
+    <innernamespace refid="namespaceeos">eos</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="private__implementation__pattern_8hh_1a5efbe66a4abd663a38be294484095169" prot="public" static="no">
+        <name>WILSON_FITTER_GUARD_UTILS_PRIVATE_IMPLEMENTATION_PATTERN_HH</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/private_implementation_pattern.hh" line="21" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/private_implementation_pattern.hh" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>vim:<sp/>set<sp/>sw=4<sp/>sts=4<sp/>et<sp/>foldmethod=syntax<sp/>:<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>Danny<sp/>van<sp/>Dyk</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>EOS<sp/>project.<sp/>EOS<sp/>is<sp/>free<sp/>software;</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Public<sp/>License<sp/>version<sp/>2,<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>EOS<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/>but<sp/>WITHOUT<sp/>ANY</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>along<sp/>with</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/>59<sp/>Temple</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>Place,<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307<sp/><sp/>USA</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>WILSON_FITTER_GUARD_UTILS_PRIVATE_IMPLEMENTATION_PATTERN_HH</highlight></codeline>
+<codeline lineno="21" refid="private__implementation__pattern_8hh_1a5efbe66a4abd663a38be294484095169" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>WILSON_FITTER_GUARD_UTILS_PRIVATE_IMPLEMENTATION_PATTERN_HH<sp/>1</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">eos</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T_&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">Implementation;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="classeos_1_1PrivateImplementationPattern" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T_&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classeos_1_1PrivateImplementationPattern" kindref="compound">PrivateImplementationPattern</ref></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="32" refid="classeos_1_1PrivateImplementationPattern_1a232940e78b26c6ed4f97196f831c69c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_ptr&lt;Implementation&lt;T_&gt;<sp/>&gt;<sp/><ref refid="classeos_1_1PrivateImplementationPattern_1a232940e78b26c6ed4f97196f831c69c9" kindref="member">_imp</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1PrivateImplementationPattern_1a3e3d5f4a565256a1dda6c234b051b2f2" kindref="member">PrivateImplementationPattern</ref>(Implementation&lt;T_&gt;<sp/>*<sp/>imp);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1PrivateImplementationPattern_1acf46ec2739c3b0ec9702b9428475876d" kindref="member">~PrivateImplementationPattern</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/private_implementation_pattern.hh"/>
+  </compounddef>
+</doxygen>

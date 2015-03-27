@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1EMContributions" kind="struct" prot="public">
+    <compoundname>eos::EMContributions</compoundname>
+    <includes refid="em-contributions_8hh" local="no">em-contributions.hh</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structeos_1_1EMContributions_1afdea35ec16c8b9f64ee58628d4de03d4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double eos::EMContributions::omegaem_22</definition>
+        <argsstring>(const double &amp;s_hat, const double &amp;log_m_l_hat, const double &amp;mu)</argsstring>
+        <name>omegaem_22</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_hat</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>log_m_l_hat</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/em-contributions.hh" line="38"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1EMContributions_1a724b13f0a3c5aa60717d95cdef25d88b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>static complex&lt;double&gt; eos::EMContributions::omegaem_27</definition>
+        <argsstring>(const double &amp;s_hat, const double &amp;log_m_l_hat, const double &amp;mu)</argsstring>
+        <name>omegaem_27</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_hat</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>log_m_l_hat</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/em-contributions.hh" line="41"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1EMContributions_1a8b4ae92fda701eafc27649d2d40862ca" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>static complex&lt;double&gt; eos::EMContributions::omegaem_29</definition>
+        <argsstring>(const double &amp;s_hat, const double &amp;log_m_l_hat, const double &amp;mu)</argsstring>
+        <name>omegaem_29</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_hat</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>log_m_l_hat</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/em-contributions.hh" line="44"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1EMContributions_1a61b875199e526faafedacc996a00168d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double eos::EMContributions::omegaem_77</definition>
+        <argsstring>(const double &amp;s_hat, const double &amp;log_m_l_hat)</argsstring>
+        <name>omegaem_77</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_hat</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>log_m_l_hat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/em-contributions.hh" line="47"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1EMContributions_1afaa4c022d6686394328ff7b385267b68" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double eos::EMContributions::omegaem_79</definition>
+        <argsstring>(const double &amp;s_hat, const double &amp;log_m_l_hat)</argsstring>
+        <name>omegaem_79</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_hat</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>log_m_l_hat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/em-contributions.hh" line="50"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1EMContributions_1a31141870ccd13bbd979383f7089f024d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double eos::EMContributions::omegaem_99</definition>
+        <argsstring>(const double &amp;s_hat, const double &amp;log_m_l_hat)</argsstring>
+        <name>omegaem_99</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_hat</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>log_m_l_hat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/em-contributions.hh" line="53"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1EMContributions_1a0e1e2725d47f8e24a8a065b96a39e114" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double eos::EMContributions::omegaem_1010</definition>
+        <argsstring>(const double &amp;s_hat, const double &amp;log_m_l_hat)</argsstring>
+        <name>omegaem_1010</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_hat</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>log_m_l_hat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/em-contributions.hh" line="56"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/em-contributions.hh" line="28" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/em-contributions.hh" bodystart="27" bodyend="57"/>
+    <listofallmembers>
+      <member refid="structeos_1_1EMContributions_1a0e1e2725d47f8e24a8a065b96a39e114" prot="public" virt="non-virtual"><scope>eos::EMContributions</scope><name>omegaem_1010</name></member>
+      <member refid="structeos_1_1EMContributions_1afdea35ec16c8b9f64ee58628d4de03d4" prot="public" virt="non-virtual"><scope>eos::EMContributions</scope><name>omegaem_22</name></member>
+      <member refid="structeos_1_1EMContributions_1a724b13f0a3c5aa60717d95cdef25d88b" prot="public" virt="non-virtual"><scope>eos::EMContributions</scope><name>omegaem_27</name></member>
+      <member refid="structeos_1_1EMContributions_1a8b4ae92fda701eafc27649d2d40862ca" prot="public" virt="non-virtual"><scope>eos::EMContributions</scope><name>omegaem_29</name></member>
+      <member refid="structeos_1_1EMContributions_1a61b875199e526faafedacc996a00168d" prot="public" virt="non-virtual"><scope>eos::EMContributions</scope><name>omegaem_77</name></member>
+      <member refid="structeos_1_1EMContributions_1afaa4c022d6686394328ff7b385267b68" prot="public" virt="non-virtual"><scope>eos::EMContributions</scope><name>omegaem_79</name></member>
+      <member refid="structeos_1_1EMContributions_1a31141870ccd13bbd979383f7089f024d" prot="public" virt="non-virtual"><scope>eos::EMContributions</scope><name>omegaem_99</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

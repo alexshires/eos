@@ -1,0 +1,81 @@
+\hypertarget{qcd_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/qcd.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2010, 2011, 2012, 2014 Danny van Dyk}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_QCD\_HH}
+\hypertarget{qcd_8hh_source_l00021}{}\hyperlink{qcd_8hh_a3e93fae0351bb6b9ea4306536fab62e2}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_QCD\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{preprocessor}{#include <array>}
+00024 
+00025 \textcolor{keyword}{namespace }eos
+00026 \{
+\hypertarget{qcd_8hh_source_l00027}{}\hyperlink{classeos_1_1QCD}{00027}     \textcolor{keyword}{class }\hyperlink{classeos_1_1QCD}{QCD}
+00028     \{
+00029         \textcolor{keyword}{public}:
+\hypertarget{qcd_8hh_source_l00031}{}\hyperlink{classeos_1_1QCD_a3ca5eea2df0bd5c0043071e14c58d089}{00031}             \textcolor{keyword}{typedef} std::array<double, 4> \hyperlink{classeos_1_1QCD_a3ca5eea2df0bd5c0043071e14c58d089}{AnomalousMassDimension};
+00032 
+\hypertarget{qcd_8hh_source_l00034}{}\hyperlink{classeos_1_1QCD_a1261bb4643fea3012beb0a9ea78b7dea}{00034}             \textcolor{keyword}{typedef} std::array<double, 4> \hyperlink{classeos_1_1QCD_a1261bb4643fea3012beb0a9ea78b7dea}{BetaFunction};
+00035 
+00046             \textcolor{keyword}{static} \textcolor{keywordtype}{double} \hyperlink{classeos_1_1QCD_a65cf274c0bcedec2189f6836eebb4a7a}{alpha_s}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & alpha\_s\_0, \textcolor{keyword}{co
+      nst} \textcolor{keywordtype}{double} & mu\_0, \textcolor{keyword}{const} \hyperlink{classeos_1_1QCD_a1261bb4643fea3012beb0a9ea78b7dea}{BetaFunction} & beta);
+00047 
+00059             \textcolor{keyword}{static} \textcolor{keywordtype}{double} \hyperlink{classeos_1_1QCD_ad982972648053f9f5a7e41ec73e07346}{m_q_msbar}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & m\_q, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & alpha\_s\_0,
+       \textcolor{keyword}{const} \textcolor{keywordtype}{double} & alpha\_s\_mu, \textcolor{keyword}{const} \hyperlink{classeos_1_1QCD_a1261bb4643fea3012beb0a9ea78b7dea}{BetaFunction} & beta, \textcolor{keyword}{const} 
+      \hyperlink{classeos_1_1QCD_a3ca5eea2df0bd5c0043071e14c58d089}{AnomalousMassDimension} & gamma\_m);
+00060 
+00070             \textcolor{keyword}{static} \textcolor{keywordtype}{double} \hyperlink{classeos_1_1QCD_ad982972648053f9f5a7e41ec73e07346}{m_q_msbar}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & \hyperlink{classeos_1_1QCD_a1cd4a3d09f464732fd0639319f53c8ab}{m_q_pole}, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & 
+      \hyperlink{classeos_1_1QCD_a65cf274c0bcedec2189f6836eebb4a7a}{alpha_s}, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & nf);
+00071 
+00081             \textcolor{keyword}{static} \textcolor{keywordtype}{double} \hyperlink{classeos_1_1QCD_a1cd4a3d09f464732fd0639319f53c8ab}{m_q_pole}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & m\_q, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & \hyperlink{classeos_1_1QCD_a65cf274c0bcedec2189f6836eebb4a7a}{alpha_s}, \textcolor{keyword}{co
+      nst} \textcolor{keywordtype}{double} & nf);
+00082 
+00094             \textcolor{keyword}{static} \textcolor{keywordtype}{double} \hyperlink{classeos_1_1QCD_a09637e36c232414e489bf75faa359e5d}{m_q_ps}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & m\_q, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & \hyperlink{classeos_1_1QCD_a65cf274c0bcedec2189f6836eebb4a7a}{alpha_s}, \textcolor{keyword}{cons
+      t} \textcolor{keywordtype}{double} & mu\_f, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & nf, \textcolor{keyword}{const} \hyperlink{classeos_1_1QCD_a1261bb4643fea3012beb0a9ea78b7dea}{BetaFunction} & beta);
+00095 
+00106             \textcolor{keyword}{static} \textcolor{keywordtype}{double} \hyperlink{classeos_1_1QCD_ad4ddd12454ebee7271a0245b9fbabdfa}{m_q_kin}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & m\_q, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & \hyperlink{classeos_1_1QCD_a65cf274c0bcedec2189f6836eebb4a7a}{alpha_s}, \textcolor{keyword}{con
+      st} \textcolor{keywordtype}{double} & mu, \textcolor{keyword}{const} \hyperlink{classeos_1_1QCD_a1261bb4643fea3012beb0a9ea78b7dea}{BetaFunction} & beta);
+00107 
+\hypertarget{qcd_8hh_source_l00111}{}\hyperlink{classeos_1_1QCD_a05f7ff1fada6145efece3310cde56e5a}{00111}             \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} \hyperlink{classeos_1_1QCD_a05f7ff1fada6145efece3310cde56e5a}{casimir_f};
+00112 
+\hypertarget{qcd_8hh_source_l00116}{}\hyperlink{classeos_1_1QCD_ab74e057f2d2b9a05e3c8cbdbce9a2413}{00116}             \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} \hyperlink{classeos_1_1QCD_ab74e057f2d2b9a05e3c8cbdbce9a2413}{casimir_a};
+00117 
+00121 
+\hypertarget{qcd_8hh_source_l00122}{}\hyperlink{classeos_1_1QCD_abc5015326a2e2c0544aa5d2a392b7ea1}{00122}             \textcolor{keyword}{static} \textcolor{keyword}{const} \hyperlink{classeos_1_1QCD_a1261bb4643fea3012beb0a9ea78b7dea}{BetaFunction} \hyperlink{classeos_1_1QCD_abc5015326a2e2c0544aa5d2a392b7ea1}{beta_function_nf_6};
+00124 
+00128 
+\hypertarget{qcd_8hh_source_l00129}{}\hyperlink{classeos_1_1QCD_a5022dbb4487a457142d0d04d18494d88}{00129}             \textcolor{keyword}{static} \textcolor{keyword}{const} \hyperlink{classeos_1_1QCD_a1261bb4643fea3012beb0a9ea78b7dea}{BetaFunction} \hyperlink{classeos_1_1QCD_a5022dbb4487a457142d0d04d18494d88}{beta_function_nf_5};
+\hypertarget{qcd_8hh_source_l00130}{}\hyperlink{classeos_1_1QCD_a121e70974f149e6303ec5cc0be5cec35}{00130}             \textcolor{keyword}{static} \textcolor{keyword}{const} \hyperlink{classeos_1_1QCD_a3ca5eea2df0bd5c0043071e14c58d089}{AnomalousMassDimension} \hyperlink{classeos_1_1QCD_a121e70974f149e6303ec5cc0be5cec35}{gamma_m_nf_5};
+00132 
+00136 
+\hypertarget{qcd_8hh_source_l00137}{}\hyperlink{classeos_1_1QCD_a142158984dbb9ebc03f970d1dc3189c2}{00137}             \textcolor{keyword}{static} \textcolor{keyword}{const} \hyperlink{classeos_1_1QCD_a1261bb4643fea3012beb0a9ea78b7dea}{BetaFunction} \hyperlink{classeos_1_1QCD_a142158984dbb9ebc03f970d1dc3189c2}{beta_function_nf_4};
+\hypertarget{qcd_8hh_source_l00138}{}\hyperlink{classeos_1_1QCD_a2c39e24c316de9bceb7df4b6cce05665}{00138}             \textcolor{keyword}{static} \textcolor{keyword}{const} \hyperlink{classeos_1_1QCD_a3ca5eea2df0bd5c0043071e14c58d089}{AnomalousMassDimension} \hyperlink{classeos_1_1QCD_a2c39e24c316de9bceb7df4b6cce05665}{gamma_m_nf_4};
+00140 
+00144 
+\hypertarget{qcd_8hh_source_l00145}{}\hyperlink{classeos_1_1QCD_ae21fca3bee658d5b53bc12af43fa8fc2}{00145}             \textcolor{keyword}{static} \textcolor{keyword}{const} \hyperlink{classeos_1_1QCD_a1261bb4643fea3012beb0a9ea78b7dea}{BetaFunction} \hyperlink{classeos_1_1QCD_ae21fca3bee658d5b53bc12af43fa8fc2}{beta_function_nf_3};
+\hypertarget{qcd_8hh_source_l00146}{}\hyperlink{classeos_1_1QCD_a1732d2faffdb5712fbb5e53f521bdb4f}{00146}             \textcolor{keyword}{static} \textcolor{keyword}{const} \hyperlink{classeos_1_1QCD_a3ca5eea2df0bd5c0043071e14c58d089}{AnomalousMassDimension} \hyperlink{classeos_1_1QCD_a1732d2faffdb5712fbb5e53f521bdb4f}{gamma_m_nf_3};
+00148     \};
+00149 \}
+00150 
+00151 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

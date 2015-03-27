@@ -1,0 +1,151 @@
+\hypertarget{classeos_1_1Cluster}{
+\section{eos::Cluster Class Reference}
+\label{classeos_1_1Cluster}\index{eos::Cluster@{eos::Cluster}}
+}
+
+
+{\ttfamily \#include $<$cluster.hh$>$}
+
+Inherits \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern$<$ Cluster $>$}.\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std::function$<$ double(const std::vector$<$ double $>$ \&, const std::vector$<$ double $>$ \&, const unsigned \&)$>$ \hyperlink{classeos_1_1Cluster_a0c315d367de4288803597a0f23ee4168}{RValueFunction}
+\item 
+typedef \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator}$<$ IteratorTag, \hyperlink{namespaceeos_ac9f30fde04446cfabdd69d4b5b5d3c5a}{HistoryPtr} $>$ \hyperlink{classeos_1_1Cluster_ab60d3bac87825b6181c4c6bb1f04d55a}{Iterator}
+\item 
+typedef \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator}$<$ IteratorTag, unsigned $>$ \hyperlink{classeos_1_1Cluster_a39df87b5549e245b185b26f94c9d336b}{IndexIterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1Cluster_a0f1f2be34f11be1bba6426ba20ebf999}{Cluster} (const \hyperlink{classeos_1_1Cluster_a0c315d367de4288803597a0f23ee4168}{RValueFunction} \&, const double \&max\_\-rvalue, const \hyperlink{namespaceeos_ac9f30fde04446cfabdd69d4b5b5d3c5a}{HistoryPtr} \&initial\_\-chain, const unsigned \&index, const double \&skip\_\-initial)
+\item 
+\hyperlink{classeos_1_1Cluster_a7bbc57a377c4d638830c3f4768c0b1b7}{$\sim$Cluster} ()
+\item 
+void \hyperlink{classeos_1_1Cluster_afed737aab746ba8e3c8fefcf32ea185d}{add} (const \hyperlink{namespaceeos_ac9f30fde04446cfabdd69d4b5b5d3c5a}{HistoryPtr} \&chain, const unsigned \&index)
+\item 
+std::vector$<$ double $>$ \hyperlink{classeos_1_1Cluster_a9b2fc51a3435f161f359f6a11f02dacb}{mean} () const 
+\item 
+const std::vector$<$ std::vector$<$ double $>$ $>$ \& \hyperlink{classeos_1_1Cluster_a12f80fe40193349914094f49fbdc18a2}{means} () const 
+\item 
+const std::vector$<$ std::vector$<$ double $>$ $>$ \& \hyperlink{classeos_1_1Cluster_a16f6b0f61e014b2d89ca532d0bc04cf1}{variances} () const 
+\item 
+bool \hyperlink{classeos_1_1Cluster_a944a35443f5bfa64317c843c9733d84e}{overlaps} (const \hyperlink{namespaceeos_ac9f30fde04446cfabdd69d4b5b5d3c5a}{HistoryPtr} \&chain) const 
+\item 
+void \hyperlink{classeos_1_1Cluster_a2906631fc892844e19b661d1484a6a71}{parameter\_\-indices} (const std::vector$<$ unsigned $>$ \&indices)
+\item 
+\hyperlink{classeos_1_1WrappedForwardIterator}{Iterator} \hyperlink{classeos_1_1Cluster_a07f3b9298b4ea870313f62cce1b9807c}{begin} () const 
+\item 
+\hyperlink{classeos_1_1WrappedForwardIterator}{Iterator} \hyperlink{classeos_1_1Cluster_a7269794a3f029fb51e08ae51faf5e67f}{end} () const 
+\item 
+\hyperlink{classeos_1_1WrappedForwardIterator}{IndexIterator} \hyperlink{classeos_1_1Cluster_a81ba073f1dc0d91e0fd0b3060f6cd12d}{begin\_\-indices} () const 
+\item 
+\hyperlink{classeos_1_1WrappedForwardIterator}{IndexIterator} \hyperlink{classeos_1_1Cluster_a346a8e945ea0be679c9eb372e589619b}{end\_\-indices} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classeos_1_1Cluster_a39df87b5549e245b185b26f94c9d336b}{
+\index{eos::Cluster@{eos::Cluster}!IndexIterator@{IndexIterator}}
+\index{IndexIterator@{IndexIterator}!eos::Cluster@{eos::Cluster}}
+\subsubsection[{IndexIterator}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf WrappedForwardIterator}$<$IteratorTag, unsigned$>$ {\bf eos::Cluster::IndexIterator}}}
+\label{classeos_1_1Cluster_a39df87b5549e245b185b26f94c9d336b}
+\hypertarget{classeos_1_1Cluster_ab60d3bac87825b6181c4c6bb1f04d55a}{
+\index{eos::Cluster@{eos::Cluster}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!eos::Cluster@{eos::Cluster}}
+\subsubsection[{Iterator}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf WrappedForwardIterator}$<$IteratorTag, {\bf HistoryPtr}$>$ {\bf eos::Cluster::Iterator}}}
+\label{classeos_1_1Cluster_ab60d3bac87825b6181c4c6bb1f04d55a}
+\hypertarget{classeos_1_1Cluster_a0c315d367de4288803597a0f23ee4168}{
+\index{eos::Cluster@{eos::Cluster}!RValueFunction@{RValueFunction}}
+\index{RValueFunction@{RValueFunction}!eos::Cluster@{eos::Cluster}}
+\subsubsection[{RValueFunction}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::function$<$double (const std::vector$<$double$>$ \&, const std::vector$<$double$>$ \&, const unsigned \&)$>$ {\bf eos::Cluster::RValueFunction}}}
+\label{classeos_1_1Cluster_a0c315d367de4288803597a0f23ee4168}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classeos_1_1Cluster_a0f1f2be34f11be1bba6426ba20ebf999}{
+\index{eos::Cluster@{eos::Cluster}!Cluster@{Cluster}}
+\index{Cluster@{Cluster}!eos::Cluster@{eos::Cluster}}
+\subsubsection[{Cluster}]{\setlength{\rightskip}{0pt plus 5cm}eos::Cluster::Cluster (const {\bf RValueFunction} \&, \/  const double \& {\em max\_\-rvalue}, \/  const {\bf HistoryPtr} \& {\em initial\_\-chain}, \/  const unsigned \& {\em index}, \/  const double \& {\em skip\_\-initial})}}
+\label{classeos_1_1Cluster_a0f1f2be34f11be1bba6426ba20ebf999}
+Construct a cluster, which checks if two chains overlap by using the R-\/value criterion. With only one chain, it naturally overlaps with itself.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em rvalue\_\-function}]Strict or relaxed version \item[{\em max\_\-rvalue}]\item[{\em initial\_\-chain}]\item[{\em index}]\item[{\em skip\_\-initial}]Should be in \mbox{[}0,1\mbox{]}. The first portion of the chain's history is ignored when computing the R-\/value. \end{DoxyParams}
+\hypertarget{classeos_1_1Cluster_a7bbc57a377c4d638830c3f4768c0b1b7}{
+\index{eos::Cluster@{eos::Cluster}!$\sim$Cluster@{$\sim$Cluster}}
+\index{$\sim$Cluster@{$\sim$Cluster}!eos::Cluster@{eos::Cluster}}
+\subsubsection[{$\sim$Cluster}]{\setlength{\rightskip}{0pt plus 5cm}eos::Cluster::$\sim$Cluster ()}}
+\label{classeos_1_1Cluster_a7bbc57a377c4d638830c3f4768c0b1b7}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classeos_1_1Cluster_afed737aab746ba8e3c8fefcf32ea185d}{
+\index{eos::Cluster@{eos::Cluster}!add@{add}}
+\index{add@{add}!eos::Cluster@{eos::Cluster}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void eos::Cluster::add (const {\bf HistoryPtr} \& {\em chain}, \/  const unsigned \& {\em index})}}
+\label{classeos_1_1Cluster_afed737aab746ba8e3c8fefcf32ea185d}
+Add a chain (its history) to a cluster. Record its index. \hypertarget{classeos_1_1Cluster_a07f3b9298b4ea870313f62cce1b9807c}{
+\index{eos::Cluster@{eos::Cluster}!begin@{begin}}
+\index{begin@{begin}!eos::Cluster@{eos::Cluster}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Iterator} eos::Cluster::begin () const}}
+\label{classeos_1_1Cluster_a07f3b9298b4ea870313f62cce1b9807c}
+\hypertarget{classeos_1_1Cluster_a81ba073f1dc0d91e0fd0b3060f6cd12d}{
+\index{eos::Cluster@{eos::Cluster}!begin\_\-indices@{begin\_\-indices}}
+\index{begin\_\-indices@{begin\_\-indices}!eos::Cluster@{eos::Cluster}}
+\subsubsection[{begin\_\-indices}]{\setlength{\rightskip}{0pt plus 5cm}{\bf IndexIterator} eos::Cluster::begin\_\-indices () const}}
+\label{classeos_1_1Cluster_a81ba073f1dc0d91e0fd0b3060f6cd12d}
+\hypertarget{classeos_1_1Cluster_a7269794a3f029fb51e08ae51faf5e67f}{
+\index{eos::Cluster@{eos::Cluster}!end@{end}}
+\index{end@{end}!eos::Cluster@{eos::Cluster}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Iterator} eos::Cluster::end () const}}
+\label{classeos_1_1Cluster_a7269794a3f029fb51e08ae51faf5e67f}
+\hypertarget{classeos_1_1Cluster_a346a8e945ea0be679c9eb372e589619b}{
+\index{eos::Cluster@{eos::Cluster}!end\_\-indices@{end\_\-indices}}
+\index{end\_\-indices@{end\_\-indices}!eos::Cluster@{eos::Cluster}}
+\subsubsection[{end\_\-indices}]{\setlength{\rightskip}{0pt plus 5cm}{\bf IndexIterator} eos::Cluster::end\_\-indices () const}}
+\label{classeos_1_1Cluster_a346a8e945ea0be679c9eb372e589619b}
+\hypertarget{classeos_1_1Cluster_a9b2fc51a3435f161f359f6a11f02dacb}{
+\index{eos::Cluster@{eos::Cluster}!mean@{mean}}
+\index{mean@{mean}!eos::Cluster@{eos::Cluster}}
+\subsubsection[{mean}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$double$>$ eos::Cluster::mean () const}}
+\label{classeos_1_1Cluster_a9b2fc51a3435f161f359f6a11f02dacb}
+Calculate the cluster mean from the means of individual chains.
+
+\begin{DoxyNote}{Note}
+Assumes that all chains have equal length. 
+\end{DoxyNote}
+\hypertarget{classeos_1_1Cluster_a12f80fe40193349914094f49fbdc18a2}{
+\index{eos::Cluster@{eos::Cluster}!means@{means}}
+\index{means@{means}!eos::Cluster@{eos::Cluster}}
+\subsubsection[{means}]{\setlength{\rightskip}{0pt plus 5cm}const std::vector$<$std::vector$<$double$>$ $>$\& eos::Cluster::means () const}}
+\label{classeos_1_1Cluster_a12f80fe40193349914094f49fbdc18a2}
+\hypertarget{classeos_1_1Cluster_a944a35443f5bfa64317c843c9733d84e}{
+\index{eos::Cluster@{eos::Cluster}!overlaps@{overlaps}}
+\index{overlaps@{overlaps}!eos::Cluster@{eos::Cluster}}
+\subsubsection[{overlaps}]{\setlength{\rightskip}{0pt plus 5cm}bool eos::Cluster::overlaps (const {\bf HistoryPtr} \& {\em chain}) const}}
+\label{classeos_1_1Cluster_a944a35443f5bfa64317c843c9733d84e}
+Check if chain overlaps with this cluster. Internally, use the history of the chain, but to allow for burn-\/in, the first iterations can be skipped when computing means and variances.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em chain}]\item[{\em skip\_\-initial}]A percentage, should be in range \mbox{[}0,1\mbox{]} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classeos_1_1Cluster_a2906631fc892844e19b661d1484a6a71}{
+\index{eos::Cluster@{eos::Cluster}!parameter\_\-indices@{parameter\_\-indices}}
+\index{parameter\_\-indices@{parameter\_\-indices}!eos::Cluster@{eos::Cluster}}
+\subsubsection[{parameter\_\-indices}]{\setlength{\rightskip}{0pt plus 5cm}void eos::Cluster::parameter\_\-indices (const std::vector$<$ unsigned $>$ \& {\em indices})}}
+\label{classeos_1_1Cluster_a2906631fc892844e19b661d1484a6a71}
+Set indices of parameters whose R-\/value ought to be checked. By default, all dimensions are checked. \hypertarget{classeos_1_1Cluster_a16f6b0f61e014b2d89ca532d0bc04cf1}{
+\index{eos::Cluster@{eos::Cluster}!variances@{variances}}
+\index{variances@{variances}!eos::Cluster@{eos::Cluster}}
+\subsubsection[{variances}]{\setlength{\rightskip}{0pt plus 5cm}const std::vector$<$std::vector$<$double$>$ $>$\& eos::Cluster::variances () const}}
+\label{classeos_1_1Cluster_a16f6b0f61e014b2d89ca532d0bc04cf1}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{cluster_8hh}{cluster.hh}\end{DoxyCompactItemize}

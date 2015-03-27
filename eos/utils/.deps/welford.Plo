@@ -1,0 +1,54 @@
+welford.lo: welford.cc ../../eos/utils/welford.hh \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/cmath \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/x86_64-unknown-linux-gnu/bits/c++config.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/x86_64-unknown-linux-gnu/bits/os_defines.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/x86_64-unknown-linux-gnu/bits/cpu_defines.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/cpp_type_traits.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/ext/type_traits.h \
+ /usr/include/math.h /usr/include/bits/huge_val.h \
+ /usr/include/bits/huge_valf.h /usr/include/bits/huge_vall.h \
+ /usr/include/bits/inf.h /usr/include/bits/nan.h \
+ /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h
+
+../../eos/utils/welford.hh:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/cmath:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/x86_64-unknown-linux-gnu/bits/c++config.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/x86_64-unknown-linux-gnu/bits/os_defines.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/x86_64-unknown-linux-gnu/bits/cpu_defines.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/cpp_type_traits.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/ext/type_traits.h:
+
+/usr/include/math.h:
+
+/usr/include/bits/huge_val.h:
+
+/usr/include/bits/huge_valf.h:
+
+/usr/include/bits/huge_vall.h:
+
+/usr/include/bits/inf.h:
+
+/usr/include/bits/nan.h:
+
+/usr/include/bits/mathdef.h:
+
+/usr/include/bits/mathcalls.h:

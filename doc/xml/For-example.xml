@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="For-example" kind="example">
+    <compoundname>For</compoundname>
+    <detaileddescription>
+<para>Calculate the significance of the deviation between the observables&apos; current value and the mode in units of the standard Gaussian distribution.</para><para>a Gaussian around x=1 with sigma = 0.5, a current value of x=2 will yield a significance of 2.</para><para><simplesect kind="note"><para>The significance is &gt;= 0. <programlisting></programlisting> </para></simplesect>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

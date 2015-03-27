@@ -1,0 +1,72 @@
+\hypertarget{analytic-b-to-pi_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/form-\/factors/analytic-\/b-\/to-\/pi.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2014 Danny van Dyk}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_EOS\_FORM\_FACTORS\_ANALYTIC\_B\_TO\_PI\_HH}
+\hypertarget{analytic-b-to-pi_8hh_source_l00021}{}\hyperlink{analytic-b-to-pi_8hh_a2cbc4c680b544546e7a23f8c3738fe53}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_EOS\_FORM\_FACTORS\_ANALYTIC\_B\_TO\_PI\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{preprocessor}{#include <\hyperlink{mesonic_8hh}{eos/form-factors/mesonic.hh}>}
+00024 \textcolor{preprocessor}{#include <\hyperlink{diagnostics_8hh}{eos/utils/diagnostics.hh}>}
+00025 \textcolor{preprocessor}{#include <\hyperlink{parameters_8hh}{eos/utils/parameters.hh}>}
+00026 \textcolor{preprocessor}{#include <\hyperlink{options_8hh}{eos/utils/options.hh}>}
+00027 
+00028 \textcolor{keyword}{namespace }eos
+00029 \{
+\hypertarget{analytic-b-to-pi_8hh_source_l00030}{}\hyperlink{classeos_1_1AnalyticFormFactorBToPiDKMMO2008}{00030}     \textcolor{keyword}{class }\hyperlink{classeos_1_1AnalyticFormFactorBToPiDKMMO2008}{AnalyticFormFactorBToPiDKMMO2008} :
+00031         \textcolor{keyword}{public} FormFactors<PToP>,
+00032         \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern}<AnalyticFormFactorBToPiDKMMO2008>
+00033     \{
+00034         \textcolor{keyword}{public}:
+00035             \hyperlink{classeos_1_1AnalyticFormFactorBToPiDKMMO2008_aee4ce0fc9eb6b6dbb95ccb80b59c0aa3}{AnalyticFormFactorBToPiDKMMO2008}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} &, \textcolor{keyword}{const} \hyperlink{classeos_1_1Options}{Options} &)
+      ;
+00036 
+00037             \hyperlink{classeos_1_1AnalyticFormFactorBToPiDKMMO2008_afdb28ecd4ce74296cb8b4e99af7819dd}{~AnalyticFormFactorBToPiDKMMO2008}();
+00038 
+00039             \textcolor{keyword}{static} \hyperlink{classeos_1_1FormFactors_3_01PToP_01_4}{FormFactors<PToP>} * \hyperlink{classeos_1_1AnalyticFormFactorBToPiDKMMO2008_aff2cc738d3c04dee5e593ef6e40d84e3}{make}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} &, \textcolor{keywordtype}{unsigned});
+00040 
+00041             \textcolor{comment}{/* Leading-order terms */}
+00042             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1AnalyticFormFactorBToPiDKMMO2008_a8eff8336c192970590daafaad2e1ae0d}{F_lo_tw2}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & q2) \textcolor{keyword}{const};
+00043             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1AnalyticFormFactorBToPiDKMMO2008_ae19b96e05460dcb94c6382a49bc009a4}{F_lo_tw3}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & q2) \textcolor{keyword}{const};
+00044             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1AnalyticFormFactorBToPiDKMMO2008_a1a9ca014971d5c140df4fc3c9bf03879}{F_lo_tw4}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & q2) \textcolor{keyword}{const};
+00045 
+00046             \textcolor{comment}{/* Next-to-leading-order terms */}
+00047             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1AnalyticFormFactorBToPiDKMMO2008_abb2691fe8415e5c5c4db53af3ef4ba41}{F_nlo_tw2}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & q2) \textcolor{keyword}{const};
+00048             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1AnalyticFormFactorBToPiDKMMO2008_a8d4a9d28a81a8b60d557162f0e3a0c5a}{F_nlo_tw3}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & q2) \textcolor{keyword}{const};
+00049 
+00050             \textcolor{comment}{/* Form factors */}
+00051             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \hyperlink{classeos_1_1AnalyticFormFactorBToPiDKMMO2008_acc3cbe21d5bab4ee23a457b757749bbf}{f_p}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & q2) \textcolor{keyword}{const};
+00052             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \hyperlink{classeos_1_1AnalyticFormFactorBToPiDKMMO2008_a646f3764614e79700d31571b9df620ba}{f_0}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & q2) \textcolor{keyword}{const};
+00053             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \hyperlink{classeos_1_1AnalyticFormFactorBToPiDKMMO2008_aa3903289904f6e732bc9094f3826d3be}{f_t}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & q2) \textcolor{keyword}{const};
+00054 
+00055             \textcolor{comment}{/* B mass from the LCSR and the SVZ sum rule, respectively */}
+00056             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1AnalyticFormFactorBToPiDKMMO2008_abc228c8f704b43ac2c777ab48d22c08c}{MB_lcsr}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & q2) \textcolor{keyword}{const};
+00057             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1AnalyticFormFactorBToPiDKMMO2008_a813b78c9a4e5ea82d7f77154e7dffa63}{MB_svz}() \textcolor{keyword}{const};
+00058 
+00059             \textcolor{comment}{/* Diagnostics for unit tests */}
+00060             \hyperlink{classeos_1_1Diagnostics}{Diagnostics} \hyperlink{classeos_1_1AnalyticFormFactorBToPiDKMMO2008_a4996873565e4da45f132cbfdd90f7617}{diagnostics}() \textcolor{keyword}{const};
+00061     \};
+00062 \}
+00063 
+00064 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

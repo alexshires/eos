@@ -1,0 +1,387 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1ConcreteObservable" kind="class" prot="public">
+    <compoundname>eos::ConcreteObservable</compoundname>
+    <basecompoundref refid="classeos_1_1Observable" prot="public" virt="non-virtual">eos::Observable</basecompoundref>
+    <includes refid="concrete__observable_8hh" local="no">concrete_observable.hh</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Decay_</type>
+      </param>
+      <param>
+        <type>typename...</type>
+        <declname>Args_</declname>
+        <defname>Args_</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classeos_1_1ConcreteObservable_1ac14d86ba2becea00c1fe033315c35ea6" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string eos::ConcreteObservable&lt; Decay_, Args_ &gt;::_name</definition>
+        <argsstring></argsstring>
+        <name>_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh" line="70" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1ConcreteObservable_1a88fa2166924ca3c6d5d0f3a5e9e5ed6d" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref></type>
+        <definition>Parameters eos::ConcreteObservable&lt; Decay_, Args_ &gt;::_parameters</definition>
+        <argsstring></argsstring>
+        <name>_parameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh" line="72" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1ConcreteObservable_1a64b8611f4b1555d50e5a42e0fd353d05" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Kinematics" kindref="compound">Kinematics</ref></type>
+        <definition>Kinematics eos::ConcreteObservable&lt; Decay_, Args_ &gt;::_kinematics</definition>
+        <argsstring></argsstring>
+        <name>_kinematics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh" line="74" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1ConcreteObservable_1a7533b5fe7f9ed8d1771a705592b32225" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Options" kindref="compound">Options</ref></type>
+        <definition>Options eos::ConcreteObservable&lt; Decay_, Args_ &gt;::_options</definition>
+        <argsstring></argsstring>
+        <name>_options</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh" line="76" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1ConcreteObservable_1a17c652e9879433064ca5d128fb3cf9a4" prot="private" static="no" mutable="no">
+        <type>Decay_</type>
+        <definition>Decay_ eos::ConcreteObservable&lt; Decay_, Args_ &gt;::_decay</definition>
+        <argsstring></argsstring>
+        <name>_decay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh" line="78" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1ConcreteObservable_1afccb93ea36b7533de6f8513080386523" prot="private" static="no" mutable="no">
+        <type>std::function&lt; double(const Decay_ *, const Args_ &amp;...)</type>
+        <definition>std::function&lt;double (const Decay_ *, const Args_ &amp; ...) eos::ConcreteObservable&lt; Decay_, Args_ &gt;::_function)</definition>
+        <argsstring>)</argsstring>
+        <name>_function</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh" line="80" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1ConcreteObservable_1a8f75b5a11ff413161d07e4d98bf0d5a4" prot="private" static="no" mutable="no">
+        <type>std::tuple&lt; typename impl::ConvertTo&lt; Args_, const char * &gt;::Type...&gt;</type>
+        <definition>std::tuple&lt;typename impl::ConvertTo&lt;Args_, const char *&gt;::Type ...&gt; eos::ConcreteObservable&lt; Decay_, Args_ &gt;::_kinematics_names</definition>
+        <argsstring></argsstring>
+        <name>_kinematics_names</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh" line="82" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1ConcreteObservable_1acde10021a7a18b6716f596bef3610ccd" prot="private" static="no" mutable="no">
+        <type>std::tuple&lt; const Decay_ *, typename impl::ConvertTo&lt; Args_, <ref refid="classeos_1_1KinematicVariable" kindref="compound">KinematicVariable</ref> &gt;::Type...&gt;</type>
+        <definition>std::tuple&lt;const Decay_ *, typename impl::ConvertTo&lt;Args_, KinematicVariable&gt;::Type ...&gt; eos::ConcreteObservable&lt; Decay_, Args_ &gt;::_argument_tuple</definition>
+        <argsstring></argsstring>
+        <name>_argument_tuple</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh" line="84" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1ConcreteObservable_1a194b98ae4633deff5c8d52d743efe6c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eos::ConcreteObservable&lt; Decay_, Args_ &gt;::ConcreteObservable</definition>
+        <argsstring>(const std::string &amp;name, const Parameters &amp;parameters, const Kinematics &amp;kinematics, const Options &amp;options, const std::function&lt; double(const Decay_ *, const Args_ &amp;...)&gt; &amp;function, const std::tuple&lt; typename impl::ConvertTo&lt; Args_, const char * &gt;::Type...&gt; &amp;kinematics_names)</argsstring>
+        <name>ConcreteObservable</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1Kinematics" kindref="compound">Kinematics</ref> &amp;</type>
+          <declname>kinematics</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1Options" kindref="compound">Options</ref> &amp;</type>
+          <declname>options</declname>
+        </param>
+        <param>
+          <type>const std::function&lt; double(const Decay_ *, const Args_ &amp;...)&gt; &amp;</type>
+          <declname>function</declname>
+        </param>
+        <param>
+          <type>const std::tuple&lt; typename impl::ConvertTo&lt; Args_, const char * &gt;::Type...&gt; &amp;</type>
+          <declname>kinematics_names</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh" line="101" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh" bodystart="87" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ConcreteObservable_1a777d479052396c8dc1b73f752fdb3539" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const std::string &amp;</type>
+        <definition>virtual const std::string&amp; eos::ConcreteObservable&lt; Decay_, Args_ &gt;::name</definition>
+        <argsstring>() const </argsstring>
+        <name>name</name>
+        <reimplements refid="classeos_1_1Observable_1adfdc8fe469e00adeb464d3b3e4e14236">name</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh" line="106" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh" bodystart="105" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ConcreteObservable_1a4127e180162b8f5eeebd55e7c8d1b7cf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>virtual double eos::ConcreteObservable&lt; Decay_, Args_ &gt;::evaluate</definition>
+        <argsstring>() const </argsstring>
+        <name>evaluate</name>
+        <reimplements refid="classeos_1_1Observable_1a913385d3a077d578bbcc2d502e5fdc2d">evaluate</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh" line="111" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh" bodystart="110" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ConcreteObservable_1af5265ce9314987a7b7b01275b5410309" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref></type>
+        <definition>virtual Parameters eos::ConcreteObservable&lt; Decay_, Args_ &gt;::parameters</definition>
+        <argsstring>()</argsstring>
+        <name>parameters</name>
+        <reimplements refid="classeos_1_1Observable_1a233852d22f287944b8bbf4da803289b1">parameters</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh" line="118" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh" bodystart="117" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ConcreteObservable_1abffd48fad6c67448f99c2024a6c81ad7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classeos_1_1Kinematics" kindref="compound">Kinematics</ref></type>
+        <definition>virtual Kinematics eos::ConcreteObservable&lt; Decay_, Args_ &gt;::kinematics</definition>
+        <argsstring>()</argsstring>
+        <name>kinematics</name>
+        <reimplements refid="classeos_1_1Observable_1a8bfd8cc2873e467ac9ae100d029d8c49">kinematics</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh" line="123" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh" bodystart="122" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ConcreteObservable_1ac8f34b0c5dc087982bf0d7b053cf07b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classeos_1_1Options" kindref="compound">Options</ref></type>
+        <definition>virtual Options eos::ConcreteObservable&lt; Decay_, Args_ &gt;::options</definition>
+        <argsstring>()</argsstring>
+        <name>options</name>
+        <reimplements refid="classeos_1_1Observable_1a237cf968a4f46a93e0cc8ba0fdbaceee">options</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh" line="128" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh" bodystart="127" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ConcreteObservable_1af84f6c7410ff512dc8edb36f4501e389" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref></type>
+        <definition>virtual ObservablePtr eos::ConcreteObservable&lt; Decay_, Args_ &gt;::clone</definition>
+        <argsstring>() const </argsstring>
+        <name>clone</name>
+        <reimplements refid="classeos_1_1Observable_1a1c88c66a224a14fbddad70e95cb61136">clone</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh" line="133" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh" bodystart="132" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ConcreteObservable_1afe63f75a6814eda8dca5d1e842f71fc6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref></type>
+        <definition>virtual ObservablePtr eos::ConcreteObservable&lt; Decay_, Args_ &gt;::clone</definition>
+        <argsstring>(const Parameters &amp;parameters) const </argsstring>
+        <name>clone</name>
+        <reimplements refid="classeos_1_1Observable_1a20e8218d04aa5589ce795ddd425751a0">clone</reimplements>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh" line="138" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh" bodystart="137" bodyend="140"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="281">
+        <label>eos::ConcreteObservable&lt; Decay_, Args_ &gt;</label>
+        <link refid="classeos_1_1ConcreteObservable"/>
+        <childnode refid="282" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="282">
+        <label>eos::Observable</label>
+        <link refid="classeos_1_1Observable"/>
+        <childnode refid="283" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="283">
+        <label>eos::ParameterUser</label>
+        <link refid="classeos_1_1ParameterUser"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="293">
+        <label>eos::PrivateImplementationPattern&lt; Options &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="291">
+        <label>eos::PrivateImplementationPattern&lt; Parameters &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="284">
+        <label>eos::ConcreteObservable&lt; Decay_, Args_ &gt;</label>
+        <link refid="classeos_1_1ConcreteObservable"/>
+        <childnode refid="285" relation="public-inheritance">
+        </childnode>
+        <childnode refid="288" relation="usage">
+          <edgelabel>_kinematics</edgelabel>
+        </childnode>
+        <childnode refid="290" relation="usage">
+          <edgelabel>_parameters</edgelabel>
+        </childnode>
+        <childnode refid="292" relation="usage">
+          <edgelabel>_options</edgelabel>
+        </childnode>
+        <childnode refid="294" relation="usage">
+          <edgelabel>_name</edgelabel>
+        </childnode>
+      </node>
+      <node id="288">
+        <label>eos::Kinematics</label>
+        <link refid="classeos_1_1Kinematics"/>
+        <childnode refid="289" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="285">
+        <label>eos::Observable</label>
+        <link refid="classeos_1_1Observable"/>
+        <childnode refid="286" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="295">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="287">
+        <label>std::set&lt; Parameter::Id &gt;</label>
+      </node>
+      <node id="289">
+        <label>eos::PrivateImplementationPattern&lt; Kinematics &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="290">
+        <label>eos::Parameters</label>
+        <link refid="classeos_1_1Parameters"/>
+        <childnode refid="291" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="286">
+        <label>eos::ParameterUser</label>
+        <link refid="classeos_1_1ParameterUser"/>
+        <childnode refid="287" relation="usage">
+          <edgelabel>_ids</edgelabel>
+        </childnode>
+      </node>
+      <node id="292">
+        <label>eos::Options</label>
+        <link refid="classeos_1_1Options"/>
+        <childnode refid="293" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="294">
+        <label>std::string</label>
+        <childnode refid="295" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh" line="66" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh" bodystart="64" bodyend="141"/>
+    <listofallmembers>
+      <member refid="classeos_1_1ConcreteObservable_1acde10021a7a18b6716f596bef3610ccd" prot="private" virt="non-virtual"><scope>eos::ConcreteObservable</scope><name>_argument_tuple</name></member>
+      <member refid="classeos_1_1ConcreteObservable_1a17c652e9879433064ca5d128fb3cf9a4" prot="private" virt="non-virtual"><scope>eos::ConcreteObservable</scope><name>_decay</name></member>
+      <member refid="classeos_1_1ConcreteObservable_1afccb93ea36b7533de6f8513080386523" prot="private" virt="non-virtual"><scope>eos::ConcreteObservable</scope><name>_function</name></member>
+      <member refid="classeos_1_1ParameterUser_1aa3a0285297e16cf2a5830df1f9bb2f4b" prot="protected" virt="non-virtual"><scope>eos::ConcreteObservable</scope><name>_ids</name></member>
+      <member refid="classeos_1_1ConcreteObservable_1a64b8611f4b1555d50e5a42e0fd353d05" prot="private" virt="non-virtual"><scope>eos::ConcreteObservable</scope><name>_kinematics</name></member>
+      <member refid="classeos_1_1ConcreteObservable_1a8f75b5a11ff413161d07e4d98bf0d5a4" prot="private" virt="non-virtual"><scope>eos::ConcreteObservable</scope><name>_kinematics_names</name></member>
+      <member refid="classeos_1_1ConcreteObservable_1ac14d86ba2becea00c1fe033315c35ea6" prot="private" virt="non-virtual"><scope>eos::ConcreteObservable</scope><name>_name</name></member>
+      <member refid="classeos_1_1ConcreteObservable_1a7533b5fe7f9ed8d1771a705592b32225" prot="private" virt="non-virtual"><scope>eos::ConcreteObservable</scope><name>_options</name></member>
+      <member refid="classeos_1_1ConcreteObservable_1a88fa2166924ca3c6d5d0f3a5e9e5ed6d" prot="private" virt="non-virtual"><scope>eos::ConcreteObservable</scope><name>_parameters</name></member>
+      <member refid="classeos_1_1ParameterUser_1a9cd569207063cd2a8f807c4e1203a5d4" prot="public" virt="non-virtual"><scope>eos::ConcreteObservable</scope><name>begin</name></member>
+      <member refid="classeos_1_1ConcreteObservable_1af84f6c7410ff512dc8edb36f4501e389" prot="public" virt="virtual"><scope>eos::ConcreteObservable</scope><name>clone</name></member>
+      <member refid="classeos_1_1ConcreteObservable_1afe63f75a6814eda8dca5d1e842f71fc6" prot="public" virt="virtual"><scope>eos::ConcreteObservable</scope><name>clone</name></member>
+      <member refid="classeos_1_1ConcreteObservable_1a194b98ae4633deff5c8d52d743efe6c3" prot="public" virt="non-virtual"><scope>eos::ConcreteObservable</scope><name>ConcreteObservable</name></member>
+      <member refid="classeos_1_1ParameterUser_1a7105631bbcb4b2492e6377b2b69f5b0f" prot="public" virt="non-virtual"><scope>eos::ConcreteObservable</scope><name>ConstIterator</name></member>
+      <member refid="classeos_1_1ParameterUser_1a5813c886f3fd3f074cc02a53fc9e0790" prot="public" virt="non-virtual"><scope>eos::ConcreteObservable</scope><name>end</name></member>
+      <member refid="classeos_1_1ConcreteObservable_1a4127e180162b8f5eeebd55e7c8d1b7cf" prot="public" virt="virtual"><scope>eos::ConcreteObservable</scope><name>evaluate</name></member>
+      <member refid="classeos_1_1ConcreteObservable_1abffd48fad6c67448f99c2024a6c81ad7" prot="public" virt="virtual"><scope>eos::ConcreteObservable</scope><name>kinematics</name></member>
+      <member refid="classeos_1_1Observable_1a949bf84938bcc9ab75075801c636763c" prot="public" virt="non-virtual"><scope>eos::ConcreteObservable</scope><name>make</name></member>
+      <member refid="classeos_1_1ConcreteObservable_1a777d479052396c8dc1b73f752fdb3539" prot="public" virt="virtual"><scope>eos::ConcreteObservable</scope><name>name</name></member>
+      <member refid="classeos_1_1ConcreteObservable_1ac8f34b0c5dc087982bf0d7b053cf07b5" prot="public" virt="virtual"><scope>eos::ConcreteObservable</scope><name>options</name></member>
+      <member refid="classeos_1_1ConcreteObservable_1af5265ce9314987a7b7b01275b5410309" prot="public" virt="virtual"><scope>eos::ConcreteObservable</scope><name>parameters</name></member>
+      <member refid="classeos_1_1ParameterUser_1ad91a901e589653272482bded7e453c70" prot="public" virt="non-virtual"><scope>eos::ConcreteObservable</scope><name>uses</name></member>
+      <member refid="classeos_1_1ParameterUser_1a7a37e779cf45ef1075fe7bf670688b72" prot="public" virt="non-virtual"><scope>eos::ConcreteObservable</scope><name>uses</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

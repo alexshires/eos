@@ -1,0 +1,95 @@
+\hypertarget{qcdf__integrals_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/rare-\/b-\/decays/qcdf\_\-integrals.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2011 Danny van Dyk}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_EOS\_RARE\_B\_DECAYS\_QCDF\_INTEGRALS\_HH}
+\hypertarget{qcdf__integrals_8hh_source_l00021}{}\hyperlink{qcdf__integrals_8hh_a22714b9eea2c1c4f506ea9b45a76f43a}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_EOS\_RARE\_B\_DECAYS\_QCDF\_INTEGRALS\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{preprocessor}{#include <\hyperlink{complex_8hh}{eos/utils/complex.hh}>}
+00024 
+00025 \textcolor{keyword}{namespace }eos
+00026 \{
+\hypertarget{qcdf__integrals_8hh_source_l00027}{}\hyperlink{classeos_1_1QCDFIntegrals}{00027}     \textcolor{keyword}{class }\hyperlink{classeos_1_1QCDFIntegrals}{QCDFIntegrals}
+00028     \{
+00029         \textcolor{keyword}{public}:
+00030             \textcolor{keyword}{class }\hyperlink{structeos_1_1QCDFIntegrals_1_1Results}{Results};
+00031 
+00043             \textcolor{keyword}{static} \hyperlink{structeos_1_1QCDFIntegrals_1_1Results}{Results} \hyperlink{classeos_1_1QCDFIntegrals_af6508bca0f6425fcefc36a75699fd505}{photon_bottom_case}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & m\_b, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & 
+      m\_B, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & m\_V, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu,
+00044                     \textcolor{keyword}{const} \textcolor{keywordtype}{double} & a\_1\_perp, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & a\_2\_perp,
+00045                     \textcolor{keyword}{const} \textcolor{keywordtype}{double} & a\_1\_parallel, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & a\_2\_parallel);
+00046 
+00058             \textcolor{keyword}{static} \hyperlink{structeos_1_1QCDFIntegrals_1_1Results}{Results} \hyperlink{classeos_1_1QCDFIntegrals_a9d43810ac4bee250bdd71f4b13a8535a}{photon_charm_case}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & m\_c, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & m
+      \_B, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & m\_V, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu,
+00059                     \textcolor{keyword}{const} \textcolor{keywordtype}{double} & a\_1\_perp, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & a\_2\_perp,
+00060                     \textcolor{keyword}{const} \textcolor{keywordtype}{double} & a\_1\_parallel, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & a\_2\_parallel);
+00061 
+00072             \textcolor{keyword}{static} \hyperlink{structeos_1_1QCDFIntegrals_1_1Results}{Results} \hyperlink{classeos_1_1QCDFIntegrals_a20d1967a85e3601633adf14ee4736508}{photon_massless_case}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & m\_B, \textcolor{keyword}{const} \textcolor{keywordtype}{double} 
+      & m\_V, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu,
+00073                     \textcolor{keyword}{const} \textcolor{keywordtype}{double} & a\_1\_perp, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & a\_2\_perp,
+00074                     \textcolor{keyword}{const} \textcolor{keywordtype}{double} & a\_1\_parallel, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & a\_2\_parallel);
+00075 
+00088             \textcolor{keyword}{static} \hyperlink{structeos_1_1QCDFIntegrals_1_1Results}{Results} \hyperlink{classeos_1_1QCDFIntegrals_a4685503430ba2e37d0a950efbb5db144}{dilepton_bottom_case}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & 
+      m\_b, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & m\_B, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & m\_V, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu,
+00089                     \textcolor{keyword}{const} \textcolor{keywordtype}{double} & a\_1\_perp, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & a\_2\_perp,
+00090                     \textcolor{keyword}{const} \textcolor{keywordtype}{double} & a\_1\_parallel, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & a\_2\_parallel);
+00091 
+00104             \textcolor{keyword}{static} \hyperlink{structeos_1_1QCDFIntegrals_1_1Results}{Results} \hyperlink{classeos_1_1QCDFIntegrals_afd6226e6800deeec288306c490da5893}{dilepton_charm_case}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & m
+      \_c, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & m\_B, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & m\_V, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu,
+00105                     \textcolor{keyword}{const} \textcolor{keywordtype}{double} & a\_1\_perp, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & a\_2\_perp,
+00106                     \textcolor{keyword}{const} \textcolor{keywordtype}{double} & a\_1\_parallel, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & a\_2\_parallel);
+00107 
+00119             \textcolor{keyword}{static} \hyperlink{structeos_1_1QCDFIntegrals_1_1Results}{Results} \hyperlink{classeos_1_1QCDFIntegrals_a46d8f57850d80b92498c15caac8b0229}{dilepton_massless_case}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s, \textcolor{keyword}{const} \textcolor{keywordtype}{double} 
+      & m\_B, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & m\_V, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu,
+00120                     \textcolor{keyword}{const} \textcolor{keywordtype}{double} & a\_1\_perp, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & a\_2\_perp,
+00121                     \textcolor{keyword}{const} \textcolor{keywordtype}{double} & a\_1\_parallel, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & a\_2\_parallel);
+00122     \};
+00123 
+\hypertarget{qcdf__integrals_8hh_source_l00127}{}\hyperlink{structeos_1_1QCDFIntegrals_1_1Results}{00127}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1QCDFIntegrals_1_1Results}{QCDFIntegrals::Results}
+00128     \{
+00129         \textcolor{comment}{// cf. [vD2011], Eqs. (x), (y) for the perpendicular amplitudes}
+\hypertarget{qcdf__integrals_8hh_source_l00130}{}\hyperlink{structeos_1_1QCDFIntegrals_1_1Results_a0a54f336f6b2c1c872ca0960019364e0}{00130}         complex<double> \hyperlink{structeos_1_1QCDFIntegrals_1_1Results_a0a54f336f6b2c1c872ca0960019364e0}{j0_perp};
+\hypertarget{qcdf__integrals_8hh_source_l00131}{}\hyperlink{structeos_1_1QCDFIntegrals_1_1Results_a955c86eea4fcade3cb1c933bc37f045f}{00131}         complex<double> \hyperlink{structeos_1_1QCDFIntegrals_1_1Results_a955c86eea4fcade3cb1c933bc37f045f}{j0bar_perp};
+\hypertarget{qcdf__integrals_8hh_source_l00132}{}\hyperlink{structeos_1_1QCDFIntegrals_1_1Results_a17ec95c05f9109e6d5d2c7af30a2cc3c}{00132}         complex<double> \hyperlink{structeos_1_1QCDFIntegrals_1_1Results_a17ec95c05f9109e6d5d2c7af30a2cc3c}{j1_perp};
+\hypertarget{qcdf__integrals_8hh_source_l00133}{}\hyperlink{structeos_1_1QCDFIntegrals_1_1Results_a75e99af294c74a56ecc0d22a6830ad51}{00133}         complex<double> \hyperlink{structeos_1_1QCDFIntegrals_1_1Results_a75e99af294c74a56ecc0d22a6830ad51}{j2_perp};
+\hypertarget{qcdf__integrals_8hh_source_l00134}{}\hyperlink{structeos_1_1QCDFIntegrals_1_1Results_a63ff0de751641de0e53a9526d4edbbc5}{00134}         complex<double> \hyperlink{structeos_1_1QCDFIntegrals_1_1Results_a63ff0de751641de0e53a9526d4edbbc5}{j4_perp};
+\hypertarget{qcdf__integrals_8hh_source_l00135}{}\hyperlink{structeos_1_1QCDFIntegrals_1_1Results_a2ae09761e83ba1fb4836b5f12b13d963}{00135}         complex<double> \hyperlink{structeos_1_1QCDFIntegrals_1_1Results_a2ae09761e83ba1fb4836b5f12b13d963}{j5_perp};
+\hypertarget{qcdf__integrals_8hh_source_l00136}{}\hyperlink{structeos_1_1QCDFIntegrals_1_1Results_a9b10eac176e6e81b3facb715dd7d7ed0}{00136}         complex<double> \hyperlink{structeos_1_1QCDFIntegrals_1_1Results_a9b10eac176e6e81b3facb715dd7d7ed0}{j6_perp}; \textcolor{comment}{// This integral arises in perpendicular amplitu
+      des, but depends on parallel Gegenbauer moments!}
+\hypertarget{qcdf__integrals_8hh_source_l00137}{}\hyperlink{structeos_1_1QCDFIntegrals_1_1Results_a2c91f80cbe8263e2778d134911e12820}{00137}         \textcolor{keywordtype}{double} \hyperlink{structeos_1_1QCDFIntegrals_1_1Results_a2c91f80cbe8263e2778d134911e12820}{j7_perp};
+00138 
+00139         \textcolor{comment}{// cf. [vD2011], Eqs. (x), (y) for the parallel amplitudes}
+\hypertarget{qcdf__integrals_8hh_source_l00140}{}\hyperlink{structeos_1_1QCDFIntegrals_1_1Results_a3f70a602dc4afa4c37edff48032487c5}{00140}         complex<double> \hyperlink{structeos_1_1QCDFIntegrals_1_1Results_a3f70a602dc4afa4c37edff48032487c5}{j0_parallel};
+\hypertarget{qcdf__integrals_8hh_source_l00141}{}\hyperlink{structeos_1_1QCDFIntegrals_1_1Results_a0f526f7579916a3a6d0ae2b8262a785c}{00141}         complex<double> \hyperlink{structeos_1_1QCDFIntegrals_1_1Results_a0f526f7579916a3a6d0ae2b8262a785c}{j1_parallel};
+\hypertarget{qcdf__integrals_8hh_source_l00142}{}\hyperlink{structeos_1_1QCDFIntegrals_1_1Results_a5ba2925f4fa9f5425e4af1349aa1f7c4}{00142}         complex<double> \hyperlink{structeos_1_1QCDFIntegrals_1_1Results_a5ba2925f4fa9f5425e4af1349aa1f7c4}{j3_parallel};
+\hypertarget{qcdf__integrals_8hh_source_l00143}{}\hyperlink{structeos_1_1QCDFIntegrals_1_1Results_aba4329760d20d62cec5824c940026f98}{00143}         complex<double> \hyperlink{structeos_1_1QCDFIntegrals_1_1Results_aba4329760d20d62cec5824c940026f98}{j4_parallel};
+00144 
+00145         \textcolor{comment}{/* For convenience, the integrals jtilde\_\{1,2\} from j\_\{1,2,3\} */}
+\hypertarget{qcdf__integrals_8hh_source_l00146}{}\hyperlink{structeos_1_1QCDFIntegrals_1_1Results_affa81425a4a26725aec429cac18c363c}{00146}         complex<double> \hyperlink{structeos_1_1QCDFIntegrals_1_1Results_affa81425a4a26725aec429cac18c363c}{jtilde1_perp};
+\hypertarget{qcdf__integrals_8hh_source_l00147}{}\hyperlink{structeos_1_1QCDFIntegrals_1_1Results_ae93c8c7a9f37dfc2f2a71bf76afc78fa}{00147}         complex<double> \hyperlink{structeos_1_1QCDFIntegrals_1_1Results_ae93c8c7a9f37dfc2f2a71bf76afc78fa}{jtilde2_parallel};
+00148     \};
+00149 \}
+00150 
+00151 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

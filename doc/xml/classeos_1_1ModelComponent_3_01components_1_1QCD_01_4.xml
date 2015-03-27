@@ -1,0 +1,278 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4" kind="class" prot="public">
+    <compoundname>eos::ModelComponent&lt; components::QCD &gt;</compoundname>
+    <derivedcompoundref refid="classeos_1_1Model" prot="public" virt="virtual">eos::Model</derivedcompoundref>
+    <derivedcompoundref refid="classeos_1_1SMComponent_3_01components_1_1QCD_01_4" prot="public" virt="virtual">eos::SMComponent&lt; components::QCD &gt;</derivedcompoundref>
+    <includes refid="model_8hh" local="no">model.hh</includes>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4_1abf241eb181bace5db7f3ac6f303d2eec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double eos::ModelComponent&lt; components::QCD &gt;::alpha_s</definition>
+        <argsstring>(const double &amp;mu) const =0</argsstring>
+        <name>alpha_s</name>
+        <reimplementedby refid="classeos_1_1SMComponent_3_01components_1_1QCD_01_4_1a8f06baa780a1f99f22f2e45c9463df36">alpha_s</reimplementedby>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/model.hh" line="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4_1af57a3d70de7579dcf92aeacff6439a40" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double eos::ModelComponent&lt; components::QCD &gt;::m_t_msbar</definition>
+        <argsstring>(const double &amp;mu) const =0</argsstring>
+        <name>m_t_msbar</name>
+        <reimplementedby refid="classeos_1_1SMComponent_3_01components_1_1QCD_01_4_1a6bda92aac898c86185a8f3fca6f575cf">m_t_msbar</reimplementedby>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/model.hh" line="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4_1a0035735c19d0b3fced44b986b09410b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double eos::ModelComponent&lt; components::QCD &gt;::m_t_pole</definition>
+        <argsstring>() const =0</argsstring>
+        <name>m_t_pole</name>
+        <reimplementedby refid="classeos_1_1SMComponent_3_01components_1_1QCD_01_4_1a8c798c65f6fdf75c7f038e428134d026">m_t_pole</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/model.hh" line="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4_1ad8449029b487c614a769e1b0d6012e4c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double eos::ModelComponent&lt; components::QCD &gt;::m_b_kin</definition>
+        <argsstring>(const double &amp;mu_kin) const =0</argsstring>
+        <name>m_b_kin</name>
+        <reimplementedby refid="classeos_1_1SMComponent_3_01components_1_1QCD_01_4_1a722ab7fc7efbfd60d0088e4349e29b5b">m_b_kin</reimplementedby>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu_kin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/model.hh" line="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4_1a1707fd6c3e6a4d8e02437652a3492f73" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double eos::ModelComponent&lt; components::QCD &gt;::m_b_msbar</definition>
+        <argsstring>(const double &amp;mu) const =0</argsstring>
+        <name>m_b_msbar</name>
+        <reimplementedby refid="classeos_1_1SMComponent_3_01components_1_1QCD_01_4_1a81b71218baa85173813f67b363c73924">m_b_msbar</reimplementedby>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/model.hh" line="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4_1a372e8a7dced706f571b33bc18256e324" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double eos::ModelComponent&lt; components::QCD &gt;::m_b_pole</definition>
+        <argsstring>() const =0</argsstring>
+        <name>m_b_pole</name>
+        <reimplementedby refid="classeos_1_1SMComponent_3_01components_1_1QCD_01_4_1ae2a177d11900636dec6d7d7c9040b9fb">m_b_pole</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/model.hh" line="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4_1a654bbcce7c337f15ca6f2072da24463d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double eos::ModelComponent&lt; components::QCD &gt;::m_b_ps</definition>
+        <argsstring>(const double &amp;mu_f) const =0</argsstring>
+        <name>m_b_ps</name>
+        <reimplementedby refid="classeos_1_1SMComponent_3_01components_1_1QCD_01_4_1a2f052ffa95426e07ab019fa275ce41d9">m_b_ps</reimplementedby>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu_f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/model.hh" line="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4_1a0cd270cd7c6528f41a34cfc1e70bf056" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double eos::ModelComponent&lt; components::QCD &gt;::m_c_kin</definition>
+        <argsstring>(const double &amp;mu_kin) const =0</argsstring>
+        <name>m_c_kin</name>
+        <reimplementedby refid="classeos_1_1SMComponent_3_01components_1_1QCD_01_4_1a346c272825a490a9f5884af8b8ceebfe">m_c_kin</reimplementedby>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu_kin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/model.hh" line="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4_1a82e6a460fe4fb848928fe6952fd56bb1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double eos::ModelComponent&lt; components::QCD &gt;::m_c_msbar</definition>
+        <argsstring>(const double &amp;mu) const =0</argsstring>
+        <name>m_c_msbar</name>
+        <reimplementedby refid="classeos_1_1SMComponent_3_01components_1_1QCD_01_4_1af1f05d988210a50359490a150d9170e0">m_c_msbar</reimplementedby>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/model.hh" line="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4_1a3a2c090cf0f7099c471fd4cc413431e3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double eos::ModelComponent&lt; components::QCD &gt;::m_c_pole</definition>
+        <argsstring>() const =0</argsstring>
+        <name>m_c_pole</name>
+        <reimplementedby refid="classeos_1_1SMComponent_3_01components_1_1QCD_01_4_1a013ddfb77a30fe05fd3593c1528331b0">m_c_pole</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/model.hh" line="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4_1ac93d5c86dbb1e6118ab972e8c0f6bc12" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double eos::ModelComponent&lt; components::QCD &gt;::m_s_msbar</definition>
+        <argsstring>(const double &amp;mu) const =0</argsstring>
+        <name>m_s_msbar</name>
+        <reimplementedby refid="classeos_1_1SMComponent_3_01components_1_1QCD_01_4_1a0d31a7565a92e0dca81e153932690945">m_s_msbar</reimplementedby>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/model.hh" line="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4_1a75172971f04fdac5927b0512cf77ebe2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double eos::ModelComponent&lt; components::QCD &gt;::m_ud_msbar</definition>
+        <argsstring>(const double &amp;mu) const =0</argsstring>
+        <name>m_ud_msbar</name>
+        <reimplementedby refid="classeos_1_1SMComponent_3_01components_1_1QCD_01_4_1aff5afae1cb8169135ad183db75836529">m_ud_msbar</reimplementedby>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/model.hh" line="87"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Base class for the <ref refid="classeos_1_1QCD" kindref="compound">QCD</ref> component of models. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="656">
+        <label>eos::ModelComponent&lt; components::QCD &gt;</label>
+        <link refid="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4"/>
+      </node>
+      <node id="657">
+        <label>eos::Model</label>
+        <link refid="classeos_1_1Model"/>
+        <childnode refid="656" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="659">
+        <label>eos::StandardModel</label>
+        <link refid="classeos_1_1StandardModel"/>
+        <childnode refid="657" relation="public-inheritance">
+        </childnode>
+        <childnode refid="661" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="658">
+        <label>eos::CKMScanModel</label>
+        <link refid="classeos_1_1CKMScanModel"/>
+        <childnode refid="657" relation="public-inheritance">
+        </childnode>
+        <childnode refid="661" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="661">
+        <label>eos::SMComponent&lt; components::QCD &gt;</label>
+        <link refid="classeos_1_1SMComponent_3_01components_1_1QCD_01_4"/>
+        <childnode refid="656" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="660">
+        <label>eos::WilsonScanModel</label>
+        <link refid="classeos_1_1WilsonScanModel"/>
+        <childnode refid="657" relation="public-inheritance">
+        </childnode>
+        <childnode refid="661" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/model.hh" line="73" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/model.hh" bodystart="72" bodyend="88"/>
+    <listofallmembers>
+      <member refid="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4_1abf241eb181bace5db7f3ac6f303d2eec" prot="public" virt="pure-virtual"><scope>eos::ModelComponent&lt; components::QCD &gt;</scope><name>alpha_s</name></member>
+      <member refid="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4_1ad8449029b487c614a769e1b0d6012e4c" prot="public" virt="pure-virtual"><scope>eos::ModelComponent&lt; components::QCD &gt;</scope><name>m_b_kin</name></member>
+      <member refid="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4_1a1707fd6c3e6a4d8e02437652a3492f73" prot="public" virt="pure-virtual"><scope>eos::ModelComponent&lt; components::QCD &gt;</scope><name>m_b_msbar</name></member>
+      <member refid="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4_1a372e8a7dced706f571b33bc18256e324" prot="public" virt="pure-virtual"><scope>eos::ModelComponent&lt; components::QCD &gt;</scope><name>m_b_pole</name></member>
+      <member refid="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4_1a654bbcce7c337f15ca6f2072da24463d" prot="public" virt="pure-virtual"><scope>eos::ModelComponent&lt; components::QCD &gt;</scope><name>m_b_ps</name></member>
+      <member refid="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4_1a0cd270cd7c6528f41a34cfc1e70bf056" prot="public" virt="pure-virtual"><scope>eos::ModelComponent&lt; components::QCD &gt;</scope><name>m_c_kin</name></member>
+      <member refid="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4_1a82e6a460fe4fb848928fe6952fd56bb1" prot="public" virt="pure-virtual"><scope>eos::ModelComponent&lt; components::QCD &gt;</scope><name>m_c_msbar</name></member>
+      <member refid="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4_1a3a2c090cf0f7099c471fd4cc413431e3" prot="public" virt="pure-virtual"><scope>eos::ModelComponent&lt; components::QCD &gt;</scope><name>m_c_pole</name></member>
+      <member refid="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4_1ac93d5c86dbb1e6118ab972e8c0f6bc12" prot="public" virt="pure-virtual"><scope>eos::ModelComponent&lt; components::QCD &gt;</scope><name>m_s_msbar</name></member>
+      <member refid="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4_1af57a3d70de7579dcf92aeacff6439a40" prot="public" virt="pure-virtual"><scope>eos::ModelComponent&lt; components::QCD &gt;</scope><name>m_t_msbar</name></member>
+      <member refid="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4_1a0035735c19d0b3fced44b986b09410b7" prot="public" virt="pure-virtual"><scope>eos::ModelComponent&lt; components::QCD &gt;</scope><name>m_t_pole</name></member>
+      <member refid="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4_1a75172971f04fdac5927b0512cf77ebe2" prot="public" virt="pure-virtual"><scope>eos::ModelComponent&lt; components::QCD &gt;</scope><name>m_ud_msbar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

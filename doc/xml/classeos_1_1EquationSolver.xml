@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1EquationSolver" kind="class" prot="public">
+    <compoundname>eos::EquationSolver</compoundname>
+    <basecompoundref refid="classeos_1_1PrivateImplementationPattern" prot="public" virt="non-virtual">eos::PrivateImplementationPattern&lt; EquationSolver &gt;</basecompoundref>
+    <includes refid="equation__solver_8hh" local="no">equation_solver.hh</includes>
+    <innerclass refid="structeos_1_1EquationSolver_1_1Config" prot="public">eos::EquationSolver::Config</innerclass>
+    <innerclass refid="structeos_1_1EquationSolver_1_1Solution" prot="public">eos::EquationSolver::Solution</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classeos_1_1EquationSolver_1a7394803ea85312852151a700b59da572" prot="public" static="no">
+        <type>std::function&lt; double(const std::vector&lt; double &gt; &amp;)&gt;</type>
+        <definition>typedef std::function&lt;double (const std::vector&lt;double&gt; &amp;)&gt; eos::EquationSolver::Equation</definition>
+        <argsstring></argsstring>
+        <name>Equation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/equation_solver.hh" line="35" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/equation_solver.hh" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1EquationSolver_1a39179766f370890b207dd9c00f0009b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::EquationSolver::EquationSolver</definition>
+        <argsstring>(const EquationSolver::Config &amp;config)</argsstring>
+        <name>EquationSolver</name>
+        <param>
+          <type>const <ref refid="structeos_1_1EquationSolver_1_1Config" kindref="compound">EquationSolver::Config</ref> &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/equation_solver.hh" line="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1EquationSolver_1ac96461e85b095b1bff966a0d07542310" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::EquationSolver::~EquationSolver</definition>
+        <argsstring>()</argsstring>
+        <name>~EquationSolver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/equation_solver.hh" line="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1EquationSolver_1ad9cc623f54250dca0cc3fd288dcede77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::EquationSolver::add</definition>
+        <argsstring>(const Equation &amp;equation)</argsstring>
+        <name>add</name>
+        <param>
+          <type>const <ref refid="classeos_1_1EquationSolver_1a7394803ea85312852151a700b59da572" kindref="member">Equation</ref> &amp;</type>
+          <declname>equation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/equation_solver.hh" line="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1EquationSolver_1ad6d72a4680c5c5f6bea52fc25faa931f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::EquationSolver::add</definition>
+        <argsstring>(const std::string &amp;name, const double &amp;initial_value, const double &amp;error)</argsstring>
+        <name>add</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>initial_value</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/equation_solver.hh" line="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1EquationSolver_1a616986b11e89a331af2b21a1fe8f3ce2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::EquationSolver::add</definition>
+        <argsstring>(const std::string &amp;name, const double &amp;initial_value, const double &amp;error, const double &amp;min, const double &amp;max)</argsstring>
+        <name>add</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>initial_value</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>error</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/equation_solver.hh" line="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1EquationSolver_1ad9add1a035d5edff206361db0d050a44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structeos_1_1EquationSolver_1_1Solution" kindref="compound">Solution</ref></type>
+        <definition>Solution eos::EquationSolver::solve</definition>
+        <argsstring>()</argsstring>
+        <name>solve</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/equation_solver.hh" line="50"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="373">
+        <label>eos::EquationSolver</label>
+        <link refid="classeos_1_1EquationSolver"/>
+        <childnode refid="374" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="374">
+        <label>eos::PrivateImplementationPattern&lt; EquationSolver &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="375">
+        <label>eos::EquationSolver</label>
+        <link refid="classeos_1_1EquationSolver"/>
+        <childnode refid="376" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="376">
+        <label>eos::PrivateImplementationPattern&lt; EquationSolver &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/equation_solver.hh" line="33" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/equation_solver.hh" bodystart="31" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a232940e78b26c6ed4f97196f831c69c9" prot="protected" virt="non-virtual"><scope>eos::EquationSolver</scope><name>_imp</name></member>
+      <member refid="classeos_1_1EquationSolver_1ad9cc623f54250dca0cc3fd288dcede77" prot="public" virt="non-virtual"><scope>eos::EquationSolver</scope><name>add</name></member>
+      <member refid="classeos_1_1EquationSolver_1ad6d72a4680c5c5f6bea52fc25faa931f" prot="public" virt="non-virtual"><scope>eos::EquationSolver</scope><name>add</name></member>
+      <member refid="classeos_1_1EquationSolver_1a616986b11e89a331af2b21a1fe8f3ce2" prot="public" virt="non-virtual"><scope>eos::EquationSolver</scope><name>add</name></member>
+      <member refid="classeos_1_1EquationSolver_1a7394803ea85312852151a700b59da572" prot="public" virt="non-virtual"><scope>eos::EquationSolver</scope><name>Equation</name></member>
+      <member refid="classeos_1_1EquationSolver_1a39179766f370890b207dd9c00f0009b8" prot="public" virt="non-virtual"><scope>eos::EquationSolver</scope><name>EquationSolver</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a3e3d5f4a565256a1dda6c234b051b2f2" prot="public" virt="non-virtual"><scope>eos::EquationSolver</scope><name>PrivateImplementationPattern</name></member>
+      <member refid="classeos_1_1EquationSolver_1ad9add1a035d5edff206361db0d050a44" prot="public" virt="non-virtual"><scope>eos::EquationSolver</scope><name>solve</name></member>
+      <member refid="classeos_1_1EquationSolver_1ac96461e85b095b1bff966a0d07542310" prot="public" virt="non-virtual"><scope>eos::EquationSolver</scope><name>~EquationSolver</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1acf46ec2739c3b0ec9702b9428475876d" prot="public" virt="non-virtual"><scope>eos::EquationSolver</scope><name>~PrivateImplementationPattern</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

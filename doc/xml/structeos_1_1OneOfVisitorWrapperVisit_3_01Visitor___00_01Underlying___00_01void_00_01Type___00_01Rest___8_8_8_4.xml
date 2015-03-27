@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1OneOfVisitorWrapperVisit_3_01Visitor___00_01Underlying___00_01void_00_01Type___00_01Rest___8_8_8_4" kind="struct" prot="public">
+    <compoundname>eos::OneOfVisitorWrapperVisit&lt; Visitor_, Underlying_, void, Type_, Rest_...&gt;</compoundname>
+    <includes refid="one-of_8hh" local="no">one-of.hh</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Visitor_</type>
+      </param>
+      <param>
+        <type>typename Underlying_</type>
+      </param>
+      <param>
+        <type>typename Type_</type>
+      </param>
+      <param>
+        <type>typename...</type>
+        <declname>Rest_</declname>
+        <defname>Rest_</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structeos_1_1OneOfVisitorWrapperVisit_3_01Visitor___00_01Underlying___00_01void_00_01Type___00_01Rest___8_8_8_4_1a66d5952ec668457948e8ff1a657236fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eos::OneOfVisitorWrapperVisit&lt; Visitor_, Underlying_, void, Type_, Rest_...&gt;::OneOfVisitorWrapperVisit</definition>
+        <argsstring>(Underlying_ &amp;u)</argsstring>
+        <name>OneOfVisitorWrapperVisit</name>
+        <param>
+          <type>Underlying_ &amp;</type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" line="104" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" bodystart="102" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1OneOfVisitorWrapperVisit_3_01Visitor___00_01Underlying___00_01void_00_01Type___00_01Rest___8_8_8_4_1a74791907b67583a00b9a3e373e3fa132" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void eos::OneOfVisitorWrapperVisit&lt; Visitor_, Underlying_, void, Type_, Rest_...&gt;::visit</definition>
+        <argsstring>(Type_ &amp;t)</argsstring>
+        <name>visit</name>
+        <param>
+          <type>Type_ &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" line="108" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" bodystart="107" bodyend="110"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" line="101" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" bodystart="99" bodyend="111"/>
+    <listofallmembers>
+      <member refid="structeos_1_1OneOfVisitorWrapperVisit_3_01Visitor___00_01Underlying___00_01void_00_01Type___00_01Rest___8_8_8_4_1a66d5952ec668457948e8ff1a657236fc" prot="public" virt="non-virtual"><scope>eos::OneOfVisitorWrapperVisit&lt; Visitor_, Underlying_, void, Type_, Rest_...&gt;</scope><name>OneOfVisitorWrapperVisit</name></member>
+      <member refid="structeos_1_1OneOfVisitorWrapperVisit_3_01Visitor___00_01Underlying___00_01void_00_01Type___00_01Rest___8_8_8_4_1a74791907b67583a00b9a3e373e3fa132" prot="public" virt="virtual"><scope>eos::OneOfVisitorWrapperVisit&lt; Visitor_, Underlying_, void, Type_, Rest_...&gt;</scope><name>visit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

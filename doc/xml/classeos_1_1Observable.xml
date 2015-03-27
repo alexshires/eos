@@ -1,0 +1,252 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1Observable" kind="class" prot="public">
+    <compoundname>eos::Observable</compoundname>
+    <basecompoundref refid="classeos_1_1ParameterUser" prot="public" virt="non-virtual">eos::ParameterUser</basecompoundref>
+    <derivedcompoundref refid="classeos_1_1ConcreteObservable" prot="public" virt="non-virtual">eos::ConcreteObservable&lt; Decay_, Args_ &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classeos_1_1FormFactorAdapter" prot="public" virt="non-virtual">eos::FormFactorAdapter&lt; Transition_ &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classeos_1_1FormFactorRatioAdapter" prot="public" virt="non-virtual">eos::FormFactorRatioAdapter&lt; Transition_ &gt;</derivedcompoundref>
+    <derivedcompoundref refid="structeos_1_1TestObservable" prot="public" virt="non-virtual">eos::TestObservable</derivedcompoundref>
+    <includes refid="observable_8hh" local="no">observable.hh</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1Observable_1adfdc8fe469e00adeb464d3b3e4e14236" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>const std::string &amp;</type>
+        <definition>virtual const std::string&amp; eos::Observable::name</definition>
+        <argsstring>() const =0</argsstring>
+        <name>name</name>
+        <reimplementedby refid="classeos_1_1ConcreteObservable_1a777d479052396c8dc1b73f752fdb3539">name</reimplementedby>
+        <reimplementedby refid="structeos_1_1TestObservable_1a1cc59da836d9dab76351b7afcbdb73f1">name</reimplementedby>
+        <reimplementedby refid="classeos_1_1FormFactorRatioAdapter_1a4794ed40d561e939e566f328d16652fe">name</reimplementedby>
+        <reimplementedby refid="classeos_1_1FormFactorAdapter_1ad4b0b6158fcbbdafeae6d62a2326ac92">name</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/observable.hh" line="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Observable_1a913385d3a077d578bbcc2d502e5fdc2d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double eos::Observable::evaluate</definition>
+        <argsstring>() const =0</argsstring>
+        <name>evaluate</name>
+        <reimplementedby refid="classeos_1_1ConcreteObservable_1a4127e180162b8f5eeebd55e7c8d1b7cf">evaluate</reimplementedby>
+        <reimplementedby refid="structeos_1_1AbsoluteTestObservable_1a47742fbfae1d0d8b57c09ee2a7501376">evaluate</reimplementedby>
+        <reimplementedby refid="structeos_1_1TestObservable_1a05f143463bc9a2cddec1ee2bdb8d5ba2">evaluate</reimplementedby>
+        <reimplementedby refid="classeos_1_1FormFactorRatioAdapter_1af0bed5942d9ba4b3c65788e1e05eaf8c">evaluate</reimplementedby>
+        <reimplementedby refid="classeos_1_1FormFactorAdapter_1ad14dd267ae5fcbe9b739d438904ce959">evaluate</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/observable.hh" line="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Observable_1a8bfd8cc2873e467ac9ae100d029d8c49" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classeos_1_1Kinematics" kindref="compound">Kinematics</ref></type>
+        <definition>virtual Kinematics eos::Observable::kinematics</definition>
+        <argsstring>()=0</argsstring>
+        <name>kinematics</name>
+        <reimplementedby refid="classeos_1_1ConcreteObservable_1abffd48fad6c67448f99c2024a6c81ad7">kinematics</reimplementedby>
+        <reimplementedby refid="structeos_1_1TestObservable_1a87b7da05ef887b71fee092252a70a685">kinematics</reimplementedby>
+        <reimplementedby refid="classeos_1_1FormFactorRatioAdapter_1a821bf6d21630dd75c8a25cd18f1cdd59">kinematics</reimplementedby>
+        <reimplementedby refid="classeos_1_1FormFactorAdapter_1ae4fc137cd1c8b5703ffd6986e9ce739b">kinematics</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/observable.hh" line="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Observable_1a233852d22f287944b8bbf4da803289b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref></type>
+        <definition>virtual Parameters eos::Observable::parameters</definition>
+        <argsstring>()=0</argsstring>
+        <name>parameters</name>
+        <reimplementedby refid="classeos_1_1ConcreteObservable_1af5265ce9314987a7b7b01275b5410309">parameters</reimplementedby>
+        <reimplementedby refid="structeos_1_1TestObservable_1ab6aef566fbe0f34117da1d484e20da40">parameters</reimplementedby>
+        <reimplementedby refid="classeos_1_1FormFactorRatioAdapter_1a7146382f5bfc1c2b59119e844a6201a6">parameters</reimplementedby>
+        <reimplementedby refid="classeos_1_1FormFactorAdapter_1aa1505da65e397bdda2e59ecfd49e375d">parameters</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/observable.hh" line="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Observable_1a237cf968a4f46a93e0cc8ba0fdbaceee" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classeos_1_1Options" kindref="compound">Options</ref></type>
+        <definition>virtual Options eos::Observable::options</definition>
+        <argsstring>()=0</argsstring>
+        <name>options</name>
+        <reimplementedby refid="classeos_1_1ConcreteObservable_1ac8f34b0c5dc087982bf0d7b053cf07b5">options</reimplementedby>
+        <reimplementedby refid="structeos_1_1TestObservable_1a6d762181ac0ce1d2d8ad9d377a3a565d">options</reimplementedby>
+        <reimplementedby refid="classeos_1_1FormFactorRatioAdapter_1a4fe52226955dacc174be74224d8b627b">options</reimplementedby>
+        <reimplementedby refid="classeos_1_1FormFactorAdapter_1a758693e9a8fff947fe1500796f1bda4e">options</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/observable.hh" line="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Observable_1a1c88c66a224a14fbddad70e95cb61136" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref></type>
+        <definition>virtual ObservablePtr eos::Observable::clone</definition>
+        <argsstring>() const =0</argsstring>
+        <name>clone</name>
+        <reimplementedby refid="classeos_1_1ConcreteObservable_1af84f6c7410ff512dc8edb36f4501e389">clone</reimplementedby>
+        <reimplementedby refid="structeos_1_1AbsoluteTestObservable_1ac509cca6dca7383653b2d0e5c387db07">clone</reimplementedby>
+        <reimplementedby refid="structeos_1_1TestObservable_1a2ec70cb32b39215b3c3eafd05a94e1f6">clone</reimplementedby>
+        <reimplementedby refid="classeos_1_1FormFactorRatioAdapter_1ab5c4a8094db5ac8fc3860afc4a4087b0">clone</reimplementedby>
+        <reimplementedby refid="classeos_1_1FormFactorAdapter_1a85c062dbc8dd32bb25299fbab92110f5">clone</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/observable.hh" line="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Observable_1a20e8218d04aa5589ce795ddd425751a0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref></type>
+        <definition>virtual ObservablePtr eos::Observable::clone</definition>
+        <argsstring>(const Parameters &amp;parameters) const =0</argsstring>
+        <name>clone</name>
+        <reimplementedby refid="classeos_1_1ConcreteObservable_1afe63f75a6814eda8dca5d1e842f71fc6">clone</reimplementedby>
+        <reimplementedby refid="structeos_1_1AbsoluteTestObservable_1af0a14d774c083598130b3062f956c4c9">clone</reimplementedby>
+        <reimplementedby refid="structeos_1_1TestObservable_1a40b0831f486d5a73e583becb0c6c9da4">clone</reimplementedby>
+        <reimplementedby refid="classeos_1_1FormFactorRatioAdapter_1ad8de46a9cedc903bfe0beecbbf66dc58">clone</reimplementedby>
+        <reimplementedby refid="classeos_1_1FormFactorAdapter_1a94fdbd805aef594f074e6999616505b5">clone</reimplementedby>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/observable.hh" line="55"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classeos_1_1Observable_1a949bf84938bcc9ab75075801c636763c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref></type>
+        <definition>static ObservablePtr eos::Observable::make</definition>
+        <argsstring>(const std::string &amp;name, const Parameters &amp;parameters, const Kinematics &amp;kinematics, const Options &amp;options)</argsstring>
+        <name>make</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1Kinematics" kindref="compound">Kinematics</ref> &amp;</type>
+          <declname>kinematics</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1Options" kindref="compound">Options</ref> &amp;</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/observable.hh" line="57"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="715">
+        <label>eos::FormFactorRatioAdapter&lt; Transition_ &gt;</label>
+        <link refid="classeos_1_1FormFactorRatioAdapter"/>
+        <childnode refid="711" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="713">
+        <label>eos::ConcreteObservable&lt; Decay_, Args_ &gt;</label>
+        <link refid="classeos_1_1ConcreteObservable"/>
+        <childnode refid="711" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="711">
+        <label>eos::Observable</label>
+        <link refid="classeos_1_1Observable"/>
+        <childnode refid="712" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="716">
+        <label>eos::TestObservable</label>
+        <link refid="structeos_1_1TestObservable"/>
+        <childnode refid="711" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="712">
+        <label>eos::ParameterUser</label>
+        <link refid="classeos_1_1ParameterUser"/>
+      </node>
+      <node id="717">
+        <label>eos::AbsoluteTestObservable</label>
+        <link refid="structeos_1_1AbsoluteTestObservable"/>
+        <childnode refid="716" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="714">
+        <label>eos::FormFactorAdapter&lt; Transition_ &gt;</label>
+        <link refid="classeos_1_1FormFactorAdapter"/>
+        <childnode refid="711" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="718">
+        <label>eos::Observable</label>
+        <link refid="classeos_1_1Observable"/>
+        <childnode refid="719" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="720">
+        <label>std::set&lt; Parameter::Id &gt;</label>
+      </node>
+      <node id="719">
+        <label>eos::ParameterUser</label>
+        <link refid="classeos_1_1ParameterUser"/>
+        <childnode refid="720" relation="usage">
+          <edgelabel>_ids</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/observable.hh" line="41" bodyfile="/home/alexshires/EOS/eos-next/eos/observable.hh" bodystart="39" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classeos_1_1ParameterUser_1aa3a0285297e16cf2a5830df1f9bb2f4b" prot="protected" virt="non-virtual"><scope>eos::Observable</scope><name>_ids</name></member>
+      <member refid="classeos_1_1ParameterUser_1a9cd569207063cd2a8f807c4e1203a5d4" prot="public" virt="non-virtual"><scope>eos::Observable</scope><name>begin</name></member>
+      <member refid="classeos_1_1Observable_1a1c88c66a224a14fbddad70e95cb61136" prot="public" virt="pure-virtual"><scope>eos::Observable</scope><name>clone</name></member>
+      <member refid="classeos_1_1Observable_1a20e8218d04aa5589ce795ddd425751a0" prot="public" virt="pure-virtual"><scope>eos::Observable</scope><name>clone</name></member>
+      <member refid="classeos_1_1ParameterUser_1a7105631bbcb4b2492e6377b2b69f5b0f" prot="public" virt="non-virtual"><scope>eos::Observable</scope><name>ConstIterator</name></member>
+      <member refid="classeos_1_1ParameterUser_1a5813c886f3fd3f074cc02a53fc9e0790" prot="public" virt="non-virtual"><scope>eos::Observable</scope><name>end</name></member>
+      <member refid="classeos_1_1Observable_1a913385d3a077d578bbcc2d502e5fdc2d" prot="public" virt="pure-virtual"><scope>eos::Observable</scope><name>evaluate</name></member>
+      <member refid="classeos_1_1Observable_1a8bfd8cc2873e467ac9ae100d029d8c49" prot="public" virt="pure-virtual"><scope>eos::Observable</scope><name>kinematics</name></member>
+      <member refid="classeos_1_1Observable_1a949bf84938bcc9ab75075801c636763c" prot="public" virt="non-virtual"><scope>eos::Observable</scope><name>make</name></member>
+      <member refid="classeos_1_1Observable_1adfdc8fe469e00adeb464d3b3e4e14236" prot="public" virt="pure-virtual"><scope>eos::Observable</scope><name>name</name></member>
+      <member refid="classeos_1_1Observable_1a237cf968a4f46a93e0cc8ba0fdbaceee" prot="public" virt="pure-virtual"><scope>eos::Observable</scope><name>options</name></member>
+      <member refid="classeos_1_1Observable_1a233852d22f287944b8bbf4da803289b1" prot="public" virt="pure-virtual"><scope>eos::Observable</scope><name>parameters</name></member>
+      <member refid="classeos_1_1ParameterUser_1ad91a901e589653272482bded7e453c70" prot="public" virt="non-virtual"><scope>eos::Observable</scope><name>uses</name></member>
+      <member refid="classeos_1_1ParameterUser_1a7a37e779cf45ef1075fe7bf670688b72" prot="public" virt="non-virtual"><scope>eos::Observable</scope><name>uses</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

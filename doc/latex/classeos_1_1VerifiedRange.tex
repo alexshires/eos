@@ -1,0 +1,96 @@
+\hypertarget{classeos_1_1VerifiedRange}{
+\section{eos::VerifiedRange$<$ T\_\- $>$ Class Template Reference}
+\label{classeos_1_1VerifiedRange}\index{eos::VerifiedRange@{eos::VerifiedRange}}
+}
+
+
+{\ttfamily \#include $<$verify.hh$>$}\subsection*{Public Member Functions}
+\begin{Indent}{\bf Basic Functions}\par
+{\em \label{_amgrp2386c9a1f1785edee33f374dd2db9b3d}
+ }\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1VerifiedRange_a91cf1ba06903af03ec4100c370330cb7}{VerifiedRange} (const T\_\- \&min, const T\_\- \&max, const T\_\- \&value)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Operations}\par
+{\em \label{_amgrp456d0deba6a86c9585590550c797502d}
+ Conversion operator its native type T\_\- }\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1VerifiedRange_aee4661f7688177fd52164d7413f9968d}{operator T\_\-} () const 
+\item 
+const T\_\- \& \hyperlink{classeos_1_1VerifiedRange_af7df09e39360f49d269afffd8a2634be}{operator=} (const T\_\- \&rhs)
+\item 
+T\_\- \hyperlink{classeos_1_1VerifiedRange_ac2ac9a7194ece299633bfef72fb08378}{min} () const 
+\begin{DoxyCompactList}\small\item\em Retrieve the minimal value that is allowed for this object. \item\end{DoxyCompactList}\item 
+T\_\- \hyperlink{classeos_1_1VerifiedRange_a19b21c28c1afa78ce4fc83bd9cf8f866}{max} () const 
+\begin{DoxyCompactList}\small\item\em Retrieve the maximal value that is allowed for this object. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T\_\-$>$ class eos::VerifiedRange$<$ T\_\- $>$}
+
+\hyperlink{classeos_1_1VerifiedRange}{VerifiedRange} is a wrapper around a variable that allows assignment only within a given range.
+
+
+
+\begin{footnotesize}\begin{alltt}
+ VerifiedRange<double> value\_between\_zero\_and\_one(0.0, 1.0, 0.5);
+ test\_range = +10; \textcolor{comment}{// not allowed, throws a VerifiedRangeOverflow}
+ test\_range = -10; \textcolor{comment}{// not allowed, throws a VerifiedRangeUnderflow}
+\end{alltt}\end{footnotesize}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classeos_1_1VerifiedRange_a91cf1ba06903af03ec4100c370330cb7}{
+\index{eos::VerifiedRange@{eos::VerifiedRange}!VerifiedRange@{VerifiedRange}}
+\index{VerifiedRange@{VerifiedRange}!eos::VerifiedRange@{eos::VerifiedRange}}
+\subsubsection[{VerifiedRange}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\_\-$>$ {\bf eos::VerifiedRange}$<$ T\_\- $>$::{\bf VerifiedRange} (const T\_\- \& {\em min}, \/  const T\_\- \& {\em max}, \/  const T\_\- \& {\em value})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classeos_1_1VerifiedRange_a91cf1ba06903af03ec4100c370330cb7}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em min}]\hyperlink{structeos_1_1Minimal}{Minimal} value that is allowed for any value of this object. \item[{\em max}]Maximal value that is allowed for any value of this object. \item[{\em value}]Initial value of this object. \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classeos_1_1VerifiedRange_a19b21c28c1afa78ce4fc83bd9cf8f866}{
+\index{eos::VerifiedRange@{eos::VerifiedRange}!max@{max}}
+\index{max@{max}!eos::VerifiedRange@{eos::VerifiedRange}}
+\subsubsection[{max}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\_\-$>$ T\_\- {\bf eos::VerifiedRange}$<$ T\_\- $>$::max () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classeos_1_1VerifiedRange_a19b21c28c1afa78ce4fc83bd9cf8f866}
+
+
+Retrieve the maximal value that is allowed for this object. \hypertarget{classeos_1_1VerifiedRange_ac2ac9a7194ece299633bfef72fb08378}{
+\index{eos::VerifiedRange@{eos::VerifiedRange}!min@{min}}
+\index{min@{min}!eos::VerifiedRange@{eos::VerifiedRange}}
+\subsubsection[{min}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\_\-$>$ T\_\- {\bf eos::VerifiedRange}$<$ T\_\- $>$::min () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classeos_1_1VerifiedRange_ac2ac9a7194ece299633bfef72fb08378}
+
+
+Retrieve the minimal value that is allowed for this object. \hypertarget{classeos_1_1VerifiedRange_aee4661f7688177fd52164d7413f9968d}{
+\index{eos::VerifiedRange@{eos::VerifiedRange}!operator T\_\-@{operator T\_\-}}
+\index{operator T\_\-@{operator T\_\-}!eos::VerifiedRange@{eos::VerifiedRange}}
+\subsubsection[{operator T\_\-}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\_\-$>$ {\bf eos::VerifiedRange}$<$ T\_\- $>$::operator T\_\- () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classeos_1_1VerifiedRange_aee4661f7688177fd52164d7413f9968d}
+Assignment operator.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em rhs}]Right-\/hand-\/side of an assignment to this object. \end{DoxyParams}
+\hypertarget{classeos_1_1VerifiedRange_af7df09e39360f49d269afffd8a2634be}{
+\index{eos::VerifiedRange@{eos::VerifiedRange}!operator=@{operator=}}
+\index{operator=@{operator=}!eos::VerifiedRange@{eos::VerifiedRange}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\_\-$>$ const T\_\-\& {\bf eos::VerifiedRange}$<$ T\_\- $>$::operator= (const T\_\- \& {\em rhs})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classeos_1_1VerifiedRange_af7df09e39360f49d269afffd8a2634be}
+Assignment operator.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em rhs}]Right-\/hand-\/side of an assignment to this object. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{verify_8hh}{verify.hh}\end{DoxyCompactItemize}

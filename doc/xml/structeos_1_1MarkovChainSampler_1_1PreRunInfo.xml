@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1MarkovChainSampler_1_1PreRunInfo" kind="struct" prot="public">
+    <compoundname>eos::MarkovChainSampler::PreRunInfo</compoundname>
+    <includes refid="markov__chain__sampler_8hh" local="no">markov_chain_sampler.hh</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structeos_1_1MarkovChainSampler_1_1PreRunInfo_1a182be4f50ae9368aeee0303b4fd29b51" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool eos::MarkovChainSampler::PreRunInfo::converged</definition>
+        <argsstring></argsstring>
+        <name>converged</name>
+        <briefdescription>
+<para>Convergence status after performing the prerun. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain_sampler.hh" line="275" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/markov_chain_sampler.hh" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1MarkovChainSampler_1_1PreRunInfo_1a40e24d2a409ae1d2a90c1a49b972b654" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned eos::MarkovChainSampler::PreRunInfo::iterations</definition>
+        <argsstring></argsstring>
+        <name>iterations</name>
+        <briefdescription>
+<para>The number of iterations that were performed in the prerun. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain_sampler.hh" line="278" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/markov_chain_sampler.hh" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1MarkovChainSampler_1_1PreRunInfo_1a1f821da9adca5ee92802e51fcb372278" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned eos::MarkovChainSampler::PreRunInfo::iterations_at_convergence</definition>
+        <argsstring></argsstring>
+        <name>iterations_at_convergence</name>
+        <briefdescription>
+<para>The number of iterations after which convergence was declared. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain_sampler.hh" line="281" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/markov_chain_sampler.hh" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1MarkovChainSampler_1_1PreRunInfo_1a7bf1e8c85dc0ae0e72e64737a033c8c2" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::MarkovChainSampler::PreRunInfo::rvalue_posterior</definition>
+        <argsstring></argsstring>
+        <name>rvalue_posterior</name>
+        <briefdescription>
+<para>R-value of posterior. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain_sampler.hh" line="284" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/markov_chain_sampler.hh" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1MarkovChainSampler_1_1PreRunInfo_1a568ebe4315e338e9e6ea690c268a964b" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; eos::MarkovChainSampler::PreRunInfo::rvalue_parameters</definition>
+        <argsstring></argsstring>
+        <name>rvalue_parameters</name>
+        <briefdescription>
+<para>R-values of individual parameters. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain_sampler.hh" line="287" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/markov_chain_sampler.hh" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Holds convergence information of the prerun. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="847">
+        <label>std::vector&lt; double &gt;</label>
+      </node>
+      <node id="846">
+        <label>eos::MarkovChainSampler::PreRunInfo</label>
+        <link refid="structeos_1_1MarkovChainSampler_1_1PreRunInfo"/>
+        <childnode refid="847" relation="usage">
+          <edgelabel>rvalue_parameters</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain_sampler.hh" line="273" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/markov_chain_sampler.hh" bodystart="272" bodyend="288"/>
+    <listofallmembers>
+      <member refid="structeos_1_1MarkovChainSampler_1_1PreRunInfo_1a182be4f50ae9368aeee0303b4fd29b51" prot="public" virt="non-virtual"><scope>eos::MarkovChainSampler::PreRunInfo</scope><name>converged</name></member>
+      <member refid="structeos_1_1MarkovChainSampler_1_1PreRunInfo_1a40e24d2a409ae1d2a90c1a49b972b654" prot="public" virt="non-virtual"><scope>eos::MarkovChainSampler::PreRunInfo</scope><name>iterations</name></member>
+      <member refid="structeos_1_1MarkovChainSampler_1_1PreRunInfo_1a1f821da9adca5ee92802e51fcb372278" prot="public" virt="non-virtual"><scope>eos::MarkovChainSampler::PreRunInfo</scope><name>iterations_at_convergence</name></member>
+      <member refid="structeos_1_1MarkovChainSampler_1_1PreRunInfo_1a568ebe4315e338e9e6ea690c268a964b" prot="public" virt="non-virtual"><scope>eos::MarkovChainSampler::PreRunInfo</scope><name>rvalue_parameters</name></member>
+      <member refid="structeos_1_1MarkovChainSampler_1_1PreRunInfo_1a7bf1e8c85dc0ae0e72e64737a033c8c2" prot="public" virt="non-virtual"><scope>eos::MarkovChainSampler::PreRunInfo</scope><name>rvalue_posterior</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

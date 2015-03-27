@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1OneOfVisitor" kind="struct" prot="public">
+    <compoundname>eos::OneOfVisitor</compoundname>
+    <basecompoundref refid="structeos_1_1OneOfVisitorVisit" prot="public" virt="non-virtual">eos::OneOfVisitorVisit&lt; Types_ &gt;</basecompoundref>
+    <includes refid="one-of_8hh" local="no">one-of.hh</includes>
+    <templateparamlist>
+      <param>
+        <type>typename...</type>
+        <declname>Types_</declname>
+        <defname>Types_</defname>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="752">
+        <label>eos::OneOfVisitor&lt; Types_ &gt;</label>
+        <link refid="structeos_1_1OneOfVisitor"/>
+        <childnode refid="753" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="753">
+        <label>eos::OneOfVisitorVisit&lt; Types_ &gt;</label>
+        <link refid="structeos_1_1OneOfVisitorVisit"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="754">
+        <label>eos::OneOfVisitor&lt; Types_ &gt;</label>
+        <link refid="structeos_1_1OneOfVisitor"/>
+        <childnode refid="755" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="755">
+        <label>eos::OneOfVisitorVisit&lt; Types_ &gt;</label>
+        <link refid="structeos_1_1OneOfVisitorVisit"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" line="65" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" bodystart="63" bodyend="66"/>
+    <listofallmembers>
+      <member refid="structeos_1_1OneOfVisitorVisit_1a08f9e17fa9f510ba6171d6b191e76a9b" prot="public" virt="pure-virtual"><scope>eos::OneOfVisitor</scope><name>visit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1Save" kind="class" prot="public">
+    <compoundname>eos::Save</compoundname>
+    <includes refid="save_8hh" local="no">save.hh</includes>
+    <templateparamlist>
+      <param>
+        <type>typename V_</type>
+      </param>
+      <param>
+        <type>typename R_</type>
+        <defval>V_</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classeos_1_1Save_1a80a3f80d61d457cd408207fe481c5a64" prot="private" static="no" mutable="no">
+        <type>V_ &amp;</type>
+        <definition>V_&amp; eos::Save&lt; V_, R_ &gt;::_variable</definition>
+        <argsstring></argsstring>
+        <name>_variable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/save.hh" line="28" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/save.hh" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1Save_1a9ac786b71693f9b6bcc8328aef0e3c94" prot="private" static="no" mutable="no">
+        <type>R_</type>
+        <definition>R_ eos::Save&lt; V_, R_ &gt;::_original</definition>
+        <argsstring></argsstring>
+        <name>_original</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/save.hh" line="30" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/save.hh" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1Save_1a199880a2f33c6a819c3a4cd957303ba1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eos::Save&lt; V_, R_ &gt;::Save</definition>
+        <argsstring>(V_ &amp;variable, const R_ &amp;replacement)</argsstring>
+        <name>Save</name>
+        <param>
+          <type>V_ &amp;</type>
+          <declname>variable</declname>
+        </param>
+        <param>
+          <type>const R_ &amp;</type>
+          <declname>replacement</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/save.hh" line="36" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/save.hh" bodystart="33" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Save_1a4970637cf62612b263c206601002a864" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eos::Save&lt; V_, R_ &gt;::~Save</definition>
+        <argsstring>()</argsstring>
+        <name>~Save</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/save.hh" line="41" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/save.hh" bodystart="40" bodyend="43"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/save.hh" line="26" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/save.hh" bodystart="25" bodyend="44"/>
+    <listofallmembers>
+      <member refid="classeos_1_1Save_1a9ac786b71693f9b6bcc8328aef0e3c94" prot="private" virt="non-virtual"><scope>eos::Save</scope><name>_original</name></member>
+      <member refid="classeos_1_1Save_1a80a3f80d61d457cd408207fe481c5a64" prot="private" virt="non-virtual"><scope>eos::Save</scope><name>_variable</name></member>
+      <member refid="classeos_1_1Save_1a199880a2f33c6a819c3a4cd957303ba1" prot="public" virt="non-virtual"><scope>eos::Save</scope><name>Save</name></member>
+      <member refid="classeos_1_1Save_1a4970637cf62612b263c206601002a864" prot="public" virt="non-virtual"><scope>eos::Save</scope><name>~Save</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

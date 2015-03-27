@@ -1,0 +1,84 @@
+\hypertarget{destringify_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/destringify.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2010 Danny van Dyk}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_DESTRINGIFY\_HH}
+\hypertarget{destringify_8hh_source_l00021}{}\hyperlink{destringify_8hh_a5ddb52da9553aaff631ac76e53ac5f91}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_DESTRINGIFY\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{preprocessor}{#include <sstream>}
+00024 
+00025 \textcolor{keyword}{namespace }eos
+00026 \{
+00027     \textcolor{keyword}{namespace }impl
+00028     \{
+00029         \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_>
+00030         \textcolor{keyword}{struct }SimpleDestringify
+00031         \{
+00032             \textcolor{keyword}{static} T\_ \hyperlink{namespaceeos_ad3134beb65a048a00ed3607d0af90202}{destringify}(\textcolor{keyword}{const} std::string & input)
+00033             \{
+00034                 std::stringstream ss(input);
+00035                 T\_ value;
+00036 
+00037                 ss >> value;
+00038 
+00039                 \textcolor{keywordflow}{return} value;
+00040             \}
+00041         \};
+00042 
+00043         \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_> \textcolor{keyword}{struct }DoDestringify;
+00044 
+00045         \textcolor{keyword}{template} <> \textcolor{keyword}{struct }DoDestringify<double> : \textcolor{keyword}{public} SimpleDestringify<doubl
+      e> \{\};
+00046 
+00047         \textcolor{keyword}{template} <> \textcolor{keyword}{struct }DoDestringify<unsigned> : \textcolor{keyword}{public} SimpleDestringify<uns
+      igned> \{\};
+00048 
+00049         \textcolor{keyword}{template} <> \textcolor{keyword}{struct }DoDestringify<long> : \textcolor{keyword}{public} SimpleDestringify<long> \{
+      \};
+00050 
+00051         \textcolor{keyword}{template} <> \textcolor{keyword}{struct }DoDestringify<unsigned long> : \textcolor{keyword}{public} SimpleDestringif
+      y<unsigned long> \{\};
+00052 
+00053         \textcolor{keyword}{template} <> \textcolor{keyword}{struct }DoDestringify<bool>
+00054         \{
+00055             \textcolor{keyword}{static} \textcolor{keywordtype}{bool} \hyperlink{namespaceeos_ad3134beb65a048a00ed3607d0af90202}{destringify}(\textcolor{keyword}{const} std::string & input)
+00056             \{
+00057                 \textcolor{keywordflow}{if} (\textcolor{stringliteral}{"true"} == input)
+00058                     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00059 
+00060                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00061             \}
+00062         \};
+00063     \}
+00064 
+00065     \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_>
+00066     T\_
+\hypertarget{destringify_8hh_source_l00067}{}\hyperlink{namespaceeos_ad3134beb65a048a00ed3607d0af90202}{00067}     \hyperlink{namespaceeos_ad3134beb65a048a00ed3607d0af90202}{destringify}(\textcolor{keyword}{const} std::string & input)
+00068     \{
+00069         \textcolor{keywordflow}{return} \hyperlink{namespaceeos_ad3134beb65a048a00ed3607d0af90202}{impl::DoDestringify<T_>::destringify}(input);
+00070     \}
+00071 \}
+00072 
+00073 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

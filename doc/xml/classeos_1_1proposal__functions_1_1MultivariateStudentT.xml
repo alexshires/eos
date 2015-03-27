@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1proposal__functions_1_1MultivariateStudentT" kind="class" prot="public">
+    <compoundname>eos::proposal_functions::MultivariateStudentT</compoundname>
+    <basecompoundref refid="classeos_1_1proposal__functions_1_1Multivariate" prot="public" virt="non-virtual">eos::proposal_functions::Multivariate</basecompoundref>
+    <includes refid="proposal__functions_8hh" local="no">proposal_functions.hh</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classeos_1_1proposal__functions_1_1MultivariateStudentT_1aab40ca04073f1bfec9378681526aadd8" prot="public" static="no">
+        <type><ref refid="classeos_1_1hdf5_1_1Composite" kindref="compound">hdf5::Composite</ref>&lt; <ref refid="classeos_1_1hdf5_1_1Scalar" kindref="compound">hdf5::Scalar</ref>&lt; double &gt;, <ref refid="classeos_1_1hdf5_1_1Scalar" kindref="compound">hdf5::Scalar</ref>&lt; double &gt;, <ref refid="classeos_1_1hdf5_1_1Scalar" kindref="compound">hdf5::Scalar</ref>&lt; unsigned &gt;, <ref refid="classeos_1_1hdf5_1_1Scalar" kindref="compound">hdf5::Scalar</ref>&lt; double &gt; &gt;</type>
+        <definition>typedef hdf5::Composite&lt;hdf5::Scalar&lt;double&gt;, hdf5::Scalar&lt;double&gt;, hdf5::Scalar&lt;unsigned&gt;, hdf5::Scalar&lt;double&gt; &gt; eos::proposal_functions::MultivariateStudentT::ScalarsType</definition>
+        <argsstring></argsstring>
+        <name>ScalarsType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="529" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="529" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classeos_1_1proposal__functions_1_1MultivariateStudentT_1addd13294ed7e93125f090a8c9250ea99" prot="public" static="no" mutable="no">
+        <type><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange</ref>&lt; double &gt;</type>
+        <definition>VerifiedRange&lt;double&gt; eos::proposal_functions::MultivariateStudentT::dof</definition>
+        <argsstring></argsstring>
+        <name>dof</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Degree of freedom. Required to be &gt;= 1. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="539" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="539" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1MultivariateStudentT_1a32ceb99e081791885f277e033c809c83" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1hdf5_1_1Composite" kindref="compound">ScalarsType</ref></type>
+        <definition>static ScalarsType eos::proposal_functions::MultivariateStudentT::scalars_type</definition>
+        <argsstring>()</argsstring>
+        <name>scalars_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="530"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1MultivariateStudentT_1aa44fa5958d242f5aae93c0dfa4cb8d84" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void eos::proposal_functions::MultivariateStudentT::_compute_norm</definition>
+        <argsstring>()</argsstring>
+        <name>_compute_norm</name>
+        <reimplements refid="classeos_1_1proposal__functions_1_1Multivariate_1a284a17764a486687d3d1f2aee1a3bf3c">_compute_norm</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="534"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1MultivariateStudentT_1a491d401a59792405c093865094f23810" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::proposal_functions::MultivariateStudentT::MultivariateStudentT</definition>
+        <argsstring>(const unsigned &amp;dimension, const std::vector&lt; double &gt; &amp;covariance, const double &amp;degree_of_freedom, const bool &amp;automatic_scaling=true)</argsstring>
+        <name>MultivariateStudentT</name>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>dimension</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>covariance</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>degree_of_freedom</declname>
+        </param>
+        <param>
+          <type>const bool &amp;</type>
+          <declname>automatic_scaling</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="541"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1MultivariateStudentT_1acc497f43328165a02524291ed7383a89" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual eos::proposal_functions::MultivariateStudentT::~MultivariateStudentT</definition>
+        <argsstring>()</argsstring>
+        <name>~MultivariateStudentT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="543"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1MultivariateStudentT_1a4f5007a73e656d9ff0476a4b5740018b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceeos_1ae97f9891c67c90959a03fc96efaa4dc9" kindref="member">ProposalFunctionPtr</ref></type>
+        <definition>virtual ProposalFunctionPtr eos::proposal_functions::MultivariateStudentT::clone</definition>
+        <argsstring>() const </argsstring>
+        <name>clone</name>
+        <reimplements refid="structeos_1_1MarkovChain_1_1ProposalFunction_1a7065079985f8bb44309d7773d85d225b">clone</reimplements>
+        <briefdescription>
+<para>Create independent copy. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="545"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1MultivariateStudentT_1ab6afe975a0e1a553b785be0fd4daec05" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void eos::proposal_functions::MultivariateStudentT::dump_state</definition>
+        <argsstring>(hdf5::File &amp;file, const std::string &amp;data_set_base_name) const </argsstring>
+        <name>dump_state</name>
+        <reimplements refid="structeos_1_1MarkovChain_1_1ProposalFunction_1aea88a1340e10cc6a5b03d8b5483774f7">dump_state</reimplements>
+        <param>
+          <type><ref refid="classeos_1_1hdf5_1_1File" kindref="compound">hdf5::File</ref> &amp;</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>data_set_base_name</declname>
+        </param>
+        <briefdescription>
+<para>Store state in the file under the given base name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="547"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1MultivariateStudentT_1a9ca45b3dad5b0e6612ba27f7fb4e1973" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double eos::proposal_functions::MultivariateStudentT::evaluate</definition>
+        <argsstring>(const MarkovChain::State &amp;x, const MarkovChain::State &amp;y) const </argsstring>
+        <name>evaluate</name>
+        <reimplements refid="structeos_1_1MarkovChain_1_1ProposalFunction_1ae3f2c43980ec9dfe9f35d8139f2f4ec7">evaluate</reimplements>
+        <param>
+          <type>const <ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">MarkovChain::State</ref> &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">MarkovChain::State</ref> &amp;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Evaluate the density to propose x given y. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="549"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1MultivariateStudentT_1ad7c59db9bc93f0fb4b3204b8f272ba6c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void eos::proposal_functions::MultivariateStudentT::propose</definition>
+        <argsstring>(MarkovChain::State &amp;x, const MarkovChain::State &amp;y, gsl_rng *rng) const </argsstring>
+        <name>propose</name>
+        <reimplements refid="structeos_1_1MarkovChain_1_1ProposalFunction_1a2b296008d32b1cd008e59cde1228705f">propose</reimplements>
+        <param>
+          <type><ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">MarkovChain::State</ref> &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">MarkovChain::State</ref> &amp;</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>gsl_rng *</type>
+          <declname>rng</declname>
+        </param>
+        <briefdescription>
+<para>Obtain from the density a proposal x given y. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="551"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="681">
+        <label>eos::MarkovChain::ProposalFunction</label>
+        <link refid="structeos_1_1MarkovChain_1_1ProposalFunction"/>
+      </node>
+      <node id="679">
+        <label>eos::proposal_functions::MultivariateStudentT</label>
+        <link refid="classeos_1_1proposal__functions_1_1MultivariateStudentT"/>
+        <childnode refid="680" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="680">
+        <label>eos::proposal_functions::Multivariate</label>
+        <link refid="classeos_1_1proposal__functions_1_1Multivariate"/>
+        <childnode refid="681" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="686">
+        <label>eos::VerifiedRange&lt; double &gt;</label>
+        <link refid="classeos_1_1VerifiedRange"/>
+      </node>
+      <node id="684">
+        <label>eos::MarkovChain::ProposalFunction</label>
+        <link refid="structeos_1_1MarkovChain_1_1ProposalFunction"/>
+      </node>
+      <node id="682">
+        <label>eos::proposal_functions::MultivariateStudentT</label>
+        <link refid="classeos_1_1proposal__functions_1_1MultivariateStudentT"/>
+        <childnode refid="683" relation="public-inheritance">
+        </childnode>
+        <childnode refid="686" relation="usage">
+          <edgelabel>dof</edgelabel>
+        </childnode>
+      </node>
+      <node id="683">
+        <label>eos::proposal_functions::Multivariate</label>
+        <link refid="classeos_1_1proposal__functions_1_1Multivariate"/>
+        <childnode refid="684" relation="public-inheritance">
+        </childnode>
+        <childnode refid="685" relation="usage">
+          <edgelabel>_index_list</edgelabel>
+        </childnode>
+      </node>
+      <node id="685">
+        <label>std::vector&lt; unsigned &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="527" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="525" bodyend="552"/>
+    <listofallmembers>
+      <member refid="classeos_1_1proposal__functions_1_1Multivariate_1ad5a7764646a0c216344d96be9f01655b" prot="protected" virt="non-virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>_compute_cholesky_and_inverse</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1MultivariateStudentT_1aa44fa5958d242f5aae93c0dfa4cb8d84" prot="protected" virt="virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>_compute_norm</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1Multivariate_1a33c4b4ed443dc77bb376636636f11b88" prot="protected" virt="non-virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>_copy</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1Multivariate_1ad563d0d650e7cbd130c0229440c172fe" prot="protected" virt="non-virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>_covariance</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1Multivariate_1a4ed7faa7ef374c0b6fbc065a45ce34d3" prot="protected" virt="non-virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>_covariance_chol</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1Multivariate_1a91646502fcd9f17890b08ff8928e36f3" prot="protected" virt="non-virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>_covariance_inverse</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1Multivariate_1ab5e327644edef3b9c8658e2cdd3d2772" prot="protected" virt="non-virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>_dimension</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1Multivariate_1a4b45f19e0d4da4ed2c519d8a1d504fd2" prot="protected" virt="non-virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>_dump_covariance</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1Multivariate_1a6626ace5861eeba7b92ea9ed4c6095ee" prot="protected" virt="non-virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>_index_list</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1Multivariate_1a642356a5bf54154da5730ffca4ee0c7f" prot="protected" virt="non-virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>_tmp_left</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1Multivariate_1a6a8e41ac55083ca3eebbfc65dce32b5e" prot="protected" virt="non-virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>_tmp_right</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1Multivariate_1a37d4d1ebe9b21fb87da6976d7b08f962" prot="protected" virt="non-virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>_tmp_sample_covariance_current</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1Multivariate_1a03a15f539c8b7eeefb7e323d8c3cd15d" prot="public" virt="virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>adapt</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1Multivariate_1a67c47eeeefc2f0027cab513f50a402a2" prot="public" virt="non-virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>adaptations</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1MultivariateStudentT_1a4f5007a73e656d9ff0476a4b5740018b" prot="public" virt="virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>clone</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1Multivariate_1aabab67ba765f532effe6dd8236d69cdd" prot="public" virt="non-virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>cooling_power</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1Multivariate_1a54a59c24424caeb5e826d61d63edd95d" prot="public" virt="non-virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>covariance</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1Multivariate_1ab52678a7403bae09d3db8f2247c02e17" prot="public" virt="non-virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>covariance_scale</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1Multivariate_1ab974d2da4b3dfcb7278418a25b07dd51" prot="public" virt="non-virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>covariance_scale_max</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1Multivariate_1afd2de46a2288413f8e06c1f197b71ec2" prot="public" virt="non-virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>covariance_scale_min</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1Multivariate_1a69c7f79624af473004a147598d9afaa1" prot="public" virt="non-virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>covariance_scale_update_factor</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1Multivariate_1a4b7778284ee0ba2ea1ff85df8844da6e" prot="public" virt="non-virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>covariance_type</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1Multivariate_1ae7eae33da3e528eea02bd653e83f865a" prot="public" virt="non-virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>CovarianceType</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1Multivariate_1aa7a6807a556a5187c77080d6b2036deb" prot="public" virt="non-virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>dimension</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1MultivariateStudentT_1addd13294ed7e93125f090a8c9250ea99" prot="public" virt="non-virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>dof</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1MultivariateStudentT_1ab6afe975a0e1a553b785be0fd4daec05" prot="public" virt="virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>dump_state</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1MultivariateStudentT_1a9ca45b3dad5b0e6612ba27f7fb4e1973" prot="public" virt="virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>evaluate</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1Multivariate_1a0f3a2171c1b20ef0f4cb4588185981aa" prot="public" virt="non-virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>Multivariate</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1MultivariateStudentT_1a491d401a59792405c093865094f23810" prot="public" virt="non-virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>MultivariateStudentT</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1Multivariate_1a6ca72be11badd000f8d36a80c131b5d4" prot="public" virt="non-virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>norm</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1MultivariateStudentT_1ad7c59db9bc93f0fb4b3204b8f272ba6c" prot="public" virt="virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>propose</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1Multivariate_1a5f1d1b34460d12e1446dc5ff0fa714ee" prot="public" virt="virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>rescale</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1Multivariate_1a830b00fd34f3b65922eeef04d76269e9" prot="public" virt="virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>reset</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1MultivariateStudentT_1a32ceb99e081791885f277e033c809c83" prot="public" virt="non-virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>scalars_type</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1MultivariateStudentT_1aab40ca04073f1bfec9378681526aadd8" prot="public" virt="non-virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>ScalarsType</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1Multivariate_1ac143e4c3d64075a86a6aa837d187d134" prot="public" virt="virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>set_indices</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1Multivariate_1a2b216d8b68102068c721f758d562485d" prot="public" virt="virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>~Multivariate</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1MultivariateStudentT_1acc497f43328165a02524291ed7383a89" prot="public" virt="virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>~MultivariateStudentT</name></member>
+      <member refid="structeos_1_1MarkovChain_1_1ProposalFunction_1a758ad6e18e36b15062fe776ee7a9b3d9" prot="public" virt="pure-virtual"><scope>eos::proposal_functions::MultivariateStudentT</scope><name>~ProposalFunction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

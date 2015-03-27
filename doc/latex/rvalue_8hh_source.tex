@@ -1,0 +1,50 @@
+\hypertarget{rvalue_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/rvalue.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2011 Frederik Beaujean}
+00005 \textcolor{comment}{ * Copyright (c) 2011 Danny van Dyk}
+00006 \textcolor{comment}{ *}
+00007 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00008 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00009 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00010 \textcolor{comment}{ *}
+00011 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00012 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00013 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00014 \textcolor{comment}{ * details.}
+00015 \textcolor{comment}{ *}
+00016 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00017 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00018 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00019 \textcolor{comment}{ */}
+00020 
+00021 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_RVALUE\_HH}
+\hypertarget{rvalue_8hh_source_l00022}{}\hyperlink{rvalue_8hh_a8ef0afd2cbe807deba1d15618b3af72a}{00022} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_RVALUE\_HH 1}
+00023 \textcolor{preprocessor}{}
+00024 \textcolor{preprocessor}{#include <\hyperlink{instantiation__policy_8hh}{eos/utils/instantiation_policy.hh}>}
+00025 
+00026 \textcolor{preprocessor}{#include <vector>}
+00027 
+00028 \textcolor{keyword}{namespace }eos
+00029 \{
+\hypertarget{rvalue_8hh_source_l00030}{}\hyperlink{structeos_1_1RValue}{00030}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1RValue}{RValue} :
+00031         \textcolor{keyword}{public} InstantiationPolicy<RValue, NonInstantiable>
+00032     \{
+00044         \textcolor{keyword}{static} \textcolor{keywordtype}{double} \hyperlink{structeos_1_1RValue_ac18b9cf1272e22d614f54fddc82d5072}{gelman_rubin}(\textcolor{keyword}{const} std::vector<double> & chain\_means, \textcolor{keyword}{const
+      } std::vector<double> & chain\_variances,
+00045                 \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & chain\_length);
+00046 
+00059         \textcolor{keyword}{static} \textcolor{keywordtype}{double} \hyperlink{structeos_1_1RValue_a1ef9238e0cae5fbfe5e9271f8012f2e8}{approximation}(\textcolor{keyword}{const} std::vector<double> & chain\_means, \textcolor{keyword}{cons
+      t} std::vector<double> & chain\_variances,
+00060                 \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & chain\_length);
+00061     \};
+00062 \}
+00063 
+00064 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

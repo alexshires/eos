@@ -1,0 +1,290 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1HierarchicalClustering" kind="class" prot="public">
+    <compoundname>eos::HierarchicalClustering</compoundname>
+    <basecompoundref refid="classeos_1_1PrivateImplementationPattern" prot="public" virt="non-virtual">eos::PrivateImplementationPattern&lt; HierarchicalClustering &gt;</basecompoundref>
+    <includes refid="hierarchical-clustering_8hh" local="no">hierarchical-clustering.hh</includes>
+    <innerclass refid="classeos_1_1HierarchicalClustering_1_1Component" prot="public">eos::HierarchicalClustering::Component</innerclass>
+    <innerclass refid="classeos_1_1HierarchicalClustering_1_1Config" prot="public">eos::HierarchicalClustering::Config</innerclass>
+      <sectiondef kind="user-defined">
+      <header>Basic Functions</header>
+      <description><para><anchor id="_1amgrp2386c9a1f1785edee33f374dd2db9b3d"/> </para></description>
+      <memberdef kind="function" id="classeos_1_1HierarchicalClustering_1a7b4792a338b8e9ed7eff4c50b69a6e2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::HierarchicalClustering::HierarchicalClustering</definition>
+        <argsstring>(const HierarchicalClustering::Config &amp;config)</argsstring>
+        <name>HierarchicalClustering</name>
+        <param>
+          <type>const <ref refid="classeos_1_1HierarchicalClustering_1_1Config" kindref="compound">HierarchicalClustering::Config</ref> &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The configuration of the samples. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hierarchical-clustering.hh" line="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1HierarchicalClustering_1a65264d9ee6f203a8ca040644df99bf65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::HierarchicalClustering::~HierarchicalClustering</definition>
+        <argsstring>()</argsstring>
+        <name>~HierarchicalClustering</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hierarchical-clustering.hh" line="56"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classeos_1_1HierarchicalClustering_1aa51668b14931e2a8b1697c8f26a8f1c8" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="classeos_1_1HierarchicalClustering_1_1Component" kindref="compound">HierarchicalClustering::Component</ref> &gt;</type>
+        <definition>typedef std::vector&lt;HierarchicalClustering::Component&gt; eos::HierarchicalClustering::MixtureDensity</definition>
+        <argsstring></argsstring>
+        <name>MixtureDensity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hierarchical-clustering.hh" line="44" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/hierarchical-clustering.hh" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classeos_1_1HierarchicalClustering_1a4d4c7214856d750b968299925f29b207" prot="public" static="no">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator</ref>&lt; IteratorTag, <ref refid="classeos_1_1HierarchicalClustering_1_1Component" kindref="compound">Component</ref> &gt;</type>
+        <definition>typedef WrappedForwardIterator&lt;IteratorTag, Component&gt; eos::HierarchicalClustering::ComponentIterator</definition>
+        <argsstring></argsstring>
+        <name>ComponentIterator</name>
+        <briefdescription>
+<para>Loop over input <ref refid="namespaceeos_1_1components" kindref="compound">components</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hierarchical-clustering.hh" line="77" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/hierarchical-clustering.hh" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classeos_1_1HierarchicalClustering_1aae7753bcc3666ca15b333a39aa454b29" prot="public" static="no">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator</ref>&lt; IteratorTag, <ref refid="classeos_1_1HierarchicalClustering_1_1Component" kindref="compound">Component</ref> &gt;</type>
+        <definition>typedef WrappedForwardIterator&lt;IteratorTag, Component&gt; eos::HierarchicalClustering::ClusterIterator</definition>
+        <argsstring></argsstring>
+        <name>ClusterIterator</name>
+        <briefdescription>
+<para>Loop over final clusters (determined during clustering). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hierarchical-clustering.hh" line="82" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/hierarchical-clustering.hh" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classeos_1_1HierarchicalClustering_1a7cf007a3d8e09d9b37f0c28c82013441" prot="public" static="no">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator</ref>&lt; IteratorTag, unsigned &gt;</type>
+        <definition>typedef WrappedForwardIterator&lt;IteratorTag, unsigned&gt; eos::HierarchicalClustering::MapIterator</definition>
+        <argsstring></argsstring>
+        <name>MapIterator</name>
+        <briefdescription>
+<para>To which cluster is a component mapped? </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hierarchical-clustering.hh" line="87" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/hierarchical-clustering.hh" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1HierarchicalClustering_1ae42a0dd678f5258605a225a4b53eb487" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::HierarchicalClustering::add</definition>
+        <argsstring>(const Component &amp;component)</argsstring>
+        <name>add</name>
+        <param>
+          <type>const <ref refid="classeos_1_1HierarchicalClustering_1_1Component" kindref="compound">Component</ref> &amp;</type>
+          <declname>component</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add an input component </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hierarchical-clustering.hh" line="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1HierarchicalClustering_1af11950c9657fcfaf1962b3945e5feef6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::HierarchicalClustering::initial_guess</definition>
+        <argsstring>(const MixtureDensity &amp;density)</argsstring>
+        <name>initial_guess</name>
+        <param>
+          <type>const <ref refid="classeos_1_1HierarchicalClustering_1aa51668b14931e2a8b1697c8f26a8f1c8" kindref="member">MixtureDensity</ref> &amp;</type>
+          <declname>density</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add an initial guess for the clusters to be determined <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>density</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hierarchical-clustering.hh" line="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1HierarchicalClustering_1aff7df5f12bd5ddb276896cc43c597981" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::HierarchicalClustering::run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Perform the clustering. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hierarchical-clustering.hh" line="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1HierarchicalClustering_1a34dc8e608ce186011554a7e108216b78" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">ComponentIterator</ref></type>
+        <definition>ComponentIterator eos::HierarchicalClustering::begin_components</definition>
+        <argsstring>() const </argsstring>
+        <name>begin_components</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hierarchical-clustering.hh" line="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1HierarchicalClustering_1ac834886e174350d4cf0a69fd88916b8c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">ComponentIterator</ref></type>
+        <definition>ComponentIterator eos::HierarchicalClustering::end_components</definition>
+        <argsstring>() const </argsstring>
+        <name>end_components</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hierarchical-clustering.hh" line="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1HierarchicalClustering_1ac30248ba80ef8483617c6d0b3cc84e98" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">ClusterIterator</ref></type>
+        <definition>ClusterIterator eos::HierarchicalClustering::begin_clusters</definition>
+        <argsstring>() const </argsstring>
+        <name>begin_clusters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hierarchical-clustering.hh" line="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1HierarchicalClustering_1a071a4d95afc77934d1af8c57050e49cb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">ClusterIterator</ref></type>
+        <definition>ClusterIterator eos::HierarchicalClustering::end_clusters</definition>
+        <argsstring>() const </argsstring>
+        <name>end_clusters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hierarchical-clustering.hh" line="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1HierarchicalClustering_1a2b2ea33a67b4e8f66ab8b6e4dd6a6710" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">MapIterator</ref></type>
+        <definition>MapIterator eos::HierarchicalClustering::begin_map</definition>
+        <argsstring>() const </argsstring>
+        <name>begin_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hierarchical-clustering.hh" line="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1HierarchicalClustering_1a022c09b9e8072a404b659e5a482937f8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">MapIterator</ref></type>
+        <definition>MapIterator eos::HierarchicalClustering::end_map</definition>
+        <argsstring>() const </argsstring>
+        <name>end_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hierarchical-clustering.hh" line="89"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Implement the hierarchical clustering explained in [GR2004].</para><para>A mixture density is determined as a reduced representation of input <ref refid="namespaceeos_1_1components" kindref="compound">components</ref>. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="505">
+        <label>eos::PrivateImplementationPattern&lt; HierarchicalClustering &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="504">
+        <label>eos::HierarchicalClustering</label>
+        <link refid="classeos_1_1HierarchicalClustering"/>
+        <childnode refid="505" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="507">
+        <label>eos::PrivateImplementationPattern&lt; HierarchicalClustering &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="506">
+        <label>eos::HierarchicalClustering</label>
+        <link refid="classeos_1_1HierarchicalClustering"/>
+        <childnode refid="507" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/hierarchical-clustering.hh" line="40" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/hierarchical-clustering.hh" bodystart="38" bodyend="90"/>
+    <listofallmembers>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a232940e78b26c6ed4f97196f831c69c9" prot="protected" virt="non-virtual"><scope>eos::HierarchicalClustering</scope><name>_imp</name></member>
+      <member refid="classeos_1_1HierarchicalClustering_1ae42a0dd678f5258605a225a4b53eb487" prot="public" virt="non-virtual"><scope>eos::HierarchicalClustering</scope><name>add</name></member>
+      <member refid="classeos_1_1HierarchicalClustering_1ac30248ba80ef8483617c6d0b3cc84e98" prot="public" virt="non-virtual"><scope>eos::HierarchicalClustering</scope><name>begin_clusters</name></member>
+      <member refid="classeos_1_1HierarchicalClustering_1a34dc8e608ce186011554a7e108216b78" prot="public" virt="non-virtual"><scope>eos::HierarchicalClustering</scope><name>begin_components</name></member>
+      <member refid="classeos_1_1HierarchicalClustering_1a2b2ea33a67b4e8f66ab8b6e4dd6a6710" prot="public" virt="non-virtual"><scope>eos::HierarchicalClustering</scope><name>begin_map</name></member>
+      <member refid="classeos_1_1HierarchicalClustering_1aae7753bcc3666ca15b333a39aa454b29" prot="public" virt="non-virtual"><scope>eos::HierarchicalClustering</scope><name>ClusterIterator</name></member>
+      <member refid="classeos_1_1HierarchicalClustering_1a4d4c7214856d750b968299925f29b207" prot="public" virt="non-virtual"><scope>eos::HierarchicalClustering</scope><name>ComponentIterator</name></member>
+      <member refid="classeos_1_1HierarchicalClustering_1a071a4d95afc77934d1af8c57050e49cb" prot="public" virt="non-virtual"><scope>eos::HierarchicalClustering</scope><name>end_clusters</name></member>
+      <member refid="classeos_1_1HierarchicalClustering_1ac834886e174350d4cf0a69fd88916b8c" prot="public" virt="non-virtual"><scope>eos::HierarchicalClustering</scope><name>end_components</name></member>
+      <member refid="classeos_1_1HierarchicalClustering_1a022c09b9e8072a404b659e5a482937f8" prot="public" virt="non-virtual"><scope>eos::HierarchicalClustering</scope><name>end_map</name></member>
+      <member refid="classeos_1_1HierarchicalClustering_1a7b4792a338b8e9ed7eff4c50b69a6e2f" prot="public" virt="non-virtual"><scope>eos::HierarchicalClustering</scope><name>HierarchicalClustering</name></member>
+      <member refid="classeos_1_1HierarchicalClustering_1af11950c9657fcfaf1962b3945e5feef6" prot="public" virt="non-virtual"><scope>eos::HierarchicalClustering</scope><name>initial_guess</name></member>
+      <member refid="classeos_1_1HierarchicalClustering_1a7cf007a3d8e09d9b37f0c28c82013441" prot="public" virt="non-virtual"><scope>eos::HierarchicalClustering</scope><name>MapIterator</name></member>
+      <member refid="classeos_1_1HierarchicalClustering_1aa51668b14931e2a8b1697c8f26a8f1c8" prot="public" virt="non-virtual"><scope>eos::HierarchicalClustering</scope><name>MixtureDensity</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a3e3d5f4a565256a1dda6c234b051b2f2" prot="public" virt="non-virtual"><scope>eos::HierarchicalClustering</scope><name>PrivateImplementationPattern</name></member>
+      <member refid="classeos_1_1HierarchicalClustering_1aff7df5f12bd5ddb276896cc43c597981" prot="public" virt="non-virtual"><scope>eos::HierarchicalClustering</scope><name>run</name></member>
+      <member refid="classeos_1_1HierarchicalClustering_1a65264d9ee6f203a8ca040644df99bf65" prot="public" virt="non-virtual"><scope>eos::HierarchicalClustering</scope><name>~HierarchicalClustering</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1acf46ec2739c3b0ec9702b9428475876d" prot="public" virt="non-virtual"><scope>eos::HierarchicalClustering</scope><name>~PrivateImplementationPattern</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

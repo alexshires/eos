@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1Minimal" kind="struct" prot="public">
+    <compoundname>eos::Minimal</compoundname>
+    <includes refid="inclusive-b-to-s-gamma_8hh" local="no">inclusive-b-to-s-gamma.hh</includes>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/inclusive-b-to-s-gamma.hh" line="37" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/inclusive-b-to-s-gamma.hh" bodystart="36" bodyend="38"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

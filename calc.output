@@ -1,0 +1,24 @@
+# B->Pill::BR@LargeRecoil: l=mu
+# s_min	s_max	central	delta_min	delta_max	delta_min	delta_max
+0.1	10	7.76911e-09	0	0	0	0   (-0% / +0%)
+# B->Pill::BR@LowRecoil: l=mu
+# s_min	s_max	central	delta_min	delta_max	delta_min	delta_max
+10	26	4.53093e-09	0	0	0	0   (-0% / +0%)
+# B->Kll::BR@LargeRecoil: l=mu
+# s_min	s_max	central	delta_min	delta_max	delta_min	delta_max
+0.1	10	3.25169e-07	0	0	0	0   (-0% / +0%)
+# B->Kll::BR@LowRecoil: l=mu
+# s_min	s_max	central	delta_min	delta_max	delta_min	delta_max
+14	22	1.03048e-07	0	0	0	0   (-0% / +0%)
+# B->Pill::BR@LargeRecoil: l=mu
+# s_min	s_max	central	FF_min	FF_max	delta_min	delta_max
+1	6	4.13777e-09	1.17103e-09	1.36542e-09	1.17103e-09	1.36542e-09   (-28.301% / +32.9989%)
+# B->Pill::BR@LowRecoil: l=mu
+# s_min	s_max	central	FF_min	FF_max	delta_min	delta_max
+15	20	1.55693e-09	4.42205e-10	5.15905e-10	4.42205e-10	5.15905e-10   (-28.4024% / +33.1361%)
+# B->Kll::BR@LargeRecoil: l=mu
+# s_min	s_max	central	FF_min	FF_max	delta_min	delta_max
+1	6	1.67169e-07	1.90519e-08	5.26712e-08	1.90519e-08	5.26712e-08   (-11.3967% / +31.5077%)
+# B->Kll::BR@LowRecoil: l=mu
+# s_min	s_max	central	FF_min	FF_max	delta_min	delta_max
+15	20	7.26533e-08	8.29605e-09	2.29398e-08	8.29605e-09	2.29398e-08   (-11.4187% / +31.5744%)

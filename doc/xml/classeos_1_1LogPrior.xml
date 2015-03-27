@@ -1,0 +1,647 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1LogPrior" kind="class" prot="public">
+    <compoundname>eos::LogPrior</compoundname>
+    <includes refid="log__prior_8hh" local="no">log_prior.hh</includes>
+      <sectiondef kind="user-defined">
+      <header>Iteration over descriptions</header>
+      <description><para><anchor id="_1amgrp2bd25b9507b5ca06b9e539835b3a1a12"/> </para></description>
+      <memberdef kind="typedef" id="classeos_1_1LogPrior_1a384dd9ec4424f2269e052e41ca834a3d" prot="public" static="no">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator</ref>&lt; IteratorTag, <ref refid="structeos_1_1ParameterDescription" kindref="compound">ParameterDescription</ref> &gt;</type>
+        <definition>typedef WrappedForwardIterator&lt;IteratorTag, ParameterDescription&gt; eos::LogPrior::Iterator</definition>
+        <argsstring></argsstring>
+        <name>Iterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log_prior.hh" line="79" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/log_prior.hh" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LogPrior_1a50155394c200be97f25ef0e56973dbd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator eos::LogPrior::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log_prior.hh" line="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LogPrior_1a093e33ea2441515348249835a99781ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator eos::LogPrior::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log_prior.hh" line="82"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Basic Functions</header>
+      <description><para><anchor id="_1amgrp2386c9a1f1785edee33f374dd2db9b3d"/> </para></description>
+      <memberdef kind="function" id="classeos_1_1LogPrior_1ae06bbf3b7073084d135bedd818fbf988" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::LogPrior::LogPrior</definition>
+        <argsstring>(const Parameters &amp;parameters)</argsstring>
+        <name>LogPrior</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> objects from which we evaluate. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log_prior.hh" line="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LogPrior_1affbfcbe3bf1a16aa5e696880d20e2822" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual eos::LogPrior::~LogPrior</definition>
+        <argsstring>()</argsstring>
+        <name>~LogPrior</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> objects from which we evaluate. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log_prior.hh" line="61" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/log_prior.hh" bodystart="60" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LogPrior_1a3c6fe4377cbfdf51bf1472ef16272660" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::string</type>
+        <definition>virtual std::string eos::LogPrior::as_string</definition>
+        <argsstring>() const =0</argsstring>
+        <name>as_string</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> objects from which we evaluate. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log_prior.hh" line="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LogPrior_1abb48bbbc8034fc487403fee22265f2c8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="namespaceeos_1ac5481e3b46ee55ff24606ee7f6e78651" kindref="member">LogPriorPtr</ref></type>
+        <definition>virtual LogPriorPtr eos::LogPrior::clone</definition>
+        <argsstring>(const Parameters &amp;parameters) const =0</argsstring>
+        <name>clone</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a clone (independent object) of this <ref refid="classeos_1_1LogPrior" kindref="compound">LogPrior</ref> object,</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> object from which the clone shall evaluate. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The clone </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log_prior.hh" line="72"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Accessors</header>
+      <description><para><anchor id="_1amgrp04cb611d2bf0c8edd5b113799b30e174"/> </para></description>
+      <memberdef kind="function" id="classeos_1_1LogPrior_1ac686393e071443d706a104093957e667" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double eos::LogPrior::operator()</definition>
+        <argsstring>() const =0</argsstring>
+        <name>operator()</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Evaluate the natural logarithm of the prior. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log_prior.hh" line="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LogPrior_1a9bbc9805dcb6abbe6d16efff44b43ea3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double eos::LogPrior::sample</definition>
+        <argsstring>(gsl_rng *rng) const =0</argsstring>
+        <name>sample</name>
+        <param>
+          <type>gsl_rng *</type>
+          <declname>rng</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rng</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the random number engine </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a sample according to this prior distribution </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log_prior.hh" line="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LogPrior_1afb69583b9532799aa6068d8f4bc3781a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double eos::LogPrior::mean</definition>
+        <argsstring>() const =0</argsstring>
+        <name>mean</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the mean of the distribution. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log_prior.hh" line="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LogPrior_1a525c7cd21ac2f4f273893d8740ca9136" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double eos::LogPrior::variance</definition>
+        <argsstring>() const =0</argsstring>
+        <name>variance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the variance of this distribution. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log_prior.hh" line="107"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Named constructors for 1D prior distributions</header>
+      <description><para><anchor id="_1amgrp342d5c542a047b075ed194e4a7ccb8f9"/> </para></description>
+      <memberdef kind="function" id="classeos_1_1LogPrior_1a567e0f1eba8e2dd5c019d6764cbab53c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceeos_1ac5481e3b46ee55ff24606ee7f6e78651" kindref="member">LogPriorPtr</ref></type>
+        <definition>static LogPriorPtr eos::LogPrior::Discrete</definition>
+        <argsstring>(const Parameters &amp;parameters, const std::string &amp;name, const std::set&lt; double &gt; &amp;values)</argsstring>
+        <name>Discrete</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const std::set&lt; double &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The LogGamma distribution is useful to model continuous, unimodal, asymmetric priors in one dimension.</para><para><simplesect kind="note"><para>The construction will typically fail if the asymmetry is less than ca. 5 %. Use a Gaussian instead.</para></simplesect>
+By construction, it is constructed to behave similarly to a Gaussian:<itemizedlist>
+<listitem><para>the mode is at the central value</para></listitem><listitem><para>the interval [lower, upper] contains 68% probability</para></listitem><listitem><para>the density at lower is the same as at upper</para></listitem></itemizedlist>
+</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object from which the value of the parameter is retrieved. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The parameter name. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Total allowed range. The value of the pdf is rescaled such that the prior integrates to one over the range. For efficiency reasons, no checking if input parameter is in range. But conceptually, the prior is zero outside. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lower</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(central - lower) roughly corresponds to a Gaussian standard deviation for values left of the mode. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>central</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The mode of the prior. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>upper</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(upper - central) roughly corresponds to a Gaussian standard deviation for values right of the mode. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log_prior.hh" line="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LogPrior_1ad4c2afcb1df01ef6ff1f2f8402cc7636" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceeos_1ac5481e3b46ee55ff24606ee7f6e78651" kindref="member">LogPriorPtr</ref></type>
+        <definition>static LogPriorPtr eos::LogPrior::Flat</definition>
+        <argsstring>(const Parameters &amp;parameters, const std::string &amp;name, const ParameterRange &amp;range)</argsstring>
+        <name>Flat</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structeos_1_1ParameterRange" kindref="compound">ParameterRange</ref> &amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The LogGamma distribution is useful to model continuous, unimodal, asymmetric priors in one dimension.</para><para><simplesect kind="note"><para>The construction will typically fail if the asymmetry is less than ca. 5 %. Use a Gaussian instead.</para></simplesect>
+By construction, it is constructed to behave similarly to a Gaussian:<itemizedlist>
+<listitem><para>the mode is at the central value</para></listitem><listitem><para>the interval [lower, upper] contains 68% probability</para></listitem><listitem><para>the density at lower is the same as at upper</para></listitem></itemizedlist>
+</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object from which the value of the parameter is retrieved. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The parameter name. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Total allowed range. The value of the pdf is rescaled such that the prior integrates to one over the range. For efficiency reasons, no checking if input parameter is in range. But conceptually, the prior is zero outside. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lower</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(central - lower) roughly corresponds to a Gaussian standard deviation for values left of the mode. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>central</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The mode of the prior. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>upper</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(upper - central) roughly corresponds to a Gaussian standard deviation for values right of the mode. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log_prior.hh" line="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LogPrior_1afe99a1c56a9ef60b4c38fe56f3c2b7ae" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceeos_1ac5481e3b46ee55ff24606ee7f6e78651" kindref="member">LogPriorPtr</ref></type>
+        <definition>static LogPriorPtr eos::LogPrior::Gauss</definition>
+        <argsstring>(const Parameters &amp;parameters, const std::string &amp;name, const ParameterRange &amp;range, const double &amp;lower, const double &amp;central, const double &amp;upper)</argsstring>
+        <name>Gauss</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structeos_1_1ParameterRange" kindref="compound">ParameterRange</ref> &amp;</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>lower</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>central</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>upper</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The LogGamma distribution is useful to model continuous, unimodal, asymmetric priors in one dimension.</para><para><simplesect kind="note"><para>The construction will typically fail if the asymmetry is less than ca. 5 %. Use a Gaussian instead.</para></simplesect>
+By construction, it is constructed to behave similarly to a Gaussian:<itemizedlist>
+<listitem><para>the mode is at the central value</para></listitem><listitem><para>the interval [lower, upper] contains 68% probability</para></listitem><listitem><para>the density at lower is the same as at upper</para></listitem></itemizedlist>
+</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object from which the value of the parameter is retrieved. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The parameter name. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Total allowed range. The value of the pdf is rescaled such that the prior integrates to one over the range. For efficiency reasons, no checking if input parameter is in range. But conceptually, the prior is zero outside. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lower</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(central - lower) roughly corresponds to a Gaussian standard deviation for values left of the mode. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>central</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The mode of the prior. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>upper</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(upper - central) roughly corresponds to a Gaussian standard deviation for values right of the mode. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log_prior.hh" line="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LogPrior_1af659eae53a9474695a8abadd62f82a94" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceeos_1ac5481e3b46ee55ff24606ee7f6e78651" kindref="member">LogPriorPtr</ref></type>
+        <definition>static LogPriorPtr eos::LogPrior::LogGamma</definition>
+        <argsstring>(const Parameters &amp;parameters, const std::string &amp;name, const ParameterRange &amp;range, const double &amp;lower, const double &amp;central, const double &amp;upper)</argsstring>
+        <name>LogGamma</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structeos_1_1ParameterRange" kindref="compound">ParameterRange</ref> &amp;</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>lower</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>central</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>upper</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The LogGamma distribution is useful to model continuous, unimodal, asymmetric priors in one dimension.</para><para><simplesect kind="note"><para>The construction will typically fail if the asymmetry is less than ca. 5 %. Use a Gaussian instead.</para></simplesect>
+By construction, it is constructed to behave similarly to a Gaussian:<itemizedlist>
+<listitem><para>the mode is at the central value</para></listitem><listitem><para>the interval [lower, upper] contains 68% probability</para></listitem><listitem><para>the density at lower is the same as at upper</para></listitem></itemizedlist>
+</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object from which the value of the parameter is retrieved. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The parameter name. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Total allowed range. The value of the pdf is rescaled such that the prior integrates to one over the range. For efficiency reasons, no checking if input parameter is in range. But conceptually, the prior is zero outside. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lower</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(central - lower) roughly corresponds to a Gaussian standard deviation for values left of the mode. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>central</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The mode of the prior. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>upper</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(upper - central) roughly corresponds to a Gaussian standard deviation for values right of the mode. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log_prior.hh" line="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LogPrior_1a48409439aeaa34a6d0bf47ef1902749a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceeos_1ac5481e3b46ee55ff24606ee7f6e78651" kindref="member">LogPriorPtr</ref></type>
+        <definition>static LogPriorPtr eos::LogPrior::Make</definition>
+        <argsstring>(const Parameters &amp;parameters, const std::string &amp;serialization)</argsstring>
+        <name>Make</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>serialization</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Construct a prior from its string representation.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object from which the value of the parameter is retrieved. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>serialization</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The prior in string form. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to the ready made prior. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log_prior.hh" line="146"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classeos_1_1LogPrior_1a5b24d36e7d7d2f77d5a7d6533233f93b" prot="protected" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref></type>
+        <definition>Parameters eos::LogPrior::_parameters</definition>
+        <argsstring></argsstring>
+        <name>_parameters</name>
+        <briefdescription>
+<para>Our associated <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log_prior.hh" line="45" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/log_prior.hh" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1LogPrior_1a2b9c6a50c9f4399e44973bad25b390be" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structeos_1_1ParameterDescription" kindref="compound">ParameterDescription</ref> &gt;</type>
+        <definition>std::vector&lt;ParameterDescription&gt; eos::LogPrior::_parameter_descriptions</definition>
+        <argsstring></argsstring>
+        <name>_parameter_descriptions</name>
+        <briefdescription>
+<para>All parameters for which this prior provides information. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/log_prior.hh" line="48" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/log_prior.hh" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Base class for log(prior) distributions.</para><para>Has a container of subclasses describing independent 1..k dimensional prior distributions. Taken together, they specify the full N dimensional prior. Any actual calculation is done by the subclasses. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="603">
+        <label>eos::PrivateImplementationPattern&lt; Parameters &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="604">
+        <label>std::vector&lt; ParameterDescription &gt;</label>
+      </node>
+      <node id="602">
+        <label>eos::Parameters</label>
+        <link refid="classeos_1_1Parameters"/>
+        <childnode refid="603" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="601">
+        <label>eos::LogPrior</label>
+        <link refid="classeos_1_1LogPrior"/>
+        <childnode refid="602" relation="usage">
+          <edgelabel>_parameters</edgelabel>
+        </childnode>
+        <childnode refid="604" relation="usage">
+          <edgelabel>_parameter_descriptions</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/log_prior.hh" line="42" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/log_prior.hh" bodystart="41" bodyend="148"/>
+    <listofallmembers>
+      <member refid="classeos_1_1LogPrior_1a2b9c6a50c9f4399e44973bad25b390be" prot="protected" virt="non-virtual"><scope>eos::LogPrior</scope><name>_parameter_descriptions</name></member>
+      <member refid="classeos_1_1LogPrior_1a5b24d36e7d7d2f77d5a7d6533233f93b" prot="protected" virt="non-virtual"><scope>eos::LogPrior</scope><name>_parameters</name></member>
+      <member refid="classeos_1_1LogPrior_1a3c6fe4377cbfdf51bf1472ef16272660" prot="public" virt="pure-virtual"><scope>eos::LogPrior</scope><name>as_string</name></member>
+      <member refid="classeos_1_1LogPrior_1a50155394c200be97f25ef0e56973dbd8" prot="public" virt="non-virtual"><scope>eos::LogPrior</scope><name>begin</name></member>
+      <member refid="classeos_1_1LogPrior_1abb48bbbc8034fc487403fee22265f2c8" prot="public" virt="pure-virtual"><scope>eos::LogPrior</scope><name>clone</name></member>
+      <member refid="classeos_1_1LogPrior_1a567e0f1eba8e2dd5c019d6764cbab53c" prot="public" virt="non-virtual"><scope>eos::LogPrior</scope><name>Discrete</name></member>
+      <member refid="classeos_1_1LogPrior_1a093e33ea2441515348249835a99781ba" prot="public" virt="non-virtual"><scope>eos::LogPrior</scope><name>end</name></member>
+      <member refid="classeos_1_1LogPrior_1ad4c2afcb1df01ef6ff1f2f8402cc7636" prot="public" virt="non-virtual"><scope>eos::LogPrior</scope><name>Flat</name></member>
+      <member refid="classeos_1_1LogPrior_1afe99a1c56a9ef60b4c38fe56f3c2b7ae" prot="public" virt="non-virtual"><scope>eos::LogPrior</scope><name>Gauss</name></member>
+      <member refid="classeos_1_1LogPrior_1a384dd9ec4424f2269e052e41ca834a3d" prot="public" virt="non-virtual"><scope>eos::LogPrior</scope><name>Iterator</name></member>
+      <member refid="classeos_1_1LogPrior_1af659eae53a9474695a8abadd62f82a94" prot="public" virt="non-virtual"><scope>eos::LogPrior</scope><name>LogGamma</name></member>
+      <member refid="classeos_1_1LogPrior_1ae06bbf3b7073084d135bedd818fbf988" prot="public" virt="non-virtual"><scope>eos::LogPrior</scope><name>LogPrior</name></member>
+      <member refid="classeos_1_1LogPrior_1a48409439aeaa34a6d0bf47ef1902749a" prot="public" virt="non-virtual"><scope>eos::LogPrior</scope><name>Make</name></member>
+      <member refid="classeos_1_1LogPrior_1afb69583b9532799aa6068d8f4bc3781a" prot="public" virt="pure-virtual"><scope>eos::LogPrior</scope><name>mean</name></member>
+      <member refid="classeos_1_1LogPrior_1ac686393e071443d706a104093957e667" prot="public" virt="pure-virtual"><scope>eos::LogPrior</scope><name>operator()</name></member>
+      <member refid="classeos_1_1LogPrior_1a9bbc9805dcb6abbe6d16efff44b43ea3" prot="public" virt="pure-virtual"><scope>eos::LogPrior</scope><name>sample</name></member>
+      <member refid="classeos_1_1LogPrior_1a525c7cd21ac2f4f273893d8740ca9136" prot="public" virt="pure-virtual"><scope>eos::LogPrior</scope><name>variance</name></member>
+      <member refid="classeos_1_1LogPrior_1affbfcbe3bf1a16aa5e696880d20e2822" prot="public" virt="virtual"><scope>eos::LogPrior</scope><name>~LogPrior</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

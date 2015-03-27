@@ -1,0 +1,67 @@
+\hypertarget{classeos_1_1ThreadPool}{
+\section{eos::ThreadPool Class Reference}
+\label{classeos_1_1ThreadPool}\index{eos::ThreadPool@{eos::ThreadPool}}
+}
+
+
+{\ttfamily \#include $<$thread\_\-pool.hh$>$}
+
+Inherits \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern$<$ ThreadPool $>$}.\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1ThreadPool_a0ecd93cf3757d0e087023d42ee30d984}{ThreadPool} ()
+\item 
+\hyperlink{classeos_1_1ThreadPool_af8929a7e28f8e3d7539a10c026c2588d}{$\sim$ThreadPool} ()
+\item 
+\hyperlink{classeos_1_1Ticket}{Ticket} \hyperlink{classeos_1_1ThreadPool_aa53eba2596379e9a258930324817a0df}{enqueue} (const std::function$<$ void(void)$>$ \&work)
+\item 
+void \hyperlink{classeos_1_1ThreadPool_ae5dee2f59b31e15db165313a32c89885}{wait\_\-for\_\-free\_\-capacity} ()
+\item 
+unsigned \hyperlink{classeos_1_1ThreadPool_ad077ff091504b8e6d73fca55ef41baae}{number\_\-of\_\-threads} () const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classeos_1_1ThreadPool}{ThreadPool} $\ast$ \hyperlink{classeos_1_1ThreadPool_afcdf38abab1caae94bc6e90b5b5d69bf}{instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classeos_1_1ThreadPool_a0ecd93cf3757d0e087023d42ee30d984}{
+\index{eos::ThreadPool@{eos::ThreadPool}!ThreadPool@{ThreadPool}}
+\index{ThreadPool@{ThreadPool}!eos::ThreadPool@{eos::ThreadPool}}
+\subsubsection[{ThreadPool}]{\setlength{\rightskip}{0pt plus 5cm}eos::ThreadPool::ThreadPool ()}}
+\label{classeos_1_1ThreadPool_a0ecd93cf3757d0e087023d42ee30d984}
+\hypertarget{classeos_1_1ThreadPool_af8929a7e28f8e3d7539a10c026c2588d}{
+\index{eos::ThreadPool@{eos::ThreadPool}!$\sim$ThreadPool@{$\sim$ThreadPool}}
+\index{$\sim$ThreadPool@{$\sim$ThreadPool}!eos::ThreadPool@{eos::ThreadPool}}
+\subsubsection[{$\sim$ThreadPool}]{\setlength{\rightskip}{0pt plus 5cm}eos::ThreadPool::$\sim$ThreadPool ()}}
+\label{classeos_1_1ThreadPool_af8929a7e28f8e3d7539a10c026c2588d}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classeos_1_1ThreadPool_aa53eba2596379e9a258930324817a0df}{
+\index{eos::ThreadPool@{eos::ThreadPool}!enqueue@{enqueue}}
+\index{enqueue@{enqueue}!eos::ThreadPool@{eos::ThreadPool}}
+\subsubsection[{enqueue}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ticket} eos::ThreadPool::enqueue (const std::function$<$ void(void)$>$ \& {\em work})}}
+\label{classeos_1_1ThreadPool_aa53eba2596379e9a258930324817a0df}
+\hypertarget{classeos_1_1ThreadPool_afcdf38abab1caae94bc6e90b5b5d69bf}{
+\index{eos::ThreadPool@{eos::ThreadPool}!instance@{instance}}
+\index{instance@{instance}!eos::ThreadPool@{eos::ThreadPool}}
+\subsubsection[{instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf ThreadPool}$\ast$ eos::ThreadPool::instance ()\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1ThreadPool_afcdf38abab1caae94bc6e90b5b5d69bf}
+\hypertarget{classeos_1_1ThreadPool_ad077ff091504b8e6d73fca55ef41baae}{
+\index{eos::ThreadPool@{eos::ThreadPool}!number\_\-of\_\-threads@{number\_\-of\_\-threads}}
+\index{number\_\-of\_\-threads@{number\_\-of\_\-threads}!eos::ThreadPool@{eos::ThreadPool}}
+\subsubsection[{number\_\-of\_\-threads}]{\setlength{\rightskip}{0pt plus 5cm}unsigned eos::ThreadPool::number\_\-of\_\-threads () const}}
+\label{classeos_1_1ThreadPool_ad077ff091504b8e6d73fca55ef41baae}
+\hypertarget{classeos_1_1ThreadPool_ae5dee2f59b31e15db165313a32c89885}{
+\index{eos::ThreadPool@{eos::ThreadPool}!wait\_\-for\_\-free\_\-capacity@{wait\_\-for\_\-free\_\-capacity}}
+\index{wait\_\-for\_\-free\_\-capacity@{wait\_\-for\_\-free\_\-capacity}!eos::ThreadPool@{eos::ThreadPool}}
+\subsubsection[{wait\_\-for\_\-free\_\-capacity}]{\setlength{\rightskip}{0pt plus 5cm}void eos::ThreadPool::wait\_\-for\_\-free\_\-capacity ()}}
+\label{classeos_1_1ThreadPool_ae5dee2f59b31e15db165313a32c89885}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{thread__pool_8hh}{thread\_\-pool.hh}\end{DoxyCompactItemize}

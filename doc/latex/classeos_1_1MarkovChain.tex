@@ -1,0 +1,290 @@
+\hypertarget{classeos_1_1MarkovChain}{
+\section{eos::MarkovChain Class Reference}
+\label{classeos_1_1MarkovChain}\index{eos::MarkovChain@{eos::MarkovChain}}
+}
+
+
+{\ttfamily \#include $<$markov\_\-chain.hh$>$}
+
+Inherits \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern$<$ MarkovChain $>$}.\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structeos_1_1MarkovChain_1_1History}{History}
+\item 
+struct \hyperlink{structeos_1_1MarkovChain_1_1HyperParameter}{HyperParameter}
+\item 
+struct \hyperlink{structeos_1_1MarkovChain_1_1ProposalFunction}{ProposalFunction}
+\item 
+struct \hyperlink{structeos_1_1MarkovChain_1_1State}{State}
+\item 
+struct \hyperlink{structeos_1_1MarkovChain_1_1Stats}{Stats}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classeos_1_1MarkovChain_af4eb1b21be84a13ae5f421fe49ed9373}{clear} ()
+\begin{DoxyCompactList}\small\item\em Remove existing history of this chain. \item\end{DoxyCompactList}\item 
+const \hyperlink{structeos_1_1MarkovChain_1_1State}{State} \& \hyperlink{classeos_1_1MarkovChain_a4ba66e0d64dade9f392d2542a7c566f4}{current\_\-state} () const 
+\begin{DoxyCompactList}\small\item\em Retrieve information regarding the current state. \item\end{DoxyCompactList}\item 
+void \hyperlink{classeos_1_1MarkovChain_af528eb210dd7052ceeb9455cb588cdd4}{dump\_\-description} (\hyperlink{classeos_1_1hdf5_1_1File}{hdf5::File} \&file, const std::string \&data\_\-set) const 
+\item 
+void \hyperlink{classeos_1_1MarkovChain_aa7fc24a3066077ab60de68a5a3f8ebe5}{dump\_\-history} (\hyperlink{classeos_1_1hdf5_1_1File}{hdf5::File} \&file, const std::string \&data\_\-set\_\-name, const unsigned \&last\_\-iterations) const 
+\item 
+void \hyperlink{classeos_1_1MarkovChain_a89a777f8c14787db1e803995ee77d862}{dump\_\-proposal} (\hyperlink{classeos_1_1hdf5_1_1File}{hdf5::File} \&file, const std::string \&data\_\-set\_\-name) const 
+\item 
+\hyperlink{structeos_1_1MarkovChain_1_1HyperParameter}{MarkovChain::HyperParameter} \& \hyperlink{classeos_1_1MarkovChain_aa3055684326d68700ebeb994b878d8db}{hyper\_\-parameter} (bool current=true) const 
+\item 
+const unsigned \& \hyperlink{classeos_1_1MarkovChain_a3a9c62e634a375bffbb3fba0b7794b69}{iterations\_\-last\_\-run} () const 
+\begin{DoxyCompactList}\small\item\em Retrieve the number of iterations used in the last run. \item\end{DoxyCompactList}\item 
+const \hyperlink{structeos_1_1MarkovChain_1_1History}{History} \& \hyperlink{classeos_1_1MarkovChain_ae1ef51057e7a205fbc9d04a5e913fb06}{history} () const 
+\begin{DoxyCompactList}\small\item\em Retrieve the chain's detailed history. \item\end{DoxyCompactList}\item 
+void \hyperlink{classeos_1_1MarkovChain_a808902afe1f1c7def764c4c492e29f1d}{set\_\-analysis} (const \hyperlink{classeos_1_1Analysis}{Analysis} \&analysis)
+\begin{DoxyCompactList}\small\item\em Set analysis. \item\end{DoxyCompactList}\item 
+void \hyperlink{classeos_1_1MarkovChain_a8aa1b0fac7040d32e42a8b2a8a508743}{keep\_\-history} (bool keep\_\-samples, bool keep\_\-observables\_\-and\_\-proposals=false)
+\item 
+void \hyperlink{classeos_1_1MarkovChain_a0424b9803e0a479c88f76713455662fa}{normalized\_\-density} (std::tuple$<$ double, double $>$ \&result, const std::vector$<$ double $>$ \&point, const unsigned \&posterior\_\-evaluations) const 
+\item 
+const std::vector$<$ \hyperlink{structeos_1_1ParameterDescription}{ParameterDescription} $>$ \& \hyperlink{classeos_1_1MarkovChain_affcf4c3c4284fd0fae634c5cf1a97fa2}{parameter\_\-descriptions} () const 
+\begin{DoxyCompactList}\small\item\em Retrieve the descriptions of all parameters that are explored by this chain. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classeos_1_1MarkovChain_a42c06afd1034be43e44bcbb24a15c808}{proposal\_\-accepted} () const 
+\begin{DoxyCompactList}\small\item\em Check whether the most recently proposed move was accepted. \item\end{DoxyCompactList}\item 
+std::shared\_\-ptr$<$ \hyperlink{structeos_1_1MarkovChain_1_1ProposalFunction}{MarkovChain::ProposalFunction} $>$ \hyperlink{classeos_1_1MarkovChain_acfde2f6063a9ad8f6a4dabb548997b4d}{proposal\_\-function} () const 
+\begin{DoxyCompactList}\small\item\em Access to the proposal function. \item\end{DoxyCompactList}\item 
+void \hyperlink{classeos_1_1MarkovChain_a7fcacec6a56edd50b12efb67dcea432f}{proposal\_\-function} (const std::shared\_\-ptr$<$ \hyperlink{structeos_1_1MarkovChain_1_1ProposalFunction}{MarkovChain::ProposalFunction} $>$ \&)
+\begin{DoxyCompactList}\small\item\em Set the proposal function. \item\end{DoxyCompactList}\item 
+const \hyperlink{structeos_1_1MarkovChain_1_1State}{State} \& \hyperlink{classeos_1_1MarkovChain_a094a7852f4983a3c26e6a062b66f2547}{proposed\_\-state} () const 
+\begin{DoxyCompactList}\small\item\em Retrieve information regarding the most recently proposed state. \item\end{DoxyCompactList}\item 
+void \hyperlink{classeos_1_1MarkovChain_a4e54cc6e32c7bb258804b76988ab7f0b}{reset} (bool hard=false)
+\item 
+void \hyperlink{classeos_1_1MarkovChain_abc73ca1b9fc5bdafba43c799e75192c8}{run} (const unsigned \&iterations)
+\item 
+void \hyperlink{classeos_1_1MarkovChain_a24a9d7e2f6f930594dd7140acd6180bb}{set\_\-mode} (\hyperlink{classeos_1_1hdf5_1_1File}{hdf5::File} \&file, const std::string \&data\_\-base\_\-name, const std::vector$<$ double $>$ \&point, const double \&posterior)
+\item 
+void \hyperlink{classeos_1_1MarkovChain_a84d4342221f7f6a826d0a9a2480165c4}{set\_\-point} (const std::vector$<$ double $>$ \&point, const \hyperlink{structeos_1_1MarkovChain_1_1HyperParameter}{MarkovChain::HyperParameter} \&hyper\_\-parameter)
+\item 
+const \hyperlink{structeos_1_1MarkovChain_1_1Stats}{Stats} \& \hyperlink{classeos_1_1MarkovChain_af48c29cabc958e061f699e595ffa3294}{statistics} () const 
+\begin{DoxyCompactList}\small\item\em Retrieve statistical data that summarizes the evolution of the chain up to the current point. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}{\bf Basic Functions}\par
+{\em \label{_amgrp2386c9a1f1785edee33f374dd2db9b3d}
+ }\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1MarkovChain_a47726a7176a818738c426b532e88ba94}{MarkovChain} (const \hyperlink{classeos_1_1Analysis}{Analysis} \&analysis, unsigned long seed, const std::shared\_\-ptr$<$ \hyperlink{structeos_1_1MarkovChain_1_1ProposalFunction}{MarkovChain::ProposalFunction} $>$ \&proposal\_\-function)
+\item 
+\hyperlink{classeos_1_1MarkovChain_afc27e695a24e780cd1af87e454588f31}{$\sim$MarkovChain} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classeos_1_1MarkovChain_a9d67db1a7839b07dc43a847b6383e619}{read\_\-data} (\hyperlink{classeos_1_1hdf5_1_1File}{hdf5::File} \&file, const std::string \&data\_\-base\_\-name, \hyperlink{structeos_1_1MarkovChain_1_1History}{MarkovChain::History} \&history, std::shared\_\-ptr$<$ \hyperlink{structeos_1_1MarkovChain_1_1ProposalFunction}{MarkovChain::ProposalFunction} $>$ \&proposal, std::string \&proposal\_\-type, \hyperlink{structeos_1_1MarkovChain_1_1Stats}{MarkovChain::Stats} \&stats)
+\item 
+static void \hyperlink{classeos_1_1MarkovChain_acbcd604ef986e97891f0e358e045c117}{read\_\-descriptions} (\hyperlink{classeos_1_1hdf5_1_1File}{hdf5::File} \&file, const std::string \&data\_\-base\_\-name, std::vector$<$ \hyperlink{structeos_1_1ParameterDescription}{ParameterDescription} $>$ \&descriptions, std::vector$<$ std::string $>$ \&priors, std::vector$<$ std::string $>$ \&constraints, std::string \&hash)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classeos_1_1MarkovChain_a47726a7176a818738c426b532e88ba94}{
+\index{eos::MarkovChain@{eos::MarkovChain}!MarkovChain@{MarkovChain}}
+\index{MarkovChain@{MarkovChain}!eos::MarkovChain@{eos::MarkovChain}}
+\subsubsection[{MarkovChain}]{\setlength{\rightskip}{0pt plus 5cm}eos::MarkovChain::MarkovChain (const {\bf Analysis} \& {\em analysis}, \/  unsigned long {\em seed}, \/  const std::shared\_\-ptr$<$ {\bf MarkovChain::ProposalFunction} $>$ \& {\em proposal\_\-function})}}
+\label{classeos_1_1MarkovChain_a47726a7176a818738c426b532e88ba94}
+Constructor
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em analysis}]The analysis for which we run. \item[{\em seed}]The initial seed for the RNG. \end{DoxyParams}
+\hypertarget{classeos_1_1MarkovChain_afc27e695a24e780cd1af87e454588f31}{
+\index{eos::MarkovChain@{eos::MarkovChain}!$\sim$MarkovChain@{$\sim$MarkovChain}}
+\index{$\sim$MarkovChain@{$\sim$MarkovChain}!eos::MarkovChain@{eos::MarkovChain}}
+\subsubsection[{$\sim$MarkovChain}]{\setlength{\rightskip}{0pt plus 5cm}eos::MarkovChain::$\sim$MarkovChain ()}}
+\label{classeos_1_1MarkovChain_afc27e695a24e780cd1af87e454588f31}
+
+
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classeos_1_1MarkovChain_af4eb1b21be84a13ae5f421fe49ed9373}{
+\index{eos::MarkovChain@{eos::MarkovChain}!clear@{clear}}
+\index{clear@{clear}!eos::MarkovChain@{eos::MarkovChain}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}void eos::MarkovChain::clear ()}}
+\label{classeos_1_1MarkovChain_af4eb1b21be84a13ae5f421fe49ed9373}
+
+
+Remove existing history of this chain. \hypertarget{classeos_1_1MarkovChain_a4ba66e0d64dade9f392d2542a7c566f4}{
+\index{eos::MarkovChain@{eos::MarkovChain}!current\_\-state@{current\_\-state}}
+\index{current\_\-state@{current\_\-state}!eos::MarkovChain@{eos::MarkovChain}}
+\subsubsection[{current\_\-state}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf State}\& eos::MarkovChain::current\_\-state () const}}
+\label{classeos_1_1MarkovChain_a4ba66e0d64dade9f392d2542a7c566f4}
+
+
+Retrieve information regarding the current state. \hypertarget{classeos_1_1MarkovChain_af528eb210dd7052ceeb9455cb588cdd4}{
+\index{eos::MarkovChain@{eos::MarkovChain}!dump\_\-description@{dump\_\-description}}
+\index{dump\_\-description@{dump\_\-description}!eos::MarkovChain@{eos::MarkovChain}}
+\subsubsection[{dump\_\-description}]{\setlength{\rightskip}{0pt plus 5cm}void eos::MarkovChain::dump\_\-description ({\bf hdf5::File} \& {\em file}, \/  const std::string \& {\em data\_\-set}) const}}
+\label{classeos_1_1MarkovChain_af528eb210dd7052ceeb9455cb588cdd4}
+\hypertarget{classeos_1_1MarkovChain_aa7fc24a3066077ab60de68a5a3f8ebe5}{
+\index{eos::MarkovChain@{eos::MarkovChain}!dump\_\-history@{dump\_\-history}}
+\index{dump\_\-history@{dump\_\-history}!eos::MarkovChain@{eos::MarkovChain}}
+\subsubsection[{dump\_\-history}]{\setlength{\rightskip}{0pt plus 5cm}void eos::MarkovChain::dump\_\-history ({\bf hdf5::File} \& {\em file}, \/  const std::string \& {\em data\_\-set\_\-name}, \/  const unsigned \& {\em last\_\-iterations}) const}}
+\label{classeos_1_1MarkovChain_aa7fc24a3066077ab60de68a5a3f8ebe5}
+Dump a part of the most recent history in the HDF5 file under the given group name.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em file}]\item[{\em data\_\-set\_\-name}]All output is stored below this directory. \item[{\em last\_\-iterations}]Dump only this many iterations. \end{DoxyParams}
+\hypertarget{classeos_1_1MarkovChain_a89a777f8c14787db1e803995ee77d862}{
+\index{eos::MarkovChain@{eos::MarkovChain}!dump\_\-proposal@{dump\_\-proposal}}
+\index{dump\_\-proposal@{dump\_\-proposal}!eos::MarkovChain@{eos::MarkovChain}}
+\subsubsection[{dump\_\-proposal}]{\setlength{\rightskip}{0pt plus 5cm}void eos::MarkovChain::dump\_\-proposal ({\bf hdf5::File} \& {\em file}, \/  const std::string \& {\em data\_\-set\_\-name}) const}}
+\label{classeos_1_1MarkovChain_a89a777f8c14787db1e803995ee77d862}
+\hypertarget{classeos_1_1MarkovChain_ae1ef51057e7a205fbc9d04a5e913fb06}{
+\index{eos::MarkovChain@{eos::MarkovChain}!history@{history}}
+\index{history@{history}!eos::MarkovChain@{eos::MarkovChain}}
+\subsubsection[{history}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf History}\& eos::MarkovChain::history () const}}
+\label{classeos_1_1MarkovChain_ae1ef51057e7a205fbc9d04a5e913fb06}
+
+
+Retrieve the chain's detailed history. \hypertarget{classeos_1_1MarkovChain_aa3055684326d68700ebeb994b878d8db}{
+\index{eos::MarkovChain@{eos::MarkovChain}!hyper\_\-parameter@{hyper\_\-parameter}}
+\index{hyper\_\-parameter@{hyper\_\-parameter}!eos::MarkovChain@{eos::MarkovChain}}
+\subsubsection[{hyper\_\-parameter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MarkovChain::HyperParameter}\& eos::MarkovChain::hyper\_\-parameter (bool {\em current} = {\ttfamily true}) const}}
+\label{classeos_1_1MarkovChain_aa3055684326d68700ebeb994b878d8db}
+\hypertarget{classeos_1_1MarkovChain_a3a9c62e634a375bffbb3fba0b7794b69}{
+\index{eos::MarkovChain@{eos::MarkovChain}!iterations\_\-last\_\-run@{iterations\_\-last\_\-run}}
+\index{iterations\_\-last\_\-run@{iterations\_\-last\_\-run}!eos::MarkovChain@{eos::MarkovChain}}
+\subsubsection[{iterations\_\-last\_\-run}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned\& eos::MarkovChain::iterations\_\-last\_\-run () const}}
+\label{classeos_1_1MarkovChain_a3a9c62e634a375bffbb3fba0b7794b69}
+
+
+Retrieve the number of iterations used in the last run. \hypertarget{classeos_1_1MarkovChain_a8aa1b0fac7040d32e42a8b2a8a508743}{
+\index{eos::MarkovChain@{eos::MarkovChain}!keep\_\-history@{keep\_\-history}}
+\index{keep\_\-history@{keep\_\-history}!eos::MarkovChain@{eos::MarkovChain}}
+\subsubsection[{keep\_\-history}]{\setlength{\rightskip}{0pt plus 5cm}void eos::MarkovChain::keep\_\-history (bool {\em keep\_\-samples}, \/  bool {\em keep\_\-observables\_\-and\_\-proposals} = {\ttfamily false})}}
+\label{classeos_1_1MarkovChain_a8aa1b0fac7040d32e42a8b2a8a508743}
+Set whether the chain stores samples in runs to come.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em keep\_\-samples}]If true, the history of the runs to come will be kept. \item[{\em keep\_\-observables\_\-and\_\-proposals}]For debugging purposes, store the proposed points and the observable values. \end{DoxyParams}
+\hypertarget{classeos_1_1MarkovChain_a0424b9803e0a479c88f76713455662fa}{
+\index{eos::MarkovChain@{eos::MarkovChain}!normalized\_\-density@{normalized\_\-density}}
+\index{normalized\_\-density@{normalized\_\-density}!eos::MarkovChain@{eos::MarkovChain}}
+\subsubsection[{normalized\_\-density}]{\setlength{\rightskip}{0pt plus 5cm}void eos::MarkovChain::normalized\_\-density (std::tuple$<$ double, double $>$ \& {\em result}, \/  const std::vector$<$ double $>$ \& {\em point}, \/  const unsigned \& {\em posterior\_\-evaluations}) const}}
+\label{classeos_1_1MarkovChain_a0424b9803e0a479c88f76713455662fa}
+Compute estimate of normalized posterior density of this chain according to method described in Chib, Jeliazkov (2001), Eq. (9) 
+\begin{DoxyParams}{Parameters}
+\item[{\em $<$numerator,denominator$>$}]of \mbox{[}CJ2001\mbox{]}, Eq. (9) \item[{\em point}]where density is sought \item[{\em posterior\_\-evaluations}]the number of additional posterior evaluations needed to estimate the normalized posterior density, see denominator of \mbox{[}CJ2001\mbox{]}, Eq. (9) \end{DoxyParams}
+\hypertarget{classeos_1_1MarkovChain_affcf4c3c4284fd0fae634c5cf1a97fa2}{
+\index{eos::MarkovChain@{eos::MarkovChain}!parameter\_\-descriptions@{parameter\_\-descriptions}}
+\index{parameter\_\-descriptions@{parameter\_\-descriptions}!eos::MarkovChain@{eos::MarkovChain}}
+\subsubsection[{parameter\_\-descriptions}]{\setlength{\rightskip}{0pt plus 5cm}const std::vector$<${\bf ParameterDescription}$>$\& eos::MarkovChain::parameter\_\-descriptions () const}}
+\label{classeos_1_1MarkovChain_affcf4c3c4284fd0fae634c5cf1a97fa2}
+
+
+Retrieve the descriptions of all parameters that are explored by this chain. \hypertarget{classeos_1_1MarkovChain_a42c06afd1034be43e44bcbb24a15c808}{
+\index{eos::MarkovChain@{eos::MarkovChain}!proposal\_\-accepted@{proposal\_\-accepted}}
+\index{proposal\_\-accepted@{proposal\_\-accepted}!eos::MarkovChain@{eos::MarkovChain}}
+\subsubsection[{proposal\_\-accepted}]{\setlength{\rightskip}{0pt plus 5cm}bool eos::MarkovChain::proposal\_\-accepted () const}}
+\label{classeos_1_1MarkovChain_a42c06afd1034be43e44bcbb24a15c808}
+
+
+Check whether the most recently proposed move was accepted. \hypertarget{classeos_1_1MarkovChain_a7fcacec6a56edd50b12efb67dcea432f}{
+\index{eos::MarkovChain@{eos::MarkovChain}!proposal\_\-function@{proposal\_\-function}}
+\index{proposal\_\-function@{proposal\_\-function}!eos::MarkovChain@{eos::MarkovChain}}
+\subsubsection[{proposal\_\-function}]{\setlength{\rightskip}{0pt plus 5cm}void eos::MarkovChain::proposal\_\-function (const std::shared\_\-ptr$<$ {\bf MarkovChain::ProposalFunction} $>$ \&)}}
+\label{classeos_1_1MarkovChain_a7fcacec6a56edd50b12efb67dcea432f}
+
+
+Set the proposal function. \hypertarget{classeos_1_1MarkovChain_acfde2f6063a9ad8f6a4dabb548997b4d}{
+\index{eos::MarkovChain@{eos::MarkovChain}!proposal\_\-function@{proposal\_\-function}}
+\index{proposal\_\-function@{proposal\_\-function}!eos::MarkovChain@{eos::MarkovChain}}
+\subsubsection[{proposal\_\-function}]{\setlength{\rightskip}{0pt plus 5cm}std::shared\_\-ptr$<${\bf MarkovChain::ProposalFunction}$>$ eos::MarkovChain::proposal\_\-function () const}}
+\label{classeos_1_1MarkovChain_acfde2f6063a9ad8f6a4dabb548997b4d}
+
+
+Access to the proposal function. \hypertarget{classeos_1_1MarkovChain_a094a7852f4983a3c26e6a062b66f2547}{
+\index{eos::MarkovChain@{eos::MarkovChain}!proposed\_\-state@{proposed\_\-state}}
+\index{proposed\_\-state@{proposed\_\-state}!eos::MarkovChain@{eos::MarkovChain}}
+\subsubsection[{proposed\_\-state}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf State}\& eos::MarkovChain::proposed\_\-state () const}}
+\label{classeos_1_1MarkovChain_a094a7852f4983a3c26e6a062b66f2547}
+
+
+Retrieve information regarding the most recently proposed state. \hypertarget{classeos_1_1MarkovChain_a9d67db1a7839b07dc43a847b6383e619}{
+\index{eos::MarkovChain@{eos::MarkovChain}!read\_\-data@{read\_\-data}}
+\index{read\_\-data@{read\_\-data}!eos::MarkovChain@{eos::MarkovChain}}
+\subsubsection[{read\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}static void eos::MarkovChain::read\_\-data ({\bf hdf5::File} \& {\em file}, \/  const std::string \& {\em data\_\-base\_\-name}, \/  {\bf MarkovChain::History} \& {\em history}, \/  std::shared\_\-ptr$<$ {\bf MarkovChain::ProposalFunction} $>$ \& {\em proposal}, \/  std::string \& {\em proposal\_\-type}, \/  {\bf MarkovChain::Stats} \& {\em stats})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1MarkovChain_a9d67db1a7839b07dc43a847b6383e619}
+Read part of the output of a chain's prerun from \hyperlink{namespaceeos_1_1hdf5}{hdf5} file.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em file}]\item[{\em data\_\-base\_\-name}]The directory in the file under which the data is parsed. \item[{\em history}]The parsed chain's history is returned by reference, assumed to be empty initially. \item[{\em proposal}]The local proposal density is recreated and returned by reference. \item[{\em proposal\_\-type}]The type of the local proposal function used. \item[{\em stats}]Only the mode of the posterior is restored and returned by reference. \end{DoxyParams}
+\hypertarget{classeos_1_1MarkovChain_acbcd604ef986e97891f0e358e045c117}{
+\index{eos::MarkovChain@{eos::MarkovChain}!read\_\-descriptions@{read\_\-descriptions}}
+\index{read\_\-descriptions@{read\_\-descriptions}!eos::MarkovChain@{eos::MarkovChain}}
+\subsubsection[{read\_\-descriptions}]{\setlength{\rightskip}{0pt plus 5cm}static void eos::MarkovChain::read\_\-descriptions ({\bf hdf5::File} \& {\em file}, \/  const std::string \& {\em data\_\-base\_\-name}, \/  std::vector$<$ {\bf ParameterDescription} $>$ \& {\em descriptions}, \/  std::vector$<$ std::string $>$ \& {\em priors}, \/  std::vector$<$ std::string $>$ \& {\em constraints}, \/  std::string \& {\em hash})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1MarkovChain_acbcd604ef986e97891f0e358e045c117}
+Read the description part of chain's prerun from \hyperlink{namespaceeos_1_1hdf5}{hdf5} file.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em file}]\item[{\em data\_\-base\_\-name}]The directory in the file under which the data is parsed. \item[{\em descriptions}]All parameter ranges etc. Beware, the association to the underlying \hyperlink{classeos_1_1Parameters}{Parameters} object is independent. \item[{\em priors}]The string representation of a prior distribution. \item[{\em constraints}]The string representation of an individual constraint. \item[{\em hash}]The EOS version used to create the file. \end{DoxyParams}
+\hypertarget{classeos_1_1MarkovChain_a4e54cc6e32c7bb258804b76988ab7f0b}{
+\index{eos::MarkovChain@{eos::MarkovChain}!reset@{reset}}
+\index{reset@{reset}!eos::MarkovChain@{eos::MarkovChain}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}void eos::MarkovChain::reset (bool {\em hard} = {\ttfamily false})}}
+\label{classeos_1_1MarkovChain_a4e54cc6e32c7bb258804b76988ab7f0b}
+Clear all statistics and counter.
+
+Do not change current position nor scale. 
+\begin{DoxyParams}{Parameters}
+\item[{\em hard}]If true, rease all statistics (use to clear prerun data before main run) \end{DoxyParams}
+\hypertarget{classeos_1_1MarkovChain_abc73ca1b9fc5bdafba43c799e75192c8}{
+\index{eos::MarkovChain@{eos::MarkovChain}!run@{run}}
+\index{run@{run}!eos::MarkovChain@{eos::MarkovChain}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void eos::MarkovChain::run (const unsigned \& {\em iterations})}}
+\label{classeos_1_1MarkovChain_abc73ca1b9fc5bdafba43c799e75192c8}
+Perform a number of iterations.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em iterations}]The number of iterations that shall be performed. \end{DoxyParams}
+\hypertarget{classeos_1_1MarkovChain_a808902afe1f1c7def764c4c492e29f1d}{
+\index{eos::MarkovChain@{eos::MarkovChain}!set\_\-analysis@{set\_\-analysis}}
+\index{set\_\-analysis@{set\_\-analysis}!eos::MarkovChain@{eos::MarkovChain}}
+\subsubsection[{set\_\-analysis}]{\setlength{\rightskip}{0pt plus 5cm}void eos::MarkovChain::set\_\-analysis (const {\bf Analysis} \& {\em analysis})}}
+\label{classeos_1_1MarkovChain_a808902afe1f1c7def764c4c492e29f1d}
+
+
+Set analysis. \hypertarget{classeos_1_1MarkovChain_a24a9d7e2f6f930594dd7140acd6180bb}{
+\index{eos::MarkovChain@{eos::MarkovChain}!set\_\-mode@{set\_\-mode}}
+\index{set\_\-mode@{set\_\-mode}!eos::MarkovChain@{eos::MarkovChain}}
+\subsubsection[{set\_\-mode}]{\setlength{\rightskip}{0pt plus 5cm}void eos::MarkovChain::set\_\-mode ({\bf hdf5::File} \& {\em file}, \/  const std::string \& {\em data\_\-base\_\-name}, \/  const std::vector$<$ double $>$ \& {\em point}, \/  const double \& {\em posterior})}}
+\label{classeos_1_1MarkovChain_a24a9d7e2f6f930594dd7140acd6180bb}
+Set the stats at mode to a point found outside of the chain. Triggers writing to the HDF5 file as another row in the stats section.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em point}]\item[{\em posterior}]\end{DoxyParams}
+\hypertarget{classeos_1_1MarkovChain_a84d4342221f7f6a826d0a9a2480165c4}{
+\index{eos::MarkovChain@{eos::MarkovChain}!set\_\-point@{set\_\-point}}
+\index{set\_\-point@{set\_\-point}!eos::MarkovChain@{eos::MarkovChain}}
+\subsubsection[{set\_\-point}]{\setlength{\rightskip}{0pt plus 5cm}void eos::MarkovChain::set\_\-point (const std::vector$<$ double $>$ \& {\em point}, \/  const {\bf MarkovChain::HyperParameter} \& {\em hyper\_\-parameter})}}
+\label{classeos_1_1MarkovChain_a84d4342221f7f6a826d0a9a2480165c4}
+Set the chain to continue its walk from the given point.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em point}]The point in parameter space. \end{DoxyParams}
+\hypertarget{classeos_1_1MarkovChain_af48c29cabc958e061f699e595ffa3294}{
+\index{eos::MarkovChain@{eos::MarkovChain}!statistics@{statistics}}
+\index{statistics@{statistics}!eos::MarkovChain@{eos::MarkovChain}}
+\subsubsection[{statistics}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Stats}\& eos::MarkovChain::statistics () const}}
+\label{classeos_1_1MarkovChain_af48c29cabc958e061f699e595ffa3294}
+
+
+Retrieve statistical data that summarizes the evolution of the chain up to the current point. 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{markov__chain_8hh}{markov\_\-chain.hh}\end{DoxyCompactItemize}

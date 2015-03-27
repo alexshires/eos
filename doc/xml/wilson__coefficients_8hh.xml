@@ -1,0 +1,303 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="wilson__coefficients_8hh" kind="file">
+    <compoundname>wilson_coefficients.hh</compoundname>
+    <includes refid="complex_8hh" local="no">eos/utils/complex.hh</includes>
+    <includes refid="parameters_8hh" local="no">eos/utils/parameters.hh</includes>
+    <includes refid="qcd_8hh" local="no">eos/utils/qcd.hh</includes>
+    <includes local="no">array</includes>
+    <includes local="no">cmath</includes>
+    <includedby refid="model_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/model.hh</includedby>
+    <incdepgraph>
+      <node id="1800">
+        <label>functional</label>
+      </node>
+      <node id="1795">
+        <label>eos/utils/parameters-fwd.hh</label>
+        <link refid="parameters-fwd_8hh"/>
+      </node>
+      <node id="1801">
+        <label>iterator</label>
+      </node>
+      <node id="1797">
+        <label>cstdint</label>
+      </node>
+      <node id="1785">
+        <label>eos/utils/complex.hh</label>
+        <link refid="complex_8hh"/>
+        <childnode refid="1786" relation="include">
+        </childnode>
+      </node>
+      <node id="1806">
+        <label>cmath</label>
+      </node>
+      <node id="1790">
+        <label>string</label>
+      </node>
+      <node id="1793">
+        <label>eos/utils/private_implementation_pattern.hh</label>
+        <link refid="private__implementation__pattern_8hh"/>
+        <childnode refid="1794" relation="include">
+        </childnode>
+      </node>
+      <node id="1799">
+        <label>eos/utils/wrapped_forward_iterator-fwd.hh</label>
+        <link refid="wrapped__forward__iterator-fwd_8hh"/>
+      </node>
+      <node id="1789">
+        <label>exception</label>
+      </node>
+      <node id="1791">
+        <label>eos/utils/mutable.hh</label>
+        <link refid="mutable_8hh"/>
+        <childnode refid="1792" relation="include">
+        </childnode>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1794" relation="include">
+        </childnode>
+      </node>
+      <node id="1804">
+        <label>eos/utils/qcd.hh</label>
+        <link refid="qcd_8hh"/>
+        <childnode refid="1805" relation="include">
+        </childnode>
+      </node>
+      <node id="1805">
+        <label>array</label>
+      </node>
+      <node id="1796">
+        <label>eos/utils/random_number_generator.hh</label>
+        <link refid="random__number__generator_8hh"/>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1797" relation="include">
+        </childnode>
+      </node>
+      <node id="1788">
+        <label>eos/utils/exception.hh</label>
+        <link refid="exception_8hh"/>
+        <childnode refid="1789" relation="include">
+        </childnode>
+        <childnode refid="1790" relation="include">
+        </childnode>
+      </node>
+      <node id="1798">
+        <label>eos/utils/wrapped_forward_iterator.hh</label>
+        <link refid="wrapped__forward__iterator_8hh"/>
+        <childnode refid="1799" relation="include">
+        </childnode>
+        <childnode refid="1800" relation="include">
+        </childnode>
+        <childnode refid="1801" relation="include">
+        </childnode>
+        <childnode refid="1802" relation="include">
+        </childnode>
+      </node>
+      <node id="1784">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh</label>
+        <link refid="wilson_coefficients.hh"/>
+        <childnode refid="1785" relation="include">
+        </childnode>
+        <childnode refid="1787" relation="include">
+        </childnode>
+        <childnode refid="1804" relation="include">
+        </childnode>
+        <childnode refid="1805" relation="include">
+        </childnode>
+        <childnode refid="1806" relation="include">
+        </childnode>
+      </node>
+      <node id="1802">
+        <label>type_traits</label>
+      </node>
+      <node id="1803">
+        <label>set</label>
+      </node>
+      <node id="1786">
+        <label>complex</label>
+      </node>
+      <node id="1792">
+        <label>eos/utils/mutable-fwd.hh</label>
+        <link refid="mutable-fwd_8hh"/>
+      </node>
+      <node id="1787">
+        <label>eos/utils/parameters.hh</label>
+        <link refid="parameters_8hh"/>
+        <childnode refid="1788" relation="include">
+        </childnode>
+        <childnode refid="1791" relation="include">
+        </childnode>
+        <childnode refid="1795" relation="include">
+        </childnode>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1796" relation="include">
+        </childnode>
+        <childnode refid="1798" relation="include">
+        </childnode>
+        <childnode refid="1803" relation="include">
+        </childnode>
+      </node>
+      <node id="1794">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1811">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/standard-model.hh</label>
+        <link refid="standard-model_8hh"/>
+        <childnode refid="1810" relation="include">
+        </childnode>
+        <childnode refid="1812" relation="include">
+        </childnode>
+      </node>
+      <node id="1812">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh</label>
+        <link refid="wilson__scan__model_8hh"/>
+      </node>
+      <node id="1809">
+        <label>/home/alexshires/EOS/eos-next/eos/rare-b-decays/charm-loops.hh</label>
+        <link refid="charm-loops_8hh"/>
+      </node>
+      <node id="1808">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/model.hh</label>
+        <link refid="model_8hh"/>
+        <childnode refid="1809" relation="include">
+        </childnode>
+        <childnode refid="1810" relation="include">
+        </childnode>
+        <childnode refid="1811" relation="include">
+        </childnode>
+        <childnode refid="1812" relation="include">
+        </childnode>
+      </node>
+      <node id="1810">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/ckm_scan_model.hh</label>
+        <link refid="ckm__scan__model_8hh"/>
+      </node>
+      <node id="1807">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh</label>
+        <link refid="wilson_coefficients.hh"/>
+        <childnode refid="1808" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structeos_1_1BToS" prot="public">eos::BToS</innerclass>
+    <innerclass refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4" prot="public">eos::WilsonCoefficients&lt; BToS &gt;</innerclass>
+    <innernamespace refid="namespaceeos">eos</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wilson__coefficients_8hh_1a89af6a6c983929d07b250c7b823741b8" prot="public" static="no">
+        <name>EOS_GUARD_SRC_UTILS_WILSON_COEFFICIENTS_HH</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" line="23" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>vim:<sp/>set<sp/>sw=4<sp/>sts=4<sp/>et<sp/>foldmethod=syntax<sp/>:<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010,<sp/>2011,<sp/>2013<sp/>Danny<sp/>van<sp/>Dyk</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2014<sp/>Frederik<sp/>Beaujean</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2014<sp/>Christoph<sp/>Bobeth</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>EOS<sp/>project.<sp/>EOS<sp/>is<sp/>free<sp/>software;</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>Public<sp/>License<sp/>version<sp/>2,<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>EOS<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/>but<sp/>WITHOUT<sp/>ANY</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>details.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>along<sp/>with</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/>59<sp/>Temple</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>Place,<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307<sp/><sp/>USA</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>EOS_GUARD_SRC_UTILS_WILSON_COEFFICIENTS_HH</highlight></codeline>
+<codeline lineno="23" refid="wilson__coefficients_8hh_1a89af6a6c983929d07b250c7b823741b8" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EOS_GUARD_SRC_UTILS_WILSON_COEFFICIENTS_HH<sp/>1</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="complex_8hh" kindref="compound">eos/utils/complex.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="parameters_8hh" kindref="compound">eos/utils/parameters.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="qcd_8hh" kindref="compound">eos/utils/qcd.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;array&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">eos</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Tag_&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">WilsonCoefficients;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="structeos_1_1BToS" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structeos_1_1BToS" kindref="compound">BToS</ref><sp/>{};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">WilsonCoefficients&lt;<ref refid="structeos_1_1BToS" kindref="compound">BToS</ref>&gt;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Order:<sp/>c1..c6,<sp/>cq3..cq6,<sp/>c2b,<sp/>c7..c10<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1ad55e5edfe673a97fe71981a429cb7152" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::array&lt;complex&lt;double&gt;,<sp/>15&gt;<sp/>_sm_like_coefficients;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Same<sp/>order<sp/>as<sp/>above,<sp/>with<sp/>helicity<sp/>flip<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a4c2aa2cde65c6c77df70e6fa87736ac7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::array&lt;complex&lt;double&gt;,<sp/>15&gt;<sp/>_primed_coefficients;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Scalar,<sp/>pseudoscalar,<sp/>and<sp/>tensor<sp/>coefficients<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1ac890d2d52439b631a8eaee283825dcc3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::array&lt;complex&lt;double&gt;,<sp/>6&gt;<sp/>_scalar_tensor_coefficients;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1ad988c930213682048f50ec4fa3390cc8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>_alpha_s;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WilsonCoefficients();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Misiak<sp/>basis,<sp/>cf.<sp/>[BMU1999],<sp/>Eq.<sp/>(2),<sp/>p.<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a17759f6b63cf172d7d7f07dbbb78e3f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>complex&lt;double&gt;<sp/><ref refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a17759f6b63cf172d7d7f07dbbb78e3f9" kindref="member">c1</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_sm_like_coefficients[0];<sp/>}</highlight></codeline>
+<codeline lineno="56" refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1afcb665ee21ae1be28cec84c0a3781132" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>complex&lt;double&gt;<sp/><ref refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1afcb665ee21ae1be28cec84c0a3781132" kindref="member">c2</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_sm_like_coefficients[1];<sp/>}</highlight></codeline>
+<codeline lineno="57" refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a5f36442158531e3f364f0f3cf2cadfe2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>complex&lt;double&gt;<sp/><ref refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a5f36442158531e3f364f0f3cf2cadfe2" kindref="member">c3</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_sm_like_coefficients[2];<sp/>}</highlight></codeline>
+<codeline lineno="58" refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a427b2d73d89283266b163cfe4c42b086" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>complex&lt;double&gt;<sp/><ref refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a427b2d73d89283266b163cfe4c42b086" kindref="member">c4</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_sm_like_coefficients[3];<sp/>}</highlight></codeline>
+<codeline lineno="59" refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1ad68ee72fdb415820d0ff3f042a8d9e14" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>complex&lt;double&gt;<sp/><ref refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1ad68ee72fdb415820d0ff3f042a8d9e14" kindref="member">c5</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_sm_like_coefficients[4];<sp/>}</highlight></codeline>
+<codeline lineno="60" refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a552e58e087a6b5c4a0cec7d30486154e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>complex&lt;double&gt;<sp/><ref refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a552e58e087a6b5c4a0cec7d30486154e" kindref="member">c6</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_sm_like_coefficients[5];<sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1aac9632c45e186951fe0459cb315dee0e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>complex&lt;double&gt;<sp/><ref refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1aac9632c45e186951fe0459cb315dee0e" kindref="member">cq3</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_sm_like_coefficients[6];<sp/>}</highlight></codeline>
+<codeline lineno="63" refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a4e0045b6ae96dd094b9e21450fcebce2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>complex&lt;double&gt;<sp/><ref refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a4e0045b6ae96dd094b9e21450fcebce2" kindref="member">cq4</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_sm_like_coefficients[7];<sp/>}</highlight></codeline>
+<codeline lineno="64" refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a73655ba58242bc15ecc8f097ec9abadd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>complex&lt;double&gt;<sp/><ref refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a73655ba58242bc15ecc8f097ec9abadd" kindref="member">cq5</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_sm_like_coefficients[8];<sp/>}</highlight></codeline>
+<codeline lineno="65" refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a454eb97a2a032d55a656e0103d4cffa7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>complex&lt;double&gt;<sp/><ref refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a454eb97a2a032d55a656e0103d4cffa7" kindref="member">cq6</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_sm_like_coefficients[9];<sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a8bfd88e1ee202d67cf6ad3e22fd0e311" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>complex&lt;double&gt;<sp/><ref refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a8bfd88e1ee202d67cf6ad3e22fd0e311" kindref="member">c2b</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_sm_like_coefficients[10];<sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1aabbbd9922af280cfef8cf7a243e1c02e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>complex&lt;double&gt;<sp/><ref refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1aabbbd9922af280cfef8cf7a243e1c02e" kindref="member">c7</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>4.0<sp/>*<sp/>M_PI<sp/>/<sp/>_alpha_s<sp/>*<sp/>_sm_like_coefficients[11];<sp/>}</highlight></codeline>
+<codeline lineno="70" refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1ad1700818a303de24c0d9aba06b9428db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>complex&lt;double&gt;<sp/><ref refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1ad1700818a303de24c0d9aba06b9428db" kindref="member">c8</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>4.0<sp/>*<sp/>M_PI<sp/>/<sp/>_alpha_s<sp/>*<sp/>_sm_like_coefficients[12];<sp/>}</highlight></codeline>
+<codeline lineno="71" refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1abd2db158ab9926a0f7be9f29ef16663f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>complex&lt;double&gt;<sp/><ref refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1abd2db158ab9926a0f7be9f29ef16663f" kindref="member">c9</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>4.0<sp/>*<sp/>M_PI<sp/>/<sp/>_alpha_s<sp/>*<sp/>_sm_like_coefficients[13];<sp/>}</highlight></codeline>
+<codeline lineno="72" refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a5a8db4cc5c486d0a77b968f1456446e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>complex&lt;double&gt;<sp/><ref refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a5a8db4cc5c486d0a77b968f1456446e3" kindref="member">c10</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>4.0<sp/>*<sp/>M_PI<sp/>/<sp/>_alpha_s<sp/>*<sp/>_sm_like_coefficients[14];<sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a40dafdcff20076a5cf44d529ac664f09" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>complex&lt;double&gt;<sp/><ref refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a40dafdcff20076a5cf44d529ac664f09" kindref="member">c7prime</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>4.0<sp/>*<sp/>M_PI<sp/>/<sp/>_alpha_s<sp/>*<sp/>_primed_coefficients[11];<sp/>}</highlight></codeline>
+<codeline lineno="75" refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1abfc2ac642a0fd10464d843eb7ed8ebab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>complex&lt;double&gt;<sp/><ref refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1abfc2ac642a0fd10464d843eb7ed8ebab" kindref="member">c8prime</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>4.0<sp/>*<sp/>M_PI<sp/>/<sp/>_alpha_s<sp/>*<sp/>_primed_coefficients[12];<sp/>}</highlight></codeline>
+<codeline lineno="76" refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a633c2ff746cf0998286b396d5d6ad864" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>complex&lt;double&gt;<sp/><ref refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a633c2ff746cf0998286b396d5d6ad864" kindref="member">c9prime</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>4.0<sp/>*<sp/>M_PI<sp/>/<sp/>_alpha_s<sp/>*<sp/>_primed_coefficients[13];<sp/>}</highlight></codeline>
+<codeline lineno="77" refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a5afdd05acb7cd08196aa402ed6ccd374" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>complex&lt;double&gt;<sp/><ref refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a5afdd05acb7cd08196aa402ed6ccd374" kindref="member">c10prime</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>4.0<sp/>*<sp/>M_PI<sp/>/<sp/>_alpha_s<sp/>*<sp/>_primed_coefficients[14];<sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1afb6218a0c941a2c158753e8977ceca2a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>complex&lt;double&gt;<sp/><ref refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1afb6218a0c941a2c158753e8977ceca2a" kindref="member">cS</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/>_scalar_tensor_coefficients[0];<sp/>}</highlight></codeline>
+<codeline lineno="80" refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1afee3b55a164362636ff1bdfcea0d869f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>complex&lt;double&gt;<sp/><ref refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1afee3b55a164362636ff1bdfcea0d869f" kindref="member">cSprime</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/>_scalar_tensor_coefficients[1];<sp/>}</highlight></codeline>
+<codeline lineno="81" refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1af5e99da02e53255077cdf53b315c0960" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>complex&lt;double&gt;<sp/><ref refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1af5e99da02e53255077cdf53b315c0960" kindref="member">cP</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/>_scalar_tensor_coefficients[2];<sp/>}</highlight></codeline>
+<codeline lineno="82" refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1ab49d57e926919ae28d0780f8d9df644b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>complex&lt;double&gt;<sp/><ref refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1ab49d57e926919ae28d0780f8d9df644b" kindref="member">cPprime</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/>_scalar_tensor_coefficients[3];<sp/>}</highlight></codeline>
+<codeline lineno="83" refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a36a8fb3dc528761824bcced340aecbae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>complex&lt;double&gt;<sp/><ref refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a36a8fb3dc528761824bcced340aecbae" kindref="member">cT</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/>_scalar_tensor_coefficients[4];<sp/>}</highlight></codeline>
+<codeline lineno="84" refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1af74fd634de725f21735e0ba308c4985d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>complex&lt;double&gt;<sp/><ref refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1af74fd634de725f21735e0ba308c4985d" kindref="member">cT5</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/>_scalar_tensor_coefficients[5];<sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>WilsonCoefficients&lt;BToS&gt;<sp/><ref refid="namespaceeos_1a07bd8aab4adc1e31cfbd795b36f592ee" kindref="member">evolve</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::array&lt;complex&lt;double&gt;,<sp/>15&gt;<sp/>&amp;<sp/>wc_qcd_0,</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::array&lt;complex&lt;double&gt;,<sp/>15&gt;<sp/>&amp;<sp/>wc_qcd_1,</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::array&lt;complex&lt;double&gt;,<sp/>15&gt;<sp/>&amp;<sp/>wc_qcd_2,</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>alpha_s_0,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>alpha_s,</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>nf,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1QCD_1a1261bb4643fea3012beb0a9ea78b7dea" kindref="member" tooltip="The four leading coefficient of the  expansion of the beta function of QCD.">QCD::BetaFunction</ref><sp/>&amp;<sp/>beta);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh"/>
+  </compounddef>
+</doxygen>

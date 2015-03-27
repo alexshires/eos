@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1Diagnostics_1_1Entry" kind="struct" prot="public">
+    <compoundname>eos::Diagnostics::Entry</compoundname>
+    <includes refid="diagnostics_8hh" local="no">diagnostics.hh</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structeos_1_1Diagnostics_1_1Entry_1a979ae5967f4627300e5db3d5db042b26" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::Diagnostics::Entry::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+<para>Numeric value for this entry. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/diagnostics.hh" line="76" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/diagnostics.hh" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1Diagnostics_1_1Entry_1af5b2da237c7151b5c45ca9fe627fbd86" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string eos::Diagnostics::Entry::description</definition>
+        <argsstring></argsstring>
+        <name>description</name>
+        <briefdescription>
+<para>Description for this entry, e.g. a reference to the underlying formula. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/diagnostics.hh" line="79" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/diagnostics.hh" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Data structure representing one entry of several diagnostic evaluations. Used as part of the unit tests. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="372">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="370">
+        <label>eos::Diagnostics::Entry</label>
+        <link refid="structeos_1_1Diagnostics_1_1Entry"/>
+        <childnode refid="371" relation="usage">
+          <edgelabel>description</edgelabel>
+        </childnode>
+      </node>
+      <node id="371">
+        <label>std::string</label>
+        <childnode refid="372" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/diagnostics.hh" line="74" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/diagnostics.hh" bodystart="73" bodyend="80"/>
+    <listofallmembers>
+      <member refid="structeos_1_1Diagnostics_1_1Entry_1af5b2da237c7151b5c45ca9fe627fbd86" prot="public" virt="non-virtual"><scope>eos::Diagnostics::Entry</scope><name>description</name></member>
+      <member refid="structeos_1_1Diagnostics_1_1Entry_1a979ae5967f4627300e5db3d5db042b26" prot="public" virt="non-virtual"><scope>eos::Diagnostics::Entry</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,73 @@
+\hypertarget{ticket_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/ticket.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2008 Danny van Dyk <danny.dyk@uni-dortmund.de>}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS program. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_TICKET\_HH}
+\hypertarget{ticket_8hh_source_l00021}{}\hyperlink{ticket_8hh_ae4a20995d5678bf54abbf81e82f98a95}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_TICKET\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{preprocessor}{#include <\hyperlink{private__implementation__pattern_8hh}{eos/utils/private_implementation_pattern.hh}>}
+00024 
+00025 \textcolor{keyword}{namespace }eos
+00026 \{
+00027     \textcolor{comment}{// Forward declaration for Ticket.}
+00028     \textcolor{keyword}{class }TicketList;
+00029 
+\hypertarget{ticket_8hh_source_l00034}{}\hyperlink{classeos_1_1Ticket}{00034}     \textcolor{keyword}{class }\hyperlink{classeos_1_1Ticket}{Ticket} :
+00035         \textcolor{keyword}{public} \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern}<Ticket>
+00036     \{
+00037         \textcolor{keyword}{public}:
+00040 
+\hypertarget{ticket_8hh_source_l00041}{}\hyperlink{classeos_1_1Ticket_ac0aa77ee461a5d61db873f8c71163cb3}{00041}             \textcolor{keyword}{friend} \textcolor{keyword}{class }\hyperlink{classeos_1_1TicketList}{TicketList};
+00042 
+00044 
+00047 
+00049             \hyperlink{classeos_1_1Ticket_a3d191abdf730fab31d131aeaf3214878}{Ticket}();
+00050 
+00052             \hyperlink{classeos_1_1Ticket_a83323881ce189b387cb1358a2c8c63b0}{~Ticket}();
+00053 
+00055 
+00057             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1Ticket_a32a1041ca14a3a41b3f5ac9ea040b452}{mark}();
+00058 
+00060             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1Ticket_ab3dc3b4e907527f14d54a49269e8174d}{wait}() \textcolor{keyword}{const};
+00061     \};
+00062 
+\hypertarget{ticket_8hh_source_l00066}{}\hyperlink{classeos_1_1TicketList}{00066}     \textcolor{keyword}{class }\hyperlink{classeos_1_1TicketList}{TicketList} :
+00067         \textcolor{keyword}{public} InstantiationPolicy<TicketList, NonCopyable>,
+00068         \textcolor{keyword}{public} \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern}<TicketList>
+00069     \{
+00070         \textcolor{keyword}{public}:
+00073 
+00075             \hyperlink{classeos_1_1TicketList_a7d61cc782f984a4ec8665d3cdfc5489a}{TicketList}();
+00076 
+00078             \hyperlink{classeos_1_1TicketList_a948cabad909856a5d32cd3f90156b4d1}{~TicketList}();
+00079 
+00081 
+00083             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1TicketList_a150d362cc9ab4ffdb821edec64b76abe}{push_back}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Ticket}{Ticket} & ticket);
+00084 
+00086             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1TicketList_ac152da1ea00be93a0c59150f132c6ad3}{wait}() \textcolor{keyword}{const};
+00087     \};
+00088 \}
+00089 
+00090 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

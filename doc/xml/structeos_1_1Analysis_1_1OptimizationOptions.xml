@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1Analysis_1_1OptimizationOptions" kind="struct" prot="public">
+    <compoundname>eos::Analysis::OptimizationOptions</compoundname>
+    <includes refid="analysis_8hh" local="no">analysis.hh</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structeos_1_1Analysis_1_1OptimizationOptions_1a3917de66192096f736ac764b69d9acbc" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string eos::Analysis::OptimizationOptions::algorithm</definition>
+        <argsstring></argsstring>
+        <name>algorithm</name>
+        <briefdescription>
+<para><ref refid="classeos_1_1Options" kindref="compound">Options</ref> are: &quot;migrad&quot;, &quot;minimize&quot;, &quot;scan&quot;, &quot;simplex&quot; from minuit2. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" line="173" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1Analysis_1_1OptimizationOptions_1abd24b29c8e1953f68dde207d8c5c48df" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool eos::Analysis::OptimizationOptions::fix_flat_nuisance</definition>
+        <argsstring></argsstring>
+        <name>fix_flat_nuisance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Keep the value of nuisance parameters with a flat prior fixed at the current value during optimization, to avoid flat directions that cause Migrad to fail. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" line="177" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1Analysis_1_1OptimizationOptions_1a8626041b40a908e5c1443fba86a2586b" prot="public" static="no" mutable="no">
+        <type><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange</ref>&lt; double &gt;</type>
+        <definition>VerifiedRange&lt;double&gt; eos::Analysis::OptimizationOptions::initial_step_size</definition>
+        <argsstring></argsstring>
+        <name>initial_step_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fraction of parameter range, in [0,1]. Useful only for simplex method </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" line="181" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1Analysis_1_1OptimizationOptions_1aa1ec8a9c5e6325a3b090423eb76deda9" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned eos::Analysis::OptimizationOptions::maximum_iterations</definition>
+        <argsstring></argsstring>
+        <name>maximum_iterations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If algorithm doesn&apos;t converge before, quit after maximum_iterations. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" line="185" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1Analysis_1_1OptimizationOptions_1a6ae3c50f21c85e0c94135b4c68259c2e" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool eos::Analysis::OptimizationOptions::mcmc_pre_run</definition>
+        <argsstring></argsstring>
+        <name>mcmc_pre_run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If non-zero, perform MCMC iterations first, before Minuit2 is invoked from the last point of the chain.</para><para><simplesect kind="note"><para>This is only useful when call from <ref refid="classeos_1_1MarkovChainSampler" kindref="compound">MarkovChainSampler</ref>, further control of the chain is taken from the <ref refid="classeos_1_1MarkovChainSampler_1_1Config" kindref="compound">MarkovChainSampler::Config</ref> object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" line="194" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1Analysis_1_1OptimizationOptions_1a99ab6b40de3f1bdd8218dd2028459ffe" prot="public" static="no" mutable="no">
+        <type><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange</ref>&lt; double &gt;</type>
+        <definition>VerifiedRange&lt;double&gt; eos::Analysis::OptimizationOptions::tolerance</definition>
+        <argsstring></argsstring>
+        <name>tolerance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Once the algorithm has shrunk the probe simplex below this size, convergence is declared.</para><para>For minuit, it is just their tolerance parameter </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" line="202" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1Analysis_1_1OptimizationOptions_1a42f80d457baa1e7e325e40696d2d1bbe" prot="public" static="no" mutable="no">
+        <type><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange</ref>&lt; double &gt;</type>
+        <definition>VerifiedRange&lt;double&gt; eos::Analysis::OptimizationOptions::splitting_tolerance</definition>
+        <argsstring></argsstring>
+        <name>splitting_tolerance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>When comparing two modes found by minuit to decide whether they correspond to the same mode, the splitting_tolerance decides how far in relative units their distance may be. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" line="209" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1Analysis_1_1OptimizationOptions_1ad31144d330b6897a432d0a02f1ebe027" prot="public" static="no" mutable="no">
+        <type><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange</ref>&lt; unsigned &gt;</type>
+        <definition>VerifiedRange&lt;unsigned&gt; eos::Analysis::OptimizationOptions::strategy_level</definition>
+        <argsstring></argsstring>
+        <name>strategy_level</name>
+        <briefdescription>
+<para>0 - low, 1 - medium, 2 - high precision </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" line="212" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structeos_1_1Analysis_1_1OptimizationOptions_1a809f9cf0f5d544c7303a631c278c3fa1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structeos_1_1Analysis_1_1OptimizationOptions" kindref="compound">OptimizationOptions</ref></type>
+        <definition>static OptimizationOptions eos::Analysis::OptimizationOptions::Defaults</definition>
+        <argsstring>()</argsstring>
+        <name>Defaults</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" line="214"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="structeos_1_1Analysis_1_1OptimizationOptions_1a5d4f136edd5ef996f5f59935463b8204" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::Analysis::OptimizationOptions::OptimizationOptions</definition>
+        <argsstring>()</argsstring>
+        <name>OptimizationOptions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" line="217"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="770">
+        <label>eos::VerifiedRange&lt; unsigned &gt;</label>
+        <link refid="classeos_1_1VerifiedRange"/>
+      </node>
+      <node id="771">
+        <label>eos::VerifiedRange&lt; double &gt;</label>
+        <link refid="classeos_1_1VerifiedRange"/>
+      </node>
+      <node id="773">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="769">
+        <label>eos::Analysis::OptimizationOptions</label>
+        <link refid="structeos_1_1Analysis_1_1OptimizationOptions"/>
+        <childnode refid="770" relation="usage">
+          <edgelabel>strategy_level</edgelabel>
+        </childnode>
+        <childnode refid="771" relation="usage">
+          <edgelabel>tolerance</edgelabel>
+          <edgelabel>initial_step_size</edgelabel>
+          <edgelabel>splitting_tolerance</edgelabel>
+        </childnode>
+        <childnode refid="772" relation="usage">
+          <edgelabel>algorithm</edgelabel>
+        </childnode>
+      </node>
+      <node id="772">
+        <label>std::string</label>
+        <childnode refid="773" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" line="171" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/analysis.hh" bodystart="170" bodyend="218"/>
+    <listofallmembers>
+      <member refid="structeos_1_1Analysis_1_1OptimizationOptions_1a3917de66192096f736ac764b69d9acbc" prot="public" virt="non-virtual"><scope>eos::Analysis::OptimizationOptions</scope><name>algorithm</name></member>
+      <member refid="structeos_1_1Analysis_1_1OptimizationOptions_1a809f9cf0f5d544c7303a631c278c3fa1" prot="public" virt="non-virtual"><scope>eos::Analysis::OptimizationOptions</scope><name>Defaults</name></member>
+      <member refid="structeos_1_1Analysis_1_1OptimizationOptions_1abd24b29c8e1953f68dde207d8c5c48df" prot="public" virt="non-virtual"><scope>eos::Analysis::OptimizationOptions</scope><name>fix_flat_nuisance</name></member>
+      <member refid="structeos_1_1Analysis_1_1OptimizationOptions_1a8626041b40a908e5c1443fba86a2586b" prot="public" virt="non-virtual"><scope>eos::Analysis::OptimizationOptions</scope><name>initial_step_size</name></member>
+      <member refid="structeos_1_1Analysis_1_1OptimizationOptions_1aa1ec8a9c5e6325a3b090423eb76deda9" prot="public" virt="non-virtual"><scope>eos::Analysis::OptimizationOptions</scope><name>maximum_iterations</name></member>
+      <member refid="structeos_1_1Analysis_1_1OptimizationOptions_1a6ae3c50f21c85e0c94135b4c68259c2e" prot="public" virt="non-virtual"><scope>eos::Analysis::OptimizationOptions</scope><name>mcmc_pre_run</name></member>
+      <member refid="structeos_1_1Analysis_1_1OptimizationOptions_1a5d4f136edd5ef996f5f59935463b8204" prot="private" virt="non-virtual"><scope>eos::Analysis::OptimizationOptions</scope><name>OptimizationOptions</name></member>
+      <member refid="structeos_1_1Analysis_1_1OptimizationOptions_1a42f80d457baa1e7e325e40696d2d1bbe" prot="public" virt="non-virtual"><scope>eos::Analysis::OptimizationOptions</scope><name>splitting_tolerance</name></member>
+      <member refid="structeos_1_1Analysis_1_1OptimizationOptions_1ad31144d330b6897a432d0a02f1ebe027" prot="public" virt="non-virtual"><scope>eos::Analysis::OptimizationOptions</scope><name>strategy_level</name></member>
+      <member refid="structeos_1_1Analysis_1_1OptimizationOptions_1a99ab6b40de3f1bdd8218dd2028459ffe" prot="public" virt="non-virtual"><scope>eos::Analysis::OptimizationOptions</scope><name>tolerance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,97 @@
+\hypertarget{structeos_1_1Analysis_1_1OptimizationOptions}{
+\section{eos::Analysis::OptimizationOptions Struct Reference}
+\label{structeos_1_1Analysis_1_1OptimizationOptions}\index{eos::Analysis::OptimizationOptions@{eos::Analysis::OptimizationOptions}}
+}
+
+
+{\ttfamily \#include $<$analysis.hh$>$}\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{structeos_1_1Analysis_1_1OptimizationOptions}{OptimizationOptions} \hyperlink{structeos_1_1Analysis_1_1OptimizationOptions_a809f9cf0f5d544c7303a631c278c3fa1}{Defaults} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std::string \hyperlink{structeos_1_1Analysis_1_1OptimizationOptions_a3917de66192096f736ac764b69d9acbc}{algorithm}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classeos_1_1Options}{Options} are: \char`\"{}migrad\char`\"{}, \char`\"{}minimize\char`\"{}, \char`\"{}scan\char`\"{}, \char`\"{}simplex\char`\"{} from minuit2. \item\end{DoxyCompactList}\item 
+bool \hyperlink{structeos_1_1Analysis_1_1OptimizationOptions_abd24b29c8e1953f68dde207d8c5c48df}{fix\_\-flat\_\-nuisance}
+\item 
+\hyperlink{classeos_1_1VerifiedRange}{VerifiedRange}$<$ double $>$ \hyperlink{structeos_1_1Analysis_1_1OptimizationOptions_a8626041b40a908e5c1443fba86a2586b}{initial\_\-step\_\-size}
+\item 
+unsigned \hyperlink{structeos_1_1Analysis_1_1OptimizationOptions_aa1ec8a9c5e6325a3b090423eb76deda9}{maximum\_\-iterations}
+\item 
+bool \hyperlink{structeos_1_1Analysis_1_1OptimizationOptions_a6ae3c50f21c85e0c94135b4c68259c2e}{mcmc\_\-pre\_\-run}
+\item 
+\hyperlink{classeos_1_1VerifiedRange}{VerifiedRange}$<$ double $>$ \hyperlink{structeos_1_1Analysis_1_1OptimizationOptions_a99ab6b40de3f1bdd8218dd2028459ffe}{tolerance}
+\item 
+\hyperlink{classeos_1_1VerifiedRange}{VerifiedRange}$<$ double $>$ \hyperlink{structeos_1_1Analysis_1_1OptimizationOptions_a42f80d457baa1e7e325e40696d2d1bbe}{splitting\_\-tolerance}
+\item 
+\hyperlink{classeos_1_1VerifiedRange}{VerifiedRange}$<$ unsigned $>$ \hyperlink{structeos_1_1Analysis_1_1OptimizationOptions_ad31144d330b6897a432d0a02f1ebe027}{strategy\_\-level}
+\begin{DoxyCompactList}\small\item\em 0 -\/ low, 1 -\/ medium, 2 -\/ high precision \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structeos_1_1Analysis_1_1OptimizationOptions_a809f9cf0f5d544c7303a631c278c3fa1}{
+\index{eos::Analysis::OptimizationOptions@{eos::Analysis::OptimizationOptions}!Defaults@{Defaults}}
+\index{Defaults@{Defaults}!eos::Analysis::OptimizationOptions@{eos::Analysis::OptimizationOptions}}
+\subsubsection[{Defaults}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf OptimizationOptions} eos::Analysis::OptimizationOptions::Defaults ()\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{structeos_1_1Analysis_1_1OptimizationOptions_a809f9cf0f5d544c7303a631c278c3fa1}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structeos_1_1Analysis_1_1OptimizationOptions_a3917de66192096f736ac764b69d9acbc}{
+\index{eos::Analysis::OptimizationOptions@{eos::Analysis::OptimizationOptions}!algorithm@{algorithm}}
+\index{algorithm@{algorithm}!eos::Analysis::OptimizationOptions@{eos::Analysis::OptimizationOptions}}
+\subsubsection[{algorithm}]{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf eos::Analysis::OptimizationOptions::algorithm}}}
+\label{structeos_1_1Analysis_1_1OptimizationOptions_a3917de66192096f736ac764b69d9acbc}
+
+
+\hyperlink{classeos_1_1Options}{Options} are: \char`\"{}migrad\char`\"{}, \char`\"{}minimize\char`\"{}, \char`\"{}scan\char`\"{}, \char`\"{}simplex\char`\"{} from minuit2. \hypertarget{structeos_1_1Analysis_1_1OptimizationOptions_abd24b29c8e1953f68dde207d8c5c48df}{
+\index{eos::Analysis::OptimizationOptions@{eos::Analysis::OptimizationOptions}!fix\_\-flat\_\-nuisance@{fix\_\-flat\_\-nuisance}}
+\index{fix\_\-flat\_\-nuisance@{fix\_\-flat\_\-nuisance}!eos::Analysis::OptimizationOptions@{eos::Analysis::OptimizationOptions}}
+\subsubsection[{fix\_\-flat\_\-nuisance}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf eos::Analysis::OptimizationOptions::fix\_\-flat\_\-nuisance}}}
+\label{structeos_1_1Analysis_1_1OptimizationOptions_abd24b29c8e1953f68dde207d8c5c48df}
+Keep the value of nuisance parameters with a flat prior fixed at the current value during optimization, to avoid flat directions that cause Migrad to fail. \hypertarget{structeos_1_1Analysis_1_1OptimizationOptions_a8626041b40a908e5c1443fba86a2586b}{
+\index{eos::Analysis::OptimizationOptions@{eos::Analysis::OptimizationOptions}!initial\_\-step\_\-size@{initial\_\-step\_\-size}}
+\index{initial\_\-step\_\-size@{initial\_\-step\_\-size}!eos::Analysis::OptimizationOptions@{eos::Analysis::OptimizationOptions}}
+\subsubsection[{initial\_\-step\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf VerifiedRange}$<$double$>$ {\bf eos::Analysis::OptimizationOptions::initial\_\-step\_\-size}}}
+\label{structeos_1_1Analysis_1_1OptimizationOptions_a8626041b40a908e5c1443fba86a2586b}
+Fraction of parameter range, in \mbox{[}0,1\mbox{]}. Useful only for simplex method \hypertarget{structeos_1_1Analysis_1_1OptimizationOptions_aa1ec8a9c5e6325a3b090423eb76deda9}{
+\index{eos::Analysis::OptimizationOptions@{eos::Analysis::OptimizationOptions}!maximum\_\-iterations@{maximum\_\-iterations}}
+\index{maximum\_\-iterations@{maximum\_\-iterations}!eos::Analysis::OptimizationOptions@{eos::Analysis::OptimizationOptions}}
+\subsubsection[{maximum\_\-iterations}]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf eos::Analysis::OptimizationOptions::maximum\_\-iterations}}}
+\label{structeos_1_1Analysis_1_1OptimizationOptions_aa1ec8a9c5e6325a3b090423eb76deda9}
+If algorithm doesn't converge before, quit after maximum\_\-iterations. \hypertarget{structeos_1_1Analysis_1_1OptimizationOptions_a6ae3c50f21c85e0c94135b4c68259c2e}{
+\index{eos::Analysis::OptimizationOptions@{eos::Analysis::OptimizationOptions}!mcmc\_\-pre\_\-run@{mcmc\_\-pre\_\-run}}
+\index{mcmc\_\-pre\_\-run@{mcmc\_\-pre\_\-run}!eos::Analysis::OptimizationOptions@{eos::Analysis::OptimizationOptions}}
+\subsubsection[{mcmc\_\-pre\_\-run}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf eos::Analysis::OptimizationOptions::mcmc\_\-pre\_\-run}}}
+\label{structeos_1_1Analysis_1_1OptimizationOptions_a6ae3c50f21c85e0c94135b4c68259c2e}
+If non-\/zero, perform MCMC iterations first, before Minuit2 is invoked from the last point of the chain.
+
+\begin{DoxyNote}{Note}
+This is only useful when call from \hyperlink{classeos_1_1MarkovChainSampler}{MarkovChainSampler}, further control of the chain is taken from the \hyperlink{classeos_1_1MarkovChainSampler_1_1Config}{MarkovChainSampler::Config} object. 
+\end{DoxyNote}
+\hypertarget{structeos_1_1Analysis_1_1OptimizationOptions_a42f80d457baa1e7e325e40696d2d1bbe}{
+\index{eos::Analysis::OptimizationOptions@{eos::Analysis::OptimizationOptions}!splitting\_\-tolerance@{splitting\_\-tolerance}}
+\index{splitting\_\-tolerance@{splitting\_\-tolerance}!eos::Analysis::OptimizationOptions@{eos::Analysis::OptimizationOptions}}
+\subsubsection[{splitting\_\-tolerance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf VerifiedRange}$<$double$>$ {\bf eos::Analysis::OptimizationOptions::splitting\_\-tolerance}}}
+\label{structeos_1_1Analysis_1_1OptimizationOptions_a42f80d457baa1e7e325e40696d2d1bbe}
+When comparing two modes found by minuit to decide whether they correspond to the same mode, the splitting\_\-tolerance decides how far in relative units their distance may be. \hypertarget{structeos_1_1Analysis_1_1OptimizationOptions_ad31144d330b6897a432d0a02f1ebe027}{
+\index{eos::Analysis::OptimizationOptions@{eos::Analysis::OptimizationOptions}!strategy\_\-level@{strategy\_\-level}}
+\index{strategy\_\-level@{strategy\_\-level}!eos::Analysis::OptimizationOptions@{eos::Analysis::OptimizationOptions}}
+\subsubsection[{strategy\_\-level}]{\setlength{\rightskip}{0pt plus 5cm}{\bf VerifiedRange}$<$unsigned$>$ {\bf eos::Analysis::OptimizationOptions::strategy\_\-level}}}
+\label{structeos_1_1Analysis_1_1OptimizationOptions_ad31144d330b6897a432d0a02f1ebe027}
+
+
+0 -\/ low, 1 -\/ medium, 2 -\/ high precision \hypertarget{structeos_1_1Analysis_1_1OptimizationOptions_a99ab6b40de3f1bdd8218dd2028459ffe}{
+\index{eos::Analysis::OptimizationOptions@{eos::Analysis::OptimizationOptions}!tolerance@{tolerance}}
+\index{tolerance@{tolerance}!eos::Analysis::OptimizationOptions@{eos::Analysis::OptimizationOptions}}
+\subsubsection[{tolerance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf VerifiedRange}$<$double$>$ {\bf eos::Analysis::OptimizationOptions::tolerance}}}
+\label{structeos_1_1Analysis_1_1OptimizationOptions_a99ab6b40de3f1bdd8218dd2028459ffe}
+Once the algorithm has shrunk the probe simplex below this size, convergence is declared.
+
+For minuit, it is just their tolerance parameter 
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{analysis_8hh}{analysis.hh}\end{DoxyCompactItemize}

@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1BToKstarGamma" kind="class" prot="public">
+    <compoundname>eos::BToKstarGamma</compoundname>
+    <basecompoundref refid="classeos_1_1ParameterUser" prot="public" virt="non-virtual">eos::ParameterUser</basecompoundref>
+    <basecompoundref refid="classeos_1_1PrivateImplementationPattern" prot="public" virt="non-virtual">eos::PrivateImplementationPattern&lt; BToKstarGamma &gt;</basecompoundref>
+    <includes refid="exclusive-b-to-s-gamma_8hh" local="no">exclusive-b-to-s-gamma.hh</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1BToKstarGamma_1a8d9742896eb27084656a59b2a9ba4b3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::BToKstarGamma::BToKstarGamma</definition>
+        <argsstring>(const Parameters &amp;parameters, const Options &amp;options)</argsstring>
+        <name>BToKstarGamma</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1Options" kindref="compound">Options</ref> &amp;</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-gamma.hh" line="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarGamma_1a9cb5e53e2bd12d0f3b87f02d0b780207" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::BToKstarGamma::~BToKstarGamma</definition>
+        <argsstring>()</argsstring>
+        <name>~BToKstarGamma</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-gamma.hh" line="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarGamma_1aeabd4759d56e4a1e6cd3f3df4b81fd1b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarGamma::branching_ratio</definition>
+        <argsstring>() const </argsstring>
+        <name>branching_ratio</name>
+        <briefdescription>
+<para>Branching Ratio. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-gamma.hh" line="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarGamma_1afc81c1b072b85980b3dea32b42f692fa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarGamma::branching_ratio_cp_averaged</definition>
+        <argsstring>() const </argsstring>
+        <name>branching_ratio_cp_averaged</name>
+        <briefdescription>
+<para>Branching Ratio (CP averaged). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-gamma.hh" line="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarGamma_1aed1636a3d770081887c82800025bbda6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarGamma::cp_asymmetry</definition>
+        <argsstring>() const </argsstring>
+        <name>cp_asymmetry</name>
+        <briefdescription>
+<para>Direct CP asymmetry A_CP. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-gamma.hh" line="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarGamma_1a36d453a167641d6f00c62d340fc4e81e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarGamma::s_kstar_gamma</definition>
+        <argsstring>() const </argsstring>
+        <name>s_kstar_gamma</name>
+        <briefdescription>
+<para>Time dependent CP asymmetry S_K^*gamma. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-gamma.hh" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarGamma_1a8b067c36cdcee5e3e48a261a9bb05895" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarGamma::c_kstar_gamma</definition>
+        <argsstring>() const </argsstring>
+        <name>c_kstar_gamma</name>
+        <briefdescription>
+<para>Time dependent CP asymmetry C_K^*gamma. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-gamma.hh" line="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarGamma_1a85935a411404e5dd0b882b03dd000260" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarGamma::isospin_asymmetry</definition>
+        <argsstring>() const </argsstring>
+        <name>isospin_asymmetry</name>
+        <briefdescription>
+<para>Isospin asymmetry. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-gamma.hh" line="58"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Calculates observables in B-&gt;K^*gamma decays </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="157">
+        <label>eos::PrivateImplementationPattern&lt; BToKstarGamma &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="155">
+        <label>eos::BToKstarGamma</label>
+        <link refid="classeos_1_1BToKstarGamma"/>
+        <childnode refid="156" relation="public-inheritance">
+        </childnode>
+        <childnode refid="157" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="156">
+        <label>eos::ParameterUser</label>
+        <link refid="classeos_1_1ParameterUser"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="161">
+        <label>eos::PrivateImplementationPattern&lt; BToKstarGamma &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="158">
+        <label>eos::BToKstarGamma</label>
+        <link refid="classeos_1_1BToKstarGamma"/>
+        <childnode refid="159" relation="public-inheritance">
+        </childnode>
+        <childnode refid="161" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="160">
+        <label>std::set&lt; Parameter::Id &gt;</label>
+      </node>
+      <node id="159">
+        <label>eos::ParameterUser</label>
+        <link refid="classeos_1_1ParameterUser"/>
+        <childnode refid="160" relation="usage">
+          <edgelabel>_ids</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-gamma.hh" line="37" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-gamma.hh" bodystart="34" bodyend="59"/>
+    <listofallmembers>
+      <member refid="classeos_1_1ParameterUser_1aa3a0285297e16cf2a5830df1f9bb2f4b" prot="protected" virt="non-virtual"><scope>eos::BToKstarGamma</scope><name>_ids</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a232940e78b26c6ed4f97196f831c69c9" prot="protected" virt="non-virtual"><scope>eos::BToKstarGamma</scope><name>_imp</name></member>
+      <member refid="classeos_1_1ParameterUser_1a9cd569207063cd2a8f807c4e1203a5d4" prot="public" virt="non-virtual"><scope>eos::BToKstarGamma</scope><name>begin</name></member>
+      <member refid="classeos_1_1BToKstarGamma_1aeabd4759d56e4a1e6cd3f3df4b81fd1b" prot="public" virt="non-virtual"><scope>eos::BToKstarGamma</scope><name>branching_ratio</name></member>
+      <member refid="classeos_1_1BToKstarGamma_1afc81c1b072b85980b3dea32b42f692fa" prot="public" virt="non-virtual"><scope>eos::BToKstarGamma</scope><name>branching_ratio_cp_averaged</name></member>
+      <member refid="classeos_1_1BToKstarGamma_1a8d9742896eb27084656a59b2a9ba4b3f" prot="public" virt="non-virtual"><scope>eos::BToKstarGamma</scope><name>BToKstarGamma</name></member>
+      <member refid="classeos_1_1BToKstarGamma_1a8b067c36cdcee5e3e48a261a9bb05895" prot="public" virt="non-virtual"><scope>eos::BToKstarGamma</scope><name>c_kstar_gamma</name></member>
+      <member refid="classeos_1_1ParameterUser_1a7105631bbcb4b2492e6377b2b69f5b0f" prot="public" virt="non-virtual"><scope>eos::BToKstarGamma</scope><name>ConstIterator</name></member>
+      <member refid="classeos_1_1BToKstarGamma_1aed1636a3d770081887c82800025bbda6" prot="public" virt="non-virtual"><scope>eos::BToKstarGamma</scope><name>cp_asymmetry</name></member>
+      <member refid="classeos_1_1ParameterUser_1a5813c886f3fd3f074cc02a53fc9e0790" prot="public" virt="non-virtual"><scope>eos::BToKstarGamma</scope><name>end</name></member>
+      <member refid="classeos_1_1BToKstarGamma_1a85935a411404e5dd0b882b03dd000260" prot="public" virt="non-virtual"><scope>eos::BToKstarGamma</scope><name>isospin_asymmetry</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a3e3d5f4a565256a1dda6c234b051b2f2" prot="public" virt="non-virtual"><scope>eos::BToKstarGamma</scope><name>PrivateImplementationPattern</name></member>
+      <member refid="classeos_1_1BToKstarGamma_1a36d453a167641d6f00c62d340fc4e81e" prot="public" virt="non-virtual"><scope>eos::BToKstarGamma</scope><name>s_kstar_gamma</name></member>
+      <member refid="classeos_1_1ParameterUser_1ad91a901e589653272482bded7e453c70" prot="public" virt="non-virtual"><scope>eos::BToKstarGamma</scope><name>uses</name></member>
+      <member refid="classeos_1_1ParameterUser_1a7a37e779cf45ef1075fe7bf670688b72" prot="public" virt="non-virtual"><scope>eos::BToKstarGamma</scope><name>uses</name></member>
+      <member refid="classeos_1_1BToKstarGamma_1a9cb5e53e2bd12d0f3b87f02d0b780207" prot="public" virt="non-virtual"><scope>eos::BToKstarGamma</scope><name>~BToKstarGamma</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1acf46ec2739c3b0ec9702b9428475876d" prot="public" virt="non-virtual"><scope>eos::BToKstarGamma</scope><name>~PrivateImplementationPattern</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

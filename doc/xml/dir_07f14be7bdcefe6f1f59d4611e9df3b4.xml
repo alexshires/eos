@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="dir_07f14be7bdcefe6f1f59d4611e9df3b4" kind="dir">
+    <compoundname>/home/alexshires/EOS/eos-next/eos/</compoundname>
+    <innerdir refid="dir_8cdbbbffaef12ffede1428f572fbfaa9">/home/alexshires/EOS/eos-next/eos/b-decays/</innerdir>
+    <innerdir refid="dir_766afd116c6d0af249f6705bb3b81348">/home/alexshires/EOS/eos-next/eos/form-factors/</innerdir>
+    <innerdir refid="dir_65b967715aeeb83e4aa4824cb259cafb">/home/alexshires/EOS/eos-next/eos/rare-b-decays/</innerdir>
+    <innerdir refid="dir_3068ce148b71e06d66462adc4200d433">/home/alexshires/EOS/eos-next/eos/utils/</innerdir>
+    <innerfile refid="constraint_8hh">constraint.hh</innerfile>
+    <innerfile refid="observable_8hh">observable.hh</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/"/>
+  </compounddef>
+</doxygen>

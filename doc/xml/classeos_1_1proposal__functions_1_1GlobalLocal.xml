@@ -1,0 +1,811 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1proposal__functions_1_1GlobalLocal" kind="class" prot="public">
+    <compoundname>eos::proposal_functions::GlobalLocal</compoundname>
+    <basecompoundref refid="structeos_1_1MarkovChain_1_1ProposalFunction" prot="public" virt="non-virtual">eos::MarkovChain::ProposalFunction</basecompoundref>
+    <includes refid="proposal__functions_8hh" local="no">proposal_functions.hh</includes>
+    <innerclass refid="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config" prot="public">eos::proposal_functions::GlobalLocal::Config</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classeos_1_1proposal__functions_1_1GlobalLocal_1a8a0b2c1a71f2302bd4eeb95bc1d0041a" prot="public" static="no">
+        <type><ref refid="classeos_1_1hdf5_1_1Composite" kindref="compound">hdf5::Composite</ref>&lt; <ref refid="classeos_1_1hdf5_1_1Scalar" kindref="compound">hdf5::Scalar</ref>&lt; unsigned &gt;, <ref refid="classeos_1_1hdf5_1_1Array" kindref="compound">hdf5::Array</ref>&lt; 1, double &gt; &gt;</type>
+        <definition>typedef hdf5::Composite&lt;hdf5::Scalar&lt;unsigned&gt;, hdf5::Array&lt;1, double&gt; &gt; eos::proposal_functions::GlobalLocal::ComponentType</definition>
+        <argsstring></argsstring>
+        <name>ComponentType</name>
+        <briefdescription>
+<para>Types of data sets for reading/writing the state of the proposal density from/to disk. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="159" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classeos_1_1proposal__functions_1_1GlobalLocal_1ac6705377112dbaacb0141371b3c58b92" prot="public" static="no">
+        <type><ref refid="classeos_1_1hdf5_1_1Composite" kindref="compound">hdf5::Composite</ref>&lt; <ref refid="classeos_1_1hdf5_1_1Array" kindref="compound">hdf5::Array</ref>&lt; 1, double &gt;, <ref refid="classeos_1_1hdf5_1_1Scalar" kindref="compound">hdf5::Scalar</ref>&lt; double &gt;, <ref refid="classeos_1_1hdf5_1_1Scalar" kindref="compound">hdf5::Scalar</ref>&lt; double &gt;, <ref refid="classeos_1_1hdf5_1_1Scalar" kindref="compound">hdf5::Scalar</ref>&lt; double &gt; &gt;</type>
+        <definition>typedef hdf5::Composite&lt;hdf5::Array&lt;1, double&gt;, hdf5::Scalar&lt;double&gt;, hdf5::Scalar&lt;double&gt;, hdf5::Scalar&lt;double&gt; &gt; eos::proposal_functions::GlobalLocal::HistoryType</definition>
+        <argsstring></argsstring>
+        <name>HistoryType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="160" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classeos_1_1proposal__functions_1_1GlobalLocal_1adaecb155ebcde100eb2f2f9bde76d3d3" prot="public" static="no">
+        <type><ref refid="classeos_1_1hdf5_1_1Composite" kindref="compound">hdf5::Composite</ref>&lt; <ref refid="classeos_1_1hdf5_1_1Array" kindref="compound">hdf5::Array</ref>&lt; 1, double &gt;, <ref refid="classeos_1_1hdf5_1_1Scalar" kindref="compound">hdf5::Scalar</ref>&lt; double &gt; &gt;</type>
+        <definition>typedef hdf5::Composite&lt;hdf5::Array&lt;1, double&gt;, hdf5::Scalar&lt;double&gt; &gt; eos::proposal_functions::GlobalLocal::JumpType</definition>
+        <argsstring></argsstring>
+        <name>JumpType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="161" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classeos_1_1proposal__functions_1_1GlobalLocal_1a512e8526c29f20c96992efc8dcd2da2a" prot="public" static="no">
+        <type><ref refid="classeos_1_1hdf5_1_1Composite" kindref="compound">hdf5::Composite</ref>&lt; <ref refid="classeos_1_1hdf5_1_1Array" kindref="compound">hdf5::Array</ref>&lt; 1, double &gt;, <ref refid="classeos_1_1hdf5_1_1Array" kindref="compound">hdf5::Array</ref>&lt; 1, double &gt; &gt;</type>
+        <definition>typedef hdf5::Composite&lt;hdf5::Array&lt;1, double&gt;, hdf5::Array&lt;1, double&gt; &gt; eos::proposal_functions::GlobalLocal::LocalCovarianceType</definition>
+        <argsstring></argsstring>
+        <name>LocalCovarianceType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="162" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classeos_1_1proposal__functions_1_1GlobalLocal_1a3c78f702abf8c6c71fdc727230a140bd" prot="private" static="no">
+        <type>std::pair&lt; unsigned, double &gt;</type>
+        <definition>typedef std::pair&lt;unsigned, double&gt; eos::proposal_functions::GlobalLocal::index_pair</definition>
+        <argsstring></argsstring>
+        <name>index_pair</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="313" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classeos_1_1proposal__functions_1_1GlobalLocal_1a7cc24a1e79ce56b52daa627b11ee10de" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned eos::proposal_functions::GlobalLocal::_adaptations</definition>
+        <argsstring></argsstring>
+        <name>_adaptations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="276" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1proposal__functions_1_1GlobalLocal_1a624ea74eb2825f8df044d59f44b2a3ab" prot="private" static="no" mutable="no">
+        <type><ref refid="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config" kindref="compound">Config</ref></type>
+        <definition>Config eos::proposal_functions::GlobalLocal::_config</definition>
+        <argsstring></argsstring>
+        <name>_config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="277" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1proposal__functions_1_1GlobalLocal_1a94e72e3e58407672e51855d2f7ef5694" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; eos::proposal_functions::GlobalLocal::_component_cumulative</definition>
+        <argsstring></argsstring>
+        <name>_component_cumulative</name>
+        <briefdescription>
+<para>Cumulative. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="280" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1proposal__functions_1_1GlobalLocal_1a55c57d4563a713db0b23b6cfcee34ef6" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; eos::proposal_functions::GlobalLocal::_component_probabilities</definition>
+        <argsstring></argsstring>
+        <name>_component_probabilities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="281" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1proposal__functions_1_1GlobalLocal_1ade2c9e48a288eea45ab8a1446fadc2ec" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; double &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;double&gt; &gt; eos::proposal_functions::GlobalLocal::_history_points_cumulatives</definition>
+        <argsstring></argsstring>
+        <name>_history_points_cumulatives</name>
+        <briefdescription>
+<para>History points selected from the prerun of a chain. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="284" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1proposal__functions_1_1GlobalLocal_1ae7832508103161b293552bc54391fdbd" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; std::vector&lt; double &gt; &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;std::vector&lt;double&gt; &gt; &gt; eos::proposal_functions::GlobalLocal::_history_points_local_covariance</definition>
+        <argsstring></argsstring>
+        <name>_history_points_local_covariance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="285" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1proposal__functions_1_1GlobalLocal_1af56b04d95d5d49667b7e5049d8b5135c" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; double &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;double&gt; &gt; eos::proposal_functions::GlobalLocal::_history_points_probabilities</definition>
+        <argsstring></argsstring>
+        <name>_history_points_probabilities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="286" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1proposal__functions_1_1GlobalLocal_1a551e0c91dc165b6655bbce8694bda0bb" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; <ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">MarkovChain::State</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;MarkovChain::State&gt; &gt; eos::proposal_functions::GlobalLocal::_history_states</definition>
+        <argsstring></argsstring>
+        <name>_history_states</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="287" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1proposal__functions_1_1GlobalLocal_1aeb52ddcb277b1a9b0d27f604afbf53a7" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1proposal__functions_1_1AdjacencyMatrix" kindref="compound">AdjacencyMatrix</ref></type>
+        <definition>AdjacencyMatrix eos::proposal_functions::GlobalLocal::_jump_vectors</definition>
+        <argsstring></argsstring>
+        <name>_jump_vectors</name>
+        <briefdescription>
+<para>Stores the jump vectors. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="290" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1proposal__functions_1_1GlobalLocal_1a1f412df3307d860a463b757d5bec09d1" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">MarkovChain::State</ref> &gt;</type>
+        <definition>std::vector&lt;MarkovChain::State&gt; eos::proposal_functions::GlobalLocal::_modes</definition>
+        <argsstring></argsstring>
+        <name>_modes</name>
+        <briefdescription>
+<para>the modes of each cluster found during the prerun. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="293" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1proposal__functions_1_1GlobalLocal_1add515608b11f2f4ea70e0034b490e44c" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::shared_ptr&lt; <ref refid="structeos_1_1MarkovChain_1_1ProposalFunction" kindref="compound">MarkovChain::ProposalFunction</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::shared_ptr&lt;MarkovChain::ProposalFunction&gt; &gt; eos::proposal_functions::GlobalLocal::_prop</definition>
+        <argsstring></argsstring>
+        <name>_prop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="295" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="295" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1GlobalLocal_1a26968f54a698fc8726f0a81c84bc6294" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1hdf5_1_1Composite" kindref="compound">ComponentType</ref></type>
+        <definition>static ComponentType eos::proposal_functions::GlobalLocal::component_type</definition>
+        <argsstring>(const unsigned &amp;dimension)</argsstring>
+        <name>component_type</name>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>dimension</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1GlobalLocal_1af44478dfd75149c63937af4c6583fbdf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1hdf5_1_1Composite" kindref="compound">HistoryType</ref></type>
+        <definition>static HistoryType eos::proposal_functions::GlobalLocal::history_type</definition>
+        <argsstring>(const unsigned &amp;dimension)</argsstring>
+        <name>history_type</name>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>dimension</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1GlobalLocal_1a0dc6c82443a5a7f091aced9f00e9e924" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1hdf5_1_1Composite" kindref="compound">JumpType</ref></type>
+        <definition>static JumpType eos::proposal_functions::GlobalLocal::jump_type</definition>
+        <argsstring>(const unsigned &amp;dimension)</argsstring>
+        <name>jump_type</name>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>dimension</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1GlobalLocal_1ab9e4e7b924b9cc58191abef0ec3ed007" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1hdf5_1_1Composite" kindref="compound">LocalCovarianceType</ref></type>
+        <definition>static LocalCovarianceType eos::proposal_functions::GlobalLocal::local_covariance_type</definition>
+        <argsstring>(const unsigned &amp;dimension)</argsstring>
+        <name>local_covariance_type</name>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>dimension</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="167"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1GlobalLocal_1ab37a58222e23820036c4af3219285337" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::proposal_functions::GlobalLocal::_sanity_check</definition>
+        <argsstring>() const </argsstring>
+        <name>_sanity_check</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="297"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1GlobalLocal_1aaa8d3580eeac5d1c26a627fa1b8e29a0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::proposal_functions::GlobalLocal::_select_history_points</definition>
+        <argsstring>(const std::vector&lt; Cluster &gt; &amp;clusters)</argsstring>
+        <name>_select_history_points</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="classeos_1_1Cluster" kindref="compound">Cluster</ref> &gt; &amp;</type>
+          <declname>clusters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Choose a number of points from the history of the chains in each cluster. The points are unique with probability 1 and represent the points with highest posterior probability. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="305"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1GlobalLocal_1ab38a0ede42e81e6c12466d007af32eb9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::proposal_functions::GlobalLocal::_select_jump_vectors</definition>
+        <argsstring>(const std::vector&lt; Cluster &gt; &amp;clusters)</argsstring>
+        <name>_select_jump_vectors</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="classeos_1_1Cluster" kindref="compound">Cluster</ref> &gt; &amp;</type>
+          <declname>clusters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find the modes from the points and determine jumps as the vector differences between the modes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="311"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1GlobalLocal_1a869be11729eab279e171e015d2729bbc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::proposal_functions::GlobalLocal::GlobalLocal</definition>
+        <argsstring>(const GlobalLocal &amp;)</argsstring>
+        <name>GlobalLocal</name>
+        <param>
+          <type>const <ref refid="classeos_1_1proposal__functions_1_1GlobalLocal" kindref="compound">GlobalLocal</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy constructor for cloning only. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="325"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1GlobalLocal_1a7f36d1cf863d358800234db6ca152a0f" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool eos::proposal_functions::GlobalLocal::_cmp</definition>
+        <argsstring>(const index_pair &amp;a, const index_pair &amp;b)</argsstring>
+        <name>_cmp</name>
+        <param>
+          <type>const index_pair &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const index_pair &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="318" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="317" bodyend="320"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1GlobalLocal_1a09da326841b33c72b086dc04d9ba0c4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::proposal_functions::GlobalLocal::GlobalLocal</definition>
+        <argsstring>(const std::vector&lt; HistoryPtr &gt; &amp;chains, const std::vector&lt; ProposalFunctionPtr &gt; &amp;proposals, const std::vector&lt; MarkovChain::Stats &gt; &amp;stats, const Config &amp;config, const unsigned &amp;prerun_chains_per_cluster)</argsstring>
+        <name>GlobalLocal</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespaceeos_1ac9f30fde04446cfabdd69d4b5b5d3c5a" kindref="member">HistoryPtr</ref> &gt; &amp;</type>
+          <declname>chains</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespaceeos_1ae97f9891c67c90959a03fc96efaa4dc9" kindref="member">ProposalFunctionPtr</ref> &gt; &amp;</type>
+          <declname>proposals</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="structeos_1_1MarkovChain_1_1Stats" kindref="compound">MarkovChain::Stats</ref> &gt; &amp;</type>
+          <declname>stats</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config" kindref="compound">Config</ref> &amp;</type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>prerun_chains_per_cluster</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Take the important parts of MarkovChains, and combine them into a global local proposal density. It is assumed that in each vector, the parts at a given index belong to the same chain. If their histories only contain the last chunk, variability of the algorithm is limited.</para><para><simplesect kind="par"><title>chains Use pointers to the histories, such that unnecessary copying is avoided.</title><para></para></simplesect>
+<simplesect kind="par"><title>proposal The proposal density of each chain.</title><para></para></simplesect>
+<simplesect kind="par"><title>stats The statistics of each chain.</title><para></para></simplesect>
+<simplesect kind="par"><title>local_jump_probability In order to allow chains to explore more distant regions,</title><para>a value close to one is advised. </para></simplesect>
+<simplesect kind="par"><title>history_points the number of points selected from a single chain&apos;s history</title><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="348"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1GlobalLocal_1aee4ba010b2c73b484c28eaaf7d42057c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::proposal_functions::GlobalLocal::GlobalLocal</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;component_probabilities, const unsigned &amp;adaptations, const std::vector&lt; MarkovChain::State &gt; &amp;jump_states, const std::vector&lt; MarkovChain::State &gt; &amp;modes, const std::vector&lt; std::vector&lt; MarkovChain::State &gt;&gt; &amp;history_states, const std::vector&lt; std::vector&lt; double &gt;&gt; &amp;history_point_probabilities, const std::vector&lt; std::vector&lt; std::vector&lt; double &gt;&gt;&gt; &amp;history_local_covariances, const std::vector&lt; ProposalFunctionPtr &gt; &amp;proposals)</argsstring>
+        <name>GlobalLocal</name>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>component_probabilities</declname>
+        </param>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>adaptations</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">MarkovChain::State</ref> &gt; &amp;</type>
+          <declname>jump_states</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">MarkovChain::State</ref> &gt; &amp;</type>
+          <declname>modes</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::vector&lt; <ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">MarkovChain::State</ref> &gt;&gt; &amp;</type>
+          <declname>history_states</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::vector&lt; double &gt;&gt; &amp;</type>
+          <declname>history_point_probabilities</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::vector&lt; std::vector&lt; double &gt;&gt;&gt; &amp;</type>
+          <declname>history_local_covariances</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespaceeos_1ae97f9891c67c90959a03fc96efaa4dc9" kindref="member">ProposalFunctionPtr</ref> &gt; &amp;</type>
+          <declname>proposals</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="355"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1GlobalLocal_1a31e2faf68a29cfc348905a8022a397e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual eos::proposal_functions::GlobalLocal::~GlobalLocal</definition>
+        <argsstring>()</argsstring>
+        <name>~GlobalLocal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="357"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1GlobalLocal_1aecea521f102e4f3c2fd0fad24b21b730" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void eos::proposal_functions::GlobalLocal::adapt</definition>
+        <argsstring>(const MarkovChain::State::Iterator &amp;begin, const MarkovChain::State::Iterator &amp;end, const double &amp;efficiency, const double &amp;efficiency_min, const double &amp;efficiency_max)</argsstring>
+        <name>adapt</name>
+        <reimplements refid="structeos_1_1MarkovChain_1_1ProposalFunction_1afee6a937c53b9cfb257a5cd724a54296">adapt</reimplements>
+        <param>
+          <type>const <ref refid="structeos_1_1MarkovChain_1_1State_1ad7590843e4feca7e696c53863e6e10c1" kindref="member">MarkovChain::State::Iterator</ref> &amp;</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structeos_1_1MarkovChain_1_1State_1ad7590843e4feca7e696c53863e6e10c1" kindref="member">MarkovChain::State::Iterator</ref> &amp;</type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>efficiency</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>efficiency_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>efficiency_max</declname>
+        </param>
+        <briefdescription>
+<para>No adaptation currently foreseen. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="360"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1GlobalLocal_1abf3e66748628edc462dd5f7b531f4c2b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">MarkovChain::State</ref></type>
+        <definition>virtual MarkovChain::State eos::proposal_functions::GlobalLocal::mode</definition>
+        <argsstring>() const </argsstring>
+        <name>mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The state with the highest posterior of all <ref refid="namespaceeos_1_1components" kindref="compound">components</ref> with parameter values and correct log posterior. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="366"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1GlobalLocal_1aefd282ded908d605356e2c5896db60b7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::vector&lt; double &gt; &amp;</type>
+        <definition>const std::vector&lt;double&gt;&amp; eos::proposal_functions::GlobalLocal::component_probabilities</definition>
+        <argsstring>() const </argsstring>
+        <name>component_probabilities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="369" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="368" bodyend="371"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1GlobalLocal_1ab29f6d1d7b79dcb8eae4647260a5bd06" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::vector&lt; std::vector&lt; <ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">MarkovChain::State</ref> &gt; &gt; &amp;</type>
+        <definition>const std::vector&lt;std::vector&lt;MarkovChain::State&gt; &gt;&amp; eos::proposal_functions::GlobalLocal::history_states</definition>
+        <argsstring>() const </argsstring>
+        <name>history_states</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="374" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="373" bodyend="376"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1GlobalLocal_1ad5c45a445627bed86c3d51b13b385956" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::vector&lt; std::vector&lt; std::vector&lt; double &gt; &gt; &gt; &amp;</type>
+        <definition>const std::vector&lt;std::vector&lt;std::vector&lt;double&gt; &gt; &gt;&amp; eos::proposal_functions::GlobalLocal::local_covariances</definition>
+        <argsstring>() const </argsstring>
+        <name>local_covariances</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="379" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="378" bodyend="381"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1GlobalLocal_1a32e17ba3e5210c26c146b97f5ff4fd53" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void eos::proposal_functions::GlobalLocal::config</definition>
+        <argsstring>(const Config &amp;config)</argsstring>
+        <name>config</name>
+        <param>
+          <type>const <ref refid="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config" kindref="compound">Config</ref> &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+<para>Reset config options. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="384"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1GlobalLocal_1ae0ee0bd2127085ceacb1a89f5527515b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceeos_1ae97f9891c67c90959a03fc96efaa4dc9" kindref="member">ProposalFunctionPtr</ref></type>
+        <definition>virtual ProposalFunctionPtr eos::proposal_functions::GlobalLocal::clone</definition>
+        <argsstring>() const </argsstring>
+        <name>clone</name>
+        <reimplements refid="structeos_1_1MarkovChain_1_1ProposalFunction_1a7065079985f8bb44309d7773d85d225b">clone</reimplements>
+        <briefdescription>
+<para>Create independent copy. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="386"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1GlobalLocal_1a07d947ae2de101cc4ef13577d5d81ad5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void eos::proposal_functions::GlobalLocal::dump_state</definition>
+        <argsstring>(hdf5::File &amp;file, const std::string &amp;data_set_base_name) const </argsstring>
+        <name>dump_state</name>
+        <reimplements refid="structeos_1_1MarkovChain_1_1ProposalFunction_1aea88a1340e10cc6a5b03d8b5483774f7">dump_state</reimplements>
+        <param>
+          <type><ref refid="classeos_1_1hdf5_1_1File" kindref="compound">hdf5::File</ref> &amp;</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>data_set_base_name</declname>
+        </param>
+        <briefdescription>
+<para>Store state in the file under the given base name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="388"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1GlobalLocal_1ad1f7d7686225e665edd47cbd230483f6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double eos::proposal_functions::GlobalLocal::evaluate</definition>
+        <argsstring>(const MarkovChain::State &amp;x, const MarkovChain::State &amp;y) const </argsstring>
+        <name>evaluate</name>
+        <reimplements refid="structeos_1_1MarkovChain_1_1ProposalFunction_1ae3f2c43980ec9dfe9f35d8139f2f4ec7">evaluate</reimplements>
+        <param>
+          <type>const <ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">MarkovChain::State</ref> &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">MarkovChain::State</ref> &amp;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Evaluate the density to propose x given y. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="390"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1GlobalLocal_1a600d45aa7174be9fb264a938de61a568" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void eos::proposal_functions::GlobalLocal::propose</definition>
+        <argsstring>(MarkovChain::State &amp;x, const MarkovChain::State &amp;y, gsl_rng *rng) const </argsstring>
+        <name>propose</name>
+        <reimplements refid="structeos_1_1MarkovChain_1_1ProposalFunction_1a2b296008d32b1cd008e59cde1228705f">propose</reimplements>
+        <param>
+          <type><ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">MarkovChain::State</ref> &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">MarkovChain::State</ref> &amp;</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>gsl_rng *</type>
+          <declname>rng</declname>
+        </param>
+        <briefdescription>
+<para>Obtain from the density a proposal x given y. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="392"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>After a suitable amount of prerun iterations, combine the information of all chains into one, common proposal function. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="481">
+        <label>eos::MarkovChain::ProposalFunction</label>
+        <link refid="structeos_1_1MarkovChain_1_1ProposalFunction"/>
+      </node>
+      <node id="480">
+        <label>eos::proposal_functions::GlobalLocal</label>
+        <link refid="classeos_1_1proposal__functions_1_1GlobalLocal"/>
+        <childnode refid="481" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="489">
+        <label>eos::VerifiedRange&lt; double &gt;</label>
+        <link refid="classeos_1_1VerifiedRange"/>
+      </node>
+      <node id="493">
+        <label>std::vector&lt; double &gt;</label>
+      </node>
+      <node id="483">
+        <label>eos::MarkovChain::ProposalFunction</label>
+        <link refid="structeos_1_1MarkovChain_1_1ProposalFunction"/>
+      </node>
+      <node id="485">
+        <label>std::vector&lt; std::shared_ptr&lt; MarkovChain::ProposalFunction &gt; &gt;</label>
+      </node>
+      <node id="487">
+        <label>eos::proposal_functions::GlobalLocal::Config</label>
+        <link refid="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config"/>
+        <childnode refid="488" relation="usage">
+          <edgelabel>long_jump_indices</edgelabel>
+        </childnode>
+        <childnode refid="489" relation="usage">
+          <edgelabel>local_jump_probability</edgelabel>
+          <edgelabel>minimum_relative_cluster_weight</edgelabel>
+          <edgelabel>skip_initial</edgelabel>
+          <edgelabel>clustering_maximum_r_value</edgelabel>
+          <edgelabel>rescale_local_covariance</edgelabel>
+        </childnode>
+      </node>
+      <node id="486">
+        <label>std::vector&lt; std::vector&lt; double &gt; &gt;</label>
+      </node>
+      <node id="490">
+        <label>std::vector&lt; std::vector&lt; std::vector&lt; double &gt; &gt; &gt;</label>
+      </node>
+      <node id="482">
+        <label>eos::proposal_functions::GlobalLocal</label>
+        <link refid="classeos_1_1proposal__functions_1_1GlobalLocal"/>
+        <childnode refid="483" relation="public-inheritance">
+        </childnode>
+        <childnode refid="484" relation="usage">
+          <edgelabel>_history_states</edgelabel>
+        </childnode>
+        <childnode refid="485" relation="usage">
+          <edgelabel>_prop</edgelabel>
+        </childnode>
+        <childnode refid="486" relation="usage">
+          <edgelabel>_history_points_cumulatives</edgelabel>
+          <edgelabel>_history_points_probabilities</edgelabel>
+        </childnode>
+        <childnode refid="487" relation="usage">
+          <edgelabel>_config</edgelabel>
+        </childnode>
+        <childnode refid="490" relation="usage">
+          <edgelabel>_history_points_local_covariance</edgelabel>
+        </childnode>
+        <childnode refid="491" relation="usage">
+          <edgelabel>_modes</edgelabel>
+        </childnode>
+        <childnode refid="492" relation="usage">
+          <edgelabel>_jump_vectors</edgelabel>
+        </childnode>
+        <childnode refid="493" relation="usage">
+          <edgelabel>_component_cumulative</edgelabel>
+          <edgelabel>_component_probabilities</edgelabel>
+        </childnode>
+      </node>
+      <node id="491">
+        <label>std::vector&lt; MarkovChain::State &gt;</label>
+      </node>
+      <node id="492">
+        <label>eos::proposal_functions::AdjacencyMatrix</label>
+        <link refid="classeos_1_1proposal__functions_1_1AdjacencyMatrix"/>
+        <childnode refid="486" relation="usage">
+          <edgelabel>_jump_vectors</edgelabel>
+        </childnode>
+        <childnode refid="491" relation="usage">
+          <edgelabel>_states</edgelabel>
+        </childnode>
+      </node>
+      <node id="488">
+        <label>std::vector&lt; unsigned &gt;</label>
+      </node>
+      <node id="484">
+        <label>std::vector&lt; std::vector&lt; MarkovChain::State &gt; &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="156" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="154" bodyend="393"/>
+    <listofallmembers>
+      <member refid="classeos_1_1proposal__functions_1_1GlobalLocal_1a7cc24a1e79ce56b52daa627b11ee10de" prot="private" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>_adaptations</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1GlobalLocal_1a7f36d1cf863d358800234db6ca152a0f" prot="private" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>_cmp</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1GlobalLocal_1a94e72e3e58407672e51855d2f7ef5694" prot="private" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>_component_cumulative</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1GlobalLocal_1a55c57d4563a713db0b23b6cfcee34ef6" prot="private" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>_component_probabilities</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1GlobalLocal_1a624ea74eb2825f8df044d59f44b2a3ab" prot="private" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>_config</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1GlobalLocal_1ade2c9e48a288eea45ab8a1446fadc2ec" prot="private" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>_history_points_cumulatives</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1GlobalLocal_1ae7832508103161b293552bc54391fdbd" prot="private" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>_history_points_local_covariance</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1GlobalLocal_1af56b04d95d5d49667b7e5049d8b5135c" prot="private" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>_history_points_probabilities</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1GlobalLocal_1a551e0c91dc165b6655bbce8694bda0bb" prot="private" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>_history_states</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1GlobalLocal_1aeb52ddcb277b1a9b0d27f604afbf53a7" prot="private" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>_jump_vectors</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1GlobalLocal_1a1f412df3307d860a463b757d5bec09d1" prot="private" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>_modes</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1GlobalLocal_1add515608b11f2f4ea70e0034b490e44c" prot="private" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>_prop</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1GlobalLocal_1ab37a58222e23820036c4af3219285337" prot="private" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>_sanity_check</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1GlobalLocal_1aaa8d3580eeac5d1c26a627fa1b8e29a0" prot="private" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>_select_history_points</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1GlobalLocal_1ab38a0ede42e81e6c12466d007af32eb9" prot="private" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>_select_jump_vectors</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1GlobalLocal_1aecea521f102e4f3c2fd0fad24b21b730" prot="public" virt="virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>adapt</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1GlobalLocal_1ae0ee0bd2127085ceacb1a89f5527515b" prot="public" virt="virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>clone</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1GlobalLocal_1aefd282ded908d605356e2c5896db60b7" prot="public" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>component_probabilities</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1GlobalLocal_1a26968f54a698fc8726f0a81c84bc6294" prot="public" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>component_type</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1GlobalLocal_1a8a0b2c1a71f2302bd4eeb95bc1d0041a" prot="public" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>ComponentType</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1GlobalLocal_1a32e17ba3e5210c26c146b97f5ff4fd53" prot="public" virt="virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>config</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1GlobalLocal_1a07d947ae2de101cc4ef13577d5d81ad5" prot="public" virt="virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>dump_state</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1GlobalLocal_1ad1f7d7686225e665edd47cbd230483f6" prot="public" virt="virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>evaluate</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1GlobalLocal_1a869be11729eab279e171e015d2729bbc" prot="private" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>GlobalLocal</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1GlobalLocal_1a09da326841b33c72b086dc04d9ba0c4a" prot="public" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>GlobalLocal</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1GlobalLocal_1aee4ba010b2c73b484c28eaaf7d42057c" prot="public" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>GlobalLocal</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1GlobalLocal_1ab29f6d1d7b79dcb8eae4647260a5bd06" prot="public" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>history_states</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1GlobalLocal_1af44478dfd75149c63937af4c6583fbdf" prot="public" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>history_type</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1GlobalLocal_1ac6705377112dbaacb0141371b3c58b92" prot="public" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>HistoryType</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1GlobalLocal_1a3c78f702abf8c6c71fdc727230a140bd" prot="private" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>index_pair</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1GlobalLocal_1a0dc6c82443a5a7f091aced9f00e9e924" prot="public" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>jump_type</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1GlobalLocal_1adaecb155ebcde100eb2f2f9bde76d3d3" prot="public" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>JumpType</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1GlobalLocal_1ab9e4e7b924b9cc58191abef0ec3ed007" prot="public" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>local_covariance_type</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1GlobalLocal_1ad5c45a445627bed86c3d51b13b385956" prot="public" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>local_covariances</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1GlobalLocal_1a512e8526c29f20c96992efc8dcd2da2a" prot="public" virt="non-virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>LocalCovarianceType</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1GlobalLocal_1abf3e66748628edc462dd5f7b531f4c2b" prot="public" virt="virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>mode</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1GlobalLocal_1a600d45aa7174be9fb264a938de61a568" prot="public" virt="virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>propose</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1GlobalLocal_1a31e2faf68a29cfc348905a8022a397e5" prot="public" virt="virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>~GlobalLocal</name></member>
+      <member refid="structeos_1_1MarkovChain_1_1ProposalFunction_1a758ad6e18e36b15062fe776ee7a9b3d9" prot="public" virt="pure-virtual"><scope>eos::proposal_functions::GlobalLocal</scope><name>~ProposalFunction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

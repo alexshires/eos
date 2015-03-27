@@ -1,0 +1,166 @@
+\hypertarget{classeos_1_1HierarchicalClustering}{
+\section{eos::HierarchicalClustering Class Reference}
+\label{classeos_1_1HierarchicalClustering}\index{eos::HierarchicalClustering@{eos::HierarchicalClustering}}
+}
+
+
+{\ttfamily \#include $<$hierarchical-\/clustering.hh$>$}
+
+Inherits \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern$<$ HierarchicalClustering $>$}.\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classeos_1_1HierarchicalClustering_1_1Component}{Component}
+\item 
+class \hyperlink{classeos_1_1HierarchicalClustering_1_1Config}{Config}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std::vector$<$ \hyperlink{classeos_1_1HierarchicalClustering_1_1Component}{HierarchicalClustering::Component} $>$ \hyperlink{classeos_1_1HierarchicalClustering_aa51668b14931e2a8b1697c8f26a8f1c8}{MixtureDensity}
+\item 
+typedef \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator}$<$ IteratorTag, \hyperlink{classeos_1_1HierarchicalClustering_1_1Component}{Component} $>$ \hyperlink{classeos_1_1HierarchicalClustering_a4d4c7214856d750b968299925f29b207}{ComponentIterator}
+\begin{DoxyCompactList}\small\item\em Loop over input \hyperlink{namespaceeos_1_1components}{components}. \item\end{DoxyCompactList}\item 
+typedef \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator}$<$ IteratorTag, \hyperlink{classeos_1_1HierarchicalClustering_1_1Component}{Component} $>$ \hyperlink{classeos_1_1HierarchicalClustering_aae7753bcc3666ca15b333a39aa454b29}{ClusterIterator}
+\begin{DoxyCompactList}\small\item\em Loop over final clusters (determined during clustering). \item\end{DoxyCompactList}\item 
+typedef \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator}$<$ IteratorTag, unsigned $>$ \hyperlink{classeos_1_1HierarchicalClustering_a7cf007a3d8e09d9b37f0c28c82013441}{MapIterator}
+\begin{DoxyCompactList}\small\item\em To which cluster is a component mapped? \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classeos_1_1HierarchicalClustering_ae42a0dd678f5258605a225a4b53eb487}{add} (const \hyperlink{classeos_1_1HierarchicalClustering_1_1Component}{Component} \&component)
+\item 
+void \hyperlink{classeos_1_1HierarchicalClustering_af11950c9657fcfaf1962b3945e5feef6}{initial\_\-guess} (const \hyperlink{classeos_1_1HierarchicalClustering_aa51668b14931e2a8b1697c8f26a8f1c8}{MixtureDensity} \&density)
+\item 
+void \hyperlink{classeos_1_1HierarchicalClustering_aff7df5f12bd5ddb276896cc43c597981}{run} ()
+\item 
+\hyperlink{classeos_1_1WrappedForwardIterator}{ComponentIterator} \hyperlink{classeos_1_1HierarchicalClustering_a34dc8e608ce186011554a7e108216b78}{begin\_\-components} () const 
+\item 
+\hyperlink{classeos_1_1WrappedForwardIterator}{ComponentIterator} \hyperlink{classeos_1_1HierarchicalClustering_ac834886e174350d4cf0a69fd88916b8c}{end\_\-components} () const 
+\item 
+\hyperlink{classeos_1_1WrappedForwardIterator}{ClusterIterator} \hyperlink{classeos_1_1HierarchicalClustering_ac30248ba80ef8483617c6d0b3cc84e98}{begin\_\-clusters} () const 
+\item 
+\hyperlink{classeos_1_1WrappedForwardIterator}{ClusterIterator} \hyperlink{classeos_1_1HierarchicalClustering_a071a4d95afc77934d1af8c57050e49cb}{end\_\-clusters} () const 
+\item 
+\hyperlink{classeos_1_1WrappedForwardIterator}{MapIterator} \hyperlink{classeos_1_1HierarchicalClustering_a2b2ea33a67b4e8f66ab8b6e4dd6a6710}{begin\_\-map} () const 
+\item 
+\hyperlink{classeos_1_1WrappedForwardIterator}{MapIterator} \hyperlink{classeos_1_1HierarchicalClustering_a022c09b9e8072a404b659e5a482937f8}{end\_\-map} () const 
+\end{DoxyCompactItemize}
+\begin{Indent}{\bf Basic Functions}\par
+{\em \label{_amgrp2386c9a1f1785edee33f374dd2db9b3d}
+ }\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1HierarchicalClustering_a7b4792a338b8e9ed7eff4c50b69a6e2f}{HierarchicalClustering} (const \hyperlink{classeos_1_1HierarchicalClustering_1_1Config}{HierarchicalClustering::Config} \&config)
+\item 
+\hyperlink{classeos_1_1HierarchicalClustering_a65264d9ee6f203a8ca040644df99bf65}{$\sim$HierarchicalClustering} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+Implement the hierarchical clustering explained in \mbox{[}GR2004\mbox{]}.
+
+A mixture density is determined as a reduced representation of input \hyperlink{namespaceeos_1_1components}{components}. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classeos_1_1HierarchicalClustering_aae7753bcc3666ca15b333a39aa454b29}{
+\index{eos::HierarchicalClustering@{eos::HierarchicalClustering}!ClusterIterator@{ClusterIterator}}
+\index{ClusterIterator@{ClusterIterator}!eos::HierarchicalClustering@{eos::HierarchicalClustering}}
+\subsubsection[{ClusterIterator}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf WrappedForwardIterator}$<$IteratorTag, {\bf Component}$>$ {\bf eos::HierarchicalClustering::ClusterIterator}}}
+\label{classeos_1_1HierarchicalClustering_aae7753bcc3666ca15b333a39aa454b29}
+
+
+Loop over final clusters (determined during clustering). \hypertarget{classeos_1_1HierarchicalClustering_a4d4c7214856d750b968299925f29b207}{
+\index{eos::HierarchicalClustering@{eos::HierarchicalClustering}!ComponentIterator@{ComponentIterator}}
+\index{ComponentIterator@{ComponentIterator}!eos::HierarchicalClustering@{eos::HierarchicalClustering}}
+\subsubsection[{ComponentIterator}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf WrappedForwardIterator}$<$IteratorTag, {\bf Component}$>$ {\bf eos::HierarchicalClustering::ComponentIterator}}}
+\label{classeos_1_1HierarchicalClustering_a4d4c7214856d750b968299925f29b207}
+
+
+Loop over input \hyperlink{namespaceeos_1_1components}{components}. \hypertarget{classeos_1_1HierarchicalClustering_a7cf007a3d8e09d9b37f0c28c82013441}{
+\index{eos::HierarchicalClustering@{eos::HierarchicalClustering}!MapIterator@{MapIterator}}
+\index{MapIterator@{MapIterator}!eos::HierarchicalClustering@{eos::HierarchicalClustering}}
+\subsubsection[{MapIterator}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf WrappedForwardIterator}$<$IteratorTag, unsigned$>$ {\bf eos::HierarchicalClustering::MapIterator}}}
+\label{classeos_1_1HierarchicalClustering_a7cf007a3d8e09d9b37f0c28c82013441}
+
+
+To which cluster is a component mapped? \hypertarget{classeos_1_1HierarchicalClustering_aa51668b14931e2a8b1697c8f26a8f1c8}{
+\index{eos::HierarchicalClustering@{eos::HierarchicalClustering}!MixtureDensity@{MixtureDensity}}
+\index{MixtureDensity@{MixtureDensity}!eos::HierarchicalClustering@{eos::HierarchicalClustering}}
+\subsubsection[{MixtureDensity}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::vector$<${\bf HierarchicalClustering::Component}$>$ {\bf eos::HierarchicalClustering::MixtureDensity}}}
+\label{classeos_1_1HierarchicalClustering_aa51668b14931e2a8b1697c8f26a8f1c8}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classeos_1_1HierarchicalClustering_a7b4792a338b8e9ed7eff4c50b69a6e2f}{
+\index{eos::HierarchicalClustering@{eos::HierarchicalClustering}!HierarchicalClustering@{HierarchicalClustering}}
+\index{HierarchicalClustering@{HierarchicalClustering}!eos::HierarchicalClustering@{eos::HierarchicalClustering}}
+\subsubsection[{HierarchicalClustering}]{\setlength{\rightskip}{0pt plus 5cm}eos::HierarchicalClustering::HierarchicalClustering (const {\bf HierarchicalClustering::Config} \& {\em config})}}
+\label{classeos_1_1HierarchicalClustering_a7b4792a338b8e9ed7eff4c50b69a6e2f}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em config}]The configuration of the samples. \end{DoxyParams}
+\hypertarget{classeos_1_1HierarchicalClustering_a65264d9ee6f203a8ca040644df99bf65}{
+\index{eos::HierarchicalClustering@{eos::HierarchicalClustering}!$\sim$HierarchicalClustering@{$\sim$HierarchicalClustering}}
+\index{$\sim$HierarchicalClustering@{$\sim$HierarchicalClustering}!eos::HierarchicalClustering@{eos::HierarchicalClustering}}
+\subsubsection[{$\sim$HierarchicalClustering}]{\setlength{\rightskip}{0pt plus 5cm}eos::HierarchicalClustering::$\sim$HierarchicalClustering ()}}
+\label{classeos_1_1HierarchicalClustering_a65264d9ee6f203a8ca040644df99bf65}
+
+
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classeos_1_1HierarchicalClustering_ae42a0dd678f5258605a225a4b53eb487}{
+\index{eos::HierarchicalClustering@{eos::HierarchicalClustering}!add@{add}}
+\index{add@{add}!eos::HierarchicalClustering@{eos::HierarchicalClustering}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void eos::HierarchicalClustering::add (const {\bf Component} \& {\em component})}}
+\label{classeos_1_1HierarchicalClustering_ae42a0dd678f5258605a225a4b53eb487}
+Add an input component \hypertarget{classeos_1_1HierarchicalClustering_ac30248ba80ef8483617c6d0b3cc84e98}{
+\index{eos::HierarchicalClustering@{eos::HierarchicalClustering}!begin\_\-clusters@{begin\_\-clusters}}
+\index{begin\_\-clusters@{begin\_\-clusters}!eos::HierarchicalClustering@{eos::HierarchicalClustering}}
+\subsubsection[{begin\_\-clusters}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ClusterIterator} eos::HierarchicalClustering::begin\_\-clusters () const}}
+\label{classeos_1_1HierarchicalClustering_ac30248ba80ef8483617c6d0b3cc84e98}
+\hypertarget{classeos_1_1HierarchicalClustering_a34dc8e608ce186011554a7e108216b78}{
+\index{eos::HierarchicalClustering@{eos::HierarchicalClustering}!begin\_\-components@{begin\_\-components}}
+\index{begin\_\-components@{begin\_\-components}!eos::HierarchicalClustering@{eos::HierarchicalClustering}}
+\subsubsection[{begin\_\-components}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ComponentIterator} eos::HierarchicalClustering::begin\_\-components () const}}
+\label{classeos_1_1HierarchicalClustering_a34dc8e608ce186011554a7e108216b78}
+\hypertarget{classeos_1_1HierarchicalClustering_a2b2ea33a67b4e8f66ab8b6e4dd6a6710}{
+\index{eos::HierarchicalClustering@{eos::HierarchicalClustering}!begin\_\-map@{begin\_\-map}}
+\index{begin\_\-map@{begin\_\-map}!eos::HierarchicalClustering@{eos::HierarchicalClustering}}
+\subsubsection[{begin\_\-map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MapIterator} eos::HierarchicalClustering::begin\_\-map () const}}
+\label{classeos_1_1HierarchicalClustering_a2b2ea33a67b4e8f66ab8b6e4dd6a6710}
+\hypertarget{classeos_1_1HierarchicalClustering_a071a4d95afc77934d1af8c57050e49cb}{
+\index{eos::HierarchicalClustering@{eos::HierarchicalClustering}!end\_\-clusters@{end\_\-clusters}}
+\index{end\_\-clusters@{end\_\-clusters}!eos::HierarchicalClustering@{eos::HierarchicalClustering}}
+\subsubsection[{end\_\-clusters}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ClusterIterator} eos::HierarchicalClustering::end\_\-clusters () const}}
+\label{classeos_1_1HierarchicalClustering_a071a4d95afc77934d1af8c57050e49cb}
+\hypertarget{classeos_1_1HierarchicalClustering_ac834886e174350d4cf0a69fd88916b8c}{
+\index{eos::HierarchicalClustering@{eos::HierarchicalClustering}!end\_\-components@{end\_\-components}}
+\index{end\_\-components@{end\_\-components}!eos::HierarchicalClustering@{eos::HierarchicalClustering}}
+\subsubsection[{end\_\-components}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ComponentIterator} eos::HierarchicalClustering::end\_\-components () const}}
+\label{classeos_1_1HierarchicalClustering_ac834886e174350d4cf0a69fd88916b8c}
+\hypertarget{classeos_1_1HierarchicalClustering_a022c09b9e8072a404b659e5a482937f8}{
+\index{eos::HierarchicalClustering@{eos::HierarchicalClustering}!end\_\-map@{end\_\-map}}
+\index{end\_\-map@{end\_\-map}!eos::HierarchicalClustering@{eos::HierarchicalClustering}}
+\subsubsection[{end\_\-map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MapIterator} eos::HierarchicalClustering::end\_\-map () const}}
+\label{classeos_1_1HierarchicalClustering_a022c09b9e8072a404b659e5a482937f8}
+\hypertarget{classeos_1_1HierarchicalClustering_af11950c9657fcfaf1962b3945e5feef6}{
+\index{eos::HierarchicalClustering@{eos::HierarchicalClustering}!initial\_\-guess@{initial\_\-guess}}
+\index{initial\_\-guess@{initial\_\-guess}!eos::HierarchicalClustering@{eos::HierarchicalClustering}}
+\subsubsection[{initial\_\-guess}]{\setlength{\rightskip}{0pt plus 5cm}void eos::HierarchicalClustering::initial\_\-guess (const {\bf MixtureDensity} \& {\em density})}}
+\label{classeos_1_1HierarchicalClustering_af11950c9657fcfaf1962b3945e5feef6}
+Add an initial guess for the clusters to be determined 
+\begin{DoxyParams}{Parameters}
+\item[{\em density}]\end{DoxyParams}
+\hypertarget{classeos_1_1HierarchicalClustering_aff7df5f12bd5ddb276896cc43c597981}{
+\index{eos::HierarchicalClustering@{eos::HierarchicalClustering}!run@{run}}
+\index{run@{run}!eos::HierarchicalClustering@{eos::HierarchicalClustering}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void eos::HierarchicalClustering::run ()}}
+\label{classeos_1_1HierarchicalClustering_aff7df5f12bd5ddb276896cc43c597981}
+Perform the clustering. 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{hierarchical-clustering_8hh}{hierarchical-\/clustering.hh}\end{DoxyCompactItemize}

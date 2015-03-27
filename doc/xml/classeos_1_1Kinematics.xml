@@ -1,0 +1,281 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1Kinematics" kind="class" prot="public">
+    <compoundname>eos::Kinematics</compoundname>
+    <basecompoundref refid="classeos_1_1PrivateImplementationPattern" prot="public" virt="non-virtual">eos::PrivateImplementationPattern&lt; Kinematics &gt;</basecompoundref>
+    <includes refid="kinematic_8hh" local="no">kinematic.hh</includes>
+      <sectiondef kind="user-defined">
+      <header>Basic Functions</header>
+      <description><para><anchor id="_1amgrp2386c9a1f1785edee33f374dd2db9b3d"/> Constructor. </para></description>
+      <memberdef kind="function" id="classeos_1_1Kinematics_1a5385a72bcc6db8568a82808d6f02aa9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::Kinematics::Kinematics</definition>
+        <argsstring>()</argsstring>
+        <name>Kinematics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor.</para><para>Create an instance of <ref refid="classeos_1_1Kinematics" kindref="compound">Kinematics</ref> with a given set of initial kinematic variables.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>variables</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The set of initial kinematics variables from which this object shall be constructed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/kinematic.hh" line="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Kinematics_1add9a8894b7712980d4ff89440ba87f5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::Kinematics::Kinematics</definition>
+        <argsstring>(const std::initializer_list&lt; std::pair&lt; std::string, double &gt;&gt; &amp;variables)</argsstring>
+        <name>Kinematics</name>
+        <param>
+          <type>const std::initializer_list&lt; std::pair&lt; std::string, double &gt;&gt; &amp;</type>
+          <declname>variables</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor.</para><para>Create an instance of <ref refid="classeos_1_1Kinematics" kindref="compound">Kinematics</ref> with a given set of initial kinematic variables.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>variables</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The set of initial kinematics variables from which this object shall be constructed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/kinematic.hh" line="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Kinematics_1a9ec2eee0f195a921a50de942bfb7d38f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::Kinematics::~Kinematics</definition>
+        <argsstring>()</argsstring>
+        <name>~Kinematics</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/kinematic.hh" line="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Kinematics_1aedd9681136ab3735fb754e2840e10715" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1Kinematics" kindref="compound">Kinematics</ref></type>
+        <definition>Kinematics eos::Kinematics::clone</definition>
+        <argsstring>() const </argsstring>
+        <name>clone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an independent copy of this <ref refid="classeos_1_1Kinematics" kindref="compound">Kinematics</ref> object. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/kinematic.hh" line="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Kinematics_1a7c2edc2b99e1cfd20b71ebd3dcc64d6f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool eos::Kinematics::operator==</definition>
+        <argsstring>(const Kinematics &amp;rhs) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Kinematics" kindref="compound">Kinematics</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Equality comparison operator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/kinematic.hh" line="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Kinematics_1a20f3e18e4c4157196d7c384ae2f2f2d7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool eos::Kinematics::operator!=</definition>
+        <argsstring>(const Kinematics &amp;rhs) const </argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Kinematics" kindref="compound">Kinematics</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Inequality comparison operator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/kinematic.hh" line="85"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Variable access</header>
+      <description><para><anchor id="_1amgrp5c463b2e556064c0e8e1d0475c962a4c"/> </para></description>
+      <memberdef kind="function" id="classeos_1_1Kinematics_1a0db9fd05c920dae2e0b0556dba0ebb08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1KinematicVariable" kindref="compound">KinematicVariable</ref></type>
+        <definition>KinematicVariable eos::Kinematics::declare</definition>
+        <argsstring>(const std::string &amp;name, const double &amp;value=0.0)</argsstring>
+        <name>declare</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>value</declname>
+          <defval>0.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Declare a new kinematic variable.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the new variable to be declared. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(Optional) value for the new variable. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/kinematic.hh" line="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Kinematics_1aeca2fb170ac958269fdc735ddf8bd241" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::Kinematics::set</definition>
+        <argsstring>(const std::string &amp;variable, const double &amp;value)</argsstring>
+        <name>set</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>variable</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a kinematic variable&apos;s numeric value.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the variable whose numeric value shall be changed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The variable&apos;s new numeric value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/kinematic.hh" line="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Kinematics_1acb41cb59e57011e701785db06164343c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1KinematicVariable" kindref="compound">KinematicVariable</ref></type>
+        <definition>KinematicVariable eos::Kinematics::operator[]</definition>
+        <argsstring>(const std::string &amp;variable) const </argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>variable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve a variable&apos;s <ref refid="classeos_1_1KinematicVariable" kindref="compound">KinematicVariable</ref> object by name.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the <ref refid="classeos_1_1KinematicVariable" kindref="compound">KinematicVariable</ref> that shall be retrieved. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/kinematic.hh" line="111"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Output</header>
+      <description><para><anchor id="_1amgrp29c2c02a361c9d7028472e5d92cd4a54"/> </para></description>
+      <memberdef kind="function" id="classeos_1_1Kinematics_1a297facfe690f7f805d4af5e32b739af9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string eos::Kinematics::as_string</definition>
+        <argsstring>() const </argsstring>
+        <name>as_string</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve a string representation of the set of kinematic variables. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/kinematic.hh" line="120"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classeos_1_1Kinematics" kindref="compound">Kinematics</ref> keeps the set of all kinematic variables for any <ref refid="classeos_1_1Observable" kindref="compound">Observable</ref>.</para><para>Access to any <ref refid="classeos_1_1KinematicVariable" kindref="compound">KinematicVariable</ref> or their values is coherent, i.e., changes to a <ref refid="classeos_1_1KinematicVariable" kindref="compound">KinematicVariable</ref> object will propagate to every other object with the same parent <ref refid="classeos_1_1Kinematics" kindref="compound">Kinematics</ref> and which handle the same variable by name. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="537">
+        <label>eos::Kinematics</label>
+        <link refid="classeos_1_1Kinematics"/>
+        <childnode refid="538" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="538">
+        <label>eos::PrivateImplementationPattern&lt; Kinematics &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="539">
+        <label>eos::Kinematics</label>
+        <link refid="classeos_1_1Kinematics"/>
+        <childnode refid="540" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="540">
+        <label>eos::PrivateImplementationPattern&lt; Kinematics &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/kinematic.hh" line="50" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/kinematic.hh" bodystart="48" bodyend="122"/>
+    <listofallmembers>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a232940e78b26c6ed4f97196f831c69c9" prot="protected" virt="non-virtual"><scope>eos::Kinematics</scope><name>_imp</name></member>
+      <member refid="classeos_1_1Kinematics_1a297facfe690f7f805d4af5e32b739af9" prot="public" virt="non-virtual"><scope>eos::Kinematics</scope><name>as_string</name></member>
+      <member refid="classeos_1_1Kinematics_1aedd9681136ab3735fb754e2840e10715" prot="public" virt="non-virtual"><scope>eos::Kinematics</scope><name>clone</name></member>
+      <member refid="classeos_1_1Kinematics_1a0db9fd05c920dae2e0b0556dba0ebb08" prot="public" virt="non-virtual"><scope>eos::Kinematics</scope><name>declare</name></member>
+      <member refid="classeos_1_1Kinematics_1a5385a72bcc6db8568a82808d6f02aa9b" prot="public" virt="non-virtual"><scope>eos::Kinematics</scope><name>Kinematics</name></member>
+      <member refid="classeos_1_1Kinematics_1add9a8894b7712980d4ff89440ba87f5c" prot="public" virt="non-virtual"><scope>eos::Kinematics</scope><name>Kinematics</name></member>
+      <member refid="classeos_1_1Kinematics_1a20f3e18e4c4157196d7c384ae2f2f2d7" prot="public" virt="non-virtual"><scope>eos::Kinematics</scope><name>operator!=</name></member>
+      <member refid="classeos_1_1Kinematics_1a7c2edc2b99e1cfd20b71ebd3dcc64d6f" prot="public" virt="non-virtual"><scope>eos::Kinematics</scope><name>operator==</name></member>
+      <member refid="classeos_1_1Kinematics_1acb41cb59e57011e701785db06164343c" prot="public" virt="non-virtual"><scope>eos::Kinematics</scope><name>operator[]</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a3e3d5f4a565256a1dda6c234b051b2f2" prot="public" virt="non-virtual"><scope>eos::Kinematics</scope><name>PrivateImplementationPattern</name></member>
+      <member refid="classeos_1_1Kinematics_1aeca2fb170ac958269fdc735ddf8bd241" prot="public" virt="non-virtual"><scope>eos::Kinematics</scope><name>set</name></member>
+      <member refid="classeos_1_1Kinematics_1a9ec2eee0f195a921a50de942bfb7d38f" prot="public" virt="non-virtual"><scope>eos::Kinematics</scope><name>~Kinematics</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1acf46ec2739c3b0ec9702b9428475876d" prot="public" virt="non-virtual"><scope>eos::Kinematics</scope><name>~PrivateImplementationPattern</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

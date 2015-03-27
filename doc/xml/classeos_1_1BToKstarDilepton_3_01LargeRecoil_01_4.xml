@@ -1,0 +1,1847 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4" kind="class" prot="public">
+    <compoundname>eos::BToKstarDilepton&lt; LargeRecoil &gt;</compoundname>
+    <basecompoundref refid="classeos_1_1ParameterUser" prot="public" virt="non-virtual">eos::ParameterUser</basecompoundref>
+    <basecompoundref refid="classeos_1_1PrivateImplementationPattern" prot="public" virt="non-virtual">eos::PrivateImplementationPattern&lt; BToKstarDilepton&lt; LargeRecoil &gt; &gt;</basecompoundref>
+    <includes refid="exclusive-b-to-s-dilepton-large-recoil_8hh" local="no">exclusive-b-to-s-dilepton-large-recoil.hh</includes>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1ab9804a9f493c78698f013d0775e14509" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::BToKstarDilepton&lt; LargeRecoil &gt;::BToKstarDilepton</definition>
+        <argsstring>(const Parameters &amp;parameters, const Options &amp;options)</argsstring>
+        <name>BToKstarDilepton</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1Options" kindref="compound">Options</ref> &amp;</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1aaa5e93714aa6fe6fa4962da519f0d2b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::BToKstarDilepton&lt; LargeRecoil &gt;::~BToKstarDilepton</definition>
+        <argsstring>()</argsstring>
+        <name>~BToKstarDilepton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1adda7df580794e776e15a5cef3c3b08f2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::xi_perp</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>xi_perp</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1aafe87996e1cd2a71ede48a745683a4a8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::xi_para</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>xi_para</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1ac7dceafd65b31380d2a1e6009e6d6202" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::BToKstarDilepton&lt; LargeRecoil &gt;::a_long</definition>
+        <argsstring>(const Helicity &amp;h, const double &amp;s) const </argsstring>
+        <name>a_long</name>
+        <param>
+          <type>const <ref refid="namespaceeos_1a4b2f8b0a4184d635cfc47c4ee234aea5" kindref="member">Helicity</ref> &amp;</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a0d7d954b551e4aeb7e4ed7a77df69910" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::BToKstarDilepton&lt; LargeRecoil &gt;::a_perp</definition>
+        <argsstring>(const Helicity &amp;h, const double &amp;s) const </argsstring>
+        <name>a_perp</name>
+        <param>
+          <type>const <ref refid="namespaceeos_1a4b2f8b0a4184d635cfc47c4ee234aea5" kindref="member">Helicity</ref> &amp;</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a5189131b39ddfac57b129af1bee7374c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::BToKstarDilepton&lt; LargeRecoil &gt;::a_par</definition>
+        <argsstring>(const Helicity &amp;h, const double &amp;s) const </argsstring>
+        <name>a_par</name>
+        <param>
+          <type>const <ref refid="namespaceeos_1a4b2f8b0a4184d635cfc47c4ee234aea5" kindref="member">Helicity</ref> &amp;</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a2dfa00f4a78916bc1206467e50cbba84" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::a_fb_zero_crossing</definition>
+        <argsstring>() const </argsstring>
+        <name>a_fb_zero_crossing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1add07c0155502f992a11d641b3389e777" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::four_differential_decay_width</definition>
+        <argsstring>(const double &amp;s, const double &amp;c_theta_l, const double &amp;c_theta_k, const double &amp;phi) const </argsstring>
+        <name>four_differential_decay_width</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>c_theta_l</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>c_theta_k</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>phi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1ac39adcdd23870737c98131ce116dfa74" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::differential_branching_ratio</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_branching_ratio</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1af7497c0bf4a231808b9441030d01613a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::differential_decay_width</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_decay_width</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1afa88a0c245558f37d98434d6e1015b1a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::differential_isospin_asymmetry</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_isospin_asymmetry</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1aa04892629835230c6c872ad23856ed23" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::differential_forward_backward_asymmetry</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_forward_backward_asymmetry</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1aa84eeff61540f463dbeeca9849abbfa8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::differential_longitudinal_polarisation</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_longitudinal_polarisation</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a6de27e23e4ca3173c2ea165a6582635f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::differential_transversal_polarisation</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_transversal_polarisation</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1add8dad95050fb3a80b4505ba984e9a62" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::differential_transverse_asymmetry_2</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_transverse_asymmetry_2</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a36fc5792c391c669945edf471c1d4351" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::differential_transverse_asymmetry_3</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_transverse_asymmetry_3</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a6788c2ed0fb87a3d0d5793c74abbd38d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::differential_transverse_asymmetry_4</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_transverse_asymmetry_4</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1afdbdfe18da3c1b6984950b4fd887cfd4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::differential_transverse_asymmetry_5</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_transverse_asymmetry_5</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1af6af253a6e5b782e3d3f96d2cbc4baaf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::differential_transverse_asymmetry_re</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_transverse_asymmetry_re</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1ab43ff9e7f2d5c4c3e0d30f4303c85bc8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::differential_transverse_asymmetry_im</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_transverse_asymmetry_im</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a1919215afd68af87e39b87fed3b92aad" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::differential_p_prime_4</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_p_prime_4</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1aae7b7fca81060e9289d17f9d5b57b405" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::differential_p_prime_5</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_p_prime_5</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a942513095cca8276cba277eb998c73f1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::differential_p_prime_6</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_p_prime_6</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a3076895ca169ceb6c13b3a0089039bea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::differential_h_1</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_h_1</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1aabb4dc215ce3f2fc02a3f846eeffda3a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::differential_h_2</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_h_2</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a2e7d76876fc033b53061eb733a8d40f8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::differential_h_3</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_h_3</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1ac60b62a7c500af1d4ae48d23b90ca74b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::differential_h_4</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_h_4</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a7ffc985d5f3595a93fa36fd24cc3d43a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::differential_h_5</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_h_5</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a254ef49011afd022304b3f1cc75c98e3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::differential_j_1s</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_j_1s</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1adbf8cf75ff92eaab4a76ed7c4250f03a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::differential_j_1c</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_j_1c</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1abe744b897bfadbe4a56de9cfd11b78dd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::differential_j_2s</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_j_2s</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a477cbfe790f9386ddb96b7c6ac1109a8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::differential_j_2c</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_j_2c</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1ab6aed85bcab71741d2a52db8bae6ff95" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::differential_j_3</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_j_3</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a17d1b20c2e3b71e473aa5465cc665bb9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::differential_j_3_normalized</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_j_3_normalized</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a37075144ad0cecd180ec1c48aa3eb68a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::differential_j_3_normalized_cp_averaged</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_j_3_normalized_cp_averaged</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1ad32e45ca26888cb44aa57be1073fdf85" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::differential_j_4</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_j_4</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a6cf2f7cc28e08361993972b3e51dd3e4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::differential_j_5</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_j_5</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a0373ddd6d8366a8fabf90c9ae3f3c525" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::differential_j_6s</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_j_6s</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1ad789a2b55467f5e020494afad9f51f3a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::differential_j_6c</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_j_6c</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a3ce2c68d373c5abb0f1992f1474f86ee" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::differential_j_7</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_j_7</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a0f2479e014f0b9b98412728c459d3cf0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::differential_j_8</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_j_8</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1ad51b237eaae2b1f6ef47bc3b4194682c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::differential_j_9</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_j_9</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a78b433cd38a04ca1ec8991aa7b26ac79" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::differential_j_9_normalized</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_j_9_normalized</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1ada2f49a4978c95250e3c282e079e0952" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::differential_j_9_normalized_cp_averaged</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_j_9_normalized_cp_averaged</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1adbfb9ebdedeba02edf74bf82ca7c1b6e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_decay_width</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_decay_width</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a7a272263b3e040fabd6a78bb54557dbf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_branching_ratio</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_branching_ratio</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a50645c68f1852c1746ad770de4de9de4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_branching_ratio_cp_averaged</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_branching_ratio_cp_averaged</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a3d22ecca150af1e00e707c14fe047969" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_cp_asymmetry</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_cp_asymmetry</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1ad5e19e4be9af758ada5e3caf7f722df4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_isospin_asymmetry</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_isospin_asymmetry</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a0161b6759525b9dafca8b4524c591c07" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_forward_backward_asymmetry</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_forward_backward_asymmetry</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1acaa928d3d2d91df748a418c1d333de0c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_forward_backward_asymmetry_cp_averaged</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_forward_backward_asymmetry_cp_averaged</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1ae4d953c9cb4a330bdaffd731c0845efe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_longitudinal_polarisation</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_longitudinal_polarisation</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1ac451e0cec0a12b23c33d21f9961d77d4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_longitudinal_polarisation_cp_averaged</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_longitudinal_polarisation_cp_averaged</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a748d9ddbc10e6d69e737d217e7c77193" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_transversal_polarisation</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_transversal_polarisation</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a0882bddcb08b7ead987512f56e874297" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_transversal_polarisation_cp_averaged</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_transversal_polarisation_cp_averaged</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1add9bb0e4ac8349af2d9cfdeb571cd90f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_transverse_asymmetry_2</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_transverse_asymmetry_2</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a7e8b23d9ac0248a61c0a762e50549da2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_transverse_asymmetry_2_cp_averaged</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_transverse_asymmetry_2_cp_averaged</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a072c0868729dccd3c25d3ebfce97bb42" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_transverse_asymmetry_3</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_transverse_asymmetry_3</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a745412c6ccdb663f905f06be923082f2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_transverse_asymmetry_4</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_transverse_asymmetry_4</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1aff2ff1bed79cb777349b6e9bdf20cd66" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_transverse_asymmetry_5</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_transverse_asymmetry_5</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a535ddfbdc0000407bd98814504308556" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_transverse_asymmetry_re</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_transverse_asymmetry_re</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a2e38ce6db1732ee1452203414b9c7280" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_transverse_asymmetry_im</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_transverse_asymmetry_im</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a9c42a3d8488509596ae4292000e03010" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_p_prime_4</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_p_prime_4</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a53a468080844fbd3966da39a70018d5f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_p_prime_5</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_p_prime_5</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a4c040333bb5e90385f38c6990cf7dacc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_p_prime_6</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_p_prime_6</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a9406f153b7bcda724228031edccb4eff" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_h_1</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_h_1</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1ace2820ec3a4e8d3eda907e764ab57c22" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_h_2</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_h_2</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1aa2dd5c9566afd338c8edf08fc81f488a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_h_3</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_h_3</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1ad896f9ffdac50023898990437c9c8852" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_h_4</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_h_4</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a3b8088372d3a79556a70c874d7bff834" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_h_5</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_h_5</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1ab85914d06df8417561d93992ac831d5a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_j_1s</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_j_1s</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1acecdd3061211d3b737cb7ddd3cfb0a27" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_j_1c</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_j_1c</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1ac9392ba39e14592b310c6dbfa39c51dc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_j_2s</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_j_2s</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a3384404d2fb165a76421d1e3d5814bf2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_j_2c</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_j_2c</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a55d2a76ae67afb9a549aea69b76af846" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_j_3</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_j_3</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1af61c16f0cb7147d9cb8fbde1aa494c41" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_j_3_normalized</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_j_3_normalized</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a68617d15999d9b87a9f3105ccc7c0d92" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_j_3_normalized_cp_averaged</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_j_3_normalized_cp_averaged</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1ad1b9d4ed45d58d3ba4ee5b53d4e4657f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_j_4</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_j_4</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a713b072eac8610b7aadfdd1250608f91" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_j_5</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_j_5</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1ab93356611a370d9035a54a4a93797dac" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_j_6s</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_j_6s</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1affaef081192cd5f06c8aabd2a6ccc404" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_j_6c</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_j_6c</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a1359d703e7bb13a8baea5500e955b8fd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_j_7</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_j_7</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1af9105f4298f556dd4a9f449a820dcdd1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_j_8</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_j_8</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1afd16f06bd47dcc25e9b63c55f54c8ea6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_j_9</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_j_9</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a22bdeb99bb04ac635496405758ecf0d1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_j_9_normalized</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_j_9_normalized</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a32a3fbce3a956364c0b4d8248bee7047" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_j_9_normalized_cp_averaged</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_j_9_normalized_cp_averaged</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a303b3535c292601d41a60b3a466c4092" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LargeRecoil &gt;::integrated_a_9</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_a_9</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="142"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="143">
+        <label>eos::PrivateImplementationPattern&lt; BToKstarDilepton&lt; LargeRecoil &gt; &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="141">
+        <label>eos::BToKstarDilepton&lt; LargeRecoil &gt;</label>
+        <link refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4"/>
+        <childnode refid="142" relation="public-inheritance">
+        </childnode>
+        <childnode refid="143" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="142">
+        <label>eos::ParameterUser</label>
+        <link refid="classeos_1_1ParameterUser"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="147">
+        <label>eos::PrivateImplementationPattern&lt; BToKstarDilepton&lt; LargeRecoil &gt; &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="144">
+        <label>eos::BToKstarDilepton&lt; LargeRecoil &gt;</label>
+        <link refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4"/>
+        <childnode refid="145" relation="public-inheritance">
+        </childnode>
+        <childnode refid="147" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="146">
+        <label>std::set&lt; Parameter::Id &gt;</label>
+      </node>
+      <node id="145">
+        <label>eos::ParameterUser</label>
+        <link refid="classeos_1_1ParameterUser"/>
+        <childnode refid="146" relation="usage">
+          <edgelabel>_ids</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" line="41" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh" bodystart="38" bodyend="143"/>
+    <listofallmembers>
+      <member refid="classeos_1_1ParameterUser_1aa3a0285297e16cf2a5830df1f9bb2f4b" prot="protected" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>_ids</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a232940e78b26c6ed4f97196f831c69c9" prot="protected" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>_imp</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a2dfa00f4a78916bc1206467e50cbba84" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>a_fb_zero_crossing</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1ac7dceafd65b31380d2a1e6009e6d6202" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>a_long</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a5189131b39ddfac57b129af1bee7374c" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>a_par</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a0d7d954b551e4aeb7e4ed7a77df69910" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>a_perp</name></member>
+      <member refid="classeos_1_1ParameterUser_1a9cd569207063cd2a8f807c4e1203a5d4" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>begin</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1ab9804a9f493c78698f013d0775e14509" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>BToKstarDilepton</name></member>
+      <member refid="classeos_1_1ParameterUser_1a7105631bbcb4b2492e6377b2b69f5b0f" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>ConstIterator</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1ac39adcdd23870737c98131ce116dfa74" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>differential_branching_ratio</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1af7497c0bf4a231808b9441030d01613a" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>differential_decay_width</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1aa04892629835230c6c872ad23856ed23" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>differential_forward_backward_asymmetry</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a3076895ca169ceb6c13b3a0089039bea" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>differential_h_1</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1aabb4dc215ce3f2fc02a3f846eeffda3a" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>differential_h_2</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a2e7d76876fc033b53061eb733a8d40f8" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>differential_h_3</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1ac60b62a7c500af1d4ae48d23b90ca74b" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>differential_h_4</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a7ffc985d5f3595a93fa36fd24cc3d43a" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>differential_h_5</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1afa88a0c245558f37d98434d6e1015b1a" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>differential_isospin_asymmetry</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1adbf8cf75ff92eaab4a76ed7c4250f03a" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>differential_j_1c</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a254ef49011afd022304b3f1cc75c98e3" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>differential_j_1s</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a477cbfe790f9386ddb96b7c6ac1109a8" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>differential_j_2c</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1abe744b897bfadbe4a56de9cfd11b78dd" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>differential_j_2s</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1ab6aed85bcab71741d2a52db8bae6ff95" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>differential_j_3</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a17d1b20c2e3b71e473aa5465cc665bb9" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>differential_j_3_normalized</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a37075144ad0cecd180ec1c48aa3eb68a" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>differential_j_3_normalized_cp_averaged</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1ad32e45ca26888cb44aa57be1073fdf85" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>differential_j_4</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a6cf2f7cc28e08361993972b3e51dd3e4" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>differential_j_5</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1ad789a2b55467f5e020494afad9f51f3a" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>differential_j_6c</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a0373ddd6d8366a8fabf90c9ae3f3c525" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>differential_j_6s</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a3ce2c68d373c5abb0f1992f1474f86ee" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>differential_j_7</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a0f2479e014f0b9b98412728c459d3cf0" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>differential_j_8</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1ad51b237eaae2b1f6ef47bc3b4194682c" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>differential_j_9</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a78b433cd38a04ca1ec8991aa7b26ac79" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>differential_j_9_normalized</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1ada2f49a4978c95250e3c282e079e0952" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>differential_j_9_normalized_cp_averaged</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1aa84eeff61540f463dbeeca9849abbfa8" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>differential_longitudinal_polarisation</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a1919215afd68af87e39b87fed3b92aad" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>differential_p_prime_4</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1aae7b7fca81060e9289d17f9d5b57b405" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>differential_p_prime_5</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a942513095cca8276cba277eb998c73f1" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>differential_p_prime_6</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a6de27e23e4ca3173c2ea165a6582635f" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>differential_transversal_polarisation</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1add8dad95050fb3a80b4505ba984e9a62" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>differential_transverse_asymmetry_2</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a36fc5792c391c669945edf471c1d4351" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>differential_transverse_asymmetry_3</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a6788c2ed0fb87a3d0d5793c74abbd38d" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>differential_transverse_asymmetry_4</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1afdbdfe18da3c1b6984950b4fd887cfd4" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>differential_transverse_asymmetry_5</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1ab43ff9e7f2d5c4c3e0d30f4303c85bc8" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>differential_transverse_asymmetry_im</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1af6af253a6e5b782e3d3f96d2cbc4baaf" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>differential_transverse_asymmetry_re</name></member>
+      <member refid="classeos_1_1ParameterUser_1a5813c886f3fd3f074cc02a53fc9e0790" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>end</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1add07c0155502f992a11d641b3389e777" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>four_differential_decay_width</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a303b3535c292601d41a60b3a466c4092" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_a_9</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a7a272263b3e040fabd6a78bb54557dbf" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_branching_ratio</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a50645c68f1852c1746ad770de4de9de4" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_branching_ratio_cp_averaged</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a3d22ecca150af1e00e707c14fe047969" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_cp_asymmetry</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1adbfb9ebdedeba02edf74bf82ca7c1b6e" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_decay_width</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a0161b6759525b9dafca8b4524c591c07" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_forward_backward_asymmetry</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1acaa928d3d2d91df748a418c1d333de0c" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_forward_backward_asymmetry_cp_averaged</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a9406f153b7bcda724228031edccb4eff" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_h_1</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1ace2820ec3a4e8d3eda907e764ab57c22" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_h_2</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1aa2dd5c9566afd338c8edf08fc81f488a" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_h_3</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1ad896f9ffdac50023898990437c9c8852" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_h_4</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a3b8088372d3a79556a70c874d7bff834" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_h_5</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1ad5e19e4be9af758ada5e3caf7f722df4" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_isospin_asymmetry</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1acecdd3061211d3b737cb7ddd3cfb0a27" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_j_1c</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1ab85914d06df8417561d93992ac831d5a" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_j_1s</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a3384404d2fb165a76421d1e3d5814bf2" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_j_2c</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1ac9392ba39e14592b310c6dbfa39c51dc" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_j_2s</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a55d2a76ae67afb9a549aea69b76af846" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_j_3</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1af61c16f0cb7147d9cb8fbde1aa494c41" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_j_3_normalized</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a68617d15999d9b87a9f3105ccc7c0d92" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_j_3_normalized_cp_averaged</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1ad1b9d4ed45d58d3ba4ee5b53d4e4657f" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_j_4</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a713b072eac8610b7aadfdd1250608f91" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_j_5</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1affaef081192cd5f06c8aabd2a6ccc404" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_j_6c</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1ab93356611a370d9035a54a4a93797dac" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_j_6s</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a1359d703e7bb13a8baea5500e955b8fd" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_j_7</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1af9105f4298f556dd4a9f449a820dcdd1" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_j_8</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1afd16f06bd47dcc25e9b63c55f54c8ea6" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_j_9</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a22bdeb99bb04ac635496405758ecf0d1" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_j_9_normalized</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a32a3fbce3a956364c0b4d8248bee7047" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_j_9_normalized_cp_averaged</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1ae4d953c9cb4a330bdaffd731c0845efe" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_longitudinal_polarisation</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1ac451e0cec0a12b23c33d21f9961d77d4" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_longitudinal_polarisation_cp_averaged</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a9c42a3d8488509596ae4292000e03010" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_p_prime_4</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a53a468080844fbd3966da39a70018d5f" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_p_prime_5</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a4c040333bb5e90385f38c6990cf7dacc" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_p_prime_6</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a748d9ddbc10e6d69e737d217e7c77193" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_transversal_polarisation</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a0882bddcb08b7ead987512f56e874297" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_transversal_polarisation_cp_averaged</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1add9bb0e4ac8349af2d9cfdeb571cd90f" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_transverse_asymmetry_2</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a7e8b23d9ac0248a61c0a762e50549da2" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_transverse_asymmetry_2_cp_averaged</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a072c0868729dccd3c25d3ebfce97bb42" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_transverse_asymmetry_3</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a745412c6ccdb663f905f06be923082f2" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_transverse_asymmetry_4</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1aff2ff1bed79cb777349b6e9bdf20cd66" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_transverse_asymmetry_5</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a2e38ce6db1732ee1452203414b9c7280" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_transverse_asymmetry_im</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1a535ddfbdc0000407bd98814504308556" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>integrated_transverse_asymmetry_re</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a3e3d5f4a565256a1dda6c234b051b2f2" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>PrivateImplementationPattern</name></member>
+      <member refid="classeos_1_1ParameterUser_1ad91a901e589653272482bded7e453c70" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>uses</name></member>
+      <member refid="classeos_1_1ParameterUser_1a7a37e779cf45ef1075fe7bf670688b72" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>uses</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1aafe87996e1cd2a71ede48a745683a4a8" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>xi_para</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1adda7df580794e776e15a5cef3c3b08f2" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>xi_perp</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4_1aaa5e93714aa6fe6fa4962da519f0d2b6" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>~BToKstarDilepton</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1acf46ec2739c3b0ec9702b9428475876d" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LargeRecoil &gt;</scope><name>~PrivateImplementationPattern</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

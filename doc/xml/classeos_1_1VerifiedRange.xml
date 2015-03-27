@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1VerifiedRange" kind="class" prot="public">
+    <compoundname>eos::VerifiedRange</compoundname>
+    <includes refid="verify_8hh" local="no">verify.hh</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T_</declname>
+        <defname>T_</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="user-defined">
+      <header>Basic Functions</header>
+      <description><para><anchor id="_1amgrp2386c9a1f1785edee33f374dd2db9b3d"/> </para></description>
+      <memberdef kind="function" id="classeos_1_1VerifiedRange_1a91cf1ba06903af03ec4100c370330cb7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eos::VerifiedRange&lt; T_ &gt;::VerifiedRange</definition>
+        <argsstring>(const T_ &amp;min, const T_ &amp;max, const T_ &amp;value)</argsstring>
+        <name>VerifiedRange</name>
+        <param>
+          <type>const T_ &amp;</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>const T_ &amp;</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>const T_ &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structeos_1_1Minimal" kindref="compound">Minimal</ref> value that is allowed for any value of this object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximal value that is allowed for any value of this object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Initial value of this object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/verify.hh" line="105" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/verify.hh" bodystart="101" bodyend="106"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Operations</header>
+      <description><para><anchor id="_1amgrp456d0deba6a86c9585590550c797502d"/> Conversion operator its native type T_ </para></description>
+      <memberdef kind="function" id="classeos_1_1VerifiedRange_1aee4661f7688177fd52164d7413f9968d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eos::VerifiedRange&lt; T_ &gt;::operator T_</definition>
+        <argsstring>() const </argsstring>
+        <name>operator T_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Assignment operator.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right-hand-side of an assignment to this object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/verify.hh" line="113" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/verify.hh" bodystart="112" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1VerifiedRange_1af7df09e39360f49d269afffd8a2634be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T_ &amp;</type>
+        <definition>const T_&amp; eos::VerifiedRange&lt; T_ &gt;::operator=</definition>
+        <argsstring>(const T_ &amp;rhs)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const T_ &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Assignment operator.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right-hand-side of an assignment to this object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/verify.hh" line="123" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/verify.hh" bodystart="122" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1VerifiedRange_1ac2ac9a7194ece299633bfef72fb08378" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T_</type>
+        <definition>T_ eos::VerifiedRange&lt; T_ &gt;::min</definition>
+        <argsstring>() const </argsstring>
+        <name>min</name>
+        <briefdescription>
+<para>Retrieve the minimal value that is allowed for this object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/verify.hh" line="130" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/verify.hh" bodystart="129" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1VerifiedRange_1a19b21c28c1afa78ce4fc83bd9cf8f866" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T_</type>
+        <definition>T_ eos::VerifiedRange&lt; T_ &gt;::max</definition>
+        <argsstring>() const </argsstring>
+        <name>max</name>
+        <briefdescription>
+<para>Retrieve the maximal value that is allowed for this object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/verify.hh" line="136" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/verify.hh" bodystart="135" bodyend="138"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classeos_1_1VerifiedRange_1a614cea726c79bc85b96599c99d005f52" prot="private" static="no" mutable="no">
+        <type>T_</type>
+        <definition>T_ eos::VerifiedRange&lt; T_ &gt;::_min</definition>
+        <argsstring></argsstring>
+        <name>_min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/verify.hh" line="74" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/verify.hh" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1VerifiedRange_1a52eb7e87521824f71f78cc7512f5db32" prot="private" static="no" mutable="no">
+        <type>T_</type>
+        <definition>T_ eos::VerifiedRange&lt; T_ &gt;::_max</definition>
+        <argsstring></argsstring>
+        <name>_max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/verify.hh" line="76" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/verify.hh" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1VerifiedRange_1a43bbec7e520192f802f4380ac4210e89" prot="private" static="no" mutable="no">
+        <type>T_</type>
+        <definition>T_ eos::VerifiedRange&lt; T_ &gt;::_value</definition>
+        <argsstring></argsstring>
+        <name>_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/verify.hh" line="78" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/verify.hh" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classeos_1_1VerifiedRange_1a9194b4ea27bf967c559d4aea53cef786" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T_ &amp;</type>
+        <definition>const T_&amp; eos::VerifiedRange&lt; T_ &gt;::_verify</definition>
+        <argsstring>(const T_ &amp;t)</argsstring>
+        <name>_verify</name>
+        <param>
+          <type>const T_ &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/verify.hh" line="81" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/verify.hh" bodystart="80" bodyend="89"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange</ref> is a wrapper around a variable that allows assignment only within a given range.</para><para><programlisting><codeline><highlight class="normal"><sp/>VerifiedRange&lt;double&gt;<sp/>value_between_zero_and_one(0.0,<sp/>1.0,<sp/>0.5);</highlight></codeline>
+<codeline><highlight class="normal"><sp/>test_range<sp/>=<sp/>+10;<sp/></highlight><highlight class="comment">//<sp/>not<sp/>allowed,<sp/>throws<sp/>a<sp/>VerifiedRangeOverflow</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/>test_range<sp/>=<sp/>-10;<sp/></highlight><highlight class="comment">//<sp/>not<sp/>allowed,<sp/>throws<sp/>a<sp/>VerifiedRangeUnderflow</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="1052">
+        <label>eos::VerifiedRange&lt; T_ &gt;</label>
+        <link refid="classeos_1_1VerifiedRange"/>
+        <childnode refid="1053" relation="usage">
+          <edgelabel>_value</edgelabel>
+          <edgelabel>_min</edgelabel>
+          <edgelabel>_max</edgelabel>
+        </childnode>
+      </node>
+      <node id="1053">
+        <label>T_</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/verify.hh" line="72" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/verify.hh" bodystart="71" bodyend="140"/>
+    <listofallmembers>
+      <member refid="classeos_1_1VerifiedRange_1a52eb7e87521824f71f78cc7512f5db32" prot="private" virt="non-virtual"><scope>eos::VerifiedRange</scope><name>_max</name></member>
+      <member refid="classeos_1_1VerifiedRange_1a614cea726c79bc85b96599c99d005f52" prot="private" virt="non-virtual"><scope>eos::VerifiedRange</scope><name>_min</name></member>
+      <member refid="classeos_1_1VerifiedRange_1a43bbec7e520192f802f4380ac4210e89" prot="private" virt="non-virtual"><scope>eos::VerifiedRange</scope><name>_value</name></member>
+      <member refid="classeos_1_1VerifiedRange_1a9194b4ea27bf967c559d4aea53cef786" prot="private" virt="non-virtual"><scope>eos::VerifiedRange</scope><name>_verify</name></member>
+      <member refid="classeos_1_1VerifiedRange_1a19b21c28c1afa78ce4fc83bd9cf8f866" prot="public" virt="non-virtual"><scope>eos::VerifiedRange</scope><name>max</name></member>
+      <member refid="classeos_1_1VerifiedRange_1ac2ac9a7194ece299633bfef72fb08378" prot="public" virt="non-virtual"><scope>eos::VerifiedRange</scope><name>min</name></member>
+      <member refid="classeos_1_1VerifiedRange_1aee4661f7688177fd52164d7413f9968d" prot="public" virt="non-virtual"><scope>eos::VerifiedRange</scope><name>operator T_</name></member>
+      <member refid="classeos_1_1VerifiedRange_1af7df09e39360f49d269afffd8a2634be" prot="public" virt="non-virtual"><scope>eos::VerifiedRange</scope><name>operator=</name></member>
+      <member refid="classeos_1_1VerifiedRange_1a91cf1ba06903af03ec4100c370330cb7" prot="public" virt="non-virtual"><scope>eos::VerifiedRange</scope><name>VerifiedRange</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

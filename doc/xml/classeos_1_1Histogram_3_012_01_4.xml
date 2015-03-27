@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1Histogram_3_012_01_4" kind="class" prot="public">
+    <compoundname>eos::Histogram&lt; 2 &gt;</compoundname>
+    <basecompoundref refid="classeos_1_1PrivateImplementationPattern" prot="public" virt="non-virtual">eos::PrivateImplementationPattern&lt; Histogram&lt; 2 &gt; &gt;</basecompoundref>
+    <includes refid="histogram_8hh" local="no">histogram.hh</includes>
+    <innerclass refid="structeos_1_1Histogram_3_012_01_4_1_1Bin" prot="public">eos::Histogram&lt; 2 &gt;::Bin</innerclass>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="user-defined">
+      <header>Iteration</header>
+      <description><para><anchor id="_1amgrp86c1e32c05338b57578313d8a6fa892d"/> </para></description>
+      <memberdef kind="typedef" id="classeos_1_1Histogram_3_012_01_4_1a9ed06cf8cfcef9f4ed3b9786d48f76e4" prot="public" static="no">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator</ref>&lt; IteratorTag, Bin &gt;</type>
+        <definition>typedef WrappedForwardIterator&lt;IteratorTag, Bin&gt; eos::Histogram&lt; 2 &gt;::Iterator</definition>
+        <argsstring></argsstring>
+        <name>Iterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/histogram.hh" line="174" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/histogram.hh" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Histogram_3_012_01_4_1a707137db436a294fd3b1f04db0932f28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator eos::Histogram&lt; 2 &gt;::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/histogram.hh" line="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Histogram_3_012_01_4_1a232eeac19611c37c38a41afa7cb7f32d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator eos::Histogram&lt; 2 &gt;::find</definition>
+        <argsstring>(const std::array&lt; double, 2 &gt; &amp;coordinates)</argsstring>
+        <name>find</name>
+        <param>
+          <type>const std::array&lt; double, 2 &gt; &amp;</type>
+          <declname>coordinates</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/histogram.hh" line="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Histogram_3_012_01_4_1a5a2a5bce976bb53ae5a168c91d5cdef2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator eos::Histogram&lt; 2 &gt;::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/histogram.hh" line="178"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Constant Iteration</header>
+      <description><para><anchor id="_1amgrp54106a00af25f647851a54988d8beceb"/> </para></description>
+      <memberdef kind="typedef" id="classeos_1_1Histogram_3_012_01_4_1ad4594c8c5127b71c535b1389bcc2fdca" prot="public" static="no">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator</ref>&lt; ConstIteratorTag, const Bin &gt;</type>
+        <definition>typedef WrappedForwardIterator&lt;ConstIteratorTag, const Bin&gt; eos::Histogram&lt; 2 &gt;::ConstIterator</definition>
+        <argsstring></argsstring>
+        <name>ConstIterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/histogram.hh" line="184" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/histogram.hh" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Histogram_3_012_01_4_1a39f7bf7af2482f97390aeacbe6073f4c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">ConstIterator</ref></type>
+        <definition>ConstIterator eos::Histogram&lt; 2 &gt;::cbegin</definition>
+        <argsstring>() const </argsstring>
+        <name>cbegin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/histogram.hh" line="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Histogram_3_012_01_4_1a0029dc44ba45b97a35c694314db1df14" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">ConstIterator</ref></type>
+        <definition>ConstIterator eos::Histogram&lt; 2 &gt;::cend</definition>
+        <argsstring>() const </argsstring>
+        <name>cend</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/histogram.hh" line="187"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Basic Functions</header>
+      <description><para><anchor id="_1amgrp2386c9a1f1785edee33f374dd2db9b3d"/> </para></description>
+      <memberdef kind="function" id="classeos_1_1Histogram_3_012_01_4_1a3d387d2bf355745d10ddc148737f63e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::Histogram&lt; 2 &gt;::Histogram</definition>
+        <argsstring>()</argsstring>
+        <name>Histogram</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor.</para><para>Creates an empty Histogram, i.e. a Histogram without any bins. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/histogram.hh" line="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Histogram_3_012_01_4_1a0c3188267bcbf7b492c6d3deb926b277" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::Histogram&lt; 2 &gt;::~Histogram</definition>
+        <argsstring>()</argsstring>
+        <name>~Histogram</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/histogram.hh" line="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Histogram_3_012_01_4_1ac029776d8b8b56356e073928be272d02" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Histogram</type>
+        <definition>static Histogram eos::Histogram&lt; 2 &gt;::WithEqualBinning</definition>
+        <argsstring>(const std::array&lt; double, 2 &gt; &amp;start, const std::array&lt; double, 2 &gt; &amp;end, const std::array&lt; unsigned, 2 &gt; &amp;count)</argsstring>
+        <name>WithEqualBinning</name>
+        <param>
+          <type>const std::array&lt; double, 2 &gt; &amp;</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>const std::array&lt; double, 2 &gt; &amp;</type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>const std::array&lt; unsigned, 2 &gt; &amp;</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Named constructor.</para><para>Creates a Histogram with pre-existing bins of identical width. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Left-most value for each dimension that shall be covered by the Histogram. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right-most value for each dimension that shall be covered by the Histogram. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of Bins for each dimension. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/histogram.hh" line="159"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Insertion and Retrieval</header>
+      <description><para><anchor id="_1amgrp1fa92f5fa236ed95d2fd750c3379ff61"/> Inserts a bin into the histogram. </para></description>
+      <memberdef kind="function" id="classeos_1_1Histogram_3_012_01_4_1a28aa2e33aa1e9b3dc90e02a7ea138dcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::Histogram&lt; 2 &gt;::insert</definition>
+        <argsstring>(const Bin &amp;bin)</argsstring>
+        <name>insert</name>
+        <param>
+          <type>const Bin &amp;</type>
+          <declname>bin</declname>
+        </param>
+        <briefdescription>
+<para>Returns the number of entries in the histogram. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/histogram.hh" line="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Histogram_3_012_01_4_1a34387612b5d49dc13d7ab62c35d6f806" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned eos::Histogram&lt; 2 &gt;::entries</definition>
+        <argsstring>() const </argsstring>
+        <name>entries</name>
+        <briefdescription>
+<para>Returns the number of entries in the histogram. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/histogram.hh" line="168"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="512">
+        <label>eos::Histogram&lt; 2 &gt;</label>
+        <link refid="classeos_1_1Histogram_3_012_01_4"/>
+        <childnode refid="513" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="513">
+        <label>eos::PrivateImplementationPattern&lt; Histogram&lt; 2 &gt; &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="514">
+        <label>eos::Histogram&lt; 2 &gt;</label>
+        <link refid="classeos_1_1Histogram_3_012_01_4"/>
+        <childnode refid="515" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="515">
+        <label>eos::PrivateImplementationPattern&lt; Histogram&lt; 2 &gt; &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/histogram.hh" line="135" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/histogram.hh" bodystart="133" bodyend="189"/>
+    <listofallmembers>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a232940e78b26c6ed4f97196f831c69c9" prot="protected" virt="non-virtual"><scope>eos::Histogram&lt; 2 &gt;</scope><name>_imp</name></member>
+      <member refid="classeos_1_1Histogram_3_012_01_4_1a707137db436a294fd3b1f04db0932f28" prot="public" virt="non-virtual"><scope>eos::Histogram&lt; 2 &gt;</scope><name>begin</name></member>
+      <member refid="classeos_1_1Histogram_3_012_01_4_1a39f7bf7af2482f97390aeacbe6073f4c" prot="public" virt="non-virtual"><scope>eos::Histogram&lt; 2 &gt;</scope><name>cbegin</name></member>
+      <member refid="classeos_1_1Histogram_3_012_01_4_1a0029dc44ba45b97a35c694314db1df14" prot="public" virt="non-virtual"><scope>eos::Histogram&lt; 2 &gt;</scope><name>cend</name></member>
+      <member refid="classeos_1_1Histogram_3_012_01_4_1ad4594c8c5127b71c535b1389bcc2fdca" prot="public" virt="non-virtual"><scope>eos::Histogram&lt; 2 &gt;</scope><name>ConstIterator</name></member>
+      <member refid="classeos_1_1Histogram_3_012_01_4_1a5a2a5bce976bb53ae5a168c91d5cdef2" prot="public" virt="non-virtual"><scope>eos::Histogram&lt; 2 &gt;</scope><name>end</name></member>
+      <member refid="classeos_1_1Histogram_3_012_01_4_1a34387612b5d49dc13d7ab62c35d6f806" prot="public" virt="non-virtual"><scope>eos::Histogram&lt; 2 &gt;</scope><name>entries</name></member>
+      <member refid="classeos_1_1Histogram_3_012_01_4_1a232eeac19611c37c38a41afa7cb7f32d" prot="public" virt="non-virtual"><scope>eos::Histogram&lt; 2 &gt;</scope><name>find</name></member>
+      <member refid="classeos_1_1Histogram_3_012_01_4_1a3d387d2bf355745d10ddc148737f63e3" prot="public" virt="non-virtual"><scope>eos::Histogram&lt; 2 &gt;</scope><name>Histogram</name></member>
+      <member refid="classeos_1_1Histogram_3_012_01_4_1a28aa2e33aa1e9b3dc90e02a7ea138dcf" prot="public" virt="non-virtual"><scope>eos::Histogram&lt; 2 &gt;</scope><name>insert</name></member>
+      <member refid="classeos_1_1Histogram_3_012_01_4_1a9ed06cf8cfcef9f4ed3b9786d48f76e4" prot="public" virt="non-virtual"><scope>eos::Histogram&lt; 2 &gt;</scope><name>Iterator</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a3e3d5f4a565256a1dda6c234b051b2f2" prot="public" virt="non-virtual"><scope>eos::Histogram&lt; 2 &gt;</scope><name>PrivateImplementationPattern</name></member>
+      <member refid="classeos_1_1Histogram_3_012_01_4_1ac029776d8b8b56356e073928be272d02" prot="public" virt="non-virtual"><scope>eos::Histogram&lt; 2 &gt;</scope><name>WithEqualBinning</name></member>
+      <member refid="classeos_1_1Histogram_3_012_01_4_1a0c3188267bcbf7b492c6d3deb926b277" prot="public" virt="non-virtual"><scope>eos::Histogram&lt; 2 &gt;</scope><name>~Histogram</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1acf46ec2739c3b0ec9702b9428475876d" prot="public" virt="non-virtual"><scope>eos::Histogram&lt; 2 &gt;</scope><name>~PrivateImplementationPattern</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

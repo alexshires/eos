@@ -1,0 +1,248 @@
+\hypertarget{one-of_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/one-\/of.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2010 Danny van Dyk <danny.dyk@uni-dortmund.de>}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * Based upon code which is:}
+00007 \textcolor{comment}{ *     Copyright (c) 2010 Ciaran McCreesh}
+00008 \textcolor{comment}{ *}
+00009 \textcolor{comment}{ * This file is part of the EOS program. EOS is free software;}
+00010 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00011 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00012 \textcolor{comment}{ *}
+00013 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00014 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00015 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00016 \textcolor{comment}{ * details.}
+00017 \textcolor{comment}{ *}
+00018 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00019 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00020 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00021 \textcolor{comment}{ */}
+00022 
+00023 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_ONE\_OF\_HH}
+\hypertarget{one-of_8hh_source_l00024}{}\hyperlink{one-of_8hh_a10085f9ae6e432b67c7cf4d66bb54174}{00024} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_ONE\_OF\_HH 1}
+00025 \textcolor{preprocessor}{}
+00026 \textcolor{preprocessor}{#include <cstdlib>}
+00027 \textcolor{preprocessor}{#include <memory>}
+00028 \textcolor{preprocessor}{#include <string>}
+00029 \textcolor{preprocessor}{#include <utility>}
+00030 
+00031 \textcolor{keyword}{namespace }eos
+00032 \{
+00033     \textcolor{comment}{/* Helpers */}
+00034     \textcolor{keyword}{struct }UnknownTypeForOneOf;
+00035 
+00036     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Want\_, \textcolor{keyword}{typename} ... Types\_>
+00037     \textcolor{keyword}{struct }SelectOneOfType;
+00038 
+00039     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Want\_>
+\hypertarget{one-of_8hh_source_l00040}{}\hyperlink{structeos_1_1SelectOneOfType_3_01Want___01_4}{00040}     \textcolor{keyword}{struct }SelectOneOfType<Want\_>
+00041     \{
+\hypertarget{one-of_8hh_source_l00042}{}\hyperlink{structeos_1_1SelectOneOfType_3_01Want___01_4_aa89f45e51d938a8ec8bf5bbfc41bafbc}{00042}         \textcolor{keyword}{typedef} UnknownTypeForOneOf Type;
+00043     \};
+00044 
+00045     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Want\_, \textcolor{keyword}{typename} Try\_, \textcolor{keyword}{typename} ... Rest\_>
+\hypertarget{one-of_8hh_source_l00046}{}\hyperlink{structeos_1_1SelectOneOfType_3_01Want___00_01Try___00_01Rest___8_8_8_4}{00046}     \textcolor{keyword}{struct }SelectOneOfType<Want\_, Try\_, Rest\_ ...>
+00047     \{
+00048         \textcolor{keyword}{typedef} \textcolor{keyword}{typename} std::conditional<
+00049             std::is\_same<Want\_, Try\_>::value,
+00050             Try\_,
+00051             \textcolor{keyword}{typename} SelectOneOfType<Want\_, Rest\_ ...>::Type
+\hypertarget{one-of_8hh_source_l00052}{}\hyperlink{structeos_1_1SelectOneOfType_3_01Want___00_01Try___00_01Rest___8_8_8_4_a740264f972731bf06d91d7ced803db0a}{00052}                 >::type Type;
+00053     \};
+00054 
+00055     \textcolor{comment}{/* OneOfVisitor */}
+00056     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Type\_>
+\hypertarget{one-of_8hh_source_l00057}{}\hyperlink{structeos_1_1OneOfVisitorVisit}{00057}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1OneOfVisitorVisit}{OneOfVisitorVisit}
+00058     \{
+00059         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{structeos_1_1OneOfVisitorVisit_a08f9e17fa9f510ba6171d6b191e76a9b}{visit}(Type\_ &) = 0;
+00060     \};
+00061 
+00062     \textcolor{keyword}{template} <\textcolor{keyword}{typename} ... Types\_>
+\hypertarget{one-of_8hh_source_l00063}{}\hyperlink{structeos_1_1OneOfVisitor}{00063}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1OneOfVisitor}{OneOfVisitor} :
+00064         \hyperlink{structeos_1_1OneOfVisitorVisit}{OneOfVisitorVisit}<Types\_> ...
+00065     \{
+00066     \};
+00067 
+00068     \textcolor{comment}{/* OneOfVisitorWrapper */}
+00069     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Visitor\_, \textcolor{keyword}{typename} Underlying\_, \textcolor{keyword}{typename} Result\_, \textcolor{keyword}{typename
+      } ... Types\_>
+00070     \textcolor{keyword}{struct }OneOfVisitorWrapperVisit;
+00071 
+00072     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Visitor\_, \textcolor{keyword}{typename} Underlying\_, \textcolor{keyword}{typename} Result\_>
+\hypertarget{one-of_8hh_source_l00073}{}\hyperlink{structeos_1_1OneOfVisitorWrapperVisit_3_01Visitor___00_01Underlying___00_01Result___01_4}{00073}     \textcolor{keyword}{struct }OneOfVisitorWrapperVisit<Visitor\_, Underlying\_, Result\_> :
+00074         Visitor\_
+00075     \{
+\hypertarget{one-of_8hh_source_l00076}{}\hyperlink{structeos_1_1OneOfVisitorWrapperVisit_3_01Visitor___00_01Underlying___00_01Result___01_4_a1fd69aa2e4d584295d72379aba12b4a4}{00076}         Underlying\_ & underlying;
+00077 
+\hypertarget{one-of_8hh_source_l00078}{}\hyperlink{structeos_1_1OneOfVisitorWrapperVisit_3_01Visitor___00_01Underlying___00_01Result___01_4_a478622f2291199e57fd1685945ce5933}{00078}         Result\_ result;
+00079 
+\hypertarget{one-of_8hh_source_l00080}{}\hyperlink{structeos_1_1OneOfVisitorWrapperVisit_3_01Visitor___00_01Underlying___00_01Result___01_4_a568f043401c51749bbdd08a5eab78f1f}{00080}         OneOfVisitorWrapperVisit(Underlying\_ & u) :
+00081             underlying(u)
+00082         \{
+00083         \}
+00084     \};
+00085 
+00086     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Visitor\_, \textcolor{keyword}{typename} Underlying\_>
+\hypertarget{one-of_8hh_source_l00087}{}\hyperlink{structeos_1_1OneOfVisitorWrapperVisit_3_01Visitor___00_01Underlying___00_01void_01_4}{00087}     \textcolor{keyword}{struct }OneOfVisitorWrapperVisit<Visitor\_, Underlying\_, void> :
+00088         Visitor\_
+00089     \{
+\hypertarget{one-of_8hh_source_l00090}{}\hyperlink{structeos_1_1OneOfVisitorWrapperVisit_3_01Visitor___00_01Underlying___00_01void_01_4_af5c9cf70707be6778717c39739b2a962}{00090}         Underlying\_ & underlying;
+00091 
+\hypertarget{one-of_8hh_source_l00092}{}\hyperlink{structeos_1_1OneOfVisitorWrapperVisit_3_01Visitor___00_01Underlying___00_01void_01_4_a1b80f2f7d8924acef3cc5ea108ee7c86}{00092}         OneOfVisitorWrapperVisit(Underlying\_ & u) :
+00093             underlying(u)
+00094         \{
+00095         \}
+00096     \};
+00097 
+00098     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Visitor\_, \textcolor{keyword}{typename} Underlying\_, \textcolor{keyword}{typename} Type\_, \textcolor{keyword}{typename} .
+      .. Rest\_>
+\hypertarget{one-of_8hh_source_l00099}{}\hyperlink{structeos_1_1OneOfVisitorWrapperVisit_3_01Visitor___00_01Underlying___00_01void_00_01Type___00_01Rest___8_8_8_4}{00099}     \textcolor{keyword}{struct }OneOfVisitorWrapperVisit<Visitor\_, Underlying\_, void, Type\_, Rest\_ ...
+      > :
+00100         OneOfVisitorWrapperVisit<Visitor\_, Underlying\_, void, Rest\_ ...>
+00101     \{
+\hypertarget{one-of_8hh_source_l00102}{}\hyperlink{structeos_1_1OneOfVisitorWrapperVisit_3_01Visitor___00_01Underlying___00_01void_00_01Type___00_01Rest___8_8_8_4_a66d5952ec668457948e8ff1a657236fc}{00102}         OneOfVisitorWrapperVisit(Underlying\_ & u) :
+00103             OneOfVisitorWrapperVisit<Visitor\_, Underlying\_, void, Rest\_ ...>(u)
+00104         \{
+00105         \}
+00106 
+\hypertarget{one-of_8hh_source_l00107}{}\hyperlink{structeos_1_1OneOfVisitorWrapperVisit_3_01Visitor___00_01Underlying___00_01void_00_01Type___00_01Rest___8_8_8_4_a74791907b67583a00b9a3e373e3fa132}{00107}         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} visit(Type\_ & t)
+00108         \{
+00109             this->underlying.visit(t);
+00110         \}
+00111     \};
+00112 
+00113     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Visitor\_, \textcolor{keyword}{typename} Underlying\_, \textcolor{keyword}{typename} Result\_, \textcolor{keyword}{typename
+      } Type\_, \textcolor{keyword}{typename} ... Rest\_>
+\hypertarget{one-of_8hh_source_l00114}{}\hyperlink{structeos_1_1OneOfVisitorWrapperVisit_3_01Visitor___00_01Underlying___00_01Result___00_01Type___00_01Rest___8_8_8_4}{00114}     \textcolor{keyword}{struct }OneOfVisitorWrapperVisit<Visitor\_, Underlying\_, Result\_, Type\_, Rest\_ 
+      ...> :
+00115         OneOfVisitorWrapperVisit<Visitor\_, Underlying\_, Result\_, Rest\_ ...>
+00116     \{
+\hypertarget{one-of_8hh_source_l00117}{}\hyperlink{structeos_1_1OneOfVisitorWrapperVisit_3_01Visitor___00_01Underlying___00_01Result___00_01Type___00_01Rest___8_8_8_4_a6dcaea16ba357d802503c53cf87f23c7}{00117}         OneOfVisitorWrapperVisit(Underlying\_ & u) :
+00118             OneOfVisitorWrapperVisit<Visitor\_, Underlying\_, Result\_, Rest\_ ...>(u
+      )
+00119         \{
+00120         \}
+00121 
+\hypertarget{one-of_8hh_source_l00122}{}\hyperlink{structeos_1_1OneOfVisitorWrapperVisit_3_01Visitor___00_01Underlying___00_01Result___00_01Type___00_01Rest___8_8_8_4_a863282de1b7dca811be133475d78b6ef}{00122}         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} visit(Type\_ & t)
+00123         \{
+00124             this->result = this->underlying.visit(t);
+00125         \}
+00126     \};
+00127 
+00128     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Underlying\_, \textcolor{keyword}{typename} Result\_, \textcolor{keyword}{typename} ... Types\_>
+\hypertarget{one-of_8hh_source_l00129}{}\hyperlink{structeos_1_1OneOfVisitorWrapper}{00129}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1OneOfVisitorWrapper}{OneOfVisitorWrapper} :
+00130         OneOfVisitorWrapperVisit<OneOfVisitor<Types\_ ...>, Underlying\_, Result\_, 
+      Types\_...>
+00131     \{
+\hypertarget{one-of_8hh_source_l00132}{}\hyperlink{structeos_1_1OneOfVisitorWrapper_a06360b538cff00799456139edb5f5e21}{00132}         \hyperlink{structeos_1_1OneOfVisitorWrapper_a06360b538cff00799456139edb5f5e21}{OneOfVisitorWrapper}(Underlying\_ & u) :
+00133             OneOfVisitorWrapperVisit<\hyperlink{structeos_1_1OneOfVisitor}{OneOfVisitor}<Types\_ ...>, Underlying\_, Resul
+      t\_, Types\_...>(u)
+00134         \{
+00135         \}
+00136     \};
+00137 
+00138     \textcolor{comment}{/* OneOf */}
+00139     \textcolor{keyword}{template} <\textcolor{keyword}{typename} ... Types\_>
+\hypertarget{one-of_8hh_source_l00140}{}\hyperlink{structeos_1_1OneOfValueBase}{00140}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1OneOfValueBase}{OneOfValueBase}
+00141     \{
+00142         \textcolor{keyword}{virtual} \hyperlink{structeos_1_1OneOfValueBase_a1587f8d32e61d2257084ffb6890e110b}{~OneOfValueBase}() = 0;
+00143 
+00144         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{structeos_1_1OneOfValueBase_ad591bb797392ce70f45001d92d6c95bc}{accept}(\hyperlink{structeos_1_1OneOfVisitor}{OneOfVisitor<Types_ ...>} &) = 0;
+00145     \};
+00146 
+00147     \textcolor{keyword}{template} <\textcolor{keyword}{typename} ... Types\_>
+00148     \hyperlink{structeos_1_1OneOfValueBase_a1587f8d32e61d2257084ffb6890e110b}{OneOfValueBase<Types_ ...>::~OneOfValueBase}() = \textcolor{keywordflow}{default};
+00149 
+00150     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Type\_, \textcolor{keyword}{typename} ... Types\_>
+\hypertarget{one-of_8hh_source_l00151}{}\hyperlink{structeos_1_1OneOfValue}{00151}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1OneOfValue}{OneOfValue} :
+00152         \hyperlink{structeos_1_1OneOfValueBase}{OneOfValueBase}<Types\_ ...>
+00153     \{
+\hypertarget{one-of_8hh_source_l00154}{}\hyperlink{structeos_1_1OneOfValue_a8c495ebdf36bdf308e6ecf85669517e5}{00154}         Type\_ \hyperlink{structeos_1_1OneOfValue_a8c495ebdf36bdf308e6ecf85669517e5}{value};
+00155 
+\hypertarget{one-of_8hh_source_l00156}{}\hyperlink{structeos_1_1OneOfValue_a5d443df9b9298a3887921e4872cbf059}{00156}         \hyperlink{structeos_1_1OneOfValue_a5d443df9b9298a3887921e4872cbf059}{OneOfValue}(\textcolor{keyword}{const} Type\_ & type) :
+00157             \hyperlink{structeos_1_1OneOfValue_a8c495ebdf36bdf308e6ecf85669517e5}{value}(type)
+00158         \{
+00159         \}
+00160 
+\hypertarget{one-of_8hh_source_l00161}{}\hyperlink{structeos_1_1OneOfValue_a280c84a5d3ea4f659297217e7b95a3c2}{00161}         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{structeos_1_1OneOfValue_a280c84a5d3ea4f659297217e7b95a3c2}{accept}(\hyperlink{structeos_1_1OneOfVisitor}{OneOfVisitor<Types_ ...>} & visitor)
+00162         \{
+00163             \textcolor{keyword}{static\_cast<}\hyperlink{structeos_1_1OneOfVisitorVisit}{OneOfVisitorVisit<Type_>} &\textcolor{keyword}{>}(visitor).visit(\hyperlink{structeos_1_1OneOfValue_a8c495ebdf36bdf308e6ecf85669517e5}{value});
+00164         \}
+00165     \};
+00166 
+00167     \textcolor{keyword}{template} <\textcolor{keyword}{typename} ... Types\_>
+\hypertarget{one-of_8hh_source_l00168}{}\hyperlink{classeos_1_1OneOf}{00168}     \textcolor{keyword}{class }\hyperlink{classeos_1_1OneOf}{OneOf}
+00169     \{
+00170         \textcolor{keyword}{private}:
+00171             std::shared\_ptr<\hyperlink{structeos_1_1OneOfValueBase}{OneOfValueBase}<Types\_ ...>> \_value;
+00172 
+00173             \hyperlink{classeos_1_1OneOf_a1765098679d8661eac6ee994f4b4902a}{OneOf}(\hyperlink{structeos_1_1OneOfValueBase}{OneOfValueBase<Types_ ...>} * ptr) :
+00174                 \_value(ptr)
+00175             \{
+00176             \}
+00177 
+00178         \textcolor{keyword}{public}:
+\hypertarget{one-of_8hh_source_l00179}{}\hyperlink{classeos_1_1OneOf_a1765098679d8661eac6ee994f4b4902a}{00179}             \hyperlink{classeos_1_1OneOf_a1765098679d8661eac6ee994f4b4902a}{OneOf}()
+00180             \{
+00181             \}
+00182 
+00183             \textcolor{keyword}{template} <\textcolor{keyword}{typename} Type\_>
+\hypertarget{one-of_8hh_source_l00184}{}\hyperlink{classeos_1_1OneOf_aeb5c2a79d64af9958071e3f304672aa4}{00184}             \hyperlink{classeos_1_1OneOf_a1765098679d8661eac6ee994f4b4902a}{OneOf}(\textcolor{keyword}{const} Type\_ & value) :
+00185                 \_value(new \hyperlink{structeos_1_1OneOfValue}{OneOfValue}<typename SelectOneOfType<Type\_, Types\_ ...>
+      ::Type, Types\_ ...>\{value\})
+00186             \{
+00187             \}
+00188 
+00189             \hyperlink{classeos_1_1OneOf_a1765098679d8661eac6ee994f4b4902a}{OneOf}(\textcolor{keyword}{const} \hyperlink{classeos_1_1OneOf_a1765098679d8661eac6ee994f4b4902a}{OneOf} & other) :
+00190                 \_value(other.\_value)
+00191             \{
+00192 
+00193             \}
+00194 
+00195             \textcolor{keyword}{template} <\textcolor{keyword}{typename} Type\_>
+00196             \hyperlink{classeos_1_1OneOf_a1765098679d8661eac6ee994f4b4902a}{OneOf} & operator= (\textcolor{keyword}{const} Type\_ & value)
+00197             \{
+00198                 \_value.reset(\textcolor{keyword}{new} OneOfValue<\textcolor{keyword}{typename} SelectOneOfType<Type\_, Types
+      \_ ...>::Type, Types\_ ...>\{value\});
+00199                 \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+00200             \}
+00201 
+00202             \hyperlink{classeos_1_1OneOf_a1765098679d8661eac6ee994f4b4902a}{OneOf} & operator= (\textcolor{keyword}{const} \hyperlink{classeos_1_1OneOf_a1765098679d8661eac6ee994f4b4902a}{OneOf} & other)
+00203             \{
+00204                 \_value = other.\_value;
+00205 
+00206                 \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+00207             \}
+00208 
+00209             \textcolor{keyword}{template} <\textcolor{keyword}{typename} Visitor\_>
+00210             \textcolor{keywordtype}{void} accept(Visitor\_ & visitor)\textcolor{keyword}{ const}
+00211 \textcolor{keyword}{            }\{
+00212                 OneOfVisitorWrapper<Visitor\_, void, Types\_ ...> visitor\_wrapper(v
+      isitor);
+00213 
+00214                 \_value->accept(visitor\_wrapper);
+00215             \}
+00216 
+00217             \textcolor{keyword}{template} <\textcolor{keyword}{typename} Result\_, \textcolor{keyword}{typename} Visitor\_>
+\hypertarget{one-of_8hh_source_l00218}{}\hyperlink{classeos_1_1OneOf_a2d12b36c583fe6967f6a31ac65b066c9}{00218}             Result\_ \hyperlink{classeos_1_1OneOf_a2d12b36c583fe6967f6a31ac65b066c9}{accept_returning}(Visitor\_ & visitor)\textcolor{keyword}{ const}
+00219 \textcolor{keyword}{            }\{
+00220                 \hyperlink{structeos_1_1OneOfVisitorWrapper}{OneOfVisitorWrapper}<Visitor\_, Result\_, Types\_ ...> visitor\_wrappe
+      r(visitor);
+00221 
+00222                 \_value->accept(visitor\_wrapper);
+00223 
+00224                 \textcolor{keywordflow}{return} visitor\_wrapper.result;
+00225             \}
+00226     \};
+00227 \}
+00228 
+00229 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

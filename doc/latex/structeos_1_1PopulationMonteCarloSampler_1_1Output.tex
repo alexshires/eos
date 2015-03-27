@@ -1,0 +1,131 @@
+\hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Output}{
+\section{eos::PopulationMonteCarloSampler::Output Struct Reference}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Output}\index{eos::PopulationMonteCarloSampler::Output@{eos::PopulationMonteCarloSampler::Output}}
+}
+
+
+{\ttfamily \#include $<$population\_\-monte\_\-carlo\_\-sampler.hh$>$}\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classeos_1_1hdf5_1_1Composite}{hdf5::Composite}$<$ \hyperlink{classeos_1_1hdf5_1_1Scalar}{hdf5::Scalar}$<$ double $>$, \hyperlink{classeos_1_1hdf5_1_1Array}{hdf5::Array}$<$ 1, double $>$, \hyperlink{classeos_1_1hdf5_1_1Array}{hdf5::Array}$<$ 1, double $>$ $>$ \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Output_a5fd76b324d88b7fbd14306e8a15e4db9}{ComponentType}
+\item 
+typedef \hyperlink{classeos_1_1hdf5_1_1Scalar}{hdf5::Scalar}$<$ short $>$ \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Output_aa7e9c8fa59ff4cc77d830c9c2661435e}{IgnoreType}
+\item 
+typedef \hyperlink{classeos_1_1hdf5_1_1Array}{hdf5::Array}$<$ 1, double $>$ \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Output_ab096268a8fccb7e8d34ed08b93df880c}{SampleType}
+\item 
+typedef \hyperlink{classeos_1_1hdf5_1_1Composite}{hdf5::Composite}$<$ \hyperlink{classeos_1_1hdf5_1_1Scalar}{hdf5::Scalar}$<$ double $>$, \hyperlink{classeos_1_1hdf5_1_1Scalar}{hdf5::Scalar}$<$ double $>$, \hyperlink{classeos_1_1hdf5_1_1Scalar}{hdf5::Scalar}$<$ double $>$ $>$ \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Output_abe071d58f8cee75754bcc593ec33e9b8}{StatisticsType}
+\item 
+typedef \hyperlink{classeos_1_1hdf5_1_1Composite}{hdf5::Composite}$<$ \hyperlink{classeos_1_1hdf5_1_1Scalar}{hdf5::Scalar}$<$ double $>$, \hyperlink{classeos_1_1hdf5_1_1Scalar}{hdf5::Scalar}$<$ double $>$ $>$ \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Output_a4413a52234bdb64d96f842ad524a7ee8}{WeightType}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classeos_1_1hdf5_1_1Composite}{ComponentType} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Output_a89756e43d911fc21ca5e12e4f676c495}{component\_\-type} (const unsigned \&dimension)
+\item 
+static \hyperlink{classeos_1_1hdf5_1_1Scalar}{IgnoreType} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Output_a7dea0b1d53d47e5099fa97136a4f27a5}{ignore\_\-type} ()
+\item 
+static \hyperlink{classeos_1_1hdf5_1_1Array}{SampleType} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Output_ac9825b152fa3750d77cb7face4fbaf41}{sample\_\-type} (const unsigned \&dimension)
+\item 
+static \hyperlink{classeos_1_1hdf5_1_1Composite}{StatisticsType} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Output_ab943ce812be9756d846719e165f352a7}{statistics\_\-type} ()
+\item 
+static \hyperlink{classeos_1_1hdf5_1_1Composite}{WeightType} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Output_ad7a4912cebc0c3d00052a398aaef15dd}{weight\_\-type} ()
+\item 
+static std::tuple$<$ double, std::vector$<$ double $>$, std::vector$<$ double $>$ $>$ \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Output_a55eed75bc734fdf74551769f1ef4f53a}{component\_\-record} (const unsigned \&dimension)
+\item 
+static short \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Output_a0bc83ed4bd2ec948236eced9b6be6684}{ignore\_\-record} ()
+\item 
+static std::vector$<$ double $>$ \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Output_a8091ae5b3a05edde2e076faafe0a02ab}{sample\_\-record} (const unsigned \&dimension)
+\item 
+static std::tuple$<$ double, double, double $>$ \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Output_af58401b36b817e48635dfebfa54163e4}{statistics\_\-record} ()
+\item 
+static std::tuple$<$ double, double $>$ \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Output_a6bcb392149e9b1f026f96d123f88d9d8}{weight\_\-record} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Access to the HDF5 types used in output. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Output_a5fd76b324d88b7fbd14306e8a15e4db9}{
+\index{eos::PopulationMonteCarloSampler::Output@{eos::PopulationMonteCarloSampler::Output}!ComponentType@{ComponentType}}
+\index{ComponentType@{ComponentType}!eos::PopulationMonteCarloSampler::Output@{eos::PopulationMonteCarloSampler::Output}}
+\subsubsection[{ComponentType}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf hdf5::Composite}$<${\bf hdf5::Scalar}$<$double$>$, {\bf hdf5::Array}$<$1, double$>$, {\bf hdf5::Array}$<$1, double$>$ $>$ {\bf eos::PopulationMonteCarloSampler::Output::ComponentType}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Output_a5fd76b324d88b7fbd14306e8a15e4db9}
+\hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Output_aa7e9c8fa59ff4cc77d830c9c2661435e}{
+\index{eos::PopulationMonteCarloSampler::Output@{eos::PopulationMonteCarloSampler::Output}!IgnoreType@{IgnoreType}}
+\index{IgnoreType@{IgnoreType}!eos::PopulationMonteCarloSampler::Output@{eos::PopulationMonteCarloSampler::Output}}
+\subsubsection[{IgnoreType}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf hdf5::Scalar}$<$short$>$ {\bf eos::PopulationMonteCarloSampler::Output::IgnoreType}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Output_aa7e9c8fa59ff4cc77d830c9c2661435e}
+\hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Output_ab096268a8fccb7e8d34ed08b93df880c}{
+\index{eos::PopulationMonteCarloSampler::Output@{eos::PopulationMonteCarloSampler::Output}!SampleType@{SampleType}}
+\index{SampleType@{SampleType}!eos::PopulationMonteCarloSampler::Output@{eos::PopulationMonteCarloSampler::Output}}
+\subsubsection[{SampleType}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf hdf5::Array}$<$1, double$>$ {\bf eos::PopulationMonteCarloSampler::Output::SampleType}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Output_ab096268a8fccb7e8d34ed08b93df880c}
+\hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Output_abe071d58f8cee75754bcc593ec33e9b8}{
+\index{eos::PopulationMonteCarloSampler::Output@{eos::PopulationMonteCarloSampler::Output}!StatisticsType@{StatisticsType}}
+\index{StatisticsType@{StatisticsType}!eos::PopulationMonteCarloSampler::Output@{eos::PopulationMonteCarloSampler::Output}}
+\subsubsection[{StatisticsType}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf hdf5::Composite}$<${\bf hdf5::Scalar}$<$double$>$, {\bf hdf5::Scalar}$<$double$>$, {\bf hdf5::Scalar}$<$double$>$ $>$ {\bf eos::PopulationMonteCarloSampler::Output::StatisticsType}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Output_abe071d58f8cee75754bcc593ec33e9b8}
+\hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Output_a4413a52234bdb64d96f842ad524a7ee8}{
+\index{eos::PopulationMonteCarloSampler::Output@{eos::PopulationMonteCarloSampler::Output}!WeightType@{WeightType}}
+\index{WeightType@{WeightType}!eos::PopulationMonteCarloSampler::Output@{eos::PopulationMonteCarloSampler::Output}}
+\subsubsection[{WeightType}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf hdf5::Composite}$<${\bf hdf5::Scalar}$<$double$>$, {\bf hdf5::Scalar}$<$double$>$ $>$ {\bf eos::PopulationMonteCarloSampler::Output::WeightType}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Output_a4413a52234bdb64d96f842ad524a7ee8}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Output_a55eed75bc734fdf74551769f1ef4f53a}{
+\index{eos::PopulationMonteCarloSampler::Output@{eos::PopulationMonteCarloSampler::Output}!component\_\-record@{component\_\-record}}
+\index{component\_\-record@{component\_\-record}!eos::PopulationMonteCarloSampler::Output@{eos::PopulationMonteCarloSampler::Output}}
+\subsubsection[{component\_\-record}]{\setlength{\rightskip}{0pt plus 5cm}static std::tuple$<$double, std::vector$<$double$>$, std::vector$<$double$>$ $>$ eos::PopulationMonteCarloSampler::Output::component\_\-record (const unsigned \& {\em dimension})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Output_a55eed75bc734fdf74551769f1ef4f53a}
+\hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Output_a89756e43d911fc21ca5e12e4f676c495}{
+\index{eos::PopulationMonteCarloSampler::Output@{eos::PopulationMonteCarloSampler::Output}!component\_\-type@{component\_\-type}}
+\index{component\_\-type@{component\_\-type}!eos::PopulationMonteCarloSampler::Output@{eos::PopulationMonteCarloSampler::Output}}
+\subsubsection[{component\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf ComponentType} eos::PopulationMonteCarloSampler::Output::component\_\-type (const unsigned \& {\em dimension})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Output_a89756e43d911fc21ca5e12e4f676c495}
+\hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Output_a0bc83ed4bd2ec948236eced9b6be6684}{
+\index{eos::PopulationMonteCarloSampler::Output@{eos::PopulationMonteCarloSampler::Output}!ignore\_\-record@{ignore\_\-record}}
+\index{ignore\_\-record@{ignore\_\-record}!eos::PopulationMonteCarloSampler::Output@{eos::PopulationMonteCarloSampler::Output}}
+\subsubsection[{ignore\_\-record}]{\setlength{\rightskip}{0pt plus 5cm}static short eos::PopulationMonteCarloSampler::Output::ignore\_\-record ()\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Output_a0bc83ed4bd2ec948236eced9b6be6684}
+\hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Output_a7dea0b1d53d47e5099fa97136a4f27a5}{
+\index{eos::PopulationMonteCarloSampler::Output@{eos::PopulationMonteCarloSampler::Output}!ignore\_\-type@{ignore\_\-type}}
+\index{ignore\_\-type@{ignore\_\-type}!eos::PopulationMonteCarloSampler::Output@{eos::PopulationMonteCarloSampler::Output}}
+\subsubsection[{ignore\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf IgnoreType} eos::PopulationMonteCarloSampler::Output::ignore\_\-type ()\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Output_a7dea0b1d53d47e5099fa97136a4f27a5}
+\hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Output_a8091ae5b3a05edde2e076faafe0a02ab}{
+\index{eos::PopulationMonteCarloSampler::Output@{eos::PopulationMonteCarloSampler::Output}!sample\_\-record@{sample\_\-record}}
+\index{sample\_\-record@{sample\_\-record}!eos::PopulationMonteCarloSampler::Output@{eos::PopulationMonteCarloSampler::Output}}
+\subsubsection[{sample\_\-record}]{\setlength{\rightskip}{0pt plus 5cm}static std::vector$<$double$>$ eos::PopulationMonteCarloSampler::Output::sample\_\-record (const unsigned \& {\em dimension})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Output_a8091ae5b3a05edde2e076faafe0a02ab}
+\hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Output_ac9825b152fa3750d77cb7face4fbaf41}{
+\index{eos::PopulationMonteCarloSampler::Output@{eos::PopulationMonteCarloSampler::Output}!sample\_\-type@{sample\_\-type}}
+\index{sample\_\-type@{sample\_\-type}!eos::PopulationMonteCarloSampler::Output@{eos::PopulationMonteCarloSampler::Output}}
+\subsubsection[{sample\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf SampleType} eos::PopulationMonteCarloSampler::Output::sample\_\-type (const unsigned \& {\em dimension})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Output_ac9825b152fa3750d77cb7face4fbaf41}
+\hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Output_af58401b36b817e48635dfebfa54163e4}{
+\index{eos::PopulationMonteCarloSampler::Output@{eos::PopulationMonteCarloSampler::Output}!statistics\_\-record@{statistics\_\-record}}
+\index{statistics\_\-record@{statistics\_\-record}!eos::PopulationMonteCarloSampler::Output@{eos::PopulationMonteCarloSampler::Output}}
+\subsubsection[{statistics\_\-record}]{\setlength{\rightskip}{0pt plus 5cm}static std::tuple$<$double, double, double$>$ eos::PopulationMonteCarloSampler::Output::statistics\_\-record ()\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Output_af58401b36b817e48635dfebfa54163e4}
+\hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Output_ab943ce812be9756d846719e165f352a7}{
+\index{eos::PopulationMonteCarloSampler::Output@{eos::PopulationMonteCarloSampler::Output}!statistics\_\-type@{statistics\_\-type}}
+\index{statistics\_\-type@{statistics\_\-type}!eos::PopulationMonteCarloSampler::Output@{eos::PopulationMonteCarloSampler::Output}}
+\subsubsection[{statistics\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf StatisticsType} eos::PopulationMonteCarloSampler::Output::statistics\_\-type ()\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Output_ab943ce812be9756d846719e165f352a7}
+\hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Output_a6bcb392149e9b1f026f96d123f88d9d8}{
+\index{eos::PopulationMonteCarloSampler::Output@{eos::PopulationMonteCarloSampler::Output}!weight\_\-record@{weight\_\-record}}
+\index{weight\_\-record@{weight\_\-record}!eos::PopulationMonteCarloSampler::Output@{eos::PopulationMonteCarloSampler::Output}}
+\subsubsection[{weight\_\-record}]{\setlength{\rightskip}{0pt plus 5cm}static std::tuple$<$double, double$>$ eos::PopulationMonteCarloSampler::Output::weight\_\-record ()\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Output_a6bcb392149e9b1f026f96d123f88d9d8}
+\hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Output_ad7a4912cebc0c3d00052a398aaef15dd}{
+\index{eos::PopulationMonteCarloSampler::Output@{eos::PopulationMonteCarloSampler::Output}!weight\_\-type@{weight\_\-type}}
+\index{weight\_\-type@{weight\_\-type}!eos::PopulationMonteCarloSampler::Output@{eos::PopulationMonteCarloSampler::Output}}
+\subsubsection[{weight\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf WeightType} eos::PopulationMonteCarloSampler::Output::weight\_\-type ()\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Output_ad7a4912cebc0c3d00052a398aaef15dd}
+
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{population__monte__carlo__sampler_8hh}{population\_\-monte\_\-carlo\_\-sampler.hh}\end{DoxyCompactItemize}

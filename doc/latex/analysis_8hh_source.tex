@@ -1,0 +1,146 @@
+\hypertarget{analysis_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/analysis.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2011 Frederik Beaujean}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_ANALYSIS\_HH}
+\hypertarget{analysis_8hh_source_l00021}{}\hyperlink{analysis_8hh_afbc3a34a049a4477d7a33b9e9e491f19}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_ANALYSIS\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{preprocessor}{#include <\hyperlink{analysis-fwd_8hh}{eos/utils/analysis-fwd.hh}>}
+00024 \textcolor{preprocessor}{#include <\hyperlink{hdf5-fwd_8hh}{eos/utils/hdf5-fwd.hh}>}
+00025 \textcolor{preprocessor}{#include <\hyperlink{log__likelihood_8hh}{eos/utils/log_likelihood.hh}>}
+00026 \textcolor{preprocessor}{#include <\hyperlink{log__prior_8hh}{eos/utils/log_prior.hh}>}
+00027 \textcolor{preprocessor}{#include <\hyperlink{private__implementation__pattern_8hh}{eos/utils/private_implementation_pattern.hh}>}
+00028 \textcolor{preprocessor}{#include <\hyperlink{verify_8hh}{eos/utils/verify.hh}>}
+00029 
+00030 \textcolor{preprocessor}{#include <vector>}
+00031 \textcolor{preprocessor}{#include <set>}
+00032 
+00033 \textcolor{preprocessor}{#include <gsl/gsl\_multimin.h>}
+00034 
+\hypertarget{analysis_8hh_source_l00035}{}\hyperlink{namespaceROOT}{00035} \textcolor{keyword}{namespace }ROOT
+00036 \{
+\hypertarget{analysis_8hh_source_l00037}{}\hyperlink{namespaceROOT_1_1Minuit2}{00037}     \textcolor{keyword}{namespace }Minuit2
+00038     \{
+00039         \textcolor{keyword}{class }FunctionMinimum;
+00040     \}
+00041 \}
+00042 
+00043 \textcolor{keyword}{namespace }eos
+00044 \{
+\hypertarget{analysis_8hh_source_l00045}{}\hyperlink{classeos_1_1Analysis}{00045}     \textcolor{keyword}{class }\hyperlink{classeos_1_1Analysis}{Analysis} :
+00046         \textcolor{keyword}{public} \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern}<Analysis>
+00047     \{
+00048         \textcolor{keyword}{public}:
+\hypertarget{analysis_8hh_source_l00049}{}\hyperlink{classeos_1_1Analysis_a63c3ad7e46dc3c7d599fe2faf2a2f55f}{00049}             \textcolor{keyword}{friend} \textcolor{keyword}{struct }Implementation<\hyperlink{classeos_1_1Analysis}{Analysis}>;
+00050 
+00051             \textcolor{keyword}{struct }\hyperlink{structeos_1_1Analysis_1_1OptimizationOptions}{OptimizationOptions};
+00052             \textcolor{keyword}{struct }\hyperlink{structeos_1_1Analysis_1_1Output}{Output};
+00053 
+00056 
+00066             \hyperlink{classeos_1_1Analysis_a252a0ae93caf7c7f6db627fe563c72bc}{Analysis}(\textcolor{keyword}{const} \hyperlink{classeos_1_1LogLikelihood}{LogLikelihood} & \hyperlink{classeos_1_1Analysis_a29da23044cd892ac972ed62262276445}{log_likelihood});
+00067 
+00069             \hyperlink{classeos_1_1Analysis_a41c872da6c87e398f1807012262a2eff}{~Analysis}();
+00070 
+00072             \hyperlink{namespaceeos_afc57020492535ccdd85cfc3b7421340d}{AnalysisPtr} \hyperlink{classeos_1_1Analysis_a05e85c6fa4f83ef4b768c52d4c4f75bc}{clone}() \textcolor{keyword}{const};
+00074 
+00077 
+00079             \textcolor{keyword}{const} std::vector<ParameterDescription> & \hyperlink{classeos_1_1Analysis_a8cc99f2ff2c99e2977c9dab68ff13c8b}{parameter_descriptions}() \textcolor{keyword}{co
+      nst};
+00080 
+00086             \hyperlink{classeos_1_1Parameter}{Parameter} \hyperlink{classeos_1_1Analysis_a963c134ff67911b8a4bc90fc1342e3a3}{operator[] }(\textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & index);
+00087 
+00089             \hyperlink{classeos_1_1Parameters}{Parameters} \hyperlink{classeos_1_1Analysis_a750da19ea2292416b8b42dc2c259935e}{parameters}() \textcolor{keyword}{const};
+00090 
+00097             \textcolor{keywordtype}{bool} \hyperlink{classeos_1_1Analysis_a3062ad70d7888517d3fa09e7dcb183cf}{add}(\textcolor{keyword}{const} \hyperlink{namespaceeos_ac5481e3b46ee55ff24606ee7f6e78651}{LogPriorPtr} & prior, \textcolor{keywordtype}{bool} \hyperlink{classeos_1_1Analysis_a52ed491bbea6d966ea4f8a746b9e980d}{nuisance} = \textcolor{keyword}{false});
+00098 
+00103             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1Analysis_a444e11133ea75c88fb2579f1ac73c8c3}{dump_descriptions}(\hyperlink{classeos_1_1hdf5_1_1File}{hdf5::File} & file, std::string data\_set\_base =
+       \textcolor{stringliteral}{"/descriptions"}) \textcolor{keyword}{const};
+00104 
+00112             \textcolor{keyword}{static} std::vector<ParameterDescription> \hyperlink{classeos_1_1Analysis_a7f5c6fb49fafda45b0451172b44bf01c}{read_descriptions}(\textcolor{keyword}{const} 
+      \hyperlink{classeos_1_1hdf5_1_1File}{hdf5::File} & file, std::string data\_set\_base = \textcolor{stringliteral}{"/descriptions"});
+00113 
+00123             std::pair<double, double>
+00124             \hyperlink{classeos_1_1Analysis_a7146dc3458d035af4546890b0795146b}{goodness_of_fit}(\textcolor{keyword}{const} std::vector<double> & parameter\_values, \textcolor{keyword}{const} \textcolor{keywordtype}{u
+      nsigned} & simulated\_datasets, std::string output\_file = \textcolor{stringliteral}{""});
+00125 
+00127             \hyperlink{classeos_1_1LogLikelihood}{LogLikelihood} \hyperlink{classeos_1_1Analysis_a29da23044cd892ac972ed62262276445}{log_likelihood}();
+00128 
+00130             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1Analysis_a521333679365bc779d1136701d31e35d}{log_prior}();
+00131 
+00135             \hyperlink{namespaceeos_ac5481e3b46ee55ff24606ee7f6e78651}{LogPriorPtr} \hyperlink{classeos_1_1Analysis_a521333679365bc779d1136701d31e35d}{log_prior}(\textcolor{keyword}{const} std::string & name) \textcolor{keyword}{const};
+00136 
+00139             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1Analysis_a8919114802de94afc42068d87346a525}{log_posterior}();
+00140 
+00146             \textcolor{keywordtype}{bool} \hyperlink{classeos_1_1Analysis_a52ed491bbea6d966ea4f8a746b9e980d}{nuisance}(\textcolor{keyword}{const} std::string & name) \textcolor{keyword}{const};
+00148 
+00155             std::pair<std::vector<double>, \textcolor{keywordtype}{double}>
+00156             \hyperlink{classeos_1_1Analysis_ab558b84092479509d34d5f9ee0f03ad3}{optimize}(\textcolor{keyword}{const} std::vector<double> & initial\_guess, \textcolor{keyword}{const} 
+      \hyperlink{structeos_1_1Analysis_1_1OptimizationOptions}{OptimizationOptions} & options);
+00157 
+00158             \textcolor{keyword}{const} ROOT::Minuit2::FunctionMinimum &
+00159             \hyperlink{classeos_1_1Analysis_a3f8c48eed78ea048627928613492eac5}{optimize_minuit}(\textcolor{keyword}{const} std::vector<double> & initial\_guess, \textcolor{keyword}{const} 
+      \hyperlink{structeos_1_1Analysis_1_1OptimizationOptions}{OptimizationOptions} & options);
+00160 
+00167             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1Analysis_a0fa8a2b9d2f9dad49b0e76c83efde3ba}{restrict}(\textcolor{keyword}{const} std::string & name, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & min, \textcolor{keyword}{const} \textcolor{keywordtype}{dou
+      ble} & max);
+00168     \};
+00169 
+\hypertarget{analysis_8hh_source_l00170}{}\hyperlink{structeos_1_1Analysis_1_1OptimizationOptions}{00170}         \textcolor{keyword}{struct }\hyperlink{structeos_1_1Analysis_1_1OptimizationOptions}{Analysis::OptimizationOptions}
+00171         \{
+\hypertarget{analysis_8hh_source_l00173}{}\hyperlink{structeos_1_1Analysis_1_1OptimizationOptions_a3917de66192096f736ac764b69d9acbc}{00173}                 std::string \hyperlink{structeos_1_1Analysis_1_1OptimizationOptions_a3917de66192096f736ac764b69d9acbc}{algorithm};
+00174 
+\hypertarget{analysis_8hh_source_l00177}{}\hyperlink{structeos_1_1Analysis_1_1OptimizationOptions_abd24b29c8e1953f68dde207d8c5c48df}{00177}                 \textcolor{keywordtype}{bool} \hyperlink{structeos_1_1Analysis_1_1OptimizationOptions_abd24b29c8e1953f68dde207d8c5c48df}{fix_flat_nuisance};
+00178 
+\hypertarget{analysis_8hh_source_l00181}{}\hyperlink{structeos_1_1Analysis_1_1OptimizationOptions_a8626041b40a908e5c1443fba86a2586b}{00181}                 \hyperlink{classeos_1_1VerifiedRange}{VerifiedRange<double>} \hyperlink{structeos_1_1Analysis_1_1OptimizationOptions_a8626041b40a908e5c1443fba86a2586b}{initial_step_size};
+00182 
+\hypertarget{analysis_8hh_source_l00185}{}\hyperlink{structeos_1_1Analysis_1_1OptimizationOptions_aa1ec8a9c5e6325a3b090423eb76deda9}{00185}                 \textcolor{keywordtype}{unsigned} \hyperlink{structeos_1_1Analysis_1_1OptimizationOptions_aa1ec8a9c5e6325a3b090423eb76deda9}{maximum_iterations};
+00186 
+\hypertarget{analysis_8hh_source_l00194}{}\hyperlink{structeos_1_1Analysis_1_1OptimizationOptions_a6ae3c50f21c85e0c94135b4c68259c2e}{00194}                 \textcolor{keywordtype}{bool} \hyperlink{structeos_1_1Analysis_1_1OptimizationOptions_a6ae3c50f21c85e0c94135b4c68259c2e}{mcmc_pre_run};
+00195 
+\hypertarget{analysis_8hh_source_l00202}{}\hyperlink{structeos_1_1Analysis_1_1OptimizationOptions_a99ab6b40de3f1bdd8218dd2028459ffe}{00202}                 \hyperlink{classeos_1_1VerifiedRange}{VerifiedRange<double>} \hyperlink{structeos_1_1Analysis_1_1OptimizationOptions_a99ab6b40de3f1bdd8218dd2028459ffe}{tolerance};
+00203 
+\hypertarget{analysis_8hh_source_l00209}{}\hyperlink{structeos_1_1Analysis_1_1OptimizationOptions_a42f80d457baa1e7e325e40696d2d1bbe}{00209}                 \hyperlink{classeos_1_1VerifiedRange}{VerifiedRange<double>} \hyperlink{structeos_1_1Analysis_1_1OptimizationOptions_a42f80d457baa1e7e325e40696d2d1bbe}{splitting_tolerance};
+00210 
+\hypertarget{analysis_8hh_source_l00212}{}\hyperlink{structeos_1_1Analysis_1_1OptimizationOptions_ad31144d330b6897a432d0a02f1ebe027}{00212}                 \hyperlink{classeos_1_1VerifiedRange}{VerifiedRange<unsigned>} \hyperlink{structeos_1_1Analysis_1_1OptimizationOptions_ad31144d330b6897a432d0a02f1ebe027}{strategy_level};
+00213 
+00214                 \textcolor{keyword}{static} \hyperlink{structeos_1_1Analysis_1_1OptimizationOptions}{OptimizationOptions} \hyperlink{structeos_1_1Analysis_1_1OptimizationOptions_a809f9cf0f5d544c7303a631c278c3fa1}{Defaults}();
+00215 
+00216             \textcolor{keyword}{private}:
+00217                 \hyperlink{structeos_1_1Analysis_1_1OptimizationOptions}{OptimizationOptions}();
+00218         \};
+00219 
+\hypertarget{analysis_8hh_source_l00220}{}\hyperlink{structeos_1_1Analysis_1_1Output}{00220}      \textcolor{keyword}{struct }\hyperlink{structeos_1_1Analysis_1_1Output}{Analysis::Output}
+00221      \{
+00222          \textcolor{keyword}{typedef} \hyperlink{classeos_1_1hdf5_1_1Composite}{hdf5::Composite<hdf5::Scalar<const char *>}, 
+      \hyperlink{classeos_1_1hdf5_1_1Scalar}{hdf5::Scalar<double>}, \hyperlink{classeos_1_1hdf5_1_1Scalar}{hdf5::Scalar<double>},
+\hypertarget{analysis_8hh_source_l00223}{}\hyperlink{structeos_1_1Analysis_1_1Output_a87e1877031ee1d537773b3dad303dd87}{00223}                                  \hyperlink{classeos_1_1hdf5_1_1Scalar}{hdf5::Scalar<int>}, \hyperlink{classeos_1_1hdf5_1_1Scalar}{hdf5::Scalar<const char *>}> 
+      \hyperlink{classeos_1_1hdf5_1_1Composite}{DescriptionType};
+00224          \textcolor{keyword}{static} \hyperlink{classeos_1_1hdf5_1_1Composite}{DescriptionType} \hyperlink{structeos_1_1Analysis_1_1Output_afe79cdeca03867008ffebb0796600b6a}{description_type}();
+00225          \textcolor{keyword}{static} std::tuple<const char *, double, double, int, const char *> 
+      \hyperlink{structeos_1_1Analysis_1_1Output_aef0dc96dd006ae72050dc34ac745df15}{description_record}();
+00226      \};
+00227 \}
+00228 
+00229 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

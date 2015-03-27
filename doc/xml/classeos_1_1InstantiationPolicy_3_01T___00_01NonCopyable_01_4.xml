@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1InstantiationPolicy_3_01T___00_01NonCopyable_01_4" kind="class" prot="public">
+    <compoundname>eos::InstantiationPolicy&lt; T_, NonCopyable &gt;</compoundname>
+    <includes refid="instantiation__policy_8hh" local="no">instantiation_policy.hh</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T_</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classeos_1_1InstantiationPolicy_3_01T___00_01NonCopyable_01_4_1a79aec72a707f8d63d1f0aef3b9341f89" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::InstantiationPolicy&lt; T_, NonCopyable &gt;::InstantiationPolicy</definition>
+        <argsstring>(const InstantiationPolicy &amp;)</argsstring>
+        <name>InstantiationPolicy</name>
+        <param>
+          <type>const InstantiationPolicy &amp;</type>
+        </param>
+        <briefdescription>
+<para>Unwanted copy constructor: Do not implement! </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/instantiation_policy.hh" line="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1InstantiationPolicy_3_01T___00_01NonCopyable_01_4_1a8ad2e6cacb082a8d97c73daceae4a90e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>InstantiationPolicy &amp;</type>
+        <definition>InstantiationPolicy&amp; eos::InstantiationPolicy&lt; T_, NonCopyable &gt;::operator=</definition>
+        <argsstring>(const InstantiationPolicy &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const InstantiationPolicy &amp;</type>
+        </param>
+        <briefdescription>
+<para>Unwanted copy assignment operator: Do not implement! </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/instantiation_policy.hh" line="68"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1InstantiationPolicy_3_01T___00_01NonCopyable_01_4_1a49c9277b4931f45e51aacee340e30f53" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eos::InstantiationPolicy&lt; T_, NonCopyable &gt;::InstantiationPolicy</definition>
+        <argsstring>()</argsstring>
+        <name>InstantiationPolicy</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/instantiation_policy.hh" line="73" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/instantiation_policy.hh" bodystart="72" bodyend="74"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/instantiation_policy.hh" line="62" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/instantiation_policy.hh" bodystart="61" bodyend="75"/>
+    <listofallmembers>
+      <member refid="classeos_1_1InstantiationPolicy_3_01T___00_01NonCopyable_01_4_1a79aec72a707f8d63d1f0aef3b9341f89" prot="private" virt="non-virtual"><scope>eos::InstantiationPolicy&lt; T_, NonCopyable &gt;</scope><name>InstantiationPolicy</name></member>
+      <member refid="classeos_1_1InstantiationPolicy_3_01T___00_01NonCopyable_01_4_1a49c9277b4931f45e51aacee340e30f53" prot="public" virt="non-virtual"><scope>eos::InstantiationPolicy&lt; T_, NonCopyable &gt;</scope><name>InstantiationPolicy</name></member>
+      <member refid="classeos_1_1InstantiationPolicy_3_01T___00_01NonCopyable_01_4_1a8ad2e6cacb082a8d97c73daceae4a90e" prot="private" virt="non-virtual"><scope>eos::InstantiationPolicy&lt; T_, NonCopyable &gt;</scope><name>operator=</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

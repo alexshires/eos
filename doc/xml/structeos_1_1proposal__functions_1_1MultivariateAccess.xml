@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1proposal__functions_1_1MultivariateAccess" kind="struct" prot="public">
+    <compoundname>eos::proposal_functions::MultivariateAccess</compoundname>
+    <includes refid="proposal__functions_8hh" local="no">proposal_functions.hh</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structeos_1_1proposal__functions_1_1MultivariateAccess_1af0f5d90cc58f31b1bfa4e3bdc5d598b6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceeos_1_1proposal__functions_1a6cffa18d523cd6955629beabbe07c17c" kindref="member">MultivariateProposalPtr</ref></type>
+        <definition>static MultivariateProposalPtr eos::proposal_functions::MultivariateAccess::access</definition>
+        <argsstring>(const ProposalFunctionPtr &amp;p)</argsstring>
+        <name>access</name>
+        <param>
+          <type>const <ref refid="namespaceeos_1ae97f9891c67c90959a03fc96efaa4dc9" kindref="member">ProposalFunctionPtr</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="556"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="555" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="554" bodyend="557"/>
+    <listofallmembers>
+      <member refid="structeos_1_1proposal__functions_1_1MultivariateAccess_1af0f5d90cc58f31b1bfa4e3bdc5d598b6" prot="public" virt="non-virtual"><scope>eos::proposal_functions::MultivariateAccess</scope><name>access</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

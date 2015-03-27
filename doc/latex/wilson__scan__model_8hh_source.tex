@@ -1,0 +1,121 @@
+\hypertarget{wilson__scan__model_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/wilson\_\-scan\_\-model.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2011, 2013 Danny van Dyk}
+00005 \textcolor{comment}{ * Copyright (c) 2014 Frederik Beaujean}
+00006 \textcolor{comment}{ * Copyright (c) 2014 Christoph Bobeth}
+00007 \textcolor{comment}{ *}
+00008 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00009 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00010 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00011 \textcolor{comment}{ *}
+00012 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00013 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00014 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00015 \textcolor{comment}{ * details.}
+00016 \textcolor{comment}{ *}
+00017 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00018 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00019 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00020 \textcolor{comment}{ */}
+00021 
+00022 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_WILSON\_SCAN\_MODEL\_HH}
+\hypertarget{wilson__scan__model_8hh_source_l00023}{}\hyperlink{wilson__scan__model_8hh_a30123afd38fa0d1cd5e4f0cf32e36bcd}{00023} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_WILSON\_SCAN\_MODEL\_HH 1}
+00024 \textcolor{preprocessor}{}
+00025 \textcolor{preprocessor}{#include <\hyperlink{model_8hh}{eos/utils/model.hh}>}
+00026 \textcolor{preprocessor}{#include <\hyperlink{standard-model_8hh}{eos/utils/standard-model.hh}>}
+00027 
+00028 \textcolor{keyword}{namespace }eos
+00029 \{
+\hypertarget{wilson__scan__model_8hh_source_l00030}{}\hyperlink{classeos_1_1WilsonScanComponent}{00030}     \textcolor{keyword}{class }\hyperlink{classeos_1_1WilsonScanComponent}{WilsonScanComponent} :
+00031         \textcolor{keyword}{public} \textcolor{keyword}{virtual} ModelComponent<components::DeltaB1>
+00032     \{
+00033         \textcolor{keyword}{private}:
+00034             \textcolor{comment}{/* QCD parameters */}
+00035             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_alpha\_s\_Z\_\_deltab1;
+00036             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_mu\_b\_\_deltab1;
+00037 
+00038             \textcolor{comment}{/* Masses */}
+00039             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_m\_Z\_\_deltab1;
+00040 
+00041             \textcolor{comment}{/* Renormalization scale */}
+00042             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_mu\_\_deltab1;
+00043 
+00044             \textcolor{comment}{/* b->s Wilson coefficients */}
+00045             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_c1;
+00046             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_c2;
+00047             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_c3;
+00048             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_c4;
+00049             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_c5;
+00050             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_c6;
+00051             \hyperlink{classeos_1_1Parameter}{Parameter} \_abs\_c7, \_arg\_c7;
+00052             \hyperlink{classeos_1_1Parameter}{Parameter} \_re\_c7, \_im\_c7;
+00053             std::function<complex<double> ()> \_c7;
+00054             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_c8;
+00055             \hyperlink{classeos_1_1Parameter}{Parameter} \_abs\_c9, \_arg\_c9;
+00056             \hyperlink{classeos_1_1Parameter}{Parameter} \_re\_c9, \_im\_c9;
+00057             std::function<complex<double> ()> \_c9;
+00058             \hyperlink{classeos_1_1Parameter}{Parameter} \_abs\_c10, \_arg\_c10;
+00059             \hyperlink{classeos_1_1Parameter}{Parameter} \_re\_c10, \_im\_c10;
+00060             std::function<complex<double> ()> \_c10;
+00061             \hyperlink{classeos_1_1Parameter}{Parameter} \_abs\_c7prime, \_arg\_c7prime;
+00062             \hyperlink{classeos_1_1Parameter}{Parameter} \_re\_c7prime, \_im\_c7prime;
+00063             std::function<complex<double> ()> \_c7prime;
+00064             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_c8prime;
+00065             \hyperlink{classeos_1_1Parameter}{Parameter} \_abs\_c9prime, \_arg\_c9prime;
+00066             \hyperlink{classeos_1_1Parameter}{Parameter} \_re\_c9prime, \_im\_c9prime;
+00067             std::function<complex<double> ()> \_c9prime;
+00068             \hyperlink{classeos_1_1Parameter}{Parameter} \_abs\_c10prime, \_arg\_c10prime;
+00069             \hyperlink{classeos_1_1Parameter}{Parameter} \_re\_c10prime, \_im\_c10prime;
+00070             std::function<complex<double> ()> \_c10prime;
+00071             \hyperlink{classeos_1_1Parameter}{Parameter} \_abs\_cS, \_arg\_cS;
+00072             \hyperlink{classeos_1_1Parameter}{Parameter} \_re\_cS, \_im\_cS;
+00073             std::function<complex<double> ()> \_cS;
+00074             \hyperlink{classeos_1_1Parameter}{Parameter} \_abs\_cSprime, \_arg\_cSprime;
+00075             \hyperlink{classeos_1_1Parameter}{Parameter} \_re\_cSprime, \_im\_cSprime;
+00076             std::function<complex<double> ()> \_cSprime;
+00077             \hyperlink{classeos_1_1Parameter}{Parameter} \_abs\_cP, \_arg\_cP;
+00078             \hyperlink{classeos_1_1Parameter}{Parameter} \_re\_cP, \_im\_cP;
+00079             std::function<complex<double> ()> \_cP;
+00080             \hyperlink{classeos_1_1Parameter}{Parameter} \_abs\_cPprime, \_arg\_cPprime;
+00081             \hyperlink{classeos_1_1Parameter}{Parameter} \_re\_cPprime, \_im\_cPprime;
+00082             std::function<complex<double> ()> \_cPprime;
+00083             \hyperlink{classeos_1_1Parameter}{Parameter} \_abs\_cT, \_arg\_cT;
+00084             \hyperlink{classeos_1_1Parameter}{Parameter} \_re\_cT, \_im\_cT;
+00085             std::function<complex<double> ()> \_cT;
+00086             \hyperlink{classeos_1_1Parameter}{Parameter} \_abs\_cT5, \_arg\_cT5;
+00087             \hyperlink{classeos_1_1Parameter}{Parameter} \_re\_cT5, \_im\_cT5;
+00088             std::function<complex<double> ()> \_cT5;
+00089 
+00090         \textcolor{keyword}{public}:
+00091             \hyperlink{classeos_1_1WilsonScanComponent_a2d1074d1013db8d768843ca0ff03409f}{WilsonScanComponent}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} &, \textcolor{keyword}{const} \hyperlink{classeos_1_1Options}{Options} &, 
+      \hyperlink{classeos_1_1ParameterUser}{ParameterUser} &);
+00092 
+00093             \textcolor{comment}{/* b->s Wilson coefficients */}
+00094             \textcolor{keyword}{virtual} \hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4}{WilsonCoefficients<BToS>} \hyperlink{classeos_1_1WilsonScanComponent_afcad159e4ff8fa11d5ea4a5d41f534ad}{wilson_coefficients_b_to_s}(\textcolor{keyword}{const} \textcolor{keywordtype}{boo
+      l} & cp\_conjugate) \textcolor{keyword}{const};
+00095     \};
+00096 
+\hypertarget{wilson__scan__model_8hh_source_l00097}{}\hyperlink{classeos_1_1WilsonScanModel}{00097}     \textcolor{keyword}{class }\hyperlink{classeos_1_1WilsonScanModel}{WilsonScanModel} :
+00098         \textcolor{keyword}{public} \hyperlink{classeos_1_1Model}{Model},
+00099         \textcolor{keyword}{public} SMComponent<components::CKM>,
+00100         \textcolor{keyword}{public} SMComponent<components::QCD>,
+00101         \textcolor{keyword}{public} \hyperlink{classeos_1_1WilsonScanComponent}{WilsonScanComponent}
+00102     \{
+00103         \textcolor{keyword}{public}:
+00104             \hyperlink{classeos_1_1WilsonScanModel_a2fe7c661cc571ee01d4b3fecc226faa3}{WilsonScanModel}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} &, \textcolor{keyword}{const} \hyperlink{classeos_1_1Options}{Options} &);
+00105             \textcolor{keyword}{virtual} \hyperlink{classeos_1_1WilsonScanModel_a58838548fa93543a0c2738e5b8ff4509}{~WilsonScanModel}();
+00106 
+00107             \textcolor{keyword}{static} std::shared\_ptr<Model> \hyperlink{classeos_1_1WilsonScanModel_a34b4ce1af19a406f354b4bbaf461df40}{make}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} &, \textcolor{keyword}{const} \hyperlink{classeos_1_1Options}{Options} 
+      &);
+00108     \};
+00109 \}
+00110 
+00111 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

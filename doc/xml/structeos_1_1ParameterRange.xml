@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1ParameterRange" kind="struct" prot="public">
+    <compoundname>eos::ParameterRange</compoundname>
+    <includes refid="parameters_8hh" local="no">parameters.hh</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structeos_1_1ParameterRange_1ab155cf01cbc6b1ea802a007fe5bcc6c6" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::ParameterRange::min</definition>
+        <argsstring></argsstring>
+        <name>min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" line="289" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1ParameterRange_1a8ce3020d0f5ca651abed940889bb434b" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::ParameterRange::max</definition>
+        <argsstring></argsstring>
+        <name>max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" line="289" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" line="288" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" bodystart="287" bodyend="290"/>
+    <listofallmembers>
+      <member refid="structeos_1_1ParameterRange_1a8ce3020d0f5ca651abed940889bb434b" prot="public" virt="non-virtual"><scope>eos::ParameterRange</scope><name>max</name></member>
+      <member refid="structeos_1_1ParameterRange_1ab155cf01cbc6b1ea802a007fe5bcc6c6" prot="public" virt="non-virtual"><scope>eos::ParameterRange</scope><name>min</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

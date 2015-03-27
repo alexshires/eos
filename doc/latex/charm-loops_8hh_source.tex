@@ -1,0 +1,100 @@
+\hypertarget{charm-loops_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/rare-\/b-\/decays/charm-\/loops.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2010, 2014 Danny van Dyk}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_RARE\_B\_DECAYS\_CHARM\_LOOPS\_HH}
+\hypertarget{charm-loops_8hh_source_l00021}{}\hyperlink{charm-loops_8hh_a69bd0fff42281bb2678a5822db3b6f8c}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_RARE\_B\_DECAYS\_CHARM\_LOOPS\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{preprocessor}{#include <\hyperlink{complex_8hh}{eos/utils/complex.hh}>}
+00024 \textcolor{preprocessor}{#include <\hyperlink{model_8hh}{eos/utils/model.hh}>}
+00025 
+00026 \textcolor{keyword}{namespace }eos
+00027 \{
+\hypertarget{charm-loops_8hh_source_l00028}{}\hyperlink{structeos_1_1CharmLoops}{00028}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1CharmLoops}{CharmLoops}
+00029     \{
+00030         \textcolor{comment}{/* One-loop functions */}
+00031         \textcolor{comment}{// cf. [BFS2001], Eq. (11), p. 4 with m\_q -> 0}
+00032         \textcolor{keyword}{static} complex<double> \hyperlink{structeos_1_1CharmLoops_a2b0657d433f9e17904202a5309d3a4a2}{h}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s);
+00033         \textcolor{comment}{// cf. [BFS2001], Eq. (11), p. 4 with m\_q -> 0}
+00034         \textcolor{keyword}{static} complex<double> \hyperlink{structeos_1_1CharmLoops_a2b0657d433f9e17904202a5309d3a4a2}{h}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s, \textcolor{keyword}{const} \textcolor{keywordtype}{doubl
+      e} & m\_q);
+00035 
+00036         \textcolor{comment}{/* Two-loop functions */}
+00037         \textcolor{comment}{// cf. [S2004], Eq. (29), p. 8}
+00038         \textcolor{keyword}{static} complex<double> \hyperlink{structeos_1_1CharmLoops_ab2fd582d0ba9c5b1181ff2e63c4f5f88}{A}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s, \textcolor{keyword}{const} \textcolor{keywordtype}{doubl
+      e} & m\_b);
+00039         \textcolor{comment}{// cf. [S2004], Eq. (30), pp. 8-9}
+00040         \textcolor{keyword}{static} complex<double> \hyperlink{structeos_1_1CharmLoops_ad1599db67462adc30f33918fe774bfe3}{B}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s, \textcolor{keyword}{const} \textcolor{keywordtype}{doubl
+      e} & m\_b);
+00041         \textcolor{comment}{// cf. [S2004], Eq. (31), p. 9}
+00042         \textcolor{keyword}{static} complex<double> \hyperlink{structeos_1_1CharmLoops_a41ed4114fe8c4a25702232a9421b8e05}{C}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s);
+00043 
+00044         \textcolor{comment}{/* Non-factorizing two loop contributions */}
+00045         \textcolor{comment}{// massless case, cf. [S2004], Eq. (16), p. 6}
+00046         \textcolor{keyword}{static} complex<double> \hyperlink{structeos_1_1CharmLoops_a0e49ca63c218a3bc80575df602508454}{F17_massless}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s, 
+      \textcolor{keyword}{const} \textcolor{keywordtype}{double} & m\_b);
+00047         \textcolor{keyword}{static} complex<double> \hyperlink{structeos_1_1CharmLoops_afbab032d85a4b70b3ea223acf50e8e38}{F19_massless}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s, 
+      \textcolor{keyword}{const} \textcolor{keywordtype}{double} & m\_b);
+00048         \textcolor{keyword}{static} complex<double> \hyperlink{structeos_1_1CharmLoops_a9fd74444d72504308c806d91943b2933}{F27_massless}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s, 
+      \textcolor{keyword}{const} \textcolor{keywordtype}{double} & m\_b);
+00049         \textcolor{keyword}{static} complex<double> \hyperlink{structeos_1_1CharmLoops_a127312f7cefb95c9e4d19fe90aaadb9a}{F29_massless}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s, 
+      \textcolor{keyword}{const} \textcolor{keywordtype}{double} & m\_b);
+00050         \textcolor{comment}{// massless case, cf. [BFS2001], Eqs. (82)-(83), p. 30}
+00051         \textcolor{keyword}{static} complex<double> \hyperlink{structeos_1_1CharmLoops_a81ea6bfba7981c218c0c94ed79688266}{F87_massless}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s, 
+      \textcolor{keyword}{const} \textcolor{keywordtype}{double} & m\_b);
+00052         \textcolor{keyword}{static} complex<double> \hyperlink{structeos_1_1CharmLoops_a02dd5d2de6eb110c9dc4abe8db9329b0}{F89_massless}(                   \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s, 
+      \textcolor{keyword}{const} \textcolor{keywordtype}{double} & m\_b);
+00053 
+00054         \textcolor{comment}{// massive case, cf. [ABGW2003], Eq. (7), p. 8}
+00055         \textcolor{keyword}{static} complex<double> \hyperlink{structeos_1_1CharmLoops_ab9c16844121670118512a2d47f74284e}{F17_massive}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s, \textcolor{keyword}{c
+      onst} \textcolor{keywordtype}{double} & m\_b, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & m\_c);
+00056         \textcolor{keyword}{static} complex<double> \hyperlink{structeos_1_1CharmLoops_a4ed440c1f33914e6c2e5b825b24e384e}{F19_massive}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s, \textcolor{keyword}{c
+      onst} \textcolor{keywordtype}{double} & m\_b, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & m\_c);
+00057         \textcolor{keyword}{static} complex<double> \hyperlink{structeos_1_1CharmLoops_a84b926651e9df767d4d3fe0d37c4bdf2}{F27_massive}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s, \textcolor{keyword}{c
+      onst} \textcolor{keywordtype}{double} & m\_b, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & m\_c);
+00058         \textcolor{keyword}{static} complex<double> \hyperlink{structeos_1_1CharmLoops_ac670d235f7b371739d54e2c731dac27b}{F29_massive}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s, \textcolor{keyword}{c
+      onst} \textcolor{keywordtype}{double} & m\_b, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & m\_c);
+00059 
+00060         \textcolor{comment}{// helper functions for F8j, cf. [BFS2001], Eqs. (29) and (84), pp. 8 and
+       30}
+00061         \textcolor{keyword}{static} complex<double> \hyperlink{structeos_1_1CharmLoops_a12035607b29d252a6eab317c850255b7}{B0}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & m\_q);
+00062         \textcolor{keyword}{static} complex<double> \hyperlink{structeos_1_1CharmLoops_a0d4ed4a2d4d8e9c3c353bf1922e78c77}{C0}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & m\_q);
+00063     \};
+00064 
+\hypertarget{charm-loops_8hh_source_l00065}{}\hyperlink{structeos_1_1ShortDistanceLowRecoil}{00065}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1ShortDistanceLowRecoil}{ShortDistanceLowRecoil}
+00066     \{
+00079         \textcolor{keyword}{static} complex<double> \hyperlink{structeos_1_1ShortDistanceLowRecoil_abb30cc99b514a6610359a0869d4d4582}{c7eff}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu, \textcolor{keyword}{const} \textcolor{keywordtype}{d
+      ouble} & alpha\_s, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & m\_b\_PS, \textcolor{keywordtype}{bool} use\_nlo,
+00080                 \textcolor{keyword}{const} \hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4}{WilsonCoefficients<BToS>} & wc);
+00081 
+00097         \textcolor{keyword}{static} complex<double> \hyperlink{structeos_1_1ShortDistanceLowRecoil_aaaee347f2e54c1edad33b9806c437cdd}{c9eff}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu, \textcolor{keyword}{const} \textcolor{keywordtype}{d
+      ouble} & alpha\_s, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & m\_b\_PS, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & m\_c\_MSbar,
+00098                 \textcolor{keywordtype}{bool} use\_nlo, \textcolor{keywordtype}{bool} ccbar\_resonance, \textcolor{keyword}{const} complex<double> & lambd
+      a\_hat\_u,
+00099                 \textcolor{keyword}{const} \hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4}{WilsonCoefficients<BToS>} & wc);
+00100     \};
+00101 \}
+00102 
+00103 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

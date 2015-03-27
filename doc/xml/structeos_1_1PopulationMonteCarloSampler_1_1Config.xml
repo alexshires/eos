@@ -1,0 +1,763 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1PopulationMonteCarloSampler_1_1Config" kind="struct" prot="public">
+    <compoundname>eos::PopulationMonteCarloSampler::Config</compoundname>
+    <includes refid="population__monte__carlo__sampler_8hh" local="no">population_monte_carlo_sampler.hh</includes>
+      <sectiondef kind="user-defined">
+      <header>Basic options</header>
+      <description><para><anchor id="_1amgrp0f569f5975208cc475c7bb42ee13b9a5"/> </para></description>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1abf7b1c768e283f8a41bc8b348bb84304" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long eos::PopulationMonteCarloSampler::Config::seed</definition>
+        <argsstring></argsstring>
+        <name>seed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The seed that is used to initialize the random number generator. Independent runs with identical seeds will produce </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="155" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1abe02d7abd41f52ae2eaf3eba25522f50" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool eos::PopulationMonteCarloSampler::Config::parallelize</definition>
+        <argsstring></argsstring>
+        <name>parallelize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If true, use as many threads as there are cores available. If false, use only one thread. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="161" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1ae6362a7374c9ca1650b501c07672442a" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned eos::PopulationMonteCarloSampler::Config::number_of_workers</definition>
+        <argsstring></argsstring>
+        <name>number_of_workers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>How many workers to use. If parallelize is true, this is the number of threads used. The default value is 0, implying that the proper number is drawn from the number of available cores on the machine. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="170" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Proposal density options</header>
+      <description><para><anchor id="_1amgrpd9880d82248858d1297ea0d68e4434d4"/> </para></description>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1afbe44ab88cfffcf63495463004cdd9b5" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool eos::PopulationMonteCarloSampler::Config::block_decomposition</definition>
+        <argsstring></argsstring>
+        <name>block_decomposition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Perform a decomposition into scan and nuisance parameters and use prior variance for initial proposal of nuisance. The (co)variance in scan direction is unaffected. In addition, set the component&apos;s mean to the prior&apos;s mean. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="183" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a95aeae5fe77255d4fa0c2c5ddfafe883" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; eos::PopulationMonteCarloSampler::Config::component_weights</definition>
+        <argsstring></argsstring>
+        <name>component_weights</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Each component has an associated weight, which determines how many samples it may contribute in the next sampling phase. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="190" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a5668b999c1f4c6517b9366035571143d" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; double &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;double&gt; &gt; eos::PopulationMonteCarloSampler::Config::component_means</definition>
+        <argsstring></argsstring>
+        <name>component_means</name>
+        <briefdescription>
+<para>n entries. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="193" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a91b615db28333d345eae6d8a2ef55fd5" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::PopulationMonteCarloSampler::Config::component_offset</definition>
+        <argsstring></argsstring>
+        <name>component_offset</name>
+        <briefdescription>
+<para>Shift component by this number of sigmas. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="197" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1af7452d7aaa3b241039b730998cdbabff" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; double &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;double&gt; &gt; eos::PopulationMonteCarloSampler::Config::component_variances</definition>
+        <argsstring></argsstring>
+        <name>component_variances</name>
+        <briefdescription>
+<para>n^2 entries. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="200" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a46afc1c26737e35c8ea582ffbab80edb" prot="public" static="no" mutable="no">
+        <type><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange</ref>&lt; unsigned &gt;</type>
+        <definition>VerifiedRange&lt;unsigned&gt; eos::PopulationMonteCarloSampler::Config::components_per_cluster</definition>
+        <argsstring></argsstring>
+        <name>components_per_cluster</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>When initializing from global local, draw this many <ref refid="namespaceeos_1_1components" kindref="compound">components</ref> for each cluster. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="207" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1ad4069f57b2c8b33032680a27b62fd5cf" prot="public" static="no" mutable="no">
+        <type><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange</ref>&lt; int &gt;</type>
+        <definition>VerifiedRange&lt;int&gt; eos::PopulationMonteCarloSampler::Config::degrees_of_freedom</definition>
+        <argsstring></argsstring>
+        <name>degrees_of_freedom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Degrees of freedom of a multivariate t-distribution. Special value of -1 corresponds to the Gaussian distribution. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="213" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a32b76214e4175ec4543162d36707ab84" prot="public" static="no" mutable="no">
+        <type><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange</ref>&lt; double &gt;</type>
+        <definition>VerifiedRange&lt;double&gt; eos::PopulationMonteCarloSampler::Config::minimum_overlap</definition>
+        <argsstring></argsstring>
+        <name>minimum_overlap</name>
+        <briefdescription>
+<para>Used during filtering of <ref refid="namespaceeos_1_1components" kindref="compound">components</ref>, if too many samples fall outside of box, remove <ref refid="namespaceeos_1_1components" kindref="compound">components</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="216" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1abb5d4e207d1f2da439dddf9c49854a1e" prot="public" static="no" mutable="no">
+        <type><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange</ref>&lt; double &gt;</type>
+        <definition>VerifiedRange&lt;double&gt; eos::PopulationMonteCarloSampler::Config::mode_distance</definition>
+        <argsstring></argsstring>
+        <name>mode_distance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Perform a decomposition into scan and nuisance parameters and use prior variance for initial proposal of nuisance. The (co)variance in scan direction is unaffected. In addition, set the component&apos;s mean to the prior&apos;s mean. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="227" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1aee29a36e8e23c971ba1e36616e9affb4" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool eos::PopulationMonteCarloSampler::Config::override_global_local_proposal</definition>
+        <argsstring></argsstring>
+        <name>override_global_local_proposal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If true, use same local proposal as supplied by GlobalLocal input. Else use degrees_of_freedom defined above. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="231" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1aca0e5339b634644471e1aa5cdd698231" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool eos::PopulationMonteCarloSampler::Config::random_start</definition>
+        <argsstring></argsstring>
+        <name>random_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize the <ref refid="namespaceeos_1_1components" kindref="compound">components</ref> randomly at the beginning. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="236" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a2a6f2098dc8be089015818326d8eb15f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int eos::PopulationMonteCarloSampler::Config::single_cluster</definition>
+        <argsstring></argsstring>
+        <name>single_cluster</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Use only history points from a particular cluster defined by its index. Default value -1: take from all clusters </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="242" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1ac920d732b229713ca67428d284390fa2" prot="public" static="no" mutable="no">
+        <type><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange</ref>&lt; double &gt;</type>
+        <definition>VerifiedRange&lt;double&gt; eos::PopulationMonteCarloSampler::Config::skip_initial</definition>
+        <argsstring></argsstring>
+        <name>skip_initial</name>
+        <briefdescription>
+<para>Skip this percentage from beginning of a chain&apos;s history. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="245" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a235c1a2d0c336f9f8ed9c58917acf68b" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned eos::PopulationMonteCarloSampler::Config::starting_points</definition>
+        <argsstring></argsstring>
+        <name>starting_points</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of starting positions. Start optimization from each one to identify local modes and covariances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="251" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a9de01b257ce34b8a747de5dcf992e053" prot="public" static="no" mutable="no">
+        <type><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange</ref>&lt; double &gt;</type>
+        <definition>VerifiedRange&lt;double&gt; eos::PopulationMonteCarloSampler::Config::std_dev_reduction</definition>
+        <argsstring></argsstring>
+        <name>std_dev_reduction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>For random start, take the <ref refid="namespacestd" kindref="compound">std</ref>. deviation as parameter range divided by std_dev_reduction. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="257" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Hierarchical clustering options</header>
+      <description><para><anchor id="_1amgrp4c1e04d10384c153c511d8866b765e01"/> </para></description>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1adf9f35d7f54defd04b9486de7d705ffa" prot="public" static="no" mutable="no">
+        <type><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange</ref>&lt; double &gt;</type>
+        <definition>VerifiedRange&lt;double&gt; eos::PopulationMonteCarloSampler::Config::group_by_r_value</definition>
+        <argsstring></argsstring>
+        <name>group_by_r_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If true, use the Gelman-Rubin R-value to combine chains into groups. N initial guess clusters are drawn from each group, no matter how many chains are in it.</para><para>Default: 1, all chains belong to same group. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="272" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a27ea93f2181c10068424f2b7e24fbc14" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; unsigned &gt;</type>
+        <definition>std::vector&lt;unsigned&gt; eos::PopulationMonteCarloSampler::Config::ignore_groups</definition>
+        <argsstring></argsstring>
+        <name>ignore_groups</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Ignore groups (identified by index) from clustering. Default: no groups are ignored. <simplesect kind="note"><para>Use with great care. Important parts of the posterior may be ignored. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="279" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a0bffb06da5f9f3ef917eec1ce2139ce1" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool eos::PopulationMonteCarloSampler::Config::patch_around_local_mode</definition>
+        <argsstring></argsstring>
+        <name>patch_around_local_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>When creating patch from a Markov chain history, place the patches around the point with highest posterior in the selected range of point. If false, center on the mean of all points in range. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="287" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a5e3c5e1375b04890db40b3d7581b5413" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool eos::PopulationMonteCarloSampler::Config::r_value_no_nuisance</definition>
+        <argsstring></argsstring>
+        <name>r_value_no_nuisance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>When grouping with R-value, consider only the scan parameters. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="293" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a9d8798a5789fd4fbe250dba673b92df6" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned eos::PopulationMonteCarloSampler::Config::sliding_window</definition>
+        <argsstring></argsstring>
+        <name>sliding_window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>With hierarchical clustering, use this many samples to form a patch from a single Markov chain. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="299" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a1ddf56fd57dd8dd3c4462dd1cb2800ab" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool eos::PopulationMonteCarloSampler::Config::store_input_components</definition>
+        <argsstring></argsstring>
+        <name>store_input_components</name>
+        <briefdescription>
+<para>Store the <ref refid="namespaceeos_1_1components" kindref="compound">components</ref> created from chain patches. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="302" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="302" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1ad24a2d883fe9d2faedbcf4f861bc9d82" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool eos::PopulationMonteCarloSampler::Config::store_hc_initial</definition>
+        <argsstring></argsstring>
+        <name>store_hc_initial</name>
+        <briefdescription>
+<para>Store initial guess for clustering from long patches. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="305" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a906c7eeded237f7bbe810a8d03d8402b" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned eos::PopulationMonteCarloSampler::Config::super_clusters</definition>
+        <argsstring></argsstring>
+        <name>super_clusters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Perform the hierarchical_clustering algorithm on a set of input prerun markov chains to form an initial proposal density. Create this many <ref refid="namespaceeos_1_1components" kindref="compound">components</ref> for PMC.</para><para>If group_by_r_value is active, choose this many <ref refid="namespaceeos_1_1components" kindref="compound">components</ref> per group of chains. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="315" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Pre run options</header>
+      <description><para><anchor id="_1amgrp8c2f6257f55ff385e844eafbe41ba090"/> </para></description>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1af4b575d8f24b51783b11bd5dca5ea576" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool eos::PopulationMonteCarloSampler::Config::adjust_sample_size</definition>
+        <argsstring></argsstring>
+        <name>adjust_sample_size</name>
+        <briefdescription>
+<para>Change number of samples according to number of live <ref refid="namespaceeos_1_1components" kindref="compound">components</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="323" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a14c4bdc8c63ca8115e326e4c7bb3116e" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned eos::PopulationMonteCarloSampler::Config::chunks</definition>
+        <argsstring></argsstring>
+        <name>chunks</name>
+        <briefdescription>
+<para>The number of updates to proposal functions (mixture <ref refid="namespaceeos_1_1components" kindref="compound">components</ref>). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="326" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1ac6d3a2f26905ec51f3e9eadf73d51792" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned eos::PopulationMonteCarloSampler::Config::chunk_size</definition>
+        <argsstring></argsstring>
+        <name>chunk_size</name>
+        <briefdescription>
+<para>Number of iterations per chunk and component. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="329" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a394bc4c560e738d420fa34014745a7b7" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned eos::PopulationMonteCarloSampler::Config::crop_highest_weights</definition>
+        <argsstring></argsstring>
+        <name>crop_highest_weights</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If &gt; 0, find the samples with highest weight and ignore them during a PMC update. This can be useful to remove outliers which dominate over the bulk of samples and lead to many <ref refid="namespaceeos_1_1components" kindref="compound">components</ref> dying out, as well as to dramatically shrinking <ref refid="namespaceeos_1_1components" kindref="compound">components</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="337" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1ac729d374ca2a58aeba6cf60d296d7720" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool eos::PopulationMonteCarloSampler::Config::need_prerun</definition>
+        <argsstring></argsstring>
+        <name>need_prerun</name>
+        <briefdescription>
+<para>If false, no adaptions to proposal densities are made. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="340" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="340" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a85cf9361f3660df01fa551d9ebd62040" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool eos::PopulationMonteCarloSampler::Config::store_prerun</definition>
+        <argsstring></argsstring>
+        <name>store_prerun</name>
+        <briefdescription>
+<para>store samples of prerun steps (statistics are always stored) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="343" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Convergence options</header>
+      <description><para><anchor id="_1amgrp2ecab0cd070c5334d222a1622ad7552f"/> </para></description>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a69a93bb57d6610e06ea2f200e3d2ce42" prot="public" static="no" mutable="no">
+        <type><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange</ref>&lt; double &gt;</type>
+        <definition>VerifiedRange&lt;double&gt; eos::PopulationMonteCarloSampler::Config::convergence_eff_sample_size</definition>
+        <argsstring></argsstring>
+        <name>convergence_eff_sample_size</name>
+        <briefdescription>
+<para>Declare convergence if both perplexity and effective sample size large enough. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="351" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="351" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a42a627c391f5278eff3a1c1de7f06985" prot="public" static="no" mutable="no">
+        <type><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange</ref>&lt; double &gt;</type>
+        <definition>VerifiedRange&lt;double&gt; eos::PopulationMonteCarloSampler::Config::convergence_perplexity</definition>
+        <argsstring></argsstring>
+        <name>convergence_perplexity</name>
+        <briefdescription>
+<para>Declare convergence if both perplexity and effective sample size large enough. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="353" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="353" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1aec486491bd33a3edf40a6062b07e4066" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool eos::PopulationMonteCarloSampler::Config::ignore_eff_sample_size</definition>
+        <argsstring></argsstring>
+        <name>ignore_eff_sample_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Can declare convergence w/o considering the effective sample size, just by looking at perplexity. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="357" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a765c46a4b99f711c59f02e1ea0d8fbe9" prot="public" static="no" mutable="no">
+        <type><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange</ref>&lt; double &gt;</type>
+        <definition>VerifiedRange&lt;double&gt; eos::PopulationMonteCarloSampler::Config::minimum_eff_sample_size</definition>
+        <argsstring></argsstring>
+        <name>minimum_eff_sample_size</name>
+        <briefdescription>
+<para>Declare converge if both perplexity and effective sample size large enough and do not rise anymore. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="360" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="360" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a4cfd93c384604e24e58ace95bdc31a2d" prot="public" static="no" mutable="no">
+        <type><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange</ref>&lt; double &gt;</type>
+        <definition>VerifiedRange&lt;double&gt; eos::PopulationMonteCarloSampler::Config::minimum_perplexity</definition>
+        <argsstring></argsstring>
+        <name>minimum_perplexity</name>
+        <briefdescription>
+<para>Declare converge if both perplexity and effective sample size large enough and do not rise anymore. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="362" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="362" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1ac7a03e69442b543fc2cacaa647988741" prot="public" static="no" mutable="no">
+        <type><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange</ref>&lt; unsigned &gt;</type>
+        <definition>VerifiedRange&lt;unsigned&gt; eos::PopulationMonteCarloSampler::Config::minimum_steps</definition>
+        <argsstring></argsstring>
+        <name>minimum_steps</name>
+        <briefdescription>
+<para>Consider the last steps to decide if convergence statistics do not rise (significantly) anymore. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="364" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="364" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1ac0e8dec5f8ba7e5f0c997dd8a65fc231" prot="public" static="no" mutable="no">
+        <type><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange</ref>&lt; double &gt;</type>
+        <definition>VerifiedRange&lt;double&gt; eos::PopulationMonteCarloSampler::Config::maximum_relative_std_deviation</definition>
+        <argsstring></argsstring>
+        <name>maximum_relative_std_deviation</name>
+        <briefdescription>
+<para>Relative variance of last steps should be small to ascertain convergence. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="366" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="366" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Main run options</header>
+      <description><para><anchor id="_1amgrp03ae0482f9408262df632e84148db84d"/> </para></description>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1ac5a61846614b1bb67bdde95df03b5663" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long eos::PopulationMonteCarloSampler::Config::final_chunk_size</definition>
+        <argsstring></argsstring>
+        <name>final_chunk_size</name>
+        <briefdescription>
+<para>Number of iterations used in final step after adaption is finished. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="374" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a3dffd8c05d907bae4e3aaaf1733d93c1" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool eos::PopulationMonteCarloSampler::Config::store</definition>
+        <argsstring></argsstring>
+        <name>store</name>
+        <briefdescription>
+<para>Whether to store collected samples. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="377" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Output options</header>
+      <description><para><anchor id="_1amgrpa3beb290cb264578f0ef293e44984365"/> </para></description>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1abe31836405a05391987afe00f1f231d3" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string eos::PopulationMonteCarloSampler::Config::output_file</definition>
+        <argsstring></argsstring>
+        <name>output_file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The HDF5 output file to store the markov chains. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="386" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="386" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a55d2a98f36625d31eb9117c76212771f" prot="public" static="no" mutable="no">
+        <type><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange</ref>&lt; unsigned &gt;</type>
+        <definition>VerifiedRange&lt;unsigned&gt; eos::PopulationMonteCarloSampler::Config::print_steps</definition>
+        <argsstring></argsstring>
+        <name>print_steps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The HDF5 output file to store the markov chains. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="397" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Basic Function</header>
+      <description><para><anchor id="_1amgrp9ac0a05bc9f1ecee9a728c52951f9f43"/> </para></description>
+      <memberdef kind="function" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a8f659cd4c289ebfea73765497eee01dd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config" kindref="compound">Config</ref></type>
+        <definition>static Config eos::PopulationMonteCarloSampler::Config::Default</definition>
+        <argsstring>()</argsstring>
+        <name>Default</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Named constructor</para><para><ref refid="classeos_1_1PopulationMonteCarloSampler" kindref="compound">PopulationMonteCarloSampler</ref> settings with reasonably chosen default values. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="135"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1aa88ccb299ca1bc2881951b82e6e66059" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config" kindref="compound">Config</ref></type>
+        <definition>static Config eos::PopulationMonteCarloSampler::Config::Quick</definition>
+        <argsstring>()</argsstring>
+        <name>Quick</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Named constructor</para><para><ref refid="classeos_1_1PopulationMonteCarloSampler" kindref="compound">PopulationMonteCarloSampler</ref> settings with values optimized for quick chain convergence and evaluation.</para><para><simplesect kind="note"><para>The convergence is not very reliable. Use with care! If in doubt, use <ref refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a8f659cd4c289ebfea73765497eee01dd" kindref="member">PopulationMonteCarloSampler::Config::Default</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="146"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a7eb69f73a54aaaa254f0844e8a934fef" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::PopulationMonteCarloSampler::Config::Config</definition>
+        <argsstring>()</argsstring>
+        <name>Config</name>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="124"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Stores all configuration options for a <ref refid="classeos_1_1PopulationMonteCarloSampler" kindref="compound">PopulationMonteCarloSampler</ref>. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="318">
+        <label>eos::VerifiedRange&lt; unsigned &gt;</label>
+        <link refid="classeos_1_1VerifiedRange"/>
+      </node>
+      <node id="321">
+        <label>eos::VerifiedRange&lt; double &gt;</label>
+        <link refid="classeos_1_1VerifiedRange"/>
+      </node>
+      <node id="325">
+        <label>std::vector&lt; double &gt;</label>
+      </node>
+      <node id="324">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="322">
+        <label>std::vector&lt; std::vector&lt; double &gt; &gt;</label>
+      </node>
+      <node id="317">
+        <label>eos::PopulationMonteCarloSampler::Config</label>
+        <link refid="structeos_1_1PopulationMonteCarloSampler_1_1Config"/>
+        <childnode refid="318" relation="usage">
+          <edgelabel>components_per_cluster</edgelabel>
+          <edgelabel>minimum_steps</edgelabel>
+          <edgelabel>print_steps</edgelabel>
+        </childnode>
+        <childnode refid="319" relation="usage">
+          <edgelabel>degrees_of_freedom</edgelabel>
+        </childnode>
+        <childnode refid="320" relation="usage">
+          <edgelabel>ignore_groups</edgelabel>
+        </childnode>
+        <childnode refid="321" relation="usage">
+          <edgelabel>minimum_perplexity</edgelabel>
+          <edgelabel>minimum_eff_sample_size</edgelabel>
+          <edgelabel>minimum_overlap</edgelabel>
+          <edgelabel>std_dev_reduction</edgelabel>
+          <edgelabel>skip_initial</edgelabel>
+          <edgelabel>mode_distance</edgelabel>
+          <edgelabel>convergence_eff_sample_size</edgelabel>
+          <edgelabel>maximum_relative_std_deviation</edgelabel>
+          <edgelabel>convergence_perplexity</edgelabel>
+          <edgelabel>group_by_r_value</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+        <childnode refid="322" relation="usage">
+          <edgelabel>component_variances</edgelabel>
+          <edgelabel>component_means</edgelabel>
+        </childnode>
+        <childnode refid="323" relation="usage">
+          <edgelabel>output_file</edgelabel>
+        </childnode>
+        <childnode refid="325" relation="usage">
+          <edgelabel>component_weights</edgelabel>
+        </childnode>
+      </node>
+      <node id="319">
+        <label>eos::VerifiedRange&lt; int &gt;</label>
+        <link refid="classeos_1_1VerifiedRange"/>
+      </node>
+      <node id="320">
+        <label>std::vector&lt; unsigned &gt;</label>
+      </node>
+      <node id="323">
+        <label>std::string</label>
+        <childnode refid="324" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="121" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="120" bodyend="399"/>
+    <listofallmembers>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1af4b575d8f24b51783b11bd5dca5ea576" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>adjust_sample_size</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1afbe44ab88cfffcf63495463004cdd9b5" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>block_decomposition</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1ac6d3a2f26905ec51f3e9eadf73d51792" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>chunk_size</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a14c4bdc8c63ca8115e326e4c7bb3116e" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>chunks</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a5668b999c1f4c6517b9366035571143d" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>component_means</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a91b615db28333d345eae6d8a2ef55fd5" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>component_offset</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1af7452d7aaa3b241039b730998cdbabff" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>component_variances</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a95aeae5fe77255d4fa0c2c5ddfafe883" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>component_weights</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a46afc1c26737e35c8ea582ffbab80edb" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>components_per_cluster</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a7eb69f73a54aaaa254f0844e8a934fef" prot="private" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>Config</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a69a93bb57d6610e06ea2f200e3d2ce42" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>convergence_eff_sample_size</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a42a627c391f5278eff3a1c1de7f06985" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>convergence_perplexity</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a394bc4c560e738d420fa34014745a7b7" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>crop_highest_weights</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a8f659cd4c289ebfea73765497eee01dd" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>Default</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1ad4069f57b2c8b33032680a27b62fd5cf" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>degrees_of_freedom</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1ac5a61846614b1bb67bdde95df03b5663" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>final_chunk_size</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1adf9f35d7f54defd04b9486de7d705ffa" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>group_by_r_value</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1aec486491bd33a3edf40a6062b07e4066" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>ignore_eff_sample_size</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a27ea93f2181c10068424f2b7e24fbc14" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>ignore_groups</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1ac0e8dec5f8ba7e5f0c997dd8a65fc231" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>maximum_relative_std_deviation</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a765c46a4b99f711c59f02e1ea0d8fbe9" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>minimum_eff_sample_size</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a32b76214e4175ec4543162d36707ab84" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>minimum_overlap</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a4cfd93c384604e24e58ace95bdc31a2d" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>minimum_perplexity</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1ac7a03e69442b543fc2cacaa647988741" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>minimum_steps</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1abb5d4e207d1f2da439dddf9c49854a1e" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>mode_distance</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1ac729d374ca2a58aeba6cf60d296d7720" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>need_prerun</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1ae6362a7374c9ca1650b501c07672442a" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>number_of_workers</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1abe31836405a05391987afe00f1f231d3" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>output_file</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1aee29a36e8e23c971ba1e36616e9affb4" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>override_global_local_proposal</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1abe02d7abd41f52ae2eaf3eba25522f50" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>parallelize</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a0bffb06da5f9f3ef917eec1ce2139ce1" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>patch_around_local_mode</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a55d2a98f36625d31eb9117c76212771f" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>print_steps</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1aa88ccb299ca1bc2881951b82e6e66059" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>Quick</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a5e3c5e1375b04890db40b3d7581b5413" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>r_value_no_nuisance</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1aca0e5339b634644471e1aa5cdd698231" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>random_start</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1abf7b1c768e283f8a41bc8b348bb84304" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>seed</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a2a6f2098dc8be089015818326d8eb15f" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>single_cluster</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1ac920d732b229713ca67428d284390fa2" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>skip_initial</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a9d8798a5789fd4fbe250dba673b92df6" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>sliding_window</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a235c1a2d0c336f9f8ed9c58917acf68b" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>starting_points</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a9de01b257ce34b8a747de5dcf992e053" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>std_dev_reduction</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a3dffd8c05d907bae4e3aaaf1733d93c1" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>store</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1ad24a2d883fe9d2faedbcf4f861bc9d82" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>store_hc_initial</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a1ddf56fd57dd8dd3c4462dd1cb2800ab" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>store_input_components</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a85cf9361f3660df01fa551d9ebd62040" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>store_prerun</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Config_1a906c7eeded237f7bbe810a8d03d8402b" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Config</scope><name>super_clusters</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

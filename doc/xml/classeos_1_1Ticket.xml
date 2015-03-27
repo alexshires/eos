@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1Ticket" kind="class" prot="public">
+    <compoundname>eos::Ticket</compoundname>
+    <basecompoundref refid="classeos_1_1PrivateImplementationPattern" prot="public" virt="non-virtual">eos::PrivateImplementationPattern&lt; Ticket &gt;</basecompoundref>
+    <includes refid="ticket_8hh" local="no">ticket.hh</includes>
+      <sectiondef kind="user-defined">
+      <header>Friends of Ticket</header>
+      <description><para><anchor id="_1amgrp33662ca95b7770a7e43fed4bd2b6af89"/> </para></description>
+      <memberdef kind="friend" id="classeos_1_1Ticket_1ac0aa77ee461a5d61db873f8c71163cb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class TicketList</definition>
+        <argsstring></argsstring>
+        <name>TicketList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/ticket.hh" line="41" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/ticket.hh" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Basic Operations</header>
+      <description><para><anchor id="_1amgrpb5794bba6843c21acafdd6a4bfd776be"/> </para></description>
+      <memberdef kind="function" id="classeos_1_1Ticket_1a3d191abdf730fab31d131aeaf3214878" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::Ticket::Ticket</definition>
+        <argsstring>()</argsstring>
+        <name>Ticket</name>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/ticket.hh" line="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Ticket_1a83323881ce189b387cb1358a2c8c63b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::Ticket::~Ticket</definition>
+        <argsstring>()</argsstring>
+        <name>~Ticket</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/ticket.hh" line="52"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1Ticket_1a32a1041ca14a3a41b3f5ac9ea040b452" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::Ticket::mark</definition>
+        <argsstring>()</argsstring>
+        <name>mark</name>
+        <briefdescription>
+<para>Mark ticket as completed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/ticket.hh" line="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Ticket_1ab3dc3b4e907527f14d54a49269e8174d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::Ticket::wait</definition>
+        <argsstring>() const </argsstring>
+        <name>wait</name>
+        <briefdescription>
+<para>Wait for ticket completion. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/ticket.hh" line="60"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classeos_1_1Ticket" kindref="compound">Ticket</ref> is used by all asynchronous function calls to relay/query information on a function&apos;s completion status. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="986">
+        <label>eos::PrivateImplementationPattern&lt; Ticket &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="985">
+        <label>eos::Ticket</label>
+        <link refid="classeos_1_1Ticket"/>
+        <childnode refid="986" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="988">
+        <label>eos::PrivateImplementationPattern&lt; Ticket &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="987">
+        <label>eos::Ticket</label>
+        <link refid="classeos_1_1Ticket"/>
+        <childnode refid="988" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/ticket.hh" line="36" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/ticket.hh" bodystart="34" bodyend="61"/>
+    <listofallmembers>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a232940e78b26c6ed4f97196f831c69c9" prot="protected" virt="non-virtual"><scope>eos::Ticket</scope><name>_imp</name></member>
+      <member refid="classeos_1_1Ticket_1a32a1041ca14a3a41b3f5ac9ea040b452" prot="public" virt="non-virtual"><scope>eos::Ticket</scope><name>mark</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a3e3d5f4a565256a1dda6c234b051b2f2" prot="public" virt="non-virtual"><scope>eos::Ticket</scope><name>PrivateImplementationPattern</name></member>
+      <member refid="classeos_1_1Ticket_1a3d191abdf730fab31d131aeaf3214878" prot="public" virt="non-virtual"><scope>eos::Ticket</scope><name>Ticket</name></member>
+      <member refid="classeos_1_1Ticket_1ac0aa77ee461a5d61db873f8c71163cb3" prot="public" virt="non-virtual"><scope>eos::Ticket</scope><name>TicketList</name></member>
+      <member refid="classeos_1_1Ticket_1ab3dc3b4e907527f14d54a49269e8174d" prot="public" virt="non-virtual"><scope>eos::Ticket</scope><name>wait</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1acf46ec2739c3b0ec9702b9428475876d" prot="public" virt="non-virtual"><scope>eos::Ticket</scope><name>~PrivateImplementationPattern</name></member>
+      <member refid="classeos_1_1Ticket_1a83323881ce189b387cb1358a2c8c63b0" prot="public" virt="non-virtual"><scope>eos::Ticket</scope><name>~Ticket</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

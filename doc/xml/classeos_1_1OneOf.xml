@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1OneOf" kind="class" prot="public">
+    <compoundname>eos::OneOf</compoundname>
+    <includes refid="one-of_8hh" local="no">one-of.hh</includes>
+    <templateparamlist>
+      <param>
+        <type>typename...</type>
+        <declname>Types_</declname>
+        <defname>Types_</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classeos_1_1OneOf_1a90582a07b6adc93b564c884aa44bf589" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="structeos_1_1OneOfValueBase" kindref="compound">OneOfValueBase</ref>&lt; Types_...&gt; &gt;</type>
+        <definition>std::shared_ptr&lt;OneOfValueBase&lt;Types_ ...&gt; &gt; eos::OneOf&lt; Types_ &gt;::_value</definition>
+        <argsstring></argsstring>
+        <name>_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" line="171" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classeos_1_1OneOf_1a683afaf45d77e16eb374326f9f304328" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eos::OneOf&lt; Types_ &gt;::OneOf</definition>
+        <argsstring>(OneOfValueBase&lt; Types_...&gt; *ptr)</argsstring>
+        <name>OneOf</name>
+        <param>
+          <type><ref refid="structeos_1_1OneOfValueBase" kindref="compound">OneOfValueBase</ref>&lt; Types_...&gt; *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" line="175" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" bodystart="173" bodyend="176"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1OneOf_1a1765098679d8661eac6ee994f4b4902a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eos::OneOf&lt; Types_ &gt;::OneOf</definition>
+        <argsstring>()</argsstring>
+        <name>OneOf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" line="180" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" bodystart="179" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1OneOf_1aeb5c2a79d64af9958071e3f304672aa4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Type_</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>eos::OneOf&lt; Types_ &gt;::OneOf</definition>
+        <argsstring>(const Type_ &amp;value)</argsstring>
+        <name>OneOf</name>
+        <param>
+          <type>const Type_ &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" line="185" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" bodystart="184" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1OneOf_1a2d12b36c583fe6967f6a31ac65b066c9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Visitor_ Result_</type>
+        <definition>Visitor_ Result_ eos::OneOf&lt; Types_ &gt;::accept_returning</definition>
+        <argsstring>(Visitor_ &amp;visitor) const </argsstring>
+        <name>accept_returning</name>
+        <param>
+          <type>Visitor_ &amp;</type>
+          <declname>visitor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" line="219" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" bodystart="218" bodyend="225"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" line="169" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" bodystart="168" bodyend="226"/>
+    <listofallmembers>
+      <member refid="classeos_1_1OneOf_1a90582a07b6adc93b564c884aa44bf589" prot="private" virt="non-virtual"><scope>eos::OneOf</scope><name>_value</name></member>
+      <member refid="classeos_1_1OneOf_1a2d12b36c583fe6967f6a31ac65b066c9" prot="public" virt="non-virtual"><scope>eos::OneOf</scope><name>accept_returning</name></member>
+      <member refid="classeos_1_1OneOf_1a683afaf45d77e16eb374326f9f304328" prot="private" virt="non-virtual"><scope>eos::OneOf</scope><name>OneOf</name></member>
+      <member refid="classeos_1_1OneOf_1a1765098679d8661eac6ee994f4b4902a" prot="public" virt="non-virtual"><scope>eos::OneOf</scope><name>OneOf</name></member>
+      <member refid="classeos_1_1OneOf_1aeb5c2a79d64af9958071e3f304672aa4" prot="public" virt="non-virtual"><scope>eos::OneOf</scope><name>OneOf</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,89 @@
+\hypertarget{prior__sampler_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/prior\_\-sampler.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2011 Frederik Beaujean}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_PRIOR\_SAMPLER\_HH}
+\hypertarget{prior__sampler_8hh_source_l00021}{}\hyperlink{prior__sampler_8hh_a4e897fbdc7ba64f124d5578a4bf894c9}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_PRIOR\_SAMPLER\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{preprocessor}{#include <\hyperlink{log__prior-fwd_8hh}{eos/utils/log_prior-fwd.hh}>}
+00024 \textcolor{preprocessor}{#include <\hyperlink{observable__set_8hh}{eos/utils/observable_set.hh}>}
+00025 \textcolor{preprocessor}{#include <\hyperlink{private__implementation__pattern_8hh}{eos/utils/private_implementation_pattern.hh}>}
+00026 \textcolor{preprocessor}{#include <\hyperlink{hdf5-fwd_8hh}{eos/utils/hdf5-fwd.hh}>}
+00027 
+00028 \textcolor{preprocessor}{#include <vector>}
+00029 
+00030 \textcolor{keyword}{namespace }eos
+00031 \{
+\hypertarget{prior__sampler_8hh_source_l00038}{}\hyperlink{classeos_1_1PriorSampler}{00038}     \textcolor{keyword}{class }\hyperlink{classeos_1_1PriorSampler}{PriorSampler} :
+00039         \textcolor{keyword}{public} \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern}<PriorSampler>
+00040     \{
+00041         \textcolor{keyword}{public}:
+\hypertarget{prior__sampler_8hh_source_l00042}{}\hyperlink{classeos_1_1PriorSampler_a7ae349c306b96abd4507bd2ea2e14b86}{00042}             \textcolor{keyword}{class }\hyperlink{structeos_1_1PriorSampler_1_1Config}{Config};
+00043 
+00044             \textcolor{keyword}{typedef} \hyperlink{classeos_1_1hdf5_1_1Array}{hdf5::Array<1, double>} \hyperlink{classeos_1_1hdf5_1_1Array}{ObservablesType};
+\hypertarget{prior__sampler_8hh_source_l00045}{}\hyperlink{classeos_1_1PriorSampler_a6da96aefb4891f1acb9366c8ffccd223}{00045}             \textcolor{keyword}{typedef} std::vector<std::vector<double>> \hyperlink{classeos_1_1PriorSampler_a6da96aefb4891f1acb9366c8ffccd223}{SamplesList};
+00046 
+00047             \textcolor{keyword}{static} \hyperlink{classeos_1_1hdf5_1_1Array}{ObservablesType} \hyperlink{classeos_1_1PriorSampler_a999109fc4dcf705444089aff091dc620}{observables_type}(\textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & dimension);
+00048 
+00054             \hyperlink{classeos_1_1PriorSampler_afa682fec47cec9d61b44709b1e8f4ea3}{PriorSampler}(\textcolor{keyword}{const} \hyperlink{classeos_1_1ObservableSet}{ObservableSet} & observables, \textcolor{keyword}{const} \hyperlink{structeos_1_1PriorSampler_1_1Config}{Config} & config
+      );
+00055 
+00059             \hyperlink{classeos_1_1PriorSampler_ad58ef7a11610b6c0bbbec96a9189395f}{~PriorSampler}();
+00060 
+00065             \textcolor{keywordtype}{bool} \hyperlink{classeos_1_1PriorSampler_aedf28860d2238779355f6fd583555851}{add}(\textcolor{keyword}{const} \hyperlink{namespaceeos_ac5481e3b46ee55ff24606ee7f6e78651}{LogPriorPtr} & prior);
+00066 
+00071             \textcolor{keywordtype}{bool} \hyperlink{classeos_1_1PriorSampler_aedf28860d2238779355f6fd583555851}{add}(\textcolor{keyword}{const} \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} & observable);
+00072 
+00077             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1PriorSampler_a62210b9eb8835714166f9ce2689685e3}{run}();
+00078 
+00085             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1PriorSampler_a62210b9eb8835714166f9ce2689685e3}{run}(\textcolor{keyword}{const} \hyperlink{classeos_1_1PriorSampler_a6da96aefb4891f1acb9366c8ffccd223}{SamplesList} & samples, \textcolor{keyword}{const} std::vector<ParameterDesc
+      ription> & );
+00086     \};
+00087 
+\hypertarget{prior__sampler_8hh_source_l00091}{}\hyperlink{structeos_1_1PriorSampler_1_1Config}{00091}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1PriorSampler_1_1Config}{PriorSampler::Config}
+00092     \{
+00093         \textcolor{keyword}{private}:
+00095             \hyperlink{structeos_1_1PriorSampler_1_1Config}{Config}();
+00096 
+00097         \textcolor{keyword}{public}:
+00098 
+00100             \textcolor{keyword}{static} \hyperlink{structeos_1_1PriorSampler_1_1Config}{Config} \hyperlink{structeos_1_1PriorSampler_1_1Config_ab56ba1088eae165d73629213c7e72450}{Default}();
+00101 
+\hypertarget{prior__sampler_8hh_source_l00103}{}\hyperlink{structeos_1_1PriorSampler_1_1Config_a2db80db4647764792f4370590e0cfb38}{00103}             \textcolor{keywordtype}{unsigned} \hyperlink{structeos_1_1PriorSampler_1_1Config_a2db80db4647764792f4370590e0cfb38}{n_samples};
+00104 
+\hypertarget{prior__sampler_8hh_source_l00106}{}\hyperlink{structeos_1_1PriorSampler_1_1Config_a4bb4bb97708f5dc7cd8414489a2808c9}{00106}             \textcolor{keywordtype}{unsigned} \hyperlink{structeos_1_1PriorSampler_1_1Config_a4bb4bb97708f5dc7cd8414489a2808c9}{n_workers};
+00107 
+\hypertarget{prior__sampler_8hh_source_l00109}{}\hyperlink{structeos_1_1PriorSampler_1_1Config_ab11de7880341b9e9ea13e9332f574483}{00109}             std::shared\_ptr<hdf5::File> \hyperlink{structeos_1_1PriorSampler_1_1Config_ab11de7880341b9e9ea13e9332f574483}{output_file};
+00110 
+\hypertarget{prior__sampler_8hh_source_l00115}{}\hyperlink{structeos_1_1PriorSampler_1_1Config_ac59ca5849359f3bc11188e7de73c93c2}{00115}             \textcolor{keywordtype}{bool} \hyperlink{structeos_1_1PriorSampler_1_1Config_ac59ca5849359f3bc11188e7de73c93c2}{parallelize};
+00116 
+\hypertarget{prior__sampler_8hh_source_l00118}{}\hyperlink{structeos_1_1PriorSampler_1_1Config_a9f056d7db9c1a40a51520534ab13ee95}{00118}             \textcolor{keywordtype}{unsigned} \hyperlink{structeos_1_1PriorSampler_1_1Config_a9f056d7db9c1a40a51520534ab13ee95}{seed};
+00119 
+\hypertarget{prior__sampler_8hh_source_l00124}{}\hyperlink{structeos_1_1PriorSampler_1_1Config_aa572418843b732c559f5b9612d4bf2fa}{00124}             \textcolor{keywordtype}{bool} \hyperlink{structeos_1_1PriorSampler_1_1Config_aa572418843b732c559f5b9612d4bf2fa}{store_parameters};
+00125     \};
+00126 \}
+00127 
+00128 \textcolor{preprocessor}{#endif}
+00129 \textcolor{preprocessor}{}
+\end{alltt}\end{footnotesize}

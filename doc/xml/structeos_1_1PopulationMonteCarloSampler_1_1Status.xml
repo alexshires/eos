@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1PopulationMonteCarloSampler_1_1Status" kind="struct" prot="public">
+    <compoundname>eos::PopulationMonteCarloSampler::Status</compoundname>
+    <includes refid="population__monte__carlo__sampler_8hh" local="no">population_monte_carlo_sampler.hh</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Status_1aec7820c1ca91f2af381c1bb81182fa26" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned eos::PopulationMonteCarloSampler::Status::chunk_size</definition>
+        <argsstring></argsstring>
+        <name>chunk_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The actual number of samples drawn from mixture proposal density before the latter is updated. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="437" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="437" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Status_1a853d94d0b2fc16ee51f6e32ca4b0515c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool eos::PopulationMonteCarloSampler::Status::converged</definition>
+        <argsstring></argsstring>
+        <name>converged</name>
+        <briefdescription>
+<para>Whether sampling has converged. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="440" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="440" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Status_1a6b30cf9e83650e861475f2f0036c09b0" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned eos::PopulationMonteCarloSampler::Status::iterations_at_convergence</definition>
+        <argsstring></argsstring>
+        <name>iterations_at_convergence</name>
+        <briefdescription>
+<para>The number of iterations after which convergence was declared. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="444" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="444" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Status_1ab762703da0930ae2182b696b85358b53" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::PopulationMonteCarloSampler::Status::evidence</definition>
+        <argsstring></argsstring>
+        <name>evidence</name>
+        <briefdescription>
+<para>Evidence. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="447" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="447" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Status_1a35814022e64d939f7164ece7a796c07e" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::PopulationMonteCarloSampler::Status::eff_sample_size</definition>
+        <argsstring></argsstring>
+        <name>eff_sample_size</name>
+        <briefdescription>
+<para>Effective sample size. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="450" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="450" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1PopulationMonteCarloSampler_1_1Status_1a468aeeb618c761543be6d6833347e296" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::PopulationMonteCarloSampler::Status::perplexity</definition>
+        <argsstring></argsstring>
+        <name>perplexity</name>
+        <briefdescription>
+<para>Perplexity. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="453" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="453" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structeos_1_1PopulationMonteCarloSampler_1_1Status_1a8f69a829df5ad6a829a737c4eb9c368c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::PopulationMonteCarloSampler::Status::Status</definition>
+        <argsstring>()</argsstring>
+        <name>Status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="432"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Holds convergence information of the population sampling. </para>    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" line="431" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh" bodystart="430" bodyend="454"/>
+    <listofallmembers>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Status_1aec7820c1ca91f2af381c1bb81182fa26" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Status</scope><name>chunk_size</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Status_1a853d94d0b2fc16ee51f6e32ca4b0515c" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Status</scope><name>converged</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Status_1a35814022e64d939f7164ece7a796c07e" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Status</scope><name>eff_sample_size</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Status_1ab762703da0930ae2182b696b85358b53" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Status</scope><name>evidence</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Status_1a6b30cf9e83650e861475f2f0036c09b0" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Status</scope><name>iterations_at_convergence</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Status_1a468aeeb618c761543be6d6833347e296" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Status</scope><name>perplexity</name></member>
+      <member refid="structeos_1_1PopulationMonteCarloSampler_1_1Status_1a8f69a829df5ad6a829a737c4eb9c368c" prot="public" virt="non-virtual"><scope>eos::PopulationMonteCarloSampler::Status</scope><name>Status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

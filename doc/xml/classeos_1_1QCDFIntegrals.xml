@@ -1,0 +1,604 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1QCDFIntegrals" kind="class" prot="public">
+    <compoundname>eos::QCDFIntegrals</compoundname>
+    <includes refid="qcdf__integrals_8hh" local="no">qcdf_integrals.hh</includes>
+    <innerclass refid="structeos_1_1QCDFIntegrals_1_1Results" prot="public">eos::QCDFIntegrals::Results</innerclass>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classeos_1_1QCDFIntegrals_1af6508bca0f6425fcefc36a75699fd505" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structeos_1_1QCDFIntegrals_1_1Results" kindref="compound">Results</ref></type>
+        <definition>static Results eos::QCDFIntegrals::photon_bottom_case</definition>
+        <argsstring>(const double &amp;m_b, const double &amp;m_B, const double &amp;m_V, const double &amp;mu, const double &amp;a_1_perp, const double &amp;a_2_perp, const double &amp;a_1_parallel, const double &amp;a_2_parallel)</argsstring>
+        <name>photon_bottom_case</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_b</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_B</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_V</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a_1_perp</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a_2_perp</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a_1_parallel</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a_2_parallel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return all QCDF Integrals for a b quark-antiquark loop with s = 0, according to [vD2011].</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m_b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pole mass of the b quark. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m_B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mass of the parent B quark. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Renormalization scale mu. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a_1_perp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First Gegenbauer moment for the perpendicular amplitude. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a_2_perp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second Gegenbauer moment for the perpendicular amplitude. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a_1_parallel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First Gegenbauer moment for the paralle amplitude. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a_2_parallel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second Gegenbauer moment for the parallel amplitude. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh" line="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1QCDFIntegrals_1a9d43810ac4bee250bdd71f4b13a8535a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structeos_1_1QCDFIntegrals_1_1Results" kindref="compound">Results</ref></type>
+        <definition>static Results eos::QCDFIntegrals::photon_charm_case</definition>
+        <argsstring>(const double &amp;m_c, const double &amp;m_B, const double &amp;m_V, const double &amp;mu, const double &amp;a_1_perp, const double &amp;a_2_perp, const double &amp;a_1_parallel, const double &amp;a_2_parallel)</argsstring>
+        <name>photon_charm_case</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_c</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_B</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_V</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a_1_perp</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a_2_perp</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a_1_parallel</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a_2_parallel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return all QCDF Integrals for a c quark-antiquark loop with s = 0, according to [vD2011].</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m_c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pole mass of the c quark. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m_B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mass of the parent B quark. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Renormalization scale mu. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a_1_perp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First Gegenbauer moment for the perpendicular amplitude. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a_2_perp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second Gegenbauer moment for the perpendicular amplitude. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a_1_parallel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First Gegenbauer moment for the paralle amplitude. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a_2_parallel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second Gegenbauer moment for the parallel amplitude. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh" line="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1QCDFIntegrals_1a20d1967a85e3601633adf14ee4736508" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structeos_1_1QCDFIntegrals_1_1Results" kindref="compound">Results</ref></type>
+        <definition>static Results eos::QCDFIntegrals::photon_massless_case</definition>
+        <argsstring>(const double &amp;m_B, const double &amp;m_V, const double &amp;mu, const double &amp;a_1_perp, const double &amp;a_2_perp, const double &amp;a_1_parallel, const double &amp;a_2_parallel)</argsstring>
+        <name>photon_massless_case</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_B</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_V</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a_1_perp</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a_2_perp</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a_1_parallel</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a_2_parallel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return all QCDF Integrals for a u,d,s (i.e. massless) quark-antiquark loops with s = 0, according to [vD2011].</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m_B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mass of the parent B quark. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Renormalization scale mu. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a_1_perp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First Gegenbauer moment for the perpendicular amplitude. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a_2_perp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second Gegenbauer moment for the perpendicular amplitude. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a_1_parallel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First Gegenbauer moment for the paralle amplitude. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a_2_parallel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second Gegenbauer moment for the parallel amplitude. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh" line="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1QCDFIntegrals_1a4685503430ba2e37d0a950efbb5db144" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structeos_1_1QCDFIntegrals_1_1Results" kindref="compound">Results</ref></type>
+        <definition>static Results eos::QCDFIntegrals::dilepton_bottom_case</definition>
+        <argsstring>(const double &amp;s, const double &amp;m_b, const double &amp;m_B, const double &amp;m_V, const double &amp;mu, const double &amp;a_1_perp, const double &amp;a_2_perp, const double &amp;a_1_parallel, const double &amp;a_2_parallel)</argsstring>
+        <name>dilepton_bottom_case</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_b</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_B</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_V</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a_1_perp</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a_2_perp</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a_1_parallel</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a_2_parallel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return all QCDF Integrals for a b quark-antiquark loop, according to [vD2011].</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Invariant quark-antiquark mass square. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m_b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pole mass of the b quark. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m_B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mass of the parent B quark. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Renormalization scale mu. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a_1_perp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First Gegenbauer moment for the perpendicular amplitude. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a_2_perp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second Gegenbauer moment for the perpendicular amplitude. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a_1_parallel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First Gegenbauer moment for the paralle amplitude. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a_2_parallel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second Gegenbauer moment for the parallel amplitude. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh" line="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1QCDFIntegrals_1afd6226e6800deeec288306c490da5893" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structeos_1_1QCDFIntegrals_1_1Results" kindref="compound">Results</ref></type>
+        <definition>static Results eos::QCDFIntegrals::dilepton_charm_case</definition>
+        <argsstring>(const double &amp;s, const double &amp;m_c, const double &amp;m_B, const double &amp;m_V, const double &amp;mu, const double &amp;a_1_perp, const double &amp;a_2_perp, const double &amp;a_1_parallel, const double &amp;a_2_parallel)</argsstring>
+        <name>dilepton_charm_case</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_c</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_B</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_V</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a_1_perp</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a_2_perp</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a_1_parallel</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a_2_parallel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return all QCDF Integrals for a c quark-antiquark loop, according to [vD2011].</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Invariant quark-antiquark mass square. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m_c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pole mass of the c quark. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m_B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mass of the parent B quark. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Renormalization scale mu. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a_1_perp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First Gegenbauer moment for the perpendicular amplitude. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a_2_perp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second Gegenbauer moment for the perpendicular amplitude. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a_1_parallel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First Gegenbauer moment for the paralle amplitude. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a_2_parallel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second Gegenbauer moment for the parallel amplitude. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh" line="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1QCDFIntegrals_1a46d8f57850d80b92498c15caac8b0229" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structeos_1_1QCDFIntegrals_1_1Results" kindref="compound">Results</ref></type>
+        <definition>static Results eos::QCDFIntegrals::dilepton_massless_case</definition>
+        <argsstring>(const double &amp;s, const double &amp;m_B, const double &amp;m_V, const double &amp;mu, const double &amp;a_1_perp, const double &amp;a_2_perp, const double &amp;a_1_parallel, const double &amp;a_2_parallel)</argsstring>
+        <name>dilepton_massless_case</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_B</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_V</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a_1_perp</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a_2_perp</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a_1_parallel</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a_2_parallel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return all QCDF Integrals for a u,d,s (i.e. massless) quark-antiquark loop for massless quarks, according to [vD2011].</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Invariant quark-antiquark mass square. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m_B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mass of the parent B quark. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Renormalization scale. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a_1_perp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First Gegenbauer moment for the perpendicular amplitude. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a_2_perp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second Gegenbauer moment for the perpendicular amplitude. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a_1_parallel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First Gegenbauer moment for the paralle amplitude. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a_2_parallel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second Gegenbauer moment for the parallel amplitude. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh" line="121"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh" line="28" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh" bodystart="27" bodyend="122"/>
+    <listofallmembers>
+      <member refid="classeos_1_1QCDFIntegrals_1a4685503430ba2e37d0a950efbb5db144" prot="public" virt="non-virtual"><scope>eos::QCDFIntegrals</scope><name>dilepton_bottom_case</name></member>
+      <member refid="classeos_1_1QCDFIntegrals_1afd6226e6800deeec288306c490da5893" prot="public" virt="non-virtual"><scope>eos::QCDFIntegrals</scope><name>dilepton_charm_case</name></member>
+      <member refid="classeos_1_1QCDFIntegrals_1a46d8f57850d80b92498c15caac8b0229" prot="public" virt="non-virtual"><scope>eos::QCDFIntegrals</scope><name>dilepton_massless_case</name></member>
+      <member refid="classeos_1_1QCDFIntegrals_1af6508bca0f6425fcefc36a75699fd505" prot="public" virt="non-virtual"><scope>eos::QCDFIntegrals</scope><name>photon_bottom_case</name></member>
+      <member refid="classeos_1_1QCDFIntegrals_1a9d43810ac4bee250bdd71f4b13a8535a" prot="public" virt="non-virtual"><scope>eos::QCDFIntegrals</scope><name>photon_charm_case</name></member>
+      <member refid="classeos_1_1QCDFIntegrals_1a20d1967a85e3601633adf14ee4736508" prot="public" virt="non-virtual"><scope>eos::QCDFIntegrals</scope><name>photon_massless_case</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

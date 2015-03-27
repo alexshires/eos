@@ -1,0 +1,219 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1Constraint" kind="class" prot="public">
+    <compoundname>eos::Constraint</compoundname>
+    <basecompoundref refid="classeos_1_1PrivateImplementationPattern" prot="public" virt="non-virtual">eos::PrivateImplementationPattern&lt; Constraint &gt;</basecompoundref>
+    <includes refid="constraint_8hh" local="no">constraint.hh</includes>
+      <sectiondef kind="user-defined">
+      <header>Iteration over Observables</header>
+      <description><para><anchor id="_1amgrp6aae7b5ccd01d1d0eccf18c178826586"/> </para></description>
+      <memberdef kind="typedef" id="classeos_1_1Constraint_1a44010ea20596a593325202033743f357" prot="public" static="no">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator</ref>&lt; ObservableIteratorTag, <ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref> &gt;</type>
+        <definition>typedef WrappedForwardIterator&lt;ObservableIteratorTag, ObservablePtr&gt; eos::Constraint::ObservableIterator</definition>
+        <argsstring></argsstring>
+        <name>ObservableIterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/constraint.hh" line="60" bodyfile="/home/alexshires/EOS/eos-next/eos/constraint.hh" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Constraint_1a9822827a09ecb630ec2b6640ce4306c0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">ObservableIterator</ref></type>
+        <definition>ObservableIterator eos::Constraint::begin_observables</definition>
+        <argsstring>() const </argsstring>
+        <name>begin_observables</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/constraint.hh" line="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Constraint_1aa6cb38bbe55f1fd59f921716bc78d4c9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">ObservableIterator</ref></type>
+        <definition>ObservableIterator eos::Constraint::end_observables</definition>
+        <argsstring>() const </argsstring>
+        <name>end_observables</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/constraint.hh" line="63"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Iteration over Blocks</header>
+      <description><para><anchor id="_1amgrpe3eb96865b920e07e7c9f7e5d3e38fbb"/> </para></description>
+      <memberdef kind="typedef" id="classeos_1_1Constraint_1a44726a3e0954f645183b9e28d911345a" prot="public" static="no">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator</ref>&lt; BlockIteratorTag, <ref refid="namespaceeos_1ab823a6782e060c440e05a614158ad1bf" kindref="member">LogLikelihoodBlockPtr</ref> &gt;</type>
+        <definition>typedef WrappedForwardIterator&lt;BlockIteratorTag, LogLikelihoodBlockPtr&gt; eos::Constraint::BlockIterator</definition>
+        <argsstring></argsstring>
+        <name>BlockIterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/constraint.hh" line="69" bodyfile="/home/alexshires/EOS/eos-next/eos/constraint.hh" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Constraint_1a0bc3a182079de99618a9edec6bfd8512" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">BlockIterator</ref></type>
+        <definition>BlockIterator eos::Constraint::begin_blocks</definition>
+        <argsstring>() const </argsstring>
+        <name>begin_blocks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/constraint.hh" line="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Constraint_1a8b6747caa6cf920d064e3a306224f4ef" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">BlockIterator</ref></type>
+        <definition>BlockIterator eos::Constraint::end_blocks</definition>
+        <argsstring>() const </argsstring>
+        <name>end_blocks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/constraint.hh" line="72"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Access</header>
+      <description><para><anchor id="_1amgrpbf733d8a933c1601697f364223fc7ecb"/> </para></description>
+      <memberdef kind="function" id="classeos_1_1Constraint_1a11a3e698b0a00527a6304c6b2ec70a1d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string eos::Constraint::name</definition>
+        <argsstring>() const </argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/constraint.hh" line="54"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1Constraint_1a2be956c51e9f34e2ed816ed65be76f1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::Constraint::Constraint</definition>
+        <argsstring>(const std::string &amp;name, const std::vector&lt; ObservablePtr &gt; &amp;observable, const std::vector&lt; LogLikelihoodBlockPtr &gt; &amp;blocks)</argsstring>
+        <name>Constraint</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespaceeos_1a470e5dd806bd129080f1aa0c2954646f" kindref="member">ObservablePtr</ref> &gt; &amp;</type>
+          <declname>observable</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespaceeos_1ab823a6782e060c440e05a614158ad1bf" kindref="member">LogLikelihoodBlockPtr</ref> &gt; &amp;</type>
+          <declname>blocks</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/constraint.hh" line="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Constraint_1a9ec79cb58f7a54c65681cd0f05dcb672" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::Constraint::~Constraint</definition>
+        <argsstring>()</argsstring>
+        <name>~Constraint</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/constraint.hh" line="50"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classeos_1_1Constraint_1a5084265f8e196296a885089cf710c096" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1Constraint" kindref="compound">Constraint</ref></type>
+        <definition>static Constraint eos::Constraint::make</definition>
+        <argsstring>(const std::string &amp;name, const Options &amp;options)</argsstring>
+        <name>make</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1Options" kindref="compound">Options</ref> &amp;</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create one of the builtin constraints by name.</para><para><ref refid="classeos_1_1Constraint" kindref="compound">Constraint</ref> names are structured as PROCESS::NAME-YEAR</para><para><simplesect kind="note"><para>You need to clone each <ref refid="classeos_1_1LogLikelihoodBlock" kindref="compound">LogLikelihoodBlock</ref> of a <ref refid="classeos_1_1Constraint" kindref="compound">Constraint</ref> to actually be able to use it. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/constraint.hh" line="83"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classeos_1_1Constraint" kindref="compound">Constraint</ref> models experimental constraints via one or more <ref refid="classeos_1_1LogLikelihoodBlock" kindref="compound">LogLikelihoodBlock</ref> objects that depend on one more <ref refid="classeos_1_1Observable" kindref="compound">Observable</ref> objects. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="335">
+        <label>eos::PrivateImplementationPattern&lt; Constraint &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="334">
+        <label>eos::Constraint</label>
+        <link refid="classeos_1_1Constraint"/>
+        <childnode refid="335" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="337">
+        <label>eos::PrivateImplementationPattern&lt; Constraint &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="336">
+        <label>eos::Constraint</label>
+        <link refid="classeos_1_1Constraint"/>
+        <childnode refid="337" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/constraint.hh" line="43" bodyfile="/home/alexshires/EOS/eos-next/eos/constraint.hh" bodystart="41" bodyend="84"/>
+    <listofallmembers>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a232940e78b26c6ed4f97196f831c69c9" prot="protected" virt="non-virtual"><scope>eos::Constraint</scope><name>_imp</name></member>
+      <member refid="classeos_1_1Constraint_1a0bc3a182079de99618a9edec6bfd8512" prot="public" virt="non-virtual"><scope>eos::Constraint</scope><name>begin_blocks</name></member>
+      <member refid="classeos_1_1Constraint_1a9822827a09ecb630ec2b6640ce4306c0" prot="public" virt="non-virtual"><scope>eos::Constraint</scope><name>begin_observables</name></member>
+      <member refid="classeos_1_1Constraint_1a44726a3e0954f645183b9e28d911345a" prot="public" virt="non-virtual"><scope>eos::Constraint</scope><name>BlockIterator</name></member>
+      <member refid="classeos_1_1Constraint_1a2be956c51e9f34e2ed816ed65be76f1e" prot="public" virt="non-virtual"><scope>eos::Constraint</scope><name>Constraint</name></member>
+      <member refid="classeos_1_1Constraint_1a8b6747caa6cf920d064e3a306224f4ef" prot="public" virt="non-virtual"><scope>eos::Constraint</scope><name>end_blocks</name></member>
+      <member refid="classeos_1_1Constraint_1aa6cb38bbe55f1fd59f921716bc78d4c9" prot="public" virt="non-virtual"><scope>eos::Constraint</scope><name>end_observables</name></member>
+      <member refid="classeos_1_1Constraint_1a5084265f8e196296a885089cf710c096" prot="public" virt="non-virtual"><scope>eos::Constraint</scope><name>make</name></member>
+      <member refid="classeos_1_1Constraint_1a11a3e698b0a00527a6304c6b2ec70a1d" prot="public" virt="non-virtual"><scope>eos::Constraint</scope><name>name</name></member>
+      <member refid="classeos_1_1Constraint_1a44010ea20596a593325202033743f357" prot="public" virt="non-virtual"><scope>eos::Constraint</scope><name>ObservableIterator</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a3e3d5f4a565256a1dda6c234b051b2f2" prot="public" virt="non-virtual"><scope>eos::Constraint</scope><name>PrivateImplementationPattern</name></member>
+      <member refid="classeos_1_1Constraint_1a9ec79cb58f7a54c65681cd0f05dcb672" prot="public" virt="non-virtual"><scope>eos::Constraint</scope><name>~Constraint</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1acf46ec2739c3b0ec9702b9428475876d" prot="public" virt="non-virtual"><scope>eos::Constraint</scope><name>~PrivateImplementationPattern</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

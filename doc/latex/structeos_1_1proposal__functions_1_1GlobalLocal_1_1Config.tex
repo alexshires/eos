@@ -1,0 +1,194 @@
+\hypertarget{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config}{
+\section{eos::proposal\_\-functions::GlobalLocal::Config Struct Reference}
+\label{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config}\index{eos::proposal\_\-functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}}
+}
+
+
+{\ttfamily \#include $<$proposal\_\-functions.hh$>$}\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_aeab1a700da2a313d2cdd5936752e34ce}{HistoryPointWeighting} \{ \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_aeab1a700da2a313d2cdd5936752e34cea987cb330841992b5745daf1e94545ed8}{posterior}, 
+\hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_aeab1a700da2a313d2cdd5936752e34cea6b25ac86fe8e91e3455e49b9da62bcab}{log\_\-posterior}, 
+\hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_aeab1a700da2a313d2cdd5936752e34cea0ad0c6606345c9fc44bb5fe292b44c60}{equal}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config}{Config} \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_ab6e85ee9aa380cdb63827bbab9e4d1c8}{Default} ()
+\begin{DoxyCompactList}\small\item\em Named constructor. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{Indent}{\bf Construction options}\par
+{\em \label{_amgrpe7d736f6295bfb615e746cba52f7f946}
+ }\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1VerifiedRange}{VerifiedRange}$<$ double $>$ \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a6632462782aaefb7279fdb34f46d6d9c}{clustering\_\-maximum\_\-r\_\-value}
+\item 
+bool \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a9a530636287156e4ee98cb1ee2f04317}{clustering\_\-strict\_\-r\_\-value}
+\begin{DoxyCompactList}\small\item\em Use strict definition of R or relaxed version. \item\end{DoxyCompactList}\item 
+bool \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_aafced70f6b662a177bdb7697cf107065}{equal\_\-weight\_\-components}
+\begin{DoxyCompactList}\small\item\em Use same probability to draw from each cluster, at least initially. \item\end{DoxyCompactList}\item 
+bool \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_aecbd678a2838e79d850bb7aa732bb8cd}{join\_\-chains\_\-symmetrically}
+\item 
+unsigned \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a1ab33a4656cb4c0f4eed805b9394c221}{history\_\-points}
+\item 
+unsigned \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_ac6b275330dd84325a42c3715d318551f}{history\_\-points\_\-local\_\-covariance\_\-size}
+\item 
+bool \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a74fc0b244166ec0fe894422ad254ca06}{history\_\-points\_\-ordered}
+\item 
+\hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_aeab1a700da2a313d2cdd5936752e34ce}{HistoryPointWeighting} \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a67a276c92681a1da8953365d058b2951}{history\_\-point\_\-weighting}
+\item 
+\hyperlink{classeos_1_1VerifiedRange}{VerifiedRange}$<$ double $>$ \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_ab46531993b150f25845f03a98046f768}{minimum\_\-relative\_\-cluster\_\-weight}
+\item 
+bool \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a42bdc4d80a759f9daab15d01b0edf4b6}{perform\_\-clustering}
+\item 
+\hyperlink{classeos_1_1VerifiedRange}{VerifiedRange}$<$ double $>$ \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a70f82cec4c0a992cf70a53c771e89c9d}{rescale\_\-local\_\-covariance}
+\item 
+\hyperlink{classeos_1_1VerifiedRange}{VerifiedRange}$<$ double $>$ \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_aa325beb2f96d399f28841ee802fb5584}{skip\_\-initial}
+\begin{DoxyCompactList}\small\item\em Skip this percentage from beginning of a chain's history. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Runtime behavior options}\par
+{\em \label{_amgrpa7b8cf86c5424d8cf2c571d4b97d7ef9}
+ }\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_afc5df7dfbda07b6296b48bb3147f91ab}{cooling\_\-power}
+\item 
+\hyperlink{classeos_1_1VerifiedRange}{VerifiedRange}$<$ double $>$ \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_ad078b40f919f62b9311f433b1152bbb6}{local\_\-jump\_\-probability}
+\begin{DoxyCompactList}\small\item\em How often is a local jump proposed instead of a global one. \item\end{DoxyCompactList}\item 
+std::vector$<$ unsigned $>$ \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a81dad6982f265eccfc5f1d030f0ff5a7}{long\_\-jump\_\-indices}
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_aeab1a700da2a313d2cdd5936752e34ce}{
+\index{eos::proposal\_\-functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}!HistoryPointWeighting@{HistoryPointWeighting}}
+\index{HistoryPointWeighting@{HistoryPointWeighting}!eos::proposal_functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}}
+\subsubsection[{HistoryPointWeighting}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf eos::proposal\_\-functions::GlobalLocal::Config::HistoryPointWeighting}}}
+\label{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_aeab1a700da2a313d2cdd5936752e34ce}
+Choices on how to choose relative weight of a history point \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{posterior@{posterior}!eos::proposal\_\-functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}}\index{eos::proposal\_\-functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}!posterior@{posterior}}\item[{\em 
+\hypertarget{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_aeab1a700da2a313d2cdd5936752e34cea987cb330841992b5745daf1e94545ed8}{
+posterior}
+\label{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_aeab1a700da2a313d2cdd5936752e34cea987cb330841992b5745daf1e94545ed8}
+}]\index{log\_\-posterior@{log\_\-posterior}!eos::proposal\_\-functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}}\index{eos::proposal\_\-functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}!log\_\-posterior@{log\_\-posterior}}\item[{\em 
+\hypertarget{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_aeab1a700da2a313d2cdd5936752e34cea6b25ac86fe8e91e3455e49b9da62bcab}{
+log\_\-posterior}
+\label{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_aeab1a700da2a313d2cdd5936752e34cea6b25ac86fe8e91e3455e49b9da62bcab}
+}]use posterior as weight \index{equal@{equal}!eos::proposal\_\-functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}}\index{eos::proposal\_\-functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}!equal@{equal}}\item[{\em 
+\hypertarget{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_aeab1a700da2a313d2cdd5936752e34cea0ad0c6606345c9fc44bb5fe292b44c60}{
+equal}
+\label{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_aeab1a700da2a313d2cdd5936752e34cea0ad0c6606345c9fc44bb5fe292b44c60}
+}]use log(posterior) as weight all points have same probability \end{description}
+\end{Desc}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_ab6e85ee9aa380cdb63827bbab9e4d1c8}{
+\index{eos::proposal\_\-functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}!Default@{Default}}
+\index{Default@{Default}!eos::proposal_functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}}
+\subsubsection[{Default}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Config} eos::proposal\_\-functions::GlobalLocal::Config::Default ()\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_ab6e85ee9aa380cdb63827bbab9e4d1c8}
+
+
+Named constructor. 
+
+\subsection{Member Data Documentation}
+\hypertarget{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a6632462782aaefb7279fdb34f46d6d9c}{
+\index{eos::proposal\_\-functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}!clustering\_\-maximum\_\-r\_\-value@{clustering\_\-maximum\_\-r\_\-value}}
+\index{clustering\_\-maximum\_\-r\_\-value@{clustering\_\-maximum\_\-r\_\-value}!eos::proposal_functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}}
+\subsubsection[{clustering\_\-maximum\_\-r\_\-value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf VerifiedRange}$<$double$>$ {\bf eos::proposal\_\-functions::GlobalLocal::Config::clustering\_\-maximum\_\-r\_\-value}}}
+\label{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a6632462782aaefb7279fdb34f46d6d9c}
+When chains have a common R-\/value less than this, they are considered to overlap sufficiently. \hypertarget{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a9a530636287156e4ee98cb1ee2f04317}{
+\index{eos::proposal\_\-functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}!clustering\_\-strict\_\-r\_\-value@{clustering\_\-strict\_\-r\_\-value}}
+\index{clustering\_\-strict\_\-r\_\-value@{clustering\_\-strict\_\-r\_\-value}!eos::proposal_functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}}
+\subsubsection[{clustering\_\-strict\_\-r\_\-value}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf eos::proposal\_\-functions::GlobalLocal::Config::clustering\_\-strict\_\-r\_\-value}}}
+\label{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a9a530636287156e4ee98cb1ee2f04317}
+
+
+Use strict definition of R or relaxed version. \hypertarget{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_afc5df7dfbda07b6296b48bb3147f91ab}{
+\index{eos::proposal\_\-functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}!cooling\_\-power@{cooling\_\-power}}
+\index{cooling\_\-power@{cooling\_\-power}!eos::proposal_functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}}
+\subsubsection[{cooling\_\-power}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf eos::proposal\_\-functions::GlobalLocal::Config::cooling\_\-power}}}
+\label{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_afc5df7dfbda07b6296b48bb3147f91ab}
+Combinining the component probabilities of this and the previous step, limit the effect of samples in the distant past by forming a weighted average of last component probability,  and the frequency encountered in the last chunk, . In the (n+1)-\/th step,
+
+\{n+1\} = (1 -\/ 1/n$^\wedge$\{cooling\_\-power\})  + 1/n$^\wedge$\{cooling\_\-power\} $\ast$ f\_\-n
+
+cf. arxiv:0903.0837, Eq. (23) \hypertarget{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_aafced70f6b662a177bdb7697cf107065}{
+\index{eos::proposal\_\-functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}!equal\_\-weight\_\-components@{equal\_\-weight\_\-components}}
+\index{equal\_\-weight\_\-components@{equal\_\-weight\_\-components}!eos::proposal_functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}}
+\subsubsection[{equal\_\-weight\_\-components}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf eos::proposal\_\-functions::GlobalLocal::Config::equal\_\-weight\_\-components}}}
+\label{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_aafced70f6b662a177bdb7697cf107065}
+
+
+Use same probability to draw from each cluster, at least initially. \hypertarget{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a67a276c92681a1da8953365d058b2951}{
+\index{eos::proposal\_\-functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}!history\_\-point\_\-weighting@{history\_\-point\_\-weighting}}
+\index{history\_\-point\_\-weighting@{history\_\-point\_\-weighting}!eos::proposal_functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}}
+\subsubsection[{history\_\-point\_\-weighting}]{\setlength{\rightskip}{0pt plus 5cm}{\bf HistoryPointWeighting} {\bf eos::proposal\_\-functions::GlobalLocal::Config::history\_\-point\_\-weighting}}}
+\label{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a67a276c92681a1da8953365d058b2951}
+Use log(posterior) to assign relative weight to history points within each cluster. Else use posterior. \hypertarget{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a1ab33a4656cb4c0f4eed805b9394c221}{
+\index{eos::proposal\_\-functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}!history\_\-points@{history\_\-points}}
+\index{history\_\-points@{history\_\-points}!eos::proposal_functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}}
+\subsubsection[{history\_\-points}]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf eos::proposal\_\-functions::GlobalLocal::Config::history\_\-points}}}
+\label{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a1ab33a4656cb4c0f4eed805b9394c221}
+The number of points selected from a single chain's history, useful for initializing population Monte Carlo \hypertarget{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_ac6b275330dd84325a42c3715d318551f}{
+\index{eos::proposal\_\-functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}!history\_\-points\_\-local\_\-covariance\_\-size@{history\_\-points\_\-local\_\-covariance\_\-size}}
+\index{history\_\-points\_\-local\_\-covariance\_\-size@{history\_\-points\_\-local\_\-covariance\_\-size}!eos::proposal_functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}}
+\subsubsection[{history\_\-points\_\-local\_\-covariance\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf eos::proposal\_\-functions::GlobalLocal::Config::history\_\-points\_\-local\_\-covariance\_\-size}}}
+\label{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_ac6b275330dd84325a42c3715d318551f}
+If non-\/zero, compute covariance around each history point locally, with the number of samples given. \hypertarget{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a74fc0b244166ec0fe894422ad254ca06}{
+\index{eos::proposal\_\-functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}!history\_\-points\_\-ordered@{history\_\-points\_\-ordered}}
+\index{history\_\-points\_\-ordered@{history\_\-points\_\-ordered}!eos::proposal_functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}}
+\subsubsection[{history\_\-points\_\-ordered}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf eos::proposal\_\-functions::GlobalLocal::Config::history\_\-points\_\-ordered}}}
+\label{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a74fc0b244166ec0fe894422ad254ca06}
+Choose the points from the ones with highest posterior or on a fixed grid (e.g. every 500th point) \hypertarget{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_aecbd678a2838e79d850bb7aa732bb8cd}{
+\index{eos::proposal\_\-functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}!join\_\-chains\_\-symmetrically@{join\_\-chains\_\-symmetrically}}
+\index{join\_\-chains\_\-symmetrically@{join\_\-chains\_\-symmetrically}!eos::proposal_functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}}
+\subsubsection[{join\_\-chains\_\-symmetrically}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf eos::proposal\_\-functions::GlobalLocal::Config::join\_\-chains\_\-symmetrically}}}
+\label{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_aecbd678a2838e79d850bb7aa732bb8cd}
+Join chains symmetrically such that each chain's history (excluding the part from skip\_\-initial) has equal contribution to the covariance matrix \hypertarget{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_ad078b40f919f62b9311f433b1152bbb6}{
+\index{eos::proposal\_\-functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}!local\_\-jump\_\-probability@{local\_\-jump\_\-probability}}
+\index{local\_\-jump\_\-probability@{local\_\-jump\_\-probability}!eos::proposal_functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}}
+\subsubsection[{local\_\-jump\_\-probability}]{\setlength{\rightskip}{0pt plus 5cm}{\bf VerifiedRange}$<$double$>$ {\bf eos::proposal\_\-functions::GlobalLocal::Config::local\_\-jump\_\-probability}}}
+\label{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_ad078b40f919f62b9311f433b1152bbb6}
+
+
+How often is a local jump proposed instead of a global one. \hypertarget{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a81dad6982f265eccfc5f1d030f0ff5a7}{
+\index{eos::proposal\_\-functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}!long\_\-jump\_\-indices@{long\_\-jump\_\-indices}}
+\index{long\_\-jump\_\-indices@{long\_\-jump\_\-indices}!eos::proposal_functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}}
+\subsubsection[{long\_\-jump\_\-indices}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$unsigned$>$ {\bf eos::proposal\_\-functions::GlobalLocal::Config::long\_\-jump\_\-indices}}}
+\label{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a81dad6982f265eccfc5f1d030f0ff5a7}
+If non-\/empty, all dimensions are masked and changes occur only in the dimensions specified by the indices. \hypertarget{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_ab46531993b150f25845f03a98046f768}{
+\index{eos::proposal\_\-functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}!minimum\_\-relative\_\-cluster\_\-weight@{minimum\_\-relative\_\-cluster\_\-weight}}
+\index{minimum\_\-relative\_\-cluster\_\-weight@{minimum\_\-relative\_\-cluster\_\-weight}!eos::proposal_functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}}
+\subsubsection[{minimum\_\-relative\_\-cluster\_\-weight}]{\setlength{\rightskip}{0pt plus 5cm}{\bf VerifiedRange}$<$double$>$ {\bf eos::proposal\_\-functions::GlobalLocal::Config::minimum\_\-relative\_\-cluster\_\-weight}}}
+\label{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_ab46531993b150f25845f03a98046f768}
+If a cluster's weight relative to the \char`\"{}heaviest\char`\"{} cluster falls below this threshold, the cluster is discarded. \hypertarget{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a42bdc4d80a759f9daab15d01b0edf4b6}{
+\index{eos::proposal\_\-functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}!perform\_\-clustering@{perform\_\-clustering}}
+\index{perform\_\-clustering@{perform\_\-clustering}!eos::proposal_functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}}
+\subsubsection[{perform\_\-clustering}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf eos::proposal\_\-functions::GlobalLocal::Config::perform\_\-clustering}}}
+\label{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a42bdc4d80a759f9daab15d01b0edf4b6}
+Compare chains by their R-\/values and merge them together. Else just put all chains from one partition together. \hypertarget{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a70f82cec4c0a992cf70a53c771e89c9d}{
+\index{eos::proposal\_\-functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}!rescale\_\-local\_\-covariance@{rescale\_\-local\_\-covariance}}
+\index{rescale\_\-local\_\-covariance@{rescale\_\-local\_\-covariance}!eos::proposal_functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}}
+\subsubsection[{rescale\_\-local\_\-covariance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf VerifiedRange}$<$double$>$ {\bf eos::proposal\_\-functions::GlobalLocal::Config::rescale\_\-local\_\-covariance}}}
+\label{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a70f82cec4c0a992cf70a53c771e89c9d}
+In order to increase efficiency, the local proposal covariance scale can be divided. Default value: 1.0, i.e. don't rescale. \begin{DoxyNote}{Note}
+Only meaningful if join\_\-chains\_\-symmetrically is true 
+\end{DoxyNote}
+\hypertarget{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_aa325beb2f96d399f28841ee802fb5584}{
+\index{eos::proposal\_\-functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}!skip\_\-initial@{skip\_\-initial}}
+\index{skip\_\-initial@{skip\_\-initial}!eos::proposal_functions::GlobalLocal::Config@{eos::proposal\_\-functions::GlobalLocal::Config}}
+\subsubsection[{skip\_\-initial}]{\setlength{\rightskip}{0pt plus 5cm}{\bf VerifiedRange}$<$double$>$ {\bf eos::proposal\_\-functions::GlobalLocal::Config::skip\_\-initial}}}
+\label{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_aa325beb2f96d399f28841ee802fb5584}
+
+
+Skip this percentage from beginning of a chain's history. 
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{proposal__functions_8hh}{proposal\_\-functions.hh}\end{DoxyCompactItemize}

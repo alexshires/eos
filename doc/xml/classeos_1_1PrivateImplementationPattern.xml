@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1PrivateImplementationPattern" kind="class" prot="public">
+    <compoundname>eos::PrivateImplementationPattern</compoundname>
+    <includes refid="private__implementation__pattern_8hh" local="no">private_implementation_pattern.hh</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T_</declname>
+        <defname>T_</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classeos_1_1PrivateImplementationPattern_1a232940e78b26c6ed4f97196f831c69c9" prot="protected" static="no" mutable="no">
+        <type>std::shared_ptr&lt; Implementation&lt; T_ &gt; &gt;</type>
+        <definition>std::shared_ptr&lt;Implementation&lt;T_&gt; &gt; eos::PrivateImplementationPattern&lt; T_ &gt;::_imp</definition>
+        <argsstring></argsstring>
+        <name>_imp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/private_implementation_pattern.hh" line="32" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/private_implementation_pattern.hh" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1PrivateImplementationPattern_1a3e3d5f4a565256a1dda6c234b051b2f2" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eos::PrivateImplementationPattern&lt; T_ &gt;::PrivateImplementationPattern</definition>
+        <argsstring>(Implementation&lt; T_ &gt; *imp)</argsstring>
+        <name>PrivateImplementationPattern</name>
+        <param>
+          <type>Implementation&lt; T_ &gt; *</type>
+          <declname>imp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/private_implementation_pattern.hh" line="35" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/private_implementation_pattern-impl.hh" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1PrivateImplementationPattern_1acf46ec2739c3b0ec9702b9428475876d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eos::PrivateImplementationPattern&lt; T_ &gt;::~PrivateImplementationPattern</definition>
+        <argsstring>()</argsstring>
+        <name>~PrivateImplementationPattern</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/private_implementation_pattern.hh" line="37" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/private_implementation_pattern-impl.hh" bodystart="34" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/private_implementation_pattern.hh" line="30" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/private_implementation_pattern.hh" bodystart="29" bodyend="38"/>
+    <listofallmembers>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a232940e78b26c6ed4f97196f831c69c9" prot="protected" virt="non-virtual"><scope>eos::PrivateImplementationPattern</scope><name>_imp</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a3e3d5f4a565256a1dda6c234b051b2f2" prot="public" virt="non-virtual"><scope>eos::PrivateImplementationPattern</scope><name>PrivateImplementationPattern</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1acf46ec2739c3b0ec9702b9428475876d" prot="public" virt="non-virtual"><scope>eos::PrivateImplementationPattern</scope><name>~PrivateImplementationPattern</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

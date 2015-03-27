@@ -1,0 +1,159 @@
+\hypertarget{classeos_1_1hdf5_1_1DataSet}{
+\section{eos::hdf5::DataSet$<$ T\_\- $>$ Class Template Reference}
+\label{classeos_1_1hdf5_1_1DataSet}\index{eos::hdf5::DataSet@{eos::hdf5::DataSet}}
+}
+
+
+{\ttfamily \#include $<$hdf5.hh$>$}\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef T\_\-::Type \hyperlink{classeos_1_1hdf5_1_1DataSet_a010bb09725c4d84df2db7f60e0a88a1f}{RecordType}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{Indent}{\bf Basic Functions}\par
+{\em \label{_amgrp2386c9a1f1785edee33f374dd2db9b3d}
+ Destructor. }\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1hdf5_1_1DataSet_a29e516f3d4d7e3a8375fe676f73715ec}{$\sim$DataSet} ()
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Metadata Access}\par
+{\em \label{_amgrp201d8776b1bbde9932c65b9f34008fb7}
+ Name of the data set }\begin{DoxyCompactItemize}
+\item 
+std::string \hyperlink{classeos_1_1hdf5_1_1DataSet_a4ab5c04c21708d32eb7c36120f99b989}{name} () const 
+\begin{DoxyCompactList}\small\item\em Number of rows in data set. \item\end{DoxyCompactList}\item 
+unsigned \hyperlink{classeos_1_1hdf5_1_1DataSet_af19723594ac6d14c327f90821187b14c}{records} () const 
+\begin{DoxyCompactList}\small\item\em Number of rows in data set. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Data Access}\par
+{\em \label{_amgrpf8aacfa5c683858912c498f517c9b457}
+ }\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classeos_1_1hdf5_1_1DataSet_a701084cc09483dc77579178d05b1aa35}{end} ()
+\begin{DoxyCompactList}\small\item\em Set index to last record. \item\end{DoxyCompactList}\item 
+\hyperlink{classeos_1_1hdf5_1_1DataSet_a010bb09725c4d84df2db7f60e0a88a1f}{RecordType} \hyperlink{classeos_1_1hdf5_1_1DataSet_a61acdb337452f42d2bd2f3ccdee989f6}{operator\mbox{[}$\,$\mbox{]}} (const unsigned \&index)
+\item 
+void \hyperlink{classeos_1_1hdf5_1_1DataSet_ac0a8fc9de491f3cd8b5ffd625ac1728a}{set\_\-index} (const unsigned \&index)
+\begin{DoxyCompactList}\small\item\em Set index to last record. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Attribute Access}\par
+{\em \label{_amgrpfd46b49f54af724e1401b4f68b54ea4c}
+ }\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename U\_\- $>$ }\\\hyperlink{classeos_1_1hdf5_1_1Attribute}{Attribute}$<$ U\_\- $>$ \hyperlink{classeos_1_1hdf5_1_1DataSet_a6004d70d8d014855457e4bb67f28e2ef}{create\_\-attribute} (const std::string \&name, const U\_\- \&u)
+\item 
+{\footnotesize template$<$typename U\_\- $>$ }\\\hyperlink{classeos_1_1hdf5_1_1Attribute}{Attribute}$<$ U\_\- $>$ \hyperlink{classeos_1_1hdf5_1_1DataSet_a98ac1430685d57b7de065aed4f6a874a}{create\_\-or\_\-open\_\-attribute} (const std::string \&name, const U\_\- \&u)
+\item 
+{\footnotesize template$<$typename U\_\- $>$ }\\\hyperlink{classeos_1_1hdf5_1_1Attribute}{Attribute}$<$ U\_\- $>$ \hyperlink{classeos_1_1hdf5_1_1DataSet_ac904229b8a8e111889535507a62652c9}{open\_\-attribute} (const std::string \&name, const U\_\- \&u)
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classeos_1_1hdf5_1_1DataSet_a19bee9643036cfb3f6908fb332e14f27}{hdf5::File}
+\item 
+\hyperlink{classeos_1_1hdf5_1_1DataSet}{DataSet}$<$ T\_\- $>$ \& \hyperlink{classeos_1_1hdf5_1_1DataSet_adaf39b7e1ded5e8b0b8c5a256b7cff8a}{operator$<$$<$} (\hyperlink{classeos_1_1hdf5_1_1DataSet}{DataSet}$<$ T\_\- $>$ \&, const typename T\_\-::Type \&)
+\item 
+\hyperlink{classeos_1_1hdf5_1_1DataSet}{DataSet}$<$ T\_\- $>$ \& \hyperlink{classeos_1_1hdf5_1_1DataSet_ab6a61cb7ace6043e703b61ba382dfbec}{operator$>$$>$} (\hyperlink{classeos_1_1hdf5_1_1DataSet}{DataSet}$<$ T\_\- $>$ \&, typename T\_\-::Type \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T\_\-$>$ class eos::hdf5::DataSet$<$ T\_\- $>$}
+
+DataSet$<$$>$ represents one of the data sets within an \hyperlink{namespaceeos_1_1hdf5}{hdf5} file. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classeos_1_1hdf5_1_1DataSet_a010bb09725c4d84df2db7f60e0a88a1f}{
+\index{eos::hdf5::DataSet@{eos::hdf5::DataSet}!RecordType@{RecordType}}
+\index{RecordType@{RecordType}!eos::hdf5::DataSet@{eos::hdf5::DataSet}}
+\subsubsection[{RecordType}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\_\-$>$ typedef T\_\-::Type {\bf eos::hdf5::DataSet}$<$ T\_\- $>$::{\bf RecordType}}}
+\label{classeos_1_1hdf5_1_1DataSet_a010bb09725c4d84df2db7f60e0a88a1f}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classeos_1_1hdf5_1_1DataSet_a29e516f3d4d7e3a8375fe676f73715ec}{
+\index{eos::hdf5::DataSet@{eos::hdf5::DataSet}!$\sim$DataSet@{$\sim$DataSet}}
+\index{$\sim$DataSet@{$\sim$DataSet}!eos::hdf5::DataSet@{eos::hdf5::DataSet}}
+\subsubsection[{$\sim$DataSet}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\_\-$>$ {\bf eos::hdf5::DataSet}$<$ T\_\- $>$::$\sim${\bf DataSet} ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classeos_1_1hdf5_1_1DataSet_a29e516f3d4d7e3a8375fe676f73715ec}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classeos_1_1hdf5_1_1DataSet_a6004d70d8d014855457e4bb67f28e2ef}{
+\index{eos::hdf5::DataSet@{eos::hdf5::DataSet}!create\_\-attribute@{create\_\-attribute}}
+\index{create\_\-attribute@{create\_\-attribute}!eos::hdf5::DataSet@{eos::hdf5::DataSet}}
+\subsubsection[{create\_\-attribute}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\_\-$>$ template$<$typename U\_\- $>$ {\bf Attribute}$<$U\_\-$>$ {\bf eos::hdf5::DataSet}$<$ T\_\- $>$::create\_\-attribute (const std::string \& {\em name}, \/  const U\_\- \& {\em u})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classeos_1_1hdf5_1_1DataSet_a6004d70d8d014855457e4bb67f28e2ef}
+\hypertarget{classeos_1_1hdf5_1_1DataSet_a98ac1430685d57b7de065aed4f6a874a}{
+\index{eos::hdf5::DataSet@{eos::hdf5::DataSet}!create\_\-or\_\-open\_\-attribute@{create\_\-or\_\-open\_\-attribute}}
+\index{create\_\-or\_\-open\_\-attribute@{create\_\-or\_\-open\_\-attribute}!eos::hdf5::DataSet@{eos::hdf5::DataSet}}
+\subsubsection[{create\_\-or\_\-open\_\-attribute}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\_\-$>$ template$<$typename U\_\- $>$ {\bf Attribute}$<$U\_\-$>$ {\bf eos::hdf5::DataSet}$<$ T\_\- $>$::create\_\-or\_\-open\_\-attribute (const std::string \& {\em name}, \/  const U\_\- \& {\em u})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classeos_1_1hdf5_1_1DataSet_a98ac1430685d57b7de065aed4f6a874a}
+\hypertarget{classeos_1_1hdf5_1_1DataSet_a701084cc09483dc77579178d05b1aa35}{
+\index{eos::hdf5::DataSet@{eos::hdf5::DataSet}!end@{end}}
+\index{end@{end}!eos::hdf5::DataSet@{eos::hdf5::DataSet}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\_\-$>$ void {\bf eos::hdf5::DataSet}$<$ T\_\- $>$::end ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classeos_1_1hdf5_1_1DataSet_a701084cc09483dc77579178d05b1aa35}
+
+
+Set index to last record. \hypertarget{classeos_1_1hdf5_1_1DataSet_a4ab5c04c21708d32eb7c36120f99b989}{
+\index{eos::hdf5::DataSet@{eos::hdf5::DataSet}!name@{name}}
+\index{name@{name}!eos::hdf5::DataSet@{eos::hdf5::DataSet}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\_\-$>$ std::string {\bf eos::hdf5::DataSet}$<$ T\_\- $>$::name () const}}
+\label{classeos_1_1hdf5_1_1DataSet_a4ab5c04c21708d32eb7c36120f99b989}
+
+
+Number of rows in data set. \hypertarget{classeos_1_1hdf5_1_1DataSet_ac904229b8a8e111889535507a62652c9}{
+\index{eos::hdf5::DataSet@{eos::hdf5::DataSet}!open\_\-attribute@{open\_\-attribute}}
+\index{open\_\-attribute@{open\_\-attribute}!eos::hdf5::DataSet@{eos::hdf5::DataSet}}
+\subsubsection[{open\_\-attribute}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\_\-$>$ template$<$typename U\_\- $>$ {\bf Attribute}$<$U\_\-$>$ {\bf eos::hdf5::DataSet}$<$ T\_\- $>$::open\_\-attribute (const std::string \& {\em name}, \/  const U\_\- \& {\em u})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classeos_1_1hdf5_1_1DataSet_ac904229b8a8e111889535507a62652c9}
+\hypertarget{classeos_1_1hdf5_1_1DataSet_a61acdb337452f42d2bd2f3ccdee989f6}{
+\index{eos::hdf5::DataSet@{eos::hdf5::DataSet}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!eos::hdf5::DataSet@{eos::hdf5::DataSet}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\_\-$>$ {\bf RecordType} {\bf eos::hdf5::DataSet}$<$ T\_\- $>$::operator\mbox{[}$\,$\mbox{]} (const unsigned \& {\em index})}}
+\label{classeos_1_1hdf5_1_1DataSet_a61acdb337452f42d2bd2f3ccdee989f6}
+Retrieve a record.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]Index of the record that shall be retrieved. \end{DoxyParams}
+\hypertarget{classeos_1_1hdf5_1_1DataSet_af19723594ac6d14c327f90821187b14c}{
+\index{eos::hdf5::DataSet@{eos::hdf5::DataSet}!records@{records}}
+\index{records@{records}!eos::hdf5::DataSet@{eos::hdf5::DataSet}}
+\subsubsection[{records}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\_\-$>$ unsigned {\bf eos::hdf5::DataSet}$<$ T\_\- $>$::records () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classeos_1_1hdf5_1_1DataSet_af19723594ac6d14c327f90821187b14c}
+
+
+Number of rows in data set. \hypertarget{classeos_1_1hdf5_1_1DataSet_ac0a8fc9de491f3cd8b5ffd625ac1728a}{
+\index{eos::hdf5::DataSet@{eos::hdf5::DataSet}!set\_\-index@{set\_\-index}}
+\index{set\_\-index@{set\_\-index}!eos::hdf5::DataSet@{eos::hdf5::DataSet}}
+\subsubsection[{set\_\-index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\_\-$>$ void {\bf eos::hdf5::DataSet}$<$ T\_\- $>$::set\_\-index (const unsigned \& {\em index})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classeos_1_1hdf5_1_1DataSet_ac0a8fc9de491f3cd8b5ffd625ac1728a}
+
+
+Set index to last record. 
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classeos_1_1hdf5_1_1DataSet_a19bee9643036cfb3f6908fb332e14f27}{
+\index{eos::hdf5::DataSet@{eos::hdf5::DataSet}!hdf5::File@{hdf5::File}}
+\index{hdf5::File@{hdf5::File}!eos::hdf5::DataSet@{eos::hdf5::DataSet}}
+\subsubsection[{hdf5::File}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\_\-$>$ friend class {\bf hdf5::File}\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classeos_1_1hdf5_1_1DataSet_a19bee9643036cfb3f6908fb332e14f27}
+\hypertarget{classeos_1_1hdf5_1_1DataSet_adaf39b7e1ded5e8b0b8c5a256b7cff8a}{
+\index{eos::hdf5::DataSet@{eos::hdf5::DataSet}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!eos::hdf5::DataSet@{eos::hdf5::DataSet}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\_\-$>$ {\bf DataSet}$<$T\_\-$>$\& operator$<$$<$ ({\bf DataSet}$<$ T\_\- $>$ \&, \/  const typename T\_\-::Type \&)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classeos_1_1hdf5_1_1DataSet_adaf39b7e1ded5e8b0b8c5a256b7cff8a}
+\hypertarget{classeos_1_1hdf5_1_1DataSet_ab6a61cb7ace6043e703b61ba382dfbec}{
+\index{eos::hdf5::DataSet@{eos::hdf5::DataSet}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!eos::hdf5::DataSet@{eos::hdf5::DataSet}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\_\-$>$ {\bf DataSet}$<$T\_\-$>$\& operator$>$$>$ ({\bf DataSet}$<$ T\_\- $>$ \&, \/  typename T\_\-::Type \&)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classeos_1_1hdf5_1_1DataSet_ab6a61cb7ace6043e703b61ba382dfbec}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{hdf5_8hh}{hdf5.hh}\end{DoxyCompactItemize}

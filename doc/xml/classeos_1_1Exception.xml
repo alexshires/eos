@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1Exception" kind="class" prot="public">
+    <compoundname>eos::Exception</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::exception</basecompoundref>
+    <derivedcompoundref refid="classeos_1_1HDF5Error" prot="public" virt="non-virtual">eos::HDF5Error</derivedcompoundref>
+    <derivedcompoundref refid="structeos_1_1InternalError" prot="public" virt="non-virtual">eos::InternalError</derivedcompoundref>
+    <derivedcompoundref refid="structeos_1_1NoSuchChiSquaredError" prot="public" virt="non-virtual">eos::NoSuchChiSquaredError</derivedcompoundref>
+    <derivedcompoundref refid="structeos_1_1NoSuchModelError" prot="public" virt="non-virtual">eos::NoSuchModelError</derivedcompoundref>
+    <derivedcompoundref refid="structeos_1_1ObservableNameError" prot="public" virt="non-virtual">eos::ObservableNameError</derivedcompoundref>
+    <derivedcompoundref refid="structeos_1_1proposal__functions_1_1UnknownProposalError" prot="public" virt="non-virtual">eos::proposal_functions::UnknownProposalError</derivedcompoundref>
+    <derivedcompoundref refid="structeos_1_1UnknownConstraintError" prot="public" virt="non-virtual">eos::UnknownConstraintError</derivedcompoundref>
+    <derivedcompoundref refid="structeos_1_1UnknownKinematicVariableError" prot="public" virt="non-virtual">eos::UnknownKinematicVariableError</derivedcompoundref>
+    <derivedcompoundref refid="structeos_1_1UnknownOptionError" prot="public" virt="non-virtual">eos::UnknownOptionError</derivedcompoundref>
+    <derivedcompoundref refid="structeos_1_1UnknownParameterError" prot="public" virt="non-virtual">eos::UnknownParameterError</derivedcompoundref>
+    <derivedcompoundref refid="classeos_1_1VerifiedRangeError" prot="public" virt="non-virtual">eos::VerifiedRangeError</derivedcompoundref>
+    <includes refid="exception_8hh" local="no">exception.hh</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classeos_1_1Exception_1a5ba11fdf5860a7e270c314d5f9467058" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string eos::Exception::_message</definition>
+        <argsstring></argsstring>
+        <name>_message</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/exception.hh" line="32" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/exception.hh" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classeos_1_1Exception_1acbc0fa64ca3d54cc1f828b07dc80e585" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::Exception::Exception</definition>
+        <argsstring>(const std::string &amp;message)</argsstring>
+        <name>Exception</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>message</declname>
+        </param>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/exception.hh" line="35"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1Exception_1a8cb6faea0484cc58c472da9e58c7c30a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::Exception::~Exception</definition>
+        <argsstring>()</argsstring>
+        <name>~Exception</name>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/exception.hh" line="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Exception_1adce7a2af080165b09a599bb13438a8e1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* eos::Exception::what</definition>
+        <argsstring>() const </argsstring>
+        <name>what</name>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/exception.hh" line="40"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="379">
+        <label>eos::HDF5Error</label>
+        <link refid="classeos_1_1HDF5Error"/>
+        <childnode refid="377" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="390">
+        <label>eos::VerifiedRangeOverflow</label>
+        <link refid="structeos_1_1VerifiedRangeOverflow"/>
+        <childnode refid="389" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="387">
+        <label>eos::UnknownOptionError</label>
+        <link refid="structeos_1_1UnknownOptionError"/>
+        <childnode refid="377" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="380">
+        <label>eos::InternalError</label>
+        <link refid="structeos_1_1InternalError"/>
+        <childnode refid="377" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="377">
+        <label>eos::Exception</label>
+        <link refid="classeos_1_1Exception"/>
+        <childnode refid="378" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="385">
+        <label>eos::UnknownConstraintError</label>
+        <link refid="structeos_1_1UnknownConstraintError"/>
+        <childnode refid="377" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="381">
+        <label>eos::NoSuchChiSquaredError</label>
+        <link refid="structeos_1_1NoSuchChiSquaredError"/>
+        <childnode refid="377" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="386">
+        <label>eos::UnknownKinematicVariableError</label>
+        <link refid="structeos_1_1UnknownKinematicVariableError"/>
+        <childnode refid="377" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="382">
+        <label>eos::NoSuchModelError</label>
+        <link refid="structeos_1_1NoSuchModelError"/>
+        <childnode refid="377" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="383">
+        <label>eos::ObservableNameError</label>
+        <link refid="structeos_1_1ObservableNameError"/>
+        <childnode refid="377" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="378">
+        <label>std::exception</label>
+      </node>
+      <node id="391">
+        <label>eos::VerifiedRangeUnderflow</label>
+        <link refid="structeos_1_1VerifiedRangeUnderflow"/>
+        <childnode refid="389" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="388">
+        <label>eos::UnknownParameterError</label>
+        <link refid="structeos_1_1UnknownParameterError"/>
+        <childnode refid="377" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="384">
+        <label>eos::proposal_functions::UnknownProposalError</label>
+        <link refid="structeos_1_1proposal__functions_1_1UnknownProposalError"/>
+        <childnode refid="377" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="389">
+        <label>eos::VerifiedRangeError</label>
+        <link refid="classeos_1_1VerifiedRangeError"/>
+        <childnode refid="377" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="392">
+        <label>eos::Exception</label>
+        <link refid="classeos_1_1Exception"/>
+        <childnode refid="393" relation="public-inheritance">
+        </childnode>
+        <childnode refid="394" relation="usage">
+          <edgelabel>_message</edgelabel>
+        </childnode>
+      </node>
+      <node id="395">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="393">
+        <label>std::exception</label>
+      </node>
+      <node id="394">
+        <label>std::string</label>
+        <childnode refid="395" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/exception.hh" line="30" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/exception.hh" bodystart="28" bodyend="41"/>
+    <listofallmembers>
+      <member refid="classeos_1_1Exception_1a5ba11fdf5860a7e270c314d5f9467058" prot="private" virt="non-virtual"><scope>eos::Exception</scope><name>_message</name></member>
+      <member refid="classeos_1_1Exception_1acbc0fa64ca3d54cc1f828b07dc80e585" prot="protected" virt="non-virtual"><scope>eos::Exception</scope><name>Exception</name></member>
+      <member refid="classeos_1_1Exception_1adce7a2af080165b09a599bb13438a8e1" prot="public" virt="virtual"><scope>eos::Exception</scope><name>what</name></member>
+      <member refid="classeos_1_1Exception_1a8cb6faea0484cc58c472da9e58c7c30a" prot="public" virt="non-virtual"><scope>eos::Exception</scope><name>~Exception</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

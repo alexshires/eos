@@ -1,0 +1,2281 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4" kind="class" prot="public">
+    <compoundname>eos::BToKstarDilepton&lt; LowRecoil &gt;</compoundname>
+    <basecompoundref refid="classeos_1_1ParameterUser" prot="public" virt="non-virtual">eos::ParameterUser</basecompoundref>
+    <basecompoundref refid="classeos_1_1PrivateImplementationPattern" prot="public" virt="non-virtual">eos::PrivateImplementationPattern&lt; BToKstarDilepton&lt; LowRecoil &gt; &gt;</basecompoundref>
+    <includes refid="exclusive-b-to-s-dilepton-low-recoil_8hh" local="no">exclusive-b-to-s-dilepton-low-recoil.hh</includes>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1aa4200bfda741e989e9fe17da1b066e95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::BToKstarDilepton&lt; LowRecoil &gt;::BToKstarDilepton</definition>
+        <argsstring>(const Parameters &amp;parameters, const Options &amp;options)</argsstring>
+        <name>BToKstarDilepton</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1Options" kindref="compound">Options</ref> &amp;</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1af83131c6414fa15740d0779b990457b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::BToKstarDilepton&lt; LowRecoil &gt;::~BToKstarDilepton</definition>
+        <argsstring>()</argsstring>
+        <name>~BToKstarDilepton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1abd2799a92ea23c32a4c95b9331bb0937" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::BToKstarDilepton&lt; LowRecoil &gt;::a_long</definition>
+        <argsstring>(const Helicity &amp;h, const double &amp;s) const </argsstring>
+        <name>a_long</name>
+        <param>
+          <type>const <ref refid="namespaceeos_1a4b2f8b0a4184d635cfc47c4ee234aea5" kindref="member">Helicity</ref> &amp;</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a8f13a8f5eb417374e49b46f9897a7582" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::BToKstarDilepton&lt; LowRecoil &gt;::a_perp</definition>
+        <argsstring>(const Helicity &amp;h, const double &amp;s) const </argsstring>
+        <name>a_perp</name>
+        <param>
+          <type>const <ref refid="namespaceeos_1a4b2f8b0a4184d635cfc47c4ee234aea5" kindref="member">Helicity</ref> &amp;</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a17fa27f2d53760333e9b128d650e7cc7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::BToKstarDilepton&lt; LowRecoil &gt;::a_par</definition>
+        <argsstring>(const Helicity &amp;h, const double &amp;s) const </argsstring>
+        <name>a_par</name>
+        <param>
+          <type>const <ref refid="namespaceeos_1a4b2f8b0a4184d635cfc47c4ee234aea5" kindref="member">Helicity</ref> &amp;</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a6885b78b5b1c62716b75254ef737ec8a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::real_y</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>real_y</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1ac0f2b68ee038536db3908a042b7b11cc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::imag_y</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>imag_y</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1aae2ba6e93e5057d7e756e229c94d8105" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::real_c9eff</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>real_c9eff</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1af322796e86288e0b0425fc2dbae20f8d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::imag_c9eff</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>imag_c9eff</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a9909de62ee96092214b2dff401bc8340" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::real_c7eff</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>real_c7eff</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a40fabc015bec286925c5d83a06ac35b5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::imag_c7eff</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>imag_c7eff</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a94a9b9aac31a8e291f69b106cdc466ed" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::rho_1</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>rho_1</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a358c56df174296e11561ab993f5f1b95" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::rho_2</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>rho_2</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a7e9d0b8473b5b1bcf0bad5b9454dde4a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::four_differential_decay_width</definition>
+        <argsstring>(const double &amp;s, const double &amp;c_theta_l, const double &amp;c_theta_k, const double &amp;phi) const </argsstring>
+        <name>four_differential_decay_width</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>c_theta_l</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>c_theta_k</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>phi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a668814b8c9d2801119d7a9e9d5a6cef2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_branching_ratio</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_branching_ratio</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a7c6809651a8393f33f7902d75c5caf06" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_decay_width</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_decay_width</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a89d6055877d908f6935a684ed9da10c4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_forward_backward_asymmetry</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_forward_backward_asymmetry</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1ac7058d6f6fd6f66bf4737f10b7194d97" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_longitudinal_polarisation</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_longitudinal_polarisation</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1aef1eb2533f6a2ed2282cd0ec3c814db3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_transversal_polarisation</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_transversal_polarisation</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a51d0d5e2344f63369661b4ab29be71c0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_transverse_asymmetry_2</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_transverse_asymmetry_2</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1aa82e771aac95d62ddab87ade56558f13" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_transverse_asymmetry_3</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_transverse_asymmetry_3</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1ae4bf258f37c1015a9cfce652ab8cd618" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_transverse_asymmetry_4</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_transverse_asymmetry_4</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1ae6cce09b67d80f2cbc5bcc52673521f9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_transverse_asymmetry_5</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_transverse_asymmetry_5</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1adae1d33fab547d33c5dbd9b218cd3d56" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_transverse_asymmetry_re</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_transverse_asymmetry_re</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a85022b9ced2ab3c8f875043257818731" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_transverse_asymmetry_im</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_transverse_asymmetry_im</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1aae0ddf3ba1ac8088fee62cf24c358972" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_p_prime_4</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_p_prime_4</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a565c2ebdd15cf39098d2087b14340f2a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_p_prime_5</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_p_prime_5</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a4ff506dfe782b6b4c65c8f7b449c3411" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_p_prime_6</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_p_prime_6</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1acaebeb060dd304ffa90a4142ac58e265" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_h_1</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_h_1</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a6e2af2f882e5f28f86078f9a539edfe1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_h_2</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_h_2</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1af2792603343aa00c8b1d4e493e296428" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_h_3</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_h_3</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a650f16afbad9564997875369352d0570" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_h_4</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_h_4</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a68327d76296ee6ff86a63c7f15d09c34" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_h_5</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_h_5</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a408fe55d191d7d4129e02c66a1dd9dc7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_cp_asymmetry_1</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_cp_asymmetry_1</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a3f2a777318d2ec78675880849bf84ddf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_cp_asymmetry_2</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_cp_asymmetry_2</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1aa6d5e0969db26d72b0e6ff81284371e3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_cp_asymmetry_3</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_cp_asymmetry_3</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1abf5f93c195831bc21cf430a92089093f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_cp_asymmetry_mix</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_cp_asymmetry_mix</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a0342369281e512ea597742dd8153ea21" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_j_1s</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_j_1s</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a0faec7b18929938598e17c28e10dfc0f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_j_1c</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_j_1c</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1aa081a01d3c5d25da1f843f5257c6ebed" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_j_2s</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_j_2s</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a057c2fc7b6325fc5b59fef42e6889475" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_j_2c</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_j_2c</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1ab90c395a48f549a907b031b4ed99859a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_j_3</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_j_3</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a5d96a91b2cc74a2c0dd03f3778e710b5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_j_3_normalized</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_j_3_normalized</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a7d234ea02e55215cc759477c729a1d8b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_j_3_normalized_cp_averaged</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_j_3_normalized_cp_averaged</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a60ca686c439ac218accdbb4392d77625" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_j_4</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_j_4</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1aadceae1d69db5224363405492646c1cb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_j_5</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_j_5</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a116a974d7a73dfd824a5db577be587d0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_j_6s</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_j_6s</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1aeca2c64c5e838bd43005e5fae10e1f1e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_j_6c</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_j_6c</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1af9c010692e073ba24e8f13b0638f6a8d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_j_7</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_j_7</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a4dfeb8398e18c95f106707aac6c543af" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_j_8</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_j_8</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a04c77674ecd5e394bcc2524ae487ab8c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_j_9</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_j_9</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a7fbe7107a9bea09c9d68c83c24c3c2bc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_j_9_normalized</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_j_9_normalized</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a58832a8a0e49a3c60e5064a91fcb4d1b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::differential_j_9_normalized_cp_averaged</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_j_9_normalized_cp_averaged</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a503301f9de68d3c559706021fce6f213" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_decay_width</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_decay_width</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a58edd7101a9cb8aceb1f1ccfdd902b6b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_branching_ratio</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_branching_ratio</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1aa036cffb6a06b8b4a39dffebb2c6cb16" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_branching_ratio_cp_averaged</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_branching_ratio_cp_averaged</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a05e129e772037a0775b5a27bcba4ee9e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_forward_backward_asymmetry_naive</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_forward_backward_asymmetry_naive</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1ae8f3b8edaa430209c09bd473bdf0d43a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_forward_backward_asymmetry</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_forward_backward_asymmetry</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1aa0434ade7047a9b415411fc7649668cb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_unnormalized_forward_backward_asymmetry</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_unnormalized_forward_backward_asymmetry</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a9d215ad72958a94dd32cd6bd2538486a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_forward_backward_asymmetry_cp_averaged</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_forward_backward_asymmetry_cp_averaged</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1acafbe819d47149274cc6337044c50c29" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_longitudinal_polarisation_naive</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_longitudinal_polarisation_naive</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a209fd5571fe2d963a7fcdffb50402253" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_longitudinal_polarisation</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_longitudinal_polarisation</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a5a45dcc1284d1372f652af3a9ad1e168" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_longitudinal_polarisation_cp_averaged</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_longitudinal_polarisation_cp_averaged</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1af15faa28564c5a6a6c0e5905255fb8e7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_transversal_polarisation</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_transversal_polarisation</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1af13d5f75efad6b3cf81975395aabc447" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_transversal_polarisation_cp_averaged</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_transversal_polarisation_cp_averaged</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a4ff995b9a1131833ed198b7735be882a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_transverse_asymmetry_2</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_transverse_asymmetry_2</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a871b934798288f80764e1ea4b5f74110" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_transverse_asymmetry_2_cp_averaged</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_transverse_asymmetry_2_cp_averaged</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a0fd4a54246acdea45c7bf8022ed2b8b4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_transverse_asymmetry_2_naive</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_transverse_asymmetry_2_naive</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1ac72f802ae9d30f8acb2e229851956795" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_transverse_asymmetry_3</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_transverse_asymmetry_3</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a365d7cf15da41dfe34c5edb16df2c812" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_transverse_asymmetry_3_naive</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_transverse_asymmetry_3_naive</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a8986125c667918ce8d4a15e67c592c68" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_transverse_asymmetry_4</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_transverse_asymmetry_4</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1ab2348dd3ac8e0d2d853b8c35d75a4a2b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_transverse_asymmetry_4_naive</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_transverse_asymmetry_4_naive</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1ae61a3da96c051d1b5da3bb7fcd1b42bc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_transverse_asymmetry_5</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_transverse_asymmetry_5</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a37f2d54a7ebd46bece004e8154b1b581" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_transverse_asymmetry_re</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_transverse_asymmetry_re</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1af3583a95af682bacc01b1c44aa3f972b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_transverse_asymmetry_im</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_transverse_asymmetry_im</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a968b483ff53e3a67d8b0887d8f894467" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_p_prime_4</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_p_prime_4</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a00fccd39baa4ef40ce1df88e790479c2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_p_prime_5</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_p_prime_5</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1adf3ffad49e2311d7d112d7af53948002" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_p_prime_6</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_p_prime_6</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a48ef64b2365fb8a709bee76c27122006" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_h_1</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_h_1</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a39d76e0ebc3397bfd09e3e5574e3d279" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_h_1_naive</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_h_1_naive</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a0d85c6d185e67dac3c1f618e6843dcdd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_h_2</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_h_2</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1ae7215ebd2b9553001309c90d70e3bec5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_h_2_naive</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_h_2_naive</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a635c2a461565e3da3567758e05411d49" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_h_3</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_h_3</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a24cdee87f3e6388061dd8f62a32489d5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_h_3_naive</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_h_3_naive</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a14f75e87e86274e5f7b28039f9bd6b5c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_h_4</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_h_4</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a5ee3c88bdfccb58ee217b79aa947c4b4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_h_5</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_h_5</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1aca800290e1d89caca0f03adc7b77f476" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_cp_asymmetry</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_cp_asymmetry</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a087f366b330084ec2b2476aee279ba18" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_cp_asymmetry_1</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_cp_asymmetry_1</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a5c84df702d00df7affbc7c597f55f6f3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_cp_asymmetry_2</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_cp_asymmetry_2</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1ad4a173a76138ee816326a381ec1946d8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_cp_asymmetry_3</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_cp_asymmetry_3</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a0dc18658255a6b4bd15c91bd99020a57" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_cp_summed_decay_width</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_cp_summed_decay_width</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a239381fa63ad8dc532e1048f592a57f8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_unnormalized_cp_asymmetry_1</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_unnormalized_cp_asymmetry_1</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a7c4175068b4058ae02f5bf6c75106e45" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_j_1s</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_j_1s</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a5d9d3e3290c20f4a7019bf449f6b0e62" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_j_1c</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_j_1c</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a69e2a4fa81e024ea433f7d1924bf261d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_j_2s</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_j_2s</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a6f81a72ab27c25c1f0946eb58ac037f5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_j_2c</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_j_2c</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1ac5480bfbfb3883f97567564100ed6ac4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_j_3</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_j_3</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1ae8c6009d0de2040febb7fadaf6d364c2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_j_3_normalized</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_j_3_normalized</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a042d95c0b797000c2214bb41a7253d4d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_j_3_normalized_cp_averaged</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_j_3_normalized_cp_averaged</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a2b22b8cc8d7a2546ea18ff056a2e8ca2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_j_4</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_j_4</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1af7e6c518a032eccad0f96a766216e55f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_j_5</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_j_5</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a1c86b7c7225aea0d22cebf316234b031" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_j_6s</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_j_6s</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a058b5fc3819fa4db3670a5c6bce2c950" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_j_6c</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_j_6c</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a9864625ce8aa2f4d1170ac1e1d4ed7f0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_j_7</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_j_7</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1ae67222779f7f86cd7b7c6f68544dfb73" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_j_8</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_j_8</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a7f2ec4b984a86fe7debe06dcbda8dfc1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_j_9</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_j_9</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a896472eb16708a931535978cdcbf2dbb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_j_9_normalized</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_j_9_normalized</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a9d70b5d31c39dec164f5ab1a8ab41e4f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_j_9_normalized_cp_averaged</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_j_9_normalized_cp_averaged</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1aa49cecdcb6cb3fe7a8bba8eff54910f6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToKstarDilepton&lt; LowRecoil &gt;::integrated_a_9</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_a_9</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="163"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="148">
+        <label>eos::BToKstarDilepton&lt; LowRecoil &gt;</label>
+        <link refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4"/>
+        <childnode refid="149" relation="public-inheritance">
+        </childnode>
+        <childnode refid="150" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="149">
+        <label>eos::ParameterUser</label>
+        <link refid="classeos_1_1ParameterUser"/>
+      </node>
+      <node id="150">
+        <label>eos::PrivateImplementationPattern&lt; BToKstarDilepton&lt; LowRecoil &gt; &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="151">
+        <label>eos::BToKstarDilepton&lt; LowRecoil &gt;</label>
+        <link refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4"/>
+        <childnode refid="152" relation="public-inheritance">
+        </childnode>
+        <childnode refid="154" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="153">
+        <label>std::set&lt; Parameter::Id &gt;</label>
+      </node>
+      <node id="152">
+        <label>eos::ParameterUser</label>
+        <link refid="classeos_1_1ParameterUser"/>
+        <childnode refid="153" relation="usage">
+          <edgelabel>_ids</edgelabel>
+        </childnode>
+      </node>
+      <node id="154">
+        <label>eos::PrivateImplementationPattern&lt; BToKstarDilepton&lt; LowRecoil &gt; &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" line="41" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh" bodystart="38" bodyend="164"/>
+    <listofallmembers>
+      <member refid="classeos_1_1ParameterUser_1aa3a0285297e16cf2a5830df1f9bb2f4b" prot="protected" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>_ids</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a232940e78b26c6ed4f97196f831c69c9" prot="protected" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>_imp</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1abd2799a92ea23c32a4c95b9331bb0937" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>a_long</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a17fa27f2d53760333e9b128d650e7cc7" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>a_par</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a8f13a8f5eb417374e49b46f9897a7582" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>a_perp</name></member>
+      <member refid="classeos_1_1ParameterUser_1a9cd569207063cd2a8f807c4e1203a5d4" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>begin</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1aa4200bfda741e989e9fe17da1b066e95" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>BToKstarDilepton</name></member>
+      <member refid="classeos_1_1ParameterUser_1a7105631bbcb4b2492e6377b2b69f5b0f" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>ConstIterator</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a668814b8c9d2801119d7a9e9d5a6cef2" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_branching_ratio</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a408fe55d191d7d4129e02c66a1dd9dc7" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_cp_asymmetry_1</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a3f2a777318d2ec78675880849bf84ddf" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_cp_asymmetry_2</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1aa6d5e0969db26d72b0e6ff81284371e3" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_cp_asymmetry_3</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1abf5f93c195831bc21cf430a92089093f" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_cp_asymmetry_mix</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a7c6809651a8393f33f7902d75c5caf06" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_decay_width</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a89d6055877d908f6935a684ed9da10c4" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_forward_backward_asymmetry</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1acaebeb060dd304ffa90a4142ac58e265" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_h_1</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a6e2af2f882e5f28f86078f9a539edfe1" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_h_2</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1af2792603343aa00c8b1d4e493e296428" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_h_3</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a650f16afbad9564997875369352d0570" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_h_4</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a68327d76296ee6ff86a63c7f15d09c34" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_h_5</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a0faec7b18929938598e17c28e10dfc0f" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_j_1c</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a0342369281e512ea597742dd8153ea21" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_j_1s</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a057c2fc7b6325fc5b59fef42e6889475" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_j_2c</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1aa081a01d3c5d25da1f843f5257c6ebed" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_j_2s</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1ab90c395a48f549a907b031b4ed99859a" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_j_3</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a5d96a91b2cc74a2c0dd03f3778e710b5" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_j_3_normalized</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a7d234ea02e55215cc759477c729a1d8b" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_j_3_normalized_cp_averaged</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a60ca686c439ac218accdbb4392d77625" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_j_4</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1aadceae1d69db5224363405492646c1cb" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_j_5</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1aeca2c64c5e838bd43005e5fae10e1f1e" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_j_6c</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a116a974d7a73dfd824a5db577be587d0" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_j_6s</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1af9c010692e073ba24e8f13b0638f6a8d" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_j_7</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a4dfeb8398e18c95f106707aac6c543af" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_j_8</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a04c77674ecd5e394bcc2524ae487ab8c" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_j_9</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a7fbe7107a9bea09c9d68c83c24c3c2bc" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_j_9_normalized</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a58832a8a0e49a3c60e5064a91fcb4d1b" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_j_9_normalized_cp_averaged</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1ac7058d6f6fd6f66bf4737f10b7194d97" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_longitudinal_polarisation</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1aae0ddf3ba1ac8088fee62cf24c358972" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_p_prime_4</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a565c2ebdd15cf39098d2087b14340f2a" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_p_prime_5</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a4ff506dfe782b6b4c65c8f7b449c3411" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_p_prime_6</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1aef1eb2533f6a2ed2282cd0ec3c814db3" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_transversal_polarisation</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a51d0d5e2344f63369661b4ab29be71c0" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_transverse_asymmetry_2</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1aa82e771aac95d62ddab87ade56558f13" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_transverse_asymmetry_3</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1ae4bf258f37c1015a9cfce652ab8cd618" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_transverse_asymmetry_4</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1ae6cce09b67d80f2cbc5bcc52673521f9" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_transverse_asymmetry_5</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a85022b9ced2ab3c8f875043257818731" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_transverse_asymmetry_im</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1adae1d33fab547d33c5dbd9b218cd3d56" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>differential_transverse_asymmetry_re</name></member>
+      <member refid="classeos_1_1ParameterUser_1a5813c886f3fd3f074cc02a53fc9e0790" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>end</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a7e9d0b8473b5b1bcf0bad5b9454dde4a" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>four_differential_decay_width</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a40fabc015bec286925c5d83a06ac35b5" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>imag_c7eff</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1af322796e86288e0b0425fc2dbae20f8d" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>imag_c9eff</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1ac0f2b68ee038536db3908a042b7b11cc" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>imag_y</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1aa49cecdcb6cb3fe7a8bba8eff54910f6" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_a_9</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a58edd7101a9cb8aceb1f1ccfdd902b6b" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_branching_ratio</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1aa036cffb6a06b8b4a39dffebb2c6cb16" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_branching_ratio_cp_averaged</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1aca800290e1d89caca0f03adc7b77f476" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_cp_asymmetry</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a087f366b330084ec2b2476aee279ba18" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_cp_asymmetry_1</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a5c84df702d00df7affbc7c597f55f6f3" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_cp_asymmetry_2</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1ad4a173a76138ee816326a381ec1946d8" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_cp_asymmetry_3</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a0dc18658255a6b4bd15c91bd99020a57" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_cp_summed_decay_width</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a503301f9de68d3c559706021fce6f213" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_decay_width</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1ae8f3b8edaa430209c09bd473bdf0d43a" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_forward_backward_asymmetry</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a9d215ad72958a94dd32cd6bd2538486a" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_forward_backward_asymmetry_cp_averaged</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a05e129e772037a0775b5a27bcba4ee9e" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_forward_backward_asymmetry_naive</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a48ef64b2365fb8a709bee76c27122006" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_h_1</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a39d76e0ebc3397bfd09e3e5574e3d279" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_h_1_naive</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a0d85c6d185e67dac3c1f618e6843dcdd" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_h_2</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1ae7215ebd2b9553001309c90d70e3bec5" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_h_2_naive</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a635c2a461565e3da3567758e05411d49" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_h_3</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a24cdee87f3e6388061dd8f62a32489d5" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_h_3_naive</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a14f75e87e86274e5f7b28039f9bd6b5c" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_h_4</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a5ee3c88bdfccb58ee217b79aa947c4b4" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_h_5</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a5d9d3e3290c20f4a7019bf449f6b0e62" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_j_1c</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a7c4175068b4058ae02f5bf6c75106e45" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_j_1s</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a6f81a72ab27c25c1f0946eb58ac037f5" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_j_2c</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a69e2a4fa81e024ea433f7d1924bf261d" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_j_2s</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1ac5480bfbfb3883f97567564100ed6ac4" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_j_3</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1ae8c6009d0de2040febb7fadaf6d364c2" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_j_3_normalized</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a042d95c0b797000c2214bb41a7253d4d" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_j_3_normalized_cp_averaged</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a2b22b8cc8d7a2546ea18ff056a2e8ca2" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_j_4</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1af7e6c518a032eccad0f96a766216e55f" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_j_5</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a058b5fc3819fa4db3670a5c6bce2c950" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_j_6c</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a1c86b7c7225aea0d22cebf316234b031" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_j_6s</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a9864625ce8aa2f4d1170ac1e1d4ed7f0" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_j_7</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1ae67222779f7f86cd7b7c6f68544dfb73" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_j_8</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a7f2ec4b984a86fe7debe06dcbda8dfc1" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_j_9</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a896472eb16708a931535978cdcbf2dbb" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_j_9_normalized</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a9d70b5d31c39dec164f5ab1a8ab41e4f" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_j_9_normalized_cp_averaged</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a209fd5571fe2d963a7fcdffb50402253" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_longitudinal_polarisation</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a5a45dcc1284d1372f652af3a9ad1e168" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_longitudinal_polarisation_cp_averaged</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1acafbe819d47149274cc6337044c50c29" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_longitudinal_polarisation_naive</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a968b483ff53e3a67d8b0887d8f894467" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_p_prime_4</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a00fccd39baa4ef40ce1df88e790479c2" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_p_prime_5</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1adf3ffad49e2311d7d112d7af53948002" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_p_prime_6</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1af15faa28564c5a6a6c0e5905255fb8e7" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_transversal_polarisation</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1af13d5f75efad6b3cf81975395aabc447" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_transversal_polarisation_cp_averaged</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a4ff995b9a1131833ed198b7735be882a" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_transverse_asymmetry_2</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a871b934798288f80764e1ea4b5f74110" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_transverse_asymmetry_2_cp_averaged</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a0fd4a54246acdea45c7bf8022ed2b8b4" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_transverse_asymmetry_2_naive</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1ac72f802ae9d30f8acb2e229851956795" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_transverse_asymmetry_3</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a365d7cf15da41dfe34c5edb16df2c812" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_transverse_asymmetry_3_naive</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a8986125c667918ce8d4a15e67c592c68" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_transverse_asymmetry_4</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1ab2348dd3ac8e0d2d853b8c35d75a4a2b" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_transverse_asymmetry_4_naive</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1ae61a3da96c051d1b5da3bb7fcd1b42bc" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_transverse_asymmetry_5</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1af3583a95af682bacc01b1c44aa3f972b" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_transverse_asymmetry_im</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a37f2d54a7ebd46bece004e8154b1b581" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_transverse_asymmetry_re</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a239381fa63ad8dc532e1048f592a57f8" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_unnormalized_cp_asymmetry_1</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1aa0434ade7047a9b415411fc7649668cb" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>integrated_unnormalized_forward_backward_asymmetry</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a3e3d5f4a565256a1dda6c234b051b2f2" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>PrivateImplementationPattern</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a9909de62ee96092214b2dff401bc8340" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>real_c7eff</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1aae2ba6e93e5057d7e756e229c94d8105" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>real_c9eff</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a6885b78b5b1c62716b75254ef737ec8a" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>real_y</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a94a9b9aac31a8e291f69b106cdc466ed" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>rho_1</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1a358c56df174296e11561ab993f5f1b95" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>rho_2</name></member>
+      <member refid="classeos_1_1ParameterUser_1ad91a901e589653272482bded7e453c70" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>uses</name></member>
+      <member refid="classeos_1_1ParameterUser_1a7a37e779cf45ef1075fe7bf670688b72" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>uses</name></member>
+      <member refid="classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4_1af83131c6414fa15740d0779b990457b6" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>~BToKstarDilepton</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1acf46ec2739c3b0ec9702b9428475876d" prot="public" virt="non-virtual"><scope>eos::BToKstarDilepton&lt; LowRecoil &gt;</scope><name>~PrivateImplementationPattern</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

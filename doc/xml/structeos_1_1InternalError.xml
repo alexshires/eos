@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1InternalError" kind="struct" prot="public">
+    <compoundname>eos::InternalError</compoundname>
+    <basecompoundref refid="classeos_1_1Exception" prot="public" virt="non-virtual">eos::Exception</basecompoundref>
+    <includes refid="exception_8hh" local="no">exception.hh</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structeos_1_1InternalError_1ae4b3f79d99d58833babeb1e743853390" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::InternalError::InternalError</definition>
+        <argsstring>(const std::string &amp;message)</argsstring>
+        <name>InternalError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>message</declname>
+        </param>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/exception.hh" line="46"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="529">
+        <label>eos::InternalError</label>
+        <link refid="structeos_1_1InternalError"/>
+        <childnode refid="530" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="530">
+        <label>eos::Exception</label>
+        <link refid="classeos_1_1Exception"/>
+        <childnode refid="531" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="531">
+        <label>std::exception</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="532">
+        <label>eos::InternalError</label>
+        <link refid="structeos_1_1InternalError"/>
+        <childnode refid="533" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="533">
+        <label>eos::Exception</label>
+        <link refid="classeos_1_1Exception"/>
+        <childnode refid="534" relation="public-inheritance">
+        </childnode>
+        <childnode refid="535" relation="usage">
+          <edgelabel>_message</edgelabel>
+        </childnode>
+      </node>
+      <node id="536">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="534">
+        <label>std::exception</label>
+      </node>
+      <node id="535">
+        <label>std::string</label>
+        <childnode refid="536" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/exception.hh" line="45" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/exception.hh" bodystart="43" bodyend="47"/>
+    <listofallmembers>
+      <member refid="classeos_1_1Exception_1acbc0fa64ca3d54cc1f828b07dc80e585" prot="protected" virt="non-virtual"><scope>eos::InternalError</scope><name>Exception</name></member>
+      <member refid="structeos_1_1InternalError_1ae4b3f79d99d58833babeb1e743853390" prot="public" virt="non-virtual"><scope>eos::InternalError</scope><name>InternalError</name></member>
+      <member refid="classeos_1_1Exception_1adce7a2af080165b09a599bb13438a8e1" prot="public" virt="virtual"><scope>eos::InternalError</scope><name>what</name></member>
+      <member refid="classeos_1_1Exception_1a8cb6faea0484cc58c472da9e58c7c30a" prot="public" virt="non-virtual"><scope>eos::InternalError</scope><name>~Exception</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

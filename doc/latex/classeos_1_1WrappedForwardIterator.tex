@@ -1,0 +1,191 @@
+\hypertarget{classeos_1_1WrappedForwardIterator}{
+\section{eos::WrappedForwardIterator$<$ Tag\_\-, Value\_\- $>$ Class Template Reference}
+\label{classeos_1_1WrappedForwardIterator}\index{eos::WrappedForwardIterator@{eos::WrappedForwardIterator}}
+}
+
+
+{\ttfamily \#include $<$wrapped\_\-forward\_\-iterator.hh$>$}\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structeos_1_1WrappedForwardIterator_1_1Base}{Base}
+\item 
+struct \hyperlink{structeos_1_1WrappedForwardIterator_1_1BaseImpl}{BaseImpl}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{Indent}{\bf Standard library typedefs}\par
+{\em \label{_amgrpbf913aaa4179804ab842d74a2daf0c46}
+ }\begin{DoxyCompactItemize}
+\item 
+typedef std::remove\_\-reference$<$ Value\_\- $>$::type \& \hyperlink{classeos_1_1WrappedForwardIterator_a89335178f8e6e7a0a48ef7a5001498ed}{value\_\-type}
+\item 
+typedef std::remove\_\-reference$<$ Value\_\- $>$::type \& \hyperlink{classeos_1_1WrappedForwardIterator_ac7ba4ace12142ac73d97df5d555a4c18}{reference}
+\item 
+typedef std::remove\_\-reference$<$ Value\_\- $>$::type $\ast$ \hyperlink{classeos_1_1WrappedForwardIterator_addb7c63e8b8d4be0a65ded32a4cb7cb9}{pointer}
+\item 
+typedef std::ptrdiff\_\-t \hyperlink{classeos_1_1WrappedForwardIterator_af3705260b81ff899661f7f77f25c72e2}{difference\_\-type}
+\item 
+typedef std::forward\_\-iterator\_\-tag \hyperlink{classeos_1_1WrappedForwardIterator_ade461e57f6b6527039eecb200bf53c85}{iterator\_\-category}
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Public Member Functions}
+\begin{Indent}{\bf Basic operations}\par
+{\em \label{_amgrp975c17051b7ca0881996227cb36eab7b}
+ }\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1WrappedForwardIterator_a321ac3c98ae28956b7428b193e6f65ba}{WrappedForwardIterator} ()
+\item 
+\hyperlink{classeos_1_1WrappedForwardIterator_a4694e3a609d50263eff28cf49c6359c0}{$\sim$WrappedForwardIterator} ()
+\item 
+\hyperlink{classeos_1_1WrappedForwardIterator_af824e052467ced345fdc2391bf251e34}{WrappedForwardIterator} (const \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator} \&)
+\item 
+{\footnotesize template$<$typename T\_\- $>$ }\\\hyperlink{classeos_1_1WrappedForwardIterator_a35ef424f724996a9cc6ac3d8513fefa5}{WrappedForwardIterator} (const T\_\- \&)
+\item 
+\hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator} \& \hyperlink{classeos_1_1WrappedForwardIterator_a73f420f7f9bcc8bf8ad1286f7d5f9601}{operator=} (const \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator} \&)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Increment}\par
+{\em \label{_amgrp6f15bdfa71aa83b0d197cad75757d580}
+ }\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator} \& \hyperlink{classeos_1_1WrappedForwardIterator_a553cd24e60c32710a09912f446213833}{operator++} ()
+\item 
+\hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator} \hyperlink{classeos_1_1WrappedForwardIterator_a34a30fd266a0f1c8610dd0b354c4dd21}{operator++} (int)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Dereference}\par
+{\em \label{_amgrp106e561b2e17ce87f3ff681efa40f1dc}
+ }\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1WrappedForwardIterator_addb7c63e8b8d4be0a65ded32a4cb7cb9}{pointer} \hyperlink{classeos_1_1WrappedForwardIterator_af12c608415c6ee323ca93834486fc2b7}{operator-\/$>$} () const 
+\item 
+\hyperlink{classeos_1_1WrappedForwardIterator_ac7ba4ace12142ac73d97df5d555a4c18}{reference} \hyperlink{classeos_1_1WrappedForwardIterator_ae02a50270f0a0fc3ccae98a41c2d144c}{operator$\ast$} () const 
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Equality}\par
+{\em \label{_amgrp890ebf2ce6beb154deb673b3af2d03d4}
+ }\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classeos_1_1WrappedForwardIterator_a79398c29c6f5012a3c882db8cf61d091}{operator==} (const \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator} \&) const 
+\item 
+bool \hyperlink{classeos_1_1WrappedForwardIterator_a5fb87c43d4ca1c5a0ceffd97b4a4fc78}{operator!=} (const \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator} \&) const 
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Underlying iterator}\par
+{\em \label{_amgrp36bf725d6e562a796de32e509b9c2169}
+ }\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T\_\- $>$ }\\T\_\- \& \hyperlink{classeos_1_1WrappedForwardIterator_a5dd5d4d179b339a647660a0e4289a67c}{underlying\_\-iterator} ()
+\item 
+{\footnotesize template$<$typename T\_\- $>$ }\\const T\_\- \& \hyperlink{classeos_1_1WrappedForwardIterator_a41c259a3f5e5d206c87ecb9dfeb41dec}{underlying\_\-iterator} () const 
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Tag\_\-, typename Value\_\-$>$ class eos::WrappedForwardIterator$<$ Tag\_\-, Value\_\- $>$}
+
+A \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator} is a generic wrapper around a forward iterator, hiding the underlying base iterator. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classeos_1_1WrappedForwardIterator_af3705260b81ff899661f7f77f25c72e2}{
+\index{eos::WrappedForwardIterator@{eos::WrappedForwardIterator}!difference\_\-type@{difference\_\-type}}
+\index{difference\_\-type@{difference\_\-type}!eos::WrappedForwardIterator@{eos::WrappedForwardIterator}}
+\subsubsection[{difference\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Tag\_\-, typename Value\_\-$>$ typedef std::ptrdiff\_\-t {\bf eos::WrappedForwardIterator}$<$ Tag\_\-, Value\_\- $>$::{\bf difference\_\-type}}}
+\label{classeos_1_1WrappedForwardIterator_af3705260b81ff899661f7f77f25c72e2}
+\hypertarget{classeos_1_1WrappedForwardIterator_ade461e57f6b6527039eecb200bf53c85}{
+\index{eos::WrappedForwardIterator@{eos::WrappedForwardIterator}!iterator\_\-category@{iterator\_\-category}}
+\index{iterator\_\-category@{iterator\_\-category}!eos::WrappedForwardIterator@{eos::WrappedForwardIterator}}
+\subsubsection[{iterator\_\-category}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Tag\_\-, typename Value\_\-$>$ typedef std::forward\_\-iterator\_\-tag {\bf eos::WrappedForwardIterator}$<$ Tag\_\-, Value\_\- $>$::{\bf iterator\_\-category}}}
+\label{classeos_1_1WrappedForwardIterator_ade461e57f6b6527039eecb200bf53c85}
+\hypertarget{classeos_1_1WrappedForwardIterator_addb7c63e8b8d4be0a65ded32a4cb7cb9}{
+\index{eos::WrappedForwardIterator@{eos::WrappedForwardIterator}!pointer@{pointer}}
+\index{pointer@{pointer}!eos::WrappedForwardIterator@{eos::WrappedForwardIterator}}
+\subsubsection[{pointer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Tag\_\-, typename Value\_\-$>$ typedef std::remove\_\-reference$<$Value\_\-$>$::type$\ast$ {\bf eos::WrappedForwardIterator}$<$ Tag\_\-, Value\_\- $>$::{\bf pointer}}}
+\label{classeos_1_1WrappedForwardIterator_addb7c63e8b8d4be0a65ded32a4cb7cb9}
+\hypertarget{classeos_1_1WrappedForwardIterator_ac7ba4ace12142ac73d97df5d555a4c18}{
+\index{eos::WrappedForwardIterator@{eos::WrappedForwardIterator}!reference@{reference}}
+\index{reference@{reference}!eos::WrappedForwardIterator@{eos::WrappedForwardIterator}}
+\subsubsection[{reference}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Tag\_\-, typename Value\_\-$>$ typedef std::remove\_\-reference$<$Value\_\-$>$::type\& {\bf eos::WrappedForwardIterator}$<$ Tag\_\-, Value\_\- $>$::{\bf reference}}}
+\label{classeos_1_1WrappedForwardIterator_ac7ba4ace12142ac73d97df5d555a4c18}
+\hypertarget{classeos_1_1WrappedForwardIterator_a89335178f8e6e7a0a48ef7a5001498ed}{
+\index{eos::WrappedForwardIterator@{eos::WrappedForwardIterator}!value\_\-type@{value\_\-type}}
+\index{value\_\-type@{value\_\-type}!eos::WrappedForwardIterator@{eos::WrappedForwardIterator}}
+\subsubsection[{value\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Tag\_\-, typename Value\_\-$>$ typedef std::remove\_\-reference$<$Value\_\-$>$::type\& {\bf eos::WrappedForwardIterator}$<$ Tag\_\-, Value\_\- $>$::{\bf value\_\-type}}}
+\label{classeos_1_1WrappedForwardIterator_a89335178f8e6e7a0a48ef7a5001498ed}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classeos_1_1WrappedForwardIterator_a321ac3c98ae28956b7428b193e6f65ba}{
+\index{eos::WrappedForwardIterator@{eos::WrappedForwardIterator}!WrappedForwardIterator@{WrappedForwardIterator}}
+\index{WrappedForwardIterator@{WrappedForwardIterator}!eos::WrappedForwardIterator@{eos::WrappedForwardIterator}}
+\subsubsection[{WrappedForwardIterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Tag\_\- , typename Value\_\- $>$ {\bf eos::WrappedForwardIterator}$<$ Tag\_\-, Value\_\- $>$::{\bf WrappedForwardIterator} ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classeos_1_1WrappedForwardIterator_a321ac3c98ae28956b7428b193e6f65ba}
+\hypertarget{classeos_1_1WrappedForwardIterator_a4694e3a609d50263eff28cf49c6359c0}{
+\index{eos::WrappedForwardIterator@{eos::WrappedForwardIterator}!$\sim$WrappedForwardIterator@{$\sim$WrappedForwardIterator}}
+\index{$\sim$WrappedForwardIterator@{$\sim$WrappedForwardIterator}!eos::WrappedForwardIterator@{eos::WrappedForwardIterator}}
+\subsubsection[{$\sim$WrappedForwardIterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Tag\_\- , typename Value\_\- $>$ {\bf eos::WrappedForwardIterator}$<$ Tag\_\-, Value\_\- $>$::$\sim${\bf WrappedForwardIterator} ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classeos_1_1WrappedForwardIterator_a4694e3a609d50263eff28cf49c6359c0}
+\hypertarget{classeos_1_1WrappedForwardIterator_af824e052467ced345fdc2391bf251e34}{
+\index{eos::WrappedForwardIterator@{eos::WrappedForwardIterator}!WrappedForwardIterator@{WrappedForwardIterator}}
+\index{WrappedForwardIterator@{WrappedForwardIterator}!eos::WrappedForwardIterator@{eos::WrappedForwardIterator}}
+\subsubsection[{WrappedForwardIterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Tag\_\- , typename Value\_\- $>$ {\bf eos::WrappedForwardIterator}$<$ Tag\_\-, Value\_\- $>$::{\bf WrappedForwardIterator} (const {\bf WrappedForwardIterator}$<$ Tag\_\-, Value\_\- $>$ \& {\em other})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classeos_1_1WrappedForwardIterator_af824e052467ced345fdc2391bf251e34}
+\hypertarget{classeos_1_1WrappedForwardIterator_a35ef424f724996a9cc6ac3d8513fefa5}{
+\index{eos::WrappedForwardIterator@{eos::WrappedForwardIterator}!WrappedForwardIterator@{WrappedForwardIterator}}
+\index{WrappedForwardIterator@{WrappedForwardIterator}!eos::WrappedForwardIterator@{eos::WrappedForwardIterator}}
+\subsubsection[{WrappedForwardIterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Tag\_\- , typename Value\_\- $>$ template$<$typename T\_\- $>$ {\bf eos::WrappedForwardIterator}$<$ Tag\_\-, Value\_\- $>$::{\bf WrappedForwardIterator} (const T\_\- \& {\em base})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classeos_1_1WrappedForwardIterator_a35ef424f724996a9cc6ac3d8513fefa5}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classeos_1_1WrappedForwardIterator_a5fb87c43d4ca1c5a0ceffd97b4a4fc78}{
+\index{eos::WrappedForwardIterator@{eos::WrappedForwardIterator}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!eos::WrappedForwardIterator@{eos::WrappedForwardIterator}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Tag\_\- , typename Value\_\- $>$ bool {\bf eos::WrappedForwardIterator}$<$ Tag\_\-, Value\_\- $>$::operator!= (const {\bf WrappedForwardIterator}$<$ Tag\_\-, Value\_\- $>$ \& {\em other}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classeos_1_1WrappedForwardIterator_a5fb87c43d4ca1c5a0ceffd97b4a4fc78}
+\hypertarget{classeos_1_1WrappedForwardIterator_ae02a50270f0a0fc3ccae98a41c2d144c}{
+\index{eos::WrappedForwardIterator@{eos::WrappedForwardIterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!eos::WrappedForwardIterator@{eos::WrappedForwardIterator}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Tag\_\- , typename Value\_\- $>$ {\bf WrappedForwardIterator}$<$ Tag\_\-, Value\_\- $>$::{\bf reference} {\bf eos::WrappedForwardIterator}$<$ Tag\_\-, Value\_\- $>$::operator$\ast$ () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classeos_1_1WrappedForwardIterator_ae02a50270f0a0fc3ccae98a41c2d144c}
+\hypertarget{classeos_1_1WrappedForwardIterator_a34a30fd266a0f1c8610dd0b354c4dd21}{
+\index{eos::WrappedForwardIterator@{eos::WrappedForwardIterator}!operator++@{operator++}}
+\index{operator++@{operator++}!eos::WrappedForwardIterator@{eos::WrappedForwardIterator}}
+\subsubsection[{operator++}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Tag\_\- , typename Value\_\- $>$ {\bf WrappedForwardIterator}$<$ Tag\_\-, Value\_\- $>$ {\bf eos::WrappedForwardIterator}$<$ Tag\_\-, Value\_\- $>$::operator++ (int)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classeos_1_1WrappedForwardIterator_a34a30fd266a0f1c8610dd0b354c4dd21}
+\hypertarget{classeos_1_1WrappedForwardIterator_a553cd24e60c32710a09912f446213833}{
+\index{eos::WrappedForwardIterator@{eos::WrappedForwardIterator}!operator++@{operator++}}
+\index{operator++@{operator++}!eos::WrappedForwardIterator@{eos::WrappedForwardIterator}}
+\subsubsection[{operator++}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Tag\_\- , typename Value\_\- $>$ {\bf WrappedForwardIterator}$<$ Tag\_\-, Value\_\- $>$ \& {\bf eos::WrappedForwardIterator}$<$ Tag\_\-, Value\_\- $>$::operator++ ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classeos_1_1WrappedForwardIterator_a553cd24e60c32710a09912f446213833}
+\hypertarget{classeos_1_1WrappedForwardIterator_af12c608415c6ee323ca93834486fc2b7}{
+\index{eos::WrappedForwardIterator@{eos::WrappedForwardIterator}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!eos::WrappedForwardIterator@{eos::WrappedForwardIterator}}
+\subsubsection[{operator-\/$>$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Tag\_\- , typename Value\_\- $>$ {\bf WrappedForwardIterator}$<$ Tag\_\-, Value\_\- $>$::{\bf pointer} {\bf eos::WrappedForwardIterator}$<$ Tag\_\-, Value\_\- $>$::operator-\/$>$ () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classeos_1_1WrappedForwardIterator_af12c608415c6ee323ca93834486fc2b7}
+\hypertarget{classeos_1_1WrappedForwardIterator_a73f420f7f9bcc8bf8ad1286f7d5f9601}{
+\index{eos::WrappedForwardIterator@{eos::WrappedForwardIterator}!operator=@{operator=}}
+\index{operator=@{operator=}!eos::WrappedForwardIterator@{eos::WrappedForwardIterator}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Tag\_\- , typename Value\_\- $>$ {\bf WrappedForwardIterator}$<$ Tag\_\-, Value\_\- $>$ \& {\bf eos::WrappedForwardIterator}$<$ Tag\_\-, Value\_\- $>$::operator= (const {\bf WrappedForwardIterator}$<$ Tag\_\-, Value\_\- $>$ \& {\em other})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classeos_1_1WrappedForwardIterator_a73f420f7f9bcc8bf8ad1286f7d5f9601}
+\hypertarget{classeos_1_1WrappedForwardIterator_a79398c29c6f5012a3c882db8cf61d091}{
+\index{eos::WrappedForwardIterator@{eos::WrappedForwardIterator}!operator==@{operator==}}
+\index{operator==@{operator==}!eos::WrappedForwardIterator@{eos::WrappedForwardIterator}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Tag\_\- , typename Value\_\- $>$ bool {\bf eos::WrappedForwardIterator}$<$ Tag\_\-, Value\_\- $>$::operator== (const {\bf WrappedForwardIterator}$<$ Tag\_\-, Value\_\- $>$ \& {\em other}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classeos_1_1WrappedForwardIterator_a79398c29c6f5012a3c882db8cf61d091}
+\hypertarget{classeos_1_1WrappedForwardIterator_a41c259a3f5e5d206c87ecb9dfeb41dec}{
+\index{eos::WrappedForwardIterator@{eos::WrappedForwardIterator}!underlying\_\-iterator@{underlying\_\-iterator}}
+\index{underlying\_\-iterator@{underlying\_\-iterator}!eos::WrappedForwardIterator@{eos::WrappedForwardIterator}}
+\subsubsection[{underlying\_\-iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Tag\_\- , typename Value\_\- $>$ template$<$typename Iter\_\- $>$ const Iter\_\- \& {\bf eos::WrappedForwardIterator}$<$ Tag\_\-, Value\_\- $>$::underlying\_\-iterator () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classeos_1_1WrappedForwardIterator_a41c259a3f5e5d206c87ecb9dfeb41dec}
+\hypertarget{classeos_1_1WrappedForwardIterator_a5dd5d4d179b339a647660a0e4289a67c}{
+\index{eos::WrappedForwardIterator@{eos::WrappedForwardIterator}!underlying\_\-iterator@{underlying\_\-iterator}}
+\index{underlying\_\-iterator@{underlying\_\-iterator}!eos::WrappedForwardIterator@{eos::WrappedForwardIterator}}
+\subsubsection[{underlying\_\-iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Tag\_\- , typename Value\_\- $>$ template$<$typename Iter\_\- $>$ Iter\_\- \& {\bf eos::WrappedForwardIterator}$<$ Tag\_\-, Value\_\- $>$::underlying\_\-iterator ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classeos_1_1WrappedForwardIterator_a5dd5d4d179b339a647660a0e4289a67c}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{wrapped__forward__iterator_8hh}{wrapped\_\-forward\_\-iterator.hh}\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{wrapped__forward__iterator-impl_8hh}{wrapped\_\-forward\_\-iterator-\/impl.hh}\end{DoxyCompactItemize}

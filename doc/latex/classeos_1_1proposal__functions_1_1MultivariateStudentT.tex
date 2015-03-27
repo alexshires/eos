@@ -1,0 +1,128 @@
+\hypertarget{classeos_1_1proposal__functions_1_1MultivariateStudentT}{
+\section{eos::proposal\_\-functions::MultivariateStudentT Class Reference}
+\label{classeos_1_1proposal__functions_1_1MultivariateStudentT}\index{eos::proposal\_\-functions::MultivariateStudentT@{eos::proposal\_\-functions::MultivariateStudentT}}
+}
+
+
+{\ttfamily \#include $<$proposal\_\-functions.hh$>$}
+
+Inherits \hyperlink{classeos_1_1proposal__functions_1_1Multivariate}{eos::proposal\_\-functions::Multivariate}.\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classeos_1_1hdf5_1_1Composite}{hdf5::Composite}$<$ \hyperlink{classeos_1_1hdf5_1_1Scalar}{hdf5::Scalar}$<$ double $>$, \hyperlink{classeos_1_1hdf5_1_1Scalar}{hdf5::Scalar}$<$ double $>$, \hyperlink{classeos_1_1hdf5_1_1Scalar}{hdf5::Scalar}$<$ unsigned $>$, \hyperlink{classeos_1_1hdf5_1_1Scalar}{hdf5::Scalar}$<$ double $>$ $>$ \hyperlink{classeos_1_1proposal__functions_1_1MultivariateStudentT_aab40ca04073f1bfec9378681526aadd8}{ScalarsType}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1proposal__functions_1_1MultivariateStudentT_a491d401a59792405c093865094f23810}{MultivariateStudentT} (const unsigned \&dimension, const std::vector$<$ double $>$ \&covariance, const double \&degree\_\-of\_\-freedom, const bool \&automatic\_\-scaling=true)
+\item 
+virtual \hyperlink{classeos_1_1proposal__functions_1_1MultivariateStudentT_acc497f43328165a02524291ed7383a89}{$\sim$MultivariateStudentT} ()
+\item 
+virtual \hyperlink{namespaceeos_ae97f9891c67c90959a03fc96efaa4dc9}{ProposalFunctionPtr} \hyperlink{classeos_1_1proposal__functions_1_1MultivariateStudentT_a4f5007a73e656d9ff0476a4b5740018b}{clone} () const 
+\begin{DoxyCompactList}\small\item\em Create independent copy. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classeos_1_1proposal__functions_1_1MultivariateStudentT_ab6afe975a0e1a553b785be0fd4daec05}{dump\_\-state} (\hyperlink{classeos_1_1hdf5_1_1File}{hdf5::File} \&file, const std::string \&data\_\-set\_\-base\_\-name) const 
+\begin{DoxyCompactList}\small\item\em Store state in the file under the given base name. \item\end{DoxyCompactList}\item 
+virtual double \hyperlink{classeos_1_1proposal__functions_1_1MultivariateStudentT_a9ca45b3dad5b0e6612ba27f7fb4e1973}{evaluate} (const \hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} \&x, const \hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} \&y) const 
+\begin{DoxyCompactList}\small\item\em Evaluate the density to propose x given y. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classeos_1_1proposal__functions_1_1MultivariateStudentT_ad7c59db9bc93f0fb4b3204b8f272ba6c}{propose} (\hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} \&x, const \hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} \&y, gsl\_\-rng $\ast$rng) const 
+\begin{DoxyCompactList}\small\item\em Obtain from the density a proposal x given y. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classeos_1_1hdf5_1_1Composite}{ScalarsType} \hyperlink{classeos_1_1proposal__functions_1_1MultivariateStudentT_a32ceb99e081791885f277e033c809c83}{scalars\_\-type} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1VerifiedRange}{VerifiedRange}$<$ double $>$ \hyperlink{classeos_1_1proposal__functions_1_1MultivariateStudentT_addd13294ed7e93125f090a8c9250ea99}{dof}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classeos_1_1proposal__functions_1_1MultivariateStudentT_aa44fa5958d242f5aae93c0dfa4cb8d84}{\_\-compute\_\-norm} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classeos_1_1proposal__functions_1_1MultivariateStudentT_aab40ca04073f1bfec9378681526aadd8}{
+\index{eos::proposal\_\-functions::MultivariateStudentT@{eos::proposal\_\-functions::MultivariateStudentT}!ScalarsType@{ScalarsType}}
+\index{ScalarsType@{ScalarsType}!eos::proposal_functions::MultivariateStudentT@{eos::proposal\_\-functions::MultivariateStudentT}}
+\subsubsection[{ScalarsType}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf hdf5::Composite}$<${\bf hdf5::Scalar}$<$double$>$, {\bf hdf5::Scalar}$<$double$>$, {\bf hdf5::Scalar}$<$unsigned$>$, {\bf hdf5::Scalar}$<$double$>$ $>$ {\bf eos::proposal\_\-functions::MultivariateStudentT::ScalarsType}}}
+\label{classeos_1_1proposal__functions_1_1MultivariateStudentT_aab40ca04073f1bfec9378681526aadd8}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classeos_1_1proposal__functions_1_1MultivariateStudentT_a491d401a59792405c093865094f23810}{
+\index{eos::proposal\_\-functions::MultivariateStudentT@{eos::proposal\_\-functions::MultivariateStudentT}!MultivariateStudentT@{MultivariateStudentT}}
+\index{MultivariateStudentT@{MultivariateStudentT}!eos::proposal_functions::MultivariateStudentT@{eos::proposal\_\-functions::MultivariateStudentT}}
+\subsubsection[{MultivariateStudentT}]{\setlength{\rightskip}{0pt plus 5cm}eos::proposal\_\-functions::MultivariateStudentT::MultivariateStudentT (const unsigned \& {\em dimension}, \/  const std::vector$<$ double $>$ \& {\em covariance}, \/  const double \& {\em degree\_\-of\_\-freedom}, \/  const bool \& {\em automatic\_\-scaling} = {\ttfamily true})}}
+\label{classeos_1_1proposal__functions_1_1MultivariateStudentT_a491d401a59792405c093865094f23810}
+\hypertarget{classeos_1_1proposal__functions_1_1MultivariateStudentT_acc497f43328165a02524291ed7383a89}{
+\index{eos::proposal\_\-functions::MultivariateStudentT@{eos::proposal\_\-functions::MultivariateStudentT}!$\sim$MultivariateStudentT@{$\sim$MultivariateStudentT}}
+\index{$\sim$MultivariateStudentT@{$\sim$MultivariateStudentT}!eos::proposal_functions::MultivariateStudentT@{eos::proposal\_\-functions::MultivariateStudentT}}
+\subsubsection[{$\sim$MultivariateStudentT}]{\setlength{\rightskip}{0pt plus 5cm}virtual eos::proposal\_\-functions::MultivariateStudentT::$\sim$MultivariateStudentT ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classeos_1_1proposal__functions_1_1MultivariateStudentT_acc497f43328165a02524291ed7383a89}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classeos_1_1proposal__functions_1_1MultivariateStudentT_aa44fa5958d242f5aae93c0dfa4cb8d84}{
+\index{eos::proposal\_\-functions::MultivariateStudentT@{eos::proposal\_\-functions::MultivariateStudentT}!\_\-compute\_\-norm@{\_\-compute\_\-norm}}
+\index{\_\-compute\_\-norm@{\_\-compute\_\-norm}!eos::proposal_functions::MultivariateStudentT@{eos::proposal\_\-functions::MultivariateStudentT}}
+\subsubsection[{\_\-compute\_\-norm}]{\setlength{\rightskip}{0pt plus 5cm}virtual void eos::proposal\_\-functions::MultivariateStudentT::\_\-compute\_\-norm ()\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}
+\label{classeos_1_1proposal__functions_1_1MultivariateStudentT_aa44fa5958d242f5aae93c0dfa4cb8d84}
+
+
+Implements \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a284a17764a486687d3d1f2aee1a3bf3c}{eos::proposal\_\-functions::Multivariate}.\hypertarget{classeos_1_1proposal__functions_1_1MultivariateStudentT_a4f5007a73e656d9ff0476a4b5740018b}{
+\index{eos::proposal\_\-functions::MultivariateStudentT@{eos::proposal\_\-functions::MultivariateStudentT}!clone@{clone}}
+\index{clone@{clone}!eos::proposal_functions::MultivariateStudentT@{eos::proposal\_\-functions::MultivariateStudentT}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf ProposalFunctionPtr} eos::proposal\_\-functions::MultivariateStudentT::clone () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classeos_1_1proposal__functions_1_1MultivariateStudentT_a4f5007a73e656d9ff0476a4b5740018b}
+
+
+Create independent copy. 
+
+Implements \hyperlink{structeos_1_1MarkovChain_1_1ProposalFunction_a7065079985f8bb44309d7773d85d225b}{eos::MarkovChain::ProposalFunction}.\hypertarget{classeos_1_1proposal__functions_1_1MultivariateStudentT_ab6afe975a0e1a553b785be0fd4daec05}{
+\index{eos::proposal\_\-functions::MultivariateStudentT@{eos::proposal\_\-functions::MultivariateStudentT}!dump\_\-state@{dump\_\-state}}
+\index{dump\_\-state@{dump\_\-state}!eos::proposal_functions::MultivariateStudentT@{eos::proposal\_\-functions::MultivariateStudentT}}
+\subsubsection[{dump\_\-state}]{\setlength{\rightskip}{0pt plus 5cm}virtual void eos::proposal\_\-functions::MultivariateStudentT::dump\_\-state ({\bf hdf5::File} \& {\em file}, \/  const std::string \& {\em data\_\-set\_\-base\_\-name}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classeos_1_1proposal__functions_1_1MultivariateStudentT_ab6afe975a0e1a553b785be0fd4daec05}
+
+
+Store state in the file under the given base name. 
+
+Implements \hyperlink{structeos_1_1MarkovChain_1_1ProposalFunction_aea88a1340e10cc6a5b03d8b5483774f7}{eos::MarkovChain::ProposalFunction}.\hypertarget{classeos_1_1proposal__functions_1_1MultivariateStudentT_a9ca45b3dad5b0e6612ba27f7fb4e1973}{
+\index{eos::proposal\_\-functions::MultivariateStudentT@{eos::proposal\_\-functions::MultivariateStudentT}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!eos::proposal_functions::MultivariateStudentT@{eos::proposal\_\-functions::MultivariateStudentT}}
+\subsubsection[{evaluate}]{\setlength{\rightskip}{0pt plus 5cm}virtual double eos::proposal\_\-functions::MultivariateStudentT::evaluate (const {\bf MarkovChain::State} \& {\em x}, \/  const {\bf MarkovChain::State} \& {\em y}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classeos_1_1proposal__functions_1_1MultivariateStudentT_a9ca45b3dad5b0e6612ba27f7fb4e1973}
+
+
+Evaluate the density to propose x given y. 
+
+Implements \hyperlink{structeos_1_1MarkovChain_1_1ProposalFunction_ae3f2c43980ec9dfe9f35d8139f2f4ec7}{eos::MarkovChain::ProposalFunction}.\hypertarget{classeos_1_1proposal__functions_1_1MultivariateStudentT_ad7c59db9bc93f0fb4b3204b8f272ba6c}{
+\index{eos::proposal\_\-functions::MultivariateStudentT@{eos::proposal\_\-functions::MultivariateStudentT}!propose@{propose}}
+\index{propose@{propose}!eos::proposal_functions::MultivariateStudentT@{eos::proposal\_\-functions::MultivariateStudentT}}
+\subsubsection[{propose}]{\setlength{\rightskip}{0pt plus 5cm}virtual void eos::proposal\_\-functions::MultivariateStudentT::propose ({\bf MarkovChain::State} \& {\em x}, \/  const {\bf MarkovChain::State} \& {\em y}, \/  gsl\_\-rng $\ast$ {\em rng}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classeos_1_1proposal__functions_1_1MultivariateStudentT_ad7c59db9bc93f0fb4b3204b8f272ba6c}
+
+
+Obtain from the density a proposal x given y. 
+
+Implements \hyperlink{structeos_1_1MarkovChain_1_1ProposalFunction_a2b296008d32b1cd008e59cde1228705f}{eos::MarkovChain::ProposalFunction}.\hypertarget{classeos_1_1proposal__functions_1_1MultivariateStudentT_a32ceb99e081791885f277e033c809c83}{
+\index{eos::proposal\_\-functions::MultivariateStudentT@{eos::proposal\_\-functions::MultivariateStudentT}!scalars\_\-type@{scalars\_\-type}}
+\index{scalars\_\-type@{scalars\_\-type}!eos::proposal_functions::MultivariateStudentT@{eos::proposal\_\-functions::MultivariateStudentT}}
+\subsubsection[{scalars\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf ScalarsType} eos::proposal\_\-functions::MultivariateStudentT::scalars\_\-type ()\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1proposal__functions_1_1MultivariateStudentT_a32ceb99e081791885f277e033c809c83}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classeos_1_1proposal__functions_1_1MultivariateStudentT_addd13294ed7e93125f090a8c9250ea99}{
+\index{eos::proposal\_\-functions::MultivariateStudentT@{eos::proposal\_\-functions::MultivariateStudentT}!dof@{dof}}
+\index{dof@{dof}!eos::proposal_functions::MultivariateStudentT@{eos::proposal\_\-functions::MultivariateStudentT}}
+\subsubsection[{dof}]{\setlength{\rightskip}{0pt plus 5cm}{\bf VerifiedRange}$<$double$>$ {\bf eos::proposal\_\-functions::MultivariateStudentT::dof}}}
+\label{classeos_1_1proposal__functions_1_1MultivariateStudentT_addd13294ed7e93125f090a8c9250ea99}
+Degree of freedom. Required to be $>$= 1. 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{proposal__functions_8hh}{proposal\_\-functions.hh}\end{DoxyCompactItemize}

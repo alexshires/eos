@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1btovll_1_1Amplitudes" kind="struct" prot="public">
+    <compoundname>eos::btovll::Amplitudes</compoundname>
+    <includes refid="exclusive-b-to-s-dilepton_8hh" local="no">exclusive-b-to-s-dilepton.hh</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structeos_1_1btovll_1_1Amplitudes_1a6b459929fb4284d7e947b837390dc07a" prot="public" static="no" mutable="no">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::btovll::Amplitudes::a_long_right</definition>
+        <argsstring></argsstring>
+        <name>a_long_right</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" line="33" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1btovll_1_1Amplitudes_1a445006044e0547c19cece86890159ce7" prot="public" static="no" mutable="no">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::btovll::Amplitudes::a_long_left</definition>
+        <argsstring></argsstring>
+        <name>a_long_left</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" line="33" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1btovll_1_1Amplitudes_1a0eb4cfaf2543cea66fa1307abb5737a0" prot="public" static="no" mutable="no">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::btovll::Amplitudes::a_perp_right</definition>
+        <argsstring></argsstring>
+        <name>a_perp_right</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" line="34" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1btovll_1_1Amplitudes_1a808710a7d0ed790976d1a5c9b960f6e5" prot="public" static="no" mutable="no">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::btovll::Amplitudes::a_perp_left</definition>
+        <argsstring></argsstring>
+        <name>a_perp_left</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" line="34" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1btovll_1_1Amplitudes_1aefccd00f09f49f4c3ae585d232786cfc" prot="public" static="no" mutable="no">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::btovll::Amplitudes::a_par_right</definition>
+        <argsstring></argsstring>
+        <name>a_par_right</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" line="35" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1btovll_1_1Amplitudes_1a734ff0455a740eeb8d481c0b09c15b7b" prot="public" static="no" mutable="no">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::btovll::Amplitudes::a_par_left</definition>
+        <argsstring></argsstring>
+        <name>a_par_left</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" line="35" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1btovll_1_1Amplitudes_1aba7c6fa6629f6bac6651bd74cdc884fb" prot="public" static="no" mutable="no">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::btovll::Amplitudes::a_timelike</definition>
+        <argsstring></argsstring>
+        <name>a_timelike</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" line="36" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="35">
+        <label>std::complex&lt; double &gt;</label>
+      </node>
+      <node id="34">
+        <label>eos::btovll::Amplitudes</label>
+        <link refid="structeos_1_1btovll_1_1Amplitudes"/>
+        <childnode refid="35" relation="usage">
+          <edgelabel>a_perp_left</edgelabel>
+          <edgelabel>a_par_left</edgelabel>
+          <edgelabel>a_par_right</edgelabel>
+          <edgelabel>a_perp_right</edgelabel>
+          <edgelabel>a_long_left</edgelabel>
+          <edgelabel>a_timelike</edgelabel>
+          <edgelabel>a_long_right</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" line="32" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" bodystart="31" bodyend="37"/>
+    <listofallmembers>
+      <member refid="structeos_1_1btovll_1_1Amplitudes_1a445006044e0547c19cece86890159ce7" prot="public" virt="non-virtual"><scope>eos::btovll::Amplitudes</scope><name>a_long_left</name></member>
+      <member refid="structeos_1_1btovll_1_1Amplitudes_1a6b459929fb4284d7e947b837390dc07a" prot="public" virt="non-virtual"><scope>eos::btovll::Amplitudes</scope><name>a_long_right</name></member>
+      <member refid="structeos_1_1btovll_1_1Amplitudes_1a734ff0455a740eeb8d481c0b09c15b7b" prot="public" virt="non-virtual"><scope>eos::btovll::Amplitudes</scope><name>a_par_left</name></member>
+      <member refid="structeos_1_1btovll_1_1Amplitudes_1aefccd00f09f49f4c3ae585d232786cfc" prot="public" virt="non-virtual"><scope>eos::btovll::Amplitudes</scope><name>a_par_right</name></member>
+      <member refid="structeos_1_1btovll_1_1Amplitudes_1a808710a7d0ed790976d1a5c9b960f6e5" prot="public" virt="non-virtual"><scope>eos::btovll::Amplitudes</scope><name>a_perp_left</name></member>
+      <member refid="structeos_1_1btovll_1_1Amplitudes_1a0eb4cfaf2543cea66fa1307abb5737a0" prot="public" virt="non-virtual"><scope>eos::btovll::Amplitudes</scope><name>a_perp_right</name></member>
+      <member refid="structeos_1_1btovll_1_1Amplitudes_1aba7c6fa6629f6bac6651bd74cdc884fb" prot="public" virt="non-virtual"><scope>eos::btovll::Amplitudes</scope><name>a_timelike</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

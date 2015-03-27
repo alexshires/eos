@@ -1,0 +1,59 @@
+\hypertarget{mutex_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/mutex.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2007, 2008 Danny van Dyk <danny.dyk@uni-dortmund.de>}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * Based upon 'mutex.hh' from Paludis, which is:}
+00007 \textcolor{comment}{ *     Copyright (c) 2007 Ciaran McCreesh}
+00008 \textcolor{comment}{ *}
+00009 \textcolor{comment}{ * This file is part of the EOS program. EOS is free software;}
+00010 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00011 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00012 \textcolor{comment}{ *}
+00013 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00014 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00015 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00016 \textcolor{comment}{ * details.}
+00017 \textcolor{comment}{ *}
+00018 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00019 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00020 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00021 \textcolor{comment}{ */}
+00022 
+00023 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_MUTEX\_HH}
+\hypertarget{mutex_8hh_source_l00024}{}\hyperlink{mutex_8hh_a79f0d7f86442f8f490dec37851f8a27e}{00024} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_MUTEX\_HH 1}
+00025 \textcolor{preprocessor}{}
+00026 \textcolor{preprocessor}{#include <\hyperlink{instantiation__policy_8hh}{eos/utils/instantiation_policy.hh}>}
+00027 
+00028 \textcolor{preprocessor}{#include <pthread.h>}
+00029 
+00030 \textcolor{keyword}{namespace }eos
+00031 \{
+\hypertarget{mutex_8hh_source_l00032}{}\hyperlink{classeos_1_1Mutex}{00032}     \textcolor{keyword}{class }\hyperlink{classeos_1_1Mutex}{Mutex} :
+00033         \textcolor{keyword}{public} InstantiationPolicy<Mutex, NonCopyable>
+00034     \{
+00035         \textcolor{keyword}{private}:
+00037             pthread\_mutexattr\_t * \textcolor{keyword}{const} \_attr;
+00038 
+00040             pthread\_mutex\_t * \textcolor{keyword}{const} \_mutex;
+00041 
+00042         \textcolor{keyword}{public}:
+00044             \textcolor{keyword}{explicit} \hyperlink{classeos_1_1Mutex_a3d07ba9ee73a295bc98250bd33825375}{Mutex}();
+00045 
+00047             \hyperlink{classeos_1_1Mutex_ab721ec095c12b464fd178bb2fc80496a}{~Mutex}();
+00048 
+\hypertarget{mutex_8hh_source_l00050}{}\hyperlink{classeos_1_1Mutex_a7f5648012d5eb8577a0e4c1b62a0ea38}{00050}             pthread\_mutex\_t * \hyperlink{classeos_1_1Mutex_a7f5648012d5eb8577a0e4c1b62a0ea38}{mutex}()
+00051             \{
+00052                 \textcolor{keywordflow}{return} \_mutex;
+00053             \}
+00054     \};
+00055 \}
+00056 
+00057 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

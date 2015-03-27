@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1ThreadPool" kind="class" prot="public">
+    <compoundname>eos::ThreadPool</compoundname>
+    <basecompoundref refid="classeos_1_1PrivateImplementationPattern" prot="public" virt="non-virtual">eos::PrivateImplementationPattern&lt; ThreadPool &gt;</basecompoundref>
+    <includes refid="thread__pool_8hh" local="no">thread_pool.hh</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1ThreadPool_1a0ecd93cf3757d0e087023d42ee30d984" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::ThreadPool::ThreadPool</definition>
+        <argsstring>()</argsstring>
+        <name>ThreadPool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/thread_pool.hh" line="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ThreadPool_1af8929a7e28f8e3d7539a10c026c2588d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::ThreadPool::~ThreadPool</definition>
+        <argsstring>()</argsstring>
+        <name>~ThreadPool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/thread_pool.hh" line="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ThreadPool_1aa53eba2596379e9a258930324817a0df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1Ticket" kindref="compound">Ticket</ref></type>
+        <definition>Ticket eos::ThreadPool::enqueue</definition>
+        <argsstring>(const std::function&lt; void(void)&gt; &amp;work)</argsstring>
+        <name>enqueue</name>
+        <param>
+          <type>const std::function&lt; void(void)&gt; &amp;</type>
+          <declname>work</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/thread_pool.hh" line="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ThreadPool_1ae5dee2f59b31e15db165313a32c89885" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::ThreadPool::wait_for_free_capacity</definition>
+        <argsstring>()</argsstring>
+        <name>wait_for_free_capacity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/thread_pool.hh" line="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ThreadPool_1ad077ff091504b8e6d73fca55ef41baae" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned eos::ThreadPool::number_of_threads</definition>
+        <argsstring>() const </argsstring>
+        <name>number_of_threads</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/thread_pool.hh" line="46"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classeos_1_1ThreadPool_1afcdf38abab1caae94bc6e90b5b5d69bf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1ThreadPool" kindref="compound">ThreadPool</ref> *</type>
+        <definition>static ThreadPool* eos::ThreadPool::instance</definition>
+        <argsstring>()</argsstring>
+        <name>instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/thread_pool.hh" line="42"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="982">
+        <label>eos::PrivateImplementationPattern&lt; ThreadPool &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="981">
+        <label>eos::ThreadPool</label>
+        <link refid="classeos_1_1ThreadPool"/>
+        <childnode refid="982" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="984">
+        <label>eos::PrivateImplementationPattern&lt; ThreadPool &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="983">
+        <label>eos::ThreadPool</label>
+        <link refid="classeos_1_1ThreadPool"/>
+        <childnode refid="984" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/thread_pool.hh" line="34" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/thread_pool.hh" bodystart="31" bodyend="47"/>
+    <listofallmembers>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a232940e78b26c6ed4f97196f831c69c9" prot="protected" virt="non-virtual"><scope>eos::ThreadPool</scope><name>_imp</name></member>
+      <member refid="classeos_1_1ThreadPool_1aa53eba2596379e9a258930324817a0df" prot="public" virt="non-virtual"><scope>eos::ThreadPool</scope><name>enqueue</name></member>
+      <member refid="classeos_1_1ThreadPool_1afcdf38abab1caae94bc6e90b5b5d69bf" prot="public" virt="non-virtual"><scope>eos::ThreadPool</scope><name>instance</name></member>
+      <member refid="classeos_1_1ThreadPool_1ad077ff091504b8e6d73fca55ef41baae" prot="public" virt="non-virtual"><scope>eos::ThreadPool</scope><name>number_of_threads</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a3e3d5f4a565256a1dda6c234b051b2f2" prot="public" virt="non-virtual"><scope>eos::ThreadPool</scope><name>PrivateImplementationPattern</name></member>
+      <member refid="classeos_1_1ThreadPool_1a0ecd93cf3757d0e087023d42ee30d984" prot="public" virt="non-virtual"><scope>eos::ThreadPool</scope><name>ThreadPool</name></member>
+      <member refid="classeos_1_1ThreadPool_1ae5dee2f59b31e15db165313a32c89885" prot="public" virt="non-virtual"><scope>eos::ThreadPool</scope><name>wait_for_free_capacity</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1acf46ec2739c3b0ec9702b9428475876d" prot="public" virt="non-virtual"><scope>eos::ThreadPool</scope><name>~PrivateImplementationPattern</name></member>
+      <member refid="classeos_1_1ThreadPool_1af8929a7e28f8e3d7539a10c026c2588d" prot="public" virt="non-virtual"><scope>eos::ThreadPool</scope><name>~ThreadPool</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

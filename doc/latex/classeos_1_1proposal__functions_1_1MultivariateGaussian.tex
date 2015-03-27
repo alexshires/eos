@@ -1,0 +1,115 @@
+\hypertarget{classeos_1_1proposal__functions_1_1MultivariateGaussian}{
+\section{eos::proposal\_\-functions::MultivariateGaussian Class Reference}
+\label{classeos_1_1proposal__functions_1_1MultivariateGaussian}\index{eos::proposal\_\-functions::MultivariateGaussian@{eos::proposal\_\-functions::MultivariateGaussian}}
+}
+
+
+{\ttfamily \#include $<$proposal\_\-functions.hh$>$}
+
+Inherits \hyperlink{classeos_1_1proposal__functions_1_1Multivariate}{eos::proposal\_\-functions::Multivariate}.\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classeos_1_1hdf5_1_1Composite}{hdf5::Composite}$<$ \hyperlink{classeos_1_1hdf5_1_1Scalar}{hdf5::Scalar}$<$ double $>$, \hyperlink{classeos_1_1hdf5_1_1Scalar}{hdf5::Scalar}$<$ double $>$, \hyperlink{classeos_1_1hdf5_1_1Scalar}{hdf5::Scalar}$<$ unsigned $>$ $>$ \hyperlink{classeos_1_1proposal__functions_1_1MultivariateGaussian_a434c13230be16d8d1f658f277a5b6c28}{ScalarsType}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1proposal__functions_1_1MultivariateGaussian_a9052192755db179db5e204c2bb0ad3f3}{MultivariateGaussian} (const unsigned \&dimension, const std::vector$<$ double $>$ \&covariance, const bool \&automatic\_\-scaling=true)
+\item 
+virtual \hyperlink{classeos_1_1proposal__functions_1_1MultivariateGaussian_a18dde9d78f6ec8a459443396648ee990}{$\sim$MultivariateGaussian} ()
+\item 
+virtual \hyperlink{namespaceeos_ae97f9891c67c90959a03fc96efaa4dc9}{ProposalFunctionPtr} \hyperlink{classeos_1_1proposal__functions_1_1MultivariateGaussian_abc989d0f246afe160eb1d4a0f1b4a03e}{clone} () const 
+\begin{DoxyCompactList}\small\item\em Create independent copy. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classeos_1_1proposal__functions_1_1MultivariateGaussian_a5ab69304a64a9a947c847b8bc842417f}{dump\_\-state} (\hyperlink{classeos_1_1hdf5_1_1File}{hdf5::File} \&file, const std::string \&data\_\-set\_\-base\_\-name) const 
+\begin{DoxyCompactList}\small\item\em Store state in the file under the given base name. \item\end{DoxyCompactList}\item 
+virtual double \hyperlink{classeos_1_1proposal__functions_1_1MultivariateGaussian_a691b0b536abdd28e3cc629c27046603d}{evaluate} (const \hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} \&x, const \hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} \&y) const 
+\begin{DoxyCompactList}\small\item\em Evaluate the density to propose x given y. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classeos_1_1proposal__functions_1_1MultivariateGaussian_a4f451b8dc78b681eee4bda462217fb77}{propose} (\hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} \&x, const \hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} \&y, gsl\_\-rng $\ast$rng) const 
+\begin{DoxyCompactList}\small\item\em Obtain from the density a proposal x given y. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classeos_1_1hdf5_1_1Composite}{ScalarsType} \hyperlink{classeos_1_1proposal__functions_1_1MultivariateGaussian_aca175ee100311315c4ddb34757b68a3e}{scalars\_\-type} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classeos_1_1proposal__functions_1_1MultivariateGaussian_ac797f04a7bce3b029cfc32af0d6ecd07}{\_\-compute\_\-norm} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classeos_1_1proposal__functions_1_1MultivariateGaussian_a434c13230be16d8d1f658f277a5b6c28}{
+\index{eos::proposal\_\-functions::MultivariateGaussian@{eos::proposal\_\-functions::MultivariateGaussian}!ScalarsType@{ScalarsType}}
+\index{ScalarsType@{ScalarsType}!eos::proposal_functions::MultivariateGaussian@{eos::proposal\_\-functions::MultivariateGaussian}}
+\subsubsection[{ScalarsType}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf hdf5::Composite}$<${\bf hdf5::Scalar}$<$double$>$, {\bf hdf5::Scalar}$<$double$>$, {\bf hdf5::Scalar}$<$unsigned$>$ $>$ {\bf eos::proposal\_\-functions::MultivariateGaussian::ScalarsType}}}
+\label{classeos_1_1proposal__functions_1_1MultivariateGaussian_a434c13230be16d8d1f658f277a5b6c28}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classeos_1_1proposal__functions_1_1MultivariateGaussian_a9052192755db179db5e204c2bb0ad3f3}{
+\index{eos::proposal\_\-functions::MultivariateGaussian@{eos::proposal\_\-functions::MultivariateGaussian}!MultivariateGaussian@{MultivariateGaussian}}
+\index{MultivariateGaussian@{MultivariateGaussian}!eos::proposal_functions::MultivariateGaussian@{eos::proposal\_\-functions::MultivariateGaussian}}
+\subsubsection[{MultivariateGaussian}]{\setlength{\rightskip}{0pt plus 5cm}eos::proposal\_\-functions::MultivariateGaussian::MultivariateGaussian (const unsigned \& {\em dimension}, \/  const std::vector$<$ double $>$ \& {\em covariance}, \/  const bool \& {\em automatic\_\-scaling} = {\ttfamily true})}}
+\label{classeos_1_1proposal__functions_1_1MultivariateGaussian_a9052192755db179db5e204c2bb0ad3f3}
+\hypertarget{classeos_1_1proposal__functions_1_1MultivariateGaussian_a18dde9d78f6ec8a459443396648ee990}{
+\index{eos::proposal\_\-functions::MultivariateGaussian@{eos::proposal\_\-functions::MultivariateGaussian}!$\sim$MultivariateGaussian@{$\sim$MultivariateGaussian}}
+\index{$\sim$MultivariateGaussian@{$\sim$MultivariateGaussian}!eos::proposal_functions::MultivariateGaussian@{eos::proposal\_\-functions::MultivariateGaussian}}
+\subsubsection[{$\sim$MultivariateGaussian}]{\setlength{\rightskip}{0pt plus 5cm}virtual eos::proposal\_\-functions::MultivariateGaussian::$\sim$MultivariateGaussian ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classeos_1_1proposal__functions_1_1MultivariateGaussian_a18dde9d78f6ec8a459443396648ee990}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classeos_1_1proposal__functions_1_1MultivariateGaussian_ac797f04a7bce3b029cfc32af0d6ecd07}{
+\index{eos::proposal\_\-functions::MultivariateGaussian@{eos::proposal\_\-functions::MultivariateGaussian}!\_\-compute\_\-norm@{\_\-compute\_\-norm}}
+\index{\_\-compute\_\-norm@{\_\-compute\_\-norm}!eos::proposal_functions::MultivariateGaussian@{eos::proposal\_\-functions::MultivariateGaussian}}
+\subsubsection[{\_\-compute\_\-norm}]{\setlength{\rightskip}{0pt plus 5cm}virtual void eos::proposal\_\-functions::MultivariateGaussian::\_\-compute\_\-norm ()\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}
+\label{classeos_1_1proposal__functions_1_1MultivariateGaussian_ac797f04a7bce3b029cfc32af0d6ecd07}
+
+
+Implements \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a284a17764a486687d3d1f2aee1a3bf3c}{eos::proposal\_\-functions::Multivariate}.\hypertarget{classeos_1_1proposal__functions_1_1MultivariateGaussian_abc989d0f246afe160eb1d4a0f1b4a03e}{
+\index{eos::proposal\_\-functions::MultivariateGaussian@{eos::proposal\_\-functions::MultivariateGaussian}!clone@{clone}}
+\index{clone@{clone}!eos::proposal_functions::MultivariateGaussian@{eos::proposal\_\-functions::MultivariateGaussian}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf ProposalFunctionPtr} eos::proposal\_\-functions::MultivariateGaussian::clone () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classeos_1_1proposal__functions_1_1MultivariateGaussian_abc989d0f246afe160eb1d4a0f1b4a03e}
+
+
+Create independent copy. 
+
+Implements \hyperlink{structeos_1_1MarkovChain_1_1ProposalFunction_a7065079985f8bb44309d7773d85d225b}{eos::MarkovChain::ProposalFunction}.\hypertarget{classeos_1_1proposal__functions_1_1MultivariateGaussian_a5ab69304a64a9a947c847b8bc842417f}{
+\index{eos::proposal\_\-functions::MultivariateGaussian@{eos::proposal\_\-functions::MultivariateGaussian}!dump\_\-state@{dump\_\-state}}
+\index{dump\_\-state@{dump\_\-state}!eos::proposal_functions::MultivariateGaussian@{eos::proposal\_\-functions::MultivariateGaussian}}
+\subsubsection[{dump\_\-state}]{\setlength{\rightskip}{0pt plus 5cm}virtual void eos::proposal\_\-functions::MultivariateGaussian::dump\_\-state ({\bf hdf5::File} \& {\em file}, \/  const std::string \& {\em data\_\-set\_\-base\_\-name}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classeos_1_1proposal__functions_1_1MultivariateGaussian_a5ab69304a64a9a947c847b8bc842417f}
+
+
+Store state in the file under the given base name. 
+
+Implements \hyperlink{structeos_1_1MarkovChain_1_1ProposalFunction_aea88a1340e10cc6a5b03d8b5483774f7}{eos::MarkovChain::ProposalFunction}.\hypertarget{classeos_1_1proposal__functions_1_1MultivariateGaussian_a691b0b536abdd28e3cc629c27046603d}{
+\index{eos::proposal\_\-functions::MultivariateGaussian@{eos::proposal\_\-functions::MultivariateGaussian}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!eos::proposal_functions::MultivariateGaussian@{eos::proposal\_\-functions::MultivariateGaussian}}
+\subsubsection[{evaluate}]{\setlength{\rightskip}{0pt plus 5cm}virtual double eos::proposal\_\-functions::MultivariateGaussian::evaluate (const {\bf MarkovChain::State} \& {\em x}, \/  const {\bf MarkovChain::State} \& {\em y}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classeos_1_1proposal__functions_1_1MultivariateGaussian_a691b0b536abdd28e3cc629c27046603d}
+
+
+Evaluate the density to propose x given y. 
+
+Implements \hyperlink{structeos_1_1MarkovChain_1_1ProposalFunction_ae3f2c43980ec9dfe9f35d8139f2f4ec7}{eos::MarkovChain::ProposalFunction}.\hypertarget{classeos_1_1proposal__functions_1_1MultivariateGaussian_a4f451b8dc78b681eee4bda462217fb77}{
+\index{eos::proposal\_\-functions::MultivariateGaussian@{eos::proposal\_\-functions::MultivariateGaussian}!propose@{propose}}
+\index{propose@{propose}!eos::proposal_functions::MultivariateGaussian@{eos::proposal\_\-functions::MultivariateGaussian}}
+\subsubsection[{propose}]{\setlength{\rightskip}{0pt plus 5cm}virtual void eos::proposal\_\-functions::MultivariateGaussian::propose ({\bf MarkovChain::State} \& {\em x}, \/  const {\bf MarkovChain::State} \& {\em y}, \/  gsl\_\-rng $\ast$ {\em rng}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classeos_1_1proposal__functions_1_1MultivariateGaussian_a4f451b8dc78b681eee4bda462217fb77}
+
+
+Obtain from the density a proposal x given y. 
+
+Implements \hyperlink{structeos_1_1MarkovChain_1_1ProposalFunction_a2b296008d32b1cd008e59cde1228705f}{eos::MarkovChain::ProposalFunction}.\hypertarget{classeos_1_1proposal__functions_1_1MultivariateGaussian_aca175ee100311315c4ddb34757b68a3e}{
+\index{eos::proposal\_\-functions::MultivariateGaussian@{eos::proposal\_\-functions::MultivariateGaussian}!scalars\_\-type@{scalars\_\-type}}
+\index{scalars\_\-type@{scalars\_\-type}!eos::proposal_functions::MultivariateGaussian@{eos::proposal\_\-functions::MultivariateGaussian}}
+\subsubsection[{scalars\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf ScalarsType} eos::proposal\_\-functions::MultivariateGaussian::scalars\_\-type ()\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1proposal__functions_1_1MultivariateGaussian_aca175ee100311315c4ddb34757b68a3e}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{proposal__functions_8hh}{proposal\_\-functions.hh}\end{DoxyCompactItemize}

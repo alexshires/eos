@@ -1,0 +1,87 @@
+\hypertarget{namespaceeos_1_1proposal__functions}{
+\section{eos::proposal\_\-functions Namespace Reference}
+\label{namespaceeos_1_1proposal__functions}\index{eos::proposal\_\-functions@{eos::proposal\_\-functions}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structeos_1_1proposal__functions_1_1UnknownProposalError}{UnknownProposalError}
+\item 
+struct \hyperlink{structeos_1_1proposal__functions_1_1Factory}{Factory}
+\begin{DoxyCompactList}\small\item\em Abstract factory to read in a proposal density from file. \item\end{DoxyCompactList}\item 
+class \hyperlink{classeos_1_1proposal__functions_1_1AdjacencyMatrix}{AdjacencyMatrix}
+\item 
+class \hyperlink{classeos_1_1proposal__functions_1_1GlobalLocal}{GlobalLocal}
+\item 
+class \hyperlink{classeos_1_1proposal__functions_1_1Multivariate}{Multivariate}
+\item 
+class \hyperlink{classeos_1_1proposal__functions_1_1MultivariateGaussian}{MultivariateGaussian}
+\item 
+class \hyperlink{classeos_1_1proposal__functions_1_1MultivariateStudentT}{MultivariateStudentT}
+\item 
+struct \hyperlink{structeos_1_1proposal__functions_1_1MultivariateAccess}{MultivariateAccess}
+\item 
+class \hyperlink{classeos_1_1proposal__functions_1_1BlockDecomposition}{BlockDecomposition}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classeos_1_1hdf5_1_1Composite}{hdf5::Composite}$<$ \hyperlink{classeos_1_1hdf5_1_1Scalar}{hdf5::Scalar}$<$ const char $\ast$ $>$, \hyperlink{classeos_1_1hdf5_1_1Scalar}{hdf5::Scalar}$<$ unsigned $>$ $>$ \hyperlink{namespaceeos_1_1proposal__functions_ad45af5ebbbdc545b033b153cafe7e360}{MetaType}
+\item 
+typedef std::tuple$<$ const char $\ast$, unsigned $>$ \hyperlink{namespaceeos_1_1proposal__functions_a7b9711fcd1f76e034c72073e2d5d7f15}{MetaRecord}
+\item 
+typedef std::shared\_\-ptr$<$ \hyperlink{classeos_1_1proposal__functions_1_1Multivariate}{Multivariate} $>$ \hyperlink{namespaceeos_1_1proposal__functions_a6cffa18d523cd6955629beabbe07c17c}{MultivariateProposalPtr}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \hyperlink{namespaceeos_1_1proposal__functions_a55ba4d78e5beeb12699c697874f7c1df}{random\_\-index} (const std::vector$<$ double $>$ \&cumulative, gsl\_\-rng $\ast$rng)
+\item 
+void \hyperlink{namespaceeos_1_1proposal__functions_a3714de403c64ba76dcdb901f138f48de}{sliding\_\-window} (const unsigned \&K, const unsigned \&size, const unsigned \&j, unsigned \&j\_\-min, unsigned \&j\_\-max)
+\item 
+\hyperlink{classeos_1_1hdf5_1_1Composite}{MetaType} \hyperlink{namespaceeos_1_1proposal__functions_ac169711c02c184c64ba3a406bd18598b}{meta\_\-type} ()
+\item 
+\hyperlink{namespaceeos_1_1proposal__functions_a7b9711fcd1f76e034c72073e2d5d7f15}{MetaRecord} \hyperlink{namespaceeos_1_1proposal__functions_aa2f7d6804a251f162c263056d0e660e0}{meta\_\-record} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{namespaceeos_1_1proposal__functions_a7b9711fcd1f76e034c72073e2d5d7f15}{
+\index{eos::proposal\_\-functions@{eos::proposal\_\-functions}!MetaRecord@{MetaRecord}}
+\index{MetaRecord@{MetaRecord}!eos::proposal_functions@{eos::proposal\_\-functions}}
+\subsubsection[{MetaRecord}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::tuple$<$const char $\ast$, unsigned$>$ {\bf eos::proposal\_\-functions::MetaRecord}}}
+\label{namespaceeos_1_1proposal__functions_a7b9711fcd1f76e034c72073e2d5d7f15}
+\hypertarget{namespaceeos_1_1proposal__functions_ad45af5ebbbdc545b033b153cafe7e360}{
+\index{eos::proposal\_\-functions@{eos::proposal\_\-functions}!MetaType@{MetaType}}
+\index{MetaType@{MetaType}!eos::proposal_functions@{eos::proposal\_\-functions}}
+\subsubsection[{MetaType}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf hdf5::Composite}$<${\bf hdf5::Scalar}$<$const char $\ast$$>$, {\bf hdf5::Scalar}$<$unsigned$>$ $>$ {\bf eos::proposal\_\-functions::MetaType}}}
+\label{namespaceeos_1_1proposal__functions_ad45af5ebbbdc545b033b153cafe7e360}
+This data type descriptor is needed to identify the proposal function type \hypertarget{namespaceeos_1_1proposal__functions_a6cffa18d523cd6955629beabbe07c17c}{
+\index{eos::proposal\_\-functions@{eos::proposal\_\-functions}!MultivariateProposalPtr@{MultivariateProposalPtr}}
+\index{MultivariateProposalPtr@{MultivariateProposalPtr}!eos::proposal_functions@{eos::proposal\_\-functions}}
+\subsubsection[{MultivariateProposalPtr}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::shared\_\-ptr$<${\bf Multivariate}$>$ {\bf eos::proposal\_\-functions::MultivariateProposalPtr}}}
+\label{namespaceeos_1_1proposal__functions_a6cffa18d523cd6955629beabbe07c17c}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespaceeos_1_1proposal__functions_aa2f7d6804a251f162c263056d0e660e0}{
+\index{eos::proposal\_\-functions@{eos::proposal\_\-functions}!meta\_\-record@{meta\_\-record}}
+\index{meta\_\-record@{meta\_\-record}!eos::proposal_functions@{eos::proposal\_\-functions}}
+\subsubsection[{meta\_\-record}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MetaRecord} eos::proposal\_\-functions::meta\_\-record ()}}
+\label{namespaceeos_1_1proposal__functions_aa2f7d6804a251f162c263056d0e660e0}
+\hypertarget{namespaceeos_1_1proposal__functions_ac169711c02c184c64ba3a406bd18598b}{
+\index{eos::proposal\_\-functions@{eos::proposal\_\-functions}!meta\_\-type@{meta\_\-type}}
+\index{meta\_\-type@{meta\_\-type}!eos::proposal_functions@{eos::proposal\_\-functions}}
+\subsubsection[{meta\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MetaType} eos::proposal\_\-functions::meta\_\-type ()}}
+\label{namespaceeos_1_1proposal__functions_ac169711c02c184c64ba3a406bd18598b}
+\hypertarget{namespaceeos_1_1proposal__functions_a55ba4d78e5beeb12699c697874f7c1df}{
+\index{eos::proposal\_\-functions@{eos::proposal\_\-functions}!random\_\-index@{random\_\-index}}
+\index{random\_\-index@{random\_\-index}!eos::proposal_functions@{eos::proposal\_\-functions}}
+\subsubsection[{random\_\-index}]{\setlength{\rightskip}{0pt plus 5cm}unsigned eos::proposal\_\-functions::random\_\-index (const std::vector$<$ double $>$ \& {\em cumulative}, \/  gsl\_\-rng $\ast$ {\em rng})}}
+\label{namespaceeos_1_1proposal__functions_a55ba4d78e5beeb12699c697874f7c1df}
+For a discrete probability distribution defined by its cumulative, draw a random state given by its index in the cumulative. \hypertarget{namespaceeos_1_1proposal__functions_a3714de403c64ba76dcdb901f138f48de}{
+\index{eos::proposal\_\-functions@{eos::proposal\_\-functions}!sliding\_\-window@{sliding\_\-window}}
+\index{sliding\_\-window@{sliding\_\-window}!eos::proposal_functions@{eos::proposal\_\-functions}}
+\subsubsection[{sliding\_\-window}]{\setlength{\rightskip}{0pt plus 5cm}void eos::proposal\_\-functions::sliding\_\-window (const unsigned \& {\em K}, \/  const unsigned \& {\em size}, \/  const unsigned \& {\em j}, \/  unsigned \& {\em j\_\-min}, \/  unsigned \& {\em j\_\-max})}}
+\label{namespaceeos_1_1proposal__functions_a3714de403c64ba76dcdb901f138f48de}
+Find the indices \mbox{[}j\_\-min, j\_\-max\mbox{[} such that they cover range of size within \mbox{[}0, K\mbox{]} around j 

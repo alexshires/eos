@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1Lock" kind="class" prot="public">
+    <compoundname>eos::Lock</compoundname>
+    <includes refid="lock_8hh" local="no">lock.hh</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classeos_1_1Lock_1a1be0d2175c1c77d00782eae272b67008" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Mutex" kindref="compound">Mutex</ref> *const</type>
+        <definition>Mutex* const eos::Lock::_mutex</definition>
+        <argsstring></argsstring>
+        <name>_mutex</name>
+        <briefdescription>
+<para>Our mutex. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/lock.hh" line="36" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/lock.hh" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1Lock_1a9d5a54ae7320ee6adc68711d7189fcd1" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::Lock::Lock</definition>
+        <argsstring>(Mutex &amp;)</argsstring>
+        <name>Lock</name>
+        <param>
+          <type><ref refid="classeos_1_1Mutex" kindref="compound">Mutex</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>(Explicit) constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/lock.hh" line="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Lock_1aa04c35d89ef9fcf1a87d40e34713ffc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::Lock::~Lock</definition>
+        <argsstring>()</argsstring>
+        <name>~Lock</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/lock.hh" line="43"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="582">
+        <label>eos::Lock</label>
+        <link refid="classeos_1_1Lock"/>
+        <childnode refid="583" relation="usage">
+          <edgelabel>_mutex</edgelabel>
+        </childnode>
+      </node>
+      <node id="583">
+        <label>eos::Mutex</label>
+        <link refid="classeos_1_1Mutex"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/lock.hh" line="33" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/lock.hh" bodystart="31" bodyend="44"/>
+    <listofallmembers>
+      <member refid="classeos_1_1Lock_1a1be0d2175c1c77d00782eae272b67008" prot="private" virt="non-virtual"><scope>eos::Lock</scope><name>_mutex</name></member>
+      <member refid="classeos_1_1Lock_1a9d5a54ae7320ee6adc68711d7189fcd1" prot="public" virt="non-virtual"><scope>eos::Lock</scope><name>Lock</name></member>
+      <member refid="classeos_1_1Lock_1aa04c35d89ef9fcf1a87d40e34713ffc7" prot="public" virt="non-virtual"><scope>eos::Lock</scope><name>~Lock</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

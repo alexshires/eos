@@ -1,0 +1,283 @@
+\hypertarget{classeos_1_1proposal__functions_1_1Multivariate}{
+\section{eos::proposal\_\-functions::Multivariate Class Reference}
+\label{classeos_1_1proposal__functions_1_1Multivariate}\index{eos::proposal\_\-functions::Multivariate@{eos::proposal\_\-functions::Multivariate}}
+}
+
+
+{\ttfamily \#include $<$proposal\_\-functions.hh$>$}
+
+Inherits \hyperlink{structeos_1_1MarkovChain_1_1ProposalFunction}{eos::MarkovChain::ProposalFunction}.
+
+Inherited by \hyperlink{classeos_1_1proposal__functions_1_1MultivariateGaussian}{eos::proposal\_\-functions::MultivariateGaussian}, and \hyperlink{classeos_1_1proposal__functions_1_1MultivariateStudentT}{eos::proposal\_\-functions::MultivariateStudentT}.\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classeos_1_1hdf5_1_1Array}{hdf5::Array}$<$ 1, double $>$ \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_ae7eae33da3e528eea02bd653e83f865a}{CovarianceType}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_aa7a6807a556a5187c77080d6b2036deb}{dimension} () const 
+\begin{DoxyCompactList}\small\item\em The dimension of the space for which samples are proposed. \item\end{DoxyCompactList}\item 
+const gsl\_\-matrix $\ast$ \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a54a59c24424caeb5e826d61d63edd95d}{covariance} () const 
+\item 
+\hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a0f3a2171c1b20ef0f4cb4588185981aa}{Multivariate} (const unsigned \&dimension, const std::vector$<$ double $>$ \&covariance, const bool \&automatic\_\-scaling)
+\item 
+virtual \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a2b216d8b68102068c721f758d562485d}{$\sim$Multivariate} ()
+\item 
+virtual void \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a03a15f539c8b7eeefb7e323d8c3cd15d}{adapt} (const \hyperlink{structeos_1_1MarkovChain_1_1State_ad7590843e4feca7e696c53863e6e10c1}{MarkovChain::State::Iterator} \&begin, const \hyperlink{structeos_1_1MarkovChain_1_1State_ad7590843e4feca7e696c53863e6e10c1}{MarkovChain::State::Iterator} \&end, const double \&efficiency, const double \&efficiency\_\-min, const double \&efficiency\_\-max)
+\item 
+virtual void \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a5f1d1b34460d12e1446dc5ff0fa714ee}{rescale} (const double \&rescale\_\-factor)
+\item 
+virtual void \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a830b00fd34f3b65922eeef04d76269e9}{reset} (const std::vector$<$ \hyperlink{namespaceeos_ac9f30fde04446cfabdd69d4b5b5d3c5a}{HistoryPtr} $>$ \&histories, const double \&scale, const double \&skip\_\-initial)
+\item 
+virtual void \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_ac143e4c3d64075a86a6aa837d187d134}{set\_\-indices} (const std::vector$<$ unsigned $>$ \&index\_\-list)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classeos_1_1hdf5_1_1Array}{CovarianceType} \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a4b7778284ee0ba2ea1ff85df8844da6e}{covariance\_\-type} (const unsigned \&dimension)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a67c47eeeefc2f0027cab513f50a402a2}{adaptations}
+\begin{DoxyCompactList}\small\item\em Record how often an adaption to data has been performed. \item\end{DoxyCompactList}\item 
+double \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_ab52678a7403bae09d3db8f2247c02e17}{covariance\_\-scale}
+\begin{DoxyCompactList}\small\item\em Rescale the sample \_\-covariance to form the proposal \_\-covariance. \item\end{DoxyCompactList}\item 
+double \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_aabab67ba765f532effe6dd8236d69cdd}{cooling\_\-power}
+\item 
+double \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a6ca72be11badd000f8d36a80c131b5d4}{norm}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const double \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_afd2de46a2288413f8e06c1f197b71ec2}{covariance\_\-scale\_\-min}
+\begin{DoxyCompactList}\small\item\em Scale enforced to exceed a minimum value. \item\end{DoxyCompactList}\item 
+static const double \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_ab974d2da4b3dfcb7278418a25b07dd51}{covariance\_\-scale\_\-max}
+\begin{DoxyCompactList}\small\item\em Scale enforced to lie below a maximum value. \item\end{DoxyCompactList}\item 
+static const double \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a69c7f79624af473004a147598d9afaa1}{covariance\_\-scale\_\-update\_\-factor}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_ad5a7764646a0c216344d96be9f01655b}{\_\-compute\_\-cholesky\_\-and\_\-inverse} ()
+\item 
+virtual void \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a284a17764a486687d3d1f2aee1a3bf3c}{\_\-compute\_\-norm} ()=0
+\item 
+void \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a33c4b4ed443dc77bb376636636f11b88}{\_\-copy} (const \hyperlink{classeos_1_1proposal__functions_1_1Multivariate}{Multivariate} \&)
+\item 
+void \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a4b45f19e0d4da4ed2c519d8a1d504fd2}{\_\-dump\_\-covariance} (\hyperlink{classeos_1_1hdf5_1_1File}{hdf5::File} \&file, const std::string \&data\_\-set\_\-base\_\-name, const std::string \&proposal\_\-type\_\-name) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+gsl\_\-vector $\ast$ \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a642356a5bf54154da5730ffca4ee0c7f}{\_\-tmp\_\-left}
+\item 
+gsl\_\-vector $\ast$ \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a6a8e41ac55083ca3eebbfc65dce32b5e}{\_\-tmp\_\-right}
+\item 
+gsl\_\-matrix $\ast$ \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a37d4d1ebe9b21fb87da6976d7b08f962}{\_\-tmp\_\-sample\_\-covariance\_\-current}
+\item 
+gsl\_\-matrix $\ast$ \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_ad563d0d650e7cbd130c0229440c172fe}{\_\-covariance}
+\item 
+gsl\_\-matrix $\ast$ \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a91646502fcd9f17890b08ff8928e36f3}{\_\-covariance\_\-inverse}
+\item 
+gsl\_\-matrix $\ast$ \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a4ed7faa7ef374c0b6fbc065a45ce34d3}{\_\-covariance\_\-chol}
+\item 
+const unsigned \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_ab5e327644edef3b9c8658e2cdd3d2772}{\_\-dimension}
+\item 
+std::vector$<$ unsigned $>$ \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a6626ace5861eeba7b92ea9ed4c6095ee}{\_\-index\_\-list}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classeos_1_1proposal__functions_1_1Multivariate_ae7eae33da3e528eea02bd653e83f865a}{
+\index{eos::proposal\_\-functions::Multivariate@{eos::proposal\_\-functions::Multivariate}!CovarianceType@{CovarianceType}}
+\index{CovarianceType@{CovarianceType}!eos::proposal_functions::Multivariate@{eos::proposal\_\-functions::Multivariate}}
+\subsubsection[{CovarianceType}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf hdf5::Array}$<$1, double$>$ {\bf eos::proposal\_\-functions::Multivariate::CovarianceType}}}
+\label{classeos_1_1proposal__functions_1_1Multivariate_ae7eae33da3e528eea02bd653e83f865a}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classeos_1_1proposal__functions_1_1Multivariate_a0f3a2171c1b20ef0f4cb4588185981aa}{
+\index{eos::proposal\_\-functions::Multivariate@{eos::proposal\_\-functions::Multivariate}!Multivariate@{Multivariate}}
+\index{Multivariate@{Multivariate}!eos::proposal_functions::Multivariate@{eos::proposal\_\-functions::Multivariate}}
+\subsubsection[{Multivariate}]{\setlength{\rightskip}{0pt plus 5cm}eos::proposal\_\-functions::Multivariate::Multivariate (const unsigned \& {\em dimension}, \/  const std::vector$<$ double $>$ \& {\em covariance}, \/  const bool \& {\em automatic\_\-scaling})}}
+\label{classeos_1_1proposal__functions_1_1Multivariate_a0f3a2171c1b20ef0f4cb4588185981aa}
+Construct with given dimension and an initial proposal covariance matrix. If automatic scaling is desired, the given matrix is interpreted as an estimate of the target covariance, and it is rescaled by a factor of 2.38$^\wedge$2 / dimension. Else is the matrix is used as is for proposing points.
+
+\begin{DoxyNote}{Note}
+The automatic scaling can be shown to lead to the asymptotically (!) perfect value of the efficiency of 0.238 for a Gaussian proposal and a Gaussian target density with unlimited parameter ranges. These requirements are usually not fullfilled. 
+\end{DoxyNote}
+\hypertarget{classeos_1_1proposal__functions_1_1Multivariate_a2b216d8b68102068c721f758d562485d}{
+\index{eos::proposal\_\-functions::Multivariate@{eos::proposal\_\-functions::Multivariate}!$\sim$Multivariate@{$\sim$Multivariate}}
+\index{$\sim$Multivariate@{$\sim$Multivariate}!eos::proposal_functions::Multivariate@{eos::proposal\_\-functions::Multivariate}}
+\subsubsection[{$\sim$Multivariate}]{\setlength{\rightskip}{0pt plus 5cm}virtual eos::proposal\_\-functions::Multivariate::$\sim$Multivariate ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classeos_1_1proposal__functions_1_1Multivariate_a2b216d8b68102068c721f758d562485d}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classeos_1_1proposal__functions_1_1Multivariate_ad5a7764646a0c216344d96be9f01655b}{
+\index{eos::proposal\_\-functions::Multivariate@{eos::proposal\_\-functions::Multivariate}!\_\-compute\_\-cholesky\_\-and\_\-inverse@{\_\-compute\_\-cholesky\_\-and\_\-inverse}}
+\index{\_\-compute\_\-cholesky\_\-and\_\-inverse@{\_\-compute\_\-cholesky\_\-and\_\-inverse}!eos::proposal_functions::Multivariate@{eos::proposal\_\-functions::Multivariate}}
+\subsubsection[{\_\-compute\_\-cholesky\_\-and\_\-inverse}]{\setlength{\rightskip}{0pt plus 5cm}void eos::proposal\_\-functions::Multivariate::\_\-compute\_\-cholesky\_\-and\_\-inverse ()\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classeos_1_1proposal__functions_1_1Multivariate_ad5a7764646a0c216344d96be9f01655b}
+\hypertarget{classeos_1_1proposal__functions_1_1Multivariate_a284a17764a486687d3d1f2aee1a3bf3c}{
+\index{eos::proposal\_\-functions::Multivariate@{eos::proposal\_\-functions::Multivariate}!\_\-compute\_\-norm@{\_\-compute\_\-norm}}
+\index{\_\-compute\_\-norm@{\_\-compute\_\-norm}!eos::proposal_functions::Multivariate@{eos::proposal\_\-functions::Multivariate}}
+\subsubsection[{\_\-compute\_\-norm}]{\setlength{\rightskip}{0pt plus 5cm}virtual void eos::proposal\_\-functions::Multivariate::\_\-compute\_\-norm ()\hspace{0.3cm}{\ttfamily  \mbox{[}protected, pure virtual\mbox{]}}}}
+\label{classeos_1_1proposal__functions_1_1Multivariate_a284a17764a486687d3d1f2aee1a3bf3c}
+
+
+Implemented in \hyperlink{classeos_1_1proposal__functions_1_1MultivariateGaussian_ac797f04a7bce3b029cfc32af0d6ecd07}{eos::proposal\_\-functions::MultivariateGaussian}, and \hyperlink{classeos_1_1proposal__functions_1_1MultivariateStudentT_aa44fa5958d242f5aae93c0dfa4cb8d84}{eos::proposal\_\-functions::MultivariateStudentT}.\hypertarget{classeos_1_1proposal__functions_1_1Multivariate_a33c4b4ed443dc77bb376636636f11b88}{
+\index{eos::proposal\_\-functions::Multivariate@{eos::proposal\_\-functions::Multivariate}!\_\-copy@{\_\-copy}}
+\index{\_\-copy@{\_\-copy}!eos::proposal_functions::Multivariate@{eos::proposal\_\-functions::Multivariate}}
+\subsubsection[{\_\-copy}]{\setlength{\rightskip}{0pt plus 5cm}void eos::proposal\_\-functions::Multivariate::\_\-copy (const {\bf Multivariate} \&)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classeos_1_1proposal__functions_1_1Multivariate_a33c4b4ed443dc77bb376636636f11b88}
+\hypertarget{classeos_1_1proposal__functions_1_1Multivariate_a4b45f19e0d4da4ed2c519d8a1d504fd2}{
+\index{eos::proposal\_\-functions::Multivariate@{eos::proposal\_\-functions::Multivariate}!\_\-dump\_\-covariance@{\_\-dump\_\-covariance}}
+\index{\_\-dump\_\-covariance@{\_\-dump\_\-covariance}!eos::proposal_functions::Multivariate@{eos::proposal\_\-functions::Multivariate}}
+\subsubsection[{\_\-dump\_\-covariance}]{\setlength{\rightskip}{0pt plus 5cm}void eos::proposal\_\-functions::Multivariate::\_\-dump\_\-covariance ({\bf hdf5::File} \& {\em file}, \/  const std::string \& {\em data\_\-set\_\-base\_\-name}, \/  const std::string \& {\em proposal\_\-type\_\-name}) const\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classeos_1_1proposal__functions_1_1Multivariate_a4b45f19e0d4da4ed2c519d8a1d504fd2}
+\hypertarget{classeos_1_1proposal__functions_1_1Multivariate_a03a15f539c8b7eeefb7e323d8c3cd15d}{
+\index{eos::proposal\_\-functions::Multivariate@{eos::proposal\_\-functions::Multivariate}!adapt@{adapt}}
+\index{adapt@{adapt}!eos::proposal_functions::Multivariate@{eos::proposal\_\-functions::Multivariate}}
+\subsubsection[{adapt}]{\setlength{\rightskip}{0pt plus 5cm}virtual void eos::proposal\_\-functions::Multivariate::adapt (const {\bf MarkovChain::State::Iterator} \& {\em begin}, \/  const {\bf MarkovChain::State::Iterator} \& {\em end}, \/  const double \& {\em efficiency}, \/  const double \& {\em efficiency\_\-min}, \/  const double \& {\em efficiency\_\-max})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classeos_1_1proposal__functions_1_1Multivariate_a03a15f539c8b7eeefb7e323d8c3cd15d}
+\begin{DoxyNote}{Note}
+Expect history to have only the most recent part, to which proposal function has not adapted yet. Accordingly, the efficiency of that last part is required. Do not push the entire history of a chain in here repeatedly! 
+\end{DoxyNote}
+
+
+Implements \hyperlink{structeos_1_1MarkovChain_1_1ProposalFunction_afee6a937c53b9cfb257a5cd724a54296}{eos::MarkovChain::ProposalFunction}.\hypertarget{classeos_1_1proposal__functions_1_1Multivariate_a54a59c24424caeb5e826d61d63edd95d}{
+\index{eos::proposal\_\-functions::Multivariate@{eos::proposal\_\-functions::Multivariate}!covariance@{covariance}}
+\index{covariance@{covariance}!eos::proposal_functions::Multivariate@{eos::proposal\_\-functions::Multivariate}}
+\subsubsection[{covariance}]{\setlength{\rightskip}{0pt plus 5cm}const gsl\_\-matrix$\ast$ eos::proposal\_\-functions::Multivariate::covariance () const}}
+\label{classeos_1_1proposal__functions_1_1Multivariate_a54a59c24424caeb5e826d61d63edd95d}
+\hypertarget{classeos_1_1proposal__functions_1_1Multivariate_a4b7778284ee0ba2ea1ff85df8844da6e}{
+\index{eos::proposal\_\-functions::Multivariate@{eos::proposal\_\-functions::Multivariate}!covariance\_\-type@{covariance\_\-type}}
+\index{covariance\_\-type@{covariance\_\-type}!eos::proposal_functions::Multivariate@{eos::proposal\_\-functions::Multivariate}}
+\subsubsection[{covariance\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf CovarianceType} eos::proposal\_\-functions::Multivariate::covariance\_\-type (const unsigned \& {\em dimension})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1proposal__functions_1_1Multivariate_a4b7778284ee0ba2ea1ff85df8844da6e}
+\hypertarget{classeos_1_1proposal__functions_1_1Multivariate_aa7a6807a556a5187c77080d6b2036deb}{
+\index{eos::proposal\_\-functions::Multivariate@{eos::proposal\_\-functions::Multivariate}!dimension@{dimension}}
+\index{dimension@{dimension}!eos::proposal_functions::Multivariate@{eos::proposal\_\-functions::Multivariate}}
+\subsubsection[{dimension}]{\setlength{\rightskip}{0pt plus 5cm}unsigned eos::proposal\_\-functions::Multivariate::dimension () const}}
+\label{classeos_1_1proposal__functions_1_1Multivariate_aa7a6807a556a5187c77080d6b2036deb}
+
+
+The dimension of the space for which samples are proposed. \hypertarget{classeos_1_1proposal__functions_1_1Multivariate_a5f1d1b34460d12e1446dc5ff0fa714ee}{
+\index{eos::proposal\_\-functions::Multivariate@{eos::proposal\_\-functions::Multivariate}!rescale@{rescale}}
+\index{rescale@{rescale}!eos::proposal_functions::Multivariate@{eos::proposal\_\-functions::Multivariate}}
+\subsubsection[{rescale}]{\setlength{\rightskip}{0pt plus 5cm}virtual void eos::proposal\_\-functions::Multivariate::rescale (const double \& {\em rescale\_\-factor})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classeos_1_1proposal__functions_1_1Multivariate_a5f1d1b34460d12e1446dc5ff0fa714ee}
+Rescale the covariance scale factor 
+\begin{DoxyParams}{Parameters}
+\item[{\em rescale\_\-factor}]\end{DoxyParams}
+\hypertarget{classeos_1_1proposal__functions_1_1Multivariate_a830b00fd34f3b65922eeef04d76269e9}{
+\index{eos::proposal\_\-functions::Multivariate@{eos::proposal\_\-functions::Multivariate}!reset@{reset}}
+\index{reset@{reset}!eos::proposal_functions::Multivariate@{eos::proposal\_\-functions::Multivariate}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}virtual void eos::proposal\_\-functions::Multivariate::reset (const std::vector$<$ {\bf HistoryPtr} $>$ \& {\em histories}, \/  const double \& {\em scale}, \/  const double \& {\em skip\_\-initial})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classeos_1_1proposal__functions_1_1Multivariate_a830b00fd34f3b65922eeef04d76269e9}
+Reset the internal covariance to zero, and recompute it from the histories given. Apply a new scale factor for proposals. 
+\begin{DoxyParams}{Parameters}
+\item[{\em histories}]\item[{\em scale}]\end{DoxyParams}
+\hypertarget{classeos_1_1proposal__functions_1_1Multivariate_ac143e4c3d64075a86a6aa837d187d134}{
+\index{eos::proposal\_\-functions::Multivariate@{eos::proposal\_\-functions::Multivariate}!set\_\-indices@{set\_\-indices}}
+\index{set\_\-indices@{set\_\-indices}!eos::proposal_functions::Multivariate@{eos::proposal\_\-functions::Multivariate}}
+\subsubsection[{set\_\-indices}]{\setlength{\rightskip}{0pt plus 5cm}virtual void eos::proposal\_\-functions::Multivariate::set\_\-indices (const std::vector$<$ unsigned $>$ \& {\em index\_\-list})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classeos_1_1proposal__functions_1_1Multivariate_ac143e4c3d64075a86a6aa837d187d134}
+Set an index list, such that the proposal will consider only a subspace for it covariance calculation. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classeos_1_1proposal__functions_1_1Multivariate_ad563d0d650e7cbd130c0229440c172fe}{
+\index{eos::proposal\_\-functions::Multivariate@{eos::proposal\_\-functions::Multivariate}!\_\-covariance@{\_\-covariance}}
+\index{\_\-covariance@{\_\-covariance}!eos::proposal_functions::Multivariate@{eos::proposal\_\-functions::Multivariate}}
+\subsubsection[{\_\-covariance}]{\setlength{\rightskip}{0pt plus 5cm}gsl\_\-matrix$\ast$ {\bf eos::proposal\_\-functions::Multivariate::\_\-covariance}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classeos_1_1proposal__functions_1_1Multivariate_ad563d0d650e7cbd130c0229440c172fe}
+\hypertarget{classeos_1_1proposal__functions_1_1Multivariate_a4ed7faa7ef374c0b6fbc065a45ce34d3}{
+\index{eos::proposal\_\-functions::Multivariate@{eos::proposal\_\-functions::Multivariate}!\_\-covariance\_\-chol@{\_\-covariance\_\-chol}}
+\index{\_\-covariance\_\-chol@{\_\-covariance\_\-chol}!eos::proposal_functions::Multivariate@{eos::proposal\_\-functions::Multivariate}}
+\subsubsection[{\_\-covariance\_\-chol}]{\setlength{\rightskip}{0pt plus 5cm}gsl\_\-matrix$\ast$ {\bf eos::proposal\_\-functions::Multivariate::\_\-covariance\_\-chol}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classeos_1_1proposal__functions_1_1Multivariate_a4ed7faa7ef374c0b6fbc065a45ce34d3}
+\hypertarget{classeos_1_1proposal__functions_1_1Multivariate_a91646502fcd9f17890b08ff8928e36f3}{
+\index{eos::proposal\_\-functions::Multivariate@{eos::proposal\_\-functions::Multivariate}!\_\-covariance\_\-inverse@{\_\-covariance\_\-inverse}}
+\index{\_\-covariance\_\-inverse@{\_\-covariance\_\-inverse}!eos::proposal_functions::Multivariate@{eos::proposal\_\-functions::Multivariate}}
+\subsubsection[{\_\-covariance\_\-inverse}]{\setlength{\rightskip}{0pt plus 5cm}gsl\_\-matrix$\ast$ {\bf eos::proposal\_\-functions::Multivariate::\_\-covariance\_\-inverse}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classeos_1_1proposal__functions_1_1Multivariate_a91646502fcd9f17890b08ff8928e36f3}
+\hypertarget{classeos_1_1proposal__functions_1_1Multivariate_ab5e327644edef3b9c8658e2cdd3d2772}{
+\index{eos::proposal\_\-functions::Multivariate@{eos::proposal\_\-functions::Multivariate}!\_\-dimension@{\_\-dimension}}
+\index{\_\-dimension@{\_\-dimension}!eos::proposal_functions::Multivariate@{eos::proposal\_\-functions::Multivariate}}
+\subsubsection[{\_\-dimension}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned {\bf eos::proposal\_\-functions::Multivariate::\_\-dimension}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classeos_1_1proposal__functions_1_1Multivariate_ab5e327644edef3b9c8658e2cdd3d2772}
+\hypertarget{classeos_1_1proposal__functions_1_1Multivariate_a6626ace5861eeba7b92ea9ed4c6095ee}{
+\index{eos::proposal\_\-functions::Multivariate@{eos::proposal\_\-functions::Multivariate}!\_\-index\_\-list@{\_\-index\_\-list}}
+\index{\_\-index\_\-list@{\_\-index\_\-list}!eos::proposal_functions::Multivariate@{eos::proposal\_\-functions::Multivariate}}
+\subsubsection[{\_\-index\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$unsigned$>$ {\bf eos::proposal\_\-functions::Multivariate::\_\-index\_\-list}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classeos_1_1proposal__functions_1_1Multivariate_a6626ace5861eeba7b92ea9ed4c6095ee}
+\hypertarget{classeos_1_1proposal__functions_1_1Multivariate_a642356a5bf54154da5730ffca4ee0c7f}{
+\index{eos::proposal\_\-functions::Multivariate@{eos::proposal\_\-functions::Multivariate}!\_\-tmp\_\-left@{\_\-tmp\_\-left}}
+\index{\_\-tmp\_\-left@{\_\-tmp\_\-left}!eos::proposal_functions::Multivariate@{eos::proposal\_\-functions::Multivariate}}
+\subsubsection[{\_\-tmp\_\-left}]{\setlength{\rightskip}{0pt plus 5cm}gsl\_\-vector$\ast$ {\bf eos::proposal\_\-functions::Multivariate::\_\-tmp\_\-left}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classeos_1_1proposal__functions_1_1Multivariate_a642356a5bf54154da5730ffca4ee0c7f}
+\hypertarget{classeos_1_1proposal__functions_1_1Multivariate_a6a8e41ac55083ca3eebbfc65dce32b5e}{
+\index{eos::proposal\_\-functions::Multivariate@{eos::proposal\_\-functions::Multivariate}!\_\-tmp\_\-right@{\_\-tmp\_\-right}}
+\index{\_\-tmp\_\-right@{\_\-tmp\_\-right}!eos::proposal_functions::Multivariate@{eos::proposal\_\-functions::Multivariate}}
+\subsubsection[{\_\-tmp\_\-right}]{\setlength{\rightskip}{0pt plus 5cm}gsl\_\-vector$\ast$ {\bf eos::proposal\_\-functions::Multivariate::\_\-tmp\_\-right}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classeos_1_1proposal__functions_1_1Multivariate_a6a8e41ac55083ca3eebbfc65dce32b5e}
+\hypertarget{classeos_1_1proposal__functions_1_1Multivariate_a37d4d1ebe9b21fb87da6976d7b08f962}{
+\index{eos::proposal\_\-functions::Multivariate@{eos::proposal\_\-functions::Multivariate}!\_\-tmp\_\-sample\_\-covariance\_\-current@{\_\-tmp\_\-sample\_\-covariance\_\-current}}
+\index{\_\-tmp\_\-sample\_\-covariance\_\-current@{\_\-tmp\_\-sample\_\-covariance\_\-current}!eos::proposal_functions::Multivariate@{eos::proposal\_\-functions::Multivariate}}
+\subsubsection[{\_\-tmp\_\-sample\_\-covariance\_\-current}]{\setlength{\rightskip}{0pt plus 5cm}gsl\_\-matrix$\ast$ {\bf eos::proposal\_\-functions::Multivariate::\_\-tmp\_\-sample\_\-covariance\_\-current}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classeos_1_1proposal__functions_1_1Multivariate_a37d4d1ebe9b21fb87da6976d7b08f962}
+\hypertarget{classeos_1_1proposal__functions_1_1Multivariate_a67c47eeeefc2f0027cab513f50a402a2}{
+\index{eos::proposal\_\-functions::Multivariate@{eos::proposal\_\-functions::Multivariate}!adaptations@{adaptations}}
+\index{adaptations@{adaptations}!eos::proposal_functions::Multivariate@{eos::proposal\_\-functions::Multivariate}}
+\subsubsection[{adaptations}]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf eos::proposal\_\-functions::Multivariate::adaptations}}}
+\label{classeos_1_1proposal__functions_1_1Multivariate_a67c47eeeefc2f0027cab513f50a402a2}
+
+
+Record how often an adaption to data has been performed. \hypertarget{classeos_1_1proposal__functions_1_1Multivariate_aabab67ba765f532effe6dd8236d69cdd}{
+\index{eos::proposal\_\-functions::Multivariate@{eos::proposal\_\-functions::Multivariate}!cooling\_\-power@{cooling\_\-power}}
+\index{cooling\_\-power@{cooling\_\-power}!eos::proposal_functions::Multivariate@{eos::proposal\_\-functions::Multivariate}}
+\subsubsection[{cooling\_\-power}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf eos::proposal\_\-functions::Multivariate::cooling\_\-power}}}
+\label{classeos_1_1proposal__functions_1_1Multivariate_aabab67ba765f532effe6dd8236d69cdd}
+Combinining the proposal \_\-covariance of this and the previous step, limit the effect of samples in the distant past by forming a weighted average. In the n-\/th step,
+
+= (1 -\/ 1/n$^\wedge$\{cooling\_\-power\})  + 1/n$^\wedge$\{cooling\_\-power\} $\ast$ S\_\-n
+
+cf. arxiv:0903.0837, Eq. (23) \hypertarget{classeos_1_1proposal__functions_1_1Multivariate_ab52678a7403bae09d3db8f2247c02e17}{
+\index{eos::proposal\_\-functions::Multivariate@{eos::proposal\_\-functions::Multivariate}!covariance\_\-scale@{covariance\_\-scale}}
+\index{covariance\_\-scale@{covariance\_\-scale}!eos::proposal_functions::Multivariate@{eos::proposal\_\-functions::Multivariate}}
+\subsubsection[{covariance\_\-scale}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf eos::proposal\_\-functions::Multivariate::covariance\_\-scale}}}
+\label{classeos_1_1proposal__functions_1_1Multivariate_ab52678a7403bae09d3db8f2247c02e17}
+
+
+Rescale the sample \_\-covariance to form the proposal \_\-covariance. \hypertarget{classeos_1_1proposal__functions_1_1Multivariate_ab974d2da4b3dfcb7278418a25b07dd51}{
+\index{eos::proposal\_\-functions::Multivariate@{eos::proposal\_\-functions::Multivariate}!covariance\_\-scale\_\-max@{covariance\_\-scale\_\-max}}
+\index{covariance\_\-scale\_\-max@{covariance\_\-scale\_\-max}!eos::proposal_functions::Multivariate@{eos::proposal\_\-functions::Multivariate}}
+\subsubsection[{covariance\_\-scale\_\-max}]{\setlength{\rightskip}{0pt plus 5cm}const double {\bf eos::proposal\_\-functions::Multivariate::covariance\_\-scale\_\-max}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1proposal__functions_1_1Multivariate_ab974d2da4b3dfcb7278418a25b07dd51}
+
+
+Scale enforced to lie below a maximum value. \hypertarget{classeos_1_1proposal__functions_1_1Multivariate_afd2de46a2288413f8e06c1f197b71ec2}{
+\index{eos::proposal\_\-functions::Multivariate@{eos::proposal\_\-functions::Multivariate}!covariance\_\-scale\_\-min@{covariance\_\-scale\_\-min}}
+\index{covariance\_\-scale\_\-min@{covariance\_\-scale\_\-min}!eos::proposal_functions::Multivariate@{eos::proposal\_\-functions::Multivariate}}
+\subsubsection[{covariance\_\-scale\_\-min}]{\setlength{\rightskip}{0pt plus 5cm}const double {\bf eos::proposal\_\-functions::Multivariate::covariance\_\-scale\_\-min}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1proposal__functions_1_1Multivariate_afd2de46a2288413f8e06c1f197b71ec2}
+
+
+Scale enforced to exceed a minimum value. \hypertarget{classeos_1_1proposal__functions_1_1Multivariate_a69c7f79624af473004a147598d9afaa1}{
+\index{eos::proposal\_\-functions::Multivariate@{eos::proposal\_\-functions::Multivariate}!covariance\_\-scale\_\-update\_\-factor@{covariance\_\-scale\_\-update\_\-factor}}
+\index{covariance\_\-scale\_\-update\_\-factor@{covariance\_\-scale\_\-update\_\-factor}!eos::proposal_functions::Multivariate@{eos::proposal\_\-functions::Multivariate}}
+\subsubsection[{covariance\_\-scale\_\-update\_\-factor}]{\setlength{\rightskip}{0pt plus 5cm}const double {\bf eos::proposal\_\-functions::Multivariate::covariance\_\-scale\_\-update\_\-factor}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1proposal__functions_1_1Multivariate_a69c7f79624af473004a147598d9afaa1}
+During an adaptation, the scale is multiplied/divided by this factor if the efficiency is too high/low . \hypertarget{classeos_1_1proposal__functions_1_1Multivariate_a6ca72be11badd000f8d36a80c131b5d4}{
+\index{eos::proposal\_\-functions::Multivariate@{eos::proposal\_\-functions::Multivariate}!norm@{norm}}
+\index{norm@{norm}!eos::proposal_functions::Multivariate@{eos::proposal\_\-functions::Multivariate}}
+\subsubsection[{norm}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf eos::proposal\_\-functions::Multivariate::norm}}}
+\label{classeos_1_1proposal__functions_1_1Multivariate_a6ca72be11badd000f8d36a80c131b5d4}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{proposal__functions_8hh}{proposal\_\-functions.hh}\end{DoxyCompactItemize}

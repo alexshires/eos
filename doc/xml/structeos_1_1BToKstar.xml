@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1BToKstar" kind="struct" prot="public">
+    <compoundname>eos::BToKstar</compoundname>
+    <includes refid="mesonic-impl_8hh" local="no">mesonic-impl.hh</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structeos_1_1BToKstar_1aaf3ba74345ac88ef83df9e07fb187d7c" prot="public" static="yes" mutable="no">
+        <type>constexpr double</type>
+        <definition>constexpr double eos::BToKstar::mB</definition>
+        <argsstring></argsstring>
+        <name>mB</name>
+        <initializer> 5.279</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="48" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1BToKstar_1aaa86a61d90e34af72cb8563491911af3" prot="public" static="yes" mutable="no">
+        <type>constexpr double</type>
+        <definition>constexpr double eos::BToKstar::mV</definition>
+        <argsstring></argsstring>
+        <name>mV</name>
+        <initializer> 0.896</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="49" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="47" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="47" bodyend="50"/>
+    <listofallmembers>
+      <member refid="structeos_1_1BToKstar_1aaf3ba74345ac88ef83df9e07fb187d7c" prot="public" virt="non-virtual"><scope>eos::BToKstar</scope><name>mB</name></member>
+      <member refid="structeos_1_1BToKstar_1aaa86a61d90e34af72cb8563491911af3" prot="public" virt="non-virtual"><scope>eos::BToKstar</scope><name>mV</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

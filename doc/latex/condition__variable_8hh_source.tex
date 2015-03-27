@@ -1,0 +1,61 @@
+\hypertarget{condition__variable_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/condition\_\-variable.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2007 Danny van Dyk <danny.dyk@uni-dortmund.de>}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * Based upon 'condition\_variable.hh' from Paludis, which is:}
+00007 \textcolor{comment}{ *     Copyright (c) 2007 Ciaran McCreesh}
+00008 \textcolor{comment}{ *}
+00009 \textcolor{comment}{ * This file is part of the EOS program. EOS is free software;}
+00010 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00011 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00012 \textcolor{comment}{ *}
+00013 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00014 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00015 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00016 \textcolor{comment}{ * details.}
+00017 \textcolor{comment}{ *}
+00018 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00019 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00020 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00021 \textcolor{comment}{ */}
+00022 
+00023 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_CONDITION\_VARIABLE\_HH}
+\hypertarget{condition__variable_8hh_source_l00024}{}\hyperlink{condition__variable_8hh_af003c450e5342b76fc2bc1b26acb445d}{00024} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_CONDITION\_VARIABLE\_HH 1}
+00025 \textcolor{preprocessor}{}
+00026 \textcolor{preprocessor}{#include <\hyperlink{instantiation__policy_8hh}{eos/utils/instantiation_policy.hh}>}
+00027 \textcolor{preprocessor}{#include <\hyperlink{mutex_8hh}{eos/utils/mutex.hh}>}
+00028 
+00029 \textcolor{preprocessor}{#include <pthread.h>}
+00030 
+00031 \textcolor{keyword}{namespace }eos
+00032 \{
+\hypertarget{condition__variable_8hh_source_l00033}{}\hyperlink{classeos_1_1ConditionVariable}{00033}     \textcolor{keyword}{class }\hyperlink{classeos_1_1ConditionVariable}{ConditionVariable} :
+00034         \textcolor{keyword}{public} InstantiationPolicy<ConditionVariable, NonCopyable>
+00035     \{
+00036         \textcolor{keyword}{private}:
+00038             pthread\_cond\_t * \textcolor{keyword}{const} \_cond;
+00039 
+00040         \textcolor{keyword}{public}:
+00042             \hyperlink{classeos_1_1ConditionVariable_a64b2350d3ef0bf6c58f0f063da7a4ea4}{ConditionVariable}();
+00043 
+00045             \hyperlink{classeos_1_1ConditionVariable_abf981bbbce2e09c235d461f7aea14479}{~ConditionVariable}();
+00046 
+00048             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1ConditionVariable_a353db40ed7ea89d107627a4f32b829fe}{broadcast}();
+00049 
+00051             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1ConditionVariable_a58e81670564c2096dcfdbf34dba8f4a4}{signal}();
+00052 
+00054             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1ConditionVariable_adc82f6f8edc7d82776fe183d7f647d2c}{acquire_then_signal}(\hyperlink{classeos_1_1Mutex}{Mutex} &);
+00055 
+00057             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1ConditionVariable_a42313d0ec24908e952f8b675a966a6a6}{wait}(\hyperlink{classeos_1_1Mutex}{Mutex} &);
+00058     \};
+00059 \}
+00060 
+00061 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

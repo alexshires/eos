@@ -1,0 +1,467 @@
+\hypertarget{proposal__functions_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/proposal\_\-functions.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2011 Frederik Beaujean}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_EOS\_UTILS\_PROPROSAL\_FUNCTIONS\_HH}
+\hypertarget{proposal__functions_8hh_source_l00021}{}\hyperlink{proposal__functions_8hh_adcf0d7fb0622fd69103980900bf5dfc9}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_EOS\_UTILS\_PROPROSAL\_FUNCTIONS\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{preprocessor}{#include <\hyperlink{cluster_8hh}{eos/utils/cluster.hh}>}
+00024 \textcolor{preprocessor}{#include <\hyperlink{hdf5-fwd_8hh}{eos/utils/hdf5-fwd.hh}>}
+00025 \textcolor{preprocessor}{#include <\hyperlink{log__prior-fwd_8hh}{eos/utils/log_prior-fwd.hh}>}
+00026 \textcolor{preprocessor}{#include <\hyperlink{markov__chain_8hh}{eos/utils/markov_chain.hh}>}
+00027 \textcolor{preprocessor}{#include <\hyperlink{verify_8hh}{eos/utils/verify.hh}>}
+00028 
+00029 \textcolor{preprocessor}{#include <gsl/gsl\_matrix.h>}
+00030 \textcolor{preprocessor}{#include <gsl/gsl\_vector.h>}
+00031 
+00032 \textcolor{keyword}{namespace }eos
+00033 \{
+\hypertarget{proposal__functions_8hh_source_l00034}{}\hyperlink{namespaceeos_1_1proposal__functions}{00034}     \textcolor{keyword}{namespace }proposal\_functions
+00035     \{
+00040         \textcolor{keywordtype}{unsigned} \hyperlink{namespaceeos_1_1proposal__functions_a55ba4d78e5beeb12699c697874f7c1df}{random_index}(\textcolor{keyword}{const} std::vector<double> & cumulative, gsl\_rng * r
+      ng);
+00041 
+00046         \textcolor{keywordtype}{void} \hyperlink{namespaceeos_1_1proposal__functions_a3714de403c64ba76dcdb901f138f48de}{sliding_window}(\textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & K, \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & size, \textcolor{keyword}{const} \textcolor{keywordtype}{unsi
+      gned} & j, \textcolor{keywordtype}{unsigned} & j\_min, \textcolor{keywordtype}{unsigned} & j\_max);
+00047 
+\hypertarget{proposal__functions_8hh_source_l00051}{}\hyperlink{namespaceeos_1_1proposal__functions_ad45af5ebbbdc545b033b153cafe7e360}{00051}         \textcolor{keyword}{typedef} \hyperlink{classeos_1_1hdf5_1_1Composite}{hdf5::Composite<hdf5::Scalar<const char *>}, 
+      \hyperlink{classeos_1_1hdf5_1_1Scalar}{hdf5::Scalar<unsigned>}> \hyperlink{classeos_1_1hdf5_1_1Composite}{MetaType};
+00052         \hyperlink{classeos_1_1hdf5_1_1Composite}{MetaType} \hyperlink{namespaceeos_1_1proposal__functions_ac169711c02c184c64ba3a406bd18598b}{meta_type}();
+00053 
+\hypertarget{proposal__functions_8hh_source_l00054}{}\hyperlink{namespaceeos_1_1proposal__functions_a7b9711fcd1f76e034c72073e2d5d7f15}{00054}         \textcolor{keyword}{typedef} std::tuple<const char *, unsigned> \hyperlink{namespaceeos_1_1proposal__functions_a7b9711fcd1f76e034c72073e2d5d7f15}{MetaRecord};
+00055         \hyperlink{namespaceeos_1_1proposal__functions_a7b9711fcd1f76e034c72073e2d5d7f15}{MetaRecord} \hyperlink{namespaceeos_1_1proposal__functions_aa2f7d6804a251f162c263056d0e660e0}{meta_record}();
+00056 
+\hypertarget{proposal__functions_8hh_source_l00060}{}\hyperlink{structeos_1_1proposal__functions_1_1UnknownProposalError}{00060}         \textcolor{keyword}{struct }\hyperlink{structeos_1_1proposal__functions_1_1UnknownProposalError}{UnknownProposalError} :
+00061         \textcolor{keyword}{public} \hyperlink{classeos_1_1Exception}{Exception}
+00062         \{
+00065 
+00070                 \hyperlink{structeos_1_1proposal__functions_1_1UnknownProposalError_a65a9b64434c640d260f819e36ac1be2d}{UnknownProposalError}(\textcolor{keyword}{const} std::string & name);
+00072         \};
+00073 
+\hypertarget{proposal__functions_8hh_source_l00075}{}\hyperlink{structeos_1_1proposal__functions_1_1Factory}{00075}         \textcolor{keyword}{struct }\hyperlink{structeos_1_1proposal__functions_1_1Factory}{Factory}
+00076         \{
+00077             \textcolor{keyword}{static} \hyperlink{namespaceeos_ae97f9891c67c90959a03fc96efaa4dc9}{ProposalFunctionPtr} \hyperlink{structeos_1_1proposal__functions_1_1Factory_ada0a929817e75ed0ee50dcdbc496ca49}{make}(\textcolor{keyword}{const} \hyperlink{classeos_1_1hdf5_1_1File}{hdf5::File} & file, \textcolor{keyword}{const} std::s
+      tring & data\_set\_base\_name,
+00078                                             \textcolor{keyword}{const} std::string & proposal\_name, \textcolor{keyword}{co
+      nst} \textcolor{keywordtype}{unsigned} & dimension);
+00079         \};
+00080 
+\hypertarget{proposal__functions_8hh_source_l00084}{}\hyperlink{classeos_1_1proposal__functions_1_1AdjacencyMatrix}{00084}         \textcolor{keyword}{class }\hyperlink{classeos_1_1proposal__functions_1_1AdjacencyMatrix}{AdjacencyMatrix}
+00085         \{
+00086             \textcolor{keyword}{private}:
+00087                 std::vector<std::vector<double>> \_jump\_vectors;
+00088                 std::vector<MarkovChain::State> \_states;
+00089 
+00090                 \textcolor{keywordtype}{unsigned} \_number\_of\_clusters;
+00091 
+00100                 \textcolor{keywordtype}{unsigned} \_index(\textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & i, \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & j)\textcolor{keyword}{ const}
+00101 \textcolor{keyword}{                }\{
+00102                     \textcolor{keywordflow}{return} ((2u * \_number\_of\_clusters - i - 1) * i) / 2 + j - i -
+      1;
+00103                 \}
+00104 
+00105             \textcolor{keyword}{public}:
+00107                 \hyperlink{classeos_1_1proposal__functions_1_1AdjacencyMatrix_a84ff663285192a136a291ff589b3c87e}{AdjacencyMatrix}();
+00108 
+00110                 \textcolor{keywordtype}{void} \hyperlink{classeos_1_1proposal__functions_1_1AdjacencyMatrix_aae7d3467e9159c0db5e17c31e02a2ba9}{reserve}(\textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & \hyperlink{classeos_1_1proposal__functions_1_1AdjacencyMatrix_aab2d5eddd479bc4065724a720db51079}{number_of_clusters});
+00111 
+00119                 \textcolor{keywordtype}{void} \hyperlink{classeos_1_1proposal__functions_1_1AdjacencyMatrix_a8c5e2e2cf4791c651f2fb93b4cc70b80}{add}(\textcolor{keyword}{const} \hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} &);
+00120 
+00126                 \textcolor{keywordtype}{void} \hyperlink{classeos_1_1proposal__functions_1_1AdjacencyMatrix_a0578ba400c8091d18f265683de1e801e}{indices}(\textcolor{keyword}{const} std::vector<unsigned> index\_list);
+00127 
+00137                 \textcolor{keyword}{const} std::vector<double> & \hyperlink{classeos_1_1proposal__functions_1_1AdjacencyMatrix_ac32923bdb581f366d9516d0a80e1fa22}{jump}(\textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & h\_x, \textcolor{keyword}{const} \textcolor{keywordtype}{unsi
+      gned} & h\_y) \textcolor{keyword}{const};
+00138 
+\hypertarget{proposal__functions_8hh_source_l00139}{}\hyperlink{classeos_1_1proposal__functions_1_1AdjacencyMatrix_aab2d5eddd479bc4065724a720db51079}{00139}                 \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & \hyperlink{classeos_1_1proposal__functions_1_1AdjacencyMatrix_aab2d5eddd479bc4065724a720db51079}{number_of_clusters}()\textcolor{keyword}{ const}
+00140 \textcolor{keyword}{                }\{
+00141                     \textcolor{keywordflow}{return} \_number\_of\_clusters;
+00142                 \}
+00143 
+00147                 \textcolor{keyword}{const} \hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} & \hyperlink{classeos_1_1proposal__functions_1_1AdjacencyMatrix_a1effea928a244e6250cb227087b4aafa}{state}(\textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & i) \textcolor{keyword}{const};
+00148         \};
+00149 
+\hypertarget{proposal__functions_8hh_source_l00154}{}\hyperlink{classeos_1_1proposal__functions_1_1GlobalLocal}{00154}         \textcolor{keyword}{class }\hyperlink{classeos_1_1proposal__functions_1_1GlobalLocal}{GlobalLocal} :
+00155             \textcolor{keyword}{public} \hyperlink{classeos_1_1MarkovChain}{MarkovChain}::ProposalFunction
+00156         \{
+00157             \textcolor{keyword}{public}:
+\hypertarget{proposal__functions_8hh_source_l00159}{}\hyperlink{classeos_1_1proposal__functions_1_1GlobalLocal_a8a0b2c1a71f2302bd4eeb95bc1d0041a}{00159}                 \textcolor{keyword}{typedef} \hyperlink{classeos_1_1hdf5_1_1Composite}{hdf5::Composite<hdf5::Scalar<unsigned>}, 
+      \hyperlink{classeos_1_1hdf5_1_1Array}{hdf5::Array<1, double>}> \hyperlink{classeos_1_1hdf5_1_1Composite}{ComponentType};
+\hypertarget{proposal__functions_8hh_source_l00160}{}\hyperlink{classeos_1_1proposal__functions_1_1GlobalLocal_ac6705377112dbaacb0141371b3c58b92}{00160}                 \textcolor{keyword}{typedef} \hyperlink{classeos_1_1hdf5_1_1Composite}{hdf5::Composite<hdf5::Array<1, double>}, 
+      \hyperlink{classeos_1_1hdf5_1_1Scalar}{hdf5::Scalar<double>}, \hyperlink{classeos_1_1hdf5_1_1Scalar}{hdf5::Scalar<double>}, \hyperlink{classeos_1_1hdf5_1_1Scalar}{hdf5::Scalar<double>}> \hyperlink{classeos_1_1hdf5_1_1Composite}{HistoryType};
+\hypertarget{proposal__functions_8hh_source_l00161}{}\hyperlink{classeos_1_1proposal__functions_1_1GlobalLocal_adaecb155ebcde100eb2f2f9bde76d3d3}{00161}                 \textcolor{keyword}{typedef} \hyperlink{classeos_1_1hdf5_1_1Composite}{hdf5::Composite<hdf5::Array<1, double>}, 
+      \hyperlink{classeos_1_1hdf5_1_1Scalar}{hdf5::Scalar<double>}> \hyperlink{classeos_1_1hdf5_1_1Composite}{JumpType};
+\hypertarget{proposal__functions_8hh_source_l00162}{}\hyperlink{classeos_1_1proposal__functions_1_1GlobalLocal_a512e8526c29f20c96992efc8dcd2da2a}{00162}                 \textcolor{keyword}{typedef} \hyperlink{classeos_1_1hdf5_1_1Composite}{hdf5::Composite<hdf5::Array<1, double>}, 
+      \hyperlink{classeos_1_1hdf5_1_1Array}{hdf5::Array<1, double>}> \hyperlink{classeos_1_1hdf5_1_1Composite}{LocalCovarianceType};
+00163 
+00164                 \textcolor{keyword}{static} \hyperlink{classeos_1_1hdf5_1_1Composite}{ComponentType} \hyperlink{classeos_1_1proposal__functions_1_1GlobalLocal_a26968f54a698fc8726f0a81c84bc6294}{component_type}(\textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & dimension);
+00165                 \textcolor{keyword}{static} \hyperlink{classeos_1_1hdf5_1_1Composite}{HistoryType} \hyperlink{classeos_1_1proposal__functions_1_1GlobalLocal_af44478dfd75149c63937af4c6583fbdf}{history_type}(\textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & dimension);
+00166                 \textcolor{keyword}{static} \hyperlink{classeos_1_1hdf5_1_1Composite}{JumpType} \hyperlink{classeos_1_1proposal__functions_1_1GlobalLocal_a0dc6c82443a5a7f091aced9f00e9e924}{jump_type}(\textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & dimension);
+00167                 \textcolor{keyword}{static} \hyperlink{classeos_1_1hdf5_1_1Composite}{LocalCovarianceType} \hyperlink{classeos_1_1proposal__functions_1_1GlobalLocal_ab9e4e7b924b9cc58191abef0ec3ed007}{local_covariance_type}(\textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} &
+       dimension);
+00168 
+\hypertarget{proposal__functions_8hh_source_l00169}{}\hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config}{00169}                 \textcolor{keyword}{struct }\hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config}{Config}
+00170                 \{
+00171                     \textcolor{keyword}{private}:
+00172                         \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config}{Config}();
+00173 
+00174                     \textcolor{keyword}{public}:
+00175 
+\hypertarget{proposal__functions_8hh_source_l00180}{}\hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_aeab1a700da2a313d2cdd5936752e34ce}{00180}                         \textcolor{keyword}{enum} \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_aeab1a700da2a313d2cdd5936752e34ce}{HistoryPointWeighting}
+00181                         \{
+\hypertarget{proposal__functions_8hh_source_l00182}{}\hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_aeab1a700da2a313d2cdd5936752e34cea987cb330841992b5745daf1e94545ed8}{00182}                             \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_aeab1a700da2a313d2cdd5936752e34cea987cb330841992b5745daf1e94545ed8}{posterior},             
+\hypertarget{proposal__functions_8hh_source_l00183}{}\hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_aeab1a700da2a313d2cdd5936752e34cea6b25ac86fe8e91e3455e49b9da62bcab}{00183}                             \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_aeab1a700da2a313d2cdd5936752e34cea6b25ac86fe8e91e3455e49b9da62bcab}{log_posterior},         
+\hypertarget{proposal__functions_8hh_source_l00184}{}\hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_aeab1a700da2a313d2cdd5936752e34cea0ad0c6606345c9fc44bb5fe292b44c60}{00184}                             \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_aeab1a700da2a313d2cdd5936752e34cea0ad0c6606345c9fc44bb5fe292b44c60}{equal}                  
+00185                         \};
+00186 
+00188                         \textcolor{keyword}{static} \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config}{Config} \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_ab6e85ee9aa380cdb63827bbab9e4d1c8}{Default}();
+00189 
+00192 
+\hypertarget{proposal__functions_8hh_source_l00195}{}\hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a6632462782aaefb7279fdb34f46d6d9c}{00195}                         \hyperlink{classeos_1_1VerifiedRange}{VerifiedRange<double>} \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a6632462782aaefb7279fdb34f46d6d9c}{clustering_maximum_r_value};
+00196 
+\hypertarget{proposal__functions_8hh_source_l00198}{}\hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a9a530636287156e4ee98cb1ee2f04317}{00198}                         \textcolor{keywordtype}{bool} \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a9a530636287156e4ee98cb1ee2f04317}{clustering_strict_r_value};
+00199 
+\hypertarget{proposal__functions_8hh_source_l00201}{}\hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_aafced70f6b662a177bdb7697cf107065}{00201}                         \textcolor{keywordtype}{bool} \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_aafced70f6b662a177bdb7697cf107065}{equal_weight_components};
+00202 
+\hypertarget{proposal__functions_8hh_source_l00208}{}\hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_aecbd678a2838e79d850bb7aa732bb8cd}{00208}                         \textcolor{keywordtype}{bool} \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_aecbd678a2838e79d850bb7aa732bb8cd}{join_chains_symmetrically};
+00209 
+\hypertarget{proposal__functions_8hh_source_l00212}{}\hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a1ab33a4656cb4c0f4eed805b9394c221}{00212}                         \textcolor{keywordtype}{unsigned} \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a1ab33a4656cb4c0f4eed805b9394c221}{history_points};
+00213 
+\hypertarget{proposal__functions_8hh_source_l00218}{}\hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_ac6b275330dd84325a42c3715d318551f}{00218}                         \textcolor{keywordtype}{unsigned} \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_ac6b275330dd84325a42c3715d318551f}{history_points_local_covariance_size};
+00219 
+\hypertarget{proposal__functions_8hh_source_l00222}{}\hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a74fc0b244166ec0fe894422ad254ca06}{00222}                         \textcolor{keywordtype}{bool} \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a74fc0b244166ec0fe894422ad254ca06}{history_points_ordered};
+00223 
+\hypertarget{proposal__functions_8hh_source_l00228}{}\hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a67a276c92681a1da8953365d058b2951}{00228}                         \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_aeab1a700da2a313d2cdd5936752e34ce}{HistoryPointWeighting} \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a67a276c92681a1da8953365d058b2951}{history_point_weighting};
+00229 
+\hypertarget{proposal__functions_8hh_source_l00232}{}\hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_ab46531993b150f25845f03a98046f768}{00232}                         \hyperlink{classeos_1_1VerifiedRange}{VerifiedRange<double>} \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_ab46531993b150f25845f03a98046f768}{minimum_relative_cluster_weight};
+00233 
+\hypertarget{proposal__functions_8hh_source_l00236}{}\hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a42bdc4d80a759f9daab15d01b0edf4b6}{00236}                         \textcolor{keywordtype}{bool} \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a42bdc4d80a759f9daab15d01b0edf4b6}{perform_clustering};
+00237 
+\hypertarget{proposal__functions_8hh_source_l00244}{}\hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a70f82cec4c0a992cf70a53c771e89c9d}{00244}                         \hyperlink{classeos_1_1VerifiedRange}{VerifiedRange<double>} \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a70f82cec4c0a992cf70a53c771e89c9d}{rescale_local_covariance};
+00245 
+\hypertarget{proposal__functions_8hh_source_l00247}{}\hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_aa325beb2f96d399f28841ee802fb5584}{00247}                         \hyperlink{classeos_1_1VerifiedRange}{VerifiedRange<double>} \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_aa325beb2f96d399f28841ee802fb5584}{skip_initial};
+00248 
+00250 
+00253 
+\hypertarget{proposal__functions_8hh_source_l00264}{}\hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_afc5df7dfbda07b6296b48bb3147f91ab}{00264}                         \textcolor{keywordtype}{double} \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_afc5df7dfbda07b6296b48bb3147f91ab}{cooling_power};
+00265 
+\hypertarget{proposal__functions_8hh_source_l00267}{}\hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_ad078b40f919f62b9311f433b1152bbb6}{00267}                         \hyperlink{classeos_1_1VerifiedRange}{VerifiedRange<double>} \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_ad078b40f919f62b9311f433b1152bbb6}{local_jump_probability};
+00268 
+\hypertarget{proposal__functions_8hh_source_l00271}{}\hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a81dad6982f265eccfc5f1d030f0ff5a7}{00271}                         std::vector<unsigned> \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config_a81dad6982f265eccfc5f1d030f0ff5a7}{long_jump_indices};
+00273                 \};
+00274 
+00275             \textcolor{keyword}{private}:
+00276                 \textcolor{keywordtype}{unsigned} \_adaptations;
+00277                 \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config}{Config} \_config;
+00278 
+00280                 std::vector<double> \_component\_cumulative;
+00281                 std::vector<double> \_component\_probabilities;
+00282 
+00284                 std::vector<std::vector<double>> \_history\_points\_cumulatives;
+00285                 std::vector<std::vector<std::vector<double>>> \_history\_points\_loc
+      al\_covariance;
+00286                 std::vector<std::vector<double>> \_history\_points\_probabilities;
+00287                 std::vector<std::vector<MarkovChain::State>> \_history\_states;
+00288 
+00290                 \hyperlink{classeos_1_1proposal__functions_1_1AdjacencyMatrix}{AdjacencyMatrix} \_jump\_vectors;
+00291 
+00293                 std::vector<MarkovChain::State> \_modes;
+00294 
+00295                 std::vector<std::shared\_ptr<MarkovChain::ProposalFunction>> \_prop
+      ;
+00296 
+00297                 \textcolor{keywordtype}{void} \_sanity\_check() \textcolor{keyword}{const};
+00298 
+00305                 \textcolor{keywordtype}{void} \_select\_history\_points(\textcolor{keyword}{const} std::vector<Cluster> & clusters
+      );
+00306 
+00311                 \textcolor{keywordtype}{void} \_select\_jump\_vectors(\textcolor{keyword}{const} std::vector<Cluster> & clusters);
+      
+00312 
+00313                 \textcolor{keyword}{typedef} std::pair<unsigned, double> index\_pair;
+00314 
+00315                 \textcolor{comment}{//todo replace by lambda}
+00316                 \textcolor{keywordtype}{bool}
+00317                 \textcolor{keyword}{static} \_cmp(\textcolor{keyword}{const} index\_pair & a, \textcolor{keyword}{const} index\_pair & b )
+00318                 \{
+00319                     \textcolor{keywordflow}{return} a.second > b.second;
+00320                 \}
+00321 
+00325                 \hyperlink{classeos_1_1proposal__functions_1_1GlobalLocal}{GlobalLocal}(\textcolor{keyword}{const} \hyperlink{classeos_1_1proposal__functions_1_1GlobalLocal}{GlobalLocal} &);
+00326 
+00327             \textcolor{keyword}{public}:
+00328 
+00344                 \textcolor{comment}{// todo change to use shared\_ptr}
+00345                 \hyperlink{classeos_1_1proposal__functions_1_1GlobalLocal}{GlobalLocal}(\textcolor{keyword}{const} std::vector<HistoryPtr> & chains,
+00346                             \textcolor{keyword}{const} std::vector<ProposalFunctionPtr> & proposals,
+00347                             \textcolor{keyword}{const} std::vector<MarkovChain::Stats> & stats,
+00348                             \textcolor{keyword}{const} Config & \hyperlink{classeos_1_1proposal__functions_1_1GlobalLocal_a32e17ba3e5210c26c146b97f5ff4fd53}{config}, \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & prerun\_chains
+      \_per\_cluster);
+00349 
+00350                 \hyperlink{classeos_1_1proposal__functions_1_1GlobalLocal}{GlobalLocal}(\textcolor{keyword}{const} std::vector<double> & \hyperlink{classeos_1_1proposal__functions_1_1GlobalLocal_aefd282ded908d605356e2c5896db60b7}{component_probabilities}, 
+      \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & adaptations,
+00351                             \textcolor{keyword}{const} std::vector<MarkovChain::State> & jump\_states, 
+      \textcolor{keyword}{const} std::vector<MarkovChain::State> & modes,
+00352                             \textcolor{keyword}{const} std::vector<std::vector<MarkovChain::State>> & 
+      \hyperlink{classeos_1_1proposal__functions_1_1GlobalLocal_ab29f6d1d7b79dcb8eae4647260a5bd06}{history_states},
+00353                             \textcolor{keyword}{const} std::vector<std::vector<double>> & history\_poin
+      t\_probabilities,
+00354                             \textcolor{keyword}{const} std::vector<std::vector<std::vector<double>>> &
+       history\_local\_covariances,
+00355                             \textcolor{keyword}{const} std::vector<ProposalFunctionPtr> & proposals);
+00356 
+00357                 \textcolor{keyword}{virtual} \hyperlink{classeos_1_1proposal__functions_1_1GlobalLocal_a31e2faf68a29cfc348905a8022a397e5}{~GlobalLocal}();
+00358 
+00360                 \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classeos_1_1proposal__functions_1_1GlobalLocal_aecea521f102e4f3c2fd0fad24b21b730}{adapt}(\textcolor{keyword}{const} \hyperlink{structeos_1_1MarkovChain_1_1State_ad7590843e4feca7e696c53863e6e10c1}{MarkovChain::State::Iterator} & begin, \textcolor{keyword}{co
+      nst} \hyperlink{structeos_1_1MarkovChain_1_1State_ad7590843e4feca7e696c53863e6e10c1}{MarkovChain::State::Iterator} & end, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & efficiency, \textcolor{keyword}{const} \textcolor{keywordtype}{double} &
+       efficiency\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & efficiency\_max);
+00361 
+00366                 \textcolor{keyword}{virtual} \hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} \hyperlink{classeos_1_1proposal__functions_1_1GlobalLocal_abf3e66748628edc462dd5f7b531f4c2b}{mode}() \textcolor{keyword}{const};
+00367 
+\hypertarget{proposal__functions_8hh_source_l00368}{}\hyperlink{classeos_1_1proposal__functions_1_1GlobalLocal_aefd282ded908d605356e2c5896db60b7}{00368}                 \textcolor{keyword}{const} std::vector<double> & \hyperlink{classeos_1_1proposal__functions_1_1GlobalLocal_aefd282ded908d605356e2c5896db60b7}{component_probabilities}()\textcolor{keyword}{ const}
+00369 \textcolor{keyword}{                }\{
+00370                     \textcolor{keywordflow}{return} \_component\_probabilities;
+00371                 \}
+00372 
+\hypertarget{proposal__functions_8hh_source_l00373}{}\hyperlink{classeos_1_1proposal__functions_1_1GlobalLocal_ab29f6d1d7b79dcb8eae4647260a5bd06}{00373}                 \textcolor{keyword}{const} std::vector<std::vector<MarkovChain::State>> & 
+      \hyperlink{classeos_1_1proposal__functions_1_1GlobalLocal_ab29f6d1d7b79dcb8eae4647260a5bd06}{history_states}()\textcolor{keyword}{ const}
+00374 \textcolor{keyword}{                }\{
+00375                     \textcolor{keywordflow}{return} \_history\_states;
+00376                 \}
+00377 
+\hypertarget{proposal__functions_8hh_source_l00378}{}\hyperlink{classeos_1_1proposal__functions_1_1GlobalLocal_ad5c45a445627bed86c3d51b13b385956}{00378}                 \textcolor{keyword}{const} std::vector<std::vector<std::vector<double>>> & 
+      \hyperlink{classeos_1_1proposal__functions_1_1GlobalLocal_ad5c45a445627bed86c3d51b13b385956}{local_covariances}()\textcolor{keyword}{ const}
+00379 \textcolor{keyword}{                }\{
+00380                     \textcolor{keywordflow}{return} \_history\_points\_local\_covariance;
+00381                 \}
+00382 
+00384                 \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classeos_1_1proposal__functions_1_1GlobalLocal_a32e17ba3e5210c26c146b97f5ff4fd53}{config}(\textcolor{keyword}{const} Config & \hyperlink{classeos_1_1proposal__functions_1_1GlobalLocal_a32e17ba3e5210c26c146b97f5ff4fd53}{config});
+00385 
+00386                 \textcolor{keyword}{virtual} \hyperlink{namespaceeos_ae97f9891c67c90959a03fc96efaa4dc9}{ProposalFunctionPtr} \hyperlink{classeos_1_1proposal__functions_1_1GlobalLocal_ae0ee0bd2127085ceacb1a89f5527515b}{clone}() \textcolor{keyword}{const};
+00387 
+00388                 \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classeos_1_1proposal__functions_1_1GlobalLocal_a07d947ae2de101cc4ef13577d5d81ad5}{dump_state}(\hyperlink{classeos_1_1hdf5_1_1File}{hdf5::File} & file, \textcolor{keyword}{const} std::string & da
+      ta\_set\_base\_name) \textcolor{keyword}{const};
+00389 
+00390                 \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \hyperlink{classeos_1_1proposal__functions_1_1GlobalLocal_ad1f7d7686225e665edd47cbd230483f6}{evaluate}(\textcolor{keyword}{const} \hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} & x, \textcolor{keyword}{const} 
+      \hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} & y) \textcolor{keyword}{const};
+00391 
+00392                 \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classeos_1_1proposal__functions_1_1GlobalLocal_a600d45aa7174be9fb264a938de61a568}{propose}(\hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} & x, \textcolor{keyword}{const} 
+      \hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} & y, gsl\_rng * rng) \textcolor{keyword}{const};
+00393         \};
+00394 
+\hypertarget{proposal__functions_8hh_source_l00395}{}\hyperlink{classeos_1_1proposal__functions_1_1Multivariate}{00395}         \textcolor{keyword}{class }\hyperlink{classeos_1_1proposal__functions_1_1Multivariate}{Multivariate} :
+00396             \textcolor{keyword}{public} \hyperlink{classeos_1_1MarkovChain}{MarkovChain}::ProposalFunction
+00397         \{
+00398             \textcolor{keyword}{public}:
+\hypertarget{proposal__functions_8hh_source_l00399}{}\hyperlink{classeos_1_1proposal__functions_1_1Multivariate_ae7eae33da3e528eea02bd653e83f865a}{00399}                 \textcolor{keyword}{typedef} \hyperlink{classeos_1_1hdf5_1_1Array}{hdf5::Array<1, double>} \hyperlink{classeos_1_1hdf5_1_1Array}{CovarianceType};
+00400                 \textcolor{keyword}{static} \hyperlink{classeos_1_1hdf5_1_1Array}{CovarianceType} \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a4b7778284ee0ba2ea1ff85df8844da6e}{covariance_type}(\textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_aa7a6807a556a5187c77080d6b2036deb}{dimension})
+      ;
+00401 
+00402             \textcolor{keyword}{protected}:
+\hypertarget{proposal__functions_8hh_source_l00403}{}\hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a642356a5bf54154da5730ffca4ee0c7f}{00403}                 gsl\_vector * \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a642356a5bf54154da5730ffca4ee0c7f}{_tmp_left};
+\hypertarget{proposal__functions_8hh_source_l00404}{}\hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a6a8e41ac55083ca3eebbfc65dce32b5e}{00404}                 gsl\_vector * \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a6a8e41ac55083ca3eebbfc65dce32b5e}{_tmp_right};
+\hypertarget{proposal__functions_8hh_source_l00405}{}\hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a37d4d1ebe9b21fb87da6976d7b08f962}{00405}                 gsl\_matrix * \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a37d4d1ebe9b21fb87da6976d7b08f962}{_tmp_sample_covariance_current};
+00406 
+\hypertarget{proposal__functions_8hh_source_l00407}{}\hyperlink{classeos_1_1proposal__functions_1_1Multivariate_ad563d0d650e7cbd130c0229440c172fe}{00407}                 gsl\_matrix * \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_ad563d0d650e7cbd130c0229440c172fe}{_covariance};
+\hypertarget{proposal__functions_8hh_source_l00408}{}\hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a91646502fcd9f17890b08ff8928e36f3}{00408}                 gsl\_matrix * \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a91646502fcd9f17890b08ff8928e36f3}{_covariance_inverse};
+\hypertarget{proposal__functions_8hh_source_l00409}{}\hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a4ed7faa7ef374c0b6fbc065a45ce34d3}{00409}                 gsl\_matrix * \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a4ed7faa7ef374c0b6fbc065a45ce34d3}{_covariance_chol};
+00410 
+\hypertarget{proposal__functions_8hh_source_l00411}{}\hyperlink{classeos_1_1proposal__functions_1_1Multivariate_ab5e327644edef3b9c8658e2cdd3d2772}{00411}                 \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_ab5e327644edef3b9c8658e2cdd3d2772}{_dimension};
+00412 
+\hypertarget{proposal__functions_8hh_source_l00413}{}\hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a6626ace5861eeba7b92ea9ed4c6095ee}{00413}                 std::vector<unsigned> \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a6626ace5861eeba7b92ea9ed4c6095ee}{_index_list};
+00414 
+00415                 \textcolor{keywordtype}{void} \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_ad5a7764646a0c216344d96be9f01655b}{_compute_cholesky_and_inverse}();
+00416                 \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a284a17764a486687d3d1f2aee1a3bf3c}{_compute_norm}() = 0;
+00417                 \textcolor{keywordtype}{void} \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a33c4b4ed443dc77bb376636636f11b88}{_copy}(\textcolor{keyword}{const} \hyperlink{classeos_1_1proposal__functions_1_1Multivariate}{Multivariate} &);
+00418                 \textcolor{keywordtype}{void} \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a4b45f19e0d4da4ed2c519d8a1d504fd2}{_dump_covariance}(\hyperlink{classeos_1_1hdf5_1_1File}{hdf5::File} & file, \textcolor{keyword}{const} std::string & data
+      \_set\_base\_name, \textcolor{keyword}{const} std::string & proposal\_type\_name) \textcolor{keyword}{const};
+00419 
+00420             \textcolor{keyword}{public}:
+00422                 \textcolor{keywordtype}{unsigned} \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_aa7a6807a556a5187c77080d6b2036deb}{dimension}() \textcolor{keyword}{const};
+00423 
+\hypertarget{proposal__functions_8hh_source_l00425}{}\hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a67c47eeeefc2f0027cab513f50a402a2}{00425}                 \textcolor{keywordtype}{unsigned} \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a67c47eeeefc2f0027cab513f50a402a2}{adaptations};
+00426 
+00427                 \textcolor{keyword}{const} gsl\_matrix * \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a54a59c24424caeb5e826d61d63edd95d}{covariance}() \textcolor{keyword}{const};
+00428 
+\hypertarget{proposal__functions_8hh_source_l00430}{}\hyperlink{classeos_1_1proposal__functions_1_1Multivariate_ab52678a7403bae09d3db8f2247c02e17}{00430}                 \textcolor{keywordtype}{double} \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_ab52678a7403bae09d3db8f2247c02e17}{covariance_scale};
+00431 
+\hypertarget{proposal__functions_8hh_source_l00433}{}\hyperlink{classeos_1_1proposal__functions_1_1Multivariate_afd2de46a2288413f8e06c1f197b71ec2}{00433}                 \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_afd2de46a2288413f8e06c1f197b71ec2}{covariance_scale_min};
+\hypertarget{proposal__functions_8hh_source_l00435}{}\hyperlink{classeos_1_1proposal__functions_1_1Multivariate_ab974d2da4b3dfcb7278418a25b07dd51}{00435}                 \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_ab974d2da4b3dfcb7278418a25b07dd51}{covariance_scale_max};
+\hypertarget{proposal__functions_8hh_source_l00438}{}\hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a69c7f79624af473004a147598d9afaa1}{00438}                 \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a69c7f79624af473004a147598d9afaa1}{covariance_scale_update_factor};
+00439 
+\hypertarget{proposal__functions_8hh_source_l00449}{}\hyperlink{classeos_1_1proposal__functions_1_1Multivariate_aabab67ba765f532effe6dd8236d69cdd}{00449}                 \textcolor{keywordtype}{double} \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_aabab67ba765f532effe6dd8236d69cdd}{cooling_power};
+00450 
+\hypertarget{proposal__functions_8hh_source_l00451}{}\hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a6ca72be11badd000f8d36a80c131b5d4}{00451}                 \textcolor{keywordtype}{double} \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a6ca72be11badd000f8d36a80c131b5d4}{norm};
+00452 
+00465                 \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a0f3a2171c1b20ef0f4cb4588185981aa}{Multivariate}(\textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_aa7a6807a556a5187c77080d6b2036deb}{dimension}, \textcolor{keyword}{const} std::vector<double
+      > & \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a54a59c24424caeb5e826d61d63edd95d}{covariance}, \textcolor{keyword}{const} \textcolor{keywordtype}{bool} & automatic\_scaling\textcolor{comment}{/* = false*/});
+00466 
+00467                 \textcolor{keyword}{virtual} \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a2b216d8b68102068c721f758d562485d}{~Multivariate}();
+00468 
+00475                 \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a03a15f539c8b7eeefb7e323d8c3cd15d}{adapt}(\textcolor{keyword}{const} \hyperlink{structeos_1_1MarkovChain_1_1State_ad7590843e4feca7e696c53863e6e10c1}{MarkovChain::State::Iterator} & begin, \textcolor{keyword}{co
+      nst} \hyperlink{structeos_1_1MarkovChain_1_1State_ad7590843e4feca7e696c53863e6e10c1}{MarkovChain::State::Iterator} & end,
+00476                                    \textcolor{keyword}{const} \textcolor{keywordtype}{double} & efficiency, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & effi
+      ciency\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & efficiency\_max);
+00477 
+00482                 \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a5f1d1b34460d12e1446dc5ff0fa714ee}{rescale}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & rescale\_factor);
+00483 
+00490                 \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a830b00fd34f3b65922eeef04d76269e9}{reset}(\textcolor{keyword}{const} std::vector<HistoryPtr> & histories, \textcolor{keyword}{con
+      st} \textcolor{keywordtype}{double} & scale, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & skip\_initial);
+00491 
+00496                 \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_ac143e4c3d64075a86a6aa837d187d134}{set_indices}(\textcolor{keyword}{const} std::vector<unsigned> & index\_list
+      );
+00497         \};
+00498 
+\hypertarget{proposal__functions_8hh_source_l00499}{}\hyperlink{namespaceeos_1_1proposal__functions_a6cffa18d523cd6955629beabbe07c17c}{00499}         \textcolor{keyword}{typedef} std::shared\_ptr<Multivariate> \hyperlink{namespaceeos_1_1proposal__functions_a6cffa18d523cd6955629beabbe07c17c}{MultivariateProposalPtr};
+00500 
+\hypertarget{proposal__functions_8hh_source_l00501}{}\hyperlink{classeos_1_1proposal__functions_1_1MultivariateGaussian}{00501}         \textcolor{keyword}{class }\hyperlink{classeos_1_1proposal__functions_1_1MultivariateGaussian}{MultivariateGaussian} :
+00502             \textcolor{keyword}{public} \hyperlink{classeos_1_1proposal__functions_1_1Multivariate}{Multivariate}
+00503         \{
+00504             \textcolor{keyword}{public}:
+\hypertarget{proposal__functions_8hh_source_l00505}{}\hyperlink{classeos_1_1proposal__functions_1_1MultivariateGaussian_a434c13230be16d8d1f658f277a5b6c28}{00505}                 \textcolor{keyword}{typedef} \hyperlink{classeos_1_1hdf5_1_1Composite}{hdf5::Composite<hdf5::Scalar<double>}, 
+      \hyperlink{classeos_1_1hdf5_1_1Scalar}{hdf5::Scalar<double>}, \hyperlink{classeos_1_1hdf5_1_1Scalar}{hdf5::Scalar<unsigned>}> \hyperlink{classeos_1_1hdf5_1_1Composite}{ScalarsType};
+00506                 \textcolor{keyword}{static} \hyperlink{classeos_1_1hdf5_1_1Composite}{ScalarsType} \hyperlink{classeos_1_1proposal__functions_1_1MultivariateGaussian_aca175ee100311315c4ddb34757b68a3e}{scalars_type}();
+00507 
+00508             \textcolor{keyword}{protected}:
+00509                 \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classeos_1_1proposal__functions_1_1MultivariateGaussian_ac797f04a7bce3b029cfc32af0d6ecd07}{_compute_norm}();
+00510 
+00511             \textcolor{keyword}{public}:
+00512                 \hyperlink{classeos_1_1proposal__functions_1_1MultivariateGaussian_a9052192755db179db5e204c2bb0ad3f3}{MultivariateGaussian}(\textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_aa7a6807a556a5187c77080d6b2036deb}{dimension}, \textcolor{keyword}{const} std::vecto
+      r<double> & \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a54a59c24424caeb5e826d61d63edd95d}{covariance}, \textcolor{keyword}{const} \textcolor{keywordtype}{bool} & automatic\_scaling = \textcolor{keyword}{true});
+00513 
+00514                 \textcolor{keyword}{virtual} \hyperlink{classeos_1_1proposal__functions_1_1MultivariateGaussian_a18dde9d78f6ec8a459443396648ee990}{~MultivariateGaussian}();
+00515 
+00516                 \textcolor{keyword}{virtual} \hyperlink{namespaceeos_ae97f9891c67c90959a03fc96efaa4dc9}{ProposalFunctionPtr} \hyperlink{classeos_1_1proposal__functions_1_1MultivariateGaussian_abc989d0f246afe160eb1d4a0f1b4a03e}{clone}() \textcolor{keyword}{const};
+00517 
+00518                 \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classeos_1_1proposal__functions_1_1MultivariateGaussian_a5ab69304a64a9a947c847b8bc842417f}{dump_state}(\hyperlink{classeos_1_1hdf5_1_1File}{hdf5::File} & file, \textcolor{keyword}{const} std::string & da
+      ta\_set\_base\_name) \textcolor{keyword}{const};
+00519 
+00520                 \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \hyperlink{classeos_1_1proposal__functions_1_1MultivariateGaussian_a691b0b536abdd28e3cc629c27046603d}{evaluate}(\textcolor{keyword}{const} \hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} & x, \textcolor{keyword}{const} 
+      \hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} & y) \textcolor{keyword}{const};
+00521 
+00522                 \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classeos_1_1proposal__functions_1_1MultivariateGaussian_a4f451b8dc78b681eee4bda462217fb77}{propose}(\hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} & x, \textcolor{keyword}{const} 
+      \hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} & y, gsl\_rng * rng) \textcolor{keyword}{const};
+00523         \};
+00524 
+\hypertarget{proposal__functions_8hh_source_l00525}{}\hyperlink{classeos_1_1proposal__functions_1_1MultivariateStudentT}{00525}         \textcolor{keyword}{class }\hyperlink{classeos_1_1proposal__functions_1_1MultivariateStudentT}{MultivariateStudentT} :
+00526             \textcolor{keyword}{public} \hyperlink{classeos_1_1proposal__functions_1_1Multivariate}{Multivariate}
+00527         \{
+00528             \textcolor{keyword}{public}:
+\hypertarget{proposal__functions_8hh_source_l00529}{}\hyperlink{classeos_1_1proposal__functions_1_1MultivariateStudentT_aab40ca04073f1bfec9378681526aadd8}{00529}                 \textcolor{keyword}{typedef} \hyperlink{classeos_1_1hdf5_1_1Composite}{hdf5::Composite<hdf5::Scalar<double>}, 
+      \hyperlink{classeos_1_1hdf5_1_1Scalar}{hdf5::Scalar<double>}, \hyperlink{classeos_1_1hdf5_1_1Scalar}{hdf5::Scalar<unsigned>}, \hyperlink{classeos_1_1hdf5_1_1Scalar}{hdf5::Scalar<double>}> \hyperlink{classeos_1_1hdf5_1_1Composite}{ScalarsType};
+00530                 \textcolor{keyword}{static} \hyperlink{classeos_1_1hdf5_1_1Composite}{ScalarsType} \hyperlink{classeos_1_1proposal__functions_1_1MultivariateStudentT_a32ceb99e081791885f277e033c809c83}{scalars_type}();
+00531 
+00532             \textcolor{keyword}{protected}:
+00533 
+00534                 \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classeos_1_1proposal__functions_1_1MultivariateStudentT_aa44fa5958d242f5aae93c0dfa4cb8d84}{_compute_norm}();
+00535 
+00536             \textcolor{keyword}{public}:
+\hypertarget{proposal__functions_8hh_source_l00539}{}\hyperlink{classeos_1_1proposal__functions_1_1MultivariateStudentT_addd13294ed7e93125f090a8c9250ea99}{00539}                 \hyperlink{classeos_1_1VerifiedRange}{VerifiedRange<double>} \hyperlink{classeos_1_1proposal__functions_1_1MultivariateStudentT_addd13294ed7e93125f090a8c9250ea99}{dof};
+00540 
+00541                 \hyperlink{classeos_1_1proposal__functions_1_1MultivariateStudentT_a491d401a59792405c093865094f23810}{MultivariateStudentT}(\textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_aa7a6807a556a5187c77080d6b2036deb}{dimension}, \textcolor{keyword}{const} std::vecto
+      r<double> & \hyperlink{classeos_1_1proposal__functions_1_1Multivariate_a54a59c24424caeb5e826d61d63edd95d}{covariance}, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & degree\_of\_freedom, \textcolor{keyword}{const} \textcolor{keywordtype}{bool} & automatic\_
+      scaling = \textcolor{keyword}{true});
+00542 
+00543                 \textcolor{keyword}{virtual} \hyperlink{classeos_1_1proposal__functions_1_1MultivariateStudentT_acc497f43328165a02524291ed7383a89}{~MultivariateStudentT}();
+00544 
+00545                 \textcolor{keyword}{virtual} \hyperlink{namespaceeos_ae97f9891c67c90959a03fc96efaa4dc9}{ProposalFunctionPtr} \hyperlink{classeos_1_1proposal__functions_1_1MultivariateStudentT_a4f5007a73e656d9ff0476a4b5740018b}{clone}() \textcolor{keyword}{const};
+00546 
+00547                 \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classeos_1_1proposal__functions_1_1MultivariateStudentT_ab6afe975a0e1a553b785be0fd4daec05}{dump_state}(\hyperlink{classeos_1_1hdf5_1_1File}{hdf5::File} & file, \textcolor{keyword}{const} std::string & da
+      ta\_set\_base\_name) \textcolor{keyword}{const};
+00548 
+00549                 \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \hyperlink{classeos_1_1proposal__functions_1_1MultivariateStudentT_a9ca45b3dad5b0e6612ba27f7fb4e1973}{evaluate}(\textcolor{keyword}{const} \hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} & x, \textcolor{keyword}{const} 
+      \hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} & y) \textcolor{keyword}{const};
+00550 
+00551                 \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classeos_1_1proposal__functions_1_1MultivariateStudentT_ad7c59db9bc93f0fb4b3204b8f272ba6c}{propose}(\hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} & x, \textcolor{keyword}{const} 
+      \hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} & y, gsl\_rng * rng) \textcolor{keyword}{const};
+00552         \};
+00553 
+\hypertarget{proposal__functions_8hh_source_l00554}{}\hyperlink{structeos_1_1proposal__functions_1_1MultivariateAccess}{00554}         \textcolor{keyword}{struct }\hyperlink{structeos_1_1proposal__functions_1_1MultivariateAccess}{MultivariateAccess}
+00555         \{
+00556             \textcolor{keyword}{static} \hyperlink{namespaceeos_1_1proposal__functions_a6cffa18d523cd6955629beabbe07c17c}{MultivariateProposalPtr} \hyperlink{structeos_1_1proposal__functions_1_1MultivariateAccess_af0f5d90cc58f31b1bfa4e3bdc5d598b6}{access}(\textcolor{keyword}{const} \hyperlink{namespaceeos_ae97f9891c67c90959a03fc96efaa4dc9}{ProposalFunctionPtr} & p);
+      
+00557         \};
+00558 
+\hypertarget{proposal__functions_8hh_source_l00559}{}\hyperlink{classeos_1_1proposal__functions_1_1BlockDecomposition}{00559}         \textcolor{keyword}{class }\hyperlink{classeos_1_1proposal__functions_1_1BlockDecomposition}{BlockDecomposition} :
+00560             \textcolor{keyword}{public} \hyperlink{classeos_1_1MarkovChain}{MarkovChain}::ProposalFunction
+00561         \{
+00562             \textcolor{keyword}{public}:
+\hypertarget{proposal__functions_8hh_source_l00563}{}\hyperlink{classeos_1_1proposal__functions_1_1BlockDecomposition_a892047be5924542e4defaa86b30ad6fd}{00563}                 \textcolor{keyword}{typedef} \hyperlink{classeos_1_1hdf5_1_1Composite}{hdf5::Composite<hdf5::Scalar<const char *>}> \hyperlink{classeos_1_1hdf5_1_1Composite}{PriorsType};
+00564                 \textcolor{keyword}{static} \hyperlink{classeos_1_1hdf5_1_1Composite}{PriorsType} \hyperlink{classeos_1_1proposal__functions_1_1BlockDecomposition_a1dc4342c37838cf8d87f5c64c2f02f66}{priors_type}();
+\hypertarget{proposal__functions_8hh_source_l00565}{}\hyperlink{classeos_1_1proposal__functions_1_1BlockDecomposition_a52a0d4a7b6284023493999008d416bfe}{00565}                 \textcolor{keyword}{friend} \textcolor{keyword}{class }\hyperlink{structeos_1_1proposal__functions_1_1MultivariateAccess}{MultivariateAccess};
+00566             \textcolor{keyword}{private}:
+00567                 \textcolor{comment}{// use these vectors to represent the full length and ordering}
+00568                 \textcolor{comment}{// as in Analysis}
+00569                 std::vector<std::shared\_ptr<double> > \_tmp\_vector\_x;
+00570                 std::vector<std::shared\_ptr<double> > \_tmp\_vector\_y;
+00571 
+00572                 \textcolor{keyword}{mutable} \hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} \_tmp\_state\_x;
+00573                 \textcolor{keyword}{mutable} \hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} \_tmp\_state\_y;
+00574 
+00575                 \textcolor{comment}{// the actual proposal functions}
+00576                 std::vector<MultivariateProposalPtr> \_mv;
+00577                 std::vector<LogPriorPtr> \_priors;
+00578 
+00579                 \hyperlink{classeos_1_1Parameters}{Parameters} p;
+00580 
+00581                 \textcolor{comment}{// keep the references right}
+00582                 std::vector<std::vector<std::shared\_ptr<double>>> \_mv\_values\_x;
+00583                 std::vector<std::vector<std::shared\_ptr<double>>> \_mv\_values\_y;
+00584                 std::vector<std::vector<std::shared\_ptr<double>>> \_priors\_values\_
+      x;
+00585                 std::vector<std::vector<std::shared\_ptr<double>>> \_priors\_values\_
+      y;
+00586 
+00588                 \textcolor{keyword}{static} \textcolor{keywordtype}{void} \_copy\_values(\textcolor{keyword}{const} std::vector<std::shared\_ptr<double
+      >> & source\_ptr\_vector, std::vector<double> & result);
+00589 
+00595                 \textcolor{keyword}{static} \textcolor{keywordtype}{void} \_copy\_values(\textcolor{keyword}{const} std::vector<double> & source, \textcolor{keyword}{cons
+      t} std::vector<std::shared\_ptr<double>> & destination\_ptr\_vector);
+00596             \textcolor{keyword}{public}:
+00597                 \hyperlink{classeos_1_1proposal__functions_1_1BlockDecomposition_a10f540b481d3278044e1b59821ee57f8}{BlockDecomposition}();
+00598                 \textcolor{keyword}{virtual} \hyperlink{classeos_1_1proposal__functions_1_1BlockDecomposition_aba384f3920606bc7ec8a0ca4f57f68f5}{~BlockDecomposition}();
+00599 
+00600                 \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classeos_1_1proposal__functions_1_1BlockDecomposition_a045b459bc8314548abe3e5766134e625}{adapt}(\textcolor{keyword}{const} \hyperlink{structeos_1_1MarkovChain_1_1State_ad7590843e4feca7e696c53863e6e10c1}{MarkovChain::State::Iterator} & begin, \textcolor{keyword}{co
+      nst} \hyperlink{structeos_1_1MarkovChain_1_1State_ad7590843e4feca7e696c53863e6e10c1}{MarkovChain::State::Iterator} & end,
+00601                                    \textcolor{keyword}{const} \textcolor{keywordtype}{double} & efficiency, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & effi
+      ciency\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & efficiency\_max);
+00602 
+00603                 \textcolor{keywordtype}{void} \hyperlink{classeos_1_1proposal__functions_1_1BlockDecomposition_aa162a93e808bd848cbf5e761eb83ca68}{add}(\textcolor{keyword}{const} \hyperlink{namespaceeos_1_1proposal__functions_a6cffa18d523cd6955629beabbe07c17c}{MultivariateProposalPtr} &);
+00604                 \textcolor{keywordtype}{void} \hyperlink{classeos_1_1proposal__functions_1_1BlockDecomposition_aa162a93e808bd848cbf5e761eb83ca68}{add}(\textcolor{keyword}{const} \hyperlink{namespaceeos_ac5481e3b46ee55ff24606ee7f6e78651}{LogPriorPtr} &);
+00605 
+00606                 \textcolor{keyword}{virtual} \hyperlink{namespaceeos_ae97f9891c67c90959a03fc96efaa4dc9}{ProposalFunctionPtr} \hyperlink{classeos_1_1proposal__functions_1_1BlockDecomposition_ac863a3b2df66507f62c8decc7f543653}{clone}() \textcolor{keyword}{const};
+00607 
+00608                 \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classeos_1_1proposal__functions_1_1BlockDecomposition_a6e35abd9d5995d4ce8cd931df9037034}{dump_state}(\hyperlink{classeos_1_1hdf5_1_1File}{hdf5::File} & file, \textcolor{keyword}{const} std::string & da
+      ta\_set\_base\_name) \textcolor{keyword}{const};
+00609 
+00610                 \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \hyperlink{classeos_1_1proposal__functions_1_1BlockDecomposition_a2ccb90e87ccd98a155af6ecd71e03cf5}{evaluate}(\textcolor{keyword}{const} \hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} & x, \textcolor{keyword}{const} 
+      \hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} & y) \textcolor{keyword}{const};
+00611 
+00612                 \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classeos_1_1proposal__functions_1_1BlockDecomposition_a5b0a6e997f1c78d2557f2a742c4d3813}{propose}(\hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} & x, \textcolor{keyword}{const} 
+      \hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} & y, gsl\_rng * rng) \textcolor{keyword}{const};
+00613         \};
+00614     \}
+00615 \}
+00616 
+00617 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

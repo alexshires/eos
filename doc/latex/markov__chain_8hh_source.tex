@@ -1,0 +1,244 @@
+\hypertarget{markov__chain_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/markov\_\-chain.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2011 Frederik Beaujean}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_MARKOV\_CHAIN\_HH}
+\hypertarget{markov__chain_8hh_source_l00021}{}\hyperlink{markov__chain_8hh_ae0ec1ee591df5ff97e6f782528436afc}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_MARKOV\_CHAIN\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{preprocessor}{#include <\hyperlink{analysis-fwd_8hh}{eos/utils/analysis-fwd.hh}>}
+00024 \textcolor{preprocessor}{#include <\hyperlink{hdf5-fwd_8hh}{eos/utils/hdf5-fwd.hh}>}
+00025 \textcolor{preprocessor}{#include <\hyperlink{parameters_8hh}{eos/utils/parameters.hh}>}
+00026 \textcolor{preprocessor}{#include <\hyperlink{stringify_8hh}{eos/utils/stringify.hh}>}
+00027 
+00028 \textcolor{preprocessor}{#include <vector>}
+00029 
+00030 \textcolor{preprocessor}{#include <gsl/gsl\_rng.h>}
+00031 
+00032 \textcolor{keyword}{namespace }eos
+00033 \{
+\hypertarget{markov__chain_8hh_source_l00034}{}\hyperlink{classeos_1_1MarkovChain}{00034}     \textcolor{keyword}{class }\hyperlink{classeos_1_1MarkovChain}{MarkovChain} :
+00035         \textcolor{keyword}{public} \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern}<MarkovChain>
+00036     \{
+00037         \textcolor{keyword}{public}:
+00038             \textcolor{keyword}{class }\hyperlink{structeos_1_1MarkovChain_1_1History}{History};
+00039             \textcolor{keyword}{class }\hyperlink{structeos_1_1MarkovChain_1_1State}{State};
+00040             \textcolor{keyword}{class }\hyperlink{structeos_1_1MarkovChain_1_1ProposalFunction}{ProposalFunction};
+00041             \textcolor{keyword}{class }\hyperlink{structeos_1_1MarkovChain_1_1HyperParameter}{HyperParameter};
+00042             \textcolor{keyword}{class }\hyperlink{structeos_1_1MarkovChain_1_1Stats}{Stats};
+00043 
+00046 
+00052             \hyperlink{classeos_1_1MarkovChain_a47726a7176a818738c426b532e88ba94}{MarkovChain}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Analysis}{Analysis} & analysis, \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} seed, \textcolor{keyword}{const} std:
+      :shared\_ptr<MarkovChain::ProposalFunction> & \hyperlink{classeos_1_1MarkovChain_acfde2f6063a9ad8f6a4dabb548997b4d}{proposal_function});
+00053 
+00055             \hyperlink{classeos_1_1MarkovChain_afc27e695a24e780cd1af87e454588f31}{~MarkovChain}();
+00057 
+00059             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1MarkovChain_af4eb1b21be84a13ae5f421fe49ed9373}{clear}();
+00060 
+00062             \textcolor{keyword}{const} \hyperlink{structeos_1_1MarkovChain_1_1State}{State} & \hyperlink{classeos_1_1MarkovChain_a4ba66e0d64dade9f392d2542a7c566f4}{current_state}() \textcolor{keyword}{const};
+00063 
+00064             \textcolor{comment}{// todo document}
+00065             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1MarkovChain_af528eb210dd7052ceeb9455cb588cdd4}{dump_description}(\hyperlink{classeos_1_1hdf5_1_1File}{hdf5::File} & file, \textcolor{keyword}{const} std::string & data\_set
+      ) \textcolor{keyword}{const};
+00066 
+00075             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1MarkovChain_aa7fc24a3066077ab60de68a5a3f8ebe5}{dump_history}(\hyperlink{classeos_1_1hdf5_1_1File}{hdf5::File} & file, \textcolor{keyword}{const} std::string & data\_set\_nam
+      e, \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & last\_iterations) \textcolor{keyword}{const};
+00076 
+00077             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1MarkovChain_a89a777f8c14787db1e803995ee77d862}{dump_proposal}(\hyperlink{classeos_1_1hdf5_1_1File}{hdf5::File} & file, \textcolor{keyword}{const} std::string & data\_set\_na
+      me) \textcolor{keyword}{const};
+00078 
+00079             \hyperlink{structeos_1_1MarkovChain_1_1HyperParameter}{MarkovChain::HyperParameter} & \hyperlink{classeos_1_1MarkovChain_aa3055684326d68700ebeb994b878d8db}{hyper_parameter}(\textcolor{keywordtype}{bool} current = \textcolor{keyword}{true}) \textcolor{keyword}{co
+      nst};
+00080 
+00082             \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & \hyperlink{classeos_1_1MarkovChain_a3a9c62e634a375bffbb3fba0b7794b69}{iterations_last_run}() \textcolor{keyword}{const};
+00083 
+00085             \textcolor{keyword}{const} \hyperlink{structeos_1_1MarkovChain_1_1History}{History} & \hyperlink{classeos_1_1MarkovChain_ae1ef51057e7a205fbc9d04a5e913fb06}{history}() \textcolor{keyword}{const};
+00086 
+00088             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1MarkovChain_a808902afe1f1c7def764c4c492e29f1d}{set_analysis}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Analysis}{Analysis} & analysis);
+00089 
+00097             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1MarkovChain_a8aa1b0fac7040d32e42a8b2a8a508743}{keep_history}(\textcolor{keywordtype}{bool} keep\_samples, \textcolor{keywordtype}{bool} keep\_observables\_and\_propos
+      als = \textcolor{keyword}{false});
+00098 
+00108             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1MarkovChain_a0424b9803e0a479c88f76713455662fa}{normalized_density}(std::tuple<double, double> & result, \textcolor{keyword}{const} st
+      d::vector<double> & point, \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & posterior\_evaluations) \textcolor{keyword}{const};
+00109 
+00111             \textcolor{keyword}{const} std::vector<ParameterDescription> & \hyperlink{classeos_1_1MarkovChain_affcf4c3c4284fd0fae634c5cf1a97fa2}{parameter_descriptions}() \textcolor{keyword}{co
+      nst};
+00112 
+00114             \textcolor{keywordtype}{bool} \hyperlink{classeos_1_1MarkovChain_a42c06afd1034be43e44bcbb24a15c808}{proposal_accepted}() \textcolor{keyword}{const};
+00115 
+00117             std::shared\_ptr<MarkovChain::ProposalFunction> \hyperlink{classeos_1_1MarkovChain_acfde2f6063a9ad8f6a4dabb548997b4d}{proposal_function}() \textcolor{keyword}{co
+      nst};
+00118 
+00120             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1MarkovChain_acfde2f6063a9ad8f6a4dabb548997b4d}{proposal_function}(\textcolor{keyword}{const} std::shared\_ptr<MarkovChain::ProposalFun
+      ction> &);
+00121 
+00123             \textcolor{keyword}{const} \hyperlink{structeos_1_1MarkovChain_1_1State}{State} & \hyperlink{classeos_1_1MarkovChain_a094a7852f4983a3c26e6a062b66f2547}{proposed_state}() \textcolor{keyword}{const};
+00124 
+00131             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1MarkovChain_a4e54cc6e32c7bb258804b76988ab7f0b}{reset}(\textcolor{keywordtype}{bool} hard = \textcolor{keyword}{false});
+00132 
+00143             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \hyperlink{classeos_1_1MarkovChain_a9d67db1a7839b07dc43a847b6383e619}{read_data}(\hyperlink{classeos_1_1hdf5_1_1File}{hdf5::File} & file, \textcolor{keyword}{const} std::string & data\_bas
+      e\_name,
+00144                                   \hyperlink{structeos_1_1MarkovChain_1_1History}{MarkovChain::History} & history,
+00145                                   std::shared\_ptr<MarkovChain::ProposalFunction> 
+      & proposal,
+00146                                   std::string & proposal\_type,
+00147                                   \hyperlink{structeos_1_1MarkovChain_1_1Stats}{MarkovChain::Stats} & stats);
+00148 
+00159             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \hyperlink{classeos_1_1MarkovChain_acbcd604ef986e97891f0e358e045c117}{read_descriptions}(\hyperlink{classeos_1_1hdf5_1_1File}{hdf5::File} & file, \textcolor{keyword}{const} std::string & 
+      data\_base\_name,
+00160                                           std::vector<ParameterDescription>& desc
+      riptions,
+00161                                           std::vector<std::string> & priors,
+00162                                           std::vector<std::string> & constraints,
+      
+00163                                           std::string & hash);
+00164 
+00170             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1MarkovChain_abc73ca1b9fc5bdafba43c799e75192c8}{run}(\textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & iterations);
+00171 
+00178             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1MarkovChain_a24a9d7e2f6f930594dd7140acd6180bb}{set_mode}(\hyperlink{classeos_1_1hdf5_1_1File}{hdf5::File} & file, \textcolor{keyword}{const} std::string & data\_base\_name,
+00179                           \textcolor{keyword}{const} std::vector<double> & point, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & poste
+      rior);
+00180 
+00186             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1MarkovChain_a84d4342221f7f6a826d0a9a2480165c4}{set_point}(\textcolor{keyword}{const} std::vector<double> & point, \textcolor{keyword}{const} 
+      \hyperlink{structeos_1_1MarkovChain_1_1HyperParameter}{MarkovChain::HyperParameter} & hyper\_parameter);
+00187 
+00189             \textcolor{keyword}{const} \hyperlink{structeos_1_1MarkovChain_1_1Stats}{Stats} & \hyperlink{classeos_1_1MarkovChain_af48c29cabc958e061f699e595ffa3294}{statistics}() \textcolor{keyword}{const};
+00190     \};
+00191 
+\hypertarget{markov__chain_8hh_source_l00192}{}\hyperlink{structeos_1_1MarkovChain_1_1HyperParameter}{00192}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1MarkovChain_1_1HyperParameter}{MarkovChain::HyperParameter}
+00193     \{
+\hypertarget{markov__chain_8hh_source_l00195}{}\hyperlink{structeos_1_1MarkovChain_1_1HyperParameter_a775ee43b8fb689d149cd2190c994c8a9}{00195}             \textcolor{keywordtype}{unsigned} \hyperlink{structeos_1_1MarkovChain_1_1HyperParameter_a775ee43b8fb689d149cd2190c994c8a9}{component};
+00196     \};
+00197 
+\hypertarget{markov__chain_8hh_source_l00202}{}\hyperlink{structeos_1_1MarkovChain_1_1State}{00202}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State}
+00203     \{
+\hypertarget{markov__chain_8hh_source_l00204}{}\hyperlink{structeos_1_1MarkovChain_1_1State_ad7590843e4feca7e696c53863e6e10c1}{00204}         \textcolor{keyword}{typedef} std::vector<State>::const\_iterator \hyperlink{structeos_1_1MarkovChain_1_1State_ad7590843e4feca7e696c53863e6e10c1}{Iterator};
+00205 
+\hypertarget{markov__chain_8hh_source_l00207}{}\hyperlink{structeos_1_1MarkovChain_1_1State_a13518a1ded09d2c61dbfc2cc40297b94}{00207}         std::vector<double> \hyperlink{structeos_1_1MarkovChain_1_1State_a13518a1ded09d2c61dbfc2cc40297b94}{point};
+00208 
+\hypertarget{markov__chain_8hh_source_l00210}{}\hyperlink{structeos_1_1MarkovChain_1_1State_a0876fac286eb6eb52165389cfcc9e602}{00210}         \textcolor{keywordtype}{double} \hyperlink{structeos_1_1MarkovChain_1_1State_a0876fac286eb6eb52165389cfcc9e602}{log_likelihood};
+00211 
+\hypertarget{markov__chain_8hh_source_l00213}{}\hyperlink{structeos_1_1MarkovChain_1_1State_a4fa9205eb7785b52cc97f13714a3f62b}{00213}         \textcolor{keywordtype}{double} \hyperlink{structeos_1_1MarkovChain_1_1State_a4fa9205eb7785b52cc97f13714a3f62b}{log_prior};
+00214 
+\hypertarget{markov__chain_8hh_source_l00216}{}\hyperlink{structeos_1_1MarkovChain_1_1State_a893de1735354ecbfa51b34655fb28833}{00216}         \textcolor{keywordtype}{double} \hyperlink{structeos_1_1MarkovChain_1_1State_a893de1735354ecbfa51b34655fb28833}{log_posterior};
+00217 
+\hypertarget{markov__chain_8hh_source_l00219}{}\hyperlink{structeos_1_1MarkovChain_1_1State_a23f1f4c2b99c7b8956409f5f645d0337}{00219}         \hyperlink{structeos_1_1MarkovChain_1_1HyperParameter}{MarkovChain::HyperParameter} \hyperlink{structeos_1_1MarkovChain_1_1State_a23f1f4c2b99c7b8956409f5f645d0337}{hyper_parameter};
+00220 
+\hypertarget{markov__chain_8hh_source_l00221}{}\hyperlink{structeos_1_1MarkovChain_1_1State_a93beca0dcab0389f5b822394f341afc6}{00221}         \hyperlink{structeos_1_1MarkovChain_1_1State_a93beca0dcab0389f5b822394f341afc6}{State}()
+00222         \{
+00223         \}
+00224 
+\hypertarget{markov__chain_8hh_source_l00225}{}\hyperlink{structeos_1_1MarkovChain_1_1State_adaf4e7d6c9fc2b02f8adb1e924ceaf3e}{00225}         \hyperlink{structeos_1_1MarkovChain_1_1State_a93beca0dcab0389f5b822394f341afc6}{State}(\textcolor{keyword}{const} \hyperlink{structeos_1_1MarkovChain_1_1State}{State} & other)
+00226         \{
+00227             \hyperlink{structeos_1_1MarkovChain_1_1State_a0876fac286eb6eb52165389cfcc9e602}{log_likelihood} = other.\hyperlink{structeos_1_1MarkovChain_1_1State_a0876fac286eb6eb52165389cfcc9e602}{log_likelihood};
+00228             \hyperlink{structeos_1_1MarkovChain_1_1State_a4fa9205eb7785b52cc97f13714a3f62b}{log_prior} = other.\hyperlink{structeos_1_1MarkovChain_1_1State_a4fa9205eb7785b52cc97f13714a3f62b}{log_prior};
+00229             \hyperlink{structeos_1_1MarkovChain_1_1State_a893de1735354ecbfa51b34655fb28833}{log_posterior} = other.\hyperlink{structeos_1_1MarkovChain_1_1State_a893de1735354ecbfa51b34655fb28833}{log_posterior};
+00230             \hyperlink{structeos_1_1MarkovChain_1_1State_a13518a1ded09d2c61dbfc2cc40297b94}{point}.resize(other.\hyperlink{structeos_1_1MarkovChain_1_1State_a13518a1ded09d2c61dbfc2cc40297b94}{point}.size());
+00231             std::copy(other.\hyperlink{structeos_1_1MarkovChain_1_1State_a13518a1ded09d2c61dbfc2cc40297b94}{point}.cbegin(), other.\hyperlink{structeos_1_1MarkovChain_1_1State_a13518a1ded09d2c61dbfc2cc40297b94}{point}.cend(), \hyperlink{structeos_1_1MarkovChain_1_1State_a13518a1ded09d2c61dbfc2cc40297b94}{point}.begin());
+00232             \hyperlink{structeos_1_1MarkovChain_1_1State_a23f1f4c2b99c7b8956409f5f645d0337}{hyper_parameter} = other.\hyperlink{structeos_1_1MarkovChain_1_1State_a23f1f4c2b99c7b8956409f5f645d0337}{hyper_parameter};
+00233         \}
+00234     \};
+00235 
+\hypertarget{markov__chain_8hh_source_l00239}{}\hyperlink{structeos_1_1MarkovChain_1_1Stats}{00239}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1MarkovChain_1_1Stats}{MarkovChain::Stats}
+00240     \{
+\hypertarget{markov__chain_8hh_source_l00245}{}\hyperlink{structeos_1_1MarkovChain_1_1Stats_a0917e5acbc58e7b9fbe0c478b95e26ac}{00245}         \textcolor{keywordtype}{unsigned} \hyperlink{structeos_1_1MarkovChain_1_1Stats_a0917e5acbc58e7b9fbe0c478b95e26ac}{iterations_total};
+00246 
+\hypertarget{markov__chain_8hh_source_l00253}{}\hyperlink{structeos_1_1MarkovChain_1_1Stats_a4a20f93d5d7f8a19ce9f59f3bb642563}{00253}         \textcolor{keywordtype}{unsigned} \hyperlink{structeos_1_1MarkovChain_1_1Stats_a4a20f93d5d7f8a19ce9f59f3bb642563}{iterations_accepted};
+00254 
+\hypertarget{markov__chain_8hh_source_l00255}{}\hyperlink{structeos_1_1MarkovChain_1_1Stats_a42f68b2f84a5b2e3190529b9d8449e0e}{00255}         \textcolor{keywordtype}{unsigned} \hyperlink{structeos_1_1MarkovChain_1_1Stats_a42f68b2f84a5b2e3190529b9d8449e0e}{iterations_invalid};
+00256 
+\hypertarget{markov__chain_8hh_source_l00261}{}\hyperlink{structeos_1_1MarkovChain_1_1Stats_a61fc40a3cbb379e8ebc57b11eb388514}{00261}         \textcolor{keywordtype}{unsigned} \hyperlink{structeos_1_1MarkovChain_1_1Stats_a61fc40a3cbb379e8ebc57b11eb388514}{iterations_rejected};
+00262 
+\hypertarget{markov__chain_8hh_source_l00264}{}\hyperlink{structeos_1_1MarkovChain_1_1Stats_aead4abcd766affbdbb602d906b4938f6}{00264}         \textcolor{keywordtype}{double} \hyperlink{structeos_1_1MarkovChain_1_1Stats_aead4abcd766affbdbb602d906b4938f6}{mode_of_posterior};
+00265 
+\hypertarget{markov__chain_8hh_source_l00267}{}\hyperlink{structeos_1_1MarkovChain_1_1Stats_a9000c8ee4f560120fcc5bec1c615e7b0}{00267}         std::vector<double> \hyperlink{structeos_1_1MarkovChain_1_1Stats_a9000c8ee4f560120fcc5bec1c615e7b0}{parameters_at_mode};
+00268 
+\hypertarget{markov__chain_8hh_source_l00270}{}\hyperlink{structeos_1_1MarkovChain_1_1Stats_a43a0dbf5329e74fc9eef0cd7f5b28641}{00270}         std::vector<double> \hyperlink{structeos_1_1MarkovChain_1_1Stats_a43a0dbf5329e74fc9eef0cd7f5b28641}{mean_of_parameters};
+00271 
+\hypertarget{markov__chain_8hh_source_l00273}{}\hyperlink{structeos_1_1MarkovChain_1_1Stats_aa1f42fd0080e7dc2e2edcc8f97f78c46}{00273}         \textcolor{keywordtype}{double} \hyperlink{structeos_1_1MarkovChain_1_1Stats_aa1f42fd0080e7dc2e2edcc8f97f78c46}{mean_of_posterior};
+00274 
+\hypertarget{markov__chain_8hh_source_l00276}{}\hyperlink{structeos_1_1MarkovChain_1_1Stats_ad97dc1a916cfe3905ae776804ec57106}{00276}         std::vector<double> \hyperlink{structeos_1_1MarkovChain_1_1Stats_ad97dc1a916cfe3905ae776804ec57106}{variance_of_parameters};
+00277 
+\hypertarget{markov__chain_8hh_source_l00279}{}\hyperlink{structeos_1_1MarkovChain_1_1Stats_a42b880c3445149482c9b8516257dcd8a}{00279}         \textcolor{keywordtype}{double} \hyperlink{structeos_1_1MarkovChain_1_1Stats_a42b880c3445149482c9b8516257dcd8a}{variance_of_posterior};
+00280     \};
+00281 
+\hypertarget{markov__chain_8hh_source_l00282}{}\hyperlink{namespaceeos_ac9f30fde04446cfabdd69d4b5b5d3c5a}{00282}     \textcolor{keyword}{typedef} std::shared\_ptr<MarkovChain::History> \hyperlink{namespaceeos_ac9f30fde04446cfabdd69d4b5b5d3c5a}{HistoryPtr};
+00283 
+\hypertarget{markov__chain_8hh_source_l00287}{}\hyperlink{structeos_1_1MarkovChain_1_1History}{00287}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1MarkovChain_1_1History}{MarkovChain::History}
+00288     \{
+00289         \textcolor{keyword}{private}:
+00290             \textcolor{keyword}{static} \textcolor{keywordtype}{bool} cmp(\textcolor{keyword}{const} \hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} & a, \textcolor{keyword}{const} 
+      \hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} & b);
+00291 
+00292         \textcolor{keyword}{public}:
+00293 
+\hypertarget{markov__chain_8hh_source_l00295}{}\hyperlink{structeos_1_1MarkovChain_1_1History_ac6b8c02c837f78b6724fcaa1cb4eaa74}{00295}             \textcolor{keywordtype}{bool} \hyperlink{structeos_1_1MarkovChain_1_1History_ac6b8c02c837f78b6724fcaa1cb4eaa74}{keep};
+00296 
+\hypertarget{markov__chain_8hh_source_l00298}{}\hyperlink{structeos_1_1MarkovChain_1_1History_acecd7f35ce23b811f5365bb96446fba8}{00298}             std::vector<MarkovChain::State> \hyperlink{structeos_1_1MarkovChain_1_1History_acecd7f35ce23b811f5365bb96446fba8}{states};
+00299 
+00303             \textcolor{keyword}{const} \hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} & \hyperlink{structeos_1_1MarkovChain_1_1History_a590c268edb22f3d607dd7757f0bad114}{local_mode}(\textcolor{keyword}{const} 
+      \hyperlink{structeos_1_1MarkovChain_1_1State_ad7590843e4feca7e696c53863e6e10c1}{MarkovChain::State::Iterator} & begin, \textcolor{keyword}{const} \hyperlink{structeos_1_1MarkovChain_1_1State_ad7590843e4feca7e696c53863e6e10c1}{MarkovChain::State::Iterator} & end) \textcolor{keyword}{c
+      onst};
+00304 
+00313             \textcolor{comment}{// todo: make static}
+00314             \textcolor{keywordtype}{void} \hyperlink{structeos_1_1MarkovChain_1_1History_a4aa855975e42d10d25e43d327e4ef72a}{mean_and_variance}(\textcolor{keyword}{const} \hyperlink{structeos_1_1MarkovChain_1_1State_ad7590843e4feca7e696c53863e6e10c1}{MarkovChain::State::Iterator} & begin, \textcolor{keyword}{co
+      nst} \hyperlink{structeos_1_1MarkovChain_1_1State_ad7590843e4feca7e696c53863e6e10c1}{MarkovChain::State::Iterator} & end,
+00315                                    std::vector<double> & mean, std::vector<double
+      > & variance) \textcolor{keyword}{const};
+00316 
+00325             \textcolor{keywordtype}{void} \hyperlink{structeos_1_1MarkovChain_1_1History_a759445b30a1b1034937969a8db6e7668}{mean_and_covariance}(\textcolor{keyword}{const} \hyperlink{structeos_1_1MarkovChain_1_1State_ad7590843e4feca7e696c53863e6e10c1}{MarkovChain::State::Iterator} & begin, 
+      \textcolor{keyword}{const} \hyperlink{structeos_1_1MarkovChain_1_1State_ad7590843e4feca7e696c53863e6e10c1}{MarkovChain::State::Iterator} & end,
+00326                                    std::vector<double> & mean, std::vector<double
+      > & variance) \textcolor{keyword}{const};
+00327     \};
+00328 
+\hypertarget{markov__chain_8hh_source_l00329}{}\hyperlink{namespaceeos_ae97f9891c67c90959a03fc96efaa4dc9}{00329}     \textcolor{keyword}{typedef} std::shared\_ptr<MarkovChain::ProposalFunction> \hyperlink{namespaceeos_ae97f9891c67c90959a03fc96efaa4dc9}{ProposalFunctionPtr};
+00330 
+\hypertarget{markov__chain_8hh_source_l00334}{}\hyperlink{structeos_1_1MarkovChain_1_1ProposalFunction}{00334}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1MarkovChain_1_1ProposalFunction}{MarkovChain::ProposalFunction}
+00335     \{
+00337         \textcolor{keyword}{virtual} \hyperlink{structeos_1_1MarkovChain_1_1ProposalFunction_a758ad6e18e36b15062fe776ee7a9b3d9}{~ProposalFunction}() = 0;
+00338 
+00346         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{structeos_1_1MarkovChain_1_1ProposalFunction_afee6a937c53b9cfb257a5cd724a54296}{adapt}(\textcolor{keyword}{const} \hyperlink{structeos_1_1MarkovChain_1_1State_ad7590843e4feca7e696c53863e6e10c1}{MarkovChain::State::Iterator} & begin, \textcolor{keyword}{const} 
+      \hyperlink{structeos_1_1MarkovChain_1_1State_ad7590843e4feca7e696c53863e6e10c1}{MarkovChain::State::Iterator} & end,
+00347                            \textcolor{keyword}{const} \textcolor{keywordtype}{double} & efficiency, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & efficiency\_m
+      in, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & efficiency\_max) = 0;
+00348 
+00350         \textcolor{keyword}{virtual} \hyperlink{namespaceeos_ae97f9891c67c90959a03fc96efaa4dc9}{ProposalFunctionPtr} \hyperlink{structeos_1_1MarkovChain_1_1ProposalFunction_a7065079985f8bb44309d7773d85d225b}{clone}() \textcolor{keyword}{const} = 0;
+00351 
+00353         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{structeos_1_1MarkovChain_1_1ProposalFunction_aea88a1340e10cc6a5b03d8b5483774f7}{dump_state}(\hyperlink{classeos_1_1hdf5_1_1File}{hdf5::File} & file, \textcolor{keyword}{const} std::string & data\_set\_b
+      ase\_name) \textcolor{keyword}{const} = 0;
+00354 
+00356         \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \hyperlink{structeos_1_1MarkovChain_1_1ProposalFunction_ae3f2c43980ec9dfe9f35d8139f2f4ec7}{evaluate}(\textcolor{keyword}{const} \hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} & x, \textcolor{keyword}{const} 
+      \hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} & y) \textcolor{keyword}{const} = 0;
+00357 
+00359         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{structeos_1_1MarkovChain_1_1ProposalFunction_a2b296008d32b1cd008e59cde1228705f}{propose}(\hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} & x, \textcolor{keyword}{const} \hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} & y
+      , gsl\_rng * rng) \textcolor{keyword}{const} = 0;
+00360     \};
+00361 
+00362     std::ostream & \hyperlink{namespaceeos_a2d7ef50009f9368c73d5056eab3ec21d}{operator<< }(std::ostream & lhs, \textcolor{keyword}{const} \hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} & rhs
+      );
+00363 \}
+00364 
+00365 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

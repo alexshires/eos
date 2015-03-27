@@ -1,0 +1,86 @@
+\hypertarget{hdf5_8hh}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/hdf5.hh File Reference}
+\label{hdf5_8hh}\index{/home/alexshires/EOS/eos-\/next/eos/utils/hdf5.hh@{/home/alexshires/EOS/eos-\/next/eos/utils/hdf5.hh}}
+}
+{\ttfamily \#include $<$eos/utils/exception.hh$>$}\par
+{\ttfamily \#include $<$eos/utils/hdf5-\/fwd.hh$>$}\par
+{\ttfamily \#include $<$eos/utils/private\_\-implementation\_\-pattern.hh$>$}\par
+{\ttfamily \#include $<$eos/utils/wrapped\_\-forward\_\-iterator.hh$>$}\par
+{\ttfamily \#include $<$hdf5.h$>$}\par
+{\ttfamily \#include $<$cstring$>$}\par
+{\ttfamily \#include $<$vector$>$}\par
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classeos_1_1HDF5Error}{eos::HDF5Error}
+\item 
+struct \hyperlink{structeos_1_1hdf5_1_1DataType}{eos::hdf5::DataType$<$ T\_\- $>$}
+\item 
+struct \hyperlink{structeos_1_1hdf5_1_1DataType_3_01double_01_4}{eos::hdf5::DataType$<$ double $>$}
+\item 
+struct \hyperlink{structeos_1_1hdf5_1_1DataType_3_01unsigned_01_4}{eos::hdf5::DataType$<$ unsigned $>$}
+\item 
+struct \hyperlink{structeos_1_1hdf5_1_1DataType_3_01int_01_4}{eos::hdf5::DataType$<$ int $>$}
+\item 
+struct \hyperlink{structeos_1_1hdf5_1_1DataType_3_01short_01_4}{eos::hdf5::DataType$<$ short $>$}
+\item 
+struct \hyperlink{structeos_1_1hdf5_1_1DataType_3_01const_01char_01_5_01_4}{eos::hdf5::DataType$<$ const char $\ast$ $>$}
+\item 
+struct \hyperlink{structeos_1_1hdf5_1_1Type}{eos::hdf5::Type}
+\item 
+class \hyperlink{classeos_1_1hdf5_1_1Scalar}{eos::hdf5::Scalar$<$ T\_\- $>$}
+\item 
+class \hyperlink{classeos_1_1hdf5_1_1Array}{eos::hdf5::Array$<$ rank\_\-, T\_\- $>$}
+\item 
+struct \hyperlink{structeos_1_1hdf5_1_1CompositeCopier}{eos::hdf5::CompositeCopier$<$ index\_\-, TypeTuple\_\-, Tuple\_\- $>$}
+\item 
+struct \hyperlink{structeos_1_1hdf5_1_1CompositeCopier_3_010_00_01TypeTuple___00_01Tuple___01_4}{eos::hdf5::CompositeCopier$<$ 0, TypeTuple\_\-, Tuple\_\- $>$}
+\item 
+class \hyperlink{classeos_1_1hdf5_1_1Composite}{eos::hdf5::Composite$<$ T\_\- $>$}
+\item 
+class \hyperlink{classeos_1_1hdf5_1_1FileHandle}{eos::hdf5::FileHandle}
+\item 
+class \hyperlink{classeos_1_1hdf5_1_1DataSetHandle}{eos::hdf5::DataSetHandle}
+\item 
+class \hyperlink{classeos_1_1hdf5_1_1AttributeHandle}{eos::hdf5::AttributeHandle}
+\item 
+class \hyperlink{classeos_1_1hdf5_1_1File}{eos::hdf5::File}
+\item 
+class \hyperlink{classeos_1_1hdf5_1_1DataSet}{eos::hdf5::DataSet$<$ T\_\- $>$}
+\item 
+class \hyperlink{classeos_1_1hdf5_1_1Attribute}{eos::hdf5::Attribute$<$ T\_\- $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \hyperlink{namespaceeos}{eos}
+\item 
+namespace \hyperlink{namespaceeos_1_1hdf5}{eos::hdf5}
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{hdf5_8hh_ab9d243c1633b2b4f6e51b80f8300d92e}{EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-HDF5\_\-HH}~1
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef int \hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{eos::hdf5::hid\_\-t}
+\item 
+typedef std::shared\_\-ptr$<$ Type $>$ \hyperlink{namespaceeos_1_1hdf5_ac960ca8a290b8a26ab5f71585ac5d793}{eos::hdf5::TypePtr}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T\_\- $>$ }\\DataSet$<$ T\_\- $>$ \& \hyperlink{namespaceeos_1_1hdf5_a8da5ea7dae12acf02081ea4fc320dc3a}{eos::hdf5::operator$<$$<$} (DataSet$<$ T\_\- $>$ \&, const typename T\_\-::Type \&)
+\item 
+{\footnotesize template$<$typename T\_\- $>$ }\\DataSet$<$ T\_\- $>$ \& \hyperlink{namespaceeos_1_1hdf5_a59f5217285970b223b8a4932b811106e}{eos::hdf5::operator$>$$>$} (DataSet$<$ T\_\- $>$ \&, typename T\_\-::Type \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{hdf5_8hh_ab9d243c1633b2b4f6e51b80f8300d92e}{
+\index{hdf5.hh@{hdf5.hh}!EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-HDF5\_\-HH@{EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-HDF5\_\-HH}}
+\index{EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-HDF5\_\-HH@{EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-HDF5\_\-HH}!hdf5.hh@{hdf5.hh}}
+\subsubsection[{EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-HDF5\_\-HH}]{\setlength{\rightskip}{0pt plus 5cm}\#define EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-HDF5\_\-HH~1}}
+\label{hdf5_8hh_ab9d243c1633b2b4f6e51b80f8300d92e}

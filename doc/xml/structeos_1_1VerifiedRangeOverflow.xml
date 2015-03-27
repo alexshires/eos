@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1VerifiedRangeOverflow" kind="struct" prot="public">
+    <compoundname>eos::VerifiedRangeOverflow</compoundname>
+    <basecompoundref refid="classeos_1_1VerifiedRangeError" prot="public" virt="non-virtual">eos::VerifiedRangeError</basecompoundref>
+    <includes refid="verify_8hh" local="no">verify.hh</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structeos_1_1VerifiedRangeOverflow_1aa87d45b5209b4abf25baa50048c40172" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::VerifiedRangeOverflow::VerifiedRangeOverflow</definition>
+        <argsstring>(const std::string &amp;value, const std::string &amp;maximum)</argsstring>
+        <name>VerifiedRangeOverflow</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>maximum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/verify.hh" line="47"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="structeos_1_1VerifiedRangeOverflow" kindref="compound">VerifiedRangeOverflow</ref> is thrown whenever a <ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange</ref> is assigned a value that is larger than its allowed maximum. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1064">
+        <label>eos::VerifiedRangeOverflow</label>
+        <link refid="structeos_1_1VerifiedRangeOverflow"/>
+        <childnode refid="1065" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1066">
+        <label>eos::Exception</label>
+        <link refid="classeos_1_1Exception"/>
+        <childnode refid="1067" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1067">
+        <label>std::exception</label>
+      </node>
+      <node id="1065">
+        <label>eos::VerifiedRangeError</label>
+        <link refid="classeos_1_1VerifiedRangeError"/>
+        <childnode refid="1066" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1068">
+        <label>eos::VerifiedRangeOverflow</label>
+        <link refid="structeos_1_1VerifiedRangeOverflow"/>
+        <childnode refid="1069" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1070">
+        <label>eos::Exception</label>
+        <link refid="classeos_1_1Exception"/>
+        <childnode refid="1071" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1072" relation="usage">
+          <edgelabel>_message</edgelabel>
+        </childnode>
+      </node>
+      <node id="1073">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="1071">
+        <label>std::exception</label>
+      </node>
+      <node id="1069">
+        <label>eos::VerifiedRangeError</label>
+        <link refid="classeos_1_1VerifiedRangeError"/>
+        <childnode refid="1070" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1072">
+        <label>std::string</label>
+        <childnode refid="1073" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/verify.hh" line="46" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/verify.hh" bodystart="44" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classeos_1_1Exception_1acbc0fa64ca3d54cc1f828b07dc80e585" prot="protected" virt="non-virtual"><scope>eos::VerifiedRangeOverflow</scope><name>Exception</name></member>
+      <member refid="classeos_1_1VerifiedRangeError_1a68d9494a951b7945d19a13a9bef0e456" prot="protected" virt="non-virtual"><scope>eos::VerifiedRangeOverflow</scope><name>VerifiedRangeError</name></member>
+      <member refid="structeos_1_1VerifiedRangeOverflow_1aa87d45b5209b4abf25baa50048c40172" prot="public" virt="non-virtual"><scope>eos::VerifiedRangeOverflow</scope><name>VerifiedRangeOverflow</name></member>
+      <member refid="classeos_1_1Exception_1adce7a2af080165b09a599bb13438a8e1" prot="public" virt="virtual"><scope>eos::VerifiedRangeOverflow</scope><name>what</name></member>
+      <member refid="classeos_1_1Exception_1a8cb6faea0484cc58c472da9e58c7c30a" prot="public" virt="non-virtual"><scope>eos::VerifiedRangeOverflow</scope><name>~Exception</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

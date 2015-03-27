@@ -1,0 +1,440 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1WilsonCoefficients_3_01BToS_01_4" kind="struct" prot="public">
+    <compoundname>eos::WilsonCoefficients&lt; BToS &gt;</compoundname>
+    <includes refid="wilson__coefficients_8hh" local="no">wilson_coefficients.hh</includes>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1ad55e5edfe673a97fe71981a429cb7152" prot="public" static="no" mutable="no">
+        <type>std::array&lt; complex&lt; double &gt;, 15 &gt;</type>
+        <definition>std::array&lt;complex&lt;double&gt;, 15&gt; eos::WilsonCoefficients&lt; BToS &gt;::_sm_like_coefficients</definition>
+        <argsstring></argsstring>
+        <name>_sm_like_coefficients</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" line="41" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a4c2aa2cde65c6c77df70e6fa87736ac7" prot="public" static="no" mutable="no">
+        <type>std::array&lt; complex&lt; double &gt;, 15 &gt;</type>
+        <definition>std::array&lt;complex&lt;double&gt;, 15&gt; eos::WilsonCoefficients&lt; BToS &gt;::_primed_coefficients</definition>
+        <argsstring></argsstring>
+        <name>_primed_coefficients</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" line="44" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1ac890d2d52439b631a8eaee283825dcc3" prot="public" static="no" mutable="no">
+        <type>std::array&lt; complex&lt; double &gt;, 6 &gt;</type>
+        <definition>std::array&lt;complex&lt;double&gt;, 6&gt; eos::WilsonCoefficients&lt; BToS &gt;::_scalar_tensor_coefficients</definition>
+        <argsstring></argsstring>
+        <name>_scalar_tensor_coefficients</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" line="47" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1ad988c930213682048f50ec4fa3390cc8" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::WilsonCoefficients&lt; BToS &gt;::_alpha_s</definition>
+        <argsstring></argsstring>
+        <name>_alpha_s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" line="49" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1addf90ab27c34f993f61e6003d34514f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::WilsonCoefficients&lt; BToS &gt;::WilsonCoefficients</definition>
+        <argsstring>()</argsstring>
+        <name>WilsonCoefficients</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default ctor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a17759f6b63cf172d7d7f07dbbb78e3f9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::WilsonCoefficients&lt; BToS &gt;::c1</definition>
+        <argsstring>() const </argsstring>
+        <name>c1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" line="55" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1afcb665ee21ae1be28cec84c0a3781132" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::WilsonCoefficients&lt; BToS &gt;::c2</definition>
+        <argsstring>() const </argsstring>
+        <name>c2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" line="56" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a5f36442158531e3f364f0f3cf2cadfe2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::WilsonCoefficients&lt; BToS &gt;::c3</definition>
+        <argsstring>() const </argsstring>
+        <name>c3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" line="57" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a427b2d73d89283266b163cfe4c42b086" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::WilsonCoefficients&lt; BToS &gt;::c4</definition>
+        <argsstring>() const </argsstring>
+        <name>c4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" line="58" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1ad68ee72fdb415820d0ff3f042a8d9e14" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::WilsonCoefficients&lt; BToS &gt;::c5</definition>
+        <argsstring>() const </argsstring>
+        <name>c5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" line="59" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a552e58e087a6b5c4a0cec7d30486154e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::WilsonCoefficients&lt; BToS &gt;::c6</definition>
+        <argsstring>() const </argsstring>
+        <name>c6</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" line="60" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1aac9632c45e186951fe0459cb315dee0e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::WilsonCoefficients&lt; BToS &gt;::cq3</definition>
+        <argsstring>() const </argsstring>
+        <name>cq3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" line="62" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a4e0045b6ae96dd094b9e21450fcebce2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::WilsonCoefficients&lt; BToS &gt;::cq4</definition>
+        <argsstring>() const </argsstring>
+        <name>cq4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" line="63" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" bodystart="63" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a73655ba58242bc15ecc8f097ec9abadd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::WilsonCoefficients&lt; BToS &gt;::cq5</definition>
+        <argsstring>() const </argsstring>
+        <name>cq5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" line="64" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a454eb97a2a032d55a656e0103d4cffa7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::WilsonCoefficients&lt; BToS &gt;::cq6</definition>
+        <argsstring>() const </argsstring>
+        <name>cq6</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" line="65" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a8bfd88e1ee202d67cf6ad3e22fd0e311" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::WilsonCoefficients&lt; BToS &gt;::c2b</definition>
+        <argsstring>() const </argsstring>
+        <name>c2b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" line="67" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1aabbbd9922af280cfef8cf7a243e1c02e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::WilsonCoefficients&lt; BToS &gt;::c7</definition>
+        <argsstring>() const </argsstring>
+        <name>c7</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" line="69" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1ad1700818a303de24c0d9aba06b9428db" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::WilsonCoefficients&lt; BToS &gt;::c8</definition>
+        <argsstring>() const </argsstring>
+        <name>c8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" line="70" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1abd2db158ab9926a0f7be9f29ef16663f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::WilsonCoefficients&lt; BToS &gt;::c9</definition>
+        <argsstring>() const </argsstring>
+        <name>c9</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" line="71" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" bodystart="71" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a5a8db4cc5c486d0a77b968f1456446e3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::WilsonCoefficients&lt; BToS &gt;::c10</definition>
+        <argsstring>() const </argsstring>
+        <name>c10</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" line="72" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" bodystart="72" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a40dafdcff20076a5cf44d529ac664f09" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::WilsonCoefficients&lt; BToS &gt;::c7prime</definition>
+        <argsstring>() const </argsstring>
+        <name>c7prime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" line="74" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" bodystart="74" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1abfc2ac642a0fd10464d843eb7ed8ebab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::WilsonCoefficients&lt; BToS &gt;::c8prime</definition>
+        <argsstring>() const </argsstring>
+        <name>c8prime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" line="75" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" bodystart="75" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a633c2ff746cf0998286b396d5d6ad864" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::WilsonCoefficients&lt; BToS &gt;::c9prime</definition>
+        <argsstring>() const </argsstring>
+        <name>c9prime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" line="76" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" bodystart="76" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a5afdd05acb7cd08196aa402ed6ccd374" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::WilsonCoefficients&lt; BToS &gt;::c10prime</definition>
+        <argsstring>() const </argsstring>
+        <name>c10prime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" line="77" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" bodystart="77" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1afb6218a0c941a2c158753e8977ceca2a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::WilsonCoefficients&lt; BToS &gt;::cS</definition>
+        <argsstring>() const </argsstring>
+        <name>cS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" line="79" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" bodystart="79" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1afee3b55a164362636ff1bdfcea0d869f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::WilsonCoefficients&lt; BToS &gt;::cSprime</definition>
+        <argsstring>() const </argsstring>
+        <name>cSprime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" line="80" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" bodystart="80" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1af5e99da02e53255077cdf53b315c0960" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::WilsonCoefficients&lt; BToS &gt;::cP</definition>
+        <argsstring>() const </argsstring>
+        <name>cP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" line="81" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1ab49d57e926919ae28d0780f8d9df644b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::WilsonCoefficients&lt; BToS &gt;::cPprime</definition>
+        <argsstring>() const </argsstring>
+        <name>cPprime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" line="82" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" bodystart="82" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a36a8fb3dc528761824bcced340aecbae" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::WilsonCoefficients&lt; BToS &gt;::cT</definition>
+        <argsstring>() const </argsstring>
+        <name>cT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" line="83" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1af74fd634de725f21735e0ba308c4985d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::WilsonCoefficients&lt; BToS &gt;::cT5</definition>
+        <argsstring>() const </argsstring>
+        <name>cT5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" line="84" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" bodystart="84" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" line="39" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh" bodystart="38" bodyend="85"/>
+    <listofallmembers>
+      <member refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1ad988c930213682048f50ec4fa3390cc8" prot="public" virt="non-virtual"><scope>eos::WilsonCoefficients&lt; BToS &gt;</scope><name>_alpha_s</name></member>
+      <member refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a4c2aa2cde65c6c77df70e6fa87736ac7" prot="public" virt="non-virtual"><scope>eos::WilsonCoefficients&lt; BToS &gt;</scope><name>_primed_coefficients</name></member>
+      <member refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1ac890d2d52439b631a8eaee283825dcc3" prot="public" virt="non-virtual"><scope>eos::WilsonCoefficients&lt; BToS &gt;</scope><name>_scalar_tensor_coefficients</name></member>
+      <member refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1ad55e5edfe673a97fe71981a429cb7152" prot="public" virt="non-virtual"><scope>eos::WilsonCoefficients&lt; BToS &gt;</scope><name>_sm_like_coefficients</name></member>
+      <member refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a17759f6b63cf172d7d7f07dbbb78e3f9" prot="public" virt="non-virtual"><scope>eos::WilsonCoefficients&lt; BToS &gt;</scope><name>c1</name></member>
+      <member refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a5a8db4cc5c486d0a77b968f1456446e3" prot="public" virt="non-virtual"><scope>eos::WilsonCoefficients&lt; BToS &gt;</scope><name>c10</name></member>
+      <member refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a5afdd05acb7cd08196aa402ed6ccd374" prot="public" virt="non-virtual"><scope>eos::WilsonCoefficients&lt; BToS &gt;</scope><name>c10prime</name></member>
+      <member refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1afcb665ee21ae1be28cec84c0a3781132" prot="public" virt="non-virtual"><scope>eos::WilsonCoefficients&lt; BToS &gt;</scope><name>c2</name></member>
+      <member refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a8bfd88e1ee202d67cf6ad3e22fd0e311" prot="public" virt="non-virtual"><scope>eos::WilsonCoefficients&lt; BToS &gt;</scope><name>c2b</name></member>
+      <member refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a5f36442158531e3f364f0f3cf2cadfe2" prot="public" virt="non-virtual"><scope>eos::WilsonCoefficients&lt; BToS &gt;</scope><name>c3</name></member>
+      <member refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a427b2d73d89283266b163cfe4c42b086" prot="public" virt="non-virtual"><scope>eos::WilsonCoefficients&lt; BToS &gt;</scope><name>c4</name></member>
+      <member refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1ad68ee72fdb415820d0ff3f042a8d9e14" prot="public" virt="non-virtual"><scope>eos::WilsonCoefficients&lt; BToS &gt;</scope><name>c5</name></member>
+      <member refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a552e58e087a6b5c4a0cec7d30486154e" prot="public" virt="non-virtual"><scope>eos::WilsonCoefficients&lt; BToS &gt;</scope><name>c6</name></member>
+      <member refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1aabbbd9922af280cfef8cf7a243e1c02e" prot="public" virt="non-virtual"><scope>eos::WilsonCoefficients&lt; BToS &gt;</scope><name>c7</name></member>
+      <member refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a40dafdcff20076a5cf44d529ac664f09" prot="public" virt="non-virtual"><scope>eos::WilsonCoefficients&lt; BToS &gt;</scope><name>c7prime</name></member>
+      <member refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1ad1700818a303de24c0d9aba06b9428db" prot="public" virt="non-virtual"><scope>eos::WilsonCoefficients&lt; BToS &gt;</scope><name>c8</name></member>
+      <member refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1abfc2ac642a0fd10464d843eb7ed8ebab" prot="public" virt="non-virtual"><scope>eos::WilsonCoefficients&lt; BToS &gt;</scope><name>c8prime</name></member>
+      <member refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1abd2db158ab9926a0f7be9f29ef16663f" prot="public" virt="non-virtual"><scope>eos::WilsonCoefficients&lt; BToS &gt;</scope><name>c9</name></member>
+      <member refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a633c2ff746cf0998286b396d5d6ad864" prot="public" virt="non-virtual"><scope>eos::WilsonCoefficients&lt; BToS &gt;</scope><name>c9prime</name></member>
+      <member refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1af5e99da02e53255077cdf53b315c0960" prot="public" virt="non-virtual"><scope>eos::WilsonCoefficients&lt; BToS &gt;</scope><name>cP</name></member>
+      <member refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1ab49d57e926919ae28d0780f8d9df644b" prot="public" virt="non-virtual"><scope>eos::WilsonCoefficients&lt; BToS &gt;</scope><name>cPprime</name></member>
+      <member refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1aac9632c45e186951fe0459cb315dee0e" prot="public" virt="non-virtual"><scope>eos::WilsonCoefficients&lt; BToS &gt;</scope><name>cq3</name></member>
+      <member refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a4e0045b6ae96dd094b9e21450fcebce2" prot="public" virt="non-virtual"><scope>eos::WilsonCoefficients&lt; BToS &gt;</scope><name>cq4</name></member>
+      <member refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a73655ba58242bc15ecc8f097ec9abadd" prot="public" virt="non-virtual"><scope>eos::WilsonCoefficients&lt; BToS &gt;</scope><name>cq5</name></member>
+      <member refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a454eb97a2a032d55a656e0103d4cffa7" prot="public" virt="non-virtual"><scope>eos::WilsonCoefficients&lt; BToS &gt;</scope><name>cq6</name></member>
+      <member refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1afb6218a0c941a2c158753e8977ceca2a" prot="public" virt="non-virtual"><scope>eos::WilsonCoefficients&lt; BToS &gt;</scope><name>cS</name></member>
+      <member refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1afee3b55a164362636ff1bdfcea0d869f" prot="public" virt="non-virtual"><scope>eos::WilsonCoefficients&lt; BToS &gt;</scope><name>cSprime</name></member>
+      <member refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1a36a8fb3dc528761824bcced340aecbae" prot="public" virt="non-virtual"><scope>eos::WilsonCoefficients&lt; BToS &gt;</scope><name>cT</name></member>
+      <member refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1af74fd634de725f21735e0ba308c4985d" prot="public" virt="non-virtual"><scope>eos::WilsonCoefficients&lt; BToS &gt;</scope><name>cT5</name></member>
+      <member refid="structeos_1_1WilsonCoefficients_3_01BToS_01_4_1addf90ab27c34f993f61e6003d34514f3" prot="public" virt="non-virtual"><scope>eos::WilsonCoefficients&lt; BToS &gt;</scope><name>WilsonCoefficients</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

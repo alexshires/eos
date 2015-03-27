@@ -1,0 +1,312 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1CKMScanModel" kind="class" prot="public">
+    <compoundname>eos::CKMScanModel</compoundname>
+    <basecompoundref refid="classeos_1_1Model" prot="public" virt="non-virtual">eos::Model</basecompoundref>
+    <basecompoundref refid="classeos_1_1CKMScanComponent" prot="public" virt="non-virtual">eos::CKMScanComponent</basecompoundref>
+    <basecompoundref refid="classeos_1_1SMComponent_3_01components_1_1QCD_01_4" prot="public" virt="non-virtual">eos::SMComponent&lt; components::QCD &gt;</basecompoundref>
+    <basecompoundref refid="classeos_1_1SMComponent_3_01components_1_1DeltaB1_01_4" prot="public" virt="non-virtual">eos::SMComponent&lt; components::DeltaB1 &gt;</basecompoundref>
+    <includes refid="ckm__scan__model_8hh" local="no">ckm_scan_model.hh</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1CKMScanModel_1a348fbaeb80dc246db6d94fc704b34ddc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::CKMScanModel::CKMScanModel</definition>
+        <argsstring>(const Parameters &amp;, const Options &amp;)</argsstring>
+        <name>CKMScanModel</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1Options" kindref="compound">Options</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/ckm_scan_model.hh" line="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1CKMScanModel_1a33220021fdd61915cdbe327481f01122" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual eos::CKMScanModel::~CKMScanModel</definition>
+        <argsstring>()</argsstring>
+        <name>~CKMScanModel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/ckm_scan_model.hh" line="83"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classeos_1_1CKMScanModel_1a78a49c4da540e56430d800173d129cc3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classeos_1_1Model" kindref="compound">Model</ref> &gt;</type>
+        <definition>static std::shared_ptr&lt;Model&gt; eos::CKMScanModel::make</definition>
+        <argsstring>(const Parameters &amp;, const Options &amp;)</argsstring>
+        <name>make</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1Options" kindref="compound">Options</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/ckm_scan_model.hh" line="85"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="246">
+        <label>eos::ModelComponent&lt; components::DeltaB1 &gt;</label>
+        <link refid="classeos_1_1ModelComponent_3_01components_1_1DeltaB1_01_4"/>
+      </node>
+      <node id="245">
+        <label>eos::ModelComponent&lt; components::QCD &gt;</label>
+        <link refid="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4"/>
+      </node>
+      <node id="247">
+        <label>eos::CKMScanComponent</label>
+        <link refid="classeos_1_1CKMScanComponent"/>
+        <childnode refid="244" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="242">
+        <label>eos::Model</label>
+        <link refid="classeos_1_1Model"/>
+        <childnode refid="243" relation="public-inheritance">
+        </childnode>
+        <childnode refid="244" relation="public-inheritance">
+        </childnode>
+        <childnode refid="245" relation="public-inheritance">
+        </childnode>
+        <childnode refid="246" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="249">
+        <label>eos::SMComponent&lt; components::DeltaB1 &gt;</label>
+        <link refid="classeos_1_1SMComponent_3_01components_1_1DeltaB1_01_4"/>
+        <childnode refid="246" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="241">
+        <label>eos::CKMScanModel</label>
+        <link refid="classeos_1_1CKMScanModel"/>
+        <childnode refid="242" relation="public-inheritance">
+        </childnode>
+        <childnode refid="247" relation="public-inheritance">
+        </childnode>
+        <childnode refid="248" relation="public-inheritance">
+        </childnode>
+        <childnode refid="249" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="244">
+        <label>eos::ModelComponent&lt; components::CKM &gt;</label>
+        <link refid="classeos_1_1ModelComponent_3_01components_1_1CKM_01_4"/>
+      </node>
+      <node id="243">
+        <label>eos::ParameterUser</label>
+        <link refid="classeos_1_1ParameterUser"/>
+      </node>
+      <node id="248">
+        <label>eos::SMComponent&lt; components::QCD &gt;</label>
+        <link refid="classeos_1_1SMComponent_3_01components_1_1QCD_01_4"/>
+        <childnode refid="245" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="256">
+        <label>eos::ModelComponent&lt; components::DeltaB1 &gt;</label>
+        <link refid="classeos_1_1ModelComponent_3_01components_1_1DeltaB1_01_4"/>
+      </node>
+      <node id="255">
+        <label>eos::ModelComponent&lt; components::QCD &gt;</label>
+        <link refid="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4"/>
+      </node>
+      <node id="257">
+        <label>eos::CKMScanComponent</label>
+        <link refid="classeos_1_1CKMScanComponent"/>
+        <childnode refid="254" relation="public-inheritance">
+        </childnode>
+        <childnode refid="258" relation="usage">
+          <edgelabel>_v_ub_abs__ckm</edgelabel>
+          <edgelabel>_v_ts_abs__ckm</edgelabel>
+          <edgelabel>_v_cs_abs__ckm</edgelabel>
+          <edgelabel>_v_td_arg__ckm</edgelabel>
+          <edgelabel>_v_cd_arg__ckm</edgelabel>
+          <edgelabel>_v_ud_arg__ckm</edgelabel>
+          <edgelabel>_v_tb_arg__ckm</edgelabel>
+          <edgelabel>_v_cb_arg__ckm</edgelabel>
+          <edgelabel>_v_ub_arg__ckm</edgelabel>
+          <edgelabel>_v_ts_arg__ckm</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="251">
+        <label>eos::Model</label>
+        <link refid="classeos_1_1Model"/>
+        <childnode refid="252" relation="public-inheritance">
+        </childnode>
+        <childnode refid="254" relation="public-inheritance">
+        </childnode>
+        <childnode refid="255" relation="public-inheritance">
+        </childnode>
+        <childnode refid="256" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="260">
+        <label>eos::Mutable</label>
+        <link refid="classeos_1_1Mutable"/>
+      </node>
+      <node id="262">
+        <label>eos::SMComponent&lt; components::DeltaB1 &gt;</label>
+        <link refid="classeos_1_1SMComponent_3_01components_1_1DeltaB1_01_4"/>
+        <childnode refid="256" relation="public-inheritance">
+        </childnode>
+        <childnode refid="258" relation="usage">
+          <edgelabel>_m_W__deltab1</edgelabel>
+          <edgelabel>_mu_t__deltab1</edgelabel>
+          <edgelabel>_mu__deltab1</edgelabel>
+          <edgelabel>_mu_0c__deltab1</edgelabel>
+          <edgelabel>_mu_0t__deltab1</edgelabel>
+          <edgelabel>_m_t_pole__deltab1</edgelabel>
+          <edgelabel>_m_Z__deltab1</edgelabel>
+          <edgelabel>_sw2__deltab1</edgelabel>
+          <edgelabel>_alpha_s_Z__deltab1</edgelabel>
+          <edgelabel>_mu_c__deltab1</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="259">
+        <label>eos::Parameter</label>
+        <link refid="classeos_1_1Parameter"/>
+        <childnode refid="260" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="258">
+        <label>eos::UsedParameter</label>
+        <link refid="classeos_1_1UsedParameter"/>
+        <childnode refid="259" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="250">
+        <label>eos::CKMScanModel</label>
+        <link refid="classeos_1_1CKMScanModel"/>
+        <childnode refid="251" relation="public-inheritance">
+        </childnode>
+        <childnode refid="257" relation="public-inheritance">
+        </childnode>
+        <childnode refid="261" relation="public-inheritance">
+        </childnode>
+        <childnode refid="262" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="254">
+        <label>eos::ModelComponent&lt; components::CKM &gt;</label>
+        <link refid="classeos_1_1ModelComponent_3_01components_1_1CKM_01_4"/>
+      </node>
+      <node id="253">
+        <label>std::set&lt; Parameter::Id &gt;</label>
+      </node>
+      <node id="252">
+        <label>eos::ParameterUser</label>
+        <link refid="classeos_1_1ParameterUser"/>
+        <childnode refid="253" relation="usage">
+          <edgelabel>_ids</edgelabel>
+        </childnode>
+      </node>
+      <node id="261">
+        <label>eos::SMComponent&lt; components::QCD &gt;</label>
+        <link refid="classeos_1_1SMComponent_3_01components_1_1QCD_01_4"/>
+        <childnode refid="255" relation="public-inheritance">
+        </childnode>
+        <childnode refid="258" relation="usage">
+          <edgelabel>_m_ud_MSbar__qcd</edgelabel>
+          <edgelabel>_m_t_pole__qcd</edgelabel>
+          <edgelabel>_alpha_s_Z__qcd</edgelabel>
+          <edgelabel>_mu_c__qcd</edgelabel>
+          <edgelabel>_mu_t__qcd</edgelabel>
+          <edgelabel>_m_Z__qcd</edgelabel>
+          <edgelabel>_mu_b__qcd</edgelabel>
+          <edgelabel>_m_b_MSbar__qcd</edgelabel>
+          <edgelabel>_m_c_MSbar__qcd</edgelabel>
+          <edgelabel>_m_s_MSbar__qcd</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/ckm_scan_model.hh" line="80" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/ckm_scan_model.hh" bodystart="75" bodyend="86"/>
+    <listofallmembers>
+      <member refid="classeos_1_1ParameterUser_1aa3a0285297e16cf2a5830df1f9bb2f4b" prot="protected" virt="non-virtual"><scope>eos::CKMScanModel</scope><name>_ids</name></member>
+      <member refid="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4_1abf241eb181bace5db7f3ac6f303d2eec" prot="public" virt="pure-virtual" ambiguityscope="eos::"><scope>eos::CKMScanModel</scope><name>alpha_s</name></member>
+      <member refid="classeos_1_1SMComponent_3_01components_1_1QCD_01_4_1a8f06baa780a1f99f22f2e45c9463df36" prot="public" virt="virtual" ambiguityscope="eos::SMComponent&lt; components::QCD &gt;::"><scope>eos::CKMScanModel</scope><name>alpha_s</name></member>
+      <member refid="classeos_1_1ParameterUser_1a9cd569207063cd2a8f807c4e1203a5d4" prot="public" virt="non-virtual"><scope>eos::CKMScanModel</scope><name>begin</name></member>
+      <member refid="classeos_1_1ModelComponent_3_01components_1_1CKM_01_4_1aacb78ba3cf4df16bff0c6b6289b1a955" prot="public" virt="pure-virtual" ambiguityscope="eos::"><scope>eos::CKMScanModel</scope><name>ckm_cb</name></member>
+      <member refid="classeos_1_1CKMScanComponent_1a420671fc6106cda58d97d82af85dddf3" prot="public" virt="virtual" ambiguityscope="eos::CKMScanComponent::"><scope>eos::CKMScanModel</scope><name>ckm_cb</name></member>
+      <member refid="classeos_1_1ModelComponent_3_01components_1_1CKM_01_4_1a91f57e4ea6a4072d25e533a424cb0373" prot="public" virt="pure-virtual" ambiguityscope="eos::"><scope>eos::CKMScanModel</scope><name>ckm_cd</name></member>
+      <member refid="classeos_1_1CKMScanComponent_1afcdd4f857807dcb95aa252f45cbc9e41" prot="public" virt="virtual" ambiguityscope="eos::CKMScanComponent::"><scope>eos::CKMScanModel</scope><name>ckm_cd</name></member>
+      <member refid="classeos_1_1ModelComponent_3_01components_1_1CKM_01_4_1a9d537c64b4c3379d4a7ebd8ccc815a7e" prot="public" virt="pure-virtual" ambiguityscope="eos::"><scope>eos::CKMScanModel</scope><name>ckm_cs</name></member>
+      <member refid="classeos_1_1CKMScanComponent_1adb49ab08f60bdd5de0fccb3748cacf03" prot="public" virt="virtual" ambiguityscope="eos::CKMScanComponent::"><scope>eos::CKMScanModel</scope><name>ckm_cs</name></member>
+      <member refid="classeos_1_1ModelComponent_3_01components_1_1CKM_01_4_1a047bf55d51bf31e6b3a00777e7986613" prot="public" virt="pure-virtual" ambiguityscope="eos::"><scope>eos::CKMScanModel</scope><name>ckm_tb</name></member>
+      <member refid="classeos_1_1CKMScanComponent_1af171390d63478b601257163ce568f819" prot="public" virt="virtual" ambiguityscope="eos::CKMScanComponent::"><scope>eos::CKMScanModel</scope><name>ckm_tb</name></member>
+      <member refid="classeos_1_1ModelComponent_3_01components_1_1CKM_01_4_1a4bcd2be1cd84c0b6ea86ded723477094" prot="public" virt="pure-virtual" ambiguityscope="eos::"><scope>eos::CKMScanModel</scope><name>ckm_td</name></member>
+      <member refid="classeos_1_1CKMScanComponent_1aeb3351313d4c06d21f5d70431b835c5e" prot="public" virt="virtual" ambiguityscope="eos::CKMScanComponent::"><scope>eos::CKMScanModel</scope><name>ckm_td</name></member>
+      <member refid="classeos_1_1ModelComponent_3_01components_1_1CKM_01_4_1a94edc4a96770b9a16e078c483670ecc3" prot="public" virt="pure-virtual" ambiguityscope="eos::"><scope>eos::CKMScanModel</scope><name>ckm_ts</name></member>
+      <member refid="classeos_1_1CKMScanComponent_1ab2927bf32ec2c0b8ec13aca97b932129" prot="public" virt="virtual" ambiguityscope="eos::CKMScanComponent::"><scope>eos::CKMScanModel</scope><name>ckm_ts</name></member>
+      <member refid="classeos_1_1ModelComponent_3_01components_1_1CKM_01_4_1a71547bad7b092be1631067f270056acd" prot="public" virt="pure-virtual" ambiguityscope="eos::"><scope>eos::CKMScanModel</scope><name>ckm_ub</name></member>
+      <member refid="classeos_1_1CKMScanComponent_1ace753216c0814e933038548ed237d74b" prot="public" virt="virtual" ambiguityscope="eos::CKMScanComponent::"><scope>eos::CKMScanModel</scope><name>ckm_ub</name></member>
+      <member refid="classeos_1_1ModelComponent_3_01components_1_1CKM_01_4_1a56044f519ef2befa09d4912cb8f9188a" prot="public" virt="pure-virtual" ambiguityscope="eos::"><scope>eos::CKMScanModel</scope><name>ckm_ud</name></member>
+      <member refid="classeos_1_1CKMScanComponent_1a18ccfd1e6541233a32870e8d20ba4a1e" prot="public" virt="virtual" ambiguityscope="eos::CKMScanComponent::"><scope>eos::CKMScanModel</scope><name>ckm_ud</name></member>
+      <member refid="classeos_1_1ModelComponent_3_01components_1_1CKM_01_4_1ac3363cbfe22a4354e833a67fdc5ed1fa" prot="public" virt="pure-virtual" ambiguityscope="eos::"><scope>eos::CKMScanModel</scope><name>ckm_us</name></member>
+      <member refid="classeos_1_1CKMScanComponent_1a1ac8c31a252962bd381b604a60fe914d" prot="public" virt="virtual" ambiguityscope="eos::CKMScanComponent::"><scope>eos::CKMScanModel</scope><name>ckm_us</name></member>
+      <member refid="classeos_1_1CKMScanComponent_1a32c081a531442445b5f5e472763c6326" prot="public" virt="non-virtual"><scope>eos::CKMScanModel</scope><name>CKMScanComponent</name></member>
+      <member refid="classeos_1_1CKMScanModel_1a348fbaeb80dc246db6d94fc704b34ddc" prot="public" virt="non-virtual"><scope>eos::CKMScanModel</scope><name>CKMScanModel</name></member>
+      <member refid="classeos_1_1ParameterUser_1a7105631bbcb4b2492e6377b2b69f5b0f" prot="public" virt="non-virtual"><scope>eos::CKMScanModel</scope><name>ConstIterator</name></member>
+      <member refid="classeos_1_1ParameterUser_1a5813c886f3fd3f074cc02a53fc9e0790" prot="public" virt="non-virtual"><scope>eos::CKMScanModel</scope><name>end</name></member>
+      <member refid="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4_1ad8449029b487c614a769e1b0d6012e4c" prot="public" virt="pure-virtual" ambiguityscope="eos::"><scope>eos::CKMScanModel</scope><name>m_b_kin</name></member>
+      <member refid="classeos_1_1SMComponent_3_01components_1_1QCD_01_4_1a722ab7fc7efbfd60d0088e4349e29b5b" prot="public" virt="virtual" ambiguityscope="eos::SMComponent&lt; components::QCD &gt;::"><scope>eos::CKMScanModel</scope><name>m_b_kin</name></member>
+      <member refid="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4_1a1707fd6c3e6a4d8e02437652a3492f73" prot="public" virt="pure-virtual" ambiguityscope="eos::"><scope>eos::CKMScanModel</scope><name>m_b_msbar</name></member>
+      <member refid="classeos_1_1SMComponent_3_01components_1_1QCD_01_4_1a81b71218baa85173813f67b363c73924" prot="public" virt="virtual" ambiguityscope="eos::SMComponent&lt; components::QCD &gt;::"><scope>eos::CKMScanModel</scope><name>m_b_msbar</name></member>
+      <member refid="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4_1a372e8a7dced706f571b33bc18256e324" prot="public" virt="pure-virtual" ambiguityscope="eos::"><scope>eos::CKMScanModel</scope><name>m_b_pole</name></member>
+      <member refid="classeos_1_1SMComponent_3_01components_1_1QCD_01_4_1ae2a177d11900636dec6d7d7c9040b9fb" prot="public" virt="virtual" ambiguityscope="eos::SMComponent&lt; components::QCD &gt;::"><scope>eos::CKMScanModel</scope><name>m_b_pole</name></member>
+      <member refid="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4_1a654bbcce7c337f15ca6f2072da24463d" prot="public" virt="pure-virtual" ambiguityscope="eos::"><scope>eos::CKMScanModel</scope><name>m_b_ps</name></member>
+      <member refid="classeos_1_1SMComponent_3_01components_1_1QCD_01_4_1a2f052ffa95426e07ab019fa275ce41d9" prot="public" virt="virtual" ambiguityscope="eos::SMComponent&lt; components::QCD &gt;::"><scope>eos::CKMScanModel</scope><name>m_b_ps</name></member>
+      <member refid="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4_1a0cd270cd7c6528f41a34cfc1e70bf056" prot="public" virt="pure-virtual" ambiguityscope="eos::"><scope>eos::CKMScanModel</scope><name>m_c_kin</name></member>
+      <member refid="classeos_1_1SMComponent_3_01components_1_1QCD_01_4_1a346c272825a490a9f5884af8b8ceebfe" prot="public" virt="virtual" ambiguityscope="eos::SMComponent&lt; components::QCD &gt;::"><scope>eos::CKMScanModel</scope><name>m_c_kin</name></member>
+      <member refid="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4_1a82e6a460fe4fb848928fe6952fd56bb1" prot="public" virt="pure-virtual" ambiguityscope="eos::"><scope>eos::CKMScanModel</scope><name>m_c_msbar</name></member>
+      <member refid="classeos_1_1SMComponent_3_01components_1_1QCD_01_4_1af1f05d988210a50359490a150d9170e0" prot="public" virt="virtual" ambiguityscope="eos::SMComponent&lt; components::QCD &gt;::"><scope>eos::CKMScanModel</scope><name>m_c_msbar</name></member>
+      <member refid="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4_1a3a2c090cf0f7099c471fd4cc413431e3" prot="public" virt="pure-virtual" ambiguityscope="eos::"><scope>eos::CKMScanModel</scope><name>m_c_pole</name></member>
+      <member refid="classeos_1_1SMComponent_3_01components_1_1QCD_01_4_1a013ddfb77a30fe05fd3593c1528331b0" prot="public" virt="virtual" ambiguityscope="eos::SMComponent&lt; components::QCD &gt;::"><scope>eos::CKMScanModel</scope><name>m_c_pole</name></member>
+      <member refid="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4_1ac93d5c86dbb1e6118ab972e8c0f6bc12" prot="public" virt="pure-virtual" ambiguityscope="eos::"><scope>eos::CKMScanModel</scope><name>m_s_msbar</name></member>
+      <member refid="classeos_1_1SMComponent_3_01components_1_1QCD_01_4_1a0d31a7565a92e0dca81e153932690945" prot="public" virt="virtual" ambiguityscope="eos::SMComponent&lt; components::QCD &gt;::"><scope>eos::CKMScanModel</scope><name>m_s_msbar</name></member>
+      <member refid="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4_1af57a3d70de7579dcf92aeacff6439a40" prot="public" virt="pure-virtual" ambiguityscope="eos::"><scope>eos::CKMScanModel</scope><name>m_t_msbar</name></member>
+      <member refid="classeos_1_1SMComponent_3_01components_1_1QCD_01_4_1a6bda92aac898c86185a8f3fca6f575cf" prot="public" virt="virtual" ambiguityscope="eos::SMComponent&lt; components::QCD &gt;::"><scope>eos::CKMScanModel</scope><name>m_t_msbar</name></member>
+      <member refid="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4_1a0035735c19d0b3fced44b986b09410b7" prot="public" virt="pure-virtual" ambiguityscope="eos::"><scope>eos::CKMScanModel</scope><name>m_t_pole</name></member>
+      <member refid="classeos_1_1SMComponent_3_01components_1_1QCD_01_4_1a8c798c65f6fdf75c7f038e428134d026" prot="public" virt="virtual" ambiguityscope="eos::SMComponent&lt; components::QCD &gt;::"><scope>eos::CKMScanModel</scope><name>m_t_pole</name></member>
+      <member refid="classeos_1_1ModelComponent_3_01components_1_1QCD_01_4_1a75172971f04fdac5927b0512cf77ebe2" prot="public" virt="pure-virtual" ambiguityscope="eos::"><scope>eos::CKMScanModel</scope><name>m_ud_msbar</name></member>
+      <member refid="classeos_1_1SMComponent_3_01components_1_1QCD_01_4_1aff5afae1cb8169135ad183db75836529" prot="public" virt="virtual" ambiguityscope="eos::SMComponent&lt; components::QCD &gt;::"><scope>eos::CKMScanModel</scope><name>m_ud_msbar</name></member>
+      <member refid="classeos_1_1CKMScanModel_1a78a49c4da540e56430d800173d129cc3" prot="public" virt="non-virtual"><scope>eos::CKMScanModel</scope><name>make</name></member>
+      <member refid="classeos_1_1Model_1aaaf8ba614a0212952f6f9485034c3436" prot="public" virt="non-virtual" ambiguityscope="eos::Model::"><scope>eos::CKMScanModel</scope><name>make</name></member>
+      <member refid="classeos_1_1SMComponent_3_01components_1_1QCD_01_4_1a6a98003e7b150156579bb414cfffabb4" prot="public" virt="non-virtual" ambiguityscope="eos::"><scope>eos::CKMScanModel</scope><name>SMComponent</name></member>
+      <member refid="classeos_1_1SMComponent_3_01components_1_1DeltaB1_01_4_1ac58f05fb4a785c241cc62c6dd98b35cc" prot="public" virt="non-virtual" ambiguityscope="eos::SMComponent&lt; components::DeltaB1 &gt;::"><scope>eos::CKMScanModel</scope><name>SMComponent</name></member>
+      <member refid="classeos_1_1ParameterUser_1ad91a901e589653272482bded7e453c70" prot="public" virt="non-virtual"><scope>eos::CKMScanModel</scope><name>uses</name></member>
+      <member refid="classeos_1_1ParameterUser_1a7a37e779cf45ef1075fe7bf670688b72" prot="public" virt="non-virtual"><scope>eos::CKMScanModel</scope><name>uses</name></member>
+      <member refid="classeos_1_1ModelComponent_3_01components_1_1DeltaB1_01_4_1a94a836d0f2518023cca37a1ffaa128e9" prot="public" virt="pure-virtual" ambiguityscope="eos::"><scope>eos::CKMScanModel</scope><name>wilson_coefficients_b_to_s</name></member>
+      <member refid="classeos_1_1SMComponent_3_01components_1_1DeltaB1_01_4_1a4a3c9906daaf0be6c682245e0467a316" prot="public" virt="virtual" ambiguityscope="eos::SMComponent&lt; components::DeltaB1 &gt;::"><scope>eos::CKMScanModel</scope><name>wilson_coefficients_b_to_s</name></member>
+      <member refid="classeos_1_1CKMScanModel_1a33220021fdd61915cdbe327481f01122" prot="public" virt="virtual"><scope>eos::CKMScanModel</scope><name>~CKMScanModel</name></member>
+      <member refid="classeos_1_1Model_1a17c7c1491d3d0761bfb663f231181a21" prot="public" virt="pure-virtual"><scope>eos::CKMScanModel</scope><name>~Model</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

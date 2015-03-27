@@ -1,0 +1,235 @@
+\hypertarget{matrix_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/matrix.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2010, 2011 Danny van Dyk}
+00005 \textcolor{comment}{ * Copyright (c) 2010 Christian Wacker}
+00006 \textcolor{comment}{ *}
+00007 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00008 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00009 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00010 \textcolor{comment}{ *}
+00011 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00012 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00013 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00014 \textcolor{comment}{ * details.}
+00015 \textcolor{comment}{ *}
+00016 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00017 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00018 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00019 \textcolor{comment}{ */}
+00020 
+00021 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_MATRIX\_HH}
+\hypertarget{matrix_8hh_source_l00022}{}\hyperlink{matrix_8hh_ad2e12ccc63e8b682bb3a09a7a9d97499}{00022} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_MATRIX\_HH 1}
+00023 \textcolor{preprocessor}{}
+00024 \textcolor{preprocessor}{#include <array>}
+00025 
+00026 \textcolor{keyword}{namespace }eos
+00027 \{
+00028     \textcolor{comment}{/* Addition */}
+00029 
+00030     \textcolor{comment}{/* matrix plus matrix */}
+00031     \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_, std::\textcolor{keywordtype}{size\_t} m\_, std::\textcolor{keywordtype}{size\_t} n\_>
+\hypertarget{matrix_8hh_source_l00032}{}\hyperlink{namespaceeos_a0e3f5e761fbf126d8fcda142fed73318}{00032}     std::array<std::array<T\_, n\_>, m\_> \hyperlink{namespaceeos_a0e3f5e761fbf126d8fcda142fed73318}{operator+ }(\textcolor{keyword}{const} std::array<std::array<T\_,
+       n\_>, m\_> & x,
+00033             \textcolor{keyword}{const} std::array<std::array<T\_, n\_>, m\_> & y)
+00034     \{
+00035         std::array<std::array<T\_, n\_>, m\_> result;
+00036         \textcolor{keywordflow}{for} (std::size\_t i(0) ; i < m\_ ; ++i)
+00037         \{
+00038             \textcolor{keywordflow}{for} (std::size\_t j(0) ; j < n\_ ; ++j)
+00039             \{
+00040                 result[i][j] = x[i][j] + y[i][j];
+00041             \}
+00042         \}
+00043 
+00044         \textcolor{keywordflow}{return} result;
+00045     \}
+00046 
+00047     \textcolor{comment}{/* matrix minus matrix */}
+00048     \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_, std::\textcolor{keywordtype}{size\_t} m\_, std::\textcolor{keywordtype}{size\_t} n\_>
+\hypertarget{matrix_8hh_source_l00049}{}\hyperlink{namespaceeos_acbf11d2b07d36a4c4a3abb8d58bceea3}{00049}     std::array<std::array<T\_, n\_>, m\_> \hyperlink{namespaceeos_acbf11d2b07d36a4c4a3abb8d58bceea3}{operator- }(\textcolor{keyword}{const} std::array<std::array<T\_,
+       n\_>, m\_> & x,
+00050             \textcolor{keyword}{const} std::array<std::array<T\_, n\_>, m\_> & y)
+00051     \{
+00052         std::array<std::array<T\_, n\_>, m\_> result;
+00053         \textcolor{keywordflow}{for} (std::size\_t i(0) ; i < m\_ ; ++i)
+00054         \{
+00055             \textcolor{keywordflow}{for} (std::size\_t j(0) ; j < n\_ ; ++j)
+00056             \{
+00057                 result[i][j] = x[i][j] - y[i][j];
+00058             \}
+00059         \}
+00060 
+00061         \textcolor{keywordflow}{return} result;
+00062     \}
+00063 
+00064     \textcolor{comment}{/* vector plus vector */}
+00065     \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_, std::\textcolor{keywordtype}{size\_t} m\_>
+\hypertarget{matrix_8hh_source_l00066}{}\hyperlink{namespaceeos_a77b0b1d58e1ff492fd660967a4dd6afa}{00066}     std::array<T\_, m\_> \hyperlink{namespaceeos_a0e3f5e761fbf126d8fcda142fed73318}{operator+ }(\textcolor{keyword}{const} std::array<T\_, m\_> & x,
+00067             \textcolor{keyword}{const} std::array<T\_, m\_> & y)
+00068     \{
+00069         std::array<T\_, m\_> result;
+00070         \textcolor{keywordflow}{for} (std::size\_t i(0) ; i < m\_ ; ++i)
+00071         \{
+00072             result[i] = x[i] + y[i];
+00073         \}
+00074 
+00075         \textcolor{keywordflow}{return} result;
+00076     \}
+00077 
+00078     \textcolor{comment}{/* vector minus vector */}
+00079     \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_, std::\textcolor{keywordtype}{size\_t} m\_>
+\hypertarget{matrix_8hh_source_l00080}{}\hyperlink{namespaceeos_aa8fefb77f2ab33ac602411123a62b956}{00080}     std::array<T\_, m\_> \hyperlink{namespaceeos_acbf11d2b07d36a4c4a3abb8d58bceea3}{operator- }(\textcolor{keyword}{const} std::array<T\_, m\_> & x,
+00081             \textcolor{keyword}{const} std::array<T\_, m\_> & y)
+00082     \{
+00083         std::array<T\_, m\_> result;
+00084         \textcolor{keywordflow}{for} (std::size\_t i(0) ; i < m\_ ; ++i)
+00085         \{
+00086             result[i] = x[i] - y[i];
+00087         \}
+00088 
+00089         \textcolor{keywordflow}{return} result;
+00090     \}
+00091 
+00092     \textcolor{comment}{/* Multiplication */}
+00093 
+00094     \textcolor{comment}{/* matrix times matrix */}
+00095     \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_, std::\textcolor{keywordtype}{size\_t} m\_, std::\textcolor{keywordtype}{size\_t} n\_, std::\textcolor{keywordtype}{size\_t} o\_>
+\hypertarget{matrix_8hh_source_l00096}{}\hyperlink{namespaceeos_a6025a42d446265afd81f6c749999a391}{00096}     std::array<std::array<T\_, n\_>, m\_> \hyperlink{namespaceeos_a6025a42d446265afd81f6c749999a391}{operator* }(\textcolor{keyword}{const} std::array<std::array<T\_,
+       o\_>, m\_> & x,
+00097             \textcolor{keyword}{const} std::array<std::array<T\_, n\_>, o\_> & y)
+00098     \{
+00099         std::array<std::array<T\_, n\_>, m\_> result;
+00100         \textcolor{keywordflow}{for} (std::size\_t i(0) ; i < m\_ ; ++i)
+00101         \{
+00102             \textcolor{keywordflow}{for} (std::size\_t j(0) ; j < n\_ ; ++j)
+00103             \{
+00104                 result[i][j] = 0.0;
+00105 
+00106                 \textcolor{keywordflow}{for} (std::size\_t k(0) ; k < o\_ ; ++k)
+00107                 \{
+00108                     result[i][j] += x[i][k] * y[k][j];
+00109                 \}
+00110             \}
+00111         \}
+00112 
+00113         \textcolor{keywordflow}{return} result;
+00114     \}
+00115 
+00116     \textcolor{comment}{/* matrix times vector, right-multiplication */}
+00117     \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_, std::\textcolor{keywordtype}{size\_t} m\_, std::\textcolor{keywordtype}{size\_t} n\_>
+\hypertarget{matrix_8hh_source_l00118}{}\hyperlink{namespaceeos_adf0061c40e232b18c6cb38c998b4cde1}{00118}     std::array<T\_, m\_> \hyperlink{namespaceeos_a6025a42d446265afd81f6c749999a391}{operator* }(\textcolor{keyword}{const} std::array<std::array<T\_, n\_>, m\_> & x, \textcolor{keyword}{c
+      onst} std::array<T\_, n\_> & y)
+00119     \{
+00120         std::array<T\_, m\_> result;
+00121         \textcolor{keywordflow}{for} (std::size\_t i(0) ; i < m\_ ; ++i)
+00122         \{
+00123             result[i] = 0.0;
+00124 
+00125             \textcolor{keywordflow}{for} (std::size\_t j(0) ; j < n\_ ; ++j)
+00126             \{
+00127                 result[i] += x[i][j] * y[j];
+00128             \}
+00129         \}
+00130 
+00131         \textcolor{keywordflow}{return} result;
+00132     \}
+00133 
+00134     \textcolor{comment}{/* matrix times vector, left-multiplication */}
+00135     \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_, std::\textcolor{keywordtype}{size\_t} m\_, std::\textcolor{keywordtype}{size\_t} n\_>
+\hypertarget{matrix_8hh_source_l00136}{}\hyperlink{namespaceeos_a6d8071776e060cb58300bc883d5510b7}{00136}     std::array<T\_, n\_> \hyperlink{namespaceeos_a6d8071776e060cb58300bc883d5510b7}{operator^ }(\textcolor{keyword}{const} std::array<T\_, m\_> & x, \textcolor{keyword}{const} std::array<
+      std::array<T\_, n\_>, m\_> & y)
+00137     \{
+00138         std::array<T\_, n\_> result;
+00139         \textcolor{keywordflow}{for} (std::size\_t i(0) ; i < n\_ ; ++i)
+00140         \{
+00141             result[i] = 0.0;
+00142             \textcolor{keywordflow}{for} (std::size\_t j(0) ; j < m\_ ; ++j)
+00143             \{
+00144                 result[i] += x[j] * y[j][i];
+00145             \}
+00146         \}
+00147 
+00148         \textcolor{keywordflow}{return} result;
+00149     \}
+00150 
+00151     \textcolor{comment}{/* scalar times matrix */}
+00152     \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_, std::\textcolor{keywordtype}{size\_t} m\_, std::\textcolor{keywordtype}{size\_t} n\_>
+\hypertarget{matrix_8hh_source_l00153}{}\hyperlink{namespaceeos_ab6da54e708e1d703fd399d7e7a0912f8}{00153}     std::array<std::array<T\_, n\_>, m\_> \hyperlink{namespaceeos_a6025a42d446265afd81f6c749999a391}{operator* }(\textcolor{keyword}{const} T\_ & x, \textcolor{keyword}{const} std::array<
+      std::array<T\_, n\_>, m\_> & y)
+00154     \{
+00155         std::array<std::array<T\_, n\_>, m\_> result = y;
+00156         \textcolor{keywordflow}{for} (std::size\_t i(0) ; i < m\_ ; ++i)
+00157         \{
+00158             \textcolor{keywordflow}{for} (std::size\_t j(0) ; j < n\_ ; ++j)
+00159             \{
+00160                 result[i][j] *= x;
+00161             \}
+00162         \}
+00163 
+00164         \textcolor{keywordflow}{return} result;
+00165     \}
+00166 
+00167     \textcolor{comment}{/* scalar times vector */}
+00168     \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_, std::\textcolor{keywordtype}{size\_t} n\_>
+\hypertarget{matrix_8hh_source_l00169}{}\hyperlink{namespaceeos_a6192a8a135c1f4ea6163e1d7f59275a0}{00169}     std::array<T\_, n\_> \hyperlink{namespaceeos_a6025a42d446265afd81f6c749999a391}{operator* }(\textcolor{keyword}{const} T\_ & x, \textcolor{keyword}{const} std::array<T\_, n\_> & y)
+00170     \{
+00171         std::array<T\_, n\_> result = y;
+00172         \textcolor{keywordflow}{for} (std::size\_t i(0) ; i < n\_ ; ++i)
+00173         \{
+00174             result[i] *= x;
+00175         \}
+00176 
+00177         \textcolor{keywordflow}{return} result;
+00178     \}
+00179 
+00180     \textcolor{comment}{/* vector times vector */}
+00181     \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_, std::\textcolor{keywordtype}{size\_t} n\_>
+\hypertarget{matrix_8hh_source_l00182}{}\hyperlink{namespaceeos_ac3181f83f30b4811151158ffc68a5396}{00182}     T\_ \hyperlink{namespaceeos_ac3181f83f30b4811151158ffc68a5396}{dot}(\textcolor{keyword}{const} std::array<T\_, n\_> & x, \textcolor{keyword}{const} std::array<T\_, n\_> & y)
+00183     \{
+00184         T\_ result = 0.0;
+00185         \textcolor{keywordflow}{for} (std::size\_t i(0) ; i < n\_ ; ++i)
+00186         \{
+00187             result += x[i] * y[i];
+00188         \}
+00189 
+00190         \textcolor{keywordflow}{return} result;
+00191     \}
+00192 
+00193     \textcolor{comment}{/* component-wise multiplication of two vectors */}
+00194     \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_, std::\textcolor{keywordtype}{size\_t} n\_>
+\hypertarget{matrix_8hh_source_l00195}{}\hyperlink{namespaceeos_ae34de7634e8e232a4a7761b998e1535f}{00195}     std::array<T\_, n\_> \hyperlink{namespaceeos_ae34de7634e8e232a4a7761b998e1535f}{mult}(\textcolor{keyword}{const} std::array<T\_, n\_> & x, \textcolor{keyword}{const} std::array<T\_, n\_
+      > & y)
+00196     \{
+00197         std::array<T\_, n\_> result;
+00198         \textcolor{keywordflow}{for} (std::size\_t i(0) ; i < n\_ ; ++i)
+00199         \{
+00200             result[i] = x[i] * y[i];
+00201         \}
+00202 
+00203         \textcolor{keywordflow}{return} result;
+00204     \}
+00205 
+00206     \textcolor{comment}{/* component-wise division of two vectors */}
+00207     \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_, std::\textcolor{keywordtype}{size\_t} n\_>
+\hypertarget{matrix_8hh_source_l00208}{}\hyperlink{namespaceeos_a8031207b4e14e35ca72988b76bfaacf1}{00208}     std::array<T\_, n\_> \hyperlink{namespaceeos_a8031207b4e14e35ca72988b76bfaacf1}{divide}(\textcolor{keyword}{const} std::array<T\_, n\_> & x, \textcolor{keyword}{const} std::array<T\_, 
+      n\_> & y)
+00209     \{
+00210         std::array<T\_, n\_> result;
+00211         \textcolor{keywordflow}{for} (std::size\_t i(0) ; i < n\_ ; ++i)
+00212         \{
+00213             result[i] = x[i] / y[i];
+00214         \}
+00215 
+00216         \textcolor{keywordflow}{return} result;
+00217     \}
+00218 \}
+00219 
+00220 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

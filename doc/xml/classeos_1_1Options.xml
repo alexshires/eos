@@ -1,0 +1,258 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1Options" kind="class" prot="public">
+    <compoundname>eos::Options</compoundname>
+    <basecompoundref refid="classeos_1_1PrivateImplementationPattern" prot="public" virt="non-virtual">eos::PrivateImplementationPattern&lt; Options &gt;</basecompoundref>
+    <includes refid="options_8hh" local="no">options.hh</includes>
+      <sectiondef kind="user-defined">
+      <header>Basic Functions</header>
+      <description><para><anchor id="_1amgrp2386c9a1f1785edee33f374dd2db9b3d"/> </para></description>
+      <memberdef kind="function" id="classeos_1_1Options_1a41872695828e800ea0d439ded2e79ccc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::Options::Options</definition>
+        <argsstring>()</argsstring>
+        <name>Options</name>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/options.hh" line="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Options_1a618567d9edd73c4695ff8913a18f7eb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::Options::Options</definition>
+        <argsstring>(const std::initializer_list&lt; std::pair&lt; std::string, std::string &gt;&gt; &amp;options)</argsstring>
+        <name>Options</name>
+        <param>
+          <type>const std::initializer_list&lt; std::pair&lt; std::string, std::string &gt;&gt; &amp;</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor.</para><para>Create an instance of <ref refid="classeos_1_1Kinematics" kindref="compound">Kinematics</ref> with a given set of initial options.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>options</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The set of initial options from which this object shall be constructed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/options.hh" line="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Options_1a8509f24945b363809455ae0b56046324" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::Options::~Options</definition>
+        <argsstring>()</argsstring>
+        <name>~Options</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/options.hh" line="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Options_1aa5defab8e8ba2e07871b20374c3f2db2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool eos::Options::operator==</definition>
+        <argsstring>(const Options &amp;rhs) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Options" kindref="compound">Options</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Equality comparison operator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/options.hh" line="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Options_1aaf02fdcc1fb86da35155d85e8f3982c5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool eos::Options::operator!=</definition>
+        <argsstring>(const Options &amp;rhs) const </argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Options" kindref="compound">Options</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Inequality comparison operator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/options.hh" line="72"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Access</header>
+      <description><para><anchor id="_1amgrpbf733d8a933c1601697f364223fc7ecb"/> </para></description>
+      <memberdef kind="function" id="classeos_1_1Options_1a9095b57b9ffeccac5aad07412943bac9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; eos::Options::operator[]</definition>
+        <argsstring>(const std::string &amp;key) const </argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/options.hh" line="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Options_1a84ce27abf490cf39fa5a4d1cbb835c8e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool eos::Options::has</definition>
+        <argsstring>(const std::string &amp;key) const </argsstring>
+        <name>has</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/options.hh" line="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Options_1a677e5bc4a49af527471e7c6db4a4b953" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::Options::set</definition>
+        <argsstring>(const std::string &amp;key, const std::string &amp;value=&quot;&quot;)</argsstring>
+        <name>set</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>value</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/options.hh" line="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Options_1a1f4e5296ad8f5135861334ce4969c4e4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string eos::Options::get</definition>
+        <argsstring>(const std::string &amp;key, const std::string &amp;default_value=&quot;&quot;) const </argsstring>
+        <name>get</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>default_value</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/options.hh" line="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Options_1a1660f95dc9e5c8859783db04d5093442" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string eos::Options::as_string</definition>
+        <argsstring>() const </argsstring>
+        <name>as_string</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/options.hh" line="85"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classeos_1_1Options_1a8a95ca0ac073107e9ec18e05a9ee6cce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="classeos_1_1Options" kindref="compound">Options</ref></type>
+        <definition>Options operator+</definition>
+        <argsstring>(const Options &amp;, const Options &amp;)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Options" kindref="compound">Options</ref> &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1Options" kindref="compound">Options</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/options.hh" line="47"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classeos_1_1Options" kindref="compound">Options</ref> keeps the set of all string options for any <ref refid="classeos_1_1Observable" kindref="compound">Observable</ref>. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="775">
+        <label>eos::PrivateImplementationPattern&lt; Options &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="774">
+        <label>eos::Options</label>
+        <link refid="classeos_1_1Options"/>
+        <childnode refid="775" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="777">
+        <label>eos::PrivateImplementationPattern&lt; Options &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="776">
+        <label>eos::Options</label>
+        <link refid="classeos_1_1Options"/>
+        <childnode refid="777" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/options.hh" line="45" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/options.hh" bodystart="43" bodyend="87"/>
+    <listofallmembers>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a232940e78b26c6ed4f97196f831c69c9" prot="protected" virt="non-virtual"><scope>eos::Options</scope><name>_imp</name></member>
+      <member refid="classeos_1_1Options_1a1660f95dc9e5c8859783db04d5093442" prot="public" virt="non-virtual"><scope>eos::Options</scope><name>as_string</name></member>
+      <member refid="classeos_1_1Options_1a1f4e5296ad8f5135861334ce4969c4e4" prot="public" virt="non-virtual"><scope>eos::Options</scope><name>get</name></member>
+      <member refid="classeos_1_1Options_1a84ce27abf490cf39fa5a4d1cbb835c8e" prot="public" virt="non-virtual"><scope>eos::Options</scope><name>has</name></member>
+      <member refid="classeos_1_1Options_1aaf02fdcc1fb86da35155d85e8f3982c5" prot="public" virt="non-virtual"><scope>eos::Options</scope><name>operator!=</name></member>
+      <member refid="classeos_1_1Options_1a8a95ca0ac073107e9ec18e05a9ee6cce" prot="public" virt="non-virtual"><scope>eos::Options</scope><name>operator+</name></member>
+      <member refid="classeos_1_1Options_1aa5defab8e8ba2e07871b20374c3f2db2" prot="public" virt="non-virtual"><scope>eos::Options</scope><name>operator==</name></member>
+      <member refid="classeos_1_1Options_1a9095b57b9ffeccac5aad07412943bac9" prot="public" virt="non-virtual"><scope>eos::Options</scope><name>operator[]</name></member>
+      <member refid="classeos_1_1Options_1a41872695828e800ea0d439ded2e79ccc" prot="public" virt="non-virtual"><scope>eos::Options</scope><name>Options</name></member>
+      <member refid="classeos_1_1Options_1a618567d9edd73c4695ff8913a18f7eb4" prot="public" virt="non-virtual"><scope>eos::Options</scope><name>Options</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a3e3d5f4a565256a1dda6c234b051b2f2" prot="public" virt="non-virtual"><scope>eos::Options</scope><name>PrivateImplementationPattern</name></member>
+      <member refid="classeos_1_1Options_1a677e5bc4a49af527471e7c6db4a4b953" prot="public" virt="non-virtual"><scope>eos::Options</scope><name>set</name></member>
+      <member refid="classeos_1_1Options_1a8509f24945b363809455ae0b56046324" prot="public" virt="non-virtual"><scope>eos::Options</scope><name>~Options</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1acf46ec2739c3b0ec9702b9428475876d" prot="public" virt="non-virtual"><scope>eos::Options</scope><name>~PrivateImplementationPattern</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

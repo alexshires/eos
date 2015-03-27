@@ -1,0 +1,305 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1LambdaBToLambdaDilepton_3_01LargeRecoil_01_4" kind="class" prot="public">
+    <compoundname>eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;</compoundname>
+    <basecompoundref refid="classeos_1_1ParameterUser" prot="public" virt="non-virtual">eos::ParameterUser</basecompoundref>
+    <basecompoundref refid="classeos_1_1PrivateImplementationPattern" prot="public" virt="non-virtual">eos::PrivateImplementationPattern&lt; LambdaBToLambdaDilepton&lt; LargeRecoil &gt; &gt;</basecompoundref>
+    <includes refid="lambda-b-to-lambda-dilepton_8hh" local="no">lambda-b-to-lambda-dilepton.hh</includes>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1LambdaBToLambdaDilepton_3_01LargeRecoil_01_4_1a4856b87a348441b6af74a3d8a3e9399e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;::LambdaBToLambdaDilepton</definition>
+        <argsstring>(const Parameters &amp;, const Options &amp;)</argsstring>
+        <name>LambdaBToLambdaDilepton</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1Options" kindref="compound">Options</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/lambda-b-to-lambda-dilepton.hh" line="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LambdaBToLambdaDilepton_3_01LargeRecoil_01_4_1a561469823727e477359bfc10325cc56d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;::~LambdaBToLambdaDilepton</definition>
+        <argsstring>()</argsstring>
+        <name>~LambdaBToLambdaDilepton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/lambda-b-to-lambda-dilepton.hh" line="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LambdaBToLambdaDilepton_3_01LargeRecoil_01_4_1a80c540e80ce4058cdd7286474cee504b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;::differential_branching_ratio</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_branching_ratio</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/lambda-b-to-lambda-dilepton.hh" line="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LambdaBToLambdaDilepton_3_01LargeRecoil_01_4_1a60b3b7b57847fa0e6d65382e00573175" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;::differential_a_fb_leptonic</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_a_fb_leptonic</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/lambda-b-to-lambda-dilepton.hh" line="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LambdaBToLambdaDilepton_3_01LargeRecoil_01_4_1ad117f028e7cc1c231bc55c8ed2ef6ab6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;::differential_a_fb_hadronic</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_a_fb_hadronic</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/lambda-b-to-lambda-dilepton.hh" line="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LambdaBToLambdaDilepton_3_01LargeRecoil_01_4_1a69dd49e2f5fd70106ef8c32dc0268808" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;::differential_a_fb_combined</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_a_fb_combined</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/lambda-b-to-lambda-dilepton.hh" line="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LambdaBToLambdaDilepton_3_01LargeRecoil_01_4_1a9af604dbacc9b5549540fb91212fd071" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;::differential_fzero</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_fzero</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/lambda-b-to-lambda-dilepton.hh" line="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LambdaBToLambdaDilepton_3_01LargeRecoil_01_4_1a83fa63546f5fc4c9e49ea542fa2ca903" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;::integrated_branching_ratio</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_branching_ratio</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/lambda-b-to-lambda-dilepton.hh" line="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LambdaBToLambdaDilepton_3_01LargeRecoil_01_4_1a2b2ddd2fb25343fdecd5e782bb5bda82" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;::integrated_a_fb_leptonic</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_a_fb_leptonic</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/lambda-b-to-lambda-dilepton.hh" line="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LambdaBToLambdaDilepton_3_01LargeRecoil_01_4_1a9f26950464c21533e4620d70d25473b6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;::integrated_a_fb_hadronic</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_a_fb_hadronic</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/lambda-b-to-lambda-dilepton.hh" line="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LambdaBToLambdaDilepton_3_01LargeRecoil_01_4_1a2f3dff9b5c595702373e069fff4ff718" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;::integrated_a_fb_combined</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_a_fb_combined</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/lambda-b-to-lambda-dilepton.hh" line="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1LambdaBToLambdaDilepton_3_01LargeRecoil_01_4_1a309b1c0c5d175cd306ed76404d00f5f8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;::integrated_fzero</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_fzero</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/lambda-b-to-lambda-dilepton.hh" line="51"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="565">
+        <label>eos::PrivateImplementationPattern&lt; LambdaBToLambdaDilepton&lt; LargeRecoil &gt; &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="563">
+        <label>eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;</label>
+        <link refid="classeos_1_1LambdaBToLambdaDilepton_3_01LargeRecoil_01_4"/>
+        <childnode refid="564" relation="public-inheritance">
+        </childnode>
+        <childnode refid="565" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="564">
+        <label>eos::ParameterUser</label>
+        <link refid="classeos_1_1ParameterUser"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="569">
+        <label>eos::PrivateImplementationPattern&lt; LambdaBToLambdaDilepton&lt; LargeRecoil &gt; &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="566">
+        <label>eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;</label>
+        <link refid="classeos_1_1LambdaBToLambdaDilepton_3_01LargeRecoil_01_4"/>
+        <childnode refid="567" relation="public-inheritance">
+        </childnode>
+        <childnode refid="569" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="568">
+        <label>std::set&lt; Parameter::Id &gt;</label>
+      </node>
+      <node id="567">
+        <label>eos::ParameterUser</label>
+        <link refid="classeos_1_1ParameterUser"/>
+        <childnode refid="568" relation="usage">
+          <edgelabel>_ids</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/lambda-b-to-lambda-dilepton.hh" line="36" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/lambda-b-to-lambda-dilepton.hh" bodystart="33" bodyend="52"/>
+    <listofallmembers>
+      <member refid="classeos_1_1ParameterUser_1aa3a0285297e16cf2a5830df1f9bb2f4b" prot="protected" virt="non-virtual"><scope>eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;</scope><name>_ids</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a232940e78b26c6ed4f97196f831c69c9" prot="protected" virt="non-virtual"><scope>eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;</scope><name>_imp</name></member>
+      <member refid="classeos_1_1ParameterUser_1a9cd569207063cd2a8f807c4e1203a5d4" prot="public" virt="non-virtual"><scope>eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;</scope><name>begin</name></member>
+      <member refid="classeos_1_1ParameterUser_1a7105631bbcb4b2492e6377b2b69f5b0f" prot="public" virt="non-virtual"><scope>eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;</scope><name>ConstIterator</name></member>
+      <member refid="classeos_1_1LambdaBToLambdaDilepton_3_01LargeRecoil_01_4_1a69dd49e2f5fd70106ef8c32dc0268808" prot="public" virt="non-virtual"><scope>eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;</scope><name>differential_a_fb_combined</name></member>
+      <member refid="classeos_1_1LambdaBToLambdaDilepton_3_01LargeRecoil_01_4_1ad117f028e7cc1c231bc55c8ed2ef6ab6" prot="public" virt="non-virtual"><scope>eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;</scope><name>differential_a_fb_hadronic</name></member>
+      <member refid="classeos_1_1LambdaBToLambdaDilepton_3_01LargeRecoil_01_4_1a60b3b7b57847fa0e6d65382e00573175" prot="public" virt="non-virtual"><scope>eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;</scope><name>differential_a_fb_leptonic</name></member>
+      <member refid="classeos_1_1LambdaBToLambdaDilepton_3_01LargeRecoil_01_4_1a80c540e80ce4058cdd7286474cee504b" prot="public" virt="non-virtual"><scope>eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;</scope><name>differential_branching_ratio</name></member>
+      <member refid="classeos_1_1LambdaBToLambdaDilepton_3_01LargeRecoil_01_4_1a9af604dbacc9b5549540fb91212fd071" prot="public" virt="non-virtual"><scope>eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;</scope><name>differential_fzero</name></member>
+      <member refid="classeos_1_1ParameterUser_1a5813c886f3fd3f074cc02a53fc9e0790" prot="public" virt="non-virtual"><scope>eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;</scope><name>end</name></member>
+      <member refid="classeos_1_1LambdaBToLambdaDilepton_3_01LargeRecoil_01_4_1a2f3dff9b5c595702373e069fff4ff718" prot="public" virt="non-virtual"><scope>eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;</scope><name>integrated_a_fb_combined</name></member>
+      <member refid="classeos_1_1LambdaBToLambdaDilepton_3_01LargeRecoil_01_4_1a9f26950464c21533e4620d70d25473b6" prot="public" virt="non-virtual"><scope>eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;</scope><name>integrated_a_fb_hadronic</name></member>
+      <member refid="classeos_1_1LambdaBToLambdaDilepton_3_01LargeRecoil_01_4_1a2b2ddd2fb25343fdecd5e782bb5bda82" prot="public" virt="non-virtual"><scope>eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;</scope><name>integrated_a_fb_leptonic</name></member>
+      <member refid="classeos_1_1LambdaBToLambdaDilepton_3_01LargeRecoil_01_4_1a83fa63546f5fc4c9e49ea542fa2ca903" prot="public" virt="non-virtual"><scope>eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;</scope><name>integrated_branching_ratio</name></member>
+      <member refid="classeos_1_1LambdaBToLambdaDilepton_3_01LargeRecoil_01_4_1a309b1c0c5d175cd306ed76404d00f5f8" prot="public" virt="non-virtual"><scope>eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;</scope><name>integrated_fzero</name></member>
+      <member refid="classeos_1_1LambdaBToLambdaDilepton_3_01LargeRecoil_01_4_1a4856b87a348441b6af74a3d8a3e9399e" prot="public" virt="non-virtual"><scope>eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;</scope><name>LambdaBToLambdaDilepton</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a3e3d5f4a565256a1dda6c234b051b2f2" prot="public" virt="non-virtual"><scope>eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;</scope><name>PrivateImplementationPattern</name></member>
+      <member refid="classeos_1_1ParameterUser_1ad91a901e589653272482bded7e453c70" prot="public" virt="non-virtual"><scope>eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;</scope><name>uses</name></member>
+      <member refid="classeos_1_1ParameterUser_1a7a37e779cf45ef1075fe7bf670688b72" prot="public" virt="non-virtual"><scope>eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;</scope><name>uses</name></member>
+      <member refid="classeos_1_1LambdaBToLambdaDilepton_3_01LargeRecoil_01_4_1a561469823727e477359bfc10325cc56d" prot="public" virt="non-virtual"><scope>eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;</scope><name>~LambdaBToLambdaDilepton</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1acf46ec2739c3b0ec9702b9428475876d" prot="public" virt="non-virtual"><scope>eos::LambdaBToLambdaDilepton&lt; LargeRecoil &gt;</scope><name>~PrivateImplementationPattern</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

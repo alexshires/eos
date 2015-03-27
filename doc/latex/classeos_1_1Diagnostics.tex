@@ -1,0 +1,103 @@
+\hypertarget{classeos_1_1Diagnostics}{
+\section{eos::Diagnostics Class Reference}
+\label{classeos_1_1Diagnostics}\index{eos::Diagnostics@{eos::Diagnostics}}
+}
+
+
+{\ttfamily \#include $<$diagnostics.hh$>$}
+
+Inherits \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern$<$ Diagnostics $>$}.\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structeos_1_1Diagnostics_1_1Entry}{Entry}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{Indent}{\bf Basic Operations.}\par
+{\em \label{_amgrp640cb1fd388fd2cb0293189fe884d421}
+ Constructor. }\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1Diagnostics_aeff0c4ba0db58891ead8bc4e5a17d075}{Diagnostics} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\item 
+\hyperlink{classeos_1_1Diagnostics_a95753f31bc63bad2b51b8699be04f01d}{$\sim$Diagnostics} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Access to Diagnostic Entries}
+\label{_amgrpb8b82e307fb357b7ea74808f49658af3}
+ Add an entry to the container. \begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator}$<$ IteratorTag, const \hyperlink{structeos_1_1Diagnostics_1_1Entry}{Entry} $>$ \hyperlink{classeos_1_1Diagnostics_a53e47703a0b60c37caf9cc2f29606692}{Iterator}
+\begin{DoxyCompactList}\small\item\em Iterator over entries. \item\end{DoxyCompactList}\item 
+void \hyperlink{classeos_1_1Diagnostics_a1c1e295724886603c8842e278ab62bbc}{add} (const \hyperlink{structeos_1_1Diagnostics_1_1Entry}{Entry} \&)
+\begin{DoxyCompactList}\small\item\em Iterator over entries. \item\end{DoxyCompactList}\item 
+\hyperlink{classeos_1_1WrappedForwardIterator}{Iterator} \hyperlink{classeos_1_1Diagnostics_a98edcfc773cbdf2384b6180cd1a8aebc}{begin} () const 
+\begin{DoxyCompactList}\small\item\em Returns Iterator pointing to the first entry. \item\end{DoxyCompactList}\item 
+\hyperlink{classeos_1_1WrappedForwardIterator}{Iterator} \hyperlink{classeos_1_1Diagnostics_a0e10cf2a79180f04b2d5c5100447ddb4}{end} () const 
+\begin{DoxyCompactList}\small\item\em Returns Iterator pointing beyond the last entry. \item\end{DoxyCompactList}\item 
+unsigned \hyperlink{classeos_1_1Diagnostics_a791a35a96b5661232ca9797e7a48c5e8}{size} () const 
+\begin{DoxyCompactList}\small\item\em Return the total number of entries. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Container for diagnostic values and corresponding metadata. Used as part of the unit tests. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classeos_1_1Diagnostics_a53e47703a0b60c37caf9cc2f29606692}{
+\index{eos::Diagnostics@{eos::Diagnostics}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!eos::Diagnostics@{eos::Diagnostics}}
+\subsubsection[{Iterator}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf WrappedForwardIterator}$<$IteratorTag, const {\bf Entry}$>$ {\bf eos::Diagnostics::Iterator}}}
+\label{classeos_1_1Diagnostics_a53e47703a0b60c37caf9cc2f29606692}
+
+
+Iterator over entries. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classeos_1_1Diagnostics_aeff0c4ba0db58891ead8bc4e5a17d075}{
+\index{eos::Diagnostics@{eos::Diagnostics}!Diagnostics@{Diagnostics}}
+\index{Diagnostics@{Diagnostics}!eos::Diagnostics@{eos::Diagnostics}}
+\subsubsection[{Diagnostics}]{\setlength{\rightskip}{0pt plus 5cm}eos::Diagnostics::Diagnostics ()}}
+\label{classeos_1_1Diagnostics_aeff0c4ba0db58891ead8bc4e5a17d075}
+
+
+Destructor. \hypertarget{classeos_1_1Diagnostics_a95753f31bc63bad2b51b8699be04f01d}{
+\index{eos::Diagnostics@{eos::Diagnostics}!$\sim$Diagnostics@{$\sim$Diagnostics}}
+\index{$\sim$Diagnostics@{$\sim$Diagnostics}!eos::Diagnostics@{eos::Diagnostics}}
+\subsubsection[{$\sim$Diagnostics}]{\setlength{\rightskip}{0pt plus 5cm}eos::Diagnostics::$\sim$Diagnostics ()}}
+\label{classeos_1_1Diagnostics_a95753f31bc63bad2b51b8699be04f01d}
+
+
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classeos_1_1Diagnostics_a1c1e295724886603c8842e278ab62bbc}{
+\index{eos::Diagnostics@{eos::Diagnostics}!add@{add}}
+\index{add@{add}!eos::Diagnostics@{eos::Diagnostics}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void eos::Diagnostics::add (const {\bf Entry} \&)}}
+\label{classeos_1_1Diagnostics_a1c1e295724886603c8842e278ab62bbc}
+
+
+Iterator over entries. \hypertarget{classeos_1_1Diagnostics_a98edcfc773cbdf2384b6180cd1a8aebc}{
+\index{eos::Diagnostics@{eos::Diagnostics}!begin@{begin}}
+\index{begin@{begin}!eos::Diagnostics@{eos::Diagnostics}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Iterator} eos::Diagnostics::begin () const}}
+\label{classeos_1_1Diagnostics_a98edcfc773cbdf2384b6180cd1a8aebc}
+
+
+Returns Iterator pointing to the first entry. \hypertarget{classeos_1_1Diagnostics_a0e10cf2a79180f04b2d5c5100447ddb4}{
+\index{eos::Diagnostics@{eos::Diagnostics}!end@{end}}
+\index{end@{end}!eos::Diagnostics@{eos::Diagnostics}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Iterator} eos::Diagnostics::end () const}}
+\label{classeos_1_1Diagnostics_a0e10cf2a79180f04b2d5c5100447ddb4}
+
+
+Returns Iterator pointing beyond the last entry. \hypertarget{classeos_1_1Diagnostics_a791a35a96b5661232ca9797e7a48c5e8}{
+\index{eos::Diagnostics@{eos::Diagnostics}!size@{size}}
+\index{size@{size}!eos::Diagnostics@{eos::Diagnostics}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned eos::Diagnostics::size () const}}
+\label{classeos_1_1Diagnostics_a791a35a96b5661232ca9797e7a48c5e8}
+
+
+Return the total number of entries. 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{diagnostics_8hh}{diagnostics.hh}\end{DoxyCompactItemize}

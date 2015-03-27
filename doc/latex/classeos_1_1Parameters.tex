@@ -1,0 +1,181 @@
+\hypertarget{classeos_1_1Parameters}{
+\section{eos::Parameters Class Reference}
+\label{classeos_1_1Parameters}\index{eos::Parameters@{eos::Parameters}}
+}
+
+
+{\ttfamily \#include $<$parameters.hh$>$}
+
+Inherits \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern$<$ Parameters $>$}.\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classeos_1_1Parameters_a95091e66b113b826bc5866c52ecdb7c1}{operator!=} (const \hyperlink{classeos_1_1Parameters}{Parameters} \&rhs) const 
+\end{DoxyCompactItemize}
+\begin{Indent}{\bf Parameter access}\par
+{\em \label{_amgrp3534521ad23b09b81b11f604895d3593}
+ }\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1Parameter}{Parameter} \hyperlink{classeos_1_1Parameters_adfc224ca93af9276c55c756f6e7e2e18}{declare} (const std::string \&name, const double \&value=0.0)
+\item 
+void \hyperlink{classeos_1_1Parameters_ae0024a5a443069e934fda8e257e6ecd6}{set} (const std::string \&name, const double \&value)
+\item 
+\hyperlink{classeos_1_1Parameter}{Parameter} \hyperlink{classeos_1_1Parameters_acf41f953495892d14e4c49e248c60f43}{operator\mbox{[}$\,$\mbox{]}} (const std::string \&name) const 
+\item 
+\hyperlink{classeos_1_1Parameter}{Parameter} \hyperlink{classeos_1_1Parameters_ac320b54cad22e7c4eb4b3821ab409fb9}{operator\mbox{[}$\,$\mbox{]}} (const unsigned \&id) const 
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classeos_1_1Parameters_ac1c4326186d13e3c1f20eb8f39a7b5a2}{Parameter}
+\item 
+struct \hyperlink{classeos_1_1Parameters_a321bcfc7467eb8a305a7e15f232efa38}{Implementation$<$ Parameter $>$}
+\item 
+struct \hyperlink{classeos_1_1Parameters_afdc1ae1c3b0dbac4fdf6769d5f8e1fbf}{Implementation$<$ Parameters $>$}
+\end{DoxyCompactItemize}
+\subsection*{Iteration}
+\label{_amgrp86c1e32c05338b57578313d8a6fa892d}
+ \begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator}$<$ IteratorTag, \hyperlink{classeos_1_1Parameter}{Parameter} $>$ \hyperlink{classeos_1_1Parameters_ad4378a4b3c462f8aa122b3484bce1b4f}{Iterator}
+\item 
+\hyperlink{classeos_1_1WrappedForwardIterator}{Iterator} \hyperlink{classeos_1_1Parameters_aeef723f121d249fad9caa45cae111a90}{begin} () const 
+\item 
+\hyperlink{classeos_1_1WrappedForwardIterator}{Iterator} \hyperlink{classeos_1_1Parameters_a64f0ae769980d0945433023678f919dd}{end} () const 
+\end{DoxyCompactItemize}
+\subsection*{Basic Functions}
+\label{_amgrp2386c9a1f1785edee33f374dd2db9b3d}
+ \begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classeos_1_1Parameters}{Parameters} \hyperlink{classeos_1_1Parameters_a1fa30b2210827623e6bf9f3ac4d2fd94}{Defaults} ()
+\item 
+\hyperlink{classeos_1_1Parameters}{Parameters} \hyperlink{classeos_1_1Parameters_a273f5bad065bc47b62981734a2e3576e}{clone} () const 
+\item 
+\hyperlink{classeos_1_1Parameters_aa1f509653fa20a2599a47706042685f1}{$\sim$Parameters} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classeos_1_1Parameters}{Parameters} keeps the set of all numeric parameters for any \hyperlink{classeos_1_1Observable}{Observable}.
+
+Access to any \hyperlink{classeos_1_1Parameter}{Parameter} or their values is coherent, i.e., changes to a \hyperlink{classeos_1_1Parameter}{Parameter} object will propagate to every other object with the same parent \hyperlink{classeos_1_1Parameters}{Parameters} and which handle the same parameter by name. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classeos_1_1Parameters_ad4378a4b3c462f8aa122b3484bce1b4f}{
+\index{eos::Parameters@{eos::Parameters}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!eos::Parameters@{eos::Parameters}}
+\subsubsection[{Iterator}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf WrappedForwardIterator}$<$IteratorTag, {\bf Parameter}$>$ {\bf eos::Parameters::Iterator}}}
+\label{classeos_1_1Parameters_ad4378a4b3c462f8aa122b3484bce1b4f}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classeos_1_1Parameters_aa1f509653fa20a2599a47706042685f1}{
+\index{eos::Parameters@{eos::Parameters}!$\sim$Parameters@{$\sim$Parameters}}
+\index{$\sim$Parameters@{$\sim$Parameters}!eos::Parameters@{eos::Parameters}}
+\subsubsection[{$\sim$Parameters}]{\setlength{\rightskip}{0pt plus 5cm}eos::Parameters::$\sim$Parameters ()}}
+\label{classeos_1_1Parameters_aa1f509653fa20a2599a47706042685f1}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classeos_1_1Parameters_aeef723f121d249fad9caa45cae111a90}{
+\index{eos::Parameters@{eos::Parameters}!begin@{begin}}
+\index{begin@{begin}!eos::Parameters@{eos::Parameters}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Iterator} eos::Parameters::begin () const}}
+\label{classeos_1_1Parameters_aeef723f121d249fad9caa45cae111a90}
+\hypertarget{classeos_1_1Parameters_a273f5bad065bc47b62981734a2e3576e}{
+\index{eos::Parameters@{eos::Parameters}!clone@{clone}}
+\index{clone@{clone}!eos::Parameters@{eos::Parameters}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parameters} eos::Parameters::clone () const}}
+\label{classeos_1_1Parameters_a273f5bad065bc47b62981734a2e3576e}
+Constructor (private).
+
+Creates an instance of \hyperlink{classeos_1_1Parameters}{Parameters} from a given \hyperlink{namespaceeos_1_1implementation}{implementation}. To create an instance of \hyperlink{classeos_1_1Parameters}{Parameters}, see one of the named constructors.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \hyperlink{namespaceeos_1_1impl}{impl}}]Implementation from which the \hyperlink{classeos_1_1Parameters}{Parameters} object shall be constructed from. \end{DoxyParams}
+\hypertarget{classeos_1_1Parameters_adfc224ca93af9276c55c756f6e7e2e18}{
+\index{eos::Parameters@{eos::Parameters}!declare@{declare}}
+\index{declare@{declare}!eos::Parameters@{eos::Parameters}}
+\subsubsection[{declare}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parameter} eos::Parameters::declare (const std::string \& {\em name}, \/  const double \& {\em value} = {\ttfamily 0.0})}}
+\label{classeos_1_1Parameters_adfc224ca93af9276c55c756f6e7e2e18}
+Declare a new parameter.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]Name of the new parameter to be declared. \item[{\em value}](Optional) value for the new parameter. \end{DoxyParams}
+\hypertarget{classeos_1_1Parameters_a1fa30b2210827623e6bf9f3ac4d2fd94}{
+\index{eos::Parameters@{eos::Parameters}!Defaults@{Defaults}}
+\index{Defaults@{Defaults}!eos::Parameters@{eos::Parameters}}
+\subsubsection[{Defaults}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Parameters} eos::Parameters::Defaults ()\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1Parameters_a1fa30b2210827623e6bf9f3ac4d2fd94}
+Named constructor.
+
+Creates an instance of \hyperlink{classeos_1_1Parameters}{Parameters} with default values filled in. \hypertarget{classeos_1_1Parameters_a64f0ae769980d0945433023678f919dd}{
+\index{eos::Parameters@{eos::Parameters}!end@{end}}
+\index{end@{end}!eos::Parameters@{eos::Parameters}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Iterator} eos::Parameters::end () const}}
+\label{classeos_1_1Parameters_a64f0ae769980d0945433023678f919dd}
+\hypertarget{classeos_1_1Parameters_a95091e66b113b826bc5866c52ecdb7c1}{
+\index{eos::Parameters@{eos::Parameters}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!eos::Parameters@{eos::Parameters}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool eos::Parameters::operator!= (const {\bf Parameters} \& {\em rhs}) const}}
+\label{classeos_1_1Parameters_a95091e66b113b826bc5866c52ecdb7c1}
+Compare two instances of \hyperlink{classeos_1_1Parameters}{Parameters} on inequality of their underlying implementations.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em rhs}]The right hand side of the binary != operator. \end{DoxyParams}
+\hypertarget{classeos_1_1Parameters_ac320b54cad22e7c4eb4b3821ab409fb9}{
+\index{eos::Parameters@{eos::Parameters}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!eos::Parameters@{eos::Parameters}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parameter} eos::Parameters::operator\mbox{[}$\,$\mbox{]} (const unsigned \& {\em id}) const}}
+\label{classeos_1_1Parameters_ac320b54cad22e7c4eb4b3821ab409fb9}
+Retrieve a parameter's \hyperlink{classeos_1_1Parameter}{Parameter} object by id.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em id}]The id of the \hyperlink{classeos_1_1Parameter}{Parameter} that shall be retrived. \end{DoxyParams}
+\hypertarget{classeos_1_1Parameters_acf41f953495892d14e4c49e248c60f43}{
+\index{eos::Parameters@{eos::Parameters}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!eos::Parameters@{eos::Parameters}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parameter} eos::Parameters::operator\mbox{[}$\,$\mbox{]} (const std::string \& {\em name}) const}}
+\label{classeos_1_1Parameters_acf41f953495892d14e4c49e248c60f43}
+Retrieve a parameter's \hyperlink{classeos_1_1Parameter}{Parameter} object by name.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]The name of the \hyperlink{classeos_1_1Parameter}{Parameter} that shall be retrieved. \end{DoxyParams}
+\hypertarget{classeos_1_1Parameters_ae0024a5a443069e934fda8e257e6ecd6}{
+\index{eos::Parameters@{eos::Parameters}!set@{set}}
+\index{set@{set}!eos::Parameters@{eos::Parameters}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}void eos::Parameters::set (const std::string \& {\em name}, \/  const double \& {\em value})}}
+\label{classeos_1_1Parameters_ae0024a5a443069e934fda8e257e6ecd6}
+Set a parameter's numeric value.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]The name of the parameter whose numeric value shall be changed. \item[{\em value}]The parameter's new numeric value. \end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classeos_1_1Parameters_a321bcfc7467eb8a305a7e15f232efa38}{
+\index{eos::Parameters@{eos::Parameters}!Implementation$<$ Parameter $>$@{Implementation$<$ Parameter $>$}}
+\index{Implementation$<$ Parameter $>$@{Implementation$<$ Parameter $>$}!eos::Parameters@{eos::Parameters}}
+\subsubsection[{Implementation$<$ Parameter $>$}]{\setlength{\rightskip}{0pt plus 5cm}friend struct Implementation$<$ {\bf Parameter} $>$\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classeos_1_1Parameters_a321bcfc7467eb8a305a7e15f232efa38}
+\hypertarget{classeos_1_1Parameters_afdc1ae1c3b0dbac4fdf6769d5f8e1fbf}{
+\index{eos::Parameters@{eos::Parameters}!Implementation$<$ Parameters $>$@{Implementation$<$ Parameters $>$}}
+\index{Implementation$<$ Parameters $>$@{Implementation$<$ Parameters $>$}!eos::Parameters@{eos::Parameters}}
+\subsubsection[{Implementation$<$ Parameters $>$}]{\setlength{\rightskip}{0pt plus 5cm}friend struct Implementation$<$ {\bf Parameters} $>$\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classeos_1_1Parameters_afdc1ae1c3b0dbac4fdf6769d5f8e1fbf}
+\hypertarget{classeos_1_1Parameters_ac1c4326186d13e3c1f20eb8f39a7b5a2}{
+\index{eos::Parameters@{eos::Parameters}!Parameter@{Parameter}}
+\index{Parameter@{Parameter}!eos::Parameters@{eos::Parameters}}
+\subsubsection[{Parameter}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Parameter}\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classeos_1_1Parameters_ac1c4326186d13e3c1f20eb8f39a7b5a2}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{parameters_8hh}{parameters.hh}\end{DoxyCompactItemize}

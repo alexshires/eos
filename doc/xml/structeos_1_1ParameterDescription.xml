@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1ParameterDescription" kind="struct" prot="public">
+    <compoundname>eos::ParameterDescription</compoundname>
+    <includes refid="parameters_8hh" local="no">parameters.hh</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structeos_1_1ParameterDescription_1a2d531fff965fd9c1c833213a229c5f10" prot="public" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::ParameterDescription::parameter</definition>
+        <argsstring></argsstring>
+        <name>parameter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" line="275" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1ParameterDescription_1abab49c1ed74185718b6d696938d94683" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::ParameterDescription::min</definition>
+        <argsstring></argsstring>
+        <name>min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" line="277" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1ParameterDescription_1a4375b5ec8b9d496a6183d08f92dc648b" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::ParameterDescription::max</definition>
+        <argsstring></argsstring>
+        <name>max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" line="279" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1ParameterDescription_1ac9e90def0fd26f7f4f9f59df93f64401" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool eos::ParameterDescription::nuisance</definition>
+        <argsstring></argsstring>
+        <name>nuisance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" line="281" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1ParameterDescription_1a3f62f41ab537a373291807e3b2445c08" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool eos::ParameterDescription::discrete</definition>
+        <argsstring></argsstring>
+        <name>discrete</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" line="283" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="790">
+        <label>eos::Mutable</label>
+        <link refid="classeos_1_1Mutable"/>
+      </node>
+      <node id="789">
+        <label>eos::Parameter</label>
+        <link refid="classeos_1_1Parameter"/>
+        <childnode refid="790" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="788">
+        <label>eos::ParameterDescription</label>
+        <link refid="structeos_1_1ParameterDescription"/>
+        <childnode refid="789" relation="usage">
+          <edgelabel>parameter</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" line="274" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" bodystart="273" bodyend="284"/>
+    <listofallmembers>
+      <member refid="structeos_1_1ParameterDescription_1a3f62f41ab537a373291807e3b2445c08" prot="public" virt="non-virtual"><scope>eos::ParameterDescription</scope><name>discrete</name></member>
+      <member refid="structeos_1_1ParameterDescription_1a4375b5ec8b9d496a6183d08f92dc648b" prot="public" virt="non-virtual"><scope>eos::ParameterDescription</scope><name>max</name></member>
+      <member refid="structeos_1_1ParameterDescription_1abab49c1ed74185718b6d696938d94683" prot="public" virt="non-virtual"><scope>eos::ParameterDescription</scope><name>min</name></member>
+      <member refid="structeos_1_1ParameterDescription_1ac9e90def0fd26f7f4f9f59df93f64401" prot="public" virt="non-virtual"><scope>eos::ParameterDescription</scope><name>nuisance</name></member>
+      <member refid="structeos_1_1ParameterDescription_1a2d531fff965fd9c1c833213a229c5f10" prot="public" virt="non-virtual"><scope>eos::ParameterDescription</scope><name>parameter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="if-example" kind="example">
+    <compoundname>if</compoundname>
+    <detaileddescription>
+<para>Maximum relative distance between two local modes that allows them to be treated as one mode. A rescaling of coordinates to the unit hypercube is performed in order to avoid problems when parameter ranges differ by several orders of magnitude.</para><para>|x - y|/|y| &lt; eps, they are just one mode <programlisting></programlisting> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

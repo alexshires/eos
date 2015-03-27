@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1BToDilepton" kind="class" prot="public">
+    <compoundname>eos::BToDilepton</compoundname>
+    <basecompoundref refid="classeos_1_1ParameterUser" prot="public" virt="non-virtual">eos::ParameterUser</basecompoundref>
+    <basecompoundref refid="classeos_1_1PrivateImplementationPattern" prot="public" virt="non-virtual">eos::PrivateImplementationPattern&lt; BToDilepton &gt;</basecompoundref>
+    <includes refid="exclusive-b-to-dilepton_8hh" local="no">exclusive-b-to-dilepton.hh</includes>
+      <sectiondef kind="user-defined">
+      <header>Basic Functions</header>
+      <description><para><anchor id="_1amgrp2386c9a1f1785edee33f374dd2db9b3d"/> Constructor. </para></description>
+      <memberdef kind="function" id="classeos_1_1BToDilepton_1a4e95160c3e54cd1dcb87832c7ccdd15e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::BToDilepton::BToDilepton</definition>
+        <argsstring>(const Parameters &amp;parameters, const Options &amp;options)</argsstring>
+        <name>BToDilepton</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1Options" kindref="compound">Options</ref> &amp;</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-dilepton.hh" line="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToDilepton_1a2a4cc57a5b21d062ecedc52215f03516" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::BToDilepton::~BToDilepton</definition>
+        <argsstring>()</argsstring>
+        <name>~BToDilepton</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-dilepton.hh" line="44"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Observables</header>
+      <description><para><anchor id="_1amgrpfb400c1612336da8b8edb87235f67b77"/> </para></description>
+      <memberdef kind="function" id="classeos_1_1BToDilepton_1abd3e3629c6477f74ada275e2033035f1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToDilepton::branching_ratio_time_zero</definition>
+        <argsstring>() const </argsstring>
+        <name>branching_ratio_time_zero</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-dilepton.hh" line="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToDilepton_1afd43a14338c4bc5268b4b9c41ab14c7f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToDilepton::branching_ratio_untagged_integrated</definition>
+        <argsstring>() const </argsstring>
+        <name>branching_ratio_untagged_integrated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-dilepton.hh" line="53"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Calculation according to [BEKU2002]. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="118">
+        <label>eos::PrivateImplementationPattern&lt; BToDilepton &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="117">
+        <label>eos::ParameterUser</label>
+        <link refid="classeos_1_1ParameterUser"/>
+      </node>
+      <node id="116">
+        <label>eos::BToDilepton</label>
+        <link refid="classeos_1_1BToDilepton"/>
+        <childnode refid="117" relation="public-inheritance">
+        </childnode>
+        <childnode refid="118" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="122">
+        <label>eos::PrivateImplementationPattern&lt; BToDilepton &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="121">
+        <label>std::set&lt; Parameter::Id &gt;</label>
+      </node>
+      <node id="120">
+        <label>eos::ParameterUser</label>
+        <link refid="classeos_1_1ParameterUser"/>
+        <childnode refid="121" relation="usage">
+          <edgelabel>_ids</edgelabel>
+        </childnode>
+      </node>
+      <node id="119">
+        <label>eos::BToDilepton</label>
+        <link refid="classeos_1_1BToDilepton"/>
+        <childnode refid="120" relation="public-inheritance">
+        </childnode>
+        <childnode refid="122" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-dilepton.hh" line="36" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-dilepton.hh" bodystart="33" bodyend="55"/>
+    <listofallmembers>
+      <member refid="classeos_1_1ParameterUser_1aa3a0285297e16cf2a5830df1f9bb2f4b" prot="protected" virt="non-virtual"><scope>eos::BToDilepton</scope><name>_ids</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a232940e78b26c6ed4f97196f831c69c9" prot="protected" virt="non-virtual"><scope>eos::BToDilepton</scope><name>_imp</name></member>
+      <member refid="classeos_1_1ParameterUser_1a9cd569207063cd2a8f807c4e1203a5d4" prot="public" virt="non-virtual"><scope>eos::BToDilepton</scope><name>begin</name></member>
+      <member refid="classeos_1_1BToDilepton_1abd3e3629c6477f74ada275e2033035f1" prot="public" virt="non-virtual"><scope>eos::BToDilepton</scope><name>branching_ratio_time_zero</name></member>
+      <member refid="classeos_1_1BToDilepton_1afd43a14338c4bc5268b4b9c41ab14c7f" prot="public" virt="non-virtual"><scope>eos::BToDilepton</scope><name>branching_ratio_untagged_integrated</name></member>
+      <member refid="classeos_1_1BToDilepton_1a4e95160c3e54cd1dcb87832c7ccdd15e" prot="public" virt="non-virtual"><scope>eos::BToDilepton</scope><name>BToDilepton</name></member>
+      <member refid="classeos_1_1ParameterUser_1a7105631bbcb4b2492e6377b2b69f5b0f" prot="public" virt="non-virtual"><scope>eos::BToDilepton</scope><name>ConstIterator</name></member>
+      <member refid="classeos_1_1ParameterUser_1a5813c886f3fd3f074cc02a53fc9e0790" prot="public" virt="non-virtual"><scope>eos::BToDilepton</scope><name>end</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a3e3d5f4a565256a1dda6c234b051b2f2" prot="public" virt="non-virtual"><scope>eos::BToDilepton</scope><name>PrivateImplementationPattern</name></member>
+      <member refid="classeos_1_1ParameterUser_1ad91a901e589653272482bded7e453c70" prot="public" virt="non-virtual"><scope>eos::BToDilepton</scope><name>uses</name></member>
+      <member refid="classeos_1_1ParameterUser_1a7a37e779cf45ef1075fe7bf670688b72" prot="public" virt="non-virtual"><scope>eos::BToDilepton</scope><name>uses</name></member>
+      <member refid="classeos_1_1BToDilepton_1a2a4cc57a5b21d062ecedc52215f03516" prot="public" virt="non-virtual"><scope>eos::BToDilepton</scope><name>~BToDilepton</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1acf46ec2739c3b0ec9702b9428475876d" prot="public" virt="non-virtual"><scope>eos::BToDilepton</scope><name>~PrivateImplementationPattern</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

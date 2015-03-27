@@ -1,0 +1,141 @@
+\hypertarget{exclusive-b-to-s-dilepton_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/rare-\/b-\/decays/exclusive-\/b-\/to-\/s-\/dilepton.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2011 Christian Wacker}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_RARE\_B\_DECAYS\_EXCLUSIVE\_B\_TO\_S\_DILEPTON\_HH}
+\hypertarget{exclusive-b-to-s-dilepton_8hh_source_l00021}{}\hyperlink{exclusive-b-to-s-dilepton_8hh_abc2ad3337a546fab596884c2f5e8ffa6}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_RARE\_B\_DECAYS\_EXCLUSIVE\_B\_TO\_S\_DILEPTON\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{preprocessor}{#include <\hyperlink{power__of_8hh}{eos/utils/power_of.hh}>}
+00024 
+00025 \textcolor{preprocessor}{#include <array>}
+00026 
+00027 \textcolor{keyword}{namespace }eos
+00028 \{
+\hypertarget{exclusive-b-to-s-dilepton_8hh_source_l00029}{}\hyperlink{namespaceeos_1_1btovll}{00029}     \textcolor{keyword}{namespace }btovll
+00030     \{
+\hypertarget{exclusive-b-to-s-dilepton_8hh_source_l00031}{}\hyperlink{structeos_1_1btovll_1_1Amplitudes}{00031}         \textcolor{keyword}{struct }\hyperlink{structeos_1_1btovll_1_1Amplitudes}{Amplitudes}
+00032         \{
+\hypertarget{exclusive-b-to-s-dilepton_8hh_source_l00033}{}\hyperlink{structeos_1_1btovll_1_1Amplitudes_a6b459929fb4284d7e947b837390dc07a}{00033}             complex<double> \hyperlink{structeos_1_1btovll_1_1Amplitudes_a6b459929fb4284d7e947b837390dc07a}{a_long_right}, \hyperlink{structeos_1_1btovll_1_1Amplitudes_a445006044e0547c19cece86890159ce7}{a_long_left};
+\hypertarget{exclusive-b-to-s-dilepton_8hh_source_l00034}{}\hyperlink{structeos_1_1btovll_1_1Amplitudes_a0eb4cfaf2543cea66fa1307abb5737a0}{00034}             complex<double> \hyperlink{structeos_1_1btovll_1_1Amplitudes_a0eb4cfaf2543cea66fa1307abb5737a0}{a_perp_right}, \hyperlink{structeos_1_1btovll_1_1Amplitudes_a808710a7d0ed790976d1a5c9b960f6e5}{a_perp_left};
+\hypertarget{exclusive-b-to-s-dilepton_8hh_source_l00035}{}\hyperlink{structeos_1_1btovll_1_1Amplitudes_aefccd00f09f49f4c3ae585d232786cfc}{00035}             complex<double> \hyperlink{structeos_1_1btovll_1_1Amplitudes_aefccd00f09f49f4c3ae585d232786cfc}{a_par_right}, \hyperlink{structeos_1_1btovll_1_1Amplitudes_a734ff0455a740eeb8d481c0b09c15b7b}{a_par_left};
+\hypertarget{exclusive-b-to-s-dilepton_8hh_source_l00036}{}\hyperlink{structeos_1_1btovll_1_1Amplitudes_aba7c6fa6629f6bac6651bd74cdc884fb}{00036}             complex<double> \hyperlink{structeos_1_1btovll_1_1Amplitudes_aba7c6fa6629f6bac6651bd74cdc884fb}{a_timelike};
+00037         \};
+00038 
+\hypertarget{exclusive-b-to-s-dilepton_8hh_source_l00039}{}\hyperlink{structeos_1_1btovll_1_1AngularCoefficients}{00039}         \textcolor{keyword}{struct }\hyperlink{structeos_1_1btovll_1_1AngularCoefficients}{AngularCoefficients}
+00040         \{
+\hypertarget{exclusive-b-to-s-dilepton_8hh_source_l00041}{}\hyperlink{structeos_1_1btovll_1_1AngularCoefficients_a288d113754d8142d7744445e9badfda2}{00041}             \textcolor{keywordtype}{double} \hyperlink{structeos_1_1btovll_1_1AngularCoefficients_a288d113754d8142d7744445e9badfda2}{j1s}, \hyperlink{structeos_1_1btovll_1_1AngularCoefficients_a0e4eabd3e2721e181cff61fb6f72da57}{j1c};
+\hypertarget{exclusive-b-to-s-dilepton_8hh_source_l00042}{}\hyperlink{structeos_1_1btovll_1_1AngularCoefficients_ade959e061384e53621a55f9bac1f2c69}{00042}             \textcolor{keywordtype}{double} \hyperlink{structeos_1_1btovll_1_1AngularCoefficients_ade959e061384e53621a55f9bac1f2c69}{j2s}, \hyperlink{structeos_1_1btovll_1_1AngularCoefficients_a6963d2453fb5336232b76a477e0881c2}{j2c};
+\hypertarget{exclusive-b-to-s-dilepton_8hh_source_l00043}{}\hyperlink{structeos_1_1btovll_1_1AngularCoefficients_afd8583c3d9cd7093df43785d27f6198b}{00043}             \textcolor{keywordtype}{double} \hyperlink{structeos_1_1btovll_1_1AngularCoefficients_afd8583c3d9cd7093df43785d27f6198b}{j3};
+\hypertarget{exclusive-b-to-s-dilepton_8hh_source_l00044}{}\hyperlink{structeos_1_1btovll_1_1AngularCoefficients_a248d3de3ef06f5b0df8a81bb9b1cb386}{00044}             \textcolor{keywordtype}{double} \hyperlink{structeos_1_1btovll_1_1AngularCoefficients_a248d3de3ef06f5b0df8a81bb9b1cb386}{j4};
+\hypertarget{exclusive-b-to-s-dilepton_8hh_source_l00045}{}\hyperlink{structeos_1_1btovll_1_1AngularCoefficients_a45c7c0b871babc4ab2d9f154621bcbba}{00045}             \textcolor{keywordtype}{double} \hyperlink{structeos_1_1btovll_1_1AngularCoefficients_a45c7c0b871babc4ab2d9f154621bcbba}{j5};
+\hypertarget{exclusive-b-to-s-dilepton_8hh_source_l00046}{}\hyperlink{structeos_1_1btovll_1_1AngularCoefficients_a131fac85c7f41b3f45fa48d813cfe5fe}{00046}             \textcolor{keywordtype}{double} \hyperlink{structeos_1_1btovll_1_1AngularCoefficients_a131fac85c7f41b3f45fa48d813cfe5fe}{j6s}, \hyperlink{structeos_1_1btovll_1_1AngularCoefficients_a9864a2cce9206c5b1575506662e3931b}{j6c};
+\hypertarget{exclusive-b-to-s-dilepton_8hh_source_l00047}{}\hyperlink{structeos_1_1btovll_1_1AngularCoefficients_a4315cb971112dcdab72fd3f35d32b0c1}{00047}             \textcolor{keywordtype}{double} \hyperlink{structeos_1_1btovll_1_1AngularCoefficients_a4315cb971112dcdab72fd3f35d32b0c1}{j7};
+\hypertarget{exclusive-b-to-s-dilepton_8hh_source_l00048}{}\hyperlink{structeos_1_1btovll_1_1AngularCoefficients_ae45771328384f52d01da8de89ac47daa}{00048}             \textcolor{keywordtype}{double} \hyperlink{structeos_1_1btovll_1_1AngularCoefficients_ae45771328384f52d01da8de89ac47daa}{j8};
+\hypertarget{exclusive-b-to-s-dilepton_8hh_source_l00049}{}\hyperlink{structeos_1_1btovll_1_1AngularCoefficients_a316582a2eb00530ecde513187e29fe18}{00049}             \textcolor{keywordtype}{double} \hyperlink{structeos_1_1btovll_1_1AngularCoefficients_a316582a2eb00530ecde513187e29fe18}{j9};
+00050         \};
+00051 
+\hypertarget{exclusive-b-to-s-dilepton_8hh_source_l00052}{}\hyperlink{namespaceeos_1_1btovll_af4a61503514b02cdc2239f33915ac237}{00052}         \textcolor{keyword}{inline} \hyperlink{structeos_1_1btovll_1_1AngularCoefficients}{AngularCoefficients} \hyperlink{namespaceeos_1_1btovll_af4a61503514b02cdc2239f33915ac237}{array_to_angular_coefficients}(\textcolor{keyword}{const} std::array
+      <double, 12> & arr)
+00053         \{
+00054             \hyperlink{structeos_1_1btovll_1_1AngularCoefficients}{AngularCoefficients} a\_c = \{ arr[0], arr[1], arr[2], arr[3], arr[4],  
+      arr[5],
+00055                 arr[6], arr[7], arr[8], arr[9], arr[10], arr[11] \};
+00056 
+00057             \textcolor{keywordflow}{return} a\_c;
+00058         \}
+00059 
+\hypertarget{exclusive-b-to-s-dilepton_8hh_source_l00060}{}\hyperlink{namespaceeos_1_1btovll_a7cdeae9d6d5f6d7b7df686f4ec9358c0}{00060}         \textcolor{keyword}{inline} \textcolor{keywordtype}{double} \hyperlink{namespaceeos_1_1btovll_a7cdeae9d6d5f6d7b7df686f4ec9358c0}{decay_width}(\textcolor{keyword}{const} \hyperlink{structeos_1_1btovll_1_1AngularCoefficients}{AngularCoefficients} & a\_c)
+00061         \{
+00062             \textcolor{comment}{// cf. [BHvD2010], p. 6, eq. (2.7)}
+00063             \textcolor{keywordflow}{return} 2.0 * a\_c.\hyperlink{structeos_1_1btovll_1_1AngularCoefficients_a288d113754d8142d7744445e9badfda2}{j1s} + a\_c.\hyperlink{structeos_1_1btovll_1_1AngularCoefficients_a0e4eabd3e2721e181cff61fb6f72da57}{j1c} - 1.0 / 3.0 * (2.0 * a\_c.\hyperlink{structeos_1_1btovll_1_1AngularCoefficients_ade959e061384e53621a55f9bac1f2c69}{j2s} + a\_c.
+      \hyperlink{structeos_1_1btovll_1_1AngularCoefficients_a6963d2453fb5336232b76a477e0881c2}{j2c});
+00064         \}
+00065 
+\hypertarget{exclusive-b-to-s-dilepton_8hh_source_l00066}{}\hyperlink{namespaceeos_1_1btovll_ab3d297e4fc263252e595a1447427afd9}{00066}         \textcolor{keyword}{inline} std::array<double, 12> \hyperlink{namespaceeos_1_1btovll_ab3d297e4fc263252e595a1447427afd9}{angular_coefficients_array}(\textcolor{keyword}{const} 
+      \hyperlink{structeos_1_1btovll_1_1Amplitudes}{Amplitudes} & amplitudes, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & m\_l)
+00067         \{
+00068             \textcolor{comment}{// cf. [BHvD2010], p. 26, eqs. (A1)-(A11)}
+00069             std::array<double, 12> result;
+00070 
+00071             \textcolor{keywordtype}{double} z = 4.0 * power\_of<2>(m\_l) / s;
+00072             \textcolor{keywordtype}{double} beta2 = 1.0 - z;
+00073             \textcolor{keywordtype}{double} beta = sqrt(beta2);
+00074 
+00075             \textcolor{comment}{// j1s}
+00076             result[0] = 3.0 / 4.0 * (
+00077                   (2.0 + beta2) / 4.0 * (norm(amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_a808710a7d0ed790976d1a5c9b960f6e5}{a_perp_left}) + norm(ampl
+      itudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_a0eb4cfaf2543cea66fa1307abb5737a0}{a_perp_right}) + norm(amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_a734ff0455a740eeb8d481c0b09c15b7b}{a_par_left}) + norm(amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_aefccd00f09f49f4c3ae585d232786cfc}{a_par_right})
+      )
+00078                   + z * real(amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_a808710a7d0ed790976d1a5c9b960f6e5}{a_perp_left} * conj(amplitudes.
+      \hyperlink{structeos_1_1btovll_1_1Amplitudes_a0eb4cfaf2543cea66fa1307abb5737a0}{a_perp_right}) + amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_a734ff0455a740eeb8d481c0b09c15b7b}{a_par_left} * conj(amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_aefccd00f09f49f4c3ae585d232786cfc}{a_par_right})));
+00079             \textcolor{comment}{// j1c}
+00080             result[1] = 3.0 / 4.0 * (
+00081                   norm(amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_a445006044e0547c19cece86890159ce7}{a_long_left}) + norm(amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_a6b459929fb4284d7e947b837390dc07a}{a_long_right})
+00082                   + z * (norm(amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_aba7c6fa6629f6bac6651bd74cdc884fb}{a_timelike}) + 2.0 * real(amplitudes.
+      \hyperlink{structeos_1_1btovll_1_1Amplitudes_a445006044e0547c19cece86890159ce7}{a_long_left} * conj(amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_a6b459929fb4284d7e947b837390dc07a}{a_long_right}))));
+00083             \textcolor{comment}{// j2s}
+00084             result[2] = 3.0 * beta2 / 16.0 * (
+00085                   norm(amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_a808710a7d0ed790976d1a5c9b960f6e5}{a_perp_left}) + norm(amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_a0eb4cfaf2543cea66fa1307abb5737a0}{a_perp_right}) + 
+      norm(amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_a734ff0455a740eeb8d481c0b09c15b7b}{a_par_left}) + norm(amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_aefccd00f09f49f4c3ae585d232786cfc}{a_par_right}));
+00086             \textcolor{comment}{// j2c}
+00087             result[3] = -3.0 * beta2 / 4.0 * (
+00088                   norm(amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_a445006044e0547c19cece86890159ce7}{a_long_left}) + norm(amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_a6b459929fb4284d7e947b837390dc07a}{a_long_right}));
+00089             \textcolor{comment}{// j3}
+00090             result[4] = 3.0 / 8.0 * beta2 * (
+00091                   norm(amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_a808710a7d0ed790976d1a5c9b960f6e5}{a_perp_left}) + norm(amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_a0eb4cfaf2543cea66fa1307abb5737a0}{a_perp_right}) - 
+      norm(amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_a734ff0455a740eeb8d481c0b09c15b7b}{a_par_left}) - norm(amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_aefccd00f09f49f4c3ae585d232786cfc}{a_par_right}));
+00092             \textcolor{comment}{// j4}
+00093             result[5] = 3.0 / (4.0 * sqrt(2.0)) * beta2 * real(
+00094                   amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_a445006044e0547c19cece86890159ce7}{a_long_left} * conj(amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_a734ff0455a740eeb8d481c0b09c15b7b}{a_par_left}) + amplitud
+      es.\hyperlink{structeos_1_1btovll_1_1Amplitudes_a6b459929fb4284d7e947b837390dc07a}{a_long_right} * conj(amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_aefccd00f09f49f4c3ae585d232786cfc}{a_par_right}));
+00095             \textcolor{comment}{// j5}
+00096             result[6] = 3.0 * sqrt(2.0) / 4.0 * beta * real(
+00097                   amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_a445006044e0547c19cece86890159ce7}{a_long_left} * conj(amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_a808710a7d0ed790976d1a5c9b960f6e5}{a_perp_left}) - amplitu
+      des.\hyperlink{structeos_1_1btovll_1_1Amplitudes_a6b459929fb4284d7e947b837390dc07a}{a_long_right} * conj(amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_a0eb4cfaf2543cea66fa1307abb5737a0}{a_perp_right}));
+00098             \textcolor{comment}{// j6s}
+00099             result[7] = 3.0 / 2.0 * beta * real(
+00100                   amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_a734ff0455a740eeb8d481c0b09c15b7b}{a_par_left} * conj(amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_a808710a7d0ed790976d1a5c9b960f6e5}{a_perp_left}) - amplitud
+      es.\hyperlink{structeos_1_1btovll_1_1Amplitudes_aefccd00f09f49f4c3ae585d232786cfc}{a_par_right} * conj(amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_a0eb4cfaf2543cea66fa1307abb5737a0}{a_perp_right}));
+00101             \textcolor{comment}{// j6c}
+00102             result[8] = 0.0;
+00103             \textcolor{comment}{// j7}
+00104             result[9] = 3.0 * sqrt(2.0) / 4.0 * beta * imag(
+00105                   amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_a445006044e0547c19cece86890159ce7}{a_long_left} * conj(amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_a734ff0455a740eeb8d481c0b09c15b7b}{a_par_left}) - amplitud
+      es.\hyperlink{structeos_1_1btovll_1_1Amplitudes_a6b459929fb4284d7e947b837390dc07a}{a_long_right} * conj(amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_aefccd00f09f49f4c3ae585d232786cfc}{a_par_right}));
+00106             \textcolor{comment}{// j8}
+00107             result[10] = 3.0 / 4.0 / sqrt(2.0) * beta2 * (imag(
+00108                   amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_a445006044e0547c19cece86890159ce7}{a_long_left} * conj(amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_a808710a7d0ed790976d1a5c9b960f6e5}{a_perp_left})) + imag(a
+      mplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_a6b459929fb4284d7e947b837390dc07a}{a_long_right} * conj(amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_a0eb4cfaf2543cea66fa1307abb5737a0}{a_perp_right})));
+00109             \textcolor{comment}{// j9}
+00110             result[11] = 3.0 / 4.0 * beta2 * (imag(
+00111                   conj(amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_a734ff0455a740eeb8d481c0b09c15b7b}{a_par_left}) * amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_a808710a7d0ed790976d1a5c9b960f6e5}{a_perp_left}) + imag(co
+      nj(amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_aefccd00f09f49f4c3ae585d232786cfc}{a_par_right}) * amplitudes.\hyperlink{structeos_1_1btovll_1_1Amplitudes_a0eb4cfaf2543cea66fa1307abb5737a0}{a_perp_right}));
+00112 
+00113             \textcolor{keywordflow}{return} result;
+00114         \}
+00115     \}
+00116 \}
+00117 
+00118 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

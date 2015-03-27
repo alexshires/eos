@@ -1,0 +1,118 @@
+\hypertarget{log_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/log.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2011 Danny van Dyk}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * Based upon 'paludis/util/log.hh', which is}
+00007 \textcolor{comment}{ *}
+00008 \textcolor{comment}{ *   Copyright (c) 2006-2011 Ciaran McCreesh}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00011 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00012 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00013 \textcolor{comment}{ *}
+00014 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00015 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00016 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00017 \textcolor{comment}{ * details.}
+00018 \textcolor{comment}{ *}
+00019 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00020 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00021 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00022 \textcolor{comment}{ */}
+00023 
+00024 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_LOG\_HH}
+\hypertarget{log_8hh_source_l00025}{}\hyperlink{log_8hh_a911a0223120f9d69b5ba0a5782c3a7a2}{00025} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_LOG\_HH 1}
+00026 \textcolor{preprocessor}{}
+00027 \textcolor{preprocessor}{#include <\hyperlink{instantiation__policy_8hh}{eos/utils/instantiation_policy.hh}>}
+00028 \textcolor{preprocessor}{#include <\hyperlink{private__implementation__pattern_8hh}{eos/utils/private_implementation_pattern.hh}>}
+00029 \textcolor{preprocessor}{#include <\hyperlink{stringify_8hh}{eos/utils/stringify.hh}>}
+00030 
+00031 \textcolor{keyword}{namespace }eos
+00032 \{
+\hypertarget{log_8hh_source_l00036}{}\hyperlink{namespaceeos_ad6b42a08a08a1b63498f3f262bd15602}{00036}     \textcolor{keyword}{enum} \hyperlink{namespaceeos_ad6b42a08a08a1b63498f3f262bd15602}{LogLevel}
+00037     \{
+\hypertarget{log_8hh_source_l00038}{}\hyperlink{namespaceeos_ad6b42a08a08a1b63498f3f262bd15602a9ba67f079c0a9154e568f0d207c5931b}{00038}         \hyperlink{namespaceeos_ad6b42a08a08a1b63498f3f262bd15602a9ba67f079c0a9154e568f0d207c5931b}{ll_silent},             
+\hypertarget{log_8hh_source_l00039}{}\hyperlink{namespaceeos_ad6b42a08a08a1b63498f3f262bd15602ab160ece1c3e71b2fdf17ffd3b74b1d8f}{00039}         \hyperlink{namespaceeos_ad6b42a08a08a1b63498f3f262bd15602ab160ece1c3e71b2fdf17ffd3b74b1d8f}{ll_error},              
+\hypertarget{log_8hh_source_l00040}{}\hyperlink{namespaceeos_ad6b42a08a08a1b63498f3f262bd15602a5239af800d9d8cb9b83e52ee6b768941}{00040}         \hyperlink{namespaceeos_ad6b42a08a08a1b63498f3f262bd15602a5239af800d9d8cb9b83e52ee6b768941}{ll_warning},            
+\hypertarget{log_8hh_source_l00041}{}\hyperlink{namespaceeos_ad6b42a08a08a1b63498f3f262bd15602a550a3ef110e24df3eb71bc7fcefe53f3}{00041}         \hyperlink{namespaceeos_ad6b42a08a08a1b63498f3f262bd15602a550a3ef110e24df3eb71bc7fcefe53f3}{ll_informational},      
+\hypertarget{log_8hh_source_l00042}{}\hyperlink{namespaceeos_ad6b42a08a08a1b63498f3f262bd15602ab4e8e8cf581d697726f51bc8afcb0499}{00042}         \hyperlink{namespaceeos_ad6b42a08a08a1b63498f3f262bd15602ab4e8e8cf581d697726f51bc8afcb0499}{ll_debug},              
+\hypertarget{log_8hh_source_l00043}{}\hyperlink{namespaceeos_ad6b42a08a08a1b63498f3f262bd15602a8fb5a1db33a7ac4dbe90a00ff09529de}{00043}         \hyperlink{namespaceeos_ad6b42a08a08a1b63498f3f262bd15602a8fb5a1db33a7ac4dbe90a00ff09529de}{ll_last}
+00044     \};
+00045 
+00049 
+00050     std::ostream & \hyperlink{namespaceeos_a2d7ef50009f9368c73d5056eab3ec21d}{operator<< }(std::ostream & lhs, \textcolor{keyword}{const} \hyperlink{namespaceeos_ad6b42a08a08a1b63498f3f262bd15602}{LogLevel} & rhs);
+00051     std::istream & \hyperlink{namespaceeos_a28eec37f82312fce69a8c2b08b272ef9}{operator>> }(std::istream & lhs, \hyperlink{namespaceeos_ad6b42a08a08a1b63498f3f262bd15602}{LogLevel} & rhs);
+00053 
+00054     \textcolor{comment}{// forward declaration for use in Log}
+00055     \textcolor{keyword}{class }LogMessageHandler;
+00056 
+\hypertarget{log_8hh_source_l00061}{}\hyperlink{classeos_1_1Log}{00061}     \textcolor{keyword}{class }\hyperlink{classeos_1_1Log}{Log} :
+00062         \textcolor{keyword}{public} InstantiationPolicy<Log, Singleton>,
+00063         \textcolor{keyword}{public} \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern}<Log>
+00064     \{
+00065         \textcolor{keyword}{private}:
+00069             \hyperlink{classeos_1_1Log}{Log}();
+00071 
+00072             \textcolor{keywordtype}{void} \_message(\textcolor{keyword}{const} std::string &, \textcolor{keyword}{const} \hyperlink{namespaceeos_ad6b42a08a08a1b63498f3f262bd15602}{LogLevel} &, \textcolor{keyword}{const} std::strin
+      g &);
+00073 
+00074         \textcolor{keyword}{public}:
+\hypertarget{log_8hh_source_l00075}{}\hyperlink{classeos_1_1Log_ab9569a6854b96140aaafae85f5ce4097}{00075}             \textcolor{keyword}{friend} \textcolor{keyword}{class }\hyperlink{classeos_1_1LogMessageHandler}{LogMessageHandler};
+\hypertarget{log_8hh_source_l00076}{}\hyperlink{classeos_1_1Log_ac44bccc4d7bdab643d8143c8781ff698}{00076}             \textcolor{keyword}{friend} \textcolor{keyword}{class }InstantiationPolicy<\hyperlink{classeos_1_1Log}{Log}, Singleton>;
+00077 
+00081             \hyperlink{classeos_1_1Log_a27918ffa360d5af4ed67cbb2e2be6e22}{~Log}();
+00083 
+00086 
+00088             \textcolor{keyword}{const} \hyperlink{namespaceeos_ad6b42a08a08a1b63498f3f262bd15602}{LogLevel} & \hyperlink{classeos_1_1Log_aada216ea65e76bb02481c587c2467e93}{get_log_level}() \textcolor{keyword}{const};
+00089 
+00093             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1Log_a7aebea877e1c2a3d185f0967719b89c7}{set_log_level}(\textcolor{keyword}{const} \hyperlink{namespaceeos_ad6b42a08a08a1b63498f3f262bd15602}{LogLevel} &);
+00094 
+00098             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1Log_ad5f0046aaba91f5e60f16eeb43f76c0f}{set_log_stream}(std::ostream *);
+00099 
+00103             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1Log_aa0ba105aa2ad0914ce8c93d66f6e26de}{set_program_name}(\textcolor{keyword}{const} std::string &);
+00104 
+00110             \hyperlink{classeos_1_1LogMessageHandler}{LogMessageHandler} \hyperlink{classeos_1_1Log_a554d8b48664cf871f1fcddf52e6f8530}{message}(\textcolor{keyword}{const} std::string & \textcolor{keywordtype}{id}, \textcolor{keyword}{const} \hyperlink{namespaceeos_ad6b42a08a08a1b63498f3f262bd15602}{LogLevel} & lo
+      g\_level) \_\_attribute\_\_((warn\_unused\_result));
+00112     \};
+00113 
+\hypertarget{log_8hh_source_l00117}{}\hyperlink{classeos_1_1LogMessageHandler}{00117}     \textcolor{keyword}{class }\hyperlink{classeos_1_1LogMessageHandler}{LogMessageHandler}
+00118     \{
+00119         \textcolor{keyword}{private}:
+00120             \hyperlink{classeos_1_1Log}{Log} * \_log;
+00121             \hyperlink{namespaceeos_ad6b42a08a08a1b63498f3f262bd15602}{LogLevel} \_log\_level;
+00122             std::string \_id;
+00123             std::string \_message;
+00124 
+00128             \hyperlink{classeos_1_1LogMessageHandler}{LogMessageHandler}(\textcolor{keyword}{const} \hyperlink{classeos_1_1LogMessageHandler}{LogMessageHandler} &);
+00129 
+00131             \hyperlink{classeos_1_1LogMessageHandler}{LogMessageHandler}(\hyperlink{classeos_1_1Log}{Log} * \textcolor{keyword}{const} log, \textcolor{keyword}{const} \hyperlink{namespaceeos_ad6b42a08a08a1b63498f3f262bd15602}{LogLevel} & log\_level, \textcolor{keyword}{const} 
+      std::string & \textcolor{keywordtype}{id});
+00132 
+00134             \textcolor{keywordtype}{void} operator= (\textcolor{keyword}{const} \hyperlink{classeos_1_1LogMessageHandler}{LogMessageHandler} &);
+00136 
+00137             \textcolor{keywordtype}{void} \_append(\textcolor{keyword}{const} std::string & s);
+00138 
+00139         \textcolor{keyword}{public}:
+00140             \textcolor{keyword}{friend} \hyperlink{classeos_1_1LogMessageHandler}{LogMessageHandler} \hyperlink{classeos_1_1Log_a554d8b48664cf871f1fcddf52e6f8530}{Log::message}(\textcolor{keyword}{const} std::string &, \textcolor{keyword}{const} 
+      \hyperlink{namespaceeos_ad6b42a08a08a1b63498f3f262bd15602}{LogLevel} &);
+00141 
+00145             \hyperlink{classeos_1_1LogMessageHandler_aad1be08a8a665dea99f4dd08a18c8e1f}{~LogMessageHandler}();
+00147 
+\hypertarget{log_8hh_source_l00151}{}\hyperlink{classeos_1_1LogMessageHandler_a9e80fc226b5a9e496b4458f4dcac8edf}{00151}             \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_> \hyperlink{classeos_1_1LogMessageHandler}{LogMessageHandler} & \hyperlink{classeos_1_1LogMessageHandler_a9e80fc226b5a9e496b4458f4dcac8edf}{operator<< }(\textcolor{keyword}{const} T\_ & t)
+00152             \{
+00153                 \_append(\hyperlink{namespaceeos_a4d4fd832aebc28739c76d8cbd3dda6df}{stringify}(t));
+00154 
+00155                 \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+00156             \}
+00157     \};
+00158 \}
+00159 
+00160 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

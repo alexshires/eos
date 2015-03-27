@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1btovll_1_1AngularCoefficients" kind="struct" prot="public">
+    <compoundname>eos::btovll::AngularCoefficients</compoundname>
+    <includes refid="exclusive-b-to-s-dilepton_8hh" local="no">exclusive-b-to-s-dilepton.hh</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structeos_1_1btovll_1_1AngularCoefficients_1a288d113754d8142d7744445e9badfda2" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::btovll::AngularCoefficients::j1s</definition>
+        <argsstring></argsstring>
+        <name>j1s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" line="41" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1btovll_1_1AngularCoefficients_1a0e4eabd3e2721e181cff61fb6f72da57" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::btovll::AngularCoefficients::j1c</definition>
+        <argsstring></argsstring>
+        <name>j1c</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" line="41" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1btovll_1_1AngularCoefficients_1ade959e061384e53621a55f9bac1f2c69" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::btovll::AngularCoefficients::j2s</definition>
+        <argsstring></argsstring>
+        <name>j2s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" line="42" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1btovll_1_1AngularCoefficients_1a6963d2453fb5336232b76a477e0881c2" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::btovll::AngularCoefficients::j2c</definition>
+        <argsstring></argsstring>
+        <name>j2c</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" line="42" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1btovll_1_1AngularCoefficients_1afd8583c3d9cd7093df43785d27f6198b" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::btovll::AngularCoefficients::j3</definition>
+        <argsstring></argsstring>
+        <name>j3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" line="43" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1btovll_1_1AngularCoefficients_1a248d3de3ef06f5b0df8a81bb9b1cb386" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::btovll::AngularCoefficients::j4</definition>
+        <argsstring></argsstring>
+        <name>j4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" line="44" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1btovll_1_1AngularCoefficients_1a45c7c0b871babc4ab2d9f154621bcbba" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::btovll::AngularCoefficients::j5</definition>
+        <argsstring></argsstring>
+        <name>j5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" line="45" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1btovll_1_1AngularCoefficients_1a131fac85c7f41b3f45fa48d813cfe5fe" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::btovll::AngularCoefficients::j6s</definition>
+        <argsstring></argsstring>
+        <name>j6s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" line="46" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1btovll_1_1AngularCoefficients_1a9864a2cce9206c5b1575506662e3931b" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::btovll::AngularCoefficients::j6c</definition>
+        <argsstring></argsstring>
+        <name>j6c</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" line="46" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1btovll_1_1AngularCoefficients_1a4315cb971112dcdab72fd3f35d32b0c1" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::btovll::AngularCoefficients::j7</definition>
+        <argsstring></argsstring>
+        <name>j7</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" line="47" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1btovll_1_1AngularCoefficients_1ae45771328384f52d01da8de89ac47daa" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::btovll::AngularCoefficients::j8</definition>
+        <argsstring></argsstring>
+        <name>j8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" line="48" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1btovll_1_1AngularCoefficients_1a316582a2eb00530ecde513187e29fe18" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::btovll::AngularCoefficients::j9</definition>
+        <argsstring></argsstring>
+        <name>j9</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" line="49" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" line="40" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" bodystart="39" bodyend="50"/>
+    <listofallmembers>
+      <member refid="structeos_1_1btovll_1_1AngularCoefficients_1a0e4eabd3e2721e181cff61fb6f72da57" prot="public" virt="non-virtual"><scope>eos::btovll::AngularCoefficients</scope><name>j1c</name></member>
+      <member refid="structeos_1_1btovll_1_1AngularCoefficients_1a288d113754d8142d7744445e9badfda2" prot="public" virt="non-virtual"><scope>eos::btovll::AngularCoefficients</scope><name>j1s</name></member>
+      <member refid="structeos_1_1btovll_1_1AngularCoefficients_1a6963d2453fb5336232b76a477e0881c2" prot="public" virt="non-virtual"><scope>eos::btovll::AngularCoefficients</scope><name>j2c</name></member>
+      <member refid="structeos_1_1btovll_1_1AngularCoefficients_1ade959e061384e53621a55f9bac1f2c69" prot="public" virt="non-virtual"><scope>eos::btovll::AngularCoefficients</scope><name>j2s</name></member>
+      <member refid="structeos_1_1btovll_1_1AngularCoefficients_1afd8583c3d9cd7093df43785d27f6198b" prot="public" virt="non-virtual"><scope>eos::btovll::AngularCoefficients</scope><name>j3</name></member>
+      <member refid="structeos_1_1btovll_1_1AngularCoefficients_1a248d3de3ef06f5b0df8a81bb9b1cb386" prot="public" virt="non-virtual"><scope>eos::btovll::AngularCoefficients</scope><name>j4</name></member>
+      <member refid="structeos_1_1btovll_1_1AngularCoefficients_1a45c7c0b871babc4ab2d9f154621bcbba" prot="public" virt="non-virtual"><scope>eos::btovll::AngularCoefficients</scope><name>j5</name></member>
+      <member refid="structeos_1_1btovll_1_1AngularCoefficients_1a9864a2cce9206c5b1575506662e3931b" prot="public" virt="non-virtual"><scope>eos::btovll::AngularCoefficients</scope><name>j6c</name></member>
+      <member refid="structeos_1_1btovll_1_1AngularCoefficients_1a131fac85c7f41b3f45fa48d813cfe5fe" prot="public" virt="non-virtual"><scope>eos::btovll::AngularCoefficients</scope><name>j6s</name></member>
+      <member refid="structeos_1_1btovll_1_1AngularCoefficients_1a4315cb971112dcdab72fd3f35d32b0c1" prot="public" virt="non-virtual"><scope>eos::btovll::AngularCoefficients</scope><name>j7</name></member>
+      <member refid="structeos_1_1btovll_1_1AngularCoefficients_1ae45771328384f52d01da8de89ac47daa" prot="public" virt="non-virtual"><scope>eos::btovll::AngularCoefficients</scope><name>j8</name></member>
+      <member refid="structeos_1_1btovll_1_1AngularCoefficients_1a316582a2eb00530ecde513187e29fe18" prot="public" virt="non-virtual"><scope>eos::btovll::AngularCoefficients</scope><name>j9</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

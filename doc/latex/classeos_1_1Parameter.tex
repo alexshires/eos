@@ -1,0 +1,181 @@
+\hypertarget{classeos_1_1Parameter}{
+\section{eos::Parameter Class Reference}
+\label{classeos_1_1Parameter}\index{eos::Parameter@{eos::Parameter}}
+}
+
+
+{\ttfamily \#include $<$parameters.hh$>$}
+
+Inherits \hyperlink{classeos_1_1Mutable}{eos::Mutable}.
+
+Inherited by \hyperlink{classeos_1_1UsedParameter}{eos::UsedParameter}.\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned \hyperlink{classeos_1_1Parameter_a065f55e66b2128cc5f14339e676d833a}{Id}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{Indent}{\bf Access \& Modification of the Numeric Value}\par
+{\em \label{_amgrpe80791dade181f608b19efd4011ae6ee}
+ Cast a Parameter's numeric value to a double. }\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classeos_1_1Parameter_ad2dc69fe74e308328dc8a1d901c916ec}{operator double} () const 
+\begin{DoxyCompactList}\small\item\em Retrieve a Parameter's numeric value. \item\end{DoxyCompactList}\item 
+virtual double \hyperlink{classeos_1_1Parameter_ada58e0206d67777a79bdd2bc0c806600}{operator()} () const 
+\begin{DoxyCompactList}\small\item\em Retrieve a Parameter's numeric value. \item\end{DoxyCompactList}\item 
+virtual const \hyperlink{classeos_1_1Parameter}{Parameter} \& \hyperlink{classeos_1_1Parameter_aff29f9acdc90019e76239f6c81b4014a}{operator=} (const double \&)
+\begin{DoxyCompactList}\small\item\em Set a Parameter's numeric value. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Access to Meta Data}\par
+{\em \label{_amgrpa3a190e9d66c82f98a9d3e29998edf0d}
+ Retrieve the Parameter's name. }\begin{DoxyCompactItemize}
+\item 
+virtual const std::string \& \hyperlink{classeos_1_1Parameter_a86f581847722de0445ae65065940fd13}{name} () const 
+\begin{DoxyCompactList}\small\item\em Retrieve the Parameter's (default) central value. \item\end{DoxyCompactList}\item 
+const double \& \hyperlink{classeos_1_1Parameter_a1c0a1ce478f2275d1259483fa919ec60}{central} () const 
+\begin{DoxyCompactList}\small\item\em Retrieve the Parameter's (default) central value. \item\end{DoxyCompactList}\item 
+const double \& \hyperlink{classeos_1_1Parameter_ac91f5116794dea955ad7ac20e552b730}{max} () const 
+\begin{DoxyCompactList}\small\item\em Retrieve the Parameter's (default) maximal value. \item\end{DoxyCompactList}\item 
+const double \& \hyperlink{classeos_1_1Parameter_a37672fa03693d97cdafb23e35fe0e83b}{min} () const 
+\begin{DoxyCompactList}\small\item\em Retrieve the Parameter's (default) minimal value. \item\end{DoxyCompactList}\item 
+\hyperlink{classeos_1_1Parameter_a065f55e66b2128cc5f14339e676d833a}{Id} \hyperlink{classeos_1_1Parameter_a1cea65462fdafeb7329f6d87fd6e42b4}{id} () const 
+\begin{DoxyCompactList}\small\item\em Retrieve the Parameter's id. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classeos_1_1Parameter_afaebbd8ef883afa59f01fa3d4475e6a2}{Parameters}
+\item 
+struct \hyperlink{classeos_1_1Parameter_afdc1ae1c3b0dbac4fdf6769d5f8e1fbf}{Implementation$<$ Parameters $>$}
+\end{DoxyCompactItemize}
+\subsection*{Basic Functions}
+\label{_amgrp2386c9a1f1785edee33f374dd2db9b3d}
+ Copy-\/constructor. \begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1Parameter_ac64d342eed9e01a93a42e00403ab041f}{Parameter} (const \hyperlink{classeos_1_1Parameter}{Parameter} \&other)
+\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\item 
+\hyperlink{classeos_1_1Parameter_ac5e6dd06494095cffe292e4b4dc200c8}{$\sim$Parameter} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\item 
+\hyperlink{namespaceeos_a0ab446e6a801d96a1ee83bb7c070686f}{MutablePtr} \hyperlink{classeos_1_1Parameter_a8a643807f254a9601349c779cf6211dc}{clone} () const 
+\begin{DoxyCompactList}\small\item\em Make a copy of this \hyperlink{classeos_1_1Parameter}{Parameter} as a MutablePtr. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classeos_1_1Parameter}{Parameter} is the class that holds all information of one of Parameters' parameters. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classeos_1_1Parameter_a065f55e66b2128cc5f14339e676d833a}{
+\index{eos::Parameter@{eos::Parameter}!Id@{Id}}
+\index{Id@{Id}!eos::Parameter@{eos::Parameter}}
+\subsubsection[{Id}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned {\bf eos::Parameter::Id}}}
+\label{classeos_1_1Parameter_a065f55e66b2128cc5f14339e676d833a}
+A unique number that identifies this parameter at run time. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classeos_1_1Parameter_ac64d342eed9e01a93a42e00403ab041f}{
+\index{eos::Parameter@{eos::Parameter}!Parameter@{Parameter}}
+\index{Parameter@{Parameter}!eos::Parameter@{eos::Parameter}}
+\subsubsection[{Parameter}]{\setlength{\rightskip}{0pt plus 5cm}eos::Parameter::Parameter (const {\bf Parameter} \& {\em other})}}
+\label{classeos_1_1Parameter_ac64d342eed9e01a93a42e00403ab041f}
+
+
+Destructor. \hypertarget{classeos_1_1Parameter_ac5e6dd06494095cffe292e4b4dc200c8}{
+\index{eos::Parameter@{eos::Parameter}!$\sim$Parameter@{$\sim$Parameter}}
+\index{$\sim$Parameter@{$\sim$Parameter}!eos::Parameter@{eos::Parameter}}
+\subsubsection[{$\sim$Parameter}]{\setlength{\rightskip}{0pt plus 5cm}eos::Parameter::$\sim$Parameter ()}}
+\label{classeos_1_1Parameter_ac5e6dd06494095cffe292e4b4dc200c8}
+
+
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classeos_1_1Parameter_a1c0a1ce478f2275d1259483fa919ec60}{
+\index{eos::Parameter@{eos::Parameter}!central@{central}}
+\index{central@{central}!eos::Parameter@{eos::Parameter}}
+\subsubsection[{central}]{\setlength{\rightskip}{0pt plus 5cm}const double\& eos::Parameter::central () const}}
+\label{classeos_1_1Parameter_a1c0a1ce478f2275d1259483fa919ec60}
+
+
+Retrieve the Parameter's (default) central value. \hypertarget{classeos_1_1Parameter_a8a643807f254a9601349c779cf6211dc}{
+\index{eos::Parameter@{eos::Parameter}!clone@{clone}}
+\index{clone@{clone}!eos::Parameter@{eos::Parameter}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MutablePtr} eos::Parameter::clone () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classeos_1_1Parameter_a8a643807f254a9601349c779cf6211dc}
+
+
+Make a copy of this \hyperlink{classeos_1_1Parameter}{Parameter} as a MutablePtr. 
+
+Implements \hyperlink{classeos_1_1Mutable_a31d51dbb25d02ad989592b43de8a787b}{eos::Mutable}.\hypertarget{classeos_1_1Parameter_a1cea65462fdafeb7329f6d87fd6e42b4}{
+\index{eos::Parameter@{eos::Parameter}!id@{id}}
+\index{id@{id}!eos::Parameter@{eos::Parameter}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Id} eos::Parameter::id () const}}
+\label{classeos_1_1Parameter_a1cea65462fdafeb7329f6d87fd6e42b4}
+
+
+Retrieve the Parameter's id. \hypertarget{classeos_1_1Parameter_ac91f5116794dea955ad7ac20e552b730}{
+\index{eos::Parameter@{eos::Parameter}!max@{max}}
+\index{max@{max}!eos::Parameter@{eos::Parameter}}
+\subsubsection[{max}]{\setlength{\rightskip}{0pt plus 5cm}const double\& eos::Parameter::max () const}}
+\label{classeos_1_1Parameter_ac91f5116794dea955ad7ac20e552b730}
+
+
+Retrieve the Parameter's (default) maximal value. \hypertarget{classeos_1_1Parameter_a37672fa03693d97cdafb23e35fe0e83b}{
+\index{eos::Parameter@{eos::Parameter}!min@{min}}
+\index{min@{min}!eos::Parameter@{eos::Parameter}}
+\subsubsection[{min}]{\setlength{\rightskip}{0pt plus 5cm}const double\& eos::Parameter::min () const}}
+\label{classeos_1_1Parameter_a37672fa03693d97cdafb23e35fe0e83b}
+
+
+Retrieve the Parameter's (default) minimal value. \hypertarget{classeos_1_1Parameter_a86f581847722de0445ae65065940fd13}{
+\index{eos::Parameter@{eos::Parameter}!name@{name}}
+\index{name@{name}!eos::Parameter@{eos::Parameter}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}virtual const std::string\& eos::Parameter::name () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classeos_1_1Parameter_a86f581847722de0445ae65065940fd13}
+
+
+Retrieve the Parameter's (default) central value. 
+
+Implements \hyperlink{classeos_1_1Mutable_ad215a3863435593930a3543866881f49}{eos::Mutable}.\hypertarget{classeos_1_1Parameter_ad2dc69fe74e308328dc8a1d901c916ec}{
+\index{eos::Parameter@{eos::Parameter}!operator double@{operator double}}
+\index{operator double@{operator double}!eos::Parameter@{eos::Parameter}}
+\subsubsection[{operator double}]{\setlength{\rightskip}{0pt plus 5cm}virtual eos::Parameter::operator double () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classeos_1_1Parameter_ad2dc69fe74e308328dc8a1d901c916ec}
+
+
+Retrieve a Parameter's numeric value. 
+
+Implements \hyperlink{classeos_1_1Mutable_a0763bf2933503db18d28b942aae2d324}{eos::Mutable}.\hypertarget{classeos_1_1Parameter_ada58e0206d67777a79bdd2bc0c806600}{
+\index{eos::Parameter@{eos::Parameter}!operator()@{operator()}}
+\index{operator()@{operator()}!eos::Parameter@{eos::Parameter}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}virtual double eos::Parameter::operator() () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classeos_1_1Parameter_ada58e0206d67777a79bdd2bc0c806600}
+
+
+Retrieve a Parameter's numeric value. 
+
+Implements \hyperlink{classeos_1_1Mutable_a6efd15ab0164a1735813669506e331d7}{eos::Mutable}.\hypertarget{classeos_1_1Parameter_aff29f9acdc90019e76239f6c81b4014a}{
+\index{eos::Parameter@{eos::Parameter}!operator=@{operator=}}
+\index{operator=@{operator=}!eos::Parameter@{eos::Parameter}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf Parameter}\& eos::Parameter::operator= (const double \&)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classeos_1_1Parameter_aff29f9acdc90019e76239f6c81b4014a}
+
+
+Set a Parameter's numeric value. 
+
+Implements \hyperlink{classeos_1_1Mutable_abf079592435ecb22f242b7b01c279c72}{eos::Mutable}.
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classeos_1_1Parameter_afdc1ae1c3b0dbac4fdf6769d5f8e1fbf}{
+\index{eos::Parameter@{eos::Parameter}!Implementation$<$ Parameters $>$@{Implementation$<$ Parameters $>$}}
+\index{Implementation$<$ Parameters $>$@{Implementation$<$ Parameters $>$}!eos::Parameter@{eos::Parameter}}
+\subsubsection[{Implementation$<$ Parameters $>$}]{\setlength{\rightskip}{0pt plus 5cm}friend struct Implementation$<$ {\bf Parameters} $>$\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classeos_1_1Parameter_afdc1ae1c3b0dbac4fdf6769d5f8e1fbf}
+\hypertarget{classeos_1_1Parameter_afaebbd8ef883afa59f01fa3d4475e6a2}{
+\index{eos::Parameter@{eos::Parameter}!Parameters@{Parameters}}
+\index{Parameters@{Parameters}!eos::Parameter@{eos::Parameter}}
+\subsubsection[{Parameters}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Parameters}\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classeos_1_1Parameter_afaebbd8ef883afa59f01fa3d4475e6a2}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{parameters_8hh}{parameters.hh}\end{DoxyCompactItemize}

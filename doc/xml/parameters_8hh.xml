@@ -1,0 +1,603 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="parameters_8hh" kind="file">
+    <compoundname>parameters.hh</compoundname>
+    <includes refid="exception_8hh" local="no">eos/utils/exception.hh</includes>
+    <includes refid="mutable_8hh" local="no">eos/utils/mutable.hh</includes>
+    <includes refid="parameters-fwd_8hh" local="no">eos/utils/parameters-fwd.hh</includes>
+    <includes refid="private__implementation__pattern_8hh" local="no">eos/utils/private_implementation_pattern.hh</includes>
+    <includes refid="random__number__generator_8hh" local="no">eos/utils/random_number_generator.hh</includes>
+    <includes refid="wrapped__forward__iterator_8hh" local="no">eos/utils/wrapped_forward_iterator.hh</includes>
+    <includes local="no">set</includes>
+    <includedby refid="b-to-pi-l-nu_8hh" local="no">/home/alexshires/EOS/eos-next/eos/b-decays/b-to-pi-l-nu.hh</includedby>
+    <includedby refid="properties_8hh" local="no">/home/alexshires/EOS/eos-next/eos/b-decays/properties.hh</includedby>
+    <includedby refid="analytic-b-to-pi_8hh" local="no">/home/alexshires/EOS/eos-next/eos/form-factors/analytic-b-to-pi.hh</includedby>
+    <includedby refid="baryonic_8hh" local="no">/home/alexshires/EOS/eos-next/eos/form-factors/baryonic.hh</includedby>
+    <includedby refid="mesonic_8hh" local="no">/home/alexshires/EOS/eos-next/eos/form-factors/mesonic.hh</includedby>
+    <includedby refid="pi-lcdas_8hh" local="no">/home/alexshires/EOS/eos-next/eos/form-factors/pi-lcdas.hh</includedby>
+    <includedby refid="observable_8hh" local="no">/home/alexshires/EOS/eos-next/eos/observable.hh</includedby>
+    <includedby refid="exclusive-b-to-dilepton_8hh" local="no">/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-dilepton.hh</includedby>
+    <includedby refid="exclusive-b-to-s-dilepton-large-recoil_8hh" local="no">/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh</includedby>
+    <includedby refid="exclusive-b-to-s-dilepton-low-recoil_8hh" local="no">/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh</includedby>
+    <includedby refid="exclusive-b-to-s-gamma_8hh" local="no">/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-gamma.hh</includedby>
+    <includedby refid="inclusive-b-to-s-dilepton_8hh" local="no">/home/alexshires/EOS/eos-next/eos/rare-b-decays/inclusive-b-to-s-dilepton.hh</includedby>
+    <includedby refid="inclusive-b-to-s-gamma_8hh" local="no">/home/alexshires/EOS/eos-next/eos/rare-b-decays/inclusive-b-to-s-gamma.hh</includedby>
+    <includedby refid="lambda-b-to-lambda-dilepton_8hh" local="no">/home/alexshires/EOS/eos-next/eos/rare-b-decays/lambda-b-to-lambda-dilepton.hh</includedby>
+    <includedby refid="log__likelihood_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/log_likelihood.hh</includedby>
+    <includedby refid="log__prior_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/log_prior.hh</includedby>
+    <includedby refid="markov__chain_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh</includedby>
+    <includedby refid="markov__chain__sampler_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/markov_chain_sampler.hh</includedby>
+    <includedby refid="model_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/model.hh</includedby>
+    <includedby refid="observable__cache_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/observable_cache.hh</includedby>
+    <includedby refid="wilson__coefficients_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh</includedby>
+    <incdepgraph>
+      <node id="1401">
+        <label>functional</label>
+      </node>
+      <node id="1396">
+        <label>eos/utils/parameters-fwd.hh</label>
+        <link refid="parameters-fwd_8hh"/>
+      </node>
+      <node id="1402">
+        <label>iterator</label>
+      </node>
+      <node id="1398">
+        <label>cstdint</label>
+      </node>
+      <node id="1391">
+        <label>string</label>
+      </node>
+      <node id="1394">
+        <label>eos/utils/private_implementation_pattern.hh</label>
+        <link refid="private__implementation__pattern_8hh"/>
+        <childnode refid="1395" relation="include">
+        </childnode>
+      </node>
+      <node id="1400">
+        <label>eos/utils/wrapped_forward_iterator-fwd.hh</label>
+        <link refid="wrapped__forward__iterator-fwd_8hh"/>
+      </node>
+      <node id="1390">
+        <label>exception</label>
+      </node>
+      <node id="1392">
+        <label>eos/utils/mutable.hh</label>
+        <link refid="mutable_8hh"/>
+        <childnode refid="1393" relation="include">
+        </childnode>
+        <childnode refid="1394" relation="include">
+        </childnode>
+        <childnode refid="1395" relation="include">
+        </childnode>
+      </node>
+      <node id="1397">
+        <label>eos/utils/random_number_generator.hh</label>
+        <link refid="random__number__generator_8hh"/>
+        <childnode refid="1394" relation="include">
+        </childnode>
+        <childnode refid="1398" relation="include">
+        </childnode>
+      </node>
+      <node id="1389">
+        <label>eos/utils/exception.hh</label>
+        <link refid="exception_8hh"/>
+        <childnode refid="1390" relation="include">
+        </childnode>
+        <childnode refid="1391" relation="include">
+        </childnode>
+      </node>
+      <node id="1399">
+        <label>eos/utils/wrapped_forward_iterator.hh</label>
+        <link refid="wrapped__forward__iterator_8hh"/>
+        <childnode refid="1400" relation="include">
+        </childnode>
+        <childnode refid="1401" relation="include">
+        </childnode>
+        <childnode refid="1402" relation="include">
+        </childnode>
+        <childnode refid="1403" relation="include">
+        </childnode>
+      </node>
+      <node id="1403">
+        <label>type_traits</label>
+      </node>
+      <node id="1404">
+        <label>set</label>
+      </node>
+      <node id="1393">
+        <label>eos/utils/mutable-fwd.hh</label>
+        <link refid="mutable-fwd_8hh"/>
+      </node>
+      <node id="1388">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/parameters.hh</label>
+        <link refid="parameters.hh"/>
+        <childnode refid="1389" relation="include">
+        </childnode>
+        <childnode refid="1392" relation="include">
+        </childnode>
+        <childnode refid="1396" relation="include">
+        </childnode>
+        <childnode refid="1394" relation="include">
+        </childnode>
+        <childnode refid="1397" relation="include">
+        </childnode>
+        <childnode refid="1399" relation="include">
+        </childnode>
+        <childnode refid="1404" relation="include">
+        </childnode>
+      </node>
+      <node id="1395">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1442">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/standard-model.hh</label>
+        <link refid="standard-model_8hh"/>
+        <childnode refid="1441" relation="include">
+        </childnode>
+        <childnode refid="1443" relation="include">
+        </childnode>
+      </node>
+      <node id="1443">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh</label>
+        <link refid="wilson__scan__model_8hh"/>
+      </node>
+      <node id="1416">
+        <label>/home/alexshires/EOS/eos-next/eos/observable.hh</label>
+        <link refid="observable_8hh"/>
+        <childnode refid="1417" relation="include">
+        </childnode>
+        <childnode refid="1413" relation="include">
+        </childnode>
+        <childnode refid="1423" relation="include">
+        </childnode>
+        <childnode refid="1424" relation="include">
+        </childnode>
+        <childnode refid="1418" relation="include">
+        </childnode>
+        <childnode refid="1425" relation="include">
+        </childnode>
+        <childnode refid="1426" relation="include">
+        </childnode>
+        <childnode refid="1428" relation="include">
+        </childnode>
+      </node>
+      <node id="1429">
+        <label>/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-large-recoil.hh</label>
+        <link refid="exclusive-b-to-s-dilepton-large-recoil_8hh"/>
+      </node>
+      <node id="1438">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh</label>
+        <link refid="proposal__functions_8hh"/>
+        <childnode refid="1421" relation="include">
+        </childnode>
+      </node>
+      <node id="1435">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/log_prior.hh</label>
+        <link refid="log__prior_8hh"/>
+        <childnode refid="1419" relation="include">
+        </childnode>
+      </node>
+      <node id="1418">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/log_likelihood.hh</label>
+        <link refid="log__likelihood_8hh"/>
+        <childnode refid="1419" relation="include">
+        </childnode>
+      </node>
+      <node id="1437">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/cluster.hh</label>
+        <link refid="cluster_8hh"/>
+        <childnode refid="1438" relation="include">
+        </childnode>
+      </node>
+      <node id="1440">
+        <label>/home/alexshires/EOS/eos-next/eos/rare-b-decays/charm-loops.hh</label>
+        <link refid="charm-loops_8hh"/>
+      </node>
+      <node id="1411">
+        <label>/home/alexshires/EOS/eos-next/eos/form-factors/baryonic-impl.hh</label>
+        <link refid="baryonic-impl_8hh"/>
+      </node>
+      <node id="1413">
+        <label>/home/alexshires/EOS/eos-next/eos/form-factors/form-factor-adapter.hh</label>
+        <link refid="form-factor-adapter_8hh"/>
+      </node>
+      <node id="1439">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/model.hh</label>
+        <link refid="model_8hh"/>
+        <childnode refid="1440" relation="include">
+        </childnode>
+        <childnode refid="1441" relation="include">
+        </childnode>
+        <childnode refid="1442" relation="include">
+        </childnode>
+        <childnode refid="1443" relation="include">
+        </childnode>
+      </node>
+      <node id="1433">
+        <label>/home/alexshires/EOS/eos-next/eos/rare-b-decays/inclusive-b-to-s-gamma.hh</label>
+        <link refid="inclusive-b-to-s-gamma_8hh"/>
+      </node>
+      <node id="1434">
+        <label>/home/alexshires/EOS/eos-next/eos/rare-b-decays/lambda-b-to-lambda-dilepton.hh</label>
+        <link refid="lambda-b-to-lambda-dilepton_8hh"/>
+      </node>
+      <node id="1410">
+        <label>/home/alexshires/EOS/eos-next/eos/form-factors/baryonic.hh</label>
+        <link refid="baryonic_8hh"/>
+        <childnode refid="1411" relation="include">
+        </childnode>
+        <childnode refid="1412" relation="include">
+        </childnode>
+      </node>
+      <node id="1425">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/observable_cache.hh</label>
+        <link refid="observable__cache_8hh"/>
+        <childnode refid="1417" relation="include">
+        </childnode>
+        <childnode refid="1418" relation="include">
+        </childnode>
+      </node>
+      <node id="1419">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/analysis.hh</label>
+        <link refid="analysis_8hh"/>
+        <childnode refid="1420" relation="include">
+        </childnode>
+        <childnode refid="1421" relation="include">
+        </childnode>
+        <childnode refid="1422" relation="include">
+        </childnode>
+      </node>
+      <node id="1417">
+        <label>/home/alexshires/EOS/eos-next/eos/constraint.hh</label>
+        <link refid="constraint_8hh"/>
+        <childnode refid="1418" relation="include">
+        </childnode>
+      </node>
+      <node id="1426">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/observable_set.hh</label>
+        <link refid="observable__set_8hh"/>
+        <childnode refid="1427" relation="include">
+        </childnode>
+      </node>
+      <node id="1412">
+        <label>/home/alexshires/EOS/eos-next/eos/form-factors/form-factors.hh</label>
+        <link refid="form-factors_8hh"/>
+        <childnode refid="1413" relation="include">
+        </childnode>
+      </node>
+      <node id="1408">
+        <label>/home/alexshires/EOS/eos-next/eos/form-factors/analytic-b-to-pi.hh</label>
+        <link refid="analytic-b-to-pi_8hh"/>
+        <childnode refid="1409" relation="include">
+        </childnode>
+      </node>
+      <node id="1422">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/population_monte_carlo_sampler.hh</label>
+        <link refid="population__monte__carlo__sampler_8hh"/>
+      </node>
+      <node id="1427">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/prior_sampler.hh</label>
+        <link refid="prior__sampler_8hh"/>
+      </node>
+      <node id="1415">
+        <label>/home/alexshires/EOS/eos-next/eos/form-factors/pi-lcdas.hh</label>
+        <link refid="pi-lcdas_8hh"/>
+      </node>
+      <node id="1423">
+        <label>/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-dilepton.hh</label>
+        <link refid="exclusive-b-to-dilepton_8hh"/>
+      </node>
+      <node id="1431">
+        <label>/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-gamma.hh</label>
+        <link refid="exclusive-b-to-s-gamma_8hh"/>
+      </node>
+      <node id="1409">
+        <label>/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh</label>
+        <link refid="mesonic-impl_8hh"/>
+      </node>
+      <node id="1428">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/wilson-polynomial.hh</label>
+        <link refid="wilson-polynomial_8hh"/>
+      </node>
+      <node id="1406">
+        <label>/home/alexshires/EOS/eos-next/eos/b-decays/b-to-pi-l-nu.hh</label>
+        <link refid="b-to-pi-l-nu_8hh"/>
+      </node>
+      <node id="1441">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/ckm_scan_model.hh</label>
+        <link refid="ckm__scan__model_8hh"/>
+      </node>
+      <node id="1414">
+        <label>/home/alexshires/EOS/eos-next/eos/form-factors/mesonic.hh</label>
+        <link refid="mesonic_8hh"/>
+        <childnode refid="1408" relation="include">
+        </childnode>
+        <childnode refid="1412" relation="include">
+        </childnode>
+        <childnode refid="1409" relation="include">
+        </childnode>
+      </node>
+      <node id="1421">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/markov_chain_sampler.hh</label>
+        <link refid="markov__chain__sampler_8hh"/>
+      </node>
+      <node id="1407">
+        <label>/home/alexshires/EOS/eos-next/eos/b-decays/properties.hh</label>
+        <link refid="properties_8hh"/>
+      </node>
+      <node id="1436">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh</label>
+        <link refid="markov__chain_8hh"/>
+        <childnode refid="1437" relation="include">
+        </childnode>
+        <childnode refid="1421" relation="include">
+        </childnode>
+        <childnode refid="1438" relation="include">
+        </childnode>
+      </node>
+      <node id="1424">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/concrete_observable.hh</label>
+        <link refid="concrete__observable_8hh"/>
+      </node>
+      <node id="1420">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/analysis_TEST.hh</label>
+        <link refid="analysis__TEST_8hh"/>
+      </node>
+      <node id="1444">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh</label>
+        <link refid="wilson__coefficients_8hh"/>
+        <childnode refid="1439" relation="include">
+        </childnode>
+      </node>
+      <node id="1430">
+        <label>/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton-low-recoil.hh</label>
+        <link refid="exclusive-b-to-s-dilepton-low-recoil_8hh"/>
+      </node>
+      <node id="1405">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/parameters.hh</label>
+        <link refid="parameters.hh"/>
+        <childnode refid="1406" relation="include">
+        </childnode>
+        <childnode refid="1407" relation="include">
+        </childnode>
+        <childnode refid="1408" relation="include">
+        </childnode>
+        <childnode refid="1410" relation="include">
+        </childnode>
+        <childnode refid="1414" relation="include">
+        </childnode>
+        <childnode refid="1415" relation="include">
+        </childnode>
+        <childnode refid="1416" relation="include">
+        </childnode>
+        <childnode refid="1423" relation="include">
+        </childnode>
+        <childnode refid="1429" relation="include">
+        </childnode>
+        <childnode refid="1430" relation="include">
+        </childnode>
+        <childnode refid="1431" relation="include">
+        </childnode>
+        <childnode refid="1432" relation="include">
+        </childnode>
+        <childnode refid="1433" relation="include">
+        </childnode>
+        <childnode refid="1434" relation="include">
+        </childnode>
+        <childnode refid="1418" relation="include">
+        </childnode>
+        <childnode refid="1435" relation="include">
+        </childnode>
+        <childnode refid="1436" relation="include">
+        </childnode>
+        <childnode refid="1421" relation="include">
+        </childnode>
+        <childnode refid="1439" relation="include">
+        </childnode>
+        <childnode refid="1425" relation="include">
+        </childnode>
+        <childnode refid="1444" relation="include">
+        </childnode>
+      </node>
+      <node id="1432">
+        <label>/home/alexshires/EOS/eos-next/eos/rare-b-decays/inclusive-b-to-s-dilepton.hh</label>
+        <link refid="inclusive-b-to-s-dilepton_8hh"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structeos_1_1UnknownParameterError" prot="public">eos::UnknownParameterError</innerclass>
+    <innerclass refid="classeos_1_1Parameters" prot="public">eos::Parameters</innerclass>
+    <innerclass refid="classeos_1_1Parameter" prot="public">eos::Parameter</innerclass>
+    <innerclass refid="classeos_1_1ParameterUser" prot="public">eos::ParameterUser</innerclass>
+    <innerclass refid="classeos_1_1UsedParameter" prot="public">eos::UsedParameter</innerclass>
+    <innerclass refid="structeos_1_1ParameterDescription" prot="public">eos::ParameterDescription</innerclass>
+    <innerclass refid="structeos_1_1ParameterRange" prot="public">eos::ParameterRange</innerclass>
+    <innernamespace refid="namespaceeos">eos</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="parameters_8hh_1a59b39df17f16760b49fb66b7dd5bee9c" prot="public" static="no">
+        <name>EOS_GUARD_SRC_UTILS_PARAMETERS_HH</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" line="21" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>vim:<sp/>set<sp/>sw=4<sp/>sts=4<sp/>et<sp/>foldmethod=syntax<sp/>:<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010,<sp/>2011,<sp/>2012<sp/>Danny<sp/>van<sp/>Dyk</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>EOS<sp/>project.<sp/>EOS<sp/>is<sp/>free<sp/>software;</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Public<sp/>License<sp/>version<sp/>2,<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>EOS<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/>but<sp/>WITHOUT<sp/>ANY</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>along<sp/>with</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/>59<sp/>Temple</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>Place,<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307<sp/><sp/>USA</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>EOS_GUARD_SRC_UTILS_PARAMETERS_HH</highlight></codeline>
+<codeline lineno="21" refid="parameters_8hh_1a59b39df17f16760b49fb66b7dd5bee9c" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EOS_GUARD_SRC_UTILS_PARAMETERS_HH<sp/>1</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="exception_8hh" kindref="compound">eos/utils/exception.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="mutable_8hh" kindref="compound">eos/utils/mutable.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="parameters-fwd_8hh" kindref="compound">eos/utils/parameters-fwd.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="private__implementation__pattern_8hh" kindref="compound">eos/utils/private_implementation_pattern.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="random__number__generator_8hh" kindref="compound">eos/utils/random_number_generator.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="wrapped__forward__iterator_8hh" kindref="compound">eos/utils/wrapped_forward_iterator.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;set&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">eos</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38" refid="structeos_1_1UnknownParameterError" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structeos_1_1UnknownParameterError" kindref="compound">UnknownParameterError</ref><sp/>:</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Exception" kindref="compound">Exception</ref></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structeos_1_1UnknownParameterError_1a9c475df66b9e6316e6a1a2a93c86e4a3" kindref="member">UnknownParameterError</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/>variable)<sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="classeos_1_1Parameters" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref><sp/>:</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1PrivateImplementationPattern" kindref="compound">PrivateImplementationPattern</ref>&lt;Parameters&gt;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">Data;</highlight></codeline>
+<codeline lineno="59"></codeline>
+<codeline lineno="62"></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref>(<ref refid="classeos_1_1Parameters_1afdc1ae1c3b0dbac4fdf6769d5f8e1fbf" kindref="member">Implementation&lt;Parameters&gt;</ref><sp/>*);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="74" refid="classeos_1_1Parameters_1ac1c4326186d13e3c1f20eb8f39a7b5a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref>;</highlight></codeline>
+<codeline lineno="75" refid="classeos_1_1Parameters_1a321bcfc7467eb8a305a7e15f232efa38" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">Implementation&lt;<ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref>&gt;;</highlight></codeline>
+<codeline lineno="76" refid="classeos_1_1Parameters_1afdc1ae1c3b0dbac4fdf6769d5f8e1fbf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">Implementation&lt;<ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref>&gt;;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref><sp/><ref refid="classeos_1_1Parameters_1a1fa30b2210827623e6bf9f3ac4d2fd94" kindref="member">Defaults</ref>();</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref><sp/><ref refid="classeos_1_1Parameters_1a273f5bad065bc47b62981734a2e3576e" kindref="member">clone</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1Parameters_1aa1f509653fa20a2599a47706042685f1" kindref="member">~Parameters</ref>();</highlight></codeline>
+<codeline lineno="93"></codeline>
+<codeline lineno="96" refid="classeos_1_1Parameters_1ad4378a4b3c462f8aa122b3484bce1b4f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">IteratorTag;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator&lt;IteratorTag, Parameter&gt;</ref><sp/><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">Iterator</ref>;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">Iterator</ref><sp/><ref refid="classeos_1_1Parameters_1aeef723f121d249fad9caa45cae111a90" kindref="member">begin</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">Iterator</ref><sp/><ref refid="classeos_1_1Parameters_1a64f0ae769980d0945433023678f919dd" kindref="member">end</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="102"></codeline>
+<codeline lineno="105"></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref><sp/><ref refid="classeos_1_1Parameters_1adfc224ca93af9276c55c756f6e7e2e18" kindref="member">declare</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/>name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>value<sp/>=<sp/>0.0);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/>name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>value);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref><sp/><ref refid="classeos_1_1Parameters_1acf41f953495892d14e4c49e248c60f43" kindref="member">operator[] </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/>name)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref><sp/><ref refid="classeos_1_1Parameters_1acf41f953495892d14e4c49e248c60f43" kindref="member">operator[] </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>&amp;<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="135"></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Parameters_1a95091e66b113b826bc5866c52ecdb7c1" kindref="member">operator!= </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref><sp/>&amp;<sp/>rhs)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="classeos_1_1Parameter" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref><sp/>:</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Mutable" kindref="compound" tooltip="Base class for all mutable entities, e.g. a Parameter.">Mutable</ref></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">Data;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">Template;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_ptr&lt;Parameters::Data&gt;<sp/>_parameters_data;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>_index;</highlight></codeline>
+<codeline lineno="161"></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;Parameters::Data&gt;<sp/>&amp;<sp/>imp,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>index);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="168" refid="classeos_1_1Parameter_1afaebbd8ef883afa59f01fa3d4475e6a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref>;</highlight></codeline>
+<codeline lineno="169" refid="classeos_1_1Parameter_1afdc1ae1c3b0dbac4fdf6769d5f8e1fbf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">Implementation&lt;<ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref>&gt;;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="classeos_1_1Parameter_1a065f55e66b2128cc5f14339e676d833a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Parameter_1a065f55e66b2128cc5f14339e676d833a" kindref="member">Id</ref>;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref><sp/>&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1Parameter_1ac5e6dd06494095cffe292e4b4dc200c8" kindref="member" tooltip="Destructor.">~Parameter</ref>();</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceeos_1a0ab446e6a801d96a1ee83bb7c070686f" kindref="member">MutablePtr</ref><sp/><ref refid="classeos_1_1Parameter_1a8a643807f254a9601349c779cf6211dc" kindref="member" tooltip="Make a copy of this Parameter as a MutablePtr.">clone</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="187"></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Parameter_1ad2dc69fe74e308328dc8a1d901c916ec" kindref="member" tooltip="Retrieve a Parameter&amp;#39;s numeric value.">operator double </ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Parameter_1ada58e0206d67777a79bdd2bc0c806600" kindref="member" tooltip="Retrieve a Parameter&amp;#39;s numeric value.">operator() </ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref><sp/>&amp;<sp/><ref refid="classeos_1_1Parameter_1aff29f9acdc90019e76239f6c81b4014a" kindref="member" tooltip="Set a Parameter&amp;#39;s numeric value.">operator= </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;);</highlight></codeline>
+<codeline lineno="199"></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/><ref refid="classeos_1_1Parameter_1a86f581847722de0445ae65065940fd13" kindref="member" tooltip="Retrieve the Parameter&amp;#39;s (default) central value.">name</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/><ref refid="classeos_1_1Parameter_1a1c0a1ce478f2275d1259483fa919ec60" kindref="member" tooltip="Retrieve the Parameter&amp;#39;s (default) central value.">central</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/><ref refid="classeos_1_1Parameter_1ac91f5116794dea955ad7ac20e552b730" kindref="member" tooltip="Retrieve the Parameter&amp;#39;s (default) maximal value.">max</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/><ref refid="classeos_1_1Parameter_1a37672fa03693d97cdafb23e35fe0e83b" kindref="member" tooltip="Retrieve the Parameter&amp;#39;s (default) minimal value.">min</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1Parameter_1a065f55e66b2128cc5f14339e676d833a" kindref="member">Id</ref><sp/><ref refid="classeos_1_1Parameter_1a1cea65462fdafeb7329f6d87fd6e42b4" kindref="member" tooltip="Retrieve the Parameter&amp;#39;s id.">id</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222" refid="classeos_1_1ParameterUser" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classeos_1_1ParameterUser" kindref="compound">ParameterUser</ref></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="225" refid="classeos_1_1ParameterUser_1aa3a0285297e16cf2a5830df1f9bb2f4b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::set&lt;Parameter::Id&gt;<sp/><ref refid="classeos_1_1ParameterUser_1aa3a0285297e16cf2a5830df1f9bb2f4b" kindref="member">_ids</ref>;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="230" refid="classeos_1_1ParameterUser_1a7105631bbcb4b2492e6377b2b69f5b0f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">ConstIteratorTag;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator&lt;ConstIteratorTag, const Parameter::Id&gt;</ref><sp/><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">ConstIterator</ref>;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">ConstIterator</ref><sp/><ref refid="classeos_1_1ParameterUser_1a9cd569207063cd2a8f807c4e1203a5d4" kindref="member">begin</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">ConstIterator</ref><sp/><ref refid="classeos_1_1ParameterUser_1a5813c886f3fd3f074cc02a53fc9e0790" kindref="member">end</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="236"></codeline>
+<codeline lineno="239"></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1ParameterUser_1ad91a901e589653272482bded7e453c70" kindref="member">uses</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Parameter_1a065f55e66b2128cc5f14339e676d833a" kindref="member">Parameter::Id</ref><sp/>&amp;<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1ParameterUser_1ad91a901e589653272482bded7e453c70" kindref="member">uses</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1ParameterUser" kindref="compound">ParameterUser</ref><sp/>&amp;<sp/>user);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258" refid="classeos_1_1UsedParameter" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classeos_1_1UsedParameter" kindref="compound">UsedParameter</ref><sp/>:</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1UsedParameter_1a3c995a62b3f94be0e1c02edc9c670e03" kindref="member">UsedParameter</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref><sp/>&amp;<sp/>parameter,<sp/><ref refid="classeos_1_1ParameterUser" kindref="compound">ParameterUser</ref><sp/>&amp;<sp/>user);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273" refid="structeos_1_1ParameterDescription" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structeos_1_1ParameterDescription" kindref="compound">ParameterDescription</ref></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="275" refid="structeos_1_1ParameterDescription_1a2d531fff965fd9c1c833213a229c5f10" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref><sp/><ref refid="structeos_1_1ParameterDescription_1a2d531fff965fd9c1c833213a229c5f10" kindref="member">parameter</ref>;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277" refid="structeos_1_1ParameterDescription_1abab49c1ed74185718b6d696938d94683" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1ParameterDescription_1abab49c1ed74185718b6d696938d94683" kindref="member">min</ref>;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279" refid="structeos_1_1ParameterDescription_1a4375b5ec8b9d496a6183d08f92dc648b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1ParameterDescription_1a4375b5ec8b9d496a6183d08f92dc648b" kindref="member">max</ref>;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281" refid="structeos_1_1ParameterDescription_1ac9e90def0fd26f7f4f9f59df93f64401" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1ParameterDescription_1ac9e90def0fd26f7f4f9f59df93f64401" kindref="member">nuisance</ref>;</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283" refid="structeos_1_1ParameterDescription_1a3f62f41ab537a373291807e3b2445c08" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1ParameterDescription_1a3f62f41ab537a373291807e3b2445c08" kindref="member">discrete</ref>;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287" refid="structeos_1_1ParameterRange" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structeos_1_1ParameterRange" kindref="compound">ParameterRange</ref></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="289" refid="structeos_1_1ParameterRange_1ab155cf01cbc6b1ea802a007fe5bcc6c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1ParameterRange_1ab155cf01cbc6b1ea802a007fe5bcc6c6" kindref="member">min</ref>,<sp/><ref refid="structeos_1_1ParameterRange_1a8ce3020d0f5ca651abed940889bb434b" kindref="member">max</ref>;</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="291"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh"/>
+  </compounddef>
+</doxygen>

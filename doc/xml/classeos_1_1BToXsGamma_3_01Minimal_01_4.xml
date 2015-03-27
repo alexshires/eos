@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1BToXsGamma_3_01Minimal_01_4" kind="class" prot="public">
+    <compoundname>eos::BToXsGamma&lt; Minimal &gt;</compoundname>
+    <basecompoundref refid="classeos_1_1ParameterUser" prot="public" virt="non-virtual">eos::ParameterUser</basecompoundref>
+    <basecompoundref refid="classeos_1_1PrivateImplementationPattern" prot="public" virt="non-virtual">eos::PrivateImplementationPattern&lt; BToXsGamma&lt; Minimal &gt; &gt;</basecompoundref>
+    <includes refid="inclusive-b-to-s-gamma_8hh" local="no">inclusive-b-to-s-gamma.hh</includes>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1BToXsGamma_3_01Minimal_01_4_1abe02af7813b12fb3bcc1909806eba93d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::BToXsGamma&lt; Minimal &gt;::BToXsGamma</definition>
+        <argsstring>(const Parameters &amp;parameters, const Options &amp;options)</argsstring>
+        <name>BToXsGamma</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1Options" kindref="compound">Options</ref> &amp;</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/inclusive-b-to-s-gamma.hh" line="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToXsGamma_3_01Minimal_01_4_1a2e995b56bfbd99b8f67dd1f3a17bc984" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::BToXsGamma&lt; Minimal &gt;::~BToXsGamma</definition>
+        <argsstring>()</argsstring>
+        <name>~BToXsGamma</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/inclusive-b-to-s-gamma.hh" line="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToXsGamma_3_01Minimal_01_4_1a9356eb8a11e4f54532b3f47d17d16bad" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToXsGamma&lt; Minimal &gt;::integrated_branching_ratio</definition>
+        <argsstring>() const </argsstring>
+        <name>integrated_branching_ratio</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/inclusive-b-to-s-gamma.hh" line="50"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="182">
+        <label>eos::PrivateImplementationPattern&lt; BToXsGamma&lt; Minimal &gt; &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="180">
+        <label>eos::BToXsGamma&lt; Minimal &gt;</label>
+        <link refid="classeos_1_1BToXsGamma_3_01Minimal_01_4"/>
+        <childnode refid="181" relation="public-inheritance">
+        </childnode>
+        <childnode refid="182" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="181">
+        <label>eos::ParameterUser</label>
+        <link refid="classeos_1_1ParameterUser"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="186">
+        <label>eos::PrivateImplementationPattern&lt; BToXsGamma&lt; Minimal &gt; &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="183">
+        <label>eos::BToXsGamma&lt; Minimal &gt;</label>
+        <link refid="classeos_1_1BToXsGamma_3_01Minimal_01_4"/>
+        <childnode refid="184" relation="public-inheritance">
+        </childnode>
+        <childnode refid="186" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="185">
+        <label>std::set&lt; Parameter::Id &gt;</label>
+      </node>
+      <node id="184">
+        <label>eos::ParameterUser</label>
+        <link refid="classeos_1_1ParameterUser"/>
+        <childnode refid="185" relation="usage">
+          <edgelabel>_ids</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/inclusive-b-to-s-gamma.hh" line="44" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/inclusive-b-to-s-gamma.hh" bodystart="41" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classeos_1_1ParameterUser_1aa3a0285297e16cf2a5830df1f9bb2f4b" prot="protected" virt="non-virtual"><scope>eos::BToXsGamma&lt; Minimal &gt;</scope><name>_ids</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a232940e78b26c6ed4f97196f831c69c9" prot="protected" virt="non-virtual"><scope>eos::BToXsGamma&lt; Minimal &gt;</scope><name>_imp</name></member>
+      <member refid="classeos_1_1ParameterUser_1a9cd569207063cd2a8f807c4e1203a5d4" prot="public" virt="non-virtual"><scope>eos::BToXsGamma&lt; Minimal &gt;</scope><name>begin</name></member>
+      <member refid="classeos_1_1BToXsGamma_3_01Minimal_01_4_1abe02af7813b12fb3bcc1909806eba93d" prot="public" virt="non-virtual"><scope>eos::BToXsGamma&lt; Minimal &gt;</scope><name>BToXsGamma</name></member>
+      <member refid="classeos_1_1ParameterUser_1a7105631bbcb4b2492e6377b2b69f5b0f" prot="public" virt="non-virtual"><scope>eos::BToXsGamma&lt; Minimal &gt;</scope><name>ConstIterator</name></member>
+      <member refid="classeos_1_1ParameterUser_1a5813c886f3fd3f074cc02a53fc9e0790" prot="public" virt="non-virtual"><scope>eos::BToXsGamma&lt; Minimal &gt;</scope><name>end</name></member>
+      <member refid="classeos_1_1BToXsGamma_3_01Minimal_01_4_1a9356eb8a11e4f54532b3f47d17d16bad" prot="public" virt="non-virtual"><scope>eos::BToXsGamma&lt; Minimal &gt;</scope><name>integrated_branching_ratio</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a3e3d5f4a565256a1dda6c234b051b2f2" prot="public" virt="non-virtual"><scope>eos::BToXsGamma&lt; Minimal &gt;</scope><name>PrivateImplementationPattern</name></member>
+      <member refid="classeos_1_1ParameterUser_1ad91a901e589653272482bded7e453c70" prot="public" virt="non-virtual"><scope>eos::BToXsGamma&lt; Minimal &gt;</scope><name>uses</name></member>
+      <member refid="classeos_1_1ParameterUser_1a7a37e779cf45ef1075fe7bf670688b72" prot="public" virt="non-virtual"><scope>eos::BToXsGamma&lt; Minimal &gt;</scope><name>uses</name></member>
+      <member refid="classeos_1_1BToXsGamma_3_01Minimal_01_4_1a2e995b56bfbd99b8f67dd1f3a17bc984" prot="public" virt="non-virtual"><scope>eos::BToXsGamma&lt; Minimal &gt;</scope><name>~BToXsGamma</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1acf46ec2739c3b0ec9702b9428475876d" prot="public" virt="non-virtual"><scope>eos::BToXsGamma&lt; Minimal &gt;</scope><name>~PrivateImplementationPattern</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

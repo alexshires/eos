@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="dir_3068ce148b71e06d66462adc4200d433" kind="dir">
+    <compoundname>/home/alexshires/EOS/eos-next/eos/utils/</compoundname>
+    <innerfile refid="accumulator_8hh">accumulator.hh</innerfile>
+    <innerfile refid="analysis-fwd_8hh">analysis-fwd.hh</innerfile>
+    <innerfile refid="analysis_8hh">analysis.hh</innerfile>
+    <innerfile refid="analysis__TEST_8hh">analysis_TEST.hh</innerfile>
+    <innerfile refid="apply_8hh">apply.hh</innerfile>
+    <innerfile refid="cartesian-product_8hh">cartesian-product.hh</innerfile>
+    <innerfile refid="chi-squared_8hh">chi-squared.hh</innerfile>
+    <innerfile refid="ckm__scan__model_8hh">ckm_scan_model.hh</innerfile>
+    <innerfile refid="cluster_8hh">cluster.hh</innerfile>
+    <innerfile refid="complex_8hh">complex.hh</innerfile>
+    <innerfile refid="concrete__observable_8hh">concrete_observable.hh</innerfile>
+    <innerfile refid="condition__variable_8hh">condition_variable.hh</innerfile>
+    <innerfile refid="derivative_8hh">derivative.hh</innerfile>
+    <innerfile refid="destringify_8hh">destringify.hh</innerfile>
+    <innerfile refid="diagnostics_8hh">diagnostics.hh</innerfile>
+    <innerfile refid="equation__solver_8hh">equation_solver.hh</innerfile>
+    <innerfile refid="exception_8hh">exception.hh</innerfile>
+    <innerfile refid="hdf5-fwd_8hh">hdf5-fwd.hh</innerfile>
+    <innerfile refid="hdf5_8hh">hdf5.hh</innerfile>
+    <innerfile refid="hierarchical-clustering_8hh">hierarchical-clustering.hh</innerfile>
+    <innerfile refid="histogram_8hh">histogram.hh</innerfile>
+    <innerfile refid="instantiation__policy-impl_8hh">instantiation_policy-impl.hh</innerfile>
+    <innerfile refid="instantiation__policy_8hh">instantiation_policy.hh</innerfile>
+    <innerfile refid="integrate-impl_8hh">integrate-impl.hh</innerfile>
+    <innerfile refid="integrate_8hh">integrate.hh</innerfile>
+    <innerfile refid="kinematic_8hh">kinematic.hh</innerfile>
+    <innerfile refid="lcda_8hh">lcda.hh</innerfile>
+    <innerfile refid="lock_8hh">lock.hh</innerfile>
+    <innerfile refid="log_8hh">log.hh</innerfile>
+    <innerfile refid="log__likelihood-fwd_8hh">log_likelihood-fwd.hh</innerfile>
+    <innerfile refid="log__likelihood_8hh">log_likelihood.hh</innerfile>
+    <innerfile refid="log__prior-fwd_8hh">log_prior-fwd.hh</innerfile>
+    <innerfile refid="log__prior_8hh">log_prior.hh</innerfile>
+    <innerfile refid="markov__chain_8hh">markov_chain.hh</innerfile>
+    <innerfile refid="markov__chain__sampler_8hh">markov_chain_sampler.hh</innerfile>
+    <innerfile refid="matrix_8hh">matrix.hh</innerfile>
+    <innerfile refid="memoise_8hh">memoise.hh</innerfile>
+    <innerfile refid="model_8hh">model.hh</innerfile>
+    <innerfile refid="mutable-fwd_8hh">mutable-fwd.hh</innerfile>
+    <innerfile refid="mutable_8hh">mutable.hh</innerfile>
+    <innerfile refid="mutex_8hh">mutex.hh</innerfile>
+    <innerfile refid="observable__cache_8hh">observable_cache.hh</innerfile>
+    <innerfile refid="observable__set_8hh">observable_set.hh</innerfile>
+    <innerfile refid="one-of_8hh">one-of.hh</innerfile>
+    <innerfile refid="options_8hh">options.hh</innerfile>
+    <innerfile refid="parameters-fwd_8hh">parameters-fwd.hh</innerfile>
+    <innerfile refid="parameters_8hh">parameters.hh</innerfile>
+    <innerfile refid="polylog_8hh">polylog.hh</innerfile>
+    <innerfile refid="population__monte__carlo__sampler_8hh">population_monte_carlo_sampler.hh</innerfile>
+    <innerfile refid="power__of_8hh">power_of.hh</innerfile>
+    <innerfile refid="prior__sampler_8hh">prior_sampler.hh</innerfile>
+    <innerfile refid="private__implementation__pattern-impl_8hh">private_implementation_pattern-impl.hh</innerfile>
+    <innerfile refid="private__implementation__pattern_8hh">private_implementation_pattern.hh</innerfile>
+    <innerfile refid="proposal__functions_8hh">proposal_functions.hh</innerfile>
+    <innerfile refid="qcd_8hh">qcd.hh</innerfile>
+    <innerfile refid="random__number__generator_8hh">random_number_generator.hh</innerfile>
+    <innerfile refid="rvalue_8hh">rvalue.hh</innerfile>
+    <innerfile refid="save_8hh">save.hh</innerfile>
+    <innerfile refid="standard-model_8hh">standard-model.hh</innerfile>
+    <innerfile refid="stringify_8hh">stringify.hh</innerfile>
+    <innerfile refid="thread_8hh">thread.hh</innerfile>
+    <innerfile refid="thread__pool_8hh">thread_pool.hh</innerfile>
+    <innerfile refid="ticket_8hh">ticket.hh</innerfile>
+    <innerfile refid="top-loops_8hh">top-loops.hh</innerfile>
+    <innerfile refid="verify_8hh">verify.hh</innerfile>
+    <innerfile refid="welford_8hh">welford.hh</innerfile>
+    <innerfile refid="wilson-polynomial_8hh">wilson-polynomial.hh</innerfile>
+    <innerfile refid="wilson__coefficients_8hh">wilson_coefficients.hh</innerfile>
+    <innerfile refid="wilson__scan__model_8hh">wilson_scan_model.hh</innerfile>
+    <innerfile refid="wrapped__forward__iterator-fwd_8hh">wrapped_forward_iterator-fwd.hh</innerfile>
+    <innerfile refid="wrapped__forward__iterator-impl_8hh">wrapped_forward_iterator-impl.hh</innerfile>
+    <innerfile refid="wrapped__forward__iterator_8hh">wrapped_forward_iterator.hh</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/"/>
+  </compounddef>
+</doxygen>

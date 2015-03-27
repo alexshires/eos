@@ -1,0 +1,43 @@
+\hypertarget{structeos_1_1RValue}{
+\section{eos::RValue Struct Reference}
+\label{structeos_1_1RValue}\index{eos::RValue@{eos::RValue}}
+}
+
+
+{\ttfamily \#include $<$rvalue.hh$>$}\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \hyperlink{structeos_1_1RValue_ac18b9cf1272e22d614f54fddc82d5072}{gelman\_\-rubin} (const std::vector$<$ double $>$ \&chain\_\-means, const std::vector$<$ double $>$ \&chain\_\-variances, const unsigned \&chain\_\-length)
+\item 
+static double \hyperlink{structeos_1_1RValue_a1ef9238e0cae5fbfe5e9271f8012f2e8}{approximation} (const std::vector$<$ double $>$ \&chain\_\-means, const std::vector$<$ double $>$ \&chain\_\-variances, const unsigned \&chain\_\-length)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structeos_1_1RValue_a1ef9238e0cae5fbfe5e9271f8012f2e8}{
+\index{eos::RValue@{eos::RValue}!approximation@{approximation}}
+\index{approximation@{approximation}!eos::RValue@{eos::RValue}}
+\subsubsection[{approximation}]{\setlength{\rightskip}{0pt plus 5cm}static double eos::RValue::approximation (const std::vector$<$ double $>$ \& {\em chain\_\-means}, \/  const std::vector$<$ double $>$ \& {\em chain\_\-variances}, \/  const unsigned \& {\em chain\_\-length})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{structeos_1_1RValue_a1ef9238e0cae5fbfe5e9271f8012f2e8}
+Approximate the R-\/value (actually sqrt(R)) for a given quantitiy x.
+
+Here we use the approximation \$R  $^\wedge$2 / W\$, just as in BAT v0.4.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em chain\_\-means}]the mean of x in each chain \item[{\em chain\_\-variances}]the sample variance of x in each chain \item[{\em chain\_\-length}]The number of iterations used to calculate the means and variances within each chain. Usually the length of the prerun until now. Note that if only chain\_\-length is increased and everything else is kept constant, the R-\/value should increase \end{DoxyParams}
+\hypertarget{structeos_1_1RValue_ac18b9cf1272e22d614f54fddc82d5072}{
+\index{eos::RValue@{eos::RValue}!gelman\_\-rubin@{gelman\_\-rubin}}
+\index{gelman\_\-rubin@{gelman\_\-rubin}!eos::RValue@{eos::RValue}}
+\subsubsection[{gelman\_\-rubin}]{\setlength{\rightskip}{0pt plus 5cm}static double eos::RValue::gelman\_\-rubin (const std::vector$<$ double $>$ \& {\em chain\_\-means}, \/  const std::vector$<$ double $>$ \& {\em chain\_\-variances}, \/  const unsigned \& {\em chain\_\-length})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{structeos_1_1RValue_ac18b9cf1272e22d614f54fddc82d5072}
+Calculate the R-\/value (actually the sqrt(R)) for a given quantity x (param, log(posterior), ...) according to \mbox{[}GR1992\mbox{]}, Eqs. (3),(4), p. 461. Using their notation. Included DoF estimation for the t-\/distribution.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em chain\_\-means}]the mean of x in each chain \item[{\em chain\_\-variances}]the sample variance of x in each chain \item[{\em chain\_\-length}]The number of iterations used to calculate the means and variances within each chain. Usually the length of the prerun until now. Note that if only chain\_\-length is increased and everything else is kept constant, the R-\/value should increase \end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{rvalue_8hh}{rvalue.hh}\end{DoxyCompactItemize}

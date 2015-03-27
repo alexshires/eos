@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1BMesonProperties" kind="class" prot="public">
+    <compoundname>eos::BMesonProperties</compoundname>
+    <basecompoundref refid="classeos_1_1ParameterUser" prot="public" virt="non-virtual">eos::ParameterUser</basecompoundref>
+    <basecompoundref refid="classeos_1_1PrivateImplementationPattern" prot="public" virt="non-virtual">eos::PrivateImplementationPattern&lt; BMesonProperties &gt;</basecompoundref>
+    <includes refid="properties_8hh" local="no">properties.hh</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1BMesonProperties_1af127f7490e06b7a175fa3f82a0be7152" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::BMesonProperties::BMesonProperties</definition>
+        <argsstring>(const Parameters &amp;parameters, const Options &amp;options)</argsstring>
+        <name>BMesonProperties</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1Options" kindref="compound">Options</ref> &amp;</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/b-decays/properties.hh" line="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BMesonProperties_1aea9b828528431dfdfe7b13ca1fce9c14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::BMesonProperties::~BMesonProperties</definition>
+        <argsstring>()</argsstring>
+        <name>~BMesonProperties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/b-decays/properties.hh" line="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BMesonProperties_1aa79a7d1ef74dacb2c3b393ca9ad18225" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BMesonProperties::mass_splitting_j1_j0</definition>
+        <argsstring>() const </argsstring>
+        <name>mass_splitting_j1_j0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/b-decays/properties.hh" line="41"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="105">
+        <label>eos::BMesonProperties</label>
+        <link refid="classeos_1_1BMesonProperties"/>
+        <childnode refid="106" relation="public-inheritance">
+        </childnode>
+        <childnode refid="107" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="106">
+        <label>eos::ParameterUser</label>
+        <link refid="classeos_1_1ParameterUser"/>
+      </node>
+      <node id="107">
+        <label>eos::PrivateImplementationPattern&lt; BMesonProperties &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="110">
+        <label>std::set&lt; Parameter::Id &gt;</label>
+      </node>
+      <node id="108">
+        <label>eos::BMesonProperties</label>
+        <link refid="classeos_1_1BMesonProperties"/>
+        <childnode refid="109" relation="public-inheritance">
+        </childnode>
+        <childnode refid="111" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="109">
+        <label>eos::ParameterUser</label>
+        <link refid="classeos_1_1ParameterUser"/>
+        <childnode refid="110" relation="usage">
+          <edgelabel>_ids</edgelabel>
+        </childnode>
+      </node>
+      <node id="111">
+        <label>eos::PrivateImplementationPattern&lt; BMesonProperties &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/b-decays/properties.hh" line="35" bodyfile="/home/alexshires/EOS/eos-next/eos/b-decays/properties.hh" bodystart="32" bodyend="42"/>
+    <listofallmembers>
+      <member refid="classeos_1_1ParameterUser_1aa3a0285297e16cf2a5830df1f9bb2f4b" prot="protected" virt="non-virtual"><scope>eos::BMesonProperties</scope><name>_ids</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a232940e78b26c6ed4f97196f831c69c9" prot="protected" virt="non-virtual"><scope>eos::BMesonProperties</scope><name>_imp</name></member>
+      <member refid="classeos_1_1ParameterUser_1a9cd569207063cd2a8f807c4e1203a5d4" prot="public" virt="non-virtual"><scope>eos::BMesonProperties</scope><name>begin</name></member>
+      <member refid="classeos_1_1BMesonProperties_1af127f7490e06b7a175fa3f82a0be7152" prot="public" virt="non-virtual"><scope>eos::BMesonProperties</scope><name>BMesonProperties</name></member>
+      <member refid="classeos_1_1ParameterUser_1a7105631bbcb4b2492e6377b2b69f5b0f" prot="public" virt="non-virtual"><scope>eos::BMesonProperties</scope><name>ConstIterator</name></member>
+      <member refid="classeos_1_1ParameterUser_1a5813c886f3fd3f074cc02a53fc9e0790" prot="public" virt="non-virtual"><scope>eos::BMesonProperties</scope><name>end</name></member>
+      <member refid="classeos_1_1BMesonProperties_1aa79a7d1ef74dacb2c3b393ca9ad18225" prot="public" virt="non-virtual"><scope>eos::BMesonProperties</scope><name>mass_splitting_j1_j0</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a3e3d5f4a565256a1dda6c234b051b2f2" prot="public" virt="non-virtual"><scope>eos::BMesonProperties</scope><name>PrivateImplementationPattern</name></member>
+      <member refid="classeos_1_1ParameterUser_1ad91a901e589653272482bded7e453c70" prot="public" virt="non-virtual"><scope>eos::BMesonProperties</scope><name>uses</name></member>
+      <member refid="classeos_1_1ParameterUser_1a7a37e779cf45ef1075fe7bf670688b72" prot="public" virt="non-virtual"><scope>eos::BMesonProperties</scope><name>uses</name></member>
+      <member refid="classeos_1_1BMesonProperties_1aea9b828528431dfdfe7b13ca1fce9c14" prot="public" virt="non-virtual"><scope>eos::BMesonProperties</scope><name>~BMesonProperties</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1acf46ec2739c3b0ec9702b9428475876d" prot="public" virt="non-virtual"><scope>eos::BMesonProperties</scope><name>~PrivateImplementationPattern</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

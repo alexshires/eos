@@ -1,0 +1,78 @@
+\hypertarget{pi-lcdas_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/form-\/factors/pi-\/lcdas.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2014 Danny van Dyk}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_EOS\_FORM\_FACTORS\_PI\_LCDAS\_HH}
+\hypertarget{pi-lcdas_8hh_source_l00021}{}\hyperlink{pi-lcdas_8hh_abfa4ecec276f0fd748f8596f3b75e3d3}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_EOS\_FORM\_FACTORS\_PI\_LCDAS\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{preprocessor}{#include <\hyperlink{diagnostics_8hh}{eos/utils/diagnostics.hh}>}
+00024 \textcolor{preprocessor}{#include <\hyperlink{parameters_8hh}{eos/utils/parameters.hh}>}
+00025 \textcolor{preprocessor}{#include <\hyperlink{options_8hh}{eos/utils/options.hh}>}
+00026 
+00027 \textcolor{keyword}{namespace }eos
+00028 \{
+\hypertarget{pi-lcdas_8hh_source_l00029}{}\hyperlink{classeos_1_1PionLCDAs}{00029}     \textcolor{keyword}{class }\hyperlink{classeos_1_1PionLCDAs}{PionLCDAs} :
+00030         \textcolor{keyword}{public} \hyperlink{classeos_1_1ParameterUser}{ParameterUser},
+00031         \textcolor{keyword}{public} \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern}<PionLCDAs>
+00032     \{
+00033         \textcolor{keyword}{public}:
+00034             \hyperlink{classeos_1_1PionLCDAs_af4511a0652b92c1b152580de069d4ac5}{PionLCDAs}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} &, \textcolor{keyword}{const} \hyperlink{classeos_1_1Options}{Options} &);
+00035             \hyperlink{classeos_1_1PionLCDAs_a6292a3aaf8e686e3fc319a1b7901f817}{~PionLCDAs}();
+00036 
+00037             \textcolor{comment}{/* Twist 2 LCDA (even) Gegenbauer coefficients */}
+00038             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1PionLCDAs_a4daa8e6632fb5ad61c13f7a7c4a91bbf}{a2pi}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu) \textcolor{keyword}{const};
+00039             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1PionLCDAs_a0d0c446b70ca3078a36d064ffe5ae46c}{a4pi}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu) \textcolor{keyword}{const};
+00040 
+00041             \textcolor{comment}{/* Twist 3 LCDA parameters */}
+00042             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1PionLCDAs_ad9453233816c40f020512b302e37b7ab}{mupi}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu) \textcolor{keyword}{const};
+00043             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1PionLCDAs_af557dad976202ea84cd889721b080fb9}{f3pi}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu) \textcolor{keyword}{const};
+00044             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1PionLCDAs_a571ec82df903c4690aa2464a4ddd23a8}{eta3pi}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu) \textcolor{keyword}{const};
+00045             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1PionLCDAs_ab821dbbf52dd22ff63c08ecda4000366}{omega3pi}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu) \textcolor{keyword}{const};
+00046 
+00047             \textcolor{comment}{/* Twist 4 LCDA parameter */}
+00048             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1PionLCDAs_a605c4669795addc7a36752f6c07571e4}{deltapipi}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu) \textcolor{keyword}{const};
+00049             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1PionLCDAs_a999a73d4b408e5b36a1ff7cd5c86c24a}{omega4pi}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu) \textcolor{keyword}{const};
+00050 
+00051             \textcolor{comment}{/* Twist 2 LCDA */}
+00052             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1PionLCDAs_a25af0e77528227031bdba7c630246c3a}{phi}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & u, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu) \textcolor{keyword}{const};
+00053 
+00054             \textcolor{comment}{/* Twist 3 LCDAs and their derivatives */}
+00055             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1PionLCDAs_ac0f6b8d17ffe7b7e6f4ffcfa46e1d353}{phi3p}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & u, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu) \textcolor{keyword}{const};
+00056             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1PionLCDAs_a41fcd9e04a0f84c01b2168c7fba13164}{phi3s}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & u, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu) \textcolor{keyword}{const};
+00057             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1PionLCDAs_a821f18698397f85d42746ffeb7086ffa}{phi3s_d1}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & u, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu) \textcolor{keyword}{const};
+00058 
+00059             \textcolor{comment}{/* Twist 4 LCDAs, their derivatives and integrals */}
+00060             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1PionLCDAs_a0a4f734894305e27fbcab789f9d61510}{phi4}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & u, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu) \textcolor{keyword}{const};
+00061             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1PionLCDAs_acb4c831f65e2758d01263b7b4a121e7c}{phi4_d1}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & u, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu) \textcolor{keyword}{const};
+00062             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1PionLCDAs_ae2915f62dae4fe58776ff3367dff2ace}{phi4_d2}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & u, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu) \textcolor{keyword}{const};
+00063             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1PionLCDAs_ada2c4aa48e04c0f9de3511fd04333982}{psi4}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & u, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu) \textcolor{keyword}{const};
+00064             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1PionLCDAs_aabea6be529b7aacdcccb10f3a8861a81}{psi4_i}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & u, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu) \textcolor{keyword}{const};
+00065 
+00066             \textcolor{comment}{/* Internal diagnostics */}
+00067             \hyperlink{classeos_1_1Diagnostics}{Diagnostics} \hyperlink{classeos_1_1PionLCDAs_ae8727041baafa8c3007ef45a30f6d6ed}{diagnostics}() \textcolor{keyword}{const};
+00068     \};
+00069 \}
+00070 
+00071 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

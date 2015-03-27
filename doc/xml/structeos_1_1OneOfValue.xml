@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1OneOfValue" kind="struct" prot="public">
+    <compoundname>eos::OneOfValue</compoundname>
+    <basecompoundref refid="structeos_1_1OneOfValueBase" prot="public" virt="non-virtual">eos::OneOfValueBase&lt; Types_...&gt;</basecompoundref>
+    <includes refid="one-of_8hh" local="no">one-of.hh</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Type_</type>
+      </param>
+      <param>
+        <type>typename...</type>
+        <declname>Types_</declname>
+        <defname>Types_</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structeos_1_1OneOfValue_1a8c495ebdf36bdf308e6ecf85669517e5" prot="public" static="no" mutable="no">
+        <type>Type_</type>
+        <definition>Type_ eos::OneOfValue&lt; Type_, Types_ &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" line="154" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structeos_1_1OneOfValue_1a5d443df9b9298a3887921e4872cbf059" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eos::OneOfValue&lt; Type_, Types_ &gt;::OneOfValue</definition>
+        <argsstring>(const Type_ &amp;type)</argsstring>
+        <name>OneOfValue</name>
+        <param>
+          <type>const Type_ &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" line="158" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" bodystart="156" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1OneOfValue_1a280c84a5d3ea4f659297217e7b95a3c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void eos::OneOfValue&lt; Type_, Types_ &gt;::accept</definition>
+        <argsstring>(OneOfVisitor&lt; Types_...&gt; &amp;visitor)</argsstring>
+        <name>accept</name>
+        <reimplements refid="structeos_1_1OneOfValueBase_1ad591bb797392ce70f45001d92d6c95bc">accept</reimplements>
+        <param>
+          <type><ref refid="structeos_1_1OneOfVisitor" kindref="compound">OneOfVisitor</ref>&lt; Types_...&gt; &amp;</type>
+          <declname>visitor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" line="162" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" bodystart="161" bodyend="164"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="746">
+        <label>eos::OneOfValue&lt; Type_, Types_ &gt;</label>
+        <link refid="structeos_1_1OneOfValue"/>
+        <childnode refid="747" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="747">
+        <label>eos::OneOfValueBase&lt; Types_...&gt;</label>
+        <link refid="structeos_1_1OneOfValueBase"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="748">
+        <label>eos::OneOfValue&lt; Type_, Types_ &gt;</label>
+        <link refid="structeos_1_1OneOfValue"/>
+        <childnode refid="749" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="749">
+        <label>eos::OneOfValueBase&lt; Types_...&gt;</label>
+        <link refid="structeos_1_1OneOfValueBase"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" line="153" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" bodystart="151" bodyend="165"/>
+    <listofallmembers>
+      <member refid="structeos_1_1OneOfValue_1a280c84a5d3ea4f659297217e7b95a3c2" prot="public" virt="virtual"><scope>eos::OneOfValue</scope><name>accept</name></member>
+      <member refid="structeos_1_1OneOfValue_1a5d443df9b9298a3887921e4872cbf059" prot="public" virt="non-virtual"><scope>eos::OneOfValue</scope><name>OneOfValue</name></member>
+      <member refid="structeos_1_1OneOfValue_1a8c495ebdf36bdf308e6ecf85669517e5" prot="public" virt="non-virtual"><scope>eos::OneOfValue</scope><name>value</name></member>
+      <member refid="structeos_1_1OneOfValueBase_1a1587f8d32e61d2257084ffb6890e110b" prot="public" virt="pure-virtual"><scope>eos::OneOfValue</scope><name>~OneOfValueBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

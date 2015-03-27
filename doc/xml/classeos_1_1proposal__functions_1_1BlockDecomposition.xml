@@ -1,0 +1,563 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1proposal__functions_1_1BlockDecomposition" kind="class" prot="public">
+    <compoundname>eos::proposal_functions::BlockDecomposition</compoundname>
+    <basecompoundref refid="structeos_1_1MarkovChain_1_1ProposalFunction" prot="public" virt="non-virtual">eos::MarkovChain::ProposalFunction</basecompoundref>
+    <includes refid="proposal__functions_8hh" local="no">proposal_functions.hh</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classeos_1_1proposal__functions_1_1BlockDecomposition_1a892047be5924542e4defaa86b30ad6fd" prot="public" static="no">
+        <type><ref refid="classeos_1_1hdf5_1_1Composite" kindref="compound">hdf5::Composite</ref>&lt; <ref refid="classeos_1_1hdf5_1_1Scalar" kindref="compound">hdf5::Scalar</ref>&lt; const char * &gt; &gt;</type>
+        <definition>typedef hdf5::Composite&lt;hdf5::Scalar&lt;const char *&gt; &gt; eos::proposal_functions::BlockDecomposition::PriorsType</definition>
+        <argsstring></argsstring>
+        <name>PriorsType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="563" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="563" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classeos_1_1proposal__functions_1_1BlockDecomposition_1a52a0d4a7b6284023493999008d416bfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class MultivariateAccess</definition>
+        <argsstring></argsstring>
+        <name>MultivariateAccess</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="565" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="565" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classeos_1_1proposal__functions_1_1BlockDecomposition_1ad81307bb41f93f7ef16e1f38829662b6" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::shared_ptr&lt; double &gt; &gt;</type>
+        <definition>std::vector&lt;std::shared_ptr&lt;double&gt; &gt; eos::proposal_functions::BlockDecomposition::_tmp_vector_x</definition>
+        <argsstring></argsstring>
+        <name>_tmp_vector_x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="569" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="569" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1proposal__functions_1_1BlockDecomposition_1a0f66db6969379b002bd7112008debc61" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::shared_ptr&lt; double &gt; &gt;</type>
+        <definition>std::vector&lt;std::shared_ptr&lt;double&gt; &gt; eos::proposal_functions::BlockDecomposition::_tmp_vector_y</definition>
+        <argsstring></argsstring>
+        <name>_tmp_vector_y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="570" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="570" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1proposal__functions_1_1BlockDecomposition_1ab262ab759fe7d2fcdcc882b0e32be4d7" prot="private" static="no" mutable="yes">
+        <type><ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">MarkovChain::State</ref></type>
+        <definition>MarkovChain::State eos::proposal_functions::BlockDecomposition::_tmp_state_x</definition>
+        <argsstring></argsstring>
+        <name>_tmp_state_x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="572" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="572" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1proposal__functions_1_1BlockDecomposition_1a7225d08179f95d0802e18a21499aac10" prot="private" static="no" mutable="yes">
+        <type><ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">MarkovChain::State</ref></type>
+        <definition>MarkovChain::State eos::proposal_functions::BlockDecomposition::_tmp_state_y</definition>
+        <argsstring></argsstring>
+        <name>_tmp_state_y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="573" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="573" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1proposal__functions_1_1BlockDecomposition_1aa1e354a045cf3b515cf34ffa89ad05f7" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespaceeos_1_1proposal__functions_1a6cffa18d523cd6955629beabbe07c17c" kindref="member">MultivariateProposalPtr</ref> &gt;</type>
+        <definition>std::vector&lt;MultivariateProposalPtr&gt; eos::proposal_functions::BlockDecomposition::_mv</definition>
+        <argsstring></argsstring>
+        <name>_mv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="576" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="576" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1proposal__functions_1_1BlockDecomposition_1acc0ee01fcd8baef0902ea2c05c8e56a7" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespaceeos_1ac5481e3b46ee55ff24606ee7f6e78651" kindref="member">LogPriorPtr</ref> &gt;</type>
+        <definition>std::vector&lt;LogPriorPtr&gt; eos::proposal_functions::BlockDecomposition::_priors</definition>
+        <argsstring></argsstring>
+        <name>_priors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="577" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="577" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1proposal__functions_1_1BlockDecomposition_1a53e3f61b0812852ceaa2e4ae952e53ef" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref></type>
+        <definition>Parameters eos::proposal_functions::BlockDecomposition::p</definition>
+        <argsstring></argsstring>
+        <name>p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="579" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="579" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1proposal__functions_1_1BlockDecomposition_1a6874c17509f6e681f4e945d350d7dff1" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; std::shared_ptr&lt; double &gt; &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;std::shared_ptr&lt;double&gt; &gt; &gt; eos::proposal_functions::BlockDecomposition::_mv_values_x</definition>
+        <argsstring></argsstring>
+        <name>_mv_values_x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="582" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="582" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1proposal__functions_1_1BlockDecomposition_1a8e18466163f524830c6bcd6e3b47701f" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; std::shared_ptr&lt; double &gt; &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;std::shared_ptr&lt;double&gt; &gt; &gt; eos::proposal_functions::BlockDecomposition::_mv_values_y</definition>
+        <argsstring></argsstring>
+        <name>_mv_values_y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="583" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="583" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1proposal__functions_1_1BlockDecomposition_1a68b4914ea886e36aaec23fee25b5e54a" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; std::shared_ptr&lt; double &gt; &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;std::shared_ptr&lt;double&gt; &gt; &gt; eos::proposal_functions::BlockDecomposition::_priors_values_x</definition>
+        <argsstring></argsstring>
+        <name>_priors_values_x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="584" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="584" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1proposal__functions_1_1BlockDecomposition_1ab719a8ab82f2ca986248eff254110984" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; std::shared_ptr&lt; double &gt; &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;std::shared_ptr&lt;double&gt; &gt; &gt; eos::proposal_functions::BlockDecomposition::_priors_values_y</definition>
+        <argsstring></argsstring>
+        <name>_priors_values_y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="585" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="585" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1BlockDecomposition_1a1dc4342c37838cf8d87f5c64c2f02f66" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1hdf5_1_1Composite" kindref="compound">PriorsType</ref></type>
+        <definition>static PriorsType eos::proposal_functions::BlockDecomposition::priors_type</definition>
+        <argsstring>()</argsstring>
+        <name>priors_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="564"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1BlockDecomposition_1aaa8046db821dd2b9e508d24df531a7ce" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void eos::proposal_functions::BlockDecomposition::_copy_values</definition>
+        <argsstring>(const std::vector&lt; std::shared_ptr&lt; double &gt;&gt; &amp;source_ptr_vector, std::vector&lt; double &gt; &amp;result)</argsstring>
+        <name>_copy_values</name>
+        <param>
+          <type>const std::vector&lt; std::shared_ptr&lt; double &gt;&gt; &amp;</type>
+          <declname>source_ptr_vector</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>copy values pointed at into result </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="588"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1BlockDecomposition_1af18b89300d365d25a6e39ffed061e616" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void eos::proposal_functions::BlockDecomposition::_copy_values</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;source, const std::vector&lt; std::shared_ptr&lt; double &gt;&gt; &amp;destination_ptr_vector)</argsstring>
+        <name>_copy_values</name>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::shared_ptr&lt; double &gt;&gt; &amp;</type>
+          <declname>destination_ptr_vector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy values from source vector to where the pointers in destination point <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>destination_ptr_vector</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="595"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1BlockDecomposition_1a10f540b481d3278044e1b59821ee57f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::proposal_functions::BlockDecomposition::BlockDecomposition</definition>
+        <argsstring>()</argsstring>
+        <name>BlockDecomposition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="597"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1BlockDecomposition_1aba384f3920606bc7ec8a0ca4f57f68f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual eos::proposal_functions::BlockDecomposition::~BlockDecomposition</definition>
+        <argsstring>()</argsstring>
+        <name>~BlockDecomposition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="598"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1BlockDecomposition_1a045b459bc8314548abe3e5766134e625" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void eos::proposal_functions::BlockDecomposition::adapt</definition>
+        <argsstring>(const MarkovChain::State::Iterator &amp;begin, const MarkovChain::State::Iterator &amp;end, const double &amp;efficiency, const double &amp;efficiency_min, const double &amp;efficiency_max)</argsstring>
+        <name>adapt</name>
+        <reimplements refid="structeos_1_1MarkovChain_1_1ProposalFunction_1afee6a937c53b9cfb257a5cd724a54296">adapt</reimplements>
+        <param>
+          <type>const <ref refid="structeos_1_1MarkovChain_1_1State_1ad7590843e4feca7e696c53863e6e10c1" kindref="member">MarkovChain::State::Iterator</ref> &amp;</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structeos_1_1MarkovChain_1_1State_1ad7590843e4feca7e696c53863e6e10c1" kindref="member">MarkovChain::State::Iterator</ref> &amp;</type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>efficiency</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>efficiency_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>efficiency_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adapt the proposal function to the chain&apos;s current state and history. <simplesect kind="note"><para><ref refid="classeos_1_1proposal__functions_1_1BlockDecomposition_1a045b459bc8314548abe3e5766134e625" kindref="member">adapt()</ref> always uses the full history passed as an argument. If only a subset of an existing history is to be used, the caller is responsible for removing the unneeded parts from history before calling <ref refid="classeos_1_1proposal__functions_1_1BlockDecomposition_1a045b459bc8314548abe3e5766134e625" kindref="member">adapt()</ref>. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>history</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="601"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1BlockDecomposition_1aa162a93e808bd848cbf5e761eb83ca68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::proposal_functions::BlockDecomposition::add</definition>
+        <argsstring>(const MultivariateProposalPtr &amp;)</argsstring>
+        <name>add</name>
+        <param>
+          <type>const <ref refid="namespaceeos_1_1proposal__functions_1a6cffa18d523cd6955629beabbe07c17c" kindref="member">MultivariateProposalPtr</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="603"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1BlockDecomposition_1a0842f09231586dcf8fccd41e20f1198f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::proposal_functions::BlockDecomposition::add</definition>
+        <argsstring>(const LogPriorPtr &amp;)</argsstring>
+        <name>add</name>
+        <param>
+          <type>const <ref refid="namespaceeos_1ac5481e3b46ee55ff24606ee7f6e78651" kindref="member">LogPriorPtr</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="604"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1BlockDecomposition_1ac863a3b2df66507f62c8decc7f543653" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceeos_1ae97f9891c67c90959a03fc96efaa4dc9" kindref="member">ProposalFunctionPtr</ref></type>
+        <definition>virtual ProposalFunctionPtr eos::proposal_functions::BlockDecomposition::clone</definition>
+        <argsstring>() const </argsstring>
+        <name>clone</name>
+        <reimplements refid="structeos_1_1MarkovChain_1_1ProposalFunction_1a7065079985f8bb44309d7773d85d225b">clone</reimplements>
+        <briefdescription>
+<para>Create independent copy. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="606"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1BlockDecomposition_1a6e35abd9d5995d4ce8cd931df9037034" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void eos::proposal_functions::BlockDecomposition::dump_state</definition>
+        <argsstring>(hdf5::File &amp;file, const std::string &amp;data_set_base_name) const </argsstring>
+        <name>dump_state</name>
+        <reimplements refid="structeos_1_1MarkovChain_1_1ProposalFunction_1aea88a1340e10cc6a5b03d8b5483774f7">dump_state</reimplements>
+        <param>
+          <type><ref refid="classeos_1_1hdf5_1_1File" kindref="compound">hdf5::File</ref> &amp;</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>data_set_base_name</declname>
+        </param>
+        <briefdescription>
+<para>Store state in the file under the given base name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="608"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1BlockDecomposition_1a2ccb90e87ccd98a155af6ecd71e03cf5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double eos::proposal_functions::BlockDecomposition::evaluate</definition>
+        <argsstring>(const MarkovChain::State &amp;x, const MarkovChain::State &amp;y) const </argsstring>
+        <name>evaluate</name>
+        <reimplements refid="structeos_1_1MarkovChain_1_1ProposalFunction_1ae3f2c43980ec9dfe9f35d8139f2f4ec7">evaluate</reimplements>
+        <param>
+          <type>const <ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">MarkovChain::State</ref> &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">MarkovChain::State</ref> &amp;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Evaluate the density to propose x given y. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="610"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1proposal__functions_1_1BlockDecomposition_1a5b0a6e997f1c78d2557f2a742c4d3813" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void eos::proposal_functions::BlockDecomposition::propose</definition>
+        <argsstring>(MarkovChain::State &amp;x, const MarkovChain::State &amp;y, gsl_rng *rng) const </argsstring>
+        <name>propose</name>
+        <reimplements refid="structeos_1_1MarkovChain_1_1ProposalFunction_1a2b296008d32b1cd008e59cde1228705f">propose</reimplements>
+        <param>
+          <type><ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">MarkovChain::State</ref> &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">MarkovChain::State</ref> &amp;</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>gsl_rng *</type>
+          <declname>rng</declname>
+        </param>
+        <briefdescription>
+<para>Obtain from the density a proposal x given y. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="612"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="93">
+        <label>eos::MarkovChain::ProposalFunction</label>
+        <link refid="structeos_1_1MarkovChain_1_1ProposalFunction"/>
+      </node>
+      <node id="92">
+        <label>eos::proposal_functions::BlockDecomposition</label>
+        <link refid="classeos_1_1proposal__functions_1_1BlockDecomposition"/>
+        <childnode refid="93" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="103">
+        <label>std::vector&lt; double &gt;</label>
+      </node>
+      <node id="95">
+        <label>eos::MarkovChain::ProposalFunction</label>
+        <link refid="structeos_1_1MarkovChain_1_1ProposalFunction"/>
+      </node>
+      <node id="97">
+        <label>eos::PrivateImplementationPattern&lt; Parameters &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="99">
+        <label>std::vector&lt; LogPriorPtr &gt;</label>
+      </node>
+      <node id="101">
+        <label>eos::MarkovChain::State</label>
+        <link refid="structeos_1_1MarkovChain_1_1State"/>
+        <childnode refid="102" relation="usage">
+          <edgelabel>hyper_parameter</edgelabel>
+        </childnode>
+        <childnode refid="103" relation="usage">
+          <edgelabel>point</edgelabel>
+        </childnode>
+      </node>
+      <node id="98">
+        <label>std::vector&lt; std::shared_ptr&lt; double &gt; &gt;</label>
+      </node>
+      <node id="100">
+        <label>std::vector&lt; MultivariateProposalPtr &gt;</label>
+      </node>
+      <node id="104">
+        <label>std::vector&lt; std::vector&lt; std::shared_ptr&lt; double &gt; &gt; &gt;</label>
+      </node>
+      <node id="102">
+        <label>eos::MarkovChain::HyperParameter</label>
+        <link refid="structeos_1_1MarkovChain_1_1HyperParameter"/>
+      </node>
+      <node id="96">
+        <label>eos::Parameters</label>
+        <link refid="classeos_1_1Parameters"/>
+        <childnode refid="97" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>eos::proposal_functions::BlockDecomposition</label>
+        <link refid="classeos_1_1proposal__functions_1_1BlockDecomposition"/>
+        <childnode refid="95" relation="public-inheritance">
+        </childnode>
+        <childnode refid="96" relation="usage">
+          <edgelabel>p</edgelabel>
+        </childnode>
+        <childnode refid="98" relation="usage">
+          <edgelabel>_tmp_vector_x</edgelabel>
+          <edgelabel>_tmp_vector_y</edgelabel>
+        </childnode>
+        <childnode refid="99" relation="usage">
+          <edgelabel>_priors</edgelabel>
+        </childnode>
+        <childnode refid="100" relation="usage">
+          <edgelabel>_mv</edgelabel>
+        </childnode>
+        <childnode refid="101" relation="usage">
+          <edgelabel>_tmp_state_x</edgelabel>
+          <edgelabel>_tmp_state_y</edgelabel>
+        </childnode>
+        <childnode refid="104" relation="usage">
+          <edgelabel>_priors_values_x</edgelabel>
+          <edgelabel>_priors_values_y</edgelabel>
+          <edgelabel>_mv_values_x</edgelabel>
+          <edgelabel>_mv_values_y</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="561" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="559" bodyend="613"/>
+    <listofallmembers>
+      <member refid="classeos_1_1proposal__functions_1_1BlockDecomposition_1aaa8046db821dd2b9e508d24df531a7ce" prot="private" virt="non-virtual"><scope>eos::proposal_functions::BlockDecomposition</scope><name>_copy_values</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1BlockDecomposition_1af18b89300d365d25a6e39ffed061e616" prot="private" virt="non-virtual"><scope>eos::proposal_functions::BlockDecomposition</scope><name>_copy_values</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1BlockDecomposition_1aa1e354a045cf3b515cf34ffa89ad05f7" prot="private" virt="non-virtual"><scope>eos::proposal_functions::BlockDecomposition</scope><name>_mv</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1BlockDecomposition_1a6874c17509f6e681f4e945d350d7dff1" prot="private" virt="non-virtual"><scope>eos::proposal_functions::BlockDecomposition</scope><name>_mv_values_x</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1BlockDecomposition_1a8e18466163f524830c6bcd6e3b47701f" prot="private" virt="non-virtual"><scope>eos::proposal_functions::BlockDecomposition</scope><name>_mv_values_y</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1BlockDecomposition_1acc0ee01fcd8baef0902ea2c05c8e56a7" prot="private" virt="non-virtual"><scope>eos::proposal_functions::BlockDecomposition</scope><name>_priors</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1BlockDecomposition_1a68b4914ea886e36aaec23fee25b5e54a" prot="private" virt="non-virtual"><scope>eos::proposal_functions::BlockDecomposition</scope><name>_priors_values_x</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1BlockDecomposition_1ab719a8ab82f2ca986248eff254110984" prot="private" virt="non-virtual"><scope>eos::proposal_functions::BlockDecomposition</scope><name>_priors_values_y</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1BlockDecomposition_1ab262ab759fe7d2fcdcc882b0e32be4d7" prot="private" virt="non-virtual"><scope>eos::proposal_functions::BlockDecomposition</scope><name>_tmp_state_x</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1BlockDecomposition_1a7225d08179f95d0802e18a21499aac10" prot="private" virt="non-virtual"><scope>eos::proposal_functions::BlockDecomposition</scope><name>_tmp_state_y</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1BlockDecomposition_1ad81307bb41f93f7ef16e1f38829662b6" prot="private" virt="non-virtual"><scope>eos::proposal_functions::BlockDecomposition</scope><name>_tmp_vector_x</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1BlockDecomposition_1a0f66db6969379b002bd7112008debc61" prot="private" virt="non-virtual"><scope>eos::proposal_functions::BlockDecomposition</scope><name>_tmp_vector_y</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1BlockDecomposition_1a045b459bc8314548abe3e5766134e625" prot="public" virt="virtual"><scope>eos::proposal_functions::BlockDecomposition</scope><name>adapt</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1BlockDecomposition_1aa162a93e808bd848cbf5e761eb83ca68" prot="public" virt="non-virtual"><scope>eos::proposal_functions::BlockDecomposition</scope><name>add</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1BlockDecomposition_1a0842f09231586dcf8fccd41e20f1198f" prot="public" virt="non-virtual"><scope>eos::proposal_functions::BlockDecomposition</scope><name>add</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1BlockDecomposition_1a10f540b481d3278044e1b59821ee57f8" prot="public" virt="non-virtual"><scope>eos::proposal_functions::BlockDecomposition</scope><name>BlockDecomposition</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1BlockDecomposition_1ac863a3b2df66507f62c8decc7f543653" prot="public" virt="virtual"><scope>eos::proposal_functions::BlockDecomposition</scope><name>clone</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1BlockDecomposition_1a6e35abd9d5995d4ce8cd931df9037034" prot="public" virt="virtual"><scope>eos::proposal_functions::BlockDecomposition</scope><name>dump_state</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1BlockDecomposition_1a2ccb90e87ccd98a155af6ecd71e03cf5" prot="public" virt="virtual"><scope>eos::proposal_functions::BlockDecomposition</scope><name>evaluate</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1BlockDecomposition_1a52a0d4a7b6284023493999008d416bfe" prot="public" virt="non-virtual"><scope>eos::proposal_functions::BlockDecomposition</scope><name>MultivariateAccess</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1BlockDecomposition_1a53e3f61b0812852ceaa2e4ae952e53ef" prot="private" virt="non-virtual"><scope>eos::proposal_functions::BlockDecomposition</scope><name>p</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1BlockDecomposition_1a1dc4342c37838cf8d87f5c64c2f02f66" prot="public" virt="non-virtual"><scope>eos::proposal_functions::BlockDecomposition</scope><name>priors_type</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1BlockDecomposition_1a892047be5924542e4defaa86b30ad6fd" prot="public" virt="non-virtual"><scope>eos::proposal_functions::BlockDecomposition</scope><name>PriorsType</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1BlockDecomposition_1a5b0a6e997f1c78d2557f2a742c4d3813" prot="public" virt="virtual"><scope>eos::proposal_functions::BlockDecomposition</scope><name>propose</name></member>
+      <member refid="classeos_1_1proposal__functions_1_1BlockDecomposition_1aba384f3920606bc7ec8a0ca4f57f68f5" prot="public" virt="virtual"><scope>eos::proposal_functions::BlockDecomposition</scope><name>~BlockDecomposition</name></member>
+      <member refid="structeos_1_1MarkovChain_1_1ProposalFunction_1a758ad6e18e36b15062fe776ee7a9b3d9" prot="public" virt="pure-virtual"><scope>eos::proposal_functions::BlockDecomposition</scope><name>~ProposalFunction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

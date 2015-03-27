@@ -1,0 +1,97 @@
+\hypertarget{lambda-b-to-lambda-dilepton_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/rare-\/b-\/decays/lambda-\/b-\/to-\/lambda-\/dilepton.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2014 Danny van Dyk}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_EOS\_RARE\_B\_DECAYS\_BARYONIC\_B\_TO\_S\_DILEPTON\_HH}
+\hypertarget{lambda-b-to-lambda-dilepton_8hh_source_l00021}{}\hyperlink{lambda-b-to-lambda-dilepton_8hh_a6e4a83beb9a76b3e392c4d2f1559cc26}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_EOS\_RARE\_B\_DECAYS\_BARYONIC\_B\_TO\_S\_DILEPTON\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{preprocessor}{#include <\hyperlink{decays_8hh}{eos/rare-b-decays/decays.hh}>}
+00024 \textcolor{preprocessor}{#include <\hyperlink{options_8hh}{eos/utils/options.hh}>}
+00025 \textcolor{preprocessor}{#include <\hyperlink{parameters_8hh}{eos/utils/parameters.hh}>}
+00026 \textcolor{preprocessor}{#include <\hyperlink{private__implementation__pattern_8hh}{eos/utils/private_implementation_pattern.hh}>}
+00027 
+00028 \textcolor{keyword}{namespace }eos
+00029 \{
+00030     \textcolor{comment}{/*}
+00031 \textcolor{comment}{     * Decay: Lambda\_b -> Lambda l^+ l^- at large recoil, cf. [BFvD2014]}
+00032 \textcolor{comment}{     */}
+\hypertarget{lambda-b-to-lambda-dilepton_8hh_source_l00033}{}\hyperlink{classeos_1_1LambdaBToLambdaDilepton_3_01LargeRecoil_01_4}{00033}     \textcolor{keyword}{template} <> \textcolor{keyword}{class }LambdaBToLambdaDilepton<\hyperlink{structeos_1_1LargeRecoil}{LargeRecoil}> :
+00034         \textcolor{keyword}{public} \hyperlink{classeos_1_1ParameterUser}{ParameterUser},
+00035         \textcolor{keyword}{public} \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern}<LambdaBToLambdaDilepton<LargeRecoil>>
+      
+00036     \{
+00037         \textcolor{keyword}{public}:
+00038             LambdaBToLambdaDilepton(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} &, \textcolor{keyword}{const} \hyperlink{classeos_1_1Options}{Options} &);
+00039             ~LambdaBToLambdaDilepton();
+00040 
+00041             \textcolor{keywordtype}{double} differential\_branching\_ratio(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00042             \textcolor{keywordtype}{double} differential\_a\_fb\_leptonic(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00043             \textcolor{keywordtype}{double} differential\_a\_fb\_hadronic(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00044             \textcolor{keywordtype}{double} differential\_a\_fb\_combined(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00045             \textcolor{keywordtype}{double} differential\_fzero(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00046 
+00047             \textcolor{keywordtype}{double} integrated\_branching\_ratio(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} 
+      & s\_max) \textcolor{keyword}{const};
+00048             \textcolor{keywordtype}{double} integrated\_a\_fb\_leptonic(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & 
+      s\_max) \textcolor{keyword}{const};
+00049             \textcolor{keywordtype}{double} integrated\_a\_fb\_hadronic(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & 
+      s\_max) \textcolor{keyword}{const};
+00050             \textcolor{keywordtype}{double} integrated\_a\_fb\_combined(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & 
+      s\_max) \textcolor{keyword}{const};
+00051             \textcolor{keywordtype}{double} integrated\_fzero(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{c
+      onst};
+00052     \};
+00053 
+00054     \textcolor{comment}{/*}
+00055 \textcolor{comment}{     * Decay: Lambda\_b -> Lambda l^+ l^- at low recoil, cf. [BFvD2014]}
+00056 \textcolor{comment}{     */}
+\hypertarget{lambda-b-to-lambda-dilepton_8hh_source_l00057}{}\hyperlink{classeos_1_1LambdaBToLambdaDilepton_3_01LowRecoil_01_4}{00057}     \textcolor{keyword}{template} <> \textcolor{keyword}{class }LambdaBToLambdaDilepton<\hyperlink{structeos_1_1LowRecoil}{LowRecoil}> :
+00058         \textcolor{keyword}{public} \hyperlink{classeos_1_1ParameterUser}{ParameterUser},
+00059         \textcolor{keyword}{public} \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern}<LambdaBToLambdaDilepton<LowRecoil>>
+00060     \{
+00061         \textcolor{keyword}{public}:
+00062             LambdaBToLambdaDilepton(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} &, \textcolor{keyword}{const} \hyperlink{classeos_1_1Options}{Options} &);
+00063             ~LambdaBToLambdaDilepton();
+00064 
+00065             \textcolor{keywordtype}{double} differential\_branching\_ratio(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00066             \textcolor{keywordtype}{double} differential\_a\_fb\_leptonic(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00067             \textcolor{keywordtype}{double} differential\_a\_fb\_hadronic(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00068             \textcolor{keywordtype}{double} differential\_a\_fb\_combined(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00069             \textcolor{keywordtype}{double} differential\_fzero(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00070 
+00071             \textcolor{keywordtype}{double} integrated\_branching\_ratio(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} 
+      & s\_max) \textcolor{keyword}{const};
+00072             \textcolor{keywordtype}{double} integrated\_a\_fb\_leptonic(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & 
+      s\_max) \textcolor{keyword}{const};
+00073             \textcolor{keywordtype}{double} integrated\_a\_fb\_hadronic(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & 
+      s\_max) \textcolor{keyword}{const};
+00074             \textcolor{keywordtype}{double} integrated\_a\_fb\_combined(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & 
+      s\_max) \textcolor{keyword}{const};
+00075             \textcolor{keywordtype}{double} integrated\_fzero(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{c
+      onst};
+00076     \};
+00077 \}
+00078 
+00079 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

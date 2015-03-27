@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1RandomNumberGenerator" kind="class" prot="public">
+    <compoundname>eos::RandomNumberGenerator</compoundname>
+    <basecompoundref refid="classeos_1_1PrivateImplementationPattern" prot="public" virt="non-virtual">eos::PrivateImplementationPattern&lt; RandomNumberGenerator &gt;</basecompoundref>
+    <includes refid="random__number__generator_8hh" local="no">random_number_generator.hh</includes>
+      <sectiondef kind="user-defined">
+      <header>Basic functions.</header>
+      <description><para><anchor id="_1amgrp451e2a62d2bd56f05565a8ac4834a177"/> </para></description>
+      <memberdef kind="function" id="classeos_1_1RandomNumberGenerator_1a661f2b9c129ddd7a1c23f463ef4ec5b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::RandomNumberGenerator::RandomNumberGenerator</definition>
+        <argsstring>(const unsigned long &amp;seed=0ul)</argsstring>
+        <name>RandomNumberGenerator</name>
+        <param>
+          <type>const unsigned long &amp;</type>
+          <declname>seed</declname>
+          <defval>0ul</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>seed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The numerical value used to seed the RNG. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/random_number_generator.hh" line="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1RandomNumberGenerator_1a379d4e110cdf0ded2e930e2e7ffa59a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::RandomNumberGenerator::~RandomNumberGenerator</definition>
+        <argsstring>()</argsstring>
+        <name>~RandomNumberGenerator</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/random_number_generator.hh" line="49"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1RandomNumberGenerator_1ac81a62bb3e4534fcfb0d15195ee653b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::RandomNumberGenerator::operator()</definition>
+        <argsstring>()</argsstring>
+        <name>operator()</name>
+        <briefdescription>
+<para>Obtain a pseudo-random number in the range [0.0, 1.0). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/random_number_generator.hh" line="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1RandomNumberGenerator_1adac254d76323261e06d42b2f48e05c50" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::RandomNumberGenerator::max</definition>
+        <argsstring>() const </argsstring>
+        <name>max</name>
+        <briefdescription>
+<para>Return the maximal value that can be drawn. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/random_number_generator.hh" line="56" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/random_number_generator.hh" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1RandomNumberGenerator_1a2268a048896484b9d12d86fcfd7a6dbb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::RandomNumberGenerator::min</definition>
+        <argsstring>() const </argsstring>
+        <name>min</name>
+        <briefdescription>
+<para>Return the minimal value that can be drawn. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/random_number_generator.hh" line="59" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/random_number_generator.hh" bodystart="59" bodyend="59"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Generate pseudo-random floating point numbers in the range 0 ... 1.</para><para><ref refid="classeos_1_1RandomNumberGenerator" kindref="compound">RandomNumberGenerator</ref> keeps its state/seed on copying. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="870">
+        <label>eos::PrivateImplementationPattern&lt; RandomNumberGenerator &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="869">
+        <label>eos::RandomNumberGenerator</label>
+        <link refid="classeos_1_1RandomNumberGenerator"/>
+        <childnode refid="870" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="872">
+        <label>eos::PrivateImplementationPattern&lt; RandomNumberGenerator &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="871">
+        <label>eos::RandomNumberGenerator</label>
+        <link refid="classeos_1_1RandomNumberGenerator"/>
+        <childnode refid="872" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/random_number_generator.hh" line="37" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/random_number_generator.hh" bodystart="35" bodyend="60"/>
+    <listofallmembers>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a232940e78b26c6ed4f97196f831c69c9" prot="protected" virt="non-virtual"><scope>eos::RandomNumberGenerator</scope><name>_imp</name></member>
+      <member refid="classeos_1_1RandomNumberGenerator_1adac254d76323261e06d42b2f48e05c50" prot="public" virt="non-virtual"><scope>eos::RandomNumberGenerator</scope><name>max</name></member>
+      <member refid="classeos_1_1RandomNumberGenerator_1a2268a048896484b9d12d86fcfd7a6dbb" prot="public" virt="non-virtual"><scope>eos::RandomNumberGenerator</scope><name>min</name></member>
+      <member refid="classeos_1_1RandomNumberGenerator_1ac81a62bb3e4534fcfb0d15195ee653b0" prot="public" virt="non-virtual"><scope>eos::RandomNumberGenerator</scope><name>operator()</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a3e3d5f4a565256a1dda6c234b051b2f2" prot="public" virt="non-virtual"><scope>eos::RandomNumberGenerator</scope><name>PrivateImplementationPattern</name></member>
+      <member refid="classeos_1_1RandomNumberGenerator_1a661f2b9c129ddd7a1c23f463ef4ec5b7" prot="public" virt="non-virtual"><scope>eos::RandomNumberGenerator</scope><name>RandomNumberGenerator</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1acf46ec2739c3b0ec9702b9428475876d" prot="public" virt="non-virtual"><scope>eos::RandomNumberGenerator</scope><name>~PrivateImplementationPattern</name></member>
+      <member refid="classeos_1_1RandomNumberGenerator_1a379d4e110cdf0ded2e930e2e7ffa59a1" prot="public" virt="non-virtual"><scope>eos::RandomNumberGenerator</scope><name>~RandomNumberGenerator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,85 @@
+\hypertarget{inclusive-b-to-s-gamma_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/rare-\/b-\/decays/inclusive-\/b-\/to-\/s-\/gamma.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2010, 2011, 2012, 2013 Danny van Dyk}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_RARE\_B\_DECAYS\_INCLUSIVE\_B\_TO\_S\_GAMMA\_HH}
+\hypertarget{inclusive-b-to-s-gamma_8hh_source_l00021}{}\hyperlink{inclusive-b-to-s-gamma_8hh_a11a2e97fb82dee569be0903a8b93df5c}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_RARE\_B\_DECAYS\_INCLUSIVE\_B\_TO\_S\_GAMMA\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{preprocessor}{#include <\hyperlink{decays_8hh}{eos/rare-b-decays/decays.hh}>}
+00024 \textcolor{preprocessor}{#include <\hyperlink{diagnostics_8hh}{eos/utils/diagnostics.hh}>}
+00025 \textcolor{preprocessor}{#include <\hyperlink{options_8hh}{eos/utils/options.hh}>}
+00026 \textcolor{preprocessor}{#include <\hyperlink{parameters_8hh}{eos/utils/parameters.hh}>}
+00027 \textcolor{preprocessor}{#include <\hyperlink{private__implementation__pattern_8hh}{eos/utils/private_implementation_pattern.hh}>}
+00028 
+00029 \textcolor{keyword}{namespace }eos
+00030 \{
+00031     \textcolor{comment}{/*}
+00032 \textcolor{comment}{     * Decay: b -> X\_s gamma}
+00033 \textcolor{comment}{     */}
+00034 
+00035     \textcolor{comment}{// LO-NP Enhancement of [2006zs]}
+\hypertarget{inclusive-b-to-s-gamma_8hh_source_l00036}{}\hyperlink{structeos_1_1Minimal}{00036}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1Minimal}{Minimal}
+00037     \{
+00038     \};
+00039 
+00040     \textcolor{keyword}{template} <>
+\hypertarget{inclusive-b-to-s-gamma_8hh_source_l00041}{}\hyperlink{classeos_1_1BToXsGamma_3_01Minimal_01_4}{00041}     \textcolor{keyword}{class }BToXsGamma<\hyperlink{structeos_1_1Minimal}{Minimal}> :
+00042         \textcolor{keyword}{public} \hyperlink{classeos_1_1ParameterUser}{ParameterUser},
+00043         \textcolor{keyword}{public} \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern}<BToXsGamma<Minimal>>
+00044     \{
+00045         \textcolor{keyword}{public}:
+00046             BToXsGamma(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & parameters, \textcolor{keyword}{const} \hyperlink{classeos_1_1Options}{Options} & options);
+00047             ~BToXsGamma();
+00048 
+00049             \textcolor{comment}{// Integrated Observables}
+00050             \textcolor{keywordtype}{double} integrated\_branching\_ratio() \textcolor{keyword}{const};
+00051     \};
+00052 
+00053     \textcolor{comment}{// NLO Implementation}
+\hypertarget{inclusive-b-to-s-gamma_8hh_source_l00054}{}\hyperlink{structeos_1_1NLO}{00054}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1NLO}{NLO}
+00055     \{
+00056     \};
+00057 
+00058     \textcolor{keyword}{template} <>
+\hypertarget{inclusive-b-to-s-gamma_8hh_source_l00059}{}\hyperlink{classeos_1_1BToXsGamma_3_01NLO_01_4}{00059}     \textcolor{keyword}{class }BToXsGamma<\hyperlink{structeos_1_1NLO}{NLO}> :
+00060         \textcolor{keyword}{public} \hyperlink{classeos_1_1ParameterUser}{ParameterUser},
+00061         \textcolor{keyword}{public} \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern}<BToXsGamma<NLO>>
+00062     \{
+00063         \textcolor{keyword}{public}:
+00064             BToXsGamma(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & parameters, \textcolor{keyword}{const} \hyperlink{classeos_1_1Options}{Options} & options);
+00065             ~BToXsGamma();
+00066 
+00067             \textcolor{comment}{// Branching ratio}
+00068             \textcolor{keywordtype}{double} integrated\_branching\_ratio(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & emin) \textcolor{keyword}{const};
+00069 
+00070             \textcolor{comment}{// Photon energy moments}
+00071             \textcolor{keywordtype}{double} photon\_energy\_moment\_1(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & emin) \textcolor{keyword}{const};
+00072             \textcolor{keywordtype}{double} photon\_energy\_moment\_2(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & emin) \textcolor{keyword}{const};
+00073 
+00074             \textcolor{comment}{// Diagnostics}
+00075             \hyperlink{classeos_1_1Diagnostics}{Diagnostics} diagnostics() \textcolor{keyword}{const};
+00076     \};
+00077 \}
+00078 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

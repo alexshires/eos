@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1hdf5_1_1DataType" kind="struct" prot="public">
+    <compoundname>eos::hdf5::DataType</compoundname>
+    <includes refid="hdf5_8hh" local="no">hdf5.hh</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T_</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structeos_1_1hdf5_1_1DataType_1a96dea8ef1e40e5af0c68658d9155bd44" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceeos_1_1hdf5_1a5bd5e209f1bf36cdc5551465dacf2e74" kindref="member">hid_t</ref></type>
+        <definition>static hid_t eos::hdf5::DataType&lt; T_ &gt;::type_id</definition>
+        <argsstring>()</argsstring>
+        <name>type_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="57"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="56" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" bodystart="55" bodyend="58"/>
+    <listofallmembers>
+      <member refid="structeos_1_1hdf5_1_1DataType_1a96dea8ef1e40e5af0c68658d9155bd44" prot="public" virt="non-virtual"><scope>eos::hdf5::DataType</scope><name>type_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

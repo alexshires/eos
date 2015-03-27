@@ -1,0 +1,289 @@
+exception.lo: exception.cc ../../eos/utils/exception.hh \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/exception \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/x86_64-unknown-linux-gnu/bits/c++config.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/x86_64-unknown-linux-gnu/bits/os_defines.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/x86_64-unknown-linux-gnu/bits/cpu_defines.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/atomic_lockfree_defines.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/exception_ptr.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/exception_defines.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/nested_exception.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/string \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/stringfwd.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/memoryfwd.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/char_traits.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/stl_algobase.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/functexcept.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/cpp_type_traits.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/ext/type_traits.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/ext/numeric_traits.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/stl_pair.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/move.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/concept_check.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/type_traits \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/stl_iterator_base_types.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/stl_iterator_base_funcs.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/debug/debug.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/stl_iterator.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/postypes.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/cwchar \
+ /usr/include/wchar.h /usr/include/stdio.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/lib/gcc/x86_64-unknown-linux-gnu/4.8.1/include/stdarg.h \
+ /usr/include/bits/wchar.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/lib/gcc/x86_64-unknown-linux-gnu/4.8.1/include/stddef.h \
+ /usr/include/xlocale.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/cstdint \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/lib/gcc/x86_64-unknown-linux-gnu/4.8.1/include/stdint.h \
+ /usr/include/stdint.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/allocator.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/x86_64-unknown-linux-gnu/bits/c++allocator.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/ext/new_allocator.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/new \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/localefwd.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/x86_64-unknown-linux-gnu/bits/c++locale.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/clocale \
+ /usr/include/locale.h /usr/include/bits/locale.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/iosfwd \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/cctype \
+ /usr/include/ctype.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/ostream_insert.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/cxxabi_forced.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/stl_function.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/backward/binders.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/range_access.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/basic_string.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/ext/atomicity.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/x86_64-unknown-linux-gnu/bits/gthr.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/x86_64-unknown-linux-gnu/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h /usr/include/time.h \
+ /usr/include/bits/sched.h /usr/include/bits/time.h \
+ /usr/include/bits/pthreadtypes.h /usr/include/bits/setjmp.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/x86_64-unknown-linux-gnu/bits/atomic_word.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/initializer_list \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/ext/string_conversions.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/cstdlib \
+ /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+ /usr/include/bits/waitstatus.h /usr/include/sys/types.h \
+ /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/sigset.h /usr/include/sys/sysmacros.h \
+ /usr/include/alloca.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/cstdio \
+ /usr/include/libio.h /usr/include/_G_config.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/cerrno \
+ /usr/include/errno.h /usr/include/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/functional_hash.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/hash_bytes.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/basic_string.tcc
+
+../../eos/utils/exception.hh:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/exception:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/x86_64-unknown-linux-gnu/bits/c++config.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/x86_64-unknown-linux-gnu/bits/os_defines.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/x86_64-unknown-linux-gnu/bits/cpu_defines.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/atomic_lockfree_defines.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/exception_ptr.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/exception_defines.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/nested_exception.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/string:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/stringfwd.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/memoryfwd.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/char_traits.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/stl_algobase.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/functexcept.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/cpp_type_traits.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/ext/type_traits.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/ext/numeric_traits.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/stl_pair.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/move.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/concept_check.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/type_traits:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/stl_iterator_base_types.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/stl_iterator_base_funcs.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/debug/debug.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/stl_iterator.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/postypes.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/cwchar:
+
+/usr/include/wchar.h:
+
+/usr/include/stdio.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/lib/gcc/x86_64-unknown-linux-gnu/4.8.1/include/stdarg.h:
+
+/usr/include/bits/wchar.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/lib/gcc/x86_64-unknown-linux-gnu/4.8.1/include/stddef.h:
+
+/usr/include/xlocale.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/cstdint:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/lib/gcc/x86_64-unknown-linux-gnu/4.8.1/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/allocator.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/x86_64-unknown-linux-gnu/bits/c++allocator.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/ext/new_allocator.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/new:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/localefwd.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/x86_64-unknown-linux-gnu/bits/c++locale.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/clocale:
+
+/usr/include/locale.h:
+
+/usr/include/bits/locale.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/iosfwd:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/cctype:
+
+/usr/include/ctype.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/ostream_insert.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/cxxabi_forced.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/stl_function.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/backward/binders.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/range_access.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/basic_string.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/ext/atomicity.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/x86_64-unknown-linux-gnu/bits/gthr.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/x86_64-unknown-linux-gnu/bits/gthr-default.h:
+
+/usr/include/pthread.h:
+
+/usr/include/sched.h:
+
+/usr/include/time.h:
+
+/usr/include/bits/sched.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/bits/setjmp.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/x86_64-unknown-linux-gnu/bits/atomic_word.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/initializer_list:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/ext/string_conversions.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/cstdlib:
+
+/usr/include/stdlib.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/alloca.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/cstdio:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/cerrno:
+
+/usr/include/errno.h:
+
+/usr/include/bits/errno.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/asm/errno.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/functional_hash.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/hash_bytes.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/include/c++/4.8.1/bits/basic_string.tcc:

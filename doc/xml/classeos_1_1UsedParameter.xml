@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1UsedParameter" kind="class" prot="public">
+    <compoundname>eos::UsedParameter</compoundname>
+    <basecompoundref refid="classeos_1_1Parameter" prot="public" virt="non-virtual">eos::Parameter</basecompoundref>
+    <includes refid="parameters_8hh" local="no">parameters.hh</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1UsedParameter_1a3c995a62b3f94be0e1c02edc9c670e03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::UsedParameter::UsedParameter</definition>
+        <argsstring>(const Parameter &amp;parameter, ParameterUser &amp;user)</argsstring>
+        <name>UsedParameter</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref> &amp;</type>
+          <declname>parameter</declname>
+        </param>
+        <param>
+          <type><ref refid="classeos_1_1ParameterUser" kindref="compound">ParameterUser</ref> &amp;</type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor.</para><para>Constructs a <ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref> object and registers its usage with a <ref refid="classeos_1_1ParameterUser" kindref="compound">ParameterUser</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parameter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The parameter which is used. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>user</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user of above parameter. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" line="270"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Wrapper class to automate usage tracking of <ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref> objects. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1047">
+        <label>eos::Mutable</label>
+        <link refid="classeos_1_1Mutable"/>
+      </node>
+      <node id="1046">
+        <label>eos::Parameter</label>
+        <link refid="classeos_1_1Parameter"/>
+        <childnode refid="1047" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1045">
+        <label>eos::UsedParameter</label>
+        <link refid="classeos_1_1UsedParameter"/>
+        <childnode refid="1046" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1050">
+        <label>eos::Mutable</label>
+        <link refid="classeos_1_1Mutable"/>
+      </node>
+      <node id="1049">
+        <label>eos::Parameter</label>
+        <link refid="classeos_1_1Parameter"/>
+        <childnode refid="1050" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1048">
+        <label>eos::UsedParameter</label>
+        <link refid="classeos_1_1UsedParameter"/>
+        <childnode refid="1049" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" line="260" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/parameters.hh" bodystart="258" bodyend="271"/>
+    <listofallmembers>
+      <member refid="classeos_1_1Parameter_1a1c0a1ce478f2275d1259483fa919ec60" prot="public" virt="non-virtual"><scope>eos::UsedParameter</scope><name>central</name></member>
+      <member refid="classeos_1_1Parameter_1a8a643807f254a9601349c779cf6211dc" prot="public" virt="virtual"><scope>eos::UsedParameter</scope><name>clone</name></member>
+      <member refid="classeos_1_1Parameter_1a1cea65462fdafeb7329f6d87fd6e42b4" prot="public" virt="non-virtual"><scope>eos::UsedParameter</scope><name>id</name></member>
+      <member refid="classeos_1_1Parameter_1a065f55e66b2128cc5f14339e676d833a" prot="public" virt="non-virtual"><scope>eos::UsedParameter</scope><name>Id</name></member>
+      <member refid="classeos_1_1Parameter_1afdc1ae1c3b0dbac4fdf6769d5f8e1fbf" prot="public" virt="non-virtual"><scope>eos::UsedParameter</scope><name>Implementation&lt; Parameters &gt;</name></member>
+      <member refid="classeos_1_1Parameter_1ac91f5116794dea955ad7ac20e552b730" prot="public" virt="non-virtual"><scope>eos::UsedParameter</scope><name>max</name></member>
+      <member refid="classeos_1_1Parameter_1a37672fa03693d97cdafb23e35fe0e83b" prot="public" virt="non-virtual"><scope>eos::UsedParameter</scope><name>min</name></member>
+      <member refid="classeos_1_1Parameter_1a86f581847722de0445ae65065940fd13" prot="public" virt="virtual"><scope>eos::UsedParameter</scope><name>name</name></member>
+      <member refid="classeos_1_1Parameter_1ad2dc69fe74e308328dc8a1d901c916ec" prot="public" virt="virtual"><scope>eos::UsedParameter</scope><name>operator double</name></member>
+      <member refid="classeos_1_1Parameter_1ada58e0206d67777a79bdd2bc0c806600" prot="public" virt="virtual"><scope>eos::UsedParameter</scope><name>operator()</name></member>
+      <member refid="classeos_1_1Parameter_1aff29f9acdc90019e76239f6c81b4014a" prot="public" virt="virtual"><scope>eos::UsedParameter</scope><name>operator=</name></member>
+      <member refid="classeos_1_1Parameter_1ac64d342eed9e01a93a42e00403ab041f" prot="public" virt="non-virtual"><scope>eos::UsedParameter</scope><name>Parameter</name></member>
+      <member refid="classeos_1_1Parameter_1afaebbd8ef883afa59f01fa3d4475e6a2" prot="public" virt="non-virtual"><scope>eos::UsedParameter</scope><name>Parameters</name></member>
+      <member refid="classeos_1_1UsedParameter_1a3c995a62b3f94be0e1c02edc9c670e03" prot="public" virt="non-virtual"><scope>eos::UsedParameter</scope><name>UsedParameter</name></member>
+      <member refid="classeos_1_1Mutable_1a928ec6648a438f02b6369a8863d39560" prot="public" virt="pure-virtual"><scope>eos::UsedParameter</scope><name>~Mutable</name></member>
+      <member refid="classeos_1_1Parameter_1ac5e6dd06494095cffe292e4b4dc200c8" prot="public" virt="non-virtual"><scope>eos::UsedParameter</scope><name>~Parameter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

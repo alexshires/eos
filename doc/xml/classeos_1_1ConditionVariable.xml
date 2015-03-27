@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1ConditionVariable" kind="class" prot="public">
+    <compoundname>eos::ConditionVariable</compoundname>
+    <includes refid="condition__variable_8hh" local="no">condition_variable.hh</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classeos_1_1ConditionVariable_1a7c4521d519ff02ad71434134bc23293b" prot="private" static="no" mutable="no">
+        <type>pthread_cond_t *const</type>
+        <definition>pthread_cond_t* const eos::ConditionVariable::_cond</definition>
+        <argsstring></argsstring>
+        <name>_cond</name>
+        <briefdescription>
+<para>Our pthread condition variable. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/condition_variable.hh" line="38" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/condition_variable.hh" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1ConditionVariable_1a64b2350d3ef0bf6c58f0f063da7a4ea4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::ConditionVariable::ConditionVariable</definition>
+        <argsstring>()</argsstring>
+        <name>ConditionVariable</name>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/condition_variable.hh" line="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ConditionVariable_1abf981bbbce2e09c235d461f7aea14479" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::ConditionVariable::~ConditionVariable</definition>
+        <argsstring>()</argsstring>
+        <name>~ConditionVariable</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/condition_variable.hh" line="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ConditionVariable_1a353db40ed7ea89d107627a4f32b829fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::ConditionVariable::broadcast</definition>
+        <argsstring>()</argsstring>
+        <name>broadcast</name>
+        <briefdescription>
+<para>Broadcast a wake-up to all waiting threads. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/condition_variable.hh" line="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ConditionVariable_1a58e81670564c2096dcfdbf34dba8f4a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::ConditionVariable::signal</definition>
+        <argsstring>()</argsstring>
+        <name>signal</name>
+        <briefdescription>
+<para>Sign a wake-up to the waiting thread. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/condition_variable.hh" line="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ConditionVariable_1adc82f6f8edc7d82776fe183d7f647d2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::ConditionVariable::acquire_then_signal</definition>
+        <argsstring>(Mutex &amp;)</argsstring>
+        <name>acquire_then_signal</name>
+        <param>
+          <type><ref refid="classeos_1_1Mutex" kindref="compound">Mutex</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Acquire a lock for signaling. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/condition_variable.hh" line="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1ConditionVariable_1a42313d0ec24908e952f8b675a966a6a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::ConditionVariable::wait</definition>
+        <argsstring>(Mutex &amp;)</argsstring>
+        <name>wait</name>
+        <param>
+          <type><ref refid="classeos_1_1Mutex" kindref="compound">Mutex</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Wait until condition is met. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/condition_variable.hh" line="57"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/condition_variable.hh" line="35" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/condition_variable.hh" bodystart="33" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classeos_1_1ConditionVariable_1a7c4521d519ff02ad71434134bc23293b" prot="private" virt="non-virtual"><scope>eos::ConditionVariable</scope><name>_cond</name></member>
+      <member refid="classeos_1_1ConditionVariable_1adc82f6f8edc7d82776fe183d7f647d2c" prot="public" virt="non-virtual"><scope>eos::ConditionVariable</scope><name>acquire_then_signal</name></member>
+      <member refid="classeos_1_1ConditionVariable_1a353db40ed7ea89d107627a4f32b829fe" prot="public" virt="non-virtual"><scope>eos::ConditionVariable</scope><name>broadcast</name></member>
+      <member refid="classeos_1_1ConditionVariable_1a64b2350d3ef0bf6c58f0f063da7a4ea4" prot="public" virt="non-virtual"><scope>eos::ConditionVariable</scope><name>ConditionVariable</name></member>
+      <member refid="classeos_1_1ConditionVariable_1a58e81670564c2096dcfdbf34dba8f4a4" prot="public" virt="non-virtual"><scope>eos::ConditionVariable</scope><name>signal</name></member>
+      <member refid="classeos_1_1ConditionVariable_1a42313d0ec24908e952f8b675a966a6a6" prot="public" virt="non-virtual"><scope>eos::ConditionVariable</scope><name>wait</name></member>
+      <member refid="classeos_1_1ConditionVariable_1abf981bbbce2e09c235d461f7aea14479" prot="public" virt="non-virtual"><scope>eos::ConditionVariable</scope><name>~ConditionVariable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

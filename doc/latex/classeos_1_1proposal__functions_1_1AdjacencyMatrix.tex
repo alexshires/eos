@@ -1,0 +1,92 @@
+\hypertarget{classeos_1_1proposal__functions_1_1AdjacencyMatrix}{
+\section{eos::proposal\_\-functions::AdjacencyMatrix Class Reference}
+\label{classeos_1_1proposal__functions_1_1AdjacencyMatrix}\index{eos::proposal\_\-functions::AdjacencyMatrix@{eos::proposal\_\-functions::AdjacencyMatrix}}
+}
+
+
+{\ttfamily \#include $<$proposal\_\-functions.hh$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1proposal__functions_1_1AdjacencyMatrix_a84ff663285192a136a291ff589b3c87e}{AdjacencyMatrix} ()
+\begin{DoxyCompactList}\small\item\em Empty and useless. \item\end{DoxyCompactList}\item 
+void \hyperlink{classeos_1_1proposal__functions_1_1AdjacencyMatrix_aae7d3467e9159c0db5e17c31e02a2ba9}{reserve} (const unsigned \&number\_\-of\_\-clusters)
+\begin{DoxyCompactList}\small\item\em Reserve storage for fixed number of clusters. \item\end{DoxyCompactList}\item 
+void \hyperlink{classeos_1_1proposal__functions_1_1AdjacencyMatrix_a8c5e2e2cf4791c651f2fb93b4cc70b80}{add} (const \hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} \&)
+\item 
+void \hyperlink{classeos_1_1proposal__functions_1_1AdjacencyMatrix_a0578ba400c8091d18f265683de1e801e}{indices} (const std::vector$<$ unsigned $>$ index\_\-list)
+\item 
+const std::vector$<$ double $>$ \& \hyperlink{classeos_1_1proposal__functions_1_1AdjacencyMatrix_ac32923bdb581f366d9516d0a80e1fa22}{jump} (const unsigned \&h\_\-x, const unsigned \&h\_\-y) const 
+\item 
+const unsigned \& \hyperlink{classeos_1_1proposal__functions_1_1AdjacencyMatrix_aab2d5eddd479bc4065724a720db51079}{number\_\-of\_\-clusters} () const 
+\item 
+const \hyperlink{structeos_1_1MarkovChain_1_1State}{MarkovChain::State} \& \hyperlink{classeos_1_1proposal__functions_1_1AdjacencyMatrix_a1effea928a244e6250cb227087b4aafa}{state} (const unsigned \&i) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Store long jump vectors and retrieve them efficiently. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classeos_1_1proposal__functions_1_1AdjacencyMatrix_a84ff663285192a136a291ff589b3c87e}{
+\index{eos::proposal\_\-functions::AdjacencyMatrix@{eos::proposal\_\-functions::AdjacencyMatrix}!AdjacencyMatrix@{AdjacencyMatrix}}
+\index{AdjacencyMatrix@{AdjacencyMatrix}!eos::proposal_functions::AdjacencyMatrix@{eos::proposal\_\-functions::AdjacencyMatrix}}
+\subsubsection[{AdjacencyMatrix}]{\setlength{\rightskip}{0pt plus 5cm}eos::proposal\_\-functions::AdjacencyMatrix::AdjacencyMatrix ()}}
+\label{classeos_1_1proposal__functions_1_1AdjacencyMatrix_a84ff663285192a136a291ff589b3c87e}
+
+
+Empty and useless. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classeos_1_1proposal__functions_1_1AdjacencyMatrix_a8c5e2e2cf4791c651f2fb93b4cc70b80}{
+\index{eos::proposal\_\-functions::AdjacencyMatrix@{eos::proposal\_\-functions::AdjacencyMatrix}!add@{add}}
+\index{add@{add}!eos::proposal_functions::AdjacencyMatrix@{eos::proposal\_\-functions::AdjacencyMatrix}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void eos::proposal\_\-functions::AdjacencyMatrix::add (const {\bf MarkovChain::State} \&)}}
+\label{classeos_1_1proposal__functions_1_1AdjacencyMatrix_a8c5e2e2cf4791c651f2fb93b4cc70b80}
+Add a state to the list, and compute the vector difference between the new and all existing ones.
+
+\begin{DoxyNote}{Note}
+Fails with an exception if there are enough states already. 
+\end{DoxyNote}
+\hypertarget{classeos_1_1proposal__functions_1_1AdjacencyMatrix_a0578ba400c8091d18f265683de1e801e}{
+\index{eos::proposal\_\-functions::AdjacencyMatrix@{eos::proposal\_\-functions::AdjacencyMatrix}!indices@{indices}}
+\index{indices@{indices}!eos::proposal_functions::AdjacencyMatrix@{eos::proposal\_\-functions::AdjacencyMatrix}}
+\subsubsection[{indices}]{\setlength{\rightskip}{0pt plus 5cm}void eos::proposal\_\-functions::AdjacencyMatrix::indices (const std::vector$<$ unsigned $>$ {\em index\_\-list})}}
+\label{classeos_1_1proposal__functions_1_1AdjacencyMatrix_a0578ba400c8091d18f265683de1e801e}
+\hypertarget{classeos_1_1proposal__functions_1_1AdjacencyMatrix_ac32923bdb581f366d9516d0a80e1fa22}{
+\index{eos::proposal\_\-functions::AdjacencyMatrix@{eos::proposal\_\-functions::AdjacencyMatrix}!jump@{jump}}
+\index{jump@{jump}!eos::proposal_functions::AdjacencyMatrix@{eos::proposal\_\-functions::AdjacencyMatrix}}
+\subsubsection[{jump}]{\setlength{\rightskip}{0pt plus 5cm}const std::vector$<$double$>$\& eos::proposal\_\-functions::AdjacencyMatrix::jump (const unsigned \& {\em h\_\-x}, \/  const unsigned \& {\em h\_\-y}) const}}
+\label{classeos_1_1proposal__functions_1_1AdjacencyMatrix_ac32923bdb581f366d9516d0a80e1fa22}
+Undirected jump excluding the sign.
+
+\begin{DoxyNote}{Note}
+The caller needs to decide if the sign of the \hyperlink{namespaceeos_1_1components}{components} is to be flipped or not.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em h\_\-x}]Index of the component into which a jump is desired. \item[{\em h\_\-y}]Index of the component out out which a jump is desired. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The vector of the difference in coordinates. 
+\end{DoxyReturn}
+\hypertarget{classeos_1_1proposal__functions_1_1AdjacencyMatrix_aab2d5eddd479bc4065724a720db51079}{
+\index{eos::proposal\_\-functions::AdjacencyMatrix@{eos::proposal\_\-functions::AdjacencyMatrix}!number\_\-of\_\-clusters@{number\_\-of\_\-clusters}}
+\index{number\_\-of\_\-clusters@{number\_\-of\_\-clusters}!eos::proposal_functions::AdjacencyMatrix@{eos::proposal\_\-functions::AdjacencyMatrix}}
+\subsubsection[{number\_\-of\_\-clusters}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned\& eos::proposal\_\-functions::AdjacencyMatrix::number\_\-of\_\-clusters () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classeos_1_1proposal__functions_1_1AdjacencyMatrix_aab2d5eddd479bc4065724a720db51079}
+\hypertarget{classeos_1_1proposal__functions_1_1AdjacencyMatrix_aae7d3467e9159c0db5e17c31e02a2ba9}{
+\index{eos::proposal\_\-functions::AdjacencyMatrix@{eos::proposal\_\-functions::AdjacencyMatrix}!reserve@{reserve}}
+\index{reserve@{reserve}!eos::proposal_functions::AdjacencyMatrix@{eos::proposal\_\-functions::AdjacencyMatrix}}
+\subsubsection[{reserve}]{\setlength{\rightskip}{0pt plus 5cm}void eos::proposal\_\-functions::AdjacencyMatrix::reserve (const unsigned \& {\em number\_\-of\_\-clusters})}}
+\label{classeos_1_1proposal__functions_1_1AdjacencyMatrix_aae7d3467e9159c0db5e17c31e02a2ba9}
+
+
+Reserve storage for fixed number of clusters. \hypertarget{classeos_1_1proposal__functions_1_1AdjacencyMatrix_a1effea928a244e6250cb227087b4aafa}{
+\index{eos::proposal\_\-functions::AdjacencyMatrix@{eos::proposal\_\-functions::AdjacencyMatrix}!state@{state}}
+\index{state@{state}!eos::proposal_functions::AdjacencyMatrix@{eos::proposal\_\-functions::AdjacencyMatrix}}
+\subsubsection[{state}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf MarkovChain::State}\& eos::proposal\_\-functions::AdjacencyMatrix::state (const unsigned \& {\em i}) const}}
+\label{classeos_1_1proposal__functions_1_1AdjacencyMatrix_a1effea928a244e6250cb227087b4aafa}
+Retrieve the fixed state used for cluster i. 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{proposal__functions_8hh}{proposal\_\-functions.hh}\end{DoxyCompactItemize}

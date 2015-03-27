@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="qcd_8hh" kind="file">
+    <compoundname>qcd.hh</compoundname>
+    <includes local="no">array</includes>
+    <includedby refid="lcda_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/lcda.hh</includedby>
+    <includedby refid="wilson__coefficients_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh</includedby>
+    <incdepgraph>
+      <node id="1619">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/qcd.hh</label>
+        <link refid="qcd.hh"/>
+        <childnode refid="1620" relation="include">
+        </childnode>
+      </node>
+      <node id="1620">
+        <label>array</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1627">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/standard-model.hh</label>
+        <link refid="standard-model_8hh"/>
+        <childnode refid="1626" relation="include">
+        </childnode>
+        <childnode refid="1628" relation="include">
+        </childnode>
+      </node>
+      <node id="1628">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh</label>
+        <link refid="wilson__scan__model_8hh"/>
+      </node>
+      <node id="1625">
+        <label>/home/alexshires/EOS/eos-next/eos/rare-b-decays/charm-loops.hh</label>
+        <link refid="charm-loops_8hh"/>
+      </node>
+      <node id="1624">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/model.hh</label>
+        <link refid="model_8hh"/>
+        <childnode refid="1625" relation="include">
+        </childnode>
+        <childnode refid="1626" relation="include">
+        </childnode>
+        <childnode refid="1627" relation="include">
+        </childnode>
+        <childnode refid="1628" relation="include">
+        </childnode>
+      </node>
+      <node id="1621">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/qcd.hh</label>
+        <link refid="qcd.hh"/>
+        <childnode refid="1622" relation="include">
+        </childnode>
+        <childnode refid="1623" relation="include">
+        </childnode>
+      </node>
+      <node id="1622">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/lcda.hh</label>
+        <link refid="lcda_8hh"/>
+      </node>
+      <node id="1626">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/ckm_scan_model.hh</label>
+        <link refid="ckm__scan__model_8hh"/>
+      </node>
+      <node id="1623">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/wilson_coefficients.hh</label>
+        <link refid="wilson__coefficients_8hh"/>
+        <childnode refid="1624" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classeos_1_1QCD" prot="public">eos::QCD</innerclass>
+    <innernamespace refid="namespaceeos">eos</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="qcd_8hh_1a3e93fae0351bb6b9ea4306536fab62e2" prot="public" static="no">
+        <name>EOS_GUARD_SRC_UTILS_QCD_HH</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/qcd.hh" line="21" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/qcd.hh" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>vim:<sp/>set<sp/>sw=4<sp/>sts=4<sp/>et<sp/>foldmethod=syntax<sp/>:<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010,<sp/>2011,<sp/>2012,<sp/>2014<sp/>Danny<sp/>van<sp/>Dyk</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>EOS<sp/>project.<sp/>EOS<sp/>is<sp/>free<sp/>software;</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Public<sp/>License<sp/>version<sp/>2,<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>EOS<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/>but<sp/>WITHOUT<sp/>ANY</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>along<sp/>with</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/>59<sp/>Temple</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>Place,<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307<sp/><sp/>USA</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>EOS_GUARD_SRC_UTILS_QCD_HH</highlight></codeline>
+<codeline lineno="21" refid="qcd_8hh_1a3e93fae0351bb6b9ea4306536fab62e2" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EOS_GUARD_SRC_UTILS_QCD_HH<sp/>1</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;array&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">eos</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27" refid="classeos_1_1QCD" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classeos_1_1QCD" kindref="compound">QCD</ref></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31" refid="classeos_1_1QCD_1a3ca5eea2df0bd5c0043071e14c58d089" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::array&lt;double,<sp/>4&gt;<sp/><ref refid="classeos_1_1QCD_1a3ca5eea2df0bd5c0043071e14c58d089" kindref="member" tooltip="The four leading coefficients of the  expansion of the quark mass&amp;#39; anomalous...">AnomalousMassDimension</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="classeos_1_1QCD_1a1261bb4643fea3012beb0a9ea78b7dea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::array&lt;double,<sp/>4&gt;<sp/><ref refid="classeos_1_1QCD_1a1261bb4643fea3012beb0a9ea78b7dea" kindref="member" tooltip="The four leading coefficient of the  expansion of the beta function of QCD.">BetaFunction</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1QCD_1a65cf274c0bcedec2189f6836eebb4a7a" kindref="member">alpha_s</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>mu,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>alpha_s_0,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>mu_0,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1QCD_1a1261bb4643fea3012beb0a9ea78b7dea" kindref="member" tooltip="The four leading coefficient of the  expansion of the beta function of QCD.">BetaFunction</ref><sp/>&amp;<sp/>beta);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1QCD_1ad982972648053f9f5a7e41ec73e07346" kindref="member">m_q_msbar</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>m_q,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>alpha_s_0,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>alpha_s_mu,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1QCD_1a1261bb4643fea3012beb0a9ea78b7dea" kindref="member" tooltip="The four leading coefficient of the  expansion of the beta function of QCD.">BetaFunction</ref><sp/>&amp;<sp/>beta,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1QCD_1a3ca5eea2df0bd5c0043071e14c58d089" kindref="member" tooltip="The four leading coefficients of the  expansion of the quark mass&amp;#39; anomalous...">AnomalousMassDimension</ref><sp/>&amp;<sp/>gamma_m);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1QCD_1ad982972648053f9f5a7e41ec73e07346" kindref="member">m_q_msbar</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/><ref refid="classeos_1_1QCD_1a1cd4a3d09f464732fd0639319f53c8ab" kindref="member">m_q_pole</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/><ref refid="classeos_1_1QCD_1a65cf274c0bcedec2189f6836eebb4a7a" kindref="member">alpha_s</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>nf);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1QCD_1a1cd4a3d09f464732fd0639319f53c8ab" kindref="member">m_q_pole</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>m_q,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/><ref refid="classeos_1_1QCD_1a65cf274c0bcedec2189f6836eebb4a7a" kindref="member">alpha_s</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>nf);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1QCD_1a09637e36c232414e489bf75faa359e5d" kindref="member">m_q_ps</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>m_q,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/><ref refid="classeos_1_1QCD_1a65cf274c0bcedec2189f6836eebb4a7a" kindref="member">alpha_s</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>mu_f,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>nf,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1QCD_1a1261bb4643fea3012beb0a9ea78b7dea" kindref="member" tooltip="The four leading coefficient of the  expansion of the beta function of QCD.">BetaFunction</ref><sp/>&amp;<sp/>beta);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1QCD_1ad4ddd12454ebee7271a0245b9fbabdfa" kindref="member">m_q_kin</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>m_q,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/><ref refid="classeos_1_1QCD_1a65cf274c0bcedec2189f6836eebb4a7a" kindref="member">alpha_s</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>mu,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1QCD_1a1261bb4643fea3012beb0a9ea78b7dea" kindref="member" tooltip="The four leading coefficient of the  expansion of the beta function of QCD.">BetaFunction</ref><sp/>&amp;<sp/>beta);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="classeos_1_1QCD_1a05f7ff1fada6145efece3310cde56e5a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1QCD_1a05f7ff1fada6145efece3310cde56e5a" kindref="member">casimir_f</ref>;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="classeos_1_1QCD_1ab74e057f2d2b9a05e3c8cbdbce9a2413" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1QCD_1ab74e057f2d2b9a05e3c8cbdbce9a2413" kindref="member">casimir_a</ref>;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"></codeline>
+<codeline lineno="122" refid="classeos_1_1QCD_1abc5015326a2e2c0544aa5d2a392b7ea1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1QCD_1a1261bb4643fea3012beb0a9ea78b7dea" kindref="member" tooltip="The four leading coefficient of the  expansion of the beta function of QCD.">BetaFunction</ref><sp/><ref refid="classeos_1_1QCD_1abc5015326a2e2c0544aa5d2a392b7ea1" kindref="member">beta_function_nf_6</ref>;</highlight></codeline>
+<codeline lineno="124"></codeline>
+<codeline lineno="128"></codeline>
+<codeline lineno="129" refid="classeos_1_1QCD_1a5022dbb4487a457142d0d04d18494d88" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1QCD_1a1261bb4643fea3012beb0a9ea78b7dea" kindref="member" tooltip="The four leading coefficient of the  expansion of the beta function of QCD.">BetaFunction</ref><sp/><ref refid="classeos_1_1QCD_1a5022dbb4487a457142d0d04d18494d88" kindref="member">beta_function_nf_5</ref>;</highlight></codeline>
+<codeline lineno="130" refid="classeos_1_1QCD_1a121e70974f149e6303ec5cc0be5cec35" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1QCD_1a3ca5eea2df0bd5c0043071e14c58d089" kindref="member" tooltip="The four leading coefficients of the  expansion of the quark mass&amp;#39; anomalous...">AnomalousMassDimension</ref><sp/><ref refid="classeos_1_1QCD_1a121e70974f149e6303ec5cc0be5cec35" kindref="member">gamma_m_nf_5</ref>;</highlight></codeline>
+<codeline lineno="132"></codeline>
+<codeline lineno="136"></codeline>
+<codeline lineno="137" refid="classeos_1_1QCD_1a142158984dbb9ebc03f970d1dc3189c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1QCD_1a1261bb4643fea3012beb0a9ea78b7dea" kindref="member" tooltip="The four leading coefficient of the  expansion of the beta function of QCD.">BetaFunction</ref><sp/><ref refid="classeos_1_1QCD_1a142158984dbb9ebc03f970d1dc3189c2" kindref="member">beta_function_nf_4</ref>;</highlight></codeline>
+<codeline lineno="138" refid="classeos_1_1QCD_1a2c39e24c316de9bceb7df4b6cce05665" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1QCD_1a3ca5eea2df0bd5c0043071e14c58d089" kindref="member" tooltip="The four leading coefficients of the  expansion of the quark mass&amp;#39; anomalous...">AnomalousMassDimension</ref><sp/><ref refid="classeos_1_1QCD_1a2c39e24c316de9bceb7df4b6cce05665" kindref="member">gamma_m_nf_4</ref>;</highlight></codeline>
+<codeline lineno="140"></codeline>
+<codeline lineno="144"></codeline>
+<codeline lineno="145" refid="classeos_1_1QCD_1ae21fca3bee658d5b53bc12af43fa8fc2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1QCD_1a1261bb4643fea3012beb0a9ea78b7dea" kindref="member" tooltip="The four leading coefficient of the  expansion of the beta function of QCD.">BetaFunction</ref><sp/><ref refid="classeos_1_1QCD_1ae21fca3bee658d5b53bc12af43fa8fc2" kindref="member">beta_function_nf_3</ref>;</highlight></codeline>
+<codeline lineno="146" refid="classeos_1_1QCD_1a1732d2faffdb5712fbb5e53f521bdb4f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1QCD_1a3ca5eea2df0bd5c0043071e14c58d089" kindref="member" tooltip="The four leading coefficients of the  expansion of the quark mass&amp;#39; anomalous...">AnomalousMassDimension</ref><sp/><ref refid="classeos_1_1QCD_1a1732d2faffdb5712fbb5e53f521bdb4f" kindref="member">gamma_m_nf_3</ref>;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/qcd.hh"/>
+  </compounddef>
+</doxygen>

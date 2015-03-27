@@ -1,0 +1,85 @@
+\hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Status}{
+\section{eos::PopulationMonteCarloSampler::Status Struct Reference}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Status}\index{eos::PopulationMonteCarloSampler::Status@{eos::PopulationMonteCarloSampler::Status}}
+}
+
+
+{\ttfamily \#include $<$population\_\-monte\_\-carlo\_\-sampler.hh$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Status_a8f69a829df5ad6a829a737c4eb9c368c}{Status} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Status_aec7820c1ca91f2af381c1bb81182fa26}{chunk\_\-size}
+\item 
+bool \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Status_a853d94d0b2fc16ee51f6e32ca4b0515c}{converged}
+\begin{DoxyCompactList}\small\item\em Whether sampling has converged. \item\end{DoxyCompactList}\item 
+unsigned \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Status_a6b30cf9e83650e861475f2f0036c09b0}{iterations\_\-at\_\-convergence}
+\begin{DoxyCompactList}\small\item\em The number of iterations after which convergence was declared. \item\end{DoxyCompactList}\item 
+double \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Status_ab762703da0930ae2182b696b85358b53}{evidence}
+\begin{DoxyCompactList}\small\item\em Evidence. \item\end{DoxyCompactList}\item 
+double \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Status_a35814022e64d939f7164ece7a796c07e}{eff\_\-sample\_\-size}
+\begin{DoxyCompactList}\small\item\em Effective sample size. \item\end{DoxyCompactList}\item 
+double \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Status_a468aeeb618c761543be6d6833347e296}{perplexity}
+\begin{DoxyCompactList}\small\item\em Perplexity. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Holds convergence information of the population sampling. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Status_a8f69a829df5ad6a829a737c4eb9c368c}{
+\index{eos::PopulationMonteCarloSampler::Status@{eos::PopulationMonteCarloSampler::Status}!Status@{Status}}
+\index{Status@{Status}!eos::PopulationMonteCarloSampler::Status@{eos::PopulationMonteCarloSampler::Status}}
+\subsubsection[{Status}]{\setlength{\rightskip}{0pt plus 5cm}eos::PopulationMonteCarloSampler::Status::Status ()}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Status_a8f69a829df5ad6a829a737c4eb9c368c}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Status_aec7820c1ca91f2af381c1bb81182fa26}{
+\index{eos::PopulationMonteCarloSampler::Status@{eos::PopulationMonteCarloSampler::Status}!chunk\_\-size@{chunk\_\-size}}
+\index{chunk\_\-size@{chunk\_\-size}!eos::PopulationMonteCarloSampler::Status@{eos::PopulationMonteCarloSampler::Status}}
+\subsubsection[{chunk\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf eos::PopulationMonteCarloSampler::Status::chunk\_\-size}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Status_aec7820c1ca91f2af381c1bb81182fa26}
+The actual number of samples drawn from mixture proposal density before the latter is updated. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Status_a853d94d0b2fc16ee51f6e32ca4b0515c}{
+\index{eos::PopulationMonteCarloSampler::Status@{eos::PopulationMonteCarloSampler::Status}!converged@{converged}}
+\index{converged@{converged}!eos::PopulationMonteCarloSampler::Status@{eos::PopulationMonteCarloSampler::Status}}
+\subsubsection[{converged}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf eos::PopulationMonteCarloSampler::Status::converged}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Status_a853d94d0b2fc16ee51f6e32ca4b0515c}
+
+
+Whether sampling has converged. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Status_a35814022e64d939f7164ece7a796c07e}{
+\index{eos::PopulationMonteCarloSampler::Status@{eos::PopulationMonteCarloSampler::Status}!eff\_\-sample\_\-size@{eff\_\-sample\_\-size}}
+\index{eff\_\-sample\_\-size@{eff\_\-sample\_\-size}!eos::PopulationMonteCarloSampler::Status@{eos::PopulationMonteCarloSampler::Status}}
+\subsubsection[{eff\_\-sample\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf eos::PopulationMonteCarloSampler::Status::eff\_\-sample\_\-size}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Status_a35814022e64d939f7164ece7a796c07e}
+
+
+Effective sample size. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Status_ab762703da0930ae2182b696b85358b53}{
+\index{eos::PopulationMonteCarloSampler::Status@{eos::PopulationMonteCarloSampler::Status}!evidence@{evidence}}
+\index{evidence@{evidence}!eos::PopulationMonteCarloSampler::Status@{eos::PopulationMonteCarloSampler::Status}}
+\subsubsection[{evidence}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf eos::PopulationMonteCarloSampler::Status::evidence}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Status_ab762703da0930ae2182b696b85358b53}
+
+
+Evidence. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Status_a6b30cf9e83650e861475f2f0036c09b0}{
+\index{eos::PopulationMonteCarloSampler::Status@{eos::PopulationMonteCarloSampler::Status}!iterations\_\-at\_\-convergence@{iterations\_\-at\_\-convergence}}
+\index{iterations\_\-at\_\-convergence@{iterations\_\-at\_\-convergence}!eos::PopulationMonteCarloSampler::Status@{eos::PopulationMonteCarloSampler::Status}}
+\subsubsection[{iterations\_\-at\_\-convergence}]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf eos::PopulationMonteCarloSampler::Status::iterations\_\-at\_\-convergence}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Status_a6b30cf9e83650e861475f2f0036c09b0}
+
+
+The number of iterations after which convergence was declared. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Status_a468aeeb618c761543be6d6833347e296}{
+\index{eos::PopulationMonteCarloSampler::Status@{eos::PopulationMonteCarloSampler::Status}!perplexity@{perplexity}}
+\index{perplexity@{perplexity}!eos::PopulationMonteCarloSampler::Status@{eos::PopulationMonteCarloSampler::Status}}
+\subsubsection[{perplexity}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf eos::PopulationMonteCarloSampler::Status::perplexity}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Status_a468aeeb618c761543be6d6833347e296}
+
+
+Perplexity. 
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{population__monte__carlo__sampler_8hh}{population\_\-monte\_\-carlo\_\-sampler.hh}\end{DoxyCompactItemize}

@@ -1,0 +1,157 @@
+\hypertarget{classeos_1_1hdf5_1_1File}{
+\section{eos::hdf5::File Class Reference}
+\label{classeos_1_1hdf5_1_1File}\index{eos::hdf5::File@{eos::hdf5::File}}
+}
+
+
+{\ttfamily \#include $<$hdf5.hh$>$}\subsection*{Public Member Functions}
+\begin{Indent}{\bf Data Access}\par
+{\em \label{_amgrpf8aacfa5c683858912c498f517c9b457}
+ }\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T\_\- $>$ }\\\hyperlink{classeos_1_1hdf5_1_1DataSet}{DataSet}$<$ T\_\- $>$ \hyperlink{classeos_1_1hdf5_1_1File_a6ae5be7fa9d26030daee1e3631a0432f}{create\_\-data\_\-set} (const std::string \&name, const T\_\- \&t)
+\item 
+{\footnotesize template$<$typename T\_\- $>$ }\\\hyperlink{classeos_1_1hdf5_1_1DataSet}{DataSet}$<$ T\_\- $>$ \hyperlink{classeos_1_1hdf5_1_1File_ae5e5e823024ff7629788895eec1f33f2}{open\_\-data\_\-set} (const std::string \&name, const T\_\- \&t)
+\item 
+{\footnotesize template$<$typename T\_\- $>$ }\\\hyperlink{classeos_1_1hdf5_1_1DataSet}{DataSet}$<$ T\_\- $>$ \hyperlink{classeos_1_1hdf5_1_1File_a01aeea71760b5ca862900658602b71bd}{create\_\-or\_\-open\_\-data\_\-set} (const std::string \&name, const T\_\- \&t)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Group Operations}\par
+{\em \label{_amgrpafb39b9128298307e8ed1d0bc43d7399}
+ }\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classeos_1_1hdf5_1_1File_a1b00da32195932e27c8d88081f9f493c}{copy} (const std::string \&source\_\-directory, \hyperlink{classeos_1_1hdf5_1_1File}{File} \&destination\_\-file, const std::string \&destination\_\-directory=\char`\"{}\char`\"{}) const 
+\item 
+void \hyperlink{classeos_1_1hdf5_1_1File_a56decaf8e9350e212044f8d1b5486699}{create\_\-group} (const std::string \&name)
+\item 
+bool \hyperlink{classeos_1_1hdf5_1_1File_addf73185e4946dea33eb40f04c985439}{group\_\-exists} (const std::string \&name)
+\item 
+unsigned \hyperlink{classeos_1_1hdf5_1_1File_ab95523c1691b5c1bde956a13a04739fc}{number\_\-of\_\-objects} (const std::string \&name)
+\begin{DoxyCompactList}\small\item\em List how many objects, i.e. groups or data sets, are in a subdirectory. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Basic Functions}
+\label{_amgrp2386c9a1f1785edee33f374dd2db9b3d}
+ Destructor. \begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1hdf5_1_1File_a10a1ab16a4ffa7399f305ae19c26915d}{$\sim$File} ()
+\begin{DoxyCompactList}\small\item\em Access to file name. \item\end{DoxyCompactList}\item 
+const std::string \& \hyperlink{classeos_1_1hdf5_1_1File_a3ae62d6317e16fab68dc7f345007ca59}{name} () const 
+\begin{DoxyCompactList}\small\item\em Access to file name. \item\end{DoxyCompactList}\item 
+static \hyperlink{classeos_1_1hdf5_1_1File}{File} \hyperlink{classeos_1_1hdf5_1_1File_ad1d6eb1ed34bc9bf83ce564618e1d346}{Create} (const std::string \&filename)
+\item 
+static \hyperlink{classeos_1_1hdf5_1_1File}{File} \hyperlink{classeos_1_1hdf5_1_1File_a2db8559898bd4f68d16a56760952c195}{Open} (const std::string \&file\_\-name, unsigned mode=H5F\_\-ACC\_\-RDONLY)
+\item 
+static bool \hyperlink{classeos_1_1hdf5_1_1File_a907662df69926c556596304405846d7c}{Exists} (const std::string \&filename)
+\begin{DoxyCompactList}\small\item\em Access to file name. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classeos_1_1hdf5_1_1File_a10a1ab16a4ffa7399f305ae19c26915d}{
+\index{eos::hdf5::File@{eos::hdf5::File}!$\sim$File@{$\sim$File}}
+\index{$\sim$File@{$\sim$File}!eos::hdf5::File@{eos::hdf5::File}}
+\subsubsection[{$\sim$File}]{\setlength{\rightskip}{0pt plus 5cm}eos::hdf5::File::$\sim$File ()}}
+\label{classeos_1_1hdf5_1_1File_a10a1ab16a4ffa7399f305ae19c26915d}
+
+
+Access to file name. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classeos_1_1hdf5_1_1File_a1b00da32195932e27c8d88081f9f493c}{
+\index{eos::hdf5::File@{eos::hdf5::File}!copy@{copy}}
+\index{copy@{copy}!eos::hdf5::File@{eos::hdf5::File}}
+\subsubsection[{copy}]{\setlength{\rightskip}{0pt plus 5cm}void eos::hdf5::File::copy (const std::string \& {\em source\_\-directory}, \/  {\bf File} \& {\em destination\_\-file}, \/  const std::string \& {\em destination\_\-directory} = {\ttfamily \char`\"{}\char`\"{}}) const}}
+\label{classeos_1_1hdf5_1_1File_a1b00da32195932e27c8d88081f9f493c}
+Copy all objects under source directory in this file to the destination file. If the destination directory is omitted, the source directory is recreated in the destination file. \hypertarget{classeos_1_1hdf5_1_1File_ad1d6eb1ed34bc9bf83ce564618e1d346}{
+\index{eos::hdf5::File@{eos::hdf5::File}!Create@{Create}}
+\index{Create@{Create}!eos::hdf5::File@{eos::hdf5::File}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf File} eos::hdf5::File::Create (const std::string \& {\em filename})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1hdf5_1_1File_ad1d6eb1ed34bc9bf83ce564618e1d346}
+Named constructor to create a new file.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em filename}]\hyperlink{classeos_1_1hdf5_1_1File}{File} which shall be created. \item[{\em creator}]Name of the creating program. \end{DoxyParams}
+\hypertarget{classeos_1_1hdf5_1_1File_a6ae5be7fa9d26030daee1e3631a0432f}{
+\index{eos::hdf5::File@{eos::hdf5::File}!create\_\-data\_\-set@{create\_\-data\_\-set}}
+\index{create\_\-data\_\-set@{create\_\-data\_\-set}!eos::hdf5::File@{eos::hdf5::File}}
+\subsubsection[{create\_\-data\_\-set}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\_\- $>$ {\bf DataSet}$<$T\_\-$>$ eos::hdf5::File::create\_\-data\_\-set (const std::string \& {\em name}, \/  const T\_\- \& {\em t})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classeos_1_1hdf5_1_1File_a6ae5be7fa9d26030daee1e3631a0432f}
+Create a new data set by name.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]Absolute name of the new data set. \item[{\em t}]Instance of any of \hyperlink{classeos_1_1hdf5_1_1Scalar}{Scalar}, \hyperlink{classeos_1_1hdf5_1_1Array}{Array} or \hyperlink{classeos_1_1hdf5_1_1Composite}{Composite} that represents this data set's underlying data type. \end{DoxyParams}
+\hypertarget{classeos_1_1hdf5_1_1File_a56decaf8e9350e212044f8d1b5486699}{
+\index{eos::hdf5::File@{eos::hdf5::File}!create\_\-group@{create\_\-group}}
+\index{create\_\-group@{create\_\-group}!eos::hdf5::File@{eos::hdf5::File}}
+\subsubsection[{create\_\-group}]{\setlength{\rightskip}{0pt plus 5cm}void eos::hdf5::File::create\_\-group (const std::string \& {\em name})}}
+\label{classeos_1_1hdf5_1_1File_a56decaf8e9350e212044f8d1b5486699}
+Create a group within this HDF5 file.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]Name of the group that shall be created. \end{DoxyParams}
+\hypertarget{classeos_1_1hdf5_1_1File_a01aeea71760b5ca862900658602b71bd}{
+\index{eos::hdf5::File@{eos::hdf5::File}!create\_\-or\_\-open\_\-data\_\-set@{create\_\-or\_\-open\_\-data\_\-set}}
+\index{create\_\-or\_\-open\_\-data\_\-set@{create\_\-or\_\-open\_\-data\_\-set}!eos::hdf5::File@{eos::hdf5::File}}
+\subsubsection[{create\_\-or\_\-open\_\-data\_\-set}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\_\- $>$ {\bf DataSet}$<$T\_\-$>$ eos::hdf5::File::create\_\-or\_\-open\_\-data\_\-set (const std::string \& {\em name}, \/  const T\_\- \& {\em t})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classeos_1_1hdf5_1_1File_a01aeea71760b5ca862900658602b71bd}
+Open a data set by name. Create the data set if it doesn't exist.
+
+\begin{DoxyNote}{Note}
+The error handling of the HDF5 library is suppressed for the duration of the execution. Do not use this method when parallel access to a file is expected.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]Absolute name of the data set. \item[{\em t}]Instance of any of \hyperlink{classeos_1_1hdf5_1_1Scalar}{Scalar}, \hyperlink{classeos_1_1hdf5_1_1Array}{Array} or \hyperlink{classeos_1_1hdf5_1_1Composite}{Composite} that represents this data set's underlying data type. \end{DoxyParams}
+\hypertarget{classeos_1_1hdf5_1_1File_a907662df69926c556596304405846d7c}{
+\index{eos::hdf5::File@{eos::hdf5::File}!Exists@{Exists}}
+\index{Exists@{Exists}!eos::hdf5::File@{eos::hdf5::File}}
+\subsubsection[{Exists}]{\setlength{\rightskip}{0pt plus 5cm}static bool eos::hdf5::File::Exists (const std::string \& {\em filename})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1hdf5_1_1File_a907662df69926c556596304405846d7c}
+
+
+Access to file name. \hypertarget{classeos_1_1hdf5_1_1File_addf73185e4946dea33eb40f04c985439}{
+\index{eos::hdf5::File@{eos::hdf5::File}!group\_\-exists@{group\_\-exists}}
+\index{group\_\-exists@{group\_\-exists}!eos::hdf5::File@{eos::hdf5::File}}
+\subsubsection[{group\_\-exists}]{\setlength{\rightskip}{0pt plus 5cm}bool eos::hdf5::File::group\_\-exists (const std::string \& {\em name})}}
+\label{classeos_1_1hdf5_1_1File_addf73185e4946dea33eb40f04c985439}
+Copy all objects under source directory in this file to the destination file. If the destination directory is omitted, the source directory is recreated in the destination file. \hypertarget{classeos_1_1hdf5_1_1File_a3ae62d6317e16fab68dc7f345007ca59}{
+\index{eos::hdf5::File@{eos::hdf5::File}!name@{name}}
+\index{name@{name}!eos::hdf5::File@{eos::hdf5::File}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}const std::string\& eos::hdf5::File::name () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classeos_1_1hdf5_1_1File_a3ae62d6317e16fab68dc7f345007ca59}
+
+
+Access to file name. \hypertarget{classeos_1_1hdf5_1_1File_ab95523c1691b5c1bde956a13a04739fc}{
+\index{eos::hdf5::File@{eos::hdf5::File}!number\_\-of\_\-objects@{number\_\-of\_\-objects}}
+\index{number\_\-of\_\-objects@{number\_\-of\_\-objects}!eos::hdf5::File@{eos::hdf5::File}}
+\subsubsection[{number\_\-of\_\-objects}]{\setlength{\rightskip}{0pt plus 5cm}unsigned eos::hdf5::File::number\_\-of\_\-objects (const std::string \& {\em name})}}
+\label{classeos_1_1hdf5_1_1File_ab95523c1691b5c1bde956a13a04739fc}
+
+
+List how many objects, i.e. groups or data sets, are in a subdirectory. \hypertarget{classeos_1_1hdf5_1_1File_a2db8559898bd4f68d16a56760952c195}{
+\index{eos::hdf5::File@{eos::hdf5::File}!Open@{Open}}
+\index{Open@{Open}!eos::hdf5::File@{eos::hdf5::File}}
+\subsubsection[{Open}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf File} eos::hdf5::File::Open (const std::string \& {\em file\_\-name}, \/  unsigned {\em mode} = {\ttfamily H5F\_\-ACC\_\-RDONLY})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1hdf5_1_1File_a2db8559898bd4f68d16a56760952c195}
+Named constructor to open an existing file.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em file\_\-name}]\hyperlink{classeos_1_1hdf5_1_1File}{File} which shall be opened. \end{DoxyParams}
+\hypertarget{classeos_1_1hdf5_1_1File_ae5e5e823024ff7629788895eec1f33f2}{
+\index{eos::hdf5::File@{eos::hdf5::File}!open\_\-data\_\-set@{open\_\-data\_\-set}}
+\index{open\_\-data\_\-set@{open\_\-data\_\-set}!eos::hdf5::File@{eos::hdf5::File}}
+\subsubsection[{open\_\-data\_\-set}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\_\- $>$ {\bf DataSet}$<$T\_\-$>$ eos::hdf5::File::open\_\-data\_\-set (const std::string \& {\em name}, \/  const T\_\- \& {\em t})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classeos_1_1hdf5_1_1File_ae5e5e823024ff7629788895eec1f33f2}
+Open an existing data set by name.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]Absolute name of the data set. \item[{\em t}]Instance of any of \hyperlink{classeos_1_1hdf5_1_1Scalar}{Scalar}, \hyperlink{classeos_1_1hdf5_1_1Array}{Array} or \hyperlink{classeos_1_1hdf5_1_1Composite}{Composite} that represents this data set's underlying data type. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{hdf5_8hh}{hdf5.hh}\end{DoxyCompactItemize}

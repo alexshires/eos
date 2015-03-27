@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1LCDA" kind="struct" prot="public">
+    <compoundname>eos::LCDA</compoundname>
+    <includes refid="lcda_8hh" local="no">lcda.hh</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structeos_1_1LCDA_1a7ec9587e6a35f22b8b937494c0416307" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double eos::LCDA::evolve_gegenbauer_moment</definition>
+        <argsstring>(const double &amp;a_n_0, const unsigned &amp;n, const double &amp;eta, const QCD::BetaFunction &amp;beta)</argsstring>
+        <name>evolve_gegenbauer_moment</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a_n_0</declname>
+        </param>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>eta</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1QCD_1a1261bb4643fea3012beb0a9ea78b7dea" kindref="member">QCD::BetaFunction</ref> &amp;</type>
+          <declname>beta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Evolve the nth Gegenbauer moment a_n_0 from a scale mu_0 to a scale mu according to the LL RGE.</para><para>Calculation according to [BBL2006].</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a_n_0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Gegenbauer moment at the scale mu_0. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the Gegenbauer moment. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>eta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ratio alpha_s(mu)/alpha_s(mu_0). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>beta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The coefficients of the <ref refid="classeos_1_1QCD" kindref="compound">QCD</ref> beta function. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/lcda.hh" line="43"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Groups all functions related to LightCone Distribution Amplitudes (LCDAs). </para>    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/lcda.hh" line="32" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/lcda.hh" bodystart="31" bodyend="44"/>
+    <listofallmembers>
+      <member refid="structeos_1_1LCDA_1a7ec9587e6a35f22b8b937494c0416307" prot="public" virt="non-virtual"><scope>eos::LCDA</scope><name>evolve_gegenbauer_moment</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

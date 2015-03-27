@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1OneOfVisitorVisit" kind="struct" prot="public">
+    <compoundname>eos::OneOfVisitorVisit</compoundname>
+    <includes refid="one-of_8hh" local="no">one-of.hh</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>Type_</declname>
+        <defname>Type_</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structeos_1_1OneOfVisitorVisit_1a08f9e17fa9f510ba6171d6b191e76a9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void eos::OneOfVisitorVisit&lt; Type_ &gt;::visit</definition>
+        <argsstring>(Type_ &amp;)=0</argsstring>
+        <name>visit</name>
+        <param>
+          <type>Type_ &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" line="59"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" line="58" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" bodystart="57" bodyend="60"/>
+    <listofallmembers>
+      <member refid="structeos_1_1OneOfVisitorVisit_1a08f9e17fa9f510ba6171d6b191e76a9b" prot="public" virt="pure-virtual"><scope>eos::OneOfVisitorVisit</scope><name>visit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

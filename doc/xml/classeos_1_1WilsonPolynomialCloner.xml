@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1WilsonPolynomialCloner" kind="class" prot="public">
+    <compoundname>eos::WilsonPolynomialCloner</compoundname>
+    <includes refid="wilson-polynomial_8hh" local="no">wilson-polynomial.hh</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classeos_1_1WilsonPolynomialCloner_1a884830f71655db3e4e6c60a9f5983817" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref></type>
+        <definition>Parameters eos::WilsonPolynomialCloner::_parameters</definition>
+        <argsstring></argsstring>
+        <name>_parameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson-polynomial.hh" line="79" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson-polynomial.hh" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1WilsonPolynomialCloner_1a8e6b8a5026408945a15c9604d56fb19b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::WilsonPolynomialCloner::WilsonPolynomialCloner</definition>
+        <argsstring>(const Parameters &amp;parameters)</argsstring>
+        <name>WilsonPolynomialCloner</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson-polynomial.hh" line="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1WilsonPolynomialCloner_1a636e34f10bcf08e04d7e7afea3c0366c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1OneOf" kindref="compound">WilsonPolynomial</ref></type>
+        <definition>WilsonPolynomial eos::WilsonPolynomialCloner::visit</definition>
+        <argsstring>(const Constant &amp;c)</argsstring>
+        <name>visit</name>
+        <param>
+          <type>const Constant &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson-polynomial.hh" line="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1WilsonPolynomialCloner_1a17806441fa08134c7af096d4688499ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1OneOf" kindref="compound">WilsonPolynomial</ref></type>
+        <definition>WilsonPolynomial eos::WilsonPolynomialCloner::visit</definition>
+        <argsstring>(const Sum &amp;s)</argsstring>
+        <name>visit</name>
+        <param>
+          <type>const Sum &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson-polynomial.hh" line="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1WilsonPolynomialCloner_1a8bc46349f3e4d3329ab1cec99c4772a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1OneOf" kindref="compound">WilsonPolynomial</ref></type>
+        <definition>WilsonPolynomial eos::WilsonPolynomialCloner::visit</definition>
+        <argsstring>(const Product &amp;p)</argsstring>
+        <name>visit</name>
+        <param>
+          <type>const Product &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson-polynomial.hh" line="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1WilsonPolynomialCloner_1a6ee57d202b84e984bc7cefcfe9934382" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1OneOf" kindref="compound">WilsonPolynomial</ref></type>
+        <definition>WilsonPolynomial eos::WilsonPolynomialCloner::visit</definition>
+        <argsstring>(const Sine &amp;s)</argsstring>
+        <name>visit</name>
+        <param>
+          <type>const Sine &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson-polynomial.hh" line="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1WilsonPolynomialCloner_1aab4e3ed7514915cd2957dfe5b7b71cc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1OneOf" kindref="compound">WilsonPolynomial</ref></type>
+        <definition>WilsonPolynomial eos::WilsonPolynomialCloner::visit</definition>
+        <argsstring>(const Cosine &amp;s)</argsstring>
+        <name>visit</name>
+        <param>
+          <type>const Cosine &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson-polynomial.hh" line="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1WilsonPolynomialCloner_1adb3fc646a9af1e6ed77846378cce5843" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1OneOf" kindref="compound">WilsonPolynomial</ref></type>
+        <definition>WilsonPolynomial eos::WilsonPolynomialCloner::visit</definition>
+        <argsstring>(const Parameter &amp;p)</argsstring>
+        <name>visit</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson-polynomial.hh" line="89"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1091">
+        <label>eos::PrivateImplementationPattern&lt; Parameters &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="1089">
+        <label>eos::WilsonPolynomialCloner</label>
+        <link refid="classeos_1_1WilsonPolynomialCloner"/>
+        <childnode refid="1090" relation="usage">
+          <edgelabel>_parameters</edgelabel>
+        </childnode>
+      </node>
+      <node id="1090">
+        <label>eos::Parameters</label>
+        <link refid="classeos_1_1Parameters"/>
+        <childnode refid="1091" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson-polynomial.hh" line="77" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson-polynomial.hh" bodystart="76" bodyend="90"/>
+    <listofallmembers>
+      <member refid="classeos_1_1WilsonPolynomialCloner_1a884830f71655db3e4e6c60a9f5983817" prot="private" virt="non-virtual"><scope>eos::WilsonPolynomialCloner</scope><name>_parameters</name></member>
+      <member refid="classeos_1_1WilsonPolynomialCloner_1a636e34f10bcf08e04d7e7afea3c0366c" prot="public" virt="non-virtual"><scope>eos::WilsonPolynomialCloner</scope><name>visit</name></member>
+      <member refid="classeos_1_1WilsonPolynomialCloner_1a17806441fa08134c7af096d4688499ab" prot="public" virt="non-virtual"><scope>eos::WilsonPolynomialCloner</scope><name>visit</name></member>
+      <member refid="classeos_1_1WilsonPolynomialCloner_1a8bc46349f3e4d3329ab1cec99c4772a6" prot="public" virt="non-virtual"><scope>eos::WilsonPolynomialCloner</scope><name>visit</name></member>
+      <member refid="classeos_1_1WilsonPolynomialCloner_1a6ee57d202b84e984bc7cefcfe9934382" prot="public" virt="non-virtual"><scope>eos::WilsonPolynomialCloner</scope><name>visit</name></member>
+      <member refid="classeos_1_1WilsonPolynomialCloner_1aab4e3ed7514915cd2957dfe5b7b71cc1" prot="public" virt="non-virtual"><scope>eos::WilsonPolynomialCloner</scope><name>visit</name></member>
+      <member refid="classeos_1_1WilsonPolynomialCloner_1adb3fc646a9af1e6ed77846378cce5843" prot="public" virt="non-virtual"><scope>eos::WilsonPolynomialCloner</scope><name>visit</name></member>
+      <member refid="classeos_1_1WilsonPolynomialCloner_1a8e6b8a5026408945a15c9604d56fb19b" prot="public" virt="non-virtual"><scope>eos::WilsonPolynomialCloner</scope><name>WilsonPolynomialCloner</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

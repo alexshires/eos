@@ -1,0 +1,344 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1Cluster" kind="class" prot="public">
+    <compoundname>eos::Cluster</compoundname>
+    <basecompoundref refid="classeos_1_1PrivateImplementationPattern" prot="public" virt="non-virtual">eos::PrivateImplementationPattern&lt; Cluster &gt;</basecompoundref>
+    <includes refid="cluster_8hh" local="no">cluster.hh</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classeos_1_1Cluster_1a0c315d367de4288803597a0f23ee4168" prot="public" static="no">
+        <type>std::function&lt; double(const std::vector&lt; double &gt; &amp;, const std::vector&lt; double &gt; &amp;, const unsigned &amp;)&gt;</type>
+        <definition>typedef std::function&lt;double (const std::vector&lt;double&gt; &amp;, const std::vector&lt;double&gt; &amp;, const unsigned &amp;)&gt; eos::Cluster::RValueFunction</definition>
+        <argsstring></argsstring>
+        <name>RValueFunction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/cluster.hh" line="16" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/cluster.hh" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classeos_1_1Cluster_1ab60d3bac87825b6181c4c6bb1f04d55a" prot="public" static="no">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator</ref>&lt; IteratorTag, <ref refid="namespaceeos_1ac9f30fde04446cfabdd69d4b5b5d3c5a" kindref="member">HistoryPtr</ref> &gt;</type>
+        <definition>typedef WrappedForwardIterator&lt;IteratorTag, HistoryPtr&gt; eos::Cluster::Iterator</definition>
+        <argsstring></argsstring>
+        <name>Iterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/cluster.hh" line="67" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/cluster.hh" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classeos_1_1Cluster_1a39df87b5549e245b185b26f94c9d336b" prot="public" static="no">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator</ref>&lt; IteratorTag, unsigned &gt;</type>
+        <definition>typedef WrappedForwardIterator&lt;IteratorTag, unsigned&gt; eos::Cluster::IndexIterator</definition>
+        <argsstring></argsstring>
+        <name>IndexIterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/cluster.hh" line="72" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/cluster.hh" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1Cluster_1a0f1f2be34f11be1bba6426ba20ebf999" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::Cluster::Cluster</definition>
+        <argsstring>(const RValueFunction &amp;, const double &amp;max_rvalue, const HistoryPtr &amp;initial_chain, const unsigned &amp;index, const double &amp;skip_initial)</argsstring>
+        <name>Cluster</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Cluster_1a0c315d367de4288803597a0f23ee4168" kindref="member">RValueFunction</ref> &amp;</type>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>max_rvalue</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceeos_1ac9f30fde04446cfabdd69d4b5b5d3c5a" kindref="member">HistoryPtr</ref> &amp;</type>
+          <declname>initial_chain</declname>
+        </param>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>skip_initial</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Construct a cluster, which checks if two chains overlap by using the R-value criterion. With only one chain, it naturally overlaps with itself.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rvalue_function</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Strict or relaxed version </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_rvalue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>initial_chain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skip_initial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Should be in [0,1]. The first portion of the chain&apos;s history is ignored when computing the R-value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/cluster.hh" line="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Cluster_1a7bbc57a377c4d638830c3f4768c0b1b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::Cluster::~Cluster</definition>
+        <argsstring>()</argsstring>
+        <name>~Cluster</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/cluster.hh" line="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Cluster_1afed737aab746ba8e3c8fefcf32ea185d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::Cluster::add</definition>
+        <argsstring>(const HistoryPtr &amp;chain, const unsigned &amp;index)</argsstring>
+        <name>add</name>
+        <param>
+          <type>const <ref refid="namespaceeos_1ac9f30fde04446cfabdd69d4b5b5d3c5a" kindref="member">HistoryPtr</ref> &amp;</type>
+          <declname>chain</declname>
+        </param>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a chain (its history) to a cluster. Record its index. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/cluster.hh" line="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Cluster_1a9b2fc51a3435f161f359f6a11f02dacb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; eos::Cluster::mean</definition>
+        <argsstring>() const </argsstring>
+        <name>mean</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate the cluster mean from the means of individual chains.</para><para><simplesect kind="note"><para>Assumes that all chains have equal length. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/cluster.hh" line="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Cluster_1a12f80fe40193349914094f49fbdc18a2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::vector&lt; std::vector&lt; double &gt; &gt; &amp;</type>
+        <definition>const std::vector&lt;std::vector&lt;double&gt; &gt;&amp; eos::Cluster::means</definition>
+        <argsstring>() const </argsstring>
+        <name>means</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/cluster.hh" line="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Cluster_1a16f6b0f61e014b2d89ca532d0bc04cf1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::vector&lt; std::vector&lt; double &gt; &gt; &amp;</type>
+        <definition>const std::vector&lt;std::vector&lt;double&gt; &gt;&amp; eos::Cluster::variances</definition>
+        <argsstring>() const </argsstring>
+        <name>variances</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/cluster.hh" line="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Cluster_1a944a35443f5bfa64317c843c9733d84e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool eos::Cluster::overlaps</definition>
+        <argsstring>(const HistoryPtr &amp;chain) const </argsstring>
+        <name>overlaps</name>
+        <param>
+          <type>const <ref refid="namespaceeos_1ac9f30fde04446cfabdd69d4b5b5d3c5a" kindref="member">HistoryPtr</ref> &amp;</type>
+          <declname>chain</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if chain overlaps with this cluster. Internally, use the history of the chain, but to allow for burn-in, the first iterations can be skipped when computing means and variances.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>chain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skip_initial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A percentage, should be in range [0,1] </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/cluster.hh" line="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Cluster_1a2906631fc892844e19b661d1484a6a71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::Cluster::parameter_indices</definition>
+        <argsstring>(const std::vector&lt; unsigned &gt; &amp;indices)</argsstring>
+        <name>parameter_indices</name>
+        <param>
+          <type>const std::vector&lt; unsigned &gt; &amp;</type>
+          <declname>indices</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set indices of parameters whose R-value ought to be checked. By default, all dimensions are checked. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/cluster.hh" line="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Cluster_1a07f3b9298b4ea870313f62cce1b9807c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator eos::Cluster::begin</definition>
+        <argsstring>() const </argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/cluster.hh" line="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Cluster_1a7269794a3f029fb51e08ae51faf5e67f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator eos::Cluster::end</definition>
+        <argsstring>() const </argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/cluster.hh" line="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Cluster_1a81ba073f1dc0d91e0fd0b3060f6cd12d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">IndexIterator</ref></type>
+        <definition>IndexIterator eos::Cluster::begin_indices</definition>
+        <argsstring>() const </argsstring>
+        <name>begin_indices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/cluster.hh" line="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Cluster_1a346a8e945ea0be679c9eb372e589619b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">IndexIterator</ref></type>
+        <definition>IndexIterator eos::Cluster::end_indices</definition>
+        <argsstring>() const </argsstring>
+        <name>end_indices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/cluster.hh" line="74"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="263">
+        <label>eos::Cluster</label>
+        <link refid="classeos_1_1Cluster"/>
+        <childnode refid="264" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="264">
+        <label>eos::PrivateImplementationPattern&lt; Cluster &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="265">
+        <label>eos::Cluster</label>
+        <link refid="classeos_1_1Cluster"/>
+        <childnode refid="266" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="266">
+        <label>eos::PrivateImplementationPattern&lt; Cluster &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/cluster.hh" line="14" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/cluster.hh" bodystart="12" bodyend="75"/>
+    <listofallmembers>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a232940e78b26c6ed4f97196f831c69c9" prot="protected" virt="non-virtual"><scope>eos::Cluster</scope><name>_imp</name></member>
+      <member refid="classeos_1_1Cluster_1afed737aab746ba8e3c8fefcf32ea185d" prot="public" virt="non-virtual"><scope>eos::Cluster</scope><name>add</name></member>
+      <member refid="classeos_1_1Cluster_1a07f3b9298b4ea870313f62cce1b9807c" prot="public" virt="non-virtual"><scope>eos::Cluster</scope><name>begin</name></member>
+      <member refid="classeos_1_1Cluster_1a81ba073f1dc0d91e0fd0b3060f6cd12d" prot="public" virt="non-virtual"><scope>eos::Cluster</scope><name>begin_indices</name></member>
+      <member refid="classeos_1_1Cluster_1a0f1f2be34f11be1bba6426ba20ebf999" prot="public" virt="non-virtual"><scope>eos::Cluster</scope><name>Cluster</name></member>
+      <member refid="classeos_1_1Cluster_1a7269794a3f029fb51e08ae51faf5e67f" prot="public" virt="non-virtual"><scope>eos::Cluster</scope><name>end</name></member>
+      <member refid="classeos_1_1Cluster_1a346a8e945ea0be679c9eb372e589619b" prot="public" virt="non-virtual"><scope>eos::Cluster</scope><name>end_indices</name></member>
+      <member refid="classeos_1_1Cluster_1a39df87b5549e245b185b26f94c9d336b" prot="public" virt="non-virtual"><scope>eos::Cluster</scope><name>IndexIterator</name></member>
+      <member refid="classeos_1_1Cluster_1ab60d3bac87825b6181c4c6bb1f04d55a" prot="public" virt="non-virtual"><scope>eos::Cluster</scope><name>Iterator</name></member>
+      <member refid="classeos_1_1Cluster_1a9b2fc51a3435f161f359f6a11f02dacb" prot="public" virt="non-virtual"><scope>eos::Cluster</scope><name>mean</name></member>
+      <member refid="classeos_1_1Cluster_1a12f80fe40193349914094f49fbdc18a2" prot="public" virt="non-virtual"><scope>eos::Cluster</scope><name>means</name></member>
+      <member refid="classeos_1_1Cluster_1a944a35443f5bfa64317c843c9733d84e" prot="public" virt="non-virtual"><scope>eos::Cluster</scope><name>overlaps</name></member>
+      <member refid="classeos_1_1Cluster_1a2906631fc892844e19b661d1484a6a71" prot="public" virt="non-virtual"><scope>eos::Cluster</scope><name>parameter_indices</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a3e3d5f4a565256a1dda6c234b051b2f2" prot="public" virt="non-virtual"><scope>eos::Cluster</scope><name>PrivateImplementationPattern</name></member>
+      <member refid="classeos_1_1Cluster_1a0c315d367de4288803597a0f23ee4168" prot="public" virt="non-virtual"><scope>eos::Cluster</scope><name>RValueFunction</name></member>
+      <member refid="classeos_1_1Cluster_1a16f6b0f61e014b2d89ca532d0bc04cf1" prot="public" virt="non-virtual"><scope>eos::Cluster</scope><name>variances</name></member>
+      <member refid="classeos_1_1Cluster_1a7bbc57a377c4d638830c3f4768c0b1b7" prot="public" virt="non-virtual"><scope>eos::Cluster</scope><name>~Cluster</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1acf46ec2739c3b0ec9702b9428475876d" prot="public" virt="non-virtual"><scope>eos::Cluster</scope><name>~PrivateImplementationPattern</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

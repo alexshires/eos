@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1SelectOneOfType_3_01Want___00_01Try___00_01Rest___8_8_8_4" kind="struct" prot="public">
+    <compoundname>eos::SelectOneOfType&lt; Want_, Try_, Rest_...&gt;</compoundname>
+    <includes refid="one-of_8hh" local="no">one-of.hh</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Want_</type>
+      </param>
+      <param>
+        <type>typename Try_</type>
+      </param>
+      <param>
+        <type>typename...</type>
+        <declname>Rest_</declname>
+        <defname>Rest_</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structeos_1_1SelectOneOfType_3_01Want___00_01Try___00_01Rest___8_8_8_4_1a740264f972731bf06d91d7ced803db0a" prot="public" static="no">
+        <type>std::conditional&lt; std::is_same&lt; Want_, Try_ &gt;::value, Try_, typename SelectOneOfType&lt; Want_, Rest_...&gt;::<ref refid="structeos_1_1SelectOneOfType_3_01Want___00_01Try___00_01Rest___8_8_8_4_1a740264f972731bf06d91d7ced803db0a" kindref="member">Type</ref> &gt;::type</type>
+        <definition>typedef std::conditional&lt; std::is_same&lt;Want_, Try_&gt;::value, Try_, typename SelectOneOfType&lt;Want_, Rest_ ...&gt;::Type &gt;::type eos::SelectOneOfType&lt; Want_, Try_, Rest_...&gt;::Type</definition>
+        <argsstring></argsstring>
+        <name>Type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" line="52" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" line="47" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" bodystart="46" bodyend="53"/>
+    <listofallmembers>
+      <member refid="structeos_1_1SelectOneOfType_3_01Want___00_01Try___00_01Rest___8_8_8_4_1a740264f972731bf06d91d7ced803db0a" prot="public" virt="non-virtual"><scope>eos::SelectOneOfType&lt; Want_, Try_, Rest_...&gt;</scope><name>Type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

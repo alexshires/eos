@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="namespaceeos_1_1btovll" kind="namespace">
+    <compoundname>eos::btovll</compoundname>
+    <innerclass refid="structeos_1_1btovll_1_1Amplitudes" prot="public">eos::btovll::Amplitudes</innerclass>
+    <innerclass refid="structeos_1_1btovll_1_1AngularCoefficients" prot="public">eos::btovll::AngularCoefficients</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceeos_1_1btovll_1af4a61503514b02cdc2239f33915ac237" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structeos_1_1btovll_1_1AngularCoefficients" kindref="compound">AngularCoefficients</ref></type>
+        <definition>AngularCoefficients eos::btovll::array_to_angular_coefficients</definition>
+        <argsstring>(const std::array&lt; double, 12 &gt; &amp;arr)</argsstring>
+        <name>array_to_angular_coefficients</name>
+        <param>
+          <type>const std::array&lt; double, 12 &gt; &amp;</type>
+          <declname>arr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" line="53" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" bodystart="52" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1_1btovll_1a7cdeae9d6d5f6d7b7df686f4ec9358c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::btovll::decay_width</definition>
+        <argsstring>(const AngularCoefficients &amp;a_c)</argsstring>
+        <name>decay_width</name>
+        <param>
+          <type>const <ref refid="structeos_1_1btovll_1_1AngularCoefficients" kindref="compound">AngularCoefficients</ref> &amp;</type>
+          <declname>a_c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" line="61" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" bodystart="60" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceeos_1_1btovll_1ab3d297e4fc263252e595a1447427afd9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::array&lt; double, 12 &gt;</type>
+        <definition>std::array&lt;double, 12&gt; eos::btovll::angular_coefficients_array</definition>
+        <argsstring>(const Amplitudes &amp;amplitudes, const double &amp;s, const double &amp;m_l)</argsstring>
+        <name>angular_coefficients_array</name>
+        <param>
+          <type>const <ref refid="structeos_1_1btovll_1_1Amplitudes" kindref="compound">Amplitudes</ref> &amp;</type>
+          <declname>amplitudes</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>m_l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" line="67" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" bodystart="66" bodyend="114"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/exclusive-b-to-s-dilepton.hh" line="30"/>
+  </compounddef>
+</doxygen>

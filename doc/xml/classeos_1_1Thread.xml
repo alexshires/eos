@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1Thread" kind="class" prot="public">
+    <compoundname>eos::Thread</compoundname>
+    <basecompoundref refid="classeos_1_1PrivateImplementationPattern" prot="public" virt="non-virtual">eos::PrivateImplementationPattern&lt; Thread &gt;</basecompoundref>
+    <includes refid="thread_8hh" local="no">thread.hh</includes>
+      <sectiondef kind="user-defined">
+      <header>Constructor and destructor</header>
+      <description><para><anchor id="_1amgrpe7842d077f4197a0a949b269f1500ffe"/> </para></description>
+      <memberdef kind="function" id="classeos_1_1Thread_1ad8d7a9a4d2275f21a42b80fbad67b172" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::Thread::Thread</definition>
+        <argsstring>(const Function &amp;function)</argsstring>
+        <name>Thread</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Thread_1a5056834a1e9dce530abf5adb90bb13ba" kindref="member">Function</ref> &amp;</type>
+          <declname>function</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>function</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A Function object that wraps the thread&apos;s main function. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/thread.hh" line="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1Thread_1af56391a1c255e3cc9cf754917776af39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::Thread::~Thread</definition>
+        <argsstring>()</argsstring>
+        <name>~Thread</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/thread.hh" line="59"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classeos_1_1Thread_1a5056834a1e9dce530abf5adb90bb13ba" prot="public" static="no">
+        <type>std::function&lt; void()&gt;</type>
+        <definition>typedef std::function&lt;void ()&gt; eos::Thread::Function</definition>
+        <argsstring></argsstring>
+        <name>Function</name>
+        <briefdescription>
+<para>Our function type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/thread.hh" line="46" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/thread.hh" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1Thread_1a4badce4c44db821aaffa5ce06ad1f697" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool eos::Thread::completed</definition>
+        <argsstring>() const </argsstring>
+        <name>completed</name>
+        <briefdescription>
+<para>Return wether we have yet completed executing our function. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/thread.hh" line="64"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classeos_1_1Thread" kindref="compound">Thread</ref> uses TR1&apos;s function wrapper to execute a given function in a separate thread.</para><para><ref refid="classeos_1_1Thread" kindref="compound">Thread</ref> uses POSIX threads internally and allows minimal synchronisation. <ref refid="classeos_1_1Thread" kindref="compound">Thread</ref> guarantees that its function is finalised after destruction. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="978">
+        <label>eos::PrivateImplementationPattern&lt; Thread &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="977">
+        <label>eos::Thread</label>
+        <link refid="classeos_1_1Thread"/>
+        <childnode refid="978" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="980">
+        <label>eos::PrivateImplementationPattern&lt; Thread &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="979">
+        <label>eos::Thread</label>
+        <link refid="classeos_1_1Thread"/>
+        <childnode refid="980" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/thread.hh" line="43" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/thread.hh" bodystart="40" bodyend="65"/>
+    <listofallmembers>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a232940e78b26c6ed4f97196f831c69c9" prot="protected" virt="non-virtual"><scope>eos::Thread</scope><name>_imp</name></member>
+      <member refid="classeos_1_1Thread_1a4badce4c44db821aaffa5ce06ad1f697" prot="public" virt="non-virtual"><scope>eos::Thread</scope><name>completed</name></member>
+      <member refid="classeos_1_1Thread_1a5056834a1e9dce530abf5adb90bb13ba" prot="public" virt="non-virtual"><scope>eos::Thread</scope><name>Function</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a3e3d5f4a565256a1dda6c234b051b2f2" prot="public" virt="non-virtual"><scope>eos::Thread</scope><name>PrivateImplementationPattern</name></member>
+      <member refid="classeos_1_1Thread_1ad8d7a9a4d2275f21a42b80fbad67b172" prot="public" virt="non-virtual"><scope>eos::Thread</scope><name>Thread</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1acf46ec2739c3b0ec9702b9428475876d" prot="public" virt="non-virtual"><scope>eos::Thread</scope><name>~PrivateImplementationPattern</name></member>
+      <member refid="classeos_1_1Thread_1af56391a1c255e3cc9cf754917776af39" prot="public" virt="non-virtual"><scope>eos::Thread</scope><name>~Thread</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,175 @@
+\hypertarget{parameters_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/parameters.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2010, 2011, 2012 Danny van Dyk}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_PARAMETERS\_HH}
+\hypertarget{parameters_8hh_source_l00021}{}\hyperlink{parameters_8hh_a59b39df17f16760b49fb66b7dd5bee9c}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_PARAMETERS\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{preprocessor}{#include <\hyperlink{exception_8hh}{eos/utils/exception.hh}>}
+00024 \textcolor{preprocessor}{#include <\hyperlink{mutable_8hh}{eos/utils/mutable.hh}>}
+00025 \textcolor{preprocessor}{#include <\hyperlink{parameters-fwd_8hh}{eos/utils/parameters-fwd.hh}>}
+00026 \textcolor{preprocessor}{#include <\hyperlink{private__implementation__pattern_8hh}{eos/utils/private_implementation_pattern.hh}>}
+00027 \textcolor{preprocessor}{#include <\hyperlink{random__number__generator_8hh}{eos/utils/random_number_generator.hh}>}
+00028 \textcolor{preprocessor}{#include <\hyperlink{wrapped__forward__iterator_8hh}{eos/utils/wrapped_forward_iterator.hh}>}
+00029 
+00030 \textcolor{preprocessor}{#include <set>}
+00031 
+00032 \textcolor{keyword}{namespace }eos
+00033 \{
+\hypertarget{parameters_8hh_source_l00038}{}\hyperlink{structeos_1_1UnknownParameterError}{00038}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1UnknownParameterError}{UnknownParameterError} :
+00039         \textcolor{keyword}{public} \hyperlink{classeos_1_1Exception}{Exception}
+00040     \{
+00041         \hyperlink{structeos_1_1UnknownParameterError_a9c475df66b9e6316e6a1a2a93c86e4a3}{UnknownParameterError}(\textcolor{keyword}{const} std::string & variable) \textcolor{keywordflow}{throw} ();
+00042     \};
+00043 
+\hypertarget{parameters_8hh_source_l00051}{}\hyperlink{classeos_1_1Parameters}{00051}     \textcolor{keyword}{class }\hyperlink{classeos_1_1Parameters}{Parameters} :
+00052         \textcolor{keyword}{public} \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern}<Parameters>
+00053     \{
+00054         \textcolor{keyword}{private}:
+00057             \textcolor{keyword}{struct }Data;
+00059 
+00062 
+00070             \hyperlink{classeos_1_1Parameters}{Parameters}(\hyperlink{classeos_1_1Parameters_afdc1ae1c3b0dbac4fdf6769d5f8e1fbf}{Implementation<Parameters>} *);
+00072 
+00073         \textcolor{keyword}{public}:
+\hypertarget{parameters_8hh_source_l00074}{}\hyperlink{classeos_1_1Parameters_ac1c4326186d13e3c1f20eb8f39a7b5a2}{00074}             \textcolor{keyword}{friend} \textcolor{keyword}{class }\hyperlink{classeos_1_1Parameter}{Parameter};
+\hypertarget{parameters_8hh_source_l00075}{}\hyperlink{classeos_1_1Parameters_a321bcfc7467eb8a305a7e15f232efa38}{00075}             \textcolor{keyword}{friend} \textcolor{keyword}{struct }Implementation<\hyperlink{classeos_1_1Parameter}{Parameter}>;
+\hypertarget{parameters_8hh_source_l00076}{}\hyperlink{classeos_1_1Parameters_afdc1ae1c3b0dbac4fdf6769d5f8e1fbf}{00076}             \textcolor{keyword}{friend} \textcolor{keyword}{struct }Implementation<\hyperlink{classeos_1_1Parameters}{Parameters}>;
+00077 
+00080 
+00085             \textcolor{keyword}{static} \hyperlink{classeos_1_1Parameters}{Parameters} \hyperlink{classeos_1_1Parameters_a1fa30b2210827623e6bf9f3ac4d2fd94}{Defaults}();
+00086 
+00087             \hyperlink{classeos_1_1Parameters}{Parameters} \hyperlink{classeos_1_1Parameters_a273f5bad065bc47b62981734a2e3576e}{clone}() \textcolor{keyword}{const};
+00091             \hyperlink{classeos_1_1Parameters_aa1f509653fa20a2599a47706042685f1}{~Parameters}();
+00093 
+\hypertarget{parameters_8hh_source_l00096}{}\hyperlink{classeos_1_1Parameters_ad4378a4b3c462f8aa122b3484bce1b4f}{00096}             \textcolor{keyword}{struct }IteratorTag;
+00097             \textcolor{keyword}{typedef} \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator<IteratorTag, Parameter>} \hyperlink{classeos_1_1WrappedForwardIterator}{Iterator};
+00098 
+00099             \hyperlink{classeos_1_1WrappedForwardIterator}{Iterator} \hyperlink{classeos_1_1Parameters_aeef723f121d249fad9caa45cae111a90}{begin}() \textcolor{keyword}{const};
+00100             \hyperlink{classeos_1_1WrappedForwardIterator}{Iterator} \hyperlink{classeos_1_1Parameters_a64f0ae769980d0945433023678f919dd}{end}() \textcolor{keyword}{const};
+00102 
+00105 
+00111             \hyperlink{classeos_1_1Parameter}{Parameter} \hyperlink{classeos_1_1Parameters_adfc224ca93af9276c55c756f6e7e2e18}{declare}(\textcolor{keyword}{const} std::string & name, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & value = 0.
+      0);
+00112 
+00119             \textcolor{keywordtype}{void} \textcolor{keyword}{set}(\textcolor{keyword}{const} std::string & name, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & value);
+00120 
+00126             \hyperlink{classeos_1_1Parameter}{Parameter} \hyperlink{classeos_1_1Parameters_acf41f953495892d14e4c49e248c60f43}{operator[] }(\textcolor{keyword}{const} std::string & name) \textcolor{keyword}{const};
+00127 
+00133             \hyperlink{classeos_1_1Parameter}{Parameter} \hyperlink{classeos_1_1Parameters_acf41f953495892d14e4c49e248c60f43}{operator[] }(\textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & \textcolor{keywordtype}{id}) \textcolor{keyword}{const};
+00135 
+00142             \textcolor{keywordtype}{bool} \hyperlink{classeos_1_1Parameters_a95091e66b113b826bc5866c52ecdb7c1}{operator!= }(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & rhs) \textcolor{keyword}{const};
+00143     \};
+00144 
+\hypertarget{parameters_8hh_source_l00148}{}\hyperlink{classeos_1_1Parameter}{00148}     \textcolor{keyword}{class }\hyperlink{classeos_1_1Parameter}{Parameter} :
+00149         \textcolor{keyword}{public} \hyperlink{classeos_1_1Mutable}{Mutable}
+00150     \{
+00151         \textcolor{keyword}{private}:
+00152             \textcolor{keyword}{struct }Data;
+00153             \textcolor{keyword}{struct }Template;
+00154 
+00157             std::shared\_ptr<Parameters::Data> \_parameters\_data;
+00158 
+00159             \textcolor{keywordtype}{unsigned} \_index;
+00161 
+00164             \hyperlink{classeos_1_1Parameter}{Parameter}(\textcolor{keyword}{const} std::shared\_ptr<Parameters::Data> & imp, \textcolor{keywordtype}{unsigned} ind
+      ex);
+00166 
+00167         \textcolor{keyword}{public}:
+\hypertarget{parameters_8hh_source_l00168}{}\hyperlink{classeos_1_1Parameter_afaebbd8ef883afa59f01fa3d4475e6a2}{00168}             \textcolor{keyword}{friend} \textcolor{keyword}{class }\hyperlink{classeos_1_1Parameters}{Parameters};
+\hypertarget{parameters_8hh_source_l00169}{}\hyperlink{classeos_1_1Parameter_afdc1ae1c3b0dbac4fdf6769d5f8e1fbf}{00169}             \textcolor{keyword}{friend} \textcolor{keyword}{struct }Implementation<\hyperlink{classeos_1_1Parameters}{Parameters}>;
+00170 
+\hypertarget{parameters_8hh_source_l00174}{}\hyperlink{classeos_1_1Parameter_a065f55e66b2128cc5f14339e676d833a}{00174}             \textcolor{keyword}{typedef} \textcolor{keywordtype}{unsigned} \hyperlink{classeos_1_1Parameter_a065f55e66b2128cc5f14339e676d833a}{Id};
+00175 
+00179             \hyperlink{classeos_1_1Parameter}{Parameter}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameter}{Parameter} & other);
+00180 
+00182             \hyperlink{classeos_1_1Parameter_ac5e6dd06494095cffe292e4b4dc200c8}{~Parameter}();
+00183 
+00185             \hyperlink{namespaceeos_a0ab446e6a801d96a1ee83bb7c070686f}{MutablePtr} \hyperlink{classeos_1_1Parameter_a8a643807f254a9601349c779cf6211dc}{clone}() \textcolor{keyword}{const};
+00187 
+00191             \textcolor{keyword}{virtual} \hyperlink{classeos_1_1Parameter_ad2dc69fe74e308328dc8a1d901c916ec}{operator double }() \textcolor{keyword}{const};
+00192 
+00194             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \hyperlink{classeos_1_1Parameter_ada58e0206d67777a79bdd2bc0c806600}{operator() }() \textcolor{keyword}{const};
+00195 
+00197             \textcolor{keyword}{virtual} \textcolor{keyword}{const} \hyperlink{classeos_1_1Parameter}{Parameter} & \hyperlink{classeos_1_1Parameter_aff29f9acdc90019e76239f6c81b4014a}{operator= }(\textcolor{keyword}{const} \textcolor{keywordtype}{double} &);
+00199 
+00203             \textcolor{keyword}{virtual} \textcolor{keyword}{const} std::string & \hyperlink{classeos_1_1Parameter_a86f581847722de0445ae65065940fd13}{name}() \textcolor{keyword}{const};
+00204 
+00206             \textcolor{keyword}{const} \textcolor{keywordtype}{double} & \hyperlink{classeos_1_1Parameter_a1c0a1ce478f2275d1259483fa919ec60}{central}() \textcolor{keyword}{const};
+00207 
+00209             \textcolor{keyword}{const} \textcolor{keywordtype}{double} & \hyperlink{classeos_1_1Parameter_ac91f5116794dea955ad7ac20e552b730}{max}() \textcolor{keyword}{const};
+00210 
+00212             \textcolor{keyword}{const} \textcolor{keywordtype}{double} & \hyperlink{classeos_1_1Parameter_a37672fa03693d97cdafb23e35fe0e83b}{min}() \textcolor{keyword}{const};
+00213 
+00215             \hyperlink{classeos_1_1Parameter_a065f55e66b2128cc5f14339e676d833a}{Id} \hyperlink{classeos_1_1Parameter_a1cea65462fdafeb7329f6d87fd6e42b4}{id}() \textcolor{keyword}{const};
+00217     \};
+00218 
+\hypertarget{parameters_8hh_source_l00222}{}\hyperlink{classeos_1_1ParameterUser}{00222}     \textcolor{keyword}{class }\hyperlink{classeos_1_1ParameterUser}{ParameterUser}
+00223     \{
+00224         \textcolor{keyword}{protected}:
+\hypertarget{parameters_8hh_source_l00225}{}\hyperlink{classeos_1_1ParameterUser_aa3a0285297e16cf2a5830df1f9bb2f4b}{00225}             std::set<Parameter::Id> \hyperlink{classeos_1_1ParameterUser_aa3a0285297e16cf2a5830df1f9bb2f4b}{_ids};
+00226 
+00227         \textcolor{keyword}{public}:
+\hypertarget{parameters_8hh_source_l00230}{}\hyperlink{classeos_1_1ParameterUser_a7105631bbcb4b2492e6377b2b69f5b0f}{00230}             \textcolor{keyword}{struct }ConstIteratorTag;
+00231             \textcolor{keyword}{typedef} 
+      \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator<ConstIteratorTag, const Parameter::Id>} \hyperlink{classeos_1_1WrappedForwardIterator}{ConstIterator};
+00232 
+00233             \hyperlink{classeos_1_1WrappedForwardIterator}{ConstIterator} \hyperlink{classeos_1_1ParameterUser_a9cd569207063cd2a8f807c4e1203a5d4}{begin}() \textcolor{keyword}{const};
+00234             \hyperlink{classeos_1_1WrappedForwardIterator}{ConstIterator} \hyperlink{classeos_1_1ParameterUser_a5813c886f3fd3f074cc02a53fc9e0790}{end}() \textcolor{keyword}{const};
+00236 
+00239 
+00244             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1ParameterUser_ad91a901e589653272482bded7e453c70}{uses}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameter_a065f55e66b2128cc5f14339e676d833a}{Parameter::Id} & \textcolor{keywordtype}{id});
+00245 
+00251             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1ParameterUser_ad91a901e589653272482bded7e453c70}{uses}(\textcolor{keyword}{const} \hyperlink{classeos_1_1ParameterUser}{ParameterUser} & user);
+00253     \};
+00254 
+\hypertarget{parameters_8hh_source_l00258}{}\hyperlink{classeos_1_1UsedParameter}{00258}     \textcolor{keyword}{class }\hyperlink{classeos_1_1UsedParameter}{UsedParameter} :
+00259         \textcolor{keyword}{public} \hyperlink{classeos_1_1Parameter}{Parameter}
+00260     \{
+00261         \textcolor{keyword}{public}:
+00270             \hyperlink{classeos_1_1UsedParameter_a3c995a62b3f94be0e1c02edc9c670e03}{UsedParameter}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameter}{Parameter} & parameter, \hyperlink{classeos_1_1ParameterUser}{ParameterUser} & user);
+00271     \};
+00272 
+\hypertarget{parameters_8hh_source_l00273}{}\hyperlink{structeos_1_1ParameterDescription}{00273}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1ParameterDescription}{ParameterDescription}
+00274     \{
+\hypertarget{parameters_8hh_source_l00275}{}\hyperlink{structeos_1_1ParameterDescription_a2d531fff965fd9c1c833213a229c5f10}{00275}         \hyperlink{classeos_1_1Parameter}{Parameter} \hyperlink{structeos_1_1ParameterDescription_a2d531fff965fd9c1c833213a229c5f10}{parameter};
+00276 
+\hypertarget{parameters_8hh_source_l00277}{}\hyperlink{structeos_1_1ParameterDescription_abab49c1ed74185718b6d696938d94683}{00277}         \textcolor{keywordtype}{double} \hyperlink{structeos_1_1ParameterDescription_abab49c1ed74185718b6d696938d94683}{min};
+00278 
+\hypertarget{parameters_8hh_source_l00279}{}\hyperlink{structeos_1_1ParameterDescription_a4375b5ec8b9d496a6183d08f92dc648b}{00279}         \textcolor{keywordtype}{double} \hyperlink{structeos_1_1ParameterDescription_a4375b5ec8b9d496a6183d08f92dc648b}{max};
+00280 
+\hypertarget{parameters_8hh_source_l00281}{}\hyperlink{structeos_1_1ParameterDescription_ac9e90def0fd26f7f4f9f59df93f64401}{00281}         \textcolor{keywordtype}{bool} \hyperlink{structeos_1_1ParameterDescription_ac9e90def0fd26f7f4f9f59df93f64401}{nuisance};
+00282 
+\hypertarget{parameters_8hh_source_l00283}{}\hyperlink{structeos_1_1ParameterDescription_a3f62f41ab537a373291807e3b2445c08}{00283}         \textcolor{keywordtype}{bool} \hyperlink{structeos_1_1ParameterDescription_a3f62f41ab537a373291807e3b2445c08}{discrete};
+00284     \};
+00285 
+00286 
+\hypertarget{parameters_8hh_source_l00287}{}\hyperlink{structeos_1_1ParameterRange}{00287}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1ParameterRange}{ParameterRange}
+00288     \{
+\hypertarget{parameters_8hh_source_l00289}{}\hyperlink{structeos_1_1ParameterRange_ab155cf01cbc6b1ea802a007fe5bcc6c6}{00289}             \textcolor{keywordtype}{double} \hyperlink{structeos_1_1ParameterRange_ab155cf01cbc6b1ea802a007fe5bcc6c6}{min}, \hyperlink{structeos_1_1ParameterRange_a8ce3020d0f5ca651abed940889bb434b}{max};
+00290     \};
+00291 \}
+00292 
+00293 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

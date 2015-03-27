@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1FormFactorFactory_3_01PToP_01_4" kind="class" prot="public">
+    <compoundname>eos::FormFactorFactory&lt; PToP &gt;</compoundname>
+    <includes refid="mesonic_8hh" local="no">mesonic.hh</includes>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classeos_1_1FormFactorFactory_3_01PToP_01_4_1a1160df83b7b2f9e349a119fa3d77d50a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; FormFactors&lt; <ref refid="structeos_1_1PToP" kindref="compound">PToP</ref> &gt; &gt;</type>
+        <definition>static std::shared_ptr&lt;FormFactors&lt;PToP&gt; &gt; eos::FormFactorFactory&lt; PToP &gt;::create</definition>
+        <argsstring>(const std::string &amp;label, const Parameters &amp;parameters)</argsstring>
+        <name>create</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic.hh" line="87"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic.hh" line="85" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic.hh" bodystart="84" bodyend="88"/>
+    <listofallmembers>
+      <member refid="classeos_1_1FormFactorFactory_3_01PToP_01_4_1a1160df83b7b2f9e349a119fa3d77d50a" prot="public" virt="non-virtual"><scope>eos::FormFactorFactory&lt; PToP &gt;</scope><name>create</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1implementation_1_1DoStringify" kind="struct" prot="public">
+    <compoundname>eos::implementation::DoStringify</compoundname>
+    <includes refid="stringify_8hh" local="no">stringify.hh</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T_</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structeos_1_1implementation_1_1DoStringify_1ad66f86c95141a3322aca8f1be1030608" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string eos::implementation::DoStringify&lt; T_ &gt;::stringify</definition>
+        <argsstring>(const T_ &amp;x, unsigned precision)</argsstring>
+        <name>stringify</name>
+        <param>
+          <type>const T_ &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>precision</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/stringify.hh" line="34" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/stringify.hh" bodystart="33" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/stringify.hh" line="32" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/stringify.hh" bodystart="31" bodyend="41"/>
+    <listofallmembers>
+      <member refid="structeos_1_1implementation_1_1DoStringify_1ad66f86c95141a3322aca8f1be1030608" prot="public" virt="non-virtual"><scope>eos::implementation::DoStringify</scope><name>stringify</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

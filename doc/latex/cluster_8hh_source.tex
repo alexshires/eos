@@ -1,0 +1,55 @@
+\hypertarget{cluster_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/cluster.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_EOS\_UTILS\_CLUSTER\_HH}
+\hypertarget{cluster_8hh_source_l00004}{}\hyperlink{cluster_8hh_a029bee19b88e954c18e4dcd3623de3b3}{00004} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_EOS\_UTILS\_CLUSTER\_HH 1}
+00005 \textcolor{preprocessor}{}
+00006 \textcolor{preprocessor}{#include <\hyperlink{markov__chain_8hh}{eos/utils/markov_chain.hh}>}
+00007 \textcolor{preprocessor}{#include <\hyperlink{private__implementation__pattern-impl_8hh}{eos/utils/private_implementation_pattern-impl.hh}>}
+00008 \textcolor{preprocessor}{#include <\hyperlink{wrapped__forward__iterator-impl_8hh}{eos/utils/wrapped_forward_iterator-impl.hh}>}
+00009 
+00010 \textcolor{keyword}{namespace }eos
+00011 \{
+\hypertarget{cluster_8hh_source_l00012}{}\hyperlink{classeos_1_1Cluster}{00012}     \textcolor{keyword}{class }\hyperlink{classeos_1_1Cluster}{Cluster} :
+00013         \textcolor{keyword}{public} \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern}<Cluster>
+00014     \{
+00015         \textcolor{keyword}{public}:
+\hypertarget{cluster_8hh_source_l00016}{}\hyperlink{classeos_1_1Cluster_a0c315d367de4288803597a0f23ee4168}{00016}             \textcolor{keyword}{typedef} std::function<double (const std::vector<double> &, \textcolor{keyword}{const} std:
+      :vector<double> &, \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} &)> \hyperlink{classeos_1_1Cluster_a0c315d367de4288803597a0f23ee4168}{RValueFunction};
+00017 
+00029             \hyperlink{classeos_1_1Cluster_a0f1f2be34f11be1bba6426ba20ebf999}{Cluster}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Cluster_a0c315d367de4288803597a0f23ee4168}{RValueFunction} &, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & max\_rvalue, \textcolor{keyword}{const} 
+      \hyperlink{namespaceeos_ac9f30fde04446cfabdd69d4b5b5d3c5a}{HistoryPtr} & initial\_chain,
+00030                     \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & index, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & skip\_initial);
+00031 
+00032             \hyperlink{classeos_1_1Cluster_a7bbc57a377c4d638830c3f4768c0b1b7}{~Cluster}();
+00033 
+00037             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1Cluster_afed737aab746ba8e3c8fefcf32ea185d}{add}(\textcolor{keyword}{const} \hyperlink{namespaceeos_ac9f30fde04446cfabdd69d4b5b5d3c5a}{HistoryPtr} & chain, \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & index);
+00038 
+00044             std::vector<double> \hyperlink{classeos_1_1Cluster_a9b2fc51a3435f161f359f6a11f02dacb}{mean}() \textcolor{keyword}{const};
+00045 
+00046             \textcolor{keyword}{const} std::vector<std::vector<double>> & \hyperlink{classeos_1_1Cluster_a12f80fe40193349914094f49fbdc18a2}{means}() \textcolor{keyword}{const};
+00047             \textcolor{keyword}{const} std::vector<std::vector<double>> & \hyperlink{classeos_1_1Cluster_a16f6b0f61e014b2d89ca532d0bc04cf1}{variances}() \textcolor{keyword}{const};
+00048 
+00058             \textcolor{keywordtype}{bool} \hyperlink{classeos_1_1Cluster_a944a35443f5bfa64317c843c9733d84e}{overlaps}(\textcolor{keyword}{const} \hyperlink{namespaceeos_ac9f30fde04446cfabdd69d4b5b5d3c5a}{HistoryPtr} & chain) \textcolor{keyword}{const};
+00059 
+00064             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1Cluster_a2906631fc892844e19b661d1484a6a71}{parameter_indices}(\textcolor{keyword}{const} std::vector<unsigned> & indices);
+00065 
+\hypertarget{cluster_8hh_source_l00066}{}\hyperlink{classeos_1_1Cluster_ab60d3bac87825b6181c4c6bb1f04d55a}{00066}             \textcolor{keyword}{struct }IteratorTag;
+00067             \textcolor{keyword}{typedef} \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator<IteratorTag, HistoryPtr>} \hyperlink{classeos_1_1WrappedForwardIterator}{Iterator};
+00068             \hyperlink{classeos_1_1WrappedForwardIterator}{Iterator} \hyperlink{classeos_1_1Cluster_a07f3b9298b4ea870313f62cce1b9807c}{begin}() \textcolor{keyword}{const};
+00069             \hyperlink{classeos_1_1WrappedForwardIterator}{Iterator} \hyperlink{classeos_1_1Cluster_a7269794a3f029fb51e08ae51faf5e67f}{end}() \textcolor{keyword}{const};
+00070 
+\hypertarget{cluster_8hh_source_l00071}{}\hyperlink{classeos_1_1Cluster_a39df87b5549e245b185b26f94c9d336b}{00071}             \textcolor{keyword}{struct }IteratorTag;
+00072             \textcolor{keyword}{typedef} \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator<IteratorTag, unsigned>} \hyperlink{classeos_1_1WrappedForwardIterator}{IndexIterator};
+00073             \hyperlink{classeos_1_1WrappedForwardIterator}{IndexIterator} \hyperlink{classeos_1_1Cluster_a81ba073f1dc0d91e0fd0b3060f6cd12d}{begin_indices}() \textcolor{keyword}{const};
+00074             \hyperlink{classeos_1_1WrappedForwardIterator}{IndexIterator} \hyperlink{classeos_1_1Cluster_a346a8e945ea0be679c9eb372e589619b}{end_indices}() \textcolor{keyword}{const};
+00075     \};
+00076 \}
+00077 
+00078 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

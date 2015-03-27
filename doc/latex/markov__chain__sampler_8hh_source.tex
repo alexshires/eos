@@ -1,0 +1,168 @@
+\hypertarget{markov__chain__sampler_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/markov\_\-chain\_\-sampler.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2011, 2012, 2013 Frederik Beaujean}
+00005 \textcolor{comment}{ * Copyright (c) 2011, 2013 Danny van Dyk}
+00006 \textcolor{comment}{ *}
+00007 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00008 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00009 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00010 \textcolor{comment}{ *}
+00011 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00012 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00013 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00014 \textcolor{comment}{ * details.}
+00015 \textcolor{comment}{ *}
+00016 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00017 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00018 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00019 \textcolor{comment}{ */}
+00020 
+00021 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_MC\_SAMPLER\_HH}
+\hypertarget{markov__chain__sampler_8hh_source_l00022}{}\hyperlink{markov__chain__sampler_8hh_a564984576aa31b9ed76d28c2b0bd2b2f}{00022} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_MC\_SAMPLER\_HH 1}
+00023 \textcolor{preprocessor}{}
+00024 \textcolor{preprocessor}{#include <\hyperlink{analysis_8hh}{eos/utils/analysis.hh}>}
+00025 \textcolor{preprocessor}{#include <\hyperlink{markov__chain_8hh}{eos/utils/markov_chain.hh}>}
+00026 \textcolor{preprocessor}{#include <\hyperlink{parameters_8hh}{eos/utils/parameters.hh}>}
+00027 \textcolor{preprocessor}{#include <\hyperlink{private__implementation__pattern_8hh}{eos/utils/private_implementation_pattern.hh}>}
+00028 \textcolor{preprocessor}{#include <\hyperlink{proposal__functions_8hh}{eos/utils/proposal_functions.hh}>}
+00029 \textcolor{preprocessor}{#include <\hyperlink{verify_8hh}{eos/utils/verify.hh}>}
+00030 
+00031 \textcolor{keyword}{namespace }eos
+00032 \{
+\hypertarget{markov__chain__sampler_8hh_source_l00033}{}\hyperlink{classeos_1_1MarkovChainSampler}{00033}     \textcolor{keyword}{class }\hyperlink{classeos_1_1MarkovChainSampler}{MarkovChainSampler} :
+00034         \textcolor{keyword}{public} \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern}<MarkovChainSampler>
+00035     \{
+00036         \textcolor{keyword}{public}:
+00037             \textcolor{keyword}{class }\hyperlink{classeos_1_1MarkovChainSampler_1_1Config}{Config};
+00038             \textcolor{keyword}{struct }\hyperlink{structeos_1_1MarkovChainSampler_1_1PreRunInfo}{PreRunInfo};
+00039 
+00042 
+00048             \hyperlink{classeos_1_1MarkovChainSampler_a39df736664ab94605898df48c1ff97af}{MarkovChainSampler}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Analysis}{Analysis} & analysis, \textcolor{keyword}{const} 
+      \hyperlink{classeos_1_1MarkovChainSampler_1_1Config}{MarkovChainSampler::Config} & \hyperlink{classeos_1_1MarkovChainSampler_a277acc86b109ca342be462c0e9d7c175}{config});
+00049 
+00051             \hyperlink{classeos_1_1MarkovChainSampler_a9c8a8f22a6279a0e0457b6e58b3e7aee}{~MarkovChainSampler}();
+00052 
+00067             \textcolor{keyword}{static} std::vector<HistoryPtr> \hyperlink{classeos_1_1MarkovChainSampler_ae493008479f15b080c40365f96a3e409}{build_global_local}(\textcolor{keyword}{const} std::string &
+       output\_file\_name,
+00068                                     \textcolor{keyword}{const} std::vector<std::shared\_ptr<hdf5::File>
+      > input\_files,
+00069                                     \textcolor{keyword}{const} 
+      \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config}{proposal_functions::GlobalLocal::Config} & config,
+00070                                     \hyperlink{namespaceeos_afc57020492535ccdd85cfc3b7421340d}{AnalysisPtr} analysis = \hyperlink{namespaceeos_afc57020492535ccdd85cfc3b7421340d}{AnalysisPtr}());
+00071 
+00078             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1MarkovChainSampler_a15f768e042ec2189ae7fb837d0c4f341}{resume}(\textcolor{keyword}{const} \hyperlink{classeos_1_1hdf5_1_1File}{hdf5::File} &);
+00079 
+00081 
+00084 
+00092             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1MarkovChainSampler_a1e5ca348ae639a33c3b3db6120ff66f9}{massive_mode_finding}(\textcolor{keyword}{const} \hyperlink{structeos_1_1Analysis_1_1OptimizationOptions}{Analysis::OptimizationOptions} & optio
+      ns);
+00093 
+00095             \hyperlink{structeos_1_1MarkovChainSampler_1_1PreRunInfo}{PreRunInfo} \hyperlink{classeos_1_1MarkovChainSampler_ae3032467d9678870bb30f82ae060c043}{pre_run_info}();
+00096 
+00098             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1MarkovChainSampler_a67fdd21c364b34796c9c5ba2b3b0b785}{run}();
+00099 
+00101             \textcolor{keyword}{const} \hyperlink{classeos_1_1MarkovChainSampler_1_1Config}{MarkovChainSampler::Config} & \hyperlink{classeos_1_1MarkovChainSampler_a277acc86b109ca342be462c0e9d7c175}{config}();
+00103     \};
+00104 
+\hypertarget{markov__chain__sampler_8hh_source_l00108}{}\hyperlink{classeos_1_1MarkovChainSampler_1_1Config}{00108}     \textcolor{keyword}{class }\hyperlink{classeos_1_1MarkovChainSampler_1_1Config}{MarkovChainSampler::Config}
+00109     \{
+00110         \textcolor{keyword}{private}:
+00112             \hyperlink{classeos_1_1MarkovChainSampler_1_1Config}{Config}();
+00113 
+00114         \textcolor{keyword}{public}:
+00117 
+00122             \textcolor{keyword}{static} \hyperlink{classeos_1_1MarkovChainSampler_1_1Config}{Config} \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a873df585d161c55e45b69fe45def8bd0}{Default}();
+00123 
+00133             \textcolor{keyword}{static} \hyperlink{classeos_1_1MarkovChainSampler_1_1Config}{Config} \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_aae4d353bed05e0921697290e7e93f116}{Quick}();
+00135 
+\hypertarget{markov__chain__sampler_8hh_source_l00139}{}\hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a802b6d235de40517746b7fc4147d8c7b}{00139}             \hyperlink{classeos_1_1VerifiedRange}{VerifiedRange<unsigned>} \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a802b6d235de40517746b7fc4147d8c7b}{number_of_chains};
+00140 
+\hypertarget{markov__chain__sampler_8hh_source_l00145}{}\hyperlink{classeos_1_1MarkovChainSampler_1_1Config_ad969cd46104eb385033df4574079dc57}{00145}             \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_ad969cd46104eb385033df4574079dc57}{seed};
+00146 
+\hypertarget{markov__chain__sampler_8hh_source_l00151}{}\hyperlink{classeos_1_1MarkovChainSampler_1_1Config_ad66eb9a48dd6aa736cf476322ed5b13e}{00151}             \textcolor{keywordtype}{bool} \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_ad66eb9a48dd6aa736cf476322ed5b13e}{parallelize};
+00153 
+00156 
+\hypertarget{markov__chain__sampler_8hh_source_l00158}{}\hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a0d907985d270035dbc3fc2235667ed0e}{00158}             \hyperlink{classeos_1_1VerifiedRange}{VerifiedRange<double>} \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a0d907985d270035dbc3fc2235667ed0e}{min_efficiency};
+\hypertarget{markov__chain__sampler_8hh_source_l00159}{}\hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a91c8438fe3b3270c619aefe5dc951e35}{00159}             \hyperlink{classeos_1_1VerifiedRange}{VerifiedRange<double>} \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a91c8438fe3b3270c619aefe5dc951e35}{max_efficiency};
+00160 
+\hypertarget{markov__chain__sampler_8hh_source_l00162}{}\hyperlink{classeos_1_1MarkovChainSampler_1_1Config_ae8f8b1d037b655fe421c642cfe1d09a3}{00162}             \hyperlink{classeos_1_1VerifiedRange}{VerifiedRange<double>} \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_ae8f8b1d037b655fe421c642cfe1d09a3}{rvalue_criterion_param};
+\hypertarget{markov__chain__sampler_8hh_source_l00163}{}\hyperlink{classeos_1_1MarkovChainSampler_1_1Config_ac63f8561002681b27414ef775f6f7c2c}{00163}             \hyperlink{classeos_1_1VerifiedRange}{VerifiedRange<double>} \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_ac63f8561002681b27414ef775f6f7c2c}{rvalue_criterion_posterior};
+00164 
+\hypertarget{markov__chain__sampler_8hh_source_l00169}{}\hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a489bcbea5b78163dbfde22225b980d8c}{00169}             \textcolor{keywordtype}{bool} \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a489bcbea5b78163dbfde22225b980d8c}{use_strict_rvalue_definition};
+00170 
+\hypertarget{markov__chain__sampler_8hh_source_l00176}{}\hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a1243022c46d489f741762e90aeb1ca31}{00176}             \textcolor{keywordtype}{bool} \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a1243022c46d489f741762e90aeb1ca31}{use_posterior_rvalue};
+00177 
+\hypertarget{markov__chain__sampler_8hh_source_l00180}{}\hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a2a7cc53b4fff19248ccfcd187a6a394b}{00180}             \textcolor{keywordtype}{bool} \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a2a7cc53b4fff19248ccfcd187a6a394b}{scale_automatic};
+00181 
+\hypertarget{markov__chain__sampler_8hh_source_l00186}{}\hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a8bf9b803f9b7995d7b6938347fa98165}{00186}             \textcolor{keywordtype}{bool} \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a8bf9b803f9b7995d7b6938347fa98165}{scale_nuisance};
+00187 
+\hypertarget{markov__chain__sampler_8hh_source_l00189}{}\hyperlink{classeos_1_1MarkovChainSampler_1_1Config_aeaae399fa3b0a182dfd582f79529f7a5}{00189}             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_aeaae399fa3b0a182dfd582f79529f7a5}{scale_reduction};
+00191 
+00194 
+\hypertarget{markov__chain__sampler_8hh_source_l00197}{}\hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a04afa9d1080b945fe1702b4d8d5fb2bb}{00197}             \textcolor{keywordtype}{bool} \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a04afa9d1080b945fe1702b4d8d5fb2bb}{find_modes};
+00198 
+\hypertarget{markov__chain__sampler_8hh_source_l00199}{}\hyperlink{classeos_1_1MarkovChainSampler_1_1Config_acd202b210ff8f364eda6aacdd8958f8a}{00199}             \textcolor{keywordtype}{bool} \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_acd202b210ff8f364eda6aacdd8958f8a}{need_prerun};
+\hypertarget{markov__chain__sampler_8hh_source_l00200}{}\hyperlink{classeos_1_1MarkovChainSampler_1_1Config_aac94024909568d9ca6e59108db400c6d}{00200}             \textcolor{keywordtype}{unsigned} \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_aac94024909568d9ca6e59108db400c6d}{prerun_iterations_update};
+\hypertarget{markov__chain__sampler_8hh_source_l00201}{}\hyperlink{classeos_1_1MarkovChainSampler_1_1Config_af76602d7053b0f599295e1175718cb22}{00201}             \textcolor{keywordtype}{unsigned} \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_af76602d7053b0f599295e1175718cb22}{prerun_iterations_min};
+\hypertarget{markov__chain__sampler_8hh_source_l00202}{}\hyperlink{classeos_1_1MarkovChainSampler_1_1Config_aed5faf2c2cd03d33d5acb79fc16132a4}{00202}             \textcolor{keywordtype}{unsigned} \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_aed5faf2c2cd03d33d5acb79fc16132a4}{prerun_iterations_max};
+00203 
+\hypertarget{markov__chain__sampler_8hh_source_l00205}{}\hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a7184404972d7e56da2a78218555c1f97}{00205}             std::string \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a7184404972d7e56da2a78218555c1f97}{proposal};
+00206 
+\hypertarget{markov__chain__sampler_8hh_source_l00210}{}\hyperlink{classeos_1_1MarkovChainSampler_1_1Config_af6ef8839a138b5f2ba25ed00c9949ecf}{00210}             std::vector<std::string> \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_af6ef8839a138b5f2ba25ed00c9949ecf}{block_proposal_parameters};
+00211 
+\hypertarget{markov__chain__sampler_8hh_source_l00217}{}\hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a7a3619bea51ea7edeb15dc2e8c614213}{00217}             \hyperlink{classeos_1_1VerifiedRange}{VerifiedRange<double>} \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a7a3619bea51ea7edeb15dc2e8c614213}{student_t_degrees_of_freedom};
+00218 
+\hypertarget{markov__chain__sampler_8hh_source_l00220}{}\hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a9fecfcf6c6ce24b34d1370dd1d222d06}{00220}             \textcolor{keywordtype}{bool} \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a9fecfcf6c6ce24b34d1370dd1d222d06}{store_prerun};
+00221 
+\hypertarget{markov__chain__sampler_8hh_source_l00224}{}\hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a4b8b7f5ca38ffd97f0cbb431237a2872}{00224}             \textcolor{keywordtype}{unsigned} \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a4b8b7f5ca38ffd97f0cbb431237a2872}{prerun_chains_per_partition};
+\hypertarget{markov__chain__sampler_8hh_source_l00225}{}\hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a86b460f2153f55c4d5763f50f5bdba95}{00225}             std::vector<std::vector<std::tuple<std::string, double, double>>> 
+      \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a86b460f2153f55c4d5763f50f5bdba95}{partitions};
+00227 
+00230 
+\hypertarget{markov__chain__sampler_8hh_source_l00233}{}\hyperlink{classeos_1_1MarkovChainSampler_1_1Config_ad90feb40e232329acf8a1fb785ed2d87}{00233}             \textcolor{keywordtype}{unsigned} \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_ad90feb40e232329acf8a1fb785ed2d87}{adapt_iterations};
+00234 
+\hypertarget{markov__chain__sampler_8hh_source_l00236}{}\hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a5e5751b084b471b08aa6f33513c28047}{00236}             \textcolor{keywordtype}{unsigned} \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a5e5751b084b471b08aa6f33513c28047}{chunks};
+00237 
+\hypertarget{markov__chain__sampler_8hh_source_l00239}{}\hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a3286979755ea75bd563fb66fba9e5330}{00239}             \textcolor{keywordtype}{unsigned} \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a3286979755ea75bd563fb66fba9e5330}{chunk_size};
+00240 
+\hypertarget{markov__chain__sampler_8hh_source_l00242}{}\hyperlink{classeos_1_1MarkovChainSampler_1_1Config_ac717ab2f0caa32cc13b5e382f8b19cec}{00242}             std::shared\_ptr<proposal\_functions::GlobalLocal::Config> 
+      \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_ac717ab2f0caa32cc13b5e382f8b19cec}{global_local_config};
+00243 
+\hypertarget{markov__chain__sampler_8hh_source_l00245}{}\hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a1efc4d04039ba60a1f4c27ae28fe1554}{00245}             \textcolor{keywordtype}{bool} \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a1efc4d04039ba60a1f4c27ae28fe1554}{need_main_run};
+00246 
+\hypertarget{markov__chain__sampler_8hh_source_l00250}{}\hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a8db6eb333e22a68f8b7abbd96b02b88c}{00250}             \hyperlink{classeos_1_1VerifiedRange}{VerifiedRange<double>} \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a8db6eb333e22a68f8b7abbd96b02b88c}{skip_initial};
+00251 
+\hypertarget{markov__chain__sampler_8hh_source_l00253}{}\hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a61732b63555e375ca22b7c31e3df12b6}{00253}             \textcolor{keywordtype}{bool} \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a61732b63555e375ca22b7c31e3df12b6}{store};
+00255 
+00258 
+\hypertarget{markov__chain__sampler_8hh_source_l00261}{}\hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a09fb2c6eeddd6bdde3ac5de54f63433f}{00261}             std::string \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_a09fb2c6eeddd6bdde3ac5de54f63433f}{output_file};
+00262 
+\hypertarget{markov__chain__sampler_8hh_source_l00263}{}\hyperlink{classeos_1_1MarkovChainSampler_1_1Config_aeeea2452cd313ebe9a695c98bdeceeee}{00263}             \textcolor{keywordtype}{bool} \hyperlink{classeos_1_1MarkovChainSampler_1_1Config_aeeea2452cd313ebe9a695c98bdeceeee}{store_observables_and_proposals};
+00265     \};
+00266 
+00267     std::ostream & \hyperlink{namespaceeos_a2d7ef50009f9368c73d5056eab3ec21d}{operator<<}(std::ostream&, \textcolor{keyword}{const} \hyperlink{classeos_1_1MarkovChainSampler_1_1Config}{MarkovChainSampler::Config} & c
+      onfig);
+00268 
+\hypertarget{markov__chain__sampler_8hh_source_l00272}{}\hyperlink{structeos_1_1MarkovChainSampler_1_1PreRunInfo}{00272}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1MarkovChainSampler_1_1PreRunInfo}{MarkovChainSampler::PreRunInfo}
+00273     \{
+\hypertarget{markov__chain__sampler_8hh_source_l00275}{}\hyperlink{structeos_1_1MarkovChainSampler_1_1PreRunInfo_a182be4f50ae9368aeee0303b4fd29b51}{00275}         \textcolor{keywordtype}{bool} \hyperlink{structeos_1_1MarkovChainSampler_1_1PreRunInfo_a182be4f50ae9368aeee0303b4fd29b51}{converged};
+00276 
+\hypertarget{markov__chain__sampler_8hh_source_l00278}{}\hyperlink{structeos_1_1MarkovChainSampler_1_1PreRunInfo_a40e24d2a409ae1d2a90c1a49b972b654}{00278}         \textcolor{keywordtype}{unsigned} \hyperlink{structeos_1_1MarkovChainSampler_1_1PreRunInfo_a40e24d2a409ae1d2a90c1a49b972b654}{iterations};
+00279 
+\hypertarget{markov__chain__sampler_8hh_source_l00281}{}\hyperlink{structeos_1_1MarkovChainSampler_1_1PreRunInfo_a1f821da9adca5ee92802e51fcb372278}{00281}         \textcolor{keywordtype}{unsigned} \hyperlink{structeos_1_1MarkovChainSampler_1_1PreRunInfo_a1f821da9adca5ee92802e51fcb372278}{iterations_at_convergence};
+00282 
+\hypertarget{markov__chain__sampler_8hh_source_l00284}{}\hyperlink{structeos_1_1MarkovChainSampler_1_1PreRunInfo_a7bf1e8c85dc0ae0e72e64737a033c8c2}{00284}         \textcolor{keywordtype}{double} \hyperlink{structeos_1_1MarkovChainSampler_1_1PreRunInfo_a7bf1e8c85dc0ae0e72e64737a033c8c2}{rvalue_posterior};
+00285 
+\hypertarget{markov__chain__sampler_8hh_source_l00287}{}\hyperlink{structeos_1_1MarkovChainSampler_1_1PreRunInfo_a568ebe4315e338e9e6ea690c268a964b}{00287}         std::vector<double> \hyperlink{structeos_1_1MarkovChainSampler_1_1PreRunInfo_a568ebe4315e338e9e6ea690c268a964b}{rvalue_parameters};
+00288     \};
+00289 \}
+00290 
+00291 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

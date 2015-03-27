@@ -1,0 +1,110 @@
+\hypertarget{verify_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/verify.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2011 Danny van Dyk}
+00005 \textcolor{comment}{ * Copyright (c) 2011 Frederik Beaujean}
+00006 \textcolor{comment}{ *}
+00007 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00008 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00009 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00010 \textcolor{comment}{ *}
+00011 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00012 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00013 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00014 \textcolor{comment}{ * details.}
+00015 \textcolor{comment}{ *}
+00016 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00017 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00018 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00019 \textcolor{comment}{ */}
+00020 
+00021 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_VERIFY\_HH}
+\hypertarget{verify_8hh_source_l00022}{}\hyperlink{verify_8hh_a6d5e2ccc170a563905e127e441a01013}{00022} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_VERIFY\_HH 1}
+00023 \textcolor{preprocessor}{}
+00024 \textcolor{preprocessor}{#include <\hyperlink{exception_8hh}{eos/utils/exception.hh}>}
+00025 \textcolor{preprocessor}{#include <\hyperlink{stringify_8hh}{eos/utils/stringify.hh}>}
+00026 
+00027 \textcolor{keyword}{namespace }eos
+00028 \{
+\hypertarget{verify_8hh_source_l00033}{}\hyperlink{classeos_1_1VerifiedRangeError}{00033}     \textcolor{keyword}{class }\hyperlink{classeos_1_1VerifiedRangeError}{VerifiedRangeError} :
+00034         \textcolor{keyword}{public} \hyperlink{classeos_1_1Exception}{Exception}
+00035     \{
+00036         \textcolor{keyword}{protected}:
+00037             \hyperlink{classeos_1_1VerifiedRangeError_a68d9494a951b7945d19a13a9bef0e456}{VerifiedRangeError}(\textcolor{keyword}{const} std::string & message);
+00038     \};
+00039 
+\hypertarget{verify_8hh_source_l00044}{}\hyperlink{structeos_1_1VerifiedRangeOverflow}{00044}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1VerifiedRangeOverflow}{VerifiedRangeOverflow} :
+00045         \textcolor{keyword}{public} \hyperlink{classeos_1_1VerifiedRangeError}{VerifiedRangeError}
+00046     \{
+00047         \hyperlink{structeos_1_1VerifiedRangeOverflow_aa87d45b5209b4abf25baa50048c40172}{VerifiedRangeOverflow}(\textcolor{keyword}{const} std::string & value, \textcolor{keyword}{const} std::string & maxi
+      mum);
+00048     \};
+00049 
+\hypertarget{verify_8hh_source_l00054}{}\hyperlink{structeos_1_1VerifiedRangeUnderflow}{00054}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1VerifiedRangeUnderflow}{VerifiedRangeUnderflow} :
+00055         \textcolor{keyword}{public} \hyperlink{classeos_1_1VerifiedRangeError}{VerifiedRangeError}
+00056     \{
+00057         \hyperlink{structeos_1_1VerifiedRangeUnderflow_afdef24e4219176e493e51ecae0f1224a}{VerifiedRangeUnderflow}(\textcolor{keyword}{const} std::string & value, \textcolor{keyword}{const} std::string & min
+      imum);
+00058     \};
+00059 
+00070     \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_>
+\hypertarget{verify_8hh_source_l00071}{}\hyperlink{classeos_1_1VerifiedRange}{00071}     \textcolor{keyword}{class }\hyperlink{classeos_1_1VerifiedRange}{VerifiedRange}
+00072     \{
+00073         \textcolor{keyword}{private}:
+00074             T\_ \_min;
+00075 
+00076             T\_ \_max;
+00077 
+00078             T\_ \_value;
+00079 
+00080             \textcolor{keyword}{const} T\_ & \_verify(\textcolor{keyword}{const} T\_ & t)
+00081             \{
+00082                 \textcolor{keywordflow}{if} (t < \_min)
+00083                     \textcolor{keywordflow}{throw} \hyperlink{structeos_1_1VerifiedRangeUnderflow}{VerifiedRangeUnderflow}(\hyperlink{namespaceeos_a4d4fd832aebc28739c76d8cbd3dda6df}{stringify}(t), \hyperlink{namespaceeos_a4d4fd832aebc28739c76d8cbd3dda6df}{stringify}(\_min));
+00084 
+00085                 \textcolor{keywordflow}{if} (t > \_max)
+00086                     \textcolor{keywordflow}{throw} \hyperlink{structeos_1_1VerifiedRangeOverflow}{VerifiedRangeOverflow}(\hyperlink{namespaceeos_a4d4fd832aebc28739c76d8cbd3dda6df}{stringify}(t), \hyperlink{namespaceeos_a4d4fd832aebc28739c76d8cbd3dda6df}{stringify}(\_max));
+00087 
+00088                 \textcolor{keywordflow}{return} t;
+00089             \}
+00090 
+00091         \textcolor{keyword}{public}:
+00094 
+\hypertarget{verify_8hh_source_l00101}{}\hyperlink{classeos_1_1VerifiedRange_a91cf1ba06903af03ec4100c370330cb7}{00101}             \hyperlink{classeos_1_1VerifiedRange_a91cf1ba06903af03ec4100c370330cb7}{VerifiedRange}(\textcolor{keyword}{const} T\_ & \hyperlink{classeos_1_1VerifiedRange_ac2ac9a7194ece299633bfef72fb08378}{min}, \textcolor{keyword}{const} T\_ & \hyperlink{classeos_1_1VerifiedRange_a19b21c28c1afa78ce4fc83bd9cf8f866}{max}, \textcolor{keyword}{const} T\_ & value) :
+00102                 \_min(min),
+00103                 \_max(max),
+00104                 \_value(\_verify(value))
+00105             \{
+00106             \}
+00108 
+\hypertarget{verify_8hh_source_l00112}{}\hyperlink{classeos_1_1VerifiedRange_aee4661f7688177fd52164d7413f9968d}{00112}             \hyperlink{classeos_1_1VerifiedRange_aee4661f7688177fd52164d7413f9968d}{operator T_ }()\textcolor{keyword}{ const}
+00113 \textcolor{keyword}{            }\{
+00114                 \textcolor{keywordflow}{return} \_value;
+00115             \}
+00116 
+\hypertarget{verify_8hh_source_l00122}{}\hyperlink{classeos_1_1VerifiedRange_af7df09e39360f49d269afffd8a2634be}{00122}             \textcolor{keyword}{const} T\_ & \hyperlink{classeos_1_1VerifiedRange_af7df09e39360f49d269afffd8a2634be}{operator= }(\textcolor{keyword}{const} T\_ & rhs)
+00123             \{
+00124                 \_value = \_verify(rhs);
+00125                 \textcolor{keywordflow}{return} \_value;
+00126             \}
+00127 
+\hypertarget{verify_8hh_source_l00129}{}\hyperlink{classeos_1_1VerifiedRange_ac2ac9a7194ece299633bfef72fb08378}{00129}             T\_ \hyperlink{classeos_1_1VerifiedRange_ac2ac9a7194ece299633bfef72fb08378}{min}()\textcolor{keyword}{ const}
+00130 \textcolor{keyword}{            }\{
+00131                 \textcolor{keywordflow}{return} \_min;
+00132             \}
+00133 
+\hypertarget{verify_8hh_source_l00135}{}\hyperlink{classeos_1_1VerifiedRange_a19b21c28c1afa78ce4fc83bd9cf8f866}{00135}             T\_ \hyperlink{classeos_1_1VerifiedRange_a19b21c28c1afa78ce4fc83bd9cf8f866}{max}()\textcolor{keyword}{ const}
+00136 \textcolor{keyword}{            }\{
+00137                 \textcolor{keywordflow}{return} \_max;
+00138             \}
+00140     \};
+00141 \}
+00142 
+00143 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

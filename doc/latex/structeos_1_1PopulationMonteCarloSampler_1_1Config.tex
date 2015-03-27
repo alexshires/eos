@@ -1,0 +1,433 @@
+\hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config}{
+\section{eos::PopulationMonteCarloSampler::Config Struct Reference}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config}\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+}
+
+
+{\ttfamily \#include $<$population\_\-monte\_\-carlo\_\-sampler.hh$>$}\subsection*{Static Public Member Functions}
+\begin{Indent}{\bf Basic Function}\par
+{\em \label{_amgrp9ac0a05bc9f1ecee9a728c52951f9f43}
+ }\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config}{Config} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a8f659cd4c289ebfea73765497eee01dd}{Default} ()
+\item 
+static \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config}{Config} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_aa88ccb299ca1bc2881951b82e6e66059}{Quick} ()
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Public Attributes}
+\begin{Indent}{\bf Basic options}\par
+{\em \label{_amgrp0f569f5975208cc475c7bb42ee13b9a5}
+ }\begin{DoxyCompactItemize}
+\item 
+unsigned long \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_abf7b1c768e283f8a41bc8b348bb84304}{seed}
+\item 
+bool \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_abe02d7abd41f52ae2eaf3eba25522f50}{parallelize}
+\item 
+unsigned \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_ae6362a7374c9ca1650b501c07672442a}{number\_\-of\_\-workers}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Proposal density options}\par
+{\em \label{_amgrpd9880d82248858d1297ea0d68e4434d4}
+ }\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_afbe44ab88cfffcf63495463004cdd9b5}{block\_\-decomposition}
+\item 
+std::vector$<$ double $>$ \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a95aeae5fe77255d4fa0c2c5ddfafe883}{component\_\-weights}
+\item 
+std::vector$<$ std::vector$<$ double $>$ $>$ \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a5668b999c1f4c6517b9366035571143d}{component\_\-means}
+\begin{DoxyCompactList}\small\item\em n entries. \item\end{DoxyCompactList}\item 
+double \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a91b615db28333d345eae6d8a2ef55fd5}{component\_\-offset}
+\begin{DoxyCompactList}\small\item\em Shift component by this number of sigmas. \item\end{DoxyCompactList}\item 
+std::vector$<$ std::vector$<$ double $>$ $>$ \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_af7452d7aaa3b241039b730998cdbabff}{component\_\-variances}
+\begin{DoxyCompactList}\small\item\em n$^\wedge$2 entries. \item\end{DoxyCompactList}\item 
+\hyperlink{classeos_1_1VerifiedRange}{VerifiedRange}$<$ unsigned $>$ \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a46afc1c26737e35c8ea582ffbab80edb}{components\_\-per\_\-cluster}
+\item 
+\hyperlink{classeos_1_1VerifiedRange}{VerifiedRange}$<$ int $>$ \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_ad4069f57b2c8b33032680a27b62fd5cf}{degrees\_\-of\_\-freedom}
+\item 
+\hyperlink{classeos_1_1VerifiedRange}{VerifiedRange}$<$ double $>$ \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a32b76214e4175ec4543162d36707ab84}{minimum\_\-overlap}
+\begin{DoxyCompactList}\small\item\em Used during filtering of \hyperlink{namespaceeos_1_1components}{components}, if too many samples fall outside of box, remove \hyperlink{namespaceeos_1_1components}{components}. \item\end{DoxyCompactList}\item 
+\hyperlink{classeos_1_1VerifiedRange}{VerifiedRange}$<$ double $>$ \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_abb5d4e207d1f2da439dddf9c49854a1e}{mode\_\-distance}
+\item 
+bool \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_aee29a36e8e23c971ba1e36616e9affb4}{override\_\-global\_\-local\_\-proposal}
+\item 
+bool \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_aca0e5339b634644471e1aa5cdd698231}{random\_\-start}
+\item 
+int \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a2a6f2098dc8be089015818326d8eb15f}{single\_\-cluster}
+\item 
+\hyperlink{classeos_1_1VerifiedRange}{VerifiedRange}$<$ double $>$ \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_ac920d732b229713ca67428d284390fa2}{skip\_\-initial}
+\begin{DoxyCompactList}\small\item\em Skip this percentage from beginning of a chain's history. \item\end{DoxyCompactList}\item 
+unsigned \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a235c1a2d0c336f9f8ed9c58917acf68b}{starting\_\-points}
+\item 
+\hyperlink{classeos_1_1VerifiedRange}{VerifiedRange}$<$ double $>$ \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a9de01b257ce34b8a747de5dcf992e053}{std\_\-dev\_\-reduction}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Hierarchical clustering options}\par
+{\em \label{_amgrp4c1e04d10384c153c511d8866b765e01}
+ }\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1VerifiedRange}{VerifiedRange}$<$ double $>$ \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_adf9f35d7f54defd04b9486de7d705ffa}{group\_\-by\_\-r\_\-value}
+\item 
+std::vector$<$ unsigned $>$ \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a27ea93f2181c10068424f2b7e24fbc14}{ignore\_\-groups}
+\item 
+bool \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a0bffb06da5f9f3ef917eec1ce2139ce1}{patch\_\-around\_\-local\_\-mode}
+\item 
+bool \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a5e3c5e1375b04890db40b3d7581b5413}{r\_\-value\_\-no\_\-nuisance}
+\item 
+unsigned \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a9d8798a5789fd4fbe250dba673b92df6}{sliding\_\-window}
+\item 
+bool \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a1ddf56fd57dd8dd3c4462dd1cb2800ab}{store\_\-input\_\-components}
+\begin{DoxyCompactList}\small\item\em Store the \hyperlink{namespaceeos_1_1components}{components} created from chain patches. \item\end{DoxyCompactList}\item 
+bool \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_ad24a2d883fe9d2faedbcf4f861bc9d82}{store\_\-hc\_\-initial}
+\begin{DoxyCompactList}\small\item\em Store initial guess for clustering from long patches. \item\end{DoxyCompactList}\item 
+unsigned \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a906c7eeded237f7bbe810a8d03d8402b}{super\_\-clusters}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Pre run options}\par
+{\em \label{_amgrp8c2f6257f55ff385e844eafbe41ba090}
+ }\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_af4b575d8f24b51783b11bd5dca5ea576}{adjust\_\-sample\_\-size}
+\begin{DoxyCompactList}\small\item\em Change number of samples according to number of live \hyperlink{namespaceeos_1_1components}{components}. \item\end{DoxyCompactList}\item 
+unsigned \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a14c4bdc8c63ca8115e326e4c7bb3116e}{chunks}
+\begin{DoxyCompactList}\small\item\em The number of updates to proposal functions (mixture \hyperlink{namespaceeos_1_1components}{components}). \item\end{DoxyCompactList}\item 
+unsigned \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_ac6d3a2f26905ec51f3e9eadf73d51792}{chunk\_\-size}
+\begin{DoxyCompactList}\small\item\em Number of iterations per chunk and component. \item\end{DoxyCompactList}\item 
+unsigned \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a394bc4c560e738d420fa34014745a7b7}{crop\_\-highest\_\-weights}
+\item 
+bool \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_ac729d374ca2a58aeba6cf60d296d7720}{need\_\-prerun}
+\begin{DoxyCompactList}\small\item\em If false, no adaptions to proposal densities are made. \item\end{DoxyCompactList}\item 
+bool \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a85cf9361f3660df01fa551d9ebd62040}{store\_\-prerun}
+\begin{DoxyCompactList}\small\item\em store samples of prerun steps (statistics are always stored) \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Convergence options}\par
+{\em \label{_amgrp2ecab0cd070c5334d222a1622ad7552f}
+ }\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1VerifiedRange}{VerifiedRange}$<$ double $>$ \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a69a93bb57d6610e06ea2f200e3d2ce42}{convergence\_\-eff\_\-sample\_\-size}
+\begin{DoxyCompactList}\small\item\em Declare convergence if both perplexity and effective sample size large enough. \item\end{DoxyCompactList}\item 
+\hyperlink{classeos_1_1VerifiedRange}{VerifiedRange}$<$ double $>$ \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a42a627c391f5278eff3a1c1de7f06985}{convergence\_\-perplexity}
+\begin{DoxyCompactList}\small\item\em Declare convergence if both perplexity and effective sample size large enough. \item\end{DoxyCompactList}\item 
+bool \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_aec486491bd33a3edf40a6062b07e4066}{ignore\_\-eff\_\-sample\_\-size}
+\item 
+\hyperlink{classeos_1_1VerifiedRange}{VerifiedRange}$<$ double $>$ \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a765c46a4b99f711c59f02e1ea0d8fbe9}{minimum\_\-eff\_\-sample\_\-size}
+\begin{DoxyCompactList}\small\item\em Declare converge if both perplexity and effective sample size large enough and do not rise anymore. \item\end{DoxyCompactList}\item 
+\hyperlink{classeos_1_1VerifiedRange}{VerifiedRange}$<$ double $>$ \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a4cfd93c384604e24e58ace95bdc31a2d}{minimum\_\-perplexity}
+\begin{DoxyCompactList}\small\item\em Declare converge if both perplexity and effective sample size large enough and do not rise anymore. \item\end{DoxyCompactList}\item 
+\hyperlink{classeos_1_1VerifiedRange}{VerifiedRange}$<$ unsigned $>$ \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_ac7a03e69442b543fc2cacaa647988741}{minimum\_\-steps}
+\begin{DoxyCompactList}\small\item\em Consider the last steps to decide if convergence statistics do not rise (significantly) anymore. \item\end{DoxyCompactList}\item 
+\hyperlink{classeos_1_1VerifiedRange}{VerifiedRange}$<$ double $>$ \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_ac0e8dec5f8ba7e5f0c997dd8a65fc231}{maximum\_\-relative\_\-std\_\-deviation}
+\begin{DoxyCompactList}\small\item\em Relative variance of last steps should be small to ascertain convergence. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Main run options}\par
+{\em \label{_amgrp03ae0482f9408262df632e84148db84d}
+ }\begin{DoxyCompactItemize}
+\item 
+long \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_ac5a61846614b1bb67bdde95df03b5663}{final\_\-chunk\_\-size}
+\begin{DoxyCompactList}\small\item\em Number of iterations used in final step after adaption is finished. \item\end{DoxyCompactList}\item 
+bool \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a3dffd8c05d907bae4e3aaaf1733d93c1}{store}
+\begin{DoxyCompactList}\small\item\em Whether to store collected samples. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Output options}\par
+{\em \label{_amgrpa3beb290cb264578f0ef293e44984365}
+ }\begin{DoxyCompactItemize}
+\item 
+std::string \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_abe31836405a05391987afe00f1f231d3}{output\_\-file}
+\item 
+\hyperlink{classeos_1_1VerifiedRange}{VerifiedRange}$<$ unsigned $>$ \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a55d2a98f36625d31eb9117c76212771f}{print\_\-steps}
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+Stores all configuration options for a \hyperlink{classeos_1_1PopulationMonteCarloSampler}{PopulationMonteCarloSampler}. 
+
+\subsection{Member Function Documentation}
+\hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_a8f659cd4c289ebfea73765497eee01dd}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!Default@{Default}}
+\index{Default@{Default}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{Default}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Config} eos::PopulationMonteCarloSampler::Config::Default ()\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_a8f659cd4c289ebfea73765497eee01dd}
+Named constructor
+
+\hyperlink{classeos_1_1PopulationMonteCarloSampler}{PopulationMonteCarloSampler} settings with reasonably chosen default values. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_aa88ccb299ca1bc2881951b82e6e66059}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!Quick@{Quick}}
+\index{Quick@{Quick}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{Quick}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Config} eos::PopulationMonteCarloSampler::Config::Quick ()\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_aa88ccb299ca1bc2881951b82e6e66059}
+Named constructor
+
+\hyperlink{classeos_1_1PopulationMonteCarloSampler}{PopulationMonteCarloSampler} settings with values optimized for quick chain convergence and evaluation.
+
+\begin{DoxyNote}{Note}
+The convergence is not very reliable. Use with care! If in doubt, use \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a8f659cd4c289ebfea73765497eee01dd}{PopulationMonteCarloSampler::Config::Default} 
+\end{DoxyNote}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_af4b575d8f24b51783b11bd5dca5ea576}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!adjust\_\-sample\_\-size@{adjust\_\-sample\_\-size}}
+\index{adjust\_\-sample\_\-size@{adjust\_\-sample\_\-size}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{adjust\_\-sample\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf eos::PopulationMonteCarloSampler::Config::adjust\_\-sample\_\-size}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_af4b575d8f24b51783b11bd5dca5ea576}
+
+
+Change number of samples according to number of live \hyperlink{namespaceeos_1_1components}{components}. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_afbe44ab88cfffcf63495463004cdd9b5}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!block\_\-decomposition@{block\_\-decomposition}}
+\index{block\_\-decomposition@{block\_\-decomposition}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{block\_\-decomposition}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf eos::PopulationMonteCarloSampler::Config::block\_\-decomposition}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_afbe44ab88cfffcf63495463004cdd9b5}
+Perform a decomposition into scan and nuisance parameters and use prior variance for initial proposal of nuisance. The (co)variance in scan direction is unaffected. In addition, set the component's mean to the prior's mean. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_ac6d3a2f26905ec51f3e9eadf73d51792}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!chunk\_\-size@{chunk\_\-size}}
+\index{chunk\_\-size@{chunk\_\-size}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{chunk\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf eos::PopulationMonteCarloSampler::Config::chunk\_\-size}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_ac6d3a2f26905ec51f3e9eadf73d51792}
+
+
+Number of iterations per chunk and component. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_a14c4bdc8c63ca8115e326e4c7bb3116e}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!chunks@{chunks}}
+\index{chunks@{chunks}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{chunks}]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf eos::PopulationMonteCarloSampler::Config::chunks}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_a14c4bdc8c63ca8115e326e4c7bb3116e}
+
+
+The number of updates to proposal functions (mixture \hyperlink{namespaceeos_1_1components}{components}). \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_a5668b999c1f4c6517b9366035571143d}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!component\_\-means@{component\_\-means}}
+\index{component\_\-means@{component\_\-means}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{component\_\-means}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$std::vector$<$double$>$ $>$ {\bf eos::PopulationMonteCarloSampler::Config::component\_\-means}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_a5668b999c1f4c6517b9366035571143d}
+
+
+n entries. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_a91b615db28333d345eae6d8a2ef55fd5}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!component\_\-offset@{component\_\-offset}}
+\index{component\_\-offset@{component\_\-offset}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{component\_\-offset}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf eos::PopulationMonteCarloSampler::Config::component\_\-offset}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_a91b615db28333d345eae6d8a2ef55fd5}
+
+
+Shift component by this number of sigmas. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_af7452d7aaa3b241039b730998cdbabff}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!component\_\-variances@{component\_\-variances}}
+\index{component\_\-variances@{component\_\-variances}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{component\_\-variances}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$std::vector$<$double$>$ $>$ {\bf eos::PopulationMonteCarloSampler::Config::component\_\-variances}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_af7452d7aaa3b241039b730998cdbabff}
+
+
+n$^\wedge$2 entries. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_a95aeae5fe77255d4fa0c2c5ddfafe883}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!component\_\-weights@{component\_\-weights}}
+\index{component\_\-weights@{component\_\-weights}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{component\_\-weights}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$double$>$ {\bf eos::PopulationMonteCarloSampler::Config::component\_\-weights}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_a95aeae5fe77255d4fa0c2c5ddfafe883}
+Each component has an associated weight, which determines how many samples it may contribute in the next sampling phase. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_a46afc1c26737e35c8ea582ffbab80edb}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!components\_\-per\_\-cluster@{components\_\-per\_\-cluster}}
+\index{components\_\-per\_\-cluster@{components\_\-per\_\-cluster}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{components\_\-per\_\-cluster}]{\setlength{\rightskip}{0pt plus 5cm}{\bf VerifiedRange}$<$unsigned$>$ {\bf eos::PopulationMonteCarloSampler::Config::components\_\-per\_\-cluster}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_a46afc1c26737e35c8ea582ffbab80edb}
+When initializing from global local, draw this many \hyperlink{namespaceeos_1_1components}{components} for each cluster. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_a69a93bb57d6610e06ea2f200e3d2ce42}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!convergence\_\-eff\_\-sample\_\-size@{convergence\_\-eff\_\-sample\_\-size}}
+\index{convergence\_\-eff\_\-sample\_\-size@{convergence\_\-eff\_\-sample\_\-size}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{convergence\_\-eff\_\-sample\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf VerifiedRange}$<$double$>$ {\bf eos::PopulationMonteCarloSampler::Config::convergence\_\-eff\_\-sample\_\-size}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_a69a93bb57d6610e06ea2f200e3d2ce42}
+
+
+Declare convergence if both perplexity and effective sample size large enough. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_a42a627c391f5278eff3a1c1de7f06985}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!convergence\_\-perplexity@{convergence\_\-perplexity}}
+\index{convergence\_\-perplexity@{convergence\_\-perplexity}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{convergence\_\-perplexity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf VerifiedRange}$<$double$>$ {\bf eos::PopulationMonteCarloSampler::Config::convergence\_\-perplexity}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_a42a627c391f5278eff3a1c1de7f06985}
+
+
+Declare convergence if both perplexity and effective sample size large enough. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_a394bc4c560e738d420fa34014745a7b7}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!crop\_\-highest\_\-weights@{crop\_\-highest\_\-weights}}
+\index{crop\_\-highest\_\-weights@{crop\_\-highest\_\-weights}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{crop\_\-highest\_\-weights}]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf eos::PopulationMonteCarloSampler::Config::crop\_\-highest\_\-weights}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_a394bc4c560e738d420fa34014745a7b7}
+If $>$ 0, find the samples with highest weight and ignore them during a PMC update. This can be useful to remove outliers which dominate over the bulk of samples and lead to many \hyperlink{namespaceeos_1_1components}{components} dying out, as well as to dramatically shrinking \hyperlink{namespaceeos_1_1components}{components}. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_ad4069f57b2c8b33032680a27b62fd5cf}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!degrees\_\-of\_\-freedom@{degrees\_\-of\_\-freedom}}
+\index{degrees\_\-of\_\-freedom@{degrees\_\-of\_\-freedom}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{degrees\_\-of\_\-freedom}]{\setlength{\rightskip}{0pt plus 5cm}{\bf VerifiedRange}$<$int$>$ {\bf eos::PopulationMonteCarloSampler::Config::degrees\_\-of\_\-freedom}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_ad4069f57b2c8b33032680a27b62fd5cf}
+Degrees of freedom of a multivariate t-\/distribution. Special value of -\/1 corresponds to the Gaussian distribution. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_ac5a61846614b1bb67bdde95df03b5663}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!final\_\-chunk\_\-size@{final\_\-chunk\_\-size}}
+\index{final\_\-chunk\_\-size@{final\_\-chunk\_\-size}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{final\_\-chunk\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf eos::PopulationMonteCarloSampler::Config::final\_\-chunk\_\-size}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_ac5a61846614b1bb67bdde95df03b5663}
+
+
+Number of iterations used in final step after adaption is finished. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_adf9f35d7f54defd04b9486de7d705ffa}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!group\_\-by\_\-r\_\-value@{group\_\-by\_\-r\_\-value}}
+\index{group\_\-by\_\-r\_\-value@{group\_\-by\_\-r\_\-value}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{group\_\-by\_\-r\_\-value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf VerifiedRange}$<$double$>$ {\bf eos::PopulationMonteCarloSampler::Config::group\_\-by\_\-r\_\-value}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_adf9f35d7f54defd04b9486de7d705ffa}
+If true, use the Gelman-\/Rubin R-\/value to combine chains into groups. N initial guess clusters are drawn from each group, no matter how many chains are in it.
+
+Default: 1, all chains belong to same group. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_aec486491bd33a3edf40a6062b07e4066}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!ignore\_\-eff\_\-sample\_\-size@{ignore\_\-eff\_\-sample\_\-size}}
+\index{ignore\_\-eff\_\-sample\_\-size@{ignore\_\-eff\_\-sample\_\-size}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{ignore\_\-eff\_\-sample\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf eos::PopulationMonteCarloSampler::Config::ignore\_\-eff\_\-sample\_\-size}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_aec486491bd33a3edf40a6062b07e4066}
+Can declare convergence w/o considering the effective sample size, just by looking at perplexity. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_a27ea93f2181c10068424f2b7e24fbc14}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!ignore\_\-groups@{ignore\_\-groups}}
+\index{ignore\_\-groups@{ignore\_\-groups}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{ignore\_\-groups}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$unsigned$>$ {\bf eos::PopulationMonteCarloSampler::Config::ignore\_\-groups}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_a27ea93f2181c10068424f2b7e24fbc14}
+Ignore groups (identified by index) from clustering. Default: no groups are ignored. \begin{DoxyNote}{Note}
+Use with great care. Important parts of the posterior may be ignored. 
+\end{DoxyNote}
+\hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_ac0e8dec5f8ba7e5f0c997dd8a65fc231}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!maximum\_\-relative\_\-std\_\-deviation@{maximum\_\-relative\_\-std\_\-deviation}}
+\index{maximum\_\-relative\_\-std\_\-deviation@{maximum\_\-relative\_\-std\_\-deviation}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{maximum\_\-relative\_\-std\_\-deviation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf VerifiedRange}$<$double$>$ {\bf eos::PopulationMonteCarloSampler::Config::maximum\_\-relative\_\-std\_\-deviation}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_ac0e8dec5f8ba7e5f0c997dd8a65fc231}
+
+
+Relative variance of last steps should be small to ascertain convergence. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_a765c46a4b99f711c59f02e1ea0d8fbe9}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!minimum\_\-eff\_\-sample\_\-size@{minimum\_\-eff\_\-sample\_\-size}}
+\index{minimum\_\-eff\_\-sample\_\-size@{minimum\_\-eff\_\-sample\_\-size}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{minimum\_\-eff\_\-sample\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf VerifiedRange}$<$double$>$ {\bf eos::PopulationMonteCarloSampler::Config::minimum\_\-eff\_\-sample\_\-size}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_a765c46a4b99f711c59f02e1ea0d8fbe9}
+
+
+Declare converge if both perplexity and effective sample size large enough and do not rise anymore. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_a32b76214e4175ec4543162d36707ab84}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!minimum\_\-overlap@{minimum\_\-overlap}}
+\index{minimum\_\-overlap@{minimum\_\-overlap}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{minimum\_\-overlap}]{\setlength{\rightskip}{0pt plus 5cm}{\bf VerifiedRange}$<$double$>$ {\bf eos::PopulationMonteCarloSampler::Config::minimum\_\-overlap}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_a32b76214e4175ec4543162d36707ab84}
+
+
+Used during filtering of \hyperlink{namespaceeos_1_1components}{components}, if too many samples fall outside of box, remove \hyperlink{namespaceeos_1_1components}{components}. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_a4cfd93c384604e24e58ace95bdc31a2d}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!minimum\_\-perplexity@{minimum\_\-perplexity}}
+\index{minimum\_\-perplexity@{minimum\_\-perplexity}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{minimum\_\-perplexity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf VerifiedRange}$<$double$>$ {\bf eos::PopulationMonteCarloSampler::Config::minimum\_\-perplexity}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_a4cfd93c384604e24e58ace95bdc31a2d}
+
+
+Declare converge if both perplexity and effective sample size large enough and do not rise anymore. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_ac7a03e69442b543fc2cacaa647988741}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!minimum\_\-steps@{minimum\_\-steps}}
+\index{minimum\_\-steps@{minimum\_\-steps}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{minimum\_\-steps}]{\setlength{\rightskip}{0pt plus 5cm}{\bf VerifiedRange}$<$unsigned$>$ {\bf eos::PopulationMonteCarloSampler::Config::minimum\_\-steps}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_ac7a03e69442b543fc2cacaa647988741}
+
+
+Consider the last steps to decide if convergence statistics do not rise (significantly) anymore. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_abb5d4e207d1f2da439dddf9c49854a1e}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!mode\_\-distance@{mode\_\-distance}}
+\index{mode\_\-distance@{mode\_\-distance}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{mode\_\-distance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf VerifiedRange}$<$double$>$ {\bf eos::PopulationMonteCarloSampler::Config::mode\_\-distance}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_abb5d4e207d1f2da439dddf9c49854a1e}
+Perform a decomposition into scan and nuisance parameters and use prior variance for initial proposal of nuisance. The (co)variance in scan direction is unaffected. In addition, set the component's mean to the prior's mean. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_ac729d374ca2a58aeba6cf60d296d7720}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!need\_\-prerun@{need\_\-prerun}}
+\index{need\_\-prerun@{need\_\-prerun}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{need\_\-prerun}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf eos::PopulationMonteCarloSampler::Config::need\_\-prerun}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_ac729d374ca2a58aeba6cf60d296d7720}
+
+
+If false, no adaptions to proposal densities are made. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_ae6362a7374c9ca1650b501c07672442a}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!number\_\-of\_\-workers@{number\_\-of\_\-workers}}
+\index{number\_\-of\_\-workers@{number\_\-of\_\-workers}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{number\_\-of\_\-workers}]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf eos::PopulationMonteCarloSampler::Config::number\_\-of\_\-workers}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_ae6362a7374c9ca1650b501c07672442a}
+How many workers to use. If parallelize is true, this is the number of threads used. The default value is 0, implying that the proper number is drawn from the number of available cores on the machine. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_abe31836405a05391987afe00f1f231d3}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!output\_\-file@{output\_\-file}}
+\index{output\_\-file@{output\_\-file}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{output\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf eos::PopulationMonteCarloSampler::Config::output\_\-file}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_abe31836405a05391987afe00f1f231d3}
+The HDF5 output file to store the markov chains. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_aee29a36e8e23c971ba1e36616e9affb4}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!override\_\-global\_\-local\_\-proposal@{override\_\-global\_\-local\_\-proposal}}
+\index{override\_\-global\_\-local\_\-proposal@{override\_\-global\_\-local\_\-proposal}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{override\_\-global\_\-local\_\-proposal}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf eos::PopulationMonteCarloSampler::Config::override\_\-global\_\-local\_\-proposal}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_aee29a36e8e23c971ba1e36616e9affb4}
+If true, use same local proposal as supplied by GlobalLocal input. Else use degrees\_\-of\_\-freedom defined above. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_abe02d7abd41f52ae2eaf3eba25522f50}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!parallelize@{parallelize}}
+\index{parallelize@{parallelize}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{parallelize}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf eos::PopulationMonteCarloSampler::Config::parallelize}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_abe02d7abd41f52ae2eaf3eba25522f50}
+If true, use as many threads as there are cores available. If false, use only one thread. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_a0bffb06da5f9f3ef917eec1ce2139ce1}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!patch\_\-around\_\-local\_\-mode@{patch\_\-around\_\-local\_\-mode}}
+\index{patch\_\-around\_\-local\_\-mode@{patch\_\-around\_\-local\_\-mode}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{patch\_\-around\_\-local\_\-mode}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf eos::PopulationMonteCarloSampler::Config::patch\_\-around\_\-local\_\-mode}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_a0bffb06da5f9f3ef917eec1ce2139ce1}
+When creating patch from a Markov chain history, place the patches around the point with highest posterior in the selected range of point. If false, center on the mean of all points in range. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_a55d2a98f36625d31eb9117c76212771f}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!print\_\-steps@{print\_\-steps}}
+\index{print\_\-steps@{print\_\-steps}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{print\_\-steps}]{\setlength{\rightskip}{0pt plus 5cm}{\bf VerifiedRange}$<$unsigned$>$ {\bf eos::PopulationMonteCarloSampler::Config::print\_\-steps}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_a55d2a98f36625d31eb9117c76212771f}
+The HDF5 output file to store the markov chains. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_a5e3c5e1375b04890db40b3d7581b5413}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!r\_\-value\_\-no\_\-nuisance@{r\_\-value\_\-no\_\-nuisance}}
+\index{r\_\-value\_\-no\_\-nuisance@{r\_\-value\_\-no\_\-nuisance}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{r\_\-value\_\-no\_\-nuisance}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf eos::PopulationMonteCarloSampler::Config::r\_\-value\_\-no\_\-nuisance}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_a5e3c5e1375b04890db40b3d7581b5413}
+When grouping with R-\/value, consider only the scan parameters. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_aca0e5339b634644471e1aa5cdd698231}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!random\_\-start@{random\_\-start}}
+\index{random\_\-start@{random\_\-start}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{random\_\-start}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf eos::PopulationMonteCarloSampler::Config::random\_\-start}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_aca0e5339b634644471e1aa5cdd698231}
+Initialize the \hyperlink{namespaceeos_1_1components}{components} randomly at the beginning. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_abf7b1c768e283f8a41bc8b348bb84304}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!seed@{seed}}
+\index{seed@{seed}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{seed}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long {\bf eos::PopulationMonteCarloSampler::Config::seed}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_abf7b1c768e283f8a41bc8b348bb84304}
+The seed that is used to initialize the random number generator. Independent runs with identical seeds will produce \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_a2a6f2098dc8be089015818326d8eb15f}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!single\_\-cluster@{single\_\-cluster}}
+\index{single\_\-cluster@{single\_\-cluster}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{single\_\-cluster}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf eos::PopulationMonteCarloSampler::Config::single\_\-cluster}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_a2a6f2098dc8be089015818326d8eb15f}
+Use only history points from a particular cluster defined by its index. Default value -\/1: take from all clusters \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_ac920d732b229713ca67428d284390fa2}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!skip\_\-initial@{skip\_\-initial}}
+\index{skip\_\-initial@{skip\_\-initial}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{skip\_\-initial}]{\setlength{\rightskip}{0pt plus 5cm}{\bf VerifiedRange}$<$double$>$ {\bf eos::PopulationMonteCarloSampler::Config::skip\_\-initial}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_ac920d732b229713ca67428d284390fa2}
+
+
+Skip this percentage from beginning of a chain's history. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_a9d8798a5789fd4fbe250dba673b92df6}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!sliding\_\-window@{sliding\_\-window}}
+\index{sliding\_\-window@{sliding\_\-window}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{sliding\_\-window}]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf eos::PopulationMonteCarloSampler::Config::sliding\_\-window}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_a9d8798a5789fd4fbe250dba673b92df6}
+With hierarchical clustering, use this many samples to form a patch from a single Markov chain. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_a235c1a2d0c336f9f8ed9c58917acf68b}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!starting\_\-points@{starting\_\-points}}
+\index{starting\_\-points@{starting\_\-points}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{starting\_\-points}]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf eos::PopulationMonteCarloSampler::Config::starting\_\-points}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_a235c1a2d0c336f9f8ed9c58917acf68b}
+Number of starting positions. Start optimization from each one to identify local modes and covariances. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_a9de01b257ce34b8a747de5dcf992e053}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!std\_\-dev\_\-reduction@{std\_\-dev\_\-reduction}}
+\index{std\_\-dev\_\-reduction@{std\_\-dev\_\-reduction}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{std\_\-dev\_\-reduction}]{\setlength{\rightskip}{0pt plus 5cm}{\bf VerifiedRange}$<$double$>$ {\bf eos::PopulationMonteCarloSampler::Config::std\_\-dev\_\-reduction}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_a9de01b257ce34b8a747de5dcf992e053}
+For random start, take the \hyperlink{namespacestd}{std}. deviation as parameter range divided by std\_\-dev\_\-reduction. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_a3dffd8c05d907bae4e3aaaf1733d93c1}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!store@{store}}
+\index{store@{store}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{store}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf eos::PopulationMonteCarloSampler::Config::store}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_a3dffd8c05d907bae4e3aaaf1733d93c1}
+
+
+Whether to store collected samples. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_ad24a2d883fe9d2faedbcf4f861bc9d82}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!store\_\-hc\_\-initial@{store\_\-hc\_\-initial}}
+\index{store\_\-hc\_\-initial@{store\_\-hc\_\-initial}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{store\_\-hc\_\-initial}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf eos::PopulationMonteCarloSampler::Config::store\_\-hc\_\-initial}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_ad24a2d883fe9d2faedbcf4f861bc9d82}
+
+
+Store initial guess for clustering from long patches. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_a1ddf56fd57dd8dd3c4462dd1cb2800ab}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!store\_\-input\_\-components@{store\_\-input\_\-components}}
+\index{store\_\-input\_\-components@{store\_\-input\_\-components}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{store\_\-input\_\-components}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf eos::PopulationMonteCarloSampler::Config::store\_\-input\_\-components}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_a1ddf56fd57dd8dd3c4462dd1cb2800ab}
+
+
+Store the \hyperlink{namespaceeos_1_1components}{components} created from chain patches. \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_a85cf9361f3660df01fa551d9ebd62040}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!store\_\-prerun@{store\_\-prerun}}
+\index{store\_\-prerun@{store\_\-prerun}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{store\_\-prerun}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf eos::PopulationMonteCarloSampler::Config::store\_\-prerun}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_a85cf9361f3660df01fa551d9ebd62040}
+
+
+store samples of prerun steps (statistics are always stored) \hypertarget{structeos_1_1PopulationMonteCarloSampler_1_1Config_a906c7eeded237f7bbe810a8d03d8402b}{
+\index{eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}!super\_\-clusters@{super\_\-clusters}}
+\index{super\_\-clusters@{super\_\-clusters}!eos::PopulationMonteCarloSampler::Config@{eos::PopulationMonteCarloSampler::Config}}
+\subsubsection[{super\_\-clusters}]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf eos::PopulationMonteCarloSampler::Config::super\_\-clusters}}}
+\label{structeos_1_1PopulationMonteCarloSampler_1_1Config_a906c7eeded237f7bbe810a8d03d8402b}
+Perform the hierarchical\_\-clustering algorithm on a set of input prerun markov chains to form an initial proposal density. Create this many \hyperlink{namespaceeos_1_1components}{components} for PMC.
+
+If group\_\-by\_\-r\_\-value is active, choose this many \hyperlink{namespaceeos_1_1components}{components} per group of chains. 
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{population__monte__carlo__sampler_8hh}{population\_\-monte\_\-carlo\_\-sampler.hh}\end{DoxyCompactItemize}

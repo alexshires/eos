@@ -1,0 +1,90 @@
+\hypertarget{classeos_1_1ParameterUser}{
+\section{eos::ParameterUser Class Reference}
+\label{classeos_1_1ParameterUser}\index{eos::ParameterUser@{eos::ParameterUser}}
+}
+
+
+{\ttfamily \#include $<$parameters.hh$>$}
+
+Inherited by \hyperlink{classeos_1_1BMesonProperties}{eos::BMesonProperties}, \hyperlink{classeos_1_1BToDilepton}{eos::BToDilepton}, \hyperlink{classeos_1_1BToKDilepton_3_01LargeRecoil_01_4}{eos::BToKDilepton$<$ LargeRecoil $>$}, \hyperlink{classeos_1_1BToKDilepton_3_01LowRecoil_01_4}{eos::BToKDilepton$<$ LowRecoil $>$}, \hyperlink{classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4}{eos::BToKstarDilepton$<$ LargeRecoil $>$}, \hyperlink{classeos_1_1BToKstarDilepton_3_01LowRecoil_01_4}{eos::BToKstarDilepton$<$ LowRecoil $>$}, \hyperlink{classeos_1_1BToKstarGamma}{eos::BToKstarGamma}, \hyperlink{classeos_1_1BToPiLeptonNeutrino}{eos::BToPiLeptonNeutrino}, \hyperlink{classeos_1_1BToXsDilepton_3_01HLMW2005_01_4}{eos::BToXsDilepton$<$ HLMW2005 $>$}, \hyperlink{classeos_1_1BToXsGamma_3_01Minimal_01_4}{eos::BToXsGamma$<$ Minimal $>$}, \hyperlink{classeos_1_1BToXsGamma_3_01NLO_01_4}{eos::BToXsGamma$<$ NLO $>$}, \hyperlink{classeos_1_1FormFactors_3_01OneHalfPlusToOneHalfPlus_01_4}{eos::FormFactors$<$ OneHalfPlusToOneHalfPlus $>$}, \hyperlink{classeos_1_1FormFactors_3_01PToP_01_4}{eos::FormFactors$<$ PToP $>$}, \hyperlink{classeos_1_1FormFactors_3_01PToV_01_4}{eos::FormFactors$<$ PToV $>$}, \hyperlink{classeos_1_1LambdaBToLambdaDilepton_3_01LargeRecoil_01_4}{eos::LambdaBToLambdaDilepton$<$ LargeRecoil $>$}, \hyperlink{classeos_1_1LambdaBToLambdaDilepton_3_01LowRecoil_01_4}{eos::LambdaBToLambdaDilepton$<$ LowRecoil $>$}, \hyperlink{classeos_1_1Model}{eos::Model}, \hyperlink{classeos_1_1Observable}{eos::Observable}, and \hyperlink{classeos_1_1PionLCDAs}{eos::PionLCDAs}.\subsection*{Public Member Functions}
+\begin{Indent}{\bf Access}\par
+{\em \label{_amgrpbf733d8a933c1601697f364223fc7ecb}
+ }\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classeos_1_1ParameterUser_ad91a901e589653272482bded7e453c70}{uses} (const \hyperlink{classeos_1_1Parameter_a065f55e66b2128cc5f14339e676d833a}{Parameter::Id} \&id)
+\item 
+void \hyperlink{classeos_1_1ParameterUser_a7a37e779cf45ef1075fe7bf670688b72}{uses} (const \hyperlink{classeos_1_1ParameterUser}{ParameterUser} \&user)
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std::set$<$ \hyperlink{classeos_1_1Parameter_a065f55e66b2128cc5f14339e676d833a}{Parameter::Id} $>$ \hyperlink{classeos_1_1ParameterUser_aa3a0285297e16cf2a5830df1f9bb2f4b}{\_\-ids}
+\end{DoxyCompactItemize}
+\subsection*{Iteration over ids}
+\label{_amgrp719dadb6383be95df6deeaf25dd0c545}
+ \begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator}$<$ ConstIteratorTag, const \hyperlink{classeos_1_1Parameter_a065f55e66b2128cc5f14339e676d833a}{Parameter::Id} $>$ \hyperlink{classeos_1_1ParameterUser_a7105631bbcb4b2492e6377b2b69f5b0f}{ConstIterator}
+\item 
+\hyperlink{classeos_1_1WrappedForwardIterator}{ConstIterator} \hyperlink{classeos_1_1ParameterUser_a9cd569207063cd2a8f807c4e1203a5d4}{begin} () const 
+\item 
+\hyperlink{classeos_1_1WrappedForwardIterator}{ConstIterator} \hyperlink{classeos_1_1ParameterUser_a5813c886f3fd3f074cc02a53fc9e0790}{end} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for all users of \hyperlink{classeos_1_1Parameter}{Parameter} objects. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classeos_1_1ParameterUser_a7105631bbcb4b2492e6377b2b69f5b0f}{
+\index{eos::ParameterUser@{eos::ParameterUser}!ConstIterator@{ConstIterator}}
+\index{ConstIterator@{ConstIterator}!eos::ParameterUser@{eos::ParameterUser}}
+\subsubsection[{ConstIterator}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf WrappedForwardIterator}$<$ConstIteratorTag, const {\bf Parameter::Id}$>$ {\bf eos::ParameterUser::ConstIterator}}}
+\label{classeos_1_1ParameterUser_a7105631bbcb4b2492e6377b2b69f5b0f}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classeos_1_1ParameterUser_a9cd569207063cd2a8f807c4e1203a5d4}{
+\index{eos::ParameterUser@{eos::ParameterUser}!begin@{begin}}
+\index{begin@{begin}!eos::ParameterUser@{eos::ParameterUser}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ConstIterator} eos::ParameterUser::begin () const}}
+\label{classeos_1_1ParameterUser_a9cd569207063cd2a8f807c4e1203a5d4}
+\hypertarget{classeos_1_1ParameterUser_a5813c886f3fd3f074cc02a53fc9e0790}{
+\index{eos::ParameterUser@{eos::ParameterUser}!end@{end}}
+\index{end@{end}!eos::ParameterUser@{eos::ParameterUser}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ConstIterator} eos::ParameterUser::end () const}}
+\label{classeos_1_1ParameterUser_a5813c886f3fd3f074cc02a53fc9e0790}
+\hypertarget{classeos_1_1ParameterUser_a7a37e779cf45ef1075fe7bf670688b72}{
+\index{eos::ParameterUser@{eos::ParameterUser}!uses@{uses}}
+\index{uses@{uses}!eos::ParameterUser@{eos::ParameterUser}}
+\subsubsection[{uses}]{\setlength{\rightskip}{0pt plus 5cm}void eos::ParameterUser::uses (const {\bf ParameterUser} \& {\em user})}}
+\label{classeos_1_1ParameterUser_a7a37e779cf45ef1075fe7bf670688b72}
+Copy parameter ids of another \hyperlink{classeos_1_1ParameterUser}{ParameterUser} to our list of used ids.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em user}]The other \hyperlink{classeos_1_1ParameterUser}{ParameterUser} whose ids we are going to copy. \end{DoxyParams}
+\hypertarget{classeos_1_1ParameterUser_ad91a901e589653272482bded7e453c70}{
+\index{eos::ParameterUser@{eos::ParameterUser}!uses@{uses}}
+\index{uses@{uses}!eos::ParameterUser@{eos::ParameterUser}}
+\subsubsection[{uses}]{\setlength{\rightskip}{0pt plus 5cm}void eos::ParameterUser::uses (const {\bf Parameter::Id} \& {\em id})}}
+\label{classeos_1_1ParameterUser_ad91a901e589653272482bded7e453c70}
+Add a given parameter id to our list of used ids.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em id}]The parameter id that we use. \end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classeos_1_1ParameterUser_aa3a0285297e16cf2a5830df1f9bb2f4b}{
+\index{eos::ParameterUser@{eos::ParameterUser}!\_\-ids@{\_\-ids}}
+\index{\_\-ids@{\_\-ids}!eos::ParameterUser@{eos::ParameterUser}}
+\subsubsection[{\_\-ids}]{\setlength{\rightskip}{0pt plus 5cm}std::set$<${\bf Parameter::Id}$>$ {\bf eos::ParameterUser::\_\-ids}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classeos_1_1ParameterUser_aa3a0285297e16cf2a5830df1f9bb2f4b}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{parameters_8hh}{parameters.hh}\end{DoxyCompactItemize}

@@ -1,0 +1,544 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="markov__chain__sampler_8hh" kind="file">
+    <compoundname>markov_chain_sampler.hh</compoundname>
+    <includes refid="analysis_8hh" local="no">eos/utils/analysis.hh</includes>
+    <includes refid="markov__chain_8hh" local="no">eos/utils/markov_chain.hh</includes>
+    <includes refid="parameters_8hh" local="no">eos/utils/parameters.hh</includes>
+    <includes refid="private__implementation__pattern_8hh" local="no">eos/utils/private_implementation_pattern.hh</includes>
+    <includes refid="proposal__functions_8hh" local="no">eos/utils/proposal_functions.hh</includes>
+    <includes refid="verify_8hh" local="no">eos/utils/verify.hh</includes>
+    <incdepgraph>
+      <node id="1101">
+        <label>gsl/gsl_vector.h</label>
+      </node>
+      <node id="1079">
+        <label>functional</label>
+      </node>
+      <node id="1064">
+        <label>eos/observable.hh</label>
+        <link refid="observable_8hh"/>
+        <childnode refid="1065" relation="include">
+        </childnode>
+        <childnode refid="1068" relation="include">
+        </childnode>
+        <childnode refid="1070" relation="include">
+        </childnode>
+        <childnode refid="1071" relation="include">
+        </childnode>
+        <childnode refid="1067" relation="include">
+        </childnode>
+        <childnode refid="1060" relation="include">
+        </childnode>
+      </node>
+      <node id="1070">
+        <label>eos/utils/options.hh</label>
+        <link refid="options_8hh"/>
+        <childnode refid="1065" relation="include">
+        </childnode>
+        <childnode refid="1069" relation="include">
+        </childnode>
+        <childnode refid="1067" relation="include">
+        </childnode>
+      </node>
+      <node id="1074">
+        <label>eos/utils/parameters-fwd.hh</label>
+        <link refid="parameters-fwd_8hh"/>
+      </node>
+      <node id="1080">
+        <label>iterator</label>
+      </node>
+      <node id="1076">
+        <label>cstdint</label>
+      </node>
+      <node id="1090">
+        <label>eos/utils/log_prior-fwd.hh</label>
+        <link refid="log__prior-fwd_8hh"/>
+        <childnode refid="1060" relation="include">
+        </childnode>
+      </node>
+      <node id="1096">
+        <label>eos/utils/proposal_functions.hh</label>
+        <link refid="proposal__functions_8hh"/>
+        <childnode refid="1097" relation="include">
+        </childnode>
+        <childnode refid="1061" relation="include">
+        </childnode>
+        <childnode refid="1090" relation="include">
+        </childnode>
+        <childnode refid="1095" relation="include">
+        </childnode>
+        <childnode refid="1091" relation="include">
+        </childnode>
+        <childnode refid="1100" relation="include">
+        </childnode>
+        <childnode refid="1101" relation="include">
+        </childnode>
+      </node>
+      <node id="1099">
+        <label>eos/utils/wrapped_forward_iterator-impl.hh</label>
+        <link refid="wrapped__forward__iterator-impl_8hh"/>
+        <childnode refid="1077" relation="include">
+        </childnode>
+      </node>
+      <node id="1089">
+        <label>eos/utils/log_prior.hh</label>
+        <link refid="log__prior_8hh"/>
+        <childnode refid="1090" relation="include">
+        </childnode>
+        <childnode refid="1071" relation="include">
+        </childnode>
+        <childnode refid="1077" relation="include">
+        </childnode>
+        <childnode refid="1085" relation="include">
+        </childnode>
+        <childnode refid="1060" relation="include">
+        </childnode>
+        <childnode refid="1088" relation="include">
+        </childnode>
+      </node>
+      <node id="1067">
+        <label>string</label>
+      </node>
+      <node id="1062">
+        <label>eos/utils/log_likelihood.hh</label>
+        <link refid="log__likelihood_8hh"/>
+        <childnode refid="1063" relation="include">
+        </childnode>
+        <childnode refid="1064" relation="include">
+        </childnode>
+        <childnode refid="1083" relation="include">
+        </childnode>
+        <childnode refid="1086" relation="include">
+        </childnode>
+        <childnode refid="1084" relation="include">
+        </childnode>
+        <childnode refid="1071" relation="include">
+        </childnode>
+        <childnode refid="1069" relation="include">
+        </childnode>
+        <childnode refid="1088" relation="include">
+        </childnode>
+      </node>
+      <node id="1097">
+        <label>eos/utils/cluster.hh</label>
+        <link refid="cluster_8hh"/>
+        <childnode refid="1095" relation="include">
+        </childnode>
+        <childnode refid="1098" relation="include">
+        </childnode>
+        <childnode refid="1099" relation="include">
+        </childnode>
+      </node>
+      <node id="1069">
+        <label>eos/utils/private_implementation_pattern.hh</label>
+        <link refid="private__implementation__pattern_8hh"/>
+        <childnode refid="1060" relation="include">
+        </childnode>
+      </node>
+      <node id="1078">
+        <label>eos/utils/wrapped_forward_iterator-fwd.hh</label>
+        <link refid="wrapped__forward__iterator-fwd_8hh"/>
+      </node>
+      <node id="1066">
+        <label>exception</label>
+      </node>
+      <node id="1059">
+        <label>eos/utils/analysis-fwd.hh</label>
+        <link refid="analysis-fwd_8hh"/>
+        <childnode refid="1060" relation="include">
+        </childnode>
+      </node>
+      <node id="1061">
+        <label>eos/utils/hdf5-fwd.hh</label>
+        <link refid="hdf5-fwd_8hh"/>
+      </node>
+      <node id="1072">
+        <label>eos/utils/mutable.hh</label>
+        <link refid="mutable_8hh"/>
+        <childnode refid="1073" relation="include">
+        </childnode>
+        <childnode refid="1069" relation="include">
+        </childnode>
+        <childnode refid="1060" relation="include">
+        </childnode>
+      </node>
+      <node id="1084">
+        <label>eos/utils/observable_cache.hh</label>
+        <link refid="observable__cache_8hh"/>
+        <childnode refid="1064" relation="include">
+        </childnode>
+        <childnode refid="1071" relation="include">
+        </childnode>
+        <childnode refid="1069" relation="include">
+        </childnode>
+      </node>
+      <node id="1058">
+        <label>eos/utils/analysis.hh</label>
+        <link refid="analysis_8hh"/>
+        <childnode refid="1059" relation="include">
+        </childnode>
+        <childnode refid="1061" relation="include">
+        </childnode>
+        <childnode refid="1062" relation="include">
+        </childnode>
+        <childnode refid="1089" relation="include">
+        </childnode>
+        <childnode refid="1069" relation="include">
+        </childnode>
+        <childnode refid="1091" relation="include">
+        </childnode>
+        <childnode refid="1085" relation="include">
+        </childnode>
+        <childnode refid="1082" relation="include">
+        </childnode>
+        <childnode refid="1094" relation="include">
+        </childnode>
+      </node>
+      <node id="1063">
+        <label>eos/constraint.hh</label>
+        <link refid="constraint_8hh"/>
+        <childnode refid="1064" relation="include">
+        </childnode>
+        <childnode refid="1083" relation="include">
+        </childnode>
+        <childnode refid="1084" relation="include">
+        </childnode>
+        <childnode refid="1069" relation="include">
+        </childnode>
+        <childnode refid="1077" relation="include">
+        </childnode>
+        <childnode refid="1085" relation="include">
+        </childnode>
+      </node>
+      <node id="1086">
+        <label>eos/utils/matrix.hh</label>
+        <link refid="matrix_8hh"/>
+        <childnode refid="1087" relation="include">
+        </childnode>
+      </node>
+      <node id="1068">
+        <label>eos/utils/kinematic.hh</label>
+        <link refid="kinematic_8hh"/>
+        <childnode refid="1065" relation="include">
+        </childnode>
+        <childnode refid="1069" relation="include">
+        </childnode>
+      </node>
+      <node id="1085">
+        <label>vector</label>
+      </node>
+      <node id="1094">
+        <label>gsl/gsl_multimin.h</label>
+      </node>
+      <node id="1087">
+        <label>array</label>
+      </node>
+      <node id="1093">
+        <label>sstream</label>
+      </node>
+      <node id="1075">
+        <label>eos/utils/random_number_generator.hh</label>
+        <link refid="random__number__generator_8hh"/>
+        <childnode refid="1069" relation="include">
+        </childnode>
+        <childnode refid="1076" relation="include">
+        </childnode>
+      </node>
+      <node id="1091">
+        <label>eos/utils/verify.hh</label>
+        <link refid="verify_8hh"/>
+        <childnode refid="1065" relation="include">
+        </childnode>
+        <childnode refid="1092" relation="include">
+        </childnode>
+      </node>
+      <node id="1065">
+        <label>eos/utils/exception.hh</label>
+        <link refid="exception_8hh"/>
+        <childnode refid="1066" relation="include">
+        </childnode>
+        <childnode refid="1067" relation="include">
+        </childnode>
+      </node>
+      <node id="1057">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/markov_chain_sampler.hh</label>
+        <link refid="markov_chain_sampler.hh"/>
+        <childnode refid="1058" relation="include">
+        </childnode>
+        <childnode refid="1095" relation="include">
+        </childnode>
+        <childnode refid="1071" relation="include">
+        </childnode>
+        <childnode refid="1069" relation="include">
+        </childnode>
+        <childnode refid="1096" relation="include">
+        </childnode>
+        <childnode refid="1091" relation="include">
+        </childnode>
+      </node>
+      <node id="1095">
+        <label>eos/utils/markov_chain.hh</label>
+        <link refid="markov__chain_8hh"/>
+        <childnode refid="1059" relation="include">
+        </childnode>
+        <childnode refid="1061" relation="include">
+        </childnode>
+        <childnode refid="1071" relation="include">
+        </childnode>
+        <childnode refid="1092" relation="include">
+        </childnode>
+        <childnode refid="1085" relation="include">
+        </childnode>
+        <childnode refid="1088" relation="include">
+        </childnode>
+      </node>
+      <node id="1077">
+        <label>eos/utils/wrapped_forward_iterator.hh</label>
+        <link refid="wrapped__forward__iterator_8hh"/>
+        <childnode refid="1078" relation="include">
+        </childnode>
+        <childnode refid="1079" relation="include">
+        </childnode>
+        <childnode refid="1080" relation="include">
+        </childnode>
+        <childnode refid="1081" relation="include">
+        </childnode>
+      </node>
+      <node id="1098">
+        <label>eos/utils/private_implementation_pattern-impl.hh</label>
+        <link refid="private__implementation__pattern-impl_8hh"/>
+        <childnode refid="1069" relation="include">
+        </childnode>
+      </node>
+      <node id="1092">
+        <label>eos/utils/stringify.hh</label>
+        <link refid="stringify_8hh"/>
+        <childnode refid="1067" relation="include">
+        </childnode>
+        <childnode refid="1093" relation="include">
+        </childnode>
+      </node>
+      <node id="1088">
+        <label>gsl/gsl_rng.h</label>
+      </node>
+      <node id="1081">
+        <label>type_traits</label>
+      </node>
+      <node id="1082">
+        <label>set</label>
+      </node>
+      <node id="1073">
+        <label>eos/utils/mutable-fwd.hh</label>
+        <link refid="mutable-fwd_8hh"/>
+      </node>
+      <node id="1083">
+        <label>eos/utils/log_likelihood-fwd.hh</label>
+        <link refid="log__likelihood-fwd_8hh"/>
+        <childnode refid="1060" relation="include">
+        </childnode>
+      </node>
+      <node id="1071">
+        <label>eos/utils/parameters.hh</label>
+        <link refid="parameters_8hh"/>
+        <childnode refid="1065" relation="include">
+        </childnode>
+        <childnode refid="1072" relation="include">
+        </childnode>
+        <childnode refid="1074" relation="include">
+        </childnode>
+        <childnode refid="1069" relation="include">
+        </childnode>
+        <childnode refid="1075" relation="include">
+        </childnode>
+        <childnode refid="1077" relation="include">
+        </childnode>
+        <childnode refid="1082" relation="include">
+        </childnode>
+      </node>
+      <node id="1100">
+        <label>gsl/gsl_matrix.h</label>
+      </node>
+      <node id="1060">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classeos_1_1MarkovChainSampler" prot="public">eos::MarkovChainSampler</innerclass>
+    <innerclass refid="classeos_1_1MarkovChainSampler_1_1Config" prot="public">eos::MarkovChainSampler::Config</innerclass>
+    <innerclass refid="structeos_1_1MarkovChainSampler_1_1PreRunInfo" prot="public">eos::MarkovChainSampler::PreRunInfo</innerclass>
+    <innernamespace refid="namespaceeos">eos</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="markov__chain__sampler_8hh_1a564984576aa31b9ed76d28c2b0bd2b2f" prot="public" static="no">
+        <name>EOS_GUARD_SRC_UTILS_MC_SAMPLER_HH</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain_sampler.hh" line="22" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/markov_chain_sampler.hh" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>vim:<sp/>set<sp/>sw=4<sp/>sts=4<sp/>et<sp/>foldmethod=syntax<sp/>:<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2011,<sp/>2012,<sp/>2013<sp/>Frederik<sp/>Beaujean</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2011,<sp/>2013<sp/>Danny<sp/>van<sp/>Dyk</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>EOS<sp/>project.<sp/>EOS<sp/>is<sp/>free<sp/>software;</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>Public<sp/>License<sp/>version<sp/>2,<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>EOS<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/>but<sp/>WITHOUT<sp/>ANY</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>details.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>along<sp/>with</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/>59<sp/>Temple</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>Place,<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307<sp/><sp/>USA</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>EOS_GUARD_SRC_UTILS_MC_SAMPLER_HH</highlight></codeline>
+<codeline lineno="22" refid="markov__chain__sampler_8hh_1a564984576aa31b9ed76d28c2b0bd2b2f" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EOS_GUARD_SRC_UTILS_MC_SAMPLER_HH<sp/>1</highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="analysis_8hh" kindref="compound">eos/utils/analysis.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="markov__chain_8hh" kindref="compound">eos/utils/markov_chain.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="parameters_8hh" kindref="compound">eos/utils/parameters.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="private__implementation__pattern_8hh" kindref="compound">eos/utils/private_implementation_pattern.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="proposal__functions_8hh" kindref="compound">eos/utils/proposal_functions.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="verify_8hh" kindref="compound">eos/utils/verify.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">eos</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33" refid="classeos_1_1MarkovChainSampler" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classeos_1_1MarkovChainSampler" kindref="compound">MarkovChainSampler</ref><sp/>:</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1PrivateImplementationPattern" kindref="compound">PrivateImplementationPattern</ref>&lt;MarkovChainSampler&gt;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classeos_1_1MarkovChainSampler_1_1Config" kindref="compound">Config</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structeos_1_1MarkovChainSampler_1_1PreRunInfo" kindref="compound">PreRunInfo</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1MarkovChainSampler_1a39df736664ab94605898df48c1ff97af" kindref="member">MarkovChainSampler</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Analysis" kindref="compound">Analysis</ref><sp/>&amp;<sp/>analysis,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config" kindref="compound">MarkovChainSampler::Config</ref><sp/>&amp;<sp/><ref refid="classeos_1_1MarkovChainSampler_1a277acc86b109ca342be462c0e9d7c175" kindref="member" tooltip="Retrieve the configuration from which this sampler was constructed.">config</ref>);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1MarkovChainSampler_1a9c8a8f22a6279a0e0457b6e58b3e7aee" kindref="member" tooltip="Destructor.">~MarkovChainSampler</ref>();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::vector&lt;HistoryPtr&gt;<sp/><ref refid="classeos_1_1MarkovChainSampler_1ae493008479f15b080c40365f96a3e409" kindref="member">build_global_local</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/>output_file_name,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::shared_ptr&lt;hdf5::File&gt;&gt;<sp/>input_files,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config" kindref="compound">proposal_functions::GlobalLocal::Config</ref><sp/>&amp;<sp/>config,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceeos_1afc57020492535ccdd85cfc3b7421340d" kindref="member">AnalysisPtr</ref><sp/>analysis<sp/>=<sp/><ref refid="namespaceeos_1afc57020492535ccdd85cfc3b7421340d" kindref="member">AnalysisPtr</ref>());</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChainSampler_1a15f768e042ec2189ae7fb837d0c4f341" kindref="member">resume</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1hdf5_1_1File" kindref="compound">hdf5::File</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"></codeline>
+<codeline lineno="84"></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChainSampler_1a1e5ca348ae639a33c3b3db6120ff66f9" kindref="member">massive_mode_finding</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1Analysis_1_1OptimizationOptions" kindref="compound">Analysis::OptimizationOptions</ref><sp/>&amp;<sp/>options);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structeos_1_1MarkovChainSampler_1_1PreRunInfo" kindref="compound">PreRunInfo</ref><sp/><ref refid="classeos_1_1MarkovChainSampler_1ae3032467d9678870bb30f82ae060c043" kindref="member" tooltip="Retrieve information about the prerun performance.">pre_run_info</ref>();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChainSampler_1a67fdd21c364b34796c9c5ba2b3b0b785" kindref="member" tooltip="Start the Markov chain sampling.">run</ref>();</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config" kindref="compound">MarkovChainSampler::Config</ref><sp/>&amp;<sp/><ref refid="classeos_1_1MarkovChainSampler_1a277acc86b109ca342be462c0e9d7c175" kindref="member" tooltip="Retrieve the configuration from which this sampler was constructed.">config</ref>();</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="classeos_1_1MarkovChainSampler_1_1Config" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classeos_1_1MarkovChainSampler_1_1Config" kindref="compound">MarkovChainSampler::Config</ref></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config" kindref="compound">Config</ref>();</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="117"></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config" kindref="compound">Config</ref><sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config_1a873df585d161c55e45b69fe45def8bd0" kindref="member">Default</ref>();</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config" kindref="compound">Config</ref><sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config_1aae4d353bed05e0921697290e7e93f116" kindref="member">Quick</ref>();</highlight></codeline>
+<codeline lineno="135"></codeline>
+<codeline lineno="139" refid="classeos_1_1MarkovChainSampler_1_1Config_1a802b6d235de40517746b7fc4147d8c7b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange&lt;unsigned&gt;</ref><sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config_1a802b6d235de40517746b7fc4147d8c7b" kindref="member">number_of_chains</ref>;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="classeos_1_1MarkovChainSampler_1_1Config_1ad969cd46104eb385033df4574079dc57" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config_1ad969cd46104eb385033df4574079dc57" kindref="member">seed</ref>;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="classeos_1_1MarkovChainSampler_1_1Config_1ad66eb9a48dd6aa736cf476322ed5b13e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config_1ad66eb9a48dd6aa736cf476322ed5b13e" kindref="member">parallelize</ref>;</highlight></codeline>
+<codeline lineno="153"></codeline>
+<codeline lineno="156"></codeline>
+<codeline lineno="158" refid="classeos_1_1MarkovChainSampler_1_1Config_1a0d907985d270035dbc3fc2235667ed0e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange&lt;double&gt;</ref><sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config_1a0d907985d270035dbc3fc2235667ed0e" kindref="member" tooltip="accepted / trials should be between 0.15 and 0.50">min_efficiency</ref>;</highlight></codeline>
+<codeline lineno="159" refid="classeos_1_1MarkovChainSampler_1_1Config_1a91c8438fe3b3270c619aefe5dc951e35" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange&lt;double&gt;</ref><sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config_1a91c8438fe3b3270c619aefe5dc951e35" kindref="member" tooltip="accepted / trials should be between 0.15 and 0.50">max_efficiency</ref>;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="classeos_1_1MarkovChainSampler_1_1Config_1ae8f8b1d037b655fe421c642cfe1d09a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange&lt;double&gt;</ref><sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config_1ae8f8b1d037b655fe421c642cfe1d09a3" kindref="member" tooltip="rvalues close to 1 indicates multichain convergence">rvalue_criterion_param</ref>;</highlight></codeline>
+<codeline lineno="163" refid="classeos_1_1MarkovChainSampler_1_1Config_1ac63f8561002681b27414ef775f6f7c2c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange&lt;double&gt;</ref><sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config_1ac63f8561002681b27414ef775f6f7c2c" kindref="member" tooltip="accepted / trials should be between 0.15 and 0.50">rvalue_criterion_posterior</ref>;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="classeos_1_1MarkovChainSampler_1_1Config_1a489bcbea5b78163dbfde22225b980d8c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config_1a489bcbea5b78163dbfde22225b980d8c" kindref="member">use_strict_rvalue_definition</ref>;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176" refid="classeos_1_1MarkovChainSampler_1_1Config_1a1243022c46d489f741762e90aeb1ca31" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config_1a1243022c46d489f741762e90aeb1ca31" kindref="member">use_posterior_rvalue</ref>;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180" refid="classeos_1_1MarkovChainSampler_1_1Config_1a2a7cc53b4fff19248ccfcd187a6a394b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config_1a2a7cc53b4fff19248ccfcd187a6a394b" kindref="member">scale_automatic</ref>;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186" refid="classeos_1_1MarkovChainSampler_1_1Config_1a8bf9b803f9b7995d7b6938347fa98165" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config_1a8bf9b803f9b7995d7b6938347fa98165" kindref="member">scale_nuisance</ref>;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189" refid="classeos_1_1MarkovChainSampler_1_1Config_1aeaae399fa3b0a182dfd582f79529f7a5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config_1aeaae399fa3b0a182dfd582f79529f7a5" kindref="member" tooltip="Value by which sqrt(covariance) of scan parameters is reduced for initial guesses...">scale_reduction</ref>;</highlight></codeline>
+<codeline lineno="191"></codeline>
+<codeline lineno="194"></codeline>
+<codeline lineno="197" refid="classeos_1_1MarkovChainSampler_1_1Config_1a04afa9d1080b945fe1702b4d8d5fb2bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config_1a04afa9d1080b945fe1702b4d8d5fb2bb" kindref="member">find_modes</ref>;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199" refid="classeos_1_1MarkovChainSampler_1_1Config_1acd202b210ff8f364eda6aacdd8958f8a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config_1acd202b210ff8f364eda6aacdd8958f8a" kindref="member">need_prerun</ref>;</highlight></codeline>
+<codeline lineno="200" refid="classeos_1_1MarkovChainSampler_1_1Config_1aac94024909568d9ca6e59108db400c6d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config_1aac94024909568d9ca6e59108db400c6d" kindref="member">prerun_iterations_update</ref>;</highlight></codeline>
+<codeline lineno="201" refid="classeos_1_1MarkovChainSampler_1_1Config_1af76602d7053b0f599295e1175718cb22" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config_1af76602d7053b0f599295e1175718cb22" kindref="member">prerun_iterations_min</ref>;</highlight></codeline>
+<codeline lineno="202" refid="classeos_1_1MarkovChainSampler_1_1Config_1aed5faf2c2cd03d33d5acb79fc16132a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config_1aed5faf2c2cd03d33d5acb79fc16132a4" kindref="member">prerun_iterations_max</ref>;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205" refid="classeos_1_1MarkovChainSampler_1_1Config_1a7184404972d7e56da2a78218555c1f97" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config_1a7184404972d7e56da2a78218555c1f97" kindref="member" tooltip="Which local proposal function is chosen.">proposal</ref>;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210" refid="classeos_1_1MarkovChainSampler_1_1Config_1af6ef8839a138b5f2ba25ed00c9949ecf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config_1af6ef8839a138b5f2ba25ed00c9949ecf" kindref="member">block_proposal_parameters</ref>;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217" refid="classeos_1_1MarkovChainSampler_1_1Config_1a7a3619bea51ea7edeb15dc2e8c614213" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange&lt;double&gt;</ref><sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config_1a7a3619bea51ea7edeb15dc2e8c614213" kindref="member">student_t_degrees_of_freedom</ref>;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220" refid="classeos_1_1MarkovChainSampler_1_1Config_1a9fecfcf6c6ce24b34d1370dd1d222d06" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config_1a9fecfcf6c6ce24b34d1370dd1d222d06" kindref="member" tooltip="Whether to store prerun samples.">store_prerun</ref>;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224" refid="classeos_1_1MarkovChainSampler_1_1Config_1a4b8b7f5ca38ffd97f0cbb431237a2872" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config_1a4b8b7f5ca38ffd97f0cbb431237a2872" kindref="member">prerun_chains_per_partition</ref>;</highlight></codeline>
+<codeline lineno="225" refid="classeos_1_1MarkovChainSampler_1_1Config_1a86b460f2153f55c4d5763f50f5bdba95" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::vector&lt;std::tuple&lt;std::string,<sp/>double,<sp/>double&gt;&gt;&gt;<sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config_1a86b460f2153f55c4d5763f50f5bdba95" kindref="member">partitions</ref>;</highlight></codeline>
+<codeline lineno="227"></codeline>
+<codeline lineno="230"></codeline>
+<codeline lineno="233" refid="classeos_1_1MarkovChainSampler_1_1Config_1ad90feb40e232329acf8a1fb785ed2d87" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config_1ad90feb40e232329acf8a1fb785ed2d87" kindref="member">adapt_iterations</ref>;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236" refid="classeos_1_1MarkovChainSampler_1_1Config_1a5e5751b084b471b08aa6f33513c28047" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config_1a5e5751b084b471b08aa6f33513c28047" kindref="member" tooltip="Number of chunks of sampling.">chunks</ref>;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239" refid="classeos_1_1MarkovChainSampler_1_1Config_1a3286979755ea75bd563fb66fba9e5330" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config_1a3286979755ea75bd563fb66fba9e5330" kindref="member" tooltip="Number of iterations per chunk.">chunk_size</ref>;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242" refid="classeos_1_1MarkovChainSampler_1_1Config_1ac717ab2f0caa32cc13b5e382f8b19cec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_ptr&lt;proposal_functions::GlobalLocal::Config&gt;<sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config_1ac717ab2f0caa32cc13b5e382f8b19cec" kindref="member" tooltip="Summarize all options pertaining to the GlobalLocal proposal function.">global_local_config</ref>;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245" refid="classeos_1_1MarkovChainSampler_1_1Config_1a1efc4d04039ba60a1f4c27ae28fe1554" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config_1a1efc4d04039ba60a1f4c27ae28fe1554" kindref="member" tooltip="Turn off main run, so only prerun is performed.">need_main_run</ref>;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250" refid="classeos_1_1MarkovChainSampler_1_1Config_1a8db6eb333e22a68f8b7abbd96b02b88c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange&lt;double&gt;</ref><sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config_1a8db6eb333e22a68f8b7abbd96b02b88c" kindref="member">skip_initial</ref>;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253" refid="classeos_1_1MarkovChainSampler_1_1Config_1a61732b63555e375ca22b7c31e3df12b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config_1a61732b63555e375ca22b7c31e3df12b6" kindref="member" tooltip="Whether to store collected samples.">store</ref>;</highlight></codeline>
+<codeline lineno="255"></codeline>
+<codeline lineno="258"></codeline>
+<codeline lineno="261" refid="classeos_1_1MarkovChainSampler_1_1Config_1a09fb2c6eeddd6bdde3ac5de54f63433f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config_1a09fb2c6eeddd6bdde3ac5de54f63433f" kindref="member">output_file</ref>;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263" refid="classeos_1_1MarkovChainSampler_1_1Config_1aeeea2452cd313ebe9a695c98bdeceeee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config_1aeeea2452cd313ebe9a695c98bdeceeee" kindref="member">store_observables_and_proposals</ref>;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ostream<sp/>&amp;<sp/><ref refid="namespaceeos_1a2d7ef50009f9368c73d5056eab3ec21d" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChainSampler_1_1Config" kindref="compound">MarkovChainSampler::Config</ref><sp/>&amp;<sp/>config);</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272" refid="structeos_1_1MarkovChainSampler_1_1PreRunInfo" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structeos_1_1MarkovChainSampler_1_1PreRunInfo" kindref="compound">MarkovChainSampler::PreRunInfo</ref></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="275" refid="structeos_1_1MarkovChainSampler_1_1PreRunInfo_1a182be4f50ae9368aeee0303b4fd29b51" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChainSampler_1_1PreRunInfo_1a182be4f50ae9368aeee0303b4fd29b51" kindref="member" tooltip="Convergence status after performing the prerun.">converged</ref>;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278" refid="structeos_1_1MarkovChainSampler_1_1PreRunInfo_1a40e24d2a409ae1d2a90c1a49b972b654" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChainSampler_1_1PreRunInfo_1a40e24d2a409ae1d2a90c1a49b972b654" kindref="member" tooltip="The number of iterations that were performed in the prerun.">iterations</ref>;</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281" refid="structeos_1_1MarkovChainSampler_1_1PreRunInfo_1a1f821da9adca5ee92802e51fcb372278" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChainSampler_1_1PreRunInfo_1a1f821da9adca5ee92802e51fcb372278" kindref="member" tooltip="The number of iterations after which convergence was declared.">iterations_at_convergence</ref>;</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284" refid="structeos_1_1MarkovChainSampler_1_1PreRunInfo_1a7bf1e8c85dc0ae0e72e64737a033c8c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChainSampler_1_1PreRunInfo_1a7bf1e8c85dc0ae0e72e64737a033c8c2" kindref="member" tooltip="R-value of posterior.">rvalue_posterior</ref>;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287" refid="structeos_1_1MarkovChainSampler_1_1PreRunInfo_1a568ebe4315e338e9e6ea690c268a964b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/><ref refid="structeos_1_1MarkovChainSampler_1_1PreRunInfo_1a568ebe4315e338e9e6ea690c268a964b" kindref="member" tooltip="R-values of individual parameters.">rvalue_parameters</ref>;</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="289"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain_sampler.hh"/>
+  </compounddef>
+</doxygen>

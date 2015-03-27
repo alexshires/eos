@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1BToXsDilepton_3_01HLMW2005_01_4" kind="class" prot="public">
+    <compoundname>eos::BToXsDilepton&lt; HLMW2005 &gt;</compoundname>
+    <basecompoundref refid="classeos_1_1ParameterUser" prot="public" virt="non-virtual">eos::ParameterUser</basecompoundref>
+    <basecompoundref refid="classeos_1_1PrivateImplementationPattern" prot="public" virt="non-virtual">eos::PrivateImplementationPattern&lt; BToXsDilepton&lt; HLMW2005 &gt; &gt;</basecompoundref>
+    <includes refid="inclusive-b-to-s-dilepton_8hh" local="no">inclusive-b-to-s-dilepton.hh</includes>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1BToXsDilepton_3_01HLMW2005_01_4_1a997b4d786efbb0ff51c97a713d9ebc6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::BToXsDilepton&lt; HLMW2005 &gt;::BToXsDilepton</definition>
+        <argsstring>(const Parameters &amp;parameters, const Options &amp;options)</argsstring>
+        <name>BToXsDilepton</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1Options" kindref="compound">Options</ref> &amp;</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/inclusive-b-to-s-dilepton.hh" line="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToXsDilepton_3_01HLMW2005_01_4_1aca8fb79f169510f38c606b37f9ee6567" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::BToXsDilepton&lt; HLMW2005 &gt;::~BToXsDilepton</definition>
+        <argsstring>()</argsstring>
+        <name>~BToXsDilepton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/inclusive-b-to-s-dilepton.hh" line="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToXsDilepton_3_01HLMW2005_01_4_1ad223046598df015f9571f639095d3ec8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToXsDilepton&lt; HLMW2005 &gt;::differential_branching_ratio</definition>
+        <argsstring>(const double &amp;s) const </argsstring>
+        <name>differential_branching_ratio</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/inclusive-b-to-s-dilepton.hh" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToXsDilepton_3_01HLMW2005_01_4_1a3871ea69216b034c2e9ba4ef4d81bf35" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToXsDilepton&lt; HLMW2005 &gt;::integrated_branching_ratio</definition>
+        <argsstring>(const double &amp;s_min, const double &amp;s_max) const </argsstring>
+        <name>integrated_branching_ratio</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/inclusive-b-to-s-dilepton.hh" line="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToXsDilepton_3_01HLMW2005_01_4_1a52557122e3fbd57e44a3fad9ef88ce5b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1Diagnostics" kindref="compound">Diagnostics</ref></type>
+        <definition>Diagnostics eos::BToXsDilepton&lt; HLMW2005 &gt;::diagnostics</definition>
+        <argsstring>() const </argsstring>
+        <name>diagnostics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/inclusive-b-to-s-dilepton.hh" line="58"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="173">
+        <label>eos::BToXsDilepton&lt; HLMW2005 &gt;</label>
+        <link refid="classeos_1_1BToXsDilepton_3_01HLMW2005_01_4"/>
+        <childnode refid="174" relation="public-inheritance">
+        </childnode>
+        <childnode refid="175" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="174">
+        <label>eos::ParameterUser</label>
+        <link refid="classeos_1_1ParameterUser"/>
+      </node>
+      <node id="175">
+        <label>eos::PrivateImplementationPattern&lt; BToXsDilepton&lt; HLMW2005 &gt; &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="176">
+        <label>eos::BToXsDilepton&lt; HLMW2005 &gt;</label>
+        <link refid="classeos_1_1BToXsDilepton_3_01HLMW2005_01_4"/>
+        <childnode refid="177" relation="public-inheritance">
+        </childnode>
+        <childnode refid="179" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="178">
+        <label>std::set&lt; Parameter::Id &gt;</label>
+      </node>
+      <node id="177">
+        <label>eos::ParameterUser</label>
+        <link refid="classeos_1_1ParameterUser"/>
+        <childnode refid="178" relation="usage">
+          <edgelabel>_ids</edgelabel>
+        </childnode>
+      </node>
+      <node id="179">
+        <label>eos::PrivateImplementationPattern&lt; BToXsDilepton&lt; HLMW2005 &gt; &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/inclusive-b-to-s-dilepton.hh" line="46" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/inclusive-b-to-s-dilepton.hh" bodystart="43" bodyend="59"/>
+    <listofallmembers>
+      <member refid="classeos_1_1ParameterUser_1aa3a0285297e16cf2a5830df1f9bb2f4b" prot="protected" virt="non-virtual"><scope>eos::BToXsDilepton&lt; HLMW2005 &gt;</scope><name>_ids</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a232940e78b26c6ed4f97196f831c69c9" prot="protected" virt="non-virtual"><scope>eos::BToXsDilepton&lt; HLMW2005 &gt;</scope><name>_imp</name></member>
+      <member refid="classeos_1_1ParameterUser_1a9cd569207063cd2a8f807c4e1203a5d4" prot="public" virt="non-virtual"><scope>eos::BToXsDilepton&lt; HLMW2005 &gt;</scope><name>begin</name></member>
+      <member refid="classeos_1_1BToXsDilepton_3_01HLMW2005_01_4_1a997b4d786efbb0ff51c97a713d9ebc6a" prot="public" virt="non-virtual"><scope>eos::BToXsDilepton&lt; HLMW2005 &gt;</scope><name>BToXsDilepton</name></member>
+      <member refid="classeos_1_1ParameterUser_1a7105631bbcb4b2492e6377b2b69f5b0f" prot="public" virt="non-virtual"><scope>eos::BToXsDilepton&lt; HLMW2005 &gt;</scope><name>ConstIterator</name></member>
+      <member refid="classeos_1_1BToXsDilepton_3_01HLMW2005_01_4_1a52557122e3fbd57e44a3fad9ef88ce5b" prot="public" virt="non-virtual"><scope>eos::BToXsDilepton&lt; HLMW2005 &gt;</scope><name>diagnostics</name></member>
+      <member refid="classeos_1_1BToXsDilepton_3_01HLMW2005_01_4_1ad223046598df015f9571f639095d3ec8" prot="public" virt="non-virtual"><scope>eos::BToXsDilepton&lt; HLMW2005 &gt;</scope><name>differential_branching_ratio</name></member>
+      <member refid="classeos_1_1ParameterUser_1a5813c886f3fd3f074cc02a53fc9e0790" prot="public" virt="non-virtual"><scope>eos::BToXsDilepton&lt; HLMW2005 &gt;</scope><name>end</name></member>
+      <member refid="classeos_1_1BToXsDilepton_3_01HLMW2005_01_4_1a3871ea69216b034c2e9ba4ef4d81bf35" prot="public" virt="non-virtual"><scope>eos::BToXsDilepton&lt; HLMW2005 &gt;</scope><name>integrated_branching_ratio</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a3e3d5f4a565256a1dda6c234b051b2f2" prot="public" virt="non-virtual"><scope>eos::BToXsDilepton&lt; HLMW2005 &gt;</scope><name>PrivateImplementationPattern</name></member>
+      <member refid="classeos_1_1ParameterUser_1ad91a901e589653272482bded7e453c70" prot="public" virt="non-virtual"><scope>eos::BToXsDilepton&lt; HLMW2005 &gt;</scope><name>uses</name></member>
+      <member refid="classeos_1_1ParameterUser_1a7a37e779cf45ef1075fe7bf670688b72" prot="public" virt="non-virtual"><scope>eos::BToXsDilepton&lt; HLMW2005 &gt;</scope><name>uses</name></member>
+      <member refid="classeos_1_1BToXsDilepton_3_01HLMW2005_01_4_1aca8fb79f169510f38c606b37f9ee6567" prot="public" virt="non-virtual"><scope>eos::BToXsDilepton&lt; HLMW2005 &gt;</scope><name>~BToXsDilepton</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1acf46ec2739c3b0ec9702b9428475876d" prot="public" virt="non-virtual"><scope>eos::BToXsDilepton&lt; HLMW2005 &gt;</scope><name>~PrivateImplementationPattern</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

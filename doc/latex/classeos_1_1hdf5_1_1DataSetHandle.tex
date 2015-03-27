@@ -1,0 +1,105 @@
+\hypertarget{classeos_1_1hdf5_1_1DataSetHandle}{
+\section{eos::hdf5::DataSetHandle Class Reference}
+\label{classeos_1_1hdf5_1_1DataSetHandle}\index{eos::hdf5::DataSetHandle@{eos::hdf5::DataSetHandle}}
+}
+
+
+{\ttfamily \#include $<$hdf5.hh$>$}
+
+Inherits \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern$<$ hdf5::DataSetHandle $>$}.\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1hdf5_1_1DataSetHandle_a14a9f5a1e190657f26ca9eb9d6d582cd}{$\sim$DataSetHandle} ()
+\item 
+\hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid\_\-t} \hyperlink{classeos_1_1hdf5_1_1DataSetHandle_ac34e42a6ddffcf97b793e0229fdad33e}{set\_\-id} () const 
+\item 
+\hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid\_\-t} \hyperlink{classeos_1_1hdf5_1_1DataSetHandle_a394c8a3332ffce21fb2a8f8cda41c985}{space\_\-id} () const 
+\item 
+\hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid\_\-t} \hyperlink{classeos_1_1hdf5_1_1DataSetHandle_acd551d06d07b60e6f6f35e5a345fb03e}{type\_\-id} () const 
+\item 
+hsize\_\-t \hyperlink{classeos_1_1hdf5_1_1DataSetHandle_a713afe404475719f6ac336f70c8bed51}{size} () const 
+\item 
+void \hyperlink{classeos_1_1hdf5_1_1DataSetHandle_ad41a15bd7f720870427ef14742a2a6cf}{select} (hsize\_\-t start, hsize\_\-t count)
+\item 
+void \hyperlink{classeos_1_1hdf5_1_1DataSetHandle_a67ea7145dfbcbe860f9e7f745ab9c36c}{write\_\-one} (const void $\ast$buffer)
+\item 
+void \hyperlink{classeos_1_1hdf5_1_1DataSetHandle_a099c9af4e4d27b956bde64118ef064c9}{read\_\-one} (void $\ast$buffer)
+\item 
+\hyperlink{classeos_1_1hdf5_1_1AttributeHandle}{AttributeHandle} \hyperlink{classeos_1_1hdf5_1_1DataSetHandle_a084cff6f4549ab930d0d2cff8ff5ac6b}{create\_\-attribute} (const std::string \&name, const \hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid\_\-t} \&type\_\-id)
+\item 
+\hyperlink{classeos_1_1hdf5_1_1AttributeHandle}{AttributeHandle} \hyperlink{classeos_1_1hdf5_1_1DataSetHandle_a874dee8bc477055ee76955e78c00a09e}{open\_\-attribute} (const std::string \&name, const \hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid\_\-t} \&type\_\-id)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classeos_1_1hdf5_1_1DataSetHandle_a68d15876ad188b7628261b12d0eac8aa}{File}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classeos_1_1hdf5_1_1DataSetHandle_a14a9f5a1e190657f26ca9eb9d6d582cd}{
+\index{eos::hdf5::DataSetHandle@{eos::hdf5::DataSetHandle}!$\sim$DataSetHandle@{$\sim$DataSetHandle}}
+\index{$\sim$DataSetHandle@{$\sim$DataSetHandle}!eos::hdf5::DataSetHandle@{eos::hdf5::DataSetHandle}}
+\subsubsection[{$\sim$DataSetHandle}]{\setlength{\rightskip}{0pt plus 5cm}eos::hdf5::DataSetHandle::$\sim$DataSetHandle ()}}
+\label{classeos_1_1hdf5_1_1DataSetHandle_a14a9f5a1e190657f26ca9eb9d6d582cd}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classeos_1_1hdf5_1_1DataSetHandle_a084cff6f4549ab930d0d2cff8ff5ac6b}{
+\index{eos::hdf5::DataSetHandle@{eos::hdf5::DataSetHandle}!create\_\-attribute@{create\_\-attribute}}
+\index{create\_\-attribute@{create\_\-attribute}!eos::hdf5::DataSetHandle@{eos::hdf5::DataSetHandle}}
+\subsubsection[{create\_\-attribute}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AttributeHandle} eos::hdf5::DataSetHandle::create\_\-attribute (const std::string \& {\em name}, \/  const {\bf hid\_\-t} \& {\em type\_\-id})}}
+\label{classeos_1_1hdf5_1_1DataSetHandle_a084cff6f4549ab930d0d2cff8ff5ac6b}
+\hypertarget{classeos_1_1hdf5_1_1DataSetHandle_a874dee8bc477055ee76955e78c00a09e}{
+\index{eos::hdf5::DataSetHandle@{eos::hdf5::DataSetHandle}!open\_\-attribute@{open\_\-attribute}}
+\index{open\_\-attribute@{open\_\-attribute}!eos::hdf5::DataSetHandle@{eos::hdf5::DataSetHandle}}
+\subsubsection[{open\_\-attribute}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AttributeHandle} eos::hdf5::DataSetHandle::open\_\-attribute (const std::string \& {\em name}, \/  const {\bf hid\_\-t} \& {\em type\_\-id})}}
+\label{classeos_1_1hdf5_1_1DataSetHandle_a874dee8bc477055ee76955e78c00a09e}
+\hypertarget{classeos_1_1hdf5_1_1DataSetHandle_a099c9af4e4d27b956bde64118ef064c9}{
+\index{eos::hdf5::DataSetHandle@{eos::hdf5::DataSetHandle}!read\_\-one@{read\_\-one}}
+\index{read\_\-one@{read\_\-one}!eos::hdf5::DataSetHandle@{eos::hdf5::DataSetHandle}}
+\subsubsection[{read\_\-one}]{\setlength{\rightskip}{0pt plus 5cm}void eos::hdf5::DataSetHandle::read\_\-one (void $\ast$ {\em buffer})}}
+\label{classeos_1_1hdf5_1_1DataSetHandle_a099c9af4e4d27b956bde64118ef064c9}
+\hypertarget{classeos_1_1hdf5_1_1DataSetHandle_ad41a15bd7f720870427ef14742a2a6cf}{
+\index{eos::hdf5::DataSetHandle@{eos::hdf5::DataSetHandle}!select@{select}}
+\index{select@{select}!eos::hdf5::DataSetHandle@{eos::hdf5::DataSetHandle}}
+\subsubsection[{select}]{\setlength{\rightskip}{0pt plus 5cm}void eos::hdf5::DataSetHandle::select (hsize\_\-t {\em start}, \/  hsize\_\-t {\em count})}}
+\label{classeos_1_1hdf5_1_1DataSetHandle_ad41a15bd7f720870427ef14742a2a6cf}
+\hypertarget{classeos_1_1hdf5_1_1DataSetHandle_ac34e42a6ddffcf97b793e0229fdad33e}{
+\index{eos::hdf5::DataSetHandle@{eos::hdf5::DataSetHandle}!set\_\-id@{set\_\-id}}
+\index{set\_\-id@{set\_\-id}!eos::hdf5::DataSetHandle@{eos::hdf5::DataSetHandle}}
+\subsubsection[{set\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf hid\_\-t} eos::hdf5::DataSetHandle::set\_\-id () const}}
+\label{classeos_1_1hdf5_1_1DataSetHandle_ac34e42a6ddffcf97b793e0229fdad33e}
+\hypertarget{classeos_1_1hdf5_1_1DataSetHandle_a713afe404475719f6ac336f70c8bed51}{
+\index{eos::hdf5::DataSetHandle@{eos::hdf5::DataSetHandle}!size@{size}}
+\index{size@{size}!eos::hdf5::DataSetHandle@{eos::hdf5::DataSetHandle}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}hsize\_\-t eos::hdf5::DataSetHandle::size () const}}
+\label{classeos_1_1hdf5_1_1DataSetHandle_a713afe404475719f6ac336f70c8bed51}
+\hypertarget{classeos_1_1hdf5_1_1DataSetHandle_a394c8a3332ffce21fb2a8f8cda41c985}{
+\index{eos::hdf5::DataSetHandle@{eos::hdf5::DataSetHandle}!space\_\-id@{space\_\-id}}
+\index{space\_\-id@{space\_\-id}!eos::hdf5::DataSetHandle@{eos::hdf5::DataSetHandle}}
+\subsubsection[{space\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf hid\_\-t} eos::hdf5::DataSetHandle::space\_\-id () const}}
+\label{classeos_1_1hdf5_1_1DataSetHandle_a394c8a3332ffce21fb2a8f8cda41c985}
+\hypertarget{classeos_1_1hdf5_1_1DataSetHandle_acd551d06d07b60e6f6f35e5a345fb03e}{
+\index{eos::hdf5::DataSetHandle@{eos::hdf5::DataSetHandle}!type\_\-id@{type\_\-id}}
+\index{type\_\-id@{type\_\-id}!eos::hdf5::DataSetHandle@{eos::hdf5::DataSetHandle}}
+\subsubsection[{type\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf hid\_\-t} eos::hdf5::DataSetHandle::type\_\-id () const}}
+\label{classeos_1_1hdf5_1_1DataSetHandle_acd551d06d07b60e6f6f35e5a345fb03e}
+\hypertarget{classeos_1_1hdf5_1_1DataSetHandle_a67ea7145dfbcbe860f9e7f745ab9c36c}{
+\index{eos::hdf5::DataSetHandle@{eos::hdf5::DataSetHandle}!write\_\-one@{write\_\-one}}
+\index{write\_\-one@{write\_\-one}!eos::hdf5::DataSetHandle@{eos::hdf5::DataSetHandle}}
+\subsubsection[{write\_\-one}]{\setlength{\rightskip}{0pt plus 5cm}void eos::hdf5::DataSetHandle::write\_\-one (const void $\ast$ {\em buffer})}}
+\label{classeos_1_1hdf5_1_1DataSetHandle_a67ea7145dfbcbe860f9e7f745ab9c36c}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classeos_1_1hdf5_1_1DataSetHandle_a68d15876ad188b7628261b12d0eac8aa}{
+\index{eos::hdf5::DataSetHandle@{eos::hdf5::DataSetHandle}!File@{File}}
+\index{File@{File}!eos::hdf5::DataSetHandle@{eos::hdf5::DataSetHandle}}
+\subsubsection[{File}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf File}\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classeos_1_1hdf5_1_1DataSetHandle_a68d15876ad188b7628261b12d0eac8aa}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{hdf5_8hh}{hdf5.hh}\end{DoxyCompactItemize}

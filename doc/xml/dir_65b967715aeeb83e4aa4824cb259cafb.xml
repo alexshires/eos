@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="dir_65b967715aeeb83e4aa4824cb259cafb" kind="dir">
+    <compoundname>/home/alexshires/EOS/eos-next/eos/rare-b-decays/</compoundname>
+    <innerfile refid="bremsstrahlung_8hh">bremsstrahlung.hh</innerfile>
+    <innerfile refid="charm-loops_8hh">charm-loops.hh</innerfile>
+    <innerfile refid="decays_8hh">decays.hh</innerfile>
+    <innerfile refid="em-contributions_8hh">em-contributions.hh</innerfile>
+    <innerfile refid="exclusive-b-to-dilepton_8hh">exclusive-b-to-dilepton.hh</innerfile>
+    <innerfile refid="exclusive-b-to-s-dilepton-large-recoil_8hh">exclusive-b-to-s-dilepton-large-recoil.hh</innerfile>
+    <innerfile refid="exclusive-b-to-s-dilepton-low-recoil_8hh">exclusive-b-to-s-dilepton-low-recoil.hh</innerfile>
+    <innerfile refid="exclusive-b-to-s-dilepton_8hh">exclusive-b-to-s-dilepton.hh</innerfile>
+    <innerfile refid="exclusive-b-to-s-gamma_8hh">exclusive-b-to-s-gamma.hh</innerfile>
+    <innerfile refid="hard-scattering_8hh">hard-scattering.hh</innerfile>
+    <innerfile refid="inclusive-b-to-s-dilepton_8hh">inclusive-b-to-s-dilepton.hh</innerfile>
+    <innerfile refid="inclusive-b-to-s-gamma_8hh">inclusive-b-to-s-gamma.hh</innerfile>
+    <innerfile refid="lambda-b-to-lambda-dilepton_8hh">lambda-b-to-lambda-dilepton.hh</innerfile>
+    <innerfile refid="long-distance_8hh">long-distance.hh</innerfile>
+    <innerfile refid="qcdf__integrals_8hh">qcdf_integrals.hh</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/"/>
+  </compounddef>
+</doxygen>

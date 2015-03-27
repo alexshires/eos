@@ -1,0 +1,77 @@
+\hypertarget{classeos_1_1Thread}{
+\section{eos::Thread Class Reference}
+\label{classeos_1_1Thread}\index{eos::Thread@{eos::Thread}}
+}
+
+
+{\ttfamily \#include $<$thread.hh$>$}
+
+Inherits \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern$<$ Thread $>$}.\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std::function$<$ void()$>$ \hyperlink{classeos_1_1Thread_a5056834a1e9dce530abf5adb90bb13ba}{Function}
+\begin{DoxyCompactList}\small\item\em Our function type. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classeos_1_1Thread_a4badce4c44db821aaffa5ce06ad1f697}{completed} () const 
+\begin{DoxyCompactList}\small\item\em Return wether we have yet completed executing our function. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}{\bf Constructor and destructor}\par
+{\em \label{_amgrpe7842d077f4197a0a949b269f1500ffe}
+ }\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1Thread_ad8d7a9a4d2275f21a42b80fbad67b172}{Thread} (const \hyperlink{classeos_1_1Thread_a5056834a1e9dce530abf5adb90bb13ba}{Function} \&function)
+\item 
+\hyperlink{classeos_1_1Thread_af56391a1c255e3cc9cf754917776af39}{$\sim$Thread} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+\hyperlink{classeos_1_1Thread}{Thread} uses TR1's function wrapper to execute a given function in a separate thread.
+
+\hyperlink{classeos_1_1Thread}{Thread} uses POSIX threads internally and allows minimal synchronisation. \hyperlink{classeos_1_1Thread}{Thread} guarantees that its function is finalised after destruction. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classeos_1_1Thread_a5056834a1e9dce530abf5adb90bb13ba}{
+\index{eos::Thread@{eos::Thread}!Function@{Function}}
+\index{Function@{Function}!eos::Thread@{eos::Thread}}
+\subsubsection[{Function}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::function$<$void ()$>$ {\bf eos::Thread::Function}}}
+\label{classeos_1_1Thread_a5056834a1e9dce530abf5adb90bb13ba}
+
+
+Our function type. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classeos_1_1Thread_ad8d7a9a4d2275f21a42b80fbad67b172}{
+\index{eos::Thread@{eos::Thread}!Thread@{Thread}}
+\index{Thread@{Thread}!eos::Thread@{eos::Thread}}
+\subsubsection[{Thread}]{\setlength{\rightskip}{0pt plus 5cm}eos::Thread::Thread (const {\bf Function} \& {\em function})}}
+\label{classeos_1_1Thread_ad8d7a9a4d2275f21a42b80fbad67b172}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em function}]A Function object that wraps the thread's main function. \end{DoxyParams}
+\hypertarget{classeos_1_1Thread_af56391a1c255e3cc9cf754917776af39}{
+\index{eos::Thread@{eos::Thread}!$\sim$Thread@{$\sim$Thread}}
+\index{$\sim$Thread@{$\sim$Thread}!eos::Thread@{eos::Thread}}
+\subsubsection[{$\sim$Thread}]{\setlength{\rightskip}{0pt plus 5cm}eos::Thread::$\sim$Thread ()}}
+\label{classeos_1_1Thread_af56391a1c255e3cc9cf754917776af39}
+
+
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classeos_1_1Thread_a4badce4c44db821aaffa5ce06ad1f697}{
+\index{eos::Thread@{eos::Thread}!completed@{completed}}
+\index{completed@{completed}!eos::Thread@{eos::Thread}}
+\subsubsection[{completed}]{\setlength{\rightskip}{0pt plus 5cm}bool eos::Thread::completed () const}}
+\label{classeos_1_1Thread_a4badce4c44db821aaffa5ce06ad1f697}
+
+
+Return wether we have yet completed executing our function. 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{thread_8hh}{thread.hh}\end{DoxyCompactItemize}

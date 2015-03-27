@@ -1,0 +1,94 @@
+\hypertarget{classeos_1_1QCDFIntegrals}{
+\section{eos::QCDFIntegrals Class Reference}
+\label{classeos_1_1QCDFIntegrals}\index{eos::QCDFIntegrals@{eos::QCDFIntegrals}}
+}
+
+
+{\ttfamily \#include $<$qcdf\_\-integrals.hh$>$}\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structeos_1_1QCDFIntegrals_1_1Results}{Results}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{structeos_1_1QCDFIntegrals_1_1Results}{Results} \hyperlink{classeos_1_1QCDFIntegrals_af6508bca0f6425fcefc36a75699fd505}{photon\_\-bottom\_\-case} (const double \&m\_\-b, const double \&m\_\-B, const double \&m\_\-V, const double \&mu, const double \&a\_\-1\_\-perp, const double \&a\_\-2\_\-perp, const double \&a\_\-1\_\-parallel, const double \&a\_\-2\_\-parallel)
+\item 
+static \hyperlink{structeos_1_1QCDFIntegrals_1_1Results}{Results} \hyperlink{classeos_1_1QCDFIntegrals_a9d43810ac4bee250bdd71f4b13a8535a}{photon\_\-charm\_\-case} (const double \&m\_\-c, const double \&m\_\-B, const double \&m\_\-V, const double \&mu, const double \&a\_\-1\_\-perp, const double \&a\_\-2\_\-perp, const double \&a\_\-1\_\-parallel, const double \&a\_\-2\_\-parallel)
+\item 
+static \hyperlink{structeos_1_1QCDFIntegrals_1_1Results}{Results} \hyperlink{classeos_1_1QCDFIntegrals_a20d1967a85e3601633adf14ee4736508}{photon\_\-massless\_\-case} (const double \&m\_\-B, const double \&m\_\-V, const double \&mu, const double \&a\_\-1\_\-perp, const double \&a\_\-2\_\-perp, const double \&a\_\-1\_\-parallel, const double \&a\_\-2\_\-parallel)
+\item 
+static \hyperlink{structeos_1_1QCDFIntegrals_1_1Results}{Results} \hyperlink{classeos_1_1QCDFIntegrals_a4685503430ba2e37d0a950efbb5db144}{dilepton\_\-bottom\_\-case} (const double \&s, const double \&m\_\-b, const double \&m\_\-B, const double \&m\_\-V, const double \&mu, const double \&a\_\-1\_\-perp, const double \&a\_\-2\_\-perp, const double \&a\_\-1\_\-parallel, const double \&a\_\-2\_\-parallel)
+\item 
+static \hyperlink{structeos_1_1QCDFIntegrals_1_1Results}{Results} \hyperlink{classeos_1_1QCDFIntegrals_afd6226e6800deeec288306c490da5893}{dilepton\_\-charm\_\-case} (const double \&s, const double \&m\_\-c, const double \&m\_\-B, const double \&m\_\-V, const double \&mu, const double \&a\_\-1\_\-perp, const double \&a\_\-2\_\-perp, const double \&a\_\-1\_\-parallel, const double \&a\_\-2\_\-parallel)
+\item 
+static \hyperlink{structeos_1_1QCDFIntegrals_1_1Results}{Results} \hyperlink{classeos_1_1QCDFIntegrals_a46d8f57850d80b92498c15caac8b0229}{dilepton\_\-massless\_\-case} (const double \&s, const double \&m\_\-B, const double \&m\_\-V, const double \&mu, const double \&a\_\-1\_\-perp, const double \&a\_\-2\_\-perp, const double \&a\_\-1\_\-parallel, const double \&a\_\-2\_\-parallel)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classeos_1_1QCDFIntegrals_a4685503430ba2e37d0a950efbb5db144}{
+\index{eos::QCDFIntegrals@{eos::QCDFIntegrals}!dilepton\_\-bottom\_\-case@{dilepton\_\-bottom\_\-case}}
+\index{dilepton\_\-bottom\_\-case@{dilepton\_\-bottom\_\-case}!eos::QCDFIntegrals@{eos::QCDFIntegrals}}
+\subsubsection[{dilepton\_\-bottom\_\-case}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Results} eos::QCDFIntegrals::dilepton\_\-bottom\_\-case (const double \& {\em s}, \/  const double \& {\em m\_\-b}, \/  const double \& {\em m\_\-B}, \/  const double \& {\em m\_\-V}, \/  const double \& {\em mu}, \/  const double \& {\em a\_\-1\_\-perp}, \/  const double \& {\em a\_\-2\_\-perp}, \/  const double \& {\em a\_\-1\_\-parallel}, \/  const double \& {\em a\_\-2\_\-parallel})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1QCDFIntegrals_a4685503430ba2e37d0a950efbb5db144}
+Return all QCDF Integrals for a b quark-\/antiquark loop, according to \mbox{[}vD2011\mbox{]}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em s}]Invariant quark-\/antiquark mass square. \item[{\em m\_\-b}]Pole mass of the b quark. \item[{\em m\_\-B}]Mass of the parent B quark. \item[{\em mu}]Renormalization scale mu. \item[{\em a\_\-1\_\-perp}]First Gegenbauer moment for the perpendicular amplitude. \item[{\em a\_\-2\_\-perp}]Second Gegenbauer moment for the perpendicular amplitude. \item[{\em a\_\-1\_\-parallel}]First Gegenbauer moment for the paralle amplitude. \item[{\em a\_\-2\_\-parallel}]Second Gegenbauer moment for the parallel amplitude. \end{DoxyParams}
+\hypertarget{classeos_1_1QCDFIntegrals_afd6226e6800deeec288306c490da5893}{
+\index{eos::QCDFIntegrals@{eos::QCDFIntegrals}!dilepton\_\-charm\_\-case@{dilepton\_\-charm\_\-case}}
+\index{dilepton\_\-charm\_\-case@{dilepton\_\-charm\_\-case}!eos::QCDFIntegrals@{eos::QCDFIntegrals}}
+\subsubsection[{dilepton\_\-charm\_\-case}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Results} eos::QCDFIntegrals::dilepton\_\-charm\_\-case (const double \& {\em s}, \/  const double \& {\em m\_\-c}, \/  const double \& {\em m\_\-B}, \/  const double \& {\em m\_\-V}, \/  const double \& {\em mu}, \/  const double \& {\em a\_\-1\_\-perp}, \/  const double \& {\em a\_\-2\_\-perp}, \/  const double \& {\em a\_\-1\_\-parallel}, \/  const double \& {\em a\_\-2\_\-parallel})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1QCDFIntegrals_afd6226e6800deeec288306c490da5893}
+Return all QCDF Integrals for a c quark-\/antiquark loop, according to \mbox{[}vD2011\mbox{]}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em s}]Invariant quark-\/antiquark mass square. \item[{\em m\_\-c}]Pole mass of the c quark. \item[{\em m\_\-B}]Mass of the parent B quark. \item[{\em mu}]Renormalization scale mu. \item[{\em a\_\-1\_\-perp}]First Gegenbauer moment for the perpendicular amplitude. \item[{\em a\_\-2\_\-perp}]Second Gegenbauer moment for the perpendicular amplitude. \item[{\em a\_\-1\_\-parallel}]First Gegenbauer moment for the paralle amplitude. \item[{\em a\_\-2\_\-parallel}]Second Gegenbauer moment for the parallel amplitude. \end{DoxyParams}
+\hypertarget{classeos_1_1QCDFIntegrals_a46d8f57850d80b92498c15caac8b0229}{
+\index{eos::QCDFIntegrals@{eos::QCDFIntegrals}!dilepton\_\-massless\_\-case@{dilepton\_\-massless\_\-case}}
+\index{dilepton\_\-massless\_\-case@{dilepton\_\-massless\_\-case}!eos::QCDFIntegrals@{eos::QCDFIntegrals}}
+\subsubsection[{dilepton\_\-massless\_\-case}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Results} eos::QCDFIntegrals::dilepton\_\-massless\_\-case (const double \& {\em s}, \/  const double \& {\em m\_\-B}, \/  const double \& {\em m\_\-V}, \/  const double \& {\em mu}, \/  const double \& {\em a\_\-1\_\-perp}, \/  const double \& {\em a\_\-2\_\-perp}, \/  const double \& {\em a\_\-1\_\-parallel}, \/  const double \& {\em a\_\-2\_\-parallel})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1QCDFIntegrals_a46d8f57850d80b92498c15caac8b0229}
+Return all QCDF Integrals for a u,d,s (i.e. massless) quark-\/antiquark loop for massless quarks, according to \mbox{[}vD2011\mbox{]}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em s}]Invariant quark-\/antiquark mass square. \item[{\em m\_\-B}]Mass of the parent B quark. \item[{\em mu}]Renormalization scale. \item[{\em a\_\-1\_\-perp}]First Gegenbauer moment for the perpendicular amplitude. \item[{\em a\_\-2\_\-perp}]Second Gegenbauer moment for the perpendicular amplitude. \item[{\em a\_\-1\_\-parallel}]First Gegenbauer moment for the paralle amplitude. \item[{\em a\_\-2\_\-parallel}]Second Gegenbauer moment for the parallel amplitude. \end{DoxyParams}
+\hypertarget{classeos_1_1QCDFIntegrals_af6508bca0f6425fcefc36a75699fd505}{
+\index{eos::QCDFIntegrals@{eos::QCDFIntegrals}!photon\_\-bottom\_\-case@{photon\_\-bottom\_\-case}}
+\index{photon\_\-bottom\_\-case@{photon\_\-bottom\_\-case}!eos::QCDFIntegrals@{eos::QCDFIntegrals}}
+\subsubsection[{photon\_\-bottom\_\-case}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Results} eos::QCDFIntegrals::photon\_\-bottom\_\-case (const double \& {\em m\_\-b}, \/  const double \& {\em m\_\-B}, \/  const double \& {\em m\_\-V}, \/  const double \& {\em mu}, \/  const double \& {\em a\_\-1\_\-perp}, \/  const double \& {\em a\_\-2\_\-perp}, \/  const double \& {\em a\_\-1\_\-parallel}, \/  const double \& {\em a\_\-2\_\-parallel})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1QCDFIntegrals_af6508bca0f6425fcefc36a75699fd505}
+Return all QCDF Integrals for a b quark-\/antiquark loop with s = 0, according to \mbox{[}vD2011\mbox{]}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em m\_\-b}]Pole mass of the b quark. \item[{\em m\_\-B}]Mass of the parent B quark. \item[{\em mu}]Renormalization scale mu. \item[{\em a\_\-1\_\-perp}]First Gegenbauer moment for the perpendicular amplitude. \item[{\em a\_\-2\_\-perp}]Second Gegenbauer moment for the perpendicular amplitude. \item[{\em a\_\-1\_\-parallel}]First Gegenbauer moment for the paralle amplitude. \item[{\em a\_\-2\_\-parallel}]Second Gegenbauer moment for the parallel amplitude. \end{DoxyParams}
+\hypertarget{classeos_1_1QCDFIntegrals_a9d43810ac4bee250bdd71f4b13a8535a}{
+\index{eos::QCDFIntegrals@{eos::QCDFIntegrals}!photon\_\-charm\_\-case@{photon\_\-charm\_\-case}}
+\index{photon\_\-charm\_\-case@{photon\_\-charm\_\-case}!eos::QCDFIntegrals@{eos::QCDFIntegrals}}
+\subsubsection[{photon\_\-charm\_\-case}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Results} eos::QCDFIntegrals::photon\_\-charm\_\-case (const double \& {\em m\_\-c}, \/  const double \& {\em m\_\-B}, \/  const double \& {\em m\_\-V}, \/  const double \& {\em mu}, \/  const double \& {\em a\_\-1\_\-perp}, \/  const double \& {\em a\_\-2\_\-perp}, \/  const double \& {\em a\_\-1\_\-parallel}, \/  const double \& {\em a\_\-2\_\-parallel})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1QCDFIntegrals_a9d43810ac4bee250bdd71f4b13a8535a}
+Return all QCDF Integrals for a c quark-\/antiquark loop with s = 0, according to \mbox{[}vD2011\mbox{]}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em m\_\-c}]Pole mass of the c quark. \item[{\em m\_\-B}]Mass of the parent B quark. \item[{\em mu}]Renormalization scale mu. \item[{\em a\_\-1\_\-perp}]First Gegenbauer moment for the perpendicular amplitude. \item[{\em a\_\-2\_\-perp}]Second Gegenbauer moment for the perpendicular amplitude. \item[{\em a\_\-1\_\-parallel}]First Gegenbauer moment for the paralle amplitude. \item[{\em a\_\-2\_\-parallel}]Second Gegenbauer moment for the parallel amplitude. \end{DoxyParams}
+\hypertarget{classeos_1_1QCDFIntegrals_a20d1967a85e3601633adf14ee4736508}{
+\index{eos::QCDFIntegrals@{eos::QCDFIntegrals}!photon\_\-massless\_\-case@{photon\_\-massless\_\-case}}
+\index{photon\_\-massless\_\-case@{photon\_\-massless\_\-case}!eos::QCDFIntegrals@{eos::QCDFIntegrals}}
+\subsubsection[{photon\_\-massless\_\-case}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Results} eos::QCDFIntegrals::photon\_\-massless\_\-case (const double \& {\em m\_\-B}, \/  const double \& {\em m\_\-V}, \/  const double \& {\em mu}, \/  const double \& {\em a\_\-1\_\-perp}, \/  const double \& {\em a\_\-2\_\-perp}, \/  const double \& {\em a\_\-1\_\-parallel}, \/  const double \& {\em a\_\-2\_\-parallel})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1QCDFIntegrals_a20d1967a85e3601633adf14ee4736508}
+Return all QCDF Integrals for a u,d,s (i.e. massless) quark-\/antiquark loops with s = 0, according to \mbox{[}vD2011\mbox{]}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em m\_\-B}]Mass of the parent B quark. \item[{\em mu}]Renormalization scale mu. \item[{\em a\_\-1\_\-perp}]First Gegenbauer moment for the perpendicular amplitude. \item[{\em a\_\-2\_\-perp}]Second Gegenbauer moment for the perpendicular amplitude. \item[{\em a\_\-1\_\-parallel}]First Gegenbauer moment for the paralle amplitude. \item[{\em a\_\-2\_\-parallel}]Second Gegenbauer moment for the parallel amplitude. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/rare-\/b-\/decays/\hyperlink{qcdf__integrals_8hh}{qcdf\_\-integrals.hh}\end{DoxyCompactItemize}

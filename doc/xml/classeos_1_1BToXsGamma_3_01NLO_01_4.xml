@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1BToXsGamma_3_01NLO_01_4" kind="class" prot="public">
+    <compoundname>eos::BToXsGamma&lt; NLO &gt;</compoundname>
+    <basecompoundref refid="classeos_1_1ParameterUser" prot="public" virt="non-virtual">eos::ParameterUser</basecompoundref>
+    <basecompoundref refid="classeos_1_1PrivateImplementationPattern" prot="public" virt="non-virtual">eos::PrivateImplementationPattern&lt; BToXsGamma&lt; NLO &gt; &gt;</basecompoundref>
+    <includes refid="inclusive-b-to-s-gamma_8hh" local="no">inclusive-b-to-s-gamma.hh</includes>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1BToXsGamma_3_01NLO_01_4_1a30c96f4eb1b642661414f1d87e730ee3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::BToXsGamma&lt; NLO &gt;::BToXsGamma</definition>
+        <argsstring>(const Parameters &amp;parameters, const Options &amp;options)</argsstring>
+        <name>BToXsGamma</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1Options" kindref="compound">Options</ref> &amp;</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/inclusive-b-to-s-gamma.hh" line="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToXsGamma_3_01NLO_01_4_1a992dc782baee80b815710a151c54f532" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::BToXsGamma&lt; NLO &gt;::~BToXsGamma</definition>
+        <argsstring>()</argsstring>
+        <name>~BToXsGamma</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/inclusive-b-to-s-gamma.hh" line="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToXsGamma_3_01NLO_01_4_1ae00900386a68e7b65880ccb8145203fb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToXsGamma&lt; NLO &gt;::integrated_branching_ratio</definition>
+        <argsstring>(const double &amp;emin) const </argsstring>
+        <name>integrated_branching_ratio</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>emin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/inclusive-b-to-s-gamma.hh" line="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToXsGamma_3_01NLO_01_4_1ae72d7476e5a0e0184bb4b3d355509251" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToXsGamma&lt; NLO &gt;::photon_energy_moment_1</definition>
+        <argsstring>(const double &amp;emin) const </argsstring>
+        <name>photon_energy_moment_1</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>emin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/inclusive-b-to-s-gamma.hh" line="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToXsGamma_3_01NLO_01_4_1a0db4100d9dc7e9678ecc73a0c5c8e591" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::BToXsGamma&lt; NLO &gt;::photon_energy_moment_2</definition>
+        <argsstring>(const double &amp;emin) const </argsstring>
+        <name>photon_energy_moment_2</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>emin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/inclusive-b-to-s-gamma.hh" line="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1BToXsGamma_3_01NLO_01_4_1af39756d6216354324d53d410a3b11949" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1Diagnostics" kindref="compound">Diagnostics</ref></type>
+        <definition>Diagnostics eos::BToXsGamma&lt; NLO &gt;::diagnostics</definition>
+        <argsstring>() const </argsstring>
+        <name>diagnostics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/inclusive-b-to-s-gamma.hh" line="75"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="187">
+        <label>eos::BToXsGamma&lt; NLO &gt;</label>
+        <link refid="classeos_1_1BToXsGamma_3_01NLO_01_4"/>
+        <childnode refid="188" relation="public-inheritance">
+        </childnode>
+        <childnode refid="189" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="188">
+        <label>eos::ParameterUser</label>
+        <link refid="classeos_1_1ParameterUser"/>
+      </node>
+      <node id="189">
+        <label>eos::PrivateImplementationPattern&lt; BToXsGamma&lt; NLO &gt; &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="190">
+        <label>eos::BToXsGamma&lt; NLO &gt;</label>
+        <link refid="classeos_1_1BToXsGamma_3_01NLO_01_4"/>
+        <childnode refid="191" relation="public-inheritance">
+        </childnode>
+        <childnode refid="193" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="192">
+        <label>std::set&lt; Parameter::Id &gt;</label>
+      </node>
+      <node id="191">
+        <label>eos::ParameterUser</label>
+        <link refid="classeos_1_1ParameterUser"/>
+        <childnode refid="192" relation="usage">
+          <edgelabel>_ids</edgelabel>
+        </childnode>
+      </node>
+      <node id="193">
+        <label>eos::PrivateImplementationPattern&lt; BToXsGamma&lt; NLO &gt; &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/inclusive-b-to-s-gamma.hh" line="62" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/inclusive-b-to-s-gamma.hh" bodystart="59" bodyend="76"/>
+    <listofallmembers>
+      <member refid="classeos_1_1ParameterUser_1aa3a0285297e16cf2a5830df1f9bb2f4b" prot="protected" virt="non-virtual"><scope>eos::BToXsGamma&lt; NLO &gt;</scope><name>_ids</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a232940e78b26c6ed4f97196f831c69c9" prot="protected" virt="non-virtual"><scope>eos::BToXsGamma&lt; NLO &gt;</scope><name>_imp</name></member>
+      <member refid="classeos_1_1ParameterUser_1a9cd569207063cd2a8f807c4e1203a5d4" prot="public" virt="non-virtual"><scope>eos::BToXsGamma&lt; NLO &gt;</scope><name>begin</name></member>
+      <member refid="classeos_1_1BToXsGamma_3_01NLO_01_4_1a30c96f4eb1b642661414f1d87e730ee3" prot="public" virt="non-virtual"><scope>eos::BToXsGamma&lt; NLO &gt;</scope><name>BToXsGamma</name></member>
+      <member refid="classeos_1_1ParameterUser_1a7105631bbcb4b2492e6377b2b69f5b0f" prot="public" virt="non-virtual"><scope>eos::BToXsGamma&lt; NLO &gt;</scope><name>ConstIterator</name></member>
+      <member refid="classeos_1_1BToXsGamma_3_01NLO_01_4_1af39756d6216354324d53d410a3b11949" prot="public" virt="non-virtual"><scope>eos::BToXsGamma&lt; NLO &gt;</scope><name>diagnostics</name></member>
+      <member refid="classeos_1_1ParameterUser_1a5813c886f3fd3f074cc02a53fc9e0790" prot="public" virt="non-virtual"><scope>eos::BToXsGamma&lt; NLO &gt;</scope><name>end</name></member>
+      <member refid="classeos_1_1BToXsGamma_3_01NLO_01_4_1ae00900386a68e7b65880ccb8145203fb" prot="public" virt="non-virtual"><scope>eos::BToXsGamma&lt; NLO &gt;</scope><name>integrated_branching_ratio</name></member>
+      <member refid="classeos_1_1BToXsGamma_3_01NLO_01_4_1ae72d7476e5a0e0184bb4b3d355509251" prot="public" virt="non-virtual"><scope>eos::BToXsGamma&lt; NLO &gt;</scope><name>photon_energy_moment_1</name></member>
+      <member refid="classeos_1_1BToXsGamma_3_01NLO_01_4_1a0db4100d9dc7e9678ecc73a0c5c8e591" prot="public" virt="non-virtual"><scope>eos::BToXsGamma&lt; NLO &gt;</scope><name>photon_energy_moment_2</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a3e3d5f4a565256a1dda6c234b051b2f2" prot="public" virt="non-virtual"><scope>eos::BToXsGamma&lt; NLO &gt;</scope><name>PrivateImplementationPattern</name></member>
+      <member refid="classeos_1_1ParameterUser_1ad91a901e589653272482bded7e453c70" prot="public" virt="non-virtual"><scope>eos::BToXsGamma&lt; NLO &gt;</scope><name>uses</name></member>
+      <member refid="classeos_1_1ParameterUser_1a7a37e779cf45ef1075fe7bf670688b72" prot="public" virt="non-virtual"><scope>eos::BToXsGamma&lt; NLO &gt;</scope><name>uses</name></member>
+      <member refid="classeos_1_1BToXsGamma_3_01NLO_01_4_1a992dc782baee80b815710a151c54f532" prot="public" virt="non-virtual"><scope>eos::BToXsGamma&lt; NLO &gt;</scope><name>~BToXsGamma</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1acf46ec2739c3b0ec9702b9428475876d" prot="public" virt="non-virtual"><scope>eos::BToXsGamma&lt; NLO &gt;</scope><name>~PrivateImplementationPattern</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1hdf5_1_1AttributeHandle" kind="class" prot="public">
+    <compoundname>eos::hdf5::AttributeHandle</compoundname>
+    <basecompoundref refid="classeos_1_1PrivateImplementationPattern" prot="private" virt="non-virtual">eos::PrivateImplementationPattern&lt; AttributeHandle &gt;</basecompoundref>
+    <includes refid="hdf5_8hh" local="no">hdf5.hh</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classeos_1_1hdf5_1_1AttributeHandle_1ab1c111c97e6fd99718c0c5f172cf76bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class DataSetHandle</definition>
+        <argsstring></argsstring>
+        <name>DataSetHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="401" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" bodystart="401" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classeos_1_1hdf5_1_1AttributeHandle_1a9eb38995580f7f966284de90e69fefcd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::hdf5::AttributeHandle::AttributeHandle</definition>
+        <argsstring>(const DataSetHandle &amp;data_set_handle, const hid_t &amp;attribute_id)</argsstring>
+        <name>AttributeHandle</name>
+        <param>
+          <type>const <ref refid="classeos_1_1hdf5_1_1DataSetHandle" kindref="compound">DataSetHandle</ref> &amp;</type>
+          <declname>data_set_handle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceeos_1_1hdf5_1a5bd5e209f1bf36cdc5551465dacf2e74" kindref="member">hid_t</ref> &amp;</type>
+          <declname>attribute_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="398"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1hdf5_1_1AttributeHandle_1a8e767c3c6468875d09fa89a446f1eeb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::hdf5::AttributeHandle::~AttributeHandle</definition>
+        <argsstring>()</argsstring>
+        <name>~AttributeHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="403"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1hdf5_1_1AttributeHandle_1a5412e79df3d179053902e0ac7b5a93ee" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceeos_1_1hdf5_1a5bd5e209f1bf36cdc5551465dacf2e74" kindref="member">hid_t</ref></type>
+        <definition>hid_t eos::hdf5::AttributeHandle::attribute_id</definition>
+        <argsstring>() const </argsstring>
+        <name>attribute_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="405"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1hdf5_1_1AttributeHandle_1adc5a9f2119e7de59a83f782d9bae892b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceeos_1_1hdf5_1a5bd5e209f1bf36cdc5551465dacf2e74" kindref="member">hid_t</ref></type>
+        <definition>hid_t eos::hdf5::AttributeHandle::type_id</definition>
+        <argsstring>() const </argsstring>
+        <name>type_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="407"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1hdf5_1_1AttributeHandle_1acb93f382e986654df68de9389f723efe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::hdf5::AttributeHandle::write</definition>
+        <argsstring>(const void *buffer)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const void *</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="409"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1hdf5_1_1AttributeHandle_1a90da07975c70cfdbeab933e68d4ba76a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::hdf5::AttributeHandle::read</definition>
+        <argsstring>(void *buffer) const </argsstring>
+        <name>read</name>
+        <param>
+          <type>void *</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="411"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="63">
+        <label>eos::PrivateImplementationPattern&lt; AttributeHandle &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="62">
+        <label>eos::hdf5::AttributeHandle</label>
+        <link refid="classeos_1_1hdf5_1_1AttributeHandle"/>
+        <childnode refid="63" relation="private-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="65">
+        <label>eos::PrivateImplementationPattern&lt; AttributeHandle &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="64">
+        <label>eos::hdf5::AttributeHandle</label>
+        <link refid="classeos_1_1hdf5_1_1AttributeHandle"/>
+        <childnode refid="65" relation="private-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="396" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" bodystart="394" bodyend="412"/>
+    <listofallmembers>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a232940e78b26c6ed4f97196f831c69c9" prot="private" virt="non-virtual"><scope>eos::hdf5::AttributeHandle</scope><name>_imp</name></member>
+      <member refid="classeos_1_1hdf5_1_1AttributeHandle_1a5412e79df3d179053902e0ac7b5a93ee" prot="public" virt="non-virtual"><scope>eos::hdf5::AttributeHandle</scope><name>attribute_id</name></member>
+      <member refid="classeos_1_1hdf5_1_1AttributeHandle_1a9eb38995580f7f966284de90e69fefcd" prot="private" virt="non-virtual"><scope>eos::hdf5::AttributeHandle</scope><name>AttributeHandle</name></member>
+      <member refid="classeos_1_1hdf5_1_1AttributeHandle_1ab1c111c97e6fd99718c0c5f172cf76bc" prot="public" virt="non-virtual"><scope>eos::hdf5::AttributeHandle</scope><name>DataSetHandle</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a3e3d5f4a565256a1dda6c234b051b2f2" prot="private" virt="non-virtual"><scope>eos::hdf5::AttributeHandle</scope><name>PrivateImplementationPattern</name></member>
+      <member refid="classeos_1_1hdf5_1_1AttributeHandle_1a90da07975c70cfdbeab933e68d4ba76a" prot="public" virt="non-virtual"><scope>eos::hdf5::AttributeHandle</scope><name>read</name></member>
+      <member refid="classeos_1_1hdf5_1_1AttributeHandle_1adc5a9f2119e7de59a83f782d9bae892b" prot="public" virt="non-virtual"><scope>eos::hdf5::AttributeHandle</scope><name>type_id</name></member>
+      <member refid="classeos_1_1hdf5_1_1AttributeHandle_1acb93f382e986654df68de9389f723efe" prot="public" virt="non-virtual"><scope>eos::hdf5::AttributeHandle</scope><name>write</name></member>
+      <member refid="classeos_1_1hdf5_1_1AttributeHandle_1a8e767c3c6468875d09fa89a446f1eeb3" prot="public" virt="non-virtual"><scope>eos::hdf5::AttributeHandle</scope><name>~AttributeHandle</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1acf46ec2739c3b0ec9702b9428475876d" prot="private" virt="non-virtual"><scope>eos::hdf5::AttributeHandle</scope><name>~PrivateImplementationPattern</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

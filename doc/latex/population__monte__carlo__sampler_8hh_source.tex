@@ -1,0 +1,236 @@
+\hypertarget{population__monte__carlo__sampler_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/population\_\-monte\_\-carlo\_\-sampler.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2011 Frederik Beaujean}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_PMC\_SAMPLER\_HH}
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00021}{}\hyperlink{population__monte__carlo__sampler_8hh_ae7e0494552bb66a66453c50c27203a49}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_PMC\_SAMPLER\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{preprocessor}{#include <\hyperlink{analysis_8hh}{eos/utils/analysis.hh}>}
+00024 \textcolor{preprocessor}{#include <\hyperlink{hdf5-fwd_8hh}{eos/utils/hdf5-fwd.hh}>}
+00025 \textcolor{preprocessor}{#include <\hyperlink{private__implementation__pattern_8hh}{eos/utils/private_implementation_pattern.hh}>}
+00026 
+00027 \textcolor{keyword}{namespace }eos
+00028 \{
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00029}{}\hyperlink{classeos_1_1PopulationMonteCarloSampler}{00029}     \textcolor{keyword}{class }\hyperlink{classeos_1_1PopulationMonteCarloSampler}{PopulationMonteCarloSampler} :
+00030         \textcolor{keyword}{public} \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern}<PopulationMonteCarloSampler>
+00031     \{
+00032         \textcolor{keyword}{public}:
+00033             \textcolor{keyword}{class }\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config}{Config};
+00034             \textcolor{keyword}{class }\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Status}{Status};
+00035             \textcolor{keyword}{class }\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Output}{Output};
+00036 
+00039 
+00045             \hyperlink{classeos_1_1PopulationMonteCarloSampler_af17458cf45dd30ed7328b88af1ad7ffd}{PopulationMonteCarloSampler}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Analysis}{Analysis} & analysis, \textcolor{keyword}{const} 
+      \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config}{PopulationMonteCarloSampler::Config} & \hyperlink{classeos_1_1PopulationMonteCarloSampler_ad5cdbdb944ffd933a76b58915c366ecc}{config});
+00046 
+00058             \hyperlink{classeos_1_1PopulationMonteCarloSampler_af17458cf45dd30ed7328b88af1ad7ffd}{PopulationMonteCarloSampler}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Analysis}{Analysis} & analysis, \textcolor{keyword}{const} 
+      \hyperlink{classeos_1_1hdf5_1_1File}{hdf5::File} & file,
+00059                                         \textcolor{keyword}{const} 
+      \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config}{PopulationMonteCarloSampler::Config} & config, \textcolor{keyword}{const} \textcolor{keywordtype}{bool} & update = \textcolor{keyword}{false});
+00060 
+00062             \hyperlink{classeos_1_1PopulationMonteCarloSampler_a10bebcfd46a9a9c8925de30e78f192ef}{~PopulationMonteCarloSampler}();
+00063 
+00065 
+00068 
+00073             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1PopulationMonteCarloSampler_acce93bba46d62aba651ccbf9dd7dd97e}{calculate_weights}(\textcolor{keyword}{const} std::string & sample\_file, \textcolor{keyword}{const} \textcolor{keywordtype}{unsigne
+      d} & min\_index, \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & max\_index) \textcolor{keyword}{const};
+00074 
+00076             \textcolor{keyword}{const} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config}{PopulationMonteCarloSampler::Config} & \hyperlink{classeos_1_1PopulationMonteCarloSampler_ad5cdbdb944ffd933a76b58915c366ecc}{config}() \textcolor{keyword}{const};
+00077 
+00084             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1PopulationMonteCarloSampler_a89aafb7a0eea4a3d3f7c14c4678cb4fa}{draw_samples}();
+00085 
+00095             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \hyperlink{classeos_1_1PopulationMonteCarloSampler_a69d7eee659c32197c19424aaf74a1eb8}{read_samples}(\textcolor{keyword}{const} std::string & sample\_file, \textcolor{keyword}{const} std::
+      string & base,
+00096                                      \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & min, \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & max,
+00097                                      std::vector<std::vector<double>> & samples);
+      
+00098 
+00100             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1PopulationMonteCarloSampler_a7df73b99d042f2b41a37e9acca29eebd}{run}();
+00101 
+00103             \textcolor{keyword}{const} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Status}{PopulationMonteCarloSampler::Status} & \hyperlink{classeos_1_1PopulationMonteCarloSampler_a0557e83dff8bc5befde6a43ede580f84}{status}() \textcolor{keyword}{const};
+00104 
+00112             \textcolor{keywordtype}{bool} \hyperlink{classeos_1_1PopulationMonteCarloSampler_a0557e83dff8bc5befde6a43ede580f84}{status}(\textcolor{keyword}{const} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Status}{PopulationMonteCarloSampler::Status} & new\_status, \textcolor{keywordtype}{b
+      ool} check\_convergence = \textcolor{keyword}{false});
+00113 
+00115     \};
+00116 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00120}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config}{00120}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config}{PopulationMonteCarloSampler::Config}
+00121     \{
+00122         \textcolor{keyword}{private}:
+00124             \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config}{Config}();
+00125 
+00126         \textcolor{keyword}{public}:
+00129 
+00135             \textcolor{keyword}{static} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config}{Config} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a8f659cd4c289ebfea73765497eee01dd}{Default}();
+00136 
+00146             \textcolor{keyword}{static} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config}{Config} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_aa88ccb299ca1bc2881951b82e6e66059}{Quick}();
+00148 
+00151 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00155}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_abf7b1c768e283f8a41bc8b348bb84304}{00155}             \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_abf7b1c768e283f8a41bc8b348bb84304}{seed};
+00156 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00161}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_abe02d7abd41f52ae2eaf3eba25522f50}{00161}             \textcolor{keywordtype}{bool} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_abe02d7abd41f52ae2eaf3eba25522f50}{parallelize};
+00162 
+00163 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00170}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_ae6362a7374c9ca1650b501c07672442a}{00170}             \textcolor{keywordtype}{unsigned} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_ae6362a7374c9ca1650b501c07672442a}{number_of_workers};
+00171 
+00173 
+00176 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00183}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_afbe44ab88cfffcf63495463004cdd9b5}{00183}             \textcolor{keywordtype}{bool} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_afbe44ab88cfffcf63495463004cdd9b5}{block_decomposition};
+00184 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00190}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a95aeae5fe77255d4fa0c2c5ddfafe883}{00190}             std::vector<double> \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a95aeae5fe77255d4fa0c2c5ddfafe883}{component_weights};
+00191 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00193}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a5668b999c1f4c6517b9366035571143d}{00193}             std::vector<std::vector<double>> \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a5668b999c1f4c6517b9366035571143d}{component_means};
+00194 
+00195             \textcolor{comment}{//TODO better explanation}
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00197}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a91b615db28333d345eae6d8a2ef55fd5}{00197} \textcolor{comment}{}            \textcolor{keywordtype}{double} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a91b615db28333d345eae6d8a2ef55fd5}{component_offset};
+00198 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00200}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_af7452d7aaa3b241039b730998cdbabff}{00200}             std::vector<std::vector<double>> \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_af7452d7aaa3b241039b730998cdbabff}{component_variances};
+00201 
+00202             \textcolor{comment}{//todo can we remove this with super\_clusters?}
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00207}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a46afc1c26737e35c8ea582ffbab80edb}{00207} \textcolor{comment}{}            \hyperlink{classeos_1_1VerifiedRange}{VerifiedRange<unsigned>} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a46afc1c26737e35c8ea582ffbab80edb}{components_per_cluster};
+00208 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00213}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_ad4069f57b2c8b33032680a27b62fd5cf}{00213}             \hyperlink{classeos_1_1VerifiedRange}{VerifiedRange<int>} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_ad4069f57b2c8b33032680a27b62fd5cf}{degrees_of_freedom};
+00214 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00216}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a32b76214e4175ec4543162d36707ab84}{00216}             \hyperlink{classeos_1_1VerifiedRange}{VerifiedRange<double>} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a32b76214e4175ec4543162d36707ab84}{minimum_overlap};
+00217 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00227}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_abb5d4e207d1f2da439dddf9c49854a1e}{00227}             \hyperlink{classeos_1_1VerifiedRange}{VerifiedRange<double>} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_abb5d4e207d1f2da439dddf9c49854a1e}{mode_distance};
+00228 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00231}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_aee29a36e8e23c971ba1e36616e9affb4}{00231}             \textcolor{keywordtype}{bool} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_aee29a36e8e23c971ba1e36616e9affb4}{override_global_local_proposal};
+00232 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00236}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_aca0e5339b634644471e1aa5cdd698231}{00236}             \textcolor{keywordtype}{bool} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_aca0e5339b634644471e1aa5cdd698231}{random_start};
+00237 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00242}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a2a6f2098dc8be089015818326d8eb15f}{00242}             \textcolor{keywordtype}{int} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a2a6f2098dc8be089015818326d8eb15f}{single_cluster};
+00243 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00245}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_ac920d732b229713ca67428d284390fa2}{00245}             \hyperlink{classeos_1_1VerifiedRange}{VerifiedRange<double>} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_ac920d732b229713ca67428d284390fa2}{skip_initial};
+00246 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00251}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a235c1a2d0c336f9f8ed9c58917acf68b}{00251}             \textcolor{keywordtype}{unsigned} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a235c1a2d0c336f9f8ed9c58917acf68b}{starting_points};
+00252 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00257}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a9de01b257ce34b8a747de5dcf992e053}{00257}             \hyperlink{classeos_1_1VerifiedRange}{VerifiedRange<double>} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a9de01b257ce34b8a747de5dcf992e053}{std_dev_reduction};
+00258 
+00260 
+00263 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00272}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_adf9f35d7f54defd04b9486de7d705ffa}{00272}             \hyperlink{classeos_1_1VerifiedRange}{VerifiedRange<double>} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_adf9f35d7f54defd04b9486de7d705ffa}{group_by_r_value};
+00273 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00279}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a27ea93f2181c10068424f2b7e24fbc14}{00279}             std::vector<unsigned> \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a27ea93f2181c10068424f2b7e24fbc14}{ignore_groups};
+00280 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00287}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a0bffb06da5f9f3ef917eec1ce2139ce1}{00287}             \textcolor{keywordtype}{bool} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a0bffb06da5f9f3ef917eec1ce2139ce1}{patch_around_local_mode};
+00288 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00293}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a5e3c5e1375b04890db40b3d7581b5413}{00293}             \textcolor{keywordtype}{bool} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a5e3c5e1375b04890db40b3d7581b5413}{r_value_no_nuisance};
+00294 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00299}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a9d8798a5789fd4fbe250dba673b92df6}{00299}             \textcolor{keywordtype}{unsigned} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a9d8798a5789fd4fbe250dba673b92df6}{sliding_window};
+00300 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00302}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a1ddf56fd57dd8dd3c4462dd1cb2800ab}{00302}             \textcolor{keywordtype}{bool} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a1ddf56fd57dd8dd3c4462dd1cb2800ab}{store_input_components};
+00303 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00305}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_ad24a2d883fe9d2faedbcf4f861bc9d82}{00305}             \textcolor{keywordtype}{bool} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_ad24a2d883fe9d2faedbcf4f861bc9d82}{store_hc_initial};
+00306 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00315}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a906c7eeded237f7bbe810a8d03d8402b}{00315}             \textcolor{keywordtype}{unsigned} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a906c7eeded237f7bbe810a8d03d8402b}{super_clusters};
+00316 
+00318 
+00321 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00323}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_af4b575d8f24b51783b11bd5dca5ea576}{00323}             \textcolor{keywordtype}{bool} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_af4b575d8f24b51783b11bd5dca5ea576}{adjust_sample_size};
+00324 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00326}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a14c4bdc8c63ca8115e326e4c7bb3116e}{00326}             \textcolor{keywordtype}{unsigned} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a14c4bdc8c63ca8115e326e4c7bb3116e}{chunks};
+00327 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00329}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_ac6d3a2f26905ec51f3e9eadf73d51792}{00329}             \textcolor{keywordtype}{unsigned} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_ac6d3a2f26905ec51f3e9eadf73d51792}{chunk_size};
+00330 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00337}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a394bc4c560e738d420fa34014745a7b7}{00337}             \textcolor{keywordtype}{unsigned} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a394bc4c560e738d420fa34014745a7b7}{crop_highest_weights};
+00338 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00340}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_ac729d374ca2a58aeba6cf60d296d7720}{00340}             \textcolor{keywordtype}{bool} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_ac729d374ca2a58aeba6cf60d296d7720}{need_prerun};
+00341 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00343}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a85cf9361f3660df01fa551d9ebd62040}{00343}             \textcolor{keywordtype}{bool} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a85cf9361f3660df01fa551d9ebd62040}{store_prerun};
+00344 
+00346 
+00349 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00351}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a69a93bb57d6610e06ea2f200e3d2ce42}{00351}             \hyperlink{classeos_1_1VerifiedRange}{VerifiedRange<double>} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a69a93bb57d6610e06ea2f200e3d2ce42}{convergence_eff_sample_size};
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00353}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a42a627c391f5278eff3a1c1de7f06985}{00353}             \hyperlink{classeos_1_1VerifiedRange}{VerifiedRange<double>} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a42a627c391f5278eff3a1c1de7f06985}{convergence_perplexity};
+00354 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00357}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_aec486491bd33a3edf40a6062b07e4066}{00357}             \textcolor{keywordtype}{bool} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_aec486491bd33a3edf40a6062b07e4066}{ignore_eff_sample_size};
+00358 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00360}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a765c46a4b99f711c59f02e1ea0d8fbe9}{00360}             \hyperlink{classeos_1_1VerifiedRange}{VerifiedRange<double>} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a765c46a4b99f711c59f02e1ea0d8fbe9}{minimum_eff_sample_size};
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00362}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a4cfd93c384604e24e58ace95bdc31a2d}{00362}             \hyperlink{classeos_1_1VerifiedRange}{VerifiedRange<double>} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a4cfd93c384604e24e58ace95bdc31a2d}{minimum_perplexity};
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00364}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_ac7a03e69442b543fc2cacaa647988741}{00364}             \hyperlink{classeos_1_1VerifiedRange}{VerifiedRange<unsigned>} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_ac7a03e69442b543fc2cacaa647988741}{minimum_steps};
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00366}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_ac0e8dec5f8ba7e5f0c997dd8a65fc231}{00366}             \hyperlink{classeos_1_1VerifiedRange}{VerifiedRange<double>} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_ac0e8dec5f8ba7e5f0c997dd8a65fc231}{maximum_relative_std_deviation};
+00367 
+00369 
+00372 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00374}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_ac5a61846614b1bb67bdde95df03b5663}{00374}             \textcolor{keywordtype}{long} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_ac5a61846614b1bb67bdde95df03b5663}{final_chunk_size};
+00375 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00377}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a3dffd8c05d907bae4e3aaaf1733d93c1}{00377}             \textcolor{keywordtype}{bool} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a3dffd8c05d907bae4e3aaaf1733d93c1}{store};
+00379 
+00382 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00386}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_abe31836405a05391987afe00f1f231d3}{00386}             std::string \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_abe31836405a05391987afe00f1f231d3}{output_file};
+00387 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00397}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a55d2a98f36625d31eb9117c76212771f}{00397}             \hyperlink{classeos_1_1VerifiedRange}{VerifiedRange<unsigned>} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config_a55d2a98f36625d31eb9117c76212771f}{print_steps};
+00399     \};
+00400 
+00401     std::ostream & \hyperlink{namespaceeos_a2d7ef50009f9368c73d5056eab3ec21d}{operator<<}(std::ostream &, \textcolor{keyword}{const} 
+      \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Config}{PopulationMonteCarloSampler::Config} &);
+00402 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00406}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Output}{00406}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Output}{PopulationMonteCarloSampler::Output}
+00407     \{
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00408}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Output_a5fd76b324d88b7fbd14306e8a15e4db9}{00408}          \textcolor{keyword}{typedef} \hyperlink{classeos_1_1hdf5_1_1Composite}{hdf5::Composite<hdf5::Scalar<double>}, \hyperlink{classeos_1_1hdf5_1_1Array}{hdf5::Array<1, double>}, 
+      \hyperlink{classeos_1_1hdf5_1_1Array}{hdf5::Array<1, double>}> \hyperlink{classeos_1_1hdf5_1_1Composite}{ComponentType};
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00409}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Output_aa7e9c8fa59ff4cc77d830c9c2661435e}{00409}          \textcolor{keyword}{typedef} \hyperlink{classeos_1_1hdf5_1_1Scalar}{hdf5::Scalar<short>} \hyperlink{classeos_1_1hdf5_1_1Scalar}{IgnoreType};
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00410}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Output_ab096268a8fccb7e8d34ed08b93df880c}{00410}          \textcolor{keyword}{typedef} \hyperlink{classeos_1_1hdf5_1_1Array}{hdf5::Array<1, double>} \hyperlink{classeos_1_1hdf5_1_1Array}{SampleType};
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00411}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Output_abe071d58f8cee75754bcc593ec33e9b8}{00411}          \textcolor{keyword}{typedef} \hyperlink{classeos_1_1hdf5_1_1Composite}{hdf5::Composite<hdf5::Scalar<double>}, \hyperlink{classeos_1_1hdf5_1_1Scalar}{hdf5::Scalar<double>}, 
+      \hyperlink{classeos_1_1hdf5_1_1Scalar}{hdf5::Scalar<double>}> \hyperlink{classeos_1_1hdf5_1_1Composite}{StatisticsType};
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00412}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Output_a4413a52234bdb64d96f842ad524a7ee8}{00412}          \textcolor{keyword}{typedef} \hyperlink{classeos_1_1hdf5_1_1Composite}{hdf5::Composite<hdf5::Scalar<double>}, \hyperlink{classeos_1_1hdf5_1_1Scalar}{hdf5::Scalar<double>}> 
+      \hyperlink{classeos_1_1hdf5_1_1Composite}{WeightType};
+00413 
+00414          \textcolor{keyword}{static} \hyperlink{classeos_1_1hdf5_1_1Composite}{ComponentType} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Output_a89756e43d911fc21ca5e12e4f676c495}{component_type}(\textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & dimension);
+00415          \textcolor{keyword}{static} \hyperlink{classeos_1_1hdf5_1_1Scalar}{IgnoreType} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Output_a7dea0b1d53d47e5099fa97136a4f27a5}{ignore_type}();
+00416          \textcolor{keyword}{static} \hyperlink{classeos_1_1hdf5_1_1Array}{SampleType} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Output_ac9825b152fa3750d77cb7face4fbaf41}{sample_type}(\textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & dimension);
+00417          \textcolor{keyword}{static} \hyperlink{classeos_1_1hdf5_1_1Composite}{StatisticsType} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Output_ab943ce812be9756d846719e165f352a7}{statistics_type}();
+00418          \textcolor{keyword}{static} \hyperlink{classeos_1_1hdf5_1_1Composite}{WeightType} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Output_ad7a4912cebc0c3d00052a398aaef15dd}{weight_type}();
+00419 
+00420          \textcolor{keyword}{static} std::tuple<double, std::vector<double>, std::vector<double>> 
+      \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Output_a55eed75bc734fdf74551769f1ef4f53a}{component_record}(\textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & dimension);
+00421          \textcolor{keyword}{static} \textcolor{keywordtype}{short} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Output_a0bc83ed4bd2ec948236eced9b6be6684}{ignore_record}();
+00422          \textcolor{keyword}{static} std::vector<double> \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Output_a8091ae5b3a05edde2e076faafe0a02ab}{sample_record}(\textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & dimension);
+00423          \textcolor{keyword}{static} std::tuple<double, double, double> \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Output_af58401b36b817e48635dfebfa54163e4}{statistics_record}();
+00424          \textcolor{keyword}{static} std::tuple<double, double> \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Output_a6bcb392149e9b1f026f96d123f88d9d8}{weight_record}();
+00425     \};
+00426 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00430}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Status}{00430}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Status}{PopulationMonteCarloSampler::Status}
+00431     \{
+00432         \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Status_a8f69a829df5ad6a829a737c4eb9c368c}{Status}();
+00433 
+00434         \textcolor{comment}{//todo fill and use in [pre]run()}
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00437}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Status_aec7820c1ca91f2af381c1bb81182fa26}{00437} \textcolor{comment}{}        \textcolor{keywordtype}{unsigned} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Status_aec7820c1ca91f2af381c1bb81182fa26}{chunk_size};
+00438 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00440}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Status_a853d94d0b2fc16ee51f6e32ca4b0515c}{00440}         \textcolor{keywordtype}{bool} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Status_a853d94d0b2fc16ee51f6e32ca4b0515c}{converged};
+00441 
+00442          \textcolor{comment}{//todo fill}
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00444}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Status_a6b30cf9e83650e861475f2f0036c09b0}{00444} \textcolor{comment}{}        \textcolor{keywordtype}{unsigned} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Status_a6b30cf9e83650e861475f2f0036c09b0}{iterations_at_convergence};
+00445 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00447}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Status_ab762703da0930ae2182b696b85358b53}{00447}         \textcolor{keywordtype}{double} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Status_ab762703da0930ae2182b696b85358b53}{evidence};
+00448 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00450}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Status_a35814022e64d939f7164ece7a796c07e}{00450}         \textcolor{keywordtype}{double} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Status_a35814022e64d939f7164ece7a796c07e}{eff_sample_size};
+00451 
+\hypertarget{population__monte__carlo__sampler_8hh_source_l00453}{}\hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Status_a468aeeb618c761543be6d6833347e296}{00453}         \textcolor{keywordtype}{double} \hyperlink{structeos_1_1PopulationMonteCarloSampler_1_1Status_a468aeeb618c761543be6d6833347e296}{perplexity};
+00454     \};
+00455 \}
+00456 
+00457 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

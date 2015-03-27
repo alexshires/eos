@@ -1,0 +1,94 @@
+\hypertarget{instantiation__policy_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/instantiation\_\-policy.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2008 Danny van Dyk <danny.dyk@uni-dortmund.de>}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * Base upon 'instantiation\_policy.hh' from Paludis, which is:}
+00007 \textcolor{comment}{ *     Copyright (c) 2005, 2006, 2007 Ciaran McCreesh}
+00008 \textcolor{comment}{ *}
+00009 \textcolor{comment}{ * This file is part of the EOS program. EOS is free software;}
+00010 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00011 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00012 \textcolor{comment}{ *}
+00013 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00014 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00015 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00016 \textcolor{comment}{ * details.}
+00017 \textcolor{comment}{ *}
+00018 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00019 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00020 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00021 \textcolor{comment}{ */}
+00022 
+00023 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_INSTANTIATION\_POLICY\_HH}
+\hypertarget{instantiation__policy_8hh_source_l00024}{}\hyperlink{instantiation__policy_8hh_abd336977b5f10aab9894e0790cec50a3}{00024} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_INSTANTIATION\_POLICY\_HH 1}
+00025 \textcolor{preprocessor}{}
+00026 \textcolor{keyword}{namespace }eos
+00027 \{
+00038     \textcolor{keyword}{struct }NonCopyable;
+00039 
+00043     \textcolor{keyword}{struct }NonInstantiable;
+00044 
+00048     \textcolor{keyword}{struct }Singleton;
+00049 
+00051 
+00059     \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_, \textcolor{keyword}{typename} Method\_> \textcolor{keyword}{class }InstantiationPolicy;
+00060 
+\hypertarget{instantiation__policy_8hh_source_l00061}{}\hyperlink{classeos_1_1InstantiationPolicy_3_01T___00_01NonCopyable_01_4}{00061}     \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_> \textcolor{keyword}{class }InstantiationPolicy<T\_, NonCopyable>
+00062     \{
+00063         \textcolor{keyword}{private}:
+00065             InstantiationPolicy(\textcolor{keyword}{const} InstantiationPolicy &);
+00066 
+00068             InstantiationPolicy & operator= (\textcolor{keyword}{const} InstantiationPolicy &);
+00069 
+00070         \textcolor{keyword}{public}:
+\hypertarget{instantiation__policy_8hh_source_l00072}{}\hyperlink{classeos_1_1InstantiationPolicy_3_01T___00_01NonCopyable_01_4_a49c9277b4931f45e51aacee340e30f53}{00072}             InstantiationPolicy()
+00073             \{
+00074             \}
+00075     \};
+00076 
+\hypertarget{instantiation__policy_8hh_source_l00077}{}\hyperlink{classeos_1_1InstantiationPolicy_3_01T___00_01NonInstantiable_01_4}{00077}     \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_> \textcolor{keyword}{class }InstantiationPolicy<T\_, NonInstantiable>
+00078     \{
+00079         \textcolor{keyword}{private}:
+00081             InstantiationPolicy(\textcolor{keyword}{const} InstantiationPolicy &);
+00082 
+00084             InstantiationPolicy & operator= (\textcolor{keyword}{const} InstantiationPolicy &);
+00085 
+00087             InstantiationPolicy();
+00088     \};
+00089 
+\hypertarget{instantiation__policy_8hh_source_l00090}{}\hyperlink{classeos_1_1InstantiationPolicy_3_01T___00_01Singleton_01_4}{00090}     \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_> \textcolor{keyword}{class }InstantiationPolicy<T\_, Singleton>
+00091     \{
+00092         \textcolor{keyword}{private}:
+\hypertarget{instantiation__policy_8hh_source_l00093}{}\hyperlink{classeos_1_1InstantiationPolicy_3_01T___00_01Singleton_01_4_a015c2abc647885b46b47d0ba104140b1}{00093}             \textcolor{keyword}{class }DeleteOnDestruction;
+00094 
+00095             \textcolor{keyword}{friend} \textcolor{keyword}{class }DeleteOnDestruction;
+00096 
+00098             \textcolor{keyword}{static} T\_ * * \_instance\_ptr();
+00099 
+00101             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \_delete(T\_ * \textcolor{keyword}{const} ptr);
+00102 
+00104             InstantiationPolicy(\textcolor{keyword}{const} InstantiationPolicy &);
+00105 
+00107             InstantiationPolicy & operator= (\textcolor{keyword}{const} InstantiationPolicy &);
+00108 
+00109         \textcolor{keyword}{protected}:
+\hypertarget{instantiation__policy_8hh_source_l00111}{}\hyperlink{classeos_1_1InstantiationPolicy_3_01T___00_01Singleton_01_4_a18668ba37f53fb8e90de2ad25a8f9873}{00111}             InstantiationPolicy()
+00112             \{
+00113             \}
+00114 
+00115         \textcolor{keyword}{public}:
+00117             \textcolor{keyword}{static} T\_ * instance();
+00118 
+00119     \};
+00120 
+00122 \}
+00123 
+00124 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

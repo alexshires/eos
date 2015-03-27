@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1InstantiationPolicy_1_1DeleteOnDestruction" kind="class" prot="public">
+    <compoundname>eos::InstantiationPolicy::DeleteOnDestruction</compoundname>
+    <includes refid="instantiation__policy-impl_8hh" local="no">instantiation_policy-impl.hh</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T_</type>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/instantiation_policy-impl.hh" line="41" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/instantiation_policy-impl.hh" bodystart="40" bodyend="57"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

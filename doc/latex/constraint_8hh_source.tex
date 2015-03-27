@@ -1,0 +1,82 @@
+\hypertarget{constraint_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/constraint.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2011, 2012, 2013, 2014 Danny van Dyk}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 
+00021 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_CONSTRAINT\_HH}
+\hypertarget{constraint_8hh_source_l00022}{}\hyperlink{constraint_8hh_abe90181b1247bb83226d75c9e683cb96}{00022} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_CONSTRAINT\_HH 1}
+00023 \textcolor{preprocessor}{}
+00024 \textcolor{preprocessor}{#include <\hyperlink{observable_8hh}{eos/observable.hh}>}
+00025 \textcolor{preprocessor}{#include <\hyperlink{log__likelihood-fwd_8hh}{eos/utils/log_likelihood-fwd.hh}>}
+00026 \textcolor{preprocessor}{#include <\hyperlink{observable__cache_8hh}{eos/utils/observable_cache.hh}>}
+00027 \textcolor{preprocessor}{#include <\hyperlink{private__implementation__pattern_8hh}{eos/utils/private_implementation_pattern.hh}>}
+00028 \textcolor{preprocessor}{#include <\hyperlink{wrapped__forward__iterator_8hh}{eos/utils/wrapped_forward_iterator.hh}>}
+00029 
+00030 \textcolor{preprocessor}{#include <vector>}
+00031 
+00032 \textcolor{keyword}{namespace }eos
+00033 \{
+00034     \textcolor{comment}{// Forward declaration.}
+00035     \textcolor{keyword}{class }Constraint;
+00036 
+\hypertarget{constraint_8hh_source_l00041}{}\hyperlink{classeos_1_1Constraint}{00041}     \textcolor{keyword}{class }\hyperlink{classeos_1_1Constraint}{Constraint} :
+00042         \textcolor{keyword}{public} \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern}<Constraint>
+00043     \{
+00044         \textcolor{keyword}{public}:
+00046             \hyperlink{classeos_1_1Constraint_a2be956c51e9f34e2ed816ed65be76f1e}{Constraint}(\textcolor{keyword}{const} std::string & \hyperlink{classeos_1_1Constraint_a11a3e698b0a00527a6304c6b2ec70a1d}{name}, \textcolor{keyword}{const} std::vector<ObservablePtr>
+       & observable,
+00047                     \textcolor{keyword}{const} std::vector<LogLikelihoodBlockPtr> & blocks);
+00048 
+00050             \hyperlink{classeos_1_1Constraint_a9ec79cb58f7a54c65681cd0f05dcb672}{~Constraint}();
+00051 
+00054             std::string \hyperlink{classeos_1_1Constraint_a11a3e698b0a00527a6304c6b2ec70a1d}{name}() \textcolor{keyword}{const};
+00056 
+\hypertarget{constraint_8hh_source_l00059}{}\hyperlink{classeos_1_1Constraint_a44010ea20596a593325202033743f357}{00059}             \textcolor{keyword}{struct }ObservableIteratorTag;
+00060             \textcolor{keyword}{typedef} \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator<ObservableIteratorTag, ObservablePtr>} 
+      \hyperlink{classeos_1_1WrappedForwardIterator}{ObservableIterator};
+00061 
+00062             \hyperlink{classeos_1_1WrappedForwardIterator}{ObservableIterator} \hyperlink{classeos_1_1Constraint_a9822827a09ecb630ec2b6640ce4306c0}{begin_observables}() \textcolor{keyword}{const};
+00063             \hyperlink{classeos_1_1WrappedForwardIterator}{ObservableIterator} \hyperlink{classeos_1_1Constraint_aa6cb38bbe55f1fd59f921716bc78d4c9}{end_observables}() \textcolor{keyword}{const};
+00065 
+\hypertarget{constraint_8hh_source_l00068}{}\hyperlink{classeos_1_1Constraint_a44726a3e0954f645183b9e28d911345a}{00068}             \textcolor{keyword}{struct }BlockIteratorTag;
+00069             \textcolor{keyword}{typedef} 
+      \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator<BlockIteratorTag, LogLikelihoodBlockPtr>} \hyperlink{classeos_1_1WrappedForwardIterator}{BlockIterator};
+00070 
+00071             \hyperlink{classeos_1_1WrappedForwardIterator}{BlockIterator} \hyperlink{classeos_1_1Constraint_a0bc3a182079de99618a9edec6bfd8512}{begin_blocks}() \textcolor{keyword}{const};
+00072             \hyperlink{classeos_1_1WrappedForwardIterator}{BlockIterator} \hyperlink{classeos_1_1Constraint_a8b6747caa6cf920d064e3a306224f4ef}{end_blocks}() \textcolor{keyword}{const};
+00074 
+00083             \textcolor{keyword}{static} \hyperlink{classeos_1_1Constraint}{Constraint} \hyperlink{classeos_1_1Constraint_a5084265f8e196296a885089cf710c096}{make}(\textcolor{keyword}{const} std::string & name, \textcolor{keyword}{const} \hyperlink{classeos_1_1Options}{Options} & opti
+      ons);
+00084     \};
+00085 
+\hypertarget{constraint_8hh_source_l00089}{}\hyperlink{structeos_1_1UnknownConstraintError}{00089}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1UnknownConstraintError}{UnknownConstraintError} :
+00090         \textcolor{keyword}{public} \hyperlink{classeos_1_1Exception}{Exception}
+00091     \{
+00094 
+00099         \hyperlink{structeos_1_1UnknownConstraintError_a17699ee52aac3c7ec6316ad8335e04a0}{UnknownConstraintError}(\textcolor{keyword}{const} std::string & name);
+00101     \};
+00102 \}
+00103 
+00104 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

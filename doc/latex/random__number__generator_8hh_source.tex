@@ -1,0 +1,53 @@
+\hypertarget{random__number__generator_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/random\_\-number\_\-generator.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2010, 2011 Danny van Dyk}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_RANDOM\_NUMBER\_GENERATOR\_HH}
+\hypertarget{random__number__generator_8hh_source_l00021}{}\hyperlink{random__number__generator_8hh_a191c5ad3acb1207ac8224f9d80ca1868}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_RANDOM\_NUMBER\_GENERATOR\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{preprocessor}{#include <\hyperlink{private__implementation__pattern_8hh}{eos/utils/private_implementation_pattern.hh}>}
+00024 
+00025 \textcolor{preprocessor}{#include <cstdint>}
+00026 
+00027 \textcolor{keyword}{namespace }eos
+00028 \{
+\hypertarget{random__number__generator_8hh_source_l00035}{}\hyperlink{classeos_1_1RandomNumberGenerator}{00035}     \textcolor{keyword}{class }\hyperlink{classeos_1_1RandomNumberGenerator}{RandomNumberGenerator} :
+00036         \textcolor{keyword}{public} \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern}<RandomNumberGenerator>
+00037     \{
+00038         \textcolor{keyword}{public}:
+00041 
+00046             \hyperlink{classeos_1_1RandomNumberGenerator_a661f2b9c129ddd7a1c23f463ef4ec5b7}{RandomNumberGenerator}(\textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} & seed = 0ul);
+00047 
+00049             \hyperlink{classeos_1_1RandomNumberGenerator_a379d4e110cdf0ded2e930e2e7ffa59a1}{~RandomNumberGenerator}();
+00051 
+00053             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1RandomNumberGenerator_ac81a62bb3e4534fcfb0d15195ee653b0}{operator() }();
+00054 
+\hypertarget{random__number__generator_8hh_source_l00056}{}\hyperlink{classeos_1_1RandomNumberGenerator_adac254d76323261e06d42b2f48e05c50}{00056}             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1RandomNumberGenerator_adac254d76323261e06d42b2f48e05c50}{max}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} 1.0; \}
+00057 
+\hypertarget{random__number__generator_8hh_source_l00059}{}\hyperlink{classeos_1_1RandomNumberGenerator_a2268a048896484b9d12d86fcfd7a6dbb}{00059}             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1RandomNumberGenerator_a2268a048896484b9d12d86fcfd7a6dbb}{min}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} 0.0; \}
+00060     \};
+00061 \}
+00062 
+00063 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

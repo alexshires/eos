@@ -1,0 +1,1142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1WilsonScanComponent" kind="class" prot="public">
+    <compoundname>eos::WilsonScanComponent</compoundname>
+    <basecompoundref refid="classeos_1_1ModelComponent_3_01components_1_1DeltaB1_01_4" prot="public" virt="virtual">eos::ModelComponent&lt; components::DeltaB1 &gt;</basecompoundref>
+    <derivedcompoundref refid="classeos_1_1WilsonScanModel" prot="public" virt="non-virtual">eos::WilsonScanModel</derivedcompoundref>
+    <includes refid="wilson__scan__model_8hh" local="no">wilson_scan_model.hh</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a4ecefb9a279a38d9b898127a3aa3df93" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1UsedParameter" kindref="compound">UsedParameter</ref></type>
+        <definition>UsedParameter eos::WilsonScanComponent::_alpha_s_Z__deltab1</definition>
+        <argsstring></argsstring>
+        <name>_alpha_s_Z__deltab1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="35" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a9f4389c754371e7a76bb7d99655cf4e9" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1UsedParameter" kindref="compound">UsedParameter</ref></type>
+        <definition>UsedParameter eos::WilsonScanComponent::_mu_b__deltab1</definition>
+        <argsstring></argsstring>
+        <name>_mu_b__deltab1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="36" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1afb058bec49c9a17fbc290358582ae5c9" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1UsedParameter" kindref="compound">UsedParameter</ref></type>
+        <definition>UsedParameter eos::WilsonScanComponent::_m_Z__deltab1</definition>
+        <argsstring></argsstring>
+        <name>_m_Z__deltab1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="39" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1aad87e2ed51039e9125174b34c899cdf9" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1UsedParameter" kindref="compound">UsedParameter</ref></type>
+        <definition>UsedParameter eos::WilsonScanComponent::_mu__deltab1</definition>
+        <argsstring></argsstring>
+        <name>_mu__deltab1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="42" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1ac43b4f66cb01c2bb6ebc90c665e3a67a" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1UsedParameter" kindref="compound">UsedParameter</ref></type>
+        <definition>UsedParameter eos::WilsonScanComponent::_c1</definition>
+        <argsstring></argsstring>
+        <name>_c1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="45" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1ace9bb79ca25a42f3aafc18988a04b0d7" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1UsedParameter" kindref="compound">UsedParameter</ref></type>
+        <definition>UsedParameter eos::WilsonScanComponent::_c2</definition>
+        <argsstring></argsstring>
+        <name>_c2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="46" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a267d07f41e38c77c36d8dc716f98c266" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1UsedParameter" kindref="compound">UsedParameter</ref></type>
+        <definition>UsedParameter eos::WilsonScanComponent::_c3</definition>
+        <argsstring></argsstring>
+        <name>_c3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="47" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a0338e69dd272e2f77ff871538b1b7366" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1UsedParameter" kindref="compound">UsedParameter</ref></type>
+        <definition>UsedParameter eos::WilsonScanComponent::_c4</definition>
+        <argsstring></argsstring>
+        <name>_c4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="48" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1aca171bdee3ecde28d4a3e260fd9dfa89" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1UsedParameter" kindref="compound">UsedParameter</ref></type>
+        <definition>UsedParameter eos::WilsonScanComponent::_c5</definition>
+        <argsstring></argsstring>
+        <name>_c5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="49" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a4e593fe00bb7a4b44d8f9cee3c4d7608" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1UsedParameter" kindref="compound">UsedParameter</ref></type>
+        <definition>UsedParameter eos::WilsonScanComponent::_c6</definition>
+        <argsstring></argsstring>
+        <name>_c6</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="50" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a0099a39dbe1c2a01728838c90c1b2404" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_abs_c7</definition>
+        <argsstring></argsstring>
+        <name>_abs_c7</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="51" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1adafd309068a58a9a9d99dbdec7e37fe0" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_arg_c7</definition>
+        <argsstring></argsstring>
+        <name>_arg_c7</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="51" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a80cef5fedd5e966cc3680dd585e68ead" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_re_c7</definition>
+        <argsstring></argsstring>
+        <name>_re_c7</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="52" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a77ec645251f3a6af2e37763a6bd1ef37" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_im_c7</definition>
+        <argsstring></argsstring>
+        <name>_im_c7</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="52" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a3d16dd923ef02f72c8577dbf9dbb6c89" prot="private" static="no" mutable="no">
+        <type>std::function&lt; complex&lt; double &gt;)&gt;</type>
+        <definition>std::function&lt;complex&lt;double&gt;)&gt; eos::WilsonScanComponent::_c7</definition>
+        <argsstring></argsstring>
+        <name>_c7</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="53" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1af5dfc3e540de00c54e9ed46cb0ebcd98" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1UsedParameter" kindref="compound">UsedParameter</ref></type>
+        <definition>UsedParameter eos::WilsonScanComponent::_c8</definition>
+        <argsstring></argsstring>
+        <name>_c8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="54" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1ad0e3dabc357f42ed502ec2f6f56511f1" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_abs_c9</definition>
+        <argsstring></argsstring>
+        <name>_abs_c9</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="55" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a4637e4c361e179ad6b4d83cb02ed4834" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_arg_c9</definition>
+        <argsstring></argsstring>
+        <name>_arg_c9</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="55" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a9ee22f5f6effc7618f39e4daa1ef9498" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_re_c9</definition>
+        <argsstring></argsstring>
+        <name>_re_c9</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="56" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1af7ac45f13bd625f7f85d3bfe10a71a11" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_im_c9</definition>
+        <argsstring></argsstring>
+        <name>_im_c9</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="56" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a44b595f9746e16e78b5ad5d5149547f7" prot="private" static="no" mutable="no">
+        <type>std::function&lt; complex&lt; double &gt;)&gt;</type>
+        <definition>std::function&lt;complex&lt;double&gt;)&gt; eos::WilsonScanComponent::_c9</definition>
+        <argsstring></argsstring>
+        <name>_c9</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="57" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a11008718207fc56d44d6ee37a6db473b" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_abs_c10</definition>
+        <argsstring></argsstring>
+        <name>_abs_c10</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="58" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a78420f90c8fc3242bc358ba5c37031c6" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_arg_c10</definition>
+        <argsstring></argsstring>
+        <name>_arg_c10</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="58" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1af6dcf1a355e76c595f0a99132fb0ef8b" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_re_c10</definition>
+        <argsstring></argsstring>
+        <name>_re_c10</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="59" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a4dde20b52bfdbdbe6279d09e5469e7f6" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_im_c10</definition>
+        <argsstring></argsstring>
+        <name>_im_c10</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="59" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1af3edf73407f33edd764c6a4ef0a5a58b" prot="private" static="no" mutable="no">
+        <type>std::function&lt; complex&lt; double &gt;)&gt;</type>
+        <definition>std::function&lt;complex&lt;double&gt;)&gt; eos::WilsonScanComponent::_c10</definition>
+        <argsstring></argsstring>
+        <name>_c10</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="60" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1ab2646285cf867996525ea29acbc6d1a9" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_abs_c7prime</definition>
+        <argsstring></argsstring>
+        <name>_abs_c7prime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="61" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a1abd81f18551043b5c366fac582e7d28" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_arg_c7prime</definition>
+        <argsstring></argsstring>
+        <name>_arg_c7prime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="61" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1abd0c403ec57b3eb5eadde3be608d1101" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_re_c7prime</definition>
+        <argsstring></argsstring>
+        <name>_re_c7prime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="62" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a89e610be7237e955ba58ef719d2e1e13" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_im_c7prime</definition>
+        <argsstring></argsstring>
+        <name>_im_c7prime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="62" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1ad53f224f99d24f0f0d4d6c17f17a81cb" prot="private" static="no" mutable="no">
+        <type>std::function&lt; complex&lt; double &gt;)&gt;</type>
+        <definition>std::function&lt;complex&lt;double&gt;)&gt; eos::WilsonScanComponent::_c7prime</definition>
+        <argsstring></argsstring>
+        <name>_c7prime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="63" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a5a5b2d5168040b06454a0b6d3cf18e5c" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1UsedParameter" kindref="compound">UsedParameter</ref></type>
+        <definition>UsedParameter eos::WilsonScanComponent::_c8prime</definition>
+        <argsstring></argsstring>
+        <name>_c8prime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="64" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a967d8b076d6452378fbb6afb87177aa8" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_abs_c9prime</definition>
+        <argsstring></argsstring>
+        <name>_abs_c9prime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="65" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1aef64bb8c5f979acac99d52e561558551" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_arg_c9prime</definition>
+        <argsstring></argsstring>
+        <name>_arg_c9prime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="65" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a14b51227a39a5d426136015322cb03f2" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_re_c9prime</definition>
+        <argsstring></argsstring>
+        <name>_re_c9prime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="66" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a15e8398a4aae5e73cb39ab8843ca5caf" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_im_c9prime</definition>
+        <argsstring></argsstring>
+        <name>_im_c9prime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="66" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1abf1ae48ee0c31538a7906b539a81a8d0" prot="private" static="no" mutable="no">
+        <type>std::function&lt; complex&lt; double &gt;)&gt;</type>
+        <definition>std::function&lt;complex&lt;double&gt;)&gt; eos::WilsonScanComponent::_c9prime</definition>
+        <argsstring></argsstring>
+        <name>_c9prime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="67" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a5a024d228abbe3a84985ab703efc2b8f" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_abs_c10prime</definition>
+        <argsstring></argsstring>
+        <name>_abs_c10prime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="68" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1ae80a71646bddaa13dc508f6a27d39d77" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_arg_c10prime</definition>
+        <argsstring></argsstring>
+        <name>_arg_c10prime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="68" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a51166b0969d8390bc5a1c7855d5e2095" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_re_c10prime</definition>
+        <argsstring></argsstring>
+        <name>_re_c10prime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="69" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1ae766a8d825a568ee852c6589113a333c" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_im_c10prime</definition>
+        <argsstring></argsstring>
+        <name>_im_c10prime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="69" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a3d27640ffbc9158ed4d72cc873270be9" prot="private" static="no" mutable="no">
+        <type>std::function&lt; complex&lt; double &gt;)&gt;</type>
+        <definition>std::function&lt;complex&lt;double&gt;)&gt; eos::WilsonScanComponent::_c10prime</definition>
+        <argsstring></argsstring>
+        <name>_c10prime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="70" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a5f616db64faaccf8ea6a7045932a27e0" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_abs_cS</definition>
+        <argsstring></argsstring>
+        <name>_abs_cS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="71" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1abdf46de8a4944c32bb18b604b993ebc7" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_arg_cS</definition>
+        <argsstring></argsstring>
+        <name>_arg_cS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="71" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1ae81cb68717cba620dcf4046ea27e642c" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_re_cS</definition>
+        <argsstring></argsstring>
+        <name>_re_cS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="72" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a150cacbeb65588200937ba08c4fe8e12" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_im_cS</definition>
+        <argsstring></argsstring>
+        <name>_im_cS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="72" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1ae94c43937620680883c6548d78526f6f" prot="private" static="no" mutable="no">
+        <type>std::function&lt; complex&lt; double &gt;)&gt;</type>
+        <definition>std::function&lt;complex&lt;double&gt;)&gt; eos::WilsonScanComponent::_cS</definition>
+        <argsstring></argsstring>
+        <name>_cS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="73" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a0297ed5e523fc2a845c6c07d07265c30" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_abs_cSprime</definition>
+        <argsstring></argsstring>
+        <name>_abs_cSprime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="74" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a78d0fc6325e28f3cd302cafa54adb003" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_arg_cSprime</definition>
+        <argsstring></argsstring>
+        <name>_arg_cSprime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="74" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1acb485e4e62ae4adf19ec5ab4400a5984" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_re_cSprime</definition>
+        <argsstring></argsstring>
+        <name>_re_cSprime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="75" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a8b2073c99de1995835804d2b021b90c8" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_im_cSprime</definition>
+        <argsstring></argsstring>
+        <name>_im_cSprime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="75" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a12381e97b82a5507d747f3fff1526129" prot="private" static="no" mutable="no">
+        <type>std::function&lt; complex&lt; double &gt;)&gt;</type>
+        <definition>std::function&lt;complex&lt;double&gt;)&gt; eos::WilsonScanComponent::_cSprime</definition>
+        <argsstring></argsstring>
+        <name>_cSprime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="76" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a55e715ada1c611b3b5b939d7f97208a5" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_abs_cP</definition>
+        <argsstring></argsstring>
+        <name>_abs_cP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="77" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a623a562889c46099caa418c364c34241" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_arg_cP</definition>
+        <argsstring></argsstring>
+        <name>_arg_cP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="77" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a74bef92daf9498147aa39a654b4a2833" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_re_cP</definition>
+        <argsstring></argsstring>
+        <name>_re_cP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="78" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a9d7ca658165d5054012adc19edce07d1" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_im_cP</definition>
+        <argsstring></argsstring>
+        <name>_im_cP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="78" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a7bcf9d34ce2a86bcd2a72210ae5fb7e7" prot="private" static="no" mutable="no">
+        <type>std::function&lt; complex&lt; double &gt;)&gt;</type>
+        <definition>std::function&lt;complex&lt;double&gt;)&gt; eos::WilsonScanComponent::_cP</definition>
+        <argsstring></argsstring>
+        <name>_cP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="79" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a1122678c5abe2f7d1c9d1b18634855ec" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_abs_cPprime</definition>
+        <argsstring></argsstring>
+        <name>_abs_cPprime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="80" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a030fea1b75ca772899ead72eb4768e28" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_arg_cPprime</definition>
+        <argsstring></argsstring>
+        <name>_arg_cPprime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="80" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1acf5b65f78dd0eb6db36d621fd4e7e21e" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_re_cPprime</definition>
+        <argsstring></argsstring>
+        <name>_re_cPprime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="81" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a1ace4e82c029d83d0e9299f6da79388e" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_im_cPprime</definition>
+        <argsstring></argsstring>
+        <name>_im_cPprime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="81" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1aba2c618c2f050dcc8b5276968532eea6" prot="private" static="no" mutable="no">
+        <type>std::function&lt; complex&lt; double &gt;)&gt;</type>
+        <definition>std::function&lt;complex&lt;double&gt;)&gt; eos::WilsonScanComponent::_cPprime</definition>
+        <argsstring></argsstring>
+        <name>_cPprime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="82" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a483ad0f8ccee53d1c10e3a50bcc8c3b5" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_abs_cT</definition>
+        <argsstring></argsstring>
+        <name>_abs_cT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="83" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1aaa132664b94a042f8f4f7b351ad15835" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_arg_cT</definition>
+        <argsstring></argsstring>
+        <name>_arg_cT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="83" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1ada504cc2ade4c1fca99f05803ba34f1e" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_re_cT</definition>
+        <argsstring></argsstring>
+        <name>_re_cT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="84" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a6d0a2337c8f6af7a58fd6c6a537e7a3a" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_im_cT</definition>
+        <argsstring></argsstring>
+        <name>_im_cT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="84" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a3df36da93ca7559f9279c4513596a683" prot="private" static="no" mutable="no">
+        <type>std::function&lt; complex&lt; double &gt;)&gt;</type>
+        <definition>std::function&lt;complex&lt;double&gt;)&gt; eos::WilsonScanComponent::_cT</definition>
+        <argsstring></argsstring>
+        <name>_cT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="85" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1abb6bf545ae4edbc69a0ce8442a927f58" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_abs_cT5</definition>
+        <argsstring></argsstring>
+        <name>_abs_cT5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="86" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a0ef211eda028b9afa47df68ca93cda82" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_arg_cT5</definition>
+        <argsstring></argsstring>
+        <name>_arg_cT5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="86" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a0a9be84e875251476aec42616478fbe4" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_re_cT5</definition>
+        <argsstring></argsstring>
+        <name>_re_cT5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="87" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1a2907463611946018835c6a2846477a42" prot="private" static="no" mutable="no">
+        <type><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref></type>
+        <definition>Parameter eos::WilsonScanComponent::_im_cT5</definition>
+        <argsstring></argsstring>
+        <name>_im_cT5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="87" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1WilsonScanComponent_1af25a035a77625f0744436ce515c2e3ee" prot="private" static="no" mutable="no">
+        <type>std::function&lt; complex&lt; double &gt;)&gt;</type>
+        <definition>std::function&lt;complex&lt;double&gt;)&gt; eos::WilsonScanComponent::_cT5</definition>
+        <argsstring></argsstring>
+        <name>_cT5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="88" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1WilsonScanComponent_1a2d1074d1013db8d768843ca0ff03409f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::WilsonScanComponent::WilsonScanComponent</definition>
+        <argsstring>(const Parameters &amp;, const Options &amp;, ParameterUser &amp;)</argsstring>
+        <name>WilsonScanComponent</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1Options" kindref="compound">Options</ref> &amp;</type>
+        </param>
+        <param>
+          <type><ref refid="classeos_1_1ParameterUser" kindref="compound">ParameterUser</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1WilsonScanComponent_1afcad159e4ff8fa11d5ea4a5d41f534ad" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>WilsonCoefficients&lt; <ref refid="structeos_1_1BToS" kindref="compound">BToS</ref> &gt;</type>
+        <definition>virtual WilsonCoefficients&lt;BToS&gt; eos::WilsonScanComponent::wilson_coefficients_b_to_s</definition>
+        <argsstring>(const bool &amp;cp_conjugate) const </argsstring>
+        <name>wilson_coefficients_b_to_s</name>
+        <reimplements refid="classeos_1_1ModelComponent_3_01components_1_1DeltaB1_01_4_1a94a836d0f2518023cca37a1ffaa128e9">wilson_coefficients_b_to_s</reimplements>
+        <param>
+          <type>const bool &amp;</type>
+          <declname>cp_conjugate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="94"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1096">
+        <label>eos::WilsonScanComponent</label>
+        <link refid="classeos_1_1WilsonScanComponent"/>
+        <childnode refid="1097" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1097">
+        <label>eos::ModelComponent&lt; components::DeltaB1 &gt;</label>
+        <link refid="classeos_1_1ModelComponent_3_01components_1_1DeltaB1_01_4"/>
+      </node>
+      <node id="1098">
+        <label>eos::WilsonScanModel</label>
+        <link refid="classeos_1_1WilsonScanModel"/>
+        <childnode refid="1096" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1099">
+        <label>eos::WilsonScanComponent</label>
+        <link refid="classeos_1_1WilsonScanComponent"/>
+        <childnode refid="1100" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1101" relation="usage">
+          <edgelabel>_c8</edgelabel>
+          <edgelabel>_mu__deltab1</edgelabel>
+          <edgelabel>_c1</edgelabel>
+          <edgelabel>_c2</edgelabel>
+          <edgelabel>_c3</edgelabel>
+          <edgelabel>_m_Z__deltab1</edgelabel>
+          <edgelabel>_c4</edgelabel>
+          <edgelabel>_alpha_s_Z__deltab1</edgelabel>
+          <edgelabel>_c5</edgelabel>
+          <edgelabel>_c8prime</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+        <childnode refid="1102" relation="usage">
+          <edgelabel>_abs_cPprime</edgelabel>
+          <edgelabel>_arg_cP</edgelabel>
+          <edgelabel>_im_cSprime</edgelabel>
+          <edgelabel>_re_cSprime</edgelabel>
+          <edgelabel>_abs_c9prime</edgelabel>
+          <edgelabel>_abs_c10</edgelabel>
+          <edgelabel>_abs_cT5</edgelabel>
+          <edgelabel>_arg_cS</edgelabel>
+          <edgelabel>_im_c7prime</edgelabel>
+          <edgelabel>_re_c7prime</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="1100">
+        <label>eos::ModelComponent&lt; components::DeltaB1 &gt;</label>
+        <link refid="classeos_1_1ModelComponent_3_01components_1_1DeltaB1_01_4"/>
+      </node>
+      <node id="1103">
+        <label>eos::Mutable</label>
+        <link refid="classeos_1_1Mutable"/>
+      </node>
+      <node id="1102">
+        <label>eos::Parameter</label>
+        <link refid="classeos_1_1Parameter"/>
+        <childnode refid="1103" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1101">
+        <label>eos::UsedParameter</label>
+        <link refid="classeos_1_1UsedParameter"/>
+        <childnode refid="1102" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" line="32" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson_scan_model.hh" bodystart="30" bodyend="95"/>
+    <listofallmembers>
+      <member refid="classeos_1_1WilsonScanComponent_1a11008718207fc56d44d6ee37a6db473b" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_abs_c10</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a5a024d228abbe3a84985ab703efc2b8f" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_abs_c10prime</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a0099a39dbe1c2a01728838c90c1b2404" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_abs_c7</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1ab2646285cf867996525ea29acbc6d1a9" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_abs_c7prime</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1ad0e3dabc357f42ed502ec2f6f56511f1" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_abs_c9</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a967d8b076d6452378fbb6afb87177aa8" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_abs_c9prime</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a55e715ada1c611b3b5b939d7f97208a5" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_abs_cP</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a1122678c5abe2f7d1c9d1b18634855ec" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_abs_cPprime</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a5f616db64faaccf8ea6a7045932a27e0" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_abs_cS</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a0297ed5e523fc2a845c6c07d07265c30" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_abs_cSprime</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a483ad0f8ccee53d1c10e3a50bcc8c3b5" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_abs_cT</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1abb6bf545ae4edbc69a0ce8442a927f58" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_abs_cT5</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a4ecefb9a279a38d9b898127a3aa3df93" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_alpha_s_Z__deltab1</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a78420f90c8fc3242bc358ba5c37031c6" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_arg_c10</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1ae80a71646bddaa13dc508f6a27d39d77" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_arg_c10prime</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1adafd309068a58a9a9d99dbdec7e37fe0" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_arg_c7</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a1abd81f18551043b5c366fac582e7d28" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_arg_c7prime</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a4637e4c361e179ad6b4d83cb02ed4834" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_arg_c9</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1aef64bb8c5f979acac99d52e561558551" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_arg_c9prime</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a623a562889c46099caa418c364c34241" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_arg_cP</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a030fea1b75ca772899ead72eb4768e28" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_arg_cPprime</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1abdf46de8a4944c32bb18b604b993ebc7" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_arg_cS</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a78d0fc6325e28f3cd302cafa54adb003" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_arg_cSprime</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1aaa132664b94a042f8f4f7b351ad15835" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_arg_cT</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a0ef211eda028b9afa47df68ca93cda82" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_arg_cT5</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1ac43b4f66cb01c2bb6ebc90c665e3a67a" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_c1</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1af3edf73407f33edd764c6a4ef0a5a58b" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_c10</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a3d27640ffbc9158ed4d72cc873270be9" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_c10prime</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1ace9bb79ca25a42f3aafc18988a04b0d7" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_c2</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a267d07f41e38c77c36d8dc716f98c266" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_c3</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a0338e69dd272e2f77ff871538b1b7366" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_c4</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1aca171bdee3ecde28d4a3e260fd9dfa89" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_c5</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a4e593fe00bb7a4b44d8f9cee3c4d7608" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_c6</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a3d16dd923ef02f72c8577dbf9dbb6c89" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_c7</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1ad53f224f99d24f0f0d4d6c17f17a81cb" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_c7prime</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1af5dfc3e540de00c54e9ed46cb0ebcd98" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_c8</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a5a5b2d5168040b06454a0b6d3cf18e5c" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_c8prime</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a44b595f9746e16e78b5ad5d5149547f7" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_c9</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1abf1ae48ee0c31538a7906b539a81a8d0" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_c9prime</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a7bcf9d34ce2a86bcd2a72210ae5fb7e7" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_cP</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1aba2c618c2f050dcc8b5276968532eea6" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_cPprime</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1ae94c43937620680883c6548d78526f6f" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_cS</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a12381e97b82a5507d747f3fff1526129" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_cSprime</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a3df36da93ca7559f9279c4513596a683" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_cT</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1af25a035a77625f0744436ce515c2e3ee" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_cT5</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a4dde20b52bfdbdbe6279d09e5469e7f6" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_im_c10</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1ae766a8d825a568ee852c6589113a333c" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_im_c10prime</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a77ec645251f3a6af2e37763a6bd1ef37" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_im_c7</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a89e610be7237e955ba58ef719d2e1e13" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_im_c7prime</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1af7ac45f13bd625f7f85d3bfe10a71a11" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_im_c9</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a15e8398a4aae5e73cb39ab8843ca5caf" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_im_c9prime</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a9d7ca658165d5054012adc19edce07d1" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_im_cP</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a1ace4e82c029d83d0e9299f6da79388e" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_im_cPprime</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a150cacbeb65588200937ba08c4fe8e12" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_im_cS</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a8b2073c99de1995835804d2b021b90c8" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_im_cSprime</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a6d0a2337c8f6af7a58fd6c6a537e7a3a" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_im_cT</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a2907463611946018835c6a2846477a42" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_im_cT5</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1afb058bec49c9a17fbc290358582ae5c9" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_m_Z__deltab1</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1aad87e2ed51039e9125174b34c899cdf9" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_mu__deltab1</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a9f4389c754371e7a76bb7d99655cf4e9" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_mu_b__deltab1</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1af6dcf1a355e76c595f0a99132fb0ef8b" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_re_c10</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a51166b0969d8390bc5a1c7855d5e2095" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_re_c10prime</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a80cef5fedd5e966cc3680dd585e68ead" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_re_c7</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1abd0c403ec57b3eb5eadde3be608d1101" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_re_c7prime</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a9ee22f5f6effc7618f39e4daa1ef9498" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_re_c9</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a14b51227a39a5d426136015322cb03f2" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_re_c9prime</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a74bef92daf9498147aa39a654b4a2833" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_re_cP</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1acf5b65f78dd0eb6db36d621fd4e7e21e" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_re_cPprime</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1ae81cb68717cba620dcf4046ea27e642c" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_re_cS</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1acb485e4e62ae4adf19ec5ab4400a5984" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_re_cSprime</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1ada504cc2ade4c1fca99f05803ba34f1e" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_re_cT</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a0a9be84e875251476aec42616478fbe4" prot="private" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>_re_cT5</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1afcad159e4ff8fa11d5ea4a5d41f534ad" prot="public" virt="virtual"><scope>eos::WilsonScanComponent</scope><name>wilson_coefficients_b_to_s</name></member>
+      <member refid="classeos_1_1WilsonScanComponent_1a2d1074d1013db8d768843ca0ff03409f" prot="public" virt="non-virtual"><scope>eos::WilsonScanComponent</scope><name>WilsonScanComponent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

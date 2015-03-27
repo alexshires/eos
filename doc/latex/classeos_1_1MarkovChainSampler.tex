@@ -1,0 +1,120 @@
+\hypertarget{classeos_1_1MarkovChainSampler}{
+\section{eos::MarkovChainSampler Class Reference}
+\label{classeos_1_1MarkovChainSampler}\index{eos::MarkovChainSampler@{eos::MarkovChainSampler}}
+}
+
+
+{\ttfamily \#include $<$markov\_\-chain\_\-sampler.hh$>$}
+
+Inherits \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern$<$ MarkovChainSampler $>$}.\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classeos_1_1MarkovChainSampler_1_1Config}{Config}
+\item 
+struct \hyperlink{structeos_1_1MarkovChainSampler_1_1PreRunInfo}{PreRunInfo}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{Indent}{\bf Sampling}\par
+{\em \label{_amgrp1d07814d12178c958e4233501cb0bdc7}
+ }\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classeos_1_1MarkovChainSampler_a1e5ca348ae639a33c3b3db6120ff66f9}{massive\_\-mode\_\-finding} (const \hyperlink{structeos_1_1Analysis_1_1OptimizationOptions}{Analysis::OptimizationOptions} \&options)
+\item 
+\hyperlink{structeos_1_1MarkovChainSampler_1_1PreRunInfo}{PreRunInfo} \hyperlink{classeos_1_1MarkovChainSampler_ae3032467d9678870bb30f82ae060c043}{pre\_\-run\_\-info} ()
+\begin{DoxyCompactList}\small\item\em Retrieve information about the prerun performance. \item\end{DoxyCompactList}\item 
+void \hyperlink{classeos_1_1MarkovChainSampler_a67fdd21c364b34796c9c5ba2b3b0b785}{run} ()
+\begin{DoxyCompactList}\small\item\em Start the Markov chain sampling. \item\end{DoxyCompactList}\item 
+const \hyperlink{classeos_1_1MarkovChainSampler_1_1Config}{MarkovChainSampler::Config} \& \hyperlink{classeos_1_1MarkovChainSampler_a277acc86b109ca342be462c0e9d7c175}{config} ()
+\begin{DoxyCompactList}\small\item\em Retrieve the configuration from which this sampler was constructed. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Basic Functions}
+\label{_amgrp2386c9a1f1785edee33f374dd2db9b3d}
+ \begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1MarkovChainSampler_a39df736664ab94605898df48c1ff97af}{MarkovChainSampler} (const \hyperlink{classeos_1_1Analysis}{Analysis} \&analysis, const \hyperlink{classeos_1_1MarkovChainSampler_1_1Config}{MarkovChainSampler::Config} \&config)
+\item 
+\hyperlink{classeos_1_1MarkovChainSampler_a9c8a8f22a6279a0e0457b6e58b3e7aee}{$\sim$MarkovChainSampler} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\item 
+void \hyperlink{classeos_1_1MarkovChainSampler_a15f768e042ec2189ae7fb837d0c4f341}{resume} (const \hyperlink{classeos_1_1hdf5_1_1File}{hdf5::File} \&)
+\item 
+static std::vector$<$ \hyperlink{namespaceeos_ac9f30fde04446cfabdd69d4b5b5d3c5a}{HistoryPtr} $>$ \hyperlink{classeos_1_1MarkovChainSampler_ae493008479f15b080c40365f96a3e409}{build\_\-global\_\-local} (const std::string \&output\_\-file\_\-name, const std::vector$<$ std::shared\_\-ptr$<$ \hyperlink{classeos_1_1hdf5_1_1File}{hdf5::File} $>$$>$ input\_\-files, const \hyperlink{structeos_1_1proposal__functions_1_1GlobalLocal_1_1Config}{proposal\_\-functions::GlobalLocal::Config} \&config, \hyperlink{namespaceeos_afc57020492535ccdd85cfc3b7421340d}{AnalysisPtr} analysis=\hyperlink{namespaceeos_afc57020492535ccdd85cfc3b7421340d}{AnalysisPtr}())
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classeos_1_1MarkovChainSampler_a39df736664ab94605898df48c1ff97af}{
+\index{eos::MarkovChainSampler@{eos::MarkovChainSampler}!MarkovChainSampler@{MarkovChainSampler}}
+\index{MarkovChainSampler@{MarkovChainSampler}!eos::MarkovChainSampler@{eos::MarkovChainSampler}}
+\subsubsection[{MarkovChainSampler}]{\setlength{\rightskip}{0pt plus 5cm}eos::MarkovChainSampler::MarkovChainSampler (const {\bf Analysis} \& {\em analysis}, \/  const {\bf MarkovChainSampler::Config} \& {\em config})}}
+\label{classeos_1_1MarkovChainSampler_a39df736664ab94605898df48c1ff97af}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em analysis}]The analysis for which we draw samples. \item[{\em config}]The configuration of the samples. \end{DoxyParams}
+\hypertarget{classeos_1_1MarkovChainSampler_a9c8a8f22a6279a0e0457b6e58b3e7aee}{
+\index{eos::MarkovChainSampler@{eos::MarkovChainSampler}!$\sim$MarkovChainSampler@{$\sim$MarkovChainSampler}}
+\index{$\sim$MarkovChainSampler@{$\sim$MarkovChainSampler}!eos::MarkovChainSampler@{eos::MarkovChainSampler}}
+\subsubsection[{$\sim$MarkovChainSampler}]{\setlength{\rightskip}{0pt plus 5cm}eos::MarkovChainSampler::$\sim$MarkovChainSampler ()}}
+\label{classeos_1_1MarkovChainSampler_a9c8a8f22a6279a0e0457b6e58b3e7aee}
+
+
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classeos_1_1MarkovChainSampler_ae493008479f15b080c40365f96a3e409}{
+\index{eos::MarkovChainSampler@{eos::MarkovChainSampler}!build\_\-global\_\-local@{build\_\-global\_\-local}}
+\index{build\_\-global\_\-local@{build\_\-global\_\-local}!eos::MarkovChainSampler@{eos::MarkovChainSampler}}
+\subsubsection[{build\_\-global\_\-local}]{\setlength{\rightskip}{0pt plus 5cm}static std::vector$<${\bf HistoryPtr}$>$ eos::MarkovChainSampler::build\_\-global\_\-local (const std::string \& {\em output\_\-file\_\-name}, \/  const std::vector$<$ std::shared\_\-ptr$<$ {\bf hdf5::File} $>$$>$ {\em input\_\-files}, \/  const {\bf proposal\_\-functions::GlobalLocal::Config} \& {\em config}, \/  {\bf AnalysisPtr} {\em analysis} = {\ttfamily {\bf AnalysisPtr}()})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1MarkovChainSampler_ae493008479f15b080c40365f96a3e409}
+Take the output from several independent preruns as input and store a global local proposal function to the output file in directory '/global local' In addition, the meta information about constraints, parameters and their priors is stored in '/descriptions'.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em output\_\-file\_\-name}]The name of the HDF5 file containing the global local proposal function. if empty, do not create the proposal nor any output. \item[{\em input\_\-files}]HDF5 files containing the history, descriptions, stats, and local propopal densities as created by EOS. \item[{\em config}]The configuration options influencing how GlobalLocal is created. \item[{\em analysis}]Compare the order of parameters in files vs the one given in analysis. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The full histories of all chains found in the input files 
+\end{DoxyReturn}
+\hypertarget{classeos_1_1MarkovChainSampler_a277acc86b109ca342be462c0e9d7c175}{
+\index{eos::MarkovChainSampler@{eos::MarkovChainSampler}!config@{config}}
+\index{config@{config}!eos::MarkovChainSampler@{eos::MarkovChainSampler}}
+\subsubsection[{config}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf MarkovChainSampler::Config}\& eos::MarkovChainSampler::config ()}}
+\label{classeos_1_1MarkovChainSampler_a277acc86b109ca342be462c0e9d7c175}
+
+
+Retrieve the configuration from which this sampler was constructed. \hypertarget{classeos_1_1MarkovChainSampler_a1e5ca348ae639a33c3b3db6120ff66f9}{
+\index{eos::MarkovChainSampler@{eos::MarkovChainSampler}!massive\_\-mode\_\-finding@{massive\_\-mode\_\-finding}}
+\index{massive\_\-mode\_\-finding@{massive\_\-mode\_\-finding}!eos::MarkovChainSampler@{eos::MarkovChainSampler}}
+\subsubsection[{massive\_\-mode\_\-finding}]{\setlength{\rightskip}{0pt plus 5cm}void eos::MarkovChainSampler::massive\_\-mode\_\-finding (const {\bf Analysis::OptimizationOptions} \& {\em options})}}
+\label{classeos_1_1MarkovChainSampler_a1e5ca348ae639a33c3b3db6120ff66f9}
+Use minuit to find local minima.
+
+Take as many starting points as there are chains
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em options}]Pass options on to Minuit. \end{DoxyParams}
+\hypertarget{classeos_1_1MarkovChainSampler_ae3032467d9678870bb30f82ae060c043}{
+\index{eos::MarkovChainSampler@{eos::MarkovChainSampler}!pre\_\-run\_\-info@{pre\_\-run\_\-info}}
+\index{pre\_\-run\_\-info@{pre\_\-run\_\-info}!eos::MarkovChainSampler@{eos::MarkovChainSampler}}
+\subsubsection[{pre\_\-run\_\-info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf PreRunInfo} eos::MarkovChainSampler::pre\_\-run\_\-info ()}}
+\label{classeos_1_1MarkovChainSampler_ae3032467d9678870bb30f82ae060c043}
+
+
+Retrieve information about the prerun performance. \hypertarget{classeos_1_1MarkovChainSampler_a15f768e042ec2189ae7fb837d0c4f341}{
+\index{eos::MarkovChainSampler@{eos::MarkovChainSampler}!resume@{resume}}
+\index{resume@{resume}!eos::MarkovChainSampler@{eos::MarkovChainSampler}}
+\subsubsection[{resume}]{\setlength{\rightskip}{0pt plus 5cm}void eos::MarkovChainSampler::resume (const {\bf hdf5::File} \&)}}
+\label{classeos_1_1MarkovChainSampler_a15f768e042ec2189ae7fb837d0c4f341}
+Copy the settings such as proposal density from the output of a (successful) prerun to prepare for calling \hyperlink{classeos_1_1MarkovChainSampler_a67fdd21c364b34796c9c5ba2b3b0b785}{run()}, where the main run is started immediately. \hypertarget{classeos_1_1MarkovChainSampler_a67fdd21c364b34796c9c5ba2b3b0b785}{
+\index{eos::MarkovChainSampler@{eos::MarkovChainSampler}!run@{run}}
+\index{run@{run}!eos::MarkovChainSampler@{eos::MarkovChainSampler}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void eos::MarkovChainSampler::run ()}}
+\label{classeos_1_1MarkovChainSampler_a67fdd21c364b34796c9c5ba2b3b0b785}
+
+
+Start the Markov chain sampling. 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{markov__chain__sampler_8hh}{markov\_\-chain\_\-sampler.hh}\end{DoxyCompactItemize}

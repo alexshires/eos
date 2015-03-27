@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1RValue" kind="struct" prot="public">
+    <compoundname>eos::RValue</compoundname>
+    <includes refid="rvalue_8hh" local="no">rvalue.hh</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structeos_1_1RValue_1ac18b9cf1272e22d614f54fddc82d5072" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double eos::RValue::gelman_rubin</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;chain_means, const std::vector&lt; double &gt; &amp;chain_variances, const unsigned &amp;chain_length)</argsstring>
+        <name>gelman_rubin</name>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>chain_means</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>chain_variances</declname>
+        </param>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>chain_length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate the R-value (actually the sqrt(R)) for a given quantity x (param, log(posterior), ...) according to [GR1992], Eqs. (3),(4), p. 461. Using their notation. Included DoF estimation for the t-distribution.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>chain_means</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the mean of x in each chain </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>chain_variances</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the sample variance of x in each chain </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>chain_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of iterations used to calculate the means and variances within each chain. Usually the length of the prerun until now. Note that if only chain_length is increased and everything else is kept constant, the R-value should increase </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/rvalue.hh" line="45"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1RValue_1a1ef9238e0cae5fbfe5e9271f8012f2e8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double eos::RValue::approximation</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;chain_means, const std::vector&lt; double &gt; &amp;chain_variances, const unsigned &amp;chain_length)</argsstring>
+        <name>approximation</name>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>chain_means</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>chain_variances</declname>
+        </param>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>chain_length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Approximate the R-value (actually sqrt(R)) for a given quantitiy x.</para><para>Here we use the approximation $R  ^2 / W$, just as in BAT v0.4.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>chain_means</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the mean of x in each chain </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>chain_variances</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the sample variance of x in each chain </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>chain_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of iterations used to calculate the means and variances within each chain. Usually the length of the prerun until now. Note that if only chain_length is increased and everything else is kept constant, the R-value should increase </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/rvalue.hh" line="60"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/rvalue.hh" line="32" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/rvalue.hh" bodystart="30" bodyend="61"/>
+    <listofallmembers>
+      <member refid="structeos_1_1RValue_1a1ef9238e0cae5fbfe5e9271f8012f2e8" prot="public" virt="non-virtual"><scope>eos::RValue</scope><name>approximation</name></member>
+      <member refid="structeos_1_1RValue_1ac18b9cf1272e22d614f54fddc82d5072" prot="public" virt="non-virtual"><scope>eos::RValue</scope><name>gelman_rubin</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

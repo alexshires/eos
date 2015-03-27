@@ -1,0 +1,74 @@
+\hypertarget{em-contributions_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/rare-\/b-\/decays/em-\/contributions.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2010 Danny van Dyk}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_RARE\_B\_DECAYS\_EM\_CONTRIBUTIONS\_HH}
+\hypertarget{em-contributions_8hh_source_l00021}{}\hyperlink{em-contributions_8hh_a40ecb972bc9ffd4d87f689f41aa2b683}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_RARE\_B\_DECAYS\_EM\_CONTRIBUTIONS\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{preprocessor}{#include <\hyperlink{complex_8hh}{eos/utils/complex.hh}>}
+00024 
+00025 \textcolor{keyword}{namespace }eos
+00026 \{
+\hypertarget{em-contributions_8hh_source_l00027}{}\hyperlink{structeos_1_1EMContributions}{00027}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1EMContributions}{EMContributions}
+00028     \{
+00029         \textcolor{comment}{/*}
+00030 \textcolor{comment}{         * Log-enhanced electro-magnetic contributions according to [HLMW2005].}
+00031 \textcolor{comment}{         *}
+00032 \textcolor{comment}{         * s\_hat:       s / m\_b\_pole^2}
+00033 \textcolor{comment}{         * log\_m\_l\_hat: ln(m\_l / m\_b\_pole)}
+00034 \textcolor{comment}{         * mu:          renormalization scale}
+00035 \textcolor{comment}{         */}
+00036 
+00037         \textcolor{comment}{// cf. [HLMW2005], Eq. (104), p. 25}
+00038         \textcolor{keyword}{static} \textcolor{keywordtype}{double} \hyperlink{structeos_1_1EMContributions_afdea35ec16c8b9f64ee58628d4de03d4}{omegaem_22}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_hat, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & log\_m\_l\_hat
+      , \textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu);
+00039 
+00040         \textcolor{comment}{// cf. [HLMW2005], Eq. (105), p. 25}
+00041         \textcolor{keyword}{static} complex<double> \hyperlink{structeos_1_1EMContributions_a724b13f0a3c5aa60717d95cdef25d88b}{omegaem_27}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_hat, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & lo
+      g\_m\_l\_hat, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu);
+00042 
+00043         \textcolor{comment}{// cf. [HLMW2005], Eq. (103), p. 25}
+00044         \textcolor{keyword}{static} complex<double> \hyperlink{structeos_1_1EMContributions_a8b4ae92fda701eafc27649d2d40862ca}{omegaem_29}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_hat, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & lo
+      g\_m\_l\_hat, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu);
+00045 
+00046         \textcolor{comment}{// cf. [HLMW2005], Eq. (101), p. 25}
+00047         \textcolor{keyword}{static} \textcolor{keywordtype}{double} \hyperlink{structeos_1_1EMContributions_a61b875199e526faafedacc996a00168d}{omegaem_77}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_hat, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & log\_m\_l\_hat
+      );
+00048 
+00049         \textcolor{comment}{// cf. [HLMW2005], Eq. (102), p. 25}
+00050         \textcolor{keyword}{static} \textcolor{keywordtype}{double} \hyperlink{structeos_1_1EMContributions_afaa4c022d6686394328ff7b385267b68}{omegaem_79}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_hat, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & log\_m\_l\_hat
+      );
+00051 
+00052         \textcolor{comment}{// cf. [HLMW2005], Eq. (94), p. 23}
+00053         \textcolor{keyword}{static} \textcolor{keywordtype}{double} \hyperlink{structeos_1_1EMContributions_a31141870ccd13bbd979383f7089f024d}{omegaem_99}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_hat, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & log\_m\_l\_hat
+      );
+00054 
+00055         \textcolor{comment}{// cf. [HLMW2005], Eq. (100), p. 24}
+00056         \textcolor{keyword}{static} \textcolor{keywordtype}{double} \hyperlink{structeos_1_1EMContributions_a0e1e2725d47f8e24a8a065b96a39e114}{omegaem_1010}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_hat, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & log\_m\_l\_h
+      at);
+00057     \};
+00058 \}
+00059 
+00060 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

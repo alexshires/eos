@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1QCDFIntegrals_1_1Results" kind="struct" prot="public">
+    <compoundname>eos::QCDFIntegrals::Results</compoundname>
+    <includes refid="qcdf__integrals_8hh" local="no">qcdf_integrals.hh</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structeos_1_1QCDFIntegrals_1_1Results_1a0a54f336f6b2c1c872ca0960019364e0" prot="public" static="no" mutable="no">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::QCDFIntegrals::Results::j0_perp</definition>
+        <argsstring></argsstring>
+        <name>j0_perp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh" line="130" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1QCDFIntegrals_1_1Results_1a955c86eea4fcade3cb1c933bc37f045f" prot="public" static="no" mutable="no">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::QCDFIntegrals::Results::j0bar_perp</definition>
+        <argsstring></argsstring>
+        <name>j0bar_perp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh" line="131" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1QCDFIntegrals_1_1Results_1a17ec95c05f9109e6d5d2c7af30a2cc3c" prot="public" static="no" mutable="no">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::QCDFIntegrals::Results::j1_perp</definition>
+        <argsstring></argsstring>
+        <name>j1_perp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh" line="132" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1QCDFIntegrals_1_1Results_1a75e99af294c74a56ecc0d22a6830ad51" prot="public" static="no" mutable="no">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::QCDFIntegrals::Results::j2_perp</definition>
+        <argsstring></argsstring>
+        <name>j2_perp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh" line="133" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1QCDFIntegrals_1_1Results_1a63ff0de751641de0e53a9526d4edbbc5" prot="public" static="no" mutable="no">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::QCDFIntegrals::Results::j4_perp</definition>
+        <argsstring></argsstring>
+        <name>j4_perp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh" line="134" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1QCDFIntegrals_1_1Results_1a2ae09761e83ba1fb4836b5f12b13d963" prot="public" static="no" mutable="no">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::QCDFIntegrals::Results::j5_perp</definition>
+        <argsstring></argsstring>
+        <name>j5_perp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh" line="135" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1QCDFIntegrals_1_1Results_1a9b10eac176e6e81b3facb715dd7d7ed0" prot="public" static="no" mutable="no">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::QCDFIntegrals::Results::j6_perp</definition>
+        <argsstring></argsstring>
+        <name>j6_perp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh" line="136" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1QCDFIntegrals_1_1Results_1a2c91f80cbe8263e2778d134911e12820" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::QCDFIntegrals::Results::j7_perp</definition>
+        <argsstring></argsstring>
+        <name>j7_perp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh" line="137" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1QCDFIntegrals_1_1Results_1a3f70a602dc4afa4c37edff48032487c5" prot="public" static="no" mutable="no">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::QCDFIntegrals::Results::j0_parallel</definition>
+        <argsstring></argsstring>
+        <name>j0_parallel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh" line="140" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1QCDFIntegrals_1_1Results_1a0f526f7579916a3a6d0ae2b8262a785c" prot="public" static="no" mutable="no">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::QCDFIntegrals::Results::j1_parallel</definition>
+        <argsstring></argsstring>
+        <name>j1_parallel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh" line="141" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1QCDFIntegrals_1_1Results_1a5ba2925f4fa9f5425e4af1349aa1f7c4" prot="public" static="no" mutable="no">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::QCDFIntegrals::Results::j3_parallel</definition>
+        <argsstring></argsstring>
+        <name>j3_parallel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh" line="142" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1QCDFIntegrals_1_1Results_1aba4329760d20d62cec5824c940026f98" prot="public" static="no" mutable="no">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::QCDFIntegrals::Results::j4_parallel</definition>
+        <argsstring></argsstring>
+        <name>j4_parallel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh" line="143" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1QCDFIntegrals_1_1Results_1affa81425a4a26725aec429cac18c363c" prot="public" static="no" mutable="no">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::QCDFIntegrals::Results::jtilde1_perp</definition>
+        <argsstring></argsstring>
+        <name>jtilde1_perp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh" line="146" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1QCDFIntegrals_1_1Results_1ae93c8c7a9f37dfc2f2a71bf76afc78fa" prot="public" static="no" mutable="no">
+        <type>complex&lt; double &gt;</type>
+        <definition>complex&lt;double&gt; eos::QCDFIntegrals::Results::jtilde2_parallel</definition>
+        <argsstring></argsstring>
+        <name>jtilde2_parallel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh" line="147" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Ensemble of the individual integral results. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="879">
+        <label>std::complex&lt; double &gt;</label>
+      </node>
+      <node id="878">
+        <label>eos::QCDFIntegrals::Results</label>
+        <link refid="structeos_1_1QCDFIntegrals_1_1Results"/>
+        <childnode refid="879" relation="usage">
+          <edgelabel>j4_perp</edgelabel>
+          <edgelabel>j1_parallel</edgelabel>
+          <edgelabel>j2_perp</edgelabel>
+          <edgelabel>j0_parallel</edgelabel>
+          <edgelabel>j1_perp</edgelabel>
+          <edgelabel>j0_perp</edgelabel>
+          <edgelabel>jtilde2_parallel</edgelabel>
+          <edgelabel>jtilde1_perp</edgelabel>
+          <edgelabel>j3_parallel</edgelabel>
+          <edgelabel>j6_perp</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh" line="128" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/qcdf_integrals.hh" bodystart="127" bodyend="148"/>
+    <listofallmembers>
+      <member refid="structeos_1_1QCDFIntegrals_1_1Results_1a3f70a602dc4afa4c37edff48032487c5" prot="public" virt="non-virtual"><scope>eos::QCDFIntegrals::Results</scope><name>j0_parallel</name></member>
+      <member refid="structeos_1_1QCDFIntegrals_1_1Results_1a0a54f336f6b2c1c872ca0960019364e0" prot="public" virt="non-virtual"><scope>eos::QCDFIntegrals::Results</scope><name>j0_perp</name></member>
+      <member refid="structeos_1_1QCDFIntegrals_1_1Results_1a955c86eea4fcade3cb1c933bc37f045f" prot="public" virt="non-virtual"><scope>eos::QCDFIntegrals::Results</scope><name>j0bar_perp</name></member>
+      <member refid="structeos_1_1QCDFIntegrals_1_1Results_1a0f526f7579916a3a6d0ae2b8262a785c" prot="public" virt="non-virtual"><scope>eos::QCDFIntegrals::Results</scope><name>j1_parallel</name></member>
+      <member refid="structeos_1_1QCDFIntegrals_1_1Results_1a17ec95c05f9109e6d5d2c7af30a2cc3c" prot="public" virt="non-virtual"><scope>eos::QCDFIntegrals::Results</scope><name>j1_perp</name></member>
+      <member refid="structeos_1_1QCDFIntegrals_1_1Results_1a75e99af294c74a56ecc0d22a6830ad51" prot="public" virt="non-virtual"><scope>eos::QCDFIntegrals::Results</scope><name>j2_perp</name></member>
+      <member refid="structeos_1_1QCDFIntegrals_1_1Results_1a5ba2925f4fa9f5425e4af1349aa1f7c4" prot="public" virt="non-virtual"><scope>eos::QCDFIntegrals::Results</scope><name>j3_parallel</name></member>
+      <member refid="structeos_1_1QCDFIntegrals_1_1Results_1aba4329760d20d62cec5824c940026f98" prot="public" virt="non-virtual"><scope>eos::QCDFIntegrals::Results</scope><name>j4_parallel</name></member>
+      <member refid="structeos_1_1QCDFIntegrals_1_1Results_1a63ff0de751641de0e53a9526d4edbbc5" prot="public" virt="non-virtual"><scope>eos::QCDFIntegrals::Results</scope><name>j4_perp</name></member>
+      <member refid="structeos_1_1QCDFIntegrals_1_1Results_1a2ae09761e83ba1fb4836b5f12b13d963" prot="public" virt="non-virtual"><scope>eos::QCDFIntegrals::Results</scope><name>j5_perp</name></member>
+      <member refid="structeos_1_1QCDFIntegrals_1_1Results_1a9b10eac176e6e81b3facb715dd7d7ed0" prot="public" virt="non-virtual"><scope>eos::QCDFIntegrals::Results</scope><name>j6_perp</name></member>
+      <member refid="structeos_1_1QCDFIntegrals_1_1Results_1a2c91f80cbe8263e2778d134911e12820" prot="public" virt="non-virtual"><scope>eos::QCDFIntegrals::Results</scope><name>j7_perp</name></member>
+      <member refid="structeos_1_1QCDFIntegrals_1_1Results_1affa81425a4a26725aec429cac18c363c" prot="public" virt="non-virtual"><scope>eos::QCDFIntegrals::Results</scope><name>jtilde1_perp</name></member>
+      <member refid="structeos_1_1QCDFIntegrals_1_1Results_1ae93c8c7a9f37dfc2f2a71bf76afc78fa" prot="public" virt="non-virtual"><scope>eos::QCDFIntegrals::Results</scope><name>jtilde2_parallel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

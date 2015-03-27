@@ -1,0 +1,50 @@
+\hypertarget{matrix_8hh}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/matrix.hh File Reference}
+\label{matrix_8hh}\index{/home/alexshires/EOS/eos-\/next/eos/utils/matrix.hh@{/home/alexshires/EOS/eos-\/next/eos/utils/matrix.hh}}
+}
+{\ttfamily \#include $<$array$>$}\par
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \hyperlink{namespaceeos}{eos}
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{matrix_8hh_ad2e12ccc63e8b682bb3a09a7a9d97499}{EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-MATRIX\_\-HH}~1
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T\_\- , std::size\_\-t m\_\-, std::size\_\-t n\_\-$>$ }\\std::array$<$ std::array$<$ T\_\-, n\_\- $>$, m\_\- $>$ \hyperlink{namespaceeos_a0e3f5e761fbf126d8fcda142fed73318}{eos::operator+} (const std::array$<$ std::array$<$ T\_\-, n\_\- $>$, m\_\- $>$ \&x, const std::array$<$ std::array$<$ T\_\-, n\_\- $>$, m\_\- $>$ \&y)
+\item 
+{\footnotesize template$<$typename T\_\- , std::size\_\-t m\_\-, std::size\_\-t n\_\-$>$ }\\std::array$<$ std::array$<$ T\_\-, n\_\- $>$, m\_\- $>$ \hyperlink{namespaceeos_acbf11d2b07d36a4c4a3abb8d58bceea3}{eos::operator-\/} (const std::array$<$ std::array$<$ T\_\-, n\_\- $>$, m\_\- $>$ \&x, const std::array$<$ std::array$<$ T\_\-, n\_\- $>$, m\_\- $>$ \&y)
+\item 
+{\footnotesize template$<$typename T\_\- , std::size\_\-t m\_\-$>$ }\\std::array$<$ T\_\-, m\_\- $>$ \hyperlink{namespaceeos_a77b0b1d58e1ff492fd660967a4dd6afa}{eos::operator+} (const std::array$<$ T\_\-, m\_\- $>$ \&x, const std::array$<$ T\_\-, m\_\- $>$ \&y)
+\item 
+{\footnotesize template$<$typename T\_\- , std::size\_\-t m\_\-$>$ }\\std::array$<$ T\_\-, m\_\- $>$ \hyperlink{namespaceeos_aa8fefb77f2ab33ac602411123a62b956}{eos::operator-\/} (const std::array$<$ T\_\-, m\_\- $>$ \&x, const std::array$<$ T\_\-, m\_\- $>$ \&y)
+\item 
+{\footnotesize template$<$typename T\_\- , std::size\_\-t m\_\-, std::size\_\-t n\_\-, std::size\_\-t o\_\-$>$ }\\std::array$<$ std::array$<$ T\_\-, n\_\- $>$, m\_\- $>$ \hyperlink{namespaceeos_a6025a42d446265afd81f6c749999a391}{eos::operator$\ast$} (const std::array$<$ std::array$<$ T\_\-, o\_\- $>$, m\_\- $>$ \&x, const std::array$<$ std::array$<$ T\_\-, n\_\- $>$, o\_\- $>$ \&y)
+\item 
+{\footnotesize template$<$typename T\_\- , std::size\_\-t m\_\-, std::size\_\-t n\_\-$>$ }\\std::array$<$ T\_\-, m\_\- $>$ \hyperlink{namespaceeos_adf0061c40e232b18c6cb38c998b4cde1}{eos::operator$\ast$} (const std::array$<$ std::array$<$ T\_\-, n\_\- $>$, m\_\- $>$ \&x, const std::array$<$ T\_\-, n\_\- $>$ \&y)
+\item 
+{\footnotesize template$<$typename T\_\- , std::size\_\-t m\_\-, std::size\_\-t n\_\-$>$ }\\std::array$<$ T\_\-, n\_\- $>$ \hyperlink{namespaceeos_a6d8071776e060cb58300bc883d5510b7}{eos::operator$^\wedge$} (const std::array$<$ T\_\-, m\_\- $>$ \&x, const std::array$<$ std::array$<$ T\_\-, n\_\- $>$, m\_\- $>$ \&y)
+\item 
+{\footnotesize template$<$typename T\_\- , std::size\_\-t m\_\-, std::size\_\-t n\_\-$>$ }\\std::array$<$ std::array$<$ T\_\-, n\_\- $>$, m\_\- $>$ \hyperlink{namespaceeos_ab6da54e708e1d703fd399d7e7a0912f8}{eos::operator$\ast$} (const T\_\- \&x, const std::array$<$ std::array$<$ T\_\-, n\_\- $>$, m\_\- $>$ \&y)
+\item 
+{\footnotesize template$<$typename T\_\- , std::size\_\-t n\_\-$>$ }\\std::array$<$ T\_\-, n\_\- $>$ \hyperlink{namespaceeos_a6192a8a135c1f4ea6163e1d7f59275a0}{eos::operator$\ast$} (const T\_\- \&x, const std::array$<$ T\_\-, n\_\- $>$ \&y)
+\item 
+{\footnotesize template$<$typename T\_\- , std::size\_\-t n\_\-$>$ }\\T\_\- \hyperlink{namespaceeos_ac3181f83f30b4811151158ffc68a5396}{eos::dot} (const std::array$<$ T\_\-, n\_\- $>$ \&x, const std::array$<$ T\_\-, n\_\- $>$ \&y)
+\item 
+{\footnotesize template$<$typename T\_\- , std::size\_\-t n\_\-$>$ }\\std::array$<$ T\_\-, n\_\- $>$ \hyperlink{namespaceeos_ae34de7634e8e232a4a7761b998e1535f}{eos::mult} (const std::array$<$ T\_\-, n\_\- $>$ \&x, const std::array$<$ T\_\-, n\_\- $>$ \&y)
+\item 
+{\footnotesize template$<$typename T\_\- , std::size\_\-t n\_\-$>$ }\\std::array$<$ T\_\-, n\_\- $>$ \hyperlink{namespaceeos_a8031207b4e14e35ca72988b76bfaacf1}{eos::divide} (const std::array$<$ T\_\-, n\_\- $>$ \&x, const std::array$<$ T\_\-, n\_\- $>$ \&y)
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{matrix_8hh_ad2e12ccc63e8b682bb3a09a7a9d97499}{
+\index{matrix.hh@{matrix.hh}!EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-MATRIX\_\-HH@{EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-MATRIX\_\-HH}}
+\index{EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-MATRIX\_\-HH@{EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-MATRIX\_\-HH}!matrix.hh@{matrix.hh}}
+\subsubsection[{EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-MATRIX\_\-HH}]{\setlength{\rightskip}{0pt plus 5cm}\#define EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-MATRIX\_\-HH~1}}
+\label{matrix_8hh_ad2e12ccc63e8b682bb3a09a7a9d97499}

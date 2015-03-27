@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1hdf5_1_1DataType_3_01int_01_4" kind="struct" prot="public">
+    <compoundname>eos::hdf5::DataType&lt; int &gt;</compoundname>
+    <includes refid="hdf5_8hh" local="no">hdf5.hh</includes>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structeos_1_1hdf5_1_1DataType_3_01int_01_4_1ad6b7bc5e9e4745f8a02fa6ceeaa110ba" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceeos_1_1hdf5_1a5bd5e209f1bf36cdc5551465dacf2e74" kindref="member">hid_t</ref></type>
+        <definition>static hid_t eos::hdf5::DataType&lt; int &gt;::type_id</definition>
+        <argsstring>()</argsstring>
+        <name>type_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="72" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" bodystart="72" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" line="71" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/hdf5.hh" bodystart="70" bodyend="73"/>
+    <listofallmembers>
+      <member refid="structeos_1_1hdf5_1_1DataType_3_01int_01_4_1ad6b7bc5e9e4745f8a02fa6ceeaa110ba" prot="public" virt="non-virtual"><scope>eos::hdf5::DataType&lt; int &gt;</scope><name>type_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

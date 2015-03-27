@@ -1,0 +1,51 @@
+\hypertarget{wilson-polynomial_8hh}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/wilson-\/polynomial.hh File Reference}
+\label{wilson-polynomial_8hh}\index{/home/alexshires/EOS/eos-\/next/eos/utils/wilson-\/polynomial.hh@{/home/alexshires/EOS/eos-\/next/eos/utils/wilson-\/polynomial.hh}}
+}
+{\ttfamily \#include $<$eos/observable.hh$>$}\par
+{\ttfamily \#include $<$eos/utils/one-\/of.hh$>$}\par
+{\ttfamily \#include $<$list$>$}\par
+{\ttfamily \#include $<$string$>$}\par
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classeos_1_1WilsonPolynomialCloner}{eos::WilsonPolynomialCloner}
+\item 
+class \hyperlink{classeos_1_1WilsonPolynomialPrinter}{eos::WilsonPolynomialPrinter}
+\item 
+class \hyperlink{classeos_1_1WilsonPolynomialEvaluator}{eos::WilsonPolynomialEvaluator}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \hyperlink{namespaceeos}{eos}
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{wilson-polynomial_8hh_ae33bd5eb549806a3ba3d61f54994bfba}{EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-WILSON\_\-POLYNOMIAL\_\-HH}~1
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef OneOf$<$ Constant, Sum, Product, Sine, Cosine, Parameter $>$ \hyperlink{namespaceeos_ad0c57fa62d09f6465421603cb5285284}{eos::WilsonPolynomial}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+WilsonPolynomial \hyperlink{namespaceeos_ae661f13ba6f529e7a5c19865f6528da6}{eos::make\_\-polynomial} (const ObservablePtr \&, const std::list$<$ std::string $>$ \&)
+\item 
+ObservablePtr \hyperlink{namespaceeos_a702bfbd9d3f9e42e94628616b8760853}{eos::make\_\-polynomial\_\-observable} (const WilsonPolynomial \&polynomial, const Parameters \&parameters)
+\item 
+ObservablePtr \hyperlink{namespaceeos_aeb8e7723a15217742675f8f16ebbc4f9}{eos::make\_\-polynomial\_\-ratio} (const WilsonPolynomial \&numerator, const WilsonPolynomial \&denominator, const Parameters \&parameters)
+\item 
+ObservablePtr \hyperlink{namespaceeos_a25bb05f44e3b5f6b6c5197277e22776b}{eos::make\_\-polynomial\_\-ht\_\-like\_\-ratio} (const WilsonPolynomial \&numerator, const WilsonPolynomial \&denominator, const WilsonPolynomial \&denominator2, const Parameters \&parameters)
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{wilson-polynomial_8hh_ae33bd5eb549806a3ba3d61f54994bfba}{
+\index{wilson-\/polynomial.hh@{wilson-\/polynomial.hh}!EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-WILSON\_\-POLYNOMIAL\_\-HH@{EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-WILSON\_\-POLYNOMIAL\_\-HH}}
+\index{EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-WILSON\_\-POLYNOMIAL\_\-HH@{EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-WILSON\_\-POLYNOMIAL\_\-HH}!wilson-polynomial.hh@{wilson-\/polynomial.hh}}
+\subsubsection[{EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-WILSON\_\-POLYNOMIAL\_\-HH}]{\setlength{\rightskip}{0pt plus 5cm}\#define EOS\_\-GUARD\_\-SRC\_\-UTILS\_\-WILSON\_\-POLYNOMIAL\_\-HH~1}}
+\label{wilson-polynomial_8hh_ae33bd5eb549806a3ba3d61f54994bfba}

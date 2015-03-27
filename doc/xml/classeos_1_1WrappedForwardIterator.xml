@@ -1,0 +1,371 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1WrappedForwardIterator" kind="class" prot="public">
+    <compoundname>eos::WrappedForwardIterator</compoundname>
+    <includes refid="wrapped__forward__iterator_8hh" local="no">wrapped_forward_iterator.hh</includes>
+    <innerclass refid="structeos_1_1WrappedForwardIterator_1_1Base" prot="public">eos::WrappedForwardIterator::Base</innerclass>
+    <innerclass refid="structeos_1_1WrappedForwardIterator_1_1BaseImpl" prot="public">eos::WrappedForwardIterator::BaseImpl</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>Tag_</declname>
+        <defname>Tag_</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>Value_</declname>
+        <defname>Value_</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="user-defined">
+      <header>Standard library typedefs</header>
+      <description><para><anchor id="_1amgrpbf913aaa4179804ab842d74a2daf0c46"/> </para></description>
+      <memberdef kind="typedef" id="classeos_1_1WrappedForwardIterator_1a89335178f8e6e7a0a48ef7a5001498ed" prot="public" static="no">
+        <type>std::remove_reference&lt; Value_ &gt;::type &amp;</type>
+        <definition>typedef std::remove_reference&lt;Value_&gt;::type&amp; eos::WrappedForwardIterator&lt; Tag_, Value_ &gt;::value_type</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator.hh" line="62" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator.hh" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classeos_1_1WrappedForwardIterator_1ac7ba4ace12142ac73d97df5d555a4c18" prot="public" static="no">
+        <type>std::remove_reference&lt; Value_ &gt;::type &amp;</type>
+        <definition>typedef std::remove_reference&lt;Value_&gt;::type&amp; eos::WrappedForwardIterator&lt; Tag_, Value_ &gt;::reference</definition>
+        <argsstring></argsstring>
+        <name>reference</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator.hh" line="63" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator.hh" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classeos_1_1WrappedForwardIterator_1addb7c63e8b8d4be0a65ded32a4cb7cb9" prot="public" static="no">
+        <type>std::remove_reference&lt; Value_ &gt;::type *</type>
+        <definition>typedef std::remove_reference&lt;Value_&gt;::type* eos::WrappedForwardIterator&lt; Tag_, Value_ &gt;::pointer</definition>
+        <argsstring></argsstring>
+        <name>pointer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator.hh" line="64" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator.hh" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classeos_1_1WrappedForwardIterator_1af3705260b81ff899661f7f77f25c72e2" prot="public" static="no">
+        <type>std::ptrdiff_t</type>
+        <definition>typedef std::ptrdiff_t eos::WrappedForwardIterator&lt; Tag_, Value_ &gt;::difference_type</definition>
+        <argsstring></argsstring>
+        <name>difference_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator.hh" line="65" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator.hh" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classeos_1_1WrappedForwardIterator_1ade461e57f6b6527039eecb200bf53c85" prot="public" static="no">
+        <type>std::forward_iterator_tag</type>
+        <definition>typedef std::forward_iterator_tag eos::WrappedForwardIterator&lt; Tag_, Value_ &gt;::iterator_category</definition>
+        <argsstring></argsstring>
+        <name>iterator_category</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator.hh" line="66" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator.hh" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Basic operations</header>
+      <description><para><anchor id="_1amgrp975c17051b7ca0881996227cb36eab7b"/> </para></description>
+      <memberdef kind="function" id="classeos_1_1WrappedForwardIterator_1a321ac3c98ae28956b7428b193e6f65ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eos::WrappedForwardIterator&lt; Tag_, Value_ &gt;::WrappedForwardIterator</definition>
+        <argsstring>()</argsstring>
+        <name>WrappedForwardIterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator.hh" line="48" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator-impl.hh" bodystart="92" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1WrappedForwardIterator_1a4694e3a609d50263eff28cf49c6359c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eos::WrappedForwardIterator&lt; Tag_, Value_ &gt;::~WrappedForwardIterator</definition>
+        <argsstring>()</argsstring>
+        <name>~WrappedForwardIterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator.hh" line="49" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator-impl.hh" bodystart="98" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1WrappedForwardIterator_1af824e052467ced345fdc2391bf251e34" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eos::WrappedForwardIterator&lt; Tag_, Value_ &gt;::WrappedForwardIterator</definition>
+        <argsstring>(const WrappedForwardIterator &amp;)</argsstring>
+        <name>WrappedForwardIterator</name>
+        <param>
+          <type>const <ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator</ref> &amp;</type>
+          <defname>other</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator.hh" line="50" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator-impl.hh" bodystart="104" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1WrappedForwardIterator_1a35ef424f724996a9cc6ac3d8513fefa5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T_</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>eos::WrappedForwardIterator&lt; Tag_, Value_ &gt;::WrappedForwardIterator</definition>
+        <argsstring>(const T_ &amp;)</argsstring>
+        <name>WrappedForwardIterator</name>
+        <param>
+          <type>const T_ &amp;</type>
+          <defname>base</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator.hh" line="53" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator-impl.hh" bodystart="111" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1WrappedForwardIterator_1a73f420f7f9bcc8bf8ad1286f7d5f9601" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator</ref> &amp;</type>
+        <definition>WrappedForwardIterator&lt; Tag_, Value_ &gt; &amp; eos::WrappedForwardIterator&lt; Tag_, Value_ &gt;::operator=</definition>
+        <argsstring>(const WrappedForwardIterator &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator</ref> &amp;</type>
+          <defname>other</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator.hh" line="55" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator-impl.hh" bodystart="118" bodyend="123"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Increment</header>
+      <description><para><anchor id="_1amgrp6f15bdfa71aa83b0d197cad75757d580"/> </para></description>
+      <memberdef kind="function" id="classeos_1_1WrappedForwardIterator_1a553cd24e60c32710a09912f446213833" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator</ref> &amp;</type>
+        <definition>WrappedForwardIterator&lt; Tag_, Value_ &gt; &amp; eos::WrappedForwardIterator&lt; Tag_, Value_ &gt;::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator.hh" line="73" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator-impl.hh" bodystart="127" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1WrappedForwardIterator_1a34a30fd266a0f1c8610dd0b354c4dd21" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator</ref></type>
+        <definition>WrappedForwardIterator&lt; Tag_, Value_ &gt; eos::WrappedForwardIterator&lt; Tag_, Value_ &gt;::operator++</definition>
+        <argsstring>(int)</argsstring>
+        <name>operator++</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator.hh" line="74" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator-impl.hh" bodystart="135" bodyend="140"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Dereference</header>
+      <description><para><anchor id="_1amgrp106e561b2e17ce87f3ff681efa40f1dc"/> </para></description>
+      <memberdef kind="function" id="classeos_1_1WrappedForwardIterator_1af12c608415c6ee323ca93834486fc2b7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classeos_1_1WrappedForwardIterator_1addb7c63e8b8d4be0a65ded32a4cb7cb9" kindref="member">pointer</ref></type>
+        <definition>WrappedForwardIterator&lt; Tag_, Value_ &gt;::pointer eos::WrappedForwardIterator&lt; Tag_, Value_ &gt;::operator-&gt;</definition>
+        <argsstring>() const </argsstring>
+        <name>operator-&gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator.hh" line="81" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator-impl.hh" bodystart="144" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1WrappedForwardIterator_1ae02a50270f0a0fc3ccae98a41c2d144c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classeos_1_1WrappedForwardIterator_1ac7ba4ace12142ac73d97df5d555a4c18" kindref="member">reference</ref></type>
+        <definition>WrappedForwardIterator&lt; Tag_, Value_ &gt;::reference eos::WrappedForwardIterator&lt; Tag_, Value_ &gt;::operator*</definition>
+        <argsstring>() const </argsstring>
+        <name>operator*</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator.hh" line="82" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator-impl.hh" bodystart="151" bodyend="154"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Equality</header>
+      <description><para><anchor id="_1amgrp890ebf2ce6beb154deb673b3af2d03d4"/> </para></description>
+      <memberdef kind="function" id="classeos_1_1WrappedForwardIterator_1a79398c29c6f5012a3c882db8cf61d091" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool eos::WrappedForwardIterator&lt; Tag_, Value_ &gt;::operator==</definition>
+        <argsstring>(const WrappedForwardIterator &amp;) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator</ref> &amp;</type>
+          <defname>other</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator.hh" line="89" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator-impl.hh" bodystart="158" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1WrappedForwardIterator_1a5fb87c43d4ca1c5a0ceffd97b4a4fc78" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool eos::WrappedForwardIterator&lt; Tag_, Value_ &gt;::operator!=</definition>
+        <argsstring>(const WrappedForwardIterator &amp;) const </argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator</ref> &amp;</type>
+          <defname>other</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator.hh" line="90" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator-impl.hh" bodystart="168" bodyend="174"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Underlying iterator</header>
+      <description><para><anchor id="_1amgrp36bf725d6e562a796de32e509b9c2169"/> </para></description>
+      <memberdef kind="function" id="classeos_1_1WrappedForwardIterator_1a5dd5d4d179b339a647660a0e4289a67c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T_</type>
+          </param>
+        </templateparamlist>
+        <type>T_ &amp;</type>
+        <definition>Iter_ &amp; eos::WrappedForwardIterator&lt; Tag_, Value_ &gt;::underlying_iterator</definition>
+        <argsstring>()</argsstring>
+        <name>underlying_iterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator.hh" line="97" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator-impl.hh" bodystart="179" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1WrappedForwardIterator_1a41c259a3f5e5d206c87ecb9dfeb41dec" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T_</type>
+          </param>
+        </templateparamlist>
+        <type>const T_ &amp;</type>
+        <definition>const Iter_ &amp; eos::WrappedForwardIterator&lt; Tag_, Value_ &gt;::underlying_iterator</definition>
+        <argsstring>() const </argsstring>
+        <name>underlying_iterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator.hh" line="98" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator-impl.hh" bodystart="187" bodyend="190"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classeos_1_1WrappedForwardIterator_1a0ca9cc87a5e7dff2cdf651d536352b1c" prot="private" static="no" mutable="no">
+        <type><ref refid="structeos_1_1WrappedForwardIterator_1_1Base" kindref="compound">Base</ref> *</type>
+        <definition>Base* eos::WrappedForwardIterator&lt; Tag_, Value_ &gt;::_base</definition>
+        <argsstring></argsstring>
+        <name>_base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator.hh" line="42" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator.hh" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A <ref refid="classeos_1_1WrappedForwardIterator" kindref="compound">WrappedForwardIterator</ref> is a generic wrapper around a forward iterator, hiding the underlying base iterator. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="1128">
+        <label>eos::WrappedForwardIterator&lt; Tag_, Value_ &gt;::Base&lt; Tag_, Value_ &gt;</label>
+        <link refid="structeos_1_1WrappedForwardIterator_1_1Base"/>
+      </node>
+      <node id="1127">
+        <label>eos::WrappedForwardIterator&lt; Tag_, Value_ &gt;</label>
+        <link refid="classeos_1_1WrappedForwardIterator"/>
+        <childnode refid="1128" relation="usage">
+          <edgelabel>_base</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator.hh" line="37" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wrapped_forward_iterator.hh" bodystart="36" bodyend="101"/>
+    <listofallmembers>
+      <member refid="classeos_1_1WrappedForwardIterator_1a0ca9cc87a5e7dff2cdf651d536352b1c" prot="private" virt="non-virtual"><scope>eos::WrappedForwardIterator</scope><name>_base</name></member>
+      <member refid="classeos_1_1WrappedForwardIterator_1af3705260b81ff899661f7f77f25c72e2" prot="public" virt="non-virtual"><scope>eos::WrappedForwardIterator</scope><name>difference_type</name></member>
+      <member refid="classeos_1_1WrappedForwardIterator_1ade461e57f6b6527039eecb200bf53c85" prot="public" virt="non-virtual"><scope>eos::WrappedForwardIterator</scope><name>iterator_category</name></member>
+      <member refid="classeos_1_1WrappedForwardIterator_1a5fb87c43d4ca1c5a0ceffd97b4a4fc78" prot="public" virt="non-virtual"><scope>eos::WrappedForwardIterator</scope><name>operator!=</name></member>
+      <member refid="classeos_1_1WrappedForwardIterator_1ae02a50270f0a0fc3ccae98a41c2d144c" prot="public" virt="non-virtual"><scope>eos::WrappedForwardIterator</scope><name>operator*</name></member>
+      <member refid="classeos_1_1WrappedForwardIterator_1a553cd24e60c32710a09912f446213833" prot="public" virt="non-virtual"><scope>eos::WrappedForwardIterator</scope><name>operator++</name></member>
+      <member refid="classeos_1_1WrappedForwardIterator_1a34a30fd266a0f1c8610dd0b354c4dd21" prot="public" virt="non-virtual"><scope>eos::WrappedForwardIterator</scope><name>operator++</name></member>
+      <member refid="classeos_1_1WrappedForwardIterator_1af12c608415c6ee323ca93834486fc2b7" prot="public" virt="non-virtual"><scope>eos::WrappedForwardIterator</scope><name>operator-&gt;</name></member>
+      <member refid="classeos_1_1WrappedForwardIterator_1a73f420f7f9bcc8bf8ad1286f7d5f9601" prot="public" virt="non-virtual"><scope>eos::WrappedForwardIterator</scope><name>operator=</name></member>
+      <member refid="classeos_1_1WrappedForwardIterator_1a79398c29c6f5012a3c882db8cf61d091" prot="public" virt="non-virtual"><scope>eos::WrappedForwardIterator</scope><name>operator==</name></member>
+      <member refid="classeos_1_1WrappedForwardIterator_1addb7c63e8b8d4be0a65ded32a4cb7cb9" prot="public" virt="non-virtual"><scope>eos::WrappedForwardIterator</scope><name>pointer</name></member>
+      <member refid="classeos_1_1WrappedForwardIterator_1ac7ba4ace12142ac73d97df5d555a4c18" prot="public" virt="non-virtual"><scope>eos::WrappedForwardIterator</scope><name>reference</name></member>
+      <member refid="classeos_1_1WrappedForwardIterator_1a5dd5d4d179b339a647660a0e4289a67c" prot="public" virt="non-virtual"><scope>eos::WrappedForwardIterator</scope><name>underlying_iterator</name></member>
+      <member refid="classeos_1_1WrappedForwardIterator_1a41c259a3f5e5d206c87ecb9dfeb41dec" prot="public" virt="non-virtual"><scope>eos::WrappedForwardIterator</scope><name>underlying_iterator</name></member>
+      <member refid="classeos_1_1WrappedForwardIterator_1a89335178f8e6e7a0a48ef7a5001498ed" prot="public" virt="non-virtual"><scope>eos::WrappedForwardIterator</scope><name>value_type</name></member>
+      <member refid="classeos_1_1WrappedForwardIterator_1a321ac3c98ae28956b7428b193e6f65ba" prot="public" virt="non-virtual"><scope>eos::WrappedForwardIterator</scope><name>WrappedForwardIterator</name></member>
+      <member refid="classeos_1_1WrappedForwardIterator_1af824e052467ced345fdc2391bf251e34" prot="public" virt="non-virtual"><scope>eos::WrappedForwardIterator</scope><name>WrappedForwardIterator</name></member>
+      <member refid="classeos_1_1WrappedForwardIterator_1a35ef424f724996a9cc6ac3d8513fefa5" prot="public" virt="non-virtual"><scope>eos::WrappedForwardIterator</scope><name>WrappedForwardIterator</name></member>
+      <member refid="classeos_1_1WrappedForwardIterator_1a4694e3a609d50263eff28cf49c6359c0" prot="public" virt="non-virtual"><scope>eos::WrappedForwardIterator</scope><name>~WrappedForwardIterator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,291 @@
+\hypertarget{classeos_1_1LogPrior}{
+\section{eos::LogPrior Class Reference}
+\label{classeos_1_1LogPrior}\index{eos::LogPrior@{eos::LogPrior}}
+}
+
+
+{\ttfamily \#include $<$log\_\-prior.hh$>$}\subsection*{Public Member Functions}
+\begin{Indent}{\bf Basic Functions}\par
+{\em \label{_amgrp2386c9a1f1785edee33f374dd2db9b3d}
+ }\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1LogPrior_ae06bbf3b7073084d135bedd818fbf988}{LogPrior} (const \hyperlink{classeos_1_1Parameters}{Parameters} \&parameters)
+\item 
+virtual \hyperlink{classeos_1_1LogPrior_affbfcbe3bf1a16aa5e696880d20e2822}{$\sim$LogPrior} ()
+\item 
+virtual std::string \hyperlink{classeos_1_1LogPrior_a3c6fe4377cbfdf51bf1472ef16272660}{as\_\-string} () const =0
+\item 
+virtual \hyperlink{namespaceeos_ac5481e3b46ee55ff24606ee7f6e78651}{LogPriorPtr} \hyperlink{classeos_1_1LogPrior_abb48bbbc8034fc487403fee22265f2c8}{clone} (const \hyperlink{classeos_1_1Parameters}{Parameters} \&parameters) const =0
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Accessors}\par
+{\em \label{_amgrp04cb611d2bf0c8edd5b113799b30e174}
+ }\begin{DoxyCompactItemize}
+\item 
+virtual double \hyperlink{classeos_1_1LogPrior_ac686393e071443d706a104093957e667}{operator()} () const =0
+\item 
+virtual double \hyperlink{classeos_1_1LogPrior_a9bbc9805dcb6abbe6d16efff44b43ea3}{sample} (gsl\_\-rng $\ast$rng) const =0
+\item 
+virtual double \hyperlink{classeos_1_1LogPrior_afb69583b9532799aa6068d8f4bc3781a}{mean} () const =0
+\item 
+virtual double \hyperlink{classeos_1_1LogPrior_a525c7cd21ac2f4f273893d8740ca9136}{variance} () const =0
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Static Public Member Functions}
+\begin{Indent}{\bf Named constructors for 1D prior distributions}\par
+{\em \label{_amgrp342d5c542a047b075ed194e4a7ccb8f9}
+ }\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{namespaceeos_ac5481e3b46ee55ff24606ee7f6e78651}{LogPriorPtr} \hyperlink{classeos_1_1LogPrior_a567e0f1eba8e2dd5c019d6764cbab53c}{Discrete} (const \hyperlink{classeos_1_1Parameters}{Parameters} \&parameters, const std::string \&name, const std::set$<$ double $>$ \&values)
+\item 
+static \hyperlink{namespaceeos_ac5481e3b46ee55ff24606ee7f6e78651}{LogPriorPtr} \hyperlink{classeos_1_1LogPrior_ad4c2afcb1df01ef6ff1f2f8402cc7636}{Flat} (const \hyperlink{classeos_1_1Parameters}{Parameters} \&parameters, const std::string \&name, const \hyperlink{structeos_1_1ParameterRange}{ParameterRange} \&range)
+\item 
+static \hyperlink{namespaceeos_ac5481e3b46ee55ff24606ee7f6e78651}{LogPriorPtr} \hyperlink{classeos_1_1LogPrior_afe99a1c56a9ef60b4c38fe56f3c2b7ae}{Gauss} (const \hyperlink{classeos_1_1Parameters}{Parameters} \&parameters, const std::string \&name, const \hyperlink{structeos_1_1ParameterRange}{ParameterRange} \&range, const double \&lower, const double \&central, const double \&upper)
+\item 
+static \hyperlink{namespaceeos_ac5481e3b46ee55ff24606ee7f6e78651}{LogPriorPtr} \hyperlink{classeos_1_1LogPrior_af659eae53a9474695a8abadd62f82a94}{LogGamma} (const \hyperlink{classeos_1_1Parameters}{Parameters} \&parameters, const std::string \&name, const \hyperlink{structeos_1_1ParameterRange}{ParameterRange} \&range, const double \&lower, const double \&central, const double \&upper)
+\item 
+static \hyperlink{namespaceeos_ac5481e3b46ee55ff24606ee7f6e78651}{LogPriorPtr} \hyperlink{classeos_1_1LogPrior_a48409439aeaa34a6d0bf47ef1902749a}{Make} (const \hyperlink{classeos_1_1Parameters}{Parameters} \&parameters, const std::string \&serialization)
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1Parameters}{Parameters} \hyperlink{classeos_1_1LogPrior_a5b24d36e7d7d2f77d5a7d6533233f93b}{\_\-parameters}
+\begin{DoxyCompactList}\small\item\em Our associated \hyperlink{classeos_1_1Parameters}{Parameters} object. \item\end{DoxyCompactList}\item 
+std::vector$<$ \hyperlink{structeos_1_1ParameterDescription}{ParameterDescription} $>$ \hyperlink{classeos_1_1LogPrior_a2b9c6a50c9f4399e44973bad25b390be}{\_\-parameter\_\-descriptions}
+\begin{DoxyCompactList}\small\item\em All parameters for which this prior provides information. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Iteration over descriptions}
+\label{_amgrp2bd25b9507b5ca06b9e539835b3a1a12}
+ \begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classeos_1_1WrappedForwardIterator}{WrappedForwardIterator}$<$ IteratorTag, \hyperlink{structeos_1_1ParameterDescription}{ParameterDescription} $>$ \hyperlink{classeos_1_1LogPrior_a384dd9ec4424f2269e052e41ca834a3d}{Iterator}
+\item 
+\hyperlink{classeos_1_1WrappedForwardIterator}{Iterator} \hyperlink{classeos_1_1LogPrior_a50155394c200be97f25ef0e56973dbd8}{begin} ()
+\item 
+\hyperlink{classeos_1_1WrappedForwardIterator}{Iterator} \hyperlink{classeos_1_1LogPrior_a093e33ea2441515348249835a99781ba}{end} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for log(prior) distributions.
+
+Has a container of subclasses describing independent 1..k dimensional prior distributions. Taken together, they specify the full N dimensional prior. Any actual calculation is done by the subclasses. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classeos_1_1LogPrior_a384dd9ec4424f2269e052e41ca834a3d}{
+\index{eos::LogPrior@{eos::LogPrior}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!eos::LogPrior@{eos::LogPrior}}
+\subsubsection[{Iterator}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf WrappedForwardIterator}$<$IteratorTag, {\bf ParameterDescription}$>$ {\bf eos::LogPrior::Iterator}}}
+\label{classeos_1_1LogPrior_a384dd9ec4424f2269e052e41ca834a3d}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classeos_1_1LogPrior_ae06bbf3b7073084d135bedd818fbf988}{
+\index{eos::LogPrior@{eos::LogPrior}!LogPrior@{LogPrior}}
+\index{LogPrior@{LogPrior}!eos::LogPrior@{eos::LogPrior}}
+\subsubsection[{LogPrior}]{\setlength{\rightskip}{0pt plus 5cm}eos::LogPrior::LogPrior (const {\bf Parameters} \& {\em parameters})}}
+\label{classeos_1_1LogPrior_ae06bbf3b7073084d135bedd818fbf988}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em parameters}]The \hyperlink{classeos_1_1Parameters}{Parameters} objects from which we evaluate. \end{DoxyParams}
+\hypertarget{classeos_1_1LogPrior_affbfcbe3bf1a16aa5e696880d20e2822}{
+\index{eos::LogPrior@{eos::LogPrior}!$\sim$LogPrior@{$\sim$LogPrior}}
+\index{$\sim$LogPrior@{$\sim$LogPrior}!eos::LogPrior@{eos::LogPrior}}
+\subsubsection[{$\sim$LogPrior}]{\setlength{\rightskip}{0pt plus 5cm}virtual eos::LogPrior::$\sim$LogPrior ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classeos_1_1LogPrior_affbfcbe3bf1a16aa5e696880d20e2822}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em parameters}]The \hyperlink{classeos_1_1Parameters}{Parameters} objects from which we evaluate. \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classeos_1_1LogPrior_a3c6fe4377cbfdf51bf1472ef16272660}{
+\index{eos::LogPrior@{eos::LogPrior}!as\_\-string@{as\_\-string}}
+\index{as\_\-string@{as\_\-string}!eos::LogPrior@{eos::LogPrior}}
+\subsubsection[{as\_\-string}]{\setlength{\rightskip}{0pt plus 5cm}virtual std::string eos::LogPrior::as\_\-string () const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classeos_1_1LogPrior_a3c6fe4377cbfdf51bf1472ef16272660}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em parameters}]The \hyperlink{classeos_1_1Parameters}{Parameters} objects from which we evaluate. \end{DoxyParams}
+\hypertarget{classeos_1_1LogPrior_a50155394c200be97f25ef0e56973dbd8}{
+\index{eos::LogPrior@{eos::LogPrior}!begin@{begin}}
+\index{begin@{begin}!eos::LogPrior@{eos::LogPrior}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Iterator} eos::LogPrior::begin ()}}
+\label{classeos_1_1LogPrior_a50155394c200be97f25ef0e56973dbd8}
+\hypertarget{classeos_1_1LogPrior_abb48bbbc8034fc487403fee22265f2c8}{
+\index{eos::LogPrior@{eos::LogPrior}!clone@{clone}}
+\index{clone@{clone}!eos::LogPrior@{eos::LogPrior}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf LogPriorPtr} eos::LogPrior::clone (const {\bf Parameters} \& {\em parameters}) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classeos_1_1LogPrior_abb48bbbc8034fc487403fee22265f2c8}
+Create a clone (independent object) of this \hyperlink{classeos_1_1LogPrior}{LogPrior} object,
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em parameters}]The \hyperlink{classeos_1_1Parameters}{Parameters} object from which the clone shall evaluate. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The clone 
+\end{DoxyReturn}
+\hypertarget{classeos_1_1LogPrior_a567e0f1eba8e2dd5c019d6764cbab53c}{
+\index{eos::LogPrior@{eos::LogPrior}!Discrete@{Discrete}}
+\index{Discrete@{Discrete}!eos::LogPrior@{eos::LogPrior}}
+\subsubsection[{Discrete}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf LogPriorPtr} eos::LogPrior::Discrete (const {\bf Parameters} \& {\em parameters}, \/  const std::string \& {\em name}, \/  const std::set$<$ double $>$ \& {\em values})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1LogPrior_a567e0f1eba8e2dd5c019d6764cbab53c}
+The LogGamma distribution is useful to model continuous, unimodal, asymmetric priors in one dimension.
+
+\begin{DoxyNote}{Note}
+The construction will typically fail if the asymmetry is less than ca. 5 \%. Use a Gaussian instead.
+\end{DoxyNote}
+By construction, it is constructed to behave similarly to a Gaussian:
+\begin{DoxyItemize}
+\item the mode is at the central value
+\item the interval \mbox{[}lower, upper\mbox{]} contains 68\% probability
+\item the density at lower is the same as at upper
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em parameters}]The object from which the value of the parameter is retrieved. \item[{\em name}]The parameter name. \item[{\em range}]Total allowed range. The value of the pdf is rescaled such that the prior integrates to one over the range. For efficiency reasons, no checking if input parameter is in range. But conceptually, the prior is zero outside. \item[{\em lower}](central -\/ lower) roughly corresponds to a Gaussian standard deviation for values left of the mode. \item[{\em central}]The mode of the prior. \item[{\em upper}](upper -\/ central) roughly corresponds to a Gaussian standard deviation for values right of the mode. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classeos_1_1LogPrior_a093e33ea2441515348249835a99781ba}{
+\index{eos::LogPrior@{eos::LogPrior}!end@{end}}
+\index{end@{end}!eos::LogPrior@{eos::LogPrior}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Iterator} eos::LogPrior::end ()}}
+\label{classeos_1_1LogPrior_a093e33ea2441515348249835a99781ba}
+\hypertarget{classeos_1_1LogPrior_ad4c2afcb1df01ef6ff1f2f8402cc7636}{
+\index{eos::LogPrior@{eos::LogPrior}!Flat@{Flat}}
+\index{Flat@{Flat}!eos::LogPrior@{eos::LogPrior}}
+\subsubsection[{Flat}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf LogPriorPtr} eos::LogPrior::Flat (const {\bf Parameters} \& {\em parameters}, \/  const std::string \& {\em name}, \/  const {\bf ParameterRange} \& {\em range})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1LogPrior_ad4c2afcb1df01ef6ff1f2f8402cc7636}
+The LogGamma distribution is useful to model continuous, unimodal, asymmetric priors in one dimension.
+
+\begin{DoxyNote}{Note}
+The construction will typically fail if the asymmetry is less than ca. 5 \%. Use a Gaussian instead.
+\end{DoxyNote}
+By construction, it is constructed to behave similarly to a Gaussian:
+\begin{DoxyItemize}
+\item the mode is at the central value
+\item the interval \mbox{[}lower, upper\mbox{]} contains 68\% probability
+\item the density at lower is the same as at upper
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em parameters}]The object from which the value of the parameter is retrieved. \item[{\em name}]The parameter name. \item[{\em range}]Total allowed range. The value of the pdf is rescaled such that the prior integrates to one over the range. For efficiency reasons, no checking if input parameter is in range. But conceptually, the prior is zero outside. \item[{\em lower}](central -\/ lower) roughly corresponds to a Gaussian standard deviation for values left of the mode. \item[{\em central}]The mode of the prior. \item[{\em upper}](upper -\/ central) roughly corresponds to a Gaussian standard deviation for values right of the mode. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classeos_1_1LogPrior_afe99a1c56a9ef60b4c38fe56f3c2b7ae}{
+\index{eos::LogPrior@{eos::LogPrior}!Gauss@{Gauss}}
+\index{Gauss@{Gauss}!eos::LogPrior@{eos::LogPrior}}
+\subsubsection[{Gauss}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf LogPriorPtr} eos::LogPrior::Gauss (const {\bf Parameters} \& {\em parameters}, \/  const std::string \& {\em name}, \/  const {\bf ParameterRange} \& {\em range}, \/  const double \& {\em lower}, \/  const double \& {\em central}, \/  const double \& {\em upper})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1LogPrior_afe99a1c56a9ef60b4c38fe56f3c2b7ae}
+The LogGamma distribution is useful to model continuous, unimodal, asymmetric priors in one dimension.
+
+\begin{DoxyNote}{Note}
+The construction will typically fail if the asymmetry is less than ca. 5 \%. Use a Gaussian instead.
+\end{DoxyNote}
+By construction, it is constructed to behave similarly to a Gaussian:
+\begin{DoxyItemize}
+\item the mode is at the central value
+\item the interval \mbox{[}lower, upper\mbox{]} contains 68\% probability
+\item the density at lower is the same as at upper
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em parameters}]The object from which the value of the parameter is retrieved. \item[{\em name}]The parameter name. \item[{\em range}]Total allowed range. The value of the pdf is rescaled such that the prior integrates to one over the range. For efficiency reasons, no checking if input parameter is in range. But conceptually, the prior is zero outside. \item[{\em lower}](central -\/ lower) roughly corresponds to a Gaussian standard deviation for values left of the mode. \item[{\em central}]The mode of the prior. \item[{\em upper}](upper -\/ central) roughly corresponds to a Gaussian standard deviation for values right of the mode. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classeos_1_1LogPrior_af659eae53a9474695a8abadd62f82a94}{
+\index{eos::LogPrior@{eos::LogPrior}!LogGamma@{LogGamma}}
+\index{LogGamma@{LogGamma}!eos::LogPrior@{eos::LogPrior}}
+\subsubsection[{LogGamma}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf LogPriorPtr} eos::LogPrior::LogGamma (const {\bf Parameters} \& {\em parameters}, \/  const std::string \& {\em name}, \/  const {\bf ParameterRange} \& {\em range}, \/  const double \& {\em lower}, \/  const double \& {\em central}, \/  const double \& {\em upper})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1LogPrior_af659eae53a9474695a8abadd62f82a94}
+The LogGamma distribution is useful to model continuous, unimodal, asymmetric priors in one dimension.
+
+\begin{DoxyNote}{Note}
+The construction will typically fail if the asymmetry is less than ca. 5 \%. Use a Gaussian instead.
+\end{DoxyNote}
+By construction, it is constructed to behave similarly to a Gaussian:
+\begin{DoxyItemize}
+\item the mode is at the central value
+\item the interval \mbox{[}lower, upper\mbox{]} contains 68\% probability
+\item the density at lower is the same as at upper
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em parameters}]The object from which the value of the parameter is retrieved. \item[{\em name}]The parameter name. \item[{\em range}]Total allowed range. The value of the pdf is rescaled such that the prior integrates to one over the range. For efficiency reasons, no checking if input parameter is in range. But conceptually, the prior is zero outside. \item[{\em lower}](central -\/ lower) roughly corresponds to a Gaussian standard deviation for values left of the mode. \item[{\em central}]The mode of the prior. \item[{\em upper}](upper -\/ central) roughly corresponds to a Gaussian standard deviation for values right of the mode. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classeos_1_1LogPrior_a48409439aeaa34a6d0bf47ef1902749a}{
+\index{eos::LogPrior@{eos::LogPrior}!Make@{Make}}
+\index{Make@{Make}!eos::LogPrior@{eos::LogPrior}}
+\subsubsection[{Make}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf LogPriorPtr} eos::LogPrior::Make (const {\bf Parameters} \& {\em parameters}, \/  const std::string \& {\em serialization})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classeos_1_1LogPrior_a48409439aeaa34a6d0bf47ef1902749a}
+Construct a prior from its string representation.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em parameters}]The object from which the value of the parameter is retrieved. \item[{\em serialization}]The prior in string form. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the ready made prior. 
+\end{DoxyReturn}
+\hypertarget{classeos_1_1LogPrior_afb69583b9532799aa6068d8f4bc3781a}{
+\index{eos::LogPrior@{eos::LogPrior}!mean@{mean}}
+\index{mean@{mean}!eos::LogPrior@{eos::LogPrior}}
+\subsubsection[{mean}]{\setlength{\rightskip}{0pt plus 5cm}virtual double eos::LogPrior::mean () const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classeos_1_1LogPrior_afb69583b9532799aa6068d8f4bc3781a}
+Return the mean of the distribution. \hypertarget{classeos_1_1LogPrior_ac686393e071443d706a104093957e667}{
+\index{eos::LogPrior@{eos::LogPrior}!operator()@{operator()}}
+\index{operator()@{operator()}!eos::LogPrior@{eos::LogPrior}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}virtual double eos::LogPrior::operator() () const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classeos_1_1LogPrior_ac686393e071443d706a104093957e667}
+Evaluate the natural logarithm of the prior. \hypertarget{classeos_1_1LogPrior_a9bbc9805dcb6abbe6d16efff44b43ea3}{
+\index{eos::LogPrior@{eos::LogPrior}!sample@{sample}}
+\index{sample@{sample}!eos::LogPrior@{eos::LogPrior}}
+\subsubsection[{sample}]{\setlength{\rightskip}{0pt plus 5cm}virtual double eos::LogPrior::sample (gsl\_\-rng $\ast$ {\em rng}) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classeos_1_1LogPrior_a9bbc9805dcb6abbe6d16efff44b43ea3}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em rng}]the random number engine \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a sample according to this prior distribution 
+\end{DoxyReturn}
+\hypertarget{classeos_1_1LogPrior_a525c7cd21ac2f4f273893d8740ca9136}{
+\index{eos::LogPrior@{eos::LogPrior}!variance@{variance}}
+\index{variance@{variance}!eos::LogPrior@{eos::LogPrior}}
+\subsubsection[{variance}]{\setlength{\rightskip}{0pt plus 5cm}virtual double eos::LogPrior::variance () const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classeos_1_1LogPrior_a525c7cd21ac2f4f273893d8740ca9136}
+Return the variance of this distribution. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classeos_1_1LogPrior_a2b9c6a50c9f4399e44973bad25b390be}{
+\index{eos::LogPrior@{eos::LogPrior}!\_\-parameter\_\-descriptions@{\_\-parameter\_\-descriptions}}
+\index{\_\-parameter\_\-descriptions@{\_\-parameter\_\-descriptions}!eos::LogPrior@{eos::LogPrior}}
+\subsubsection[{\_\-parameter\_\-descriptions}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<${\bf ParameterDescription}$>$ {\bf eos::LogPrior::\_\-parameter\_\-descriptions}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classeos_1_1LogPrior_a2b9c6a50c9f4399e44973bad25b390be}
+
+
+All parameters for which this prior provides information. \hypertarget{classeos_1_1LogPrior_a5b24d36e7d7d2f77d5a7d6533233f93b}{
+\index{eos::LogPrior@{eos::LogPrior}!\_\-parameters@{\_\-parameters}}
+\index{\_\-parameters@{\_\-parameters}!eos::LogPrior@{eos::LogPrior}}
+\subsubsection[{\_\-parameters}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parameters} {\bf eos::LogPrior::\_\-parameters}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classeos_1_1LogPrior_a5b24d36e7d7d2f77d5a7d6533233f93b}
+
+
+Our associated \hyperlink{classeos_1_1Parameters}{Parameters} object. 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{log__prior_8hh}{log\_\-prior.hh}\end{DoxyCompactItemize}

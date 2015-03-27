@@ -1,0 +1,70 @@
+\hypertarget{baryonic_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/form-\/factors/baryonic.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2014 Danny van Dyk}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_EOS\_FORM\_FACTORS\_BARYONIC\_HH}
+\hypertarget{baryonic_8hh_source_l00021}{}\hyperlink{baryonic_8hh_adc69da981be18d2928e9835a1e565e35}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_EOS\_FORM\_FACTORS\_BARYONIC\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{preprocessor}{#include <\hyperlink{form-factors-fwd_8hh}{eos/form-factors/form-factors-fwd.hh}>}
+00024 \textcolor{preprocessor}{#include <\hyperlink{parameters_8hh}{eos/utils/parameters.hh}>}
+00025 
+00026 \textcolor{preprocessor}{#include <memory>}
+00027 \textcolor{preprocessor}{#include <string>}
+00028 
+00029 \textcolor{keyword}{namespace }eos
+00030 \{
+00031     \textcolor{comment}{/* Baryonic Tags */}
+00032 
+00033     \textcolor{comment}{/*}
+00034 \textcolor{comment}{     * J=1/2^+ -> J=1/2^+ transitions}
+00035 \textcolor{comment}{     */}
+\hypertarget{baryonic_8hh_source_l00036}{}\hyperlink{structeos_1_1OneHalfPlusToOneHalfPlus}{00036}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1OneHalfPlusToOneHalfPlus}{OneHalfPlusToOneHalfPlus} \{ \};
+00037 
+00038     \textcolor{keyword}{template} <>
+\hypertarget{baryonic_8hh_source_l00039}{}\hyperlink{classeos_1_1FormFactors_3_01OneHalfPlusToOneHalfPlus_01_4}{00039}     \textcolor{keyword}{class }FormFactors<\hyperlink{structeos_1_1OneHalfPlusToOneHalfPlus}{OneHalfPlusToOneHalfPlus}> :
+00040         \textcolor{keyword}{public} \hyperlink{classeos_1_1ParameterUser}{ParameterUser}
+00041     \{
+00042         \textcolor{keyword}{public}:
+00043             \textcolor{keyword}{virtual} ~FormFactors();
+00044 
+00045             \textcolor{comment}{//virtual double f\_time\_v(const double & s) const = 0;}
+00046             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} f\_long\_v(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const} = 0;
+00047             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} f\_perp\_v(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const} = 0;
+00048 
+00049             \textcolor{comment}{//virtual double f\_time\_a(const double & s) const = 0;}
+00050             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} f\_long\_a(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const} = 0;
+00051             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} f\_perp\_a(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const} = 0;
+00052     \};
+00053 
+00054     \textcolor{keyword}{template} <>
+\hypertarget{baryonic_8hh_source_l00055}{}\hyperlink{classeos_1_1FormFactorFactory_3_01OneHalfPlusToOneHalfPlus_01_4}{00055}     \textcolor{keyword}{class }FormFactorFactory<\hyperlink{structeos_1_1OneHalfPlusToOneHalfPlus}{OneHalfPlusToOneHalfPlus}>
+00056     \{
+00057         \textcolor{keyword}{public}:
+00058             \textcolor{keyword}{static} std::shared\_ptr<FormFactors<OneHalfPlusToOneHalfPlus>> create(
+      \textcolor{keyword}{const} std::string & label, \textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & parameters);
+00059     \};
+00060 \}
+00061 
+00062 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

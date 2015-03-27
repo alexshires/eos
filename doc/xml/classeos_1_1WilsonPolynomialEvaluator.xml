@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1WilsonPolynomialEvaluator" kind="class" prot="public">
+    <compoundname>eos::WilsonPolynomialEvaluator</compoundname>
+    <includes refid="wilson-polynomial_8hh" local="no">wilson-polynomial.hh</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1WilsonPolynomialEvaluator_1ac85d91d12ce34c628012f7e4ee451359" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::WilsonPolynomialEvaluator::visit</definition>
+        <argsstring>(const Constant &amp;c)</argsstring>
+        <name>visit</name>
+        <param>
+          <type>const Constant &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson-polynomial.hh" line="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1WilsonPolynomialEvaluator_1a380ced036f68d89cdf3edde705a32813" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::WilsonPolynomialEvaluator::visit</definition>
+        <argsstring>(const Parameter &amp;p)</argsstring>
+        <name>visit</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson-polynomial.hh" line="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1WilsonPolynomialEvaluator_1a9c91165808b2aee3c8a0db64a99f5c7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::WilsonPolynomialEvaluator::visit</definition>
+        <argsstring>(const Sum &amp;s)</argsstring>
+        <name>visit</name>
+        <param>
+          <type>const Sum &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson-polynomial.hh" line="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1WilsonPolynomialEvaluator_1a4fe1a704b1c709430263aded5340edea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::WilsonPolynomialEvaluator::visit</definition>
+        <argsstring>(const Product &amp;p)</argsstring>
+        <name>visit</name>
+        <param>
+          <type>const Product &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson-polynomial.hh" line="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1WilsonPolynomialEvaluator_1ac428812e088c1162538afa2295575254" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::WilsonPolynomialEvaluator::visit</definition>
+        <argsstring>(const Sine &amp;s)</argsstring>
+        <name>visit</name>
+        <param>
+          <type>const Sine &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson-polynomial.hh" line="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1WilsonPolynomialEvaluator_1aa2c20db0637cbd2ad4a4ca278e0f0dc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::WilsonPolynomialEvaluator::visit</definition>
+        <argsstring>(const Cosine &amp;c)</argsstring>
+        <name>visit</name>
+        <param>
+          <type>const Cosine &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson-polynomial.hh" line="116"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/wilson-polynomial.hh" line="109" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/wilson-polynomial.hh" bodystart="108" bodyend="117"/>
+    <listofallmembers>
+      <member refid="classeos_1_1WilsonPolynomialEvaluator_1ac85d91d12ce34c628012f7e4ee451359" prot="public" virt="non-virtual"><scope>eos::WilsonPolynomialEvaluator</scope><name>visit</name></member>
+      <member refid="classeos_1_1WilsonPolynomialEvaluator_1a380ced036f68d89cdf3edde705a32813" prot="public" virt="non-virtual"><scope>eos::WilsonPolynomialEvaluator</scope><name>visit</name></member>
+      <member refid="classeos_1_1WilsonPolynomialEvaluator_1a9c91165808b2aee3c8a0db64a99f5c7c" prot="public" virt="non-virtual"><scope>eos::WilsonPolynomialEvaluator</scope><name>visit</name></member>
+      <member refid="classeos_1_1WilsonPolynomialEvaluator_1a4fe1a704b1c709430263aded5340edea" prot="public" virt="non-virtual"><scope>eos::WilsonPolynomialEvaluator</scope><name>visit</name></member>
+      <member refid="classeos_1_1WilsonPolynomialEvaluator_1ac428812e088c1162538afa2295575254" prot="public" virt="non-virtual"><scope>eos::WilsonPolynomialEvaluator</scope><name>visit</name></member>
+      <member refid="classeos_1_1WilsonPolynomialEvaluator_1aa2c20db0637cbd2ad4a4ca278e0f0dc8" prot="public" virt="non-virtual"><scope>eos::WilsonPolynomialEvaluator</scope><name>visit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

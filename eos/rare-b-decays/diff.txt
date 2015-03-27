@@ -1,0 +1,577 @@
+52d51
+< 
+54c53
+<      * Decay: B -> K l lbar at Large Recoil
+---
+>      * Decay: B -> K l lbar at Low Recoil
+57c56
+<     struct Implementation<BToKDilepton<LargeRecoil>>
+---
+>     struct Implementation<BToKDilepton<LowRecoil>>
+67,68d65
+<         UsedParameter m_c;
+< 
+83,89c80
+<         UsedParameter f_B;
+< 
+<         UsedParameter f_K;
+< 
+<         UsedParameter lambda_B_p;
+< 
+<         UsedParameter a_1;
+---
+>         UsedParameter lambda_pseudo;
+91c82
+<         UsedParameter a_2;
+---
+>         UsedParameter sl_phase_pseudo;
+93c84
+<         // Mean life times
+---
+>         // Mean life time
+96,106d86
+<         // Estimation of subleading contributions
+<         UsedParameter lambda_psd;
+< 
+<         UsedParameter sl_phase_psd;
+< 
+<         // spectator quark charge
+<         double e_q;
+< 
+<         // spectator quark flavor
+<         char q;
+< 
+108a89,90
+>         bool ccbar_resonance;
+> 
+116d97
+<             m_c(p["mass::c"], u),
+124,128c105,106
+<             f_B(p["decay-constant::B_" + o.get("q", "d")], u),
+<             f_K(p["decay-constant::K_" + o.get("q", "d")], u),
+<             lambda_B_p(p["lambda_B_p"], u),
+<             a_1(p["B->K::a_1@1GeV"], u),
+<             a_2(p["B->K::a_2@1GeV"], u),
+---
+>             lambda_pseudo(p["B->Pll::Lambda_pseudo@LowRecoil"], u),
+>             sl_phase_pseudo(p["B->Pll::sl_phase_pseudo@LowRecoil"], u),
+130,133c108,109
+<             lambda_psd(p["B->Pll::Lambda_pseudo@LargeRecoil"], u),
+<             sl_phase_psd(p["B->Pll::sl_phase_pseudo@LargeRecoil"], u),
+<             e_q(-1.0/3.0),
+<             cp_conjugate(destringify<bool>(o.get("cp-conjugate", "false")))
+---
+>             cp_conjugate(destringify<bool>(o.get("cp-conjugate", "false"))),
+>             ccbar_resonance(destringify<bool>(o.get("ccbar-resonance", "false")))
+139a116,119
+>             std::string spectator_quark = o.get("q", "d");
+>             if ((spectator_quark != "d") && (spectator_quark != "u"))
+>                 throw InternalError("Unsupported spectator quark");
+> 
+141a122
+>         }
+143,145c124,129
+<             std::string spectator_quark = o.get("q", "d");
+<             if (spectator_quark.size() != 1)
+<                 throw InternalError("Option q should only be one character!");
+---
+>         // We use the PS mass except for kappa
+>         double m_b_PS() const
+>         {
+>             // Actually use m_b_PS at mu_PS = 2.0 GeV
+>             return model->m_b_ps(2.0);
+>         }
+147,157c131,134
+<             q = spectator_quark[0];
+<             if (q == 'd')
+<             {
+<                 e_q = -1.0 / 3.0;
+<             }
+<             else if (q == 'u')
+<             {
+<                 e_q = 2.0 / 3.0;
+<             }
+<             else
+<                 throw InternalError("Unsupported spectator quark");
+---
+>         // cf. [GP2004], Eq. (56)
+>         complex<double> c7eff(const WilsonCoefficients<BToS> & wc, const double & s) const
+>         {
+>             return ShortDistanceLowRecoil::c7eff(s, mu(), model->alpha_s(mu), m_b_PS(), true, wc);
+160c137,138
+<         complex<double> calT(const double & s) const
+---
+>         // cf. [GP2004], Eq. (55), p. 10
+>         complex<double> c9eff(const WilsonCoefficients<BToS> & wc, const double & s) const
+162,179d139
+<             // charges of down- and up-type quarks
+<             static const double e_d = -1.0 / 3.0;
+<             static const double e_u = +2.0 / 3.0;
+< 
+<             // spectator contributions
+<             double delta_qu = (q == 'u' ? 1.0 : 0.0);
+< 
+<             // kinematics
+<             double m_c_pole = model->m_c_pole();
+<             double m_b_PS = this->m_b_PS(), m_b_PS2 = m_b_PS * m_b_PS;
+<             double energy = this->energy(s);
+<             double L = -1.0 * (m_b_PS2 - s) / s * std::log(1.0 - s / m_b_PS2);
+< 
+<             // couplings
+<             double alpha_s_mu = model->alpha_s(mu()); // alpha_s at the hard scale
+<             double a_mu = alpha_s_mu * QCD::casimir_f / 4.0 / M_PI;
+<             double alpha_s_mu_f = model->alpha_s(std::sqrt(mu() * 0.5)); // alpha_s at the factorization scale
+<             double a_mu_f = alpha_s_mu_f * QCD::casimir_f / 4.0 / M_PI;
+181,183d140
+<             if (cp_conjugate)
+<                 lambda_hat_u = std::conj(lambda_hat_u);
+<             WilsonCoefficients<BToS> wc = model->wilson_coefficients_b_to_s(cp_conjugate);
+185,292c142,145
+<             // Compute the QCDF Integrals
+<             double invm1_psd = 3.0 * (1.0 + a_1 + a_2); // <ubar^-1>
+<             QCDFIntegrals::Results qcdf_0 = QCDFIntegrals::dilepton_massless_case(s, m_B, m_K, mu, 0.0, 0.0, a_1, a_2);
+<             QCDFIntegrals::Results qcdf_c = QCDFIntegrals::dilepton_charm_case(s, m_c_pole, m_B, m_K, mu, 0.0, 0.0, a_1, a_2);
+<             QCDFIntegrals::Results qcdf_b = QCDFIntegrals::dilepton_bottom_case(s, m_b_PS, m_B, m_K, mu, 0.0, 0.0, a_1, a_2);
+< 
+<             // inverse of the "negative" moment of the B meson LCDA
+<             // cf. [BFS2001], Eq. (54), p. 15
+<             double omega_0 = lambda_B_p, lambda_B_p_inv = 1.0 / lambda_B_p;
+<             complex<double> lambda_B_m_inv = complex<double>(-gsl_sf_expint_Ei(s / m_B / omega_0), M_PI) * (std::exp(-s / m_B / omega_0) / omega_0);
+< 
+<             /* Y(s) for the up and the top sector */
+<             // cf. [BFS2001], Eq. (10), p. 4
+<             complex<double> Y_top_c = 4.0 / 3.0 * wc.c1() + wc.c2() + 6.0 * wc.c3() + 60.0 * wc.c5();
+<             complex<double> Y_top_b = -0.5 * (7.0 * wc.c3() + 4.0 / 3.0 * wc.c4() + 76.0 * wc.c5() + 64.0 / 3.0 * wc.c6());
+<             complex<double> Y_top_0 = -0.5 * (wc.c3() + 4.0 / 3.0 * wc.c4() + 16.0 * wc.c5() + 64.0 / 3.0 * wc.c6());
+<             complex<double> Y_top_ = 2.0 / 9.0 * (6.0 * wc.c3() + 32.0 * wc.c5() + 32.0 / 3.0 * wc.c6());
+< 
+<             // Use b pole mass according to [BFS2001], Sec. 3.1, paragraph Quark Masses,
+<             // then replace b pole mass by the PS mass.
+<             complex<double> Y_top = Y_top_c * CharmLoops::h(mu, s, m_c_pole);
+<             Y_top += Y_top_b * CharmLoops::h(mu, s, m_b_PS);
+<             Y_top += Y_top_0 * CharmLoops::h(mu, s);
+<             Y_top += Y_top_;
+<             // cf. [BFS2004], Eq. (43), p. 24
+<             complex<double> Y_up = (4.0 / 3.0 * wc.c1() + wc.c2()) * (CharmLoops::h(mu, s, m_c_pole) - CharmLoops::h(mu, s));
+< 
+<             /* Effective wilson coefficients */
+<             // cf. [BFS2001], below Eq. (9), p. 4
+<             complex<double> c7eff = wc.c7() - 1.0/3.0 * wc.c3() - 4.0/9.0 * wc.c4() - 20.0/3.0 * wc.c5() - 80.0/9.0 * wc.c6();
+<             // cf. [BFS2001], below Eq. (26), p. 8
+<             complex<double> c8eff = wc.c8() + wc.c3() - 1.0/6.0 * wc.c4() + 20.0 * wc.c5() - 10.0/3.0 * wc.c6();
+< 
+<             /* top sector */
+<             // cf. [BHP2007], Eq. (B.2) and [BFS2001], Eqs. (14), (15), p. 5, in comparison with \delta_{2,3} = 1
+<             complex<double> C0_top_psd = 1.0 * (c7eff + wc.c7prime() + m_B / (2.0 * m_b_PS) * Y_top);
+<             // cf. [BHP2007], Eq. (B.2) and [BFS2004], Eq. (45), p. 24
+<             // the correct sign in front of C_7^eff is plus, as one can see by
+<             // comparison with [BF2001], Eq. (63)
+<             complex<double> C1f_top_psd = 1.0 * (c7eff + wc.c7prime()) * (8.0 * std::log(m_b_PS / mu) + 2.0 * L - 4.0 * (1.0 - mu_f() / m_b_PS));
+<             // cf. [BHP2007], Eq. (B.2) and [BFS2001], Eqs. (38), p. 9
+<             complex<double> C1nf_top_psd = -(+1.0 / QCD::casimir_f) * (
+<                     (wc.c2() - wc.c1() / 6.0) * memoise(CharmLoops::F27_massive, mu(), s, m_b_PS, m_c_pole)
+<                     + c8eff * CharmLoops::F87_massless(mu, s, m_b_PS)
+<                     + (m_B / (2.0 * m_b_PS)) * (
+<                         wc.c1() * memoise(CharmLoops::F19_massive, mu(), s, m_b_PS, m_c_pole)
+<                         + wc.c2() * memoise(CharmLoops::F29_massive, mu(), s, m_b_PS, m_c_pole)
+<                         + c8eff * CharmLoops::F89_massless(s, m_b_PS)));
+< 
+<             /* parallel, up sector */
+<             // cf. [BHP2007], Eq. (B.2) and [BFS2004], comment before Eq. (43), p. 24
+<             complex<double> C0_up_psd = 1.0 * m_B / (2.0 * m_b_PS) * Y_up;
+<             // C1f_up_par = 0, cf. second-to-last paragraph in Sec A.1, p. 24
+<             // cf. [BFS2004], last paragraph in Sec A.1, p. 24
+<             // [BFS2004], [S2004] have a different sign convention for F{12}{79}_massless than we!
+<             // Use here FF_massive - FF_massless because FF_massless is defined with an extra '-'
+<             // compared to [S2004]
+<             complex<double> C1nf_up_psd = -(+1.0 / QCD::casimir_f) * (
+<                     (wc.c2() - wc.c1() / 6.0) * (memoise(CharmLoops::F27_massive, mu(), s, m_b_PS, m_c_pole) - CharmLoops::F27_massless(mu, s, m_b_PS))
+<                     + (m_B / (2.0 * m_b_PS)) * (
+<                         wc.c1() * (memoise(CharmLoops::F19_massive, mu(), s, m_b_PS, m_c_pole) - CharmLoops::F19_massless(mu, s, m_b_PS))
+<                         + wc.c2() * (memoise(CharmLoops::F29_massive, mu(), s, m_b_PS, m_c_pole) - CharmLoops::F29_massless(mu, s, m_b_PS))));
+< 
+<             // compute the factorizing contributions
+<             complex<double> C_psd = C0_top_psd + lambda_hat_u * C0_up_psd
+<                 + a_mu * (C1f_top_psd + C1nf_top_psd + lambda_hat_u * C1nf_up_psd);
+< 
+<             /* parallel, top sector */
+<             // T0_top_par_p = 0, cf. [BFS2001], Eq. (17), p. 6
+<             // cf. [BFS2004], Eqs. (46)-(47), p. 25 without the \omega term.
+<             complex<double> T0_top_psd_m = +e_q * 4.0 * m_B / m_b_PS * (wc.c3() + 4.0/3.0 * wc.c4() + 16.0 * wc.c5() + 64.0/3.0 * wc.c6()) * lambda_B_m_inv;
+<             // cf. [BHP2007], Eq. (B.2)
+<             complex<double> T1f_top_psd_p  = -(c7eff + wc.c7prime()) * (4.0 * m_B / energy) * invm1_psd * lambda_B_p_inv;
+<             // T1f_top_par_m = 0, cf. [BFS2001], Eq. (22), p. 7
+<             // cf. [BFS2001], Eq. (25), p. 7
+<             complex<double> T1nf_top_psd_p = -m_B / m_b_PS * (
+<                     e_u * (-wc.c1() / 6.0 + wc.c2() + 6.0 * wc.c6()) * qcdf_c.jtilde2_parallel
+<                     + e_d * (wc.c3() - wc.c4() / 6.0 + 16.0 * wc.c5() + 10.0 / 3.0 * wc.c6()) * qcdf_b.jtilde2_parallel
+<                     + e_d * (wc.c3() - wc.c4() / 6.0 + 16.0 * wc.c5() -  8.0 / 3.0 * wc.c6()) * qcdf_0.jtilde2_parallel) * lambda_B_p_inv;
+<             // cf. [BFS2001], Eq. (26), pp. 7-8
+<             complex<double> T1nf_top_psd_m = -e_q * (8.0 * c8eff * qcdf_0.j0_parallel
+<                     + 6.0 * m_B / m_b_PS * (
+<                         (-wc.c1() / 6.0 + wc.c2() + wc.c4() + 10.0 * wc.c6()) * qcdf_c.j4_parallel
+<                         + (wc.c3() + 5.0 / 6.0 * wc.c4() + 16.0 * wc.c5() + 22.0 / 3.0 * wc.c6()) * qcdf_b.j4_parallel
+<                         + (wc.c3() + 17.0 / 6.0 * wc.c4() + 16.0 * wc.c5() + 82.0 / 3.0 * wc.c6()) * qcdf_0.j4_parallel
+<                         -8.0 / 27.0 * (-7.5 * wc.c4() + 12.0 * wc.c5() - 32.0 * wc.c6()))) * lambda_B_m_inv;
+< 
+<             /* parallel, up sector */
+<             // all T1f_up vanish, cf. [BFS2004], sentence below Eq. (49), p. 25
+<             // cf. [BFS2004], Eqs. (46),(48), p. 25 without the \omega term
+<             complex<double> T0_up_psd_m = -e_q * 4.0 * m_B / m_b_PS * (3.0 * delta_qu * wc.c2()) * lambda_B_m_inv;
+<             // cf. [BFS2004], Eq. (50), p. 25
+<             complex<double> T1nf_up_psd_p = -e_u * m_B / m_b_PS * (-wc.c1() / 6.0 + wc.c2()) * (qcdf_c.jtilde2_parallel - qcdf_0.jtilde2_parallel) * lambda_B_p_inv;
+<             // cf. [BFS2004], Eq. (50), p. 25 without the \omega term
+<             complex<double> T1nf_up_psd_m = -e_q * 6.0 * m_B / m_b_PS * (-wc.c1() / 6.0 + wc.c2()) * (qcdf_c.j4_parallel - qcdf_0.j4_parallel) * lambda_B_m_inv;
+< 
+< 
+<             // Compute the nonfactorizing contributions
+<             complex<double> T_psd = a_mu_f * (T1f_top_psd_p + T1nf_top_psd_p + lambda_hat_u * T1nf_up_psd_p)
+<                 + (T0_top_psd_m + lambda_hat_u * T0_up_psd_m + a_mu_f * (T1nf_top_psd_m + lambda_hat_u * T1nf_up_psd_m));
+< 
+<             // Subleading weak annihilation and hard spectator interaction contributions have only been
+<             // computed for calT_perp, not for calT_par ~ calT_psd.
+< 
+<             // cf. [BFS2001], Eq. (15), and [BHP2008], Eq. (C.4)
+<             complex<double> result;
+<             result = xi_pseudo(s) * C_psd
+<                 + power_of<2>(M_PI) / 3.0 * (f_B * f_K) / m_B  * T_psd;
+---
+>             if (cp_conjugate)
+>             {
+>                 lambda_hat_u = conj(lambda_hat_u);
+>             }
+294c147
+<             return result;
+---
+>             return ShortDistanceLowRecoil::c9eff(s, mu(), model->alpha_s(mu), m_b_PS(), model->m_c_msbar(mu), true, ccbar_resonance, lambda_hat_u, wc);
+297,299c150
+<         /* Form factors */
+<         // cf. [BF2001], Eq. (22)
+<         double xi_pseudo(const double & s) const
+---
+>         double kappa() const
+301c152,154
+<             return form_factors->f_p(s);
+---
+>             // cf. [BHvD2010], Eq. (3.8), p. 8
+>             // Use m_b_MSbar(m_b_MSbar) instead m_b_MSbar(mu), as we want kappa up to NLO only.
+>             return (1.0 - 2.0 * model->alpha_s(mu) / (3.0 * M_PI) * std::log(mu / m_b_MSbar));
+304c157,158
+<         inline double mu_f() const
+---
+>         // this is rho_1^+
+>         double rho_1(const WilsonCoefficients<BToS> & wc, const double & s) const
+306,307c160
+<             return 1.5;
+<         }
+---
+>             double alpha_s = model->alpha_s(mu());
+309,312c162,164
+<         inline double m_b_PS() const
+<         {
+<             // Actually use the PS mass at mu_f = 1.5 GeV
+<             return model->m_b_ps(mu_f());
+---
+>             return std::norm(kappa() * (2.0 * (m_b_MSbar + lambda_pseudo()) * m_B() / s) * (c7eff(wc, s) + wc.c7prime())
+>                     + 0.5 * alpha_s / m_B * std::polar(lambda_pseudo(), sl_phase_pseudo()) + (c9eff(wc, s) + wc.c9prime()))
+>                     + std::norm(wc.c10() + wc.c10prime());
+314a167
+>         // speed of the lepton
+317c170
+<             return std::sqrt(1.0 - 4.0 * m_l * m_l / s);
+---
+>             return std::sqrt(1.0 - 4.0 * power_of<2>(m_l()) / s);
+319a173
+>         // phase-space function
+325,329d178
+<         double energy(const double & s) const
+<         {
+<             return (m_B() * m_B() + m_K() * m_K() - s) / (2.0 * m_B());
+<         }
+< 
+335a185
+>         // kinematic part of F_T and F_T5
+354a205
+>         // kinematic part of F_S and F_P
+378,380c229,231
+<             std::complex<double> result = wc.c9() + wc.c9prime();
+<             result += 2.0 * m_b_PS() / m_B() / xi_pseudo(s) *
+<                       (calT(s) + lambda_psd / m_B * std::polar(1.0, sl_phase_psd()));
+---
+>             std::complex<double> result =  c9eff(wc, s) + wc.c9prime();
+>             result += kappa() * (2.0 * (m_b_MSbar + lambda_pseudo()) * m_B() / s) * (c7eff(wc, s) + wc.c7prime())
+>                       + 0.5 * model->alpha_s(mu) / m_B * std::polar(lambda_pseudo(), sl_phase_pseudo());
+390c241
+<             return power_of<2>(g_fermi * alpha_e() * lambda_t) * std::sqrt(lam(s)) * beta_l(s) * xi_pseudo(s) * xi_pseudo(s) /
+---
+>             return power_of<2>(g_fermi * alpha_e() * lambda_t) * std::sqrt(lam(s)) * beta_l(s) * power_of<2>(form_factors->f_p(s)) /
+425d275
+<         // cf. [BHP2007], Eq. (4.8)
+438d287
+<         // cf. [BHP2007], Eq. (4.9)
+454,455c303,304
+<     BToKDilepton<LargeRecoil>::BToKDilepton(const Parameters & parameters, const Options & options) :
+<         PrivateImplementationPattern<BToKDilepton<LargeRecoil>>(new Implementation<BToKDilepton<LargeRecoil>>(parameters, options, *this))
+---
+>     BToKDilepton<LowRecoil>::BToKDilepton(const Parameters & parameters, const Options & options) :
+>         PrivateImplementationPattern<BToKDilepton<LowRecoil>>(new Implementation<BToKDilepton<LowRecoil>>(parameters, options, *this))
+459c308
+<     BToKDilepton<LargeRecoil>::~BToKDilepton()
+---
+>     BToKDilepton<LowRecoil>::~BToKDilepton()
+463,464c312,313
+<     std::complex<double>
+<     BToKDilepton<LargeRecoil>::F_A(const double & s) const
+---
+>     double
+>     BToKDilepton<LowRecoil>::real_c9eff(const double & s) const
+466,467c315
+<         return _imp->F_A(_imp->model->wilson_coefficients_b_to_s(_imp->cp_conjugate), s);
+<     }
+---
+>         WilsonCoefficients<BToS> wc = _imp->model->wilson_coefficients_b_to_s(_imp->cp_conjugate);
+469,472c317
+<     std::complex<double>
+<     BToKDilepton<LargeRecoil>::F_V(const double & s) const
+<     {
+<         return _imp->F_V(_imp->model->wilson_coefficients_b_to_s(_imp->cp_conjugate), s);
+---
+>         return real(_imp->c9eff(wc, s));
+475,476c320,321
+<     std::complex<double>
+<     BToKDilepton<LargeRecoil>::F_S(const double & s) const
+---
+>     double
+>     BToKDilepton<LowRecoil>::imag_c9eff(const double & s) const
+478,479c323
+<         return _imp->F_S(_imp->model->wilson_coefficients_b_to_s(_imp->cp_conjugate), s);
+<     }
+---
+>         WilsonCoefficients<BToS> wc = _imp->model->wilson_coefficients_b_to_s(_imp->cp_conjugate);
+481,484c325
+<     std::complex<double>
+<     BToKDilepton<LargeRecoil>::F_P(const double & s) const
+<     {
+<         return _imp->F_P(_imp->model->wilson_coefficients_b_to_s(_imp->cp_conjugate), s);
+---
+>         return imag(_imp->c9eff(wc, s));
+487,488c328,329
+<     std::complex<double>
+<     BToKDilepton<LargeRecoil>::F_T(const double & s) const
+---
+>     double
+>     BToKDilepton<LowRecoil>::real_c7eff(const double & s) const
+490c331,333
+<         return _imp->F_T(_imp->model->wilson_coefficients_b_to_s(_imp->cp_conjugate), s);
+---
+>         WilsonCoefficients<BToS> wc = _imp->model->wilson_coefficients_b_to_s(_imp->cp_conjugate);
+> 
+>         return real(_imp->c7eff(wc, s));
+493,494c336,337
+<     std::complex<double>
+<     BToKDilepton<LargeRecoil>::F_T5(const double & s) const
+---
+>     double
+>     BToKDilepton<LowRecoil>::imag_c7eff(const double & s) const
+496c339,341
+<         return _imp->F_T5(_imp->model->wilson_coefficients_b_to_s(_imp->cp_conjugate), s);
+---
+>         WilsonCoefficients<BToS> wc = _imp->model->wilson_coefficients_b_to_s(_imp->cp_conjugate);
+> 
+>         return imag(_imp->c7eff(wc, s));
+500c345
+<     BToKDilepton<LargeRecoil>::a_l(const double & s) const
+---
+>     BToKDilepton<LowRecoil>::a_l(const double & s) const
+502c347,349
+<         return _imp->a_l(_imp->model->wilson_coefficients_b_to_s(_imp->cp_conjugate), s);
+---
+>         WilsonCoefficients<BToS> wc = _imp->model->wilson_coefficients_b_to_s(_imp->cp_conjugate);
+> 
+>         return _imp->a_l(wc, s);
+506c353
+<     BToKDilepton<LargeRecoil>::b_l(const double & s) const
+---
+>     BToKDilepton<LowRecoil>::b_l(const double & s) const
+508c355,357
+<         return _imp->b_l(_imp->model->wilson_coefficients_b_to_s(_imp->cp_conjugate), s);
+---
+>         WilsonCoefficients<BToS> wc = _imp->model->wilson_coefficients_b_to_s(_imp->cp_conjugate);
+> 
+>         return _imp->b_l(wc, s);
+512c361
+<     BToKDilepton<LargeRecoil>::c_l(const double & s) const
+---
+>     BToKDilepton<LowRecoil>::c_l(const double & s) const
+514c363,365
+<         return _imp->c_l(_imp->model->wilson_coefficients_b_to_s(_imp->cp_conjugate), s);
+---
+>         WilsonCoefficients<BToS> wc = _imp->model->wilson_coefficients_b_to_s(_imp->cp_conjugate);
+> 
+>         return _imp->c_l(wc, s);
+516a368
+>     // Two Differential Observables
+518c370
+<     BToKDilepton<LargeRecoil>::two_differential_decay_width(const double & s, const double & c_theta_l) const
+---
+>     BToKDilepton<LowRecoil>::two_differential_decay_width(const double & s, const double & c_theta_l) const
+522d373
+<         // cf. [BHP2007], Eq. (4.1)
+525a377
+>     // Differential Observables
+527c379
+<     BToKDilepton<LargeRecoil>::differential_branching_ratio(const double & s) const
+---
+>     BToKDilepton<LowRecoil>::differential_branching_ratio(const double & s) const
+533c385
+<     BToKDilepton<LargeRecoil>::differential_flat_term(const double & s) const
+---
+>     BToKDilepton<LowRecoil>::differential_flat_term(const double & s) const
+539c391
+<     BToKDilepton<LargeRecoil>::differential_forward_backward_asymmetry(const double & s) const
+---
+>     BToKDilepton<LowRecoil>::differential_forward_backward_asymmetry(const double & s) const
+545c397
+<     BToKDilepton<LargeRecoil>::differential_ratio_muons_electrons(const double & s) const
+---
+>     BToKDilepton<LowRecoil>::differential_ratio_muons_electrons(const double & s) const
+550c402
+<             br_electrons = BToKDilepton<LargeRecoil>::differential_branching_ratio(s);
+---
+>             br_electrons = BToKDilepton<LowRecoil>::differential_branching_ratio(s);
+556c408
+<             br_muons = BToKDilepton<LargeRecoil>::differential_branching_ratio(s);
+---
+>             br_muons = BToKDilepton<LowRecoil>::differential_branching_ratio(s);
+564c416
+<     BToKDilepton<LargeRecoil>::integrated_decay_width(const double & s_min, const double & s_max) const
+---
+>     BToKDilepton<LowRecoil>::integrated_decay_width(const double & s_min, const double & s_max) const
+566c418
+<         std::function<double (const double &)> f = std::bind(std::mem_fn(&Implementation<BToKDilepton<LargeRecoil>>::unnormalized_decay_width),
+---
+>         std::function<double (const double &)> integrand = std::bind(std::mem_fn(&Implementation<BToKDilepton<LowRecoil>>::unnormalized_decay_width),
+569c421
+<         return integrate(f, 64, s_min, s_max);
+---
+>         return integrate(integrand, 64, s_min, s_max);
+573c425
+<     BToKDilepton<LargeRecoil>::integrated_branching_ratio(const double & s_min, const double & s_max) const
+---
+>     BToKDilepton<LowRecoil>::integrated_branching_ratio(const double & s_min, const double & s_max) const
+575c427
+<         std::function<double (const double &)> f = std::bind(std::mem_fn(&BToKDilepton<LargeRecoil>::differential_branching_ratio),
+---
+>         std::function<double (const double &)> integrand = std::bind(std::mem_fn(&BToKDilepton<LowRecoil>::differential_branching_ratio),
+578c430
+<         return integrate(f, 64, s_min, s_max);
+---
+>         return integrate(integrand, 64, s_min, s_max);
+582c434
+<     BToKDilepton<LargeRecoil>::integrated_branching_ratio_cp_averaged(const double & s_min, const double & s_max) const
+---
+>     BToKDilepton<LowRecoil>::integrated_branching_ratio_cp_averaged(const double & s_min, const double & s_max) const
+585c437
+<         std::function<double (const double &)> f = std::bind(&BToKDilepton<LargeRecoil>::differential_branching_ratio,
+---
+>         std::function<double (const double &)> integrand = std::bind(&BToKDilepton<LowRecoil>::differential_branching_ratio,
+588c440
+<         double br = integrate(f, 64, s_min, s_max);
+---
+>         double br = integrate(integrand, 64, s_min, s_max);
+590c442
+<         double br_bar = integrate(f, 64, s_min, s_max);
+---
+>         double br_bar = integrate(integrand, 64, s_min, s_max);
+596,610c448
+<     BToKDilepton<LargeRecoil>::integrated_cp_asymmetry(const double & s_min, const double & s_max) const
+<     {
+<         Save<bool> save(_imp->cp_conjugate, false);
+<         std::function<double (const double &)> f = std::bind(&BToKDilepton<LargeRecoil>::differential_branching_ratio,
+<                 this, std::placeholders::_1);
+< 
+<         double br = integrate(f, 64, s_min, s_max);
+<         _imp->cp_conjugate = true;
+<         double br_bar = integrate(f, 64, s_min, s_max);
+< 
+<         return (br - br_bar) / (br + br_bar);
+<     }
+< 
+<     double
+<     BToKDilepton<LargeRecoil>::integrated_flat_term(const double & s_min, const double & s_max) const
+---
+>     BToKDilepton<LowRecoil>::integrated_flat_term(const double & s_min, const double & s_max) const
+612c450
+<         std::function<double (const double &)> num = std::bind(std::mem_fn(&Implementation<BToKDilepton<LargeRecoil>>::differential_flat_term_numerator),
+---
+>         std::function<double (const double &)> num = std::bind(std::mem_fn(&Implementation<BToKDilepton<LowRecoil>>::differential_flat_term_numerator),
+614c452
+<         std::function<double (const double &)> denom = std::bind(std::mem_fn(&Implementation<BToKDilepton<LargeRecoil>>::unnormalized_decay_width),
+---
+>         std::function<double (const double &)> denom = std::bind(std::mem_fn(&Implementation<BToKDilepton<LowRecoil>>::unnormalized_decay_width),
+624c462
+<     BToKDilepton<LargeRecoil>::integrated_flat_term_cp_averaged(const double & s_min, const double & s_max) const
+---
+>     BToKDilepton<LowRecoil>::integrated_flat_term_cp_averaged(const double & s_min, const double & s_max) const
+627c465
+<         std::function<double (const double &)> num = std::bind(std::mem_fn(&Implementation<BToKDilepton<LargeRecoil>>::differential_flat_term_numerator),
+---
+>         std::function<double (const double &)> num = std::bind(std::mem_fn(&Implementation<BToKDilepton<LowRecoil>>::differential_flat_term_numerator),
+629c467
+<         std::function<double (const double &)> denom = std::bind(std::mem_fn(&Implementation<BToKDilepton<LargeRecoil>>::unnormalized_decay_width),
+---
+>         std::function<double (const double &)> denom = std::bind(std::mem_fn(&Implementation<BToKDilepton<LowRecoil>>::unnormalized_decay_width),
+643d480
+<     // todo caching of denominator?
+645c482
+<     BToKDilepton<LargeRecoil>::integrated_forward_backward_asymmetry(const double & s_min, const double & s_max) const
+---
+>     BToKDilepton<LowRecoil>::integrated_forward_backward_asymmetry(const double & s_min, const double & s_max) const
+647c484
+<         std::function<double (const double &)> num = std::bind(std::mem_fn(&Implementation<BToKDilepton<LargeRecoil>>::differential_forward_backward_asymmetry_numerator),
+---
+>         std::function<double (const double &)> num = std::bind(std::mem_fn(&Implementation<BToKDilepton<LowRecoil>>::differential_forward_backward_asymmetry_numerator),
+649c486
+<         std::function<double (const double &)> denom = std::bind(std::mem_fn(&Implementation<BToKDilepton<LargeRecoil>>::unnormalized_decay_width),
+---
+>         std::function<double (const double &)> denom = std::bind(std::mem_fn(&Implementation<BToKDilepton<LowRecoil>>::unnormalized_decay_width),
+659c496
+<     BToKDilepton<LargeRecoil>::integrated_forward_backward_asymmetry_cp_averaged(const double & s_min, const double & s_max) const
+---
+>     BToKDilepton<LowRecoil>::integrated_forward_backward_asymmetry_cp_averaged(const double & s_min, const double & s_max) const
+662c499
+<         std::function<double (const double &)> num = std::bind(std::mem_fn(&Implementation<BToKDilepton<LargeRecoil>>::differential_forward_backward_asymmetry_numerator),
+---
+>         std::function<double (const double &)> num = std::bind(std::mem_fn(&Implementation<BToKDilepton<LowRecoil>>::differential_forward_backward_asymmetry_numerator),
+664c501
+<         std::function<double (const double &)> denom = std::bind(std::mem_fn(&Implementation<BToKDilepton<LargeRecoil>>::unnormalized_decay_width),
+---
+>         std::function<double (const double &)> denom = std::bind(std::mem_fn(&Implementation<BToKDilepton<LowRecoil>>::unnormalized_decay_width),
+679c516
+<     BToKDilepton<LargeRecoil>::integrated_ratio_muons_electrons(const double & s_min, const double & s_max) const
+---
+>     BToKDilepton<LowRecoil>::integrated_ratio_muons_electrons(const double & s_min, const double & s_max) const
+681c518
+<         std::function<double (const double &)> integrand = std::bind(std::mem_fn(&BToKDilepton<LargeRecoil>::differential_branching_ratio),
+---
+>         std::function<double (const double &)> integrand = std::bind(std::mem_fn(&BToKDilepton<LowRecoil>::differential_branching_ratio),
+698a536,554
+> 
+>     double
+>     BToKDilepton<LowRecoil>::integrated_cp_asymmetry(const double & s_min, const double & s_max) const
+>     {
+>         Save<bool> cp_conjugate(_imp->cp_conjugate, false);
+> 
+>         std::function<double (const double &)> integrand = std::bind(std::mem_fn(&Implementation<BToKDilepton<LowRecoil>>::unnormalized_decay_width),
+>                 _imp, std::placeholders::_1);
+> 
+>         double gamma = integrate(integrand, 64, s_min, s_max);
+>         _imp->cp_conjugate = true;
+>         double gamma_bar = integrate(integrand, 64, s_min, s_max);
+> 
+>         return (gamma - gamma_bar) / (gamma + gamma_bar);
+>     }
+> 
+> 
+> 
+> 

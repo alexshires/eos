@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1VerifiedRangeError" kind="class" prot="public">
+    <compoundname>eos::VerifiedRangeError</compoundname>
+    <basecompoundref refid="classeos_1_1Exception" prot="public" virt="non-virtual">eos::Exception</basecompoundref>
+    <derivedcompoundref refid="structeos_1_1VerifiedRangeOverflow" prot="public" virt="non-virtual">eos::VerifiedRangeOverflow</derivedcompoundref>
+    <derivedcompoundref refid="structeos_1_1VerifiedRangeUnderflow" prot="public" virt="non-virtual">eos::VerifiedRangeUnderflow</derivedcompoundref>
+    <includes refid="verify_8hh" local="no">verify.hh</includes>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classeos_1_1VerifiedRangeError_1a68d9494a951b7945d19a13a9bef0e456" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::VerifiedRangeError::VerifiedRangeError</definition>
+        <argsstring>(const std::string &amp;message)</argsstring>
+        <name>VerifiedRangeError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/verify.hh" line="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classeos_1_1VerifiedRangeError" kindref="compound">VerifiedRangeError</ref> is thrown whenever a <ref refid="classeos_1_1VerifiedRange" kindref="compound">VerifiedRange</ref> is assigned a value that exceeds its allowed range. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1057">
+        <label>eos::VerifiedRangeOverflow</label>
+        <link refid="structeos_1_1VerifiedRangeOverflow"/>
+        <childnode refid="1054" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1055">
+        <label>eos::Exception</label>
+        <link refid="classeos_1_1Exception"/>
+        <childnode refid="1056" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1056">
+        <label>std::exception</label>
+      </node>
+      <node id="1058">
+        <label>eos::VerifiedRangeUnderflow</label>
+        <link refid="structeos_1_1VerifiedRangeUnderflow"/>
+        <childnode refid="1054" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1054">
+        <label>eos::VerifiedRangeError</label>
+        <link refid="classeos_1_1VerifiedRangeError"/>
+        <childnode refid="1055" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1060">
+        <label>eos::Exception</label>
+        <link refid="classeos_1_1Exception"/>
+        <childnode refid="1061" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1062" relation="usage">
+          <edgelabel>_message</edgelabel>
+        </childnode>
+      </node>
+      <node id="1063">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="1061">
+        <label>std::exception</label>
+      </node>
+      <node id="1059">
+        <label>eos::VerifiedRangeError</label>
+        <link refid="classeos_1_1VerifiedRangeError"/>
+        <childnode refid="1060" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1062">
+        <label>std::string</label>
+        <childnode refid="1063" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/verify.hh" line="35" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/verify.hh" bodystart="33" bodyend="38"/>
+    <listofallmembers>
+      <member refid="classeos_1_1Exception_1acbc0fa64ca3d54cc1f828b07dc80e585" prot="protected" virt="non-virtual"><scope>eos::VerifiedRangeError</scope><name>Exception</name></member>
+      <member refid="classeos_1_1VerifiedRangeError_1a68d9494a951b7945d19a13a9bef0e456" prot="protected" virt="non-virtual"><scope>eos::VerifiedRangeError</scope><name>VerifiedRangeError</name></member>
+      <member refid="classeos_1_1Exception_1adce7a2af080165b09a599bb13438a8e1" prot="public" virt="virtual"><scope>eos::VerifiedRangeError</scope><name>what</name></member>
+      <member refid="classeos_1_1Exception_1a8cb6faea0484cc58c472da9e58c7c30a" prot="public" virt="non-virtual"><scope>eos::VerifiedRangeError</scope><name>~Exception</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

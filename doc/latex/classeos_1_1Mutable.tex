@@ -1,0 +1,103 @@
+\hypertarget{classeos_1_1Mutable}{
+\section{eos::Mutable Class Reference}
+\label{classeos_1_1Mutable}\index{eos::Mutable@{eos::Mutable}}
+}
+
+
+Base class for all mutable entities, e.g. a \hyperlink{classeos_1_1Parameter}{Parameter}.  
+
+
+{\ttfamily \#include $<$mutable.hh$>$}
+
+Inherited by \hyperlink{classeos_1_1Parameter}{eos::Parameter}.\subsection*{Public Member Functions}
+\begin{Indent}{\bf Basic Operatios}\par
+{\em \label{_amgrpe14f7e6d89bed7e26b8b7aa00881ccfd}
+ Destructor. }\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classeos_1_1Mutable_a928ec6648a438f02b6369a8863d39560}{$\sim$Mutable} ()=0
+\begin{DoxyCompactList}\small\item\em Make a copy of this \hyperlink{classeos_1_1Mutable}{Mutable}. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceeos_a0ab446e6a801d96a1ee83bb7c070686f}{MutablePtr} \hyperlink{classeos_1_1Mutable_a31d51dbb25d02ad989592b43de8a787b}{clone} () const =0
+\begin{DoxyCompactList}\small\item\em Make a copy of this \hyperlink{classeos_1_1Mutable}{Mutable}. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Access \& Modification of the numeric Value}\par
+{\em \label{_amgrp90084f10ec361c9fc454efe770eda260}
+ Cast a \hyperlink{classeos_1_1Mutable}{Mutable} to a double. }\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classeos_1_1Mutable_a0763bf2933503db18d28b942aae2d324}{operator double} () const =0
+\begin{DoxyCompactList}\small\item\em Retrieve a Mutable's numeric value. \item\end{DoxyCompactList}\item 
+virtual double \hyperlink{classeos_1_1Mutable_a6efd15ab0164a1735813669506e331d7}{operator()} () const =0
+\begin{DoxyCompactList}\small\item\em Retrieve a Mutable's numeric value. \item\end{DoxyCompactList}\item 
+virtual const \hyperlink{classeos_1_1Mutable}{Mutable} \& \hyperlink{classeos_1_1Mutable_abf079592435ecb22f242b7b01c279c72}{operator=} (const double \&)=0
+\begin{DoxyCompactList}\small\item\em Set a Mutable's numeric value. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Access to Meta Data}\par
+{\em \label{_amgrpa3a190e9d66c82f98a9d3e29998edf0d}
+ Retrieve the Parameter's name. }\begin{DoxyCompactItemize}
+\item 
+virtual const std::string \& \hyperlink{classeos_1_1Mutable_ad215a3863435593930a3543866881f49}{name} () const =0
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+Base class for all mutable entities, e.g. a \hyperlink{classeos_1_1Parameter}{Parameter}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classeos_1_1Mutable_a928ec6648a438f02b6369a8863d39560}{
+\index{eos::Mutable@{eos::Mutable}!$\sim$Mutable@{$\sim$Mutable}}
+\index{$\sim$Mutable@{$\sim$Mutable}!eos::Mutable@{eos::Mutable}}
+\subsubsection[{$\sim$Mutable}]{\setlength{\rightskip}{0pt plus 5cm}virtual eos::Mutable::$\sim$Mutable ()\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classeos_1_1Mutable_a928ec6648a438f02b6369a8863d39560}
+
+
+Make a copy of this \hyperlink{classeos_1_1Mutable}{Mutable}. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classeos_1_1Mutable_a31d51dbb25d02ad989592b43de8a787b}{
+\index{eos::Mutable@{eos::Mutable}!clone@{clone}}
+\index{clone@{clone}!eos::Mutable@{eos::Mutable}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf MutablePtr} eos::Mutable::clone () const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classeos_1_1Mutable_a31d51dbb25d02ad989592b43de8a787b}
+
+
+Make a copy of this \hyperlink{classeos_1_1Mutable}{Mutable}. 
+
+Implemented in \hyperlink{classeos_1_1Parameter_a8a643807f254a9601349c779cf6211dc}{eos::Parameter}.\hypertarget{classeos_1_1Mutable_ad215a3863435593930a3543866881f49}{
+\index{eos::Mutable@{eos::Mutable}!name@{name}}
+\index{name@{name}!eos::Mutable@{eos::Mutable}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}virtual const std::string\& eos::Mutable::name () const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classeos_1_1Mutable_ad215a3863435593930a3543866881f49}
+
+
+Implemented in \hyperlink{classeos_1_1Parameter_a86f581847722de0445ae65065940fd13}{eos::Parameter}.\hypertarget{classeos_1_1Mutable_a0763bf2933503db18d28b942aae2d324}{
+\index{eos::Mutable@{eos::Mutable}!operator double@{operator double}}
+\index{operator double@{operator double}!eos::Mutable@{eos::Mutable}}
+\subsubsection[{operator double}]{\setlength{\rightskip}{0pt plus 5cm}virtual eos::Mutable::operator double () const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classeos_1_1Mutable_a0763bf2933503db18d28b942aae2d324}
+
+
+Retrieve a Mutable's numeric value. 
+
+Implemented in \hyperlink{classeos_1_1Parameter_ad2dc69fe74e308328dc8a1d901c916ec}{eos::Parameter}.\hypertarget{classeos_1_1Mutable_a6efd15ab0164a1735813669506e331d7}{
+\index{eos::Mutable@{eos::Mutable}!operator()@{operator()}}
+\index{operator()@{operator()}!eos::Mutable@{eos::Mutable}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}virtual double eos::Mutable::operator() () const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classeos_1_1Mutable_a6efd15ab0164a1735813669506e331d7}
+
+
+Retrieve a Mutable's numeric value. 
+
+Implemented in \hyperlink{classeos_1_1Parameter_ada58e0206d67777a79bdd2bc0c806600}{eos::Parameter}.\hypertarget{classeos_1_1Mutable_abf079592435ecb22f242b7b01c279c72}{
+\index{eos::Mutable@{eos::Mutable}!operator=@{operator=}}
+\index{operator=@{operator=}!eos::Mutable@{eos::Mutable}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf Mutable}\& eos::Mutable::operator= (const double \&)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classeos_1_1Mutable_abf079592435ecb22f242b7b01c279c72}
+
+
+Set a Mutable's numeric value. 
+
+Implemented in \hyperlink{classeos_1_1Parameter_aff29f9acdc90019e76239f6c81b4014a}{eos::Parameter}.
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{mutable_8hh}{mutable.hh}\end{DoxyCompactItemize}

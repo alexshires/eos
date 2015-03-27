@@ -1,0 +1,333 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1AnalyticFormFactorBToPiDKMMO2008" kind="class" prot="public">
+    <compoundname>eos::AnalyticFormFactorBToPiDKMMO2008</compoundname>
+    <basecompoundref refid="classeos_1_1FormFactors_3_01PToP_01_4" prot="public" virt="non-virtual">eos::FormFactors&lt; PToP &gt;</basecompoundref>
+    <basecompoundref refid="classeos_1_1PrivateImplementationPattern" prot="private" virt="non-virtual">eos::PrivateImplementationPattern&lt; AnalyticFormFactorBToPiDKMMO2008 &gt;</basecompoundref>
+    <includes refid="analytic-b-to-pi_8hh" local="no">analytic-b-to-pi.hh</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1aee4ce0fc9eb6b6dbb95ccb80b59c0aa3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::AnalyticFormFactorBToPiDKMMO2008::AnalyticFormFactorBToPiDKMMO2008</definition>
+        <argsstring>(const Parameters &amp;, const Options &amp;)</argsstring>
+        <name>AnalyticFormFactorBToPiDKMMO2008</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="classeos_1_1Options" kindref="compound">Options</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/analytic-b-to-pi.hh" line="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1afdb28ecd4ce74296cb8b4e99af7819dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eos::AnalyticFormFactorBToPiDKMMO2008::~AnalyticFormFactorBToPiDKMMO2008</definition>
+        <argsstring>()</argsstring>
+        <name>~AnalyticFormFactorBToPiDKMMO2008</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/analytic-b-to-pi.hh" line="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1a8eff8336c192970590daafaad2e1ae0d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::AnalyticFormFactorBToPiDKMMO2008::F_lo_tw2</definition>
+        <argsstring>(const double &amp;q2) const </argsstring>
+        <name>F_lo_tw2</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>q2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/analytic-b-to-pi.hh" line="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1ae19b96e05460dcb94c6382a49bc009a4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::AnalyticFormFactorBToPiDKMMO2008::F_lo_tw3</definition>
+        <argsstring>(const double &amp;q2) const </argsstring>
+        <name>F_lo_tw3</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>q2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/analytic-b-to-pi.hh" line="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1a1a9ca014971d5c140df4fc3c9bf03879" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::AnalyticFormFactorBToPiDKMMO2008::F_lo_tw4</definition>
+        <argsstring>(const double &amp;q2) const </argsstring>
+        <name>F_lo_tw4</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>q2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/analytic-b-to-pi.hh" line="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1abb2691fe8415e5c5c4db53af3ef4ba41" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::AnalyticFormFactorBToPiDKMMO2008::F_nlo_tw2</definition>
+        <argsstring>(const double &amp;q2) const </argsstring>
+        <name>F_nlo_tw2</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>q2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/analytic-b-to-pi.hh" line="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1a8d4a9d28a81a8b60d557162f0e3a0c5a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::AnalyticFormFactorBToPiDKMMO2008::F_nlo_tw3</definition>
+        <argsstring>(const double &amp;q2) const </argsstring>
+        <name>F_nlo_tw3</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>q2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/analytic-b-to-pi.hh" line="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1acc3cbe21d5bab4ee23a457b757749bbf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double eos::AnalyticFormFactorBToPiDKMMO2008::f_p</definition>
+        <argsstring>(const double &amp;q2) const </argsstring>
+        <name>f_p</name>
+        <reimplements refid="classeos_1_1FormFactors_3_01PToP_01_4_1a987757eb4559de496005ed2730e78a10">f_p</reimplements>
+        <param>
+          <type>const double &amp;</type>
+          <declname>q2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/analytic-b-to-pi.hh" line="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1a646f3764614e79700d31571b9df620ba" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double eos::AnalyticFormFactorBToPiDKMMO2008::f_0</definition>
+        <argsstring>(const double &amp;q2) const </argsstring>
+        <name>f_0</name>
+        <reimplements refid="classeos_1_1FormFactors_3_01PToP_01_4_1a097a12cde6acb9004d1a92cbb8e60734">f_0</reimplements>
+        <param>
+          <type>const double &amp;</type>
+          <declname>q2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/analytic-b-to-pi.hh" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1aa3903289904f6e732bc9094f3826d3be" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double eos::AnalyticFormFactorBToPiDKMMO2008::f_t</definition>
+        <argsstring>(const double &amp;q2) const </argsstring>
+        <name>f_t</name>
+        <reimplements refid="classeos_1_1FormFactors_3_01PToP_01_4_1ae753d67d42936bd32b043838e7fb769a">f_t</reimplements>
+        <param>
+          <type>const double &amp;</type>
+          <declname>q2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/analytic-b-to-pi.hh" line="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1abc228c8f704b43ac2c777ab48d22c08c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::AnalyticFormFactorBToPiDKMMO2008::MB_lcsr</definition>
+        <argsstring>(const double &amp;q2) const </argsstring>
+        <name>MB_lcsr</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>q2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/analytic-b-to-pi.hh" line="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1a813b78c9a4e5ea82d7f77154e7dffa63" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eos::AnalyticFormFactorBToPiDKMMO2008::MB_svz</definition>
+        <argsstring>() const </argsstring>
+        <name>MB_svz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/analytic-b-to-pi.hh" line="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1a4996873565e4da45f132cbfdd90f7617" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeos_1_1Diagnostics" kindref="compound">Diagnostics</ref></type>
+        <definition>Diagnostics eos::AnalyticFormFactorBToPiDKMMO2008::diagnostics</definition>
+        <argsstring>() const </argsstring>
+        <name>diagnostics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/analytic-b-to-pi.hh" line="60"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1aff2cc738d3c04dee5e593ef6e40d84e3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FormFactors&lt; <ref refid="structeos_1_1PToP" kindref="compound">PToP</ref> &gt; *</type>
+        <definition>static FormFactors&lt;PToP&gt;* eos::AnalyticFormFactorBToPiDKMMO2008::make</definition>
+        <argsstring>(const Parameters &amp;, unsigned)</argsstring>
+        <name>make</name>
+        <param>
+          <type>const <ref refid="classeos_1_1Parameters" kindref="compound">Parameters</ref> &amp;</type>
+        </param>
+        <param>
+          <type>unsigned</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/analytic-b-to-pi.hh" line="39"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="43">
+        <label>eos::PrivateImplementationPattern&lt; AnalyticFormFactorBToPiDKMMO2008 &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="40">
+        <label>eos::AnalyticFormFactorBToPiDKMMO2008</label>
+        <link refid="classeos_1_1AnalyticFormFactorBToPiDKMMO2008"/>
+        <childnode refid="41" relation="public-inheritance">
+        </childnode>
+        <childnode refid="43" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>eos::ParameterUser</label>
+        <link refid="classeos_1_1ParameterUser"/>
+      </node>
+      <node id="41">
+        <label>eos::FormFactors&lt; PToP &gt;</label>
+        <link refid="classeos_1_1FormFactors_3_01PToP_01_4"/>
+        <childnode refid="42" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="48">
+        <label>eos::PrivateImplementationPattern&lt; AnalyticFormFactorBToPiDKMMO2008 &gt;</label>
+        <link refid="classeos_1_1PrivateImplementationPattern"/>
+      </node>
+      <node id="47">
+        <label>std::set&lt; Parameter::Id &gt;</label>
+      </node>
+      <node id="44">
+        <label>eos::AnalyticFormFactorBToPiDKMMO2008</label>
+        <link refid="classeos_1_1AnalyticFormFactorBToPiDKMMO2008"/>
+        <childnode refid="45" relation="public-inheritance">
+        </childnode>
+        <childnode refid="48" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>eos::ParameterUser</label>
+        <link refid="classeos_1_1ParameterUser"/>
+        <childnode refid="47" relation="usage">
+          <edgelabel>_ids</edgelabel>
+        </childnode>
+      </node>
+      <node id="45">
+        <label>eos::FormFactors&lt; PToP &gt;</label>
+        <link refid="classeos_1_1FormFactors_3_01PToP_01_4"/>
+        <childnode refid="46" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/form-factors/analytic-b-to-pi.hh" line="33" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/analytic-b-to-pi.hh" bodystart="30" bodyend="61"/>
+    <listofallmembers>
+      <member refid="classeos_1_1ParameterUser_1aa3a0285297e16cf2a5830df1f9bb2f4b" prot="protected" virt="non-virtual"><scope>eos::AnalyticFormFactorBToPiDKMMO2008</scope><name>_ids</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a232940e78b26c6ed4f97196f831c69c9" prot="private" virt="non-virtual"><scope>eos::AnalyticFormFactorBToPiDKMMO2008</scope><name>_imp</name></member>
+      <member refid="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1aee4ce0fc9eb6b6dbb95ccb80b59c0aa3" prot="public" virt="non-virtual"><scope>eos::AnalyticFormFactorBToPiDKMMO2008</scope><name>AnalyticFormFactorBToPiDKMMO2008</name></member>
+      <member refid="classeos_1_1ParameterUser_1a9cd569207063cd2a8f807c4e1203a5d4" prot="public" virt="non-virtual"><scope>eos::AnalyticFormFactorBToPiDKMMO2008</scope><name>begin</name></member>
+      <member refid="classeos_1_1ParameterUser_1a7105631bbcb4b2492e6377b2b69f5b0f" prot="public" virt="non-virtual"><scope>eos::AnalyticFormFactorBToPiDKMMO2008</scope><name>ConstIterator</name></member>
+      <member refid="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1a4996873565e4da45f132cbfdd90f7617" prot="public" virt="non-virtual"><scope>eos::AnalyticFormFactorBToPiDKMMO2008</scope><name>diagnostics</name></member>
+      <member refid="classeos_1_1ParameterUser_1a5813c886f3fd3f074cc02a53fc9e0790" prot="public" virt="non-virtual"><scope>eos::AnalyticFormFactorBToPiDKMMO2008</scope><name>end</name></member>
+      <member refid="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1a646f3764614e79700d31571b9df620ba" prot="public" virt="virtual"><scope>eos::AnalyticFormFactorBToPiDKMMO2008</scope><name>f_0</name></member>
+      <member refid="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1a8eff8336c192970590daafaad2e1ae0d" prot="public" virt="non-virtual"><scope>eos::AnalyticFormFactorBToPiDKMMO2008</scope><name>F_lo_tw2</name></member>
+      <member refid="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1ae19b96e05460dcb94c6382a49bc009a4" prot="public" virt="non-virtual"><scope>eos::AnalyticFormFactorBToPiDKMMO2008</scope><name>F_lo_tw3</name></member>
+      <member refid="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1a1a9ca014971d5c140df4fc3c9bf03879" prot="public" virt="non-virtual"><scope>eos::AnalyticFormFactorBToPiDKMMO2008</scope><name>F_lo_tw4</name></member>
+      <member refid="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1abb2691fe8415e5c5c4db53af3ef4ba41" prot="public" virt="non-virtual"><scope>eos::AnalyticFormFactorBToPiDKMMO2008</scope><name>F_nlo_tw2</name></member>
+      <member refid="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1a8d4a9d28a81a8b60d557162f0e3a0c5a" prot="public" virt="non-virtual"><scope>eos::AnalyticFormFactorBToPiDKMMO2008</scope><name>F_nlo_tw3</name></member>
+      <member refid="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1acc3cbe21d5bab4ee23a457b757749bbf" prot="public" virt="virtual"><scope>eos::AnalyticFormFactorBToPiDKMMO2008</scope><name>f_p</name></member>
+      <member refid="classeos_1_1FormFactors_3_01PToP_01_4_1a16406f05b7715291b392f856fff988e2" prot="public" virt="virtual"><scope>eos::AnalyticFormFactorBToPiDKMMO2008</scope><name>f_p_d1</name></member>
+      <member refid="classeos_1_1FormFactors_3_01PToP_01_4_1a875a81786cd947c56c0cdc1737455707" prot="public" virt="virtual"><scope>eos::AnalyticFormFactorBToPiDKMMO2008</scope><name>f_p_d2</name></member>
+      <member refid="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1aa3903289904f6e732bc9094f3826d3be" prot="public" virt="virtual"><scope>eos::AnalyticFormFactorBToPiDKMMO2008</scope><name>f_t</name></member>
+      <member refid="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1aff2cc738d3c04dee5e593ef6e40d84e3" prot="public" virt="non-virtual"><scope>eos::AnalyticFormFactorBToPiDKMMO2008</scope><name>make</name></member>
+      <member refid="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1abc228c8f704b43ac2c777ab48d22c08c" prot="public" virt="non-virtual"><scope>eos::AnalyticFormFactorBToPiDKMMO2008</scope><name>MB_lcsr</name></member>
+      <member refid="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1a813b78c9a4e5ea82d7f77154e7dffa63" prot="public" virt="non-virtual"><scope>eos::AnalyticFormFactorBToPiDKMMO2008</scope><name>MB_svz</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1a3e3d5f4a565256a1dda6c234b051b2f2" prot="private" virt="non-virtual"><scope>eos::AnalyticFormFactorBToPiDKMMO2008</scope><name>PrivateImplementationPattern</name></member>
+      <member refid="classeos_1_1ParameterUser_1ad91a901e589653272482bded7e453c70" prot="public" virt="non-virtual"><scope>eos::AnalyticFormFactorBToPiDKMMO2008</scope><name>uses</name></member>
+      <member refid="classeos_1_1ParameterUser_1a7a37e779cf45ef1075fe7bf670688b72" prot="public" virt="non-virtual"><scope>eos::AnalyticFormFactorBToPiDKMMO2008</scope><name>uses</name></member>
+      <member refid="classeos_1_1AnalyticFormFactorBToPiDKMMO2008_1afdb28ecd4ce74296cb8b4e99af7819dd" prot="public" virt="non-virtual"><scope>eos::AnalyticFormFactorBToPiDKMMO2008</scope><name>~AnalyticFormFactorBToPiDKMMO2008</name></member>
+      <member refid="classeos_1_1FormFactors_3_01PToP_01_4_1a2e81880c8a11bbe98466cd077c41b2b2" prot="public" virt="virtual"><scope>eos::AnalyticFormFactorBToPiDKMMO2008</scope><name>~FormFactors</name></member>
+      <member refid="classeos_1_1PrivateImplementationPattern_1acf46ec2739c3b0ec9702b9428475876d" prot="private" virt="non-virtual"><scope>eos::AnalyticFormFactorBToPiDKMMO2008</scope><name>~PrivateImplementationPattern</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

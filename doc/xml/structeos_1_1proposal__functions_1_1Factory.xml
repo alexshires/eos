@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1proposal__functions_1_1Factory" kind="struct" prot="public">
+    <compoundname>eos::proposal_functions::Factory</compoundname>
+    <includes refid="proposal__functions_8hh" local="no">proposal_functions.hh</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structeos_1_1proposal__functions_1_1Factory_1ada0a929817e75ed0ee50dcdbc496ca49" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceeos_1ae97f9891c67c90959a03fc96efaa4dc9" kindref="member">ProposalFunctionPtr</ref></type>
+        <definition>static ProposalFunctionPtr eos::proposal_functions::Factory::make</definition>
+        <argsstring>(const hdf5::File &amp;file, const std::string &amp;data_set_base_name, const std::string &amp;proposal_name, const unsigned &amp;dimension)</argsstring>
+        <name>make</name>
+        <param>
+          <type>const <ref refid="classeos_1_1hdf5_1_1File" kindref="compound">hdf5::File</ref> &amp;</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>data_set_base_name</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>proposal_name</declname>
+        </param>
+        <param>
+          <type>const unsigned &amp;</type>
+          <declname>dimension</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="78"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Abstract factory to read in a proposal density from file. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" line="76" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh" bodystart="75" bodyend="79"/>
+    <listofallmembers>
+      <member refid="structeos_1_1proposal__functions_1_1Factory_1ada0a929817e75ed0ee50dcdbc496ca49" prot="public" virt="non-virtual"><scope>eos::proposal_functions::Factory</scope><name>make</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

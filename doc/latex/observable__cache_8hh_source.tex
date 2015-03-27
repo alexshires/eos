@@ -1,0 +1,68 @@
+\hypertarget{observable__cache_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/observable\_\-cache.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2011 Danny van Dyk}
+00005 \textcolor{comment}{ * Copyright (c) 2011 Frederik Beaujean}
+00006 \textcolor{comment}{ *}
+00007 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00008 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00009 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00010 \textcolor{comment}{ *}
+00011 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00012 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00013 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00014 \textcolor{comment}{ * details.}
+00015 \textcolor{comment}{ *}
+00016 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00017 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00018 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00019 \textcolor{comment}{ */}
+00020 
+00021 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_OBSERVABLE\_CACHE\_HH}
+\hypertarget{observable__cache_8hh_source_l00022}{}\hyperlink{observable__cache_8hh_a6c94a37b947cd51d6745ff3e6ef9ee85}{00022} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_OBSERVABLE\_CACHE\_HH 1}
+00023 \textcolor{preprocessor}{}
+00024 \textcolor{preprocessor}{#include <\hyperlink{observable_8hh}{eos/observable.hh}>}
+00025 \textcolor{preprocessor}{#include <\hyperlink{parameters_8hh}{eos/utils/parameters.hh}>}
+00026 \textcolor{preprocessor}{#include <\hyperlink{private__implementation__pattern_8hh}{eos/utils/private_implementation_pattern.hh}>}
+00027 
+00028 \textcolor{keyword}{namespace }eos
+00029 \{
+\hypertarget{observable__cache_8hh_source_l00030}{}\hyperlink{classeos_1_1ObservableCache}{00030}     \textcolor{keyword}{class }\hyperlink{classeos_1_1ObservableCache}{ObservableCache} :
+00031         \textcolor{keyword}{public} \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern}<ObservableCache>
+00032     \{
+00033         \textcolor{keyword}{public}:
+00036 
+00041             \hyperlink{classeos_1_1ObservableCache_afc29264c67c8404ab659ab3ebce0677a}{ObservableCache}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & \hyperlink{classeos_1_1ObservableCache_ac4dafff6d4eb3b29157d5f326b880c85}{parameters});
+00042 
+00044             \hyperlink{classeos_1_1ObservableCache_aee7b3cb68fe74a44faff0fed5547830d}{~ObservableCache}();
+00046 
+\hypertarget{observable__cache_8hh_source_l00049}{}\hyperlink{classeos_1_1ObservableCache_a393f1d7c8c2a58bc95845e12b615c6ee}{00049}             \textcolor{keyword}{typedef} \textcolor{keywordtype}{unsigned} \hyperlink{classeos_1_1ObservableCache_a393f1d7c8c2a58bc95845e12b615c6ee}{Id};
+00050 
+00056             \hyperlink{classeos_1_1ObservableCache_a393f1d7c8c2a58bc95845e12b615c6ee}{Id} \hyperlink{classeos_1_1ObservableCache_a5994a8d42de0afabc01d401ef8bf27af}{add}(\textcolor{keyword}{const} \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} & \hyperlink{classeos_1_1ObservableCache_a171e7c1c0e4e2741dc155e4b249bca6d}{observable});
+00057 
+00059             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1ObservableCache_ae69a231f0546cabd80266f4c0fb8b49f}{update}();
+00060 
+00067             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1ObservableCache_ae69a231f0546cabd80266f4c0fb8b49f}{update}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameter_a065f55e66b2128cc5f14339e676d833a}{Parameter::Id} & \textcolor{keywordtype}{id});
+00068 
+00070             \hyperlink{classeos_1_1Parameters}{Parameters} \hyperlink{classeos_1_1ObservableCache_ac4dafff6d4eb3b29157d5f326b880c85}{parameters}() \textcolor{keyword}{const};
+00071 
+00073             \textcolor{keywordtype}{void} \hyperlink{classeos_1_1ObservableCache_a4e1287495ae908ae08a1550a3c5fbdcc}{reset}();
+00074 
+00080             \hyperlink{namespaceeos_a470e5dd806bd129080f1aa0c2954646f}{ObservablePtr} \hyperlink{classeos_1_1ObservableCache_a171e7c1c0e4e2741dc155e4b249bca6d}{observable}(\textcolor{keyword}{const} \hyperlink{classeos_1_1ObservableCache_a393f1d7c8c2a58bc95845e12b615c6ee}{ObservableCache::Id} & \textcolor{keywordtype}{id}) \textcolor{keyword}{const};
+00081 
+00087             \textcolor{keywordtype}{double} \hyperlink{classeos_1_1ObservableCache_a9ad7f1672817b0d69bda7dfc9471bc43}{operator[] }(\textcolor{keyword}{const} \hyperlink{classeos_1_1ObservableCache_a393f1d7c8c2a58bc95845e12b615c6ee}{ObservableCache::Id} & \textcolor{keywordtype}{id}) \textcolor{keyword}{const};
+00088 
+00090             \textcolor{keywordtype}{unsigned} \hyperlink{classeos_1_1ObservableCache_a8cf868c54289d6ec010c72cdab954ded}{size}() \textcolor{keyword}{const};
+00091 
+00093             \hyperlink{classeos_1_1ObservableCache}{ObservableCache} \hyperlink{classeos_1_1ObservableCache_af1f92ddabdeb26ae35ba66f8e6b73c18}{clone}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & parameters) \textcolor{keyword}{const};
+00094     \};
+00095 \}
+00096 
+00097 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

@@ -1,0 +1,420 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="markov__chain_8hh" kind="file">
+    <compoundname>markov_chain.hh</compoundname>
+    <includes refid="analysis-fwd_8hh" local="no">eos/utils/analysis-fwd.hh</includes>
+    <includes refid="hdf5-fwd_8hh" local="no">eos/utils/hdf5-fwd.hh</includes>
+    <includes refid="parameters_8hh" local="no">eos/utils/parameters.hh</includes>
+    <includes refid="stringify_8hh" local="no">eos/utils/stringify.hh</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">gsl/gsl_rng.h</includes>
+    <includedby refid="cluster_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/cluster.hh</includedby>
+    <includedby refid="markov__chain__sampler_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/markov_chain_sampler.hh</includedby>
+    <includedby refid="proposal__functions_8hh" local="no">/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh</includedby>
+    <incdepgraph>
+      <node id="1045">
+        <label>functional</label>
+      </node>
+      <node id="1040">
+        <label>eos/utils/parameters-fwd.hh</label>
+        <link refid="parameters-fwd_8hh"/>
+      </node>
+      <node id="1046">
+        <label>iterator</label>
+      </node>
+      <node id="1042">
+        <label>cstdint</label>
+      </node>
+      <node id="1036">
+        <label>string</label>
+      </node>
+      <node id="1039">
+        <label>eos/utils/private_implementation_pattern.hh</label>
+        <link refid="private__implementation__pattern_8hh"/>
+        <childnode refid="1031" relation="include">
+        </childnode>
+      </node>
+      <node id="1044">
+        <label>eos/utils/wrapped_forward_iterator-fwd.hh</label>
+        <link refid="wrapped__forward__iterator-fwd_8hh"/>
+      </node>
+      <node id="1035">
+        <label>exception</label>
+      </node>
+      <node id="1030">
+        <label>eos/utils/analysis-fwd.hh</label>
+        <link refid="analysis-fwd_8hh"/>
+        <childnode refid="1031" relation="include">
+        </childnode>
+      </node>
+      <node id="1032">
+        <label>eos/utils/hdf5-fwd.hh</label>
+        <link refid="hdf5-fwd_8hh"/>
+      </node>
+      <node id="1037">
+        <label>eos/utils/mutable.hh</label>
+        <link refid="mutable_8hh"/>
+        <childnode refid="1038" relation="include">
+        </childnode>
+        <childnode refid="1039" relation="include">
+        </childnode>
+        <childnode refid="1031" relation="include">
+        </childnode>
+      </node>
+      <node id="1051">
+        <label>vector</label>
+      </node>
+      <node id="1050">
+        <label>sstream</label>
+      </node>
+      <node id="1041">
+        <label>eos/utils/random_number_generator.hh</label>
+        <link refid="random__number__generator_8hh"/>
+        <childnode refid="1039" relation="include">
+        </childnode>
+        <childnode refid="1042" relation="include">
+        </childnode>
+      </node>
+      <node id="1034">
+        <label>eos/utils/exception.hh</label>
+        <link refid="exception_8hh"/>
+        <childnode refid="1035" relation="include">
+        </childnode>
+        <childnode refid="1036" relation="include">
+        </childnode>
+      </node>
+      <node id="1029">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh</label>
+        <link refid="markov_chain.hh"/>
+        <childnode refid="1030" relation="include">
+        </childnode>
+        <childnode refid="1032" relation="include">
+        </childnode>
+        <childnode refid="1033" relation="include">
+        </childnode>
+        <childnode refid="1049" relation="include">
+        </childnode>
+        <childnode refid="1051" relation="include">
+        </childnode>
+        <childnode refid="1052" relation="include">
+        </childnode>
+      </node>
+      <node id="1043">
+        <label>eos/utils/wrapped_forward_iterator.hh</label>
+        <link refid="wrapped__forward__iterator_8hh"/>
+        <childnode refid="1044" relation="include">
+        </childnode>
+        <childnode refid="1045" relation="include">
+        </childnode>
+        <childnode refid="1046" relation="include">
+        </childnode>
+        <childnode refid="1047" relation="include">
+        </childnode>
+      </node>
+      <node id="1049">
+        <label>eos/utils/stringify.hh</label>
+        <link refid="stringify_8hh"/>
+        <childnode refid="1036" relation="include">
+        </childnode>
+        <childnode refid="1050" relation="include">
+        </childnode>
+      </node>
+      <node id="1052">
+        <label>gsl/gsl_rng.h</label>
+      </node>
+      <node id="1047">
+        <label>type_traits</label>
+      </node>
+      <node id="1048">
+        <label>set</label>
+      </node>
+      <node id="1038">
+        <label>eos/utils/mutable-fwd.hh</label>
+        <link refid="mutable-fwd_8hh"/>
+      </node>
+      <node id="1033">
+        <label>eos/utils/parameters.hh</label>
+        <link refid="parameters_8hh"/>
+        <childnode refid="1034" relation="include">
+        </childnode>
+        <childnode refid="1037" relation="include">
+        </childnode>
+        <childnode refid="1040" relation="include">
+        </childnode>
+        <childnode refid="1039" relation="include">
+        </childnode>
+        <childnode refid="1041" relation="include">
+        </childnode>
+        <childnode refid="1043" relation="include">
+        </childnode>
+        <childnode refid="1048" relation="include">
+        </childnode>
+      </node>
+      <node id="1031">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1055">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/proposal_functions.hh</label>
+        <link refid="proposal__functions_8hh"/>
+        <childnode refid="1056" relation="include">
+        </childnode>
+      </node>
+      <node id="1054">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/cluster.hh</label>
+        <link refid="cluster_8hh"/>
+        <childnode refid="1055" relation="include">
+        </childnode>
+      </node>
+      <node id="1056">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/markov_chain_sampler.hh</label>
+        <link refid="markov__chain__sampler_8hh"/>
+      </node>
+      <node id="1053">
+        <label>/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh</label>
+        <link refid="markov_chain.hh"/>
+        <childnode refid="1054" relation="include">
+        </childnode>
+        <childnode refid="1056" relation="include">
+        </childnode>
+        <childnode refid="1055" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classeos_1_1MarkovChain" prot="public">eos::MarkovChain</innerclass>
+    <innerclass refid="structeos_1_1MarkovChain_1_1HyperParameter" prot="public">eos::MarkovChain::HyperParameter</innerclass>
+    <innerclass refid="structeos_1_1MarkovChain_1_1State" prot="public">eos::MarkovChain::State</innerclass>
+    <innerclass refid="structeos_1_1MarkovChain_1_1Stats" prot="public">eos::MarkovChain::Stats</innerclass>
+    <innerclass refid="structeos_1_1MarkovChain_1_1History" prot="public">eos::MarkovChain::History</innerclass>
+    <innerclass refid="structeos_1_1MarkovChain_1_1ProposalFunction" prot="public">eos::MarkovChain::ProposalFunction</innerclass>
+    <innernamespace refid="namespaceeos">eos</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="markov__chain_8hh_1ae0ec1ee591df5ff97e6f782528436afc" prot="public" static="no">
+        <name>EOS_GUARD_SRC_UTILS_MARKOV_CHAIN_HH</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" line="21" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>vim:<sp/>set<sp/>sw=4<sp/>sts=4<sp/>et<sp/>foldmethod=syntax<sp/>:<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2011<sp/>Frederik<sp/>Beaujean</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>EOS<sp/>project.<sp/>EOS<sp/>is<sp/>free<sp/>software;</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Public<sp/>License<sp/>version<sp/>2,<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>EOS<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/>but<sp/>WITHOUT<sp/>ANY</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>along<sp/>with</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/>59<sp/>Temple</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>Place,<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307<sp/><sp/>USA</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>EOS_GUARD_SRC_UTILS_MARKOV_CHAIN_HH</highlight></codeline>
+<codeline lineno="21" refid="markov__chain_8hh_1ae0ec1ee591df5ff97e6f782528436afc" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EOS_GUARD_SRC_UTILS_MARKOV_CHAIN_HH<sp/>1</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="analysis-fwd_8hh" kindref="compound">eos/utils/analysis-fwd.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="hdf5-fwd_8hh" kindref="compound">eos/utils/hdf5-fwd.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="parameters_8hh" kindref="compound">eos/utils/parameters.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="stringify_8hh" kindref="compound">eos/utils/stringify.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gsl/gsl_rng.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">eos</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34" refid="classeos_1_1MarkovChain" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classeos_1_1MarkovChain" kindref="compound">MarkovChain</ref><sp/>:</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1PrivateImplementationPattern" kindref="compound">PrivateImplementationPattern</ref>&lt;MarkovChain&gt;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="structeos_1_1MarkovChain_1_1History" kindref="compound">History</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">State</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="structeos_1_1MarkovChain_1_1ProposalFunction" kindref="compound">ProposalFunction</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="structeos_1_1MarkovChain_1_1HyperParameter" kindref="compound">HyperParameter</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="structeos_1_1MarkovChain_1_1Stats" kindref="compound">Stats</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1MarkovChain_1a47726a7176a818738c426b532e88ba94" kindref="member">MarkovChain</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Analysis" kindref="compound">Analysis</ref><sp/>&amp;<sp/>analysis,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>seed,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;MarkovChain::ProposalFunction&gt;<sp/>&amp;<sp/><ref refid="classeos_1_1MarkovChain_1acfde2f6063a9ad8f6a4dabb548997b4d" kindref="member" tooltip="Access to the proposal function.">proposal_function</ref>);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeos_1_1MarkovChain_1afc27e695a24e780cd1af87e454588f31" kindref="member" tooltip="Destructor.">~MarkovChain</ref>();</highlight></codeline>
+<codeline lineno="57"></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChain_1af4eb1b21be84a13ae5f421fe49ed9373" kindref="member" tooltip="Remove existing history of this chain.">clear</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">State</ref><sp/>&amp;<sp/><ref refid="classeos_1_1MarkovChain_1a4ba66e0d64dade9f392d2542a7c566f4" kindref="member" tooltip="Retrieve information regarding the current state.">current_state</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>todo<sp/>document</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChain_1af528eb210dd7052ceeb9455cb588cdd4" kindref="member">dump_description</ref>(<ref refid="classeos_1_1hdf5_1_1File" kindref="compound">hdf5::File</ref><sp/>&amp;<sp/>file,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/>data_set)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChain_1aa7fc24a3066077ab60de68a5a3f8ebe5" kindref="member">dump_history</ref>(<ref refid="classeos_1_1hdf5_1_1File" kindref="compound">hdf5::File</ref><sp/>&amp;<sp/>file,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/>data_set_name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>&amp;<sp/>last_iterations)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChain_1a89a777f8c14787db1e803995ee77d862" kindref="member">dump_proposal</ref>(<ref refid="classeos_1_1hdf5_1_1File" kindref="compound">hdf5::File</ref><sp/>&amp;<sp/>file,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/>data_set_name)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structeos_1_1MarkovChain_1_1HyperParameter" kindref="compound">MarkovChain::HyperParameter</ref><sp/>&amp;<sp/><ref refid="classeos_1_1MarkovChain_1aa3055684326d68700ebeb994b878d8db" kindref="member">hyper_parameter</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>current<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>&amp;<sp/><ref refid="classeos_1_1MarkovChain_1a3a9c62e634a375bffbb3fba0b7794b69" kindref="member" tooltip="Retrieve the number of iterations used in the last run.">iterations_last_run</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1History" kindref="compound">History</ref><sp/>&amp;<sp/><ref refid="classeos_1_1MarkovChain_1ae1ef51057e7a205fbc9d04a5e913fb06" kindref="member" tooltip="Retrieve the chain&amp;#39;s detailed history.">history</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChain_1a808902afe1f1c7def764c4c492e29f1d" kindref="member" tooltip="Set analysis.">set_analysis</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1Analysis" kindref="compound">Analysis</ref><sp/>&amp;<sp/>analysis);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChain_1a8aa1b0fac7040d32e42a8b2a8a508743" kindref="member">keep_history</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>keep_samples,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>keep_observables_and_proposals<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChain_1a0424b9803e0a479c88f76713455662fa" kindref="member">normalized_density</ref>(std::tuple&lt;double,<sp/>double&gt;<sp/>&amp;<sp/>result,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;<sp/>&amp;<sp/>point,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>&amp;<sp/>posterior_evaluations)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;ParameterDescription&gt;<sp/>&amp;<sp/><ref refid="classeos_1_1MarkovChain_1affcf4c3c4284fd0fae634c5cf1a97fa2" kindref="member" tooltip="Retrieve the descriptions of all parameters that are explored by this chain.">parameter_descriptions</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChain_1a42c06afd1034be43e44bcbb24a15c808" kindref="member" tooltip="Check whether the most recently proposed move was accepted.">proposal_accepted</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_ptr&lt;MarkovChain::ProposalFunction&gt;<sp/><ref refid="classeos_1_1MarkovChain_1acfde2f6063a9ad8f6a4dabb548997b4d" kindref="member" tooltip="Access to the proposal function.">proposal_function</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChain_1acfde2f6063a9ad8f6a4dabb548997b4d" kindref="member" tooltip="Access to the proposal function.">proposal_function</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;MarkovChain::ProposalFunction&gt;<sp/>&amp;);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">State</ref><sp/>&amp;<sp/><ref refid="classeos_1_1MarkovChain_1a094a7852f4983a3c26e6a062b66f2547" kindref="member" tooltip="Retrieve information regarding the most recently proposed state.">proposed_state</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChain_1a4e54cc6e32c7bb258804b76988ab7f0b" kindref="member">reset</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>hard<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChain_1a9d67db1a7839b07dc43a847b6383e619" kindref="member">read_data</ref>(<ref refid="classeos_1_1hdf5_1_1File" kindref="compound">hdf5::File</ref><sp/>&amp;<sp/>file,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/>data_base_name,</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structeos_1_1MarkovChain_1_1History" kindref="compound">MarkovChain::History</ref><sp/>&amp;<sp/>history,</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_ptr&lt;MarkovChain::ProposalFunction&gt;<sp/>&amp;<sp/>proposal,</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>&amp;<sp/>proposal_type,</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structeos_1_1MarkovChain_1_1Stats" kindref="compound">MarkovChain::Stats</ref><sp/>&amp;<sp/>stats);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChain_1acbcd604ef986e97891f0e358e045c117" kindref="member">read_descriptions</ref>(<ref refid="classeos_1_1hdf5_1_1File" kindref="compound">hdf5::File</ref><sp/>&amp;<sp/>file,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/>data_base_name,</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;ParameterDescription&gt;&amp;<sp/>descriptions,</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>&amp;<sp/>priors,</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>&amp;<sp/>constraints,</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>&amp;<sp/>hash);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChain_1abc73ca1b9fc5bdafba43c799e75192c8" kindref="member">run</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>&amp;<sp/>iterations);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChain_1a24a9d7e2f6f930594dd7140acd6180bb" kindref="member">set_mode</ref>(<ref refid="classeos_1_1hdf5_1_1File" kindref="compound">hdf5::File</ref><sp/>&amp;<sp/>file,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/>data_base_name,</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;<sp/>&amp;<sp/>point,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>posterior);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classeos_1_1MarkovChain_1a84d4342221f7f6a826d0a9a2480165c4" kindref="member">set_point</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;<sp/>&amp;<sp/>point,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1HyperParameter" kindref="compound">MarkovChain::HyperParameter</ref><sp/>&amp;<sp/>hyper_parameter);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1Stats" kindref="compound">Stats</ref><sp/>&amp;<sp/><ref refid="classeos_1_1MarkovChain_1af48c29cabc958e061f699e595ffa3294" kindref="member" tooltip="Retrieve statistical data that summarizes the evolution of the chain up to the current...">statistics</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192" refid="structeos_1_1MarkovChain_1_1HyperParameter" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structeos_1_1MarkovChain_1_1HyperParameter" kindref="compound">MarkovChain::HyperParameter</ref></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="195" refid="structeos_1_1MarkovChain_1_1HyperParameter_1a775ee43b8fb689d149cd2190c994c8a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1HyperParameter_1a775ee43b8fb689d149cd2190c994c8a9" kindref="member" tooltip="Indicating the current component.">component</ref>;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202" refid="structeos_1_1MarkovChain_1_1State" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">MarkovChain::State</ref></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="204" refid="structeos_1_1MarkovChain_1_1State_1ad7590843e4feca7e696c53863e6e10c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::vector&lt;State&gt;::const_iterator<sp/><ref refid="structeos_1_1MarkovChain_1_1State_1ad7590843e4feca7e696c53863e6e10c1" kindref="member">Iterator</ref>;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207" refid="structeos_1_1MarkovChain_1_1State_1a13518a1ded09d2c61dbfc2cc40297b94" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/><ref refid="structeos_1_1MarkovChain_1_1State_1a13518a1ded09d2c61dbfc2cc40297b94" kindref="member" tooltip="position in parameter space">point</ref>;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210" refid="structeos_1_1MarkovChain_1_1State_1a0876fac286eb6eb52165389cfcc9e602" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1State_1a0876fac286eb6eb52165389cfcc9e602" kindref="member" tooltip="log likelihood at the point">log_likelihood</ref>;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213" refid="structeos_1_1MarkovChain_1_1State_1a4fa9205eb7785b52cc97f13714a3f62b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1State_1a4fa9205eb7785b52cc97f13714a3f62b" kindref="member" tooltip="log prior at the point">log_prior</ref>;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216" refid="structeos_1_1MarkovChain_1_1State_1a893de1735354ecbfa51b34655fb28833" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1State_1a893de1735354ecbfa51b34655fb28833" kindref="member" tooltip="log posterior at the points">log_posterior</ref>;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219" refid="structeos_1_1MarkovChain_1_1State_1a23f1f4c2b99c7b8956409f5f645d0337" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structeos_1_1MarkovChain_1_1HyperParameter" kindref="compound">MarkovChain::HyperParameter</ref><sp/><ref refid="structeos_1_1MarkovChain_1_1State_1a23f1f4c2b99c7b8956409f5f645d0337" kindref="member" tooltip="Contains possibly multidimensional hyperparameter information.">hyper_parameter</ref>;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221" refid="structeos_1_1MarkovChain_1_1State_1a93beca0dcab0389f5b822394f341afc6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structeos_1_1MarkovChain_1_1State_1a93beca0dcab0389f5b822394f341afc6" kindref="member">State</ref>()</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225" refid="structeos_1_1MarkovChain_1_1State_1adaf4e7d6c9fc2b02f8adb1e924ceaf3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structeos_1_1MarkovChain_1_1State_1a93beca0dcab0389f5b822394f341afc6" kindref="member">State</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">State</ref><sp/>&amp;<sp/>other)</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structeos_1_1MarkovChain_1_1State_1a0876fac286eb6eb52165389cfcc9e602" kindref="member" tooltip="log likelihood at the point">log_likelihood</ref><sp/>=<sp/>other.<ref refid="structeos_1_1MarkovChain_1_1State_1a0876fac286eb6eb52165389cfcc9e602" kindref="member" tooltip="log likelihood at the point">log_likelihood</ref>;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structeos_1_1MarkovChain_1_1State_1a4fa9205eb7785b52cc97f13714a3f62b" kindref="member" tooltip="log prior at the point">log_prior</ref><sp/>=<sp/>other.<ref refid="structeos_1_1MarkovChain_1_1State_1a4fa9205eb7785b52cc97f13714a3f62b" kindref="member" tooltip="log prior at the point">log_prior</ref>;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structeos_1_1MarkovChain_1_1State_1a893de1735354ecbfa51b34655fb28833" kindref="member" tooltip="log posterior at the points">log_posterior</ref><sp/>=<sp/>other.<ref refid="structeos_1_1MarkovChain_1_1State_1a893de1735354ecbfa51b34655fb28833" kindref="member" tooltip="log posterior at the points">log_posterior</ref>;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structeos_1_1MarkovChain_1_1State_1a13518a1ded09d2c61dbfc2cc40297b94" kindref="member" tooltip="position in parameter space">point</ref>.resize(other.<ref refid="structeos_1_1MarkovChain_1_1State_1a13518a1ded09d2c61dbfc2cc40297b94" kindref="member" tooltip="position in parameter space">point</ref>.size());</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::copy(other.<ref refid="structeos_1_1MarkovChain_1_1State_1a13518a1ded09d2c61dbfc2cc40297b94" kindref="member" tooltip="position in parameter space">point</ref>.cbegin(),<sp/>other.<ref refid="structeos_1_1MarkovChain_1_1State_1a13518a1ded09d2c61dbfc2cc40297b94" kindref="member" tooltip="position in parameter space">point</ref>.cend(),<sp/><ref refid="structeos_1_1MarkovChain_1_1State_1a13518a1ded09d2c61dbfc2cc40297b94" kindref="member" tooltip="position in parameter space">point</ref>.begin());</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structeos_1_1MarkovChain_1_1State_1a23f1f4c2b99c7b8956409f5f645d0337" kindref="member" tooltip="Contains possibly multidimensional hyperparameter information.">hyper_parameter</ref><sp/>=<sp/>other.<ref refid="structeos_1_1MarkovChain_1_1State_1a23f1f4c2b99c7b8956409f5f645d0337" kindref="member" tooltip="Contains possibly multidimensional hyperparameter information.">hyper_parameter</ref>;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239" refid="structeos_1_1MarkovChain_1_1Stats" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structeos_1_1MarkovChain_1_1Stats" kindref="compound">MarkovChain::Stats</ref></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="245" refid="structeos_1_1MarkovChain_1_1Stats_1a0917e5acbc58e7b9fbe0c478b95e26ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1Stats_1a0917e5acbc58e7b9fbe0c478b95e26ac" kindref="member">iterations_total</ref>;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253" refid="structeos_1_1MarkovChain_1_1Stats_1a4a20f93d5d7f8a19ce9f59f3bb642563" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1Stats_1a4a20f93d5d7f8a19ce9f59f3bb642563" kindref="member">iterations_accepted</ref>;</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255" refid="structeos_1_1MarkovChain_1_1Stats_1a42f68b2f84a5b2e3190529b9d8449e0e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1Stats_1a42f68b2f84a5b2e3190529b9d8449e0e" kindref="member">iterations_invalid</ref>;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261" refid="structeos_1_1MarkovChain_1_1Stats_1a61fc40a3cbb379e8ebc57b11eb388514" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1Stats_1a61fc40a3cbb379e8ebc57b11eb388514" kindref="member">iterations_rejected</ref>;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264" refid="structeos_1_1MarkovChain_1_1Stats_1aead4abcd766affbdbb602d906b4938f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1Stats_1aead4abcd766affbdbb602d906b4938f6" kindref="member" tooltip="Maximum value of the posterior.">mode_of_posterior</ref>;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267" refid="structeos_1_1MarkovChain_1_1Stats_1a9000c8ee4f560120fcc5bec1c615e7b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/><ref refid="structeos_1_1MarkovChain_1_1Stats_1a9000c8ee4f560120fcc5bec1c615e7b0" kindref="member" tooltip="Parameter values at the maximum of the posterior.">parameters_at_mode</ref>;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270" refid="structeos_1_1MarkovChain_1_1Stats_1a43a0dbf5329e74fc9eef0cd7f5b28641" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/><ref refid="structeos_1_1MarkovChain_1_1Stats_1a43a0dbf5329e74fc9eef0cd7f5b28641" kindref="member" tooltip="Sample mean of parameter values.">mean_of_parameters</ref>;</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273" refid="structeos_1_1MarkovChain_1_1Stats_1aa1f42fd0080e7dc2e2edcc8f97f78c46" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1Stats_1aa1f42fd0080e7dc2e2edcc8f97f78c46" kindref="member" tooltip="Sample mean of posterior.">mean_of_posterior</ref>;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276" refid="structeos_1_1MarkovChain_1_1Stats_1ad97dc1a916cfe3905ae776804ec57106" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/><ref refid="structeos_1_1MarkovChain_1_1Stats_1ad97dc1a916cfe3905ae776804ec57106" kindref="member" tooltip="Sample variance of parameter values.">variance_of_parameters</ref>;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279" refid="structeos_1_1MarkovChain_1_1Stats_1a42b880c3445149482c9b8516257dcd8a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1Stats_1a42b880c3445149482c9b8516257dcd8a" kindref="member" tooltip="Sample variance of [log] posterior values.">variance_of_posterior</ref>;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282" refid="namespaceeos_1ac9f30fde04446cfabdd69d4b5b5d3c5a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;MarkovChain::History&gt;<sp/><ref refid="namespaceeos_1ac9f30fde04446cfabdd69d4b5b5d3c5a" kindref="member">HistoryPtr</ref>;</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287" refid="structeos_1_1MarkovChain_1_1History" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structeos_1_1MarkovChain_1_1History" kindref="compound">MarkovChain::History</ref></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>cmp(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">MarkovChain::State</ref><sp/>&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">MarkovChain::State</ref><sp/>&amp;<sp/>b);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295" refid="structeos_1_1MarkovChain_1_1History_1ac6b8c02c837f78b6724fcaa1cb4eaa74" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1History_1ac6b8c02c837f78b6724fcaa1cb4eaa74" kindref="member" tooltip="flag: if false =&amp;gt; don&amp;#39;t store numbers">keep</ref>;</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298" refid="structeos_1_1MarkovChain_1_1History_1acecd7f35ce23b811f5365bb96446fba8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;MarkovChain::State&gt;<sp/><ref refid="structeos_1_1MarkovChain_1_1History_1acecd7f35ce23b811f5365bb96446fba8" kindref="member" tooltip="All states.">states</ref>;</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">MarkovChain::State</ref><sp/>&amp;<sp/><ref refid="structeos_1_1MarkovChain_1_1History_1a590c268edb22f3d607dd7757f0bad114" kindref="member">local_mode</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1State_1ad7590843e4feca7e696c53863e6e10c1" kindref="member">MarkovChain::State::Iterator</ref><sp/>&amp;<sp/>begin,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1State_1ad7590843e4feca7e696c53863e6e10c1" kindref="member">MarkovChain::State::Iterator</ref><sp/>&amp;<sp/>end)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>todo:<sp/>make<sp/>static</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1History_1a4aa855975e42d10d25e43d327e4ef72a" kindref="member">mean_and_variance</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1State_1ad7590843e4feca7e696c53863e6e10c1" kindref="member">MarkovChain::State::Iterator</ref><sp/>&amp;<sp/>begin,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1State_1ad7590843e4feca7e696c53863e6e10c1" kindref="member">MarkovChain::State::Iterator</ref><sp/>&amp;<sp/>end,</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>&amp;<sp/>mean,<sp/>std::vector&lt;double&gt;<sp/>&amp;<sp/>variance)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1History_1a759445b30a1b1034937969a8db6e7668" kindref="member">mean_and_covariance</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1State_1ad7590843e4feca7e696c53863e6e10c1" kindref="member">MarkovChain::State::Iterator</ref><sp/>&amp;<sp/>begin,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1State_1ad7590843e4feca7e696c53863e6e10c1" kindref="member">MarkovChain::State::Iterator</ref><sp/>&amp;<sp/>end,</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>&amp;<sp/>mean,<sp/>std::vector&lt;double&gt;<sp/>&amp;<sp/>variance)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight></codeline>
+<codeline lineno="329" refid="namespaceeos_1ae97f9891c67c90959a03fc96efaa4dc9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;MarkovChain::ProposalFunction&gt;<sp/><ref refid="namespaceeos_1ae97f9891c67c90959a03fc96efaa4dc9" kindref="member">ProposalFunctionPtr</ref>;</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="334" refid="structeos_1_1MarkovChain_1_1ProposalFunction" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structeos_1_1MarkovChain_1_1ProposalFunction" kindref="compound">MarkovChain::ProposalFunction</ref></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1ProposalFunction_1a758ad6e18e36b15062fe776ee7a9b3d9" kindref="member" tooltip="(virtual) Destructor.">~ProposalFunction</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1ProposalFunction_1afee6a937c53b9cfb257a5cd724a54296" kindref="member">adapt</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1State_1ad7590843e4feca7e696c53863e6e10c1" kindref="member">MarkovChain::State::Iterator</ref><sp/>&amp;<sp/>begin,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1State_1ad7590843e4feca7e696c53863e6e10c1" kindref="member">MarkovChain::State::Iterator</ref><sp/>&amp;<sp/>end,</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>efficiency,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>efficiency_min,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>efficiency_max)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="namespaceeos_1ae97f9891c67c90959a03fc96efaa4dc9" kindref="member">ProposalFunctionPtr</ref><sp/><ref refid="structeos_1_1MarkovChain_1_1ProposalFunction_1a7065079985f8bb44309d7773d85d225b" kindref="member" tooltip="Create independent copy.">clone</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"></highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1ProposalFunction_1aea88a1340e10cc6a5b03d8b5483774f7" kindref="member" tooltip="Store state in the file under the given base name.">dump_state</ref>(<ref refid="classeos_1_1hdf5_1_1File" kindref="compound">hdf5::File</ref><sp/>&amp;<sp/>file,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/>data_set_base_name)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1ProposalFunction_1ae3f2c43980ec9dfe9f35d8139f2f4ec7" kindref="member" tooltip="Evaluate the density to propose x given y.">evaluate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">MarkovChain::State</ref><sp/>&amp;<sp/>x,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">MarkovChain::State</ref><sp/>&amp;<sp/>y)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1ProposalFunction_1a2b296008d32b1cd008e59cde1228705f" kindref="member" tooltip="Obtain from the density a proposal x given y.">propose</ref>(<ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">MarkovChain::State</ref><sp/>&amp;<sp/>x,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">MarkovChain::State</ref><sp/>&amp;<sp/>y,<sp/>gsl_rng<sp/>*<sp/>rng)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ostream<sp/>&amp;<sp/><ref refid="namespaceeos_1a2d7ef50009f9368c73d5056eab3ec21d" kindref="member">operator&lt;&lt; </ref>(std::ostream<sp/>&amp;<sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">MarkovChain::State</ref><sp/>&amp;<sp/>rhs);</highlight></codeline>
+<codeline lineno="363"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"></highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1LargeRecoil" kind="struct" prot="public">
+    <compoundname>eos::LargeRecoil</compoundname>
+    <includes refid="decays_8hh" local="no">decays.hh</includes>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/decays.hh" line="28" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/decays.hh" bodystart="28" bodyend="28"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

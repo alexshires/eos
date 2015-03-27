@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1CartesianProduct" kind="class" prot="public">
+    <compoundname>eos::CartesianProduct</compoundname>
+    <includes refid="cartesian-product_8hh" local="no">cartesian-product.hh</includes>
+    <innerclass refid="classeos_1_1CartesianProduct_1_1__Iterator" prot="private">eos::CartesianProduct::_Iterator</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename T_</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classeos_1_1CartesianProduct_1a9259a6ad1cb156168f2c25529657ef30" prot="private" static="no">
+        <type>std::vector&lt; typename T_::const_iterator &gt;</type>
+        <definition>typedef std::vector&lt;typename T_::const_iterator&gt; eos::CartesianProduct&lt; T_ &gt;::IteratorState</definition>
+        <argsstring></argsstring>
+        <name>IteratorState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/cartesian-product.hh" line="35" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/cartesian-product.hh" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classeos_1_1CartesianProduct_1a6a39144d4fa7f4cc11f68abc707e4490" prot="private" static="no">
+        <type>std::vector&lt; size_t &gt;</type>
+        <definition>typedef std::vector&lt;size_t&gt; eos::CartesianProduct&lt; T_ &gt;::Sizes</definition>
+        <argsstring></argsstring>
+        <name>Sizes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/cartesian-product.hh" line="46" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/cartesian-product.hh" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classeos_1_1CartesianProduct_1aa2ff28e4a1845a8ee763a877a8cd4346" prot="public" static="no">
+        <type>_Iterator&lt; T_ &gt;</type>
+        <definition>typedef _Iterator&lt;T_&gt; eos::CartesianProduct&lt; T_ &gt;::Iterator</definition>
+        <argsstring></argsstring>
+        <name>Iterator</name>
+        <briefdescription>
+<para>This is a random access iterator for CartesianPoduct. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/cartesian-product.hh" line="140" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/cartesian-product.hh" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classeos_1_1CartesianProduct_1a14da23c85463e61ea9ab3079ebe55072" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; T_ &gt;</type>
+        <definition>std::vector&lt;T_&gt; eos::CartesianProduct&lt; T_ &gt;::_data</definition>
+        <argsstring></argsstring>
+        <name>_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/cartesian-product.hh" line="38" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/cartesian-product.hh" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1CartesianProduct_1a4cccd71588d07d9784408eabbfd15bd1" prot="private" static="no" mutable="no">
+        <type>IteratorState</type>
+        <definition>IteratorState eos::CartesianProduct&lt; T_ &gt;::_begin</definition>
+        <argsstring></argsstring>
+        <name>_begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/cartesian-product.hh" line="41" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/cartesian-product.hh" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1CartesianProduct_1aa4bece4a5487cc274dfa5abc4c2c6543" prot="private" static="no" mutable="no">
+        <type>IteratorState</type>
+        <definition>IteratorState eos::CartesianProduct&lt; T_ &gt;::_end</definition>
+        <argsstring></argsstring>
+        <name>_end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/cartesian-product.hh" line="41" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/cartesian-product.hh" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1CartesianProduct_1a584e1760ca8a624f63211db45ee8674f" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t eos::CartesianProduct&lt; T_ &gt;::_size</definition>
+        <argsstring></argsstring>
+        <name>_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/cartesian-product.hh" line="44" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/cartesian-product.hh" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeos_1_1CartesianProduct_1a397c862519dc8d90505cf33d26d6e8e7" prot="private" static="no" mutable="no">
+        <type>Sizes</type>
+        <definition>Sizes eos::CartesianProduct&lt; T_ &gt;::_sizes</definition>
+        <argsstring></argsstring>
+        <name>_sizes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/cartesian-product.hh" line="47" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/cartesian-product.hh" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1CartesianProduct_1ab31950cf7edf8589a6e86a81b36d9b4d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eos::CartesianProduct&lt; T_ &gt;::CartesianProduct</definition>
+        <argsstring>()</argsstring>
+        <name>CartesianProduct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes an empty <ref refid="classeos_1_1CartesianProduct" kindref="compound">CartesianProduct</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/cartesian-product.hh" line="147" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/cartesian-product.hh" bodystart="145" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1CartesianProduct_1adef1565dbec35aab631423ade5b1baf0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::CartesianProduct&lt; T_ &gt;::over</definition>
+        <argsstring>(const T_ &amp;new_container)</argsstring>
+        <name>over</name>
+        <param>
+          <type>const T_ &amp;</type>
+          <declname>new_container</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds another container of type T_ to the <ref refid="classeos_1_1CartesianProduct" kindref="compound">CartesianProduct</ref>. So in some sense a multiplication with new_container. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>new_container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new container to be added. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/cartesian-product.hh" line="156" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/cartesian-product.hh" bodystart="155" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1CartesianProduct_1a34cc259ef3e5c9e0773e816449787abd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classeos_1_1CartesianProduct_1aa2ff28e4a1845a8ee763a877a8cd4346" kindref="member">Iterator</ref></type>
+        <definition>Iterator eos::CartesianProduct&lt; T_ &gt;::begin</definition>
+        <argsstring>() const </argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns an iterator for the first element. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/cartesian-product.hh" line="175" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/cartesian-product.hh" bodystart="174" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1CartesianProduct_1a7c37fe657fc7d312ae482ab581d3392f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classeos_1_1CartesianProduct_1aa2ff28e4a1845a8ee763a877a8cd4346" kindref="member">Iterator</ref></type>
+        <definition>Iterator eos::CartesianProduct&lt; T_ &gt;::end</definition>
+        <argsstring>() const </argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns an iterator for the position after the last element. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/cartesian-product.hh" line="183" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/cartesian-product.hh" bodystart="182" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classeos_1_1CartesianProduct_1a5825cf1120b0464a9ce21c65239f0c9b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t eos::CartesianProduct&lt; T_ &gt;::size</definition>
+        <argsstring>() const </argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the number of elements stored in <ref refid="classeos_1_1CartesianProduct" kindref="compound">CartesianProduct</ref>. This is the product of the sizes of each stored container. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/cartesian-product.hh" line="192" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/cartesian-product.hh" bodystart="191" bodyend="194"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classeos_1_1CartesianProduct" kindref="compound">CartesianProduct</ref> is a template class to represent a Cartesian Product of an arbitrary number of T_. T_ should be a container providing a random access iterator. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="225">
+        <label>eos::CartesianProduct&lt; T_ &gt;</label>
+        <link refid="classeos_1_1CartesianProduct"/>
+        <childnode refid="226" relation="usage">
+          <edgelabel>_sizes</edgelabel>
+        </childnode>
+        <childnode refid="227" relation="usage">
+          <edgelabel>_data</edgelabel>
+        </childnode>
+        <childnode refid="228" relation="usage">
+          <edgelabel>_begin</edgelabel>
+          <edgelabel>_end</edgelabel>
+        </childnode>
+      </node>
+      <node id="228">
+        <label>std::vector&lt; typename T_::const_iterator &gt;</label>
+      </node>
+      <node id="227">
+        <label>std::vector&lt; T_ &gt;</label>
+      </node>
+      <node id="226">
+        <label>std::vector&lt; size_t &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/cartesian-product.hh" line="33" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/cartesian-product.hh" bodystart="32" bodyend="195"/>
+    <listofallmembers>
+      <member refid="classeos_1_1CartesianProduct_1a4cccd71588d07d9784408eabbfd15bd1" prot="private" virt="non-virtual"><scope>eos::CartesianProduct</scope><name>_begin</name></member>
+      <member refid="classeos_1_1CartesianProduct_1a14da23c85463e61ea9ab3079ebe55072" prot="private" virt="non-virtual"><scope>eos::CartesianProduct</scope><name>_data</name></member>
+      <member refid="classeos_1_1CartesianProduct_1aa4bece4a5487cc274dfa5abc4c2c6543" prot="private" virt="non-virtual"><scope>eos::CartesianProduct</scope><name>_end</name></member>
+      <member refid="classeos_1_1CartesianProduct_1a584e1760ca8a624f63211db45ee8674f" prot="private" virt="non-virtual"><scope>eos::CartesianProduct</scope><name>_size</name></member>
+      <member refid="classeos_1_1CartesianProduct_1a397c862519dc8d90505cf33d26d6e8e7" prot="private" virt="non-virtual"><scope>eos::CartesianProduct</scope><name>_sizes</name></member>
+      <member refid="classeos_1_1CartesianProduct_1a34cc259ef3e5c9e0773e816449787abd" prot="public" virt="non-virtual"><scope>eos::CartesianProduct</scope><name>begin</name></member>
+      <member refid="classeos_1_1CartesianProduct_1ab31950cf7edf8589a6e86a81b36d9b4d" prot="public" virt="non-virtual"><scope>eos::CartesianProduct</scope><name>CartesianProduct</name></member>
+      <member refid="classeos_1_1CartesianProduct_1a7c37fe657fc7d312ae482ab581d3392f" prot="public" virt="non-virtual"><scope>eos::CartesianProduct</scope><name>end</name></member>
+      <member refid="classeos_1_1CartesianProduct_1aa2ff28e4a1845a8ee763a877a8cd4346" prot="public" virt="non-virtual"><scope>eos::CartesianProduct</scope><name>Iterator</name></member>
+      <member refid="classeos_1_1CartesianProduct_1a9259a6ad1cb156168f2c25529657ef30" prot="private" virt="non-virtual"><scope>eos::CartesianProduct</scope><name>IteratorState</name></member>
+      <member refid="classeos_1_1CartesianProduct_1adef1565dbec35aab631423ade5b1baf0" prot="public" virt="non-virtual"><scope>eos::CartesianProduct</scope><name>over</name></member>
+      <member refid="classeos_1_1CartesianProduct_1a5825cf1120b0464a9ce21c65239f0c9b" prot="public" virt="non-virtual"><scope>eos::CartesianProduct</scope><name>size</name></member>
+      <member refid="classeos_1_1CartesianProduct_1a6a39144d4fa7f4cc11f68abc707e4490" prot="private" virt="non-virtual"><scope>eos::CartesianProduct</scope><name>Sizes</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

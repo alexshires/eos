@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="classeos_1_1ModelComponent_3_01components_1_1DeltaB1_01_4" kind="class" prot="public">
+    <compoundname>eos::ModelComponent&lt; components::DeltaB1 &gt;</compoundname>
+    <derivedcompoundref refid="classeos_1_1Model" prot="public" virt="virtual">eos::Model</derivedcompoundref>
+    <derivedcompoundref refid="classeos_1_1SMComponent_3_01components_1_1DeltaB1_01_4" prot="public" virt="virtual">eos::SMComponent&lt; components::DeltaB1 &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classeos_1_1WilsonScanComponent" prot="public" virt="virtual">eos::WilsonScanComponent</derivedcompoundref>
+    <includes refid="model_8hh" local="no">model.hh</includes>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeos_1_1ModelComponent_3_01components_1_1DeltaB1_01_4_1a94a836d0f2518023cca37a1ffaa128e9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>WilsonCoefficients&lt; <ref refid="structeos_1_1BToS" kindref="compound">BToS</ref> &gt;</type>
+        <definition>virtual WilsonCoefficients&lt;BToS&gt; eos::ModelComponent&lt; components::DeltaB1 &gt;::wilson_coefficients_b_to_s</definition>
+        <argsstring>(const bool &amp;cp_conjugate=false) const =0</argsstring>
+        <name>wilson_coefficients_b_to_s</name>
+        <reimplementedby refid="classeos_1_1WilsonScanComponent_1afcad159e4ff8fa11d5ea4a5d41f534ad">wilson_coefficients_b_to_s</reimplementedby>
+        <reimplementedby refid="classeos_1_1SMComponent_3_01components_1_1DeltaB1_01_4_1a4a3c9906daaf0be6c682245e0467a316">wilson_coefficients_b_to_s</reimplementedby>
+        <param>
+          <type>const bool &amp;</type>
+          <declname>cp_conjugate</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/model.hh" line="97"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Base class for the Delta B = 1 FCNC component of models. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="654">
+        <label>eos::WilsonScanComponent</label>
+        <link refid="classeos_1_1WilsonScanComponent"/>
+        <childnode refid="648" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="648">
+        <label>eos::ModelComponent&lt; components::DeltaB1 &gt;</label>
+        <link refid="classeos_1_1ModelComponent_3_01components_1_1DeltaB1_01_4"/>
+      </node>
+      <node id="649">
+        <label>eos::Model</label>
+        <link refid="classeos_1_1Model"/>
+        <childnode refid="648" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="653">
+        <label>eos::SMComponent&lt; components::DeltaB1 &gt;</label>
+        <link refid="classeos_1_1SMComponent_3_01components_1_1DeltaB1_01_4"/>
+        <childnode refid="648" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="651">
+        <label>eos::StandardModel</label>
+        <link refid="classeos_1_1StandardModel"/>
+        <childnode refid="649" relation="public-inheritance">
+        </childnode>
+        <childnode refid="653" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="650">
+        <label>eos::CKMScanModel</label>
+        <link refid="classeos_1_1CKMScanModel"/>
+        <childnode refid="649" relation="public-inheritance">
+        </childnode>
+        <childnode refid="653" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="652">
+        <label>eos::WilsonScanModel</label>
+        <link refid="classeos_1_1WilsonScanModel"/>
+        <childnode refid="649" relation="public-inheritance">
+        </childnode>
+        <childnode refid="654" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/model.hh" line="94" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/model.hh" bodystart="93" bodyend="98"/>
+    <listofallmembers>
+      <member refid="classeos_1_1ModelComponent_3_01components_1_1DeltaB1_01_4_1a94a836d0f2518023cca37a1ffaa128e9" prot="public" virt="pure-virtual"><scope>eos::ModelComponent&lt; components::DeltaB1 &gt;</scope><name>wilson_coefficients_b_to_s</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

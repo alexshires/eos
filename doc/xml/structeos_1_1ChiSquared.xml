@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1ChiSquared" kind="struct" prot="public">
+    <compoundname>eos::ChiSquared</compoundname>
+    <includes refid="chi-squared_8hh" local="no">chi-squared.hh</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structeos_1_1ChiSquared_1a27e9ed6fbc17e90137b66be99d417462" prot="public" static="no">
+        <type>std::function&lt; double(double, double, double, double, double, double)&gt;</type>
+        <definition>typedef std::function&lt;double (double, double, double, double, double, double)&gt; eos::ChiSquared::Function</definition>
+        <argsstring></argsstring>
+        <name>Function</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/chi-squared.hh" line="35" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/chi-squared.hh" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structeos_1_1ChiSquared_1a842a35bc7a2117ec1caa5f255795e3e7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double eos::ChiSquared::with_theory_offset</definition>
+        <argsstring>(const double &amp;theory_min, const double &amp;theory_central, const double &amp;theory_max, const double &amp;experiment_min, const double &amp;experiment_central, const double &amp;experiment_max)</argsstring>
+        <name>with_theory_offset</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>theory_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>theory_central</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>theory_max</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>experiment_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>experiment_central</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>experiment_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/chi-squared.hh" line="50"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1ChiSquared_1abaedf2005be3dd65831edfae46e97df5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double eos::ChiSquared::with_combined_uncertainties</definition>
+        <argsstring>(const double &amp;theory_min, const double &amp;theory_central, const double &amp;theory_max, const double &amp;experiment_min, const double &amp;experiment_central, const double &amp;experiment_max)</argsstring>
+        <name>with_combined_uncertainties</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>theory_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>theory_central</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>theory_max</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>experiment_min</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>experiment_central</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>experiment_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/chi-squared.hh" line="65"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1ChiSquared_1af6ffe7a8101cbc26a837d8359d9784ee" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structeos_1_1ChiSquared_1a27e9ed6fbc17e90137b66be99d417462" kindref="member">Function</ref></type>
+        <definition>static Function eos::ChiSquared::make</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>make</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/chi-squared.hh" line="70"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/chi-squared.hh" line="30" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/chi-squared.hh" bodystart="29" bodyend="71"/>
+    <listofallmembers>
+      <member refid="structeos_1_1ChiSquared_1a27e9ed6fbc17e90137b66be99d417462" prot="public" virt="non-virtual"><scope>eos::ChiSquared</scope><name>Function</name></member>
+      <member refid="structeos_1_1ChiSquared_1af6ffe7a8101cbc26a837d8359d9784ee" prot="public" virt="non-virtual"><scope>eos::ChiSquared</scope><name>make</name></member>
+      <member refid="structeos_1_1ChiSquared_1abaedf2005be3dd65831edfae46e97df5" prot="public" virt="non-virtual"><scope>eos::ChiSquared</scope><name>with_combined_uncertainties</name></member>
+      <member refid="structeos_1_1ChiSquared_1a842a35bc7a2117ec1caa5f255795e3e7" prot="public" virt="non-virtual"><scope>eos::ChiSquared</scope><name>with_theory_offset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

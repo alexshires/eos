@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1BToPi" kind="struct" prot="public">
+    <compoundname>eos::BToPi</compoundname>
+    <includes refid="mesonic-impl_8hh" local="no">mesonic-impl.hh</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structeos_1_1BToPi_1a0bc02dc01a331ef172cac61430529a37" prot="public" static="no">
+        <type><ref refid="structeos_1_1PToP" kindref="compound">PToP</ref></type>
+        <definition>typedef PToP eos::BToPi::Transition</definition>
+        <argsstring></argsstring>
+        <name>Transition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="243" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structeos_1_1BToPi_1a02bedb913444a200791347fcebc02660" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* eos::BToPi::label</definition>
+        <argsstring></argsstring>
+        <name>label</name>
+        <initializer> &quot;B-&gt;pi&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="244" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1BToPi_1a368ef58c6e0296a92246459961bb1898" prot="public" static="yes" mutable="no">
+        <type>constexpr const double</type>
+        <definition>constexpr const double eos::BToPi::m_B</definition>
+        <argsstring></argsstring>
+        <name>m_B</name>
+        <initializer> 5.279</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="245" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1BToPi_1a3ae475ef38ac384d05ace3e6e4f8c4e1" prot="public" static="yes" mutable="no">
+        <type>constexpr const double</type>
+        <definition>constexpr const double eos::BToPi::m_P</definition>
+        <argsstring></argsstring>
+        <name>m_P</name>
+        <initializer> 0.135</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="246" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1BToPi_1a4bef4550fbc2f545cb28289cde71cf50" prot="public" static="yes" mutable="no">
+        <type>constexpr const double</type>
+        <definition>constexpr const double eos::BToPi::m2_Br0m</definition>
+        <argsstring></argsstring>
+        <name>m2_Br0m</name>
+        <initializer> 5.279 * 5.279</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="247" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1BToPi_1a4e334a932389c4f346a1d7d685e3f6cc" prot="public" static="yes" mutable="no">
+        <type>constexpr const double</type>
+        <definition>constexpr const double eos::BToPi::m2_Br1m</definition>
+        <argsstring></argsstring>
+        <name>m2_Br1m</name>
+        <initializer> 5.325 * 5.325</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="248" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1BToPi_1a1fd711c0a854118ef42495b16d2b0419" prot="public" static="yes" mutable="no">
+        <type>constexpr const double</type>
+        <definition>constexpr const double eos::BToPi::tau_p</definition>
+        <argsstring></argsstring>
+        <name>tau_p</name>
+        <initializer> (<ref refid="structeos_1_1BToPi_1a368ef58c6e0296a92246459961bb1898" kindref="member">m_B</ref> + <ref refid="structeos_1_1BToPi_1a3ae475ef38ac384d05ace3e6e4f8c4e1" kindref="member">m_P</ref>) * (<ref refid="structeos_1_1BToPi_1a368ef58c6e0296a92246459961bb1898" kindref="member">m_B</ref> + <ref refid="structeos_1_1BToPi_1a3ae475ef38ac384d05ace3e6e4f8c4e1" kindref="member">m_P</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="249" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1BToPi_1ac77ffd0ef98e06372594d0eba51118e6" prot="public" static="yes" mutable="no">
+        <type>constexpr const double</type>
+        <definition>constexpr const double eos::BToPi::tau_m</definition>
+        <argsstring></argsstring>
+        <name>tau_m</name>
+        <initializer> (<ref refid="structeos_1_1BToPi_1a368ef58c6e0296a92246459961bb1898" kindref="member">m_B</ref> - <ref refid="structeos_1_1BToPi_1a3ae475ef38ac384d05ace3e6e4f8c4e1" kindref="member">m_P</ref>) * (<ref refid="structeos_1_1BToPi_1a368ef58c6e0296a92246459961bb1898" kindref="member">m_B</ref> - <ref refid="structeos_1_1BToPi_1a3ae475ef38ac384d05ace3e6e4f8c4e1" kindref="member">m_P</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="250" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" line="242" bodyfile="/home/alexshires/EOS/eos-next/eos/form-factors/mesonic-impl.hh" bodystart="242" bodyend="251"/>
+    <listofallmembers>
+      <member refid="structeos_1_1BToPi_1a02bedb913444a200791347fcebc02660" prot="public" virt="non-virtual"><scope>eos::BToPi</scope><name>label</name></member>
+      <member refid="structeos_1_1BToPi_1a4bef4550fbc2f545cb28289cde71cf50" prot="public" virt="non-virtual"><scope>eos::BToPi</scope><name>m2_Br0m</name></member>
+      <member refid="structeos_1_1BToPi_1a4e334a932389c4f346a1d7d685e3f6cc" prot="public" virt="non-virtual"><scope>eos::BToPi</scope><name>m2_Br1m</name></member>
+      <member refid="structeos_1_1BToPi_1a368ef58c6e0296a92246459961bb1898" prot="public" virt="non-virtual"><scope>eos::BToPi</scope><name>m_B</name></member>
+      <member refid="structeos_1_1BToPi_1a3ae475ef38ac384d05ace3e6e4f8c4e1" prot="public" virt="non-virtual"><scope>eos::BToPi</scope><name>m_P</name></member>
+      <member refid="structeos_1_1BToPi_1ac77ffd0ef98e06372594d0eba51118e6" prot="public" virt="non-virtual"><scope>eos::BToPi</scope><name>tau_m</name></member>
+      <member refid="structeos_1_1BToPi_1a1fd711c0a854118ef42495b16d2b0419" prot="public" virt="non-virtual"><scope>eos::BToPi</scope><name>tau_p</name></member>
+      <member refid="structeos_1_1BToPi_1a0bc02dc01a331ef172cac61430529a37" prot="public" virt="non-virtual"><scope>eos::BToPi</scope><name>Transition</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

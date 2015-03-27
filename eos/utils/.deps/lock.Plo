@@ -1,0 +1,58 @@
+lock.lo: lock.cc ../../eos/utils/instantiation_policy-impl.hh \
+ ../../eos/utils/instantiation_policy.hh ../../eos/utils/lock.hh \
+ ../../eos/utils/mutex.hh /usr/include/pthread.h /usr/include/features.h \
+ /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h \
+ /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+ /usr/include/endian.h /usr/include/bits/endian.h \
+ /usr/include/bits/byteswap.h /usr/include/sched.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/lib/gcc/x86_64-unknown-linux-gnu/4.8.1/include/stddef.h \
+ /usr/include/time.h /usr/include/bits/sched.h /usr/include/bits/time.h \
+ /usr/include/xlocale.h /usr/include/bits/pthreadtypes.h \
+ /usr/include/bits/setjmp.h
+
+../../eos/utils/instantiation_policy-impl.hh:
+
+../../eos/utils/instantiation_policy.hh:
+
+../../eos/utils/lock.hh:
+
+../../eos/utils/mutex.hh:
+
+/usr/include/pthread.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/sched.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.8.1/x86_64-slc6/lib/gcc/x86_64-unknown-linux-gnu/4.8.1/include/stddef.h:
+
+/usr/include/time.h:
+
+/usr/include/bits/sched.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/bits/setjmp.h:

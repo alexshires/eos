@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1MarkovChain_1_1History" kind="struct" prot="public">
+    <compoundname>eos::MarkovChain::History</compoundname>
+    <includes refid="markov__chain_8hh" local="no">markov_chain.hh</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structeos_1_1MarkovChain_1_1History_1ac6b8c02c837f78b6724fcaa1cb4eaa74" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool eos::MarkovChain::History::keep</definition>
+        <argsstring></argsstring>
+        <name>keep</name>
+        <briefdescription>
+<para>flag: if false =&gt; don&apos;t store numbers </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" line="295" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" bodystart="295" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1MarkovChain_1_1History_1acecd7f35ce23b811f5365bb96446fba8" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">MarkovChain::State</ref> &gt;</type>
+        <definition>std::vector&lt;MarkovChain::State&gt; eos::MarkovChain::History::states</definition>
+        <argsstring></argsstring>
+        <name>states</name>
+        <briefdescription>
+<para>All states. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" line="298" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" bodystart="298" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="structeos_1_1MarkovChain_1_1History_1a2c7f82e4133ccf83fea3788d5881df33" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool eos::MarkovChain::History::cmp</definition>
+        <argsstring>(const MarkovChain::State &amp;a, const MarkovChain::State &amp;b)</argsstring>
+        <name>cmp</name>
+        <param>
+          <type>const <ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">MarkovChain::State</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">MarkovChain::State</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" line="290"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structeos_1_1MarkovChain_1_1History_1a590c268edb22f3d607dd7757f0bad114" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structeos_1_1MarkovChain_1_1State" kindref="compound">MarkovChain::State</ref> &amp;</type>
+        <definition>const MarkovChain::State&amp; eos::MarkovChain::History::local_mode</definition>
+        <argsstring>(const MarkovChain::State::Iterator &amp;begin, const MarkovChain::State::Iterator &amp;end) const </argsstring>
+        <name>local_mode</name>
+        <param>
+          <type>const <ref refid="structeos_1_1MarkovChain_1_1State_1ad7590843e4feca7e696c53863e6e10c1" kindref="member">MarkovChain::State::Iterator</ref> &amp;</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structeos_1_1MarkovChain_1_1State_1ad7590843e4feca7e696c53863e6e10c1" kindref="member">MarkovChain::State::Iterator</ref> &amp;</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return state with highest posterior probability in selected range </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" line="303"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1MarkovChain_1_1History_1a4aa855975e42d10d25e43d327e4ef72a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::MarkovChain::History::mean_and_variance</definition>
+        <argsstring>(const MarkovChain::State::Iterator &amp;begin, const MarkovChain::State::Iterator &amp;end, std::vector&lt; double &gt; &amp;mean, std::vector&lt; double &gt; &amp;variance) const </argsstring>
+        <name>mean_and_variance</name>
+        <param>
+          <type>const <ref refid="structeos_1_1MarkovChain_1_1State_1ad7590843e4feca7e696c53863e6e10c1" kindref="member">MarkovChain::State::Iterator</ref> &amp;</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structeos_1_1MarkovChain_1_1State_1ad7590843e4feca7e696c53863e6e10c1" kindref="member">MarkovChain::State::Iterator</ref> &amp;</type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>mean</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>variance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute mean and variance of the states&apos; parameters between begin and end using Welford&apos;s method for all parameters. Results are stored in the vectors.</para><para>For details, check out <ulink url="http://www.johndcook.com/standard_deviation.html">http://www.johndcook.com/standard_deviation.html</ulink> . </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" line="315"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1MarkovChain_1_1History_1a759445b30a1b1034937969a8db6e7668" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eos::MarkovChain::History::mean_and_covariance</definition>
+        <argsstring>(const MarkovChain::State::Iterator &amp;begin, const MarkovChain::State::Iterator &amp;end, std::vector&lt; double &gt; &amp;mean, std::vector&lt; double &gt; &amp;variance) const </argsstring>
+        <name>mean_and_covariance</name>
+        <param>
+          <type>const <ref refid="structeos_1_1MarkovChain_1_1State_1ad7590843e4feca7e696c53863e6e10c1" kindref="member">MarkovChain::State::Iterator</ref> &amp;</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structeos_1_1MarkovChain_1_1State_1ad7590843e4feca7e696c53863e6e10c1" kindref="member">MarkovChain::State::Iterator</ref> &amp;</type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>mean</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>variance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute the mean vector and the sample covariance in the given range of the chain.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>begin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mean</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>variance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" line="326"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Holds the entire history of a run of a <ref refid="classeos_1_1MarkovChain" kindref="compound">MarkovChain</ref> </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="517">
+        <label>eos::MarkovChain::History</label>
+        <link refid="structeos_1_1MarkovChain_1_1History"/>
+        <childnode refid="518" relation="usage">
+          <edgelabel>states</edgelabel>
+        </childnode>
+      </node>
+      <node id="518">
+        <label>std::vector&lt; MarkovChain::State &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" line="288" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" bodystart="287" bodyend="327"/>
+    <listofallmembers>
+      <member refid="structeos_1_1MarkovChain_1_1History_1a2c7f82e4133ccf83fea3788d5881df33" prot="private" virt="non-virtual"><scope>eos::MarkovChain::History</scope><name>cmp</name></member>
+      <member refid="structeos_1_1MarkovChain_1_1History_1ac6b8c02c837f78b6724fcaa1cb4eaa74" prot="public" virt="non-virtual"><scope>eos::MarkovChain::History</scope><name>keep</name></member>
+      <member refid="structeos_1_1MarkovChain_1_1History_1a590c268edb22f3d607dd7757f0bad114" prot="public" virt="non-virtual"><scope>eos::MarkovChain::History</scope><name>local_mode</name></member>
+      <member refid="structeos_1_1MarkovChain_1_1History_1a759445b30a1b1034937969a8db6e7668" prot="public" virt="non-virtual"><scope>eos::MarkovChain::History</scope><name>mean_and_covariance</name></member>
+      <member refid="structeos_1_1MarkovChain_1_1History_1a4aa855975e42d10d25e43d327e4ef72a" prot="public" virt="non-virtual"><scope>eos::MarkovChain::History</scope><name>mean_and_variance</name></member>
+      <member refid="structeos_1_1MarkovChain_1_1History_1acecd7f35ce23b811f5365bb96446fba8" prot="public" virt="non-virtual"><scope>eos::MarkovChain::History</scope><name>states</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

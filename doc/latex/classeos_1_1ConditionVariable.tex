@@ -1,0 +1,74 @@
+\hypertarget{classeos_1_1ConditionVariable}{
+\section{eos::ConditionVariable Class Reference}
+\label{classeos_1_1ConditionVariable}\index{eos::ConditionVariable@{eos::ConditionVariable}}
+}
+
+
+{\ttfamily \#include $<$condition\_\-variable.hh$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classeos_1_1ConditionVariable_a64b2350d3ef0bf6c58f0f063da7a4ea4}{ConditionVariable} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \item\end{DoxyCompactList}\item 
+\hyperlink{classeos_1_1ConditionVariable_abf981bbbce2e09c235d461f7aea14479}{$\sim$ConditionVariable} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\item 
+void \hyperlink{classeos_1_1ConditionVariable_a353db40ed7ea89d107627a4f32b829fe}{broadcast} ()
+\begin{DoxyCompactList}\small\item\em Broadcast a wake-\/up to all waiting threads. \item\end{DoxyCompactList}\item 
+void \hyperlink{classeos_1_1ConditionVariable_a58e81670564c2096dcfdbf34dba8f4a4}{signal} ()
+\begin{DoxyCompactList}\small\item\em Sign a wake-\/up to the waiting thread. \item\end{DoxyCompactList}\item 
+void \hyperlink{classeos_1_1ConditionVariable_adc82f6f8edc7d82776fe183d7f647d2c}{acquire\_\-then\_\-signal} (\hyperlink{classeos_1_1Mutex}{Mutex} \&)
+\begin{DoxyCompactList}\small\item\em Acquire a lock for signaling. \item\end{DoxyCompactList}\item 
+void \hyperlink{classeos_1_1ConditionVariable_a42313d0ec24908e952f8b675a966a6a6}{wait} (\hyperlink{classeos_1_1Mutex}{Mutex} \&)
+\begin{DoxyCompactList}\small\item\em Wait until condition is met. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classeos_1_1ConditionVariable_a64b2350d3ef0bf6c58f0f063da7a4ea4}{
+\index{eos::ConditionVariable@{eos::ConditionVariable}!ConditionVariable@{ConditionVariable}}
+\index{ConditionVariable@{ConditionVariable}!eos::ConditionVariable@{eos::ConditionVariable}}
+\subsubsection[{ConditionVariable}]{\setlength{\rightskip}{0pt plus 5cm}eos::ConditionVariable::ConditionVariable ()}}
+\label{classeos_1_1ConditionVariable_a64b2350d3ef0bf6c58f0f063da7a4ea4}
+
+
+Constructor. \hypertarget{classeos_1_1ConditionVariable_abf981bbbce2e09c235d461f7aea14479}{
+\index{eos::ConditionVariable@{eos::ConditionVariable}!$\sim$ConditionVariable@{$\sim$ConditionVariable}}
+\index{$\sim$ConditionVariable@{$\sim$ConditionVariable}!eos::ConditionVariable@{eos::ConditionVariable}}
+\subsubsection[{$\sim$ConditionVariable}]{\setlength{\rightskip}{0pt plus 5cm}eos::ConditionVariable::$\sim$ConditionVariable ()}}
+\label{classeos_1_1ConditionVariable_abf981bbbce2e09c235d461f7aea14479}
+
+
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classeos_1_1ConditionVariable_adc82f6f8edc7d82776fe183d7f647d2c}{
+\index{eos::ConditionVariable@{eos::ConditionVariable}!acquire\_\-then\_\-signal@{acquire\_\-then\_\-signal}}
+\index{acquire\_\-then\_\-signal@{acquire\_\-then\_\-signal}!eos::ConditionVariable@{eos::ConditionVariable}}
+\subsubsection[{acquire\_\-then\_\-signal}]{\setlength{\rightskip}{0pt plus 5cm}void eos::ConditionVariable::acquire\_\-then\_\-signal ({\bf Mutex} \&)}}
+\label{classeos_1_1ConditionVariable_adc82f6f8edc7d82776fe183d7f647d2c}
+
+
+Acquire a lock for signaling. \hypertarget{classeos_1_1ConditionVariable_a353db40ed7ea89d107627a4f32b829fe}{
+\index{eos::ConditionVariable@{eos::ConditionVariable}!broadcast@{broadcast}}
+\index{broadcast@{broadcast}!eos::ConditionVariable@{eos::ConditionVariable}}
+\subsubsection[{broadcast}]{\setlength{\rightskip}{0pt plus 5cm}void eos::ConditionVariable::broadcast ()}}
+\label{classeos_1_1ConditionVariable_a353db40ed7ea89d107627a4f32b829fe}
+
+
+Broadcast a wake-\/up to all waiting threads. \hypertarget{classeos_1_1ConditionVariable_a58e81670564c2096dcfdbf34dba8f4a4}{
+\index{eos::ConditionVariable@{eos::ConditionVariable}!signal@{signal}}
+\index{signal@{signal}!eos::ConditionVariable@{eos::ConditionVariable}}
+\subsubsection[{signal}]{\setlength{\rightskip}{0pt plus 5cm}void eos::ConditionVariable::signal ()}}
+\label{classeos_1_1ConditionVariable_a58e81670564c2096dcfdbf34dba8f4a4}
+
+
+Sign a wake-\/up to the waiting thread. \hypertarget{classeos_1_1ConditionVariable_a42313d0ec24908e952f8b675a966a6a6}{
+\index{eos::ConditionVariable@{eos::ConditionVariable}!wait@{wait}}
+\index{wait@{wait}!eos::ConditionVariable@{eos::ConditionVariable}}
+\subsubsection[{wait}]{\setlength{\rightskip}{0pt plus 5cm}void eos::ConditionVariable::wait ({\bf Mutex} \&)}}
+\label{classeos_1_1ConditionVariable_a42313d0ec24908e952f8b675a966a6a6}
+
+
+Wait until condition is met. 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{condition__variable_8hh}{condition\_\-variable.hh}\end{DoxyCompactItemize}

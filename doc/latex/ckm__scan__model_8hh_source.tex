@@ -1,0 +1,98 @@
+\hypertarget{ckm__scan__model_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/ckm\_\-scan\_\-model.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2014 Danny van Dyk}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_CKM\_SCAN\_MODEL\_HH}
+\hypertarget{ckm__scan__model_8hh_source_l00021}{}\hyperlink{ckm__scan__model_8hh_a7a6f2d2b41545d4b1ca5749795e62237}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_CKM\_SCAN\_MODEL\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{preprocessor}{#include <\hyperlink{model_8hh}{eos/utils/model.hh}>}
+00024 \textcolor{preprocessor}{#include <\hyperlink{standard-model_8hh}{eos/utils/standard-model.hh}>}
+00025 
+00026 \textcolor{keyword}{namespace }eos
+00027 \{
+\hypertarget{ckm__scan__model_8hh_source_l00028}{}\hyperlink{classeos_1_1CKMScanComponent}{00028}     \textcolor{keyword}{class }\hyperlink{classeos_1_1CKMScanComponent}{CKMScanComponent} :
+00029         \textcolor{keyword}{public} \textcolor{keyword}{virtual} ModelComponent<components::CKM>
+00030     \{
+00031         \textcolor{keyword}{private}:
+00032             \textcolor{comment}{/* CKM matrix elements */}
+00033             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_v\_ud\_abs\_\_ckm;
+00034             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_v\_ud\_arg\_\_ckm;
+00035 
+00036             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_v\_us\_abs\_\_ckm;
+00037             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_v\_us\_arg\_\_ckm;
+00038 
+00039             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_v\_ub\_abs\_\_ckm;
+00040             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_v\_ub\_arg\_\_ckm;
+00041 
+00042             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_v\_cd\_abs\_\_ckm;
+00043             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_v\_cd\_arg\_\_ckm;
+00044 
+00045             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_v\_cs\_abs\_\_ckm;
+00046             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_v\_cs\_arg\_\_ckm;
+00047 
+00048             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_v\_cb\_abs\_\_ckm;
+00049             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_v\_cb\_arg\_\_ckm;
+00050 
+00051             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_v\_td\_abs\_\_ckm;
+00052             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_v\_td\_arg\_\_ckm;
+00053 
+00054             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_v\_ts\_abs\_\_ckm;
+00055             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_v\_ts\_arg\_\_ckm;
+00056 
+00057             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_v\_tb\_abs\_\_ckm;
+00058             \hyperlink{classeos_1_1UsedParameter}{UsedParameter} \_v\_tb\_arg\_\_ckm;
+00059 
+00060         \textcolor{keyword}{public}:
+00061             \hyperlink{classeos_1_1CKMScanComponent_a32c081a531442445b5f5e472763c6326}{CKMScanComponent}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} &, \textcolor{keyword}{const} \hyperlink{classeos_1_1Options}{Options} &, \hyperlink{classeos_1_1ParameterUser}{ParameterUser} &
+      );
+00062 
+00063             \textcolor{comment}{/* CKM matrix elements */}
+00064             \textcolor{keyword}{virtual} complex<double> \hyperlink{classeos_1_1CKMScanComponent_afcdd4f857807dcb95aa252f45cbc9e41}{ckm_cd}() \textcolor{keyword}{const};
+00065             \textcolor{keyword}{virtual} complex<double> \hyperlink{classeos_1_1CKMScanComponent_adb49ab08f60bdd5de0fccb3748cacf03}{ckm_cs}() \textcolor{keyword}{const};
+00066             \textcolor{keyword}{virtual} complex<double> \hyperlink{classeos_1_1CKMScanComponent_a420671fc6106cda58d97d82af85dddf3}{ckm_cb}() \textcolor{keyword}{const};
+00067             \textcolor{keyword}{virtual} complex<double> \hyperlink{classeos_1_1CKMScanComponent_a18ccfd1e6541233a32870e8d20ba4a1e}{ckm_ud}() \textcolor{keyword}{const};
+00068             \textcolor{keyword}{virtual} complex<double> \hyperlink{classeos_1_1CKMScanComponent_a1ac8c31a252962bd381b604a60fe914d}{ckm_us}() \textcolor{keyword}{const};
+00069             \textcolor{keyword}{virtual} complex<double> \hyperlink{classeos_1_1CKMScanComponent_ace753216c0814e933038548ed237d74b}{ckm_ub}() \textcolor{keyword}{const};
+00070             \textcolor{keyword}{virtual} complex<double> \hyperlink{classeos_1_1CKMScanComponent_aeb3351313d4c06d21f5d70431b835c5e}{ckm_td}() \textcolor{keyword}{const};
+00071             \textcolor{keyword}{virtual} complex<double> \hyperlink{classeos_1_1CKMScanComponent_ab2927bf32ec2c0b8ec13aca97b932129}{ckm_ts}() \textcolor{keyword}{const};
+00072             \textcolor{keyword}{virtual} complex<double> \hyperlink{classeos_1_1CKMScanComponent_af171390d63478b601257163ce568f819}{ckm_tb}() \textcolor{keyword}{const};
+00073     \};
+00074 
+\hypertarget{ckm__scan__model_8hh_source_l00075}{}\hyperlink{classeos_1_1CKMScanModel}{00075}     \textcolor{keyword}{class }\hyperlink{classeos_1_1CKMScanModel}{CKMScanModel} :
+00076         \textcolor{keyword}{public} \hyperlink{classeos_1_1Model}{Model},
+00077         \textcolor{keyword}{public} \hyperlink{classeos_1_1CKMScanComponent}{CKMScanComponent},
+00078         \textcolor{keyword}{public} SMComponent<components::QCD>,
+00079         \textcolor{keyword}{public} SMComponent<components::DeltaB1>
+00080     \{
+00081         \textcolor{keyword}{public}:
+00082             \hyperlink{classeos_1_1CKMScanModel_a348fbaeb80dc246db6d94fc704b34ddc}{CKMScanModel}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} &, \textcolor{keyword}{const} \hyperlink{classeos_1_1Options}{Options} &);
+00083             \textcolor{keyword}{virtual} \hyperlink{classeos_1_1CKMScanModel_a33220021fdd61915cdbe327481f01122}{~CKMScanModel}();
+00084 
+00085             \textcolor{keyword}{static} std::shared\_ptr<Model> \hyperlink{classeos_1_1CKMScanModel_a78a49c4da540e56430d800173d129cc3}{make}(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} &, \textcolor{keyword}{const} \hyperlink{classeos_1_1Options}{Options} 
+      &);
+00086     \};
+00087 \}
+00088 
+00089 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

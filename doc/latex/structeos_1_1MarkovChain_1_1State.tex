@@ -1,0 +1,98 @@
+\hypertarget{structeos_1_1MarkovChain_1_1State}{
+\section{eos::MarkovChain::State Struct Reference}
+\label{structeos_1_1MarkovChain_1_1State}\index{eos::MarkovChain::State@{eos::MarkovChain::State}}
+}
+
+
+{\ttfamily \#include $<$markov\_\-chain.hh$>$}\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std::vector$<$ \hyperlink{structeos_1_1MarkovChain_1_1State}{State} $>$::const\_\-iterator \hyperlink{structeos_1_1MarkovChain_1_1State_ad7590843e4feca7e696c53863e6e10c1}{Iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structeos_1_1MarkovChain_1_1State_a93beca0dcab0389f5b822394f341afc6}{State} ()
+\item 
+\hyperlink{structeos_1_1MarkovChain_1_1State_adaf4e7d6c9fc2b02f8adb1e924ceaf3e}{State} (const \hyperlink{structeos_1_1MarkovChain_1_1State}{State} \&other)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std::vector$<$ double $>$ \hyperlink{structeos_1_1MarkovChain_1_1State_a13518a1ded09d2c61dbfc2cc40297b94}{point}
+\begin{DoxyCompactList}\small\item\em position in parameter space \item\end{DoxyCompactList}\item 
+double \hyperlink{structeos_1_1MarkovChain_1_1State_a0876fac286eb6eb52165389cfcc9e602}{log\_\-likelihood}
+\begin{DoxyCompactList}\small\item\em log likelihood at the point \item\end{DoxyCompactList}\item 
+double \hyperlink{structeos_1_1MarkovChain_1_1State_a4fa9205eb7785b52cc97f13714a3f62b}{log\_\-prior}
+\begin{DoxyCompactList}\small\item\em log prior at the point \item\end{DoxyCompactList}\item 
+double \hyperlink{structeos_1_1MarkovChain_1_1State_a893de1735354ecbfa51b34655fb28833}{log\_\-posterior}
+\begin{DoxyCompactList}\small\item\em log posterior at the points \item\end{DoxyCompactList}\item 
+\hyperlink{structeos_1_1MarkovChain_1_1HyperParameter}{MarkovChain::HyperParameter} \hyperlink{structeos_1_1MarkovChain_1_1State_a23f1f4c2b99c7b8956409f5f645d0337}{hyper\_\-parameter}
+\begin{DoxyCompactList}\small\item\em Contains possibly multidimensional hyperparameter information. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Summarize info at current position in parameter space 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{structeos_1_1MarkovChain_1_1State_ad7590843e4feca7e696c53863e6e10c1}{
+\index{eos::MarkovChain::State@{eos::MarkovChain::State}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!eos::MarkovChain::State@{eos::MarkovChain::State}}
+\subsubsection[{Iterator}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::vector$<${\bf State}$>$::const\_\-iterator {\bf eos::MarkovChain::State::Iterator}}}
+\label{structeos_1_1MarkovChain_1_1State_ad7590843e4feca7e696c53863e6e10c1}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structeos_1_1MarkovChain_1_1State_a93beca0dcab0389f5b822394f341afc6}{
+\index{eos::MarkovChain::State@{eos::MarkovChain::State}!State@{State}}
+\index{State@{State}!eos::MarkovChain::State@{eos::MarkovChain::State}}
+\subsubsection[{State}]{\setlength{\rightskip}{0pt plus 5cm}eos::MarkovChain::State::State ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structeos_1_1MarkovChain_1_1State_a93beca0dcab0389f5b822394f341afc6}
+\hypertarget{structeos_1_1MarkovChain_1_1State_adaf4e7d6c9fc2b02f8adb1e924ceaf3e}{
+\index{eos::MarkovChain::State@{eos::MarkovChain::State}!State@{State}}
+\index{State@{State}!eos::MarkovChain::State@{eos::MarkovChain::State}}
+\subsubsection[{State}]{\setlength{\rightskip}{0pt plus 5cm}eos::MarkovChain::State::State (const {\bf State} \& {\em other})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structeos_1_1MarkovChain_1_1State_adaf4e7d6c9fc2b02f8adb1e924ceaf3e}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structeos_1_1MarkovChain_1_1State_a23f1f4c2b99c7b8956409f5f645d0337}{
+\index{eos::MarkovChain::State@{eos::MarkovChain::State}!hyper\_\-parameter@{hyper\_\-parameter}}
+\index{hyper\_\-parameter@{hyper\_\-parameter}!eos::MarkovChain::State@{eos::MarkovChain::State}}
+\subsubsection[{hyper\_\-parameter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MarkovChain::HyperParameter} {\bf eos::MarkovChain::State::hyper\_\-parameter}}}
+\label{structeos_1_1MarkovChain_1_1State_a23f1f4c2b99c7b8956409f5f645d0337}
+
+
+Contains possibly multidimensional hyperparameter information. \hypertarget{structeos_1_1MarkovChain_1_1State_a0876fac286eb6eb52165389cfcc9e602}{
+\index{eos::MarkovChain::State@{eos::MarkovChain::State}!log\_\-likelihood@{log\_\-likelihood}}
+\index{log\_\-likelihood@{log\_\-likelihood}!eos::MarkovChain::State@{eos::MarkovChain::State}}
+\subsubsection[{log\_\-likelihood}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf eos::MarkovChain::State::log\_\-likelihood}}}
+\label{structeos_1_1MarkovChain_1_1State_a0876fac286eb6eb52165389cfcc9e602}
+
+
+log likelihood at the point \hypertarget{structeos_1_1MarkovChain_1_1State_a893de1735354ecbfa51b34655fb28833}{
+\index{eos::MarkovChain::State@{eos::MarkovChain::State}!log\_\-posterior@{log\_\-posterior}}
+\index{log\_\-posterior@{log\_\-posterior}!eos::MarkovChain::State@{eos::MarkovChain::State}}
+\subsubsection[{log\_\-posterior}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf eos::MarkovChain::State::log\_\-posterior}}}
+\label{structeos_1_1MarkovChain_1_1State_a893de1735354ecbfa51b34655fb28833}
+
+
+log posterior at the points \hypertarget{structeos_1_1MarkovChain_1_1State_a4fa9205eb7785b52cc97f13714a3f62b}{
+\index{eos::MarkovChain::State@{eos::MarkovChain::State}!log\_\-prior@{log\_\-prior}}
+\index{log\_\-prior@{log\_\-prior}!eos::MarkovChain::State@{eos::MarkovChain::State}}
+\subsubsection[{log\_\-prior}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf eos::MarkovChain::State::log\_\-prior}}}
+\label{structeos_1_1MarkovChain_1_1State_a4fa9205eb7785b52cc97f13714a3f62b}
+
+
+log prior at the point \hypertarget{structeos_1_1MarkovChain_1_1State_a13518a1ded09d2c61dbfc2cc40297b94}{
+\index{eos::MarkovChain::State@{eos::MarkovChain::State}!point@{point}}
+\index{point@{point}!eos::MarkovChain::State@{eos::MarkovChain::State}}
+\subsubsection[{point}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$double$>$ {\bf eos::MarkovChain::State::point}}}
+\label{structeos_1_1MarkovChain_1_1State_a13518a1ded09d2c61dbfc2cc40297b94}
+
+
+position in parameter space 
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{markov__chain_8hh}{markov\_\-chain.hh}\end{DoxyCompactItemize}

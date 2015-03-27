@@ -1,0 +1,702 @@
+\hypertarget{hdf5_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/hdf5.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2011 Danny van Dyk}
+00005 \textcolor{comment}{ * Copyright (c) 2011 Frederik Beaujean}
+00006 \textcolor{comment}{ *}
+00007 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00008 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00009 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00010 \textcolor{comment}{ *}
+00011 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00012 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00013 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00014 \textcolor{comment}{ * details.}
+00015 \textcolor{comment}{ *}
+00016 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00017 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00018 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00019 \textcolor{comment}{ */}
+00020 
+00021 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_HDF5\_HH}
+\hypertarget{hdf5_8hh_source_l00022}{}\hyperlink{hdf5_8hh_ab9d243c1633b2b4f6e51b80f8300d92e}{00022} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_HDF5\_HH 1}
+00023 \textcolor{preprocessor}{}
+00024 \textcolor{preprocessor}{#include <\hyperlink{exception_8hh}{eos/utils/exception.hh}>}
+00025 \textcolor{preprocessor}{#include <\hyperlink{hdf5-fwd_8hh}{eos/utils/hdf5-fwd.hh}>}
+00026 \textcolor{preprocessor}{#include <\hyperlink{private__implementation__pattern_8hh}{eos/utils/private_implementation_pattern.hh}>}
+00027 \textcolor{preprocessor}{#include <\hyperlink{wrapped__forward__iterator_8hh}{eos/utils/wrapped_forward_iterator.hh}>}
+00028 \textcolor{preprocessor}{#include <hdf5.h>}
+00029 
+00030 \textcolor{preprocessor}{#include <cstring>}
+00031 \textcolor{preprocessor}{#include <vector>}
+00032 
+00033 \textcolor{keyword}{namespace }eos
+00034 \{
+\hypertarget{hdf5_8hh_source_l00038}{}\hyperlink{classeos_1_1HDF5Error}{00038}     \textcolor{keyword}{class }\hyperlink{classeos_1_1HDF5Error}{HDF5Error} :
+00039         \textcolor{keyword}{public} \hyperlink{classeos_1_1Exception}{Exception}
+00040     \{
+00041         \textcolor{keyword}{public}:
+00047             \hyperlink{classeos_1_1HDF5Error_af32e08e06b9bedbe31e760574b1d6f7a}{HDF5Error}(\textcolor{keyword}{const} std::string & message);
+00048     \};
+00049 
+00050     \textcolor{keyword}{namespace }hdf5
+00051     \{
+00052         \textcolor{comment}{/* Type System */}
+\hypertarget{hdf5_8hh_source_l00053}{}\hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{00053}         \textcolor{keyword}{typedef} \textcolor{keywordtype}{int} \hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid_t};
+00054 
+\hypertarget{hdf5_8hh_source_l00055}{}\hyperlink{structeos_1_1hdf5_1_1DataType}{00055}         \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_> \textcolor{keyword}{struct }\hyperlink{structeos_1_1hdf5_1_1DataType}{DataType}
+00056         \{
+00057             \textcolor{keyword}{static} \hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid_t} \hyperlink{structeos_1_1hdf5_1_1DataType_a96dea8ef1e40e5af0c68658d9155bd44}{type_id}();
+00058         \};
+00059 
+\hypertarget{hdf5_8hh_source_l00060}{}\hyperlink{structeos_1_1hdf5_1_1DataType_3_01double_01_4}{00060}         \textcolor{keyword}{template} <> \textcolor{keyword}{struct }\hyperlink{structeos_1_1hdf5_1_1DataType}{DataType}<double>
+00061         \{
+\hypertarget{hdf5_8hh_source_l00062}{}\hyperlink{structeos_1_1hdf5_1_1DataType_3_01double_01_4_a75d1dd38c44178ee0b761a234a20548d}{00062}             \textcolor{keyword}{static} \hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid_t} \hyperlink{structeos_1_1hdf5_1_1DataType_3_01double_01_4_a75d1dd38c44178ee0b761a234a20548d}{type_id}() \{ \textcolor{keywordflow}{return} H5T\_IEEE\_F64LE; \}
+00063         \};
+00064 
+\hypertarget{hdf5_8hh_source_l00065}{}\hyperlink{structeos_1_1hdf5_1_1DataType_3_01unsigned_01_4}{00065}         \textcolor{keyword}{template} <> \textcolor{keyword}{struct }\hyperlink{structeos_1_1hdf5_1_1DataType}{DataType}<unsigned>
+00066         \{
+\hypertarget{hdf5_8hh_source_l00067}{}\hyperlink{structeos_1_1hdf5_1_1DataType_3_01unsigned_01_4_a8bc8ca9f5f6ba523da948d0babc6168c}{00067}             \textcolor{keyword}{static} \hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid_t} \hyperlink{structeos_1_1hdf5_1_1DataType_3_01unsigned_01_4_a8bc8ca9f5f6ba523da948d0babc6168c}{type_id}() \{ \textcolor{keywordflow}{return} H5T\_STD\_U32LE; \}
+00068         \};
+00069 
+\hypertarget{hdf5_8hh_source_l00070}{}\hyperlink{structeos_1_1hdf5_1_1DataType_3_01int_01_4}{00070}         \textcolor{keyword}{template} <> \textcolor{keyword}{struct }\hyperlink{structeos_1_1hdf5_1_1DataType}{DataType}<int>
+00071         \{
+\hypertarget{hdf5_8hh_source_l00072}{}\hyperlink{structeos_1_1hdf5_1_1DataType_3_01int_01_4_ad6b7bc5e9e4745f8a02fa6ceeaa110ba}{00072}             \textcolor{keyword}{static} \hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid_t} \hyperlink{structeos_1_1hdf5_1_1DataType_3_01int_01_4_ad6b7bc5e9e4745f8a02fa6ceeaa110ba}{type_id}() \{ \textcolor{keywordflow}{return} H5T\_STD\_I32LE; \}
+00073         \};
+00074 
+\hypertarget{hdf5_8hh_source_l00075}{}\hyperlink{structeos_1_1hdf5_1_1DataType_3_01short_01_4}{00075}         \textcolor{keyword}{template} <> \textcolor{keyword}{struct }\hyperlink{structeos_1_1hdf5_1_1DataType}{DataType}<short>
+00076         \{
+\hypertarget{hdf5_8hh_source_l00077}{}\hyperlink{structeos_1_1hdf5_1_1DataType_3_01short_01_4_aff06c6712c9e5f6c29c77de87a238d59}{00077}             \textcolor{keyword}{static} \hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid_t} \hyperlink{structeos_1_1hdf5_1_1DataType_3_01short_01_4_aff06c6712c9e5f6c29c77de87a238d59}{type_id}() \{ \textcolor{keywordflow}{return} H5T\_STD\_I8LE; \}
+00078         \};
+00079 
+\hypertarget{hdf5_8hh_source_l00080}{}\hyperlink{structeos_1_1hdf5_1_1DataType_3_01const_01char_01_5_01_4}{00080}         \textcolor{keyword}{template} <> \textcolor{keyword}{struct }\hyperlink{structeos_1_1hdf5_1_1DataType}{DataType}<const char *>
+00081         \{
+\hypertarget{hdf5_8hh_source_l00082}{}\hyperlink{structeos_1_1hdf5_1_1DataType_3_01const_01char_01_5_01_4_a917f76dfdee14b398ac9514608c24937}{00082}             \textcolor{keyword}{static} \hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid_t} type\_id()
+00083             \{
+00084                 \hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid_t} data\_type = H5Tcopy(H5T\_C\_S1);
+00085                 H5Tset\_size(data\_type, H5T\_VARIABLE);
+00086 
+00087                 \textcolor{keywordflow}{return} data\_type;
+00088             \}
+00089         \};
+00090 
+00091         \textcolor{comment}{/*}
+00092 \textcolor{comment}{         * Type presents the C++ interface to HDF5 types handlers.}
+00093 \textcolor{comment}{         */}
+\hypertarget{hdf5_8hh_source_l00094}{}\hyperlink{structeos_1_1hdf5_1_1Type}{00094}         \textcolor{keyword}{struct }\hyperlink{structeos_1_1hdf5_1_1Type}{Type}
+00095         \{
+00096             \textcolor{keyword}{virtual} \hyperlink{structeos_1_1hdf5_1_1Type_a0c9013a37b76efb7538829c3e14d0162}{~Type}() = 0;
+00097 
+00098             \textcolor{keyword}{virtual} \hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid_t} \hyperlink{structeos_1_1hdf5_1_1Type_a0305c470a7a26a391f9a751e40bb9ff6}{type_id}() \textcolor{keyword}{const} = 0;
+00099 
+00100             \textcolor{keyword}{virtual} \textcolor{keyword}{const} std::string & \hyperlink{structeos_1_1hdf5_1_1Type_a79de1c9f0444de59864107c388c23d2d}{name}() \textcolor{keyword}{const} = 0;
+00101 
+00102             \textcolor{keyword}{virtual} hsize\_t \hyperlink{structeos_1_1hdf5_1_1Type_a0cf79b090412bb228a1df8349acf3c2b}{size}() \textcolor{keyword}{const} = 0;
+00103 
+00104             \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{structeos_1_1hdf5_1_1Type_a30b665dc2adbe459feb640c61776b50a}{copy_to_hdf5}(\textcolor{keyword}{const} \textcolor{keywordtype}{void} * src, \textcolor{keywordtype}{void} * dest) \textcolor{keyword}{const} = 0;
+00105 
+00106             \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{structeos_1_1hdf5_1_1Type_a4d1073336bce1500533e69a1187acd66}{copy_from_hdf5}(\textcolor{keyword}{const} \textcolor{keywordtype}{void} * src, \textcolor{keywordtype}{void} * dest) \textcolor{keyword}{const} = 0;
+      
+00107         \};
+00108 
+\hypertarget{hdf5_8hh_source_l00109}{}\hyperlink{namespaceeos_1_1hdf5_ac960ca8a290b8a26ab5f71585ac5d793}{00109}         \textcolor{keyword}{typedef} std::shared\_ptr<Type> \hyperlink{namespaceeos_1_1hdf5_ac960ca8a290b8a26ab5f71585ac5d793}{TypePtr};
+00110 
+\hypertarget{hdf5_8hh_source_l00114}{}\hyperlink{classeos_1_1hdf5_1_1Scalar}{00114}         \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_> \textcolor{keyword}{class }\hyperlink{classeos_1_1hdf5_1_1Scalar}{Scalar} :
+00115             \textcolor{keyword}{public} \hyperlink{structeos_1_1hdf5_1_1Type}{Type}
+00116         \{
+00117             \textcolor{keyword}{private}:
+00118                 \hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid_t} \_type\_id;
+00119 
+00120                 std::string \_name;
+00121 
+00122             \textcolor{keyword}{public}:
+\hypertarget{hdf5_8hh_source_l00123}{}\hyperlink{classeos_1_1hdf5_1_1Scalar_a614de8b7185b626dad906cf347b86f92}{00123}                 \textcolor{keyword}{typedef} T\_ \hyperlink{structeos_1_1hdf5_1_1Type}{Type};
+00124 
+\hypertarget{hdf5_8hh_source_l00125}{}\hyperlink{classeos_1_1hdf5_1_1Scalar_ab242719c82cdf865766b1e97d8c9666a}{00125}                 \hyperlink{classeos_1_1hdf5_1_1Scalar_ab242719c82cdf865766b1e97d8c9666a}{Scalar}(\textcolor{keyword}{const} std::string & \hyperlink{classeos_1_1hdf5_1_1Scalar_af914b3bd28aa664d17cc6223659c7b45}{name}) :
+00126                     \_type\_id(hdf5::\hyperlink{structeos_1_1hdf5_1_1DataType}{DataType}<T\_>::\hyperlink{classeos_1_1hdf5_1_1Scalar_a5d54b43030237b9bc1c7076184ff968d}{type_id}()),
+00127                     \_name(name)
+00128                 \{
+00129                 \}
+00130 
+\hypertarget{hdf5_8hh_source_l00131}{}\hyperlink{classeos_1_1hdf5_1_1Scalar_a7bc85bf7ef7d9488df0953597bf3254a}{00131}                 \hyperlink{classeos_1_1hdf5_1_1Scalar_a7bc85bf7ef7d9488df0953597bf3254a}{~Scalar}()
+00132                 \{
+00133                 \}
+00134 
+\hypertarget{hdf5_8hh_source_l00135}{}\hyperlink{classeos_1_1hdf5_1_1Scalar_a5d54b43030237b9bc1c7076184ff968d}{00135}                 \textcolor{keyword}{virtual} \hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid_t} \hyperlink{classeos_1_1hdf5_1_1Scalar_a5d54b43030237b9bc1c7076184ff968d}{type_id}()\textcolor{keyword}{ const}
+00136 \textcolor{keyword}{                }\{
+00137                     \textcolor{keywordflow}{return} \_type\_id;
+00138                 \}
+00139 
+\hypertarget{hdf5_8hh_source_l00140}{}\hyperlink{classeos_1_1hdf5_1_1Scalar_af914b3bd28aa664d17cc6223659c7b45}{00140}                 \textcolor{keyword}{virtual} \textcolor{keyword}{const} std::string & \hyperlink{classeos_1_1hdf5_1_1Scalar_af914b3bd28aa664d17cc6223659c7b45}{name}()\textcolor{keyword}{ const}
+00141 \textcolor{keyword}{                }\{
+00142                     \textcolor{keywordflow}{return} \_name;
+00143                 \}
+00144 
+\hypertarget{hdf5_8hh_source_l00145}{}\hyperlink{classeos_1_1hdf5_1_1Scalar_a88e62fcc7557957b737a45a9f6ac7952}{00145}                 \textcolor{keyword}{virtual} hsize\_t \hyperlink{classeos_1_1hdf5_1_1Scalar_a88e62fcc7557957b737a45a9f6ac7952}{size}()\textcolor{keyword}{ const}
+00146 \textcolor{keyword}{                }\{
+00147                     \textcolor{keywordflow}{return} H5Tget\_size(\_type\_id);
+00148                 \}
+00149 
+\hypertarget{hdf5_8hh_source_l00150}{}\hyperlink{classeos_1_1hdf5_1_1Scalar_a4aeec2eb655199bd6ad02464eeb44648}{00150}                 \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classeos_1_1hdf5_1_1Scalar_a4aeec2eb655199bd6ad02464eeb44648}{copy_to_hdf5}(\textcolor{keyword}{const} \textcolor{keywordtype}{void} * src, \textcolor{keywordtype}{void} * dest)\textcolor{keyword}{ const}
+00151 \textcolor{keyword}{                }\{
+00152                     ::memcpy(dest, src, \textcolor{keyword}{sizeof}(T\_));
+00153                 \}
+00154 
+\hypertarget{hdf5_8hh_source_l00155}{}\hyperlink{classeos_1_1hdf5_1_1Scalar_a840b94c45ff51454eb2baae727165a71}{00155}                 \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classeos_1_1hdf5_1_1Scalar_a840b94c45ff51454eb2baae727165a71}{copy_from_hdf5}(\textcolor{keyword}{const} \textcolor{keywordtype}{void} * src, \textcolor{keywordtype}{void} * dest)\textcolor{keyword}{ const}
+00156 \textcolor{keyword}{                }\{
+00157                     ::memcpy(dest, src, \textcolor{keyword}{sizeof}(T\_));
+00158                 \}
+00159         \};
+00160 
+\hypertarget{hdf5_8hh_source_l00161}{}\hyperlink{classeos_1_1hdf5_1_1Array}{00161}         \textcolor{keyword}{template} <\textcolor{keywordtype}{unsigned} rank\_, \textcolor{keyword}{typename} T\_> \textcolor{keyword}{class }\hyperlink{classeos_1_1hdf5_1_1Array}{Array} :
+00162             \textcolor{keyword}{public} \hyperlink{classeos_1_1hdf5_1_1Array_a11f93349d9391d143099a25c59827610}{Type}
+00163         \{
+00164             \textcolor{keyword}{private}:
+00165                 \hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid_t} \_type\_id;
+00166 
+00167                 std::string \_name;
+00168 
+00169                 \textcolor{keywordtype}{unsigned} \_elements;
+00170 
+00171             \textcolor{keyword}{public}:
+\hypertarget{hdf5_8hh_source_l00172}{}\hyperlink{classeos_1_1hdf5_1_1Array_a11f93349d9391d143099a25c59827610}{00172}                 \textcolor{keyword}{typedef} std::vector<T\_> \hyperlink{classeos_1_1hdf5_1_1Array_a11f93349d9391d143099a25c59827610}{Type};
+00173 
+\hypertarget{hdf5_8hh_source_l00174}{}\hyperlink{classeos_1_1hdf5_1_1Array_a7b2da023a1a1b9f289cbc6484e8aad2c}{00174}                 \hyperlink{classeos_1_1hdf5_1_1Array_a7b2da023a1a1b9f289cbc6484e8aad2c}{Array}(\textcolor{keyword}{const} std::string & \hyperlink{classeos_1_1hdf5_1_1Array_aa533ea361fe7d7f589ea60ffee2120a5}{name}, \textcolor{keyword}{const} std::initializer\_list<hsize
+      \_t> & dimensions) :
+00175                     \_name(name)
+00176                 \{
+00177                     static\_assert(rank\_ > 0, \textcolor{stringliteral}{"Array<0> is not supported"});
+00178 
+00179                     \textcolor{keywordflow}{if} (dimensions.size() != rank\_)
+00180                         \textcolor{keywordflow}{throw} std::string(\textcolor{stringliteral}{"Array<> dimensions have wrong rank"});
+00181 
+00182                     \_type\_id = H5Tarray\_create2(\hyperlink{structeos_1_1hdf5_1_1DataType}{hdf5::DataType<T_>::type_id}(), ra
+      nk\_, &(*dimensions.begin()));
+00183 
+00184                     \textcolor{keyword}{auto} d = dimensions.begin();
+00185                     \_elements = *d; ++d;
+00186 
+00187                     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} d\_end = dimensions.end() ; d != d\_end ; ++d)
+00188                     \{
+00189                         \_elements *= *d;
+00190                     \}
+00191                 \}
+00192 
+\hypertarget{hdf5_8hh_source_l00193}{}\hyperlink{classeos_1_1hdf5_1_1Array_aa533ea361fe7d7f589ea60ffee2120a5}{00193}                 \textcolor{keyword}{virtual} \textcolor{keyword}{const} std::string & \hyperlink{classeos_1_1hdf5_1_1Array_aa533ea361fe7d7f589ea60ffee2120a5}{name}()\textcolor{keyword}{ const}
+00194 \textcolor{keyword}{                }\{
+00195                     \textcolor{keywordflow}{return} \_name;
+00196                 \}
+00197 
+\hypertarget{hdf5_8hh_source_l00198}{}\hyperlink{classeos_1_1hdf5_1_1Array_ac560c57df5f551234fd5ac77d1890d30}{00198}                 \textcolor{keyword}{virtual} \hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid_t} \hyperlink{classeos_1_1hdf5_1_1Array_ac560c57df5f551234fd5ac77d1890d30}{type_id}()\textcolor{keyword}{ const}
+00199 \textcolor{keyword}{                }\{
+00200                     \textcolor{keywordflow}{return} \_type\_id;
+00201                 \}
+00202 
+\hypertarget{hdf5_8hh_source_l00203}{}\hyperlink{classeos_1_1hdf5_1_1Array_abbe03946de83c9b63d6fc35fc5a60c69}{00203}                 \textcolor{keyword}{virtual} hsize\_t \hyperlink{classeos_1_1hdf5_1_1Array_abbe03946de83c9b63d6fc35fc5a60c69}{size}()\textcolor{keyword}{ const}
+00204 \textcolor{keyword}{                }\{
+00205                     \textcolor{keywordflow}{return} H5Tget\_size(\_type\_id);
+00206                 \}
+00207 
+\hypertarget{hdf5_8hh_source_l00208}{}\hyperlink{classeos_1_1hdf5_1_1Array_a4f0adbcb6e7136436afa14aee7ebc5c9}{00208}                 \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classeos_1_1hdf5_1_1Array_a4f0adbcb6e7136436afa14aee7ebc5c9}{copy_to_hdf5}(\textcolor{keyword}{const} \textcolor{keywordtype}{void} * src, \textcolor{keywordtype}{void} * dest)\textcolor{keyword}{ const}
+00209 \textcolor{keyword}{                }\{
+00210                     \textcolor{keyword}{const} std::vector<T\_> * \_src = \textcolor{keyword}{reinterpret\_cast<}\textcolor{keyword}{const }std::ve
+      ctor<T\_> *\textcolor{keyword}{>}(src);
+00211                     ::memcpy(dest, &(*\_src)[0], \_elements * \textcolor{keyword}{sizeof}(T\_));
+00212                 \}
+00213 
+\hypertarget{hdf5_8hh_source_l00214}{}\hyperlink{classeos_1_1hdf5_1_1Array_aedd48f5a8020d66426bd0adfc74fa6a9}{00214}                 \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classeos_1_1hdf5_1_1Array_aedd48f5a8020d66426bd0adfc74fa6a9}{copy_from_hdf5}(\textcolor{keyword}{const} \textcolor{keywordtype}{void} * src, \textcolor{keywordtype}{void} * dest)\textcolor{keyword}{ const}
+00215 \textcolor{keyword}{                }\{
+00216                     std::vector<T\_> * \_dest = \textcolor{keyword}{reinterpret\_cast<}std::vector<T\_> *\textcolor{keyword}{>
+      }(dest);
+00217                     \_dest->reserve(\_elements);
+00218 
+00219                     ::memcpy(&(*\_dest)[0], src, \_elements * \textcolor{keyword}{sizeof}(T\_));
+00220                 \}
+00221         \};
+00222 
+\hypertarget{hdf5_8hh_source_l00223}{}\hyperlink{structeos_1_1hdf5_1_1CompositeCopier}{00223}         \textcolor{keyword}{template} <\textcolor{keywordtype}{size\_t} index\_, \textcolor{keyword}{typename} TypeTuple\_, \textcolor{keyword}{typename} Tuple\_> \textcolor{keyword}{struct }
+      \hyperlink{structeos_1_1hdf5_1_1CompositeCopier}{CompositeCopier}
+00224         \{
+\hypertarget{hdf5_8hh_source_l00225}{}\hyperlink{structeos_1_1hdf5_1_1CompositeCopier_a22ef8fb00bdff57f9fb8c8556d45d497}{00225}             \textcolor{keyword}{static} std::ptrdiff\_t \hyperlink{structeos_1_1hdf5_1_1CompositeCopier_a22ef8fb00bdff57f9fb8c8556d45d497}{copy_to_hdf5}(\textcolor{keyword}{const} TypeTuple\_ & types, \textcolor{keyword}{const} Tu
+      ple\_ & src, \textcolor{keywordtype}{char} * dest)
+00226             \{
+00227                 std::ptrdiff\_t offset = 
+      \hyperlink{structeos_1_1hdf5_1_1CompositeCopier_a22ef8fb00bdff57f9fb8c8556d45d497}{CompositeCopier<index_ - 1, TypeTuple_, Tuple_>::copy_to_hdf5}(types, src, dest);
+00228 
+00229                 std::get<index\_>(types).\hyperlink{structeos_1_1hdf5_1_1CompositeCopier_a22ef8fb00bdff57f9fb8c8556d45d497}{copy_to_hdf5}(&std::get<index\_>(src), dest
+       + offset);
+00230 
+00231                 \textcolor{keywordflow}{return} offset + std::get<index\_>(types).size();
+00232             \}
+00233 
+\hypertarget{hdf5_8hh_source_l00234}{}\hyperlink{structeos_1_1hdf5_1_1CompositeCopier_ac9d6c53322b8f138c48ed5bfc951f796}{00234}             \textcolor{keyword}{static} std::ptrdiff\_t \hyperlink{structeos_1_1hdf5_1_1CompositeCopier_ac9d6c53322b8f138c48ed5bfc951f796}{copy_from_hdf5}(\textcolor{keyword}{const} TypeTuple\_ & types, \textcolor{keyword}{const} 
+      \textcolor{keywordtype}{char} * src, Tuple\_ & dest)
+00235             \{
+00236                 std::ptrdiff\_t offset = 
+      \hyperlink{structeos_1_1hdf5_1_1CompositeCopier_ac9d6c53322b8f138c48ed5bfc951f796}{CompositeCopier<index_ - 1, TypeTuple_, Tuple_>::copy_from_hdf5}(types, src, dest)
+      ;
+00237 
+00238                 std::get<index\_>(types).\hyperlink{structeos_1_1hdf5_1_1CompositeCopier_ac9d6c53322b8f138c48ed5bfc951f796}{copy_from_hdf5}(src + offset, &std::get<in
+      dex\_>(dest));
+00239 
+00240                 \textcolor{keywordflow}{return} offset + std::get<index\_>(types).size();
+00241             \}
+00242         \};
+00243 
+\hypertarget{hdf5_8hh_source_l00244}{}\hyperlink{structeos_1_1hdf5_1_1CompositeCopier_3_010_00_01TypeTuple___00_01Tuple___01_4}{00244}         \textcolor{keyword}{template} <\textcolor{keyword}{typename} TypeTuple\_, \textcolor{keyword}{typename} Tuple\_> \textcolor{keyword}{struct }\hyperlink{structeos_1_1hdf5_1_1CompositeCopier}{CompositeCopier}<0,
+       TypeTuple\_, Tuple\_>
+00245         \{
+\hypertarget{hdf5_8hh_source_l00246}{}\hyperlink{structeos_1_1hdf5_1_1CompositeCopier_3_010_00_01TypeTuple___00_01Tuple___01_4_a2f1615908f9dc922402fd137d5c8ee76}{00246}             \textcolor{keyword}{static} std::ptrdiff\_t \hyperlink{structeos_1_1hdf5_1_1CompositeCopier_a22ef8fb00bdff57f9fb8c8556d45d497}{copy_to_hdf5}(\textcolor{keyword}{const} TypeTuple\_ & types, \textcolor{keyword}{const} Tu
+      ple\_ & src, \textcolor{keywordtype}{char} * dest)
+00247             \{
+00248                 std::get<0>(types).\hyperlink{structeos_1_1hdf5_1_1CompositeCopier_a22ef8fb00bdff57f9fb8c8556d45d497}{copy_to_hdf5}(&std::get<0>(src), dest);
+00249 
+00250                 \textcolor{keywordflow}{return} std::get<0>(types).size();
+00251             \}
+00252 
+\hypertarget{hdf5_8hh_source_l00253}{}\hyperlink{structeos_1_1hdf5_1_1CompositeCopier_3_010_00_01TypeTuple___00_01Tuple___01_4_ad4f925fa6486662bc95b459a95ac4c02}{00253}             \textcolor{keyword}{static} std::ptrdiff\_t \hyperlink{structeos_1_1hdf5_1_1CompositeCopier_ac9d6c53322b8f138c48ed5bfc951f796}{copy_from_hdf5}(\textcolor{keyword}{const} TypeTuple\_ & types, \textcolor{keyword}{const} 
+      \textcolor{keywordtype}{char} * src, Tuple\_ & dest)
+00254             \{
+00255                 std::get<0>(types).\hyperlink{structeos_1_1hdf5_1_1CompositeCopier_ac9d6c53322b8f138c48ed5bfc951f796}{copy_from_hdf5}(src, &std::get<0>(dest));
+00256 
+00257                 \textcolor{keywordflow}{return} std::get<0>(types).size();
+00258             \}
+00259         \};
+00260 
+\hypertarget{hdf5_8hh_source_l00261}{}\hyperlink{classeos_1_1hdf5_1_1Composite}{00261}         \textcolor{keyword}{template} <\textcolor{keyword}{typename} ... T\_> \textcolor{keyword}{class }\hyperlink{classeos_1_1hdf5_1_1Composite}{Composite} :
+00262             \textcolor{keyword}{public} \hyperlink{structeos_1_1hdf5_1_1Type}{Type}
+00263         \{
+00264             \textcolor{keyword}{private}:
+00265                 \hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid_t} \_type\_id;
+00266 
+00267                 \textcolor{keywordtype}{size\_t} \_size;
+00268 
+00269                 std::string \_name;
+00270 
+00271                 std::tuple<T\_ ...> \_types;
+00272 
+00273                 \textcolor{keyword}{template} <\textcolor{keyword}{typename} R\_> \hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid_t} \_insert(\textcolor{keyword}{const} \hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid_t} & compound\_id, \textcolor{keywordtype}{s
+      ize\_t} offset, \textcolor{keyword}{const} R\_ & r)
+00274                 \{
+00275                     H5Tinsert(compound\_id, r.name().c\_str(), offset, r.type\_id())
+      ;
+00276 
+00277                     \textcolor{keywordflow}{return} compound\_id;
+00278                 \}
+00279 
+00280                 \textcolor{keyword}{template} <\textcolor{keyword}{typename} R\_, \textcolor{keyword}{typename} ... S\_> \hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid_t} \_insert(\textcolor{keyword}{const} 
+      \hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid_t} & compound\_id, \textcolor{keywordtype}{size\_t} offset, \textcolor{keyword}{const} R\_ & r, \textcolor{keyword}{const} S\_ & ... s)
+00281                 \{
+00282                     H5Tinsert(compound\_id, r.name().c\_str(), offset, r.type\_id())
+      ;
+00283 
+00284                     \textcolor{keywordflow}{return} \_insert(compound\_id, offset + r.size(), s ...);
+00285                 \}
+00286 
+00287                 \textcolor{keyword}{template} <\textcolor{keyword}{typename} R\_> \textcolor{keyword}{static} \textcolor{keywordtype}{size\_t} \_compute\_size(\textcolor{keyword}{const} R\_ & r)
+00288                 \{
+00289                     \textcolor{keywordflow}{return} r.size();
+00290                 \}
+00291 
+00292                 \textcolor{keyword}{template} <\textcolor{keyword}{typename} R\_, \textcolor{keyword}{typename} ... S\_> \textcolor{keyword}{static} \textcolor{keywordtype}{size\_t} \_compute\_si
+      ze(\textcolor{keyword}{const} R\_ & r, \textcolor{keyword}{const} S\_ & ... s)
+00293                 \{
+00294                     \textcolor{keywordflow}{return} r.size() + \_compute\_size(s ...);
+00295                 \}
+00296 
+00297             \textcolor{keyword}{public}:
+\hypertarget{hdf5_8hh_source_l00298}{}\hyperlink{classeos_1_1hdf5_1_1Composite_ada7dfe0d889983cbb27abbaffdeb1220}{00298}                 \textcolor{keyword}{typedef} std::tuple<\textcolor{keyword}{typename} T\_::Type ...> \hyperlink{structeos_1_1hdf5_1_1Type}{Type};
+00299 
+\hypertarget{hdf5_8hh_source_l00300}{}\hyperlink{classeos_1_1hdf5_1_1Composite_a191269a71c496e5ec3b4514400cfe6f4}{00300}                 \hyperlink{classeos_1_1hdf5_1_1Composite_a191269a71c496e5ec3b4514400cfe6f4}{Composite}(\textcolor{keyword}{const} std::string & \hyperlink{classeos_1_1hdf5_1_1Composite_aa72cd90613270fa5006319bee231be5b}{name}, \textcolor{keyword}{const} T\_ & ... t) :
+00301                     \_type\_id(\_insert(H5Tcreate(H5T\_COMPOUND, \_compute\_size(t ...)
+      ), 0, t ...)),
+00302                     \_size(H5Tget\_size(\_type\_id)),
+00303                     \_name(name),
+00304                     \_types(t ...)
+00305                 \{
+00306                     \textcolor{keywordflow}{if} (\_size != \_compute\_size(t ...))
+00307                         \textcolor{keywordflow}{throw} \hyperlink{classeos_1_1HDF5Error}{HDF5Error}(\textcolor{stringliteral}{"Composite::\_compute\_size returned differ
+      ent size than H5Tget\_size"});
+00308                 \}
+00309 
+\hypertarget{hdf5_8hh_source_l00310}{}\hyperlink{classeos_1_1hdf5_1_1Composite_af9412e3240e5916899327e756407057f}{00310}                 \hyperlink{classeos_1_1hdf5_1_1Composite_af9412e3240e5916899327e756407057f}{~Composite}()
+00311                 \{
+00312                 \}
+00313 
+\hypertarget{hdf5_8hh_source_l00314}{}\hyperlink{classeos_1_1hdf5_1_1Composite_a97743d3126f849b6359587508b488a38}{00314}                 \textcolor{keyword}{virtual} \hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid_t} \hyperlink{classeos_1_1hdf5_1_1Composite_a97743d3126f849b6359587508b488a38}{type_id}()\textcolor{keyword}{ const}
+00315 \textcolor{keyword}{                }\{
+00316                     \textcolor{keywordflow}{return} \_type\_id;
+00317                 \}
+00318 
+\hypertarget{hdf5_8hh_source_l00319}{}\hyperlink{classeos_1_1hdf5_1_1Composite_aa72cd90613270fa5006319bee231be5b}{00319}                 \textcolor{keyword}{virtual} \textcolor{keyword}{const} std::string & \hyperlink{classeos_1_1hdf5_1_1Composite_aa72cd90613270fa5006319bee231be5b}{name}()\textcolor{keyword}{ const}
+00320 \textcolor{keyword}{                }\{
+00321                     \textcolor{keywordflow}{return} \_name;
+00322                 \}
+00323 
+\hypertarget{hdf5_8hh_source_l00324}{}\hyperlink{classeos_1_1hdf5_1_1Composite_a67ce4870971aced7cf83a7a88c16c61d}{00324}                 \textcolor{keyword}{virtual} hsize\_t \hyperlink{classeos_1_1hdf5_1_1Composite_a67ce4870971aced7cf83a7a88c16c61d}{size}()\textcolor{keyword}{ const}
+00325 \textcolor{keyword}{                }\{
+00326                     \textcolor{keywordflow}{return} \_size;
+00327                 \}
+00328 
+\hypertarget{hdf5_8hh_source_l00329}{}\hyperlink{classeos_1_1hdf5_1_1Composite_ac86859046bcb7b5741afdb5ec13e78f0}{00329}                 \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classeos_1_1hdf5_1_1Composite_ac86859046bcb7b5741afdb5ec13e78f0}{copy_to_hdf5}(\textcolor{keyword}{const} \textcolor{keywordtype}{void} * src, \textcolor{keywordtype}{void} * dest)\textcolor{keyword}{ const}
+00330 \textcolor{keyword}{                }\{
+00331                     \textcolor{keyword}{const} \hyperlink{structeos_1_1hdf5_1_1Type}{Type} * \_src = \textcolor{keyword}{reinterpret\_cast<}\textcolor{keyword}{const }\hyperlink{structeos_1_1hdf5_1_1Type}{Type} *\textcolor{keyword}{>}(src);
+00332                     \textcolor{keywordtype}{char} * \_dest = \textcolor{keyword}{reinterpret\_cast<}\textcolor{keywordtype}{char} *\textcolor{keyword}{>}(dest);
+00333 
+00334                     \hyperlink{structeos_1_1hdf5_1_1CompositeCopier}{CompositeCopier}<\textcolor{keyword}{sizeof}...(T\_) - 1, std::tuple<T\_ ...>, \hyperlink{structeos_1_1hdf5_1_1Type}{Type}>:
+      :\hyperlink{classeos_1_1hdf5_1_1Composite_ac86859046bcb7b5741afdb5ec13e78f0}{copy_to_hdf5}(\_types, *\_src, \_dest);
+00335                 \}
+00336 
+\hypertarget{hdf5_8hh_source_l00337}{}\hyperlink{classeos_1_1hdf5_1_1Composite_a4504f18af7ad323f89b4635eae9f1695}{00337}                 \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classeos_1_1hdf5_1_1Composite_a4504f18af7ad323f89b4635eae9f1695}{copy_from_hdf5}(\textcolor{keyword}{const} \textcolor{keywordtype}{void} * src, \textcolor{keywordtype}{void} * dest)\textcolor{keyword}{ const}
+00338 \textcolor{keyword}{                }\{
+00339                     \textcolor{keyword}{const} \textcolor{keywordtype}{char} * \_src = \textcolor{keyword}{reinterpret\_cast<}\textcolor{keyword}{const }\textcolor{keywordtype}{char} *\textcolor{keyword}{>}(src);
+00340                     \hyperlink{structeos_1_1hdf5_1_1Type}{Type} * \_dest = \textcolor{keyword}{reinterpret\_cast<}\hyperlink{structeos_1_1hdf5_1_1Type}{Type} *\textcolor{keyword}{>}(dest);
+00341 
+00342                     \hyperlink{structeos_1_1hdf5_1_1CompositeCopier}{CompositeCopier}<\textcolor{keyword}{sizeof}...(T\_) - 1, std::tuple<T\_ ...>, \hyperlink{structeos_1_1hdf5_1_1Type}{Type}>:
+      :\hyperlink{classeos_1_1hdf5_1_1Composite_a4504f18af7ad323f89b4635eae9f1695}{copy_from_hdf5}(\_types, \_src, *\_dest);
+00343                 \}
+00344         \};
+00345 
+00346         \textcolor{comment}{/* Handle Classes */}
+00347 
+\hypertarget{hdf5_8hh_source_l00348}{}\hyperlink{classeos_1_1hdf5_1_1FileHandle}{00348}         \textcolor{keyword}{class }\hyperlink{classeos_1_1hdf5_1_1FileHandle}{FileHandle} :
+00349             \textcolor{keyword}{public} \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern}<hdf5::FileHandle>
+00350         \{
+00351             \textcolor{keyword}{private}:
+00352                 \hyperlink{classeos_1_1hdf5_1_1FileHandle}{FileHandle}(\textcolor{keyword}{const} \hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid_t} & file\_id, \textcolor{keywordtype}{bool} \hyperlink{classeos_1_1hdf5_1_1FileHandle_a48481c6740c14dc65b04561ad68edef6}{read_only});
+00353 
+00354             \textcolor{keyword}{public}:
+\hypertarget{hdf5_8hh_source_l00355}{}\hyperlink{classeos_1_1hdf5_1_1FileHandle_a68d15876ad188b7628261b12d0eac8aa}{00355}                 \textcolor{keyword}{friend} \textcolor{keyword}{class }\hyperlink{classeos_1_1hdf5_1_1File}{File};
+00356 
+00357                 \hyperlink{classeos_1_1hdf5_1_1FileHandle_a493e129a4cc5cc14a5b28c66b83c0554}{~FileHandle}();
+00358 
+00359                 \hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid_t} \hyperlink{classeos_1_1hdf5_1_1FileHandle_ad82bab7945b094e0504e1956026481ae}{id}() \textcolor{keyword}{const};
+00360 
+00361                 \textcolor{keywordtype}{bool} \hyperlink{classeos_1_1hdf5_1_1FileHandle_a48481c6740c14dc65b04561ad68edef6}{read_only}() \textcolor{keyword}{const};
+00362         \};
+00363 
+\hypertarget{hdf5_8hh_source_l00364}{}\hyperlink{classeos_1_1hdf5_1_1DataSetHandle}{00364}         \textcolor{keyword}{class }\hyperlink{classeos_1_1hdf5_1_1DataSetHandle}{DataSetHandle} :
+00365             \textcolor{keyword}{public} \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern}<hdf5::DataSetHandle>
+00366         \{
+00367             \textcolor{keyword}{private}:
+00368                 \hyperlink{classeos_1_1hdf5_1_1DataSetHandle}{DataSetHandle}(\textcolor{keyword}{const} \hyperlink{classeos_1_1hdf5_1_1FileHandle}{FileHandle} & file\_handle, \textcolor{keyword}{const} \hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid_t} & data\_
+      set\_id, \textcolor{keyword}{const} \hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid_t} & space\_id\_file, hsize\_t \hyperlink{classeos_1_1hdf5_1_1DataSetHandle_a713afe404475719f6ac336f70c8bed51}{size});
+00369 
+00370             \textcolor{keyword}{public}:
+\hypertarget{hdf5_8hh_source_l00371}{}\hyperlink{classeos_1_1hdf5_1_1DataSetHandle_a68d15876ad188b7628261b12d0eac8aa}{00371}                 \textcolor{keyword}{friend} \textcolor{keyword}{class }\hyperlink{classeos_1_1hdf5_1_1File}{File};
+00372 
+00373                 \hyperlink{classeos_1_1hdf5_1_1DataSetHandle_a14a9f5a1e190657f26ca9eb9d6d582cd}{~DataSetHandle}();
+00374 
+00375                 \hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid_t} \hyperlink{classeos_1_1hdf5_1_1DataSetHandle_ac34e42a6ddffcf97b793e0229fdad33e}{set_id}() \textcolor{keyword}{const};
+00376 
+00377                 \hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid_t} \hyperlink{classeos_1_1hdf5_1_1DataSetHandle_a394c8a3332ffce21fb2a8f8cda41c985}{space_id}() \textcolor{keyword}{const};
+00378 
+00379                 \hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid_t} \hyperlink{classeos_1_1hdf5_1_1DataSetHandle_acd551d06d07b60e6f6f35e5a345fb03e}{type_id}() \textcolor{keyword}{const};
+00380 
+00381                 hsize\_t \hyperlink{classeos_1_1hdf5_1_1DataSetHandle_a713afe404475719f6ac336f70c8bed51}{size}() \textcolor{keyword}{const};
+00382 
+00383                 \textcolor{keywordtype}{void} \hyperlink{classeos_1_1hdf5_1_1DataSetHandle_ad41a15bd7f720870427ef14742a2a6cf}{select}(hsize\_t start, hsize\_t count);
+00384 
+00385                 \textcolor{keywordtype}{void} \hyperlink{classeos_1_1hdf5_1_1DataSetHandle_a67ea7145dfbcbe860f9e7f745ab9c36c}{write_one}(\textcolor{keyword}{const} \textcolor{keywordtype}{void} * buffer);
+00386 
+00387                 \textcolor{keywordtype}{void} \hyperlink{classeos_1_1hdf5_1_1DataSetHandle_a099c9af4e4d27b956bde64118ef064c9}{read_one}(\textcolor{keywordtype}{void} * buffer);
+00388 
+00389                 \hyperlink{classeos_1_1hdf5_1_1AttributeHandle}{AttributeHandle} \hyperlink{classeos_1_1hdf5_1_1DataSetHandle_a084cff6f4549ab930d0d2cff8ff5ac6b}{create_attribute}(\textcolor{keyword}{const} std::string & name, \textcolor{keyword}{const} 
+      \hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid_t} & \hyperlink{classeos_1_1hdf5_1_1DataSetHandle_acd551d06d07b60e6f6f35e5a345fb03e}{type_id});
+00390 
+00391                 \hyperlink{classeos_1_1hdf5_1_1AttributeHandle}{AttributeHandle} \hyperlink{classeos_1_1hdf5_1_1DataSetHandle_a874dee8bc477055ee76955e78c00a09e}{open_attribute}(\textcolor{keyword}{const} std::string & name, \textcolor{keyword}{const} 
+      \hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid_t} & \hyperlink{classeos_1_1hdf5_1_1DataSetHandle_acd551d06d07b60e6f6f35e5a345fb03e}{type_id});
+00392         \};
+00393 
+\hypertarget{hdf5_8hh_source_l00394}{}\hyperlink{classeos_1_1hdf5_1_1AttributeHandle}{00394}         \textcolor{keyword}{class }\hyperlink{classeos_1_1hdf5_1_1AttributeHandle}{AttributeHandle} :
+00395             \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern}<AttributeHandle>
+00396         \{
+00397             \textcolor{keyword}{private}:
+00398                 \hyperlink{classeos_1_1hdf5_1_1AttributeHandle}{AttributeHandle}(\textcolor{keyword}{const} \hyperlink{classeos_1_1hdf5_1_1DataSetHandle}{DataSetHandle} & data\_set\_handle, \textcolor{keyword}{const} 
+      \hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid_t} & \hyperlink{classeos_1_1hdf5_1_1AttributeHandle_a5412e79df3d179053902e0ac7b5a93ee}{attribute_id});
+00399 
+00400             \textcolor{keyword}{public}:
+\hypertarget{hdf5_8hh_source_l00401}{}\hyperlink{classeos_1_1hdf5_1_1AttributeHandle_ab1c111c97e6fd99718c0c5f172cf76bc}{00401}                 \textcolor{keyword}{friend} \textcolor{keyword}{class }\hyperlink{classeos_1_1hdf5_1_1DataSetHandle}{DataSetHandle};
+00402 
+00403                 \hyperlink{classeos_1_1hdf5_1_1AttributeHandle_a8e767c3c6468875d09fa89a446f1eeb3}{~AttributeHandle}();
+00404 
+00405                 \hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid_t} \hyperlink{classeos_1_1hdf5_1_1AttributeHandle_a5412e79df3d179053902e0ac7b5a93ee}{attribute_id}() \textcolor{keyword}{const};
+00406 
+00407                 \hyperlink{namespaceeos_1_1hdf5_a5bd5e209f1bf36cdc5551465dacf2e74}{hid_t} \hyperlink{classeos_1_1hdf5_1_1AttributeHandle_adc5a9f2119e7de59a83f782d9bae892b}{type_id}() \textcolor{keyword}{const};
+00408 
+00409                 \textcolor{keywordtype}{void} \hyperlink{classeos_1_1hdf5_1_1AttributeHandle_acb93f382e986654df68de9389f723efe}{write}(\textcolor{keyword}{const} \textcolor{keywordtype}{void} * buffer);
+00410 
+00411                 \textcolor{keywordtype}{void} \hyperlink{classeos_1_1hdf5_1_1AttributeHandle_a90da07975c70cfdbeab933e68d4ba76a}{read}(\textcolor{keywordtype}{void} * buffer) \textcolor{keyword}{const};
+00412         \};
+00413 
+\hypertarget{hdf5_8hh_source_l00414}{}\hyperlink{classeos_1_1hdf5_1_1File}{00414}         \textcolor{keyword}{class }\hyperlink{classeos_1_1hdf5_1_1File}{File}
+00415         \{
+00416             \textcolor{keyword}{private}:
+00417                 \hyperlink{classeos_1_1hdf5_1_1FileHandle}{FileHandle} \_handle;
+00418 
+00419                 std::string \_name;
+00420 
+00422                 \hyperlink{classeos_1_1hdf5_1_1File}{File}(\textcolor{keyword}{const} \hyperlink{classeos_1_1hdf5_1_1FileHandle}{FileHandle} & handle, \textcolor{keyword}{const} std::string & \hyperlink{classeos_1_1hdf5_1_1File_a3ae62d6317e16fab68dc7f345007ca59}{name});
+00423 
+00424                 \hyperlink{classeos_1_1hdf5_1_1DataSetHandle}{DataSetHandle} \_open\_data\_set(\textcolor{keyword}{const} std::string & name, \textcolor{keyword}{const} 
+      \hyperlink{namespaceeos_1_1hdf5_ac960ca8a290b8a26ab5f71585ac5d793}{TypePtr} & type) \textcolor{keyword}{const};
+00425 
+00426                 \hyperlink{classeos_1_1hdf5_1_1DataSetHandle}{DataSetHandle} \_create\_data\_set(\textcolor{keyword}{const} std::string & name, \textcolor{keyword}{const} 
+      \hyperlink{namespaceeos_1_1hdf5_ac960ca8a290b8a26ab5f71585ac5d793}{TypePtr} & type);
+00427 
+00428             \textcolor{keyword}{public}:
+00432                 \hyperlink{classeos_1_1hdf5_1_1File_a10a1ab16a4ffa7399f305ae19c26915d}{~File}();
+00433 
+00440                 \textcolor{keyword}{static} \hyperlink{classeos_1_1hdf5_1_1File}{File} \hyperlink{classeos_1_1hdf5_1_1File_ad1d6eb1ed34bc9bf83ce564618e1d346}{Create}(\textcolor{keyword}{const} std::string & filename);
+00441 
+00447                 \textcolor{keyword}{static} \hyperlink{classeos_1_1hdf5_1_1File}{File} \hyperlink{classeos_1_1hdf5_1_1File_a2db8559898bd4f68d16a56760952c195}{Open}(\textcolor{keyword}{const} std::string & file\_name, \textcolor{keywordtype}{unsigned} mode = H
+      5F\_ACC\_RDONLY);
+00448 
+00449                 \textcolor{keyword}{static} \textcolor{keywordtype}{bool} \hyperlink{classeos_1_1hdf5_1_1File_a907662df69926c556596304405846d7c}{Exists}(\textcolor{keyword}{const} std::string & filename);
+00450 
+\hypertarget{hdf5_8hh_source_l00452}{}\hyperlink{classeos_1_1hdf5_1_1File_a3ae62d6317e16fab68dc7f345007ca59}{00452}                 \textcolor{keyword}{const} std::string & \hyperlink{classeos_1_1hdf5_1_1File_a3ae62d6317e16fab68dc7f345007ca59}{name}()\textcolor{keyword}{ const}
+00453 \textcolor{keyword}{                }\{
+00454                     \textcolor{keywordflow}{return} \_name;
+00455                 \}
+00457 
+00460 
+\hypertarget{hdf5_8hh_source_l00466}{}\hyperlink{classeos_1_1hdf5_1_1File_a6ae5be7fa9d26030daee1e3631a0432f}{00466}                 \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_> \hyperlink{classeos_1_1hdf5_1_1DataSet}{DataSet<T_>} \hyperlink{classeos_1_1hdf5_1_1File_a6ae5be7fa9d26030daee1e3631a0432f}{create_data_set}(\textcolor{keyword}{const} std::str
+      ing & name, \textcolor{keyword}{const} T\_ & t)
+00467                 \{
+00468                     \hyperlink{namespaceeos_1_1hdf5_ac960ca8a290b8a26ab5f71585ac5d793}{TypePtr} type = \hyperlink{namespaceeos_1_1hdf5_ac960ca8a290b8a26ab5f71585ac5d793}{TypePtr}(\textcolor{keyword}{new} T\_(t));
+00469                     \textcolor{keyword}{auto} result = \hyperlink{classeos_1_1hdf5_1_1DataSet}{DataSet<T_>}(\_create\_data\_set(name, type), type)
+      ;
+00470 
+00471                     \textcolor{keywordflow}{return} result;
+00472                 \}
+00473 
+\hypertarget{hdf5_8hh_source_l00480}{}\hyperlink{classeos_1_1hdf5_1_1File_ae5e5e823024ff7629788895eec1f33f2}{00480}                 \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_> \hyperlink{classeos_1_1hdf5_1_1DataSet}{DataSet<T_>} \hyperlink{classeos_1_1hdf5_1_1File_ae5e5e823024ff7629788895eec1f33f2}{open_data_set}(\textcolor{keyword}{const} std::strin
+      g & name, \textcolor{keyword}{const} T\_ & t)
+00481                 \{
+00482                     \hyperlink{namespaceeos_1_1hdf5_ac960ca8a290b8a26ab5f71585ac5d793}{TypePtr} type = \hyperlink{namespaceeos_1_1hdf5_ac960ca8a290b8a26ab5f71585ac5d793}{TypePtr}(\textcolor{keyword}{new} T\_(t));
+00483                     \textcolor{keyword}{auto} result = \hyperlink{classeos_1_1hdf5_1_1DataSet}{DataSet<T_>}(\_open\_data\_set(name, type), type);
+00484 
+00485                     \textcolor{keywordflow}{return} result;
+00486                 \}
+00487 
+\hypertarget{hdf5_8hh_source_l00497}{}\hyperlink{classeos_1_1hdf5_1_1File_a01aeea71760b5ca862900658602b71bd}{00497}                 \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_> \hyperlink{classeos_1_1hdf5_1_1DataSet}{DataSet<T_>} \hyperlink{classeos_1_1hdf5_1_1File_a01aeea71760b5ca862900658602b71bd}{create_or_open_data_set}(\textcolor{keyword}{const} 
+      std::string & name, \textcolor{keyword}{const} T\_ & t)
+00498                 \{
+00499                     \hyperlink{namespaceeos_1_1hdf5_ac960ca8a290b8a26ab5f71585ac5d793}{TypePtr} type = \hyperlink{namespaceeos_1_1hdf5_ac960ca8a290b8a26ab5f71585ac5d793}{TypePtr}(\textcolor{keyword}{new} T\_(t));
+00500                     H5E\_BEGIN\_TRY
+00501                     \{
+00502                         \textcolor{comment}{// check if data set exists already, we suppress HDF5 err
+      or output}
+00503                         \textcolor{keywordflow}{try}
+00504                         \{
+00505                             \textcolor{keyword}{auto} result = \hyperlink{classeos_1_1hdf5_1_1DataSet}{DataSet<T_>}(\_open\_data\_set(name, type),
+       type);
+00506                             \textcolor{keywordflow}{return} result;
+00507                         \}
+00508                         \textcolor{keywordflow}{catch} (\hyperlink{classeos_1_1HDF5Error}{HDF5Error} &)
+00509                         \{
+00510                         \}
+00511                     \}
+00512                     H5E\_END\_TRY;
+00513                     \textcolor{keyword}{auto} result = \hyperlink{classeos_1_1hdf5_1_1DataSet}{DataSet<T_>}(\_create\_data\_set(name, type), type)
+      ;
+00514                     \textcolor{keywordflow}{return} result;
+00515                 \}
+00516 
+00518 
+00521 
+00526                 \textcolor{keywordtype}{void} \hyperlink{classeos_1_1hdf5_1_1File_a1b00da32195932e27c8d88081f9f493c}{copy}(\textcolor{keyword}{const} std::string& source\_directory, \hyperlink{classeos_1_1hdf5_1_1File}{File}& destination\_
+      file, \textcolor{keyword}{const} std::string& destination\_directory=\textcolor{stringliteral}{""}) \textcolor{keyword}{const};
+00527 
+00533                 \textcolor{keywordtype}{void} \hyperlink{classeos_1_1hdf5_1_1File_a56decaf8e9350e212044f8d1b5486699}{create_group}(\textcolor{keyword}{const} std::string & name);
+00534 
+00535                 \textcolor{keywordtype}{bool} \hyperlink{classeos_1_1hdf5_1_1File_addf73185e4946dea33eb40f04c985439}{group_exists}(\textcolor{keyword}{const} std::string & name);
+00536 
+00538                 \textcolor{keywordtype}{unsigned} \hyperlink{classeos_1_1hdf5_1_1File_ab95523c1691b5c1bde956a13a04739fc}{number_of_objects}(\textcolor{keyword}{const} std::string & name);
+00540         \};
+00541 
+\hypertarget{hdf5_8hh_source_l00545}{}\hyperlink{classeos_1_1hdf5_1_1DataSet}{00545}         \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_> \textcolor{keyword}{class }\hyperlink{classeos_1_1hdf5_1_1DataSet}{DataSet}
+00546         \{
+00547             \textcolor{keyword}{public}:
+\hypertarget{hdf5_8hh_source_l00548}{}\hyperlink{classeos_1_1hdf5_1_1DataSet_a010bb09725c4d84df2db7f60e0a88a1f}{00548}                 \textcolor{keyword}{typedef} \textcolor{keyword}{typename} T\_::Type \hyperlink{classeos_1_1hdf5_1_1DataSet_a010bb09725c4d84df2db7f60e0a88a1f}{RecordType};
+00549 
+00550             \textcolor{keyword}{private}:
+00551                 \hyperlink{classeos_1_1hdf5_1_1DataSetHandle}{DataSetHandle} \_handle;
+00552 
+00553                 \hyperlink{namespaceeos_1_1hdf5_ac960ca8a290b8a26ab5f71585ac5d793}{TypePtr} \_type;
+00554 
+00555                 hsize\_t \_index;
+00556 
+00557                 std::vector<char> \_buffer;
+00558 
+00559                 \hyperlink{classeos_1_1hdf5_1_1DataSet}{DataSet}(\textcolor{keyword}{const} \hyperlink{classeos_1_1hdf5_1_1DataSetHandle}{DataSetHandle} & handle, \textcolor{keyword}{const} \hyperlink{namespaceeos_1_1hdf5_ac960ca8a290b8a26ab5f71585ac5d793}{TypePtr} & type) :
+00560                     \_handle(handle),
+00561                     \_type(type),
+00562                     \_index(0),
+00563                     \_buffer(type->size(), \textcolor{stringliteral}{'\(\backslash\)0'})
+00564                 \{
+00565                 \}
+00566 
+00568                 \textcolor{keywordtype}{void} \_append(\textcolor{keyword}{const} \hyperlink{classeos_1_1hdf5_1_1DataSet_a010bb09725c4d84df2db7f60e0a88a1f}{RecordType} & record)
+00569                 \{
+00570                     \_type->copy\_to\_hdf5(&record, &\_buffer[0]);
+00571 
+00572                     \_handle.\hyperlink{classeos_1_1hdf5_1_1DataSetHandle_ad41a15bd7f720870427ef14742a2a6cf}{select}(\_handle.\hyperlink{classeos_1_1hdf5_1_1DataSetHandle_a713afe404475719f6ac336f70c8bed51}{size}(), 1);
+00573                     \_handle.\hyperlink{classeos_1_1hdf5_1_1DataSetHandle_a67ea7145dfbcbe860f9e7f745ab9c36c}{write_one}(&\_buffer[0]);
+00574                 \}
+00575 
+00576                 \textcolor{keywordtype}{void} \_extract(\hyperlink{classeos_1_1hdf5_1_1DataSet_a010bb09725c4d84df2db7f60e0a88a1f}{RecordType} & record)
+00577                 \{
+00578                     \_handle.select(\_index, 1);
+00579                     \_handle.read\_one(&\_buffer[0]);
+00580                     ++\_index;
+00581 
+00582                     \_type->copy\_from\_hdf5(&\_buffer[0], &record);
+00583                 \}
+00584 
+00585             \textcolor{keyword}{public}:
+\hypertarget{hdf5_8hh_source_l00586}{}\hyperlink{classeos_1_1hdf5_1_1DataSet_a19bee9643036cfb3f6908fb332e14f27}{00586}                 \textcolor{keyword}{friend} \textcolor{keyword}{class }\hyperlink{classeos_1_1hdf5_1_1File}{hdf5::File};
+00587                 \textcolor{keyword}{friend} \hyperlink{classeos_1_1hdf5_1_1DataSet}{DataSet<T_>} & operator<< <> (\hyperlink{classeos_1_1hdf5_1_1DataSet}{DataSet<T_>} &, \textcolor{keyword}{const} \textcolor{keyword}{typename
+      } T\_::Type &);
+00588                 \textcolor{keyword}{friend} \hyperlink{classeos_1_1hdf5_1_1DataSet}{DataSet<T_>} & operator>> <> (\hyperlink{classeos_1_1hdf5_1_1DataSet}{DataSet<T_>} &, \textcolor{keyword}{typename} T\_::T
+      ype &);
+00589 
+\hypertarget{hdf5_8hh_source_l00593}{}\hyperlink{classeos_1_1hdf5_1_1DataSet_a29e516f3d4d7e3a8375fe676f73715ec}{00593}                 \hyperlink{classeos_1_1hdf5_1_1DataSet_a29e516f3d4d7e3a8375fe676f73715ec}{~DataSet}()
+00594                 \{
+00595                 \}
+00597 
+00601                 std::string \hyperlink{classeos_1_1hdf5_1_1DataSet_a4ab5c04c21708d32eb7c36120f99b989}{name}() \textcolor{keyword}{const};
+00602 
+\hypertarget{hdf5_8hh_source_l00604}{}\hyperlink{classeos_1_1hdf5_1_1DataSet_af19723594ac6d14c327f90821187b14c}{00604}                 \textcolor{keywordtype}{unsigned} \hyperlink{classeos_1_1hdf5_1_1DataSet_af19723594ac6d14c327f90821187b14c}{records}()\textcolor{keyword}{ const}
+00605 \textcolor{keyword}{                }\{
+00606                     \textcolor{keywordflow}{return} \_handle.\hyperlink{classeos_1_1hdf5_1_1DataSetHandle_a713afe404475719f6ac336f70c8bed51}{size}();
+00607                 \}
+00608 
+00611 
+\hypertarget{hdf5_8hh_source_l00613}{}\hyperlink{classeos_1_1hdf5_1_1DataSet_a701084cc09483dc77579178d05b1aa35}{00613}                 \textcolor{keywordtype}{void} \hyperlink{classeos_1_1hdf5_1_1DataSet_a701084cc09483dc77579178d05b1aa35}{end}()
+00614                 \{
+00615                     \_index = \_handle.\hyperlink{classeos_1_1hdf5_1_1DataSetHandle_a713afe404475719f6ac336f70c8bed51}{size}() - 1;
+00616                 \}
+00617 
+00623                 \hyperlink{classeos_1_1hdf5_1_1DataSet_a010bb09725c4d84df2db7f60e0a88a1f}{RecordType} \hyperlink{classeos_1_1hdf5_1_1DataSet_a61acdb337452f42d2bd2f3ccdee989f6}{operator[] }(\textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & index);
+00624 
+\hypertarget{hdf5_8hh_source_l00625}{}\hyperlink{classeos_1_1hdf5_1_1DataSet_ac0a8fc9de491f3cd8b5ffd625ac1728a}{00625}                 \textcolor{keywordtype}{void} \hyperlink{classeos_1_1hdf5_1_1DataSet_ac0a8fc9de491f3cd8b5ffd625ac1728a}{set_index}(\textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} & index)
+00626                 \{
+00627                     \_index = index;
+00628                 \}
+00629 
+00631 
+\hypertarget{hdf5_8hh_source_l00634}{}\hyperlink{classeos_1_1hdf5_1_1DataSet_a6004d70d8d014855457e4bb67f28e2ef}{00634}                 \textcolor{keyword}{template} <\textcolor{keyword}{typename} U\_> \hyperlink{classeos_1_1hdf5_1_1Attribute}{Attribute<U_>} \hyperlink{classeos_1_1hdf5_1_1DataSet_a6004d70d8d014855457e4bb67f28e2ef}{create_attribute}(\textcolor{keyword}{const} std::
+      string & \hyperlink{classeos_1_1hdf5_1_1DataSet_a4ab5c04c21708d32eb7c36120f99b989}{name}, \textcolor{keyword}{const} U\_ & u)
+00635                 \{
+00636                     \hyperlink{namespaceeos_1_1hdf5_ac960ca8a290b8a26ab5f71585ac5d793}{TypePtr} type(\textcolor{keyword}{new} U\_(u));
+00637                     \hyperlink{classeos_1_1hdf5_1_1AttributeHandle}{AttributeHandle} handle = \_handle.\hyperlink{classeos_1_1hdf5_1_1DataSetHandle_a084cff6f4549ab930d0d2cff8ff5ac6b}{create_attribute}(name, type-
+      >type\_id());
+00638 
+00639                     \textcolor{keywordflow}{return} \hyperlink{classeos_1_1hdf5_1_1Attribute}{Attribute<U_>}(handle, type);
+00640                 \}
+00641 
+\hypertarget{hdf5_8hh_source_l00642}{}\hyperlink{classeos_1_1hdf5_1_1DataSet_a98ac1430685d57b7de065aed4f6a874a}{00642}                 \textcolor{keyword}{template} <\textcolor{keyword}{typename} U\_> \hyperlink{classeos_1_1hdf5_1_1Attribute}{Attribute<U_>} \hyperlink{classeos_1_1hdf5_1_1DataSet_a98ac1430685d57b7de065aed4f6a874a}{create_or_open_attribute}(\textcolor{keyword}{con
+      st} std::string & \hyperlink{classeos_1_1hdf5_1_1DataSet_a4ab5c04c21708d32eb7c36120f99b989}{name}, \textcolor{keyword}{const} U\_ & u)
+00643                 \{
+00644                     \hyperlink{namespaceeos_1_1hdf5_ac960ca8a290b8a26ab5f71585ac5d793}{TypePtr} type(\textcolor{keyword}{new} U\_(u));
+00645 
+00646                     H5E\_BEGIN\_TRY
+00647                     \{
+00648                         \textcolor{comment}{// check if data set exists already, we suppress HDF5 err
+      or output}
+00649                         \textcolor{keywordflow}{try}
+00650                         \{
+00651                             \hyperlink{classeos_1_1hdf5_1_1AttributeHandle}{AttributeHandle} handle = \_handle.\hyperlink{classeos_1_1hdf5_1_1DataSetHandle_a874dee8bc477055ee76955e78c00a09e}{open_attribute}(name,
+       type->type\_id());
+00652                             \textcolor{keywordflow}{return} \hyperlink{classeos_1_1hdf5_1_1Attribute}{Attribute<U_>}(handle, type);
+00653                         \}
+00654                         \textcolor{keywordflow}{catch} (\hyperlink{classeos_1_1HDF5Error}{HDF5Error} &)
+00655                         \{
+00656                         \}
+00657                     \}
+00658                     H5E\_END\_TRY;
+00659 
+00660                     \hyperlink{classeos_1_1hdf5_1_1AttributeHandle}{AttributeHandle} handle = \_handle.\hyperlink{classeos_1_1hdf5_1_1DataSetHandle_a084cff6f4549ab930d0d2cff8ff5ac6b}{create_attribute}(name, type-
+      >type\_id());
+00661                     \textcolor{keywordflow}{return} \hyperlink{classeos_1_1hdf5_1_1Attribute}{Attribute<U_>}(handle, type);
+00662                 \}
+00663 
+\hypertarget{hdf5_8hh_source_l00664}{}\hyperlink{classeos_1_1hdf5_1_1DataSet_ac904229b8a8e111889535507a62652c9}{00664}                 \textcolor{keyword}{template} <\textcolor{keyword}{typename} U\_> \hyperlink{classeos_1_1hdf5_1_1Attribute}{Attribute<U_>} \hyperlink{classeos_1_1hdf5_1_1DataSet_ac904229b8a8e111889535507a62652c9}{open_attribute}(\textcolor{keyword}{const} std::st
+      ring & \hyperlink{classeos_1_1hdf5_1_1DataSet_a4ab5c04c21708d32eb7c36120f99b989}{name}, \textcolor{keyword}{const} U\_ & u)
+00665                 \{
+00666                     \hyperlink{namespaceeos_1_1hdf5_ac960ca8a290b8a26ab5f71585ac5d793}{TypePtr} type(\textcolor{keyword}{new} U\_(u));
+00667                     \hyperlink{classeos_1_1hdf5_1_1AttributeHandle}{AttributeHandle} handle = \_handle.\hyperlink{classeos_1_1hdf5_1_1DataSetHandle_a874dee8bc477055ee76955e78c00a09e}{open_attribute}(name, type->t
+      ype\_id());
+00668 
+00669                     \textcolor{keywordflow}{return} \hyperlink{classeos_1_1hdf5_1_1Attribute}{Attribute<U_>}(handle, type);
+00670                 \}
+00672         \};
+00673 
+\hypertarget{hdf5_8hh_source_l00680}{}\hyperlink{namespaceeos_1_1hdf5_a8da5ea7dae12acf02081ea4fc320dc3a}{00680}         \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_> \hyperlink{classeos_1_1hdf5_1_1DataSet}{DataSet<T_>} & operator<< (DataSet<T\_> & lhs, \textcolor{keyword}{const
+      } \textcolor{keyword}{typename} T\_::Type & rhs)
+00681         \{
+00682             lhs.\_append(rhs);
+00683 
+00684             \textcolor{keywordflow}{return} lhs;
+00685         \}
+00686 
+\hypertarget{hdf5_8hh_source_l00693}{}\hyperlink{namespaceeos_1_1hdf5_a59f5217285970b223b8a4932b811106e}{00693}         \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_> \hyperlink{classeos_1_1hdf5_1_1DataSet}{DataSet<T_>} & \hyperlink{namespaceeos_1_1hdf5_a59f5217285970b223b8a4932b811106e}{operator>> }(\hyperlink{classeos_1_1hdf5_1_1DataSet}{DataSet<T_>} & lhs, \textcolor{keyword}{typen
+      ame} T\_::Type & rhs)
+00694         \{
+00695             lhs.\_extract(rhs);
+00696 
+00697             \textcolor{keywordflow}{return} lhs;
+00698         \}
+00699 
+\hypertarget{hdf5_8hh_source_l00700}{}\hyperlink{classeos_1_1hdf5_1_1Attribute}{00700}         \textcolor{keyword}{template} <\textcolor{keyword}{typename} T\_> \textcolor{keyword}{class }\hyperlink{classeos_1_1hdf5_1_1Attribute}{Attribute}
+00701         \{
+00702             \textcolor{keyword}{public}:
+\hypertarget{hdf5_8hh_source_l00703}{}\hyperlink{classeos_1_1hdf5_1_1Attribute_a850f8d6a8627d113047d4c2b29d41430}{00703}                 \textcolor{keyword}{typedef} \textcolor{keyword}{typename} T\_::Type \hyperlink{classeos_1_1hdf5_1_1Attribute_a850f8d6a8627d113047d4c2b29d41430}{RecordType};
+00704 
+00705             \textcolor{keyword}{private}:
+00706                 \hyperlink{classeos_1_1hdf5_1_1AttributeHandle}{AttributeHandle} \_handle;
+00707 
+00708                 \hyperlink{namespaceeos_1_1hdf5_ac960ca8a290b8a26ab5f71585ac5d793}{TypePtr} \_type;
+00709 
+00710                 \textcolor{keyword}{mutable} std::vector<char> \_buffer;
+00711 
+00712                 \hyperlink{classeos_1_1hdf5_1_1Attribute}{Attribute}(\textcolor{keyword}{const} \hyperlink{classeos_1_1hdf5_1_1AttributeHandle}{AttributeHandle} & handle, \hyperlink{namespaceeos_1_1hdf5_ac960ca8a290b8a26ab5f71585ac5d793}{TypePtr} type) :
+00713                     \_handle(handle),
+00714                     \_type(type),
+00715                     \_buffer(type->size(), \textcolor{stringliteral}{'\(\backslash\)0'})
+00716                 \{
+00717                 \}
+00718 
+00719             \textcolor{keyword}{public}:
+\hypertarget{hdf5_8hh_source_l00720}{}\hyperlink{classeos_1_1hdf5_1_1Attribute_aef648af6c56fa8ee0738c93629e725dc}{00720}                 \textcolor{keyword}{template} <\textcolor{keyword}{typename} U\_> \textcolor{keyword}{friend} \textcolor{keyword}{class }\hyperlink{classeos_1_1hdf5_1_1DataSet}{DataSet};
+00721 
+\hypertarget{hdf5_8hh_source_l00722}{}\hyperlink{classeos_1_1hdf5_1_1Attribute_a94f3f6fc67fe675a40cfd753da895030}{00722}                 \hyperlink{classeos_1_1hdf5_1_1Attribute_a850f8d6a8627d113047d4c2b29d41430}{RecordType} \hyperlink{classeos_1_1hdf5_1_1Attribute_a94f3f6fc67fe675a40cfd753da895030}{value}()\textcolor{keyword}{ const}
+00723 \textcolor{keyword}{                }\{
+00724                     \hyperlink{classeos_1_1hdf5_1_1Attribute_a850f8d6a8627d113047d4c2b29d41430}{RecordType} result;
+00725 
+00726                     \_handle.\hyperlink{classeos_1_1hdf5_1_1AttributeHandle_a90da07975c70cfdbeab933e68d4ba76a}{read}(&\_buffer[0]);
+00727                     \_type->copy\_from\_hdf5(&\_buffer[0], &result);
+00728 
+00729                     \textcolor{keywordflow}{return} result;
+00730                 \}
+00731 
+\hypertarget{hdf5_8hh_source_l00732}{}\hyperlink{classeos_1_1hdf5_1_1Attribute_a949efcd5b6094a0e5bc88e67dee0ddc2}{00732}                 \hyperlink{classeos_1_1hdf5_1_1Attribute}{Attribute} & \hyperlink{classeos_1_1hdf5_1_1Attribute_a949efcd5b6094a0e5bc88e67dee0ddc2}{operator= }(\textcolor{keyword}{const} \hyperlink{classeos_1_1hdf5_1_1Attribute_a850f8d6a8627d113047d4c2b29d41430}{RecordType} & rhs)
+00733                 \{
+00734                     \_type->copy\_to\_hdf5(&rhs, &\_buffer[0]);
+00735                     \_handle.\hyperlink{classeos_1_1hdf5_1_1AttributeHandle_acb93f382e986654df68de9389f723efe}{write}(&\_buffer[0]);
+00736 
+00737                     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+00738                 \}
+00739         \};
+00740     \}
+00741 \}
+00742 
+00743 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

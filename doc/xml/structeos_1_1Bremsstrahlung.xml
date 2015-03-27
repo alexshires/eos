@@ -1,0 +1,350 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1Bremsstrahlung" kind="struct" prot="public">
+    <compoundname>eos::Bremsstrahlung</compoundname>
+    <includes refid="bremsstrahlung_8hh" local="no">bremsstrahlung.hh</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structeos_1_1Bremsstrahlung_1af39debb09760b0c3b6983ac6d7e28d05" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>static complex&lt;double&gt; eos::Bremsstrahlung::G_m1</definition>
+        <argsstring>(const double &amp;t)</argsstring>
+        <name>G_m1</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/bremsstrahlung.hh" line="30"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1Bremsstrahlung_1a6a5cd1999022a000279e9f7f49d094ea" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>static complex&lt;double&gt; eos::Bremsstrahlung::G_0</definition>
+        <argsstring>(const double &amp;t)</argsstring>
+        <name>G_0</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/bremsstrahlung.hh" line="31"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1Bremsstrahlung_1a321b14e0b15b3792e25febebf9265c78" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>static complex&lt;double&gt; eos::Bremsstrahlung::Deltai_23</definition>
+        <argsstring>(const double &amp;s_hat, const double &amp;w, const double &amp;z)</argsstring>
+        <name>Deltai_23</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_hat</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/bremsstrahlung.hh" line="34"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1Bremsstrahlung_1aa39b222255a5519ba2488e4e21562008" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>static complex&lt;double&gt; eos::Bremsstrahlung::Deltai_27</definition>
+        <argsstring>(const double &amp;s_hat, const double &amp;w, const double &amp;z)</argsstring>
+        <name>Deltai_27</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_hat</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/bremsstrahlung.hh" line="35"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1Bremsstrahlung_1a544c157bc4ac9251fd2aa8987bb0459d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>static complex&lt;double&gt; eos::Bremsstrahlung::tau_22</definition>
+        <argsstring>(const double &amp;s_hat, const double &amp;w, const double &amp;z)</argsstring>
+        <name>tau_22</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_hat</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/bremsstrahlung.hh" line="38"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1Bremsstrahlung_1a1e48477fa9e8b56fe4e508590ad21bd3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>static complex&lt;double&gt; eos::Bremsstrahlung::tau_27</definition>
+        <argsstring>(const double &amp;s_hat, const double &amp;w, const double &amp;z)</argsstring>
+        <name>tau_27</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_hat</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/bremsstrahlung.hh" line="39"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1Bremsstrahlung_1ae1e1543d756fa96dd3f82645412babb8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>static complex&lt;double&gt; eos::Bremsstrahlung::tau_28</definition>
+        <argsstring>(const double &amp;s_hat, const double &amp;w, const double &amp;z)</argsstring>
+        <name>tau_28</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_hat</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/bremsstrahlung.hh" line="40"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1Bremsstrahlung_1a51142a21972c592612539cf4bd35cafb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>static complex&lt;double&gt; eos::Bremsstrahlung::tau_29</definition>
+        <argsstring>(const double &amp;s_hat, const double &amp;w, const double &amp;z)</argsstring>
+        <name>tau_29</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_hat</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/bremsstrahlung.hh" line="41"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1Bremsstrahlung_1a708d1b79eb63945e3598f1c8f8bc07dc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double eos::Bremsstrahlung::tau_78</definition>
+        <argsstring>(const double &amp;s_hat)</argsstring>
+        <name>tau_78</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_hat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/bremsstrahlung.hh" line="43"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1Bremsstrahlung_1af68817dd4b204589d133d149210a2365" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double eos::Bremsstrahlung::tau_88</definition>
+        <argsstring>(const double &amp;s_hat)</argsstring>
+        <name>tau_88</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_hat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/bremsstrahlung.hh" line="44"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1Bremsstrahlung_1aaec7f205ee9e02b804617fc8470d86d3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double eos::Bremsstrahlung::tau_89</definition>
+        <argsstring>(const double &amp;s_hat)</argsstring>
+        <name>tau_89</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_hat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/bremsstrahlung.hh" line="45"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1Bremsstrahlung_1a34453235bd8805b9cb261261fc9a3b93" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>static complex&lt;double&gt; eos::Bremsstrahlung::itau_22</definition>
+        <argsstring>(const double &amp;s_hat, const double &amp;z)</argsstring>
+        <name>itau_22</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_hat</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/bremsstrahlung.hh" line="48"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1Bremsstrahlung_1a07f9c13a763df1b9a0ce102bdc1159d2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>static complex&lt;double&gt; eos::Bremsstrahlung::itau_27</definition>
+        <argsstring>(const double &amp;s_hat, const double &amp;z)</argsstring>
+        <name>itau_27</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_hat</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/bremsstrahlung.hh" line="49"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1Bremsstrahlung_1a9a6a2545413301f3b2bcca85e4c6f909" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>static complex&lt;double&gt; eos::Bremsstrahlung::itau_28</definition>
+        <argsstring>(const double &amp;s_hat, const double &amp;z)</argsstring>
+        <name>itau_28</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_hat</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/bremsstrahlung.hh" line="50"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1Bremsstrahlung_1add6d9efe0e4ae23f5751eb78d09c1225" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>complex&lt; double &gt;</type>
+        <definition>static complex&lt;double&gt; eos::Bremsstrahlung::itau_29</definition>
+        <argsstring>(const double &amp;s_hat, const double &amp;z)</argsstring>
+        <name>itau_29</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>s_hat</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/bremsstrahlung.hh" line="51"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/rare-b-decays/bremsstrahlung.hh" line="28" bodyfile="/home/alexshires/EOS/eos-next/eos/rare-b-decays/bremsstrahlung.hh" bodystart="27" bodyend="52"/>
+    <listofallmembers>
+      <member refid="structeos_1_1Bremsstrahlung_1a321b14e0b15b3792e25febebf9265c78" prot="public" virt="non-virtual"><scope>eos::Bremsstrahlung</scope><name>Deltai_23</name></member>
+      <member refid="structeos_1_1Bremsstrahlung_1aa39b222255a5519ba2488e4e21562008" prot="public" virt="non-virtual"><scope>eos::Bremsstrahlung</scope><name>Deltai_27</name></member>
+      <member refid="structeos_1_1Bremsstrahlung_1a6a5cd1999022a000279e9f7f49d094ea" prot="public" virt="non-virtual"><scope>eos::Bremsstrahlung</scope><name>G_0</name></member>
+      <member refid="structeos_1_1Bremsstrahlung_1af39debb09760b0c3b6983ac6d7e28d05" prot="public" virt="non-virtual"><scope>eos::Bremsstrahlung</scope><name>G_m1</name></member>
+      <member refid="structeos_1_1Bremsstrahlung_1a34453235bd8805b9cb261261fc9a3b93" prot="public" virt="non-virtual"><scope>eos::Bremsstrahlung</scope><name>itau_22</name></member>
+      <member refid="structeos_1_1Bremsstrahlung_1a07f9c13a763df1b9a0ce102bdc1159d2" prot="public" virt="non-virtual"><scope>eos::Bremsstrahlung</scope><name>itau_27</name></member>
+      <member refid="structeos_1_1Bremsstrahlung_1a9a6a2545413301f3b2bcca85e4c6f909" prot="public" virt="non-virtual"><scope>eos::Bremsstrahlung</scope><name>itau_28</name></member>
+      <member refid="structeos_1_1Bremsstrahlung_1add6d9efe0e4ae23f5751eb78d09c1225" prot="public" virt="non-virtual"><scope>eos::Bremsstrahlung</scope><name>itau_29</name></member>
+      <member refid="structeos_1_1Bremsstrahlung_1a544c157bc4ac9251fd2aa8987bb0459d" prot="public" virt="non-virtual"><scope>eos::Bremsstrahlung</scope><name>tau_22</name></member>
+      <member refid="structeos_1_1Bremsstrahlung_1a1e48477fa9e8b56fe4e508590ad21bd3" prot="public" virt="non-virtual"><scope>eos::Bremsstrahlung</scope><name>tau_27</name></member>
+      <member refid="structeos_1_1Bremsstrahlung_1ae1e1543d756fa96dd3f82645412babb8" prot="public" virt="non-virtual"><scope>eos::Bremsstrahlung</scope><name>tau_28</name></member>
+      <member refid="structeos_1_1Bremsstrahlung_1a51142a21972c592612539cf4bd35cafb" prot="public" virt="non-virtual"><scope>eos::Bremsstrahlung</scope><name>tau_29</name></member>
+      <member refid="structeos_1_1Bremsstrahlung_1a708d1b79eb63945e3598f1c8f8bc07dc" prot="public" virt="non-virtual"><scope>eos::Bremsstrahlung</scope><name>tau_78</name></member>
+      <member refid="structeos_1_1Bremsstrahlung_1af68817dd4b204589d133d149210a2365" prot="public" virt="non-virtual"><scope>eos::Bremsstrahlung</scope><name>tau_88</name></member>
+      <member refid="structeos_1_1Bremsstrahlung_1aaec7f205ee9e02b804617fc8470d86d3" prot="public" virt="non-virtual"><scope>eos::Bremsstrahlung</scope><name>tau_89</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

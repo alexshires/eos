@@ -1,0 +1,93 @@
+\hypertarget{structeos_1_1Histogram_3_012_01_4_1_1Bin}{
+\section{eos::Histogram$<$ 2 $>$::Bin Struct Reference}
+\label{structeos_1_1Histogram_3_012_01_4_1_1Bin}\index{eos::Histogram$<$ 2 $>$::Bin@{eos::Histogram$<$ 2 $>$::Bin}}
+}
+
+
+{\ttfamily \#include $<$histogram.hh$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{structeos_1_1Histogram_3_012_01_4_1_1Bin_a5f5d9d357e94ce75149ac710b954bb44}{operator$<$} (const Bin \&other) const 
+\end{DoxyCompactItemize}
+\begin{Indent}{\bf Basic Functions}\par
+{\em \label{_amgrp2386c9a1f1785edee33f374dd2db9b3d}
+ }\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structeos_1_1Histogram_3_012_01_4_1_1Bin_ad3b75a64e6a8499a4abddaad4943aeac}{Bin} (const std::array$<$ double, 2 $>$ \&lower, const std::array$<$ double, 2 $>$ \&upper, const double \&value=0.0)
+\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\item 
+\hyperlink{structeos_1_1Histogram_3_012_01_4_1_1Bin_a945e453f3b5aa775c74122b2a5c8c983}{$\sim$Bin} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std::array$<$ double, 2 $>$ \hyperlink{structeos_1_1Histogram_3_012_01_4_1_1Bin_a1e425081536674ebe0303fbdeede8cd2}{lower}
+\begin{DoxyCompactList}\small\item\em Lower limit of the Bin's interval for each dimension. \item\end{DoxyCompactList}\item 
+std::array$<$ double, 2 $>$ \hyperlink{structeos_1_1Histogram_3_012_01_4_1_1Bin_a3202307a2d3e2768e7c7a5eaebca2a60}{upper}
+\begin{DoxyCompactList}\small\item\em Upper limit of the Bin's interval for each dimension. \item\end{DoxyCompactList}\item 
+double \hyperlink{structeos_1_1Histogram_3_012_01_4_1_1Bin_a060dd2645bb259a8ea810052c6efaa63}{value}
+\begin{DoxyCompactList}\small\item\em Content of the \hyperlink{structeos_1_1Histogram_3_012_01_4_1_1Bin}{Bin}. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$$>$ struct eos::Histogram$<$ 2 $>$::Bin}
+
+Holds information on any one of \hyperlink{classeos_1_1Histogram_3_012_01_4}{Histogram$<$2$>$}'s bins. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structeos_1_1Histogram_3_012_01_4_1_1Bin_ad3b75a64e6a8499a4abddaad4943aeac}{
+\index{eos::Histogram$<$ 2 $>$::Bin@{eos::Histogram$<$ 2 $>$::Bin}!Bin@{Bin}}
+\index{Bin@{Bin}!eos::Histogram< 2 >::Bin@{eos::Histogram$<$ 2 $>$::Bin}}
+\subsubsection[{Bin}]{\setlength{\rightskip}{0pt plus 5cm}eos::Histogram$<$ 2 $>$::Bin::Bin (const std::array$<$ double, 2 $>$ \& {\em lower}, \/  const std::array$<$ double, 2 $>$ \& {\em upper}, \/  const double \& {\em value} = {\ttfamily 0.0})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structeos_1_1Histogram_3_012_01_4_1_1Bin_ad3b75a64e6a8499a4abddaad4943aeac}
+
+
+Destructor. \hypertarget{structeos_1_1Histogram_3_012_01_4_1_1Bin_a945e453f3b5aa775c74122b2a5c8c983}{
+\index{eos::Histogram$<$ 2 $>$::Bin@{eos::Histogram$<$ 2 $>$::Bin}!$\sim$Bin@{$\sim$Bin}}
+\index{$\sim$Bin@{$\sim$Bin}!eos::Histogram< 2 >::Bin@{eos::Histogram$<$ 2 $>$::Bin}}
+\subsubsection[{$\sim$Bin}]{\setlength{\rightskip}{0pt plus 5cm}eos::Histogram$<$ 2 $>$::Bin::$\sim$Bin ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structeos_1_1Histogram_3_012_01_4_1_1Bin_a945e453f3b5aa775c74122b2a5c8c983}
+
+
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{structeos_1_1Histogram_3_012_01_4_1_1Bin_a5f5d9d357e94ce75149ac710b954bb44}{
+\index{eos::Histogram$<$ 2 $>$::Bin@{eos::Histogram$<$ 2 $>$::Bin}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!eos::Histogram< 2 >::Bin@{eos::Histogram$<$ 2 $>$::Bin}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool eos::Histogram$<$ 2 $>$::Bin::operator$<$ (const Bin \& {\em other}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structeos_1_1Histogram_3_012_01_4_1_1Bin_a5f5d9d357e94ce75149ac710b954bb44}
+Compare if this bin is of lower order than another bin.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em other}]The other \hyperlink{structeos_1_1Histogram_3_012_01_4_1_1Bin}{Bin}. \end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structeos_1_1Histogram_3_012_01_4_1_1Bin_a1e425081536674ebe0303fbdeede8cd2}{
+\index{eos::Histogram$<$ 2 $>$::Bin@{eos::Histogram$<$ 2 $>$::Bin}!lower@{lower}}
+\index{lower@{lower}!eos::Histogram< 2 >::Bin@{eos::Histogram$<$ 2 $>$::Bin}}
+\subsubsection[{lower}]{\setlength{\rightskip}{0pt plus 5cm}std::array$<$double, 2$>$ eos::Histogram$<$ 2 $>$::Bin::lower}}
+\label{structeos_1_1Histogram_3_012_01_4_1_1Bin_a1e425081536674ebe0303fbdeede8cd2}
+
+
+Lower limit of the Bin's interval for each dimension. \hypertarget{structeos_1_1Histogram_3_012_01_4_1_1Bin_a3202307a2d3e2768e7c7a5eaebca2a60}{
+\index{eos::Histogram$<$ 2 $>$::Bin@{eos::Histogram$<$ 2 $>$::Bin}!upper@{upper}}
+\index{upper@{upper}!eos::Histogram< 2 >::Bin@{eos::Histogram$<$ 2 $>$::Bin}}
+\subsubsection[{upper}]{\setlength{\rightskip}{0pt plus 5cm}std::array$<$double, 2$>$ eos::Histogram$<$ 2 $>$::Bin::upper}}
+\label{structeos_1_1Histogram_3_012_01_4_1_1Bin_a3202307a2d3e2768e7c7a5eaebca2a60}
+
+
+Upper limit of the Bin's interval for each dimension. \hypertarget{structeos_1_1Histogram_3_012_01_4_1_1Bin_a060dd2645bb259a8ea810052c6efaa63}{
+\index{eos::Histogram$<$ 2 $>$::Bin@{eos::Histogram$<$ 2 $>$::Bin}!value@{value}}
+\index{value@{value}!eos::Histogram< 2 >::Bin@{eos::Histogram$<$ 2 $>$::Bin}}
+\subsubsection[{value}]{\setlength{\rightskip}{0pt plus 5cm}double eos::Histogram$<$ 2 $>$::Bin::value}}
+\label{structeos_1_1Histogram_3_012_01_4_1_1Bin_a060dd2645bb259a8ea810052c6efaa63}
+
+
+Content of the \hyperlink{structeos_1_1Histogram_3_012_01_4_1_1Bin}{Bin}. 
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/alexshires/EOS/eos-\/next/eos/utils/\hyperlink{histogram_8hh}{histogram.hh}\end{DoxyCompactItemize}

@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1MarkovChain_1_1Stats" kind="struct" prot="public">
+    <compoundname>eos::MarkovChain::Stats</compoundname>
+    <includes refid="markov__chain_8hh" local="no">markov_chain.hh</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structeos_1_1MarkovChain_1_1Stats_1a0917e5acbc58e7b9fbe0c478b95e26ac" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned eos::MarkovChain::Stats::iterations_total</definition>
+        <argsstring></argsstring>
+        <name>iterations_total</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The total number of iterations per parameter that were collected before the current run, i.e. since the last reset of statistics. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" line="245" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1MarkovChain_1_1Stats_1a4a20f93d5d7f8a19ce9f59f3bb642563" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned eos::MarkovChain::Stats::iterations_accepted</definition>
+        <argsstring></argsstring>
+        <name>iterations_accepted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of accepted proposals.</para><para><simplesect kind="note"><para>accepted and rejected only add up to the number of iterations in the current run. The total number of samples used to calculated the variance maybe different from the sum of former two. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" line="253" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1MarkovChain_1_1Stats_1a42f68b2f84a5b2e3190529b9d8449e0e" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned eos::MarkovChain::Stats::iterations_invalid</definition>
+        <argsstring></argsstring>
+        <name>iterations_invalid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" line="255" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1MarkovChain_1_1Stats_1a61fc40a3cbb379e8ebc57b11eb388514" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned eos::MarkovChain::Stats::iterations_rejected</definition>
+        <argsstring></argsstring>
+        <name>iterations_rejected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of iterations in which the proposed move of a parameter has been rejected. Reset each time <ref refid="classeos_1_1MarkovChain_1abc73ca1b9fc5bdafba43c799e75192c8" kindref="member">run()</ref> is called </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" line="261" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1MarkovChain_1_1Stats_1aead4abcd766affbdbb602d906b4938f6" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::MarkovChain::Stats::mode_of_posterior</definition>
+        <argsstring></argsstring>
+        <name>mode_of_posterior</name>
+        <briefdescription>
+<para>Maximum value of the posterior. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" line="264" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1MarkovChain_1_1Stats_1a9000c8ee4f560120fcc5bec1c615e7b0" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; eos::MarkovChain::Stats::parameters_at_mode</definition>
+        <argsstring></argsstring>
+        <name>parameters_at_mode</name>
+        <briefdescription>
+<para><ref refid="classeos_1_1Parameter" kindref="compound">Parameter</ref> values at the maximum of the posterior. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" line="267" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1MarkovChain_1_1Stats_1a43a0dbf5329e74fc9eef0cd7f5b28641" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; eos::MarkovChain::Stats::mean_of_parameters</definition>
+        <argsstring></argsstring>
+        <name>mean_of_parameters</name>
+        <briefdescription>
+<para>Sample mean of parameter values. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" line="270" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1MarkovChain_1_1Stats_1aa1f42fd0080e7dc2e2edcc8f97f78c46" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::MarkovChain::Stats::mean_of_posterior</definition>
+        <argsstring></argsstring>
+        <name>mean_of_posterior</name>
+        <briefdescription>
+<para>Sample mean of posterior. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" line="273" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1MarkovChain_1_1Stats_1ad97dc1a916cfe3905ae776804ec57106" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; eos::MarkovChain::Stats::variance_of_parameters</definition>
+        <argsstring></argsstring>
+        <name>variance_of_parameters</name>
+        <briefdescription>
+<para>Sample variance of parameter values. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" line="276" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeos_1_1MarkovChain_1_1Stats_1a42b880c3445149482c9b8516257dcd8a" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double eos::MarkovChain::Stats::variance_of_posterior</definition>
+        <argsstring></argsstring>
+        <name>variance_of_posterior</name>
+        <briefdescription>
+<para>Sample variance of [log] posterior values. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" line="279" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Holds statistical information of a run of a <ref refid="classeos_1_1MarkovChain" kindref="compound">MarkovChain</ref> </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="955">
+        <label>std::vector&lt; double &gt;</label>
+      </node>
+      <node id="954">
+        <label>eos::MarkovChain::Stats</label>
+        <link refid="structeos_1_1MarkovChain_1_1Stats"/>
+        <childnode refid="955" relation="usage">
+          <edgelabel>variance_of_parameters</edgelabel>
+          <edgelabel>mean_of_parameters</edgelabel>
+          <edgelabel>parameters_at_mode</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" line="240" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/markov_chain.hh" bodystart="239" bodyend="280"/>
+    <listofallmembers>
+      <member refid="structeos_1_1MarkovChain_1_1Stats_1a4a20f93d5d7f8a19ce9f59f3bb642563" prot="public" virt="non-virtual"><scope>eos::MarkovChain::Stats</scope><name>iterations_accepted</name></member>
+      <member refid="structeos_1_1MarkovChain_1_1Stats_1a42f68b2f84a5b2e3190529b9d8449e0e" prot="public" virt="non-virtual"><scope>eos::MarkovChain::Stats</scope><name>iterations_invalid</name></member>
+      <member refid="structeos_1_1MarkovChain_1_1Stats_1a61fc40a3cbb379e8ebc57b11eb388514" prot="public" virt="non-virtual"><scope>eos::MarkovChain::Stats</scope><name>iterations_rejected</name></member>
+      <member refid="structeos_1_1MarkovChain_1_1Stats_1a0917e5acbc58e7b9fbe0c478b95e26ac" prot="public" virt="non-virtual"><scope>eos::MarkovChain::Stats</scope><name>iterations_total</name></member>
+      <member refid="structeos_1_1MarkovChain_1_1Stats_1a43a0dbf5329e74fc9eef0cd7f5b28641" prot="public" virt="non-virtual"><scope>eos::MarkovChain::Stats</scope><name>mean_of_parameters</name></member>
+      <member refid="structeos_1_1MarkovChain_1_1Stats_1aa1f42fd0080e7dc2e2edcc8f97f78c46" prot="public" virt="non-virtual"><scope>eos::MarkovChain::Stats</scope><name>mean_of_posterior</name></member>
+      <member refid="structeos_1_1MarkovChain_1_1Stats_1aead4abcd766affbdbb602d906b4938f6" prot="public" virt="non-virtual"><scope>eos::MarkovChain::Stats</scope><name>mode_of_posterior</name></member>
+      <member refid="structeos_1_1MarkovChain_1_1Stats_1a9000c8ee4f560120fcc5bec1c615e7b0" prot="public" virt="non-virtual"><scope>eos::MarkovChain::Stats</scope><name>parameters_at_mode</name></member>
+      <member refid="structeos_1_1MarkovChain_1_1Stats_1ad97dc1a916cfe3905ae776804ec57106" prot="public" virt="non-virtual"><scope>eos::MarkovChain::Stats</scope><name>variance_of_parameters</name></member>
+      <member refid="structeos_1_1MarkovChain_1_1Stats_1a42b880c3445149482c9b8516257dcd8a" prot="public" virt="non-virtual"><scope>eos::MarkovChain::Stats</scope><name>variance_of_posterior</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

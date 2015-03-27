@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="namespaceeos_1_1implementation" kind="namespace">
+    <compoundname>eos::implementation</compoundname>
+    <innerclass refid="structeos_1_1implementation_1_1ResultOf_3_01Result___07Class___1_1_5_08_07Args___8_8_8_08_4" prot="public">eos::implementation::ResultOf&lt; Result_(Class_::*)(Args_...)&gt;</innerclass>
+    <innerclass refid="structeos_1_1implementation_1_1ResultOf_3_01Result___07_5_08_07Args___8_8_8_08_4" prot="public">eos::implementation::ResultOf&lt; Result_(*)(Args_...)&gt;</innerclass>
+    <innerclass refid="structeos_1_1implementation_1_1DoStringify" prot="public">eos::implementation::DoStringify</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/memoise.hh" line="83"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.1">
+  <compounddef id="structeos_1_1OneOfVisitorWrapperVisit_3_01Visitor___00_01Underlying___00_01Result___00_01Type___00_01Rest___8_8_8_4" kind="struct" prot="public">
+    <compoundname>eos::OneOfVisitorWrapperVisit&lt; Visitor_, Underlying_, Result_, Type_, Rest_...&gt;</compoundname>
+    <includes refid="one-of_8hh" local="no">one-of.hh</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Visitor_</type>
+      </param>
+      <param>
+        <type>typename Underlying_</type>
+      </param>
+      <param>
+        <type>typename Result_</type>
+      </param>
+      <param>
+        <type>typename Type_</type>
+      </param>
+      <param>
+        <type>typename...</type>
+        <declname>Rest_</declname>
+        <defname>Rest_</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structeos_1_1OneOfVisitorWrapperVisit_3_01Visitor___00_01Underlying___00_01Result___00_01Type___00_01Rest___8_8_8_4_1a6dcaea16ba357d802503c53cf87f23c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eos::OneOfVisitorWrapperVisit&lt; Visitor_, Underlying_, Result_, Type_, Rest_...&gt;::OneOfVisitorWrapperVisit</definition>
+        <argsstring>(Underlying_ &amp;u)</argsstring>
+        <name>OneOfVisitorWrapperVisit</name>
+        <param>
+          <type>Underlying_ &amp;</type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" line="119" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" bodystart="117" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="structeos_1_1OneOfVisitorWrapperVisit_3_01Visitor___00_01Underlying___00_01Result___00_01Type___00_01Rest___8_8_8_4_1a863282de1b7dca811be133475d78b6ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void eos::OneOfVisitorWrapperVisit&lt; Visitor_, Underlying_, Result_, Type_, Rest_...&gt;::visit</definition>
+        <argsstring>(Type_ &amp;t)</argsstring>
+        <name>visit</name>
+        <param>
+          <type>Type_ &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" line="123" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" bodystart="122" bodyend="125"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" line="116" bodyfile="/home/alexshires/EOS/eos-next/eos/utils/one-of.hh" bodystart="114" bodyend="126"/>
+    <listofallmembers>
+      <member refid="structeos_1_1OneOfVisitorWrapperVisit_3_01Visitor___00_01Underlying___00_01Result___00_01Type___00_01Rest___8_8_8_4_1a6dcaea16ba357d802503c53cf87f23c7" prot="public" virt="non-virtual"><scope>eos::OneOfVisitorWrapperVisit&lt; Visitor_, Underlying_, Result_, Type_, Rest_...&gt;</scope><name>OneOfVisitorWrapperVisit</name></member>
+      <member refid="structeos_1_1OneOfVisitorWrapperVisit_3_01Visitor___00_01Underlying___00_01Result___00_01Type___00_01Rest___8_8_8_4_1a863282de1b7dca811be133475d78b6ef" prot="public" virt="virtual"><scope>eos::OneOfVisitorWrapperVisit&lt; Visitor_, Underlying_, Result_, Type_, Rest_...&gt;</scope><name>visit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

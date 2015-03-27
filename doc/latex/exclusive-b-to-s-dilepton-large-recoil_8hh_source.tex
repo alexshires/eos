@@ -1,0 +1,261 @@
+\hypertarget{exclusive-b-to-s-dilepton-large-recoil_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/rare-\/b-\/decays/exclusive-\/b-\/to-\/s-\/dilepton-\/large-\/recoil.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2010, 2011, 2012, 2013, 2014 Danny van Dyk}
+00005 \textcolor{comment}{ * Copyright (c) 2011 Christian Wacker}
+00006 \textcolor{comment}{ * Copyright (c) 2014 Frederik Beaujean}
+00007 \textcolor{comment}{ * Copyright (c) 2014 Christoph Bobeth}
+00008 \textcolor{comment}{ *}
+00009 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00010 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00011 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00012 \textcolor{comment}{ *}
+00013 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00014 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00015 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00016 \textcolor{comment}{ * details.}
+00017 \textcolor{comment}{ *}
+00018 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00019 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00020 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00021 \textcolor{comment}{ */}
+00022 
+00023 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_RARE\_B\_DECAYS\_EXCLUSIVE\_B\_TO\_S\_DILEPTON\_LARGE\_RECOIL\_HH}
+\hypertarget{exclusive-b-to-s-dilepton-large-recoil_8hh_source_l00024}{}\hyperlink{exclusive-b-to-s-dilepton-large-recoil_8hh_afae717ab235166a0482b75bcb9a1b3ea}{00024} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_RARE\_B\_DECAYS\_EXCLUSIVE\_B\_TO\_S\_DILEPTON\_LARGE\_RECOIL\_HH 1}
+00025 \textcolor{preprocessor}{}
+00026 \textcolor{preprocessor}{#include <\hyperlink{decays_8hh}{eos/rare-b-decays/decays.hh}>}
+00027 \textcolor{preprocessor}{#include <\hyperlink{complex_8hh}{eos/utils/complex.hh}>}
+00028 \textcolor{preprocessor}{#include <\hyperlink{options_8hh}{eos/utils/options.hh}>}
+00029 \textcolor{preprocessor}{#include <\hyperlink{parameters_8hh}{eos/utils/parameters.hh}>}
+00030 \textcolor{preprocessor}{#include <\hyperlink{private__implementation__pattern_8hh}{eos/utils/private_implementation_pattern.hh}>}
+00031 
+00032 \textcolor{keyword}{namespace }eos
+00033 \{
+00034     \textcolor{comment}{/*}
+00035 \textcolor{comment}{     * Decay: B -> K^* l lbar at Large Recoil, cf. [BHP2008]}
+00036 \textcolor{comment}{     */}
+00037     \textcolor{keyword}{template} <>
+\hypertarget{exclusive-b-to-s-dilepton-large-recoil_8hh_source_l00038}{}\hyperlink{classeos_1_1BToKstarDilepton_3_01LargeRecoil_01_4}{00038}     \textcolor{keyword}{class }BToKstarDilepton<\hyperlink{structeos_1_1LargeRecoil}{LargeRecoil}> :
+00039         \textcolor{keyword}{public} \hyperlink{classeos_1_1ParameterUser}{ParameterUser},
+00040         \textcolor{keyword}{public} \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern}<BToKstarDilepton<LargeRecoil>>
+00041     \{
+00042         \textcolor{keyword}{public}:
+00043             BToKstarDilepton(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & parameters, \textcolor{keyword}{const} \hyperlink{classeos_1_1Options}{Options} & optio
+      ns);
+00044             ~BToKstarDilepton();
+00045 
+00046             \textcolor{comment}{// Soft form factors}
+00047             \textcolor{keywordtype}{double} xi\_perp(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00048             \textcolor{keywordtype}{double} xi\_para(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00049 
+00050             \textcolor{comment}{// [BHP2008], Appendix C}
+00051             complex<double> a\_long(\textcolor{keyword}{const} \hyperlink{namespaceeos_a4b2f8b0a4184d635cfc47c4ee234aea5}{Helicity} & h, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00052             complex<double> a\_perp(\textcolor{keyword}{const} \hyperlink{namespaceeos_a4b2f8b0a4184d635cfc47c4ee234aea5}{Helicity} & h, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00053             complex<double> a\_par(\textcolor{keyword}{const} \hyperlink{namespaceeos_a4b2f8b0a4184d635cfc47c4ee234aea5}{Helicity} & h, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00054 
+00055             \textcolor{comment}{// Inverse Observables}
+00056             \textcolor{keywordtype}{double} a\_fb\_zero\_crossing() \textcolor{keyword}{const};
+00057 
+00058             \textcolor{comment}{// Four Differential Observables}
+00059             \textcolor{keywordtype}{double} four\_differential\_decay\_width(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s, \textcolor{keyword}{const} \textcolor{keywordtype}{double} &
+       c\_theta\_l, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & c\_theta\_k, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & phi) \textcolor{keyword}{const};
+00060 
+00061             \textcolor{comment}{// Single Differential Observables}
+00062             \textcolor{keywordtype}{double} differential\_branching\_ratio(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00063             \textcolor{keywordtype}{double} differential\_decay\_width(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00064             \textcolor{keywordtype}{double} differential\_isospin\_asymmetry(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00065             \textcolor{keywordtype}{double} differential\_forward\_backward\_asymmetry(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{cons
+      t};
+00066             \textcolor{keywordtype}{double} differential\_longitudinal\_polarisation(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const
+      };
+00067             \textcolor{keywordtype}{double} differential\_transversal\_polarisation(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+      
+00068             \textcolor{keywordtype}{double} differential\_transverse\_asymmetry\_2(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00069             \textcolor{keywordtype}{double} differential\_transverse\_asymmetry\_3(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00070             \textcolor{keywordtype}{double} differential\_transverse\_asymmetry\_4(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00071             \textcolor{keywordtype}{double} differential\_transverse\_asymmetry\_5(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00072             \textcolor{keywordtype}{double} differential\_transverse\_asymmetry\_re(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00073             \textcolor{keywordtype}{double} differential\_transverse\_asymmetry\_im(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00074             \textcolor{keywordtype}{double} differential\_p\_prime\_4(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00075             \textcolor{keywordtype}{double} differential\_p\_prime\_5(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00076             \textcolor{keywordtype}{double} differential\_p\_prime\_6(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00077             \textcolor{keywordtype}{double} differential\_h\_1(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00078             \textcolor{keywordtype}{double} differential\_h\_2(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00079             \textcolor{keywordtype}{double} differential\_h\_3(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00080             \textcolor{keywordtype}{double} differential\_h\_4(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00081             \textcolor{keywordtype}{double} differential\_h\_5(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00082             \textcolor{keywordtype}{double} differential\_j\_1s(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00083             \textcolor{keywordtype}{double} differential\_j\_1c(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00084             \textcolor{keywordtype}{double} differential\_j\_2s(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00085             \textcolor{keywordtype}{double} differential\_j\_2c(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00086             \textcolor{keywordtype}{double} differential\_j\_3(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00087             \textcolor{keywordtype}{double} differential\_j\_3\_normalized(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00088             \textcolor{keywordtype}{double} differential\_j\_3\_normalized\_cp\_averaged(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{cons
+      t};
+00089             \textcolor{keywordtype}{double} differential\_j\_4(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00090             \textcolor{keywordtype}{double} differential\_j\_5(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00091             \textcolor{keywordtype}{double} differential\_j\_6s(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00092             \textcolor{keywordtype}{double} differential\_j\_6c(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00093             \textcolor{keywordtype}{double} differential\_j\_7(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00094             \textcolor{keywordtype}{double} differential\_j\_8(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00095             \textcolor{keywordtype}{double} differential\_j\_9(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00096             \textcolor{keywordtype}{double} differential\_j\_9\_normalized(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00097             \textcolor{keywordtype}{double} differential\_j\_9\_normalized\_cp\_averaged(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{cons
+      t};
+00098 
+00099             \textcolor{comment}{// Integrated Observables}
+00100             \textcolor{keywordtype}{double} integrated\_decay\_width(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_
+      max) \textcolor{keyword}{const};
+00101             \textcolor{keywordtype}{double} integrated\_branching\_ratio(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} 
+      & s\_max) \textcolor{keyword}{const};
+00102             \textcolor{keywordtype}{double} integrated\_branching\_ratio\_cp\_averaged(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{c
+      onst} \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{const};
+00103             \textcolor{keywordtype}{double} integrated\_cp\_asymmetry(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s
+      \_max) \textcolor{keyword}{const};
+00104             \textcolor{keywordtype}{double} integrated\_isospin\_asymmetry(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{doubl
+      e} & s\_max) \textcolor{keyword}{const};
+00105             \textcolor{keywordtype}{double} integrated\_forward\_backward\_asymmetry(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{co
+      nst} \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{const};
+00106             \textcolor{keywordtype}{double} integrated\_forward\_backward\_asymmetry\_cp\_averaged(\textcolor{keyword}{const} \textcolor{keywordtype}{double
+      } & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{const};
+00107             \textcolor{keywordtype}{double} integrated\_longitudinal\_polarisation(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{con
+      st} \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{const};
+00108             \textcolor{keywordtype}{double} integrated\_longitudinal\_polarisation\_cp\_averaged(\textcolor{keyword}{const} \textcolor{keywordtype}{double} 
+      & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{const};
+00109             \textcolor{keywordtype}{double} integrated\_transversal\_polarisation(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{cons
+      t} \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{const};
+00110             \textcolor{keywordtype}{double} integrated\_transversal\_polarisation\_cp\_averaged(\textcolor{keyword}{const} \textcolor{keywordtype}{double} &
+       s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{const};
+00111             \textcolor{keywordtype}{double} integrated\_transverse\_asymmetry\_2(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} 
+      \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{const};
+00112             \textcolor{keywordtype}{double} integrated\_transverse\_asymmetry\_2\_cp\_averaged(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s
+      \_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{const};
+00113             \textcolor{keywordtype}{double} integrated\_transverse\_asymmetry\_3(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} 
+      \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{const};
+00114             \textcolor{keywordtype}{double} integrated\_transverse\_asymmetry\_4(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} 
+      \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{const};
+00115             \textcolor{keywordtype}{double} integrated\_transverse\_asymmetry\_5(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} 
+      \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{const};
+00116             \textcolor{keywordtype}{double} integrated\_transverse\_asymmetry\_re(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const
+      } \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{const};
+00117             \textcolor{keywordtype}{double} integrated\_transverse\_asymmetry\_im(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const
+      } \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{const};
+00118             \textcolor{keywordtype}{double} integrated\_p\_prime\_4(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_ma
+      x) \textcolor{keyword}{const};
+00119             \textcolor{keywordtype}{double} integrated\_p\_prime\_5(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_ma
+      x) \textcolor{keyword}{const};
+00120             \textcolor{keywordtype}{double} integrated\_p\_prime\_6(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_ma
+      x) \textcolor{keyword}{const};
+00121             \textcolor{keywordtype}{double} integrated\_h\_1(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{con
+      st};
+00122             \textcolor{keywordtype}{double} integrated\_h\_2(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{con
+      st};
+00123             \textcolor{keywordtype}{double} integrated\_h\_3(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{con
+      st};
+00124             \textcolor{keywordtype}{double} integrated\_h\_4(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{con
+      st};
+00125             \textcolor{keywordtype}{double} integrated\_h\_5(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{con
+      st};
+00126             \textcolor{keywordtype}{double} integrated\_j\_1s(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{co
+      nst};
+00127             \textcolor{keywordtype}{double} integrated\_j\_1c(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{co
+      nst};
+00128             \textcolor{keywordtype}{double} integrated\_j\_2s(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{co
+      nst};
+00129             \textcolor{keywordtype}{double} integrated\_j\_2c(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{co
+      nst};
+00130             \textcolor{keywordtype}{double} integrated\_j\_3(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{con
+      st};
+00131             \textcolor{keywordtype}{double} integrated\_j\_3\_normalized(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} &
+       s\_max) \textcolor{keyword}{const};
+00132             \textcolor{keywordtype}{double} integrated\_j\_3\_normalized\_cp\_averaged(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{co
+      nst} \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{const};
+00133             \textcolor{keywordtype}{double} integrated\_j\_4(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{con
+      st};
+00134             \textcolor{keywordtype}{double} integrated\_j\_5(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{con
+      st};
+00135             \textcolor{keywordtype}{double} integrated\_j\_6s(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{co
+      nst};
+00136             \textcolor{keywordtype}{double} integrated\_j\_6c(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{co
+      nst};
+00137             \textcolor{keywordtype}{double} integrated\_j\_7(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{con
+      st};
+00138             \textcolor{keywordtype}{double} integrated\_j\_8(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{con
+      st};
+00139             \textcolor{keywordtype}{double} integrated\_j\_9(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{con
+      st};
+00140             \textcolor{keywordtype}{double} integrated\_j\_9\_normalized(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} &
+       s\_max) \textcolor{keyword}{const};
+00141             \textcolor{keywordtype}{double} integrated\_j\_9\_normalized\_cp\_averaged(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{co
+      nst} \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{const};
+00142             \textcolor{keywordtype}{double} integrated\_a\_9(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{con
+      st};
+00143     \};
+00144 
+00145     \textcolor{comment}{/*}
+00146 \textcolor{comment}{     * Decay: B -> K l lbar at Large Recoil, cf. [BFS2001], [BHP2007]}
+00147 \textcolor{comment}{     */}
+00148     \textcolor{keyword}{template} <>
+\hypertarget{exclusive-b-to-s-dilepton-large-recoil_8hh_source_l00149}{}\hyperlink{classeos_1_1BToKDilepton_3_01LargeRecoil_01_4}{00149}     \textcolor{keyword}{class }BToKDilepton<\hyperlink{structeos_1_1LargeRecoil}{LargeRecoil}> :
+00150         \textcolor{keyword}{public} \hyperlink{classeos_1_1ParameterUser}{ParameterUser},
+00151         \textcolor{keyword}{public} \hyperlink{classeos_1_1PrivateImplementationPattern}{PrivateImplementationPattern}<BToKDilepton<LargeRecoil>>
+00152     \{
+00153         \textcolor{keyword}{public}:
+00154             BToKDilepton(\textcolor{keyword}{const} \hyperlink{classeos_1_1Parameters}{Parameters} & parameters, \textcolor{keyword}{const} \hyperlink{classeos_1_1Options}{Options} & options);
+      
+00155             ~BToKDilepton();
+00156 
+00157             \textcolor{comment}{// Amplitudes}
+00158             std::complex<double> F\_A(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00159             std::complex<double> F\_V(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00160             std::complex<double> F\_S(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00161             std::complex<double> F\_P(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00162             std::complex<double> F\_T(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00163             std::complex<double> F\_T5(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00164 
+00165             \textcolor{comment}{// Angular Observables}
+00166             \textcolor{keywordtype}{double} a\_l(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00167             \textcolor{keywordtype}{double} b\_l(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00168             \textcolor{keywordtype}{double} c\_l(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00169 
+00170             \textcolor{comment}{// Two Differential Observables}
+00171             \textcolor{keywordtype}{double} two\_differential\_decay\_width(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & 
+      c\_theta\_l) \textcolor{keyword}{const};
+00172 
+00173             \textcolor{comment}{// Differential Observables}
+00174             \textcolor{keywordtype}{double} differential\_branching\_ratio(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00175             \textcolor{keywordtype}{double} differential\_flat\_term(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00176             \textcolor{keywordtype}{double} differential\_forward\_backward\_asymmetry(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{cons
+      t};
+00177             \textcolor{keywordtype}{double} differential\_ratio\_muons\_electrons(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s) \textcolor{keyword}{const};
+00178 
+00179             \textcolor{comment}{// Integrated Observables}
+00180             \textcolor{keywordtype}{double} integrated\_decay\_width(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_
+      max) \textcolor{keyword}{const};
+00181             \textcolor{keywordtype}{double} integrated\_branching\_ratio(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} 
+      & s\_max) \textcolor{keyword}{const};
+00182             \textcolor{keywordtype}{double} integrated\_branching\_ratio\_cp\_averaged(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{c
+      onst} \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{const};
+00183             \textcolor{keywordtype}{double} integrated\_cp\_asymmetry(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s
+      \_max) \textcolor{keyword}{const};
+00184             \textcolor{keywordtype}{double} integrated\_flat\_term(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_ma
+      x) \textcolor{keyword}{const};
+00185             \textcolor{keywordtype}{double} integrated\_flat\_term\_cp\_averaged(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{d
+      ouble} & s\_max) \textcolor{keyword}{const};
+00186             \textcolor{keywordtype}{double} integrated\_forward\_backward\_asymmetry(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{co
+      nst} \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{const};
+00187             \textcolor{keywordtype}{double} integrated\_forward\_backward\_asymmetry\_cp\_averaged(\textcolor{keyword}{const} \textcolor{keywordtype}{double
+      } & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_max) \textcolor{keyword}{const};
+00188             \textcolor{keywordtype}{double} integrated\_ratio\_muons\_electrons(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & s\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{d
+      ouble} & s\_max) \textcolor{keyword}{const};
+00189     \};
+00190 \}
+00191 
+00192 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}

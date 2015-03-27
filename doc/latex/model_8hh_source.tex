@@ -1,0 +1,112 @@
+\hypertarget{model_8hh_source}{
+\section{/home/alexshires/EOS/eos-\/next/eos/utils/model.hh}
+}
+
+
+\begin{footnotesize}\begin{alltt}
+00001 \textcolor{comment}{/* vim: set sw=4 sts=4 et foldmethod=syntax : */}
+00002 
+00003 \textcolor{comment}{/*}
+00004 \textcolor{comment}{ * Copyright (c) 2010, 2011, 2012, 2014 Danny van Dyk}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This file is part of the EOS project. EOS is free software;}
+00007 \textcolor{comment}{ * you can redistribute it and/or modify it under the terms of the GNU General}
+00008 \textcolor{comment}{ * Public License version 2, as published by the Free Software Foundation.}
+00009 \textcolor{comment}{ *}
+00010 \textcolor{comment}{ * EOS is distributed in the hope that it will be useful, but WITHOUT ANY}
+00011 \textcolor{comment}{ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS}
+00012 \textcolor{comment}{ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more}
+00013 \textcolor{comment}{ * details.}
+00014 \textcolor{comment}{ *}
+00015 \textcolor{comment}{ * You should have received a copy of the GNU General Public License along with}
+00016 \textcolor{comment}{ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple}
+00017 \textcolor{comment}{ * Place, Suite 330, Boston, MA  02111-1307  USA}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef EOS\_GUARD\_SRC\_UTILS\_MODEL\_HH}
+\hypertarget{model_8hh_source_l00021}{}\hyperlink{model_8hh_a840a218887d25b75651ba408ae261e9d}{00021} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EOS\_GUARD\_SRC\_UTILS\_MODEL\_HH 1}
+00022 \textcolor{preprocessor}{}
+00023 \textcolor{preprocessor}{#include <\hyperlink{private__implementation__pattern_8hh}{eos/utils/private_implementation_pattern.hh}>}
+00024 \textcolor{preprocessor}{#include <\hyperlink{options_8hh}{eos/utils/options.hh}>}
+00025 \textcolor{preprocessor}{#include <\hyperlink{parameters_8hh}{eos/utils/parameters.hh}>}
+00026 \textcolor{preprocessor}{#include <\hyperlink{wilson__coefficients_8hh}{eos/utils/wilson_coefficients.hh}>}
+00027 
+00028 \textcolor{preprocessor}{#include <complex>}
+00029 
+00030 \textcolor{keyword}{namespace }eos
+00031 \{
+00032     \textcolor{keyword}{using} std::complex;
+00033 
+\hypertarget{model_8hh_source_l00034}{}\hyperlink{namespaceeos_1_1components}{00034}     \textcolor{keyword}{namespace }components
+00035     \{
+00039 
+00040         \textcolor{keyword}{struct }CKM;
+00041         \textcolor{keyword}{struct }\hyperlink{classeos_1_1QCD}{QCD};
+00042         \textcolor{keyword}{struct }DeltaB1;
+00044     \}
+00045 
+00049     \textcolor{keyword}{template} <\textcolor{keyword}{typename} Tag\_> \textcolor{keyword}{class }ModelComponent;
+00050 
+\hypertarget{model_8hh_source_l00054}{}\hyperlink{classeos_1_1ModelComponent_3_01components_1_1CKM_01_4}{00054}     \textcolor{keyword}{template} <> \textcolor{keyword}{class }ModelComponent<components::CKM>
+00055     \{
+00056         \textcolor{keyword}{public}:
+00057             \textcolor{comment}{/* CKM matrix elements */}
+00058             \textcolor{keyword}{virtual} complex<double> ckm\_cd() \textcolor{keyword}{const} = 0;
+00059             \textcolor{keyword}{virtual} complex<double> ckm\_cs() \textcolor{keyword}{const} = 0;
+00060             \textcolor{keyword}{virtual} complex<double> ckm\_cb() \textcolor{keyword}{const} = 0;
+00061             \textcolor{keyword}{virtual} complex<double> ckm\_ud() \textcolor{keyword}{const} = 0;
+00062             \textcolor{keyword}{virtual} complex<double> ckm\_us() \textcolor{keyword}{const} = 0;
+00063             \textcolor{keyword}{virtual} complex<double> ckm\_ub() \textcolor{keyword}{const} = 0;
+00064             \textcolor{keyword}{virtual} complex<double> ckm\_td() \textcolor{keyword}{const} = 0;
+00065             \textcolor{keyword}{virtual} complex<double> ckm\_ts() \textcolor{keyword}{const} = 0;
+00066             \textcolor{keyword}{virtual} complex<double> ckm\_tb() \textcolor{keyword}{const} = 0;
+00067     \};
+00068 
+\hypertarget{model_8hh_source_l00072}{}\hyperlink{classeos_1_1ModelComponent_3_01components_1_1QCD_01_4}{00072}     \textcolor{keyword}{template} <> \textcolor{keyword}{class }ModelComponent<components::\hyperlink{classeos_1_1QCD}{QCD}>
+00073     \{
+00074         \textcolor{keyword}{public}:
+00075             \textcolor{comment}{/* QCD */}
+00076             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} alpha\_s(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu) \textcolor{keyword}{const} = 0;
+00077             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} m\_t\_msbar(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu) \textcolor{keyword}{const} = 0;
+00078             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} m\_t\_pole() \textcolor{keyword}{const} = 0;
+00079             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} m\_b\_kin(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu\_kin) \textcolor{keyword}{const} = 0;
+00080             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} m\_b\_msbar(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu) \textcolor{keyword}{const} = 0;
+00081             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} m\_b\_pole() \textcolor{keyword}{const} = 0;
+00082             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} m\_b\_ps(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu\_f) \textcolor{keyword}{const} = 0;
+00083             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} m\_c\_kin(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu\_kin) \textcolor{keyword}{const} = 0;
+00084             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} m\_c\_msbar(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu) \textcolor{keyword}{const} = 0;
+00085             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} m\_c\_pole() \textcolor{keyword}{const} = 0;
+00086             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} m\_s\_msbar(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu) \textcolor{keyword}{const} = 0;
+00087             \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} m\_ud\_msbar(\textcolor{keyword}{const} \textcolor{keywordtype}{double} & mu) \textcolor{keyword}{const} = 0;
+00088     \};
+00089 
+\hypertarget{model_8hh_source_l00093}{}\hyperlink{classeos_1_1ModelComponent_3_01components_1_1DeltaB1_01_4}{00093}     \textcolor{keyword}{template} <> \textcolor{keyword}{class }ModelComponent<components::DeltaB1>
+00094     \{
+00095         \textcolor{keyword}{public}:
+00096             \textcolor{comment}{/* b->s Wilson coefficients */}
+00097             \textcolor{keyword}{virtual} \hyperlink{structeos_1_1WilsonCoefficients_3_01BToS_01_4}{WilsonCoefficients<BToS>} wilson\_coefficients\_b\_to\_s(\textcolor{keyword}{const} \textcolor{keywordtype}{boo
+      l} & cp\_conjugate = \textcolor{keyword}{false}) \textcolor{keyword}{const} = 0;
+00098     \};
+00099 
+\hypertarget{model_8hh_source_l00103}{}\hyperlink{classeos_1_1Model}{00103}     \textcolor{keyword}{class }\hyperlink{classeos_1_1Model}{Model} :
+00104         \textcolor{keyword}{public} \hyperlink{classeos_1_1ParameterUser}{ParameterUser},
+00105         \textcolor{keyword}{public} \textcolor{keyword}{virtual} ModelComponent<components::CKM>,
+00106         \textcolor{keyword}{public} \textcolor{keyword}{virtual} ModelComponent<components::QCD>,
+00107         \textcolor{keyword}{public} \textcolor{keyword}{virtual} ModelComponent<components::DeltaB1>
+00108     \{
+00109         \textcolor{keyword}{public}:
+00110             \textcolor{keyword}{virtual} \hyperlink{classeos_1_1Model_a17c7c1491d3d0761bfb663f231181a21}{~Model}() = 0;
+00111 
+00112             \textcolor{keyword}{static} std::shared\_ptr<Model> \hyperlink{classeos_1_1Model_aaaf8ba614a0212952f6f9485034c3436}{make}(\textcolor{keyword}{const} std::string & name, \textcolor{keyword}{const} 
+      \hyperlink{classeos_1_1Parameters}{Parameters} & parameters, \textcolor{keyword}{const} \hyperlink{classeos_1_1Options}{Options} & options);
+00113     \};
+00114 
+\hypertarget{model_8hh_source_l00115}{}\hyperlink{structeos_1_1NoSuchModelError}{00115}     \textcolor{keyword}{struct }\hyperlink{structeos_1_1NoSuchModelError}{NoSuchModelError} :
+00116         \textcolor{keyword}{public} \hyperlink{classeos_1_1Exception}{Exception}
+00117     \{
+00118         \hyperlink{structeos_1_1NoSuchModelError_a2659306f126d1ab6198c127101529241}{NoSuchModelError}(\textcolor{keyword}{const} std::string & name);
+00119     \};
+00120 \}
+00121 
+00122 \textcolor{preprocessor}{#endif}
+\end{alltt}\end{footnotesize}
